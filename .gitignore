@@ -62,3 +62,7 @@ serialized_data.*
 
 #rye .lock files
 *.lock
+
+# quarto ergebnisse / compiles
+*.html
+*.pdf
