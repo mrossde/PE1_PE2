@@ -11,6 +11,7 @@ wheels/
 
 # virtual environment, managed by rye / poetry / ...
 /.venv
+/.quarto
 
 # autogen cache
 /.cache/
@@ -24,3 +25,40 @@ wheels/
 
 # project-specific:
 .DS_Store
+
+/.quarto/
+
+# html previews
+#.html
+
+#Excel temporary files
+~$*
+
+# Power Point temporary files
+.~lock.*
+
+# drawio tmp files
+*.drawio.bkp
+.bkp
+
+# build folders of quarto revealjs
+**/*_files
+
+# C extensions
+*.so
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Uebungs Dateien die beim Ausführen der Präsentation entstehen
+serialized_data.*
+00 Inhalte/serialized_data.json
+00_Inhalte/VL03/ORG/Images/
+
+# Lecture Files
+*.pth
+*.pkl
+*.json
+
+#rye .lock files
+*.lock
