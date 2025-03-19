@@ -1,0 +1,54 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Projektmanagement
+-------------------------------------------------------------------------- -->
+
+## Projektmanagement
+
+In diesem Kapitel geht es um das Projektmanagement im Produktentstehungsprozess. 
+
+
+::: {.callout-warning}
+*"The first step of any project is to grossly underestimate its complexity and difficulty."* [Nicoll Hunt]
+:::
+
+### Methoden zum Projektmanagement (by NASA)
+Das Apollo-Programm der NASA, das in den 1960er und 1970er Jahren stattfand und zur Mondlandung führte, brachte wichtige Elemente des modernen Projektmanagements hervor. Einige der bedeutenden Beiträge des Apollo-Programms zum Projektmanagement sind:
+
+1\. Systematische Planung: Das Apollo-Programm betonte die Bedeutung einer umfassenden und systematischen Projektplanung, die die Komplexität und den Umfang des Unternehmens berücksichtigte.
+
+2\. Risikomanagement: Aufgrund der beispiellosen Natur des Projekts entwickelte die NASA umfassende Risikomanagementpläne, um potenzielle Gefahren zu identifizieren und zu mindern.
+
+3\. Teamarbeit und Integration: Das Apollo-Programm demonstrierte die Bedeutung einer engen Zusammenarbeit und Integration von interdisziplinären Teams, um komplexe Ziele zu erreichen.
+
+4\. Projektcontrolling und -überwachung: Die NASA etablierte effektive Methoden zur Überwachung und Kontrolle von Projektfortschritten, um sicherzustellen, dass Meilensteine eingehalten und Probleme frühzeitig erkannt wurden.
+
+5\. Qualitätssicherung: Das Apollo-Programm legte großen Wert auf strenge Qualitätskontrollen und -prüfungen, um sicherzustellen, dass alle Komponenten und Prozesse den höchsten Standards entsprachen.
+
+Die Errungenschaften des Apollo-Programms in Bezug auf Projektmanagement haben dazu beigetragen, Standards für die Planung und Durchführung großer, komplexer Projekte zu etablieren und haben somit die Entwicklung moderner Projektmanagementpraktiken und -methoden beeinflusst.
+
+Das Element der systematischen Planung im Rahmen des Apollo-Programms war von entscheidender Bedeutung für den Erfolg der Mission. Es umfasste mehrere wichtige Aspekte:
+
+1\. Zielsetzung: Die NASA definierte klare und präzise Ziele für das Apollo-Programm, darunter das Erreichen der Mondlandung und die sichere Rückkehr der Astronauten zur Erde.
+
+2\. Strukturierte Arbeitspakete: Das Programm wurde in verschiedene strukturierte Arbeitspakete oder Phasen unterteilt, die jeweils klare Ziele und Meilensteine hatten. Dies ermöglichte eine systematische und schrittweise Annäherung an das Hauptziel.
+
+3\. Zeitplanung: Die NASA entwickelte einen detaillierten Zeitplan, der die einzelnen Schritte des Programms umfasste, um sicherzustellen, dass alle Aktivitäten rechtzeitig und koordiniert abgeschlossen wurden. Dies beinhaltete den Zeitpunkt von Raketenstarts, Mondlandungen und Rückkehrmissionen.
+
+à Laborübung: Erarbeiten Sie einen detaillierten Zeitplan mit Meilensteinen (Nebenläufige Prozesse beachten) und identifizieren sie den kritischen Pfad! Beispiel: Projekt Earthlander.
+
+4\. Ressourcenplanung: Die NASA plante und verwaltete die benötigten Ressourcen wie Finanzen, Technologie und Personal auf effiziente Weise, um sicherzustellen, dass das gesamte Programm reibungslos ablaufen konnte.
+
+5\. Risikobewertung: Die systematische Planung beinhaltete auch die Identifizierung und Bewertung potenzieller Risiken und die Entwicklung entsprechender Maßnahmen zur Risikominderung.
+
+Durch diese systematische Planung konnte das Apollo-Programm komplexe Herausforderungen bewältigen und die Mondlandung erfolgreich realisieren. Diese Methoden legten den Grundstein für die heutigen Projektmanagementpraktiken und -standards, insbesondere im Hinblick auf die strukturierte Herangehensweise an komplexe und ehrgeizige Projekte.
+
+<!-- --------------------------------------------

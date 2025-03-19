@@ -1,0 +1,101 @@
+<!--
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+-->
+
+<!--
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Softskills
+  - Bildzeitung-Test
+
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Bildzeitungstest
+
+-------------------------------------------------------------------------- -->
+
+## Bildzeitung-Test {#sec-bildzeitungtest}
+
+::: {.callout-tip}
+## Definition: *"Bildzeitung-Test"*
+Der Bildzeitung-Test ist ein praxisnahes Prüfverfahren im Zusammenhang mit den ethischen Grenzen von Handlungen, das insbesondere im Compliance-Management und in der Unternehmensethik verwendet wird. Der Bildzeitung-Test basiert auf der Idee, dass eine Handlung, Entscheidung oder das Verhalten einer Person, eines Unternehmens oder einer Organisation so gestaltet sein muss, dass sie im Falle einer öffentlichen Berichterstattung (z.B. durch eine große Tageszeitung wie die Bild-Zeitung) gerechtfertigt und gut erklärbar (*"langweilig"*) wäre, ohne dass der Ruf der Person, des Unternehmens oder der Organisation Schaden nehmen würde.
+:::
+
+Der Bildzeitung-Test ist ein in der Praxis für die meisten Personen mit halbwegs funktionierendem moralischem Kompass gut verwendbares Werkzeug, potenzielle Reputationsrisiken (sowie ggf. mögliche zusätzlich rechtliche Probleme) bereits **VOR** einer Handlung zu erkennen, die entstehen könnten, wenn fragwürdige Handlungen öffentlich gemacht werden würden. Er ist sowohl für Einzelpersonen, aber auch Unternehmen und Organisationen anwendbar. 
+
+::: {.callout-caution}
+## Pro-Tipp!
+Der geneigte Leser wird hiermit ermutigt, **VOR** eigenen Handlungen, bei denen eine Unsicherheit bezüglich des Reputationsrisikos bestehen könnte, den Bildzeitung-Test zu machen und bei unklarem oder gar problematischem Ausgang des Tests (→ hohes Reputationsrisiko) **von der angedachten Handlung abzusehen**!
+::: 
+
+<!--
+### Aspekte des Bildzeitung-Tests:
+
+1. **Öffentliche Wahrnehmung:** 
+   - Die Entscheidung sollte so getroffen werden, dass sie von der breiten Öffentlichkeit ohne größere Erklärungen als ethisch und rechtlich akzeptabel wahrgenommen wird. Wenn die Entscheidung oder Handlung in einer breiten Zeitung abgedruckt wird, sollte sie nicht zu negativen Reaktionen oder Missverständnissen führen.
+   - Beispiel: Ein Unternehmen, das eine Entscheidung trifft, die als unethisch wahrgenommen wird (z. B. umweltverschmutzende Praktiken oder unfaire Arbeitsbedingungen), könnte auf öffentliche Kritik stoßen.
+
+2. **Verantwortung und Transparenz:** 
+   - Im Rahmen des Tests wird überprüft, ob die Entscheidung oder Handlung klar und transparent kommuniziert werden kann. Es sollte keine Verwirrung darüber bestehen, warum die Entscheidung getroffen wurde und welche Auswirkungen sie auf verschiedene Interessengruppen hat (z. B. Kunden, Mitarbeiter, Partner).
+   - Beispiel: Ein Unternehmen, das in einem Rechtsstreit gegen seine Kunden vorgeht, sollte sicherstellen, dass die Beweggründe und die Fairness des Prozesses transparent erklärt werden können.
+
+3. **Rechtliche Konformität:** 
+   - Die Entscheidung muss den geltenden Gesetzen und Vorschriften entsprechen. Es geht nicht nur darum, ob das Verhalten öffentlich verständlich ist, sondern auch darum, ob es im Einklang mit den rechtlichen Rahmenbedingungen steht. Jede Maßnahme muss den gesetzlichen Anforderungen entsprechen und im Falle einer Überprüfung durch Behörden oder Gerichte gerechtfertigt sein.
+   - Beispiel: Ein Unternehmen darf keine rechtlich fragwürdigen Steuervermeidungsstrategien oder illegale Geschäftspraktiken betreiben, selbst wenn sie kurzfristig finanziell vorteilhaft erscheinen.
+
+4. **Ethische Standards:** 
+   - Auch wenn eine Entscheidung rechtlich zulässig ist, kann sie dennoch ethisch problematisch sein. Der Bildzeitung-Test prüft, ob die Entscheidung die ethischen Grundsätze des Unternehmens sowie gesellschaftliche Normen berücksichtigt.
+   - Beispiel: Ein Unternehmen könnte sich fragen, ob es ethisch vertretbar ist, in einem Land zu investieren, das gegen Menschenrechte verstößt.
+
+5. **Reputationsrisiko:** 
+   - Eine Handlung oder Entscheidung muss auch aus Sicht des **Reputationsmanagements** überprüft werden. Im Rahmen des Bildzeitung-Tests wird bewertet, ob die Handlung das Unternehmen oder die betroffenen Personen in einem negativen Licht erscheinen lässt, was langfristig zu Vertrauensverlusten bei Kunden oder Partnern führen könnte.
+
+### Anwendung in der Praxis:
+
+- **Compliance-Manager** und **Unternehmensleiter** können den Bildzeitung-Test als Werkzeug nutzen, um sicherzustellen, dass alle wichtigen Unternehmensentscheidungen den ethischen und rechtlichen Standards entsprechen, bevor sie umgesetzt werden. 
+
+Der Bildzeitung-Test wird oft als Teil des internen Kontrollsystems angewendet, um das Risiko von **Skandalen** oder **rechtlichen Problemen** zu minimieren, die sich negativ auf die Marke und den Ruf eines Unternehmens auswirken könnten.
+-->

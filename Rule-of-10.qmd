@@ -1,0 +1,77 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+
+<!--
+title: "DEB3 Produktentwicklung 1"
+resource-path: ["../images"]
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Kosten im Produktentstehungsprozess
+  - Rule of 10
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Rule of 10 der Fehlerkosten
+
+-------------------------------------------------------------------------- -->
+
+### "Rule of 10" der Fehlerkosten {#sec-rule-of-10}
+
+::: {.callout-tip}
+## Definition: *"Rule of 10 der Fehlerkosten"*
+Die "Rule of 10" ("Zehnerregel") der Fehlerkosten besagt, daß je weiter ein Fehler sich unentdeckt in die späten Phasen des Werdeganges eines Produktes oder Prozesses bewegt – oder gar bis zum Kunden –, dass in jeder Phase des Produktentstehungsprozesses die Fehlerkosten für nicht gefundene Fehler um den Faktor 10 steigen.
+:::
+
+Die Behebung eines Fehlers kostet der "Rule of 10" der Fehlerkosten folgend je 1€ in der Konzeptionsphase, 10€ während der Entwicklungsphase, 100€ im Testing und 1000€ oder auch deutlich mehr in der Produktion.
+
+!["Rule of 10" der Fehlerkosten](images/Zehnerregel.drawio.svg){width=74% #fig-rule-of-10}
+
+::: {.callout-important}
+## Die richtigen Konsequenz aus der "Rule of 10" der Fehlerkosten ziehen!
+Es ist erforderlich, alle sinnvollen Anstrengungen zu unternehmen um Fehler und deren Ursache so früh wie möglich im Produktentstehungsprozess zu entdecken, nachfolgend die Ursache der Fehler durch konstruktive Maßnahmen schnellstmöglich zu beseitigen um somit die zu erwartenden Produktkosten in einem betriebswirtschaftlich beherrschbaren Rahmen zu halten (siehe → [Risikomanagement](https://de.wikipedia.org/wiki/Risikomanagement)).
+:::
+
+Die "Rule of 10" der Fehlerkosten ist in der Praxis einer der wichtigsten Gründe, die Testphase frühestmöglich, in jedem Fall aber spätestens zeitlich parallel zur Entwicklungsphase zu beginnen. 
+
+Die "Rule of 10" der Fehlerkosten hat darüber hinaus hohe Bedeutung für die Verschränkung des Reifegrads von Technologien: So sollten bei der Neuentwicklung von Produkten nur Werkstoffe und Produktionstechnologien verwendet werden, die ihrerseits bereits Serienreife erreicht haben (siehe z.B. → @sec-ppg Produktionsgerechte Produktgestaltung (PPG)).

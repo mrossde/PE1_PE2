@@ -1,0 +1,86 @@
+//-------------------------------------------------------------------------
+//
+//                     Labor "Magnetpendel"
+//
+//-------------------------------------------------------------------------
+
+
+
+//-------------------------------------------------------------------------
+//
+//                     Butterfly-Effekt
+//
+//-------------------------------------------------------------------------
+
+
+::Definition Butterfly-Effekt::
+Als was ist der Butterfly-Effekt definiert?
+{
+	~%100%Ein Konzept aus der Chaostheorie, das besagt, dass kleine Ursachen große Auswirkungen haben können.
+	~%0%Eine Metapher, die besagt, dass der Flügelschlag eines Schmetterlings in Brasilien einen Tornado in Texas auslösen kann.
+	~%-50%Ein physikalisches Phänomen, das erklärt, wie sich Lichtbrechung auf die Farbe von Schmetterlingsflügeln auswirkt.
+	~%-50%Ein Begriff aus der Psychologie, der beschreibt, wie kleine Handlungen große Veränderungen im Verhalten einer Person auslösen können.
+}
+
+::Butterfly-Effekt::
+Wer prägte den Begriff "Butterfly-Effekt"?
+{
+    ~%100%Edward Lorenz
+	~%-25.0%Albert Einstein
+	~%-25.0%Isaac Newton
+	~%-25.0%Charles Darwin
+	~%-25.0%Ray Bradbury
+}
+
+::Butterfly-Effekt::
+Wann wurde der Butterfly-Effekt entdeckt?
+{
+	~%-25.0%Im 18. Jahrhundert durch den Physiker Isaac Newton.
+	~%-25.0%Im 19. Jahrhundert durch den Biologen Charles Darwin.
+	~%100%In den 1960er Jahren durch den Meteorologen Edward Lorenz.
+	~%-25.0%In den 1950er Jahren durch den Mathematiker John von Neumann.
+	~%-25.0%In den 1970er Jahren durch den Psychologen Ray Bradbury.
+}
+
+::Butterfly-Effekt::
+Wie wurde der Butterfly-Effekt entdeckt?
+{
+	~%100%Bei der Durchführung von Simulationen des Wetters als die Startbedingungen leicht verändert wurden.
+	~%-50%Durch die Beobachtung von Schmetterlingen und deren Einfluss auf das lokale Wettergeschehen.
+	~%-50%Durch die Analyse von geologischen Daten und die Entdeckung unerwarteter Auswirkungen kleiner Erdbeben.
+}
+
+
+//-------------------------------------------------------------------------
+//
+//                     Magnetpendel
+//
+//-------------------------------------------------------------------------
+
+::Magnetisches Pendel::
+Was charakterisiert das magnetische Pendel in der Chaostheorie?
+{
+	~%100%Ein einfaches System, das schwer vorhersehbares Verhalten aufweist.
+	~%-50%Ein System, das aufgrund seiner Einfachheit leicht vorhersehbar ist.
+	~%-50%Ein Beispiel für ein System, das ausschließlich durch chaotisch wirkende Kräfte gesteuert wird.
+}
+
+
+::Magnetisches Pendel::
+Was beeinflußt die Bahn des magnetischen Pendels?
+{
+  ~%25.0%Reibung
+  ~%25.0%Gravitation
+  ~%25.0%Magnetische Anziehungskraft
+  ~%25.0%Länge des Pendels
+  ~%-100%Farbe der Magneten
+}
+
+::Magnetisches Pendel::
+Welche veränderlichen Eingangsgrößen werden zur Simulation des magnetsichen Pendels verwendet?
+{
+  ~%50%Startposition
+  ~%50%Startgeschwindigkeit
+  ~%-50%Startimpuls
+  ~%-50%Höhe des Pendels über der Grundplatte
+}

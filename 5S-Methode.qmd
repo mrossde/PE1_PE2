@@ -1,0 +1,28 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       5S-Methode
+
+-------------------------------------------------------------------------- -->
+
+
+### 5S-Methode {#sec-5s}
+
+Die 5S-Arbeitsplatzgestaltung ([5S-Methodik](https://de.wikipedia.org/wiki/5S_(Methodik))) zielt auf den Arbeitsplatz als der Ort Wertschöpfung ab. 
+
+5S ist eine Methode aus dem japanischen Toyota-Produktionssystem (TPS) mit dem Ziel, Arbeitsplätze und ihr Umfeld sicher, sauber und übersichtlich zu gestalten, so dass die Arbeit störungsfrei ablaufen kann und das Risiko von Arbeitsunfällen reduziert wird. 
+
+5S steht in der 5S-Arbeitsplatzgestaltung für:
+
+1. **Seiri** - Ordnung schaffen: Entferne alles nicht Notwendige aus deinem Arbeitsbereich!
+2. **Seiton** - Ordnung halten: Was tatsächlich gebraucht wird, bekommt einen unter ergonomischen Gesichtspunkten ausgesuchten, definierten und gekennzeichneten festen Platz.
+3. **Seiso** - Sauberkeit: Jeder reinigt seinen Arbeitsplatz und seine Arbeitsutensilien selbst. Dabei werden Mängel erkannt, markiert und stetig abgearbeitet. Die Reinigung dient dem Prüfen.
+4. **Seiketsu** - Standardisierung: Verwendung von einheitlichen Kennzeichnungen, Beschriftungen und Markierungen am gesamten Arbeitsplatz zu jeder Zeit.
+5. **Shitsuke** - Selbstdisziplin und ständige Verbesserung ([Kaizen](https://de.wikipedia.org/wiki/Kaizen)). Damit Ordnung und Sauberkeit aufrechterhalten werden, ist Disziplin erforderlich. Mache Sauberkeit und Ordnung zu deinem persönlichen Anliegen!

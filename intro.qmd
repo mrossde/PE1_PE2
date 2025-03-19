@@ -1,0 +1,148 @@
+# Einfühung
+
+*Author: Christian Anders*
+
+*Version: 2024-03-04*
+
+
+Korrekturhinweise jeglicher Art sind ausdrücklich willkommen! Das schließt auch Hinweise auf Rechtschreibfehler ein. Das hilft mir die Qualität des Skripts zu verbessern und allen Lesern eine bessere Erfahrung zu geben. Hierfür schon jetzt vielen Dank!
+
+Wenn in diesem Skript auf externe Seiten verlinkt wird, dann wurden diese von mir nach bestem Wissen und Gewissen geprüft und keine rechtswidrigen Inhalte zum Zeitpunkt der Prüfung festgestellt. Ich habe keinen Einfluss auf den Inhalt der verlinkten externen Seiten und mache mir den Inhalt dieser Seiten nicht zu eigen. Bitte geben Sie mir Nachricht, falls Sie rechtswidige Inhalte in diesem Skript oder den verlinkten externen Seiten finden.
+
+<!-- -------------------------------------------------------------------------
+
+                       Vorwort zur Vorlesung
+
+-------------------------------------------------------------------------- -->
+## Vorwort zur Vorlesung
+
+> 
+*"The goal of teaching should not be to help the students learn how to memorize and spit out information under academic pressure. The purpose of teaching is to inspire the desire for learning in them and make them able to think, understand, and question."* [Richard Feynman]
+
+>
+*"Any fool can know. The point is to understand."* [Albert Einstein] 
+
+>
+*"A new idea comes suddenly and in a rather intuitive way. But intuition is nothing but the outcome of earlier intellectual experience."* [Albert Einstein] 
+
+> 
+*„Wenn wir nicht die richtigen Fragen stellen werden wir auch nicht die richtigen Antworten erhalten!“* [Klaus Davideit]
+
+Leitfrage:
+*"Warum sollte ich mein Gehirn mit Informationen füllen, die ich jetzt gar nicht nutzen kann?"*
+
+
+### Motivation zur Vorlesung
+
+Prinzip: Why ⇒ What ⇒ How
+
+1. Neue Wahrnehmung ist nicht über kognitives Lernen zu vermitteln! 
+
+2. Neue Erlebnisse ("Katalysator") führen zu neuen Erfahrungen! 
+
+3. Neue Erfahrungen führen zu neuen Wahrnehmung! 
+
+
+
+Wir werden in den Laboren versuchen, Erlebnisse zu schaffen um so eine erweiterte Sicht auf den in dieser Vorlesung angebotenen Lernstoff zu bekommen.
+
+
+
+
+![Eisschollen (Quelle: Adobe Stock)](images/ice.jpeg){width=100% #fig-ice}
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Syntax des Sktripts zur Vorlesung
+
+-------------------------------------------------------------------------- -->
+## Syntax des Skripts zur Vorlesung
+
+>
+*"Zitate, die zur Erheiterung und Mahnung des geneigten Lesers in die Vorlesung eingebettet sind, werden als Zitate dargestellt."*
+
+::: {.callout-tip}
+## Definition: *"Definition von Begriffen"*
+Definitionen von Begriffen sind in einem Callout dargestellt.
+:::
+
+::: {.callout-caution}
+## Erfahrungen aus der Praxis
+Erfahrungen aus der Praxis, die dem geneigten Leser zur Beachtung ans Herz gelegt werden, sind in einem Callout dargestellt.
+:::
+
+::: { .callout-note}
+## Lernziele
+Lernziele sind in einem Callout dargestellt.
+:::
+
+
+::: { .callout-note}
+## Aufgabenstellung
+Aufgaben sind in einem Callout dargestellt.
+:::
+
+::: {.callout-tip}
+## Lösung
+Lösungen zu den Aufgaben sind in einem Callout dargestllt.
+:::
+
+
+
+::: {.callout-important}
+## Wichtig
+Wichtige Inhalte, die dem geneigten Leser zur dauerhaften Beachtung ans Herz gelegt werden, sind in einem Callout dargestellt
+:::
+
+Der Rückschluss, dass Inhalte, die NICHT in einem solchen Callout als wichtig gekennzeichnet sind, in der Prüfung nicht bewertet werden können, ist nicht zutreffend. Dem geneigten Leser wird empfohlen, zur Vorbereitung der Prüfung sich auch Inhalten ausserhalb dieser Callouts zuzuwenden!
+
+::: {.callout-warning}
+## Warnung
+Warnungen sind als Callout dargestellt. Welche Inhalte als Warnungen hervorgehoben werden ist noch zu definieren.
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Struktur der Vorlesung
+
+-------------------------------------------------------------------------- -->
+## Struktur der Vorlesung
+
+Wichtige Inhalte werden anhand von "Projekten" erklärt. Die bei der Produktentwicklung typischen Phasen werden in den Projekten mehrfach durchlaufen. Der Schwierigkeitsgrad nimmt dabei von Projekt zu Projekt zu. Die jeweils neu hinzutretenden Inhalte werden in der Vorlesung vorgestellt und mit praktischen Übungen erlebbar gemacht. 
+
+
+@fig-label-struktur zeigt den Aufbau und ausgewählte Inhalte der Vorlesung.
+
+```{mermaid}
+%%| fig-width: 6.4
+%%| label: fig-label-struktur
+%%| fig-cap: "Aufbau und ausgewählte Inhalte der Vorlesung"
+graph TD;
+    Start[Einleitung] 
+    --> Lab1[Projekt 1]
+    --> Lab2[Projekt 2]
+    --> Lab3[Projekt 3]
+    --> Ende[Prüfung]
+
+    A[Projekt Papierflieger];
+    A --> B[Lastenheft];
+    B --> C;
+    C --> E;    
+
+    F[Projekt Magnetpendel];
+    F -->G;
+    G --> H;
+    H --> I;
+    I --> J;
+    
+    L[Projekt Earthlander];
+    L --> M;
+    M --> N;
+    N --> O;
+    O --> P[Landing];
+    P -->|Success| Q;
+```
+
+
+

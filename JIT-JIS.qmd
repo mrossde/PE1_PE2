@@ -1,0 +1,112 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       JIT-JIS
+
+-------------------------------------------------------------------------- -->
+
+### JIT-JIS {#sec-jitjis}
+
+::: {.callout-tip}
+## Definition: *"JIT und JIS"*
+In der Produktionsplanung steht JIT für "Just-in-Time" (auf Deutsch: "Zum richtigen Zeitpunkt") und "JIS" für "Just-in-Sequence" (auf Deutsch: "Zum richtigen Zeitpunkt in der richtigen Reihenfolge") (siehe →  @tbl-jitjis).
+:::
+
++----------------------------------+----------------------------------+
+| JIT – Just-in-time               | JIS – Just-in-sequence           | 
++==================================+==================================+
+| 1. Das richtige Produkt          | 1. Das richtige Produkt          | 
++----------------------------------+----------------------------------+
+| 2. Zur richtigen Zeit            | 2. Zur richtigen Zeit            |
++----------------------------------+----------------------------------+
+| 3. Am richtigen Ort              | 3. Am richtigen Ort              |
++----------------------------------+----------------------------------+
+| 4. In der richtigen Menge        | 4. In der richtigen Menge        |
++----------------------------------+----------------------------------+
+|                                  | 5. In der richtigen Reihenfolge  |
++----------------------------------+----------------------------------+
+
+: JIT (Just-in-time) vs. JIS (Just-in-sequence) {#tbl-jitjis .striped .hover .bordered tbl-colwidths="[50,50]"}
+
+#### JIT (Just-in-Time)
+Bei JIT handelt sich um eine Logistik- und Produktionsmethode, die darauf abzielt, Materialien, Komponenten und Ressourcen genau dann zur Verfügung zu stellen, wenn sie für den Produktionsprozess benötigt werden, und zwar in der genauen Menge, die benötigt wird. Das Ziel von JIT in der Produktionsplanung ist es, Verschwendung (*"Muda"*) und die Lagerbestände zu reduzieren.
+
+Die JIT-Methode wurde bekannt durch das Toyota-Produktionssystem. Heute wird JIT in vielen verschiedenen Branchen angewendet, um Produktionsprozesse schlanker, effizienter und flexibler zu gestalten.
+
+Die JIT-Methode basiert auf der Idee, dass übermäßige Lagerbestände von Rohmaterialien, Zwischenprodukten oder Fertigprodukten Verschwendung von Ressourcen darstellen. Diese Bestände binden Kapital, benötigen Lagerplatz und können zu veralteten Produkten führen, wenn sich die Nachfrage ändert.
+
+Durch die Implementierung von JIT werden Materialien und Komponenten erst dann bestellt oder hergestellt, wenn eine tatsächliche Nachfrage besteht. Dies erfordert eine enge Abstimmung zwischen den verschiedenen Schritten des Produktionsprozesses sowie eine effiziente Kommunikation mit Lieferanten und Herstellern. JIT erfordert auch eine sorgfältige Planung und Überwachung, um sicherzustellen, dass die Materialien rechtzeitig eintreffen, um Produktionsausfälle zu vermeiden.
+
+
+#### JIS (Just-in-Sequence)
+Bei JIS handelt es sich um eine Logistik- und Produktionsmethode, die eng mit dem Just-in-Time (JIT)-Prinzip verbunden ist. Das Ziel von JIS ist es, die Materialversorgung und Produktion so zu gestalten, dass die benötigten Teile genau im richtigen Moment **und in der richtigen Reihenfolge** an der Produktionslinie bereitgestellt werden.
+
+Im JIS-System werden die Materialien oft direkt an den Fertigungslinien bereitgestellt, oft in der exakten Reihenfolge, in der sie in den Produktionsprozess eingehen werden. Dies hilft, Lagerbestände zu reduzieren, Produktionsengpässe zu minimieren und die Effizienz der Produktion weiter zu steigern und Fehler zu reduzieren. Es ermöglicht auch eine schnellere Reaktion auf sich ändernde Produktionsanforderungen und Kundenbestellungen.
+
+JIS wird häufig in Branchen eingesetzt, in denen die Produktion von komplexen Produkten eine hohe Anzahl von verschiedenen Teilen erfordert, die in einer präzisen Abfolge montiert werden müssen, wie beispielsweise in der Automobilindustrie oder der Luft- und Raumfahrt. JIS erfordert eine sehr enge Zusammenarbeit zwischen den Lieferanten, um sicherzustellen, dass die richtigen Teile zur richtigen Zeit in der richtigen Menge geliefert werden, um die Großserienfertigung am Laufen zu halten.
+
+::: {.callout-warning}
+## JIT- und JIS-Produktion ist extrem sensibel gegenüber Störungen in der Logistikkette
+Bei JIT- oder JIS-Produktion ist die Logistikkette sehr sensibel und auf eine reibungslose Abfolge von Aktivitäten angewiesen, um effizient zu funktionieren.
+:::
+
+Um die Auswirkungen einzelner Störungen in der Logistikkette zu minimieren und den Produktionsfluss aufrechtzuerhalten, werden in den Unternehmen eine Vielzahl von Maßnahmen ergriffen. Eine dieser Maßnahmen besteht darin, alternative Lieferquellen aufzubauen. Dies führt zu Anforderungen an die Entwicklung von Produkten dahingehend, dass Werkstoffe, Vorprodukte, Werkzeuge, Zulieferteile, … (zumindest theoretisch) von mindestens zwei Lieferanten bezogen können werden müssen. 
+
+::: {.callout-caution}
+Diese Anforderung führt oftmals zur einem sehr kontrovers geführten Meinungsbildungsprozess und manchmal sogar zur Begrenzung der Verwendung von *"Leading-Edge Technologien"* bei der Produktentwicklung. Die Wahl der Logistik- und Produktionsmethode hat daher direkt Auswirkungen auf die Produktentwicklung. 
+:::
+
+::: {.callout-tip}
+## Definition: *"Leading-Edge"*
+Als *"Leading-Edge"* werden technologische Produkte bezeichnet, deren Eigenschaften oder Funktionen so einzigartig sind, dass es für Wettbewerber nur geringe Chancen gibt, den bestehenden Technologievorsprung in absehbarer Zeit aufzuholen.
+:::
+
+<!--
++ **Engere Lieferantenbeziehungen****: Enge Zusammenarbeit und Kommunikation mit Lieferanten sind entscheidend. Gemeinsame Ziele und Informationen über Produktionspläne ermöglichen es den Lieferanten, ihre Produktion besser auf die Bedürfnisse des Herstellers abzustimmen und flexibler auf Veränderungen zu reagieren.
+
++ **Pufferbestände****: Obwohl JIT das Ziel hat, Lagerbestände zu minimieren, können in einigen Fällen Pufferbestände eingeführt werden, um kurzfristige Engpässe abzufedern. Diese Pufferbestände sollten jedoch so klein wie möglich gehalten werden, um Verschwendung zu vermeiden.
+
++ **Alternative Lieferquellen****: Die Identifizierung von alternativen Lieferanten kann helfen, das Risiko zu mindern, falls ein Hauptlieferant ausfällt. Dies erfordert jedoch sorgfältige Qualitäts- und Prozessüberwachung, um sicherzustellen, dass die Produkte den gleichen Standards entsprechen.
+
++ **Risikomanagement**: Eine systematische Bewertung potenzieller Störungen und ihrer Auswirkungen auf die Produktion kann helfen, frühzeitig Gegenmaßnahmen zu ergreifen. Dies könnte das Erstellen von Notfallplänen für verschiedene Störungsszenarien beinhalten.
+
++ **Flexibilität in der Produktion****: Die Produktionsanlagen sollten so ausgelegt sein, dass sie schnell auf Änderungen reagieren können. Das bedeutet, dass Maschinen und Mitarbeiter vielseitig einsetzbar sein sollten, um Engpässe auszugleichen.
+
++ **Echtzeitüberwachung**: Fortlaufende Überwachung der Produktion und der Lieferkette kann helfen, Abweichungen frühzeitig zu erkennen. Dies ermöglicht eine schnellere Reaktion und Korrektur von Störungen.
+
++ **Kontinuierliche Verbesserung**: Eine Kultur der kontinuierlichen Verbesserung fördern, um Engpässe und Störungen zu analysieren, zu verstehen und langfristige Lösungen zu entwickeln.
+
++ **Lieferantenqualitätsmanagement**: Die Qualität der gelieferten Materialien und Komponenten muss auf einem hohen Niveau gehalten werden, um Fehler in der Produktion zu minimieren.
+
++ **Transparenz und Kommunikation**: Klare und offene Kommunikation zwischen den verschiedenen Akteuren in der Lieferkette, einschließlich Lieferanten, Herstellern und Distributoren, ist unerlässlich, um Störungen zu minimieren und schnell auf Veränderungen reagieren zu können.
+
+Diese Maßnahmen tragen dazu bei, die Widerstandsfähigkeit einer JIT-Produktion gegenüber Störungen zu erhöhen und die Auswirkungen einzelner Störungen zu minimieren, während gleichzeitig der schlanke und effiziente Produktionsprozess aufrechterhalten wird.
+
+
+Die Bedeutung von JIT reicht in der Intention der japanischen Automobilindustrie viel weiter, als nur bis zur Pünktlichkeit. Pünktlichkeit ist letztlich nur ein Symptom bzw. das Ergebnis der Arbeit. Lean zielt generell immer darauf ab, Ursachen zu optimieren. Waren zum richtigen Zeitpunkt am richtigen Ort zur Verfügung zu stellen bedeutet, dass der Materialfluss störungsfrei arbeiten muss – und zwar über alle Produktions- und Lieferstufen. Das eigentliche Kernthema besteht folglich darin, Flexibilität in allen Ebenen ohne Mehrkosten aufzubauen und gleichzeitig vielfältige Störungen und störende Effekte abzustellen. 
+
+::: {.callout-important}
+Die ursächliche Bedeutung von Just-in-time ist das systematische Reduzieren der Störungen auf der Lieferkette, also eine störungsfreie Lieferkette (Undisturbed Supply Chain UD-SC).
+:::
+-->
+
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
+
++ @dickmann_schlanker_2015: [Elemente moderner, schlanker Produktionssysteme](https://rdcu.be/dI72u)
+
+:::
+
+<!--
+#### Literaturempfehlung
+
+![@dickmann_schlanker_2015: [Schlanker Materialfluss](https://link.springer.com/book/10.1007/978-3-662-44869-4)](images/Dickmann_Schlanker_Materialfluss_978-3-662-44869-4.webp){width=40%}
+-->

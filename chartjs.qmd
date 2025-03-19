@@ -1,0 +1,282 @@
+---
+title: "Vorlesungen und Skripte"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Chart.js 
+keywords:
+  - Chart.js
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: true
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Einbindung von Chart.js
+
+-------------------------------------------------------------------------- -->
+
+# Chart.js
+
+## Tortendiagramm
+
+
+
+:::{#fig-tortendiagramm}
+  <canvas id="myPieChart" width="600px" height="260px" style="display: block; margin: auto;"></canvas>
+Ein einfaches Tortendiagramm <!-- Bildunterschrift -->
+:::
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const ctx = document.getElementById('myPieChart').getContext('2d');
+  const myPieChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: ['Erfolgreich', 'Zu Spät', 'Abgebrochen'],
+      datasets: [{
+        label: 'Tortendiagramm',
+        data: [1, 5, 2],
+        backgroundColor: [
+        'rgb(189, 252, 201)',
+        'rgb(80, 110, 120)',
+        'rgb(136, 120, 104)'
+        ],
+      }]
+    },
+    options: {
+      responsive: false,
+      plugins: {
+        legend: {
+          position: 'bottom'
+        }
+      }
+    }
+  });
+</script>
+
+@fig-tortendiagramm zeigt ein einfaches Tortendiagramm.
+
+
+
+
+## Spinnendiagramm
+
+
+:::{#fig-spinnengrafik}
+<canvas id="radarChart" width="520px" height="260px" style="display: block; margin: auto;"></canvas>
+Ein einfaches Spinnendiagramm
+:::
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var ctx = document.getElementById("radarChart").getContext("2d");
+    var radarChart = new Chart(ctx, {
+      type: "radar",
+      data: {
+        labels: ["Geschwindigkeit", "Stärke", "Ausdauer", "Flexibilität", "Koordination", "Dimension"],
+        datasets: [
+          {
+          label: "Ist", 
+          data: [80, 70, 90, 60, 85, 23],
+          backgroundColor: "rgba(80, 110, 120, 0.2)",
+          borderColor: "rgba(80, 110, 120, 1)",
+          borderWidth: 2
+          },
+          {
+          label: "Soll", 
+          data: [80, 70, 60, 60, 41, 23],
+          backgroundColor: "rgba(189, 252, 201, 0.2)",
+          borderColor: "rgba(189, 252, 201, 1)",
+          borderWidth: 2
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          r: {
+            suggestedMin: 0,
+            suggestedMax: 100
+          }
+        }
+      }
+    });
+  });
+</script>
+
+
+## Liniendiagramm
+
+
+:::{#fig-liniengrafik}
+<canvas id="lineChart" width="520px" height="260px" style="display: block; margin: auto;"></canvas>
+Ein einfaches Liniendiagramm mit zwei Datensätzen
+:::
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var ctx = document.getElementById("lineChart").getContext("2d");
+    var lineChart = new Chart(ctx, {
+      type: "line",
+      data: {
+        labels: ["Januar", "Februar", "März", "April", "Mai", "Juni"],
+        datasets: [
+          {
+            label: "Umsatz 2024", 
+            data: [100, 200, 150, 250, 300, 280],
+            backgroundColor: "rgba(189, 252, 201, 0.2)",
+            borderColor: "rgba(189, 252, 201, 1)",
+            borderWidth: 2,
+            fill: true,
+            tension: 0.0
+          },
+          {
+            label: "Umsatz 2023", 
+            data: [90, 180, 80, 220, 270, 260],
+            backgroundColor: "rgba(80, 110, 120, 0.2)",
+            borderColor: "rgba(80, 110, 120, 1)",
+            borderWidth: 2,
+            fill: true,
+            tension: 0.0
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  });
+</script>
+
+
+## Balkendiagramm
+
+:::{#fig-balkengrafik}
+<canvas id="barChart" width="520px" height="260px" style="display: block; margin: auto;"></canvas>
+Ein einfaches Balkendiagramm mit zwei Datensätzen
+:::
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var ctx = document.getElementById("barChart").getContext("2d");
+    var barChart = new Chart(ctx, {
+      type: "bar",
+      data: {
+        labels: ["Januar", "Februar", "März", "April", "Mai", "Juni"],
+        datasets: [
+          {
+            label: "Umsatz 2024", 
+            data: [100, 200, 150, 250, 300, 280],
+            backgroundColor: "rgba(189, 252, 201, 0.5)",
+            borderColor: "rgba(189, 252, 201, 1)",
+            borderWidth: 1
+          },
+          {
+            label: "Umsatz 2023", 
+            data: [90, 180, 130, 220, 270, 260],
+            backgroundColor: "rgba(80, 110, 120, 0.5)",
+            borderColor: "rgba(80, 110, 120, 1)",
+            borderWidth: 1
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  });
+</script>
+
+# RGB-Codes
+
+## Pastellfarben
+
++ Pastellblau rgb(173, 216, 230)
++ Pastellgrün rgb(152, 251, 152)
++ Pastellrosa rgb(255, 182, 193)
++ Pastellgelb rgb(250, 250, 210)
++ Pastelllila rgb(216, 191, 216)
++ Pastellorange rgb(255, 218, 185)
++ Pastellmint rgb(189, 252, 201)
++ Pastellrot rgb(255, 160, 122)
++ Pastelltürkis rgb(175, 238, 238)
++ Pastellflieder rgb(221, 160, 221)
+
+## Technik
+
+Neonblau rgb(0, 183, 255)
+Cybergrün rgb(57, 255, 20)
+Technisches Grau rgb(110, 110, 110)
+Stahlblau rgb(70, 130, 180)
+Dunkles Graphit rgb(45, 45, 45)
+Laserrot rgb(255, 0, 0)
+Neongelb rgb(255, 255, 102)
+Dunkelgrün rgb(0, 100, 0)
+Industrielila rgb(138, 43, 226)
+Blaugrau rgb(119, 136, 153)
+
+## Neutral
+
++ Dunkelgrau rgb(64, 64, 64)
++ Mittelgrau rgb(128, 128, 128)
++ Hellgrau rgb(192, 192, 192)
++ Blaugrau rgb(96, 108, 124)
++ Braungrau rgb(136, 120, 104)
++ Olivgrau rgb(110, 120, 90)
++ Petrolgrau rgb(80, 110, 120)
++ Dunkelblau rgb(50, 75, 100)
++ Schiefergrau rgb(90, 100, 110)
++ Aschgrau rgb(150, 140, 130)
+
+## Misc
+
++ rgb(25, 99, 132)
++ rgb(75, 192, 192)
++ rgb(255, 205, 86)
+
+## HS Esslingen
+
++ HE-Dunkelblau rgb(0,45,88)
++ HE-Rot-Neu rgb(215,15,60)
++ HE-Hellblau rgb(0,170,220)
++ HE-Hintergrundgrau rgb(240,240,240)

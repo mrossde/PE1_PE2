@@ -1,0 +1,227 @@
+---
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Murphy's law
+  - Kidlin's law
+  - Gilbert's law
+  - Falkland's law
+  - Parkinson's law
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+---
+
+
+<!--
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+--->
+
+<!-- -------------------------------------------------------------------------
+
+                       Murphy, Kidlin, Gilbert, Falkland
+
+-------------------------------------------------------------------------- -->
+
+### Famous Laws: Murphy, Kidlin, Gilbert, Falkland {#sec-famouslaws}
+
+#### Murphy's law 
+
+---
+
+>*"Anything that can go wrong will go wrong."*
+
+>*"Failing to prepare is preparing to fail."*
+
+---
+
+Murphy's law hat aufgrund seines unmittelbaren Bezugs zu unseren Arbeiten im Alltag auch außerhalb der Produktentwicklung weite Verbreitung gefunden und ist heute nicht nur ein fester Bestandteil der populären Wissenschaften sondern auch der Popkultur. Entsprechend gibt es eine Vielzahl von Variationen von Murphy's law, wie beispielsweise:
+
+>*"The more you fear something happening, the more likely it is to occur."*
+
+>*"No matter what you do, you will invariably make the incorrect choice at some point.*"
+
+![[Edward Aloysius Murphy Jr.](https://de.wikipedia.org/wiki/Edward_A._Murphy) (* 11. Januar 1918 in der Panamakanalzone; † 17. Juli 1990 in Los Angeles)](images/EdwardAloysiusMurphyJr.jpg){width=25% #fig-edwardmurphy}
+
+[Murphys Gesetz](https://de.wikipedia.org/wiki/Murphys_Gesetz) geht auf den US-amerikanischen Air-Force-Ingenieur [Edward Aloysius Murphy Jr.](https://de.wikipedia.org/wiki/Edward_A._Murphy) zurück, der es nach einem fehlgeschlagenen Experiment im Jahr 1949 formulierte. Die ursprüngliche Formulierung lautete: *"Wenn es mehrere Möglichkeiten gibt, eine Aufgabe zu erledigen, und eine davon in einer Katastrophe endet oder sonstwie unerwünschte Konsequenzen nach sich zieht, dann wird es jemand genau so machen"*. 
+
+Die für uns gute Nachricht ist, dass das Ergebnis von Murphy's Gesetzt nicht notwendigerweise negativ sein muss, im Gegenteil: Fehlgeschlagene Experimente sowie unerwünschte und unerwartete Katastrophen leisten bei richtigem Umgang mit den Ergebnissen (siehe → *"Successful miss"*) oftmals überaus wichtige Beiträge zur Verbesserung von Produkten und sind in vielen Fällen auch Startpunkte für völlig neue Lösungsansätze.
+
+
+#### Exkurs: Successful miss
+
+Der Begriff "Successful miss" ist im deutschsprachigen Raum nicht weit verbreitet und im Bereich der Produktentwicklung in der betrieblichen Praxis oftmals sogar unbekannt. Der Begriff hat seinen Ursprung in der Luft- und Raumfahrt. 
+
+<!-- -------------------------------------------------------------------------
+
+                       Successful miss
+
+-------------------------------------------------------------------------- -->
+<!-- Callout: Successful miss -->
+::: {.callout-tip appearance="simple"}
+## Successful miss
+"Successful miss" beschreibt einen unerwünschten Ausgang eines Experiments, bei dem jedoch erhebliches, für die zukünftige Arbeit wichtige Erkenntnisse und Wissen gewonnen werden konnte die dazu beitragen, zukünftige Erfolge zu sichern.
+:::
+
+Ein "Successful miss" trägt bei richtigem Umgang damit dazu bei, bis dato unbekannte Fehler zu erkennen und zu verstehen, die zu dem Misserfolg geführt haben, und darauf aufbauend Maßnahmen zu ergreifen, um ähnliche Fehler in der Zukunft zu vermeiden.
+
+---
+
+>*"Der Erfolg des Versuchs bemisst sich daran, wie viel wir lernen." (Elon Musk vor dem 2. Orbitaltestflug von Starship)*
+
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Aufgabe Starship (2. Orbitaltestflug 18.11.2023)
+
+-------------------------------------------------------------------------- -->
+
+
+<!-- Callout: Embrace the errors! -->
+::: {.callout-caution}
+## Tipp: *"Embrace the errors!"*
+Im Produktentstehungsprozess versuchen wir stets, Fehler im Produkt zu vermeiden und nutzen dazu all unser zur Verfügung stehendes Wissen und alle uns zur Verfügung stehenden Werkzeuge und Hilfsmittel sowie einen ausgereiften, systematischen Produktentstehungsprozess. 
+
+Bei allen Produkten, bei denen wir über das Altbekannte hinaus gehen, lassen sich Fehler jedoch nicht ausschließen.
+Je früher im Produktentstehungsprozess Fehler auftreten, umso einfacher sind deren Ursachen zu erkennen und das Produkt kann besser gestaltet werden. Das Testing nimmt hierbei eine entscheidende Rolle im Produktentstehungsprozess ein. **Der *"Worst Case"* sind Fehler, die im Produktentstehungsprozess NICHT auftreten, aber dennoch, tief versteckt, im Produkt vorhanden sind.**
+
+So frustrierend es sein kann, wenn immer wieder etwas schief geht und Tests scheitern, begrüßen sie jeden Fehler als Quelle der Erkenntnis und versuchen sie, eine positive Grundhaltung gegenüber Fehlern zu entwickeln! **Entscheidend ist der Schritt nach dem Auftreten von Fehlern: Die Ursachen der Fehler systematisch erarbeiten und abstellen um das Produkt nachhaltig einen Schritt weiter zu bringen!**
+:::
+
+---
+
+>*"Probleme sind Schätze!" (Toyota-Produktions-System)*
+
+---
+
+#### Kidlin's law
+
+---
+
+>*"If you can write the problem down clearly, then the issue is half solved."*
+
+---
+
+Die Wurzeln von Kidlins Gesetz liegen im Dunkeln. 
+
+Der wichtige Punkt in Kidlin's law ist das Wort *“clearly”*. Wenn ein Problem vollständig verstanden ist liegt ein großer Teil der zu leistenenden Arbeit bereits hinter uns und es ist möglich, eine exzellente Lösung zu erarbeiten.
+
+![Vorgehen zur Problemlösung in Anlehnung an Kidlin’s law](images/Kidlins_Law.drawio.svg){width=35% #fig-kidlins}
+
+1. **Beschreiben des Problems:** 
+Der erste und zumeist schon wichtigste Schritt besteht darin, das Problem klar und prägnant aufzuschreiben. Vermeiden Sie dabei vage oder allgemeine Aussagen wie "Ich bin unglücklich" oder "Ich brauche mehr Geld". Seien Sie stattdessen spezifisch und so konkret wie möglich, zum Beispiel: "Ich bin unglücklich mit meinem aktuellen Job, weil er nicht meinen Fähigkeiten und Interessen entspricht" oder "Ich brauche mehr Geld, um meine Schulden abzuzahlen und für den Ruhestand zu sparen." Das Aufschreiben des Problems bietet eine Hilfestellung, das Denken zu klären, die Aufmerksamkeit zu fokussieren, die Informationen zu organisieren und die Gedanken ggf. an bei der Lösungsfindung und deren Umsetzung Mitwirkende zu kommunizieren."
+
+2. **Analyse und Zerlegen des Problems:** 
+Als nächstes gilt es, das Problem in kleinere und einfachere Teile zu zerlegen. Stellen Sie sich selbst Fragen wie: "Was sind die Ursachen des Problems? Welche Auswirkungen hat es? Welche Beschränkungen oder Grenzen gibt es? Welche Annahmen oder Überzeugungen stehen hinter dem Problem? Und welche Ziele oder gewünschten Ergebnisse sollen durch die Lösung des Problems erreicht werden?". **Tipp**: In diesem zweiten Schritt können Sie auch auf Methoden des Qualitätsmanagements zurückgreifen, wie z.B. der [5-Why-Methode](https://de.wikipedia.org/wiki/5-Why-Methode) oder dem Ishikawa-Diagramm, vorausgesetzt, Ihnen sind diese Methoden gut bekannt und deren Anwendung ist Ihnen bereits vertraut. 
+
+<!-- Callout: Fehlersuche -->
+::: {.callout-caution}
+## Tipp: Bei der Fehlersuche immer Schritt für Schritt vorgehen!
+Wichtig ist ein **systematisches Vorgehen bei der Fehlersuche!** Bei der Fehlersuche wird dem geneigten Leser dringendst empfohlen, immer systematisch Schritt für Schritt vorzugehen und nach bestem Wissen **nie mehr als einen Parameter je Versuch** zu ändern. Die einzelnen Schritte sind **sorgfältig zu dokumentieren**, z.B. indem Datensätze gespeichert und für Untersuchungen vorgenommene Veränderung notiert und Versuchsaufbauten im Bild festgehalten werden. Oft erweisen sich diese Notizen später als Schlüssel zum Verständnis des Fehlerursache-Wirkungs-Mechanismus. Es wird dem geneigten Leser dringend geraten, auch im Eifer und dem brennenden Wunsch, der Fehlerursache endlich habhaft zu werden, nicht ungestüm und ohne Dokumentation vorzugehen! Also niemals: "Ich klick mal hier und klick mal da und ändere dort und dort und auch noch dort bisschen Sourcecode, mach mal noch g'schwind ein Firmwareupdate und ändere die IP-Adresse, und dann schauen wir mal!" **Systematisches Vorgehen mag super uncool und langweilig wirken (und vielleicht sogar uncool und langweilig sein), ist aber DER Schlüssel zum Erfolg!**
+:::
+
+3. **Erarbeiten von Lösungen**: Der dritte Schritt besteht darin, für jeden Teil des Problems mögliche Lösungen zu erarbeiten. Nutzen Sie hierzu Brainstorming oder andere für Sie gut funktionierende Kreativitätstechniken wie z.B. Ming-Mapping oder freies Schreiben. Beurteilen und bewerten Sie die Ideen in diesem Stadium nicht; notieren Sie stattdessen so viele wie mögliche Lösungsansätze. Versuchen Sie hierzu, das Problem aus verschiedenen Blickwinkeln zu betrachten; nehmen Sie verschiedene Perspektiven ein und versuchen Sie, maximal kreativ und aufgeschlossen zu sein!""
+
+4. **Überprüfen und Bewerten der Lösungen**: Als nächstes bewerten Sie Ihre Antworten und wählen die beste für jeden Teil des Problems aus. Berücksichtigen Sie dabei Machbarkeit, Effektivität, Effizienz, Kosten, Risiko und Auswirkungen. Sie können Tools wie Pro- und Kontra-Listen, [SWOT-Analysen](https://de.wikipedia.org/wiki/SWOT-Analyse)^[SWOT-Analyse (engl. Akronym für Strengths (Stärken), Weaknesses (Schwächen), Opportunities (Chancen) und Threats (Risiken))] und Bewertungsmatrizen um die bestmöglichen Lösungen zu finden.
+
+
+5. **Umsetzen der Lösungen**: Der fünfte und letzte Schritt besteht darin, Ihre ausgewählten Lösungen umzusetzen und die erzielten Ergebnisse zu überwachen. Erstellen Sie hierzu einen Aktionsplan, der festlegt, was Sie tun werden, wann Sie es tun werden, wie Sie es tun werden und, sofern Sie das Problem nicht alleine lösen können, wer daran beteiligt sein wird. Legen Sie für jeden Schritt mit Terminen verknüpfte Meilensteine fest. Verfolgen Sie Ihren Fortschritt und messen Sie Ihre Ergebnisse (siehe Rolle → Reporting und Controlling im Produktentwicklungsprozess). Passen Sie bei Bedarf Ihre identifizierten Lösungen an, wenn neue Erkenntnisse und ggf. Hemmnisse zu Tage treten.
+
+
+
+#### Gilbert's law of work specialization
+
+---
+
+>"The biggest problem at work is that no one tells you what to do."
+
+--- 
+
+<!--Gilbert's law of work specialization wurde von [Peter F. Drucker formuliert](https://de.wikipedia.org/wiki/Peter_Drucker). 
+-->
+
+Ihr Dozent möchte Ihnen hiermit eine alternative Formulierung als Empfehlung für Ihr späteres Handeln im Berufsleben anbieten:
+
+::: {.callout-caution}
+## Tipp: 
+*"When you’re hired to do a job it’s your responsibility to find the best ways to provide the desired results."*
+:::
+
+#### Falkland's law
+
+---
+
+>*"When there is no need to make a decision, don't make a decision."*
+
+--- 
+
+Auch bekannt als 
+
+>*"Let's cross the bridge when we come to it."*
+
+Dieses Sprichwort drückt eine Einstellung aus, bei der man sich nicht vorzeitig über zukünftige Probleme oder Herausforderungen Sorgen macht. Stattdessen betont es die Idee, sich auf die gegenwärtigen Aufgaben und Probleme zu konzentrieren und erst dann über die Bewältigung von zukünftigen Schwierigkeiten nachzudenken, wenn sie tatsächlich auftreten.
+
+Die Botschaft hinter diesem Sprichwort ist oft die Betonung von Pragmatismus und Flexibilität. Es ermutigt dazu, nicht zu viel Energie in die Vorwegnahme von möglichen Problemen oder Hindernissen zu investieren, die möglicherweise nie eintreten werden. Stattdessen sollten Sie sich auf die aktuelle Aufgabe oder Situation konzentrieren und sich darauf vorbereiten, mit Herausforderungen umzugehen, wenn sie tatsächlich auftreten.
+
+>*"Sorgen machen ist wie schaukeln. Man ist beschäftigt, kommt aber nicht voran." (Quelle: Unbekannt)*
+
+Falkland's law kann in bestimmten Situationen angemessen sein kann, während in anderen Fällen eine gewisse Voraussicht und Planung unbedingt erforderlich ist. Falklands' law darf daher nicht als Aufforderung zur Vernachlässigung von Problemen oder zur Vermeidung von langfristiger Planung missverstanden werden, sondern eher als freundliche Erinnerung, dass es Zeiten gibt, in denen es am besten sein kann, die Dinge unaufgeregt auf eine praktische und schrittweise Weise anzugehen.
+
+Die Unterscheidung zwischen Problemen, die in der Zukunft schwerwiegender werden könnten und solchen, die möglicherweise gar nicht auftreten werden, erfordert immer eine sorgfältige Analyse und Beurteilung sowie viel Erfahrung^[Erfahrene Führungspersönlichkeiten haben nach der Beobachtung Ihres Dozenten oftmals ein hohes Geschick darin, früh und sehr sicher abschätzen zu können, welche Probleme sofortige Maßnahmen erfordern um nicht in der Zukunft in Katastrophen zu enden. Für alle anderen hat sich - z.B. im Hochschulbetrieb - schon oft der *"Deadline-Mode"* als letzter Ausweg bewährt (z.B. kurz vor Prüfungen und Klausuren, wenn das gewünschte Wissen doch nicht auf die erhoffte wundersame Weise über Nacht im Schlaf gelernt werden konnte, und das trotz sorgfältigem Deponieren des Skripts unterm Kopfkissen). Der *Deadline-Mode* ist jedoch oftmals unzuverlässig und darüber hinaus meist kein erfreulicher, tendenziell ungesunder Zustand und sollte daher nicht zur regelmäßigen JiT-Fertigstellung von Aufgaben oder zur Vorbereitung bei Prüfungen angestrebt werden.].
+
+
+#### Bonus: Parkinsons Gesetz
+
+---
+
+>*„Arbeit dehnt sich in genau dem Maße aus, wie Zeit für ihre Erledigung zur Verfügung steht.“*
+
+---
+
+Dieses vom britischen Historiker [Cyril Northcote Parkinson](https://de.wikipedia.org/wiki/Cyril_Northcote_Parkinson) (* 30. Juli 1909 in Barnard Castle im County Durham; † 9. März 1993 in Canterbury) erstmals 1955 formulierte Gesetz scheint von universeller Aussagekraft. Es gilt sowohl für Unternehmen, Behörden und allzu oft auch im Privatleben. 
+
+In seiner Invertierung ist Parkinsons Gesetz auch bekannt unter dem Zitat:
+
+---
+
+>*"Deadline-Mode saved me!"*
+
+---
+
+Eine Aufgabe, die im Normalfall zehn Minuten in Anspruch genommen hätte, wird auf einmal mit solch einer Akribie und unter so vielen Abwägungen erledigt, dass sie drei Stunden dauert – nur weil kein Zeitdruck mehr herrscht. In Besprechungen werden nicht mehr nur die wichtigsten Themen diskutiert, sondern jene, die von allen Anwesenden am besten verstanden werden, selbst wenn kein Entscheidungsbedarf besteht. Die Beispiele ließen sich endlos fortsetzen. Diese Aufgabe sei - bei genügend zur Verfügung stehender Zeit - dem geneigten Leser überlassen.

@@ -1,0 +1,1751 @@
+---
+title: "DEB5 Produktentwicklung 2"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 2"* für den Studiengang Digital Engineering DEB5
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Anforderungsentwicklung
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 1
+link-external-icon: true
+link-external-newwindow: true
+---
+
+
+<!-- -------------------------------------------------------------------------
+
+                       AIDA-Modell
+
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Ideenfindung und Konzeptentwicklung
+:::
+
+## Anforderungsentwicklung {#sec-anforderungsentwicklung}
+
+<!--
+::: {.callout-tip}
+## Definition: *"AIDA-Modell"*
+[AIDA](https://de.wikipedia.org/wiki/AIDA-Modell) ist ein [Akronym](https://de.wikipedia.org/wiki/Akronym) für ein aufeinander aufbauendes Stufenmodell zur Werbewirksamkeit. Die Anfangsbuchstaben stehen für die englischen Begriffe **Attention**, **Interest**, **Desire** und **Action**.
+:::
+
+1. **Attention**: Die Aufmerksamkeit des Empfängers wird geweckt, etwa durch Plakate mit *"Eye Catchern"* oder personalisierter Ansprache.
+
+2. **Interest**: Beim Empfänger der Werbung wird Interesse für eine Idee/das beworbene Produkt/die beworbene Dienstleistung geweckt. 
+
+3. **Desire**: Beim Empfänger wird der Wunsch nach der Idee/dem Produkt/der Dienstleistung geweckt. Potentielle Einwände werden abgebaut und der Mehrwert der Idee/des Produkts/der Dienstleistung wird hervorgehoben.
+
+4. **Action**: Der Empfänger wird zum weiteren Kennenlernen der Idee/dem Kauf des Produkts/dem Kauf der Dienstleistung bewogen (*"Call-to-Action"*). *"Call-to-Action"* kann auch die Bitte zur Fortsetzung des Gesprächs sein, z.B. im Rahmen einer weiteren, längeren Besprechung, ggf. auch in einem größeren Personenkreis.
+
+::: {.callout-caution}
+## Pro-Tipp!
+Das AIDA-Modell ist hervorragend geeignet, um eine [Elevator Speech](https://de.wikipedia.org/wiki/Elevator_Pitch) im Rahmen der Phase Ideenfindung und Konzeptentwicklung des Produktentstehungsprozesses effektiv zu gestalten.
+:::
+
+::: {.callout-tip}
+## Definition: *"Elevator-Speech/Elevator Pitch"*
+[Elevator Speech](https://de.wikipedia.org/wiki/Elevator_Pitch) (auch "Elevator Pitch" genannt) ist eine kurze, überzeugende erste Präsentation einer Idee, eines Produkts oder einer Dienstleistung (*"Eine Idee pitchen."*).
+:::
+
+Der Kerngedanke einer [Elevator Speech](https://de.wikipedia.org/wiki/Elevator_Pitch) basiert auf dem Szenario, eine wichtige Person oder eine wichtige Funktion (z.B. den Projektleitenden) in einem Aufzug (oder der Warteschlange in der Kantine) "zufällig" zu treffen und diese dann während der Dauer einer Aufzugsfahrt (rund 90 Sekunden) für eine Idee/ein Produkt/eine Dienstleistung zu begeistern. 
+
+::: {.callout-tip}
+## Ziel der Elevator-Speech
+Ziel der Elevator Speech ist es, die vorgestellte Idee/das vorgestellte Produkt/die vorgestellte Dienstleistung positiv besetzt im Gedächtnis der adressierten Person zu verankern.
+:::
+
+Ist die Idee/das Produkt/die Dienstleistung überzeugend genug vorgestellt worden, wird das Gespräch dann entweder direkt weitergeführt oder man verabredet sich zu einer weiterführenden Präsentation und Diskussion der vorgestellten Idee/des vorgestellten Produkts/der vorgestellten Dienstleistung. 
+
+::: {.callout-caution}
+## Pro-Tipp!
+Das AIDA-Modell eignet sich auch hervorragend als Leitfaden zur Gestaltung von Postern für Messen oder Informationsveranstaltung, z.B. bei der Präsentation der Ergebnisse eigener Praktika, mechatronischer Prospekte oder der eigenen Bachelorarbeit. **Lange Textbausteine auf Postern dienen keinem der vier Stufen des AIDA-Modells und sind zu vermeiden.**
+
+Wichtig ist **1.)** ein Bild (*"Eye Catcher"*), das die Aufmerksamkeit des Betrachters weckt, **2.)** eine kurze Beschreibung des Produkts/der Dienstleistung und **3.)** dessen/deren einzigartigen Vorteilen für den Adressaten^[Leitgedanke: *"Der Wurm muss dem Fisch schmecken, nicht dem Angler"* (Quelle: Unbekannt)] mittels weniger Schlagworte und optional zusätzlich einigen Grafiken oder Bildern sowie **4.)** die eigenen Kontaktdaten, z.B. in Form eines Data-Matrix-Codes mit Link auf eine Webseite oder eines einfach abzufotografierenden Datensatzes aus Ansprechpartner, E-Mail, Webadresse und ggf. Telefonnummer. 
+:::
+-->
+
+
+
++ Anforderungsentwicklung (Requirements Engineering) gliedert sich in verschieden Unterdisziplinen
+  - Anforderungs**erhebung** (engl.: Requirements elicitation) erfolgt als einer der ersten Schritte im Entwicklungsprozess
+  - Anforderungs**dokumentation** beschreibt die Dokumentation der erhobenen Anforderungen nach definierten Regeln
++ Die Anforderungs**verwaltung (-management)** beschreibt Aktivitäten, die den Entwicklungsprozess begleiten und sich z.B. mit Review-Tätigkeiten (prüfen & abstimmen) und Änderungen beschäftigt.
++ Präzisierung der Problem- und Aufgabenstellung am Beginn der Entwicklung
+
+
+::: {.callout-tip}
+## Definition: *"Anforderung"*
+Eine Anforderung ist:
+1. eine Bedingung oder Fähigkeit, die von einem Benutzer (Person oder System) zur Lösung eines Problems oder Erreichung eines Ziels benötigt wird.
+2. eine Bedingung oder Fähigkeit, die ein System oder Teilsystem erfüllen oder besitzen muss, um einen Vertrag, eine Norm, eine Spezifikation oder andere formell vorgegebene Dokumente zu erfüllen.
+3. eine dokumentierte Repräsentation einer Bedingung oder Eigenschaft gemäß o.g. Punkten
+:::
+(Quelle: Pohl; Rupp: B*asiswissen requirements engineering*, 4.Auflage, Heidelberg, Dpunkt.verlag, 2015)
+
+Ziel ist die Verbesserung von
+- Qualität
+- Nachvollziehbarkeit
+- Verwaltung
+- Zusammenarbeit
+
+Anforderungen und Ziele sind nur schwer zu trennen. Ziele definieren einen zu erreichenden Zustand, Anforderungen definieren eine zu erreichende Eigenschaft und sind in diesem Sinne konkreter als Ziele.
+Zielen liegen meist Anforderungen auf höherer Ebene (Vision, Strategie) zugrunde.
+
+<!--
+
+|<p>Definition System Anforderung</p><p></p>||
+
+|l|System requirements definition process nach ISO15288, 6.4.3:||
+| :- | :- | :- |
+||l|Zweck des Prozesses zur Definition der **System Anforderungen** ist es, die **Stakeholder-Sicht**|
+|||(nutzerorientiert) der **gewünschten Fähigkeiten** in eine **technische Sicht einer Lösung**, die die **operativen Bedürfnisse** (Funktionen) eines Nutzers erfüllt, zu überführen|
+||l|Ergebnis:|
+|||Satz **messbarer** System Anforderungen, die aus **Entwickler-Sicht** beschreiben, welche |
+
+
+
+
+
+
+
+
+
+**Charakteristik, Attribute und funktionale & Leistungs-Anforderungen** das System vorweisen soll, um die Stakeholder Anforderungen (Needs) zu erfüllen.
+
+||<p>l</p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>|<p>Die Anforderungen sollten **keine spezifische Implementierung** implizieren (**lösungsneutral**).</p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>|
+| :- | :- | :- |
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|6|
+| :- | :- | :- |
+
+
+|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.011.png "Image18")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.012.png "Image19")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.012.png "Image20")GRUNDLAGEN|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image17")|
+| :- | :- |
+|<p>Abstraktion</p><p></p>||
+
+|l|Stakeholder-Bedürfnisse dienen als Grundlage zur **Problem**beschreibung||
+| :- | :- | :- |
+|l|Konkretisierung der Bedürfnisse in Anforderungen über die Systemebenen hinweg unterstützt bei Lösungsfindung|Problem|
+
+|Stakeholder-Bedürfnisse/Needs: Warum?|abstrakt||
+| :- | :-: | :- |
+|<p>z.B. Anforderungen an ein Produkt aus Sicht des Kunden (Kundenwünsche)</p><p></p>|||
+|<p>Systemanforderungen: Was?</p><p>z.B. Fähigkeiten oder Eigenschaften eines Systems</p><p></p>|||
+|Komponentenanforderungen: Wie? z.B. Software-/Elektronik-Anforderungen|||
+||<p>kon</p><p></p>|<p>kret</p><p></p>|
+
+Lösung
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|7|
+| :- | :- | :- |
+
+
+|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.013.png "Image22")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.014.png "Image24")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.015.png "Image25")GRUNDLAGEN|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image21")|
+| :- | :- |
+|Motivation||
+
+Erfolg/Misserfolg von IT-Projekten
+
+|l|Geschäftsrisiken Entwicklung:||19%||||
+| :- | :- | :- | -: | :- | :- | :- |
+||l|fehlende Transparenz|||29%||
+||l|Termin- und Kostenüberschreitung|||||
+||l|unzureichende Produktivität||52%|||
+||l|Nacharbeiten und Fehler|||||
+||l|Projekt- und Haftungsrisiken|erfolgreich|zu spät / über Budget|abgebrochen||
+||<p>l</p><p></p><p></p>|<p>Demotivation und Burn-Out</p><p></p><p></p>||<p>Standish Group: Chaos Report 2015</p><p></p><p></p><p></p>|||
+|l|<p>Kosten für Fehlerbeseitigung steigen über Projektlaufzeit exponentiell</p><p>à Investition in Analyse & Design</p>|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.016.png "Image23")|||||
+
+200
+
+
+|||1|5|10|20|<p>50</p><p></p>|||
+| :- | :- | :-: | :-: | :-: | :-: | :-: | :- | :- |
+|||Analyse|Design|Implementierung|Test|Abnahme|Wartung||
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen||||||8||
+
+|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.014.png "Image28")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.015.png "Image29")GRUNDLAGEN|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image26")|
+| :- | :- |
+|Motivation||
+
+Erfolg/Misserfolg von IT-Projekten
+
+|l|Geschäftsrisiken Entwicklung:||19%||||
+| :- | :- | :- | -: | :- | :- | :- |
+||l|fehlende Transparenz|||29%||
+||l|Termin- und Kostenüberschreitung|||||
+||l|unzureichende Produktivität||52%|||
+||l|Nacharbeiten und Fehler|||||
+||l|Projekt- und Haftungsrisiken|erfolgreich|zu spät / über Budget|abgebrochen||
+||<p>l</p><p></p><p></p>|<p>Demotivation und Burn-Out</p><p></p><p></p>||<p>Standish Group: Chaos Report 2015</p><p></p><p></p><p></p>|||
+|l|<p>Kosten für Fehlerbeseitigung steigen über Projektlaufzeit exponentiell</p><p>à Investition in Analyse & Design</p>|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.016.png "Image27")|||||
+
+200
+
+
+|||1|5|10|20|<p>50</p><p></p>|||
+| :- | :- | :-: | :-: | :-: | :-: | :-: | :- | :- |
+|||Analyse|Design|Implementierung|Test|Abnahme|Wartung||
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen||||||9||
+
+
+|GRUNDLAGEN|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image30")|
+| :- | -: |
+|<p>Gründe für Anforderungsmanagement</p><p></p>||
+
+|l|**Unklar** formulierte Anforderungen||
+| :- | :- | :- |
+||l|können (und werden i.d.R.) von jedem unterschiedlich interpretiert werden|
+|l|**Fehlende** Anforderungen||
+||l|Entwicklung ohne wirkliche Grundlage|
+|l|**Lückenhafte** Anforderungen durch implizites Wissen||
+||l|für Ersteller Selbstverständliches wird oft nicht aufgeschrieben|
+|l|**Kommunikationsprobleme** zwischen Beteiligten||
+||l|z.B. durch unterschiedlichen Erfahrungs- und Wissensstand|
+|l|Steigende **Erwartungshaltung** an Systeme||
+||<p>l</p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>|<p>Innovativer, individueller, umfangreicher und von höherer Qualität</p><p></p><p></p><p></p><p></p><p></p><p></p>|
+
+
+
+
+
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|10|
+| :- | :- | :- |
+
+|GRUNDLAGEN|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image31")|
+| :- | -: |
+|<p>Gründe für Anforderungsmanagement</p><p></p>||
+
+|<p>l</p><p></p>|Eine gute Anforderung beschreibt eine Funktion, Eigenschaft oder Attribut, das **gewollt** wird, **überprüfbar** und **erreichbar** ist||
+| :- | :- | :- |
+|l|Bedarf||
+||l|Was passiert, wenn die Anforderung nicht berücksichtigt wird?|
+||l|Welche anderen Anforderungen bedingen diese Anforderung?|
+||l|Welchen konkreten Grenznutzen liefert diese Anforderung?|
+||l|Im Zweifel ist diese Anforderung nicht so wichtig|
+|l|Überprüfbar||
+||l|Wie kann die Anforderung getestet werden?|
+||l|Was sind Abnahme-Kriterien (bestanden, nicht bestanden)?|
+|l|Erreichbar||
+||l|Anforderungen müssen technisch (und im Rahmen des Budgets) möglich sein|
+||<p>l</p><p></p><p></p><p></p><p></p>|<p>Sie dürfen nicht im Widerspruch zu anderen Anforderungen und Randbedingungen wie Budget oder Übergabetermin stehen</p><p></p><p></p><p></p>|
+
+
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|11|
+| :- | :- | :- |
+
+|GRUNDLAGEN|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image32")|
+| :- | -: |
+|<p>Qualitätsmerkmale für gute Anforderungen</p><p></p>||
+
+|l|**Korrektheit/Adäquatheit:** Anforderung entspricht Vorstellung des Stakeholders|
+| :- | :- |
+|l|**Eindeutigkeit:** vermeidet Fehler durch Fehlinterpretation (ggf. Definition in Glossar)|
+|l|**Verständlichkeit:** einheitliche Begriffe, kurze Sätze, für alle Stakeholder (intern & extern)|
+|l|**Vollständigkeit:** gewünschte Funktion muss gänzlich beschrieben sein|
+|<p>l</p><p></p>|**Konsistenz:** Anforderung muss in sich und gegenüber anderen Anforderungen widerspruchsfrei sein, sonst ist Spezifikation nicht realisierbar|
+|l|**Abgestimmtheit:** eine Anforderung wird von allen Stakeholdern akzeptiert|
+|l|**Bewertbarkeit:** Priorisierung nach rechtlicher Verbindlichkeit, Stabilität, Wichtigkeit, etc.|
+|l|**Verifizierbarkeit:** Anforderung muss durch Test oder Messung prüfbar sein|
+|l|**Realisierbarkeit:** Anforderung muss innerhalb der Rahmenbedingungen umsetzbar sein|
+|<p>l</p><p></p><p></p><p></p>|<p>**Aktualität:** Anforderungen müssen für gegenwärtige Gegebenheiten gültig sein</p><p></p><p></p>|
+
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|12|
+| :- | :- | :- |
+
+|GRUNDLAGEN|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image33")|
+| :- | -: |
+|<p>Qualitätsmerkmale Spezifikationsprozess</p><p></p>||
+
+|l|Aufgrund Umfang und Bedeutung der Anforderungserhebung und –Entwicklung||
+| :- | :- | :- |
+||(Spezifikation) sollte der zugehörige Prozess besondere Qualitätsmerkmale erfüllen:||
+|l|**Kundenorientiert**||
+||l|Zufriedenheit des Kunden wichtig für Erfolg|
+|l|**Methodisches** und **zielgerichtetes** Vorgehen||
+||l|Methodik ermöglicht z.B. Vollständigkeit, zielgerichtetes Vorgehen gibt Struktur|
+|l|Verwendung **geeigneter Mittel**||
+||l|Methoden und Tools an Ziel und Umfang des Projektes anpassen|
+|l|**Integration** von **Erstellung** und **Prüfung** von Anforderungen||
+||<p>l</p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>|<p>Definition der Test-Kriterien (verification criteria) bei Erstellung der Anforderungen</p><p></p><p></p><p></p><p></p><p></p><p></p>|
+
+
+
+
+
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|13|
+| :- | :- | :- |
+
+|ERMITTLUNG|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image34")|
+| :- | -: |
+|<p>Bedürfnisse / Needs</p><p></p>||
+
+|l|Zunächst werden Bedürfnisse (Needs) ermittelt||
+| :- | :- | :- |
+||l|Lastenheft-Charakter|
+||l|Grundlage für System Anforderungen|
+||l|i.d.R. unsauber formuliert, z.T. widersprüchlich.|
+||l|Basis für spätere Systemvalidierung|
+|l|Mögliche Quellen:||
+||l|Dokumente (z.B. Gesetze, Normen, Lastenhefte, etc.)|
+||l|Systeme in Betrieb (Vorgänger-, Konkurrenz-, Nachbarsysteme)|
+||l|Stakeholder (Personen oder Organisationen mit Einfluss auf Anforderungen)|
+|l|Mögliche Bereiche:||
+||l|National & International|
+||l|Auftraggeber & Auftragnehmer|
+||l|Projektspezifisch & unternehmensspezifisch|
+||<p>l</p><p></p><p></p><p></p><p></p>|<p>Entwicklungsumfeld</p><p></p><p></p><p></p><p></p>|
+
+
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|14|
+| :- | :- | :- |
+
+|ERMITTLUNG|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image35")|
+| :- | -: |
+|<p>Dokumente</p><p></p>||
+
+|l|Dokumente als Anforderungsquellen|||
+| :- | :- | :- | :- |
+||l|Enthalten relevante Informationen||
+||l|allgemeingültige Dokumente wie Normen, Standards, Gesetze haben großen Einfluss auf den ||
+|||Projektverlauf||
+||l|Dokumentenliste unterstützt bei der Sortierung und Kategorisierung||
+|||l|zentral abgelegt|
+|||l|vom berechtigten Personenkreis lesbar/editierbar|
+|l|Beispiele:|||
+||l|Normen & Standards, Gesetzestexte, Funktionale Sicherheit, Cyber Security,…||
+||l|Anforderungsdokumente, Lastenhefte,…||
+||l|branchen- und organisationsspezifische Dokumente||
+|||(z.B. Fehlerberichte, Schulungsunterlagen des Altsystems)||
+||<p>l</p><p></p><p></p><p></p><p></p><p></p><p></p>|<p>Spezifikationen, Dokumentationen von Geschäftsprozessen</p><p></p><p></p><p></p><p></p><p></p>||
+
+
+
+
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|15|
+| :- | :- | :- |
+
+|ERMITTLUNG|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image36")|
+| :- | -: |
+|<p>Systeme</p><p></p>||
+
+|l|Systeme als Anforderungsquellen|||
+| :- | :- | :- | :- |
+||l|Systeme (in Betrieb)||
+||l|Analyse eines Systems zum Verständnis||
+||l|Welche Funktionen und nicht-funktionalen Aspekte sind wichtig||
+||l|Schnittstellen zu anderen Systemen||
+||l|Unterstützende Systeme||
+||l|Systemliste unterstützt bei der Sortierung und Kategorisierung||
+|||l|wichtige Attribute vorgeben|
+|l|Beispiele:|||
+||l|Alt- oder Vorgängersysteme||
+||l Konkurrenzsysteme|||
+||<p>l</p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>|<p>Nachbarsysteme</p><p></p><p></p><p></p><p></p><p></p><p></p>||
+
+
+
+
+
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|16|
+| :- | :- | :- |
+
+
+|ERMITTLUNG||![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image37")||
+| :- | :- | :- | :- |
+|Stakeholder||||
+|l|Stakeholder sind alle Personen(-kreise), die ein Interesse am Produkt oder Projekt haben|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.017.jpeg "Image38")||
+||l|Kunde / Auftraggeber||
+||l|Entwickler||
+||l|Kollegen||
+||l|Betriebsrat||
+||l Management|||
+||l|…||
+|l|Stakeholder sind wichtige Quelle bei der Ermittlung von Anforderungen|||
+||l|Oft viel Wissen vorhanden||
+||l|Herausforderung: alle Bedürfnisse und Wünsche zusammentragen, dokumentieren, mit unterschiedlichen Stakeholdern abstimmen||
+||l|Welches Wissen liegt bei welchem Stakeholder? Risiko: „Wünsch Dir was“||
+||<p>l</p><p></p><p></p><p></p><p></p>|<p>Teils konkrete Lösungsvorstellung vorhanden (à Abstraktion Problem)</p><p></p><p></p><p></p><p></p>||
+
+|||https://www.sophist.de/fileadmin/user\_upload/Bilder\_zu\_Seiten/Publikationen/||
+| :- | :- | :- | :- |
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|RE6/Webinhalte\_Buchteil\_2/Webinhalt\_Checkliste\_Stakeholderklassen.pdf|17|
+
+
+|ERMITTLUNG|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image39")|
+| :- | -: |
+|<p>Stakeholder Dokumentation</p><p></p>||
+
+|l|Dokumentation in Stakeholder-Liste||||
+| :- | :- | :- | :- | :- |
+||l|Schreib- bzw. Leserechte für wesentliche Personen|||
+||l|Projektübergreifend möglich (Bewertung erfolgt i.d.R. projektspezifisch)|||
+||l|Identifikation|||
+|||l|Name||
+|||l|Rollenbeschreibung||
+|||l|Kontaktmöglichkeit||
+||l|Priorisierung|||
+|||l|Einfluss||
+|||l|Interesse||
+|||l|<p>Support-level </p><p>(Befürworter, Gegner, neutral)</p>|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.018.png "Image40")|
+||l|Management Strategie|||
+|||l|Entsprechend Kategorisierung||
+|||l|Kommunikation||
+|||<p>l</p><p></p><p></p><p></p><p></p>|<p>Einbindung</p><p></p><p></p><p></p>||
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|18|
+| :- | :- | :- |
+
+|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.019.png "Image42")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.020.png "Image44")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.021.png "Image45")ERMITTLUNG|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image41")|
+| :- | -: |
+|<p>Stakeholder Kategorisierung</p><p></p>||
+
+|l|Kategorisierung in Stakeholder-Analysematrix („Power Interest Grid“) ||
+| :- | :- | :- |
+||l|Bewertung Einfluss (auf Erfolg des Projekts/Produkts) und Interesse (Grad der Beteiligung am Projekt)|
+||l|Priorisierung der Stakeholder|
+||l|Indikation bei Bewertung & Entscheidung im Fall von Widersprüchen|
+||<p>l</p><p></p>|<p>Abschätzung Kommunikationsaufwand („Betreuung“)</p><p></p>|
+
+|<p>hoch</p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.022.png "Image43")|
+| :- | :-: |
+
+||niedrig|Interesse|hoch||
+| :- | :- | :- | :- | :- |
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|||19|
+
+|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.019.png "Image47")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.020.png "Image49")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.021.png "Image50")ERMITTLUNG|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image46")|
+| :- | -: |
+|<p>Stakeholder Kategorisierung</p><p></p>||
+
+|l|Kategorisierung in Stakeholder-Analysematrix („Power Interest Grid“) ||
+| :- | :- | :- |
+||l|Bewertung Einfluss (auf Erfolg des Projekts/Produkts) und Interesse (Grad der Beteiligung am Projekt)|
+||l|Priorisierung der Stakeholder|
+||l|Indikation bei Bewertung & Entscheidung im Fall von Widersprüchen|
+||<p>l</p><p></p>|<p>Abschätzung Kommunikationsaufwand („Betreuung“)</p><p></p>|
+
+|hoch||![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.022.png "Image48")||
+| :- | :- | :- | :- |
+||<p>zufrieden halten</p><p></p>||<p>eng</p><p>verwalten</p><p></p>|
+||<p></p><p>beobachten</p><p>(min. Aufwand)</p><p></p>||<p></p><p>informiert halten</p><p></p>|
+
+||niedrig|Interesse|hoch||
+| :- | :- | :- | :- | :- |
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|||20|
+
+|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.019.png "Image52")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.020.png "Image54")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.021.png "Image55")ERMITTLUNG|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image51")|
+| :- | -: |
+|<p>Stakeholder Kategorisierung</p><p></p>||
+
+|l|Kategorisierung in Stakeholder-Analysematrix („Power Interest Grid“) ||
+| :- | :- | :- |
+||l|Bewertung Einfluss (auf Erfolg des Projekts/Produkts) und Interesse (Grad der Beteiligung am Projekt)|
+||l|Priorisierung der Stakeholder|
+||l|Indikation bei Bewertung & Entscheidung im Fall von Widersprüchen|
+||<p>l</p><p></p>|<p>Abschätzung Kommunikationsaufwand („Betreuung“)</p><p></p>|
+
+|Projekt Sponsor|hoch||![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.022.png "Image53")||||
+| :- | :-: | :- | :- | :- | :- | :- |
+|<p>Gesetzgeber</p><p>PM Assistent</p>||zufrieden halten||<p>eng</p><p>verwalten</p>|||
+|Entwickler|||||||
+|Anforderungs|||||||
+|Management|||||||
+|<p>Kunde</p><p>IT Security</p>||<p>beobachten</p><p>(min. Aufwand)</p><p></p>||<p>informiert halten</p><p></p>|||
+|<p>Portfolio Manager</p><p></p>|niedrig||Interesse||hoch||
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen||||21||
+
+|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.019.png "Image57")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.022.png "Image58")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.020.png "Image59")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.021.png "Image60")ERMITTLUNG|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image56")|
+| :- | -: |
+|<p>Stakeholder Kategorisierung</p><p></p>||
+
+|l|Kategorisierung in Stakeholder-Analysematrix („Power Interest Grid“) ||
+| :- | :- | :- |
+||l|Bewertung Einfluss (auf Erfolg des Projekts/Produkts) und Interesse (Grad der Beteiligung am Projekt)|
+||l|Priorisierung der Stakeholder|
+||l|Indikation bei Bewertung & Entscheidung im Fall von Widersprüchen|
+||<p>l</p><p></p>|<p>Abschätzung Kommunikationsaufwand („Betreuung“)</p><p></p>|
+
+||<p>hoch</p><p></p><p></p><p></p><p></p>|<p>Gesetzgeber</p><p>zufrieden halten</p>|<p>IT Security</p><p></p><p></p>|<p>eng</p><p>verwalten</p>|<p>Projekt Sonsor</p><p>Portfolio Manager</p><p></p><p></p>|
+| :- | :-: | :- | :- | :- | :- |
+||||Kunde|||
+||||<p></p><p>Anforderungs</p>|<p></p><p>Entwickler</p>||
+|||<p>beobachten</p><p>(min. Aufwand)</p>|<p>Management</p><p></p>|informiert halten||
+|||||PM Assistent||
+||niedrig||Interesse|hoch||
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|||22||
+
+|ERMITTLUNG|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image61")|
+| :- | -: |
+|<p>Bewertung</p><p></p>||
+
+|l|Bedürfnisse müssen i.d.R. bewertet werden||
+| :- | :- | :- |
+||l|Priorisieren|
+||l|Konflikte auflösen|
+|l|Grundlage ist Stakeholder-Liste mit Kategorisierung||
+|l|Stakeholdern-Sicht einnehmen (Kommunikation)||
+||l|Prioritäten der repräsentierten Interessengruppe und evtl. Einflussmöglichkeiten verstehen|
+||l|Motivation für erfolgreichen und fristgerechten Projektabschluss verstehen|
+||l|An Definition „Erfolg“ beteiligen|
+|<p>l</p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>|<p>Bewertung aus Sicht des Projektes (kundenbezogen) z.B. mit Hilfe „Kano-Modell“</p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>||
+
+
+
+
+
+
+
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|23|
+| :- | :- | :- |
+
+
+|<p>![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.023.png "Image63")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.024.png "Image64")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.025.png "Image65")ERMITTLUNG</p><p>Kano-Modell</p>|||<p></p><p></p><p></p><p></p><p></p><p>Kunden- zufriedenheit</p>|<p></p><p></p><p></p><p></p><p></p><p></p><p>Begeisterungs- anforderungen</p>|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image62")|||
+| :- | :- | :- | :-: | - | :- | :- | :- |
+|l|Kano-Modell (Kundenzufriedenheitsmodell, 1978)|sehr zufrieden, begeistert|||<p>Leistungsanforderungen</p><p></p>|||
+|l|Basisfaktoren|||||||
+||<p>l</p><p>l</p>|werden erwartet und korrekte Funktion vorausgesetzt z.B. Auto fährt, Serienausstattung||Indifferenz- zone|Erwartungen übertroffen|<p>Erfüllung der</p><p>Kundenanforderungen</p>||
+|l|<p>Leistungsfaktoren</p><p>l lösen konkrete Problemstellungen</p>|Erwartungen nicht erfüllt|||<p>Basis- &</p><p>Grundanforderungen</p>|||
+||l|z.B. starke Motorisierung, Navigationssystem||||Zeit||
+|<p>l</p><p></p>|<p>Begeisterungsfaktoren</p><p>l</p><p>bringen unerwarteten Mehrwert</p><p>l</p><p>z.B. autonomes Fahren</p>|||<p>unzufrieden, enttäuscht</p><p></p>||||
+|l|Zeit |||||||
+||<p>l</p><p>l</p>|Fortschreitende Zeit erhöht Erwartungen/reduziert Zufriedenheit (Gewöhnung) z.B. el. Fensterheber||||||
+|l|Indifferente Eigenschaften|||||||
+||l|kein signifikanter Einfluss auf Kundenzufriedenheit||||||
+||<p>l</p><p></p>|<p>z.B. technische Anlagen für Personal im Flugzeug unerheblich für Passagiere</p><p></p>||||||
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|||||24||
+|<p>ERMITTLUNG</p><p>Kano-Modell</p>|||<p></p><p></p><p></p><p></p><p></p><p>Kunden- zufriedenheit</p>|<p></p><p></p><p></p><p></p><p></p><p></p><p>Begeisterungs- anforderungen</p>|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image66")|||
+|l|Kano-Modell (Kundenzufriedenheitsmodell, 1978)|sehr zufrieden, begeistert|||<p>Leistungsanforderungen</p><p></p>|||
+|l|Wert der Anforderungen mit dem Kano-Modell klären|||||||
+|l|Ziel: Optimaler Zuschnitt der Anforderungen||Indifferenz- zone|Erwartungen übertroffen|Erfüllung der|||
+|l|Basisfaktoren gezielt bewerten und reduzieren|||||Kundenanforderungen||
+||l|Anforderungen, die keinen greifbaren Wert bringen, reduzieren|Erwartungen nicht erfüllt||||Basis- &|
+|||||||Grundanforderungen||
+|l|Leistungsfaktoren bewerten und adressieren||||Zeit|||
+||l|dafür wird bezahlt||||||
+|l|Begeisterungsfaktoren marktorientiert auswählen|||unzufrieden, enttäuscht||||
+||l|damit werden Kunden überzeugt||||||
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen||25|||||
+
+|<p>![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.023.png "Image67")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.024.png "Image68")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.025.png "Image69")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.023.png "Image71")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.024.png "Image72")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.025.png "Image74")ERMITTLUNG</p><p>Kano-Modell Übung</p>||<p></p><p></p><p></p><p></p><p></p><p>Kunden- zufriedenheit</p>|<p></p><p></p><p></p><p></p><p></p><p></p><p>Begeisterungs- anforderungen</p>|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image70")|||
+| :- | :- | :-: | - | :- | :- | :- |
+|Sie möchten einen Kaffee-Vollautomaten oder Saugroboter entwickeln:|sehr zufrieden, begeistert|||<p>Leistungsanforderungen</p><p></p><p></p><p></p>|||
+|Definieren Sie je 3 Basis-, Leistungs- & Begeisterungsfaktoren.||Indifferenz- zone|Erwartungen übertroffen|<p>Erfüllung der</p><p>Kundenanforderungen</p>|||
+|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.026.jpeg "Image73")||Erwartungen nicht erfüllt||||Basis- &|
+||||||Grundanforderungen||
+||||||<p>Zeit</p><p></p>||
+|||||unzufrieden, enttäuscht|||
+|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.027.jpeg "Image75")|||||||
+|stock.adobe.com|||||||
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|||||26|
+
+
+|ERMITTLUNG|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image76")|
+| :- | -: |
+|<p>Ermittlungstechniken</p><p></p>||
+
+|l|Einteilung in 4 Kategorien||
+| :- | :- | :- |
+||l|Artefakt-/Dokumentbasierte Techniken|
+||l|Beobachtungstechniken|
+||l|Befragungstechniken|
+||l|Kreativitätstechniken|
+|l|Wahl der Ermittlungstechnik hängt unter anderem von Anforderungskategorie||
+||(z.B. Einteilung nach Kano) ab||
+|<p>l</p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>|<p>Im Sinne der Vollständigkeit sollten alle Kategorien während er Ermittlung durchlaufen werden</p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>||
+
+
+
+
+
+
+
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|27|
+| :- | :- | :- |
+
+|ERMITTLUNG|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image77")|
+| :- | -: |
+|<p>Ermittlungstechniken</p><p></p>||
+
+|l|Artefakt-/Dokumentbasierte Techniken||
+| :- | :- | :- |
+||l|Perspektivbasiertes Lesen|
+||l|Systemarchäologie|
+||l|Wiederverwendung von Anforderungen|
+||l|Ziel: Ermittlung von vorhandenen Anforderungen (Basisfaktoren)|
+|l|Beobachtungstechniken||
+||l|Feldbeobachtung|
+||l|Apprenticing (in die Lehre gehen)|
+||l|Ziel: Beobachtungen machen und hinterfragen, Prozess optimieren (Basisfaktoren)|
+|l|Befragungstechniken||
+||l|Interview|
+||l|Fragebogen|
+||l|Ziel: Ermittlungvon explizitem Wissen (Leistungsfaktoren)|
+|l|Kreativitätstechniken||
+||l|Brainstorming, Brainstorming paradox|
+||l|Perspektivwechsel|
+||l|Methode 6-3-5|
+||l|Ziel: Erarbeitung von Innovation (Begeisterungsfaktoren)|
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|28|
+| :- | :- | :- |
+
+|ERMITTLUNG|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image78")|
+| :- | -: |
+|<p>Funktionale/Nicht-Funktionale Anforderungen</p><p></p>||
+
+|l|Funktionale Anforderungen||
+| :- | :- | :- |
+||l|Beschreiben die Fähigkeiten eines Systems, die ein Anwender erwartet, um mit Hilfe des|
+|||Systems / der Komponente ein fachliches Problem zu lösen|
+||l|Was soll das System / die Komponente leisten?|
+|l|Nicht-funktionale Anforderungen||
+||l|beschreiben Anforderungen an das System, die nicht-fachlicher Natur sind, jedoch entscheidend zur Anwendbarkeit des Systems beitragen|
+||l|Sie definieren beispielsweise Qualitätsanforderungen, Sicherheitsanforderungen oder |
+|||<p>Performanceanforderungen</p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>|
+
+
+
+
+
+
+
+
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|29|
+| :- | :- | :- |
+
+|ERMITTLUNG|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image79")|
+| :- | -: |
+|<p>Nicht-Funktionale Anforderungen</p><p></p>||
+
+|<p>l</p><p></p><p></p>|Zur einfachen Strukturierung der Anforderungen werden diejenigen Anforderungen, die nicht eindeutig zu den funktionalen Anforderungen gehören, den **nicht-funktionalen** Anforderungen zugeordnet.||
+| :- | :- | :- |
+|l|Prozess-Anforderungen||
+||l|Liefer- & Übergabe-Anforderungen|
+||l|Anforderungen an Implementierung|
+||l|Standards & Normen|
+|l|Produkt-Anforderungen||
+||l|Benutzbarkeit|
+||l|Zuverlässigkeit|
+||l|Sicherheits-Anforderungen|
+||l|Anforderungen an System Effizienz|
+|l|Externe Anforderungen||
+||l|Rechtliche/behördliche Anforderungen|
+||l|Wirtschaftliche Anforderungen|
+||<p>l</p><p></p><p></p>|<p>Anforderungen an Interoperabilität</p><p></p>|
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|30|
+| :- | :- | :- |
+
+|KONTEXT|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image80")|
+| :- | -: |
+|<p>System</p><p></p>||
+
+|l|**Thermodynamik:** *(A. Frohn, Einführung in die technische Thermodynamik)*|||
+| :- | :- | :- | :- |
+||„Die Substanz, die Gegenstand einer thermodynamischen Untersuchung ist, wird als|||
+
+***System*** bezeichnet. […]
+
+Der Bereich außerhalb des Systems wird ***Umgebung*** genannt. Die **Grenzen des Systems** können als gedachte Grenzen eingeführt werden, sie können aber auch mir realen 
+
+Begrenzungsflächen zusammenfallen […]
+
+Man kann zwar die **Systemgrenzen frei bestimmen**, durch eine **geeignete Wahl** der
+
+Systemgrenzen wird aber häufig die **Beantwortung einer bestimmten Fragestellung**
+
+||entscheidend vereinfacht.“|Syst|<p>Irrelevante Umgebung</p><p></p>|
+| :- | :- | :- | :- |
+
+|l|**Kontext**:|System (SoI)|
+| :- | :- | :- |
+||Definition des System of Interest||
+
+|l|Systemgrenzen à Inhalt SoI||**Systemkontext**|
+| :- | :- | :- | :- |
+|l|Einordnung SoI in SoS: welche Nachbarsysteme sind zu beachten?|||
+|l|Abgrenzung des Projektes|||
+|||Kontextgrenze||
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|31|
+| :- | :- | :- |
+
+|KONTEXT|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image81")|
+| :- | -: |
+|<p>System</p><p></p>||
+
+|<p>l</p><p></p>|Für erfolgreiche und zielgerichtete Anforderungsermittlung, sollte man sich **vor** der Anforderungserhebung folgende 3 Fragen stellen:||||
+| :- | :- | :- | :- | :- |
+||1\. WassollTeildesSystemssein?||||
+||l|Das, was spezifiziert werden muss|<p>**OEM**</p><p>System:</p>|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.028.png "Image82")|
+||<p>2\. WassollnichtTeildesSystemssein?</p><p>l Das, was nicht spezifiziert werden muss</p><p>3\. Washatdirekten Bezugzu dem System?</p><p>l Das, was beim Spezifizierenberücksichtigt werden muss</p>|<p>*Fahrzeug oder eine Funktion im Fzg.*</p><p>Systemanforderungen</p><p>*Fahrverhalten*</p><p>Systemarchitektur</p><p>*Kommunikationsnetzwerk (CAN, LIN)*</p><p>Systemintegration</p><p>*Integration von Steuergeräten (Fzg., Prüfstand)*</p><p>Systemtest</p>|||
+|l|Wichtig: Begriff „System“ erfordert für jeden Bereich eine eigene Definition, |*Fzg.-Test auf Teststrecke oder Prüfstand*|||
+
+|weil der Betrachtungsgegenstand unterschiedlich ist|||
+| :- | :- | :- |
+||**TIER1**|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.029.png "Image83")|
+||<p>System:</p><p>*Steuergerät (SG)*</p><p>Systemanforderungen</p><p>*Spezifikation des Produkts (SG)*</p><p>Systemarchitektur</p><p>*Aufbau des SG*</p><p>Systemintegration</p><p>*Aufspielen der SW, Gehäuseeinbau*</p><p>Systemtest</p><p>*Funktionstest, EMV auf SG*</p>||
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|32|
+| :- | :- | :- |
+
+|KONTEXT|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image84")|
+| :- | -: |
+|<p>System</p><p></p>||
+
+|l|Systemgrenze|||||
+| :- | :- | :- | :- | :- | :- |
+||<p>l</p><p></p>|Definiert, welche Aspekte durch das geplante System abgedeckt werden sollen und welche Aspekte nur Teil der Umgebung dieses Systems sind||||
+|l|Systemkontext|||||
+||l|Liegt zwischen Systemgrenze und Kontextgrenze||||
+||l|Relevant für das Verständnis und die Definition der Anforderungen an das System||||
+||l|Kann im Rahmen der Entwicklung des Systems nicht bzw. kaum mitgestaltet werden||||
+||l|Beeinflusst geplantes System||||
+|l|Kontextgrenze|Syst||Irrelevante Umgebung||
+||l|Grenze des Kontexts zur irrelevanten Umgebung hin (Kontextabgrenzung)||||
+||l|Schließt alles aus, was keine relevante Beziehung zu dem System hat||||
+|l|Irrelevante Umgebung|||System (SoI)||
+||l|Aspekte, die keine relevante Beziehung zum geplanten System haben|||**Systemkontext**|
+||l|Hat keinen Einfluss auf Entwicklung des geplanten Systems||||
+|l|Grenzen nicht immer eindeutig bestimmbar|||||
+||<p>l</p><p></p>|<p>werden im Verlauf der Systementwicklung präzisiert</p><p></p>||Kontextgrenze||
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|33|
+| :- | :- | :- |
+
+|KONTEXT|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image85")|
+| :- | -: |
+|<p>Übung</p><p></p>||
+
+Sie möchten einen Kaffee-Vollautomaten oder Saugroboter entwickeln:
+
+Definieren Sie das SoI mit den wichtigsten Hauptmerkmalen/-Funktionen, sowie beispielhaft den Inhalt des Systemkontextes und der irrelevanten Umgebung
+
+(graphische Darstellung).
+
+|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.026.jpeg "Image86")|Syst|<p>Irrelevante Umgebung</p><p></p>|
+| :- | :- | :- |
+
+|System (SoI)|
+| :- |
+
+**Systemkontext**
+
+|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.027.jpeg "Image87")|Kontextgrenze|
+| :- | :- |
+
+stock.adobe.com
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|34|
+| :- | :- | :- |
+
+|DOKUMENTATION|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image88")|
+| :- | -: |
+|<p>Gründe für Dokumentation</p><p></p>||
+
+|l|Das Anforderungsdokument (Spezifikation) stellt ein zentrales Artefakt sowohl für die Entwicklung als auch die Eigenschaftsabsicherung dar||
+| :- | :- | :- |
+||l|Anforderungen als gemeinsame Entwicklungsgrundlage|
+||l|Nachvollziehbarkeit von Entscheidungen|
+||l|Komplexität beherrschbar machen|
+||l|Rechtliche Relevanz|
+||l|Zugreifbarkeit|
+||l|Maßnahme gegen Wissensverlust durch Mitarbeiterfluktuation|
+||l|Grundlage für Nachverfolgbarkeit (Traceability) im System:|
+|||Was ist zu prüfen, sind alle Anforderungen erfüllt?|
+|l|Ziel ist eine klare Beschreibung aller ermittelten Anforderungen||
+||l|Missverständnisse durch unverständliche Formulierungen vermeiden|
+||l|Strukturierte und prüfbare Anforderungen ableitbar|
+||l|Unterscheidung zwischen Bedarf (Lastenheft) und Realisierung (Spezifikation)|
+|<p>l</p><p></p><p></p>|<p>Das Anforderungsdokument dient als gemeinsame Basis für alle Stakeholder und somit für das gesamte Projekt</p><p></p><p></p>||
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|35|
+| :- | :- | :- |
+
+
+|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.030.png "Image91")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.031.png "Image92")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.031.png "Image93")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.031.png "Image94")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.032.png "Image95")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.033.png "Image96")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.034.png "Image97")DOKUMENTATION|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image89")|
+| :- | :- |
+|<p>Arten</p><p></p>||
+
+|Natürlichsprachliche Dokumentation (Satzschablonen) l In Tabellenform mit zusätzlichen Attributen:||![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.035.png "Image90")||
+| :- | :- | :- | :- |
+||Attribute können Verbindung zu Funktionen, Systemelementen, Testfällen, etc. bieten (Nachverfolgbarkeit) |||
+|l|Ergänzung durch grafische Darstellung möglich und z.T. sinnvoll|||
+|l|Herausforderungen:|M. Grande, 100 Minuten für Anforderungsmanagement, Springer Fachmedien Wiesbaden 2014||
+||l|Missverständnisse durch Interpretation und Mehrdeutigkeit||
+||l|Unvollständigkeit, Normalisierung, Universalquantoren, etc.||
+||l|Transformationseffekte: Abweichung zur Realität bei Wahrnehmung und/oder Wissensdarstellung||
+
+|Realität|<p>Persönliche</p><p>Wahrnehmung</p>|<p>Persönliches</p><p>Wissen</p>|Sprachlicher Ausdruck des Wissens|
+| :- | :-: | :-: | :-: |
+
+|<p></p><p>l</p>|Zu beachten:||
+| :- | :- | :- |
+||l|Verwendung von Satzschablonen zur Reduktion von Missverständnissen|
+||l|Kurze, verständliche Sätze mit eindeutigen Adjektiven (Universalquantoren vermeiden)|
+||<p>l</p><p></p><p></p>|<p>Messbar und testbar formulieren</p><p></p>|
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|36|
+| :- | :- | :- |
+
+
+|DOKUMENTATION|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image98")|
+| :- | -: |
+|<p>Arten</p><p></p>||
+
+Beispiel: Ergänzung durch grafische Darstellung
+
+„Gibt es ein vorderes begrenzendes Fahrzeug der Parklücke, und liegt die hintere straßenseitige Ecke dieses Fahrzeugs auf der straßenrandseitigen Seite der Linie, die parallel zur Längsausrichtung der Parklücke durch die vordere straßenseitige Ecke des hinteren begrenzenden Fahrzeugs verläuft, dann soll die straßenseitige Seite der Längsparklücke auf einer Linie liegen, die durch die hintere straßenseitige Ecke des vorderen Fahrzeugs geht.“
+
+
+
+
+
+
+
+
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|37|
+| :- | :- | :- |
+
+|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.036.png "Image102")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.037.png "Image103")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.038.png "Image104")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.039.png "Image105")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.040.png "Image106")DOKUMENTATION|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image99")|
+| :- | -: |
+|<p>Arten</p><p></p>||
+
+Beispiel: Ergänzung durch grafische Darstellung
+
+„Gibt es ein vorderes begrenzendes Fahrzeug der Parklücke, und liegt die hintere straßenseitige Ecke dieses Fahrzeugs auf der straßenrandseitigen Seite der Linie, die parallel zur Längsausrichtung der Parklücke durch die vordere straßenseitige Ecke des hinteren begrenzenden Fahrzeugs verläuft, dann soll die straßenseitige Seite der Längsparklücke auf einer Linie liegen, die durch die hintere straßenseitige Ecke des vorderen Fahrzeugs geht.“
+
+|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.041.png "Image100")|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.042.png "Image101")|<p>Straße</p><p></p>|
+| :- | :- | :- |
+
+|<p>hinteres Fahrzeug</p><p></p>|<p>vorderes Fahrzeug</p><p></p>|
+| :- | :- |
+
+Straßenrand
+
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|38|
+| :- | :- | :- |
+
+|DOKUMENTATION||![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image107")||
+| :- | :- | -: | :- |
+|Arten||||
+|l|Modellbasierte Dokumentation|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.043.png "Image108")||
+||l|Anforderung kann übersichtlich mit Funktionen und Anwendungsfällen verbunden werden||
+||l|Direkt sichtbare Verbindung zu Systemelementen, Schnittstellen und Testfällen möglich||
+|||(je nach Modellierungsgrad des Systems)||
+||l|z.T. natürlichsprachliche Beschreibung zur Detaillierung nötig||
+||l|Übersichtlichkeit abhängig von Anzahl der Anforderungen||
+|l|Kombination möglich (natürlichsprachlich & modellbasiert)|||
+||l|Vorteile beider Dokumentationsformen nutzen, Schwächen ausgleichen||
+||l|z.B. natürlichsprachliche Kommentare an Modellen oder |![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.044.png "Image109")|
+|||übersichtliche Zusammenfassung natürlichsprachlicher Anforderungen in einem Modell||
+|l|Wahl der Dokumentationsform von mehreren Faktoren abhängig|||
+||l|Inhalt und Umfang der zu dokumentierenden Informationen||
+||<p>l</p><p></p><p></p>|<p>Leserkreis des Dokuments</p><p></p>||
+
+www.sophist.de
+
+
+
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|39|
+| :- | :- | :- |
+
+
+|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.045.png "Image111")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.046.png "Image112")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.047.png "Image113")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.048.png "Image114")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.049.png "Image115")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.050.png "Image116")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.051.png "Image117")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.052.png "Image118")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.053.png "Image119")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.054.png "Image120")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.055.png "Image121")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.052.png "Image122")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.056.png "Image123")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.057.png "Image124")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.058.png "Image125")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.059.png "Image126")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.060.png "Image127")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.046.png "Image128")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.061.png "Image129")DOKUMENTATION|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image110")|
+| :- | :- |
+|Satzschablonen||
+
+|||muss|||die Möglichkeit bieten||||||||||
+| :- | :- | :- | :- | :- | :-: | -: | :- | :- | :- | :- | :- | :- | :- | :- |
+||||||||||||||||
+|<Bedingung>|<p></p><p></p>||sollte||<System>|<p></p><p></p>||<p>-</p><p>(selbstständig)</p>||<Objekt>||<Prozesswort>|||
+||||||||||||||||
+|||wird||fähig sein|||||||||||
+
+|<p>6\. zeitliche und logische</p><p>Bedingungen formulieren</p><p></p>|<p>3\. Wichtigkeit festlegen</p><p></p>|<p>1\. ausführendes</p><p>Element festlegen</p><p></p>|<p>4\. Art der </p><p>Funktionalität /</p><p>Aktivität festlegen</p><p></p>|<p>5\. Objekt </p><p>identifizieren</p><p></p>|<p>2\. Funktionalität bzw. den Prozess identifizieren</p><p>(durch Verb)</p><p></p>|
+| - | :-: | :-: | :-: | :-: | :-: |
+
+|l|Satzschablonen bieten Hilfestellung für gute Anforderungen||
+| :- | :- | :- |
+||l|Anforderung im **Aktiv** formulieren um Akteur nicht zu vergessen|
+||l|Anforderungen als **vollständige Sätze** formuliert|
+||l|Anforderungen mit **einem Vollverb** schreiben, das einen Prozess abbildet|
+||l|Anforderungen **nicht in Nebensätzen** formulieren|
+|<p>l</p><p></p><p></p>|<p>Verwendung der Satzschablone nur Empfehlung, teils Darstellung durch Diagramme oder Tabellen sinnvoller</p><p></p><p></p>||
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|40|
+| :- | :- | :- |
+
+|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.045.png "Image131")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.046.png "Image132")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.047.png "Image133")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.048.png "Image134")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.049.png "Image135")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.050.png "Image136")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.051.png "Image137")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.052.png "Image138")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.053.png "Image139")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.054.png "Image140")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.055.png "Image141")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.052.png "Image142")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.056.png "Image143")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.057.png "Image144")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.058.png "Image145")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.059.png "Image146")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.060.png "Image147")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.046.png "Image148")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.061.png "Image149")DOKUMENTATION|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image130")|
+| :- | :- |
+|Satzschablonen||
+
+|||muss|||die Möglichkeit bieten||||||||||
+| :- | :- | :- | :- | :- | :-: | -: | :- | :- | :- | :- | :- | :- | :- | :- |
+||||||||||||||||
+|<Bedingung>|<p></p><p></p>||sollte||<System>|<p></p><p></p>||<p>-</p><p>(selbstständig)</p>||<Objekt>||<Prozesswort>|||
+||||||||||||||||
+|||wird||fähig sein|||||||||||
+
+|<p>6\. zeitliche und logische</p><p>Bedingungen formulieren</p><p></p>|<p>3\. Wichtigkeit festlegen</p><p></p>|<p>**1. ausführendes**</p><p>**Element festlegen**</p><p></p>|<p>4\. Art der </p><p>Funktionalität /</p><p>Aktivität festlegen</p><p></p>|<p>5\. Objekt </p><p>identifizieren</p><p></p>|<p>2\. Funktionalität bzw. den Prozess identifizieren</p><p>(durch Verb)</p><p></p>|
+| - | :-: | :-: | :-: | :-: | :-: |
+
+- **Akteur** konkret benennen
+- z.B. der Auftragnehmer, die Brüheinheit, das Kommunikationsmodul,…
+
+
+
+
+
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|41|
+| :- | :- | :- |
+
+|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.045.png "Image151")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.046.png "Image152")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.047.png "Image153")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.048.png "Image154")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.049.png "Image155")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.050.png "Image156")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.051.png "Image157")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.052.png "Image158")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.053.png "Image159")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.054.png "Image160")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.055.png "Image161")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.052.png "Image162")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.056.png "Image163")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.057.png "Image164")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.058.png "Image165")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.059.png "Image166")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.060.png "Image167")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.046.png "Image168")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.061.png "Image169")DOKUMENTATION|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image150")|
+| :- | :- |
+|Satzschablonen||
+
+|||muss|||die Möglichkeit bieten||||||||||
+| :- | :- | :- | :- | :- | :-: | -: | :- | :- | :- | :- | :- | :- | :- | :- |
+||||||||||||||||
+|<Bedingung>|<p></p><p></p>||sollte||<System>|<p></p><p></p>||<p>-</p><p>(selbstständig)</p>||<Objekt>||<Prozesswort>|||
+||||||||||||||||
+|||wird||fähig sein|||||||||||
+
+|<p>6\. zeitliche und logische</p><p>Bedingungen formulieren</p><p></p>|<p>3\. Wichtigkeit festlegen</p><p></p>|<p>1\. ausführendes</p><p>Element festlegen</p><p></p>|<p>4\. Art der </p><p>Funktionalität /</p><p>Aktivität festlegen</p><p></p>|<p>5\. Objekt </p><p>identifizieren</p><p></p>|<p>**2. Funktionalität bzw. den Prozess** **identifizieren**</p><p>**(durch Verb)**</p><p></p>|
+| - | :-: | :-: | :-: | :-: | :-: |
+
+- **Prozesswort** bestimmt die geforderteFunktionalität,die betrachtet werden soll
+- ggf. im Glossar definierenfür exaktes, gemeinsames Verständnis
+- z.B. durchführen,fixieren, übertragen,…
+
+
+
+
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|42|
+| :- | :- | :- |
+
+|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.045.png "Image171")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.046.png "Image172")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.047.png "Image173")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.048.png "Image174")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.049.png "Image175")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.050.png "Image176")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.051.png "Image177")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.052.png "Image178")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.053.png "Image179")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.054.png "Image180")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.055.png "Image181")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.052.png "Image182")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.056.png "Image183")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.057.png "Image184")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.058.png "Image185")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.059.png "Image186")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.060.png "Image187")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.046.png "Image188")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.061.png "Image189")DOKUMENTATION|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image170")|
+| :- | :- |
+|Satzschablonen||
+
+|||muss|||die Möglichkeit bieten||||||||||
+| :- | :- | :- | :- | :- | :-: | -: | :- | :- | :- | :- | :- | :- | :- | :- |
+||||||||||||||||
+|<Bedingung>|<p></p><p></p>||sollte||<System>|<p></p><p></p>||<p>-</p><p>(selbstständig)</p>||<Objekt>||<Prozesswort>|||
+||||||||||||||||
+|||wird||fähig sein|||||||||||
+
+|<p>6\. zeitliche und logische</p><p>Bedingungen formulieren</p><p></p>|<p>**3. Wichtigkeit** </p><p>**festlegen**</p><p></p>|<p>1\. ausführendes</p><p>Element festlegen</p><p></p>|<p>4\. Art der </p><p>Funktionalität /</p><p>Aktivität festlegen</p><p></p>|<p>5\. Objekt </p><p>identifizieren</p><p></p>|<p>2\. Funktionalität bzw. den Prozess identifizieren</p><p>(durch Verb)</p><p></p>|
+| - | :-: | :-: | :-: | :-: | :-: |
+
+- **„muss“ („shall“)**: (rechtlich) verbindliche,zwingend zu erfüllendeAnforderung
+- **„darf nicht“ („shall not“)**: Verneinungeiner verbindlichenAnforderung
+- **„sollte“ („should“)**: von Umsetzung der Anforderungkann unterbestimmten Umständen abgesehen werden (Empfehlung)
+- **„wird/kann“ („will/can“)**: zukünftige Anforderung/Rahmenbedingung (Ankündigung)
+
+
+
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|43|
+| :- | :- | :- |
+
+|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.045.png "Image191")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.046.png "Image192")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.047.png "Image193")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.048.png "Image194")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.049.png "Image195")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.050.png "Image196")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.051.png "Image197")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.052.png "Image198")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.053.png "Image199")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.054.png "Image200")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.055.png "Image201")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.052.png "Image202")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.056.png "Image203")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.057.png "Image204")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.058.png "Image205")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.059.png "Image206")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.060.png "Image207")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.046.png "Image208")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.061.png "Image209")DOKUMENTATION|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image190")|
+| :- | :- |
+|Satzschablonen||
+
+|||muss|||die Möglichkeit bieten||||||||||
+| :- | :- | :- | :- | :- | :-: | -: | :- | :- | :- | :- | :- | :- | :- | :- |
+||||||||||||||||
+|<Bedingung>|<p></p><p></p>||sollte||<System>|<p></p><p></p>||<p>-</p><p>(selbstständig)</p>||<Objekt>||<Prozesswort>|||
+||||||||||||||||
+|||wird||fähig sein|||||||||||
+
+|<p>6\. zeitliche und logische</p><p>Bedingungen formulieren</p><p></p>|<p>3\. Wichtigkeit festlegen</p><p></p>|<p>1\. ausführendes</p><p>Element festlegen</p><p></p>|<p>**4. Art der**</p><p>**Funktionalität /**</p><p>**Aktivität festlegen**</p><p></p>|<p>5\. Objekt </p><p>identifizieren</p><p></p>|<p>2\. Funktionalität bzw. den Prozess identifizieren</p><p>(durch Verb)</p><p></p>|
+| - | :-: | :-: | :-: | :-: | :-: |
+
+- **Die Möglichkeit bieten**: Benutzer bekommt Funktionalität zur Verfügung gestellt / interagiert
+- **Selbsttätige Systemaktivität:**Prozesswort definiertAktivität, System ist selbstständigtätig, d.h. Benutzerist nicht involviert
+- **fähig sein (Schnittstellenanforderung)**: Aktion hängtvon Nachbarsystem ab, Reaktion auf Input
+- z.B. „Das System muss (selbstständig) in den stand-by wechseln.“ 
+
+
+
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|44|
+| :- | :- | :- |
+
+|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.045.png "Image211")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.046.png "Image212")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.047.png "Image213")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.048.png "Image214")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.049.png "Image215")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.050.png "Image216")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.051.png "Image217")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.052.png "Image218")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.053.png "Image219")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.054.png "Image220")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.055.png "Image221")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.052.png "Image222")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.056.png "Image223")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.057.png "Image224")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.058.png "Image225")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.059.png "Image226")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.060.png "Image227")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.046.png "Image228")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.061.png "Image229")DOKUMENTATION|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image210")|
+| :- | :- |
+|Satzschablonen||
+
+|||muss|||die Möglichkeit bieten||||||||||
+| :- | :- | :- | :- | :- | :-: | -: | :- | :- | :- | :- | :- | :- | :- | :- |
+||||||||||||||||
+|<Bedingung>|<p></p><p></p>||sollte||<System>|<p></p><p></p>||<p>-</p><p>(selbstständig)</p>||<Objekt>||<Prozesswort>|||
+||||||||||||||||
+|||wird||fähig sein|||||||||||
+
+|<p>6\. zeitliche und logische</p><p>Bedingungen formulieren</p><p></p>|<p>3\. Wichtigkeit festlegen</p><p></p>|<p>1\. ausführendes</p><p>Element festlegen</p><p></p>|<p>4\. Art der </p><p>Funktionalität /</p><p>Aktivität festlegen</p><p></p>|<p>**5. Objekt** </p><p>**identifizieren**</p><p></p>|<p>2\. Funktionalität bzw. den Prozess identifizieren</p><p>(durch Verb)</p><p></p>|
+| - | :-: | :-: | :-: | :-: | :-: |
+
+| **Objekt**: kann im Kontext sein oder auch das System oder Teile davon
+
+- physische Objekte: Werkzeug, Sensor, Pumpe,…
+- Rollen, die von Objekten eingenommen werden: Mitarbeiter, Benutzer, Fahrer,…
+- zusammenfassende Objekte: Notfall-Programm, Bedienungsanleitung, Brühgruppe,…
+- Vorgänge oder Ereignisse: Aktivierung, Beschleunigung, Entsorgung,…
+
+
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|45|
+| :- | :- | :- |
+
+|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.045.png "Image231")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.046.png "Image232")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.047.png "Image233")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.048.png "Image234")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.049.png "Image235")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.050.png "Image236")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.051.png "Image237")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.052.png "Image238")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.053.png "Image239")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.054.png "Image240")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.055.png "Image241")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.052.png "Image242")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.056.png "Image243")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.057.png "Image244")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.058.png "Image245")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.059.png "Image246")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.060.png "Image247")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.046.png "Image248")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.061.png "Image249")DOKUMENTATION|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image230")|
+| :- | :- |
+|Satzschablonen||
+
+|||muss|||die Möglichkeit bieten||||||||||
+| :- | :- | :- | :- | :- | :-: | -: | :- | :- | :- | :- | :- | :- | :- | :- |
+||||||||||||||||
+|<Bedingung>|<p></p><p></p>||sollte||<System>|<p></p><p></p>||<p>-</p><p>(selbstständig)</p>||<Objekt>||<Prozesswort>|||
+||||||||||||||||
+|||wird||fähig sein|||||||||||
+
+|<p>**6. zeitliche** **und logische**</p><p>**Bedingungen** </p>|3\. Wichtigkeit festlegen|<p>1\. ausführendes</p><p>Element festlegen</p>|<p>4\. Art der </p><p>Funktionalität /</p><p>Aktivität festlegen</p>|<p>5\. Objekt </p><p>identifizieren</p>|2\. Funktionalität bzw. den Prozess identifizieren|
+| - | :-: | :-: | :-: | :-: | :-: |
+|<p>**formulieren**</p><p></p>|||||<p>(durch Verb)</p><p></p>|
+
+- FunktionaleAnforderungenoft an Bedingungengeknüpft
+- Bedingung als Nebensatz an erster Stelle im Anforderungssatz
+- optional: ohne Bedingungtauschen <System> und <Wichtigkeit> ihre Position
+- z.B. „Sobald die Spannungunter11 V sinkt, muss das System (selbstständig)in den stand-bywechseln.“
+
+
+
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|46|
+| :- | :- | :- |
+
+
+|DOKUMENTATION|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image250")|
+| :- | -: |
+|<p>Formulierungsregeln</p><p></p>||
+
+|l|**Zahl- und Mengenwörter** hinterfragen||
+| :- | :- | :- |
+||l|ist zu bezeichnende Menge der Objekte genau erfasst?|
+||l|Signalwörter: alle, jeder, immer, kein,… (Generalisierung)|
+|l|Eigenschaften **mess- bzw. testbar**formulieren||
+||l|auf Adjektive, Adverbien und Vergleiche & Steigerungen achten|
+||l|Signalwörter: schnell, performant, besser, intuitiv,…|
+|l|**Vollverben** identifizieren||
+||l|für jedes Vollverb genau einen Anforderungssatz|
+||l|Signalwörter: anzeigen und ausdrucken, eingeben und speichern, …|
+|l|nicht exakt definierte **Nominalisierung** auflösen||
+||l|in eine oder mehrere Anforderungen mit gutem Vollverb umwandeln|
+||l|Signalwörter: Eingabe, Speicherung, Archivierung, …|
+|l|**schwammig formulierte Substantive** hinterfragen||
+||l|feststellen, welches Objekt oder Akteure genau gemeint sind|
+||<p>l</p><p></p><p></p>|<p>Signalwörter: der Anwender, die Meldung, die Funktion, … </p><p></p><p></p>|
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|47|
+| :- | :- | :- |
+
+|DOKUMENTATION|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image251")|
+| :- | -: |
+|<p>Formulierungsregeln</p><p></p>||
+
+Übung: Benennen Sie die Regelverletzungen
+
+|<p>l</p><p></p><p></p><p></p><p></p>|<p>Der Touchscreen muss intuitiv bedienbar sein und jeden Datenpunkt anzeigen.</p><p></p><p></p><p></p>|
+| :- | :- |
+
+
+
+|<p>l</p><p></p><p></p><p></p>|<p>Das System muss dem Anwender die Möglichkeit bieten alle Daten zurückzusetzen.</p><p></p><p></p><p></p>|
+| :- | :- |
+
+
+|<p>l</p><p></p><p></p><p></p><p></p><p></p>|<p>Das System muss eine Speicherung der Daten durchführen.</p><p></p><p></p><p></p><p></p>|
+| :- | :- |
+
+
+
+
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|48|
+| :- | :- | :- |
+
+|DOKUMENTATION|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image252")|
+| :- | -: |
+|<p>Formulierungsregeln</p><p></p>||
+
+Übung: Benennen Sie die Regelverletzungen
+
+|l|Der Touchscreen muss intuitiv bedienbar sein und jeden Datenpunkt anzeigen.||
+| :- | :- | :- |
+||l|Mengenwort: „jeden“ sollte genauer erfasst werden|
+||l|nicht messbar: „intuitiv“|
+||<p>l</p><p></p>|<p>2 Vollverben: „bedienbar sein“ und „anzeigen“</p><p></p>|
+|l|Das System muss dem Anwender die Möglichkeit bieten alle Daten zurückzusetzen.||
+||l|Mengenwort: „alle“ sollte genauer erfasst werden|
+||<p>l</p><p></p>|<p>Schwammig formuliertes Substantiv: „Anwender“ hinterfragen oder im Glossar festhalten</p><p></p>|
+|l|Das System muss eine Speicherung der Daten durchführen.||
+||<p>l</p><p></p><p></p><p></p><p></p><p></p>|<p>Nominalisierung: „Speicherung“ sollte aufgelöst und genau definiert werden</p><p></p><p></p><p></p><p></p>|
+
+
+
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|49|
+| :- | :- | :- |
+
+
+|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.062.png "Image254")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.063.png "Image255")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.064.png "Image256")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.064.png "Image257")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.065.png "Image258")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.066.png "Image259")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.067.png "Image260")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.064.png "Image261")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.068.png "Image262")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.069.png "Image263")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.070.png "Image264")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.071.png "Image265")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.072.png "Image266")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.069.png "Image267")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.073.png "Image268")DOKUMENTATION|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image253")|
+| :- | :- |
+|<p>Spezifikation</p><p></p>||
+
+|l|Die dokumentierten Anforderungen beschreiben als Spezifikation das zu entwickelnde System||||
+| :- | :- | :- | :- | :- |
+||l|**Verständlicher Formalismus** zur Strukturierung der Inhalte|||
+||l|**Thematische Strukturierung** der Anforderungen (z.B. nach Hauptfunktionen)|||
+||l|**Referenznummern** (ID) verwenden für einfachere Verwaltung und Nachverfolgbarkeit|||
+||l|Anforderungen können durch Beispiele, Begründungen, Kontextinformationen **ergänzt** werden|||
+|l|Relevant für Freigabe||||
+||l|**Verantwortlichkeiten** benennen|Ermittlung|Dokumentation|
+
+|l|**Versionierung** beachten|||$5 Randbed.|||
+| :- | :- | :- | :- | :- | :- | :- |
+|l|**Zusammenhänge** von Informationen (Anforderungen, CAD-Zeichnungen,…)|Konkurrent||$4 Kontext|||
+||nachvollziehbar dokumentieren|||||$3 Szenarien||
+|||DIN 123|<p></p><p></p><p></p>|<p>$2 Requirem.</p><p></p>|||
+|||Kunde|||||
+||||||||
+|||ECE-R 16|||||
+||||CEO||||
+
+|<p></p><p></p><p>07\.01.2025</p>|<p></p><p></p><p>Entwicklung mechatronischer Systeme - Anforderungen</p>|<p></p><p>50</p>|
+| :- | :- | :- |
+
+
+|DOKUMENTATION|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image269")|
+| :- | -: |
+|<p>Glossar</p><p></p>||
+
+|l|Projektspezifisches Dokument||
+| :- | :- | :- |
+|l|Inhalt||
+||l|kontextspezifische Fachbegriffe|
+||l|Abkürzungen und Akronyme|
+||l|Begriffe mit spezifischer Bedeutung für den Kontext|
+||l|Synonyme und Homonyme (verschiedene Bedeutungen)|
+|l|Verwaltung und Nutzung||
+||l|zentral verwaltet|
+||l|projektbegleitend gepflegt|
+||l|verbindlich verwendet|
+||l|Abgestimmt|
+|l|Beispiele||
+||l|*spielfreie* Übertragung: Toleranzwert definieren|
+||<p>l</p><p></p><p></p><p></p><p></p>|<p>*Anwender*: Definition Personenkreis, Eigenschaften, etc.</p><p></p><p></p><p></p>|
+
+
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|51|
+| :- | :- | :- |
+
+|REVIEW / PRÜFUNG|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image270")|
+| :- | -: |
+|Motivation||
+
+![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.074.png "Image271")
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|aus: Eigner, Modellbasierte virtuelle Produktentwicklung|52|
+| :- | :- | :- | :- |
+
+|REVIEW / PRÜFUNG|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image272")|
+| :- | -: |
+|<p>Motivation</p><p></p>||
+
+|l|Fehlerhafte Anforderungen beeinträchtigen die Entwicklungsaktivitäten||||
+| :- | :- | :- | :- | :- |
+|l|Anforderungen sind Vertragsgrundlage zwischen Auftraggeber und Auftragnehmer||||
+|<p>l</p><p></p>|Sich widersprechende Anforderungen können Konflikte zwischen Stakeholdern erzeugen und zu Fehlern bei der Umsetzung führen||||
+|l|Frühzeitige Bewertung des Produkts aus Stakeholder-Sicht (Kunden & interne Beteiligte)||||
+|l|Belastbare Konfigurationsbasis für alle weiteren Arbeiten||||
+|l|Prüfung der Anforderungen hat den größten Nutzen aller Prüfschritte im Projekt („rule of 10“)||||
+||l|Missverständnisse und Lücken ziehen aufwändige Nacharbeiten nach sich|||
+||l|Validierung („doing the right things“)|||
+|||l|sichert frühzeitig ab, dass das spätere Produkt den angenommenen Wert bringt||
+||l|Verifikation („doing things right“)|||
+|||l|sichert eine konsistente Qualität der Anforderungen und der folgenden Arbeitsergebnisse||
+|<p>l</p><p></p><p></p>|<p>Ermöglicht Arbeitsergebnisse mit richtiger Qualität (d.h. „gut genug“)</p><p></p><p></p>||||
+|07\.01.2025||Entwicklung mechatronischer Systeme - Anforderungen|53||
+
+
+|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.075.png "Image274")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.076.png "Image275")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.077.png "Image276")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.076.png "Image277")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.078.png "Image278")REVIEW / PRÜFUNG|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image273")|
+| :- | -: |
+|<p>Zuständigkeiten</p><p></p>||
+
+|l|Vor inhaltlicher Diskussion werden die Anforderungen auf Erfüllung der Qualitätskriterien geprüft|
+| :- | :- |
+|l|Missverständnisse können so früh identifiziert und geklärt werden|
+|<p>l</p><p></p>|<p>Reviewer aus unterschiedlichen Disziplinen (Heterogenität) </p><p></p>|
+
+|**Schwerpunkte** |||||
+| :-: | :- | :- | :- | :- |
+|**des Reviews:**|Abgestimmt||||
+|<p>*Stakeholder*</p><p>*Anforderungs-Ingenieur*</p><p>*Product Owner*</p>|<p>Korrekt /</p><p>Adäquat</p><p>Vollständig</p>|<p>Aktuell /</p><p>Notwendig</p>|Verfolgbar||
+|||||Technisch |
+|<p>*Entwickler*</p><p>*Tester*</p><p></p>|Realisierbar|<p>verständlich</p><p></p>|bewertbar|<p>lösungsneutral</p><p></p>|
+||Konsistent|Prüfbar /|||
+|||Verifizierbar|||
+|||<p>Eindeutig</p><p></p>|||
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|54|
+| :- | :- | :- |
+
+
+|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.075.png "Image280")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.076.png "Image281")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.077.png "Image282")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.076.png "Image283")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.078.png "Image284")REVIEW / PRÜFUNG|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image279")|
+| :- | -: |
+|<p>Zuständigkeiten</p><p></p>||
+
+|l|Vor inhaltlicher Diskussion werden die Anforderungen auf Erfüllung der Qualitätskriterien geprüft|
+| :- | :- |
+|l|Missverständnisse können so früh identifiziert und geklärt werden|
+|<p>l</p><p></p>|<p>Reviewer aus unterschiedlichen Disziplinen (Heterogenität) </p><p></p>|
+
+|**Schwerpunkte** |*Stakeholder*|||||
+| :-: | :- | :- | :- | :- | :- |
+|**des Reviews:**|||*Product Owner*|||
+||<p>Korrekt /</p><p>Adäquat</p><p></p>|<p>Abgestimmt</p><p></p><p>Vollständig</p>|<p>Aktuell /</p><p>Notwendig</p>|Verfolgbar||
+||||||Technisch |
+|<p>*Entwickler*</p><p></p>|<p></p><p>Realisierbar</p>|verständlich||bewertbar|<p>lösungsneutral</p><p></p>|
+|Konsistent||*Tester*|Prüfbar /|*Anforderungs-Ingenieur*||
+||||Verifizierbar|||
+|||<p>Eindeutig</p><p></p>||||
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|55|
+| :- | :- | :- |
+
+|REVIEW / PRÜFUNG|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image285")|
+| :- | -: |
+|<p>Reviewarten</p><p></p>||
+
+|l|Stellungnahme||
+| :- | :- | :- |
+||l|Dritte Person überprüft Anforderungen hinsichtlich vorher festgelegter Kriterien|
+||l|Mängel werden im Dokument markiert und kurz erläutert|
+||l|Autor erhält kommentiertes Dokument|
+|l|Inspektion||
+||l|Fehlersuche nach striktem Prozessschema (Phasen)|
+||l|Verschiedene Rollen: Organisator, Moderator, Autor, Vorleser, Inspektor(en), Protokollant|
+||l|Moderator kann Rolle des Vorlesers übernehmen|
+|l Walkthrough|||
+||l|Leichtgewichtiges Review|
+||l|Weniger formal als Inspektion|
+||l|Rollen: Reviewer oder Inspektor, Autor, Protokollant|
+|l|Weitere Techniken||
+||l|Perspektivenbasiertes Lesen|
+||<p>l</p><p></p><p></p><p></p>|<p>Einsatz von Checklisten</p><p></p><p></p><p></p>|
+
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|56|
+| :- | :- | :- |
+
+|VERWALTUNG|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image286")|
+| :- | -: |
+|<p>Aufgaben Anforderungsmanagement</p><p></p>||
+
+|l|Attributierung||
+| :- | :- | :- |
+||l|Filterkriterien, Meta-Informationen vergeben|
+|l|Strukturierung||
+||l|z.B. thematisch nach Hauptfunktionen|
+|l|Priorisierung||
+||l|Bewertung nach Planung und Nutzen|
+|l|Verfolgbarkeit||
+||l|Nachvollziehbarkeit herstellen|
+|l|Versionierung und Variantenbildung||
+||l|Gemeinsame Basis für Projekte (auch projektübergreifend)|
+|l **Änderungsmanagement**|||
+||l|Abstimmung, Absicherung, Konsistenzsicherung bei Änderungen|
+||<p>l</p><p></p><p></p><p></p>|<p>Bearbeitung (Annahme, Ablehnung, Priorisierung) von Änderungsanträgen i.d.R. im „Change Control Board“ (CCB, heterogen besetztes Gremium)</p><p></p><p></p>|
+
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|57|
+| :- | :- | :- |
+
+|VERWALTUNG|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image287")|
+| :- | -: |
+|<p>Änderungen in Anforderungen</p><p></p>||
+
+|l|externe Stakeholder||
+| :- | :- | :- |
+||l|Wandel in Nutzungswünschen der Anwender (Änderung oder Erweiterung)|
+||l|Gesetzesänderung|
+||l|Neue Technologie oder Konkurrenzprodukt auf dem Markt|
+|l|interne Entwicklung||
+||l|Fehlverhalten des Systems bei Test oder in Betrieb|
+||l|Fehler bzw. Unvollständigkeit in den Anforderungen|
+||l|Neue Technologie verfügbar (z.B. Herstellungsverfahren)|
+||<p>l</p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>|<p>Anpassung zur Reduktion Aufwand, Komplexität, etc. (z.B. Programmiersprache)</p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>|
+
+
+
+
+
+
+
+
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|58|
+| :- | :- | :- |
+
+
+|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.079.png "Image289")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.079.png "Image290")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.079.png "Image291")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.080.png "Image292")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.080.png "Image293")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.081.png "Image294")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.082.png "Image295")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.083.png "Image296")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.084.png "Image297")VERWALTUNG|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image288")|
+| :- | :- |
+|<p>Nachverfolgbarkeit - Traceability</p><p></p>||
+
+Nachverfolgbarkeit (Traceability) einer Anforderung ist die Fähigkeit, eine Anforderung über gesamten Lebenszyklus des Systems hinweg eindeutig nachvollziehen zu können
+
+|<p>vorgelagertes</p><p>Artefakt</p>|<p></p><p></p>|Anforderung|<p>nachgelagertes</p><p>` `Artefakt</p>||
+| :- | - | :- | :- | :- |
+
+|<p></p><p></p><p>SH need, Gesetz, Norm,…</p><p></p><p></p>|<p></p><p></p><p>Funktion oder Element </p><p>(code, Bauteil,…)</p><p></p><p></p>|<p></p><p></p><p>Test</p><p>(Aufbau, Parameter,…)</p><p></p><p></p>|<p></p><p></p><p>Anforderung</p><p>(super-/sub-Ebene)</p><p></p><p></p>|
+| :- | :-: | :-: | :-: |
+
+
+|<p>**ID**</p><p></p>|<p>**Text**</p><p></p>|<p>**refines**</p><p></p>|<p>**satisfied by**</p><p></p>|<p>**verified by**</p><p></p>|<p>**Derived to**</p><p></p>|<p>**Derived from**</p><p></p>|
+| :-: | :-: | :-: | :- | :- | :-: | :-: |
+|<p></p><p>2\.3.6</p><p></p>|Das System muss fähig sein im Spannungs- bereich von 11V bis 14V eine Zugkraft von mindestens 100N aufzubringen.|<p></p><p>2\.3, 2.2</p><p></p>|2\.3.121, 2.3.123, 2.3.134|<p></p><p>2\.3.12</p><p></p>|2\.3.6.7, 2.3.6.10||
+
+|07\.01.2025|<p></p><p>Entwicklung mechatronischer Systeme - Anforderungen</p>|59|
+| :- | :- | :- |
+
+
+|AGILE ANFORDERUNGSENTWICKLUNG|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image298")|
+| :- | -: |
+|<p>Einleitung</p><p></p>||
+
+|<p>l</p><p></p>|Prinzipien der agilen Philosophie sind nur schwer mit der klassischen „regellastigen“ Form der Anforderungserhebung vereinbar|<p>**Agiles Manifest:**</p><p>Individuen und Interaktionen…</p><p>Funktionierende Software…</p>||
+| :- | :- | :- | :- |
+|l|<p>Agile Entwicklungsmethoden erfordern passende Artefakte</p><p>l</p><p>klassische Anforderungen zu unflexibel und i.d.R. zu feingranular</p>|<p>Zusammenarbeit mit dem Kunden…</p><p>Reagieren auf Veränderung…</p>||
+||l|Variabler Entwicklungsumfang (Ziel) wiederspricht festen Anforderungen||
+|l|Verwendung von User Stories anstatt klassischen Anforderungen l Ermittlungstechnik und Dokumentationsform|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.085.png "Image299")||
+||l|Ziel und Zweck: Eigenschaften des Endprodukts besser beschreiben||
+||<p>l</p><p></p>|Herausforderung: Zahl der User Stories kann schnell „explodieren“, da Anforderungen eigenständig als User Story beschrieben werden müssen||
+|||![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.086.png "Image300")|aus: Boehm, A Spiral Model of Software|
+||||Development and Enhancement|
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|60|
+| :- | :- | :- |
+
+
+|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image301")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.087.png "Image302")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.088.png "Image303")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.089.png "Image304")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.090.png "Image305")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.091.png "Image306")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.091.png "Image307")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.092.png "Image308")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.092.png "Image309")AGILE ANFORDERUNGSENTWICKLUNG|
+| :- |
+|<p>SCRUM</p><p></p>|
+
+|<p>**Product Backlog:** </p><p>*Priorisierte Liste von Aufgaben* *für das Entwicklungsteam*</p>||
+| :- | :- |
+||**Product Backlog** enthält Aufgaben (Artefakte), die während des Sprint Planning „herausgeholt“ werden|
+||<p>- Formulierungder Aufgaben als „**User Story**“</p><p>- Abarbeitungmindestens einer User Story pro Sprint</p><p></p><p></p>|
+
+|||||<p>*funktionsfähiges*</p><p>*Produktinkrement*</p>|
+| :- | :- | :- | :- | :- |
+|||Sprint (max. 1 Monat)|||
+|Sprint Planning|Daily Scrum|Sprint Review|Retrospective||
+
+||*Gesamtes Team*||*Fortschritt berichten*||*Ergebnis überprüfen*||*Überprüfung Arbeitsprozesse*|||
+| :- | :- | :- | :- | :- | :- |
+||*Definition zu*||*Hindernisse identifizieren*||*künftige Anpassungen* ||*Effektivität des Teams verbessern*|||
+|*erledigende Aufgaben*||*schnelle Entscheidungen*|*festlegen* ||*organisatorisch*|||
+|||||*fachlich, technisch*|||
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|61||||
+
+|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.093.png "Image311")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.094.png "Image312")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.095.png "Image313")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.096.png "Image314")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.097.png "Image316")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.098.png "Image317")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.099.png "Image318")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.100.png "Image319")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.101.png "Image320")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.101.png "Image321")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.102.png "Image322")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.103.png "Image323")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.104.png "Image325")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.100.png "Image326")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.101.png "Image327")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.095.png "Image328")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.101.png "Image329")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.095.png "Image330")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.105.png "Image331")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.106.png "Image332")AGILE ANFORDERUNGSENTWICKLUNG|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image310")|
+| :- | :- |
+|Strukturierung||
+
+|Der Kunde möchte eine Hose bestellen|
+| :-: |
+
+**Grobgranulare** Anforderung, die entweder zu **komplex** oder zu 
+
+|**umfangreich** ist, um sie zu schätzen oder in einem Sprint umzusetzen|EPIC|E1|||
+| :- | :- | :- | :- | :- |
+
+|<p></p><p>Zerlegung, um mindestens eine User Story pro Sprint bearbeiten zu können</p>|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.107.png "Image315")|Hose auswählen|Hose bezahlen|
+| :- | :- | :-: | :-: |
+
+|Ein kurzer erzählender Text, der eine **Interaktion** zwischen dem|||||||
+| :- | :- | :- | :- | :- | :- | :- |
+|**Benutzer** und dem **System** beschreibt. Diese Beschreibung dient als|||||||
+|**Grundlage für Kommunikation** und als **Ausgangspunkt** für die|User Story|||U1||U2||
+|Umsetzung von **Produktfunktionalitäten**|||||||
+|Zerlegung, um User Story im Team an die Experten verteilen zu können|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.107.png "Image324")||||||
+||||||||
+|**Unterteilung** der User Stories in **einzelne Aufgaben**, die alle|||||||
+|erledigt werden müssen, um die User Story abzuschließen.|Task|T1||T2|T3|T4|
+
+|Datenbank mit verfügbaren Hosen|<p></p><p>website gestalten</p>|
+| :-: | :-: |
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|62|
+| :- | :- | :- |
+
+|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.108.png "Image334")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.109.png "Image335")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.110.png "Image336")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.111.png "Image337")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.112.png "Image338")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.113.png "Image339")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.114.png "Image340")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.115.png "Image341")AGILE ANFORDERUNGSENTWICKLUNG|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image333")|
+| :- | :- |
+|<p>User Stories Formulierung</p><p></p>||
+
+|l|User Stories werden als Grundlage für gewünschte Funktion formuliert||
+| :- | :- | :- |
+||l|KEINE Anforderung im klassischen Sinne|
+||l|Details der Umsetzung müssen noch diskutiert werden|
+||l|„Kommunikationsversprechen“ für Diskussion zwischen Kunde und Entwickler|
+|l|Formulierung orientiert sich an 3 Fragen: Wer? Was? Warum?||
+||l|Wer möchte die Funktionalität?|
+||l|Welche Funktionalität möchte die Rolle?|
+||<p>l</p><p></p>|<p>Was ist die Motivation für die Funktionalität?</p><p></p>|
+
+|<p>Wer?</p><p></p>|<p>Was?</p><p></p>|<p>Warum?</p><p></p>|
+| :-: | :-: | :-: |
+
+|Als <Rolle>||möchte ich <Ziel/Wunsch>,||um <Nutzen/Mehrwert>|
+| :- | :- | :- | :- | :- |
+
+|<p></p><p>Als Fahrzeugführer…</p>||
+| :- | :- |
+||… möchte ich jederzeit die Restreichweite des Fahrzeuges abrufen können,...|
+||… um zu wissen ob ich noch tanken muss, um mein geplantes Ziel zu erreichen.|
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|63|
+| :- | :- | :- |
+
+|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.116.png "Image343")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.117.png "Image344")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.118.png "Image345")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.119.png "Image346")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.120.png "Image347")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.121.png "Image348")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.114.png "Image349")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.115.png "Image350")AGILE ANFORDERUNGSENTWICKLUNG|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image342")|
+| :- | :- |
+|<p>User Stories Formulierung</p><p></p>||
+
+|<p>Wer?</p><p></p>|<p>Was?</p><p></p>|<p>Warum?</p><p></p>|
+| :-: | :-: | :-: |
+
+|Als <Rolle>||möchte ich <Ziel/Wunsch>,||um <Nutzen/Mehrwert>|
+| :- | :- | :- | :- | :- |
+
+|l|<Rolle> (Rollenbezeichnung/Persona)|||
+| :- | :- | :- | :- |
+||l|bestimmte Gruppe von Benutzern, für die eine Funktionalität gefordert wird|**Persona:**|
+||<p>l</p><p></p>|dadurch können Rollenkonzepte in User Stories integriert oder zielgruppenspezifische Aspekte berücksichtigt werden, anstatt nur vom Standardanwender auszugehen|(fiktive:r) Representant:in einer Zielgruppe (Stereotyp)|
+|l|<Ziel/Wunsch> (Funktionalität/Systemverhalten)|||
+||l|Kern der Anforderung||
+||l|Beschreibung der Funktionalität, die das System bereitstellen soll, oder ||
+|||Beschreibung einer Eigenschaft, die das System besitzen soll.||
+||l|Funktionalität oder Eigenschaft wird nicht bis ins letzte Detail beschrieben (à Gesprächsgrundlage)||
+|l <Nutzen/Mehrwert>||||
+||l|Beschreibung des fachlichen Werts bzw. wirtschaftlichen Nutzens, dient dazu,||
+||l|Motivation/Intention der Forderung und Grundlage für die Priorisierung der geforderten Funktionalität||
+||<p>l</p><p></p>|<p>Möglicher Hinweis auf weitere Aspekte, die für eine Funktion wichtig sind</p><p></p>||
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|64|
+| :- | :- | :- |
+
+|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.116.png "Image352")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.117.png "Image353")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.118.png "Image354")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.119.png "Image355")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.120.png "Image356")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.121.png "Image357")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.114.png "Image358")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.115.png "Image359")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.026.jpeg "Image360")AGILE ANFORDERUNGSENTWICKLUNG|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image351")|
+| :- | :- |
+|<p>Übung</p><p></p>||
+
+|<p>Wer?</p><p></p>|<p>Was?</p><p></p>|<p>Warum?</p><p></p>|
+| :-: | :-: | :-: |
+
+|Als <Rolle>||möchte ich <Ziel/Wunsch>,||um <Nutzen/Mehrwert>|
+| :- | :- | :- | :- | :- |
+
+Verfassen Sie User Stories für einen Kaffee-Vollautomaten oder Saugroboter.
+
+
+
+
+![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.027.jpeg "Image361")
+
+stock.adobe.com
+
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|65|
+| :- | :- | :- |
+
+
+|AGILE ANFORDERUNGSENTWICKLUNG|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image362")|
+| :- | -: |
+|<p>User Stories verdeutlichen</p><p></p>||
+
+|l|Der Ansatz eines „Kommunikationsversprechen“ birgt Potential für Missverständnisse|||
+| :- | :- | :- | :- |
+|l|Verdeutlichen durch **Akzeptanzkriterien** als Teil der User Story|||
+||l|beschreiben Voraussetzungen, Benutzeraktionen und Reaktionen des Systems||
+||l|wenige Parameter bis hin zu komplexen Szenarien||
+||l|mehrere Sätze an Abnahmekriterien pro User Story möglich||
+||l|ermöglichen Beurteilung, ob Umsetzung der User Story erfolgreich und vollständig ist||
+||l|Strukturierung z.B. nach **Given-When-Then-Schema**||
+|||l|Gegeben: <Vorbedingung>|
+|||l|Wenn: <Aktion>|
+|||l|Dann: <erwartetes Ergebnis> |
+|||l|ermöglicht klares Bild der Bedürfnisse|
+|||<p>l</p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>|<p>unterstützt testgetriebene Entwicklung (direkte Ableitung des Test-Setups)</p><p></p><p></p><p></p><p></p><p></p><p></p>|
+
+
+
+
+
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|66|
+| :- | :- | :- |
+
+|AGILE ANFORDERUNGSENTWICKLUNG|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image363")|
+| :- | -: |
+|<p>User Stories verdeutlichen</p><p></p>||
+
+|l|Hinterfragen von User Stories mit „**5 Why**“ Methode||
+| :- | :- | :- |
+||l|auch als Ursprungsursachenanalyse (root cause analysis) bezeichnet|
+||l|bis zu fünfmalige Hinterfragen der gewünschten Funktionalität oder Eigenschaft mit der Frage „Warum?“|
+||l|Ursprung der Methode im Qualitätsmanagement|
+||l|Anwendung zur Ermittlung von Hintergrundinformationen zur User Story|
+||l|i.d.R. als Dialog zwischen Auftraggeber und –nehmer (z.B. Kunde und Entwickler)|
+||l|Fördert Verständnis für User Story und unterstützt Problemverständnis|
+
+|**Warum** kannst Du nicht drucken?|**Warum** muss das System mit mehrfachen Zuordnungsanfragen umgehen können?|
+| :- | :- |
+|Weil die Druckerpatronen leer sind.|Weil einige Bestellungen aufgeteilt werden müssen.|
+|**Warum** sind die leeren noch nicht ersetzt?|Und **warum** müssen sie aufgeteilt werden?|
+|Weil keine vollen Patronen da sind.|Weil nicht alles auf eine Palette passen wird.|
+|**Warum** sind keine neuen Patronen da?|**Warum** wird nicht alles drauf passen?|
+|Weil keiner welche bestellt hat.|Weil wir nur eine bestimmte Anzahl von einem Gegenstand auf eine einzelne |
+|**Warum** sind noch keine bestellt?|Palette packen können. Es gibt nur begrenzt Platz um das Zeug sicher zu stapeln.|
+|Weil unklar ist wer / wie bestellen darf.|Und **warum** beeinflusst das das System?|
+|**Warum** ist das noch unklar?|Weil wir nicht wollen, dass Kunden über die Palettenaufteilung nachdenken|
+|Weil der Einkaufsprozess zentralisiert und |müssen. Wir wollen, dass sie einfach ihre Bestellung aufgeben können und das|
+|<p>noch nicht abschließend kommuniziert ist. </p><p></p>|<p>System errechnet, wie viele Paletten dafür benötigt werden. </p><p></p>|
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|67|
+| :- | :- | :- |
+
+
+|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.026.jpeg "Image365")AGILE ANFORDERUNGSENTWICKLUNG|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image364")|
+| :- | -: |
+|<p>Übung</p><p></p>||
+
+Verfassen Sie Akzeptanzkriterien zu den formulierten User Stories für den Kaffeevollautomat oder Saugroboter.
+
+|l|Strukturierung z.B. nach **Given-When-Then-Schema**||
+| :- | :- | :- |
+||l|Gegeben: <Vorbedingung>|
+||l|Wenn: <Aktion>|
+||l|Dann: <erwartetes Ergebnis> |
+||l|ermöglicht klares Bild der Bedürfnisse|
+||<p>l</p><p></p><p></p>|<p>unterstützt testgetriebene Entwicklung (direkte Ableitung des Test-Setups)</p><p></p><p></p>|
+
+![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.027.jpeg "Image366")
+
+stock.adobe.com
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|68|
+| :- | :- | :- |
+
+
+|AGILE ANFORDERUNGSENTWICKLUNG|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image367")|
+| :- | -: |
+|<p>User Stories INVEST-Schablone (Kriterien)</p><p></p>||
+
+|l|**I**ndependent (unabhängig)||
+| :- | :- | :- |
+||l|Stories am einfachsten zu bearbeiten, wenn sie unabhängig von einander sind |
+|||(Umsetzung in beliebiger Reihenfolge)|
+|l|**N**egotiable (verhandlungsfähig)||
+||l|Gute Story ist verhandelbar, kein expliziter Vertrag für Features.|
+||l|Details werden während Entwicklung zwischen Kunde und Entwickler gemeinsam erstellt und präzisiert|
+|l|**V**aluable (wertvoll)||
+||l|Story muss wertvoll v.a. für Kunde sein|
+|l|**E**stimable (einschätzbar)||
+||l|Story muss für Planung bzgl. Aufwand und Realisierung einschätzbar sein. Bei großen Stories schwierig|
+|l|**S**mall (klein)||
+||l|Story sollte in *einem* Sprint realisierbar sein (Personen-Tage, max. wenige Personen-Wochen)|
+|l|**T**estable (prüfbar)||
+||l|Story muss getestet werden können, um erfolgreiche Umsetzung feststellen zu können|
+||<p>l</p><p></p><p></p>|<p>Merkmal für klar formulierte Story, frühe Definition der Tests daher sinnvoll</p><p></p><p></p>|
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|69|
+| :- | :- | :- |
+
+
+|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.026.jpeg "Image369")AGILE ANFORDERUNGSENTWICKLUNG|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image368")|
+| :- | -: |
+|<p>Übung</p><p></p>||
+
+Überprüfen Sie die formulierten User Stories für den Kaffeevollautomat oder Saugroboter auf
+
+Erfüllung der INVEST-Kriterien und passen Sie ggf. an.
+
+
+
+
+
+![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.027.jpeg "Image370")
+
+stock.adobe.com
+
+
+
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|70|
+| :- | :- | :- |
+
+
+|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.026.jpeg "Image373")AGILE ANFORDERUNGSENTWICKLUNG|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image371")|
+| :- | -: |
+|<p>Übung</p><p></p>||
+
+Formulieren Sie einen EPIC passend zu mindestens einer (existierenden) User Story für den 
+
+Kaffeevollautomat oder Saugroboter.
+
+Formulieren Sie weitere User Stories zu diesem EPIC.
+
+Unterteilen Sie eine User Story in weitere TASKS.
+
+|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.027.jpeg "Image374")|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.122.jpeg "Image372")|
+| :- | :- |
+
+stock.adobe.com
+
+
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|71|
+| :- | :- | :- |
+
+|AGILE ANFORDERUNGSENTWICKLUNG|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image375")|
+| :- | -: |
+|<p>User Stories Definition of Ready</p><p></p>||
+
+|l|Definition of Ready (DoR) beschreibt wann die Story bereit für die Implementierung (Sprint) ist||
+| :- | :- | :- |
+||l|Unklare Aufgabenstellungen werden vermieden|
+||l|Reduziert Unterbrechungen aufgrund von Unklarheiten während Entwicklung|
+||l|Abhängigkeiten werden identifiziert|
+||l|Kriterien zur Überprüfung werden in der DoR festgelegt (z.B. INVEST Prinzip)|
+||l|Zusätzliche Kriterien durch Product Owner und Entwicklungsteam|
+||l|à User Stories kommen ausgereift in den Sprint|
+|l|Herausforderung||
+||l|„Agile Idee“ geht durch einen umfangreichen Kriterienkatalog und regulierten Prüfprozess verloren|
+||l|Fokus auf gemeinsames Verständnis und Zusammenarbeit anstatt Artefakten|
+|||(z.B. „Gemeinsames Verständnis der User Story im Refinement hergestellt“ anstatt |
+|||„Anforderung liegt in User Story-Satzform vor“)|
+||<p>l</p><p></p><p></p><p></p><p></p><p></p><p></p>|<p>DoR ist keine statische Vereinbarung à Änderungen in Retrospektive initiieren</p><p></p><p></p><p></p><p></p><p></p>|
+
+
+
+
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|72|
+| :- | :- | :- |
+
+
+|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.123.png "Image377")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.124.png "Image378")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.125.png "Image379")![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.126.png "Image380")AGILE ANFORDERUNGSENTWICKLUNG|||![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image376")|||
+| :- | :- | :- | :- | :- | :- |
+|Unterschied zu klassischer Methodik||||||
+|||||**Plan driven** *klassisch*||
+|l|<p>Agile Anforderungsentwicklung (scope variabel)</p><p>l Kundennah</p>|Termin *geschätzt*||Kosten *geschätzt*||
+||<p>l</p><p>l</p><p>l</p><p>l</p>|<p>Verhandelbar</p><p>User Stories als Kommunikationsversprechen</p><p>Iterative Anforderungsentwicklung als Teil der technischen Entwicklung</p><p>„Als Nutzer möchte ich mindestens 5 Tassen Kaffee mit jeweils 200ml aus</p>|||||
+|||meiner Kaffeemaschine ohne Nachfüllen des Wassertanks bekommen.“||<p>**scope**</p><p>***fix***</p>||
+|l|Klassische Anforderungsentwicklung (scope fix)|||||
+||<p>l</p><p>l</p><p>l</p>|<p>Anforderungen zu Beginn</p><p>Anforderungen und Spezifikation als verbindlicher Vertragsinhalt</p><p>Entwicklungsbegleitendes Anforderungsmanagement</p>||**Vision driven** *agil*||
+||l|„Der Wassertank sollte mindestens 1l Fassungsvermögen haben.“||<p>**scope**</p><p>***variabel***</p>||
+|||||||||
+||||Termin *fix*|Kosten *fix*||
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|73|
+| :- | :- | :- |
+
+
+|ABSCHLUSS ANFORDERUNGEN|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image381")|
+| :- | -: |
+|<p>Abschluss</p><p></p>||
+
+|<p>**Kontrollfragen 2. Spezifikation** l</p><p>Sind aus der Hauptmerkmalliste alle relevanten Anforderungen abgeleitet worden?</p>|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.127.jpeg "Image382")||
+| :- | :-: | :- |
+||(alle Nebenmerkmale erfasst oder überprüft?)||
+|l|Sind die Anforderungen eindeutig formuliert und/oder messbar?||
+|l|Sind die Anforderungen vollständig, richtig und widerspruchsfrei?||
+|l|Sind die in den Anforderungen geforderten Spezifikationen nachvollziehbar und realistisch?||
+|l|Ist die Spezifikation lösungsneutral formuliert?||
+|l|Sind die spezifizierten Anforderungen absicherungsfähig und sind die Methoden und Mittel zur Verifikation und Validierung bekannt und verfügbar?|aus: VDI/VDE 2206:2021-11|
+|l|Wurde zwischen Fest- und Wunschforderungen oder||
+||Optimierungszielen unterschieden?||
+|<p>l</p><p></p><p></p><p></p><p></p><p></p><p></p>|<p>Ist ein Prozess zur Änderung der Anforderungen vereinbart?</p><p></p><p></p><p></p><p></p><p></p><p></p>||
+
+|07\.01.2025|Entwicklung mechatronischer Systeme - Anforderungen|74|
+| :- | :- | :- |
+
+|ABSCHLUSS ANFORDERUNGEN|![](Aspose.Words.970055e5-d980-46c5-a539-c65b23053014.003.png "Image383")|
+| :- | -: |
+|<p>Optionale Übung</p><p></p>||
+
+Formulieren Sie zu den folgenden Stakeholder Needs für einen Bankautomaten Anforderungen
+
+|l|PIN 3mal falsch à Karte einziehen|
+| :- | :- |
+|l|Wunschbeträge beim Abheben erlauben|
+|l|Auszahlung nur, wenn Kontosaldo positiv|
+|l|Fremdkarten akzeptieren|
+|l|Authentifizierung über Karten und PIN.|
+|l|Bankautomat Benutzung: Kunde bricht Aktion ab|
+|l|Alternativ: Bankautomat bricht Aktion ab|
+|l|GUI Fehler à Service Team Meldung.|
+|l|Bei Einbruchversuch à Tinte im Tresor freisetzen|
+|<p>l</p><p></p><p></p><p></p><p></p><p></p><p></p>|<p>Münzen/Scheine Einzahlung</p><p></p><p></p><p></p><p></p><p></p>|
+
+
+
+
+-->

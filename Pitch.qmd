@@ -1,0 +1,126 @@
+---
+title: "MTB3 Entwicklung mechatronischer Systeme 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    email: christian.anders@hs-esslingen.de
+    affiliations: Hochschule Esslingen
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Pitchen (von Projekten)
+
+-------------------------------------------------------------------------- -->
+
+### Pitchen von Projekten
+
+
+---
+
+> *„Der Wurm muss dem Fisch schmecken, nicht dem Angler.“* (Quelle: Unbekannt)
+
+---
+
+::: {.callout-tip}
+## Definition: *"Pitch"*
+Ein Pitch ist die Kunst, ein Projekt, eine Idee oder ein Produkt in kurzer Zeit und auf überzeugende Weise zu präsentieren, um Interesse zu wecken, Unterstützung zu gewinnen oder Investoren, Kunden oder andere Stakeholder zu überzeugen.
+:::
+
+Um ein Projekt erfolgreich zu pitchen, gibt es einige Regeln deren Beachtung helfen kann, den Pitch erfolgreich zu gestalten:
+
+1. Kenne dein Publikum“: Falls möglich: Recherchieren Sie im Voraus, wer Ihre Zuhörer sein werden. Verstehen Sie die Interessen, Bedürfnisse und Erwartungen Ihres Publikums, damit Sie Ihre Präsentation entsprechend anpassen können. Passen Sie Ihre Sprache, Ihre Beispiele und Ihre Argumente an, um eine Verbindung zu ihnen herzustellen und sie besser zu überzeugen.
+1. Formulieren Sie eine klare und prägnante Botschaft: Formulieren Sie eine klare und prägnante Botschaft, die den Kern Ihres Projekts vermittelt. Vermeiden Sie Fachjargon oder zu komplexe Ausdrücke. Konzentrieren Sie sich darauf, den Wert und den Nutzen Ihres Projekts auf einfache und überzeugende Weise zu kommunizieren.
+1. Nutzen Sie Storytelling: Verwenden Sie Storytelling-Elemente, um Ihre Präsentation lebendiger und ansprechender zu gestalten. Erzählen Sie eine Geschichte, die das Problem oder die Herausforderung aufzeigt, die Ihr Projekt lösen soll, und zeigen Sie auf, wie Ihr Projekt einen positiven Einfluss hat. Geschichten können emotional ansprechend sein und das Publikum dazu bringen, sich stärker mit dem Projekt zu identifizieren. 
+1. Nutzen Sie visuelle Unterstützung: Nutzen Sie visuelle Hilfsmittel wie Präsentationsfolien, Grafiken oder Demos, um Ihre Präsentation zu unterstützen. Verwenden Sie ansprechendes Design und sorgen Sie für eine klare und verständliche Darstellung der Informationen. Visuelle Elemente können dabei helfen, komplexe Konzepte zu veranschaulichen und das Verständnis und die Aufmerksamkeit des Publikums zu erhöhen. 
+1. Zeigen Sie Herausforderungen und Lösungen auf: Zeigen Sie auf, welche Herausforderungen oder Probleme Ihr Projekt angeht, und präsentieren Sie überzeugende Lösungen. Betonen Sie den Mehrwert und die Vorteile, die Ihr Projekt bietet, und erklären Sie, wie es zu einer positiven Veränderung oder Verbesserung führen kann.
+1. Erklären Sie die praktische Umsetzung: Veranschaulichen Sie, wie Ihr Projekt praktisch umgesetzt wird und welchen konkreten Nutzen es bringt. Geben Sie einen Überblick über den Projektplan, die Meilensteine und die Zeitrahmen. Zeigen Sie auf, wie das Projekt in den bestehenden Kontext oder die Organisation integriert wird und welche Ressourcen dafür benötigt werden. 
+1. Beantworten Sie Fragen und Einwände: Bereiten Sie sich darauf vor, mögliche Fragen oder Einwände seitens des Publikums zu beantworten. Überlegen Sie im Voraus, welche Bedenken oder Zweifel auftreten könnten, und entwickeln Sie klare und überzeugende Antworten. Seien Sie bereit, Ihre Argumente zu verteidigen und weitere Informationen zu liefern, um Vertrauen und Glaubwürdigkeit aufzubauen. 
+1. Zeigen Sie Begeisterung und Überzeugung: Seien Sie leidenschaftlich und überzeugt von Ihrem Projekt. Übertragen Sie Ihre Begeisterung auf das Publikum und zeigen Sie, dass Sie voll und ganz hinter Ihrem Projekt stehen. Emotionen können eine starke Rolle spielen, um andere zu inspirieren und zu motivieren, sich für Ihr Projekt zu engagieren.
+1. Üben Sie und bereiten Sie sich vor: Üben Sie Ihre Präsentation gründlich im Voraus, um sicherzustellen, dass Sie sie selbstbewusst und flüssig vortragen können. Achten Sie auf Ihre Körpersprache, Ihre Stimme und Ihre Ausdrucksweise. Seien Sie gut vorbereitet, um einen professionellen und überzeugenden Eindruck zu hinterlassen.
+1. Führen Sie ein Follow-up durch: Vergessen Sie nicht, nach dem Pitch einen Follow-up zu machen. Bedanken Sie sich für die Zeit und das Interesse des Publikums und bieten Sie weitere Informationen oder Unterstützung an, falls benötigt. Halten Sie den Kontakt aufrecht und bleiben Sie offen für weitere Gespräche oder Diskussionen.
+
+
+Das Vorbereiten eines Pitchs (oder einer vergleichbaren Präsentation, z.B. auf einer Ausstellung oder bei einer Prüfung an der Hochschule) ist sehr zeitaufwendig und wird von unerfahrenen Vortragenden zumeist deutlich unterschätzt. Als Anhaltspunkt für die Vorbereitung von Vorträgen (bei denen alle fachlichen Informationen als bereits vorliegend angenommen werden) gilt: Jede Minute Vortrag erfordert eine Stunde Vorbereitung. In einzelnen Fällen (z.B. Präsentation der eigenen Doktorarbeit im Rahmen einer Dissertationsprüfung) kann der Aufwand auch das 10-fache betragen.
+
+Der Elevator Pitch (auch: „Elevator Speech“ oder „Elevator Statement“) ist eine Kurzpräsentation oder prägnante Zusammenfassung einer Idee oder der eigenen Person. Ziel ist, sein Gegenüber dabei in rund 60 Sekunden zu begeistern, zu überzeugen oder etwas zu verkaufen.
+
+Der Elevator Pitch war ursprünglich eine Idee amerikanischer Mitarbeitenden des Vertriebs, die Kunden und Chefs während der Dauer einer Aufzugfahrt von ihrer Idee überzeugen wollten. Weil die Fahrt in amerikanischen Hochhäusern selten länger als 60 Sekunden dauerte, mussten alle relevanten Informationen in dieses Zeitfenster passen: Kurzvorstellung, Begeisterung für das Projekt wecken und den Auftrag an Land ziehen oder den vielbeschäftigten Chef überzeugen.
+
+Elevator Pitch Dauer
+Das Elevator Statement war nach kurzer Zeit schon so erfolgreich, dass der „Pitch“ zum geflügelten Wort wurde bis heute genutzt wird. Allerdings wird die Kurzpräsentation nur noch selten im Aufzug vorgetragen, sondern dafür genutzt, Gesprächspartner von der eigenen Person, einem Projekt oder einer Idee zu überzeugen und Lust auf mehr zu machen. Geblieben ist nur das zeitliche Limit: Länger als 60 Sekunden sollte ein klassischer Elevator Pitch nicht dauern. Oder eben nur einen kurzen „Moment“…
+
+
+::: {.callout-caution}
+## 1 Minute Vortrag erfordert 1 Stunde Vorbereitung
+Eine Minute Vortrag erfordert eine Stunde Vorbereitung!
+:::
+
+
+<!-- -------------------------------------------------------------------------
+
+                       AIDA
+
+-------------------------------------------------------------------------- -->
+
+### AIDA
+
+Im Zusammenhang mit dem Pitchen von Projekten bezieht sich AIDA auf ein Akronym, das für Attention (Aufmerksamkeit), Interest (Interesse), Desire (Wunsch) und Action (Handlung) steht. Es handelt sich um eine bewährte Methode, um die Aufmerksamkeit des Publikums zu gewinnen und sie von der Relevanz und den Vorteilen eines Projekts zu überzeugen. 
+
+1. **Attention** (Aufmerksamkeit): Der erste Schritt besteht darin, die Aufmerksamkeit des Publikums zu erlangen. Dies kann durch eine starke Eröffnung, eine interessante Frage, ein überraschendes Faktum oder eine fesselnde Geschichte geschehen. Das Ziel ist es, die Zuhörer dazu zu bringen, sich auf das Gesagte zu konzentrieren und neugierig auf das Projekt zu werden.
+
+2. **Interest** (Interesse): Nachdem Sie die Aufmerksamkeit des Publikums gewonnen haben, müssen Sie ihr Interesse wecken. Erklären Sie die Problematik, die Ihr Projekt lösen soll, und präsentieren Sie überzeugende Argumente, warum dieses Problem wichtig ist. Zeigen Sie, wie Ihr Projekt eine Lösung bietet und welche Vorteile es mit sich bringt. Stellen Sie sicher, dass Sie klare und prägnante Informationen liefern, um das Interesse aufrechtzuerhalten.
+
+3. **Desire** (Wunsch): Sobald Sie das Interesse des Publikums geweckt haben, ist es wichtig, den Wunsch nach Ihrem Projekt zu erzeugen. Beschreiben Sie die einzigartigen Merkmale, die Ihr Projekt von anderen unterscheiden, und vermitteln Sie die positiven Auswirkungen, die es haben kann. Nutzen Sie Fakten, Daten oder Erfolgsgeschichten, um das Verlangen der Zuhörer nach Ihrem Projekt zu verstärken. Zeigen Sie auf, wie es ihnen persönlich nutzen oder ihre Situation verbessern kann.
+
+4. **Action** (Handlung): Der letzte Schritt ist die Aufforderung zur Handlung. Fordern Sie das Publikum auf, konkrete Schritte zu unternehmen, um Ihr Projekt zu unterstützen oder umzusetzen. Dies kann beispielsweise die Bitte um finanzielle Unterstützung, die Zusammenarbeit bei der Umsetzung oder die weitere Verbreitung der Informationen sein. Sorgen Sie dafür, dass die Handlungsaufforderung klar, spezifisch und überzeugend ist.
+
+Das AIDA-Modell dient als strukturierte Herangehensweise, um Ihre Projektpräsentation oder Ihren Pitch effektiver und überzeugender zu gestalten. Es ermöglicht es Ihnen, die Aufmerksamkeit des Publikums zu gewinnen, ihr Interesse zu wecken, den Wunsch nach Ihrem Projekt zu erzeugen und schließlich eine Handlung zu provozieren.
+
+
+<!-- -------------------------------------------------------------------------
+
+                       The golden circle (Simon Sinek)
+
+-------------------------------------------------------------------------- -->
+
+### THE GOLDEN CIRCLE
+Das Konzept des "Goldenen Kreises" von Simon Sinek ist eine Idee, die in seinem Buch "Start with Why" (deutscher Titel: "Warum mit dem Warum") vorgestellt wurde. Es dreht sich um die Frage, wie erfolgreiche Organisationen, Führungskräfte und Individuen ihre Kommunikation und ihr Handeln strukturieren können, um eine tiefere Verbindung mit anderen herzustellen und ihre Ziele effektiver zu erreichen.
+
+Simon Sinek ist ein britisch-amerikanischer Autor, Motivationssprecher und Organisationsberater, der für seine Arbeiten im Bereich Führung, Kommunikation und Unternehmenskultur bekannt ist. Sinek hat einige populäre Bücher veröffentlicht und hält Vorträge über Führungskonzepte und menschliche Motivation. Eines seiner bekanntesten Konzepte ist das "Goldene Kreis"-Modell, das er in seinem Buch "Start with Why" (deutscher Titel: "Warum mit dem Warum") vorstellt. Dieses Modell betont die Bedeutung des "Warum" hinter dem Handeln und Kommunizieren von Unternehmen und Individuen. Sinek argumentiert, dass erfolgreiche Organisationen nicht nur erklären, was sie tun, sondern vor allem, warum sie es tun.
+
+Der Goldene Kreis besteht aus drei Schichten: Warum, Wie und Was.
+
+1. **Warum (Why):** Der innere Kreis des Goldenen Kreises repräsentiert das "Warum". Dies ist der Kern des Konzepts und steht für das übergeordnete Ziel, den Zweck oder die Mission eines Unternehmens oder einer Person. Es geht um die Frage: Warum tun wir, was wir tun? (Purpose) Sinek argumentiert, dass erfolgreiche Organisationen und inspirierende Führungskräfte mit ihrem Warum beginnen und dies als den treibenden Motor für ihre Aktivitäten nutzen.
+
+2. **Wie (How):** Die mittlere Schicht des Goldenen Kreises stellt das "Wie" dar. Dies ist die Ebene, auf der Organisationen oder Einzelpersonen ihre Strategien, Werte und Methoden beschreiben. Hier geht es um die Frage: Wie setzen wir unser Warum um? Wie erreichen wir unsere Ziele?
+
+3. **Was (What):** Der äußere Kreis repräsentiert das "Was". Dies sind die konkreten Produkte, Dienstleistungen oder Handlungen, die eine Organisation anbietet. Dies ist die Ebene, auf der die meisten Menschen normalerweise beginnen, wenn sie über ihre Arbeit sprechen. Es geht um die Frage: Was machen wir?
+
+![](Aspose.Words.2982afe9-dbf4-4240-a08e-ee18d7dcdd7c.004.png)
+
+**Abb.:** Der goldene Kreis (nach Simon Sinek)
+
+Die zentrale These des Goldenen Kreises ist, dass erfolgreiche Organisationen und Führungskräfte mit ihrem Warum beginnen und von dort aus nach außen arbeiten. Indem sie ihr Warum klar verstehen und kommunizieren, können sie eine emotionale Verbindung zu Kunden, Mitarbeitern und anderen Stakeholdern herstellen. Menschen fühlen sich eher zu Organisationen hingezogen, die Werte und Überzeugungen teilen, die mit ihren eigenen in Einklang stehen.
+
+Sinek betont, dass das Warum die treibende Kraft ist, die die Entscheidungen, das Verhalten und die Kultur einer Organisation beeinflusst. Es schafft eine klare Identität und Motivation, die über bloße Produkte oder Dienstleistungen hinausgeht.
+
+

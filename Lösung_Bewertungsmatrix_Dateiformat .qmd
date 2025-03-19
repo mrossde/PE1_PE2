@@ -1,0 +1,45 @@
+---
+title: "MTB3 Entwicklung mechatronischer Systeme 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    email: christian.anders@hs-esslingen.de
+    affiliations: Hochschule Esslingen
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+---
+
+<!-- 
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Lösung: Auswahl Dateiformat
+
+-------------------------------------------------------------------------- -->
+
+
+
+::: {.callout-tip}
+## In der Vorlesung am 13.03.2024 im Team erarbeitete Bewertungsmatrix zur Auswahl des Dateiformats für das Skript zur Vorlesung
+
+| Kriterien               | HTML     | PDF $(\LaTeX)$ | PDF (typsd) | Word (*.docx) |
+|-------------------------|----------|----------|----------|----------|
+| One-Note-Kompatibel     |     2    |    5     |     5    |     3    |
+| Goodnotes-Kompatibel    |     2    |    5     |     5    |     1    |    
+| Enthält klickbare Links |     5    |    5     |     1    |     1    |
+| **Summe**:              |     9    |  **15**  |    11    |     5    |
+
+: Bewertungsmatrix zur Auswahl des Dateiformats für das Skript zur Vorlesung {#tbl-bewertungsmatrix .striped .hover .bordered tbl-colwidths="[28,18,18,18,18]"}
+
++ Die Bewertungen reichen von 1 bis 5 Punkte, wobei 1 Punkt die schlechteste Bewertung und 5 Punkte die beste Bewertung ist.
+:::

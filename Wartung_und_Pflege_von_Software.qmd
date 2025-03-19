@@ -1,0 +1,54 @@
+---
+title: "MTB3 Entwicklung mechatronischer Systeme 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    email: christian.anders@hs-esslingen.de
+    affiliations: Hochschule Esslingen
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Wartung und Pflege von Software
+
+-------------------------------------------------------------------------- -->
+
+### Wartung und Pflege von Software
+Obwohl die Begriffe "Wartung" und "Pflege" von Software oft synonym verwendet werden, existiert dennoch Unterscheidung zwischen den beiden Konzepten.
+
+**Wartung von Software** bezieht sich in der Regel auf den Prozess der Fehlerbehebung, Leistungsverbesserung und Anpassung von Softwareanwendungen, um sicherzustellen, dass sie ordnungsgemäß funktionieren. Dies umfasst die Identifizierung und Behebung von Bugs, das Patchen von Sicherheitslücken, die Aktualisierung von Abhängigkeiten und die Anpassung an veränderte Anforderungen.
+
+Die "Wartung von Software" bezeichnet den Prozess, in dem bestehende Softwareanwendungen gepflegt, aktualisiert und verbessert werden, um ihre Funktionalität, Sicherheit und Leistung zu gewährleisten. Diese Phase ist ein wesentlicher Bestandteil des Softwareentwicklungslebenszyklus. Die Wartung von Software umfasst typischerweise folgende Aktivitäten:
+
++ **Fehlerkorrekturen**: Identifizieren und Beheben von Programmfehlern (Bugs), die nach der Veröffentlichung der Software auftreten, um deren ordnungsgemäße Funktion sicherzustellen.
+
++ **Anpassungen**: Änderungen an der Software, um sie an neue Anforderungen, Betriebssysteme oder Plattformen anzupassen.
+
++ **Leistungsverbesserungen**: Optimierung der Software, um die Geschwindigkeit und Ressourcennutzung zu steigern.
+
++ **Sicherheitsaktualisierungen**: Integration von Sicherheitspatches und -verbesserungen, um die Anwendung vor potenziellen Bedrohungen zu schützen.
+
++ **Aktualisierung von Abhängigkeiten**: Aktualisierung von Drittanbieterbibliotheken und Komponenten, um Sicherheit und Kompatibilität sicherzustellen.
+
+Die Wartung von Software ist von großer Bedeutung, da sie die Lebensdauer und den Nutzen von Softwareanwendungen verlängert. Ein strukturiertes Wartungsmanagement trägt dazu bei, den Wert der Investition in Softwareentwicklung zu erhalten und die Anwendungsqualität kontinuierlich zu verbessern.
+
+**Pflege von Software** hingegen ist ein umfassenderer Begriff, der zusätzlich zur reinen Wartung auch die kontinuierliche Anpassung und Verbesserung von Software umfasst, um ihre Funktionalität, Leistung und Benutzererfahrung langfristig aufrechtzuerhalten. Dies schließt nicht nur die reaktive Behebung von Problemen ein, sondern auch proaktive Maßnahmen wie das Aktualisieren von Schnittstellen, die Optimierung von Ressourcennutzung und die fortlaufende Dokumentation von Änderungen.
+
+Wartung konzentriert sich auf die Behebung von Problemen, während die Pflege einen umfassenderen Ansatz verfolgt, der darauf abzielt, die Software langfristig funktionsfähig und anpassungsfähig zu halten sowie weiterzuentwickeln.

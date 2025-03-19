@@ -1,0 +1,61 @@
+//-------------------------------------------------------------------------
+//
+//                     Prototyping und Test
+//
+//-------------------------------------------------------------------------
+
+
+::3D-Scanner::
+Was unterscheidet Lasertriangulation von Streifenlichtprojektion?
+{
+	~%50%Bei der Lasertriangulation wird ein Laserstrahl auf die Oberfläche eines Objekts gerichtet und die Position des reflektierten Strahls gemessen.
+    ~%50%Bei der Streifenlichtprojektion werden Streifenmuster auf die Oberfläche eines Objekts projiziert und die Verformung dieser Muster wird analysiert.
+	~%-33.333%Bei der Lasertriangulation werden Muster aus Laserstrahlen auf die Oberfläche projiziert, während bei der Streifenlichtprojektion ein einzelner Laserstrahl verwendet wird.
+	~%-33.333%Lasertriangulation und Streifenlichtprojektion sind synonyme Begriffe für dasselbe Verfahren.
+	~%-33.333%Bei der Streifenlichtprojektion wird die Zeit gemessen wird, die das Licht benötigt, um vom Objekt zurückzuprallen.
+}
+
+
+::Genauigkeit von 3D-Scannern::
+Welche Aussage beschreibt am besten die Genauigkeit der verschiedenen Verfahren zum Scannen von Objekten?
+{
+	~%100%Die Genauigkeit von 3D-Scannern variiert je nach dem verwendeten Verfahren. 
+    ~%-25%Die Genauigkeit von 3D-Scannern hängt ausschließlich von der Auflösung der verwendeten Kameras ab.
+	~%-25%Die Genauigkeit von 3D-Scannern hängt hauptsächlich von der Farbtiefe der aufgenommenen Bilder ab.
+	~%-25%Alle 3D-Scannerverfahren bieten dieselbe Genauigkeit unabhängig von den verwendeten Techniken.
+	~%-25%Die Genauigkeit von 3D-Scannern ist ausschließlich von der Größe des gescannten Objekts abhängig.
+}
+
+
+::Genauigkeit von 3D-Scannern::
+Welche Genauigkeit kann mit welchem Verfahren zum Scannen von Objekten erreicht werden?
+{
+  =Computertomographie -> 0.001mm
+  =Lasertriangulation -> 0.01mm
+  =Streifenlichtscanner -> 0.01mm
+  =Photogrammetrie -> 0.1mm
+}
+
+
+::Lichtquelle bei 3D-Scannern::Welche physikalischen Eigenschaften machen Licht für die Verwendung in 3D-Scannern besonders geeignet?
+{
+    ~%100%Die Wellenlänge des Lichts beeinflusst die Präzision und Detailgenauigkeit des Scans.
+    ~%-33.333%Die Farbe des Lichts hat keinen Einfluss auf die Qualität des 3D-Scans.
+    ~%-33.333%Die Intensität des Lichts ist entscheidend für die Geschwindigkeit des Scanvorgangs.
+	~%-33.333%Die Polarisation des Lichts beeinträchtigt die Auflösung des 3D-Scanners.
+}
+
+
+::Time-of-Flight vs. Lasertriangulation::
+Welche der folgenden Aussagen beschreibt die Vor- und Nachteile des Time-of-Flight-Verfahrens im Vergleich zur Lasertriangulation am besten?
+{
+    ~%50%Das Time-of-Flight-Verfahren ermöglicht eine schnellere Datenerfassung und ist weniger empfindlich gegenüber Umgebungslicht.
+	~%50%Die Lasertriangulation ermöglicht eine höhere Genauigkeit und Auflösung, ist aber anfälliger für Reflexionen.
+	~%-33.333%Die Lasertriangulation ermöglicht das Scannen größerer Objekte als dies mit dem Time-of-Flight-Verfahren möglich ist.
+    ~%-33.333%Das Time-of-Flight-Verfahren ermöglicht eine höhere Genauigkeit und Auflösung als die Lasertriangulation.
+	~%-33.333%Die Lasertriangulation ist schneller und weniger anfällig für Störungen durch andere Lichtquellen als das Time-of-Flight-Verfahren.    
+}
+
+::Time-of-Flight Abschätzung max. Datenpunkte pro Sekunden::
+Ein von einem ToF-Scanner zu scannendes Objekt sei maximal 1 Meter von dem Scanner entfernt. Wie viele Datenpunkte pro Sekunde könnte ein ToF-Scanner in diesem Fall theoretisch erfassen?
+{=100.000.000 ~1.000.000 ~10.000}

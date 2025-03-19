@@ -1,0 +1,101 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Produkt
+
+-------------------------------------------------------------------------- -->
+
+### Produkt {#sec-produkt}
+
+::: {.callout-tip}
+## Definition: *"Produkt"*
+Der Begriff "Produkt" besitzt je nach Kontext unterschiedliche Bedeutungen. Im Allgemeinen bezieht sich der Begriff "Produkt" auf etwas, das durch einen Herstellungsprozess erstellt wird und einen Wert für denjenigen hat, der es verwendet oder konsumiert.
+:::
+
++ **Physisches Produkt**. Ein physisches Produkt ist ein greifbares Objekt, das durch einen Herstellungsprozess entstanden ist. Dies kann alles sein, von Konsumgütern wie Kleidung, Elektronik und Möbeln bis zu Industriegütern wie Maschinen und Werkzeugen.
+
++ **Dienstleistungsprodukt**. Ein Dienstleistungsprodukt ist nicht materiell, sondern bezieht sich auf eine erbrachte Dienstleistung. Dienstleistungen, wie beispielsweise Beratung, Bildung, Gesundheitswesen oder Unterhaltung, können als Produkte betrachtet werden.
+
++ **Softwareprodukt**. In der Informationstechnologie bezieht sich der Begriff "Produkt" oft auf Softwareprodukte. Dies können Anwendungen, Programme oder Systeme sein, die entwickelt wurden, um bestimmte Funktionen oder Aufgaben zu erfüllen. In einem breiteren Sinne kann ein digitales Produkt jegliche digitale oder virtuelle Ware sein, einschließlich herunterladbarer Dateien, Online-Kurse, Apps oder digitale Kunstwerke.
+
++ **Ideelles Produkt**. Manchmal wird der Begriff "Produkt" auch auf immaterielle Dinge angewendet, wie Ideen, Konzepte oder Erfindungen. In diesem Kontext könnte ein "Produkt" eine innovative Idee oder ein Patent sein.
+
+::: {.callout-tip}
+## Definition: *"Mechatronisches Produkt"*
+Ein mechatronisches Produkt ist ein technisches System, das sowohl mechanische als auch elektronische Komponenten sowie Firm- und Software integriert, um bestimmte Funktionen auszuführen oder Aufgaben zu erfüllen. 
+:::
+
+<!--
+Mechatronische Produkte kombinieren typischerweise mechanische Elemente wie Strukturen, Bewegungssysteme oder Aktuatoren mit elektronischen Komponenten wie Sensoren, Mikrocontrollern oder Aktoren. Das Ziel der Integration von Mechanik und Elektronik in einem mechatronischen Produkt ist es, die Funktionalität und Leistungsfähigkeit des Produkts zu verbessern.
+-->
+
+<!--
+Heute besitzt darüber hinaus Software eine entscheidende Rolle bei mechatronischen Produkten. Sie bildet die Schnittstelle zwischen den mechanischen und elektronischen Komponenten und ermöglicht die Steuerung, Regelung und Automatisierung des mechatronischen Produkts. Die Software übernimmt dabei folgende Funktionen:
+
+1. **Steuerung und Regelung**: Die Software steuert und regelt die Bewegungen, Positionen und Funktionen der mechanischen Komponenten mithilfe von Sensoren und Feedback-Signalen.
+
+2. **Sensorintegration**: Die Software verarbeitet die Daten von Sensoren, die Informationen über die Umgebung, den Zustand des Systems oder externe Einflüsse liefern.
+
+3. **Benutzerschnittstellen**: Die Software ermöglicht die Interaktion mit dem mechatronischen Produkt über Benutzerschnittstellen wie Bildschirme, Tastaturen oder Touchscreens.
+
+4. **Kommunikation und Vernetzung**: Die Software ermöglicht die Kommunikation zwischen verschiedenen Komponenten des mechatronischen Systems sowie die Vernetzung mit externen Geräten oder Systemen, beispielsweise über drahtlose oder drahtgebundene Netzwerke.
+
+5. **Diagnose und Fehlerbehebung**: Die Software unterstützt die Diagnose von Fehlfunktionen und Fehlerbehebung durch das Überwachen von Systemparametern, das Erkennen von Anomalien und das Ausführen von Fehlerkorrekturstrategien.
+
+Die Software nimmt zunehmend die Schlüsselposition ein um die Funktionalität, Leistungsfähigkeit und Anpassungsfähigkeit mechatronischer Produkte zu optimieren und die Produkte für eine Vielzahl von Anwendungen und Umgebungen geeignet zu machen.
+-->
+
+::: {.callout-tip}
+## Definition: *"Produkt"* (VDI 4003)
+*"Unter dem Begriff Produkt werden eindeutig beschriebene, lieferbare, aus Hardware- und/oder Software-Anteilen zusammengesetzte Geräte, Systeme, Verfahren, Prozesse, Anlagen und Dienstleistungen verstanden und als abgegrenzte Einheit (Betrachtungseinheit) aufgefasst."* (VDI 4003)
+:::
+
+::: {.callout-important}
+## Definition: *"Produkt (bezogen auf diese Vorlesung)"*
+Im Rahmen dieser Vorlesung wird unter dem Begriff „Produkt“ stets ein physisches Produkt verstanden. Auch mechatronische Produkte einschließlich ihrer Software werden in diesem Sinn aufgrund ihres teilweise Bestehens aus einem physischen Produkt als „Produkt“ aufgefasst.
+:::
+
+<!--
+![Typisches Beispiel für ein mechatronisches Produkt: Drone (Quelle: Adobe Stock)](images/Drone.jpg){width=80% #fig-drone}
+-->
+
+<!-- -------------------------------------------------------------------------
+
+               Unterschiede in der Entwicklung von Hardware vs. Software
+
+-------------------------------------------------------------------------- -->
+<!--
+### Unterschiede in der Entwicklung von Hardware vs. Software
+Die Entwicklung von Hardware und Software sind zwei unterschiedliche Disziplinen mit teilweise eigenen Vorgehensweisen und Herausforderungen. Wichtige Unterschiede im Vorgehen bei der Entwicklung von Hardware im Vergleich zur Entwicklung von Software sind:
+
+1. **Physikalische Natur vs. Abstraktion**: Der offensichtlichste Unterschied besteht darin, dass Hardware physische Komponenten umfasst, während Software eine abstrakte Entität ist. Hardware besteht aus realen Materialien wie Leiterplatten, Mikrochips und Gehäusen, während Software aus Code besteht. Die Beschaffung der Ausgangsmaterialen von physischen Kompoenten sowie deren Produktion und Vertrieb erfordert eine im Vergleich zur Entwicklung von Software zusätzliche Herangehensweise.
+
+2. **Designzyklen**: Die Hardwareentwicklung erfordert längere Designzyklen als die Softwareentwicklung. Die Herstellung von Prototypen und die Fertigung von Hardware können zeitaufwändig sein, während Software schneller iteriert werden kann.
+
+3. **Materialien und Produktion**: Hardwareentwickler müssen sich mit der Auswahl von Materialien, Herstellungsprozessen und physischen Eigenschaften auseinandersetzen. Dies ist bei der Softwareentwicklung nicht relevant.
+
+4. **Kosten und Ressourcen**: Die Entwicklung von Hardware ist in der Regel teurer als die Entwicklung von Software, da sie physische Komponenten erfordert, die hergestellt, getestet und gewartet werden müssen.
+
+5. **Testing und Qualitätssicherung**: Die Testphase in der Hardwareentwicklung kann aufgrund der physischen Natur der Hardware komplex sein. Software kann einfacher und kostengünstiger getestet und debuggt werden; gleichwohl dauert der Test von Software deswegen nicht weniger Zeit.
+
+6. **Flexibilität und Änderungen**: Software kann leichter angepasst und geändert werden, während Hardwareänderungen oft teuer und zeitaufwändig sind. Aber: Nach jeder neuen Änderung sind bereits durchgeführte Tests zu wiederholen.
+
+7. **Dokumentation**: Die Dokumentation ist in beiden Disziplinen wichtig, aber Hardware erfordert oft - zumeist auch wegen entsprechender bestehender gesetzlicher Vorgaben - umfangreichere Dokumentation für Herstellung, Wartung und Compliance. Nur weil solche gesetzliche Vorgaben bei Software zumeist fehlen heisst das jedoch keinesfalls, dass Dokumentation für Software nicht ebenso wichtig ist!
+
+8. **Risiken**: Hardwareentwicklung kann anfälliger für Risiken, da sie mit physischen Komponenten und Herstellungsprozessen verbunden ist. Fehler können teuer sein und die Markteinführung verzögern. Andererseits besitzt Software zunehmend das Potenzial, massive Schäden zu verursachen. Das Risikomanagement ist in jedem Fall ein Aspekt, der bei Hard- und Softwareentwicklung gleichermaßen zu beachten ist.
+
+9. **Skalierung**: Software kann leicht dupliziert und verteilt werden, während die Massenproduktion von Hardware eine sorgfältige Planung und Investition erfordert.
+
+10. **Umweltauswirkungen**: Die Produktion (und spätere Entsorgung) von Hardware haben oft größere Umweltauswirkungen im Vergleich zur Software, die "nur" Energie für den Betrieb benötigt. Auch hier finden sich jedoch Beispiele, in denen Software aufgrund des hohen Energieverbrauchs relevante Umweltauswirkungen nach sich zieht (z.B. Mining von BitCoins)
+
+11. **Langlebigkeit**: Hardware hat oftmals eine längere Lebensdauer als Software. Die Wartung und Unterstützung von Hardwareprodukten kann über viele Jahre oder gar Jahrzehnte erforderlich sein.
+
+Trotz dieser erheblichen Unterschiede gibt es auch eine Vielzahl von Gemeinsamkeiten. In beiden Fällen ist ein strukturiertes Vorgehen im Produktentstehungsprozess und Zusammenarbeit zwischen verschiedenen Fachdisziplinen erforderlich. Darüber hinaus hat die Integration von Software in immer mehr Hardwareprodukte zu einem zunehmenden Zusammenwachsen der beiden Bereiche geführt, was heute erheblich dazu beigetragen hat, einige der traditionellen Unterschiede abzuschwächen.
+-->

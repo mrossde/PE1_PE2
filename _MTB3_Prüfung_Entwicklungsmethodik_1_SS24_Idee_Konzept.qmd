@@ -1,0 +1,380 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Prüfung MTB3 Entwicklungsmethodik 1 SS24
+
+-------------------------------------------------------------------------- -->
+
+<!--
+//-------------------------------------------------------------------------
+//
+//                     Ideenfindung und Konzeptentwicklung
+//
+//-------------------------------------------------------------------------
+-->
+
+# Ideenfindung und Konzeptentwicklung
+
+
+<!--
+//-------------------------------------------------------------------------
+//
+//                     Modelle zum PEP
+//
+//-------------------------------------------------------------------------
+-->
+
+
+## Aufgabe: "Projekt- vs. Linienorganisation"
+Ein Produkt wird in einer Projektorganisation entwickelt, wenn... (1 Antwort ist richtig)
+
+- [ ] die Unternehmenskultur auf Innovation und Agilität ausgerichtet ist. 
+- [ ] die finanziellen Ressourcen begrenzt sind und das Unternehmen externe Experten für spezifische Aufgaben einsetzen möchte. 
+- [ ] es sich um ein einmaliges Vorhaben handelt, das spezifische Ziele hat und eine zeitlich begrenzte Teamzusammenstellung erfordert. 
+- [ ] die Unternehmensstruktur hierarchisch und starr ist und für Entwicklung neue Lösungen benötigt werden.
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [x] Ein Produkt wird in einer Projektorganisation entwickelt, wenn es sich um ein **einmaliges Vorhaben** handelt, das **spezifische Ziele** hat und eine **zeitlich begrenzte, (interdisziplinäre) Teamzusammenstellung** erfordert (siehe Skript zur Vorlesung → 1.3.1.1 Definition Projekt)
+:::
+
+<!--
+//-------------------------------------------------------------------------
+//
+//                     Technology-Hype-Cycle
+//
+//-------------------------------------------------------------------------
+-->
+
+## Aufgabe "Technology-Hype-Cycle"
+Was ist der Technologie-Hype-Cycle? (1 Antwort ist richtig)
+
+- [ ] Eine Liste von Technologien, die als besonders vielversprechend angesehen werden.
+- [ ] Eine Methode, um den Erfolg von Technologieunternehmen zu prognostizieren.
+- [ ] Ein Modell, das den Lebenszyklus von Technologien beschreibt.
+- [ ] Ein Modell, das den Prozess beschreibt, wie neue Technologien vermarktet werden können.
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [x] Ein Modell, das den Lebenszyklus von Technologien beschreibt, von deren Entdeckung über den Hype bis zur Reife und dem Mainstream-Einsatz.
+:::
+
+## Aufgabe "Phasen des Technology-Hype-Cycle"
+Welches sind die fünf Phasen des Technology-Hype-Cycle?
+
+1. *_____________________________________*
+2. *_____________________________________*
+3. *_____________________________________*
+4. *_____________________________________*
+5. *_____________________________________*
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+1.) Technologischer Auslöser/Technology Trigger → 2.) Gipfel der überzogenen Erwartungen/Peak of Inflated Expectations → 3.) Tal der Enttäuschungen/Trough of Disillusionment → 4.) Pfad der Erleuchtung/Slope of Enlightenment → 5.) Plateau der Produktivität/Plateau of Productivity.
+:::
+
+
+## Aufgabe "Wasserfallmodell"
+Wann und aus welchem Anlass wurde das Wasserfallmodell entwickelt?
+
+- [ ] In den 1960er Jahren als Antwort auf den Bedarf nach mehr Flexibilität in der Projektabwicklung.
+- [ ] In den 1970er Jahren als Reaktion auf die steigende Komplexität von Softwareprojekten.
+- [ ] In den 1980er Jahren als Reaktion auf die Einführung agiler Methoden.
+- [ ] In den 1990er Jahren als Lösung für Probleme bei der Ressourcenplanung in großen Unternehmen.
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [x] In den 1970er Jahren als Reaktion auf die steigende Komplexität von Softwareprojekten.
+:::
+
+
+## Aufgabe "Wasserfallmodell, V-Modell und Spiralmodell"
+Welche Aussage beschreibt am besten die Unterschiede zwischen dem Wasserfallmodell, dem V-Modell und dem Spiralmodell?
+
++ **1.)** Das Wasserfallmodell beinhaltet eine lineare Abfolge von Entwicklungsphasen.
++ **2.)** Das V-Modell ist eine Weiterentwicklung des Wasserfallmodells.
++ **3.)** Das Spiralmodell verfolgt einen stärker iterativen Ansatz als das V-Modell.
+<!--
++ **4.)** Das Wasserfallmodell ist ein agiles Entwicklungsmodell, das besonders geeignet ist für schnelle und dynamische Projekte.
++ **5.)** Das V-Modell ist ein adaptives Entwicklungsmodell, das auf schnelle Anpassungen an sich ändernde Anforderungen abzielt.
++ **6.)** Das Spiralmodell ist ein inkrementelles Entwicklungsmodell, das auf starre Phasen und feste Liefertermine setzt.
+-->
+
+Antwort (1 Antwort ist richtig):
+
+- [ ] Nur 1 ist richtig.
+- [ ] Nur 2 ist richtig.
+- [ ] Nur 3 ist richtig.
+- [ ] Nur 2 und 3 sind richtig.
+- [ ] Alle sind richtig.
+- [ ] Alle sind falsch.
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [x] Alle sind richtig.
+:::
+
+
+## Aufgabe "Mechatronische Systeme"
+Welches Entwicklungsmodell wird lt. [Richtlinie VDI/VDE 2206](https://www.vdi.de/richtlinien/details/vdivde-2206-entwicklung-mechatronischer-und-cyber-physischer-systeme) für die Entwicklung mechatronischer Systeme empfohlen? (1 Antwort ist richtig)
+
+- [ ] Wasserfallmodell
+- [ ] V-Modell
+- [ ] Spiralmodell
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [x] V-Modell
+:::
+
+
+## Aufgabe "Definition Bewertungsmatrix"
+Was ist eine Bewertungsmatrix? (1 Antwort ist richtig)
+
+- [ ] Ein Werkzeug zur systematischen Bewertung und Vergleich von Optionen oder Alternativen anhand vordefinierter Kriterien.
+- [ ] Ein auf Matrizenrechnung basierendes Verfahren zur Analyse und Bewertung von großen Datenmengen.
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [X] Ein Werkzeug zur systematischen Bewertung und Vergleich von Optionen oder Alternativen anhand vordefinierter Kriterien.
+:::
+
+
+## Aufgabe "Eigenschaften Bewertungsmatrix"
+Welche Eigenschaft machen ein Kriterium für eine Bewertungsmatrix besonders geeignet? (1 Antwort ist richtig)
+
+- [ ] Relevanz für das zu bewertende Problem oder die zu treffende Entscheidung.
+- [ ] Kreativität, um innovative Lösungen im Team zu fördern.
+- [ ] Subjektivität, um die Vielfalt der Meinungen des Teams widerzuspiegeln.
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+  - [X] Relevanz für das zu bewertende Problem oder die zu treffende Entscheidung.
+:::
+
+
+## Aufgabe "Arbeitsschritte Bewertungsmatrix"
+Welches Arbeitsschritte sind bei der Arbeit mit Bewertungsmatrizen durchzuführen?
+
+- **1.)** Identifizierung der zu bewertenden Optionen oder Alternativen.
+- **2.)** Definition klarer Bewertungskriterien und deren Gewichtung.
+- **3.)** Festlegung einer Skala oder eines Bewertungsschemas.
+- **4.)** Durchführung der Bewertung für jede Option anhand der definierten Kriterien.
+- **5.)** Entscheidung für eine der Optionen auf Grundlage der durchgeführten Bewertungen.
+
+Antwort (1 Antwort ist richtig):
+
+- [ ] Nur 1, 4 und 5 sind richtig.
+- [ ] Nur 1, 2, 4 und 5 sind richtig.
+- [ ] Alle sind richtig.
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [X] Alle sind richtig.
+:::
+
+## Aufgabe "Anwendung Bewertungsmatrix"
+
+**ACHTUNG!** Diese Aufgabe wird mit **6 Punkten** gewichtet!
+
+**Fallbeispiel**: In einer Stunde startet eine Feier mit einigen Ihrer Freunden*innen zum erfolgreichen Abschluss des Semesters und Sie müssen hierfür noch schnell einige Einkäufe erledigen. Es ist ein heißer Tag und der Wetterdienst sagt die Gefahr von Unwettern mit Starkregen voraus. Es ist Ende des Monats und Ihr Budget ist bereits knapp. Bis zum nächstgelegenen Supermarkt ist es eine Strecke von rund 2 Kilometern. Als Optionen stehen Ihnen 1.) Ihr Fahrrad und 2.) Ihr Motorroller zur Verfügung. Sie könnten aber auch 3.) zu Fuss gehen oder 4.) ein Taxi nehmen. 
+
+**Aufgabe**: Zur Entscheidung, welche dieser vier Optionen Sie nehmen wollen, befüllen Sie bitte die in @tbl-bewertungsmatrixpruefung vorgegebene Bewertungsmatrix.
+
+|                      | .        | .        | .        | .        |
+|----------------------|----------|----------|----------|----------|
+| **.**                |          |          |          |          |
+| **.**                |          |          |          |          |
+| **.**                |          |          |          |          |
+| **.**                |          |          |          |          |
+| **Bewertung**:       |          |          |          |          |
+
+: Bewertungsmatrix {#tbl-bewertungsmatrixpruefung .bordered tbl-colwidths="[28,18,18,18,18]"}
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+
+Bewertungskriterien bei der Aufgabe sind: 
+
+1. Die zu bewertenden Optionen werden den Spalten und die Bewertungskriterien den Zeilen zugeordnet.
+2. Die Bewertungskriterien müssen dem beschriebenen Hintergrund entsprechen und inhaltlich verschiedene Aspekte zur Bewertung umfassen. 
+3. Die verwendete Bewertungsskala muss eine Differenzierung zulassen und zeigen.
+4. Die Bewertungsmatrix muss vollständig befüllt sein.
+5. Die Bewertungen müssen in der Matrix eingetragen sein.
+
+Eine solche Bewertungsmatrix als mögliche Lösung zeigt @tbl-bewertungsmatrixloesung. 
+
+|                      | Zu Fuss  | Fahrrad  |  Roller  |  Taxi    |
+|----------------------|----------|----------|----------|----------|
+| Transportkapazität   | schlecht |  mittel  |  mittel  | sehr gut |
+| Wegekosten zum Supermarkt | sehr gut | sehr gut |  gut  | sehr schlecht |
+| Schutz vor Regen     | schlecht | schlecht | schlecht |    gut   |
+| Zeitbedarf für Einkauf | schlecht |  mittel  |    gut   |  schlecht  |
+| **Bewertung**:       | 3.25 | **2.75** | **2.75**  |  3.00  |
+
+: Bewertungsmatrix (mögliche Lösung) {#tbl-bewertungsmatrixloesung .bordered tbl-colwidths="[28,18,18,18,18]"}
+
+In @tbl-bewertungsmatrixloesung verwendete **Bewertungsskala** ("Schulnoten"): 1,0 Sehr gut - 2,0 Gut - 3,0 Mittel (Befriedigend) - 4,0 Schlecht (Ausreichend) - 5,0 Sehr schlecht (Mangelhaft).
+
+Fahrrad und Roller sind nach @tbl-bewertungsmatrixloesung als gleichwertig bewertete Lösungen. Das Taxi verliert insbesondere wegen der als sehr hoch bewerteten Wegekosten und des erwarteten hohen Zeitbedarfs, bis das bestellte Taxi jeweils für Hin- und Rückfahrt zur Verfügung steht. Je nach Einschätzung der Relevanz der Bewertungskriterien wären aber auch andere Gesamtbewertungen möglich und könnten dann ebenso richtig sein!
+:::
+
+## Aufgabe "Reifegrad"
+Bei der Technologie- und Produktentwicklung wird der Reifegrad eines Produkts oder einer Technologie in drei aufeinander aufbauende und zeitlich aufeinander folgende Phasen unterteilt. 
+
+Bitte ergänzen Sie die zugehörigen Begriffe im folgenden Diagramm:
+
+```{mermaid}
+%%| label: fig-label-reifegrade
+%%| fig-cap: "Reifegrade bei der Technologie- und Produktentwicklung."
+flowchart TD
+    P(_____________________________________)
+    P --> K(_____________________________________)
+    K --> S(_____________________________________)
+ ```
+
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+1.) Prinziptauglichkeit → 2.) Konzepttauglichkeit → 3.) Serientauglichkeit
+:::
+
+## Aufgabe "Reifegrade"
+Die Reifegrade und Phasen der Entwicklung von Technologien (z.B. Fertigungsverfahren) und Produkten verlaufen Hand in Hand. Welche der folgenden Aussagen ist richtig um Risiken im PEP zu minimieren?
+
+- [ ] Der Reifegrad der Technologie und des Produkts sollte zeitlich parallel verlaufen.
+- [ ] Der Reifegrad der Technologie sollte dem des Produkts um mindestens eine Phase vorauseilen.
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [x] Der Reifegrad der Technologie sollte dem des Produkts um mindestens eine Phase vorauseilen.
+:::
+
+<!--
+## Aufgabe "Modularisierung"
+Bitte nennen Sie drei wichtige Vorteile und einen gravierenden Nachteil bei der Verwendung von Modulen bei der Produktentwicklung:
+
++-----------+----------------------------------------------------------+
+|           |                                                          |
++==========:+==========================================================+
+| Vorteile  | -                                                        |
+|           | -                                                        |
+|           | -                                                        |
++-----------+----------------------------------------------------------+
+| Nachteile | -                                                        |
++-----------+----------------------------------------------------------+
+
+: { .bordered tbl-colwidths="[15,85]"}
+
+
+::: {.callout-tip collapse="true"} 
+## Lösung
++-----------+---------------------------------------------------------------------------------+
+|           |                                                                                 |
++==========:+=================================================================================+
+| Vorteile  | - **Wiederverwendbarkeit der Module**                                           |
+|           | - **Bessere Verständlichkeit des Gesamtsystems** (wg. → Hierarchisierung)       |
+|           | - **Einfachere Fehlerlokalisierung und -behebung**                              |
+|           | - Erleichterte Entwicklung und Wartung des Gesamtsystems                        |
+|           | - Einfachere Erweiterung des Gesamtsystems                                      |
+|           | - …                                                                             |
++-----------+---------------------------------------------------------------------------------+
+| Nachteile | - **Erhöhter Ressourcenbedarf** (→ Bauraum, Gewicht)                            |
+|           | - Äbhängigkeiten zwischen Modulen begrenzen Skalierbarkeit des Gesamtsystems    |
+|           | - Komplexe Integration der Module zum Gesamtsystem als potenzielle Fehlerquelle |
+|           | - …                                                                             |
++-----------+---------------------------------------------------------------------------------+
+
+: { .bordered tbl-colwidths="[15,85]"}
+:::
+-->
+
+<!--
+//-------------------------------------------------------------------------
+//
+//                     Lastenheft
+//
+//-------------------------------------------------------------------------
+-->
+
+<!--
+## Aufgabe "Informationen im Lastenheft"
+Welche Informationen sollten typischerweise in einem Lastenheft enthalten sein? (1 Antwort ist richtig)
+
+- [ ] Technische Anforderungen und Spezifikationen
+- [ ] Budget und Finanzierungsinformationen
+- [ ] Marketingstrategien und Werbekampagnen
+- [ ] Organigramme und Mitarbeiter-Ressourcenplanung
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [x] Technische Anforderungen und Spezifikationen
+:::
+-->
+
+
+## Aufgabe "Informationen im Lastenheft"
+Welche Informationen sollten typischerweise in einem Lastenheft enthalten sein? (1 Antwort ist richtig)
+
+- **1.)** Technische Anforderungen und Spezifikationen
+- **2.)** Budget und Finanzierungsinformationen
+- **3.)** Marketingstrategien und Werbekampagnen
+- **4.)** Organigramme und Mitarbeiter-Ressourcenplanung
+
+Antwort (1 Antwort ist richtig):
+
+- [ ] Nur 1 ist richtig.
+- [ ] Nur 1 und 2 sind richtig.
+- [ ] Nur 1,2 und 3 sind richtig.
+- [ ] Alle sind richtig.
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [x] Nur 1 ist richtig.
+:::
+
+
+## Aufgabe "Rolle des Lastenhefts"
+Welche Rolle spielt das Lastenheft im Produktentstehungsprozess? (1 Antwort ist richtig)
+
+- [ ] Es dient als formale Spezifikation der Anforderungen an das zu entwickelnde Produkt.
+- [ ] Es unterstützt bei der Planung von Marketingkampagnen und Vertriebsstrategien.
+- [ ] Es definiert die Organisationsstruktur des Unternehmens.
+- [ ] Es überwacht die Budgetierung und Finanzierung des Projekts.
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [x] Es dient als formale Spezifikation der Anforderungen an das zu entwickelnde Produkt.
+:::
+
+
+## Aufgabe "Funktion des Lastenhefts"
+Welche Funktion erfüllt das Lastenheft im Produktentstehungsprozess? (1 Antwort ist richtig)
+
+- [ ] Es dient als Grundlage für die Entwicklung des Produkts.
+- [ ] Es überwacht den Projektfortschritt und stellt sicher, dass die Zeitpläne eingehalten werden.
+- [ ] Es dokumentiert die betrieblichen Abläufe und Organisationsstrukturen des Unternehmens.
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [x] Es dient als Grundlage für die Entwicklung des Produkts.
+:::
+
+
+## Aufgabe "Erstellung des Lastenhefts"
+Wer ist in der Regel für die Erstellung des Lastenhefts verantwortlich? (1 Antwort ist richtig)
+
+- [ ] Das Projektteam in Zusammenarbeit mit den Projektverantwortlichen.
+- [ ] Der Vertrieb in Zusammenarbeit mit dem Controlling.
+- [ ] Externe Berater ohne direkte Beteiligung am späteren Projekt.
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [x] Das Projektteam in Zusammenarbeit mit den Projektverantwortlichen.
+:::

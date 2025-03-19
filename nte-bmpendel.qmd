@@ -1,0 +1,46 @@
+<!-- -------------------------------------------------------------------------
+
+                       LABOR "MAGNETPENDEL" AUFGABE BEWERTUNGSMATRIX
+
+-------------------------------------------------------------------------- -->
+
+<!-- 
+Author: Christian Anders
+Version: 2024-02-18
+-->
+
+::: {#nte-bmpendel .callout-note}
+## Bewertungsmatix Magnetpendel (Dauer 30 min)
+
+
+<!-- 
+ID: #nte-bmpendel
+Reference: @nte-bmpendel
+-->
+
+**a)** Erstellen Sie eine Bewertungsmatrix zu möglichen technischen Lösungen zur Lageerkennung des Pendels.Berücksichtigen Sie dabei auch, welche Risiken hinsichtlich späterer Funktionsfähigkeit Sie bei den verschiedenen technischen Lösungen erkennen können!
+
+Vorgaben:
+
+- Nehmen Sie sich 20 Minuten Zeit um mögliche technische Lösungen zu identifizieren. Erarbeiten Sie parallel dazu mögliche Bewertungskriterien. Nutzen Sie für beide Aufgaben alle Ihnen zur Verfügung stehenden Hilfsmittel!
+- Nehmen Sie sich 10 Minuten Zeit um die Bewertungsmatrix zu erstellen und die technischen Lösungen zu bewerten. Ein Bewertungskriterium sollte hierbei das Risiko wiederspiegeln, dass die jeweilige technische Lösung nicht zuverlässig funktioniert.
+ 
+Mögliche Leitfragen:
+
+- Ist die Aufgabenstellung präzise genug formuliert? Benötigen Sie ggf. noch weitere Informationen? Falls ja, bitte fragen Sie!
+- Mit welchen Messprinzipien könnte die Lage des Pendels ermittelt werden? 
+- Welche Kritieren sind bei der Bewertung der möglichen technischen Lösungen wichtig und sollten bei der Bewertung berücksichtigt werden?
+- Wenn Sie persönlich die Verantwortung für den Erfolg des Projekts Magnetpendel tragen würden: Für welche technische Lösung würden Sie sich persönlich - vielleicht auch Abweichend von der Bewertungsmatrix - entscheiden?
+:::
+
+::: {.callout-caution}
+## Tipp!
+Versuchen Sie, diese Übung zur Bewertungsmatrix nicht als einen Prüfungsaufgabe zu sehen, bei dem es genau eine richtige Lösung gibt! Dem ist nicht so! In der Praxis überwiegt in der Regel ebenfalls die Unsicherheit: Haben wir an alle Lösungen gedacht? Schätzen wir die mit jeder technischen Lösung verbundenen Risiken richtig ein? Haben wir die Bewertungskriterien richtig gewählt? Trotz aller Unsicherheit muss aber in der Praxis eine Entscheidung gefällt werden. 
+
+Versuchen Sie, den Umgang mit Unsicherheit und Zweifel, alleine oder in der Gruppe, aktiv zu erleben! Das systematische Vorgehen mit Hilfe einer Bewertungsmatrix und der Arbeit im Team sollte Ihnen helfen und Sicherheit geben!
+:::
+
+<!-- 
+    Die geforderte Genauigkeit beträgt in jede Richtung an jedem Punkt im Arbeitsraum 1 mm²
+    Die geforderte zeitliche Auflösung beträgt 60 fps.
+-->

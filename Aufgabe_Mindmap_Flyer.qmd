@@ -1,0 +1,106 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+title: "DEB3 Produktentwicklung 1"
+resource-path: ["../images"]
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+keywords:
+  - Produktentwicklung
+  - Ideenfindung
+  - Konzeptentwicklung
+  - Labor
+  - Flyer
+  - Mindmap
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!-- 
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+<!-- 
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+<!-- -------------------------------------------------------------------------
+
+ Labor "Flyer" - Aufgabe Mindmap Anforderungen
+
+-------------------------------------------------------------------------- -->
+
+::: {.callout-note}
+## Mindmap Flyer (Dauer tbd. min)
+
+<!-- 
+ID: #nte-lhflyer
+Reference: @nte-lhflyer
+-->
+**a)** Erstellen Sie eine Mindmap zu dem Verwendungszweck und daraus resultierenden ersten groben Anforderungen an den von Ihnen zu bauenden Papierflieger. 
+
+Vorgaben:
+
+- Nutzen Sie zur Erstellung der Mindmap Papier und Stifte. 
+- Versuchen Sie kreativ zu sein und denken Sie über die ersten spontanen Ideen einfacher Papierflieger, wie Sie sie vielleicht in der Schule zum Zeitvertreib gebaut haben, hinaus!
+ 
+
+Mögliche Leitfragen:
+
+- Wofür könnte der Papierflieger verwendet werden? 
+- Wer könnte den Papierflieger verwenden? 
+- Über welche Eigenschaften eines Papierfliegers würden Sie sich freuen wenn Sie ihn geschenkt bekommen würden? 
+- Was finden Sie an Papierfliegern spannend? 
+- Welche besondere Eigenschaften soll der fertige Papierflieger haben?
+<!-- Vielleicht kann auch ChatGPT wertvolle Anregungen bieten?-->
+
+**b)** Wenn Sie in einer Zweiergruppe arbeiten stellen Sie sich die Mindmaps gegenseitig vor und versuchen Sie neue Gedanken und Ideen durch Abgleich der Mindmaps zu gewinnen. Vielleicht entdecken Sie ja in anderen Mindmaps Ideen, die Ihre eigene Arbeit nochmals bereichern!
+:::
+
+::: {.callout-caution}
+## Tipp!
+Versuchen Sie, Mindmaps nicht als einen Wettbewerb zu sehen, bei dem das Prinzip *"Schneller! Höher! Weiter!"* gilt. Versuchen Sie stattdessen, Ihre Kreativität und Kompetenz zu nutzen und offen zu sein für Ihre Ideen! Bringen Sie Ihre Ideen immer wieder mit ins Brainstorming ein! Versuchen Sie, die Arbeiten mit Mindmaps auch später in der beruflichen Praxis nicht zu einem bloßen Kreativitätsritual verkommen zu lassen. Gute, zukunftsfähige Lösungen brauchen kreative Ideen und Menschen die den Mut haben, die solche Ideen auch auszusprechen!
+:::
+
+> "*Be brave! You'll never know who you might inspire!" (Quelle: Unbekannt)*
+

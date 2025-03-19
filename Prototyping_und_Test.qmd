@@ -1,0 +1,349 @@
+---
+title: "MTB3 Entwicklung mechatronischer Systeme 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    email: christian.anders@hs-esslingen.de
+    affiliations: Hochschule Esslingen
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+---
+
+<!-- 
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+# Prototyping und Test
+
+In diesem Kapitel geht es um die Phase des Prototyping und Test im Produktentstehungsprozess.
+
+<!-- -------------------------------------------------------------------------
+
+                        PROTOTYPING UND TEST
+
+-------------------------------------------------------------------------- -->
+
+
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       QUOTES
+
+-------------------------------------------------------------------------- -->
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Prototyping
+
+-------------------------------------------------------------------------- -->
+
+
+
+<!--
+### RPC
+"RPC" oder "Rapid Product Creation" bezieht sich auf eine Methode, die in verschiedenen Branchen, insbesondere in der Produktentwicklung und Fertigung, angewendet wird. Die Idee hinter RPC ist es, den gesamten Produktentwicklungszyklus zu beschleunigen, indem effiziente Methoden, Technologien und Tools verwendet werden.
+
+Rapid Product Creation beinhaltet in der Regel die Nutzung moderner Technologien wie Computer-Aided Design (CAD), Rapid Prototyping, 3D-Druck, Simulationen und andere fortschrittliche Fertigungsverfahren. Durch den Einsatz dieser Tools können Produkte schneller entwickelt, getestet und hergestellt werden. Dies kann die Markteinführungszeit verkürzen und Unternehmen einen Wettbewerbsvorteil verschaffen.
+
+RPC ist besonders relevant in Branchen, in denen Produkte schnell auf den Markt gebracht werden müssen, um den sich rasch ändernden Kundenanforderungen und Markttrends gerecht zu werden. Es kann auch dazu beitragen, Produktentwicklungskosten zu reduzieren und die Innovationsfähigkeit eines Unternehmens zu steigern.
+-->
+
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Testphase
+
+-------------------------------------------------------------------------- -->
+
+
+
+::: {.callout-warning}
+## Warnung
+*"Failing to prepare is preparing to fail."*
+:::
+
+
+
+---
+
+> *“Experiments are the only means of knowledge at our disposal. The rest is poetry, imagination.” (Max Planck)*
+
+> *"Rarely is anyone thanked for the work they did to prevent the disaster that didn't happen." (Mikko Hypponen)* 
+
+> *"Testing leads to failure, and failure leads to understanding." (Burt Rutan)* 
+
+> *"Failure is the opportunity to begin again, only more intelligently." (Henry Ford)*
+
+> *"There are two possible outcomes: If the result confirms the hypothesis, then you've made a measurement. If the result is contrary to the hypothesis, then you've made a discovery." (Enrico Fermi)*
+
+---
+
+### Testphase
+
+Die Testphase ist ein fundamentaler Bestandteil jeder Produktentwicklung. Die Bedeutung der Testphase im Kontext der Produktentwicklung kann vom geneigten Leser nicht überschätzt werden. Die zeitliche Dauer und der für Tests erforderliche Aufwand kann die Dauer der eigentlichen Produktentwicklung teilweise weit überschreiten. 
+
+Prototyping und Test laufen daher in der Praxis Hand-in-Hand und oftmals zeitgleich (→ V-Modell, → Spiralmodell). Wichtig sind daher insbesondere Komponententests, bei denen einzelne Komponenten getrennt vom oftmals erst deutlich später verfügbaren Gesamtprodukt getestet werden können.
+
+Stets gilt: Ohne sorgfältige Tests lassen sich Leistung, Funktionalität und Zuverlässigkeit von Produkten nicht erreichen!
+
+
+## Testbarkeit
+Durch ein gründliches Verständnis der Testbarkeit können Ingenieure sicherstellen, dass Produkte und Systeme zuverlässig und effizient getestet werden können, um ihre Leistungsfähigkeit und Zuverlässigkeit zu gewährleisten.
+
+<!--
+Testbarkeit von Produkten und Programmen à **Reproduzierbarkeit der Testbedinungen is key!!! à Erfassung und Dokumentation des Tests, dessen Randbedingungen und aller Daten!!! Fehlersuche. Verstehen, was geschah! à Detektivarbeit, z.B. im Bereich Elektrik/Elektronik bei Automotive. à ggf. Umfangreiche Analysemethoden erforderlich.**
+-->
+
+<!--
+Die Testbarkeit ist ein wichtiger Aspekt im Bereich der Ingenieurwissenschaften, insbesondere bei der Entwicklung und dem Design von Produkten und Systemen. Hier sind einige der wichtigsten Aspekte, die ein Ingenieur zum Konzept der Testbarkeit wissen sollte:
+-->
+
+1. **Klare Spezifikationen und Anforderungen**: Ein klares Verständnis der Anforderungen und Spezifikationen ist unerlässlich, um zu bestimmen, ob ein Produkt oder System ordnungsgemäß getestet werden kann.
+
+2. **Entwicklungsprozess und Testplanung**: Die Testbarkeit sollte von Anfang an in den Entwicklungsprozess einbezogen werden. Ein gut durchdachter Testplan, der die verschiedenen Aspekte des Produkts oder Systems abdeckt, ist entscheidend.
+
+3. **Design für Testbarkeit (DFT)**: Bei der Entwicklung von Produkten und Systemen ist es wichtig, dass das Design so gestaltet ist, dass es leicht getestet werden kann. Ein gut durchdachtes Design für Testbarkeit erleichtert die Fehlererkennung und -behebung.
+
+4. **Testbarkeit von Software und Hardware**: Sowohl Software als auch Hardware müssen auf Testbarkeit hin optimiert werden, um sicherzustellen, dass sie effizient und gründlich getestet werden können.
+
+5. **Testbarkeitsmetriken und -standards**: Die Verwendung von Metriken und Standards kann dabei helfen, die Testbarkeit zu bewerten und zu verbessern. Diese Maßstäbe ermöglichen es , die Effektivität der Tests zu quantifizieren und zu verbessern.
+
+6. **Dokumentation und Berichterstellung**: Eine gründliche Dokumentation der Testverfahren, -ergebnisse und -fehler ist entscheidend, um die Testbarkeit zu gewährleisten. Durch klare Berichterstattung kann sichergestellt werden, dass potenzielle Probleme identifiziert und behoben werden.
+
+
+
+### Planung von Tests
+Die Erstellung eines effektiven Testplans erfordert sorgfältige Planung und Berücksichtigung verschiedener wichtiger Schritte (siehe auch → [Statistische Versuchsplanung](https://de.wikipedia.org/wiki/Statistische_Versuchsplanung) (DoE)):
+
+```{mermaid}
+%%| fig-width: 6.0
+%%| label: fig-label-test01
+%%| fig-cap: "Vorgehen bei der Planung und Durchführung von Tests"
+flowchart TD
+    A[Verständnis für die Anforderungen schaffen] 
+    --> B[Ziele und Kriterien für die Tests festlegen]
+    --> C[Geeignete Testmethoden auswählen]
+    --> D[Testfälle und -szenarien festlegen und dokumentieren]
+    --> E[Zeitplan und Ressourcenbedarf aufstellen]
+    --> F[Risiken bewerten]
+    --> G[Tests durchführen und überwachen]
+    --> H[Ergebnisse dokumentieren und kommunizieren]
+    F -->|anpassen| D
+    G -->|anpassen| D
+```
+
+1. **Verständnis der Anforderungen**: Ein umfassendes Verständnis der Anforderungen ist entscheidend! Leitfragen hierzu können sein: "Was muss getestet werden muss? Welche Funktionalitäten wichtig? Welche Leistungsanforderungen müssen erfüllt werden?"
+
+2. **Festlegung von Testzielen und -kriterien:**:Legen Sie klare Ziele und Kriterien fest, die bestimmen, wann der Test erfolgreich ist. Definieren Sie, welche Ergebnisse akzeptabel sind und was als Fehlschlag gilt.
+
+3. **Auswahl der geeigneten Testmethoden**: Wählen Sie die am besten geeigneten Testmethoden aus, um die definierten Ziele zu erreichen. Dies kann Funktions-, Leistungs-, Last- oder Stresstests umfassen, je nach den Anforderungen des zu testenden Produkts oder Systems.
+
+4. **Festlegung von Testfällen und Szenarien**: Entwickeln Sie klare Testfälle und Szenarien, um sicherzustellen, dass alle relevanten Aspekte des Produkts oder Systems abgedeckt sind. Berücksichtigen Sie Randfälle und verschiedene Einsatzszenarien. Dokumentieren Sie den Testplan detailliert und kommunizieren Sie ihn an alle relevanten Stakeholder. Stellen Sie sicher, dass alle Beteiligten ein klares Verständnis von den Testzielen, -methoden und -zeitplänen haben.
+
+5. **Festlegung von Ressourcen und Zeitplan**: Planen Sie die benötigten Ressourcen, einschließlich Personal, Ausrüstung und Zeit. Stellen Sie sicher, dass genügend Zeit für die Durchführung der Tests sowie für die Fehlerbehebung und das Testen von Änderungen zur Verfügung steht.
+
+6. **Risikobewertung und -management**: Identifizieren Sie potenzielle Risiken und entwickeln Sie Strategien, um mit ihnen umzugehen. Berücksichtigen Sie potenzielle Probleme, die auftreten könnten, und planen Sie entsprechende Maßnahmen zur Risikominimierung. Zumeist folgt auf die Risikobewertung eine Anpassung der zu berücksichtigenden Testfälle und -szenarien.
+
+7. **Durchführung und Überwachung**: Führen Sie die Tests gemäß dem Plan durch und überwachen Sie kontinuierlich die Ergebnisse. Wird bei der Durchführung der Tests erkennbar, dass Testfälle und-szenarien angepasst werden müssen, ist eine Rückkehr zu Schritt 4 erforderlich. Führen Sie keinesfalls Änderungen an den Testfällen und -szenarien **OHNE** Abstimmung der an der jeweiligen Produktentwicklung beteiligten Partner durch!
+
+8. **Dokumentation und Kommunikation**: Dokumentieren Sie alle Tests und die erzielten Ergebnisse gemäß wissenschaftlichen Standards. Kommunizieren Sie die Ergebnisse in für die jeweilige Zielgruppe aufbereiteter Form!
+
+
+#### Festlegung von Testfällen und -szenarien
+
+::: {.callout-caution}
+## Achtung! Überdimensionierung!
+In der betrieblichen Praxis sind die Lasten und Lastkollektive überraschend häufig nicht im Detail bekannt. Die Entwicklung von Produkten erfolgt entsprechend auf der Grundlage von Erfahrungswerten. Kommt dann noch Angst vor einem Ausfall des Produkts hinzu entsteht eine Tendenz zum Überdimensionieren von Produkten.
+:::
+
+---
+
+![[Dale Creek Bridge](https://de.wikipedia.org/wiki/Dale_Creek_Crossing), Wyoming, 1885 (Quelle: [Smithonian American Art Musemum](https://americanart.si.edu/))](images/Dale_Creek_Bridge_Wyoming_1885.jpg){width=80% #fig-dalecreekbridge}
+
+> *"Jeder Idiot kann eine Brücke bauen, die steht, aber es braucht einen Ingenieur, um eine Brücke zu bauen, die gerade so steht.” (Quelle: Fjodor Dostojewski)*
+
+--- 
+
+::: {.callout-important}
+## Goldene Regeln bei der Fehlersuche
+- Systematisches Vorgehen!
+- Bei Änderungen zwischen zwei Tests immer nur **EINEN** (in Worten: 1) Parameter ändern!
+:::
+
+### Reproduzierbarkeit von Tests
+
+Die Testbarkeit eines Produkts und die Reproduzierbarkeit von Tests sind eng miteinander verbunden und beeinflussen sich gegenseitig. Ein Produkt, das gut auf Testbarkeit ausgelegt ist, erleichtert die Reproduzierbarkeit von Tests. Gleichzeitig tragen reproduzierbare Tests dazu bei, die Testbarkeit des Produkts zu verbessern. Hier ist der Zusammenhang genauer erklärt:
+
+1. **Design für Testbarkeit (DFT) und Reproduzierbarkeit**: Wenn ein Produkt so konzipiert ist, dass es leicht getestet werden kann, erleichtert dies die Durchführung reproduzierbarer Tests. Durch eine kluge Gestaltung des Produkts, die den Testprozess berücksichtigt, können Tests leicht wiederholt und reproduziert werden, was die Zuverlässigkeit der Testergebnisse erhöht.
+
+2. **Dokumentation und Reproduzierbarkeit**: Eine gründliche Dokumentation der Testverfahren und -ergebnisse trägt zur Reproduzierbarkeit der Tests bei. Wenn Tests gründlich dokumentiert sind und klare Anweisungen für die Durchführung bereitgestellt werden, wird es für andere Teammitglieder einfacher, die Tests zu wiederholen und vergleichbare Ergebnisse zu erzielen.
+
+3. **Fehlerbehebung und Verbesserungen**: Durch die Reproduzierbarkeit von Tests können Fehler und Probleme im Produkt identifiziert und behoben werden. Wenn Tests reproduzierbar sind, können Ingenieure und Entwickler systematisch an der Behebung von Fehlern arbeiten und das Produkt entsprechend verbessern, was letztendlich die Testbarkeit erhöht.
+
+4. **Effizienz und Zeitersparnis**: Reproduzierbare Tests tragen zur Effizienz und Zeitersparnis bei, da wiederholbare Tests schnell durchgeführt und verglichen werden können. Dies ermöglicht es den Ingenieuren, sich auf die Verbesserung der Testbarkeit zu konzentrieren, anstatt Zeit damit zu verbringen, inkonsistente oder nicht reproduzierbare Testergebnisse zu analysieren.
+
+<!--
+Indem die Testbarkeit eines Produkts und die Reproduzierbarkeit von Tests miteinander verbunden werden, können Ingenieure die Qualität und Effizienz des Testprozesses verbessern und letztendlich die Gesamtzuverlässigkeit und Leistung des Produkts steigern.
+
+### Exkurs: Besonderheiten beim Test von Software
+-->
+
+---
+
+> *"Testing can show the presence of errors, but not their absence." (Edsger W. Dijkstra)* 
+
+---
+
+<!--
+Das Testen ist ein wesentlicher Bestandteil des Softwareentwicklungsprozesses, um sicherzustellen, dass Fehler frühzeitig erkannt und behoben werden, bevor die Software in Produktion geht. Das Testen von Software ist essentiell, um sicherzustellen, dass die Software qualitativ hochwertig, zuverlässig und den Anforderungen der Benutzer entspricht. 
+
+**Ohne sorgfältiges Testing keine zuverlässige Software!**
+
+Die wichtigsten Kriterien für das Testen von Software sind:
+
+- Vollständigkeit: Alle funktionalen und nicht-funktionalen Anforderungen müssen abgedeckt und getestet werden, um sicherzustellen, dass die Software wie erwartet funktioniert.
+- Richtigkeit: Die Testergebnisse müssen korrekt und zuverlässig sein, um fundierte Entscheidungen treffen zu können.
+- Reproduzierbarkeit: Die Tests sollten wiederholbar sein, um sicherzustellen, dass die Ergebnisse konsistent sind und Fehler zuverlässig erkannt und behoben werden können.
+- Nachvollziehbarkeit: Es sollte klar sein, welche Tests durchgeführt wurden, welche Ergebnisse erzielt wurden und wie diese Ergebnisse zustande gekommen sind.
+- Wiederholbarkeit: Die Tests sollten in verschiedenen Umgebungen und unter verschiedenen Bedingungen wiederholt werden können, um die Stabilität der Software zu überprüfen.
+- Effektivität: Die Tests sollten Fehler effektiv aufdecken und die Qualität der Software verbessern.
+- Effizienz: Die Tests sollten in angemessener Zeit durchgeführt werden können und nicht unnötig viel Ressourcen in Anspruch nehmen.
+- Skalierbarkeit: Die Tests sollten sowohl für kleine als auch für große Softwareprojekte anwendbar sein.
+- **Automatisierbarkeit:** Tests, die automatisiert werden können, sollten automatisiert werden, um Zeit und Aufwand zu sparen.
+- Robustheit: Die Tests sollten stabil und widerstandsfähig gegenüber Änderungen in der Software sein.
+- Realitätsnähe: Die Tests sollten so nah wie möglich an den realen Anwendungsbedingungen durchgeführt werden, um realistische Ergebnisse zu erhalten.
+- Risikobasiertes Testen: Die Testpriorisierung sollte auf den geschäftskritischen Funktionen und Risiken basieren.
+- Benutzerorientierung: Die Software sollte aus der Sicht der Benutzer getestet werden, um sicherzustellen, dass sie ihren Bedürfnissen entspricht.
+- Usability: Die Benutzerfreundlichkeit und Benutzererfahrung sollten getestet werden, um sicherzustellen, dass die Software intuitiv und leicht bedienbar ist.
+- Sicherheit: Die Tests sollten die Sicherheitsaspekte der Software überprüfen, um sicherzustellen, dass sie vor Angriffen geschützt ist.
+- Skalierbarkeit: Die Software sollte auf ihre Skalierbarkeit getestet werden, um sicherzustellen, dass sie mit zunehmender Last oder Datenmenge effizient arbeitet.
+
+
+Der Aufwand für das Testen von Software im Vergleich zur eigentlichen Entwicklung kann je nach Projekt, Komplexität der Software, Testmethoden und anderen Faktoren variieren. In der Regel nimmt das Testing jedoch einen erheblichen Anteil am gesamten Softwareentwicklungsprozess ein. Der genaue Prozentsatz kann von Projekt zu Projekt unterschiedlich sein, aber folgende Punkte sind zu beachten:
+
+1. Initialer Aufwand: Zu Beginn eines Softwareprojekts kann der Aufwand für das Testen geringer sein, da das Entwicklungsteam möglicherweise hauptsächlich damit beschäftigt ist, die Anforderungen zu analysieren, das Design zu planen und die Grundlage für die Entwicklung zu schaffen. In diesem frühen Stadium kann das Testen auf die Erstellung von Testplänen und -strategien beschränkt sein.
+1. Zunehmender Testaufwand: Im Laufe der Entwicklung wächst der Testaufwand stetig, da das Team neue Funktionen und Module hinzufügt und bestehende Funktionalitäten erweitert. Jede Änderung erfordert Tests, um sicherzustellen, dass sie ordnungsgemäß funktioniert und keine negativen Auswirkungen auf andere Teile der Software hat.
+1. Regressionstests: Mit zunehmendem Fortschritt des Projekts wächst auch die Anzahl der Tests, die für die Regressionstests durchgeführt werden müssen. Regressionstests werden verwendet, um sicherzustellen, dass neue Änderungen keine unerwarteten Auswirkungen auf bereits funktionierende Teile der Software haben.
+1. Testautomatisierung: Die Einführung der Testautomatisierung kann den Testaufwand erhöhen, insbesondere in den frühen Phasen, wenn die Automatisierungsskripte erstellt werden. Allerdings kann die Automatisierung auf lange Sicht Zeit sparen und den Testaufwand reduzieren.
+1. Fehlerbehebung: Das Finden von Fehlern und deren Behebung kann einen erheblichen Teil des Testaufwands ausmachen. Das Testteam muss sicherstellen, dass Fehler gefunden, dokumentiert und vom Entwicklungsteam behoben werden, bevor die Software abgenommen wird.
+1. Abschlussphase: In der Endphase des Projekts wird der Testaufwand typischerweise nochmals erhöht, da umfassende Tests, wie Systemtests, Abnahmetests und möglicherweise Performance- und Sicherheitstests, durchgeführt werden, um sicherzustellen, dass die Software für die Auslieferung bereit ist.
+
+**Insgesamt kann der Aufwand für das Testen von Software je nach Projekt und Testumfang zwischen 30% und 70% der gesamten Entwicklungskosten betragen.** 
+
+Das Testen ist ein kritischer Teil des Softwareentwicklungsprozesses. Investitionen in ein angemessenes Testen sind daher von entscheidender Bedeutung für den Erfolg eines Softwareprojekts.
+
+
+
+### AUTOMATISIERUNG VON SOFTWARETESTS
+**Wichtiges Thema! Ohne Automatisierte Tests wird Testing zum Glückspiel. Automatisiertes Testen alleine reicht jedoch nicht aus, insbesondere für den Fall, das die Testszenarien blinde Flecken ausweisen à siehe Johari-Fenster (das unbekannte Unbekannte).**
+
+## Abnahmekriterien
+
+Das Festlegen von Testszenarien bildet einen wichtigen Baustein für die Abnahme von Software (siehe → "Definition of Done" (DoD)“)
+
+Die Vereinbarung von Testszenarien für die Abnahme von Software ist von großer Bedeutung, da sie einen strukturierten und transparenten Ansatz für die Abnahme des fertigen Produkts bietet. Die Testszenarien definieren die Kriterien, die erfüllt sein müssen, um die Software als "abnahmebereit" zu betrachten. 
+
+Diese Vereinbarung zwischen den Entwicklern und den Kunden oder den internen Stakeholdern stellt sicher, dass alle Parteien ein gemeinsames Verständnis darüber haben, welche Funktionalitäten und Anforderungen die Software erfüllen muss, um als erfolgreich und akzeptabel angesehen zu werden.
+
+Gründe, warum die Vereinbarung von Testszenarien für die Abnahme von Software wichtig ist:
+
++ **Klarheit und Transparenz**: Die Testszenarien klären die Erwartungen aller Beteiligten und schaffen Transparenz darüber, was die Software leisten muss. Dadurch werden Missverständnisse und Unklarheiten vermieden.
+
++ **Messbare Kriterien**: Die Testszenarien legen messbare (siehe → SMARTe Ziele) Kriterien fest, anhand derer die Leistung der Software bewertet werden kann. Dadurch wird die Abnahme nicht nur subjektiv, sondern objektiv und nachvollziehbar.
+
++ **Kundenorientierung**: Die Testszenarien sind in der Regel auf die spezifischen Anforderungen der Kunden oder Benutzer ausgerichtet, was sicherstellt, dass das Produkt ihren Bedürfnissen entspricht.
+
++ **Qualitätssicherung**: Die Testszenarien helfen sicherzustellen, dass die Software den Qualitätsstandards entspricht und alle definierten Funktionalitäten ordnungsgemäß funktionieren.
+
++ **Risikoreduzierung**: Durch die Vereinbarung von Testszenarien wird das Risiko von Fehlern und Missverständnissen minimiert, da alle Anforderungen im Voraus festgelegt und getestet werden.
+
++ **Effizienzsteigerung**: Die Testszenarien ermöglichen es dem Entwicklungsteam, sich auf die spezifischen Anforderungen zu konzentrieren und die Entwicklung zielgerichtet voranzutreiben, was Zeit und Ressourcen spart.
+
++ **Abnahmekriterium**: Die Testszenarien dienen zugleich als Abnahmekriterium, anhand dessen beurteilt wird, ob die Software den Kundenanforderungen entspricht und für den produktiven Einsatz bereit ist.
+
++ **Leitfaden für das Testen**: Die Testszenarien bieten einen klaren Leitfaden ("Checkliste") für das Testteam, welche Tests durchgeführt werden müssen, um die Abnahme zu validieren.
+
+Insgesamt tragen die Vereinbarung von Testszenarien dazu bei, die Abnahme von Software zu einer systematischen, strukturierten und effektiven Phase des Softwareentwicklungsprozesses zu machen. Sie fördert die Zusammenarbeit zwischen den beteiligten Parteien und trägt dazu bei, dass das Endprodukt den Erwartungen der Kunden und Benutzer entspricht.
+-->
+
+
+<!-- -------------------------------------------------------------------------
+
+                        Prüfvorschrift
+
+-------------------------------------------------------------------------- -->
+
+### Prüfvorschriften
+
+::: {.callout-tip}
+## Definition: *"Prüfvorschrift"*
+Eine Prüfvorschrift ist ein Dokument, das verwendet wird, um die Verfahren und Anforderungen für die Durchführung von Prüfungen, Tests oder Inspektionen festzulegen. 
+:::
+
+Prüfvorschriften sind ein wichtiger Bestandteil des Qualitätsmanagements und dienen dazu, sicherzustellen, dass Produkte, Prozesse oder Dienstleistungen den festgelegten Qualitätsstandards entsprechen. 
+
+Ziel einer Prüfvorschrift ist es, klare und einheitliche Anweisungen für Prüfungen bereitzustellen. Sie legt fest, wie, wann und wo die Prüfungen durchgeführt werden sollen, welche Ausrüstung und Instrumente benötigt werden und welche Kriterien für die Bewertung der Ergebnisse gelten.
+
+Prüfvorschriften enthalten wichtige Informationen wie:
+
++ Eine Beschreibung des zu prüfenden Produkts, Prozesses oder Systems.
++ Die spezifischen Prüfmethoden und -verfahren, die angewendet werden sollen.
++ Anforderungen an die Prüfmittel, Instrumente oder Ausrüstungen.
++ Festgelegte Prüfkriterien, Toleranzen oder Akzeptanzkriterien.
++ Die Frequenz, mit der Prüfungen durchgeführt werden sollen (z. B. einmalig, oder regelmäßige Stichprobenprüfungen).
++ Die Verantwortlichkeiten der Prüfer oder Inspektoren.
++ Referenzen zu relevanten Standards oder Normen.
+
+Prüfvorschriften finden in einer Vielzahl von Branchen Anwendung. Sie können für die Qualitätssicherung, Sicherheit, Konformität mit Vorschriften oder Zertifizierungen erforderlich sein.
+Prüfvorschriften sind ein wichtiger Bestandteil des Qualitätsmanagementsystems eines Unternehmens. Sie unterstützen die Einhaltung von Qualitätsstandards und tragen dazu bei, dass Produkte oder Dienstleistungen den Erwartungen der Kunden entsprechen.
+
+Prüfvorschriften werden in schriftlicher Form erstellt und in der Regel in einem Dokument oder in elektronischer Form festgehalten. Sie sollten leicht zugänglich und für diejenigen verfügbar sein, die sie benötigen. Prüfvorschriften können sich im Laufe der Zeit ändern, insbesondere wenn sich Produkte oder Prozesse weiterentwickeln oder neue Anforderungen auftreten. Es ist wichtig, Prüfvorschriften regelmäßig zu überprüfen und bei Bedarf zu aktualisieren.
+
+Die Erstellung und Umsetzung von Prüfvorschriften sind entscheidend für die Qualitätssicherung und die Einhaltung von Qualitätsstandards. Sie helfen dabei, Produktfehler zu minimieren, Prozesse zu optimieren und die Kundenzufriedenheit zu gewährleisten.
+
+
+<!-- -------------------------------------------------------------------------
+
+                        Restschmutzanforderungen
+
+-------------------------------------------------------------------------- -->
+
+<!--
+### Restschmutzanforderungen
+
+![Reinraum (Quelle: Adobe Stock)](images/AdobeStock_550323556.jpeg){width=64% #fig-reinraum}
+
+::: {.callout-tip}
+## Definition: *"Restschmutzanforderungen"*
+In der Produktionstechnik bezieht sich der Begriff "Restschmutzanforderungen" auf die Anforderungen und Standards, die in Bezug auf die Reinheit und Sauberkeit von Bauteilen, Produkten oder Produktionsumgebungen festgelegt werden.
+:::
+
+Diese Anforderungen sind besonders wichtig in Branchen, in denen selbst geringste Verunreinigungen oder Partikel in den Produkten oder Prozessen unakzeptabel sind, wie in der Halbleiterfertigung, der Elektro-, Automobil- und Medizintechnik und der Luft- und Raumfahrt.
+
+Die Restschmutzanforderungen legen die maximal zulässige Menge an Verunreinigungen oder Partikeln fest, die in einem Produkt oder einer Produktionsumgebung toleriert werden. Diese Anforderungen können verschiedene Kriterien und Grenzwerte umfassen, wie zum Beispiel:
+
+1. **Partikelgröße**: Die Restschmutzanforderungen können spezifizieren, welche Partikelgrößen toleriert werden und welche entfernt oder vermieden werden müssen.
+
+2. **Partikelanzahl**: Es kann festgelegt werden, wie viele Partikel von einer bestimmten Größe pro Volumeneinheit oder Flächeneinheit akzeptabel sind.
+
+3. **Chemische Verunreinigungen**: Die Anforderungen können sich auf bestimmte chemische Verbindungen oder Elemente beziehen, die nicht in den Produkten oder der Produktion vorhanden sein dürfen.
+
+4. **Sauberkeitsstandards für Produktionsumgebungen**: Dies kann die Sauberkeit von Produktionsanlagen, Reinräumen oder anderen Bereichen betreffen, in denen die Produktion stattfindet.
+
+5. **Sauberkeitsstandards für Produktionsgeräte und -maschinen**: Die Anforderungen können auch für die Sauberkeit von Maschinen und Geräten festgelegt werden, um Verunreinigungen oder Partikel in den Produktionsprozess zu minimieren.
+
+Die Einhaltung von Restschmutzanforderungen in der Produktionstechnik ist von entscheidender Bedeutung, da Verunreinigungen oder Partikel in vielen Branchen die Qualität der hergestellten Produkte beeinträchtigen können. Dies kann zu Ausfällen, erhöhtem Verschleiß von Maschinen, Produktionsunterbrechungen oder sogar Gesundheitsrisiken führen. Daher werden strenge Kontrollen und Reinigungsverfahren eingesetzt, um sicherzustellen, dass die Anforderungen eingehalten werden und die Produkte den erforderlichen Qualitätsstandards entsprechen.
+-->

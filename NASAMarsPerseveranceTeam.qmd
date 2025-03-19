@@ -1,0 +1,20 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       NASA Mars Perseverance Team
+
+-------------------------------------------------------------------------- -->
+
+::: { .callout-note}
+## Mars Perseverance Mission Statement (Quelle: [NASA](https://mars.nasa.gov/mars2020/mission/overview/))
+*"Studying Mars' Habitability, Seeking Signs of Past Microbial Life, Collecting and Caching Samples, and Preparing for Future Human Missions."*
+:::
+
+![The Team for Jezero Crater: Members of the Mars 2020 Perseverance rover mission pose at NASA's Jet Propulsion Laboratory, which manages the mission, on July 17, 2019. (Quelle: [NASA/JPL-Caltech](https://mars.nasa.gov/mars2020/mission/team/))](images/TeamforJezeroCrater.jpg){width=100% #fig-teamforjezero}

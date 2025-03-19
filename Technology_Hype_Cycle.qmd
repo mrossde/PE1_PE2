@@ -1,0 +1,228 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Technology-Hype-Cycle
+
+-------------------------------------------------------------------------- -->
+
+### Technology-Hype-Cycle {#sec-techhypecycle}
+
+---
+
+> *"Before they occur, revolutions seem impossible. After they occur, revolutions seemed inevitable." (Quelle: [Michael McFaul](https://en.wikipedia.org/wiki/Michael_McFaul))*
+
+> *"Der Homerun von gestern gewinnt nicht das Spiel von morgen." (Quelle: Cornelius Hentrich)*
+
+---
+
+Der [Technologie-Hype-Zyklus](https://de.wikipedia.org/wiki/Hype-Zyklus), oft auch als Gartner Hype Cycle bekannt, ist ein Konzept, das von dem Marktforschungsunternehmen [Gartner](https://de.wikipedia.org/wiki/Gartner_Inc.) entwickelt wurde, um den Lebenszyklus neuer Technologien und deren Einführung auf dem Markt zu beschreiben. Der „Hype-Zyklus“ stellt dar, welche Phasen der öffentlichen Aufmerksamkeit eine neue Technologie bei deren Einführung durchläuft.
+
+Ein Verständnis des Technologie-Hype-Zyklus ist hilft, den richtigen Zeitpunkt für Investitionen und die Entwicklung von Technologien zu erkennen und sicherzustellen, dass sie effektiv zur Lösung realer Probleme eingesetzt werden können. Entscheidend hierfür ist es, den Hype von der tatsächlichen Leistungsfähigkeit und den potenziellen Anwendungen einer Technologie zu unterscheiden, um realistische Erwartungen zu setzen und Ressourcen effizient zu nutzen.
+
+Der Begriff des Hype-Zyklus wurde von der "Gartner Inc."-Beraterin Jackie Fenn geprägt und dient heute Technologieberatern und Entscheidungsträgern zur Einschätzung des Reifegrads neuer Technologien
+→ Literatur: [Linden, Alexander; Fenn, Jackie (2003-05-30). "Understanding Gartner's Hype Cycles"](http://ask-force.org/web/Discourse/Linden-HypeCycle-2003.pdf).
+
+Der Hype-Zyklus gliedert sich typischerweise in fünf Phasen: 1. Technologie-Auslöser (Technology Trigger), 2. steiler Anstieg der Erwartungen (Peak of Inflated Expectations), 3. Tiefpunkt des Desillusionierens (Trough of Disillusionment), 4. Pfad zur Erleuchtung (Slope of Enlightenment) und 5. Plateau der Produktivität (Plateau der Produktivität).
+
+Die typische Darstellung erfolgt in einem Diagramm, wie in @fig-gartner-hype-cycle dargestellt: Auf der Y-Achse ist die Aufmerksamkeit (Erwartungen) für die neue Technologie aufgetragen, auf der X-Achse die Zeit seit Sichtbarwerdung der Technologie. 
+
+![Die fünf Phasen im Technology-Hype-Cycle](images/Gartner-Hype-Cycle.png){width=80% #fig-gartner-hype-cycle}
+
+Die Kurve steigt anfangs explosionsartig an, um dann nach einem Maximum ebenso stark zu fallen. Nach einem Zwischenminimum steigt die Kurve erneut an bis zu einem höheren Niveau der Beharrung. Mathematisch handelt es sich um das Abklingen nach einer Sprunganregung in Form einer stark exponentiell gedämpften Schwingung mit Annäherung an eine Gleichgewichtslage um den Sprung höher als am Anfang der Schwingung.
+
+
+#### Phasen des Technology-Hype-Cycle
+
+
+##### Technology Trigger (Technologischer Auslöser)
+
+Die erste Phase ist der technologische Auslöser oder Durchbruch, Projektbeginn oder ein sonstiges Ereignis, welches auf beachtliches Interesse des Fachpublikums stößt. „Trittbrettfahrer“ steigen auf das neue Thema auf.
+
+Die Phase des Technologieauslösers markiert den Beginn des Hype-Zyklus und tritt ein, wenn eine neue Technologie oder ein neues Konzept erstmals auf dem Radar von Branchenexperten und Innovatoren erscheint. 
+
++ **Neuartigkeit**: In dieser Phase handelt es sich um eine neue Technologie oder ein neues Konzept, das das Potenzial hat, bestehende Methoden zu verändern oder zu revolutionieren. Es kann sich um eine völlig neue Erfindung handeln oder um eine Weiterentwicklung bestehender Technologien.
+
++ **Forschung und Entwicklung**: Die Technologie befindet sich oft noch in einem frühen Stadium der Forschung und Entwicklung. Es werden erste Prototypen gebaut, Konzepte werden getestet und die Machbarkeit wird untersucht.
+
++ **Frühe Anwendungen**: Obwohl die Technologie noch nicht weit verbreitet ist, gibt es möglicherweise erste Anwendungen oder Pilotprojekte, bei denen die Technologie in begrenztem Umfang getestet wird.
+
++ **Interesse der Innovatoren**: In dieser Phase zeigen Branchenexperten, Innovatoren und Forscher ein starkes Interesse an der Technologie. Sie erkennen das Potenzial und die Möglichkeiten, die die neue Technologie bieten könnte.
+
++ **Risiken und Unsicherheiten**: Da die Technologie noch in einem frühen Entwicklungsstadium ist, bestehen auch viele Risiken und Unsicherheiten. Es ist unklar, ob die Technologie tatsächlich den erwarteten Nutzen bringen wird, und es gibt oft noch viele technische und wirtschaftliche Herausforderungen zu überwinden.
+
++ **Investitionen und Partnerschaften**: In dieser Phase können erste Investitionen von Risikokapitalgebern, Forschungsinstituten oder Unternehmen getätigt werden, um die Entwicklung der Technologie voranzutreiben. Es können auch Partnerschaften zwischen verschiedenen Organisationen gebildet werden, um Ressourcen zu bündeln und die Entwicklung zu beschleunigen.
+
+
+##### Peak of Inflated Expectations (Gipfel der überzogenen Erwartungen)
+
+In dieser Phase erreichen die Erwartungen und das Interesse an der neuen Technologie ihren Höhepunkt. Es überstürzen sich die Berichte und erzeugen oft übertriebenen Enthusiasmus und unrealistische Erwartungen.  Tatsächlich gibt es durchaus erste erfolgreiche Anwendungen der neuen Technologie, aber die meisten Anwendungen kämpfen massiv mit einer Vielzahl von Kinderkrankheiten.
+
++ **Übertriebene Erwartungen**: In dieser Phase steigen die Erwartungen an die neue Technologie stark an, oft aufgrund von Hype, Marketing und Medienberichterstattung. Es herrscht eine Atmosphäre des Optimismus und der Euphorie darüber, wie die Technologie die Welt verändern könnte.
+
++ **Breites öffentliches Interesse**: Die Technologie erhält viel Aufmerksamkeit von Medien, Investoren und der Öffentlichkeit. Es gibt eine Vielzahl von positiven Berichten und Prognosen über das Potenzial und die revolutionären Auswirkungen der Technologie.
+
++ **Überzogene Ansprüche**: In dieser Phase werden oft übertriebene Ansprüche bezüglich der Leistungsfähigkeit und der Anwendungsmöglichkeiten der Technologie gemacht. Es wird erwartet, dass die Technologie nahezu alle Probleme lösen und bestehende Methoden obsolet machen kann.
+
++ **Ignoranz und Blindheit gegenüber den Herausforderungen**: Während des Gipfels überhöhter Erwartungen neigen viele dazu, die Herausforderungen, Begrenzungen und potenziellen Risiken der Technologie zu übersehen oder herunterzuspielen. Es besteht eine Tendenz, technologische Herausforderungen zu ignorieren oder zu bagatellisieren.
+
++ **Hype und Spekulation**: Die Phase des Gipfels überhöhter Erwartungen ist oft von einem starken Hype und einer übermäßigen Spekulation geprägt. Es kann zu einem Boom an Investitionen, Start-up-Gründungen und Produktankündigungen kommen, da viele Unternehmen versuchen, von der Technologie zu profitieren.
+
++ **Enttäuschung und Realitätscheck**: Die Phase des Gipfels überhöhter Erwartungen endet oft plötzlich mit einem Realitätscheck, wenn sich herausstellt, dass die Technologie die überzogenen Erwartungen nicht wird erfüllen können. Die Folge davon ist ein meist massiver Rückgang des Interesses an der neuen Technologie.
+
+
+##### Trough of Disillusionment (Tal der Enttäuschungen)
+
+Nach dem Höhepunkt der überhöhten Erwartungen folgt eine Phase, in der viele Technologien einen starken Rückgang des Interesses und der Investitionen erfahren. Technologien kommen im Tal der Enttäuschungen an. Als Konsequenz ebbt die Berichterstattung stark ab, obwohl die neue Technologie gegenüber dem Stand des Auslösers tatsächlich deutliche Fortschritte gemacht hat und Erfolge verzeichnen kann.
+
+1. **Enttäuschung und Desillusionierung**: In dieser Phase setzt eine Phase der Enttäuschung und Desillusionierung ein, da die anfänglichen Versprechungen und Erwartungen an die Technologie nicht erfüllt wurden. Es wird klar, dass die Technologie nicht, oder zumindest nicht kurzfristig, die revolutionären Auswirkungen hat, die zunächst prophezeit wurden.
+
+2. **Rückgang des Interesses und der Investitionen**: Während des Tals der Enttäuschung nimmt das Interesse an der Technologie deutlich ab. Investitionen werden zurückgezogen, Start-Ups scheitern, Unternehmen kurzen oder streichen ihre Pläne für die Entwicklung und Integration der neuen Technologie.
+
+3. **Herausforderungen und Probleme**: Die Technologie wird mit realen Herausforderungen und Problemen konfrontiert, die ihre breite Einführung und Anwendung behindern. Dies könnten technische Schwierigkeiten, regulatorische Hürden, Sicherheitsbedenken oder unerwartete Nebenwirkungen sein.
+
+4. **Negative Berichterstattung**: In dieser Phase wird die Berichterstattung über die Technologie negativer, da die Medien die Enttäuschung und die Probleme rund um die Technologie aufgreifen. In den Medien erscheinen Berichte über gescheiterte Projekte, unerfüllte Versprechungen oder kritische Analysen ihrer Leistungsfähigkeit.
+
+5. **Realitätsanpassung und Lektionen**: Während des Tals der Enttäuschung erfolgt eine Realitätsanpassung, bei der Unternehmen, Investoren und Entwickler die Lektionen aus den Fehlern und Fehleinschätzungen der Vergangenheit ziehen. Es werden realistischere Erwartungen an die Technologie gesetzt, und es wird nach Möglichkeiten gesucht, die Probleme zu lösen und ihre Leistungsfähigkeit zu verbessern.
+
+6. **Fortgesetzte Entwicklung und Innovation**: Obwohl in der Breite das Interesse an der Technologie in dieser Phase abnimmt, setzen einzelne Unternehmen und Start-Ups weiterhin die Arbeit an der neuen Technologie fort. Neue Lösungen werden erforscht, und es werden Bemühungen unternommen, die Herausforderungen zu überwinden, um das Potenzial der Technologie voll auszuschöpfen.
+
+Die Phase des Tals der Enttäuschung ist **die** kritische Phase im Technologie-Hype-Zyklus, in der die Realität der Technologie gegenüber den anfänglichen Erwartungen abgewogen wird. Es ist eine Zeit der Reflexion und Neuausrichtung, in der die Grundlage für die weitere Entwicklung und Einführung der Technologie gelegt wird. Gelingt einer neuen Technologie der Restart aus dem Tal der Enttäuschung wird sie mit großer Wahrscheinlichkeit erfolgreich sein!
+
+
+##### Slope of Enlightenment (Pfad der Erleuchtung)
+
+Obwohl die Berichterstattung über die Technologie stark abgenommen hat, führen realistische Einschätzungen wieder auf den Pfad der Erleuchtung. Es entsteht ein Verständnis für die Vorteile, die praktische Umsetzung, aber auch für die Grenzen der neuen Technologie. In dieser Phase beginnen Organisationen und Entwickler, die wirklichen Anwendungen und Vorteile der Technologie zu verstehen und anzuerkennen. Lösungen für die anfänglichen Probleme werden entwickelt, und das Interesse an der Technologie steigt wieder. Es werden konkrete Fortschritte mit zählbarem Nutzen erzielt.
+
++ **Erkenntnis und Verständnis**: Während des Pfads der Erleuchtung beginnen Organisationen, Entwickler und Anwender ein tieferes Verständnis für die tatsächlichen Anwendungen, Vorteile und Grenzen der Technologie zu entwickeln. Es wird klarer, wie die Technologie in bestehende Prozesse integriert werden kann und welche Probleme sie lösen kann.
+
++ **Lösungsorientierung**: In dieser Phase werden Lösungen für die Herausforderungen und Probleme gefunden, die während des Tals der Enttäuschung aufgetreten sind. Es werden neue Ansätze erforscht, um die Leistungsfähigkeit der Technologie zu verbessern, Sicherheitsbedenken anzugehen und die Integration in bestehende Systeme zu erleichtern.
+
++ **Best Practices und Erfahrungen**: Während des Pfads der Erleuchtung werden Best Practices entwickelt und Erfahrungen gesammelt, die es Unternehmen und Entwicklern ermöglichen, die Technologie effektiver zu nutzen. Es entsteht ein breiteres Wissen darüber, wie die Technologie am besten eingesetzt werden kann, um konkrete Probleme zu lösen und Mehrwert zu schaffen.
+
++ **Zunehmende Akzeptanz**: Die Technologie gewinnt allmählich an Akzeptanz, da ihre Anwendungen und Vorteile deutlicher werden. Unternehmen und Organisationen erkennen, dass die Technologie einen echten Nutzen bietet und investieren weiterhin in ihre Entwicklung und Integration.
+
++ **Weiterentwicklung und Innovation**: Während des Pfads der Erleuchtung setzen Entwickler und Forscher ihre Arbeit an der Technologie fort, um ihre Leistungsfähigkeit weiter zu verbessern und neue Anwendungen zu erforschen. Es gibt einen kontinuierlichen Innovationszyklus, der dazu beiträgt, die Technologie kontinuierlich voranzutreiben.
+
+
+##### Plateau of Productivity (Plateau der Produktivität)
+
+Eine Technologie erreicht ein Plateau der Produktivität, wenn die Vorteile allgemein anerkannt und akzeptiert werden. Die Technologie hat volle Marktreife erreicht und wird akzeptiert und in Produkte integriert. Die Endhöhe dieses Plateaus hängt stark davon ab, ob die Technologie in Massen- oder Nischenmärkten angenommen wird. 
+
++ **Breite Akzeptanz**: Im Plateau der Produktivität hat die Technologie eine breite Akzeptanz erreicht und wird von Unternehmen, Organisationen und Endnutzern weit verbreitet eingesetzt. Sie hat sich als zuverlässige und effektive Lösung für reale Probleme erwiesen und wird als Standardlösung angesehen.
+
++ **Nachweisbarer Nutzen**: Die Technologie liefert nachweisbare Ergebnisse und bietet einen klaren Nutzen für diejenigen, die sie einsetzen. Unternehmen und Organisationen sehen konkrete Vorteile in Form von Kostenersparnissen, Effizienzsteigerungen, verbesserten Produkten oder Dienstleistungen und anderen messbaren Verbesserungen.
+
++ **Stabilität und Zuverlässigkeit**: Die Technologie ist stabil und zuverlässig geworden, da frühere Probleme und Herausforderungen erfolgreich überwunden wurden. Es gibt klare Best Practices für die Implementierung und Nutzung der Technologie, und es werden regelmäßige Updates und Wartung bereitgestellt, um ihre Leistungsfähigkeit aufrechtzuerhalten.
+
++ **Standardisierung und Interoperabilität**: Im Plateau der Produktivität werden Standards und Protokolle für die Interoperabilität der Technologie entwickelt, um ihre nahtlose Integration in bestehende Systeme und Infrastrukturen zu gewährleisten. Dies erleichtert den Austausch von Daten und die Zusammenarbeit zwischen verschiedenen Systemen und Plattformen.
+
++ **Weiterentwicklung und Optimierung**: Obwohl die Technologie bereits breit akzeptiert ist, gibt es weiterhin Bemühungen, sie weiter zu optimieren und zu verbessern. Es werden neue Funktionen und Anwendungen entwickelt, um den sich ändernden Anforderungen und Bedürfnissen gerecht zu werden, und es werden kontinuierlich Verbesserungen vorgenommen, um die Leistungsfähigkeit der Technologie zu steigern.
+
+
+![Technology-Hype-Cycle [von Olga Tarkovskiy](https://commons.wikimedia.org/w/index.php?curid=27546041)](images/Hype-Cycle-General.png){width=90% #fig-hype-cycle}
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Technology-Hype-Cycle Bsp. Internet
+
+-------------------------------------------------------------------------- -->
+Berühmtes Beispiel für einen Technology-Hype-Cycle ist das Internet: Entstanden als ein militärisches Forschungsprojekt im Kalten Krieg ([ARPANET](https://de.wikipedia.org/wiki/Arpanet)), anfangs verkannt, in der wissenschaftlichen Gemeinde genutzt und weiter entwickelt (siehe z.B. erste E-Mail, 1969, University of California, erster Browser 1990, Cern, HTTP/0.9-Protokoll, 1991, CERN, erste Webcam, 1991, University of Cambridge), dann explosionsartig überschätzt ([Dotcom-Blase](https://de.wikipedia.org/wiki/Dotcom-Blase "Dotcom-Blase"), 2000) und mittlerweile nicht mehr aus dem Alltag wegzudenken bildet das Internet heute seinerseits das Fundament für die nächsten Generationen neuer Technologien.
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Amaras Gesetz
+
+-------------------------------------------------------------------------- -->
+Eng mit dem Technologie-Hype-Zyklus verwandt ist Amaras Gesetz dar, das von [Roy Amara](https://en.wikipedia.org/wiki/Roy_Amara) geprägt wurde. Es besagt: *„Wir neigen dazu, die kurzfristige Wirkung einer Technologie zu überschätzen und die langfristige Wirkung zu unterschätzen.“*
+
+::: {.callout-caution}
+## Amaras Gesetz, übertragen auf die Persönlichkeitsentwicklung
+*„Wir neigen dazu zu überschätzen, was wir in einem Jahr erreichen können, und zu unterschätzen, was wir in fünf Jahren erreichen können. (Quelle: Unbekannt)*. Siehe hierzu auch einen Klassiker der Fragen von Seiten HR im Vorstellungsgespräch: *"Wo sehen Sie sich in fünf Jahren?"*
+:::
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Disruptive Entwicklung
+
+-------------------------------------------------------------------------- -->
+#### Disruptive Entwicklung
+::: {.callout-tip}
+## Definition: *"Disruptive Entwicklung"*
+Der Begriff "Disruptive Entwicklung" bezieht sich auf einen Prozess, bei dem eine innovative Technologie, ein Produkt oder eine Dienstleistung den Markt so grundlegend verändert, dass bestehende Geschäftsmodelle, Produkte oder Dienstleistungen obsolet werden (siehe → [Disruptive Technologie](https://de.wikipedia.org/wiki/Disruptive_Technologie))
+:::
+
+Diese Disruption tritt häufig in etablierten Branchen auf und kann dazu führen, dass etablierte Unternehmen Marktanteile verlieren oder sogar aus dem Geschäft gedrängt werden.
+
+Siehe auch → [Chaostheorie](https://de.wikipedia.org/wiki/Chaosforschung), → [Black Swan](https://de.wikipedia.org/wiki/Black_Swan_(Risiken)) @sec-blackswan.
+
+---
+
+>*“Ich denke, dass es einen Weltmarkt für vielleicht fünf Computer gibt.” (Quelle: Thomas Watson, Vorsitzender von IBM, im Jahr 1943)*
+
+---
+
+![Einer der ersten Computer der Welt: Electronic Numerical Integrator and Computer ([ENIAC](https://de.wikipedia.org/wiki/ENIAC)) (1942).](images/ENIAC.jpg){width=50% #fig-eniac}
+
+Die Theorie der disruptiven Entwicklung wurde erstmals von [Clayton Christensen](https://de.wikipedia.org/wiki/Clayton_M._Christensen) in seinem Buch *"[The Innovator's Dilemma](https://archive.org/details/innovatorsdilem000chri)"* aus dem Jahr 1997 entwickelt. Christensen argumentiert, dass disruptive Innovationen normalerweise in Nischenmärkten beginnen, wo sie anfänglich weniger leistungsfähig oder teurer sind als bestehende Lösungen. Aber im Laufe der Zeit verbessern sie sich rapide und können schließlich den Mainstream-Markt erobern. Dies geschieht oft, weil die neuen Technologien oder Produkte bestimmte Kundenbedürfnisse besser erfüllen oder zu einem erheblich niedrigeren Preis angeboten werden.
+
+Beispiele für disruptive Entwicklungen sind zahlreich, von der Einführung des Personalcomputers, der die Mainframe-Computerindustrie störte, bis hin zu digitalen Kameras, die die Filmindustrie beeinflussten, oder Streaming-Diensten, die die Art und Weise, wie wir Fernsehen und Filme konsumieren, grundlegend verändert haben.
+
+Unternehmen, die auf disruptive Entwicklungen nicht angemessen reagieren, können erhebliche Verluste erleiden und letztlich vom Markt verschwinden (siehe z.B. → [Kodak](https://de.wikipedia.org/wiki/Kodak)^[1987 fertigte Kodak die weltweit erste digitale Spiegelreflexkamera, die Canon New F-1 Electro-Optic Camera. 1991 brachte Kodak mit der DCS 100 die erste Digitalkamera weltweit in den Handel. Erfunden worden war sie bereits 1975 vom Kodak-Ingenieur Steven J. Sasson. Trotz dieser Pionierleistungen im Bereich der digitalen Fotografie gelang es Kodak letztlich nicht, den mit der Digitalisierung verbundenen Wandel erfolgreich zu gestalten.]).
+
+![Logo der Eastman Kodak Company (2016)](images/Eastman_Kodak_Company_Logo.png){width=20% #fig-kodak}
+
+Disruptive Entwicklungen können aber auch auslösender, positiv wirkender Anstoß zur erfolgreichen Weiterentwicklung von Unternehmen sein. So gelang der wie Kodak einstmals auf die Herstellung von Film spezialisierten Firma [Fujifilm](https://de.wikipedia.org/wiki/Fujifilm) die Weiterentwicklung hin zu einem Technologiekonzern. 
+
+![Logo der Fa. [Fujifilm Holdings K.K.](https://holdings.fujifilm.com/en)](images/Fujifilm_Logo.png){width=20% #fig-fuji}
+
+Die Herstellung von Film macht heute nur noch einen verschwindend geringen Anteil des Umsatzes von Fujifilm aus, wird aber als Zeichen der Wertschätzung der Historie des Unternehmen durch Fujifilm bis heute weitergeführt.
+
+
+### Technologieradar
+
+Neben dem Technology-Hype-Cycle ist das Technologieradar ein etabliertes Werkzeug zur Technologiefrüherkennung. Es dient vor allem der Visualisierung von Technologieentwicklungen. 
+
+![Technologieradar. (Quelle: @appelfeller_digitale_2023)](images/436275_2_De_4_Fig3_HTML.png){width=80% #fig-technologieradar}
+
+Die Darstellungsform folgt zumeist der in @fig-technologieradar gezeigten Unterteilung in vier Suchräume bzw. Technologiecluster. 
+
+Die Aufteilung in Quadranten strukturiert die Inhalte und grenzt die Suchräume ab. Jeder der Quadranten entspricht zumeist einem Technologiefeld. Zum Beispiel könnte im Technologiefeld 1 der Suchraum für das Element Vernetzung mit Technologien wie etwa IoT und Blockchain visualisiert werden, in Technologiefeld 2 der Suchraum für die Prozessautomatisierung mit Technologien wie Robotic Process Automation und Chatbots. 
+
+Auf den Achsen des Technologieradars wird der Reifegrad der Technologien abgebildet: Je weiter außen eine Technologie angeordnet wird, desto höher ist ihr Reifegrad im Sinne der Technologieentwicklung. Die Einordnung der einzelnen Suchfelder bzw. Technologien in den jeweiligen Suchraum (Quadranten) anhand ihres Reifegrads spiegelt zumeist auch ihre Bedeutung aus Unternehmenssicht wider.
+
+<!--
+::: {.callout-tip}
+## Weiterführende Links
+
+:::
+-->
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
+
++ @appelfeller_digitale_2023: [Digitale Technologien](https://rdcu.be/dIzVf)
+
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Literaturempfehlung
+
+-------------------------------------------------------------------------- -->
+
+<!--
+#### Literaturempfehlung
+
+![@appelfeller_digitale_2023: [Die digtiale Transformation des Unternehmens](https://link.springer.com/book/10.1007/978-3-662-65413-2)](images/Appelfeller_Die_digitale_Transformation.webp){width=40%}
+
+-->

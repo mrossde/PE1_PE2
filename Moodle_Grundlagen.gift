@@ -1,0 +1,60 @@
+//-------------------------------------------------------------------------
+//
+//                     Grundlagen
+//
+//-------------------------------------------------------------------------
+
+::Vision - Strategie - Ziele::
+Welche Aussage beschreibt die Unterschiede zwischen Vision, Strategie und Zielen am besten?
+{
+	~%100%Die Vision beschreibt die langfristige Ausrichtung und den übergeordneten Zweck eines Unternehmens, die Strategie legt den Weg fest, um diese Vision zu erreichen, und die Ziele sind konkrete Meilensteine, die auf dem Weg zur Verwirklichung der Vision erreicht werden sollen.
+	~%-25%Die Strategie definiert die langfristige Ausrichtung eines Unternehmens, die Vision legt den Weg fest, um diese Strategie umzusetzen, und die Ziele sind spezifische Maßnahmen, um die Strategie zu unterstützen.
+	~%-25%Die Ziele definieren den übergeordneten Zweck eines Unternehmens, die Strategie legt die konkreten Maßnahmen fest, um diese Ziele zu erreichen, und die Vision beschreibt die spezifischen Meilensteine auf dem Weg zur Umsetzung der Strategie.
+	~%-25%Die Vision definiert die kurzfristigen Ziele eines Unternehmens, die Strategie legt die langfristige Ausrichtung fest, um diese Ziele zu erreichen, und die Ziele sind spezifische Maßnahmen, um die Vision zu unterstützen.
+	~%-25%Die Strategie beschreibt die kurzfristigen Ziele eines Unternehmens, die Ziele legen den übergeordneten Zweck fest, um diese Strategie umzusetzen, und die Vision legt den Weg fest, um diese Ziele zu erreichen.
+}
+
+
+::SMARTe Ziele::
+Was sind SMARTe Ziele?
+{
+    ~%20%spezifisch
+    ~%20%messbar
+    ~%20%erreichbar
+    ~%20%relevant
+    ~%20%zeitgebunden
+    ~%-33.333%teamorientiert
+    ~%-33.333%attraktiv
+    ~%-33.333%taktisch
+}
+
+
+::Technology-Hype-Cycle::
+Was ist der Technologie-Hype-Cycle?
+{
+	~%100%Ein Modell, das den Lebenszyklus von Technologien beschreibt, von der Einführung über den Hype bis zur Reife und dem Mainstream-Einsatz.
+	~%-33.333%Eine Methode, um den Erfolg von Technologieunternehmen zu prognostizieren.
+	~%-33.333%Ein Modell, das den Prozess beschreibt, wie neue Technologien auf den Markt kommen.
+	~%-33.333%Eine Liste von Technologien, die als besonders vielversprechend angesehen werden.
+}
+
+
+
+//-------------------------------------------------------------------------
+//
+//                     SI-Einheiten
+//
+//-------------------------------------------------------------------------
+
+::SI-Einheiten::
+Welche der folgenden Einheiten gehören zu den SI-Basiseinheiten?
+{
+	~%33.333%Meter (m)
+    ~%33.333%Sekunde (s)
+    ~%33.333%Kilogramm (kg)
+	~%-20%Grad Celsius (°C)
+    ~%-20%Newton (N) 
+    ~%-20%Joule (J) 
+    ~%-20%Watt (W)
+	~%-20%Hertz (Hz)
+}

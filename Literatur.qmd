@@ -1,0 +1,226 @@
+---
+title: "DEB3 Produktentwicklung 1"
+resource-path: ["../images"]
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Literaturempfehlungen zur Vorlesung
+  - Hilfreiche Links
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 6
+link-external-icon: true
+link-external-newwindow: true
+---
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Literatur
+
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Literatur
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Literaturempfehlungen
+
+-------------------------------------------------------------------------- -->
+## Literaturempfehlungen
+
+
+
+### Systems Engineering
+
+![@ahrens_systems_2024: [Systems Engineering & Management](https://link.springer.com/book/10.1007/978-3-658-43547-9)](images/Ahrens_Systems-Engineering_978-3-658-43547-9.webp){width=20%}
+
+![@broy_einfuhrung_2021: [Einführung in die Softwaretechnik](https://link.springer.com/book/10.1007/978-3-662-50263-1)](images/Broy_Softwaretechnik_978-3-662-50263-1.webp){width=20%}
+
+![@niebisch_anforderungsmanagement_2024: [Anforderungsmanagement](https://link.springer.com/book/10.1007/978-3-662-68871-7)](images/Niebisch_Anforderungsmanagement_978-3-662-68871-7.webp){width=20%}
+
+
+
+### Grundlagen des Maschinenbaus
+
+![@hennecke_hutte_2022-1: [Mathematisch-naturwissenschaftliche und allgemeine Grundlagen für Ingenieure](https://link.springer.com/book/10.1007/978-3-662-64369-3)](images/Hennecke_HUETTE_Band1_978-3-662-64369-3.webp){width=20%}
+
+![@hennecke_hutte_2022: [Grundlagen des Maschinenbaus und ergänzende Fächer für Ingenieure](https://link.springer.com/book/10.1007/978-3-662-64372-3)](images/HenneckeGrundlagendesMaschinenbaus.jpg){width=20%}
+
+![@hennecke_hutte_2023: [Elektro- und informationstechnische Grundlagen für Ingenieure](https://link.springer.com/book/10.1007/978-3-662-64375-4)](images/Hennecke_HUETTE_Band3_978-3-662-64375-4.webp){width=20%}
+
+![@bender_dubbel_2020: [Taschenbuch für den Maschinenbau Band 1](https://link.springer.com/book/10.1007/978-3-662-59711-8)](images/Dubbel_GrundlagenMaschinenbau.webp){width=20%}
+
+![@bender_dubbel_2020-1: [Taschenbuch für den Maschinenbau Band 2](https://link.springer.com/book/10.1007/978-3-662-59713-2)](images/Dubbel_GrundlagenMaschinenbau_Anwendungen.webp){width=20%}
+
+![@bender_dubbel_2020-2: [Taschenbuch für den Maschinenbau Band 3](https://link.springer.com/book/10.1007/978-3-662-59715-6)](images/Dubbel_GrundlagenMaschinenbau_MaschinenSysteme_978-3-662-59715-6.webp){width=20%}
+
+![@czichos_mechatronik_2019: [Mechatronik](https://link.springer.com/book/10.1007/978-3-658-26294-5)](images/Czichos_Mechatronik_978-3-658-26294-5.webp){width=20%}
+
+![@kirchner_werkzeuge_2020: [Werkzeuge und Methoden der Produktentwicklung](https://link.springer.com/book/10.1007/978-3-662-61762-5)](images/KirchnerMethodenderProduktentwicklung.jpg){width=20%}
+
+
+
+### Produktions- und Werkstofftechnik
+
+![@forster_einfuhrung_2023: [Einführung in die Fertigungstechnik](https://link.springer.com/book/10.1007/978-3-662-68130-5)](images/Foerster_Fertiungstechnik.webp){width=20%} 
+
+![@fritz_fertigungstechnik_2022: [Fertigungstechnik](https://link.springer.com/book/10.1007/978-3-662-64875-9)](images/Fritz_Fertigungstechnik.webp){width=20%}
+
+![@klocke_fertigungsverfahren_2018-2: [Fertigungsverfahren 1 - Zerspanung mit geometrisch bestimmter Schneide](https://link.springer.com/book/10.1007/978-3-662-54207-1)](images/Klocke_Fertigungsverfahren1_978-3-662-54207-1.webp){width=20%}
+
+![@klocke_fertigungsverfahren_2018: [Fertigungsverfahren 2 - Zerspanung mit geometrisch unbestimmter Schneide](https://link.springer.com/book/10.1007/978-3-662-58092-9)](images/Klocke_Fertigungsverfahren2_978-3-662-58092-9.webp){width=20%}
+
+![@klocke_fertigungsverfahren_2017: [Fertigungsverfahren 4 - Umformen](https://link.springer.com/book/10.1007/978-3-662-54714-4)](images/Klocke_Fertigungsverfahren4_978-3-662-54714-4.webp){width=20%}
+
+![@klocke_fertigungsverfahren_2018-1: [Fertigungsverfahren 5 - Gießen und Pulvermetallurgie](https://link.springer.com/book/10.1007/978-3-662-54728-1)](images/Klocke_Fertigungsverfahren5_978-3-662-54728-1.webp){width=20%}
+
+![@doege_handbuch_2016: [Umformtechnik](https://link.springer.com/book/10.1007/978-3-662-43891-6)](images/Doege_Umformtechnik_978-3-662-43891-6.webp){width=20%}
+
+![@bargel_werkstoffkunde_2012: [Werkstoffkunde](https://link.springer.com/book/10.1007/978-3-642-17717-0)](images/Bargel_Werkstoffkunde.png){width=20%}
+
+![@marxer_fertigungsmesstechnik_2021: [Fertigungsmesstechnik](https://link.springer.com/book/10.1007/978-3-658-34168-8)](images/Marxer_Fertigungsmesstechnik.webp){width=20%}
+
+
+### Simulation
+
+![@glockler_simulation_2023: [Simulation mechatronischer Systeme](https://link.springer.com/book/10.1007/978-3-658-42523-4)](images/GloecklerSimulationmechatronischerSysteme.png){width=20%}
+
+![@hahn_kompaktkurs_2021: [Kompaktkurs Finite-Elemente für Einsteiger](https://link.springer.com/book/10.1007/978-3-658-33411-6)](images/HahnKompaktkursFEfuerEinsteiger.png){width=20%}
+
+![@bulenda_finite-element-modellierung_2024: [Finite-Elemente-Modellierung](https://link.springer.com/book/10.1007/978-3-658-42204-2)](images/Bulenda_Finite_Elemente_978-3-658-42204-2.webp){width=20%}
+
+
+### Betriebsfestigkeit und Zuverlässigkeit
+
+![@haibach_betriebsfestigkeit_2006: [Betriebsfestigkeit](https://link.springer.com/book/10.1007/3-540-29364-7)](images/Haibach_Betriebsfestigkeit.webp){width=20%}
+
+![@bracke_technische_2022: [Technische Zuverlässigkeit](https://link.springer.com/book/10.1007/978-3-662-65015-8)](images/Bracke_Technische_Zuverl%C3%A4ssigkeit.webp){width=20%}
+
+![@moser_technische_2015: [Technische Akustik](https://link.springer.com/book/10.1007/978-3-662-47704-5)](images/M%C3%B6ser_Technische_Akustik_978-3-662-47704-5.webp){width=20%}
+
+
+### Produktionsplanung und Produktion
+
+![@kellner_produktionswirtschaft_2022: [Produktionswirtschaft](https://link.springer.com/book/10.1007/978-3-662-65803-1)](images/Kellner_Produktionswirtschaft_978-3-662-65803-1.webp){width=20%}
+
+![@thommen_allgemeine_2023: [Allgemeine Betriebswirtschaftslehre](https://link.springer.com/book/10.1007/978-3-658-39395-3)](images/Thommen_Betriebswirtschaftslehre_978-3-658-39395-3.webp){width=20%}
+
+![@lotter_primare_2016: [Die Primäre Produktion](https://link.springer.com/book/10.1007/978-3-662-53212-6)](images/Lotter_Produktion_978-3-662-53212-6.webp){width=20%}
+
+![@dickmann_schlanker_2015: [Schlanker Materialfluss](https://link.springer.com/book/10.1007/978-3-662-44869-4)](images/Dickmann_Schlanker_Materialfluss_978-3-662-44869-4.webp){width=20%}
+
+
+### Qualitätsmanagement
+
+![@jakoby_qualitatsmanagement_2022: [Qualitätsmanagement für Ingenieure](https://link.springer.com/book/10.1007/978-3-658-36677-3)](images/Jakoby_Qualitaetsmanagement.webp){width=20%}
+
+![@helmold_qualitat_2023: [Qualität neu denken](https://link.springer.com/book/10.1007/978-3-658-40220-4)](images/Helmold_Qualitaet_978-3-658-40220-4.webp){width=20%}
+
+
+### Controlling
+
+![@ehrlenspiel_kostengunstig_2014: [Kostengünstig Entwickeln und Konstruieren](https://link.springer.com/book/10.1007/978-3-642-41959-1)](images/Ehrlenspiel_Kosteng%C3%BCntig_Entwickeln_978-3-642-41959-1.webp){width=20%}
+
+![@kumper_controlling_2024: [Contolling](https://link.springer.com/book/10.1007/978-3-658-43745-9)](images/Kuemper_Controlling.webp){width=20%}
+
+![@mockenhaupt_digitalisierung_2024: [Digitalisierung und Künstliche Intelligenz in der Produktion](https://link.springer.com/book/10.1007/978-3-658-41935-6)](images/Mockenhaupt_Digitalisierung.webp){width=20%}
+
+
+### Projektmanagement
+
+![@grunig_prozess_2023: [Prozess zur Lösung komplexer Entscheidungsprobleme](https://link.springer.com/book/10.1007/978-3-662-67411-6)](images/Gr%C3%BCning_Entscheidungsprobleme.webp){width=20%}
+
+![@jakoby_intensivtraining_2021 [Intensivtraining Projektmanagement](https://link.springer.com/book/10.1007/978-3-658-32836-8)](images/Jakoby_Projektmanagement.webp){width=20%}
+
+![@reynvaan_wie_2022 [Wie geht Industrie?](https://link.springer.com/book/10.1007/978-3-662-65850-5)](images/Reynvaan_Wie_geht_Industrie.webp){width=20%}
+
+![@kunert_failure_2016: [Failure Management](https://link.springer.com/book/10.1007/978-3-662-47357-3)](images/Kunert_Failure_Management_978-3-662-47357-3.webp){width=20%}
+
+
+### Mathematik und Physik
+
+![@tijms_faszinierende_2024: [Die faszinierende Welt der Wahrscheinlichkeitsrechnung](https://link.springer.com/book/10.1007/978-3-662-69280-6)](images/Tijms_Wahrscheinlichkeitsrechnung_978-3-662-69280-6.webp){width=20%}
+
+![@kronthaler_statistik_2021: [Statistik angewandt mit Excel](https://link.springer.com/book/10.1007/978-3-662-62302-2)](images/KronthalerStatistikmitExcel.jpg){width=20%}
+
+![@zucchini_statistik_2009: [Statistik für Bachelor- und Masterstudenten](https://link.springer.com/book/10.1007/978-3-540-88987-8)](images/Zucchini_Statistik_978-3-540-88987-8.webp){width=20%}
+
+![@kohn_statistik_2005: [Statistik](https://link.springer.com/book/10.1007/b138042)](images/Kohn_Statistik_978-3-540-26768-3.webp){width=20%}
+
+![@weitz_pi_2021 [Pi und die Primzahlen](https://link.springer.com/book/10.1007/978-3-662-62880-5)](images/Weitz_Pi_978-3-662-62880-5.webp){width=20%}
+
+![@gerlach_computerphysik_2024: [Computerphysik](https://link.springer.com/book/10.1007/978-3-662-69347-6)](images/Gerlach_Computerphysik_978-3-662-69347-6.webp){width=20%}
+
+![@hehl_zufall_2021: [Der Zufall in Physik, Informatik und Philosophie](https://link.springer.com/book/10.1007/978-3-658-32063-8)](images/Hehl_Zufall_978-3-658-32063-8.webp){width=20%}
+
+![@demtroder_experimentalphysik_2021: [Experimentalphysik 1](https://link.springer.com/book/10.1007/978-3-662-62728-0)](images/Demtroeder_Experimentalphysik1_978-3-662-62728-0.webp){width=20%}
+
+![@santra_einfuhrung_2023: [Einführung in die Theoretische Physik](https://link.springer.com/book/10.1007/978-3-662-67439-0)](images/Santra_Theoretische_Physik_978-3-662-67439-0.webp){width=20%}
+
+![@ries_ubungsbuch_2024: [Übungsbuch Signale und Systeme](https://link.springer.com/book/10.1007/978-3-658-42425-1)](images/Riess_Signale_und_Systeme_978-3-658-42425-1.webp){width=20%}
+
+
+### Spieltheorie
+
+![@winter_grundzuge_2019: [Grundzüge der Spieltheorie](https://link.springer.com/book/10.1007/978-3-662-58215-2)](images/Winter_Spieltheorie_978-3-662-58215-2.webp){width=20%}
+
+![@peyrolon_spieltheorie_2019: [Spieltheorie](https://link.springer.com/book/10.1007/978-3-658-26486-4)](images/Peyrolon_Spieltheorie_978-3-658-26486-4.webp){width=20%}
+
+![@bewersdorff_gluck_2018: [Glück, Logik und Bluff](https://link.springer.com/book/10.1007/978-3-658-21765-5)](images/Bewersdorff_Glueck_Logik_Bluff978-3-658-21765-5.webp){width=20%}
+
+<!--
+### Sonstiges
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Hilfreiche Links
+
+-------------------------------------------------------------------------- -->
+## Hilfreiche Links
+
++ [Bibliotheken der Hochschule Esslingen](https://www.hs-esslingen.de/hochschule/service/bibliotheken/)
+
+::: {.callout-tip}
+Die Bibliotheken bieten Zugang zu einer großen Menge an Datenbanken (siehe Abschnitt → **DATENBANKEN** auf der Seite). Im [Datenbank-Infosystem (DBIS)]((https://dbis.ur.de/dbinfo/fachliste.php?bib_id=hbes&colors=15&ocolors=40&lett=l)) finden Sie eine Übersicht nach Fachgebieten. Viele Plattformen können auch von Zuhause aus über einen VPN-Zugang verwendet werden.
+:::
+
++ [Datenbank Infosystem (DBIS)](https://dbis.ur.de/dbinfo/fachliste.php?bib_id=hbes&colors=15&ocolors=40&lett=l)
+
+::: {.callout-tip}
+Über das [Datenbank-Infosystem (DBIS)]((https://dbis.ur.de/dbinfo/fachliste.php?bib_id=hbes&colors=15&ocolors=40&lett=l)) ist ein Zugriff auf die Bücher des [Springer-Verlags](https://link.springer.com/) möglich. So können die oben genannten Literaturempfehlungen als EBook (*.PDF) heruntergeladen werden. 
+
+![Logo des [Springer-Verlags](https://link.springer.com/)](images/Springer-Logo.png){width=25% #fig-springerverlag}
+
+Zum Zugang auf die Seite des [Springer-Verlags](https://link.springer.com/) ist ggf. aktiviertes VPN und ein Log-In über Single-Sign-On (SSO) oder mit dem eigenen Benutzernamen und Passwort zum Zugang der Hochschule Esslingen erforderlich (→ Access provided by Hochschulbibliothek Esslingen).
+:::

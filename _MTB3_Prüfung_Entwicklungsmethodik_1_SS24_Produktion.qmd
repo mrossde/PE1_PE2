@@ -1,0 +1,91 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Prüfung MTB3 Entwicklungsmethodik 1 SS24
+
+-------------------------------------------------------------------------- -->
+
+<!--
+//-------------------------------------------------------------------------
+//
+//                     Produktionsplanung und Produktion
+//
+//-------------------------------------------------------------------------
+-->
+
+
+# Produktionsplanung und Produktion
+
+<!--
+::: {.callout-warning}
+## WARNING!
+**THIS PART OF THE DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+
+## Aufgabe "JIT-JIS"
+Welche Anforderung unterscheidet JIS von JIT? (1 Antwort ist richtig)
+
+- [ ] Produkt
+- [ ] Menge
+- [ ] Reihenfolge
+- [ ] Ort 
+- [ ] Zeit
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [x] Reihenfolge
+
+
+:::
+## Aufgabe "JIT-JIS"
+Welchen Einfluss hat die mögliche Verwendung von JIS-JIS in der Serienproduktion auf den Produktentwicklungsprozess? (1 Antwort ist richtig)
+
+*"Die spätere Logistik- und Produktionsmethode JIT-JIS …"*
+
+- [ ] *"… hat keinen Einfluss auf die frühen Phasen des PEP."*
+- [ ] *"… kann der Verwendung einzelner Technologien bei der Produktentwicklung entgegen stehen."*
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [x] *"… kann der Verwendung einzelner Technologien (insb. → "Leading-Edge-Technologien") bei der Produktentwicklung entgegen stehen."*
+:::
+
+<!--
+//-------------------------------------------------------------------------
+//
+//                     Produktdokumentation
+//
+//-------------------------------------------------------------------------
+-->
+
+## Aufgabe "Produktdokumentation"
+Welche Inhalte sollten typischerweise in einer Produktdokumentation zum Abschluss eines Produktentstehungsprozesses enthalten sein?
+
+- **1.)** Technische Spezifikationen
+- **2.)** Bedienungsanleitungen
+- **3.)** Wartungshinweise
+- **4.)** Marketingstrategien
+- **5.)** Werbematerialien
+- **6.)** Organigramme
+- **7.)** Finanzberichte
+
+Antwort (1 Antwort ist richtig):
+
+- [ ] Nur 1 ist richtig.
+- [ ] Nur 1 und 2 sind richtig.
+- [ ] Nur 1, 2 und 3 sind richtig.
+- [ ] Nur 1, 2, 3 und 6 sind richtig.
+- [ ] Alle sind richtig.
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [x] Nur 1, 2 und 3 sind richtig.
+:::

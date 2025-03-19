@@ -1,0 +1,110 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Mindmap
+
+-------------------------------------------------------------------------- -->
+
+
+### Mindmap {#sec-mindmap}
+
+::: {.callout-tip}
+## Definition: *"Mindmap"*
+Eine Mindmap ist eine grafische Darstellung von Ideen, Informationen oder Konzepten, die organisiert und strukturiert sind. Mindmaps werden zumeist in Form eines Baumes erstellt, wobei ein zentrales Thema oder Konzept im Mittelpunkt steht und davon aus Zweige und Blätter entstehen. 
+:::
+
+Mindmaps werden verwendet, um komplexe Informationen visuell darzustellen. 
+
+Mindmaps sind eine mächtige [Kreativitätstechnik](https://de.wikipedia.org/wiki/Kreativit%C3%A4tstechniken) und werden häufig bei [Brainstormings](https://de.wikipedia.org/wiki/Brainstorming) verwendet um alleine oder im Team Ideen zu generieren und ein gemeinsames Verständnis für eine Problemstellung und mögliche Lösungen zu erarbeiten.
+
+::: {.callout-tip}
+## Definition: *"Brainstorming"*
+"Brainstorming ist ein kreativer Prozess, bei dem eine Gruppe von Personen spontan Ideen und Vorschläge zu einem bestimmten Thema sammelt, ohne dabei Einschränkungen oder Kritik zu berücksichtigen. Das Ziel des Brainstormings ist es, eine Vielzahl von neuen, ungewöhnlichen Gedanken und Perspektiven in einem Team zu generieren, um innovative Lösungen zu entwickeln oder Probleme zu lösen."
+:::
+
+
+---
+
+> *"Fragt man Menschen, an welchen Orten sie schon einmal eine wirklich brauchbare Idee gehabt haben, ist von Konferenzräumen so gut wie nie die Rede." (Quelle: Unbekannt)* 
+
+---
+
+@fig-label-mindmapflyer01 zeigt ein Beispiel für eine mögliche Mindmap zum Laborprojekt des "Flyers".
+
+```{mermaid}
+%%| fig-width: 6.4
+%%| label: fig-label-mindmapflyer01
+%%| fig-cap: "Beispiel für eine mögliche Mindmap zum Laborprojekt *Flyer*"
+mindmap
+  root((Projekt Flyer))
+    [Anforderungen]
+        [Flugdauer]
+        [Flugstrecke]
+        [Kunden]
+        [Design]
+    [Entwicklung]
+        [Flugverhalten]
+            [Gewicht]
+            [Größe]
+            [Form]
+    [Prototyp]
+        [Werkstoff]
+            [Papier]
+            [Pappe]
+        [Prozesse]
+            [Schneiden]
+            [Falten]
+            [Kleben]
+            [Malen]
+        [Ressoucen]
+            [Stift]
+            [Lineal]
+            [Schere]
+            [Klebstoff]
+    [Test]
+        [Startphase]
+            [Werfen]
+            [Loslassen]
+        [Flugphase]
+    [Projetmanagement]
+```
+
+
+Um erfolgreich eine Mindmap zu erstellen, gibt es einige wichtige Dinge zu beachten:
+
+1. **Klarheit über das Thema**: Verstehe das Hauptthema oder den Hauptzweck der Mindmap. Dies wird dir helfen, den Fokus zu behalten und eine klare Struktur zu entwickeln.
+
+2. **Zentraler Knoten**: Beginne mit einem zentralen Knoten, der das Hauptthema repräsentiert. Dies ist der Ausgangspunkt für deine Mindmap.
+
+3. **Strukturierte Hierarchie**: Organisiere deine Ideen in einer hierarchischen Struktur, wobei Hauptzweige von diesem zentralen Knoten ausgehen und sich dann in Unterkategorien verzweigen.
+
+4. **Verwendung von Schlüsselwörtern und Abbildungen**: Stelle sicher, dass du Schlüsselwörter und kurze Phrasen verwendest, um Ideen zu repräsentieren. Grafiken, Symbole oder Bilder können ebenfalls hilfreich sein, um Ideen zu veranschaulichen und zu verankern.
+
+5. **Farben und Symbole**: Nutze Farben und Symbole, um verschiedene Kategorien oder Konzepte zu kennzeichnen und visuelle Hierarchien zu schaffen. Dies macht die Mindmap übersichtlicher und erleichtert das Verständnis.
+
+6. **Assoziatives Denken**: Sei offen für neue Verbindungen und Assoziationen zwischen den Ideen. Mindmaps sollen kreative Denkprozesse unterstützen, also lass deinen Gedanken freien Lauf.
+
+7. **Kürze und Prägnanz**: Halte deine Mindmap prägnant und übersichtlich. Vermeide zu viele Details in jedem Zweig, um die Lesbarkeit zu erhalten.
+
+8. **Kontinuierliche Überarbeitung**: Eine Mindmap ist ein lebendiges Dokument. Überarbeite und aktualisiere sie bei Bedarf, um neue Ideen oder Erkenntnisse einzubeziehen und die Struktur zu verbessern.
+
+9. **Verwendung geeigneter Tools**: Wähle ein geeignetes Werkzeug zur Erstellung deiner Mindmap aus, sei es eine digitale Anwendung oder Papier und Stift. Die Wahl des Tools hängt von deinen Vorlieben und den Anforderungen des Projekts ab.
+
+
+::: {.callout-tip}
+## Das Tool ist Nebensache!
+Mindmaps sollen die Kreativität beflügeln und das gegenseitige inspirieren zu neuen Gedanken unterstützen. **Das bei diesem Prozess verwendete (Software-)tool ist dabei Nebensache.** Eine Whiteboard, farbige Stifte und ein Schwamm haben sich in der Praxis für einen ersten Aufschlag einer Mindmap gerade bei Arbeiten im Team schon oft als wesentlich Leistungsfähiger als mächtige Softwarewerkzeuge erwiesen. Geübte Anwender können hingegen gerade in Einzelarbeit mit ihnen bekannten Softwarewerkzeugen gute Ergebnisse erzielen. Übung ist bei beiden Herangehensweisen ein wesentlicher Schlüssel zum Erfolg!
+:::
+
+
+::: {.callout-tip}
+## Übung macht den Meister!
+Wie alle Kreativitätstechniken erfordert auch der Umgang mit Mindmaps Übung und bei einer Arbeit im Team dessen geeignete Zusammensetzung. Wichtig ist eine offene, konstruktive, vertrauensvolle und wertschätzende Atmosphäre!
+:::

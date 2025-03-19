@@ -1,0 +1,410 @@
+<!--
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Fertigungsverfahren
+  - DIN 8580
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+
+<!-- -------------------------------------------------------------------------
+
+                       DIN 8580 "Fertigungsverfahren"
+
+-------------------------------------------------------------------------- -->
+::: {.content-visible unless-meta="headlines.off"}
+# Grundlagen
+## Technische Grundlagen
+:::
+
+### DIN 8580 "Fertigungsverfahren" {#sec-din8580}
+
+::: {.callout-tip}
+## Definition: *"Fertigungsverfahren"*
+Ein Fertigungsverfahren ist ein Verfahren mit dessen Hilfe ein fester Körper mit einer bestimmten Form und bestimmten Stoffeigenschaften hergestellt werden kann. Fertigungsverfahren können sowohl auf manuellen als auch auf maschinellen Tätigkeiten beruhen.
+:::
+
+In Deutschland werden die Fertigungsverfahren üblicherweise anhand der Norm [DIN 8580](https://de.wikipedia.org/wiki/Fertigungsverfahren) in sechs Hauptgruppen untergliedert, deren Schwerpunkt in der Metallverarbeitung liegt. Merkmal der Einteilung ist der Zusammenhalt im Sinne des Zusammenhalts von Teilchen eines festen Körpers. Der Zusammenhalt wird entweder geschaffen (Urformen), beibehalten (Umformen, Umlagern von Stoffteilchen), vermindert (Trennen, Aussondern von Stoffteilchen) oder vermehrt (Fügen, Beschichten, Einbringen von Stoffteilchen). Zudem können durch Fertigungsverfahren die Stoffeigenschaften verändert werden (z.B. Härten).
+
+![Hauptgruppen der Fertigungsverfahren nach [DIN 8580](https://de.wikipedia.org/wiki/Fertigungsverfahren)](images/DIN8580_Fertigungsverfahren-Hauptgruppen.drawio.svg){width=80% #fig-din8580}
+
+1. **[Urformen](https://de.wikipedia.org/wiki/Urformen)** (Zusammenhalt schaffen). Alle Fertigungsverfahren, in denen aus formlosem Stoff ein Werkstück hergestellt wird, bezeichnet man als Urformverfahren. In diesen Verfahren wird der Zusammenhalt der Stoffteilchen geschaffen. Als formloser Stoff zählt dabei sämtliches Ausgangsmaterial, dessen Form nicht definiert ist, etwa eine Flüssigkeit, die sich an die Innenwände des Behälters anpasst. Das wichtigste Verfahren der Gruppe ist das Gießen mit schmelzflüssigem Ausgangsmaterial. Ansonsten kommen noch Pulver und Granulate beim Sintern zum Einsatz oder auch Pasten. Die verschiedenen Generativen Fertigungsverfahren, die zum Teil auch als 3D-Druck oder Rapid Prototyping bekannt sind, wurden mit der Aktualisierung der DIN 8580 im Jahr 2020 als urformende Fertigungsverfahren aufgenommen.
+
+2. **[Umformen](https://de.wikipedia.org/wiki/Umformen)** (Zusammenhalt beibehalten). Man nennt alle Fertigungsverfahren, in denen Werkstücke aus festen Rohteilen durch bleibende Formänderung erzeugt werden, Umformverfahren, sofern dabei weder Material hinzugefügt noch entfernt wird. Die Masse des Rohteils ist gleich der Masse des Fertigteils. Die wichtigsten Verfahren der Gruppe sind Walzen, Gesenkschmieden, Fließpressen, Strangpressen, Tiefziehen und Biegen.
+
+3. **[Trennen](https://de.wikipedia.org/wiki/Trennen_(Fertigungstechnik))** (Zusammenhalt vermindern). Alle Verfahren, in denen die Form eines Werkstücks durch die Aufhebung des Werkstoffzusammenhalts an der Bearbeitungsstelle verändert und somit der Werkstoffzusammenhalt insgesamt vermindert wird, nennt man Trennverfahren. Die wichtigste Gruppe ist das Zerspanen, bei dem Material in Form von Spänen entfernt wird (Sägen, Hobeln, Fräsen, Bohren). Weitere wichtige trennende Verfahren sind das Scherschneiden (Stanzen), Brennschneiden oder Funkenerodieren. Ebenfalls zum Trennen zählt das Zerlegen für die Demontage.
+
+4. **[Fügen](https://de.wikipedia.org/wiki/F%C3%BCgen_(Fertigungstechnik))** (Zusammenhalt vermehren). Fügen ist das langfristige Verbinden mehrerer Werkstücke. Dazu zählt insbesondere das Schweißen, Löten und Kleben aber auch das Nieten, Schrauben oder Zusammensetzen.
+
+5. **[Beschichten](https://de.wikipedia.org/wiki/Beschichten)** (Zusammenhalt vermehren). Beschichten ist Fertigen durch Aufbringen einer fest haftenden Schicht aus formlosem Stoff auf ein Werkstück. Beispiel: Lackieren, Galvanisieren, Pulverbeschichten, Feuerverzinken.
+
+6. **[Stoffeigenschaften ändern](https://de.wikipedia.org/wiki/Stoffeigenschaften_%C3%A4ndern)** ist Fertigen durch Verändern der Eigenschaften des Werkstoffes, aus dem ein Werkstück besteht. Dazu zählt das Härten und Glühen (z. B. Erweichen um die Bearbeitung zu erleichtern).
+
+Diese sechs Hauptgruppen werden weiter in Gruppen und Untergruppen gegliedert. Innerhalb dieser Untergruppen gibt es wiederum eine Vielzahl verschiedener Verfahrensvarianten.
+
+<!-- -------------------------------------------------------------------------
+
+                       Sharable Link (Springer Verlag)
+
+-------------------------------------------------------------------------- -->
+::: {.callout-tip}
+## Weiterführender Sharable-Link (Springer-Verlag)
+@forster_einfuhrung_2023: [Einteilung der Fertigungsverfahren nach DIN 8580](https://rdcu.be/dHab8) 
+:::
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Urformen
+
+-------------------------------------------------------------------------- -->
+#### [Urformen](https://de.wikipedia.org/wiki/Urformen)
+
+Das Urformen bezeichnet eine Gruppe Fertigungsverfahren, bei denen ein fester Körper geschaffen wird, indem einem zunächst formlosen Material ein Zusammenhalt gegeben wird. 
+
+![Urformen am Beispiel Gießen von flüssigem Aluminium (Quelle: [Adobe Stock](https://stock.adobe.com/))](images/AdobeStock_258883341.jpeg){width=70% #fig-urformen}
+
+Maßgeblich für die Untergliederung von Umformverfahren ist der Zustand des formlosen Ausgangsmaterials. Anhand dessen werden folgende Untergruppen des Urformens unterschieden:
+
+1. **Urformen aus dem flüssigen Zustand**: Das bei diesem Urformverfahren genutzte Material ist eine Flüssigkeit, z. B. eine Metallschmelze. Diese Verfahrensgruppe zählt zu den bedeutendsten Urformverfahren. Beispiele hierfür sind das Formgießen in verlorene oder dauerhafte Modelle oder das im Zusammenhang mit der Stahlherstellung genutzte Stranggießanlage.
+2. **Urformen aus dem plastischen Zustand**: Dieser Verfahrensgruppe liegt plastisches Material zu Grunde. Beispiele sind das Spritzgießen und das Strangpressen. Beim Spritzgießen wird Granulat in einer Spritzgussmaschine in einen plastischen Zustand gebracht und in eine Form eingespritzt; der dort entstandene Körper wird nach seiner Abkühlung entnommen. Ähnlich wird beim Strangpressen vorgegangen, jedoch wird hier das Material durch ein Profil aus einer Maschine gedrückt und übernimmt dabei die Form des Profils.
+3. **Urformen aus dem breiigen Zustand**: Dieser Gruppe liegt ein breiiges Ausgangsmaterial zugrunde, wie es beispielsweise beim Gießen von Gips oder Beton vorliegt.
+4. **Urformen aus dem körnigen oder pulverförmigen Zustand**: Ausgangsmaterial dieser Untergruppe sind Pulver von Metallen, Keramiken oder Kunststoffen. Die Materialien werden in die gewünschte Form gebracht, z. B. gepresst, und anschließend in einem Sinterprozess erhitzt und dadurch miteinander zu einem festen Körper verbunden.
+5. **Urformen aus dem span- oder faserförmigen Zustand**: Ausgangsmaterial sind hier Fasern oder Späne. Als Beispiele lassen sich die Papierherstellung oder die Produktion von Spanplatten nennen.
+6. **Urformen aus dem gas- oder dampfförmigen Zustand**: Zu dieser Untergruppe zählen Verfahren, bei denen Gas oder Dampf in eine geometrisch definierte Form überführt wird, z. B. durch Kondensation metallischer Dämpfe.
+7. **Urformen aus dem ionisierten Zustand**: In diesem Fall wird Material aus einem ionisierten Zustand abgeschieden und zur Herstellung eines Bauteils genutzt. Ein Beispiel ist das Abscheiden von Material mittels Elektrolyse im Rahmen der Galvanoformung.
+
+Zu den genannten Untergruppen zählt eine Vielzahl verschiedener Verfahrensvarianten. 
+
+::: {.callout-tip}
+## Ziel des Urformens ist die maximale Annäherung an das Endprodukt in nur einem Fertigungsschritt
+Mit den Urformverfahren verbunden ist das Ziel, sich in einem einzelnen Fertigungsschritt möglichst nahe an die Gestalt und die gewünschten Eigenschaften eines Endprodukts anzunähern. Dies kann sich bei entsprechend kurz ausgestalteten Prozessketten, d. h. Abfolgen von nachfolgend noch erforderlichen Fertigungsschritten, extrem Vorteilhaft auf die Herstellkosten des Produkts auswirken. 
+:::
+
+In der Regel machen die letztlich erwünschten Eigenschaften des hergestellten Produkts jedoch weitere Bearbeitungsschritte notwendig, beispielsweise wenn besondere Anforderungen an die Maßhaltigkeit oder die Güte der Oberfläche des Produkts gestellt werden.
+
+<!-- -------------------------------------------------------------------------
+
+                       Umformen
+
+-------------------------------------------------------------------------- -->
+#### [Umformen](https://de.wikipedia.org/wiki/Umformen)
+
+Das Umformen bezeichnet eine Gruppe Fertigungsverfahren, bei denen unter Beibehaltung der Masse und des Zusammenhalts eines Körpers seine Gestalt verändert wird. Das Umformen wurde früher häufiger auch als plastische oder bildsame Formgebung bezeichnet. Während des Umformens wird also ausschließlich die Form des Körpers dauerhaft verändert. 
+
+![Umformen (Quelle: [Adobe Stock](https://stock.adobe.com/))](images/AdobeStock_471545052.jpeg){width=70% #fig-umformen}
+
+Die Umformverfahren werden anhand der in das Material eingebrachten Spannungen in folgende Untergruppen gegliedert:
+
+1. **Druckumformen**: Beim Druckumformen wird ein Körper durch Einwirken einer Druckbeanspruchung, d. h. durch Zusammendrücken, dauerhaft verformt. Beispiele hierfür sind das Stauchen eines Bolzens oder das Walzen eines Blechs.
+2. **Zugumformen**: Beim Zugumformen wird ein Körper durch eine Zugbeanspruchung, d. h. durch Ziehen, verformt. Ein Beispiel dafür ist das Verlängern eines Rohrs.
+3. **Zugdruckumformen**: Beim Zugdruckumformen wird die Gestaltänderung sowohl durch Zug als auch durch Druck erreicht. Dies ist beispielsweise beim Ziehen von Drähten der Fall.
+4. **Biegeumformen**: Beim Biegeumformen wird die Verformung durch eine Biegebeanspruchung hervorgerufen; ein Beispiel ist das Biegen eines Stahlblechs.
+5. **Schubumformen**: Beim Schubumformen wird eine Schubbeanspruchung für das Umformen eines Körper genutzt. Ein Beispiel ist das Verdrehen von Schmiedeteilen im Kunsthandwerk.
+
+Neben der Gruppierung anhand von Materialspannungen können Umformverfahren auch anhand der Umformtemperatur in die Gruppen Warmumformen, Kaltumformen und Halbwarmumformen unterschieden werden. 
+
+Beim Warmumformen ist die Arbeitstemperatur höher als die Rekristallisationstemperatur des Werkstoffs. Dies bedeutet, dass durch Umformung erzeugte Schädigungen der Werkstoffstruktur infolge der Wärmeeinwirkung abgebaut werden. Dadurch ändert sich beispielsweise die Festigkeit der Werkstoffe weniger stark als beim Kaltumformen. Beim Kaltumformen ist die Arbeitstemperatur im Bereich der Raumtemperatur; allerdings können sich beim Kaltumformen Werkstoffe deutlich erwärmen. Das Halbwarmumformen ist ein Zwischenbereich, bei dem die Arbeitstemperatur unterhalb der Rekristallisationstemperatur des Werkstoffs liegt.
+
+Da Umformverfahren Einfluss auf die Festigkeit eines Werkstoffs nehmen können, kann das Umformen auch dahingehend unterschieden werden, ob keine, eine vorübergehende oder eine dauerhafte Festigkeitsänderung auftritt.
+
+Umformprozesse gibt es in zahlreichen Varianten und Kombinationen, die im Zusammenhang mit der Produktion verschiedenster Güter genutzt werden. Vorteile der Verfahren liegen beispielsweise in der besseren Werkstoffnutzung gegenüber spanenden Verfahren (Trennen) oder in vergleichsweise kurzen Fertigungszeiten. 
+
+Das Umformen gilt aufgrund der sehr kurzen Fertigungszeiten insbesondere für die Herstellung von Gütern mit hohen Stückzahlen als gut geeignet. Hierzu zählen beispielsweise Verfahrensschritte für die Herstellung von Blechteilen wie z.B. Achsen und Karosserieteile, aber auch Schrauben, Dosen, usw.
+
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
++ @doege_handbuch_2016: [Grundlagen der Umformtechnik](https://rdcu.be/dJcdT)
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Trennen
+
+-------------------------------------------------------------------------- -->
+#### [Trennen](https://de.wikipedia.org/wiki/Trennen_(Fertigungstechnik))
+
+Das Trennen bezeichnet eine Gruppe Fertigungsverfahren, bei denen ein Körper durch Minderung von Zusammenhalt in mehrere Teilkörper zerlegt wird. Dadurch wird seine Geometrie verändert^[Infolge des häufig mit dem Trennen verbundenen Wärmeeintrags sowie weiterer Effekte können sich beim Trennen zudem auch weitere Eigenschaften des Produkts oftmals ungewünscht verändern und einen oder mehrere weiteren Fertigungsprozess zum gezielten Ändern der Stoffeigenschaften notwendig machen.]. 
+
+![Trennen am Beispiel Fräsen, eines von mehreren weithin bekannten Trennverfahren aus der Untergruppe Spanen mit geometrisch bestimmten Schneiden (Quelle: [Adobe Stock](https://stock.adobe.com/))](images/AdobeStock_802533263.jpeg){width=70% #fig-trennen}
+
+Die Trennverfahren gliedern sich anhand des angewendeten Verfahrens in folgende Untergruppen:
+
+1. **Zerteilen**: Beim Zerteilen wird ein Körper unter Einsatz von Schneidkanten in mehrere Körper getrennt, ohne dass dabei Späne entstehen. Beispiele sind das Spalten von Holz mit einer Axt oder das Schneider mit einem Messer.
+2. **Spanen mit geometrisch bestimmten Schneiden**: Bei dieser Art des Spanens kommen Werkzeuge mit definierten Schneidgeometrien zum Einsatz. Beispiele für diese Verfahren sind das Drehen, Fräsen, Hobeln oder Sägen.
+3. **Spanen mit geometrisch unbestimmten Schneiden**: Im Gegensatz zu den zuvor genannten Spanvorgängen ist die Form der Schneiden nicht fest definiert. Entsprechende Schneiden sind beispielsweise beim Schleifen anzutreffen: Eine Schleifscheibe zählt viele kleine ungeordnete Schleifkörner mit unterschiedlichen Formen.
+4. **Abtragen**: Beim Abtragen kommen nicht-mechanische Verfahren zum Einsatz, um Teile des bearbeiteten Körpers abzutrennen oder um Werkstoffschichten zu entfernen. Beispiele hierfür sind das Laserschneiden oder das Ätzen eines Werkstücks.
+5. **Zerlegen**: Beim Zerlegen wird ein Körper in Teile demontiert, ohne dass dabei eine Schädigung der Werkstücke auftritt. Beispiele sind das Herausziehen von Nägeln oder das Lösen von Klebeverbindungen oder Klemmen.
+6. **Reinigen**: Beim Reinigen werden bis zu einem gewissen Grad unerwünschte Stoffe von der Oberfläche eines Körpers entfernt. Beispiele sind das Abspritzen mit Wasser, das Abbürsten oder das Absaugen.
+
+Im Vergleich zu den Verfahren aus den Bereichen Urformen und Umformen geht bei den spanenden Verfahren vergleichsweise viel Material in Form von Spänen verloren. Auch aus der Perspektive Ressourceneffizienz ist es daher geboten, Körper von vorne herein (→ Urformen, → Umformen) möglichst stark an die endgültige Form anzunähern, bevor spanende Verfahren zum Einsatz kommen.
+
+<!-- -------------------------------------------------------------------------
+
+                       Fügen
+
+-------------------------------------------------------------------------- -->
+#### [Fügen](https://de.wikipedia.org/wiki/F%C3%BCgen_(Fertigungstechnik))
+
+Das Fügen bezeichnet eine Gruppe von Fertigungsverfahren, bei denen – im Gegensatz zum Trennen – mehrere feste Körper durch Erhöhung des Zusammenhalts dauerhaft zu einem Körper verbunden werden. 
+
+![Fügen am Beispiel Fügen durch Schweißen (Quelle: [Adobe Stock](https://stock.adobe.com/))](images/AdobeStock_468739621.jpeg){width=70% #fig-fügen}
+
+Das Fügen gliedert sich in folgende Untergruppen:
+
+1. **Zusammensetzen**: Beim Zusammen werden die Körper durch Reibung infolge von Schwerkraft, durch Federkraft, durch einen Formschluss, d. h. durch ineinandergreifen mehrerer Körper, oder durch eine Kombination dieser Mechanismen zusammengehalten. Beispiele das Einlegen von Verbindungsbolzen oder auch das Auflegen von Dachziegeln. 
+2. **Füllen**: Beim Füllen werden Stoffe oder kleine Körper in hohle oder poröse Körper eingebracht. Beispiele dafür sind das Imprägnieren von Stoffen oder das Einbringen von Gasen in Leuchtstoffröhren.
+3. **An- und Einpressen**: Beim An- und Einpressen werden Körper hauptsächlich elastisch verformt und gegen Lösen und Reibung durch einen Kraftschluss, d. h. durch Einbringen einer Krafteinwirkung, gesichert. Beispiele dafür sind [Schrauben](https://de.wikipedia.org/wiki/Schraube) oder Klemmen.
+4. **Fügen durch Urformen**: Beim Fügen durch Urformen werden bestehende Körper durch einen formlosem Stoff verbunden oder ein ergänzender Körper wird aus formlosem Stoff angefügt, z. B. durch Vergießen eines Seilendes in einer Hülse oder das Gießen eines Deckels auf einen bestehenden Körper.
+5. **Fügen durch Umformen**: Beim Fügen durch Umformen wird ein Formschluss von Körpern durch teilweise oder gänzliche Änderung ihrer Form hergestellt. Beispiele sind die Herstellung eines Drahtgeflechts oder das Tackern eines Papierstapels.
+6. **Fügen durch Schweißen**: Beim Fügen durch Schweißen werden Körper durch Wärme, Druck oder durch beides, gegebenenfalls auch unter Zugabe eines Zusatzwerkstoffs, miteinander verbunden. Dabei wird die Verflüssigungstemperatur des Materials deutlich überschritten. Beispiele sind das [Punktschweißen](https://de.wikipedia.org/wiki/Widerstandsschwei%C3%9Fen) oder das Schweißen von Nähten (→ [Bahnschweißen](https://de.wikipedia.org/wiki/Bahnschwei%C3%9Fen))
+7. **Fügen durch Löten**: Beim Fügen durch Löten werden ebenfalls durch einen Wärmeeintrag Körper stofflich miteinander verbunden, oder es wird eine Beschichtung aufgetragen, indem ein Lot eingebracht wird oder indem eine Diffusion an den Grenzflächen der Werkstoffe erreicht wird. Im Gegensatz zum Schweißen wird die Verflüssigungstemperatur des Werkstoffs beim Löten allerdings nicht oder nur geringfügig überschritten.
+8. **Kleben**: Beim Kleben werden Körper durch einen nicht-metallischen Werkstoff verbunden. Beispiele sind das Aufkleben von Haftetiketten, das Ankleben von Tapeten oder das Verleimen von Holz.
+9. **Textiles Fügen**: Das textile Fügen befasst sich speziell mit dem Verbinden textiler Werkstoffe, beispielsweise durch Spinnen, Nähen oder Flechten.
+
+<!-- -------------------------------------------------------------------------
+
+                       Beschichten
+
+-------------------------------------------------------------------------- -->
+#### [Beschichten](https://de.wikipedia.org/wiki/Beschichten)
+
+Beim Beschichten wird ein zuvor formloser Stoff auf einen Körper fest aufgebracht, wobei nur die Oberfläche des Körpers durch eine oder mehrere Schichten verändert wird. 
+
+![Beschichten (Quelle: [Adobe Stock](https://stock.adobe.com/))](images/AdobeStock_577605171.jpeg){width=70% #fig-beschichten}
+
+Ausschlaggebend für das Vorliegen eines Beschichtungsvorgangs ist der formlose Zustand des Beschichtungsmaterials. Fertigungsverfahren, die einen bereits vorhandenen Körper mit einem anderen verbinden, beispielsweise das Aufkleben, werden dem Fügen zugerechnet. 
+
+Das Beschichten dient dem Aufbringen von Material für zahlreiche Zwecke. Hierzu zählen der Korrosionsschutz, der Verschleißschutz, die Herstellung funktionaler Eigenschaften, die Beeinflussung der Wärmeleitung oder das Ändern der Farbgebung (z.B. Lackierung).
+
+Der Bereich des Beschichtens gliedert sich in die folgenden Untergruppen:
+
+1. **Beschichten aus dem flüssigen Zustand**: Hier liegt das Beschichtungsmaterial als Flüssigkeit vor. Ein Beispiel ist das Lackieren, bei dem im Lack enthaltenes Lösemittel verdampft und sonstige Lackbestandteile auf der Oberfläche eines Körper zurück bleiben.
+2. **Beschichten aus dem plastischen Zustand**: Unter das Beschichten aus dem plastischen Zustand fällt das Aufbringen von Spachtelmasse zur Ausbesserung einer Oberfläche, beispielsweise im Bausektor.
+3. **Beschichten aus dem breiigen Zustand**: Bei dieser Art des Beschichtens wird eine breiige Masse auf die Oberfläche eines Körpers aufgetragen. Ein Beispiel hierfür ist das Verputzen eines Gebäudes.
+4. **Beschichten aus dem körnigen oder pulverförmigen Zustand**: Hierbei werden Granulate oder Pulver auf eine Oberfläche aufgetragen. Zu den Verfahren aus diesem Bereich gehört das Aufsintern, bei dem Pulver auf eine Werkstoffoberfläche aufgebraucht und anschließend angeschmolzen wird, wodurch sich eine neue Oberfläche bildet.
+5. **Beschichten durch Schweißen**: Bei dieser Art Beschichtungsverfahren wird die Beschichtung durch ein Schweißverfahren erreicht, z. B. durch Schmelzauftragsschweißen.
+6. **Beschichten durch Löten**: Im Rahmen des Beschichtens durch Löten wird analog zum vorherigen Schweißverfahren durch ein Lötverfahren eine Beschichtung aufgetragen.
+7. **Beschichten aus dem gas- oder dampfförmigen Zustand**: Das Beschichten aus dem gas- oder dampfförmigen Zustand wird auch als Vakuumbeschichten bezeichnet. Mit Verfahren dieser Gruppe, z. B. durch die Chemische Gasphasenabscheidung, lassen sich beispielsweise dünne Beschichtungen auf Keramikschneidplatten auftragen.
+8. **Beschichten aus dem ionisierten Zustand**: Diese Beschichtungsvariante beruht auf einer Schichtbildung aus einem ionisierten Zustand. Hierzu zählt beispielsweise das galvanische bzw. elektrolytische Abscheiden, bei dem unter Stromzufuhr sukzessive Material von einer Anode auf eine Kathode als Werkstück übertragen wird.
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Stoffeigenschaften ändern
+
+-------------------------------------------------------------------------- -->
+#### [Stoffeigenschaften ändern](https://de.wikipedia.org/wiki/Stoffeigenschaften_%C3%A4ndern)
+
+Unter dem Begriff Stoffeigenschaft ändern werden spezielle Fertigungsverfahren verstanden, die gezielt die Eigenschaften eines Materials wie seine Härte, Festigkeit oder Elastizität beeinflussen. 
+
+
+![Induktionshärten der Laufflächen eines Zahnrads](images/Induktionshaerten_Zahnrad.jpg){width=70% #fig-urformen}
+
+Dies wird durch Veränderung der submikroskopischen bzw. atomaren Strukturen des Materials infolge einer Umwandlung des Materialgefüges oder durch das Einbringen oder Aussondern von Stoffteilchen erreicht.
+
+Der Bereich gliedert sich in folgende Untergruppen:
+
+1. **Verfestigen durch Umformen**: Bei dieser Art Verfahren wird die Festigkeit eines Körpers durch Umformen des Materials beeinflusst. Beispiele hierfür sind Verfestigungsprozesse infolge von Walzen oder Schmieden.
+2. **[Wärmebehandeln](https://de.wikipedia.org/wiki/W%C3%A4rmebehandlung)**: Beim Wärmebehandeln wird das Gefüge des Materials durch Temperatureinflüsse verändert. Beispiele hierfür sind das Glühen oder Härten von Stählen.
+3. **Thermo-mechanisches Behandeln**: Im Rahmen des thermo-mechanischen Behandelns wird das Gefüge des Materials gleichzeitig durch thermische Einflüsse und Verformung geändert. Ein Beispiel für ein thermo-mechanisches Verfahren ist das sogenannte Austenitformhärten.
+4. **Sintern, Brennen**: Beim Sintern wird pulverförmiges oder einkörniges Material durch Erwärmen zusammengebacken. Dabei auftretende Diffusionsprozesse zwischen den Materialien können die Eigenschaften derselben verändern. Ein Anwendungsbeispiel hierfür ist die Herstellung von Gleitlagern.
+5. **Magnetisieren**: Hierbei wird der Magnetismus von magnetisierbaren Materialien wie Eisen, Cobalt oder Nickel verändert. Auf das Verfahren wird beispielsweise bei der Herstellung bestimmter Elektromotoren oder Festplatten zurückgegriffen.
+6. **Bestrahlen**: Beim Bestrahlen werden Stoffeigenschaften durch Bestrahlung verändert, beispielsweise durch Elektronenstrahlen. Ein Beispiel ist die Sterilisierung von Oberflächen.
+7. **Photochemische Verfahren**: Bei den photochemischen Verfahren werden durch Lichteinfall photochemische Prozesse ausgelöst, die die Eigenschaften von Material verändern. Beispiele sind das Belichten von Leiterplatten oder von Filmen.
+
+
+::: {.callout-warning}
+## Nahezu alle Fertigungsverfahren verändern die Stoffeigenschaften!
+Bei der Fertigung können die Stoffeigenschaften lokal (zumeist unbeabsichtigt) verändert werden, insbesondere durch Wärmeeintrag bei Trennprozessen (z.B. Bohren, Fräsen), aber auch Fügeprozesse (z.B. Schweißen) können Einfluss auf die Stoffeigenschaften nehmen. Das gilt auch für Umformprozesse, die z.B. die Härte eines Werkstoffs lokal verändern können.
+
+Der Einfluss der Fertigungsverfahren auf die Werkstoffeigenschaften kann soweit gehen, dass Bauteile in ihren Eigenschaften bis zur Unbrauchbarkeit verändert werden. Oft ist diese Veränderung der Eigenschaften von Außen nicht ohne weiteres erkennbar (z.B. Weichfleckigkeit oder metallurgische Kerben, → siehe Betriebsfestigkeit).
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Produktion = Fertigung und Montage
+
+-------------------------------------------------------------------------- -->
+::: {.callout-caution}
+## Tipp: Produktion = Fertigung + Montage
+Umgangssprachliche werden mehrere Untergruppen des Fügens gesamtheitlich auch als Teilmenge der Montageverfahren bezeichnet (insb. die Untergruppen Zusammensetzen, An- und Einpressen, Fügen durch Umformen und Kleben). Die [Montage](https://de.wikipedia.org/wiki/Montage_(Produktion)) insgesamt umfasst dabei weitere Operationen, die nicht zu den Fertigungsverfahren zählen, z.B. [Handhaben](https://de.wikipedia.org/wiki/Handhabung) (greifen, legen, umdrehen, bewegen, sichern, kontrollieren), [Prüfen](https://de.wikipedia.org/wiki/Pr%C3%BCfen), [Justieren](https://de.wikipedia.org/wiki/Justierung) und Hilfsoperationen wie reinigen, erwärmen oder kühlen für Pressverbindungen, entgraten, auspacken, abdichten, ölen, usw.
+
+In einem Teil der angloamerikanischen und auch deutschsprachigen Fachliteratur wird zwischen *"Fertigung"* (→ *"manufacturing"*) und *"Produktion"* (→ *"production"*) unterschieden, wobei die Fertigung (zusammen mit der Montage → *"assembly"*) als Teilbereich der Produktion angesehen wird. 
+
+In vielen Unternehmen bilden Fertigung und Montage fachlich, räumlich und organisatorisch getrennte Einheiten der Unternehmen^[Siehe z.B. Aufspaltung des Unternehmens [Alfing Kessler](https://alfing.de/) in die rechtlich selbstständigen Unternehmen → Alfing Maschinenfabrik Alfing Kessler (Kurbelwellen, rotationssymmetrisch Teile, kubische Teile und Härtemaschinen), → Alfing Kessler Sondermaschinen (Bearbeitungszentren, Maschinen für die Pleulbearbeitung) und → AMT Alfing Montagetechnik (Montagemaschinen und -anlagen, Schraubtechnik).], so dass diese Trennung (wenngleich in der Literatur nicht durchgängig) in der Praxis sinnvoll erscheint. Entsprechend wird häufig auch zwischen Fertigungs- und Montageverfahren unterschieden, wohl wissend, dass die Hauptgruppe Fügen nach DIN8580 formal zu den Fertigungsverfahren gezählt wird. Dem geneigten Leser wird diese begriffliche Unterscheidung in Produktion ist gleich Fertigung plus Montage für den weiteren Berufsweg empfohlen.
+
+![Produktion = Fertigung + Montage](images/Produktion_Fertigung_Montage.drawio.svg){width=55% #fig-prodfertmont}
+
+Die Hauptgruppen der Fertigungsverfahren sind häufig bis hinein in die Struktur von Unternehmen zu finden. Im Bereich der Maschinen- und Anlagenhersteller haben sich viele Unternehmen auf die Entwicklung und Produktion von Maschinen und Anlagen für nur ein oder sehr wenige Fertigungsverfahren oder sogar nur deren Untergruppen spezialisiert. Die Bedeutung der Fertigungsverfahren für die Produktion der Produkte spiegel sich häufig auch in der Organisationsstruktur der die Endprodukte fertigenden Unternehmen. @fig-fertigungautomobil zeigt dies am Beispiel der typischen Unternehmensstruktur im Automobilbau.
+
+![Vereinfachte Darstellung der Abfolge der Fertigungsverfahren am Beispiel Automobilbau und der den jeweiligen Fertigungsverfahren in den Unternehmen zugeordneten organisatorischen Einheiten.](images/DIN8580_Fertigungsverfahren-Hauptgruppen_Automobilbau.drawio.svg){width=100% #fig-fertigungautomobil}
+:::
+
+
+#### Hinweis: [Messtechnik]((https://de.wikipedia.org/wiki/Messtechnik))
+
+Die [Messtechnik](https://de.wikipedia.org/wiki/Messtechnik) ist neben der Automatisierungs- und der Steuerungs- und Regelungstechnik eine unabdingbare **Voraussetzung** der modernen industriellen Fertigung und Montage (siehe → [Fertigungsmesstechnik](https://de.wikipedia.org/wiki/Fertigungsmesstechnik)).
+
+::: {.callout-tip}
+## Definition: *"Messung"*
+Eine Messung ist der experimentelle Vorgang, durch den ein spezieller Wert einer physikalischen Größe als Vielfaches einer Einheit oder eines Bezugswertes ermittelt wird.
+:::
+
+![Taktiles Messen (Quelle: [Adobe Stock](https://stock.adobe.com/))](images/AdobeStock_441726420.jpeg){width=70% #fig-taktilesmessen}
+
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Produktion = Fertigung und Montage
+
+-------------------------------------------------------------------------- -->
+#### Exkurs: Maschinen- und Anlagenhersteller im Umfeld der Hochschule Esslingen 
+
+Die Region rund um die Hochschule Esslingen ist die Heimat einer Vielzahl weltweit erfolgreich tätiger Maschinenbauunternehmen, bei denen im Zentrum der geschäftlichen Tätigkeit die genannten Fertigungsverfahren sowie die zugehörige Fertigungsmesstechnik stehen.
+
+![Werbung Fa. Schuler aus dem Jahr 1900](images/Schuler_G%C3%B6ppingen_Weltausstellung1900.jpg){width=40% #fig-schulerweltaustellung1900}
+
+Beispiele erfolgreicher Unternehme, sortiert nach Entfernung von der HS-Esslingen Standort Göppingen (unvollständige Auswahl):
+
+##### Göppingen:
+
+![Logo Fa. Schuler](images/Schuler-Logo.svg){width=40% #fig-schulerlogo}
+
++ [Wikipedia: Schuler (Unternehmen)](https://de.wikipedia.org/wiki/Schuler_(Unternehmen))
++ [Website Fa. Schuler](https://www.schulergroup.com/)
+
+
+![Logo Fa. EMAG](images/EMAG-Logo.png){width=20% #fig-emaglogo}
+
++ [Wikipedia: EMAG (Unternehmen)](https://de.wikipedia.org/wiki/EMAG)
++ [Website Fa. EMAG](https://www.emag.com/de/)
+
+##### Nürtingen:
+
+![Logo Fa. Heller](images/HELLER-Logo.png){width=30% #fig-hellerlogo}
+
++ [Wikipedia: Heller (Unternehmen)](https://de.wikipedia.org/wiki/Gebr._Heller)
++ [Website Fa. Heller](https://www.heller.biz/de/)
+
+
+##### Aalen:
+
+![Logo Fa. Alfing Maschinenfabrik Alfing Kessler](images/Alfing-MaFa-Logo.svg){width=20% #fig-alfingmafa}
+
++ [Wikipedia: Alfing Maschinenfabrik (Unternehmen)](https://de.wikipedia.org/wiki/Maschinenfabrik_Alfing_Kessler)
++ [Website Fa. Alfing](https://alfing.de/)
+
+
+![Logo Fa. ZEISS](images/Zeiss-Logo.svg){width=20% #fig-zeisslogo}
+
++ [Wikipedia: ZEISS](https://de.wikipedia.org/wiki/Carl_Zeiss_(Unternehmen))
++ [Website Fa. ZEISS (Messtechnik)](https://www.zeiss.de/messtechnik/home.html)
+
+##### Ditzingen:
+
+Fa. Trumpf
+
+![Logo Fa. Trumpf](images/Trumpf-Logo.svg){width=20% #fig-trumpflogo}
+
++ [Trumpf (Unternehmen)](https://de.wikipedia.org/wiki/Trumpf_(Unternehmen))
++ [Website Fa. Trumpf](https://www.trumpf.com/de_INT/)
+
+##### Backnang
+
+Fa. TESAT
+
+![Logo Fa. TESAT](images/Tesat_Logo.png){width=36% #fig-tesatlogo}
+
++ [Wikipedia: TESAT (Unternehmen)](https://de.wikipedia.org/wiki/Tesat-Spacecom)
++ [Website Fa. TESAT](https://www.tesat.de/)
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Shareable Links & Literatur
+
+-------------------------------------------------------------------------- -->
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
++ @bargel_werkstoffkunde_2022: [Einwirkung von Herstellung und Weiterverarbeitung auf die Eigenschaften von Metallen](https://rdcu.be/dI8A6)
+
+<!--
++ @doege_handbuch_2016: [Grundlagen der Umformtechnik](https://rdcu.be/dJcdT)
+-->
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Literaturempfehlung
+
+-------------------------------------------------------------------------- -->
+
+<!--
+#### Literaturempfehlung
+
+<!--
+![@bargel_werkstoffkunde_2012: [Werkstoffkunde](https://link.springer.com/book/10.1007/978-3-642-17717-0)](images/Bargel_Werkstoffkunde.png){width=40%}
+-->
+
+<!--
+![@bargel_werkstoffkunde_2022: [Werkstoffkunde](https://link.springer.com/book/10.1007/978-3-662-63961-0)](images/Bargel_Werkstoffkunde_978-3-662-63961-0.webp){width=40%}
+
+![@fritz_fertigungstechnik_2022: [Fertigungstechnik](https://link.springer.com/book/10.1007/978-3-662-64875-9)](images/Fritz_Fertigungstechnik.webp){width=40%}
+
+![@klocke_fertigungsverfahren_2018-2: [Fertigungsverfahren 1 - Zerspanung mit geometrisch bestimmter Schneide](https://link.springer.com/book/10.1007/978-3-662-54207-1)](images/Klocke_Fertigungsverfahren1_978-3-662-54207-1.webp){width=40%}
+
+![@klocke_fertigungsverfahren_2018: [Fertigungsverfahren 2 - Zerspanung mit geometrisch unbestimmter Schneide](https://link.springer.com/book/10.1007/978-3-662-58092-9)](images/Klocke_Fertigungsverfahren2_978-3-662-58092-9.webp){width=40%}
+
+![@klocke_fertigungsverfahren_2017: [Fertigungsverfahren 4 - Umformen](https://link.springer.com/book/10.1007/978-3-662-54714-4)](images/Klocke_Fertigungsverfahren4_978-3-662-54714-4.webp){width=40%}
+
+![@klocke_fertigungsverfahren_2018-1: [Fertigungsverfahren 5 - Gießen und Pulvermetallurgie](https://link.springer.com/book/10.1007/978-3-662-54728-1)](images/Klocke_Fertigungsverfahren5_978-3-662-54728-1.webp){width=40%}
+
+![@doege_handbuch_2016: [Umformtechnik](https://link.springer.com/book/10.1007/978-3-662-43891-6)](images/Doege_Umformtechnik_978-3-662-43891-6.webp){width=40%}
+
+<!-- -------------------------------------------------------------------------
+
+                       Bild: Work in progress
+
+-------------------------------------------------------------------------- -->
+<!--
+![Work in progress](images/WorkInProgress.jpeg){width=60% #fig-workinprogress}
+-->

@@ -1,0 +1,34 @@
+---
+title: "MTB3 Entwicklung mechatronischer Systeme 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    email: christian.anders@hs-esslingen.de
+    affiliations: Hochschule Esslingen
+bibliography: Literatur.bib
+toc: false
+number-sections: false
+scrollable: true
+---
+
+
+
+<!-- -------------------------------------------------------------------------
+                       Vorlesung Prototyping&Test
+                       MTB3 2024-05-29
+-------------------------------------------------------------------------- -->
+
+{{< include Prototyping_und_Test.qmd >}}
+
+{{< include Statistische_Versuchsplanung_DoE.qmd >}}
+
+{{< include Umweltqualifizierung.qmd >}}
+
+{{< include SPC.qmd >}}
+
+{{< include Six_Sigma.qmd >}}
+
+{{< include Qualitaet.qmd >}}

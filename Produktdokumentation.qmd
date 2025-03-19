@@ -1,0 +1,100 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- 
+::: {.callout-warning}
+## WARNING!
+**THIS PART OF THE DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Produktdokumentation
+
+-------------------------------------------------------------------------- -->
+
+### Produktdokumentation {#sec-produktdokumentation}
+
+#### Produktdokumentation (allg.)
+
+Die technische Dokumentation eines Produkts umfasst in der Regel eine große Anzahl von Einzeldokumenten, die in ihrer Gesamtheit detaillierte Informationen über alle relevanten technischen Aspekte des Produkts und dessen Herstellung, Betrieb, Wartung und Reparatur enthalten. Hierzu gehören:
+
+1. **Produktbeschreibung:** Eine allgemeine Beschreibung des Produkts, einschließlich seiner Funktionen, Zwecke und möglichen Anwendungen.
+
+2. **Produktspezifikationen:** Diese Dokumente enthalten spezifische Informationen über die technischen Merkmale des Produkts, wie Abmessungen, Materialien, Gewicht, Leistung, Betriebsumgebung, Komponenten, Schnittstellen usw., aber auch alle relevanten Informationen zur Herstellung des Produkts.  
+
+3. **Technische Zeichnungen:** Stückliste, Zeichnungen, Skizzen oder CAD-Modelle, die detaillierte Darstellungen des Produkts und seiner Komponenten bieten. Dies kann 2D- oder 3D-Zeichnungen umfassen. Auch Fertigungsabschnittszeichnungen gehören in diese Kategorie. Bei mechatronischen Produkten kommen zusätzlich der Quellcode der Software sowie eine Vielzahl weiterer softwarespezifischer Informationen hinzu.
+
+4. **Leistungsdaten:** Informationen über die Leistungsfähigkeit des Produkts, einschließlich seiner Kapazität, Geschwindigkeit, Genauigkeit, Ausgangsleistung usw.
+
+5. **Normen und Zertifizierungen:** Eine Liste der Standards, Richtlinien oder Vorschriften, denen das Produkt entspricht, sowie eventuelle Zertifizierungen oder Prüfberichte.
+
+6. **Verpackungsspezifikationen:** Details zur Verpackung des Produkts, einschließlich Verpackungsgröße, Materialien, Gewicht, Transportanweisungen usw. Zu den Verpackungsinformationen gehören z.B. auch Informationen zum Schutz gegen Einflüsse der Temperatur sowie gegen Feuchtigkeit und Korrosion beim Transport.
+
+7. **Test- und Validierungsprotokolle:** Protokolle von Tests und Validierungen, die durchgeführt wurden, um sicherzustellen, dass das Produkt seinen Spezifikationen entspricht und ordnungsgemäß funktioniert.
+
+8. **Liste der mitgelieferten Zubehörteile:** Eine Auflistung aller Zubehörteile, die mit dem Produkt geliefert werden, sowie deren Funktionen und Verwendungszwecke.
+
+9. **Haftungsausschluss und Einschränkungen:** Eine Erklärung, die die Grenzen und Einschränkungen des Produkts sowie mögliche Haftungsausschlüsse klarstellt.
+
+10. **Betriebsanleitung:** Betriebsanleitung, Nutzungshinweise, Wartungsanweisungen, Fehlerbehebungstipps, FAQ, Liste der Servicepartner.
+
+All diese Dokumente zusammen bilden die zum jeweiligen Produkt gehörende, die für die Entwicklung, Herstellung, Vermarktung und den Einsatz des Produkts relevant ist. 
+
+In der Regel sind nicht alle zur Produktdokumentation gehörenden Dokumente für jede Zielgruppe (Entwickler, Marketing, Vertrieb, Kundenservice, Endkunden) zugänglich.
+
+#### Bedienungsanleitungen für einfache technische Geräte
+
+Bedienungsanleitungen für einfache technische Geräte bestehen aus den in @tbl-produktdokumentation beschriebenen fünf Grundbausteinen 1.) Leistungsbeschreibung, 2.) Gerätebeschreibung, 3.) Tätigkeitsbeschreibung, 4.) Funktionsbeschreibung und 5.) technische Unterlagen:
+
+| Leistungs- beschreibung | Geräte- beschreibung | Tätigkeits- beschreibung | Funktions- beschreibung | Technische Unterlagen |
+|---|---|---|---|---|
+| Was kann das Gerät? Was kann der Benutzer mit dem Gerät tun? Welchen Nutzen hat der Benutzer von dem Gerät? | Wie sieht das Gerät aus? Aus welchen Teilen besteht das Gerät? Was ist wo am Gerät? Wie heißen die einzelnen Teile? Wozu dienen die einzelnen Teile? | Was muss der Benutzer tun? Was kann er tun? Wie muss er es tun? | Wie funktioniert das Gerät "innen drin"? Wie funktionieren einzelne Teile des Geräts? | Technische Zeichnungen, Schaltpläne, Flussdiagramme, … |
+
+: Inhalte einer Produktdokumentation für ein einfaches Produkt (Quelle: @juhl_technische_2015)  {#tbl-produktdokumentation .striped .hover .bordered tbl-colwidths="[20,20,20,20,20]"}
+
+Die Beschreibung der Funktionsweise und die technischen Unterlagen sind bei einfachen Geräten nicht notwendig und sind daher häufig nicht Bestandteil der Bedienungsanleitung.
+
+::: {.callout-important}
+## Haftungsausschluss und Einschränkungen, Normen und Zertifizierungen nicht vergessen!
+Haftungsausschluss und Einschränkungen, Normen und Zertifizierungen sind zur rechtlichen Absicherung ebenfalls ein unabdingbarer Bestandteil jeder Bedienungsanleitung, selbst bei einfachsten technischen Geräten!
+:::
+
+In der in @tbl-produktdokumentation gegebenen Reihenfolge bilden die fünf Inhalte (plus Haftungsausschluss und Einschränkungen, Normen und Zertifizierungen!) eine Bedienungsanleitung zu einem einfachen Gerät. Meistens genügen schon die ersten drei Inhalte, weil die Beschreibung der Funktionsweise und die Bereitstellung von technischen Unterlagen für die Benutzung des Geräts nicht nötig sind. 
+
+<!--
+::: {.callout-tip}
+## Weiterführende Links
+
+:::
+-->
+
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
+
++ @juhl_technische_2015: [Technische Dokumentation](https://rdcu.be/dKtdV)
+
+:::
+
+
+<!--
+#### Literaturempfehlung
+
+![@juhl_technische_2015: [Technische Dokumentation](https://link.springer.com/book/10.1007/978-3-662-46865-4)](images/Juhl_Technische_Dokumentation_978-3-662-46865-4.webp){width=40%}
+
+-->
+
+
+

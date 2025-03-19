@@ -1,0 +1,363 @@
+<!--
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Prototyping und Test
+  - Zielsetzung
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: true
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 3
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Ziele Prototyping und Test
+
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Prototyping und Test
+:::
+
+
+![[Challenger-Katastrophe](https://de.wikipedia.org/wiki/STS-51-L#Das_Challenger-Ungl%C3%BCck), 1986 (Quelle: NASA)](images/Challenger_Accident.jpg){width=64% #fig-challanger}
+
+---
+
+> *"For a successful technology reality must take precedence over public relations for nature cannot be fooled."* ([Richard Feynman](https://de.wikipedia.org/wiki/Richard_Feynman), on his final [reports of the Challenger commission, 1986](https://sma.nasa.gov/SignificantIncidents/assets/rogers_commission_report.pdf))
+
+> *"Rarely is anyone thanked for the work they did to prevent the disaster that didn't happen."* ([Mikko Hyppönen](https://de.wikipedia.org/wiki/Mikko_Hypp%C3%B6nen))
+
+---
+
+
+::: {.callout-important}
+## Gleichzeitigkeit von Entwicklung, Prototyping und Test beim V-Modell
+Beim Produktentstehungsprozess nach dem → V-Modell @sec-v-modell und dem → Spiralmodell @sec-spiralmodell erfolgen Entwicklung, Prototyping und Test in aller Regel zeitlich parallel und sich inhaltlich wechselseitig beeinflussend.
+:::
+
+
+## Ziele der Phase Prototyping und Test {#sec-ziele_prototyping_und_test}
+
+
+::: {.callout-tip}
+## Definition: *"Prototyp"*
+Ein [Prototyp](https://de.wikipedia.org/wiki/Prototyp_(Technik)) stellt ein **für die jeweiligen Zwecke** funktionsfähiges, oft aber auch vereinfachtes Versuchsmodell eines geplanten Produkts oder Verfahrens dar. 
+:::
+
+Prototyping bezeichnet dabei verschiedene moderne Verfahren der Prototypenherstellung. Mit dem Prototyp wird der → Reifegrad @sec-reifegrad und die Tauglichkeit (siehe → Prinzip-, Konzept- und Serientauglichkeit @sec-tauglichkeit) des zu entwickelnden Produkts oder Verfahrens ermittelt. Der Aufbau eines Prototyps setzt dessen → Erprobungswürdigkeit @sec-erprobungswuerdigkeit voraus und ist stets ein wesentlicher Entwicklungsschritt im Rahmen jedes Produktentstehungsprozesses. 
+
+::: {.callout-tip}
+## Definition: *"Test"*
+Ein [Test](https://de.wikipedia.org/wiki/Test) ist ein **methodischer Versuch**, mit dem festgestellt werden soll, ob Eigenschaften oder Leistung eines Produkts oder Verfahrens den Erwartungen entsprechen.
+:::
+
+Der Test unterscheidet sich vom Experiment dadurch, dass es beim Test eine Erwartung gibt, die belegt oder widerlegt werden soll, während das Ergebnis beim Experiment offen ist oder nur vermutet werden kann.
+
+
+```{mermaid}
+%%| label: fig-label-mmzieleprototypingundtest
+%%| fig-cap: "Mindmap wichtiger Ziele in der Phase Prototyping und Test"
+mindmap
+   root(Prototyping und Test)
+      (Funktionalität)
+      (Qualität)
+      (Sicherheit)
+      (Usability)
+      (Zuverlässigkeit und Stabilität)
+      (Kompatibilität und Integration)
+      (Regelkonformität)
+      (Herstell- und Life-Cycle-Kosten)
+```
+
+
+Ziel der Phase Prototyping und Test ist es sicherzustellen, dass das Produkt den im Lastenheft spezifizierten Anforderungen genügt und auf den Markt gebracht bzw. dem Kunden übergeben werden kann:
+
++ **Funktionalität**: Sicherstellen, dass das Produkt alle festgelegten Anforderungen und Spezifikationen erfüllt und erwartungsgemäß funktioniert.
+
++ **Qualität**: Identifizierung und Behebung von Fehlern, Schwächen oder Defekten im Produkt, um die Produktqualität zu gewährleisten.
+
++ **Sicherheit**: Testen der Produktsicherheit, um mögliche Risiken oder Gefahren für die Benutzer zu erkennen und zu minimieren.
+
++ **Usability**: Überprüfung der Benutzerfreundlichkeit und -zufriedenheit (siehe → Vorlesung DEB5 Nutzerverhalten).
+
++ **Zuverlässigkeit und Stabilität**: Bewertung der Zuverlässigkeit und Stabilität des Produkts unter verschiedenen Bedingungen und über längere Zeiträume.
+
++ **Kompatibilität und Integration**: Sicherstellen, dass das Produkt mit anderen Systemen, Geräten oder Standards, die es unterstützen oder mit denen es interagieren soll, kompatibel ist.
+
++ **Regelkonformität**: Sicherstellen, dass das Produkt alle national und international relevanten gesetzlichen und branchenspezifischen Anforderungen erfüllt (siehe z.B. im Automotive-Bereich → [Homologation](https://de.wikipedia.org/wiki/ECE-Homologation))
+
++ **Herstell- und Life-Cycle-Kosten**: Überprüfen, ob es Möglichkeiten gibt, die Kosten im Zusammenhang mit der Herstellung Betrieb des Produkts über dessen Lebensdauer zu senken, **OHNE** die weiteren Eigenschaften des Produkts negativ zu beeinflussen.
+
+<!--
++ **Marktfähigkeit**: Prüfen, ob das Produkt den Bedürfnissen der Zielgruppe entspricht und potenziell erfolgreich auf dem Markt bestehen kann.
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Grundlegende Begriffe
+
+-------------------------------------------------------------------------- -->
+### Grundlegende Begriffe
+
+::: {.callout-tip}
+## Definition: *"Funktionalität"*
+[Funktionalität](https://de.wikipedia.org/wiki/Funktionalit%C3%A4t_(Produkt)) bezeichnet die Fähigkeit eines Produkts, die vorgesehenen Aufgaben und Anforderungen entsprechend den festgelegten Spezifikationen zu erfüllen.
+:::
+
+::: {.callout-tip}
+## Definition: *"Qualität"*
+[Qualität](https://de.wikipedia.org/wiki/Qualit%C3%A4t#ISO_und_IEC-Normierung) ist der "Grad, in dem ein Satz inhärenter Merkmale eines Objekts Anforderungen erfüllt". Die Qualität gibt damit an, in welchem Maße ein Produkt den bestehenden Anforderungen entspricht (DIN EN ISO 9000:2015-11 → Qualitätsmanagement). 
+:::
+
+::: {.callout-tip}
+## Definition: *"Sicherheit"*
+[Sicherheit](https://de.wikipedia.org/wiki/Sicherheit#Definition_der_Technischen_Sicherheit) bezeichnet den Zustand des voraussichtlich störungsfreien und gefahrenfreien Funktion eines Produkts. Bei Produkten ist Sicherheit in der Regel davon abhängig, welcher Grad von Unsicherheit für die Nutzung der technischen Funktion akzeptiert wird. Entsprechend definiert Norm IEC 61508 Sicherheit als „Freiheit von unvertretbaren Risiken“.
+:::
+
+::: {.callout-tip}
+## Definition: *"Zuverlässigkeit"*
+[Zuverlässigkeit](https://de.wikipedia.org/wiki/Zuverl%C3%A4ssigkeit_(Technik)) ist die Fähigkeit eines Produkts, seine festgelegten Funktionen unter definierten Bedingungen über einen bestimmten Zeitraum hinweg fehlerfrei zu erfüllen. Der Fokus liegt darauf, dass das Produkt über längere Zeiträume hinweg erwartungsgemäß arbeitet und keine Ausfälle oder Defekte auftreten.
+:::
+
+::: {.callout-tip}
+## Definition: *"Zuverlässigkeit"* (DIN 40041:1990-12)
+*„Beschaffenheit einer Einheit bezüglich ihrer Eignung, während oder nach vorgegebenen Zeitspannen bei vorgegebenen Anwendungsbedingungen die Zuverlässigkeitsforderung zu erfüllen.“* (DIN 40041:1990-12)
+
+*"Die Einheit ist Gegenstand der Zuverlässigkeitsuntersuchung, sie kann Teil eines Produktes oder das gesamte Produkt sein. Sie muss definiert werden."* (VDI 4003)
+:::
+
+::: {.callout-warning}
+## Zuverlässigkeit ist nicht unmittelbar messbar!
+Zuverlässigkeit unterliegt einem stochastischen Prozess und kann qualitativ oder auch quantitativ beschrieben werden. Zuverlässigkeit ist **NICHT** unmittelbar messbar. Das Merkmal Zuverlässigkeit ist allen technischen Produkten inhärent, das heißt, dass kein technisches Produkt frei von der Möglichkeit ist, auszufallen. → Jedes technische Produkt fällt irgendwann aus!
+:::
+
+::: {.callout-tip}
+## Definition: *"Stabilität"*
+Stabilität ist die Fähigkeit eines Produkts, unter verschiedenen Bedingungen und Belastungen konstant und ohne unvorhergesehene Veränderungen oder Ausfälle zu funktionieren. Der Fokus liegt darauf, dass das Produkt selbst bei Belastung oder in Extremsituationen zuverlässig funktioniert. In der numerischen Mathematik heißt ein Verfahren [stabil](https://de.wikipedia.org/wiki/Stabilit%C3%A4t_(Numerik)), wenn es unempfindlich ist gegenüber kleinen Störungen der Daten.
+:::
+
+Zuverlässigkeit bezieht sich auf die fehlerfreie und konstante Funktion über Zeit, während Stabilität die Reaktion des Produkts auf variierende oder herausfordernde Bedingungen beschreibt.
+
+::: {.callout-tip}
+## Definition: *"Kompatibilität"*
+[Kompatibilität](https://de.wikipedia.org/wiki/Kompatibilit%C3%A4t_(Technik)) ist die Fähigkeit eines Produkts, reibungslos mit anderen Produkten und in den gemäß Spezifikation vorgegebenen Umgebungen zusammenzuarbeiten oder ausgetauscht werden kann, ohne dabei Funktionalität oder Leistung einzubüßen.
+:::
+
+::: {.callout-tip}
+## Definition: *"Integration"*
+[Integration](https://de.wikipedia.org/wiki/Integration_(Technik)) ist der Prozess, verschiedene Produkte so zu verbinden, dass sie zusammenarbeiten und als ein komplexeres Produkt funktionieren.
+:::
+
+::: {.callout-tip}
+## Definition: *"Regelkonformität"*
+Regelkonformität bezeichnet die Einhaltung von Regeln in Form von Recht und Gesetz; Regelkonformität wird häufig auch als [Compliance](https://de.wikipedia.org/wiki/Compliance_(Recht)) bezeichnet.
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Funktionalität des Produkts
+
+-------------------------------------------------------------------------- -->
+### Funktionalität des Produkts
+
+Um die Funktionalität eines Produkts sicherzustellen, sind Tests erforderlich, die wichtige Kriterien der Leistung und Zuverlässigkeit des Produkts prüfen. 
+
+
+```{mermaid}
+%%| label: fig-label-mmzielefunktionalität
+%%| fig-cap: "Mindmap wichtiger Tests zur Absicherung der Funktionalität in der Phase Prototyping und Test"
+mindmap
+   root(Funktionalität)
+      (Funktions- oder Komponententests)
+      (Integrationstests)
+      (Kompatibilitätstests)
+      (Systemtests)
+      (Last- und Leistungstests)
+      (Sicherheitstests)
+```
+
+
+Zu den am häufigsten in der Testphase durchgeführten Tests gehören:
+
++ **Funktions- oder Komponententests**:
+   Testen einzelner Komponenten oder Module, um sicherzustellen, dass jede Komponente separat wie vorgesehen funktioniert. Diese Tests helfen, Fehler in einzelnen Bausteinen frühzeitig zu erkennen.
+
++ **Integrationstests**:
+   Überprüfen die Zusammenarbeit und Interaktion zwischen den verschiedenen Komponenten des Produkts. Integrationstests helfen sicherzustellen, dass Module oder Funktionen ordnungsgemäß zusammenarbeiten.
+
++ **Kompatibilitätstests**:
+   Diese Tests prüfen, ob das Produkt auf verschiedenen Plattformen, Geräten, Betriebssystemen oder Browsern (bei Softwareprodukten) einwandfrei funktioniert und ob es mit anderen Systemen kompatibel ist, die es unterstützen soll.
+
++ **Systemtests**:
+   Der gesamte Prototyp oder das Produkt wird als Einheit getestet, um sicherzustellen, dass alle Funktionen und Spezifikationen wie vorgesehen funktionieren. Diese Tests simulieren die reale Umgebung und prüfen das Produkt im Gesamtkontext.
+
++ **Last- und Leistungstests**:
+   Testen die Reaktion und Belastbarkeit des Produkts unter verschiedenen Lastbedingungen. Diese Tests sind wichtig, um zu sehen, wie das Produkt bei hoher Nutzung oder unter Extrembedingungen funktioniert.
+
+<!--
++ **Akzeptanztests (User Acceptance Testing, UAT)**:
+   Diese Tests werden mit Nutzern durchgeführt und stellen sicher, dass das Produkt die Anforderungen und Erwartungen der Endbenutzer erfüllt. Ziel ist es, sicherzustellen, dass das Produkt aus Sicht der Anwender bereit für den Einsatz ist.
+-->
+
++ **Sicherheitstests**:
+   Testen die Robustheit und Sicherheit des Produkts. Es wird überprüft, ob das Produkt gegen mögliche Bedrohungen wie unberechtigten Zugriff oder Datenlecks geschützt ist.
+
+<!--
++ **Regressionstests**:
+   Diese Tests stellen sicher, dass Änderungen oder Verbesserungen im Produkt keine bestehenden Funktionen beeinträchtigen oder Fehler in anderen Bereichen verursachen. Sie sind besonders wichtig nach Updates oder Bugfixes.
+
+
++ **Benutzertests (Usability Tests)**:
+   Diese Tests überprüfen, wie benutzerfreundlich und intuitiv das Produkt ist. Es wird sichergestellt, dass die Funktionalität leicht zugänglich ist und die Nutzer das Produkt gut bedienen können.
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Zuverlässigkeit und Stabilität des Produkts
+
+-------------------------------------------------------------------------- -->
+### Zuverlässigkeit und Stabilität des Produkts
+
+Um die Zuverlässigkeit und Stabilität eines Produkts zu gewährleisten, werden spezifische Tests durchgeführt, die sicherstellen, dass das Produkt unter verschiedenen Bedingungen fehlerfrei funktioniert und auch langfristig einsatzbereit bleibt. 
+
+Wichtige Test zur Überprüfung von Zuverlässigkeit und Stabilität von Produkten sind:
+
++ **Umgebungstests (Environmental Testing)**:
+   Diese Tests prüfen, wie das Produkt unter verschiedenen Umweltbedingungen (Temperatur, Feuchtigkeit, Schock, elektromagnetische Verträglichkeit) funktioniert, um sicherzustellen, dass es auch unter extremen Bedingungen stabil bleibt (siehe → Umweltqualifizierung @sec-umwelt)
+
++ **Dauer- und Langzeittests (Endurance Tests)**:
+   Diese Tests prüfen, wie das Produkt über einen längeren Zeitraum unter kontinuierlicher Belastung funktioniert. Langzeittests decken Fehler auf, die durch Materialermüdung oder Softwarefehler aufgrund längerer Nutzung auftreten könnten  (siehe → Umweltqualifizierung @sec-umwelt).
+
++ **Last- und Leistungstests (Load and Performance Testing)**:
+    Diese Tests simulieren realistische Nutzungslasten, um zu prüfen, wie zuverlässig und stabil das Produkt bei regulären und hohen Lasten funktioniert. So wird gewährleistet, dass das Produkt im normalen Einsatz stabil und zuverlässig bleibt.
+
++ **Stresstests**:
+   Hier wird das Produkt weit über seine normalen Belastungsgrenzen hinaus getestet, um zu sehen, wie es in Extremsituationen reagiert. Dies hilft, Schwachstellen in der Stabilität und mögliche Fehlerquellen bei hoher Beanspruchung zu identifizieren.
+
++ **Ausfalltests (Failure Testing)**:
+   Diese Tests zielen darauf ab, das Verhalten des Produkts bei Störungen oder Ausfällen zu überprüfen. Sie helfen zu verstehen, wie das Produkt auf Systemfehler reagiert und ob es in der Lage ist, sich selbstständig oder mit minimalem Eingriff zu erholen.
+
++ **Robustheitstests**:
+   Diese Tests prüfen die Fähigkeit des Produkts, auch unter ungünstigen und unerwarteten Bedingungen funktionsfähig zu bleiben. Es wird untersucht, wie gut das Produkt auf Variationen in der Umgebung oder im Nutzungsszenario reagiert.
+
++ **Widerstandsfähigkeitstests (Resilience Testing)**:
+   Hier wird getestet, wie gut das Produkt mit kritischen Ausnahmesituationen (z. B. Stromausfälle, Netzwerkprobleme) umgeht und ob es in der Lage ist, sich wieder zu stabilisieren oder kontrolliert herunterzufahren, ohne Daten oder Funktionalität zu verlieren (siehe → [Fail-Safe](https://de.wikipedia.org/wiki/Fail-Safe))
+
++ **Fehlertoleranztests (Fault Tolerance Testing)**:
+   Bei diesen Tests wird überprüft, wie gut das Produkt in der Lage ist, Fehler zu tolerieren und trotz kleinerer Defekte weiterzufunktionieren, ohne dass dies zu größeren Problemen oder Ausfällen führt.
+
+<!--
++ **Regressionstests**:
+   Bei Änderungen oder Updates am Produkt wird sichergestellt, dass keine neuen Fehler entstehen und die Stabilität nicht beeinträchtigt wird. Regressionstests verhindern, dass neue Features oder Bugfixes bestehende Funktionen destabilisieren.
+
++ **Wiederholungstests (Reliability Testing)**:
+   Hier wird die gleiche Funktion oder der gleiche Ablauf mehrmals wiederholt, um sicherzustellen, dass das Produkt über viele Durchgänge hinweg ein konsistentes Verhalten zeigt und stabil bleibt.
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Kompatibilität und Integration
+
+-------------------------------------------------------------------------- -->
+<!--
+### Kompatibilität und Integration des Produkts
+
+(siehe → Vorlesung **DEB5 Produktentwicklung 2**)
+-->
+
+<!--
+Um die Kompatibilität und Integrationsfähigkeit eines Produkts sicherzustellen, sind spezifische Tests erforderlich, die das Zusammenspiel des Produkts mit anderen Systemen, Geräten oder Umgebungen prüfen. Hier sind die wichtigsten Tests:
+
+1. **Kompatibilitätstests**:
+   - Überprüfen, ob das Produkt mit verschiedenen Betriebssystemen, Hardwarekonfigurationen, Browsern, Softwareversionen oder Geräten korrekt funktioniert. Dies ist besonders wichtig, wenn das Produkt in verschiedenen Umgebungen eingesetzt werden soll.
+
+2. **Integrationstests**:
+   - Testen die Interaktion und Zusammenarbeit zwischen den einzelnen Komponenten des Produkts und mit anderen Systemen, um sicherzustellen, dass sie als einheitliches System funktionieren. Integrationstests decken potenzielle Fehler an Schnittstellen auf.
+
+3. **Schnittstellentests (API-Tests)**:
+   - Überprüfen die Kommunikation und den Datenaustausch über Schnittstellen (APIs) zwischen dem Produkt und externen Systemen, um sicherzustellen, dass Daten korrekt und sicher übertragen werden.
+
+4. **Interoperabilitätstests**:
+   - Testen, ob das Produkt mit anderen Systemen, die dieselben oder ähnliche Funktionen bereitstellen, problemlos zusammenarbeitet. Dies stellt sicher, dass das Produkt nahtlos in größere Systemlandschaften integriert werden kann.
+
+5. **Datenmigrationstests**:
+   - Überprüfen die Fähigkeit des Produkts, Daten aus anderen Systemen korrekt zu importieren, exportieren oder migrieren. Das ist wichtig für die Integration mit bestehenden Datenbanken oder Anwendungen.
+
+6. **Regressionstests**:
+   - Sicherstellen, dass Änderungen oder Updates im Produkt oder in den Systemen, mit denen es verbunden ist, keine neuen Kompatibilitäts- oder Integrationsprobleme verursachen. Sie helfen, Stabilität bei Systemanpassungen zu gewährleisten.
+
+7. **Kompatibilitätsleistungstests**:
+   - Überprüfen die Leistung des Produkts in verschiedenen Umgebungen oder mit unterschiedlichen Systemkonfigurationen, um sicherzustellen, dass die Funktionalität und Geschwindigkeit auch bei unterschiedlichen Integrationsanforderungen stabil bleibt.
+
+8. **Fehlertoleranztests**:
+   - Testen, wie gut das Produkt auf Fehler oder Inkompatibilitäten im Zusammenspiel mit anderen Systemen reagiert und ob es fähig ist, Fehler abzufangen oder alternative Wege zu nutzen, um die Funktionalität aufrechtzuerhalten.
+
+9. **Versionen- und Upgradetests**:
+   - Überprüfen, ob das Produkt auch mit älteren oder neueren Versionen der Systeme oder Komponenten, mit denen es integriert ist, korrekt funktioniert. Dies ist wichtig, um die langfristige Kompatibilität sicherzustellen.
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+<!--
+::: {.callout-warning}
+## WARNING!
+**THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Automatisieren von Tests
+
+-------------------------------------------------------------------------- -->
+<!--
+### Automatisieren von Tests
+
+(siehe → Vorlesung **DEB5 Produktentwicklung 2**)
+-->
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+<!--
+::: {.callout-warning}
+## WARNING!
+**THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
+:::
+-->

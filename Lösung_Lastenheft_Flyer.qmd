@@ -1,0 +1,112 @@
+---
+title: "DEB3 Produktentwicklung 1"
+resource-path: ["../images"]
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+keywords:
+  - Produktentwicklung
+  - Ideenfindung
+  - Konzeptentwicklung
+  - Labor
+  - Flyer
+  - Lastenheft
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+---
+
+<!--
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+-->
+
+<!-- 
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+ <!-- -------------------------------------------------------------------------
+
+                       Lösung Lastenheft Flyer
+
+-------------------------------------------------------------------------- -->
+
+::: {.callout-tip}
+## Lastenheft Flyer (Dauer tbd. min)
+
+Ein Lastenheft für einen Papierflieger sollte eine detaillierte Beschreibung der Anforderungen und Spezifikationen enthalten, um sicherzustellen, dass das endgültige Produkt die Erwartungen erfüllt. 
+
+Zu den Inhalten, die in einem Lastenheft enthalten sein sollten, gehören:
+
+1. **Ziel und Einsatzzweck**: Eine klare Definition dessen, wofür der Papierflieger entwickelt wird, z.B. als Geschenk, als Kunstobjekt, für Flugversuche und die Teilnahme in einem Flugwettbewerb, usw. (→ Mission Statement!)
+
+2. **Zielgruppe**: Informationen über die Altersgruppe oder die Benutzer, für die der Papierflieger gedacht ist, sowie deren Fähigkeiten und Bedürfnisse.
+
+3. **Designanforderungen**: Spezifikationen bezüglich der Größe, Form, Farbe und Materialien des Papierfliegers.
+
+4. **Flugleistung**: Angaben zur gewünschten Flugweite, Flugdauer, Flugstabilität und Flugmuster des Papierfliegers.
+
+> *“If you can't measure it, you can't manage it.” (Peter F. Drucker)*
+
+5. **Sicherheitsanforderungen**: Richtlinien zur Sicherheit des Produkts, einschließlich möglicher Gefahrenquellen und Maßnahmen zu ihrer Vermeidung.
+
+6. **Funktionalität**: Beschreibung der gewünschten Funktionen oder besonderen Merkmale des Papierfliegers, wie z.B. Faltmuster, aerodynamische Eigenschaften usw.
+
+7. **Produktionsanforderungen**: Informationen zur Produktion des Papierfliegers, einschließlich Kosten, Herstellungsmaterialien und -prozesse.
+
+8. **Test- und Qualitätsstandards**: Festlegung von Kriterien für die Überprüfung der Qualität des Endprodukts sowie Testverfahren, um sicherzustellen, dass die Anforderungen erfüllt werden.
+
+9. **Zeitplan und Budget**: Festlegung von Zeitrahmen für die Entwicklung und Produktion des Papierfliegers sowie des verfügbaren Budgets.
+
+10. **Sonstige Anforderungen**: Zusätzliche Informationen oder spezielle Anforderungen, die für das Projekt relevant sein könnten, wie z.B. Umweltaspekte oder Marketingziele.
+
+Ein gut ausgearbeitetes Lastenheft bietet eine klare Richtlinie für das gesamte Entwicklungsprojekt. Ein gut ausgearbeitetes Lastenheft ist einer der wichtigsten Erfolgsfaktoren um sicherzustellen, dass der Produktentstehungsprozess erfolgreich abgeschlossen werden kann, das Endprodukt, in unserem Fall der Flyer, den Erwartungen aller Projektbeteiligten entspricht und "Moving Targets" im Verlauf des Produktentstehungsprojekts vermieden werden.
+
+Ebenso wichtig wie die Inhalte, die in einem Lastenheft enthalten sein sollten, ist ein Blick auf die Inhalte, die in einem guten Lastenheft **NICHT** enthalten sein sollten:
+
+1. **Technische Lösungen**: Das Lastenheft sollte die Anforderungen beschreiben, aber keine spezifischen technischen Lösungen vorschlagen. Die genaue Gestaltung und Konstruktion des Papierfliegers sollte den Spezialisten des Entwicklungsteams überlassen bleiben.
+
+2. **Persönliche Präferenzen**: Das Lastenheft sollte objektive Anforderungen enthalten, die auf den Bedürfnissen der Zielgruppe basieren, und nicht auf persönlichen Vorlieben einzelner Projektbeteiligter^[Siehe [König Gustav II Adolf](https://de.wikipedia.org/wiki/Gustav_II._Adolf) → Untergang der [Vasa](https://de.wikipedia.org/wiki/Vasa_(Schiff)) infolge des eitlen Wunsches des Königs nach einem zusätzlichen, für die militärische Aufgabe der Vasa aber nicht erforderlichen und nicht im Lasteheft der Vasa hinterlegten dritten oberen Kanonendecks.].
+
+3. **Unrealistische Ziele**: Unrealistische Erwartungen führen praktisch zwangsläufig zu Enttäuschungen und Frustration und sind eines der häufigsten Hemmnisse für erfolgreiche Produktentstehungsprozesse. Das setzen realistischer Ziele, die mit den verfügbaren Ressourcen und Technologien erreichbar sind, ist ein entscheidender Erfolgsfaktor in jedem Produktentstehungsprozess! (→ **SMART**e Ziele!)
+
+4. **Ungenauigkeiten oder Unklarheiten**: Alle Angaben im Lastenheft sollten präzise und klar formuliert sein, um Missverständnisse zu vermeiden. Unklare Formulierungen führen stets zu Interpretationsproblemen und verzögern und/oder behindern die Entwicklung des Produkts.
+
+5. **Ungenügende Informationen**: Das Lastenheft sollte alle erforderlichen Informationen enthalten, um die Entwicklung des Papierfliegers zu ermöglichen. Fehlende oder unvollständige Angaben könnten zu Problemen während des Entwicklungsprozesses führen.
+
+6. **Nicht relevante Details**: Das Lastenheft sollte sich auf die wesentlichen Anforderungen konzentrieren und irrelevante Details vermeiden, die die Entwicklung des Produkts unnötig komplizieren könnten.
+
+:::
+  

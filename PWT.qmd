@@ -1,0 +1,262 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Produktions- und Werkstofftechnik
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       PRODUKTIONS- UND WERKSTOFFTECHNIK
+                       In diesem Kapitel geht es um die Produktions- und Werkstofftechnik in der Entwurfs- und Entwicklungsphase im Produktentstehungsprozess. 
+-------------------------------------------------------------------------- -->
+
+## Produktions- und Werkstofftechnik (PWT) {#sec-pwt}
+
+![Vom Ausgangswerkstoff Silizium über den Prozess zum fertigen Chip (Quelle: [Adobe Stock](https://stock.adobe.com/))](images/AdobeStock_121026560.jpeg){width=80% #fig-pwt}
+
+
+::: {.callout-important}
+## Produktions- und Werkstofftechnik (PWT)
+- **Der Prozess und der Werkstoff bestimmen die Eigenschaften des Produkts!**
+- **Der Prozess und der Werkstoff bestimmen die Eigenschaften des Produkts!**
+- **Der Prozess und der Werkstoff bestimmen die Eigenschaften des Produkts!**
+- **Der Prozess und der Werkstoff bestimmen die Eigenschaften des Produkts!**
+- **Der Prozess und der Werkstoff bestimmen die Eigenschaften des Produkts!**
+:::
+
+![Produktions- und Werkstofftechnik (PWT). Der Prozess und der Werkstoff bestimmen die Eigenschaften des Produkts!](images/PWT.drawio.svg){width=60% #fig-pwt}
+
+
+::: {.callout-important}
+## Produktions- und Werkstofftechnik (PWT)
+- **Der Prozess und der Werkstoff bestimmen die Eigenschaften des Produkts!**
+- **Der Prozess und der Werkstoff bestimmen die Eigenschaften des Produkts!**
+- **Der Prozess und der Werkstoff bestimmen die Eigenschaften des Produkts!**
+- **Der Prozess und der Werkstoff bestimmen die Eigenschaften des Produkts!**
+- **Der Prozess und der Werkstoff bestimmen die Eigenschaften des Produkts!**
+:::
+
+
+### Eigenschaften von Produkten
+
+Zu den Eigenschaften von Produkten, die durch die verwendeten Werkstoffe und die zur Herstellung der Produkte genutzten Prozesse bestimmt werden, gehören (unvollständige Auswahl):
+
+1. **Mechanische Eigenschaften**:
+
+  + **Festigkeit**: Die Widerstandsfähigkeit eines Werkstoffs gegen Bruch oder Verformung.
+  + **Härte**: Die Fähigkeit eines Werkstoffs, punktueller mechanischer Belastung zu widerstehen.
+  + **Elastizität und Plastizität**: Das Verhalten eines Werkstoffs bei Deformation und seine Fähigkeit, in die ursprüngliche Form zurückzukehren.
+  + **Zähigkeit**: Die Fähigkeit eines Werkstoffs, Energie aufzunehmen und plastisch zu deformieren, ohne zu brechen.
+  + **Verschleißfestigkeit**: Die Beständigkeit eines Werkstoffs gegen Abnutzung durch Reibung oder Kontakt mit anderen Oberflächen.
+  + **Betriebsfestigkeit**: Die Fähigkeit eines Werkstoffs oder Produkts wiederholten mechanischen Belastungen zu widerstehen.
+
+2. **Physikalische Eigenschaften**:
+
+    + **Dichte**: Die Masse eines Werkstoffs pro Volumeneinheit.
+    + **Wärmeleitfähigkeit**: Die Fähigkeit eines Werkstoffs, Wärme zu leiten.
+    + **Elektrische Leitfähigkeit**: Die Fähigkeit eines Werkstoffs, elektrischen Strom zu leiten (Isolator, Halbleiter, Leiter).
+    + **Thermische Ausdehnung**: Die Änderung der Dimensionen eines Werkstoffs bei Temperaturänderungen (Wärmeausdehnungskoeffizienten und dessen Temperaturabhängigkeit, siehe z.B. Glasübergangspunkt bei Kunststoffen)
+    + **Magnetische Eigenschaften**: Wie ein Werkstoff auf magnetische Felder reagiert (siehe z.B. ferromagnetische Werkstoffe).
+
+3. **Chemische Eigenschaften**:
+
+    + **Korrosionsbeständigkeit**: Die Fähigkeit eines Werkstoffs, chemischen Angriffen oder Oxidation zu widerstehen.
+    + **Chemische Beständigkeit**: Die Widerstandsfähigkeit eines Werkstoffs gegen chemische Reaktionen mit verschiedenen Substanzen.
+    + **Reaktivität**: Das Maß, in dem ein Werkstoff chemisch reagiert oder mit anderen Substanzen interagiert.
+
+4. **Optische Eigenschaften**:
+
+    + **Transparenz und Opazität**: Wie viel Licht ein Werkstoff - abhängig von der Wellenlänge des Lichts - durchlässt oder absorbiert.
+    + **Reflexions- und Brechungsindex**: Wie Licht auf der Oberfläche eines Werkstoffs - abhängig von der Wellenlänge des Lichts - reflektiert oder gebrochen wird.
+
+5. **Isotropie/Anisotropie**:
+
+::: {.callout-warning}
+## Werkstoffeigenschaften können abhängig von der Richtung im Werkstoff sein!
+**[Isotropie](https://de.wikipedia.org/wiki/Isotropie)**: Die Richtungsunabhängigkeit aller oben genannten Eigenschaften. Sind Eigenschaften eines Werkstoffs von der Richtung abhängig wird dies als [Anisotropie](https://de.wikipedia.org/wiki/Anisotropie) bezeichnet. Die Richtungsabhängigkeit der Eigenschaften von Werkstoffen kann durch Produktionsprozesse in gewissen Grenzen gezielt beeinflusst (verstärkt oder auch vermindert) werden.
+:::
+
+6. **Produktionseigenschaften** (siehe @sec-din8580 → DIN 8580):
+
+    + **Urformbarkeit**: Wie gut sich ein Werkstoff urformen lässt (insb. Gießen, Sintern, Additive Fertigung).
+    + **Umformbarkeit**: Die Fähigkeit eines Werkstoffs, durch mechanische Prozesse wie Biegen, Ziehen oder Pressen geformt zu werden ohne dabei seine Eigenschaften unkontrolliert zu verändern.
+    + **Trennbarkeit**: Wie leicht sich ein Werkstoff durch trennende Fertigungsprozesse (insb. Drehen, Fräsen, Bohren) bearbeiten lässt.
+    + **Fügbarkeit**: Die Eignung eines Materials für Fügeprozesse (insb. Löt- und Schweißprozesse).
+    + **Beschichtbarkeit**: Die Eignung eines Materials für den Auftrag von Beschichtungen.
+    + **Stoffeigenschaften ändern**: Die Fähigkeit eines Werkstoffs seine Eigenschaften durch geeignete Prozesse kontrolliert ändern zu können.
+
+7. **Umweltverträglichkeit und Nachhaltigkeit**:
+
+    + **Recyclingfähigkeit**: Wie leicht ein Werkstoffs nach dem Gebrauch wiederverwertet werden kann.
+    + **Umweltfreundlichkeit**: Die Auswirkungen eines Materials auf die Umwelt, einschließlich der Energie- und Ressourcenaufwendungen für die Herstellung und Entsorgung.
+
+Die Auswahl der richtigen Werkstoffe und Produktionsprozesse ist entscheidend für die Entwicklung qualitativ hochwertiger und wettbewerbsfähiger Produkte. 
+
+::: {.callout-tip}
+## Werkstoffwissenschaften gehören zu den *"Hidden Champions"*
+Die [Material- und Werkstoffwissenschaften](https://de.wikipedia.org/wiki/Materialwissenschaft_und_Werkstofftechnik) gehören zu den komplexesten, innovativsten und spannendsten Forschungsgebieten im Bereich der Produktentwicklung!
+:::
+
+::: {.callout-important}
+## Innovator Produktionstechnik und Werkstoffwissenschaft
+**Innovationen in der Produktentwicklung basieren immer auf Innovationen der Produktionstechnik und/oder der Material- und Werkstoffwissenschaften.**
+:::
+
+Entsprechend der nicht zu überschätzenden Bedeutung der Produktions- und Werkstofftechnik für die Produktentwicklung und Produktion nimmt die Produktions- und Werkstofftechnik in Forschung und Wirtschaft eine unübersehbare Bedeutung ein. 
+
+Der für die deutsche Wirtschaft seit rund einem Jahrhundert wichtige Bereich des Maschinen- und Anlagenbaus gründet auf der Bedeutung der Produktion- und Werkstofftechniktechnik für die Produktentwicklung und Produktion.
+
+Der Maschinen- und Anlagenbau ist nach der Automobilindustrie der zweitgrößte Industriezweig in Deutschland und mit mehr als 1 Millionen Arbeitnehmern größter Arbeitgeber in Deutschland (Stand: 2020). Alleine der Wert der Maschinenproduktion in Deutschland betrug im Jahr 2021 etwa 216 Milliarden Euro; dabei ist der Maschinen- und Anlagenbau in Deutschland mit einer Exportquote von 82 Prozent stark exportorientiert (Quelle: [VDMA](https://www.vdma.org/)).
+
+Innovationen in der Produktions- und Werkstofftechnik, getrieben sowohl aus der Forschung als auch aus der Industrie, sind der entscheidende Innovationstreiber für die Produktentwicklung. Im Zentrum der Entwicklungstätigkeiten steht dabei die Fertigungsverfahrensentwicklung, ohne deren Weiterentwicklung ein Großteil der nachfolgenden Innovationen nicht möglich wäre.
+
+Die zahlreichen verschiedenen [Fertigungsverfahren](https://de.wikipedia.org/wiki/Fertigungsverfahren) werden in der → @sec-din8580 DIN 8580 nach gemeinsamen Verfahrensprinzipien in sechs Hauptgruppen eingeteilt, die sich jeweils in mehrere Gruppen, Untergruppen, Verfahren und Verfahrensvarianten aufteilen.
+
+::: {.callout-tip}
+**Wenn Sie ein wirklich neuartiges Produkt oder ein Produkt mit neuartigen Eigenschaften entwickeln wollen, suchen Sie nach Anwendungen für Innovationen der Produktions- und Werkstofftechnik!**
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                        Beispiele
+
+-------------------------------------------------------------------------- -->
+
+
+#### Beispiel Vulkanisation (Charles Goodyear, 1839)
+
+![[Charles Nelson Goodyear](https://de.wikipedia.org/wiki/Charles_Goodyear) (* 29. Dezember 1800 in New Haven, Connecticut; † 1. Juli 1860 in New York)](images/Charles_Goodyear.jpg){width=25% #fig-goodyear}
+
+Goodyear experimentierte wie viele andere Tüftler und Unternehmer seiner Zeit mit Kautschuk. Er war fest davon überzeugt, dass seine Experimente von geschäftlichem Erfolg gekrönt sein würden. Sein erstes Werk zur Produktion wasserfester Gummi-Artikel gründete er 1833 in Roxbury, Massachusetts. Doch der Kautschuk erwies sich bei Hitze als weich und klebrig, bei Kälte als brüchig. Goodyear, in Sachen Chemie Autodidakt, suchte nach einer Methode, ihn unempfindlich gegenüber extremen Temperaturen zu machen. Nachdem er dem Kautschuk die verschiedensten Materialien und Chemikalien hinzugefügt hatte, kam er 1839 durch einen berühmten „wissenschaftlichen Zufall“ zu einer Lösung: Eine Schwefel-Kautschuk-Mischung fiel auf eine heiße Herdplatte, und das Ergebnis war eine trockene und dauerhaft elastische Substanz. Der mit Schwefel vermischte Kautschuk verwandelte sich bei Erhitzung in einen neuen Stoff, in Gummi. Damit hatte Goodyear die Vulkanisation entdeckt. (Quelle: [Wikipedia](https://de.wikipedia.org/wiki/Charles_Goodyear))
+
+
+#### Beispiel Einkristallines Reinst-Silicium (Eberhard Spenke, 1954)
+
+Die Entwicklung des Zonen-Schmelzverfahrens durch das Team um Eberhard Spenke bei Siemens nahe Erlangen ermöglicht erstmals die Herstellung von einkristallinem Reinst-Silicium als Ausgangsmaterial für die Produktion elektronischer Bauelemente.
+
+![[Eberhard Spenke](https://de.wikipedia.org/wiki/Eberhard_Spenke)^[Im Jahr 1954 gelang Eberhard Spenke erstmals die Gewinnung von einkristallinem Reinst-Silicium als Ausgangsmaterial für die Produktion elektronischer Bauelemente und führte sein Verfahren zur Reinigung und Kristallzüchtung von Silizium bis zur industriellen Reife weiter. Eberhard Spenke gilt als „Vater der Siliziumhalbleiter“.] (* 5. Dezember 1905 in Bautzen; † 24. November 1992 in Erlangen)](images/EberhardSpenke.jpg){width=25% #fig-spenke}
+
+![Zonenziehanlage VZA 2 zum [Zonenschmelzverfahren](https://de.wikipedia.org/wiki/Zonenschmelzverfahren) von [Silicium](https://de.wikipedia.org/wiki/Silicium), 1953 (Quelle: Historisches Archiv [Infineon](https://www.infineon.com/))](images/Zonenziehanlage1953.jpg){width=40% #fig-ziehanlage}
+
+#### Beispiel Erster integrierter Schaltkreis (Jack Kilby, 1958)
+
+Am 24. Juli 1958 beschrieb [Jack Kilby](https://de.wikipedia.org/wiki/Jack_Kilby), seinerzeit gerade neu eingestellt bei Fa. [Texas Intruments](https://de.wikipedia.org/wiki/Texas_Instruments) und deswegen ohne Sommerurlaub, in seinem Labortagebuch erstmals seine Idee, Transistoren, Widerstände und Kondensatoren zu einem Bauteil zusammenzufügen. Am 12. September 1958 präsentierte er ein erstes Exemplar einer funktionierenden Schaltung auf einem [Halbleiter](https://de.wikipedia.org/wiki/Halbleiter) aus [Germanium](https://de.wikipedia.org/wiki/Germanium).
+
+![[Jack Kilby](https://de.wikipedia.org/wiki/Jack_Kilby) (* 8. November 1923 in Jefferson City, Missouri; † 20. Juni 2005 in Dallas, Texas)](images/JackKilby.jpg){width=60% #fig-kilby}
+
+![Erster [integrierter Schaltkreis](https://de.wikipedia.org/wiki/Integrierter_Schaltkreis), präsentiert von Jack Kilby, 1958](images/ErsterIntegrierterSchaltkreis1958.jpg){width=40% #fig-firstic}
+
+![[Motorola MC68000](https://de.wikipedia.org/wiki/Motorola_68000), Markteinführung 1979, weltweit die erste 32-Bit-CPU, 8 MHz Taktfrequenz. Der in einem 4-µm-HMOS-Prozess (siehe → Moore's Gesetz) gefertigte [Motorola](https://de.wikipedia.org/wiki/Motorola,_Inc.) 68000 verfügt auf einer Chipfläche von 44 mm² über rund 68000 integrierte Transistoren. Das der Motorola 68000 diese Bezeichnung wegen dieser rund 68000 Transistoren besitzt ist jedoch nur eine moderne Legende (Bild: [Sebastian Koppehel](https://commons.wikimedia.org/w/index.php?curid=75672007)).](images/Motorola_MC68000P8.jpg){width=40% #fig-motorola68000}
+
+<!-- -------------------------------------------------------------------------
+
+                        Moore's Law
+
+-------------------------------------------------------------------------- -->
+
+### Moore's Gesetz
+
+![[Gordon Moore](https://de.wikipedia.org/wiki/Gordon_Moore) (* 3. Januar 1929 in San Francisco; † 24. März 2023 auf Hawaii, USA)](images/GordonMoore1968-intel.jpg){width=25% #fig-gmoore}
+
+Das [Mooresche Gesetz](https://de.wikipedia.org/wiki/Mooresches_Gesetz) (englisch Moore’s law; deutsch „Gesetz“ im Sinne von „Gesetzmäßigkeit“) besagt, dass sich die Zahl der Transistoren integrierter Schaltkreise mit minimalen Komponentenkosten regelmäßig verdoppelt; je nach Quelle werden gelegentlich 12, in der Regel 18 oder selten auch 24 Monate als Zeitraum genannt:
+
+---
+
+> *"Die Anzahl an Transistoren, die in einen integrierten Schaltkreis festgelegter Größe passen, verdoppelt sich etwa alle zwei Jahre."* (Moore's Law, nach Gordon Moore, Mitbegründer von [Intel](https://www.intel.de/))
+
+---
+
+![[Moore](https://de.wikipedia.org/wiki/Gordon_Moore)^[Gordon Earle Moore (* 3. Januar 1929 in San Francisco; † 24. März 2023 auf Hawaii, USA) war ein US-amerikanischer Ingenieur und Unternehmer. Er war Mitgründer der Firma [Intel](https://de.wikipedia.org/wiki/Intel) und Urheber des Mooreschen Gesetzes.]'s Gesetz. Dargestellt ist die Anzahl der in den CPUs verbauten Transistoren über dem Jahr der Markteinführung der CPUs (Quelle: [Wikipedia](https://de.wikipedia.org/wiki/Mooresches_Gesetz))](images/MooresLaw.jpg){width=100% #fig-moore}
+
+::: {.callout-important}
+## Together!!!
+**Innovative Produkte entstehen in Netzwerken aus Entwicklern verschiedenster Disziplinen über Firmengrenzen hinweg!**
+:::
+
+---
+
+***"Tausende Köpfe schreiben Moore’s Law fort"***
+
+*"Etwa 1.500 der aktuell mehr als 7.500 Mitarbeitenden von ZEISS SMT arbeiten an der High-NA-EUV-Technologie. Der nächste Technologiesprung ist eine Teamleistung von ZEISS SMT, dem strategischen Partner ASML und einem Netzwerk aus mehr als 1.200 Mitgliedern. In der EUV-Lithographie stecken mehr als 25 Jahre Entwicklung und Forschung, Investitionen in Milliardenhöhe von ZEISS SMT und ASML sowie Fördermittel der Bundesregierung Deutschland und der Europäischen Union für die technologische Souveränität Europas. Diese Zukunftstechnologie ist mit mehr als 2.000 ZEISS Patenten abgesichert."* (Quelle: [ZEISS](https://www.zeiss.de/semiconductor-manufacturing-technology/inspiring-technology/high-na-euv-lithographie.html))
+
+![Ausliefertung einer EUV-Lithografieanlage von [ZEISS SMT]((https://www.zeiss.de/semiconductor-manufacturing-technology/home.html)) an [ASML](https://www.asml.com/) im Beisein eines Teils des Projektteams (Quelle: ZEISS SMT)](images/ZEISS-delivering-high-na-euv-lithography-from-zeiss-smt.jpg){width=80% #fig-zeissteam}
+
+---
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Shareable Links & Literaturempfehlungen
+
+-------------------------------------------------------------------------- -->
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
++ @bargel_werkstoffkunde_2022: [Einwirkung von Herstellung und Weiterverarbeitung auf die Eigenschaften von Metallen](https://rdcu.be/dI8A6)
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Literaturempfehlung
+
+-------------------------------------------------------------------------- -->
+
+<!--
+#### Literaturempfehlung
+
+![@bargel_werkstoffkunde_2022: [Werkstoffkunde](https://link.springer.com/book/10.1007/978-3-662-63961-0)](images/Bargel_Werkstoffkunde_978-3-662-63961-0.webp){width=40%}
+
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Literaturempfehlung (ältere Ausgaben)
+
+-------------------------------------------------------------------------- -->
+
+<!--
+![@bargel_werkstoffkunde_2012: [Werkstoffkunde](https://link.springer.com/book/10.1007/978-3-642-17717-0)](images/Bargel_Werkstoffkunde.png){width=40%}
+-->

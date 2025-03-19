@@ -1,0 +1,196 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Labor 
+  - Magnetpendel
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Grundlagen zum Magnetpendel
+
+-------------------------------------------------------------------------- -->
+
+<!-- 
+### Externe Links
+[Naturwissenschaft und Unterhaltungsmathematik am Computer](https://beltoforion.de/de/magnetisches_pendel/index.php)
+-->
+
+
+<!-- -------------------------------------------------------------------------
+
+                       SCHWINGUNGSGLEICHUNG PENDEL
+
+-------------------------------------------------------------------------- -->
+
+### Schwingungsgleichung des gedämpften Pendels
+
+Pendel gehören zu den grundlegenden Versuchsaufbauten in den Naturwissenschaften in Schule und Studium. Entsprechend umfangreich ist die verfügbare Literatur. Der geneigte Leser sei hierzu als Einstieg in der Materie auf [Wikipedia](https://de.wikipedia.org/wiki/Mathematisches_Pendel) verwiesen. Im Folgenden sollen daher nur kurz die wichtigsten Formeln und verwendeten Näherungen für ein Schwerpendel rekapituliert werden.
+
+Die Periodendauer $T$ eines ungedämpft schwingenden Pendels mit $L$ als Länge des Pendels (in $\text{m}$) und $g$ als Erdbeschleunigung ($g = 9.81 \, \text{m/s}^2$):
+
+$$
+T = 2\pi \sqrt{\frac{L}{g}}
+$$
+
+Die Schwingungsgleichung eines ungedämpften schwingenden Pendels mit $θ$ als Auslenkungswinkel, $g$ als Erdbeschleunigung und $L$ als Länge des Pendels:
+
+$$
+\ddot{\theta} + \frac{g}{L} \cdot \sin(\theta) = 0
+$$
+
+Die Schwingungsgleichung eines gedämpft schwingenden Pendels mit $θ$ als Auslenkungswinkel, $g$ als Erdbeschleunigung, $L$ als Länge des Pendels und $\gamma$ als Dämpfungskoeffizient:
+
+$$
+\ddot{\theta} + 2 \cdot \gamma \cdot \dot{\theta} + \frac{g}{L} \cdot \sin(\theta) = 0
+$$
+
+Der geneigte Leser bemerkt sofort, dass die Dämpfung als proportional zur Geschwindigkeit des Pendels angenommen wird. Auch wenn diese Annahme in der Realität nicht immer erfüllt sein mag, so soll im folgenden doch von dieser Annahme ausgegangen werden.
+
+Als weitere Annahme wird beim Pendel zumeist von kleinen Auslenkungen um die Ruhelage ausgegangen, so dass eine weitere Vereinfachung vorgenommen werden kann.
+
+Die Taylorreihe von $\sin(x)$ um $x=0$ lautet: 
+
+$$
+\sin(x) = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \frac{x^9}{9!} - \cdots
+$$
+
+Für kleine Winkel gilt daher als gute Näherung $\sin(x)=x$. Mit $\alpha = \frac{g}{L}$ und $\beta = 2 \gamma$ und ergibt sich daraus eine einfache und elegante Formulierung der Schwingungsgleichung des gedämpften Pendels:
+
+<!-- Rahmen um Text/Formel -->
+<div style="border: 1px solid black; padding: 10px;">
+$$
+\ddot{\theta} + \beta \cdot \dot{\theta} + \alpha \cdot \theta = 0
+$$
+</div>
+<!-- Leerzeile -------------->
+<br>
+
+### Numerische Verfahren zur Lösung der Schwingungsgleichung
+
+Es gibt verschiedene numerische Verfahren, mit denen diese Schwingungsgleichung eines Pendels gelöst werden kann. Die Verfahren unterscheiden sich stark hinsichtlich ihrer Eigenschaften. Zu den am häufigsten eingesetzten numerischen Verfahren zur Lösung von Differenzialgleichungen zählen:
+
+1. **Euler-Verfahren**: Das [(explizite) Euler-Verfahren](https://de.wikipedia.org/wiki/Explizites_Euler-Verfahren) aus dem Jahr 1768 ein einfaches numerisches Verfahren zur Lösung gewöhnlicher Differentialgleichungen. Es approximiert die Lösung durch eine Taylor-Reihe erster Ordnung und wird oft als erster Schritt zur Lösung von gewöhnlichen Differentialgleichungen verwendet. 
+
+::: {.callout-tip}
+Dem geneigten Leser, der erstmals ein tieferes Verständnis zum Vorgehen bei der numerischen Lösung von Differenzialgleichungen erwerben möchte, wird als Übungsaufgabe das Erarbeiten einer eigenen Implementierung des [Euler-Verfahrens]((https://de.wikipedia.org/wiki/Explizites_Euler-Verfahren)) in einer Programmiersprache seiner Wahl empfohlen.
+:::
+
+2. **Runge-Kutta-Verfahren**: Das [Runge-Kutta-Verfahren](https://de.wikipedia.org/wiki/Runge-Kutta-Verfahren) ist eine Familie von numerischen Verfahren zur Lösung von gewöhnlichen Differenzialgleichungen, die ab 1900 entwickelt wurden. Das bekannteste davon ist das klassische Runge-Kutta-Verfahren vierter Ordnung (RK4), das eine höhere Genauigkeit als das Euler-Verfahren bietet. Verschiede Implementierungen des Magnetpendels, die der geneigte Leser bei seiner Recherche im Internet finden mag, nutzen das bewährte Runge-Kutta-Verfahren.
+
+3. **Verlet-Algorithmus**: Der [Verlet-Algorithmus](https://de.wikipedia.org/wiki/Verlet-Algorithmus) ist eine Methode zur numerischen Lösung der Newton’schen Bewegungsgleichungen und wird oft bei Molekulardynamik-Simulationen in der theoretischen Chemie verwendet. Er wurde in den 1960er Jahren entwickelt. Der Verlet-Algorithmus eignet sich aber auch zur Lösung der Schwingungsgleichung eines Pendels und wird dem geneigten Leser beim Studium des hier vorgestellten magnetischen Pendels in der Literatur immer wieder begegnen.
+
+4. **Finite-Differenzen-Methode**: Dies ist ein leistungsfähiges numerisches Verfahren zur Lösung von Differentialgleichungen, bei dem die Ableitungen durch Differenzenquotienten approximiert werden. Es kann auf gewöhnliche und partielle Differentialgleichungen angewendet werden.
+
+5. **Finite-Elemente-Methode**: Dies ist ein fortgeschritteneres numerisches Verfahren, das häufig für die Lösung von partiellen Differentialgleichungen verwendet wird. Es ist besonders nützlich, wenn das Pendel mit komplexeren Geometrien oder Randbedingungen modelliert werden muss.
+
+Die Wahl des geeigneten numerischen Verfahrens hängt von verschiedenen Faktoren ab, darunter die Genauigkeit, die Stabilität, die Komplexität des Problems und die Verfügbarkeit von Software oder Bibliotheken zur Implementierung des Verfahrens. 
+
+<!-- Im Rahmen der Vorlesung findet zur Simulation der Magnetpendels das Runge-Kutta-Verfahren Verwendung. -->
+
+<!-- -------------------------------------------------------------------------
+
+                       MAGNETPENDEL
+
+-------------------------------------------------------------------------- -->
+
+<!--
+#### Simulation des Pendels bei Anwensenheit von drei Magneten
+
+Dieser Artikel basiert auf dem, in der Zeitschrift Spektrum der Wissenschaft, veröffentlichten Beitrag "Experimente zum Chaos" @hingfeld_experimente_1994 aus dem Jahr 1994. Darin wurde unter anderem eine Simulation beschrieben, welche die chaotische Bewegung eines magnetischen Pendels unter dem Einfluss der Schwerkraft und dreier Magnete simuliert. Auf dieser Webseite wird eine Implementierung dieser Simulation vorgestellt.
+
+
+
+##### Die Pendelsimulation
+
+Die Simulation berechnet die Pendelbewegung durch Integration der Bewegungsgleichung des Pendelkörpers. Die Pendelbewegung wird durch Reibung, Gravitation und magnetische Anziehungskraft beeinflusst. Die Kräfte sind so aufeinander abgestimmt, dass das Pendel infolge des reibungsbedingten Energieverlustes über einem der drei Magnete zum Stillstand kommt.
+
+Färbt man den Startpunkt der Pendelspur in der Farbe des Magneten ein, über dem das Pendel zum Stillstand kam und führt die Simulation für eine Vielzahl möglicher Startpunkte auf einem Gitter durch, so erhält man ein farbiges Muster. Das Ergebnis eines Simulationsdurchganges ist im Bild links dargestellt. Es wird deutlich, das selbst kleine Variationen im Startpunkt nach kurzer Zeit zu großen Änderungen in der Pendelspur führen können. Das Ergebnis (die Farbe des Zielmagneten) wird dadurch schwer vorhersagbar.
+
+Das klassische Modell geht von einem Pendel aus, das von drei Magneten angezogen wird. Jedem Magneten ist eine Farbe zugeordnet. Die Magnete sind unterhalb des Pendels auf einer Ebene in einem gleichseitigen Dreieck angeordnet. Das Pendel ist mittig darüber aufgehängt. Die Magnete sind stark genug, um das Pendel niemals in der Mitte zur Ruhe kommen zu lassen.
+
+
+
+##### Idealisiertes Modell
+Wem sich nun die Frage stellt, wie das Pendel mit seinen drei Raumdimensionen und der Bewegung auf einer Kugeloberfläche in ein mathematisches Modell umgesetzt wird, dem sei gesagt: Das ist einfach! Wie heißt es doch so schön? "Was nicht passt wird passend gemacht" Getreu diesem Grundsatz wird einfach angenommen, das Pendel sei sehr lang. Unter dieser Voraussetzung kann man die Bewegung der Pendelmasse als Bewegung in einer Ebene über den Magneten idealisieren. Für ein langes Pendel mit geringer Auslenkung kann man weiterhin annehmen, die Rücktriebskraft, welche es zum Zentrum zurück zieht, ist proportional zur Auslenkung. Sie verhält sich dem Hookesches Gesetz entsprechend. Das alles ist äußerst praktisch, denn nun kann man in zwei Dimensionen rechnen, ohne sich um Drehmomente, Rotationswinkel, Kreuzprodukte und ähnliches Gedanken machen zu müssen.
+
+
+Vergleich von Pendelrücktriebskraft mit der von den Magneten verursachten Anziehungskraft.
+So viel mehr Aufwand, wäre es zugegebenermaßen nicht gewesen die komplette Physik zu implementieren, aber die Realität hat mal wieder einen entscheidenden Nachteil: Das Ergebnis würde müsste auf eine Kugeloberfläche abgebildet werden. Das wäre ein wenig unpraktisch, denn im Gegensatz zu Bildern kann man Kugeln weder an die Wand hängen noch als Desktophintergrund verwenden.
+
+Für die Berechnungen wird angenommen, die Magnete üben eine Kraft auf das Pendel aus, die proportional zum inversen Quadrat der Pendelentfernung vom Magneten ist. Dies ist ein typischer Zusammenhang, wie er auch beim Gravitationsgesetz oder beim Coloumbschen Gesetz zu beobachten ist. Das ist allerdings nur die halbe Wahrheit, denn dieses Kraftgesetz würde nur gelten, wenn die Kraft von magnetischen Monopolen verursacht würde und die gibt es nach bisherigem Kenntnisstand nicht. Magnete sind immer Dipole und ein Dipol verursacht eine Kraft, die proportional zu 1/r³ ist. Dies wird hier ignoriert, kann aber vom interessierten Leser im Konfigurationsfile der zum Download angebotenen Version der Pendelsimulation selbst eingestellt werden. Weiterhin werden elektrische Effekte, wie zum Beispiel Induktion und dadurch im Pedel selbst verursachte Magnetfelder vernachlässigt.
+
+Color functions
+Gegenüberstellung von drei unterschiedlichen Farbfunktionen.
+Im diesem Abschnitt werde ich das zugrundeliegende numerische Modell vorstellen und zeigen, wie kleine Änderungen in den Anfangsbedingungen der Simulation die Endposition des Pendels stark beeinflussen können. Dies führt in letzter Konsequenz zu einer Unvorhersehbarkeit der Pendelendposition, da bereits kleinste Änderungen am Anfang das Ergebnis dramatisch beeinflussen.
+
+
+
+Im Bild rechts ist das Modell schematisch dargestellt. Die Simulation berechnet die Bewegung des Pendels unter dem Einfluss der drei Magnete, der auf das Pendel wirkenden Schwerkraft sowie der Reibungskraft. Infolge von Energieverlusten durch die Reibungskraft wird das Pendel früher oder später über einem der Magnete zur Ruhe kommen. Der Startpunkt des Pendels wird dann mit der Farbe des Magneten eingefärbt, über dem es zur Ruhe kam. Führt man dies für alle Punkte im Simulationsbereich durch, so erhält man eine farbiges Muster aus roten, grünen und blauen Punkten.
+
+Mit der bislang beschriebenen Methode sind allerdings nur dreifarbige Bilder möglich. Es wäre wünschenswert in den Bildern mehr Farben oder zumindest Schattierungen zu verwenden. Eine Information, die dafür verfügbar ist, ist die Spurlänge. Dafür wird eine Farbfunktion als Funktion der Spurlänge eingeführt. Zur Erleichterung der Skalierung wird die maximale Spurlänge in die Berechnung einbezogen. Prinzipiell kann man beliebige Funktionen verwenden. Die rechts dargestellten Funktionen erzeugen gute Ergebnisse.
+
+em sich nun die Frage stellt, wie das Pendel mit seinen drei Raumdimensionen und der Bewegung auf einer Kugeloberfläche in ein mathematisches Modell umgesetzt wird, dem sei gesagt: Das ist einfach! Wie heißt es doch so schön? "Was nicht passt wird passend gemacht" Getreu diesem Grundsatz wird einfach angenommen, das Pendel sei sehr lang. Unter dieser Voraussetzung kann man die Bewegung der Pendelmasse als Bewegung in einer Ebene über den Magneten idealisieren. Für ein langes Pendel mit geringer Auslenkung kann man weiterhin annehmen, die Rücktriebskraft, welche es zum Zentrum zurück zieht, ist proportional zur Auslenkung. Sie verhält sich dem Hookesches Gesetz entsprechend. Das alles ist äußerst praktisch, denn nun kann man in zwei Dimensionen rechnen, ohne sich um Drehmomente, Rotationswinkel, Kreuzprodukte und ähnliches Gedanken machen zu müssen.
+
+
+Vergleich von Pendelrücktriebskraft mit der von den Magneten verursachten Anziehungskraft.
+So viel mehr Aufwand, wäre es zugegebenermaßen nicht gewesen die komplette Physik zu implementieren, aber die Realität hat mal wieder einen entscheidenden Nachteil: Das Ergebnis würde müsste auf eine Kugeloberfläche abgebildet werden. Das wäre ein wenig unpraktisch, denn im Gegensatz zu Bildern kann man Kugeln weder an die Wand hängen noch als Desktophintergrund verwenden.
+
+Für die Berechnungen wird angenommen, die Magnete üben eine Kraft auf das Pendel aus, die proportional zum inversen Quadrat der Pendelentfernung vom Magneten ist. Dies ist ein typischer Zusammenhang, wie er auch beim Gravitationsgesetz oder beim Coloumbschen Gesetz zu beobachten ist. Das ist allerdings nur die halbe Wahrheit, denn dieses Kraftgesetz würde nur gelten, wenn die Kraft von magnetischen Monopolen verursacht würde und die gibt es nach bisherigem Kenntnisstand nicht. Magnete sind immer Dipole und ein Dipol verursacht eine Kraft, die proportional zu 1/r³ ist. Dies wird hier ignoriert, kann aber vom interessierten Leser im Konfigurationsfile der zum Download angebotenen Version der Pendelsimulation selbst eingestellt werden. Weiterhin werden elektrische Effekte, wie zum Beispiel Induktion und dadurch im Pedel selbst verursachte Magnetfelder vernachlässigt.
+-->
+
+<!-- ABBILDUNG: Magnetpendel -->
+![Simulation des Magnetpendels. Die Farben zeigen den Magnet, an dem das Pendel zum ruhen kommt, die Helligkeit veranschaulicht die Zeit, die das Pendel vom Start bis zum erreichen des Endpunkts benötigt (je dunkler desto länger benötigt das Pendel bis zum Erreichen der Ruhelage).](images/Magnetpendel.jpg){width=80% #fig-magentpendel}
+
+
+

@@ -1,0 +1,17 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Ende Homeoffice bei Amazon ab 2025
+                       Screenshot tagesschau.de vom 24.09.2024 16h57
+
+-------------------------------------------------------------------------- -->
+
+![Ende Homeoffice bei Amazon ab 2025 (Quelle: [tagesschau.de](https://www.tagesschau.de/) vom 25.09.2024)](images/Screenshot_20240917_165638_tagesschau.jpg){width=40% #fig-homeoffice}

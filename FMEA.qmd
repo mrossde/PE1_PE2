@@ -1,0 +1,50 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Fehler-Möglichkeits- und Einfluss-Analyse (FMEA)
+
+-------------------------------------------------------------------------- -->
+
+
+### Fehler-Möglichkeits- und Einfluss-Analyse (FMEA) {#sec-fmea}
+
+Die [Fehlermöglichkeits- und -einfluss-Analyse](https://de.wikipedia.org/wiki/FMEA) (Failure Mode and Effect Analysis, FMEA) ist eine in der Literatur zum Qualitätsmanagement immer genannte Methode. Sie wird selbstverständlich daher hier auch aufgeführt, allerdings nur, weil die FMEA zum Grundstock der Methoden des Qualitätsmanagements zählt, gleichsam Allgemeingut ist und der geneigte Leser nicht durch ein Fehlen der FMEA verunsichert werden soll.
+
+Das Ziel der FMEA ist die Verringerung von Fehlerrisiken. Die FMEA setzt weit vor dem Auftreten von Fehlern an und untersucht die **theoretische Möglichkeit** bzw. Wahrscheinlichkeit des Auftretens. Des Weiteren wird analysiert, welche Folgen ein Fehler haben könnte und welches Ausmaß der verursachte Schaden annehmen könnte. (Der geneigte Leser beachte bitte die Häufung von Konjunktiven in diesem Satz!)
+
+Die FMEA-Methode wurde vom US-Militär als „Failure Mode Effects and critically Analysis method“ entwickelt und 1949 standardisiert (MIL-P-1629). Sie kam in den Folgejahren bei der NASA, in der Luftfahrt und in der Kernkraftwerkstechnik zum Einsatz. In Deutschland wurde die FMEA im Jahr 1980 unter der Bezeichnung „Ausfalleffektanalyse“ normiert und findet sich heute als DIN EN 60812. 
+
+Die grundlegende Idee von FMEA besteht darin, einen Fehler *F* so zu sehen, dass er eingebettet ist in ein Geflecht von Fehlerursachen *FU*, die zu ihm führen, und Fehlerfolgen *FF*, die er bewirkt (siehe @fig-fmea).
+
+![Wirkungskette von Fehlerursachen, Fehler und Fehlerfolgen (Quelle: @jakoby_qualitatsmanagement_2022)](images/479391_2_De_4_Fig4_HTML.png){width=42% #fig-fmea}
+
+::: {.callout-caution}
+## FMEA in der Praxis
+Dem geneigten Leser sei zur Vorsicht im Umgang mit der FMEA geraten! FMEAs erweisen sich in der Praxis als sehr zeitaufwändig und arbeitsintensiv. Immer lauert die Gefahr, bei der Suche nach theoretisch möglichen Fehlerursachen und deren Auswirkungen *"von Hölzchen auf Stöckchen"* zu kommen und kein sinnvolles Ende zu finden. Eine vollständige FMEA erscheint Ihrem Dozenten nahezu unmöglich. Dem geneigten Leser sei an dieser Stelle von der Verwendung der Methode FMEA abgeraten, sofern dies von Seiten der Projektleitung nicht ausdrücklich gefordert wird oder eine FMEA für das zu entwickelnde Produkt gesetzlich vorgeschrieben ist.
+:::
+
+
+
+<!--
+**Weiterführende Links** (Wikipedia):
+
++ [Alt text](https://de.wikipedia.org/wiki/W%C3%B6hlerversuch)
+-->
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
++ @jakoby_qualitatsmanagement_2022: [Elementare QM-Methoden](https://rdcu.be/dIy3K)
+:::
+
+<!--
+#### Literaturempfehlung
+
+![@jakoby_qualitatsmanagement_2022: [Qualitätsmanagement für Ingenieure](https://link.springer.com/book/10.1007/978-3-658-36677-3)](images/Jakoby_Qualitaetsmanagement.webp){width=40%}
+-->

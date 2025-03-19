@@ -1,0 +1,172 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Statistical Process Control (SPC)
+
+-------------------------------------------------------------------------- -->
+
+### Statistical Process Control (SPC) {#sec-spc}
+
+::: {.callout-tip}
+## Definition: *"Statistical Process Control"*
+Die [statistische Prozesslenkung](https://de.wikipedia.org/wiki/Statistische_Prozesslenkung) (auch statistische Prozessregelung oder statistische Prozesssteuerung, englisch statistical process control, SPC genannt) ist eine Vorgehensweise zur Optimierung von Produktionsprozessen mittels statistischer Verfahren.
+:::
+
+SPC wurde von [Walter A. Shewhart](https://de.wikipedia.org/wiki/Walter_A._Shewhart) entwickelt. Die wissenschaftlichen Grundlagen wurden von ihm 1931 in dem Buch Economic Control of Quality of Manufactured Product umfassend hergeleitet und beschrieben. Ausgelöst wurde diese Arbeit durch die Absicht des Managements der Hawthorne Plant der Western Electric Company in Chicago, möglichst einheitliche und somit zuverlässige Produkte herzustellen. Der Versuch, dies mit Mitteln des gesunden Menschenverstandes zu bewerkstelligen, schlug fehl. In der Folge wurde Shewhart von den Bell Telephone Laboratories aus New York um Unterstützung gebeten.
+
+Shewhart ging von der Vermutung aus, dass die Qualität des Endproduktes im Wesentlichen von der Kombination der Streuung der Parameter der Einzelteile abhängt. Als Ursache für diese Streuung fand er zwei grundsätzlich verschiedene Mechanismen:
+
+1. **Streuung aufgrund von allgemeinen Ursachen** (zufällige Abweichungen vom Mittelwert, die sich aufgrund eines stochastischen Prozesses ergeben)
+2. **Streuung aufgrund von besonderen Ursachen** (Materialfehler, Maschinenfehler, Konstruktionsfehler etc.)
+
+Zufällige Einflüsse lassen sich hierbei durch ein Normalverteilungsmodell beschreiben, welches an die Messdaten angepasst wird. Wenn es sich um einen **beherrschten Prozess** handelt, haben Zufallseinflüsse folgende Eigenschaften:
+
++ ständig vorhanden
++ über die Zeit stabil
++ vorhersagbar
++ konstante Summe vieler Einzeleinflüsse
+
+Systemtische Einflüsse destabilisieren oder verschieben einen Prozess. Solche systematische Einflüsse werden im Rahmen der Prozessplanung im Vorfeld analysiert und eliminiert, sodass in laufender Serie störungsfrei produziert werden kann. Tritt jedoch während der laufenden Serie ein systematischer Einfluss auf, so lassen sich die Auswirkungen wie folgt charakterisieren:
+
++ Auftreten folgt keiner Regel
++ Destabilisierung des Prozesses
++ Vorhersage nicht möglich
++ Verursachung durch einen oder einige Haupteinflüsse
+
+Beispiel: Im laufenden Fertigungsprozess (Setzen von Bohrungen) kollidiert ein Gabelstapler mit einem Bohrwerk. Nach der Kollision weisen alle hergestellten Bohrungen einen ähnlichen Versatz zum Sollwert respektive zu den zuvor gesetzten Bohrungen auf. Die Kollision des Gabelstaplers mit dem Bohrwerk ist ein systematischer Einfluss, welcher selten auftritt (keiner Regel folgt), den Prozess destabilisiert, nicht vorhersagbar war und nicht mit weiteren Einflüssen in Verbindung steht.
+
+Die zweite wichtige Erkenntnis von Shewhart war, dass nun bei dem Versuch, diese Streuung zu minimieren, zwei Fehler gemacht werden können:
+
++ Eine Abweichung einer besonderen Ursache zuweisen, obwohl sie von einer allgemeinen Ursache hervorgerufen wurde.
++ Eine Abweichung einer allgemeinen Ursache zuweisen, obwohl sie von einer besonderen Ursache hervorgerufen wurde.
+
+Es kann zwar entweder der eine oder der andere Fehler komplett vermieden werden, aber nie beide gleichzeitig. Es musste also ein Weg gefunden werden, die Kosten der Fehlervermeidung zu minimieren. 
+
+Umfangreiche statistische Untersuchungen und Theoriebildung führten Shewhart schließlich zur Entwicklung von Qualitätsregelkarten (engl.: control charts) als optimales Werkzeug, um die gewonnenen Erkenntnisse in die tägliche Praxis umzusetzen.
+
+Ihre erste großindustrielle Anwendung fand SPC im Zweiten Weltkrieg, wo sie bei der Herstellung von Rüstungsgütern angewendet wurde.
+
+Später erkannte William Edwards Deming, dass sich diese Erkenntnisse und Werkzeuge auf alle Arten von Prozessen mit den gleichen positiven Ergebnissen anwenden lassen. Diese Lehre fiel vor allem in Japan auf fruchtbaren Boden, wo sie unter anderem innerhalb des Toyota-Produktionssystems (TPS) weiterentwickelt wurde.
+
+Heute wird die statistische Prozessregelung als Bestandteil eines Qualitätsmanagementsystems gesehen und begleitet als Serviceprozess den Kernprozess der Produktion . Alle statistischen Methoden, die zur Überwachung und Optimierung des Kernprozesses dienen, werden unter dem Begriff statistische Prozesskontrolle zusammengefasst. Diese Methoden gehen über die verschiedenen Regelkartentechniken hinaus und schließen auch z. B. die Methoden der statistischen Versuchsplanung (DoE) oder auch die Methodensammlung Six-Sigma mit ein.
+
+
+#### Vorgehen bei der SPC
+
+Nachdem der zu untersuchende Prozess eindeutig definiert wurde, muss von einem Prozessexperten festgelegt werden, welche Messgrößen von Bedeutung sind. Diese müssen dann planmäßig während der laufenden Produktion erfasst werden. Die Auswertung erfolgt dann mittels Qualitätsregelkarten. 
+
+Von Bedeutung sind der obere und unterere Spezifikationsgrenzwert, abgekürzt als "OSG" ("Oberer Spezifikationsgrenzwert") und "USG" ("Unterer Spezifikationsgrenzwert"). 
+
+Diese beiden Grenzwerte geben die obere und untere Grenze der akzeptablen Variation in einem Prozess oder bei einem Merkmal eines Produkts um sicher zustellen, dass der Prozess oder das Produkt innerhalb eines festgelegten Qualitätsstandards bleibt. 
+
+In Qualitätsregelkarten werden diese Grenzwerte oft als horizontale Linien dargestellt. Neben OSG und USG wird in Qualitätsregelkarten darüber hinaus zumeist der Mittelwert sowie Warn- und Eingriffsgrenzen dargestellt. Ein Beispiel für eine Qualitätsregelkarte zeigt @fig-qualitaetsregelkarte.
+
+![Qualitätsregelkarte](images/Qualitaetsregelkarte.png){width=72% #fig-qualitaetsregelkarte}
+
+Im Zusammenhang mit Qualitätsregelkarten werden oftmals die folgenden Abkürzungen verwendet:
+
++ **OSG**: Oberer Spezifikationsgrenzwert
++ **OEG**: Obere Eingrifffsgrenze
++ **OWG**: Obere Warngrenze
++ **M**: Mittelwert
++ **UWG**: Untere Warngrenze
++ **UEG**: Untere Eingriffsgrenze
++ **USG**: Unterer Spezifikationsgrenzwert
+
+
+![Prinzipskizzen Prozess: beherrscht (links); qualitätsfähig (mittig); robust (rechts) (Quelle: @bracke_technische_2022)](images/428503_1_De_16_Fig1_HTML.webp){width=100% #fig-prinzipprozesse}
+
+::: {.callout-important}
+## Vorgehen der statistischen Prozesslenkung
+*"Verringere zuerst die Streuung des Prozesses und optimiere danach die Lage (den Mittelwert) des Prozesses!"*
+:::
+
+Stark streuende Prozesse lassen sich in ihrer Lage nur schlecht beherrschen. Stabile, reproduzierbare Prozesse sind der Schlüssel zum Erfolg! Dieser Grundgedanke findet sich auch im Kern von [Six Sigma](https://de.wikipedia.org/wiki/Six_Sigma) wieder.
+
+Es gibt inzwischen auch Softwarepakete, die die statistische Prozesslenkung als eine zentrale Komponente der rechnergestützten Qualitätssicherung (Computer Aided Quality CAQ) unterstützen. Die zu diesem Zweck vorgenommenen Messungen werden dabei automatisch durch eine Maschinendatenerfassung (MDE) durchgeführt und statistisch entsprechend weiterverarbeitet.
+
+#### Beispiel: Montage
+
+Für die wirtschaftliche Gestaltung einer Produktion und der zu erzeugenden Produktqualität ist die Qualität der zu verarbeitenden Einzelteile von ausschlaggebender Bedeutung. Das gibt insbesondere für die Montage. 
+
+Im Bereich einer Werkstattproduktion kann durch Anpassen, Nacharbeiten oder Austausch ein Produkt fertiggestellt werden. In einer Serienmontage ist dies dagegen nicht möglich. Hier führen schlechte Teile zu erheblichen Störungen, ja sogar zum Stillstand der jeweiligen Montageanlagen. Eine der wichtigsten Störursachen in der Montage sind Toleranzüberschreitungen der zu montierenden Einzelteile.
+
+Es ist daher notwendig, dass in enger Zusammenarbeit zwischen Produktentwicklung und Produktionsplanung alle Qualitätsparameter der Einzelteile, bezogen auf die Anforderungen des Produktes und auf die Anforderungen der Montagetechnik, festgelegt werden. Mit zunehmender Automatisierung von Montagevorgängen sind dabei engere Toleranzen notwendig (siehe @fig-montagetoleranzen).
+
+![Streuung der Ist-Maße von Einzelteilen um den Mittelwert (Quelle: @lotter_primare_2016)](images/323382_1_De_2_Fig26_HTML.webp){width=40% #fig-montagetoleranzen}
+
+Die gleichbleibende Qualität der Einzelteile ist eine grundlegende Voraussetzung für eine rationelle Serienmontage. Aus wirtschaftlichen Gründen können in einer Massenfertigung die zu montierenden Einzelteile nur in Ausnahmefällen hundertprozentig kontrolliert werden; man bedient sich daher der statistischen Qualitätskontrolle. 
+
+Das Qualitätsniveau wird in der Regel nach ppm (parts per million) festgelegt. Der festgelegte ppm-Wert stellt einen Grenzwert dar, dessen Überschreitung oftmals eine Rückweisung des Loses des jeweiligen Einzelteils bedeutet.
+
+#### Prozessfähigkeitsanalysen
+
+Zur vollständigen Beurteilung eines Produktionsprozesses werden im Wesentlichen vier Fähigkeitsanalysen im Produktentstehungsprozess durchgeführt:
+
+1. Prüfmittelfähigkeit (Prüfprozesseignung)
+2. Maschinenfähigkeit (Kurzzeit-Prozessfähigkeit)
+3. Vorläufige Prozessfähigkeit 
+4. Langzeit-Prozessfähigkeit
+
+Die zeitliche Einordnung der genannten Analysen im Bezug zur Serienvorbereitung und zum Serienanlauf (Start of Production (SOP)) innerhalb des Produktentstehungsprozesses zeigt @fig-prozesseignung.
+
+![Eignungs- und Fähigkeitsanalysen in der zeitlichen Einordnung und Anwendung in Bezug zum Serienanlauf (SOP) und zur Produktion im Produktentstehungsprozess (Quelle: @bracke_technische_2022)](images/428503_1_De_16_Fig2_HTML.png){width=100% #fig-prozesseignung}
+
+#### Nutzen der SPC
+
+SPC dient dazu, ein vordefiniertes Maß an Qualität möglichst kostengünstig einzuhalten. Hingegen ist die SPC ungeeignet, die konstruktive Qualität von Produkten zu erhöhen. Eine über das benötigte Maß hinausgehende Qualitätslage hätte zusätzliche Kosten zur Folge, denen nur ein unwesentlicher zusätzlicher Nutzen zugeordnet wäre. 
+
+Typischerweise liegt das benötigte Maß an fehlerfreien Teilen bei einem Wert von X, was mit relativ geringem Kontrollaufwand und somit niedrigen Kosten zu erreichen ist. Eine Erhöhung der Qualität auf 100 % fehlerfreie Teile würde den Kontrollaufwand jedoch sehr stark erhöhen, und zwar um wesentlich mehr als um die Differenz von 100%-X, da die Gesamtkosten exponentiell mit der gewünschten Qualitätslage steigen (u. a. durch mehr Prüfungen, bessere Prüfgeräte und Produktionsmaschinen, geeignetere Produktionsverfahren usw.). Es wird hierbei von unwirtschaftlichem „Overprovisioning“ gesprochen. 
+
+
+
+::: {.callout-tip}
+## Weiterführende Links
+
++ **Fa. BOSCH**: Eine der besten Quellen (@reynvaan_wie_2022) für weitergehende Informationen, die Ihr Dozent gefunden hat ist so zu finden: Gehen Sie auf die Seite
+
+[https://www.bosch.com/de/unternehmen/supply-chain/informationen-fuer-geschaeftspartner/#qualitaet-regelungen-und-standards](https://www.bosch.com/de/unternehmen/supply-chain/informationen-fuer-geschaeftspartner/#qualitaet-regelungen-und-standards)
+
+Auf dieser Seite scrollen Sie nach unten bis zu dem Thema „Bosch Schriftenreihe: Qualitätsmanagement in der Bosch-Gruppe“. Klicken Sie auf das *"+"* Zeichen rechts. Dann erscheint die Liste dieser Bosch-Hefte, die Sie als *.PDF herunterladen können. Zur Vertiefung der Inhalte in dieser Vorlesung sind die Hefte über SPC, über Versuchsplanung, und Methoden zur Problemlösung zu empfehlen, und zwar dann, wenn Sie selbst ein solches Tool anwenden sollen.
+
+
++ **Six-Sigma**: Auf der sehr gut gemachten Seite [https://www.sixsigmablackbelt.de/](https://www.sixsigmablackbelt.de/) finden Sie ebenfalls viele wertvolle Informationen. Diese Seite enthält auch viele Excel-Sheets zum kostenfreien Herunterladen, mit denen Sie die Berechnungen zu vielen der angegebenen Themen durchführen können, beispielsweise für die Ermittlung des $c_{pk}$-Wertes.
+:::
+
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
++ @bracke_technische_2022: [Statistical Process Control (SPC)](https://rdcu.be/dH7sX)
++ @jakoby_qualitatsmanagement_2022: [Qualitätsmanagement in der Produktrealisierung](https://rdcu.be/dH7Ah)
+
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Literaturempfehlung
+
+-------------------------------------------------------------------------- -->
+
+<!--
+#### Literaturempfehlung
+
+![@bracke_technische_2022: [Technische Zuverlässigkeit](https://link.springer.com/book/10.1007/978-3-662-65015-8)](images/Bracke_Technische_Zuverl%C3%A4ssigkeit.webp){width=40%}
+
+![@bracke_prozessfahigkeit_2016: [Prozessfähigkeit bei der Herstellung komplexer technischer Produkte](https://link.springer.com/book/10.1007/978-3-662-48214-8)](images/Bracke_Prozessf%C3%A4higkeit.webp){width=40%}
+
+![@jakoby_qualitatsmanagement_2022: [Qualitätsmanagement für Ingenieure](https://link.springer.com/book/10.1007/978-3-658-36677-3)](images/Jakoby_Qualitaetsmanagement.webp){width=40%}
+
+![@prorok_statistische_2022: [Statistische Unsicherheit in der industriellen Produktion](https://link.springer.com/book/10.1007/978-3-662-63889-7)](images/Prorok_Statistische_Produktion_978-3-662-63889-7.webp){width=40%}
+
+![@helmold_qualitat_2023: [Qualität neu denken](https://link.springer.com/book/10.1007/978-3-658-40220-4)](images/Helmold_Qualitaet_978-3-658-40220-4.webp){width=40%}
+
+-->
+

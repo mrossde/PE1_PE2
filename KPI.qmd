@@ -1,0 +1,91 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Key-Performance-Indicator
+  - KPI
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+
+<!-- -------------------------------------------------------------------------
+
+                       KPIs
+
+-------------------------------------------------------------------------- -->
+
+### KPIs {#sec-kpi}
+
+::: {.callout-tip}
+## Definition: *"KPI"*
+KPI steht für *"Key Performance Indicator"* (auf Deutsch: Schlüsselkennzahl oder Leistungskennzahl). Ein KPI ist eine messbare Größe oder Metrik, die in Organisationen und Unternehmen verwendet wird, um den Fortschritt oder den Erfolg bei der Erreichung von strategischen Zielen oder Projekten zu verfolgen und zu bewerten.
+:::
+
+KPIs sind wichtige Instrumente zur Leistungsüberwachung und -bewertung und werden in verschiedenen Bereichen und Branchen eingesetzt. Sie dienen dazu, die Leistung in einem bestimmten Bereich oder Aspekt des Geschäfts quantitativ zu erfassen und zu analysieren sowie Trends frühzeitig zu identifizieren. KPIs können dabei helfen, bessere Entscheidungen zu treffen.
+
+Entscheidend dafür ist die Wahl der *"richtigen"* KPIs. Die KPIs sollten hierzu eng mit den strategischen Zielen der Organisation verknüpft sein und objektiv und genau gemessen werden können. 
+
+KPIs können fast alles sein: Hours per Vehicle (HPV) (die Zeit die benötigt wird um ein Auto zu bauen), Kundenzufriedenheit (eine Kennzahl, die die Zufriedenheit der Kunden misst, oft durch Umfragen oder Rückmeldungen, Return on Investment (ROI) (das Verhältnis zwischen den erzielten Gewinnen und den investierten Kosten), …).
+
+<!--
+
+
+::: {.callout-caution}
+## KPIs zur Leistungsmessung
+Vorsicht bei KPIs zur Leistungsmessung aka Bewertung von Personen oder Organisationseinheiten! Es kann passieren dass zur Zielerreichung von den Personen oder Organisationseinheiten die Arbeiten auf das Erreichen der KPIs optimiert werden, ohne dass das eigentliche, mit den KPIs verbundene angestrebte Ziel im Auge behalten wird. Siehe auch: Zielvereinbarungen! (siehe Goodharts Gesetz)
+:::
+
+#### Exkurs: Das Konzept, das Messbarkeit und Messung ein Schlüsselfaktor für Verbesserung sind
+
+The concept that **measurement is essential for improvement** has been expressed by several notable individuals. While the exact phrasing may vary, the underlying idea remains consistent.
+
+1. **Lord Kelvin (William Thomson)**, a prominent physicist and engineer, didn't precisely state the quote you mentioned. However, he did emphasize the significance of measurement in understanding and advancing knowledge. His actual words were: *"When you can measure what you are speaking about, and express it in numbers, you know something about it; but when you cannot measure it, when you cannot express it in numbers, your knowledge is of a meager and unsatisfactory kind; it may be the beginning of knowledge, but you have scarcely, in your thoughts, advanced to the stage of science, whatever the matter may be."*.
+
+2. **H. James Harrington**, a quality management expert, succinctly captured this idea: *"Measurement is the first step that leads to control and eventually to improvement. If you can't measure something, you can't understand it. If you can't understand it, you can't control it. If you can't control it, you can't improve it."*.
+
+3. **W. Edwards Deming**, another influential figure in quality management, emphasized using data to confirm beliefs about management strategies. He didn't mean that measurement was the sole prerequisite for improvement but rather that data-driven insights are crucial for managing and enhancing processes.  *“It is wrong to suppose that if you can’t measure it, you can’t manage it."* [W. Edwards Deming]. Deming consistently cautioned against requiring measurement to guide management decisions, observing that the most important data needed to manage often are unknown and unknowable.
+
+In summary, whether attributed to Lord Kelvin, H. James Harrington, or Dr. Deming, the message remains clear: **measurement is the foundation for progress and enhancement**.
+
+-->

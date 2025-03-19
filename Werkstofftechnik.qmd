@@ -1,0 +1,249 @@
+<!--
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Werkstofftechnik
+  - Werkstoffklassen
+  - Härte
+  - Festigkeit
+
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: true
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Materialermüdung
+
+-------------------------------------------------------------------------- -->
+
+
+::: {.content-visible unless-meta="headlines.off"}
+# Grundlagen
+## Technische Grundlagen
+:::
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+<!--
+::: {.callout-warning}
+## WARNING!
+**THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+### Werkstofftechnik (in a nutshell) {#sec-werkstofftechnik}
+
+::: {.callout-tip}
+## Definition: *"Werkstofftechnik"*
+Die [Materialwissenschaft und Werkstofftechnik](https://de.wikipedia.org/wiki/Materialwissenschaft_und_Werkstofftechnik), kurz: Werkstofftechnik beschäftigt sich mit dem Schaffen von Verständnis über die Eigenschaften, die Verarbeitung und das Verhalten von Werkstoffen.
+:::
+
+::: {.callout-tip}
+## Definition: *"Werkstoff"*
+[Werkstoffe](https://de.wikipedia.org/wiki/Werkstoff) im engeren Sinne nennt man Materialien im festen Aggregatzustand, aus denen Bauteile hergestellt werden können.
+:::
+
+<!--
+- **Oberflächenbehandlungen**: Härte lässt sich durch Verfahren wie Härten, Nitrieren, Anlassen oder Beschichten gezielt an der Oberfläche erhöhen oder vermindern .
+- **Materialverschleiß**: Bei Produkten, die Verschleiß ausgesetzt sind, kann die Härte der Oberfläche über die Lebensdauer des Produkts zeitabhängig lokal stark verändert sein.
+
+Härte ist sowohl eine fundamentale Werkstoffeigenschaft als auch eine wichtige Oberflächeneigenschaft, die sich durch gezielte Oberflächenbehandlung mittels geeigneter Fertigungsverfahren in Funktionsbereichen anpassen lässt.
+-->
+
+Werkstoffe beeinflussen entscheidend die Funktionalität, Sicherheit, Effizienz und Langlebigkeit von Produkten. Die Werkstofftechnik ist somit eine unabdingbare Wissenschaft für die Entwicklung technischer Produkte. 
+
+<!-- -------------------------------------------------------------------------
+
+                       Werkstoffklassen
+
+-------------------------------------------------------------------------- -->
+#### Werkstoffklassen
+
+Werkstoffe lassen sich in vier Hauptklassen unterteilen: **Metalle**, **Keramiken**, **Polymere** und **Verbundwerkstoffe**.
+
+- **[Metalle](https://de.wikipedia.org/wiki/Metalle)**: Metalle wie Stahl, Aluminium und Titan haben eine hohe Festigkeit, Zähigkeit und sind gut bearbeitbar. Sie eignen sich besonders für Anwendungen, die hohe Belastbarkeit und Formbarkeit erfordern. Metalle sind elektrisch leitfähig und werden oft wärmebehandelt, um ihre mechanischen Eigenschaften gezielt anzupassen.
+  
+- **Keramiken**: Keramiken wie Aluminiumoxid, Siliziumkarbid und Zirkonoxid zeichnen sich durch ihre Härte, Hitzebeständigkeit und chemische Stabilität aus. Allerdings sind sie spröde und schwer zu verarbeiten, was ihre Anwendung oft auf spezialisierte Bereiche mit hohen Anforderungen an Härte und Verschleißfestigkeit beschränkt.
+
+- **Polymere**: Polymere wie Polyethylen, Polypropylen und Polycarbonat sind leicht, kostengünstig und oft flexibel. Sie haben jedoch eine begrenzte Hitzebeständigkeit und neigen zur Alterung durch UV-Strahlung und chemische Einflüsse. Durch Modifikationen wie Verstärkungen (z. B. glasfaserverstärktes Polypropylen) kann ihre Festigkeit verbessert werden.
+
+- **Verbundwerkstoffe**: Diese Werkstoffe bestehen aus zwei oder mehr Materialien, um die Eigenschaften der einzelnen Komponenten zu kombinieren. Bekannte Beispiele sind faserverstärkte Kunststoffe wie CFK (carbonfaserverstärkter Kunststoff), die hohe Festigkeit und geringes Gewicht vereinen, und häufig in der Luft- und Raumfahrt eingesetzt werden.
+
+<!-- -------------------------------------------------------------------------
+
+                       Mechanische Eigenschaften
+
+-------------------------------------------------------------------------- -->
+#### Mechanische Eigenschaften
+
+Mechanische Eigenschaften bestimmen, wie Werkstoffe auf äußere Belastungen reagieren, und sind deshalb grundlegende Kenngrößen:
+
+- **Festigkeit**: Die Festigkeit gibt die maximale Belastung an, die ein Material ertragen kann, bevor es versagt. Je nach Art der Beanspruchung unterscheidet man Zugfestigkeit, Druckfestigkeit und Scherfestigkeit. Ingenieure müssen die Festigkeit kennen, um Bauteile so zu dimensionieren, dass sie den Belastungen standhalten.
+
+- **Härte**: Härte beschreibt den Widerstand eines Materials gegenüber dem Eindringen eines härteren Körpers. Sie ist eng mit der Verschleißfestigkeit verbunden und kann durch Härteprüfungen wie z.B. Rockwell (HR) oder Vickers (HV) gemessen werden.
+
+- **Duktilität und Zähigkeit**: Duktilität ist die Fähigkeit eines Materials, sich plastisch zu verformen, bevor es bricht. Zähigkeit beschreibt das Energieabsorptionsvermögen eines Materials, bevor es bricht, und ist besonders wichtig für Werkstoffe, die stoßartigen Belastungen ausgesetzt sind.
+
+- **Elastizitätsmodul**: Dieser beschreibt die Steifigkeit eines Materials und das Verhältnis von Spannung zu Dehnung im elastischen Bereich. Materialien mit einem hohen Elastizitätsmodul, wie Stahl, verformen sich unter Belastung weniger als Materialien mit niedrigem Modul, wie Aluminium.
+
+##### Exkurs: Härte
+
+::: {.callout-tip}
+## Definition: *"Härte"*
+[Härte](https://de.wikipedia.org/wiki/H%C3%A4rte) beschreibt das Widerstandspotenzial eines Werkstoffs gegenüber plastischer Verformung, wenn eine äußere Kraft auf den Werkstoff einwirkt. 
+:::
+
+Härte ist primär eine Werkstoffeigenschaft. Härte wird dabei durch den Werkstoff selbst bestimmt – also durch dessen chemische Zusammensetzung, dessen Mikrostruktur (z.B. Kristallgitter) und die bei dessen Fertigung verwendeten Fertigungsverfahren, insbesondere der Verfahren zum [Urformen](https://de.wikipedia.org/wiki/Urformen).
+
+Jedoch kann die Härte auch als Oberflächeneigenschaft eines Produkts betrachtet werden, da sie bei vielen Werkstoffen durch gezielt eingesetzte Fertigungsverfahren (siehe → DIN 8580 @sec-din8580, Hauptgruppe "[Stoffeigenschaften ändern](https://de.wikipedia.org/wiki/Stoffeigenschaften_%C3%A4ndern)") (lokal) verändert werden kann, sich aber auch über die Lebensdauer des Produkts (ungewollt) verändern kann.
+
+In der Werkstoffkunde, speziell bei Metallen, werden zur Messung der Härte vor allem Prüfverfahren eingesetzt, welche die Eindringhärte messen. Dabei werden genormte Prüfkörper unter festgelegten Bedingungen in das Werkstück gedrückt. Im Anschluss wird die Oberfläche oder Tiefe des bleibenden Eindruckes gemessen. Gebräuchlich sind die Härteprüfverfahren und Härteskalen Martens (Universalhärte), [Rockwell (HR)](https://de.wikipedia.org/wiki/H%C3%A4rte#Rockwell_(HR)), Brinell und [Vickers (HV)](https://de.wikipedia.org/wiki/H%C3%A4rte#Vickers_(HV)).
+
+
+##### Exkurs: Festigkeit
+::: {.callout-tip}
+## Definition: *"Festigkeit"*
+[Festigkeit](https://de.wikipedia.org/wiki/Festigkeit) eines Werkstoffes beschreibt die Beanspruchbarkeit durch mechanische Belastungen, bevor es zu einem Versagen kommt.
+:::
+
+Festigkeit wird angegeben als **mechanische Spannung (Kraft pro Querschnittsfläche)**. Das Versagen kann eine unzulässige Verformung sein, insbesondere eine plastische (bleibende) Verformung oder auch ein Bruch. Die Festigkeit ist definiert als die maximale (technische) Spannung, der ein Werkstoff während seiner Verformung widersteht.
+
+::: {.callout-warning}
+## Härte und Festigkeit sind weitgehend voneinander unabhängige Werkstoffeigenschaften!
+Die Härte eines Werkstoffs hat nur bedingt etwas mit dessen Festigkeit zu tun.
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Thermische Eigenschaften
+
+-------------------------------------------------------------------------- -->
+#### Thermische Eigenschaften
+
+Thermische Eigenschaften sind für viele Anwendungen entscheidend:
+
+- **Wärmeleitfähigkeit**: Gibt an, wie gut ein Material Wärme leitet. Metalle (z.B. Cu, Al) haben eine hohe Wärmeleitfähigkeit und werden daher oft für Kühlkörper und Wärmetauscher verwendet. Keramische Werkstoffe zeichnen sich hingegen durch oft durch geringe Wärmeleitfähigkeit aus und werden entsprechend oft zur thermischen Isolation verwendet.
+
+- **Wärmeausdehnung**: Beschreibt, wie stark sich ein Material bei Erwärmung ausdehnt. 
+
+::: {.callout-warning}
+## Vorsicht bei aus verschiedenen Werkstoffen zusammengesetzten Bauteilen!
+In einem Produkt verbaute Werkstoffe mit unterschiedlichen [Wärmeausdehnungskoeffizienten](https://de.wikipedia.org/wiki/W%C3%A4rmeausdehnung) können zu Rissen im Produkt führen und das Produkt schädigen oder sogar zerstören (siehe → Umweltqualifizierung @sec-umwelt) 
+:::
+
+- **Schmelzpunkt**: Der Schmelzpunkt beeinflusst die Verarbeitbarkeit und die maximal mögliche Betriebstemperatur. Keramiken haben oft hohe Schmelzpunkte und sind daher für Hochtemperaturanwendungen geeignet. 
+
+::: {.callout-tip}
+## Tipp: Schmelzpunkte bei Halbleitern
+Halbleiter weisen fast ausnahmslos Schmelzpunkte über 1000°C auf (z.B. Si ~1414°C, GaAs ~1238°C, SiC ~2830°C, Ga₂O₃ ~1900°C), doch ist eine effiziente Funktion nur in einem begrenzten Temperaturbereich (typisch: (0…100)°C) möglich. Zudem schmelzen oder versagen Lötdrähte und Verbindungsmaterialien (z. B. Zinn-Blei-Legierungen) oft bei Temperaturen über (150…200)°C. Bei diesen Temperaturen beginnen sich ebenfalls Kunststoffgehäuse und Isolationsmaterialien zu verformen oder zersetzen.
+:::
+
+#### Verarbeitung und Fertigungstechniken
+
+Die Art und Weise, wie ein Werkstoff hergestellt und bearbeitet wird, hat einen direkten Einfluss auf seine Mikrostruktur und damit auf seine Eigenschaften. Die Eigenschaften von Werkstoffen werden durch die verwendeten Fertigungsverfahren zu einem erheblichen Anteil mitbestimmt (siehe → [DIN 8580 "Fertigungsverfahren"](https://de.wikipedia.org/wiki/Fertigungsverfahren#Hauptgruppen_nach_DIN_8580) @sec-din8580).
+
+<!--
+
+- **Gießen**: Gießen ist besonders für Metalle geeignet und ermöglicht die Herstellung komplexer Formen. Es erfordert jedoch eine Nachbearbeitung zur Verbesserung der Oberflächenqualität und oft eine Wärmebehandlung zur Spannungsreduzierung.
+
+- **Umformen**: Verfahren wie Walzen, Schmieden und Tiefziehen verändern die Mikrostruktur des Werkstoffs und können die Festigkeit durch Verfestigung erhöhen.
+
+- **Schweißen und Löten**: Diese Fügetechniken sind für Metalle und einige Kunststoffe geeignet, jedoch oft kritisch hinsichtlich der entstehenden Wärme und der damit verbundenen strukturellen Veränderungen.
+
+- **3D-Druck (Additive Fertigung)**: Ermöglicht die flexible Herstellung komplexer Geometrien aus verschiedenen Werkstoffen, von Kunststoffen bis zu Metallen. Die Nachbearbeitung und Oberflächenveredelung sind jedoch oft notwendig, um die gewünschten mechanischen Eigenschaften zu erreichen.
+
+-->
+
+<!--
+### Werkstoffauswahl und Nachhaltigkeit
+
+Die Wahl des richtigen Werkstoffs ist entscheidend, um Funktionalität, Kosten und Nachhaltigkeit zu optimieren:
+
+- **Leichtbau**: Materialien mit hoher Festigkeit bei geringem Gewicht, wie Aluminium und Verbundwerkstoffe, sind in der Luftfahrt und Automobilindustrie gefragt. Leichtbau spart Ressourcen und Energie und reduziert Emissionen.
+  
+- **Kreislaufwirtschaft und Recycling**: Werkstoffe, die gut recycelbar sind, wie Aluminium und Stahl, gewinnen an Bedeutung, da Nachhaltigkeit in der Produktgestaltung immer wichtiger wird. Polymere und Verbundwerkstoffe stellen oft Herausforderungen im Recycling dar.
+-->
+
+#### Versagen und Lebensdaueranalyse
+
+- **Materialermüdung**:  (siehe → Materialermüdung @sec-materialermuedung).
+  
+- **Kriechen**: Unter dauerhafter Belastung bei hoher Temperatur verformt sich ein Material langsam und plastisch. Dieser Effekt tritt vor allem bei Metallen und Kunststoffen auf und ist bei Hochtemperaturanwendungen relevant.
+
+- **Bruchmechanik**: Wiederholte mechanische Belastungen führen zu Mikro-Rissbildung und schließlich zum Ermüdungsbruch (siehe → Betriebsfestigkeit @sec-betriebsfestigkeit). Die Bruchmechanik hilft, das Verhalten von Werkstoffen bei Rissbildung zu analysieren (siehe → Bruchtheorie @sec-bruchtheorie). Betriebsfestigkeit und Verständnis der Bruchmechanik sind entscheidend für die Sicherheitsbewertung von Bauteilen in kritischen Anwendungen.
+
+<!-- -------------------------------------------------------------------------
+
+                       Korrosion und Umwelteinflüsse
+
+-------------------------------------------------------------------------- -->
+
+##### Exkurs: Korrosion
+
+Korrosion ist ein besonders wichtiger Faktor bei der Materialwahl, insbesondere in aggressiven Umgebungen (siehe → Umweltqualifizierung @sec-umwelt). Korrosion tritt auf, wenn ein Material durch chemische oder elektrochemische Reaktionen abgebaut wird. Es gibt verschiedene Arten von Korrosion:
+
+- **Rostbildung**: Bei Metallen wie Stahl führt Kontakt mit Wasser und Sauerstoff zur Bildung von Eisenoxid (Rost).
+- **Spannungsrisskorrosion**: Tritt auf, wenn Material unter Spannung in einer korrosiven Umgebung ist.
+- **Interkristalline Korrosion**: Betrifft die Korngrenzen des Materials und tritt häufig bei bestimmten Stählen auf, die unsachgemäß wärmebehandelt (siehe → DIN 8580 @sec-din8580) wurden.
+
+Zum Schutz vor Korrosion können Maßnahmen wie z.B. (passive) Beschichtungen und (aktiver) kathodischer Korrosionsschutz angewendet werden.
+
+
+<!--
+### Zukunftstrends in der Werkstoffwissenschaft
+
+Innovationen in der Werkstoffwissenschaft konzentrieren sich zunehmend auf die Entwicklung **neuer, maßgeschneiderter Werkstoffe** und **smarter Materialien**:
+
+- **Nanomaterialien**: Durch den Einsatz von Nanotechnologie können Materialien mit außergewöhnlichen mechanischen, elektrischen und thermischen Eigenschaften geschaffen werden.
+  
+- **Biokompatible Werkstoffe**: In der Medizintechnik werden Werkstoffe entwickelt, die biokompatibel und oft bioabbaubar sind, wie spezielle Polymere für Implantate.
+  
+- **Energieeffiziente Werkstoffe**: Materialien mit hoher Wärmeleitfähigkeit oder piezoelektrische Eigenschaften finden Anwendung in Energiesystemen und tragen zur Verbesserung der Energieeffizienz bei.
+
+Zusammenfassend ist die Werkstoffwissenschaft für Ingenieure eine interdisziplinäre Grundlage, um die richtige Wahl der Werkstoffe zu treffen und damit die Effizienz, Sicherheit und Nachhaltigkeit ihrer Produkte zu maximieren. Ein fundiertes Verständnis dieser Themen ist der Schlüssel zu Innovation und Optimierung in der Technik.
+-->

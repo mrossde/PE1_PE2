@@ -1,0 +1,154 @@
+<!--
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Simulation
+
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: true
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 2
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Simulation
+
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Entwurfs- und Entwicklungsphase
+:::
+
+## Simulation {#sec-simulation}
+
+<!--
+In diesem Kapitel geht es um die Simulation mit Schwerpunkt deren Einsatzes in der Entwurfs- und Entwicklungsphase im Produktentstehungsprozess. 
+-->
+
+![Finite-Elemente-Simulation der Wärmeverteilung in einem Pumpengehäuse. Die „finiten Elemente“ sind mit den Elementkanten als schwarze Linien zu erkennen (Quelle: [Wikipedia](https://de.wikipedia.org/wiki/Finite-Elemente-Methode)).](images/Elmer-pump-heatequation.png){width=60% #fig-introsimulation}
+
+---
+
+> *„Alle Modelle sind falsch. Aber einige Modelle sind hilfreich.“ (Quelle: Unbekannt)*
+
+---
+
+[Simulationen](https://de.wikipedia.org/wiki/Simulation) werden in verschiedenen Bereichen eingesetzt, darunter Ingenieurwissenschaften, Medizin, Wirtschaft und Finanzen, Verkehr, Militär, Umweltschutz und Klimaforschung und vieles mehr. Sie dienen dazu, komplexe Systeme zu verstehen, Entscheidungsfindung zu unterstützen und Training oder Schulung durchzuführen.
+
+::: {.callout-tip}
+## Definition: *"Simulation"*
+Eine Simulation ist eine nachgeahmte oder modellierte Darstellung eines realen Systems, Prozesses oder Phänomens mithilfe von mathematischen, computergestützten oder physischen Modellen. Ziel der Simulation ist es, die Funktionsweise oder das Verhalten des realen Systems in einer kontrollierten Umgebung zu untersuchen, um Erkenntnisse zu gewinnen, Vorhersagen zu treffen oder Entscheidungen zu unterstützen, ohne das tatsächliche System direkt zu beeinflussen.
+:::
+
+Beispiele für Simulationen sind vielfältig und reichen von der Modellierung von technischen und physikalischen Systemen^[siehe → [Matlab Simulink](https://de.wikipedia.org/wiki/Simulink)], der Nachbildung des Verhaltens analoger und digitaler elektrischer Schaltkreise^[siehe → [SPICE](https://de.wikipedia.org/wiki/SPICE_(Software)), → [LTspice](https://de.wikipedia.org/wiki/LTspice)] über virtuelle Crashtests in der Automobilentwicklung, bis zu Wirtschaftsmodellen, die die Auswirkungen von Wirtschaftspolitik auf die Märkte analysieren. Auch die moderne Klimaforschung und -vorhersage basiert nahezu vollständig auf Simulationen. 
+
+Die Verwendung von Simulationen ermöglicht es, komplexe Zusammenhänge zu verstehen, Risiken zu minimieren und fundierte Entscheidungen zu treffen, ohne reale Ressourcen zu verbrauchen oder potenzielle Risiken eingehen zu müssen.
+
+
+#### Schlüsselmerkmale einer Simulation:
+
+1. **Modellbildung:** Simulationen erfordern die Entwicklung eines Modells, das die wesentlichen Merkmale und Eigenschaften des realen Systems widerspiegelt. Dieses Modell kann mathematische Gleichungen, Algorithmen, Computerprogramme, physische Modelle oder eine Kombination dieser Elemente umfassen. 
+
+::: {.callout-caution}
+## Randbedingungen unbedingt hohe Aufmerksamkeit und Sorgfalt zukommen lassen!
+Wichtig bei allen Simulationen ist, die Randbedingungen (Anschlussbedingungen) an den Grenzen der Simulation richtig zu wählen. Die Randbedingungen sind ein fundamentaler Bestandteil jeder Simulation!
+:::
+
+2. **Kontrollierte Umgebung:** Die Simulation erfolgt in einer kontrollierten Umgebung, die die Bedingungen des realen Systems nachbildet. Dies ermöglicht es, verschiedene Szenarien und Bedingungen zu testen, ohne Risiken "in real life".
+
+3. **Experimente und Analyse:** Mit der Simulation können Experimente durchgeführt werden, um das Verhalten des Systems unter verschiedenen Bedingungen zu untersuchen. Die Ergebnisse werden analysiert, um Einblicke und Erkenntnisse zu gewinnen. Dies ist besonders nützlich, wenn Experimente in der realen Welt teuer, gefährlich, zeitintensiv oder gar unmöglich sind.
+
+4. **Zeitskalen:** Simulationen können in verschiedenen Zeitskalen erfolgen, von Echtzeitsimulationen, die das System in Echtzeit abbilden (siehe: "Hardware in the Loop", HiL^[Hardware in the Loop (HiL, auch HIL, HitL, HITL) bezeichnet ein Verfahren, bei dem ein eingebettetes System (z. B. reales elektronisches Steuergerät oder reale mechatronische Komponente, die Hardware) über seine Ein- und Ausgänge an ein angepasstes Gegenstück angeschlossen und getestet wird. Letzteres heißt im Allgemeinen HiL-Simulator und dient als Nachbildung der realen Umgebung des Systems. Hardware in the Loop ist aus Sicht des Tests eine Methode zum Absichern von eingebetteten Systemen, zur Unterstützung während der Entwicklung sowie zur vorzeitigen Inbetriebnahme von Maschinen und Anlagen. Wird nicht die Zielhardware eingesetzt und lediglich eine Simulation der Software durchgeführt, spricht man von Software in the Loop.]), bis hin zu beschleunigten oder verlangsamten Simulationen, um sehr langsame oder sehr schnelle Prozesse zu untersuchen.
+
+::: {.callout-important}
+## Simulationen sind extrem leistungsfähige Werkzeug zum Schaffen von Verständnis komplexer Systeme!
+Wesentlicher Vorteil der Simulation ist, dass die Simulation Zugang zu in der Praxis verborgenen Abläufen und Zusammenhängen schafft und so das gezielte Optimieren von Systemen erst ermöglicht. Dies gilt insbesondere für die Gruppe der [Finite-Elemente-Simulationen](https://de.wikipedia.org/wiki/Finite-Elemente-Methode) (siehe → FEM @sec-fem).
+:::
+
+
+<!-- -------------------------------------------------------------------------
+
+                        Hardware in the Loop, HiL
+
+-------------------------------------------------------------------------- -->
+
+
+#### Exkurs: Hardware-in-the-Loop
+"[Hardware in the Loop](https://de.wikipedia.org/wiki/Hardware_in_the_Loop)" (HIL) ist eine Technik, die in der Elektronik- und Systementwicklung verwendet wird, um die Leistung und Funktion von Hardwarekomponenten in einer realen Umgebung zu testen und zu überprüfen. Es handelt sich um einen Testansatz, bei dem echte Hardwarekomponenten in Simulationsumgebungen integriert werden, um deren Verhalten und Interaktionen mit anderen Systemkomponenten zu analysieren.
+
+Die grundlegende Idee hinter HIL-Tests besteht darin, eine "geschlossene Schleife" zwischen der zu testenden Hardware und einer Computersimulation herzustellen. Dies ermöglicht es, die Hardware in einer Umgebung zu testen, die nahezu realistisch ist, ohne tatsächlich das gesamte physische System zu benötigen, das die Hardware normalerweise antreiben würde. Als wichtigste Merkmale von HiL-Tests sind zu nennen:
+
+1. **Hardware-Integration**: Im HIL-Test werden echte Hardwarekomponenten, wie Sensoren, Aktoren oder Steuergeräte, in eine Simulationsumgebung eingebunden. Diese Hardware wird oft als "HIL-Prüfling" bezeichnet.
+
+2. **Simulationsumgebung**: Die Hardware wird in eine computergesteuerte Simulationsumgebung integriert, in der ein virtuelles Modell des Gesamtsystems existiert. Dieses Modell umfasst normalerweise alle Komponenten, die mit der Hardware interagieren würden.
+
+3. **Interaktion und Tests**: Die echte Hardware interagiert mit dem virtuellen Modell und führt Tests durch, um das Verhalten der Hardware unter verschiedenen Bedingungen zu überprüfen. Dies können Tests zur Überprüfung von Leistung, Zuverlässigkeit, Reaktionsfähigkeit und Sicherheit sein.
+
+4. **Realitätsnahe Bedingungen**: HIL-Tests ermöglichen die Erzeugung realitätsnaher Bedingungen und Szenarien, die in der tatsächlichen Anwendung der Hardware auftreten würden. Dies ermöglicht es, das Verhalten der Hardware unter realen Bedingungen zu testen, ohne tatsächlich ein vollständiges physisches System aufbauen zu müssen.
+
+5. **Kosteneffizienz**: HIL-Tests können kostengünstiger sein als die Verwendung echter Prototypen oder vollständiger Systeme für Tests, da sie die Wiederverwendung von Hardwarekomponenten und die Durchführung von Tests in einer kontrollierten Umgebung ermöglichen.
+
+HIL-Tests werden in verschiedenen Branchen und Anwendungen eingesetzt, darunter die Automobilindustrie (z.B. zur Prüfung von Steuergeräten und Fahrzeugsystemen), die Luft- und Raumfahrt (z.B. zur Überprüfung von Flugzeug- und Raumfahrzeugausrüstungen), die Energieindustrie (z.B. zur Prüfung von Stromerzeugungsanlagen) und viele andere. Sie sind ein wichtiger Bestandteil des Entwicklungs- und Testprozesses, um sicherzustellen, dass Hardwarekomponenten ordnungsgemäß funktionieren und den Anforderungen entsprechen.
+
+Neben "Hardware in the Loop" existiert auch "[Software in the Loop](https://de.wikipedia.org/wiki/Software_in_the_Loop)". Bei Software in the Loop wird - anders als bei "Hardware in the Loop" keine besondere Hardware benötigt um Software, die auf spezieller Hardware laufen soll, zu testen.
+
+
+
+#### Typische Anwendungsfälle einer Simulation:
+
+1. **Vorhersage:** Durch die Ausführung von Simulationen können Vorhersagen darüber getroffen werden, wie das reale System in der Zukunft reagieren wird. Dies ist besonders relevant in Bereichen wie Wettervorhersage, Finanzmärkten, Verkehrssystemen und Produktionsplanung.
+
+2. **Analyse und Optimierung:** Simulationen werden oft verwendet, um komplexe Systeme zu analysieren und zu optimieren. Dies kann helfen, Engpässe zu identifizieren, Ressourcen besser zuzuweisen oder Prozesse zu verbessern.
+
+3. **Training und Bildung:** Simulationen werden auch in der Ausbildung und Bildung eingesetzt, um praktische Erfahrungen zu vermitteln, ohne reale Risiken einzugehen. Beispiele hierfür sind Flugsimulatoren für Piloten oder medizinische Simulatoren für Ärzte.
+
+4. **Entscheidungsunterstützung:** Simulationen können dazu beitragen, fundierte Entscheidungen zu treffen, indem sie die Auswirkungen verschiedener Handlungsstrategien oder Szenarien bewerten. Dies ist in der Unternehmensplanung und -strategie sowie in der Politikgestaltung von Bedeutung.
+
+Simulationen sind mächtige Werkzeuge, um komplexe Systeme zu verstehen, zu analysieren und zu steuern. Sie bieten die Möglichkeit, reale Situationen zu modellieren, ohne die Risiken und Kosten realer Experimente einzugehen, und sind daher in vielen Bereichen von großem Nutzen.
+
+::: {.callout-caution}
+## Den für eine Simulation erforderlichen Aufwand niemals unterschätzen!
+Der Aufwand einer Simulation kann - je nach Detaillierungsgrad - vergleichbar sein zu dem Aufwand eines des Aufbaus und Tests an einem realen System. Die Annahme durch digitale Modell (z.B. im Produktentstehungs- oder Produktionsplanungsprozess) Arbeitsaufwand zu sparen ist also zumeist nicht zutreffend (anders als dies dem Management gerne erzählt wird). Der Aufwand kann jedoch auf frühe Phasen im Produktentstehungsprozess verschoben werden. Dies ermöglicht es, Fehler frühzeitig zu erkennen (→ rule of ten^[Die Zehnerregel der Fehlerkosten oder *"rule of ten"* sagt aus, daß sich die Fehlerkosten für einen nicht entdeckten Fehler von Stufe zu Stufe der Wertschöpfung um den Faktor 10 erhöhen. Je früher ein Fehler entdeckt und beseitigt wird, desto kostengünstiger ist dies für die Organisation.] @sec-rule-of-10).
+:::
+
+Das Spektrum der Simulationsmethoden reicht dabei von sehr erfolgreichen, auf Zufallszahlen basierenden Ansätzen (siehe → Monte-Carlo-Simulation @sec-montecarlosimulation) bis hin zu vollständig deterministischen Modellen Die im Produktentstehungsprozess wichtigste Gruppe der Simulationsmethoden sind dabei heute die [Finite-Elemente-Methoden](https://de.wikipedia.org/wiki/Finite-Elemente-Methode) (siehe → FEM @sec-fem).
+
+<!-- -------------------------------------------------------------------------
+
+                       Nächstes Kapitel: Finite-Elemente-Simulation
+
+-------------------------------------------------------------------------- -->

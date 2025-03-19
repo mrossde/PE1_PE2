@@ -1,0 +1,48 @@
+
+<!-- -------------------------------------------------------------------------
+
+                       Datenintegrität
+
+-------------------------------------------------------------------------- -->
+
+### Datenintegrität
+
+---
+
+*Author: Christian Anders*
+
+*Version: 2024-02-26*
+
+---
+
+Datenintegrität bezieht sich auf die Genauigkeit und Konsistenz von Daten über ihren gesamten Lebenszyklus hinweg. Es ist ein wichtiges Konzept in der Datenverarbeitung und Informationssicherheit und beinhaltet den Schutz vor unbefugter Datenmanipulation, unerwünschter Änderung oder Beschädigung von Daten. Datenintegrität stellt sicher, dass die Daten genau, vollständig und unverändert bleiben und dass sie vor Verlust und unbefugter Manipulation geschützt sind. 
+
+Im Wesentlichen beinhaltet Datenintegrität folgende Aspekte:
+
+1\. \*\*Korrektheit:\*\* Die Daten müssen korrekt und genau sein, d.h. sie müssen den tatsächlichen Zustand der realen Welt oder des zugrunde liegenden Systems widerspiegeln.
+
+2\. \*\*Vollständigkeit:\*\* Die Daten müssen vollständig sein und dürfen keine Lücken oder fehlenden Teile enthalten, die ihre Bedeutung oder Interpretation beeinträchtigen könnten.
+
+3\. \*\*Sicherheit:\*\* Die Daten müssen vor unbefugtem Zugriff, Änderungen oder Beschädigungen geschützt sein, um sicherzustellen, dass nur autorisierte Benutzer die Daten ändern können.
+
+4\. \*\*Konsistenz:\*\* Die Daten müssen konsistent sein, d.h. sie müssen unter Berücksichtigung aller Zusammenhänge und Abhängigkeiten in einem System oder einer Datenbank sinnvoll und widerspruchsfrei bleiben.
+
+Die Aufrechterhaltung der Datenintegrität ist von entscheidender Bedeutung, um die Zuverlässigkeit von Daten sicherzustellen und sicherzustellen, dass Entscheidungen und Prozesse auf der Grundlage genauer und zuverlässiger Informationen getroffen werden. Zur Gewährleistung der Datenintegrität werden verschiedene Techniken und Maßnahmen eingesetzt, darunter:
+
+1\. \*\*Zugriffskontrolle:\*\* Implementierung von strengen Zugriffssteuerungen und Berechtigungen, um sicherzustellen, dass nur autorisierte Benutzer auf die Daten zugreifen und diese ändern können.
+
+2\. \*\*Datensicherung und Wiederherstellung:\*\* Regelmäßige Sicherung von Daten, um im Falle von Datenverlusten, Beschädigungen oder unerwünschten Änderungen auf eine saubere Version zurückgreifen zu können.
+
+3\. \*\*Verschlüsselung:\*\* Nutzung von Verschlüsselungstechnologien, um Daten vor unbefugtem Zugriff zu schützen und sicherzustellen, dass nur autorisierte Benutzer die Daten entschlüsseln und lesen können.
+
+4\. \*\*Hashing und Prüfsummen:\*\* Verwendung von Hashfunktionen und Prüfsummen, um die Integrität von Daten zu überprüfen und sicherzustellen, dass keine unerwünschten Änderungen an den Daten vorgenommen wurden.
+
+5\. \*\*Datenvalidierung:\*\* Implementierung von Mechanismen zur Datenvalidierung, um sicherzustellen, dass die eingegebenen Daten den erwarteten Formaten und Kriterien entsprechen.
+
+6\. \*\*Protokollierung und Überwachung:\*\* Einrichtung von Protokollen und Überwachungssystemen, um Änderungen an den Daten zu erfassen und verdächtige oder ungewöhnliche Aktivitäten zu identifizieren.
+
+7\. \*\*Redundanz und Fehlerkorrektur:\*\* Implementierung redundanter Speicherung von Daten und Fehlerkorrekturmechanismen, um Datenwiederherstellung und Fehlerbehebung im Falle von Beschädigungen oder Fehlern zu ermöglichen.
+
+8\. \*\*Regelmäßige Überprüfung und Wartung:\*\* Durchführung regelmäßiger Audits, Überprüfungen und Wartungsarbeiten, um sicherzustellen, dass die Systeme, die die Daten speichern und verarbeiten, ordnungsgemäß funktionieren und keine Integritätsprobleme auftreten.
+
+Durch die Implementierung dieser Maßnahmen können Organisationen sicherstellen, dass ihre Daten vor unbefugtem Zugriff und unerwünschten Änderungen geschützt sind und die Integrität der Daten über ihren gesamten Lebenszyklus hinweg gewahrt bleibt.

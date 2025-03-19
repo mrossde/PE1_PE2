@@ -1,0 +1,457 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Projekt
+  - Projektziel
+  - DoD
+  - Projektphasen
+  - Moving Targets
+  - AKV
+  - Weisungs- und Entscheidungsbefugnis
+  - Integrity
+  - Compliance
+  - Geist des Vertrags
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+
+<!-- -------------------------------------------------------------------------
+
+                       PROJEKT
+
+-------------------------------------------------------------------------- -->
+
+### Projekt {#sec-projekt}
+
+::: {.callout-warning}
+*"The first step of any project is to grossly underestimate its complexity and difficulty." ([Nicoll Hunt](https://x.com/nicollhunt))*
+:::
+
+#### Definition Projekt
+
+Auch wenn ständig und nahezu überall von Projekten gesprochen wird, ist der Begriff *"Projekt"* nicht ganz einfach zu fassen:
+
+::: {.callout-tip}
+## Versuch einer Definition: *"Projekt"*
+Ein Projekt ist eine zeitlich begrenzte und organisierte Anstrengung, die darauf abzielt, ein bestimmtes Ziel zu erreichen. Es handelt sich um eine eindeutig definierte Aufgabe oder eine Reihe von Aufgaben, die einen spezifischen Anfangs- und Endpunkt haben. Projekte werden in der Regel durchgeführt, um einzigartige Produkte, Dienstleistungen oder Ergebnisse zu schaffen und beinhalten eine Reihe von geplanten Aktivitäten, Ressourcen und Einschränkungen. Projekte zeichnen sich durch ihre Einmaligkeit, Komplexität und Zielorientierung aus. Projekte erfordern in der Regel eine Projektorganisation, eine klare Definition von Aufgaben und Verantwortlichkeiten, sowie ein effektives [Projektmanagement](https://de.wikipedia.org/wiki/Projektmanagement), um das gewünschte Ergebnis innerhalb der vorgegebenen Zeit, Kosten und Qualität zu erreichen.
+:::
+
+Der Begriff des Projekts ist darüber hinaus in der Literatur auf vielfältige Weise teilweise mit anderen Schwerpunkten definiert:
+
+- „Eine sachlich und zeitlich begrenzte Aufgabe, die interdisziplinär angegangen wird.“
+- „Ein zeitlich definiertes und begrenztes Vorhaben mit dem Ziel, ein einmaliges Produkt, eine Dienstleistung oder ein Ergebnis zu schaffen.“ (Quelle: PMBOK Guide des amerikanischen Project Management Institute)
+- „Vorhaben, das im Wesentlichen durch die Einmaligkeit aber auch Konstante der Bedingungen in ihrer Gesamtheit gekennzeichnet ist, wie z.B. Zielvorgabe, zeitliche, finanzielle, personelle und andere Begrenzungen; Abgrenzung gegenüber anderen Vorhaben; projektspezifische Organisation.“ [Quelle: DIN 69901 des Deutschen Instituts für Normung e.V.]
+- Eine für einen befristeten Zeitraum geschaffene Organisation, die den Auftrag hat, mindestens ein Produkt entsprechend einem vereinbarten Business Case zu liefern.“
+- „Ein Projekt ist ein einmaliges, zeitlich befristetes, interdisziplinäres, organisiertes Vorhaben, um festgelegte Arbeitsergebnisse im Rahmen vorab definierter Anforderungen und Rahmenbedingungen zu erzielen.“ (Quelle: IPMA ICB 4.0 der International Project Management Association)
+
+::: {.callout-tip}
+Eine Aufgabenstellung kann und sollte in der Regel als Projekt betrachtet werden, sofern das zu lösende Problem relativ komplex erscheint, der Lösungsweg zunächst unbekannt ist, eine Zielrichtung und ein Zeitrahmen vorliegen und/oder bereichs-/fachübergreifende Zusammenarbeit erforderlich ist.
+:::
+
+Die Komplexität der Aufgabenstellung liegt beispielsweise darin, dass:
+
+- es eine Vielzahl von Lösungswegen gibt, deren Erfolg zu Projektbeginn unbekannt ist,
+- das Ziel bei genauer Analyse widersprüchliche Teilziele enthält (Zielkonflikte),
+- die involvierten bzw. zusammenarbeitenden Organisationen oder Instanzen unterschiedlichen Sachlogiken gehorchen,
+- zwischen den einzelnen Maßnahmen zur Zielerreichung vielfältige Wechselwirkungen bestehen.
+
+In der Regel birgt ein Projekt – im Gegensatz zu regelmäßigen, stets ähnlich durchgeführten, weitgehend identischen Vorhaben – meist ein **höheres Risiko des Scheiterns** und wird in einer speziellen und befristeten Organisationsform, der so genannten Projektorganisation, abgewickelt, innerhalb derer auf das Ziel hingearbeitet wird.
+
+#### Definition Projektziel
+<!-- appearance="simple" -->
+::: {.callout-tip}
+## Definition: *"Projektziel"*
+Ein Ziel ist ein angestrebter Zustand oder ein gewünschtes Ergebnis, das eine Person, eine Gruppe oder eine Organisation erreichen möchte. Es ist eine klare und spezifische Vorstellung von dem, was man erreichen möchte und dient als Leitfaden für Handlungen und Entscheidungen. Ziele können kurzfristig oder langfristig sein und helfen dabei, den Fokus, die Motivation und die Richtung für individuelle oder kollektive Bemühungen zu setzen. Sie dienen als Messlatte für den Fortschritt und ermöglichen es, den Erfolg zu bewerten und gegebenenfalls Anpassungen vorzunehmen, um das gewünschte Ergebnis zu erreichen. Das Ziel wird als Anlass für eine Handlung verstanden.
+:::
+
+> *"Ziele sind Ursachen, die in der Zukunft liegen."*
+
+
+Projektziele sind die konkreten, messbaren Ergebnisse oder Leistungen, die ein Projekt erreichen soll. Im Gegensatz zu Meilensteinen, die wichtige Zeitpunkte oder Phasen während der Projektumsetzung markieren, beschreiben Projektziele die angestrebten Endresultate oder den gewünschten Zustand, der durch das Projekt erreicht werden soll.
+
+Projektziele geben die Richtung und den Zweck des Projekts vor und definieren die Erfolgskriterien, anhand derer der Projektfortschritt bewertet wird. Sie sind spezifisch, messbar, erreichbar, relevant und zeitgebunden (SMART-Kriterien). Typischerweise werden Projektziele zu Beginn des Projekts festgelegt und dienen als Leitfaden für die Planung, Ausführung und Bewertung des Projekts.
+
+Beispiele für Projektziele können sein:
+
+1. Reduzierung der Produktionskosten um 15% im Vergleich zum Vorgängerprodukt.
+2. Einhalten der vorgegebenen Ziele zu (reduziertem) Gewichts, (verringertem) Bauraum und (erhöhter)Leistung.
+3. Markteinführung des neuen Produkts bis Ende des Geschäftsjahres.
+4. Verbesserung der Kundenzufriedenheit mit dem neuen Produkt auf mindestens Platz 3 bei einem internationalen Ranking (z.B. [J.D. Power](https://www.jdpower.com/cars/ratings)).
+5. Reduzierung der mit dem neue Produkt verbundenen Garantie- und Kulanzkosten um 20% gegenüber dem aktuellen Produkt.
+
+Projektziele sind grundlegend für das Projektmanagement, da sie den Rahmen für die Planung und Ausführung des Projekts bilden. Sie helfen, sicherzustellen, dass das Projekt die beabsichtigten Ergebnisse liefert und den Bedürfnissen und Erwartungen der Stakeholder entspricht (siehe → @sec-smart SMARTe Ziele)
+
+<!-- -------------------------------------------------------------------------
+
+                       SMART
+
+-------------------------------------------------------------------------- -->
+
+**Wann waren wir erfolgreich?** 
+
+::: {.callout-tip}
+## Definition: *"Definition of Done (DoD)"*
+Die „Definition of Done“ (DoD) ist eine festgelegte und akzeptierte Vereinbarung innerhalb eines Teams oder Projekts, die die Kriterien und Anforderungen beschreibt, die erfüllt sein müssen, damit eine Aufgabe, ein Feature oder ein Projekt als abgeschlossen gilt. Sie legt die Standards und Erwartungen fest, die erfüllt sein müssen, um sicherzustellen, dass ein Arbeitsergebnis vollständig ist. Die Definition of Done hilft sicherzustellen, dass alle Beteiligte ein gemeinsames Verständnis davon haben, was "fertig" bedeutet.
+:::
+
+
+
+Die nachfolgenden Überlegungen können helfen, ob ein vorgegebenes Ziel erfolgreich erreicht wurde:
+
+- **Klar definierte Kriterien**: Stellen Sie sicher, dass das Ziel von Anfang an klar definiert wurde und messbare Kriterien beinhaltet (siehe → Vermeidung von "Moving Targets"). Dies ermöglicht es Ihnen, den Grad der Zielerreichung objektiv zu bewerten.
+- **Überprüfen der Zielerreichung**: Vergleichen Sie den aktuellen Zustand oder das Ergebnis mit den definierten Kriterien des Ziels. Wenn alle Kriterien erfüllt sind, kann davon ausgegangen werden, dass das Ziel erreicht wurde.
+- **Quantitative und qualitative Messungen**: Berücksichtigen Sie sowohl quantitative als auch qualitative Messungen, um den Erfolg des Ziels zu bewerten. Quantitative Messungen können beispielsweise Zahlen, Daten oder Metriken umfassen, während qualitative Messungen subjektivere Faktoren wie Kundenzufriedenheit oder Feedback berücksichtigen.
+
+<!--  START DES FEHLERHAFTEN BEREICHS -->
+
+---
+
+> *"If you can't measure it, you can't manage it." ([Peter F. Drucker](https://de.wikipedia.org/wiki/Peter_Drucker))*
+
+---
+
+<!--  ENDE DES FEHLERHAFTEN BEREICHS -->
+
+- **Zeitliche Komponente**: Stellen Sie sicher, dass das Ziel innerhalb des vorgegebenen Zeitrahmens erreicht wurde. Berücksichtigen Sie auch Zwischenziele oder Meilensteine, um den Fortschritt zu überwachen.
+- **Bewertung durch die Auftraggeber**: Befragen Sie relevante Auftraggeber, um deren Meinung und Perspektive über die Zielerreichung einzuholen. Dies kann zusätzliche Einblicke und Bestätigung liefern.
+- **Selbstreflexion**: Führen Sie eine selbstkritische Bewertung durch und überlegen Sie, ob das Ziel tatsächlich die gewünschten Ergebnisse oder Auswirkungen erzielt hat. Reflektieren Sie auch mögliche Lernerfahrungen oder Verbesserungspotenziale für zukünftige Ziele.
+
+Die Definition der Zielerreichung kann von Ziel zu Ziel unterschiedlich sein kann. Der Haupterfolgsfaktor besteht darin, klare Kriterien festzulegen, die eine objektive Bewertung ermöglichen, und verschiedene Aspekte zu berücksichtigen, um ein umfassendes Bild des Erfolgs zu erhalten.
+
+
+#### Phasen von Projekten
+
+```{mermaid}
+%%| label: fig-label-pep0
+%%| fig-cap: "Phasen von Projekten"
+flowchart TD
+  A[1. Projektinitiierung]
+    A --> B[2. Projektplanung]
+    B --> C[3. Projektdurchführung]    
+    C --> D[4. Projektabschluss]
+  B -->E[5. Projektcontrolling]
+  E -->D
+```
+
+1. **Initiierung**: In dieser Phase wird das Projekt identifiziert, die Ziele werden definiert, der Umfang wird abgesteckt und die Ressourcen werden zugewiesen. Ein Projektauftrag oder eine Projektskizze wird erstellt, um die Grundlage für das weitere Vorgehen zu legen.
+
+2. **Planung**: Während dieser Phase werden detaillierte Pläne erstellt, um die Ziele des Projekts zu erreichen. Dies beinhaltet die Definition von Meilensteinen, die Festlegung von Aufgaben und Verantwortlichkeiten, die Ressourcenplanung, die Zeitplanung, das Risikomanagement und die Budgetierung.
+
+3. **Durchführung**: In dieser Phase werden die im Plan festgelegten Aufgaben durchgeführt. Bei Produktentstehungsprojekten wird diese Phase oftmals als das eigentliche Projekt betrachtet, weil hier das spätere Produkt erarbeitet wird. Das inhaltlich arbeitende Team trifft sich in der Regel erst zum Start dieser zum ersten Mal, meist im Rahmen eines Kick-Off-Events. Mit dem Kick-off-Event startet auch der Teamentwicklungsprozess, ohne dass dies immer als eigene Aufgabe thematisiert wird. Während der Phase der Durchführung arbeiten die Teammitglieder an ihren zugewiesenen Aufgaben, Ressourcen werden eingesetzt, und der Fortschritt wird durch die Projektleitung, unterstützt vom Controlling, regelmäßig überwacht und der Projektverlauf dokumentiert. 
+
+4. **Abschluss**: Sobald alle Ziele erreicht sind und das Projekt erfolgreich abgeschlossen ist, oder aber von Seiten des Managements der Abbruch des Projekts beschlossen wird, wird es offiziell beendet. Der Projektabschluss beinhaltet die Übergabe von Ergebnissen an den Auftraggeber, das Erstellen eines Projektberichts, das Dokumentieren von Lernpunkten und - bei erfolgreichem Projektabschluss und meist im Rahmen eines feierlichen Abschlussevents - das Feiern von Erfolgen. Auch die abschließende Bewertung des Projekts hinsichtlich seiner Effektivität und Effizienz gehört zu dieser Phase.
+
+5. **Projektcontrolling**: Während des gesamten Projekts wird in einem nebenläufigen Prozess der Fortschritt überwacht, um sicherzustellen, dass er den geplanten Zielen und Zeitplänen entspricht. Änderungen im Projektumfang, Risiken oder Ressourcen werden identifiziert und bewertet. Anpassungen werden vorgenommen, um bestmöglich sicherzustellen, dass das Projekt erfolgreich abgeschlossen werden kann. Bei massiven Abweichungen zwischen Projektplanung und tatsächlicher Entwicklung des Projekts können Projekte auch jederzeit abgebrochen werden.
+
+#### Phasen bei der Projektdurchführung
+
+Die in @fig-label-pep0 dargestellte Projektphase "3. Projektdurchführung" gliedert sich wiederum in einzelne Phasen, wobei die genaue Struktur und Benennung dieser Phasen je nach Unternehmen und Industrie variieren kann:
+
+```{mermaid}
+%%| label: fig-label-pep02
+%%| fig-cap: "Untergeordnete Phasen der Phase Projektdurchführung im Produktentstehungsprozess"
+flowchart TD
+    C1[3.1 Konzeptentwicklung und -validierung]
+       --> C2[3.2 Entwurfs und Entwicklung]
+    C2 --> C3[3.3 Prototyping und Test]
+    C3 --> C4[3.4 Fertigungs- und Produktionsvorbereitung]
+    C4 --> C5[3.5 Markteinführung und Vermarktung]
+```
+3.1 **Konzeptentwicklung und -validierung**: In dieser Phase werden Ideen und Konzepte für das neue Produkt generiert. Es können Marktanalysen durchgeführt, Kundenbedürfnisse ermittelt und Produktkonzepte skizziert werden. In dieser Phase werden auch die funktionalen und nicht-funktionalen Anforderungen des Produkts definiert. Es werden technische Spezifikationen erstellt und klare Ziele für das Produkt festgelegt.
+
+3.2 **Entwurf und Entwicklung**: In dieser Phase wird das Produkt im Detail entworfen. Das umfasst die Erstellung von Konstruktionszeichnungen, das Festlegen von Materialien und Komponenten sowie das Erstellen von Prototypen für Tests und Bewertungen. Auch die Fertigungsprozesse für das spätere Produkt werden zumeist bereits in dieser Phase festgelegt (siehe → Produktions- und Werkstofftechnik).
+
+3.3 **Prototypentwicklung und Test**: Es werden Prototypen des Produkts hergestellt, um seine Funktionalität und Leistung zu überprüfen. Diese Prototypen können in verschiedenen Iterationen verbessert werden, um das gewünschte Endprodukt zu erreichen. Teils bereits beginnend mit der Entwurfs- und Entwicklungsphase beginnen erste Tests, um frühestmöglich sicherzustellen, dass das spätere Produkt den zuvor definierten Anforderungen genügt. 
+
+3.4 **Fertigungs- und Produktionsvorbereitung**: Spätestens ab beginn der Prototypenentwicklung beginnen die Vorbereitungen zur späteren (Serien-)produktion des Produkts. Dies beinhaltet die Auswahl von Lieferanten und die gesamte Planung der Produktion.
+
+3.5 **Markteinführung und Vermarktung**: In dieser Phase wird das Produkt offiziell auf dem Markt eingeführt. Dies umfasst Marketing- und Vertriebsaktivitäten, um das Produkt zu bewerben und Kunden dafür zu gewinnen. Feedback und Rückmeldungen der Kunden werden gesammelt und legen die Grundlage für die Entwicklung von Aktualisierungen des laufenden Produkts oder für zukünftige Weiterentwicklungen des Produkts.
+
+<!-- -------------------------------------------------------------------------
+
+                       Moving Targets
+
+-------------------------------------------------------------------------- -->
+
+#### Moving Targets
+"Moving Targets" ist ein Begriff, der im Bereich von Projekten und dem Projektmanagement zu finden ist und einen eher zweifelhaften Ruf besitzt.
+
+::: {.callout-tip}
+## Definition: *"Moving Targets"*
+"Moving Targets" bezeichnet sich ändernde Anforderungen, Ziele oder Bedingungen im Verlauf eines Projekts, die die Planung, Umsetzung und Kontrolle beeinflussen können.
+:::
+
+In der Produktentwicklung können sich Anforderungen während eines laufenden Projekts ändern, sei es aufgrund von technischen Entwicklungen, Kundenfeedback, Veränderungen bei Zulieferern, eine neue Kostensituation oder sich entwickelnden Geschäftszielen. Diese sich ändernden Anforderungen machen es für das Entwicklungsteam schwierig, ein festes Ziel zu verfolgen, da sich die Zielvorgaben im Laufe der Zeit verschieben können.
+
+Im Projektmanagement beziehen sich "Moving Targets" auf sich ändernde Ressourcen, Budgets, Zeitpläne oder externe Einflüsse beziehen, die die Durchführung des Projekts beeinflussen können. Es erfordert Flexibilität und Anpassungsfähigkeit seitens des Projektteams, um mit diesen Veränderungen umzugehen und den Projekterfolg sicherzustellen.
+
+
+::: {.callout-caution}
+## Vorsicht bei "Moving Targets"!
+Treten Moving Targets in Projekten auf gerät das ursprüngliche Projektziel rasch schnell in Vergessenheit. Das Projektteam rennt im schlimmsten Fall einem Moving Target hinterher ohne es jemals zu erreichen. Oft stellt sich dann bei Projektleitung und Projektteam Frust und Enttäuschung ein, trotz aller Mühe und Engagement vermeintlich NICHT erfolgreich zu sein. Eine Antwort auf diese insbesondere im Bereich der Softwareentwicklung bestehenden großen Herausforderung wird versucht, mit Hilfe [Agiler Entwicklungsmethoden](https://de.wikipedia.org/wiki/Agile_Softwareentwicklung) zu finden.
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       PROJEKTPHASEN
+
+-------------------------------------------------------------------------- -->
+
+::: {.callout-tip appearance="simple"}
+Neben den technischen Projektphasen durchlaufen Projekte häufig zeitgleich zum Projektfortschritt eine weitere Dimension von Projektphasen, die in der klassischen Literatur zu Projekten häufig nicht genannt wird. Typische Projektphasen hierbei sind:
+
+*1. Begeisterung*
+
+*2. Ernüchterung*
+
+*3. Panik*
+
+*4. Suche nach Schuldigen*
+
+*5. Bestrafung der Unschuldigen*
+
+*6. Belohnung der Nichtbeteiligten*
+:::
+
+
+> *„Je näher ein Projektende rückt, umso näher kommt der vorzeitige Rückzug des Projektleiters.“ (Quelle: Unbekannt)*
+
+
+Diese Projektphasen haben eine erstaunliche Ähnlichkeit mit dem Technologie-Hype-Zyklus und zumindest zum Teil auf ähnliche zugrundeliegenden Mechanismen zurückzuführen.
+
+In der Praxis kommt bei Projekten häufig hinzu, dass, um z.B. die Ressourcen für ein Projekt durch das Management bewilligt zu bekommen, die Abschätzungen für den Bedarf an Ressourcen (Personal- und Sachmittel) oftmals sehr optimistisch ausgeführt werden, ebenso der der zeitliche Aufwand für ein Projekt. Die Gefahr von unerwartet auftretenden Komplikationen und Rückschlägen wird in manchen Fällen aus Unwissenheit, in anderen Fällen, um das Projekt überhaupt gestartet zu bekommen, durchaus wissentlich, zumindest aber leichtfertig unterbewertet. Gleichzeitig werden Projektbeteiligte mit teils überaus optimistischen Prognosen für ein Projekt gewonnen und so (teils unrealistisch) hohe Erwartungen insgesamt an den Projekterfolg geweckt. 
+
+Nach der Phase der Begeisterung setzt dann meist schnell Ernüchterung ein, Verantwortungsträger reagieren teils mit Panik und der Suche nach Schuldigen und der Bestrafung von Sündenböcken. Werden Projekte in dieser Phase nicht abgebrochen oder verschwinden still und leise in der Versenkung stellt sich durch die weitere fachliche Arbeit oftmals, zwar verspätet oder zu hohen Kosten, aber dennoch ein Erfolg ein. Die zu diesem Zeitpunkt im Projekt Mitarbeitenden (oft nur noch ein kleiner Teil des Projektteams, dass das Projekt gestartet hat) erfahren Lob und Anerkennung für den Projekterfolg.
+
+> „*Die Leichen der Pioniere pflastern die Straßen zum Erfolg.“ (Dr. Hans-Joachim Schöpf, Entwicklungsvorstand Mercedes-Benz AG)*
+
+
+::: {.callout-tip appearance="simple"}
+## Exkurs: Phasen von Krisen
+*1. Ignoranz. ("Kann gar nicht sein!"*)
+
+*2. Verdrängung. ("Geh mir weg, das will ich nicht hören!"*)
+
+*3. Entsetzen. ("Wir sind verloren!!!"*)
+
+*4. Akzeptanz. ("Oh je, es ist schlimm, was sollen wir nur tun?"*)
+
+*5. Handlung. ("OK, let’s do it!"*)
+:::
+
+#### Aufgaben, Kompetenz, Verantwortung (AKV) {#sec-akv}
+
+AKV ist ein [Akronym](https://de.wikipedia.org/wiki/Akronym) aus Begriffen **A**ufgabe, **K**ompetenz und **V**erantwortung.
+
+::: {.callout-important}
+## Verantwortung
+*„Verantwortung ist nicht teilbar.“*
+:::
+
+
+oder doch? Siehe die um sich greifende [Verantwortungsdiffusion](https://de.wikipedia.org/wiki/Verantwortungsdiffusion).
+
+::: {.callout-tip}
+## Verantwortungsdiffusion
+Verantwortungsdiffusion, auch als "Bystander-Effekt" bezeichnet, ist ein sozialpsychologisches Phänomen, bei dem Einzelpersonen in einer Gruppe weniger wahrscheinlich Verantwortung übernehmen, wenn andere Personen in der Nähe sind. Dieses Phänomen tritt auf, weil sich die Verantwortung auf mehrere Personen in der Gruppe zu verteilen scheint, wodurch jede Einzelperson weniger wahrscheinlich das Gefühl hat, persönlich handeln zu müssen.
+:::
+
+::: {.callout-important}
+## Verantwortungsdiffusion ist der Tod jedes Projekterfolgs
+Verantwortungsdiffusion ist eine massives Risiko für Projekte. Verantwortungsdiffusion ist um jeden Preis zu vermeiden!
+:::
+
+> *“Die Katastrophe in letzter Sekunde zu verhindern lenkt am besten vom eigenen Versagen davor ab.“ (Quelle: Jörg Howe, Leiter Kommunikation, Mercedes-Benz AG)*
+
+
+<div style="border: 1px solid black; padding: 10px; text-align:center;">AUFGABE | KOMPETENZ | VERANTWORTUNG</div>
+
+
+Im Projektmanagement haben die Begriffe "Aufgabe", "Kompetenz" und "Verantwortung" spezifische Bedeutungen:
+
+1. **Aufgabe**: Eine Aufgabe im Projektmanagement bezieht sich auf eine spezifische Tätigkeit oder Arbeitsanforderung, die zur Erreichung der Projektziele durchgeführt werden muss. Sie stellt einen abgrenzbaren Arbeitsbereich dar, der einer oder mehreren Personen zugewiesen werden kann. Aufgaben sind in der Regel klar definiert, haben einen bestimmten Umfang und sind mit bestimmten Zielen oder Ergebnissen verbunden.
+
+2. **Kompetenz**: Kompetenz bezieht sich im Projektmanagement auf die Fähigkeiten, das Wissen, die Erfahrung und die Qualifikationen, die erforderlich sind, um eine bestimmte Aufgabe erfolgreich auszuführen. Es umfasst das Verständnis der Methoden, Werkzeuge und Techniken, die für die Durchführung der Aufgabe erforderlich sind, sowie die Fähigkeit, die entsprechenden Kenntnisse und Fertigkeiten effektiv anzuwenden. 
+
+Eine entscheidende Ausprägung der Kompetenz ist die Weisungs- und Entscheidungsbefugnis. Aufgrund der hohen Bedeutung für den Projekterfolg wird auf diese Facette der Kompetenz in @sec-webefugnis noch näher eingegangen.
+
+3. **Verantwortung**: Verantwortung im Projektmanagement bezieht sich auf die Verpflichtung und das Pflichtgefühl einer Person, die zugewiesenen Aufgaben ordnungsgemäß und rechtzeitig zu erfüllen. Sie umfasst die Übernahme der Verantwortung für das eigene Handeln, die Qualität der Arbeitsergebnisse und die Einhaltung von Terminen und Vorgaben. Verantwortung kann sowohl auf individueller Ebene als auch auf Team- oder Projektebene wahrgenommen werden.
+
+Es ist wichtig, zwischen diesen Begriffen zu unterscheiden, da sie verschiedene Aspekte der Projektarbeit repräsentieren. Die klare Definition von Aufgaben, die Zuweisung von Kompetenzen entsprechend den Anforderungen und die Übernahme der Verantwortung für die ordnungsgemäße Ausführung der Aufgaben sind entscheidend, um die Effektivität und den Erfolg eines Projekts sicherzustellen.
+
+
+#### Weisungs- und Entscheidungsbefugnis {#sec-webefugnis}
+Von zentraler Bedeutung für ein erfolgreiches Projektmanagement ist der oben bereits genannte Aspekt der Weisungs- und Entscheidungsbefugnis als eine Ausprägung der Kompetenz einzelner Projektbeteiligter. Hierbei handelt es sich um eine Führungsaufgabe. Weisungs- und Entscheidungsbefugnis bezieht sich auf die autorisierte Fähigkeit einer Person, Anweisungen zu geben und Entscheidungen zu treffen, die für die Ausführung einer Aufgabe oder die Erreichung eines Projektziels erforderlich sind. **Diese Kompetenz kann zeitlich befristet einer Person zugewiesen werden und hat Priorität über die in einem Unternehmen etablierte Führungshierarchie.**
+
+
+::: {.callout-caution}
+## Tipp!
+Bei der in Projekten befristet zugewiesenen Weisungs- und Entscheidungsbefugnis handelt es sich in der Regel um *„geliehene Macht“*. Diese befristet zugewiesenen Befugnisse können gleichwohl sehr weitreichenden Einfluss auf die Arbeiten einiger oder auch sehr vieler Projektbeteiligter haben. Es ist in höchstem Maße ratsam, sich nicht dem *„Rausch der Macht“* hinzugeben, sondern im Gegenteil, mit maximaler Aufmerksamkeit und Energie auf eine faire und kooperative Zusammenarbeit im Projekt hinzuwirken.
+:::
+
+Die zugewiesene Kompetenz der Weisungs- und Entscheidungsbefugnis beinhaltet das Recht und die Verantwortung, anderen, definierten Projektmitarbeitern Anweisungen zu erteilen, ihnen Aufgaben zuzuweisen und ihnen klare Richtlinien und Leitlinien zu geben. Es ermöglicht einer Person, die Kontrolle über bestimmte Aspekte eines Projekts oder einer Aufgabe zu übernehmen und die Durchführung von Aktivitäten zu lenken.
+
+Darüber hinaus umfasst die Entscheidungsbefugnis die Fähigkeit, Entscheidungen zu treffen, die für den Fortschritt des Projekts von Bedeutung sind. Dies beinhaltet die Befugnis, zwischen verschiedenen Optionen abzuwägen, Risiken zu bewerten und fundierte Entscheidungen zu treffen, die den Projektzielen dienen. Die Entscheidungsbefugnis kann sich auf strategische, operative oder technische Aspekte beziehen und kann sowohl Einzelpersonen als auch Teams gewährt werden.
+
+Die Kompetenz der Weisungs- und Entscheidungsbefugnis spielt eine wichtige Rolle bei der effektiven Leitung und Steuerung von Projekten. Sie ermöglicht es einer Person, ihre Autorität und Verantwortung auszuüben, um sicherzustellen, dass die zugewiesenen Aufgaben ordnungsgemäß ausgeführt werden und dass Entscheidungen getroffen werden, um den Projekterfolg zu fördern. 
+
+::: {.callout-caution}
+Grundsätzlich sind die AKV aller Projektbeteiligten VOR Projektbeginn zu klären jeweils den von den AKV betroffenen Projektbeteiligten klar zu kommunizieren.
+:::
+
+
+#### Hol- und Bringschuld
+Die Begriffe *"Holschuld"* und *"Bringschuld"* beziehen sich auf die Pflichten und Verantwortlichkeiten, bei einem Projekt insbesondere zwischen den verschiedenen Rollen einzelner Projektbeteiligter.
+
++ **Holschuld**: Eine [Holschuld](https://de.wikipedia.org/wiki/Holschuld#Informationsmanagement) liegt vor, wenn die Verantwortung für die Beschaffung oder Abholung bestimmter Leistungen oder Informationen beim Empfänger liegt. Das bedeutet, dass die Empfängerseite aktiv werden muss, um die gewünschten Leistungen oder Informationen einzufordern oder abzuholen. Hierbei ist der Projektteilnehmer dafür verantwortlich, die benötigten Ressourcen oder Ergebnisse aktiv anzufordern, sobald er sie benötigt.
++ **Bringschuld**: Eine [Bringschuld](https://de.wikipedia.org/wiki/Bringschuld#Informationsverwaltung) hingegen liegt vor, wenn die Verpflichtung zur Lieferung oder Erbringung von Leistungen oder Informationen bei der liefernden Partei liegt. Das bedeutet, dass die ausführende Seite die Verantwortung hat, die vereinbarten Leistungen oder Ergebnisse aktiv zu übergeben oder bereitzustellen, ohne dass die Empfängerseite dies explizit anfordern muss.
+
+
+::: {.callout-tip}
+## Wikipedia: *"Holschuld"*
+Das Informationsmanagement benutzt die juristischen Begriffe Holschuld/Bringschuld für das Informationsverhalten von Personen oder Personal, das Informationen, Nachrichten oder Wissen vom Inhaber der Information rechtzeitig und vollständig und in geeigneter Form abzuholen oder an eine andere Person weiterzuleiten hat. Dabei haben Arbeitsanweisungen, Dienstanweisungen oder eine Führungskraft gemäß dem Sender-Empfänger-Modell vorab zu klären, für welche Informationen eine Holschuld (englisch pull) und für welche eine Bringschuld (englisch push) besteht und wer die Verantwortung für die Informationsübermittlung trägt. Eine Bringschuld liegt vor, wenn der Absender der Initiator der Informationsweiterleitung ist. Im Falle einer Holschuld ist der Empfänger der Initiator und muss sich selbst bemühen, eine Information von einer Quelle zu beziehen.
+:::
+
+::: {.callout-tip}
+## Wikipedia: *"Bringschuld"*
+Im betrieblichen Informationsmanagement wurde der Begriff Bringschuld aus dem Recht übernommen und bedeutet, dass eine Person im Rahmen ihres Informationsverhaltens verpflichtet ist, die ihr bekanntgewordenen relevanten Informationen rechtzeitig und umfassend und in geeigneter Form horizontal (gleichstufige Mitarbeiter) und/oder vertikal (Vorgesetzte) weiterzugeben, damit diese richtige Entscheidungen treffen können. Diese Bringschulden gibt es auf allen Hierarchieebenen. In diesem Zusammenhang ist auch von Berichtsebenen die Rede, bei denen ein Verantwortungsträger einem übergeordneten Verantwortungsträger gegenüber eine Berichtspflicht besitzt. Umgekehrt besitzen auch Vorgesetzte die Pflicht, die ihnen bekannt gewordenen Informationen – sofern sie nicht geheim sind – an Mitarbeiter weiterzugeben. Den gegenläufigen Informationsverlauf bezeichnet man entsprechend als Holschuld.
+:::
+
+
+> *„Man kann nie genug informieren.“ (Quelle: Jan Odenthal)*
+
+
+In der Praxis werden Holschuld oder Bringschuld der verschiedenen Rollen in einem Projekt oftmals nicht explizit festgelegt. Eine klare Definition der Verantwortlichkeiten trägt jedoch maßgeblich zur reibungslosen Durchführung eines Projekts bei. Je nach Art des Projekts und den darin enthaltenen Rollen können dabei sowohl Holschuld als auch Bringschuld für verschiedene Phasen des Projekts gelten sich im Projektfortschritt auch umkehren.
+
+
+::: {.callout-caution}
+Die Erwartungshaltung bezüglich Hol- und Bringschuld sind durch die Projektleitung offen und spätestens zum Start des Projekts sowie ggf. bei Änderungen der Rollen bzw. der AKV für alle Projektbeteilige transparent kommunizieren. Hol- und Bringschuld sind wichtige Bestandteile der AKV aller Projektbeteiligten. Es muss zu jedem Zeitpunkt für alle Beteiligte klar sein, wer die Verantwortung für den Austausch der jeweiligen Leistungen oder Informationen hat.
+:::
+
+#### Compliance
+Der Begriff "Compliance" wird im Kontext von Unternehmensführung und Rechtskonformität verwendet. Compliance bezieht sich auf die Einhaltung von Gesetzen, Vorschriften, internen Richtlinien und ethischen Standards durch Unternehmen und Organisationen. Es geht darum, sicherzustellen, dass Unternehmen in allen ihren Aktivitäten die geltenden Gesetze und Regeln respektieren und ethische Grundsätze beachten. Die genaue Definition und Ausgestaltung von Compliance kann je nach Branche, Unternehmen und rechtlichem Rahmen variieren.
+
+Ein wichtiger Indikator in „Red-Flag-Situationen“ sind das Bauchgefühl und der „Bildzeitungstest“. Die zu stellende Frage: „Wäre es für mich oder das ich vertretende Unternehmen peinlich (à Shitstorm), wenn das, was ich gemacht habe, öffentlich (in der Bild-Zeitung) gemacht würde.
+
+
+#### Integrity
+Der Begriff "Integrity" verwendet, um die Qualität oder Eigenschaft von Personen zu beschreiben, die aufrichtig, ehrlich und moralisch integer sind. "Integrity" bezieht sich auf die Einhaltung ethischer Grundsätze und moralischer Werte, insbesondere wenn es um Verhalten, Entscheidungsfindung und Handeln geht. Im Allgemeinen wird "Integrity" mit folgenden Konzepten in Verbindung gebracht:
+
+1. **Ehrlichkeit**: Integrität beinhaltet die Bereitschaft, die Wahrheit zu sagen und ehrlich zu sein, selbst wenn dies unbequem ist oder persönliche Konsequenzen hat. Menschen mit Integrität vermeiden Täuschung, Betrug und die Verfälschung von Informationen.
+
+2. **Moralische Grundsätze**: Integrität beinhaltet die Einhaltung moralischer Grundsätze und Werte. Dies bedeutet, dass man sich an Prinzipien wie Fairness, Gerechtigkeit und Ethik hält und in Übereinstimmung mit diesen Prinzipien handelt.
+
+3. **Verlässlichkeit**: Eine Person mit Integrität hält Versprechen und Verpflichtungen ein. Sie sind zuverlässig und können darauf vertraut werden, ihr Wort zu halten.
+
+4. **Konsistenz**: Integrität bedeutet auch, dass eine Person in ihrem Verhalten und ihren Entscheidungen konsistent ist. Sie handeln nicht willkürlich oder widersprüchlich, sondern gemäß ihren moralischen Prinzipien.
+
+5. **Verantwortlichkeit**: Menschen mit Integrität sind bereit, die Verantwortung für ihre Handlungen und Entscheidungen zu übernehmen. Sie stehen zu ihren Fehlern und bemühen sich, diese zu korrigieren.
+
+6. **Ethik am Arbeitsplatz**: In beruflichen Kontexten bezieht sich Integrität auf die Einhaltung ethischer Standards und Regeln in Bezug auf Geschäftspraktiken, Finanzen und Interaktionen mit Kunden, Kollegen und Partnern.
+
+7. **Selbstachtung**: Integrität schließt auch die Achtung der eigenen moralischen Werte und Prinzipien ein. Dies bedeutet, dass eine Person ihre eigenen Überzeugungen und Werte nicht leichtfertig opfert.
+
+Integrität ist eine wichtige Eigenschaft sowohl für Einzelpersonen als auch für Organisationen. Sie trägt zur Schaffung von Vertrauen, Glaubwürdigkeit und Respekt bei und ist ein wesentlicher Bestandteil einer gesunden, ethischen und verantwortungsvollen Gesellschaft. In vielen Unternehmen und Organisationen ist Integrität ein Schlüsselwert, der in ihren Leitbildern und Ethikkodizes verankert ist.
+
+
+#### Der Geist des Vertrages
+
+Die Formulierung "Der Geist des Vertrages" bezieht sich auf die Absicht oder den grundlegenden Zweck, den die Projektbeteiligten bei der Gestaltung des Projekts verfolgt haben. Sie dient dazu, den eigentlichen Zweck und die Ziele des Projekts zu erfassen, auch wenn die wörtliche Auslegung einzelner Elemente des Projekts – sowie insbesondere Lücken in der Projektbeschreibung - möglicherweise zu teils gravierenden Missverständnissen führen könnte.
+
+Die Berücksichtigung des Geistes des Vertrages ist ein wichtiger Grundsatz bei der Auslegung der Projektbeschreibung und kann bei Unklarheiten oder Streitigkeiten über die Auslegung bestimmter Vorgaben herangezogen werden. Wenn die wörtliche Auslegung zu einem unvernünftigen oder widersprüchlichen Ergebnis führen würde, kann der Geist des Vertrages verwendet werden, um die wahrscheinliche Absicht der Projektbeteiligten zu ermitteln und die Unklarheiten zu klären.
+
+Der Rückgriff auf den Geistes des Vertrages darf dabei kein Freibrief sein, um den klaren und eindeutigen Auftrags des Projekts zu ignorieren. Vielmehr dient der Geist des Vertrags dazu, im Zweifelsfall eine faire und angemessene Auslegung zu ermöglichen, die den tatsächlichen Intentionen aller Projektbeteiligter gerecht wird. 
+
+::: {.callout-caution}
+## Der Geist des Vertrages
+Der Geist des Vertrags setzt ein faires und von gemeinsamen Interessen getragenen Miteinander aller Projektbeteiligten voraus und ist mithin eher die Beschreibung einer oftmals wertvollen Haltung als eine konkret fassbare Handlungsanweisung.
+:::
+
+
+<!--
+
+### Exkurs: Projektvorbereitung
+Um ein Projekt erfolgreich starten zu können, sind eine Vielzahl von Vorarbeiten notwendig:
+
+1. **Projektdefinition**: Klären Sie die Projektziele und den Zweck des Projekts. Definieren Sie den Umfang, die erwarteten Ergebnisse und die gewünschten Vorteile des Projekts. Stellen Sie sicher, dass das Projekt gut mit den übergeordneten Zielen und Strategien der Organisation oder des Unternehmens übereinstimmt.
+1. Ressourcenplanung: Ermitteln Sie die benötigten Ressourcen für das Projekt, wie z.B. Budget, Personal, technische Ausstattung oder Materialien. Stellen Sie sicher, dass Sie über ausreichende Ressourcen verfügen, um das Projekt erfolgreich umzusetzen.
+1. Projektteam zusammenstellen: Identifizieren Sie die benötigten Teammitglieder und stellen Sie ein kompetentes und engagiertes Projektteam zusammen. Weisen Sie klare Rollen und Verantwortlichkeiten zu und stellen Sie sicher, dass das Team über die erforderlichen Fähigkeiten und Erfahrungen verfügt.
+1. Zeitplanung: Entwickeln Sie einen detaillierten Zeitplan für das Projekt, der die einzelnen Aufgaben, Meilensteine und Abhängigkeiten berücksichtigt. Berücksichtigen Sie auch Pufferzeiten für unvorhergesehene Ereignisse oder Verzögerungen.
+1. Risikomanagement: Identifizieren Sie potenzielle Risiken und entwickeln Sie einen Plan zur Risikovermeidung, -minderung oder -bewältigung. Berücksichtigen Sie auch alternative Lösungen oder Maßnahmen, falls Probleme auftreten.
+1. Kommunikationsplan: Legen Sie einen Kommunikationsplan fest, der die Interaktionen und den Informationsaustausch innerhalb des Projektteams sowie mit relevanten Stakeholdern regelt. Definieren Sie die Kommunikationskanäle, den Umfang und den Zeitplan für die Berichterstattung und Updates.
+1. Stakeholder-Management: Identifizieren Sie alle relevanten Stakeholder, die vom Projekt betroffen sind, und analysieren Sie ihre Interessen, Bedürfnisse und Erwartungen. Entwickeln Sie eine Strategie, um eine effektive Kommunikation und Einbindung der Stakeholder sicherzustellen und potenzielle Konflikte zu vermeiden oder zu bewältigen. Praxistipp: Proaktive, frühzeitige Einbindung des Betriebsrats nicht vergessen!
+1. Überprüfung der rechtlichen und regulatorischen Anforderungen: Stellen Sie sicher, dass Sie alle relevanten rechtlichen und regulatorischen Anforderungen identifiziert und verstanden haben. Berücksichtigen Sie Compliance-Richtlinien und stellen Sie sicher, dass das Projekt im Einklang mit den geltenden Vorschriften (z.B. Datenschutz) steht. 
+1. Bewertung der Machbarkeit: Führen Sie eine Machbarkeitsstudie durch, um die technische, wirtschaftliche und organisatorische Durchführbarkeit des Projekts zu bewerten. Untersuchen Sie potenzielle Herausforderungen oder Hindernisse und entwickeln Sie Lösungsansätze.
+1. Budgetierung und Finanzplanung: Erstellen Sie einen detaillierten Budgetplan für das Projekt, der die Kosten für Ressourcen, Ausrüstung, Personal, Schulungen, Marketing usw. umfasst. Überwachen Sie das Budget während des Projektverlaufs und stellen Sie sicher, dass es eingehalten wird.
+
+Diese Vorarbeiten sind entscheidend, um ein solides Fundament für das Projekt zu schaffen und die Wahrscheinlichkeit für einen erfolgreichen Start und eine erfolgreiche Umsetzung zu erhöhen. Sie ermöglichen es, potenzielle Risiken zu identifizieren, die Ressourcen richtig zu planen, das Projektteam effektiv zu koordinieren und die Erwartungen der Stakeholder zu berücksichtigen.
+
+-->
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Shareable Links & Literaturempfehlungen
+
+-------------------------------------------------------------------------- -->
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
++ @kunert_failure_2016: [Scheitern in Projekten](https://rdcu.be/dIUst)
+:::
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Literaturempfehlung
+
+-------------------------------------------------------------------------- -->
+
+<!--
+#### Literaturempfehlung
+
+![@kunert_failure_2016: [Failure Management](https://link.springer.com/book/10.1007/978-3-662-47357-3)](images/Kunert_Failure_Management_978-3-662-47357-3.webp){width=40%}
+
+-->

@@ -1,0 +1,32 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Fritz Simon: Verhalten als Ware
+
+-------------------------------------------------------------------------- -->
+
+
+## Fritz B. Simon *"Verhalten als Ware"* {#sec-verhaltenalsware}
+
+Quelle: [Fritz B. Simon^[Fritz B. Simon (* 27. Oktober 1948 in Siegen) ist ein deutscher Psychiater und Psychoanalytiker.]](https://de.wikipedia.org/wiki/Fritz_B._Simon) "Radikale Marktwirtschaft : Verhalten als Ware oder wer handelt, der handelt." Auer, Heidelberg 1992.
+
+![Fritz B. Simon (* 27. Oktober 1948 in Siegen)](images/FritzBSimon.jpg){width=25% #fig-simon}
+
+**These**: *"Menschliche Verhaltensweisen lassen sich als Waren betrachten, die bewertet und getauscht werden."*
+
+Die sieben grundlegenden Thesen des radikal-marktwirtschaftlichen Modells nach Simon lauten:
+
+1. Der Markt für Verhalten ist ein Tauschmarkt.
+2. Jeder einzelne bewertet das von ihm oder anderen produzierte Verhalten (~Ware) nach seinem eigenen, individuellen Wertesystem.
+3. Jeder Mensch verhält sich immer und überall ökonomisch rational.
+4. Jeder führt Konten über Geben und Nehmen aller Interaktionspartner (seines eigenen und des anderen) in seiner privaten, nicht konvertiblen Währung.
+5. Konkrete Interaktionsmuster entstehen gemäß der individuellen Wertesysteme der Beteiligten und ihrer Methode der Kontenführung.
+6. Ware ist nur, was wahrgenommen wird.
+7. Es gibt keine objektiven Bewertungsmaßstäbe für den Wert von Verhalten.

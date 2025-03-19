@@ -1,0 +1,67 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Lasten- und Pflichtenheft
+
+-------------------------------------------------------------------------- -->
+
+
+### Lasten- und Pflichtenheft {#sec-lastenheft}
+
+Im Produktentstehungsprozess spielen das Lastenheft und das Pflichtenheft eine entscheidende Rolle. Diese Dokumente dienen als Eckpfeiler für die erfolgreiche Umsetzung der Produktentwicklung und stellen sicher, dass die Anforderungen klar definiert sind und erfüllt werden können. 
+
+Das **Lastenheft** (auch Anforderungsdokument genannt) ist das Dokument, das die Anforderungen, Wünsche und Erwartungen des Auftraggebers oder Kunden an ein Produkt festhält. Es beschreibt, was das zu entwickelnde Produkt leisten soll, ohne detaillierte technische Spezifikationen zu enthalten. Das Lastenheft legt somit den Grundstein für das gesamte Projekt und bildet die Basis für das Pflichtenheft.
+
+Das **Pflichtenheft** hingegen geht einen Schritt weiter und konkretisiert die im Lastenheft festgehaltenen Anforderungen. Es enthält klare und detaillierte technische Spezifikationen, Anforderungen und Funktionen, die das Projekt erfüllen muss, um den Anforderungen des Auftraggebers gerecht zu werden. Das Pflichtenheft dient als Leitfaden für das gesamte Entwicklungsteam um das Projekt zielgerichtet umzusetzen. Die Erstellung von Lasten- und Pflichtenheft sollte in enger Zusammenarbeit zwischen Auftraggeber und Entwicklungsteam erfolgen, um sicherzustellen, dass alle Parteien ein gemeinsames Verständnis haben.
+
+Merkmale eines guten Lasten- und Pflichtenhefts:
+
+1. **Klarheit und Präzision**: Lasten- und Pflichtenheft sollten klar und verständlich formuliert sein, um Missverständnisse zu vermeiden und eine klare Kommunikation zwischen Auftraggeber und Entwicklungsteam zu gewährleisten.
+
+2. **Vollständigkeit**: Das Lastenheft sollte alle wesentlichen Anforderungen des Kunden erfassen, während das Pflichtenheft alle technischen Spezifikationen und Funktionalitäten detailliert beschreiben sollte, um eine umfassende Umsetzung zu gewährleisten.
+
+3. **Messbare Kriterien**: Ein gutes Pflichtenheft sollte Kriterien enthalten, anhand derer der Erfolg des Projekts gemessen werden kann. Diese messbaren Ziele helfen bei der Überprüfung und Bewertung des Endprodukts.
+
+4. **Realistische Ziele**: Sowohl das Lasten- als auch das Pflichtenheft sollten realistische Ziele setzen, die unter den gegebenen Ressourcen und Zeitrahmen erreicht werden können.
+
+5. **Rückverfolgbarkeit**: Es sollte eine klare Verknüpfung zwischen den Anforderungen im Lastenheft und den entsprechenden technischen Spezifikationen im Pflichtenheft geben, um sicherzustellen, dass jede Anforderung erfüllt wird.
+
+::: {.callout-caution}
+## Lasten- und Pflichtenheft
+In der Praxis wird auf die strikte Trennung von Lasten- und Pflichtenheft teilweise verzichtet und die zwei Dokumente als ein Dokument betrachtet, oder die Phase des Lastenhefts übersprungen und direkt ein Pflichtenheft erarbeitet. Wichtig ist jedoch immer, dass eine klare Beschreibung des Produkts entsteht, das entwickelt werden soll.
+:::
+
+<!--
+![Technische Daten Apple iPhone 15 und iPhone 15 Plus (Quelle: Apple Inc., Stand 01/2024)](images/SpecAppleIphone15.jpeg){width=10% #fig-iphone15}
+
+Link zum Download:
+[Technische Daten Apple iPhone 15 und iPhone 15 Plus](https://www.apple.com/de/iphone-15/specs/)
+-->
+
+::: {.callout-caution}
+## Lasten- und Pflichtenheft
+Eine in der Praxis kontrovers diskutierte Frage ist, ob ein Lasten- und Pflichtenheft per se Raum für Anpassungen und Änderungen lassen sollte, um auf unvorhergesehene Entwicklungen im Projektverlauf reagieren zu können. Für beide Sichtweisen gibt es gute Argumente, die Frage scheint nicht eineindeutig zu beantworten.
+:::
+
+Organisatorische Vorgaben, wie z.B. eine Zuweisung von Verantwortlichkeiten und Ressourcen für die Entwicklung, Abnahme und Vermarktung des Produkts sind **nicht Bestandteil** von Lasten- oder Pflichtenheft. Diese Fragen zur Organisation des Produktentstehungsprozesses werden im Rahmen des Projektmanagements beantwortet.
+
+Ein gut ausgearbeitetes Lastenheft bietet eine klare Richtlinie für das gesamte Entwicklungsprojekt. Ein gut ausgearbeitetes Lastenheft ist einer der wichtigsten Erfolgsfaktoren um sicherzustellen, dass der Produktentstehungsprozess erfolgreich abgeschlossen werden kann, das Produkt den Erwartungen aller Projektbeteiligten entspricht und "Moving Targets" im Verlauf des Produktentstehungsprojekts vermieden werden.
+
+Ebenso wichtig wie die Inhalte, die in einem Lastenheft enthalten sein sollten, ist ein Blick auf die Inhalte, die in einem guten Lastenheft **NICHT** enthalten sein sollten:
+
+1. **Technische Lösungen**: Das Lastenheft sollte die Anforderungen beschreiben, aber keine spezifischen technischen Lösungen vorschlagen. Die genaue Gestaltung und Konstruktion des Produkts sollte den Spezialisten des Entwicklungsteams überlassen bleiben.
+
+2. **Persönliche Präferenzen**: Das Lastenheft sollte objektive Anforderungen enthalten, die auf den Bedürfnissen der Zielgruppe basieren, und nicht auf persönlichen Vorlieben einzelner Projektbeteiligter^[Siehe [König Gustav II Adolf](https://de.wikipedia.org/wiki/Gustav_II._Adolf) → Untergang der [Vasa](https://de.wikipedia.org/wiki/Vasa_(Schiff)) infolge des eitlen Wunsches des Königs nach einem zusätzlichen, für die militärische Aufgabe der Vasa aber nicht erforderlichen und nicht im Lasteheft der Vasa hinterlegten dritten oberen Kanonendecks.].
+
+3. **Unrealistische Ziele**: Unrealistische Erwartungen führen praktisch zwangsläufig zu Enttäuschungen und Frustration und sind eines der häufigsten Hemmnisse für erfolgreiche Produktentstehungsprozesse. Das setzen realistischer Ziele, die mit den verfügbaren Ressourcen und Technologien erreichbar sind, ist ein entscheidender Erfolgsfaktor in jedem Produktentstehungsprozess (siehe → **SMART**e Ziele @sec-smart)!
+
+4. **Ungenauigkeiten oder Unklarheiten**: Alle Angaben im Lastenheft sollten präzise und klar formuliert sein, um Missverständnisse zu vermeiden. Unklare Formulierungen führen stets zu Interpretationsproblemen und verzögern und/oder behindern die Entwicklung des Produkts.
+
+5. **Nicht relevante Details**: Das Lastenheft sollte sich auf die wesentlichen Anforderungen konzentrieren und irrelevante Details vermeiden, die die Entwicklung des Produkts unnötig komplizieren könnten.

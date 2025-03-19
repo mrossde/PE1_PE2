@@ -1,0 +1,358 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Produktions- und Werkstofftechnik
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Kosten im Produktentstehungsprozess
+
+-------------------------------------------------------------------------- -->
+
+
+### Kosten im Produktentstehungsprozess  {#sec-kosten_im_pep}
+
+#### Herstellkosten eines Produkts
+
+![Kostenbeeinflussung und -entstehung im Produktentstehungsprozess (Quelle: Lehrstuhl und Institut für Allgemeine Konstruktionstechnik des Maschinenbaus (ikt) RWTH Aachen, Prof. [Jörg Feldhusen](https://de.wikipedia.org/wiki/J%C3%B6rg_Feldhusen), Stand: 2014)](images/Kostenbeeinflussung.drawio.svg){width=64% #fig-kostenimpep}
+
+Als in der Fachliteratur häufig genannte Abschätzung gilt, dass ca. 70% der Herstellkosten eines Produkts (siehe → @fig-label-kostenstruktur) durch die Entwicklungsphase festgelegt werden. Die Entwicklungsphase selbst verursacht dabei nur (2 ... 10)% der Herstellkosten des Produkts. In der Entwicklungsphase selbst entfallen bis zu zwei Drittel der Kosten auf Personalkosten → i.d.R Verwaltungsgemeinkosten (Quelle: Prof. Ehrlenspiel^[Ehrlenspiel, K.; Kiewert, A.; Lindemann, U.: Kostengünstig Entwickeln und Konstruieren. 6., überarb. u. korr. Aufl., Berlin]).
+
+::: {.callout-caution}
+## Herstellkosten eines Produkts sind in der Praxis nur in geringem Maße tatsächlich beeinflussbar!
+Auch wenn die Herstellkosten im Wesentlichen tatsächlich in der Entwicklungsphase festgelegt werden heisst das in der Praxis **NICHT**, dass die Herstellkosten in erheblichem Masse in der Entwicklungsphase auch beeinflusst werden können, **OHNE** zugleich auch die Eigenschaften des Produkts zu verändern. 
+:::
+
+In der Praxis lassen sich die Herstellkosten eines Produkts in der Entwicklungsphase zumeist tatsächlich nur um maximal wenige Prozent reduzieren (bei gleichbleibend guten Eigenschaften des Produkts).
+
+::: {.callout-important}
+## Realistische Ziele bei der Produktentwicklung hinsichtlich Produktkosten setzen!
+Eine Produktentwicklung ist in der Regel bereits überaus erfolgreich wenn es gelingt, die Eigenschaften des Produkts bei gleichen Herstellkosten des Produkts zu verbessern, oder aber die Herstellkosten des Produkts bei gleichen Eigenschaften des Produkts um einige Prozent zu senken.
+:::
+
+Die Produktkosten werden im wesentlichen beeinflusst durch:
+
+- Werkstoffe
+- Fertigungsverfahren
+- Montageverfahren
+
+::: {.callout-caution}
+## Beeinflussung der Herstellkosten eines Produkts durch Produktions- und Werkstofftechnik (PWT)
+Entsprechend sind die eingesetzten Werkstoffe und die für die Serienproduktion vorgesehenen Fertigungs- und Montageverfahren die wichtigsten Stellschrauben zur Beeinflussung der Herstellkosten eines Produkts. Die verwendete Produktions- und Werkstofftechnik bestimmt daher entscheidend über die späteren Herstellkosten eines Produkts.
+:::
+
+Die möglichen Fertigungs- und Montageverfahren werden wiederum wesentlich von den eingesetzten Werkstoffen und der gewählten Geometrie des Produkts bestimmt.
+
+Welche Potenziale zur Reduktion der Herstellkosten des Produkts letztlich gehoben werden können hängt neben der Leistung der Produktentwicklung und der → **Produktions- und Werkstofftechnik** aber auch maßgeblich von der Arbeit der → **Produktionsplanung** und dem → **Einkauf** ab. 
+
+Die Produktionsplanung bestimmt entscheidend u.a. durch die Auswahl des Produktionsstandorts, der konstruktiven Gestaltung der Produktionsanlagen und der Logistik über die Produktionskosten, der Einkauf kann sowohl bei der Beschaffung der Produktionsanlagen einen wichtigen Beitrag auf die Herstellkosten des Produkts nehmen, ebenso über die direkt in die Herstellkosten eingehende Stellschraube der Materialkosten.
+
+Die Projektkosten selbst werden im wesentlichen beeinflusst durch:
+
+- Dauer des Projekts
+- Anzahl der Projektbeteiligten
+- Eingesetzte Hilfsmittel (z.B. Kosten für CAD, Finite-Elemente-Simulationen, ...)
+
+Die im Produktentstehungsprozess anfallenden Projektkosten machen bei in Großserie produzierten Produkten jedoch in der Regel nur einen kleinen Teil der Selbstkosten eines Produkts aus. Bei der Produktion von Produkten in Einzelfertigung in Manufaktur oder Kleinstserien (z.B. → Luft- und Raumfahrt) können die Projektkosten hingegen den Großteil der Selbstkosten eines Produkts ausmachen.
+
+#### Kostenarten
+
+Die Kostenrechnung im Produktentstehungsprozess ist eine eigene Fachdisziplin und erfordert umfangreiches Fachwissen. Die Kostenrechnung ist dabei nicht einfach nur eine von vielen Teilaufgaben im Produktentstehungsprozess. Die Entwicklung technisch exzellenter und zugleich wirtschaftlich erfolgreicher Produkte gelingt oftmals nur durch das frühzeitige und die Produktentwicklung begleitende Einbinden von Experten für Kostenrechnung in den Produktentstehungsprozess. 
+
+::: {.callout-caution}
+## Kostenrechnung ist ein Erfolgsfaktor guter Produktentwicklung!
+Gute Zusammenarbeit zwischen den Teams der Disziplinen Produktentwicklung und Controlling ist einer der wichtigen Erfolgsfaktoren erfolgreicher Produktentstehungsprozesse!
+:::
+
+Die nachfolgenden Kostenarten sind häufiger Ausgangspunkt der fachlichen Diskussionen zwischen den Teams von Produktentwicklung und Controlling:
+
++ **Herstellkosten**: Kosten, die direkt dem Herstellungsprozess eines Produkts zugeordnet werden können.
+
++ **Selbstkosten**: Herstellkosten plus der Kosten, die nicht direkt mit der Produktherstellung im Zusammenhang gebracht werden, wie beispielsweise Verwaltungskosten.
+
++ **Lebenszykluskosten/Life Cycle Cost (LCC)**: Kosten, die bei der Nutzung eines Produkts als Summe aller Kosten aufgrund des Kaufs und während der Nutzungszeit des Produkts anfallen: Einstandskosten, Einmalkosten, Betriebskosten, Instandhaltungskosten, sonstige Kosten.
+
++ **Einzelkosten (EK)**: Kosten, die direkt einem Produkt oder einem Auftrag verursachungsgerecht zugerechnet werden können (z.B. Fertigungslöhne, Fertigungsmaterial, Zukaufteile, Zukaufdienste).
+
++ **Gemeinkosten (GK)**: Kosten, deren verursachungsgrechte Zurechnung aus Gründen der Logistik ausgeschlossen werden (z.B. Vorstandsgehälter, Hilfslöhne) oder aus Gründen der Wirtschaftlichkeit nicht zweckmäßig ist (z.B. Kleinteile, **Betriebsmittel** → Maschinen, Werkzeuge, Vorrichtungen, ...). Oftmals werden auch die **Entwicklungskosten** eines Produkts den Gemeinkosten zugeschlagen.
+
+
+```{mermaid}
+%%| fig-width: 6.4
+%%| label: fig-label-kostenstruktur
+%%| fig-cap: "Vereinfachte Darstellung der Zusammensetzung der Selbstkosten eines Produkts"
+flowchart LR
+  A[Selbstkosten] --> B[Herstellkosten]
+  B --> C[Materialkosten]
+  C --> F[Materialeinzelkosten]
+  C --> G[Materialgemeinkosten]
+  B --> D[Produktionskosten]
+  D --> H[Produktionseinzelkosten]
+  D --> I[Produktionsgemeinkosten]
+  A --> E[Verwaltungs- und Vertriebskosten]
+  E --> K[Verwaltungsgemeinkosten]
+  E --> L[Vertriebsgemeinkosten]
+ style B fill:#a00,stroke:#000,color:#fff
+ style I fill:#ff7e00,stroke:#000,color:#fff
+ ```
+
+
+::: {.callout-caution}
+## Einfluss der Produktionsgemeinkosten auf die Herstellkosten eines Produkts
+In der industriellen Großserienfertigung bestimmen die Produktionsgemeinkosten oftmals zu erheblichem Anteil die Herstellkosten eines Produkts. 
+:::
+
+Die der Kostenrechnung zugrunde liegenden Prämissen (z.B. die zu erwartende Lebensdauer einer sehr teuren, aber überaus langlebigen Produktionsanlage) entscheiden dann möglicherweise mehr über die (rechnerischen) Änderungen bei den Herstellkosten des Produkts als alle Maßnahmen zur Kostenreduktion, die durch das Entwicklungsteam im Produktentstehungsprozess erreicht werden können.
+
+Ebenso bietet aber auch die Wiederverwendung von Produktionsanlagen (→ *"Reuse"*) über mehrere Produktgenerationen hinweg eine Chance, die (rechnerischen) Herstellkosten eines Produkts erheblich zu senken.  
+
+::: {.callout-caution}
+## Prämissen der Kostenrechnung transparent machen und dokumentieren!
+Die vom Controlling berechneten und für das Management damit oftmals maßgeblichen (rechnerischen) Herstellkosten eines Produkt sind in der Praxis nur zum Teil eineindeutig durch reale Kosten (z.B. Materialkosten) festgelegt. Die (rechnerischen) Herstellkosten eines Produkts hängen ebenso und oftmals entscheidend von den der Kostenrechnung zugrundeliegenden Prämissen ab. Bei der Berechnung der Herstellkosten eines Produkts sind daher die zugrundeliegenden Prämissen stets transparent darzustellen und mit zu dokumentieren!
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Paretoprinzip
+
+-------------------------------------------------------------------------- -->
+#### Pareto-Prinzip {#sec-paretoprinzip}
+
+::: {.callout-tip}
+## Definition: *"Paretoprinzip"*
+Das [Paretoprinzip](https://de.wikipedia.org/wiki/Paretoprinzip), benannt nach [Vilfredo Pareto](https://de.wikipedia.org/wiki/Vilfredo_Pareto) (* 15. Juli 1848; † 19. August 1923), auch Pareto-Effekt oder 80-zu-20-Regel genannt, besagt, dass 80 % der Ergebnisse mit 20 % des Gesamtaufwandes erreicht werden. Die verbleibenden 20 % der Ergebnisse erfordern mit 80 % des Gesamtaufwandes die meiste Arbeit.
+:::
+
+Das Paretoprinzip wurde erstmals im Jahr 1906 formuliert und wird heute häufig beim Projekt- und Zeitmanagement genutzt, um wichtige Arbeitspakete zu erkennen und schnelle Fortschritte bei hinreichend guten Ergebnissen zu erzielen. Das Paretoprinzip kann helfen, Aufgaben zu identifizieren, die aufgrund fehlender [Effizienz](https://de.wikipedia.org/wiki/Wirtschaftlichkeit#Die_Unterscheidung_zwischen_Effektivit%C3%A4t_und_Effizienz_nach_Peter_F._Drucker) aufgeschoben oder sogar ganz weggelassen werden können. 
+
+##### Paretoprinzip im Produktentstehungsprozess
+Bei einer Vielzahl von Projekten, insbesondere bei der Entwicklung innovativer Produkte, ist eine 80-%-Erledigung von Aufgaben im Entwicklungsprozess oftmals jedoch nicht ausreichend. 
+
+::: {.callout-caution}
+## Vorsicht bei der Nutzung des Paretoprinzips im Produktentstehungsprozess!
+Insbesondere bei der Verwendung linearer Modelle der Produktentstehung wie dem [Wasserfallmodell](https://de.wikipedia.org/wiki/Wasserfallmodell), aber auch dem [V-Modell](https://de.wikipedia.org/wiki/V-Modell), sind sogenannte Pareto-Ketten, die sich über mehrere Projektphasen erstrecken, ein hohes, oft schwer einzuschätzendes Risiko: Die in vorgelagerten Projektphasen vermeintlich "unnötigen" 20 % der Aufgaben potenzieren sich über die folgenden Phasen des Produktentstehungsprozesses zu einem immer höheren Aufwand in den letzten Projektphasen. Möglicherweise resultiert im schlimmsten Fall zum Projektende ein komplett unbrauchbares Produkt.
+:::
+
+Bei der Entwicklung von Produkten, die den aktuellsten Stand von Wissenschaft und Technik nutzen um schließlich neuartige Eigenschaften aufzuweisen sind es zudem genau diese letzten wenigen Prozent an bis dato unerreichten Produkteigenschaften, die den einzigartigen Neuigkeitsgrad und damit oftmals auch den entscheidenden Wettbewerbsvorteil des neuen Produkts ausmachen. 
+
+Das Paretoprinzip kann helfen, den Produktentstehungsprozess schnell und schlank zu gestalten; die erfolgreiche Anwendung des Paretoprinzips beim Produktentstehungsprozess setzt jedoch ein hohes Maß an Expertise sowohl beim Projektmanagement als auch zu den technischen Fragestellungen im Entwicklungsprozess des jeweiligen Produkts voraus.
+
+<!--
+1 Konstruktionslehre II V9 Kostenmanagement in Entwicklung und Konstruktion Univ.-Prof. Dr.-Ing. Jörg Feldhusen 25. Juni 2014
+
+2 Lernziele dieser Vorlesung Sie können die Kostenbeeinflussbarkeit über den Projektfortschritt erläutern. Sie können den Kostenbegriff erklären. Sie können den Wertschöpfungsbegriff erklären. Sie kennen die einzelnen Kostenarten und können diese erläutern. Sie kennen die bedeutendsten Maßnahmen zur Kostenreduktion und können diese erläutern. Sie können den Begriff der Funktionskosten erläutern. Sie kennen die wichtigsten Methoden zur Kostenabschätzung und können diese erläutern. Sie kennen Maßnahmen zum Projektkosten-Controlling und können diese erläutern. Sie können den Unterschied zwischen Target Costing und Design to Cost erläutern. Sie kennen die Bestandteile des LCC und können diese erläutern. 2
+
+3 KL II Vorlesung 9 Inhalt 1. Einleitung und Definitionen 2. Kosten erkennen 3. Kosten abschätzen - Produkt 1. ABC-Analyse 2. Relativkostenkataloge 4. Kosten abschätzen Prozess 5. Kosten beeinflussen Produkt 6. Kosten beeinflussen Projekt 7. Weitere Methoden und Modelle 8. Life Cycle Cost 3
+
+4 Konstruktions-Dilemma Das Dilemma der Konstruktion Ca. 70 % der Produktkosten werden durch die Konstruktion festgelegt. (Prof. Ehrlenspiel) Sie verursacht aber nur ca. 2 % 10 % der Produktkosten. 4
+
+5 Kostenbeeinflussung u. -entstehung im PEP Möglichkeit der Kostenbeeinflussung Konstruktionsphase Kostenentstehung kumuliert Zeitfortschritt im Produktentstehungsprozess nach Ehrlenspiel 5
+
+6 Definition von Kosten Kosten in Geld bewerteter Güterverbrauch für die betriebliche Leistungserbringung Güter Material, Energie, Betriebseinrichtungen, menschliche Arbeitskraft, Informationen, Nutzung von Kapital, Nutzung von Rechten anderer Ziel des Kosteneinsatzes Schaffung von Produkten Erbringung von Dienstleistungen Wertschöpfung = Ergebnis des Gütereinsatzes entstandene Kosten > 1 6
+
+7 Definition: Wertschöpfung Das Ziel eines Unternehmens ist die Gewinnerzielung. Der Gewinn ergib sich aus: Wertschöpfung = Ergebnis des Gütereinsatzes entstandene Kosten > 1 also aus der Differenz zwischen erzieltem Preis und entstandenen Kosten. Der erzielbare Preis hängt von vielen Faktoren ab, im Wesentlichen aber von der Art des Marktes. 7
+
+8 Grundsätzliche Kosteneinteilung Grundsätzliche Einteilung von Kosten PRODUKT PROZESS 8
+
+9 Struktur der Entwicklungskosten Materialkosten (5%) Personalkosten (68%) Raumkosten (5%) CAD-Kosten (4%) Kosten für Fremdvergabe (5%) EDV-Kosten ohne CAD (2%) sonstige Kosten (9%) Reisekosten (2%) nach Ehrlenspiel 9
+
+10 Grundlagen der Kostenrechnung Kostenartenrechnung (Welche Kosten sind angefallen?) Einzelkosten (Kostenträgern direkt zurechenbare Kosten) Gemeinkosten (Kostenträgern nicht direkt zurechenbare Kosten) Kostenstellen- einzelkosten Kostenstellen- gemeinkosten Kostenstellenrechnung (Wo sind Kosten angefallen?) Materialbereich Fertigungsbereich Verwaltungs- und Vertriebsbereich nach Coenenberg Kostenträgerrechnung (Wofür sind Kosten angefallen?) 10
+
+11 Übersicht verschiedener Kostenarten Materialeinzelkosten Materialgemeinkosten Materialkosten Fertigungseinzelkosten Herstell- kosten Fertigungsgemeinkosten Fertigungskosten Selbstkosten Sondereinzelkosten der Fertigung Verwaltungsgemeinkosten Vertriebsgemeinkosten Sondereinzelkosten des Vertriebs Verwaltungs- und Vertriebs- kosten LifeCycle Cost LCC nach Schweitzer u. Küpper 11
+
+12 Alternative Kostengliederung Art des Verbrauchs Kostenarten I. Kurzfristiger Verbrauch 1. Verbrauch von materiellen Gütern (Sachgüter) 2. Verbrauch von immateriellen Gütern a) Verbrauch eigener Arbeitsleistungen b) Verbrauch fremder Dienstleistungen c) Verbrauch von Gütern, die auf Rechten beruhen (1) Material- bzw. Stoff- oder Werkstoffkosten (2) Personalkosten (Lohn- und Gehaltskosten) (3) Kosten für Fremddienste (4) Kosten für Rechtsgüter II. Langfristiger Verbrauch (von Sachgütern und Gütern, die auf Rechten beruhen) (5) Abschreibungen III. Zwangsverbrauch 1. Technisch-ökonomische Vernichtung 2. Staatlich-politische Abgaben (6) Wagniskosten (7) Abgaben IV. Zeitlicher Vorrätigkeitsverbrauch (8) Zinsen nach Schweitzer u. Küpper 12
+
+13 Kostenarten Herstellkosten Kosten, die direkt dem Herstellungsprozess eines Produkts zugeordnet werden können. Selbstkosten Herstellkosten plus der Kosten, die nicht direkt mit der Produktherstellung in Zusammenhang gebracht werden, wie beispielsweise Verwaltungskosten. Lebenszykluskosten / Life Cycle Cost (LCC): Kosten, die bei der Produktnutzung als Summe aller Kosten aufgrund des Kaufs, und während der Nutzungszeit eines Produkts anfallen: Einstandskosten Einmalkosten Instandhaltungskosten sonstige Kosten Betriebskosten 13
+
+14 Einzel-/Gemeinkosten (EK/GK) Einzelkosten: Kosten, die direkt einem Produkt oder einem Auftrag verursachungsgerecht zugerechnet werden können (z. B. Fertigungslöhne, Fertigungsmaterial, Zukaufteile, Zukaufdienste). Gemeinkosten: Kosten, deren verursachungsgerechte Zurechnung aus Gründen der Logistik ausgeschlossen werden (z. B. Vorstandsgehälter) oder aus Gründen der Wirtschaftlichkeit nicht zweckmäßig ist (z. B. Kleinteile, Betriebsmittel). Auch Hilfslöhne werden den Gemeinkosten zugerechnet. 14
+
+15 Produktbezogene Kostenvermeidung Produktkosten werden im wesentlichen beeinflusst: Materialverbrauch Fertigungsverfahren Montageverfahren Produktionsfaktoren Das Produkt muss kostengünstig herstellbar sein: Material Fertigung Montage niedrige Projektkosten 15
+
+16 Projektbezogene Kostenvermeidung Projektkosten werden im wesentlichen beeinflusst: Dauer des Projekts Anzahl der Projektbeteiligten Eingesetzte Hilfsmittel (Kosten für CAD, ) Zeit, Anzahl der Mitarbeiter Die Entwicklung und Konstruktion des Produkts muss kostengünstig sein: Zeitraum für Entwicklung und Konstruktion Eingesetzte Ressourcen niedrige Projektkosten 16
+
+17 Zusammenfassung Entwicklung verursacht nur geringe Kosten, definiert aber den Großteil der Produktkosten. Einteilung in Einzel- und Gemeinkosten Einteilung in Produkt- und Prozesskosten Herstell-, Selbst- und Lebenszykluskosten 17
+
+18 KL II Vorlesung 9 Inhalt 1. Einleitung und Definitionen 2. Kosten erkennen 3. Kosten abschätzen - Produkt 1. ABC-Analyse 2. Relativkostenkataloge 4. Kosten abschätzen Prozess 5. Kosten beeinflussen Produkt 6. Kosten beeinflussen Projekt 7. Weitere Methoden und Modelle 8. Life Cycle Cost 18
+
+19 Kosteneinflüsse Marketing Vertrieb Lebensdauer Laufzeiten Entsorgbarkeit Umweltverträglichkeit Stückzahl??? Montage Fertigungsverfahren Gewicht Produktionsart? Werkstoff MKS Konkurrenz Fertigungsschritte Oberflächengüte Größe??? FEM Kompatibilität Prototypen Erprobung Genauigkeit Baureihenverträglichkeit 19
+
+20 Kosteneinflussgrößen bei der Konstruktion Konstruktionsphase Konstruktive Kosteneinflüsse Planen Produktfunktionen Funktionsstruktur Konzipieren Entwerfen Ausarbeiten Lösungsprinzip Baustruktur Baugröße Werkstoff Oberflächenqualität Toleranzen Standardisierung nach Jan O. Fischer 20
+
+21 Rolle der Funktionsstruktur bzgl. Kosten Konstruktionsphase Konstruktive Kosteneinflüsse Planen Konzipieren Entwerfen Ausarbeiten Produktfunktionen Funktionsstruktur Lösungsprinzip Baustruktur Baugröße Werkstoff Oberflächenqualität Toleranzen Standardisierung Durch Aufgliedern einer Gesamtfunktion in Teilfunktionen wird die Funktionsstruktur gebildet. Die Umsetzung der Teilfunktionen durch die Bauteile und Baugruppen eines technischen Systems erzeugt Funktionskosten. 21
+
+22 Funktionskosten Häufig wird mit der nach Funktionen gegliederten Produktstruktur gearbeitet, um zu erkennen, was die Erfüllung einer geforderten Funktion kostet. Funktionskosten : gesamte Herstellkosten des betrachteten Systems zur Erfüllung der betrachteten Bauteil-; Baugruppen-; Produktfunktion. 22
+
+23 Funktionsbegriff und Gestaltungsfreiraum Gestaltungsfreiraum Bsp. Konstruktionslösung hoch Kräfte weiterleiten Abstraktionsgrad niedrig Teile verbinden Bleche verschrauben nach Kaniowsky 23
+
+24 Funktionskosten: Beispiel Kappe Miene Schaft Funktionen Komponenten Mine 22 GE Schaft 58 GE Kappe 12GE Funktionskosten Striche ziehen Farbpaste speichern 40% Farbpaste ausbringen 40% Minenbefestigung ermöglichen 20% 40% Strichziehen erleichtern 30% Hersteller kennzeichnen 15% 15% Status des Besitzers verbessern 15% 15% Befestigung ermöglichen 20% Verschmutzung des Besitzers verhindern 50% Summen: 100% 100% 100% 24
+
+25 Funktionskosten: Beispiel Kappe Miene Schaft Funktionen Komponenten Mine 22 GE Schaft 58 GE Kappe 12GE Funktionskosten Striche ziehen 40% x 22 GE = 8,8 GE Farbpaste speichern 8,8 GE 8,8 GE Farbpaste ausbringen 8,8 GE 8,8 GE Minenbefestigung ermöglichen 4,4 GE 23,2 GE 27,6 GE Strichziehen erleichtern 17,4 GE 17,4 GE Hersteller kennzeichnen 8,7 GE 1,8 GE 10,5 GE Status des Besitzers verbessern 8,7 GE 1,8 GE 10,5 GE Befestigung ermöglichen 2,4 GE 2,4 GE Verschmutzung des Besitzers verhindern 6,0 GE 6,0 GE Summen: 22 GE 58 GE 12 GE 92 GE 25
+
+26 Produktarchitektur Nach Baumgart 26
+
+27 Kostenmanagement: Kostenstruktur Konstruktionsphase Konstruktive Kosteneinflüsse Planen Konzipieren Entwerfen Ausarbeiten Produktfunktionen Funktionsstruktur Lösungsprinzip Baustruktur Baugröße Werkstoff Oberflächenqualität Toleranzen Standardisierung Beim Ermitteln der Soll Kosten spielt die Produktstruktur eine bedeutende Rolle. Zur Kostenanalyse kann es sinnvoll sein, das Produkt unterschiedlich zu gliedern, um die Abhängigkeit der Kosten von verschiedenen Faktoren zu erkennen. 27
+
+28 Rolle des Lösungsprinzips bzgl. Kosten Konstruktionsphase Konstruktive Kosteneinflüsse Planen Konzipieren Entwerfen Ausarbeiten Produktfunktionen Funktionsstruktur Lösungsprinzip Baustruktur Baugröße Werkstoff Oberflächenqualität Toleranzen Standardisierung Eine technische Lösung kann durch 3 Hauptgrößen beschrieben werden: zugrunde liegende physikalische Effekte eingesetzte Werkstoffe geometrische Angaben Insbesondere die gewählten Werkstoffe und die Geometrie bestimmen die Produktkosten 28
+
+29 Kostenverantwortung des Ingenieurs Der Ingenieur muss die Fragen beantworten: Wie kann das eingesetzte Material in Menge und Qualität reduziert werden? Wie kann die Fertigungszeit reduziert werden? Wie kann die Montage vereinfacht und die Montagezeit reduziert werden? Herstellkosten Herstellkosten Wie kann die Projektlaufzeit reduziert werden? Wie kann die Anzahl der erforderlichen Projektmitarbeiter reduziert werden? Projektkosten Projektkosten 29
+
+30 KL II Vorlesung 9 Inhalt 1. Einleitung und Definitionen 2. Kosten erkennen 3. Kosten abschätzen - Produkt 1. ABC-Analyse 2. Relativkostenkataloge 4. Kosten abschätzen Prozess 5. Kosten beeinflussen Produkt 6. Kosten beeinflussen Projekt 7. Weitere Methoden und Modelle 8. Life Cycle Cost 30
+
+31 Methoden zur Kostenabschätzung Produktplanung Konkurrenzanalyse Marktanalyse Wirtschaftlichkeitsrechnungen Konzepterarbeitung Bestimmung von Kostenschwerpunkten durch Kostenstrukturanalysen ABC-Analysen nach Spur Entwurf und Ausarbeitung Relativkostenkataloge Kurzkalkulationsverfahren Berechnungen: Gewichtskostenkalkulation Materialkostenkalkulation Kostenprognosen: Ähnlichkeitsgesetze Kostenwachstumsgesetze 31
+
+32 Abschätzen von Kosten ,-?,- Was könnten Ansatzpunkte sein? 32
+
+33 Abschätzen von Kosten S-Klasse Stückzahl: ~ Gewicht: 2 t Länge: 5 m Preis: m > > 1 t > > Straßenbahn Stückzahl: ~ 50 Gewicht: 30 t Länge: 27 m Preis:? 27 m > t > weitere überschlägige Berechnungen, wie Anzahl Sitzplätze denkbar 33
+
+34 KL II Vorlesung 9 Inhalt 1. Einleitung und Definitionen 2. Kosten erkennen 3. Kosten abschätzen - Produkt 1. ABC-Analyse 2. Relativkostenkataloge 4. Kosten abschätzen Prozess 5. Kosten beeinflussen Produkt 6. Kosten beeinflussen Projekt 7. Weitere Methoden und Modelle 8. Life Cycle Cost 34
+
+35 ABC-Analyse Erweiterung der ursprünglichen Pareto-Regel auf insgesamt drei Kategorien Mit Hilfe der ABC-Analyse wird versucht mit möglichst wenig Aufwand einen möglichst großen Effekt zu erreichen. Dazu werden die Hauptkostenverursacher ermittelt und betrachtet. Regel zur Klassenbildung: A: 5% der Teile machen 75% der Kosten aus B: 20% der Teile machen 20% der Kosten aus C: 75% der Teile machen 5% der Kosten aus 35
+
+36 ABC-Analyse: Beispiel (1) 36
+
+37 ABC-Analyse: Beispiel (2) Ermittelte Einzelteile des Getriebes, nach Kosten sortiert und in Klassen kategorisiert. Pos. Benennung (Teileart) Kosten der Teile pro Getriebe Anteil an gesamten Teile- Herstellkosten einzeln kumuliert Klasse Teilezahl absol. kumulierte Teilezahl % 1 Gehäuse 13420,- 28 % 28 % 1 2 % 3 Rad 12600,- 26 % 54 % A 2 4 % 6 Ritzelwelle 10000,- 20,5% 74,5% 3 6 % 4 Radwelle 6680,- 14 % 88,5% 4 8 % 5 Radlager 2400,- 5 % 93,5% B 6 12 % 7 Ritzellager 2000,- 4 % 97,5% 8 15 % 2 Deckel 500,- 1 % 98,5% % 8 Dichtungen 500,- 1 % 99,5% C % 9-15 Rohrleitungen 300,- 0,5% 100 % % 37
+
+38 KL II Vorlesung 9 Inhalt 1. Einleitung und Definitionen 2. Kosten erkennen 3. Kosten abschätzen - Produkt 1. ABC-Analyse 2. Relativkostenkataloge 4. Kosten abschätzen Prozess 5. Kosten beeinflussen Produkt 6. Kosten beeinflussen Projekt 7. Weitere Methoden und Modelle 8. Life Cycle Cost 38
+
+39 Relativkosten Bei der Verwendung von Relativkostenkatalogen muss die Vergleichbarkeit mit den Rahmenbedingungen im eigenen Unternehmen sichergestellt sein. Deshalb sind Relativkostenkataloge meistens firmenspezifisch! 39
+
+40 Relativkosten: Welle-Nabe-Verbindungen nach Kittsteiner 40
+
+41 Relativkosten: Verschraubung 41
+
+42 Kostenaspekt bei der Auswahl von Stählen (1) Preis Zugfestigkeit Streckgrenze Dichte [ /kg] [N/mm²] [N/mm²] [kg/dm³] C45 0, ,85 42 Cr Mo 4 1, ,85 16 Mn Cr 5 0, ,85 20 Mn Cr 5 0, ,85 Preise und Eigenschaften ausgewählter Stahlsorten 42
+
+43 Kostenaspekt bei der Auswahl von Stählen (2) Kosten [ /kg] Kosten [ /m³] Kosten bezogen auf Zugfestigkeit Kosten bezogen auf Streckgrenze RK bezogen auf Gewicht RK bezogen auf Zugfestigkeit RK bezogen auf Streckgrenze C 45 0,730 5,73 0, , ,00 1,24 1,31 42 Cr Mo 4 1,025 8,04 0, , ,40 1,11 1,00 16 Mn Cr 5 0,919 7,21 0, , ,26 1,22 1,28 20 Mn Cr 5 0,924 7,25 0, , ,27 1,00 1,11 Berechnung der Relativkosten (RK), Bezugswerte hervorgehoben 43
+
+44 KL II Vorlesung 9 Inhalt 1. Einleitung und Definitionen 2. Kosten erkennen 3. Kosten abschätzen - Produkt 1. ABC-Analyse 2. Relativkostenkataloge 4. Kosten abschätzen Prozess 5. Kosten beeinflussen Produkt 6. Kosten beeinflussen Projekt 7. Weitere Methoden und Modelle 8. Life Cycle Cost 44
+
+45 Kostenplanung und -controlling Projekt-, Produktstrukturplanung Kalkulationsrelevante Teileinheiten Entwicklungsprozessplan Phasen, Tätigkeitsarten pro Teileinheit Projektplanung Projektdurchführung Projektabschluss Aufwandsschätzung Planmengen für Käufe und Rechnerleistungen Ist-Stunden pro Teileinheit, Phase und Tätigkeitsart Ist-Kosten für Käufe, Rechnerleistungen Restaufwand Komplette Ist-Werte Abgelieferte Mengen pro Meilenstein Projektphasen Vorkalkulation Mitkalkulation Nachkalkulation Planung in Stunden, Kosten; darin Qua- litätskosten Planmengen pro Meilenstein P Plan/Ist-Vergleich pro Phase Voraussichtliches Ist M Gegenüberstellung zur ersten und letzten Vorkalkulation Einbeziehung der Leistungsmengen Kostenbetrachtung Mess- u. Kennzahlenermittlung Erfahrungsdaten vergleichbarer Erfahrungs- datenbasis Projekt- abschluss- analyse Einflussgrößen des Projektablaufes Zukunftsweisende sonstige unterstützende Maßnahmen Projekte Erfahrungen Verfahren zur Projektsteuerung, -kalkulation, -analyse und Erfahrungsdatensammlung P Planwerte M letzte Mitkalkulation Nach Riedl 45
+
+46 Rechnerunterstütztes Monitoring Projektkosten Vergangenheits- Betrachtung Ursachen für die Abweichungen von der Planung? Zukunfts- Betrachtung Notwendige personelle Kapazität vorhanden? Budget einzuhalten? 46
+
+47 KL II Vorlesung 9 Inhalt 1. Einleitung und Definitionen 2. Kosten erkennen 3. Kosten abschätzen - Produkt 1. ABC-Analyse 2. Relativkostenkataloge 4. Kosten abschätzen Prozess 5. Kosten beeinflussen Produkt 6. Kosten beeinflussen Projekt 7. Weitere Methoden und Modelle 8. Life Cycle Cost 47
+
+48 Ermittlung beeinflussbarer Kosten Materialeinzelkosten Materialgemeinkosten Materialkosten Fertigungseinzelkosten Herstell- kosten Fertigungsgemeinkosten Fertigungskosten Selbstkosten Sondereinzelkosten der Fertigung Verwaltungsgemeinkosten Vertriebsgemeinkosten Sondereinzelkosten des Vertriebs Verwaltungs- und Vertriebs- kosten Life Cycle Cost LCC nach Schweitzer u. Küpper 48
+
+49 Reduktion der Herstellkosten Herstellkosten reduzieren Materialkosten Teilefertigungskosten Montagekosten weniger Material möglichst gleiches Material kostengünstigeres Material weniger Fertigungsoperationen kostengünstigere Fertigungsverfahren Werkzeuge und Werkzeugmaschinen weniger Montageoperationen kostengünstigere Montage 49
+
+50 Kosteneinflüsse der Gestaltung Die Gestalt eines Bauteils wird u. a. beeinflusst durch: geforderte Festigkeit gefordertes Gewicht Stückzahl eingesetztes Fertigungsverfahren Durch die Gestalt werden die Werkstoffe und notwendigen Fertigungsverfahren und damit auch die Produktkosten wesentlich festgelegt. 50
+
+51 Kosteneinflüsse der Gestaltung Durch qualitatives Gestalten werden die Gestaltelemente und die Struktur ihrer Anordnung festgelegt. Kostengesichtspunkte: Nutzbare Halbzeuge, notwendige Schnittstellen, Baugrößen Durch quantitatives Gestalten werden die Abmessungen der Gestaltelemente selber und ihrer Winkel zueinander sowie ihrer Abstände untereinander festgelegt. Kostengesichtspunkte: Nutzbare Werkzeuge, einsetzbare Fertigungsverfahren 51
+
+52 Gestaltungsregeln Gestaltungsregel schlechter besser Komplexitätsreduzierung durch Verwendung einheitlicher Teile Mehrere hintereinander angeordnete Bearbeitungsflächen auf gleiche Höhe bringen (Durchfräsen, Durchbohren, gleiche Werkzeuge) Reduzierung von Fertigungskosten durch Vermeiden von Sacklöchern nach Reischl Beispielhafte Gestaltungsregel mit Gut/Schlecht-Beispielen 52
+
+53 Einfluss der Stückzahl auf die Kosten Allgemeine Faustregel : doppelte Stückzahl senkt die Kosten um 10% nach Ehrlenspiel 53
+
+54 Einfluss der Baugröße auf die Kosten nach Niemann 54
+
+55 Kostenreduktion: Material 55
+
+56 Kosteneinfluss der Montage Montagegerechte Konstruktion spart Kosten! 56
+
+57 KL II Vorlesung 9 Inhalt 1. Einleitung und Definitionen 2. Kosten erkennen 3. Kosten abschätzen - Produkt 1. ABC-Analyse 2. Relativkostenkataloge 4. Kosten abschätzen Prozess 5. Kosten beeinflussen Produkt 6. Kosten beeinflussen Projekt 7. Weitere Methoden und Modelle 8. Life Cycle Cost 57
+
+58 Projektkostencontrolling Was tun, wenn die Projektkosten aus dem Ruder laufen? Lösungen: Kosten ist soll Woche wirklich länger brauchen? mehr Kapazität/Mitarbeiter Strafzahlungen in Kauf nehmen 58
+
+59 Projektfortschrittsbericht nach Schmelzer 59
+
+60 KL II Vorlesung 9 Inhalt 1. Einleitung und Definitionen 2. Kosten erkennen 3. Kosten abschätzen - Produkt 1. ABC-Analyse 2. Relativkostenkataloge 4. Kosten abschätzen Prozess 5. Kosten beeinflussen Produkt 6. Kosten beeinflussen Projekt 7. Weitere Methoden und Modelle 8. Life Cycle Cost 60
+
+61 Methoden zur Kostensenkung (Auswahl) Target Costing Betrachtet Gesamtsystem: Markt, Kunde, Produkt, Wettbewerber Design to Betrachtet schwerpunktmäßig einen Aspekt des Systems Cost Assembly Manufacturing Qualitätsmanagement Betrachtet im Wesentlichen Qualitäts- und Kundennutzenaspekte TQM: Total Quality Management KAIZEN/KVP QFD: Quality Function Deployment FMEA Engineering-Techniken Reengineering (Nutzen des Verbesserungspotenzials vorhandener Produkte) Reverse-Engineering (Analyse von Konkurrenzprodukten mit der Frage: Was würde dieses Produkt in unserem Hause kosten? ) Wertanalyse Neben Aspekten der Kostenreduktion wird besonders eine mögliche Wert-/Nutzensteigerung des Produkts betrachtet. 61
+
+62 Beziehungen: Markttyp - Kosten Beim Verkäufermarkt kann der Lieferant seine Vorstellungen vom Preis durchsetzen: wenig Konkurrenz große Nachfrage Kosten nach Anfall, Preis nach angestrebtem Gewinn Beim Käufermarkt muss der Lieferant den Preis den Vorstellungen des Marktes anpassen: viel Konkurrenz wenig Nachfrage Preis nach Möglichkeiten des Marktes, Kosten nach angestrebtem Gewinn 62
+
+63 Target Costing Ist nicht das Ergebnis einer Kostenrechnung, sondern eine Managementfunktion. Hintergrund: der Preis - insbesondere für neue Produkte - muss sich am Marktpreisniveau orientieren. nicht Was kostet das?, sondern Was darf das kosten?. Dies kann zur Reduktion der ursprünglich geplanten Funktionalität führen. Auf der Basis einer Marktanalyse wird ein Zielpreis ermittelt und durch eine Rückwärtskalkulation die Werte für die einzelnen Kostenarten. Zielpreis./. Zielgewinn = Zielkosten Vergleich Kalkulierte Kosten 63
+
+64 Design for X sorgt für günstige Produkte Zur Reduktion der Teilefertigungskosten sind die Hinweise zum Gestalten unter Restriktionen zu beachten: Design for X z. B.: Design for Assembly 64
+
+65 Design to Cost Design to Cost: Im wesentlichen bei bereits vorhandenen Produkten. Die Funktionalität bleibt konstant, die Kosten werden so weit wie möglich reduziert, durch Anwendung der Methoden zur Senkung der Herstellkosten. 65
+
+66 Generelles Vorgehen zur Kostenreduktion I Schritt Ergebnis 1 Zieldefinition 1.1 Festlegung der geforderten Produktfähigkeiten 1.2 Festlegung der Zielkosten 1.3 Festlegung von Terminen und Meilensteinen Anforderungsliste Funktionskosten Arbeitsplan 2 Ist-Analyse 2.1 Analyse der Kostenstruktur Würfel = Selbstkosten des Unternehmens Sicht Reaktion auf Auslastungsoder Mengenänderungen Erkennen von Einsparpotentialen und deren mögliche Größenordnung Materialkosten Sicht Zurechenbarkeit Personalkosten Sicht Kostenarten Kapitalkosten sonstige 2.2 Leistungs- und Eigenschafts-Cluster 2.3 Bauraum- und Schnittstellenanalyse Ermitteln möglicher Bausteine eines Baukastens, bzw. Größenstufungen einer Baureihe. Ermitteln möglicher Gleichteile, Teilefamilien 66
+
+67 Generelles Vorgehen zur Kostenreduktion II Schritt Ergebnis Vorgehen bei vorhandenen Produkten 3 Redesign 3.1 Design to Cost 3.2 Reengineering 3.4 Reverse-Engineering 3.5 Wertanalyse Konstruktive Überarbeitung der Baugruppen zur Zielkostenerreichung Erhöhung des Nutzerwertes, Senkung der Kosten Vorgehen bei neuen Produkten 3 Methoden zum Konstruieren und zur Kostensenkung 3.1 Methoden zum Konzipieren 3.2 Methoden zum Gestalten 3.3 Methoden zur Ausarbeitung 3.4 Target Costing 3.5 TQM 3.6 Ausgehend von Markt- und Marketinggesichtsspunkten werden die Baugruppen und das gesamte Produkt nach den Regeln der Konstruktionsmethodik konzipiert und gestaltet. 67
+
+68 Maßnahmen zur Kostenreduktion I Maßnahme Standardisierung Normung Definition Einmalige Festlegung der Funktionalität für Prozesse und/oder technischer Systeme (Maschinen, Baugruppen oder Einzelteile) mit deren diskreten, inhaltlichen, bzw. gestalterischen/geometrischen Ausprägungen Wirkung Reduktion des Einmalaufwands durch: Nutzung vorhandener Lösungen Standardprozessabläufe Wiederholteile Teilefamilien Stückzahlerhöhung Qualitätserhöhung durch Lernkurve Baureihen Technische Gebilde (Maschinen, Baugruppen oder Einzelteile), die dieselbe Funktion mit der gleichen Lösung in mehreren Größenstufen bei möglichst gleicher Fertigung erfüllen Reduktion des Einmalaufwands durch: Nutzung vorhandener Lösungen Standardprozessabläufe Wiederholteile Teilefamilien Stückzahlerhöhung Qualitätserhöhung durch Lernkurve Baukastensysteme Technische Gebilde (Maschinen, Baugruppen oder Einzelteile), die als Bausteine mit oft unterschiedlichen Lösungen durch Kombination verschiedene Gesamtfunktionen erfüllen Reduktion des Einmalaufwands durch: Nutzung vorhandener Lösungen Standardprozessabläufe Wiederholteile Teilefamilien Stückzahlerhöhung Qualitätserhöhung durch Lernkurve 68
+
+69 Maßnahmen zur Kostenreduktion II Maßnahme Definition Wirkung Module Subsystem, dessen Grenzen nach funktionalen und fertigungstechnischen Gesichtspunkten festgelegt sind, mit dem Ziel, es unabhängig vom Gesamtsystem entwickeln, konstruieren, fertigen und prüfen zu können. Durch Größenstufung von Modulen und deren Kombination können unterschiedliche Gesamtfunktionen und Größenstufung des Gesamtprodukts realisiert werden. Parallelisierung von Prozessen: Konstruktion Fertigung Reduktion des Prüfaufwands für Gesamtsystem Standardisierung, Bauteilfamilien... Qualitätserhöhung durch gleiche konstruktive Lösungen gleiche Fertigungsverfahren gleiche Montageverfahren Features Aggregation von Produktdaten, Relationen und Constraints über einen Produktbereich in Abhängigkeit von der Produktentstehungsphase Abbildung von Konstruktionslogiken Aufbau von Konfigurationsmanagementsystemen Abbildung von integriertem Produktwissen: Konstruktionswissen Einkaufswissen Fertigungswissen Aufwandsreduktion durch Nutzung vorhandener konstruktiver Lösungen/Lösungsprinzipien Fertigungsprozesse/-verfahren Montageprozesse/-verfahren Qualitätserhöhung durch gleiche konstruktive Lösungen/Lösungsprinzipien gleiche Fertigungsprozesse/-verfahren gleiche Montageprozesse/-verfahren 69
+
+70 KL II Vorlesung 9 Inhalt 1. Einleitung und Definitionen 2. Kosten erkennen 3. Kosten abschätzen - Produkt 1. ABC-Analyse 2. Relativkostenkataloge 4. Kosten abschätzen Prozess 5. Kosten beeinflussen Produkt 6. Kosten beeinflussen Projekt 7. Weitere Methoden und Modelle 8. Life Cycle Cost 70
+
+71 Lebenszykluskosten / Life Cycle Cost (LCC) Kosten, die bei der Produktnutzung als Summe aller Kosten aufgrund des Kaufs, und während der Nutzungszeit eines Produkts anfallen: Einstandskosten Einmalkosten Betriebskosten Instandhaltungskosten sonstige Kosten Life Cycle Cost Selbstkosten Herstellkosten 71
+
+72 LCC (Kundensicht) 72
+
+73 Lebenslaufkosten der Produktlebensdauer nach Ehrlenspiel, Kiewert, Lindemann: Kostengünstig Entwickeln und Konstruieren Zeichnung Maschine Einsatz Hersteller Nutzer Entsorgungskosten Einflussmöglichkeiten auf Herstellkosten Betriebskosten kumulierte Kosten einmalige Kosten Einstandskosten Einflussmöglichkeiten auf Betriebskosten (Nutzer) Instandhaltungskosten Investitionskosten (ohne Verzinsung) Lebenslaufkosten (Life-Cycle-Costs) Planung Entwicklung Fertigung Nutzung Entsorgung Zeit 73
+
+74 LCC-Strukturen 100 %? Lebensdauer 11 Jahre Lebensdauer 20 Jahre Lebensdauer Betriebskosten Lebenslaufkosten Instandhaltungskosten Entsorgungskosten 0 % Investitionskosten Gabel- Pkw Wasserwerk- schlüssel (geschäftlich pumpe nach Ehrlenspiel genutzt) 74
+
+75 Literatur Literatur zum Thema Kosten in Entwicklung und Konstruktion: 1. Ehrlenspiel, K.; Kiewert, A.; Lindemann, U.: Kostengünstig Entwickeln und Konstruieren. 6., überarb. u. korr. Aufl., Berlin: Springer Fischer, J. O.: Kostenbewusstes Konstruieren. Berlin: Springer Schweitzer, M.; Küppert, H.-U.: Systeme der Kosten- und Erlösrechnung, 8. Auflage, München Coenenberg, A. G.: Kostenrechnung und Kostenanalyse, 5. Auflage, Stuttgart
+
+-->
+
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
++ @ehrlenspiel_kostengunstig_2014: [Kostenverantwortung der Produktentwickler](https://rdcu.be/dI8wf)
++ @kumper_controlling_2024: [Kosten managen)](https://rdcu.be/dIUeF)
+:::
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Literaturempfehlung
+
+-------------------------------------------------------------------------- -->
+
+<!--
+## Literaturempfehlung
+
+![@ehrlenspiel_kostengunstig_2014: [Kostengünstig Entwickeln und Konstruieren](https://link.springer.com/book/10.1007/978-3-642-41959-1)](images/Ehrlenspiel_Kosteng%C3%BCntig_Entwickeln_978-3-642-41959-1.webp){width=40%}
+
+![@kumper_controlling_2024: [Contolling](https://link.springer.com/book/10.1007/978-3-658-43745-9)](images/Kuemper_Controlling.webp){width=40%}
+
+-->

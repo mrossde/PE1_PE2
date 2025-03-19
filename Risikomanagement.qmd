@@ -1,0 +1,102 @@
+---
+title: "MTB3 Entwicklung mechatronischer Systeme 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    email: christian.anders@hs-esslingen.de
+    affiliations: Hochschule Esslingen
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+---
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Risikomanagement
+
+-------------------------------------------------------------------------- -->
+## Risikomanagement und Risiken
+
+### Definition Risikomanagement
+
+Risikomanagement ist ein wichtiger Bestandteil vieler Ingenieurdisziplinen, da es dabei hilft, potenzielle Gefahren und Unsicherheiten zu identifizieren, zu bewerten und zu kontrollieren, die sich auf Projekte, Produkte oder Systeme auswirken können. Für Ingenieure ist es von entscheidender Bedeutung, Risiken zu erkennen und effektive Strategien zu entwickeln, um diese Risiken zu minimieren oder zu verwalten, um erfolgreiche Projektdurchführungen und die Sicherheit von Produkten oder Systemen zu gewährleisten.
+
+::: {.callout-tip}
+## Definition: *"Risikomanagement"*
+Risikomanagement bezeichnet den Prozess der systematischen Identifizierung, Analyse, Bewertung, Behandlung und Überwachung von Risiken im Rahmen eines bestimmten Projekts, Produkts oder Systems. Risikomanagement zielt darauf ab, potenzielle negative Auswirkungen zu minimieren oder zu kontrollieren und gleichzeitig Chancen zur Verbesserung zu identifizieren und zu nutzen.
+:::
+
+
+### Hintergrund des Risikomanagements
+
+1. **Risikoerkennung**: Der erste Schritt im Risikomanagement ist die Identifizierung möglicher Risiken, die sowohl interne als auch externe Ursachen haben können. Ingenieure müssen eine gründliche Risikoanalyse durchführen, indem sie potenzielle Gefahren und Unsicherheiten identifizieren, die mit den verschiedenen Aspekten ihres Projekts, Produkts oder Systems verbunden sind.
+
+2. **Risikoanalyse**: Nach der Identifizierung potenzieller Risiken ist es wichtig, diese Risiken zu analysieren, um ihre Eintrittswahrscheinlichkeit und potenziellen Auswirkungen zu bewerten. Dies beinhaltet oft die Quantifizierung von Risiken, um ein besseres Verständnis für ihre Bedeutung zu erhalten und Prioritäten für die Risikobehandlung festzulegen.
+
+3. **Risikobewertung**: Bei der Risikobewertung werden die analysierten Risiken bewertet, um festzustellen, welche Risiken am schwerwiegendsten sind und welche am dringendsten behandelt werden müssen. Dies ermöglicht es Ingenieuren, Ressourcen effektiv zu allozieren und sich auf die wichtigsten Risiken zu konzentrieren.
+
+4. **Risikobehandlung**: Nach der Bewertung der Risiken entwickeln Ingenieure Strategien und Maßnahmen, um diese Risiken zu behandeln oder zu mindern. Dies kann die Vermeidung, Übertragung, Verringerung oder Akzeptanz von Risiken umfassen, je nach den spezifischen Zielen und Anforderungen des Projekts oder Systems.
+
+5. **Risikomanagementplanung**: Es ist wichtig, einen strukturierten Plan für das Risikomanagement zu entwickeln, der die Methoden, Werkzeuge, Verantwortlichkeiten und Zeitpläne für die Risikoüberwachung und -kontrolle festlegt. Ein gut durchdachter Risikomanagementplan trägt dazu bei, dass das Risikomanagement effektiv und effizient durchgeführt wird.
+
+6. **Risikoüberwachung und -kontrolle**: Das Risikomanagement endet nicht nach der Implementierung von Risikominderungsstrategien. Ingenieure müssen kontinuierlich die Risiken überwachen und kontrollieren, um sicherzustellen, dass die angewendeten Maßnahmen wirksam sind und neue Risiken rechtzeitig identifiziert und behandelt werden.
+
+Insgesamt ist das Risikomanagement ein wesentlicher Bestandteil des ingenieurwissenschaftlichen Prozesses, der dazu beiträgt, die Zuverlässigkeit, Sicherheit und Qualität von Projekten, Produkten und Systemen zu verbessern. Durch eine systematische Herangehensweise an das Risikomanagement können Ingenieure potenzielle Probleme frühzeitig erkennen und proaktiv Maßnahmen ergreifen, um negative Auswirkungen zu minimieren und Chancen zu nutzen.
+
+
+### Risikomatrix
+
+Eine Risikomatrix ist ein Werkzeug, das in der Risikomanagementpraxis verwendet wird, um die Risiken eines Projekts, einer Organisation oder einer bestimmten Aktivität zu analysieren und zu bewerten. Die Risikomatrix ordnet typischerweise Risiken anhand ihrer Eintrittswahrscheinlichkeit und ihrer potenziellen Auswirkungen auf ein bestimmtes Ziel oder einen bestimmten Bereich an.
+
+Typischerweise ist eine Risikomatrix in Form einer Tabelle oder eines Diagramms aufgebaut, wobei die Eintrittswahrscheinlichkeit und die potenziellen Auswirkungen in der Regel auf einer Skala von niedrig bis hoch bewertet werden. Die Schnittpunkte in der Tabelle werden dann genutzt, um die Risiken entsprechend ihrer Bewertung einzustufen, beispielsweise in Kategorien wie "niedriges Risiko", "mittelhohes Risiko" und "hohes Risiko".
+
+Die Verwendung einer Risikomatrix ermöglicht es den Stakeholdern, sich auf die Risiken zu konzentrieren, die die größte Bedrohung darstellen, und geeignete Maßnahmen zur Risikominderung oder -bewältigung zu identifizieren.
+
+Mittels einer Risikomatrix, Risikoportfolio bzw. Risiko-Map wird die Wahrscheinlichkeit des Auftretens eines unerwünschten Ereignisses (dem Risiko) gegenüber dessen Auswirkung tabellarisch ins Verhältnis gesetzt. Gegensätzlich zum Risikoinventar findet eine zweidimensionale Darstellung statt. Dies dient der systematischen Abschätzung und Bewertung von Risiken. Die Risikomatrix ist eine Methode im Zusammenhang einer Risikoanalyse und existiert in verschiedenen Varianten.
+
+
+| Eintrittswahrscheinlichkeit / Auswirkungen | Niedrig           | Mittel            | Hoch              |
+|-------------------------------------------|-------------------|-------------------|-------------------|
+| Niedrig                                   | <span style="color:green">Niedriges Risiko</span> | Niedriges Risiko  | Mittleres Risiko  |
+| Mittel                                    | Niedriges Risiko  | Mittleres Risiko  | <span style="color:red">Hohes Risiko</span>    |
+| Hoch                                      | Mittleres Risiko  | <span style="color:red">Hohes Risiko</span>    | <span style="color:red">Hohes Risiko</span>    |
+
+Quelle: [Wikipedia](https://de.wikipedia.org/wiki/Risikomatrix)
+
+In dieser Tabelle sind die Eintrittswahrscheinlichkeit und die potenziellen Auswirkungen jeweils in drei Stufen unterteilt: niedrig, mittel und hoch. Die Schnittpunkte der beiden Achsen zeigen die Kategorien des Risikos entsprechend der Bewertung der Eintrittswahrscheinlichkeit und der Auswirkungen an.
+
+Bei der zweidimensionalen Darstellung wird meist an der Abszissenachse die Eintrittswahrscheinlichkeit und an der Ordinatenachse das Schadensausmaß angegeben. Außerdem sind mehr Dimensionen möglich, die weitere Auswirkungen darstellen wie z. B. die Höhe eines Imageverlusts oder die Hinzunahme der Häufigkeit (Aussetzungsfaktor) wie in der Kinney-Methode.
+
+Die Zeilen- und Spaltenbeschriftung kann per Index (1, 2, 3, …) oder durch eine beschreibende Angabe erfolgen. Die wesentlichen identifizierten Risiken werden in der Matrix positioniert, sodass eine vergleichende Darstellung und eine Priorisierung stattfinden. Eine mögliche Farbgebung der Zellen gruppiert die Risikobereiche. Die Farben orientieren sich oft an Ampelfarben. Alternativ dazu kann die Matrix um eine Risikoschwelle erweitert werden. Die Positionen der Risiken zu der Risikoschwelle bzw. in welchem Raster die Risiken abgebildet sind, gibt Auskunft darüber, welche Bedeutung dem Risiko zugeschrieben wird. Aus der Position der Risiken kann ebenfalls die Dringlichkeit von Risikobewältigungsmaßnahmen abgelesen werden. In der Risikomatrix können sowohl Einzelrisiken als auch die Risikosituation in einzelnen Geschäftsbereichen dargestellt werden.
+
+Die Risikomatrix ist ein Maß der Risikobeurteilung. Daher zählt es zum Standardinstrumentarium des Risikomanagements. Anhand der Risikomatrix kann der Schadenerwartungswert berechnet werden, durch die Multiplikation der Eintrittswahrscheinlichkeit und des Schadensausmaßes des Risikos. Allerdings ist zu beachten, dass die beiden Faktoren (Eintrittswahrscheinlichkeit und Schadenausmaß) sich gegenseitig relativieren können und daraus ein falsches Urteil über das Risiko entsteht.
+
+Die Risikomatrix ist außerdem eine Grundlage für weitere Risikokategorisierungen. Auf dessen Basis kann eine Unterteilung in weitere Wirkungsklassen stattfinden. Zudem ist die Risikomatrix nützlich für die Risikoberichterstattung. Die Risikoportfolios aus unterschiedlichen Unternehmensteilen werden zusammengefasst und zu einem Risikoportfolio für das Unternehmen aufbereitet. Das schafft ein Überblick über die wesentlichen Risiken im Unternehmen. Die Risikomatrix ist eine mögliche Grundlage für Risikosteuerung, dazu sollte sie mindestens jährlich überarbeitet und aktualisiert werden.
+
+<!--
+Klassifizierung von Risiken
+
+Risikomatrix: Eintrittswahrscheinlichkeit 1,2,3 x Auswirkung bei Eintritt 1,2,3
+
+
+
+Anwendung u.a. bei Gefährdungsbeurteilung, aber auch im Projektmanagement zum Umgang mit Unsicherheit.
+-->
+

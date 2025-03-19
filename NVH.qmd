@@ -1,0 +1,57 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       NVH
+
+-------------------------------------------------------------------------- -->
+
+
+### Noise, Vibration and Harshness (NVH) {#sec-nvh}
+
+::: {.callout-tip}
+## Definition: *"Noise, Vibration and Harshness (NVH)"*
+Der Begriff NVH steht für "Noise, Vibration, and Harshness", zu Deutsch "Geräusche, Vibrationen und Rauheit". 
+NVH ist ein Begriff aus der Technik und bezieht sich auf die Untersuchung und das Management von Geräuschen, Vibrationen und anderen unerwünschten Effekten in verschiedenen technischen Systemen und Produkten.
+::: 
+
+In der Automobilindustrie ist NVH beispielsweise von großer Bedeutung. Fahrzeuge müssen so konstruiert und hergestellt werden, dass sie ein akzeptables Maß an Geräuschen und Vibrationen bieten, um den Komfort und die Zufriedenheit der Insassen zu gewährleisten. NVH spielt auch in anderen Industriezweigen eine Rolle, z. B. bei der Entwicklung von Elektronikprodukten und Industriemaschinen.
+
+Die NVH-Analyse umfasst eine Vielzahl von Techniken, darunter die Messung und Analyse von Schall- und Vibrationsquellen, die Charakterisierung von Geräuschquellen, die Identifizierung von Resonanzen, die Bewertung der Schwingungsdämpfung und -isolierung, die Untersuchung von Strukturschwingungen und vieles mehr. Ziel ist es, unerwünschte Geräusche und Vibrationen zu minimieren oder zu eliminieren, um ein angenehmes und **sicheres** Nutzungserlebnis für den Endverbraucher zu gewährleisten.
+
+
+<!--
+::: {.callout-tip}
+## Weiterführende Links
+
+:::
+-->
+
+<!--
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
+
++ @bracht_digitale_2018: [Methoden und Modelle in der Digitalen Fabrik](https://rdcu.be/dI6Bi)
+:::
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Literaturempfehlung
+
+-------------------------------------------------------------------------- -->
+
+<!--
+#### Literaturempfehlung
+
+![@moser_technische_2015: [Technische Akustik](https://link.springer.com/book/10.1007/978-3-662-47704-5)](images/M%C3%B6ser_Technische_Akustik_978-3-662-47704-5.webp){width=20%}
+
+-->

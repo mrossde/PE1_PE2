@@ -1,0 +1,380 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Modularisierung
+
+-------------------------------------------------------------------------- -->
+
+## Modularisierung
+
+<!-- -------------------------------------------------------------------------
+
+                       The Two Watchmakers
+
+-------------------------------------------------------------------------- -->
+
+{{< include TheTwoWatchmakers.qmd >}}
+
+::: {.callout-tip}
+## Definition: *"Modularisierung"*
+Modularisierung ist der Prozess der Zerlegung eines Systems in einzelne, eigenständige Einheiten ("Module"), die jeweils eine klar definierte Funktionalität oder Aufgabe ausführen. 
+:::
+
+Das Ziel der Modularisierung besteht darin, die Komplexität eines Systems zu reduzieren, die Wartbarkeit zu verbessern und die Entwicklungseffizienz zu steigern, indem das System in logische und gut verständliche Einheiten ("Module") unterteilt wird. Diese **Module können unabhängig voneinander entwickelt, getestet, gewartet und wiederverwendet werden**. 
+
+Zum Aufbau eines Systems aus Modulen werden diese in einer hierarchischen Struktur angeordnet. Diese → Hierarchisierung ist zusammen mit der Modularisierung das zweite fundamentale Prinzip zum Aufbau komplexer Systeme im Rahmen jedes Produktentstehungsprozesses.
+
+<!-- -------------------------------------------------------------------------
+
+                       Abbildung: Modulstruktur einer Hochvoltbatterie
+
+-------------------------------------------------------------------------- -->
+![Beispiel für Modularisierung: Hochvoltbatterie des Mercedes-Benz EQC. Einzelne Module, z.B. Gehäuse, Batteriezellen und aus Batteriezellen gebildete Blöcke sowie die Batteriemanagementsystem (BMS) sind gut erkennbar (Quelle: [Mercedes-Benz](https://www.mercedes-benz.de/)).](images/Mercedes-EQC-Batterie.jpg){width=100% #fig-mercedeseqc}
+
+
+### Vorteile der Modularisierung
+
+Die wichtigsten Vorteile der Modularisierung sind:
+
+1. **Verbesserte Verständlichkeit**: Durch die Zerlegung in Module wird das System für Entwickler und Benutzer leichter verständlich, da sie sich auf einzelne Teile konzentrieren können, ohne die Gesamtheit des Systems im Blick haben zu müssen.
+
+2. **Erleichterte Entwicklung und Wartung**: Modularisierung erleichtert die Entwicklung, da Teams gleichzeitig an verschiedenen Modulen arbeiten können. Bei der Wartung müssen nur betroffene Module aktualisiert werden, was die Gesamtkomplexität der Wartung reduziert.
+
+3. **Verbesserte Wiederverwendbarkeit**: Einzelne Module können wiederverwendet werden, entweder innerhalb desselben Systems oder in verschiedenen Systemen. Dies spart Zeit und Ressourcen bei der Entwicklung und Produktion neuer Produkte oder Funktionen (→ Herstellkosten)
+
+4. **Einfachere Fehlerlokalisierung und Fehlerbehebung**: Da jedes Modul eine klare Funktionalität hat, ist es einfacher, Fehler auf ein bestimmtes Modul zurückzuführen. Dies erleichtert die Fehlerdiagnose und -behebung erheblich.
+
+5. **Skalierbarkeit**: Durch die Modularisierung können neue Funktionen oder Erweiterungen leichter integriert werden, ohne das gesamte System umzustrukturieren. Dies verbessert die Skalierbarkeit des Systems, da es sich an veränderte Anforderungen anpassen kann.
+
+6. **Bessere Parallelisierung und Performance**: Modularisierte Systeme ermöglichen es, Aufgaben parallel zu bearbeiten, was die Leistung und Effizienz verbessert, da verschiedene Teile des Systems unabhängig voneinander arbeiten können.
+
+Eine gute Modularisierung ermöglicht die Beherrschung der Komplexität von Systemen, erleichtert die Entwicklung und Wartung, verbessert die Wiederverwendbarkeit von Komponenten und trägt zur Skalierbarkeit und Leistungsfähigkeit bei.
+
+
+### Nachteile der Modularisierung
+
+Obwohl die Modularisierung viele Vorteile bietet, gibt es auch einige Nachteile, die bei der Produktentwicklung von Bedeutung sind und daher beachtet werden müssen:
+
+1. **Erhöhter Ressourcenbedarf**: Die Modularisierung kann zu einem erhöhten Platz- und Ressourcenbedarf führen, da jedes Modul zusätzliche Overhead-Kosten verursacht. Bei physischen Produkten steht die Modularisierung meist dem Streben nach maximaler Leistung bei minimalem Bauraum oder Gewicht entgegen. Bei mechatronischen Systemen kann die Modularisierung insbesondere bei Embedded-Systemen oder Systemen mit begrenzten Ressourcen problematisch sein.
+
+![Beispiel für erhöhten Platz- und Ressourcenbedarf durch Modularisierung, der bei der hier dargestellten Hochvoltbatterie aus vielen Hundert verbauten Rundzellen letztlich zu deutlich weniger Kapazität und hohem Gewicht des Gesamtsystems "Hochvoltbatterie" führt.](images/AdobeStock_661397584.jpeg){width=80% #fig-nachteilmodularisierung}
+
+
+2. **Abhängigkeiten zwischen Modulen**: In einigen Fällen können Module stark voneinander abhängig sein, was zu Schwierigkeiten bei der Wiederverwendung oder dem Austausch von Modulen führen kann. Dies kann die Flexibilität und Skalierbarkeit des Systems beeinträchtigen.
+
+3. **Schwierigkeiten bei der Integration**: Die Integration von Modulen kann komplex sein, insbesondere wenn die Module von verschiedenen Teams oder Organisationen entwickelt wurden. Dies erfordert eine sorgfältige Planung und Koordination, um sicherzustellen, dass die Module nahtlos zusammenarbeiten (siehe → [Vasa](https://de.wikipedia.org/wiki/Vasa_(Schiff))).
+<!-- -------------------------------------------------------------------------
+
+                       Objektorientierte Programmierung
+
+-------------------------------------------------------------------------- -->
+<!--
+### Exkurs: Objektorientierten Programmierung
+
+Die objektorientierte Programmierung (OOP) wurde in den 1960er und 1970er Jahren entwickelt. Der Begriff "objektorientierte Programmierung" wurde erstmals in den frühen 1960er Jahren verwendet. Der Durchbruch der objektorientierten Programmierung kam mit der Entstehung und weiten verbreitung der Sprachen [C++](https://de.wikipedia.org/wiki/C%2B%2B), [Java](https://de.wikipedia.org/wiki/Java-Technologie) und C# in den 1990er Jahren. 
+
+Die objektorientierte Programmierung (OOP) baut stark auf den Grundlagen der Modularisierung auf und bietet eine noch verfeinerte Form der Modularisierung:
+
+1. **Kapselung**: OOP ermöglicht es, Daten und Methoden in Objekten zu kapseln. Jedes Objekt repräsentiert eine abgeschlossene Einheit, die sowohl Daten als auch die Operationen, die auf diesen Daten ausgeführt werden können, enthält. Diese Kapselung fördert eine klare Abgrenzung von Funktionen und Daten.
+
+2. **Abstraktion**: OOP ermöglicht die Abstraktion von komplexen Systemen, indem es erlaubt, reale oder abstrakte Konzepte als Klassen zu modellieren. Klassen dienen als Bausteine für die Modularisierung, indem sie logisch zusammengehörende Daten und Funktionen gruppieren.
+
+3. **Vererbung**: Die Vererbung erlaubt es, Eigenschaften und Verhalten von einer Klasse auf eine andere zu übertragen. Dadurch können gemeinsame Funktionen und Daten in einer Basisklasse definiert und von abgeleiteten Klassen wiederverwendet werden, was die Modularisierung und Wiederverwendbarkeit von Code fördert.
+
+4. **Polymorphismus**: OOP ermöglicht es, Objekte verschiedener Klassen über gemeinsame Schnittstellen zu behandeln. Polymorphismus fördert die Flexibilität und Modularisierung, da dadurch Code geschrieben werden kann, der unabhängig von der konkreten Implementierung arbeitet.
+
+5. **Modulare Entwicklung**: OOP unterstützt eine modulare Entwicklung, indem es erlaubt, Klassen und Objekte in verschiedenen Modulen oder Dateien zu organisieren. Dadurch können Entwickler den Code in logische Einheiten aufteilen, was die Wartbarkeit und Erweiterbarkeit verbessert.
+
+Die Vorteile der Modularisierung, komplexe Systeme in klar definierte und wiederverwendbare Bausteine zu zerlegen, war der Treiber bei der Entwicklung objektorientierter Programmierung und führte zu deutlich strukturierteren Programmen sowie zu verbesserter Wartbarkeit und Skalierbarkeit von Software. Ohne objektorientierte Programmierung wäre der heute erreichte Stand der Softwareentwicklung nicht zu erreichen gewesen.
+-->
+
+### Sichten
+
+Bei der Modularisierung entstehen dabei je nach Kriterium, das bei der Modularisierung eines Systems herangezogen wird, verschiedene Sichten auf das System. 
+
+::: {.callout-tip}
+Grundsätzlich gibt es keine per se richtige oder falsche Modularisierung, sondern nur für das Erfüllen der jeweiligen Aufgabe eine oder mehrere mehr oder weniger hilfreiche Modularisierungen des Systems.
+:::
+
+::: {.callout-caution}
+In der Regel werden im Produktentstehungsprozess komplexer technischer Produkte mehrere nebeneinander existierende Sichten auf das ein und dasselbe Produkt benötigt. Typische Sichten sind z.B. die funktionale Sicht und die Sicht auf die physische Struktur des Produkts. 
+:::
+
+@fig-label-funktionssicht bis @fig-label-produktionssicht zeigen beispielhaft vereinfacht verschiedene Sichten auf das immer gleiche Produkt Hochvoltbatterie.
+
+```{mermaid}
+%%| fig-width: 6.0
+%%| label: fig-label-funktionssicht
+%%| fig-cap: "Vereinfachtes Beispiel für die Sicht auf die Funktionsbausteine einer Hochvoltbatterie"
+flowchart LR
+  F[Funktion Hochvoltbatterie] --> E[Energiespeicherung]
+  E --> EL[Laden]
+  E --> EE[Entladen]
+  F --> T[Thermisches Management]
+  T --> K[Kühlung]
+  T --> H[Heizung]
+  F --> S[Sicherheit und Überwachung]
+  S --> Z[Zellüberwachung]
+  S --> KU[Kurzschlussschutz]
+  S --> A[Thermische Absicherung]
+  F --> I[Kommunikation und Integration]
+  I --> KS[Kommunikationsschnittstellen]
+  I --> KI[Hochvoltsystem des Fahrzeugs]
+```
+
+
+```{mermaid}
+%%| fig-width: 6.0
+%%| label: fig-label-struktursicht
+%%| fig-cap: "Stark vereinfachtes Beispiel für die Sicht auf die physische Struktur einer Hochvoltbatterie"
+flowchart LR
+  P[Physische Struktur Hochvoltbatterie] --> G[Batteriegehäuse]
+  G --> UT[Gehäuseunterteil]
+  G --> OT[Gehäuseoberteil]
+  G --> GD[Dichtungen]
+  G --> A[Anschlüsse]
+  P --> L[Kabelsatz]
+  P --> BMS[Batteriemanagementsystem]
+  P --> M[Batteriemodule]
+  M --> Z[Batteriezellen]
+  P --> K[Kühlsystem]
+  K --> KMK[Kühlmittelkreislauf]
+  K --> WT[Wärmetauscher]
+  K --> TS[Thermosensoren]
+  K --> ST[Thermisches Management System]
+  P --> H[Heizsystem]
+  H --> HE[Heizelemente]
+  H --> ST
+  H --> TS
+```
+
+Das Erarbeiten der Struktur von Systemen ist in der Praxis im Produktentstehungsprozess keine triviale Aufgabe, im Gegenteil. Oftmals entstehen bei dem Versuch, das System hierarchisch zu strukturieren zunächst Schleifen, wie z.B. in @fig-label-struktursicht beim Kühl- und Heizsystem, die auf gemeinsam genutzte Thermosensoren sowie ein gemeinsam genutztes Thermisches-Management-System zurückgreifen. 
+
+Im hier gezeigten Beispiel könnten die Schleifen aufgelöst werden indem die Thermosensoren, das Modul Kühlsystem und das Modul Heizsystem jeweils als Submodule des Thermischen-Management-Systems aufgefasst werden. @fig-label-modifiziertestruktur illustriert den dabei entstehenden Ausschnitt aus der physischen Struktur:
+
+```{mermaid}
+%%| fig-width: 6.0
+%%| label: fig-label-modifiziertestruktur
+%%| fig-cap: "Stark vereinfachtes Beispiel für die Sicht auf einen Ausschnitt auf die physische Struktur einer Hochvoltbatterie"
+flowchart LR
+  P[Physische Struktur Hochvoltbatterie] --> ST[Thermisches Management System]
+  ST --> TS[Thermosensoren]
+  ST --> K[Kühlsystem]
+    K --> KMK[Kühlmittelkreislauf]
+    K --> WT[Wärmetauscher]
+  ST --> H[Heizsystem]
+  H --> HE[Heizelemente]
+```
+
+Ob die in @fig-label-modifiziertestruktur gezeigte Struktur noch der tatsächlichen physischen Struktur entspricht ist jedoch zu prüfen, im vorliegenden Beispiel sogar äußerst fraglich. 
+
+::: {.callout-caution}
+Auch die aus theoretischer Sicht eleganteste Struktur hilft in der Praxis nicht weiter wenn sie nichts mit der Realität des jeweiligen Produkts zu tun hat. 
+:::
+
+Möglicherweise verfügen Heiz- und Kühlsystem z.B. über jeweils eigene Sensoren und ein jeweils eigenes Thermisches-Management-System mit jeweils eigenen Thermosensoren, wie in @fig-label-modifiziertestruktur2 dargestellt:
+
+```{mermaid}
+%%| fig-width: 6.0
+%%| label: fig-label-modifiziertestruktur2
+%%| fig-cap: "Stark vereinfachtes Beispiel für die Sicht auf einen Ausschnitt auf die physische Struktur einer Hochvoltbatterie"
+flowchart LR
+  P[Physische Struktur Hochvoltbatterie] --> H[Heizsystem]
+  H --> ST2[Thermisches Management System] 
+    ST2 --> TS2[Thermosensoren]
+  H --> HE[Heizelemente]
+  P --> K[Kühlsystem]
+  K --> ST1[Thermisches Management System] 
+    ST1 --> TS1[Thermosensoren]
+    K --> KMK[Kühlmittelkreislauf]
+    K --> WT[Wärmetauscher]
+```
+
+Alternativ könnten das Thermische-Management-System sowie das Heiz- und Kühlsystem auch als jeweils eigenständige Module ausgeprägt sein, wie in @fig-label-modifiziertestruktur3 dargestellt. In diesem Fall kommt dem Modul Kabelsatz als zwischen den drei weiteren Modulen vermittelndem Elements eine wichtige Rolle zu.
+
+```{mermaid}
+%%| fig-width: 6.0
+%%| label: fig-label-modifiziertestruktur3
+%%| fig-cap: "Stark vereinfachtes Beispiel für die Sicht auf einen Ausschnitt auf die physische Struktur einer Hochvoltbatterie"
+flowchart LR
+  P[Physische Struktur Hochvoltbatterie] --> ST[Thermisches Management System]
+    ST --> TS[Thermosensoren]
+  P --> H[Heizsystem]
+    H --> HE[Heizelemente]
+  P --> K[Kühlsystem]
+    K --> KMK[Kühlmittelkreislauf]
+    K --> WT[Wärmetauscher]
+  P --> L[Kabelsatz]
+```
+
+Welche physische Struktur ein Produkt tatsächlich aufweist kann oftmals erst sicher festgelegt werden wenn entschieden ist, welche (Zukauf-)Komponenten im Produkt verbaut werden sollen.
+
+<!--
+::: {.callout-caution}
+Die Erfahrung zeigt, dass in der Praxis Schleifen in Strukturen leider nicht immer vollständig vermieden werden können^[Ihr Dozent denkt über diese Aussage noch immer nach und ist sich nicht vollständig sicher. Vielleicht war und ist Ihr Dozent einfach nicht klug genug, um Schleifen zu vermeiden, obwohl dies bei tieferem Nachdenken und mehr Können eben doch sehr wohl möglich gewesen wäre.].
+:::
+-->
+
+Neben den Sichten, die sich ausschließlich auf das Produkt beziehen existieren weitere Sichten, die z.B. den Produktionsprozess des Produkts einschließen. @fig-label-produktionssicht zeigt zum Abschluss als Beispiel eine Sicht auf eine mögliche Produktionsabfolge unserer nunmehr bereits bekannten Hochvoltbatterie. 
+
+```{mermaid}
+%%| fig-width: 6.0
+%%| label: fig-label-produktionssicht
+%%| fig-cap: "Vereinfachtes Beispiel für die Sicht auf die Produktionsabfolge einer Hochvoltbatterie"
+flowchart TD
+  P[Produktion Hochvoltbatterie] --> Z[Zellproduktion]
+  Z --> HE[Herstellung von Elektroden]
+  HE --> HS[Herstellung von Separatorfolien]
+  HS --> HZ[Zusammenbau der Zellen]
+  Z --> M[Batteriemodulmontage]
+  M --> T[Thermisches Management und Sicherheitsintegration]
+  T --> IK[Integration von Kühl- und Heizsystemen]
+  IK --> IKS[Integration von Kurzschlussschutz] 
+  IKS --> TA[Integration von thermischer Absicherung]
+  T --> G[Gehäusemontage]
+    G --> MG[Montage des Batteriegehäuses]
+    MG --> MK[Montage des Kabelsatzes]
+    MK --> IM[Installation der Batteriemodule]
+    IM --> IA[Installation der Anschlüsse]
+    IA --> IS[Installation des Batteriemanagementsystems]
+  G --> E[Endmontage und Tests]
+    E --> EM[Endmontage der Batterie]
+    EM --> QL[Durchführung von Qualitäts- und Leistungstests]
+  E --> L[Lieferung und Inbetriebnahme]
+    L --> FH[Lieferung an den Fahrzeughersteller]
+    FH --> EB[Einbau in das Fahrzeug]
+    EB --> IT[Inbetriebnahme und Endtest]
+
+```
+
+
+### Best Practices für die Modularisierung
+
+
+::: {.callout-warning}
+Das Zerlegen eines Systems in Module ist keine einfache Aufgabe. Ein einzelnes Systeme kann auf viele verschiedene Weisen Modularisiert werden. Nicht alle entstehenden Lösungen helfen dabei, die oben genannten Vorteile (u.a. klare Strukturierung, Wartbarkeit und Wiederverwendbarkeit) zu realisieren. 
+:::
+
+
+Beim Zerlegen eines Systems in Module gibt es einige [Best Practices](https://de.wikipedia.org/wiki/Best_Practice), die Orientierung geben können:
+
+1. **Kohäsion maximieren**: Module sollten eine hohe Kohäsion aufweisen, das heißt, die in einem Modul enthaltenen Funktionen sollten eng miteinander verbunden sein und ein gemeinsames Ziel oder eine gemeinsame Verantwortung haben.
+
+2. **Kopplung minimieren**: Die Kopplung zwischen Modulen sollte minimiert werden, das heißt, Module sollten möglichst unabhängig voneinander sein und sich nur über klar definierte Schnittstellen austauschen.
+
+3. **Klare Schnittstellen definieren**: Definieren Sie klare physische und informationstechnische Schnittstellen für den Datenaustausch und die Kommunikation zwischen Modulen, um die Interaktion zu erleichtern und Kopplung zu minimieren.
+
+4. **Single Responsibility Principle (SRP) befolgen**^[Das "Single Responsibility Principle" (SRP) (Prinzip der einzelnen Verantwortung) und ist ein grundlegendes Prinzip der objektorientierten Programmierung, das besagt, dass eine Klasse (oder Modul) nur für eine einzige Aufgabe verantwortlich sein sollte. Siehe auch: [SOLID-Prinzipien](https://de.wikipedia.org/wiki/Prinzipien_objektorientierten_Designs#SOLID-Prinzipien) der objektorientierten Programmierung]: Jedes Modul sollte genau eine klare Verantwortung oder Aufgabe haben. Dies fördert eine klare Strukturierung und Verständlichkeit des Codes.
+
+5. **Abhängigkeiten verwalten**: Verwalten Sie Abhängigkeiten zwischen Modulen sorgfältig und versuchen Sie, zyklische Abhängigkeiten zu vermeiden, um eine klare Hierarchie und Ordnung zu gewährleisten.
+
+6. **Größe der Module berücksichtigen**: Module sollten weder zu groß noch zu klein sein. Versuchen Sie, eine ausgewogene Größe zu finden, die es ermöglicht, Funktionalität logisch zu gruppieren, ohne dass Module zu komplex oder zu spezifisch werden.
+
+7. **Wiederverwendbarkeit fördern**: Entwerfen Sie Module so, dass sie wiederverwendbar sind und in verschiedenen Kontexten eingesetzt werden können, um die Entwicklungseffizienz zu steigern.
+
+8. **Dokumentation bereitstellen**: Dokumentieren Sie die Schnittstellen, Funktionen und Verantwortlichkeiten jedes Moduls, um anderen Entwicklern zu helfen, die Funktionsweise der Module, letztlich aber auch die Funktionsweise des aus den Modulen aufgebauten Gesamtsystems zu verstehen.
+
+
+### Modularisierung und Hierarchisierung
+
+::: {.callout-tip}
+## Definition: *"Hierarchisierung"*
+Hierarchisierung ist der Prozess der Organisation von Elementen oder Einheiten in einer strukturierten und hierarchischen Reihenfolge, wobei Elemente auf verschiedenen Ebenen einer Hierarchie platziert werden, basierend auf ihren Beziehungen zueinander und ihrer Bedeutung oder Abstraktionsebene. 
+:::
+
+Dieser Prozess ermöglicht eine klare Strukturierung und Ordnung, wodurch komplexe Systeme oder Informationen besser verstanden, verwaltet und navigiert werden können. 
+
+```{mermaid}
+%%| fig-width: 6.0
+%%| label: fig-label-hierarchisierung
+%%| fig-cap: "Beispiel für die Hierarchie der einzelnen Quarto-Dokumente (Module) dieses Skripts, gegliedert in drei Hierarchieebenen: Ebene 1: Hauptmodule - Ebene 2: Module - Ebene 3: Submodule"
+flowchart TD
+  id1[Skript zur Vorlesung] --> id2[# Hauptkapitel 1]
+  id1 --> id5[# Hauptkapitel 2]
+  id1 --> id6[# Hauptkapitel n]
+  id2 --> id3[## Kapitel 1.1]
+  id2 --> id7[## Kapitel 1.2]
+  id2 --> id9[## Kapitel 1.n]
+  id3 --> id4[### Unterkapitel 1.1.1]
+  id3 --> id8[### Unterkapitel 1.1.2]
+  id3 --> id10[### Unterkapitel 1.1.n]
+  id5 --> id11[## Kapitel 2.n]
+  id7 --> id12[### Unterkapitel 1.2.n]
+ ```
+
+Hierarchisierung wird verwendet, um komplexe Systeme zu modellieren, Daten zu organisieren oder organisatorische Strukturen zu definieren. Die Modularisierung ist dabei die Voraussetzung für die Hierarchisierung.
+
+Erst die Modularisierung ermöglicht die Bildung von Hierarchien aus Modulen, indem Module in einer strukturierten und hierarchischen Weise organisiert werden. Dies erfolgt durch die Gruppierung von Modulen in übergeordnete und untergeordnete Ebenen, wobei jedes Modul auf einer höheren Ebene eine größere Abstraktionsebene darstellt und Module auf untergeordneten Ebenen spezifischere Funktionalitäten enthalten. 
+
+### Best Practices für die Hierarchisierung
+
+bewährte Vorgehensweisen, die helfen können, die hierarchischen Aufteilung eines komplexen Systems erfolgreich zu gestalten:
+
+1. **Identifikation von Domänenbereichen**: Analysieren Sie das System und identifizieren Sie die verschiedenen Domänenbereiche oder Funktionsbereiche, die Teil des Systems sind. Diese können beispielsweise durch funktionale Anforderungen, Inhalte oder Datenflüsse bestimmt werden.
+
+2. **Abstraktionsebenen definieren**: Definieren Sie die Abstraktionsebenen, auf denen das System hierarchisch organisiert werden soll. Dies können übergeordnete und untergeordnete Ebenen sein, die verschiedene Aspekte des Systems repräsentieren.
+
+3. **Top-down- oder Bottom-up-Ansatz wählen**: Entscheiden Sie, ob Sie einen Top-down- oder Bottom-up-Ansatz verwenden möchten. Beim Top-down-Ansatz beginnen Sie mit einer übergeordneten Sichtweise des Systems und unterteilen es dann schrittweise in kleinere Unterbereiche. Beim Bottom-up-Ansatz identifizieren Sie zunächst spezifische Funktionalitäten oder Komponenten und gruppieren sie dann zu übergeordneten Bereichen.
+
+4. **Klare Schnittstellen definieren**: Definieren Sie klare Schnittstellen zwischen den verschiedenen hierarchischen Ebenen und Komponenten des Systems, um die Interaktion und Kommunikation zu erleichtern.
+
+5. **Kohäsion und Kopplung berücksichtigen**: Achten Sie darauf, dass die Elemente innerhalb einer Hierarchieeinheit (z. B. einem Modul oder einer Komponente) auch wirklich stark miteinander verbunden sind (hohe Kohäsion), während die Abhängigkeiten zwischen den Modulen minimiert sein sollte (geringe Kopplung).
+
+7. **Testbarkeit und Wartbarkeit berücksichtigen**: Stellen Sie sicher, dass die hierarchische Struktur des Systems die Testbarkeit und Wartbarkeit unterstützt, indem sie klare Verantwortlichkeiten und klare Abgrenzungen zwischen den einzelnen Modulen bietet.
+
+8. **Dokumentation und Kommunikation**: Dokumentieren Sie die hierarchische Struktur des Systems sowie die Entscheidungen und Überlegungen, die zu dieser Struktur geführt haben. Kommunizieren Sie die Struktur des Systems klar und deutlich an alle Beteiligten.
+
+::: {.callout-caution}
+## Tipp!
+Die hierarchische Aufteilung eines komplexen Systems ist in der Praxis oft ein iterativer Prozess. Beginnen Sie mit einer groben Hierarchie und verfeinern Sie sie schrittweise mit zunehmendem Verständnis für das System und die Vor- und Nachteile der von Ihnen gewählten Modellierung (→ [**Top-Down-Vorgehen**](https://de.wikipedia.org/wiki/Top-down_und_Bottom-up))
+:::
+
+
+### Anwendungsbeispiel: Top-Down- vs. Bottom-Up-Vorgehen
+
+Der Grundgedanke bei einer Top-Down-Konstruktion dabei besteht in der Betrachtung unterschiedlicher Detaillierungsphasen des Produkts. Sie beginnt auf relativ abstraktem Niveau mit der Analyse des Gesamtprodukts. Im weiteren Verlauf schließt sich die Gliederung des Produkts nach produktionstechnischen und funktionalen Gesichtspunkten in genau definierte Module an (siehe @fig-topdown).
+
+![Mögliche Ebenen eines Top-Down-Konstruktionsprozesses (Quelle: @bender_pahlbeitz_2021)](images/7540_9_De_25_Fig11_HTML.png){width=80% #fig-topdown}
+
+
+Die Top-Down-Konstruktion beginnt mit der Strukturebene des Produktes, bei der das Produkt als Ganzes betrachtet wird. 
+
+Ausgehend von der geforderten Funktionalität und den aus der Nutzung resultierenden Randbedingungen und Anforderungen werden die möglichen Subkomponenten und deren Struktur sowie die äußere Grobgestalt festgelegt. Unter Beachtung der Struktur der Subkomponenten und der ersten Berechnungen und Simulationen zur Festigkeit und Kinematik – falls notwendig – wird der erforderliche Bauraum der Subkomponenten bestimmt. Es werden in dieser Ebene die Produktstruktur, also die baulichen Zusammenhänge, und die Funktionsstruktur, also die funktionalen Zusammenhänge, festgelegt. 
+
+In einer weiteren Phase der Top-Down-Konstruktion führt die genauere Betrachtung produktionstechnischer Gesichtspunkte sowie die Definition von Schnittstellen der Subkomponenten untereinander zur endgültigen Festlegung von Baugruppen, deren zulässigen Bauräumen und Schnittstellen. Hiermit ist die Produktgliederung und damit die zweite Ebene des Produkts aufgestellt. 
+
+Die dritte Ebene des Top-Down-Prozesses bildet die Bauteilebene. Betrachtet werden die Einzelteile der Baugruppen und deren Struktur sowie Schnittstellen und funktionale Zusammenhänge untereinander. Die Ausarbeitung der Einzelteile geschieht unter Berücksichtigung des räumlichen Kontextes, um evtl. Konsequenzen und Beeinträchtigungen auf die Geometrie benachbarter Bauteile oder Baugruppen sofort zu erkennen. In dieser Phase können Norm- und Zukaufteile aus den entsprechenden Bibliotheken oder Programmen übernommen werden. 
+
+Beim Bottom-Up-Verfahren wird das Vorgehen umgedreht. Dabei werden zunächst abgegrenzte Teile/Komponenten mit elementaren Operationen und Funktionen entworfen, mit deren Hilfe dann größere, höhere Abstraktionsebenen (Strukturen) entworfen werden können. Dabei werden die einzelnen Teile, Unterbaugruppen, Baugruppen usw. von „unten“ nach „oben“ schrittweise zusammengesetzt, bis der Gesamtentwurf steht.
+
+Das Top-Down-Vorgehen hat sich in der Praxis als das mit Abstand erfolgreichere der beiden Vorgehensweisen erwiesen.
+
+
+<!--
+::: {.callout-tip}
+## Weiterführende Links
+
+:::
+-->
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
+
++ @bender_pahlbeitz_2021: [Themengebiete der virtuellen Produktentwicklung](https://rdcu.be/dIAaT)
+
+:::
+
+<!--
+## Literaturempfehlung
+
+![@kitsios_ihre_2021: [Ihre Produktentwicklung digitalisieren](https://link.springer.com/book/10.1007/978-3-658-33862-6)](images/Kitsios_Produktentwicklungdigitalisieren.webp){width=40%}
+
+-->

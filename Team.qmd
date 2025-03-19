@@ -1,0 +1,545 @@
+<!--
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Softskills
+  - Team
+  - Teamentwicklung nach Tuckman
+  - Lencioni-Pyramide
+  - Ringelmann-Effekt
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 5
+link-external-icon: true
+link-external-newwindow: true
+
+headlines:
+  off: true
+exercises:
+  solutions:
+  off: true
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Teams und Teamentwicklung nach Tuckman
+
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Softskills
+:::
+
+## Team {#sec-team}
+
+---
+
+> *TEAM: Toll, Ein Anderer Macht’s!* (Quelle: Unbekannt)
+
+> *"Die Arbeit fließt dorthin wo sie gemacht wird."* (Quelle: Unbekannt)
+
+> *„Nimm Du ihn, ich habe ihn sicher.“* (Quelle: Unbekannt)
+
+> *"No man ever steps in the same river twice, for it's not the same river and he's not the same man."* (Heraklit)
+
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Team
+
+-------------------------------------------------------------------------- -->
+
+::: {.callout-tip}
+## Definition: *"Team"*
+Team ist eine Gruppe von Personen, die gemeinsam an einem bestimmten Ziel arbeiten, typischerweise im Rahmen eines Projekts oder einer Aufgabe. 
+:::
+
+Im Kontext eines Produktentstehungsprozesses besteht ein Team aus Personen mit verschiedenen Fähigkeiten und Fachkenntnissen, die zusammenarbeiten, um das Projektziel zu erreichen. Diese Zusammenarbeit beinhaltet häufig die Aufteilung von Aufgaben, die Koordination von Aktivitäten und den Austausch von Wissen und Ressourcen, um effektive Lösungen zu entwickeln. Ein erfolgreiches Team zeichnet sich durch eine klare Kommunikation, gegenseitiges Vertrauen, Zusammenarbeit und das Streben nach gemeinsamen Zielen aus. 
+
+Teams können dabei von einer kleinen Gruppe, die sich noch selbst koordinieren kann, bis in die Größe von zehntausenden Personen reichen, deren Koordination erhebliche Anstrengungen erfordert. 
+
+{{< include NASAMarsPerseveranceTeam.qmd >}}
+
+<!-- -------------------------------------------------------------------------
+
+                       Teamfähigkeit
+
+-------------------------------------------------------------------------- -->
+### Teamfähigkeit
+
+::: {.callout-caution}
+## Teamfähigkeit
+In der Industrie findet heute jede relevante Entwicklung in Teams statt. Die eigene Fähigkeit, in Teams erfolgreich mitarbeiten zu können ist nahezu in allen Konstellationen eine wichtige Voraussetzung für beruflichen Erfolg.
+:::
+
+::: {.callout-tip}
+## Definition: *"Teamfähigkeit"*
+[Teamfähigkeit]((https://de.wikipedia.org/wiki/Team#Teamf%C3%A4higkeit)) ist das Vermögen von Personen, Arbeit effektiv und effizient in Gruppen verrichten zu können. 
+:::
+
+Teamfähigkeit ist eine soziale Kompetenz und eine Schlüsselkompetenz. Die Stärke der Ausprägung von Teamfähigkeit trägt zum Zielerreichungsgrad von Arbeitsgruppen bei. Zur Teamfähigkeit gehören neben sozialen Fähigkeiten wie Interaktions-, Konfliktbewältigungs- und Kooperationskompetenz auch methodische Fähigkeiten wie Problemlösen, Planungs- und Organisationsfähigkeit (Quelle: [Wikipedia](https://de.wikipedia.org/wiki/Tea)).
+
+<!-- -------------------------------------------------------------------------
+
+                       Teamentwicklung nach Tuckman
+
+-------------------------------------------------------------------------- -->
+
+### Teamentwicklung nach Tuckman
+
+::: {.callout-tip}
+## Definition: *"Teamentwicklung"*
+Als [Teamentwicklung](https://de.wikipedia.org/wiki/Teambildung) werden die Phasen und Strukturen der Zusammensetzung von kleinen Gruppen bezeichnet, die unmittelbar miteinander in Kontakt treten, um in arbeitsteiliger Verantwortung ein Ziel zu erreichen.
+:::
+
+Für die Entwicklung von Teams entwickelte [Bruce Tuckman](https://de.wikipedia.org/wiki/Bruce_Tuckman) bereits 1965 ein nach ihm benanntes Phasenmodell mit vier Phasen. Diese vier [Phasen der Teamentwicklung](https://athena.ecs.csus.edu/~buckley/CSc190/GROUP%20DEV%20ARTICLE.pdf) sind:
+
+```{mermaid}
+%%| label: fig-label-tuckman
+%%| fig-cap: "Phasen der Teamentwicklung nach Tuckman, 1965"
+flowchart TD
+    A[1. Forming] --> B[2. Storming]
+    B --> C[3. Norming]
+    C --> D[4. Performing]
+```
+
+1. **Forming:** In dieser Phase kommt das Team zusammen und die Mitglieder lernen einander kennen. Es herrscht meist eine gewisse Unsicherheit und Zurückhaltung. Die Teammitglieder versuchen, ihre Rollen und Aufgaben zu verstehen und erste Beziehungen aufzubauen. Es werden Regeln und Erwartungen festgelegt.
+
+2. **Storming:** In dieser Phase treten Konflikte und Spannungen innerhalb des Teams auf, da die Teammitglieder unterschiedliche Ideen, Meinungen und Arbeitsstile haben. Es können Machtkämpfe, Widerstände oder Unstimmigkeiten auftreten. Es ist wichtig, diese Konflikte konstruktiv anzugehen und gemeinsame Lösungen zu finden, um das Vertrauen und die Zusammenarbeit im Team zu stärken.
+
+3. **Norming:** In dieser Phase beginnt das Team, sich zu stabilisieren und gemeinsame Normen, Regeln und Werte zu entwickeln. Die Teammitglieder akzeptieren ihre Rollen und Verantwortlichkeiten und arbeiten besser zusammen. Es entsteht ein Gefühl von Zusammengehörigkeit und ein Verständnis für die Stärken und Schwächen jedes Einzelnen.
+
+4. **Performing:** In dieser abschließenden Phase ist das Team hochfunktional und effektiv. Die Teammitglieder arbeiten gut zusammen, haben klare Kommunikation und nutzen ihre individuellen Stärken, um gemeinsame Ziele zu erreichen. Es herrscht ein hohes Maß an Vertrauen, Engagement und Produktivität. Das Team ist in der Lage, Herausforderungen erfolgreich zu bewältigen und gute Ergebnisse zu erzielen.
+
+Neben diesen vier von Tuckman beschriebenen Phasen der Teamentwicklung wird bei der agilen Softwareentwicklung in Hochleistungsteams eine fünfte Phase der Teamentwicklung beobachtet: "Swarming". 
+
+Diese Phase "Swarming" ist ein Konzept aus dem agilen Projektmanagement, insbesondere im Zusammenhang mit der Methode des "Swarmings" oder "Swarm Workings". Beim Swarming handelt es sich um einen Ansatz, bei dem das Team zusammenarbeitet und sich flexibel auf Aufgaben fokussiert, anstatt feste Rollen und Hierarchien zu haben. Es geht darum, dass die Teammitglieder ihre individuellen Fähigkeiten und Kenntnisse einbringen und sich gemeinsam auf die Aufgaben konzentrieren, die als Priorität gelten.
+
+Der Begriff "Swarming" wird nicht als feste Phase in einem Teamentwicklungsmodell, sondern eher als eine Arbeitsmethode betrachtet:
+
+**Swarming**: In der agilen Softwareentwicklung zeigen Hochleistungsteams ein Schwarmverhalten, wenn sie zusammenkommen, zusammenarbeiten und sich auf die Lösung eines einzelnen Problems konzentrieren. 
+
+Beim Swarming arbeiten die Teammitglieder eng zusammen, um gemeinsame Ziele zu erreichen und Hindernisse zu überwinden. Sie können ihre Rollen und Aufgaben je nach Bedarf wechseln, um sich den aktuellen Anforderungen anzupassen. Dadurch entsteht eine hohe Flexibilität und Effizienz im Team. 
+
+Das Ursprungsmodell von Tuckman beschreibt vier Phasen. In der Literatur findet sich gelegentlich als Ergänzung - neben dem Swarming - eine fünfte Phase, deren Bezeichnung und Beschreibung jedoch nicht einheitlich ist. Tuckman selbst hat 1977 als fünfte Phase “Adjourning” (Auflösung) eingeführt. Folgende Beschreibungen sind zu finden:
+
+5. **Adjourning**: Ablösungsphase (Das Team wird mit → Projektende aufgelöst) ODER Super-Performing (Das Team arbeitet ohne Steuerung von außen zusammen und bringt herausragende Leistungen) ODER Reforming – Erneuerungsphase (Das Team stellt sich selbst neuen Herausforderungen, um so nicht in eine kontraproduktive Routine zu verfallen).
+
+![Teamleistung über die vier Phasen nach Tuckman hinweg (Quelle: [teamfactor & BDTV](https://www.teamentwicklung.org/Teamphasenmodell))](images/Teamleistung.jpg){width=90% #fig-teamleistung}
+
+::: {.callout-important}
+## Vorsicht! Teamentwicklung ist kein Spaziergang!
+Teamentwicklung passiert nicht *"einfach so"* nebenbei. Bei der Entwicklung von Teams handelt es sich stets um einen sehr dynamischen, zumindest temporär auch konfliktbehafteten Prozess. In der Phase Storming ist das zu Tage treten unabdingbar für die Entwicklung zu einem Hochleistungsteam. Teams können dabei auch wieder in vorherige Phasen zurückfallen, wenn neue Herausforderungen oder Veränderungen auftreten. 
+
+In der Praxis kommen viele Teams über die schon allererste Phase des Forming nicht hinaus!
+:::
+
+::: {.callout-caution}
+Diese Teams *"prallen"* an der Phase des Stormings ab und finden nicht die Kraft, die stürmische, konfliktbehaftete zweite Phase der Teamentwicklung zu überstehen. Ohne eine gute Teamleitung richten sich die im Team Mitarbeitenden in einem formalen Arbeitsstil ein, der jedoch weit unter der Leistung liegt, den das Team bei erfolgreichem Durchschreiten der Phase des Stormings hätte erreichen können. Die Zusammenarbeit in diesen Teams ist zumeist formal und oberflächlich freundlich (*"Lügenlächeln"*), Überstunden sind eher selten, große Erfolge können in der Regeln nicht gefeiert werden.
+:::
+
+
+Das Verständnis der Phasen der Teamentwicklung kann allen Beteiligten helfen, den Entwicklungsstand des Teams zu erkennen, angemessen zu reagieren und geeignete Maßnahmen zu ergreifen, um die Zusammenarbeit und Effektivität zu fördern.
+
+<!-- -------------------------------------------------------------------------
+
+                        Optional: Aufgabe: Teamaufstellung
+
+-------------------------------------------------------------------------- -->
+
+<!-- -------------------------------------------------------------------------
+
+                        Keine Politik - Keine Religion - Kein Geld
+
+-------------------------------------------------------------------------- -->
+::: {.callout-important}
+## Empfehlung für die dauerhaft gute Zusammenarbeit in der Arbeitswelt
+Die drei Themenfelder, die in der Arbeitswelt im Sinne einer dauerhaft guten Zusammenarbeit nicht thematisiert werden sollten: **Politik**, **Religion** und **Geld**.
+:::
+
+::: {.callout-important}
+## Ergänzung zur Empfehlung für die dauerhaft gute Zusammenarbeit in der Arbeitswelt
+Zusätzlich zu den Themenfeldern Politik, Religion und Geld zumindest in einigen Teilen Deutschlands das vierte zu meidende Themenfeld: Fussball und deren Vereine.
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Lencioni-Pyramide
+
+-------------------------------------------------------------------------- -->
+
+### Lencioni-Pyramide
+
+Die Lencioni-Pyramide bezeichnet ein Modell von [Patrick Lencioni](https://de.wikipedia.org/wiki/Patrick_Lencioni) und beschreibt die fünf Dysfunktionen bei Teams und ergänzt die Phasen der Teamentwicklung nach Tuckman um die Ursachen für das Scheitern einer Teamentwicklung beim Erreichen der Performing-Phase. Die Lencioni-Pyramide besteht aus fünf aufeinander aufbauenden Ebenen der gestörten Funktion:
+
+1. **Fehlendes Vertrauen**: Das Fundament der Pyramide ist das Vertrauen innerhalb des Teams. Ohne Vertrauen können die Mitglieder des Teams nicht offen und authentisch miteinander kommunizieren oder sich gegenseitig unterstützen.
+
+2. **Angst vor Konflikten**: Wenn es im Team an Vertrauen fehlt, meiden die Mitglieder oft Konflikte, um die Harmonie zu bewahren. Dies führt dazu, dass wichtige Themen nicht offen diskutiert und gelöst werden können.
+
+3. **Fehlendes Engagement**: Ein Mangel an Konflikten führt oft zu einem geringeren Engagement der Teammitglieder. Sie fühlen sich nicht vollständig verpflichtet, die Entscheidungen des Teams zu unterstützen, wenn sie nicht das Gefühl haben, dass ihre Bedenken oder Ideen gehört wurden.
+
+4. **Scheu vor Verantwortlichkeit**: Wenn sich die Teammitglieder nicht vollständig verpflichtet fühlen, neigen sie dazu, Verantwortung zu vermeiden. Dies führt zu einem Mangel an Verantwortlichkeit für die Ergebnisse des Teams.
+
+5. **Fehlende Ergebnisorientierung**: Die Spitze der Pyramide repräsentiert das Fehlen einer klaren Fokussierung auf gemeinsame Ziele und Ergebnisse. Ohne dieses klare Ziel können Teams Schwierigkeiten haben, erfolgreich zu sein und ihre Leistung zu maximieren.
+
+![Lencioni-Pyramide (Quelle: [Agile-Sales-Company](https://www.agile-sales-company.de/blog/die-5-dysfunktionen-der-teamarbeit-und-wie-du-sie-erfolgreich-ueberwindest))](images/LencioniPyramide.jpg){width=60% #fig-drone}
+
+--- 
+
+> *„Vertrauen ist der einfachste Weg, Komplexität in der Zusammenarbeit zu reduzieren.“ (Quelle: Unbekannt)*
+
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Aufgaben der Teamleitung
+
+-------------------------------------------------------------------------- -->
+
+### Aufgaben der Teamleitung
+
+Für die Entwicklung eines Hochleistungsteams ist es insbesondere zu Beginn der Teamentwicklung wichtig, dass es eine Person gibt, die die Teamentwicklung aktiv steuert. Aufgabe der Teamleitung ist es, zu helfen, das Team zusammen zu stellen und zum Erfolg zu führen. In Projekten ist dies der Projektmanager oder Projektleiter, in Abteilungen der Linienvorgesetzte (Abteilungs‑, Team- oder Gruppenleiter) — diese werden im Folgenden auch als Teamleiter bezeichnet. Das Ziel des Teamleiters beim Teamentwicklungsprozess ist es, eine Gruppe oder ein Pseudo-Team möglichst schnell und reibungslos zu einem performanten Team zu entwickeln.
+
+<!--
+![Teamleistung über die vier Phasen nach Tuckman hinweg (Quelle: [teamfactor & BDTV](https://www.teamentwicklung.org/Teamphasenmodell))](images/Teamleistung.jpg){width=90% #fig-teamleistung2}
+-->
+
+#### Forming
+
+In der Phase "Forming" hat die Teamleitung die Aufgabe, eine belastbare Grundlage für das Team zu schaffen und den Teamentwicklungsprozess erfolgreich zu starten (direktive Führung; dem Team Sicherheit und Struktur geben):
+
+1. **Klare Ziele und Aufgaben definieren:** Die Teamleitung legt klare Ziele und Aufgaben für das Team fest. Dies hilft den Teammitgliedern, ihre Rolle zu verstehen und sich auf gemeinsame Ziele zu konzentrieren.
+
+2. **Rollen und Verantwortlichkeiten zuweisen:** Die Teamleitung definiert die Rollen und Verantwortlichkeiten innerhalb des Teams und weist den Teammitgliedern entsprechende Aufgaben zu. Dadurch wird die Klarheit erhöht und es entsteht ein gemeinsames Verständnis der Erwartungen.
+
+3. **Teambildung und Kennenlernen unterstützen:** Die Teamleitung sollte aktiv den Prozess der Teambildung unterstützen, indem sie Möglichkeiten schafft, damit sich die Teammitglieder kennenlernen können. Das können beispielsweise Team-Building-Aktivitäten, informelle Treffen oder Icebreaker-Spiele sein.
+
+4. **Kommunikation fördern:** Die Teamleitung sollte eine offene und transparente Kommunikation innerhalb des Teams fördern. Dazu gehört das Einrichten von Kommunikationskanälen, die Schaffung eines positiven Kommunikationsklimas und die Ermutigung der Teammitglieder, ihre Gedanken und Ideen auszutauschen.
+
+5. **Teammitglieder unterstützen:** Die Teamleitung sollte den Teammitgliedern Unterstützung bieten und ihnen bei Bedarf zur Seite stehen. Das können beispielsweise Fragen zur Arbeitsweise, zur Zielerreichung oder zur Zusammenarbeit sein. Individuelle Bedürfnisse und Anliegen sollten ernst genommen und angemessen adressiert werden.
+
+6. **Klarheit schaffen:** Die Teamleitung sollte für Klarheit und Transparenz bezüglich der Erwartungen, Regeln und Prozesse sorgen. Die Teammitglieder sollten wissen, was von ihnen erwartet wird und wie Entscheidungen getroffen werden.
+
+7. **Vertrauen aufbauen:** Die Teamleitung spielt eine wichtige Rolle beim Aufbau von Vertrauen innerhalb des Teams. Durch Offenheit, Ehrlichkeit und Verlässlichkeit kann die Teamleitung das Vertrauen der Teammitglieder gewinnen und somit eine positive Teamdynamik fördern.
+
+Diese Aufgaben helfen der Teamleitung dabei, eine solide Grundlage für die weitere positive Entwicklung des Team zu legen.
+
+
+#### Storming
+In der Phase "Storming" hat die Teamleitung die Aufgabe, das Team bei der Bewältigung von Konflikten und Spannungen zu unterstützen:
+
+1. **Konfliktmanagement**: Die Teamleitung sollte konstruktive Konfliktlösungsmechanismen einführen und fördern. Dies kann das Etablieren von klaren Kommunikationsregeln, die Förderung offener Diskussionen und das Ermutigen zur Suche nach gemeinsamen Lösungen beinhalten. Die Teamleitung sollte als Vermittler auftreten, um Konflikte zu adressieren und zu deeskalieren.
+
+2. **Führung und Unterstützung**: Die Teamleitung sollte in dieser Phase eine starke Führungsrolle einnehmen, um das Team durch die Herausforderungen und Konflikte zu führen. Sie sollte den Teammitgliedern Orientierung bieten, sie motivieren und ermutigen, weiterzumachen. Individuelle Unterstützung und Coaching können ebenfalls hilfreich sein, um die Teammitglieder bei der Überwindung von Hindernissen zu unterstützen.
+
+3. **Teamdynamik verbessern**: Die Teamleitung sollte darauf abzielen, die Zusammenarbeit und das Vertrauen innerhalb des Teams zu stärken. Dies kann durch Teambuilding-Aktivitäten, Teamreflexionen oder die Förderung einer offenen und respektvollen Kommunikationskultur erreicht werden. Die Teamleitung sollte als Vorbild für positive Verhaltensweisen fungieren und eine unterstützende Umgebung schaffen.
+
+4. **Ressourcen bereitstellen**: Die Teamleitung stellt sicher, dass das Team die notwendigen Ressourcen zur Bewältigung von Konflikten hat. Dies umfasst sowohl menschliche Ressourcen (z. B. Expertise, Unterstützung von Stakeholdern) als auch materielle Ressourcen (z. B. Schulungen, Tools).
+
+5. **Kommunikation fördern**: Die Teamleitung sollte eine offene und effektive Kommunikation innerhalb des Teams fördern. Dies beinhaltet das Etablieren von klaren Kommunikationskanälen, das Anhören der Meinungen und Sorgen der Teammitglieder sowie das Schaffen eines sicheren Raums für den Austausch von Ideen und Lösungsvorschlägen.
+
+6. **Ziele und Prioritäten überarbeiten**: In dieser Phase können sich aufgrund von Konflikten und Spannungen die Ziele und Prioritäten des Teams ändern. Die Teamleitung sollte in Zusammenarbeit mit dem Team die Ziele und Prioritäten überprüfen und gegebenenfalls anpassen, um eine bessere Ausrichtung und Zusammenarbeit zu ermöglichen.
+
+Durch die Übernahme dieser Aufgaben kann die Teamleitung das Team während der Phase "Storming" unterstützen und dazu beitragen, Konflikte zu überwinden und eine positive Teamdynamik aufzubauen.
+
+
+#### Norming
+Aufgabe der Teamleitung ist es, das Team bei der Entwicklung gemeinsamer Normen und einer effektiven Zusammenarbeit zu unterstützen:
+
+1. **Unterstützung der Normen und Regeln**: Die Teamleitung sollte die Entwicklung und Festlegung gemeinsamer Normen und Regeln unterstützen. Dies kann durch das Einbringen von Vorschlägen, das Schaffen eines Rahmens für Diskussionen und Entscheidungen sowie das Fördern eines kollaborativen Prozesses geschehen. Die Teamleitung sollte sicherstellen, dass die Normen für alle Mitglieder klar und verständlich sind.
+
+2. **Klare Kommunikation**: Die Teamleitung sollte eine offene und klare Kommunikation innerhalb des Teams fördern. Dies umfasst das Bereitstellen von relevanten Informationen, das Teilen von Erwartungen und das Ermutigen zu einer effektiven Kommunikation unter den Teammitgliedern. Die Teamleitung sollte als Vorbild für eine transparente und respektvolle Kommunikation agieren.
+
+3. **Rollen und Verantwortlichkeiten festigen**: Die Teamleitung stellt sicher, dass die Rollen und Verantwortlichkeiten innerhalb des Teams klar definiert sind und von den Teammitgliedern verstanden werden. Dies beinhaltet das Überprüfen und Anpassen von Rollen, um sicherzustellen, dass sie den individuellen Stärken und Fähigkeiten der Teammitglieder entsprechen. Die Teamleitung sollte auch die Möglichkeit bieten, Feedback und Klarstellungen zu den Rollen zu geben.
+
+4. **Teamarbeit fördern**: Die Teamleitung unterstützt aktiv die Zusammenarbeit und Kooperation innerhalb des Teams. Dies kann durch die Förderung von Teamprojekten, die Schaffung von Gelegenheiten für gemeinsames Arbeiten und die Unterstützung des Wissensaustauschs erfolgen. Die Teamleitung sollte sicherstellen, dass das Team einen gemeinsamen Fokus auf die Zielerreichung hat.
+
+5. **Konfliktlösung und Mediation**: Obwohl die Phase "Norming" eine Zeit der besseren Zusammenarbeit ist, können immer noch Konflikte auftreten. Die Teamleitung sollte Konfliktlösungsmechanismen bereitstellen und bei Bedarf als Mediator agieren, um sicherzustellen, dass Konflikte konstruktiv und fair gelöst werden. Die Teamleitung sollte darauf abzielen, eine positive und unterstützende Teamkultur aufrechtzuerhalten.
+
+6. **Unterstützung des individuellen Wachstums**: Die Teamleitung fördert auch das individuelle Wachstum jedes der Teammitglieder. Dies kann durch Feedback, Coaching, Schulungen oder Entwicklungsmöglichkeiten geschehen. Indem die Teamleitung die persönliche Entwicklung jedes Teammitglieds unterstützt, trägt sie zur Stärkung des Teams insgesamt bei.
+
+Die Teamleitung spielt eine wichtige Rolle dabei, das Team in der Phase "Norming" zu unterstützen und eine effektive Zusammenarbeit zu fördern. Durch das Bereitstellen von klaren Richtlinien, Unterstützung bei der Rollenklärung und Förderung einer offenen Kommunikation kann die Teamleitung dazu beitragen, dass das Team seine Ziele erfolgreich erreicht.
+
+
+#### Performing
+
+Die Teamleitung unterstützt das Team dabei, Höchstleistung zu erreichen. 
+
+1. **Förderung der Selbstorganisation**: In der Phase "Performing" ist das Team hochfunktional und selbstorganisiert. Die Teamleitung sollte die Selbstorganisation des Teams unterstützen, indem sie Verantwortung und Entscheidungsbefugnis an die Teammitglieder delegiert. Dies ermöglicht es dem Team, autonom zu handeln und effektive Entscheidungen zu treffen.
+
+2. **Ressourcenbereitstellung**: Die Teamleitung sollte sicherstellen, dass das Team über ausreichende Ressourcen verfügt, um seine Aufgaben erfolgreich zu erfüllen. Dazu gehören sowohl materielle Ressourcen als auch Unterstützung von außen, z. B. Schulungen, Expertenwissen oder technische Unterstützung.
+
+3. **Förderung der Kommunikation und Zusammenarbeit**: Obwohl das Team bereits gut zusammenarbeitet, ist es wichtig, die Kommunikation und Zusammenarbeit weiterhin zu fördern. Die Teamleitung kann regelmäßige Meetings, Stand-ups oder andere Kommunikationsformate organisieren, um den Austausch von Informationen und den Zusammenhalt im Team aufrechtzuerhalten.
+
+4. **Zielorientierung und Überwachung des Fortschritts**: Die Teamleitung sollte sicherstellen, dass das Team weiterhin auf die definierten Ziele hinarbeitet. Dies beinhaltet die Überwachung des Fortschritts, das Setzen von Meilensteinen und die Bewertung der Zielerreichung. Die Teamleitung kann das Team bei der Priorisierung von Aufgaben und der Bewältigung von Hindernissen unterstützen.
+
+5. **Unterstützung bei der Problemlösung**: Wenn Herausforderungen oder Probleme auftreten, sollte die Teamleitung als Unterstützung zur Verfügung stehen. Sie kann bei der Identifizierung von Lösungsansätzen helfen, Ressourcen bereitstellen oder das Team bei der Überwindung von Hindernissen unterstützen.
+
+6. **Anerkennung und Wertschätzung**: Die Teamleitung sollte die Leistungen und Erfolge des Teams anerkennen und wertschätzen. Lob und Anerkennung können die Motivation und das Engagement der Teammitglieder weiter steigern.
+
+7. **Kontinuierliche Verbesserung fördern**: Die Teamleitung sollte die Bereitschaft zur kontinuierlichen Verbesserung im Team fördern. Das Team sollte regelmäßig Rückmeldungen geben, um Prozesse und Arbeitsweisen zu optimieren. Die Teamleitung kann dabei unterstützen, Verbesserungsvorschläge umzusetzen und das Team zu ermutigen, nach höheren Leistungsstandards zu streben.
+
+Durch die Erfüllung dieser Aufgaben kann die Teamleitung das Team in der Phase "Performing" unterstützen, seine Spitzenleistung zu erreichen und weiterhin effektiv und erfolgreich zu arbeiten.
+
+<!--
+![Teamleistung über die vier Phasen nach Tuckman hinweg (Quelle: [teamfactor & BDTV](https://www.teamentwicklung.org/Teamphasenmodell))](images/Teamleistung.jpg){width=90% #fig-teamleistung2}
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Virtuelle Teams
+
+-------------------------------------------------------------------------- -->
+### Virtuelle Teams
+
+::: {.callout-tip}
+## Definition: *"Virtuelle Teams"*
+„Virtuelle Teams“ sind Gruppen von Personen , die zusammenarbeiten, aber nicht physisch am selben Ort präsent sind. Stattdessen nutzen sie Kommunikationstechnologien wie E-Mail, Videokonferenzen, Online-Chats und Werkzeuge zur Zusammenarbeit, um miteinander zu interagieren und Aufgaben zu erledigen.
+:::
+ 
+#### Virtuelle Teams vs. traditionelle Teams
+
+Der Hauptunterschied zwischen virtuellen Teams und traditionellen Teams liegt in der räumlichen Distanz. Virtuelle Teams können aus Mitgliedern bestehen, die sich in verschiedenen Städten, Ländern oder sogar Kontinenten befinden. Virtuelle Teams ermöglichen es Organisationen, talentierte Mitarbeiter unabhängig von ihrem Standort einzustellen und zusammenarbeiten zu lassen. Dadurch eröffnen sich neue Möglichkeiten für internationale Kooperationen und eine flexible Arbeitsstruktur.
+
+Vorteile virtueller Teams sind unter anderem:
+
++ **Zeitliche und räumliche Flexibilität**: Die im Team Mitarbeitenden können aus verschiedenen geografischen Gebieten stammen, was eine breite Vielfalt an Perspektiven und Ideen mit sich bringt. Hierdurch wird es möglich, Experten einzubinden, die zeitlich und räumlich für die Arbeit in klassischen Teams nicht zur Verfügung stünden. Die im Team Mitarbeitenden können von überall aus arbeiten, was eine bessere Work-Life-Balance ermöglichen und die Produktivität steigern kann.
+
++ **Kosteneffizienz**: Die Zusammenarbeit erfolgt virtuell, wodurch Reise- und Standortkosten reduziert werden können.
+
++ **Zeitersparnis**: Durch Online-Kommunikation können Entscheidungen schneller getroffen und Aufgaben effizienter erledigt werden.
+
+Jedoch gibt es auch Herausforderungen bei der Arbeit in virtuellen Teams, wie etwa Kommunikationsprobleme durch unterschiedliche Zeitzonen und Kulturdifferenzen. Oftmals kommen Technologiehürden hinzu und erschweren die Zusammenarbeit. Erfolgreiche virtuelle Teams setzen daher auf klare Aufgabenverteilung und eigenverantwortliches Handeln aller im Team Mitarbeitenden sowie Kommunikationsrichtlinien, regelmäßige Updates und den Einsatz geeigneter Werkzeuge zur Zusammenarbeit, um diese Herausforderungen zu bewältigen.
+
+#### Anforderungen an Mitarbeitende in virtuellen Teams
+
+Virtuelle Teams sind nicht für Jeden gleichermaßen geeignet. Mitarbeitende in virtuellen Teams sollten eine Reihe von Eigenschaften mitbringen. Bei der Zusammenstellung von virtuellen Teams sollte sowohl die jeweilige Führungskraft als auch der jeweilige Mitarbeitende darauf achten, dass die für die Mitarbeit in Virtuellen Teams folgenden notwendigen Eigenschaften von den Mitarbeitenden mitgebracht werden:
+
++ **Kommunikationsfähigkeiten**: Effektive Kommunikation ist der Schlüssel in virtuellen Teams. Teammitglieder sollten klar und präzise kommunizieren können, sei es schriftlich in E-Mails oder mündlich in Videokonferenzen.
++ **Selbstorganisation**: In virtuellen Teams arbeitet man oft unabhängig und flexibel. Teammitglieder müssen sich selbst organisieren können, um ihre Aufgaben termingerecht zu erledigen und Ziele zu erreichen.
++ **Verantwortungsbewusstsein**: Da es weniger direkte Überwachung gibt, ist es wichtig, dass Teammitglieder verantwortungsbewusst sind und ihre Aufgaben eigenständig erledigen.
++ **Technische Kompetenz**: Der Umgang mit Online-Kommunikationstools und Kollaborationsplattformen ist unerlässlich. Teammitglieder sollten in der Lage sein, Technologien effizient zu nutzen.
++ **Offenheit für Diversität**: Virtuelle Teams können aus Menschen unterschiedlicher Kulturen und Hintergründe bestehen. Offenheit und Respekt gegenüber Vielfalt sind daher entscheidend für eine reibungslose Zusammenarbeit. Falls möglich sollten bei einer Zusammenarbeit über kulturelle Grenzen hinweg (z.B. Europa – Asien) vorab geeignete Schulungen angeboten und von den Mitarbeitenden besucht werden.
++ **Teamorientierung**: Obwohl die Teammitglieder räumlich getrennt sind, müssen sie dennoch als Team zusammenarbeiten und sich gegenseitig unterstützen.
++ **Proaktives Problemmanagement**: In virtuellen Teams können Kommunikationsprobleme oder Missverständnisse auftreten. Teammitglieder sollten proaktiv sein, um solche Herausforderungen anzugehen und zu lösen.
++ **Flexibilität**: Da Teammitglieder in verschiedenen Zeitzonen oder einfach auch nur verschiedenen Lebensmodellen (z.B. Care-Arbeiten wie Kindererziehung oder Pflege im familiären Umfeld) arbeiten können, erfordert dies eine gewisse Flexibilität aller Mitarbeitenden bei der Planung von Meetings und Arbeitszeiten.
++ **Engagement und Motivation**: Die Entfernung und die virtuelle Natur der Zusammenarbeit können manchmal zu einem Gefühl der Isolation führen. Engagierte und motivierte Teammitglieder tragen dazu bei, die Zusammenarbeit und den Teamgeist aufrechtzuerhalten. Falls irgend möglich sollte ein regelmäßiges Zusammentreffen des Teams in Präsenz organisiert und aus der Hierarchie unterstützt und gefördert werden.
++ **Konfliktlösungsfähigkeiten**: Konflikte können auch in virtuellen Teams auftreten. Im Team Mitarbeitende sollten über angemessene Konfliktlösungsfähigkeiten verfügen, um Probleme konstruktiv anzugehen und zu lösen.
+
+Individuen mit diesen Eigenschaften sind in der Regel besser in der Lage, sich in virtuellen Teams zu engagieren und zum Erfolg der Gruppe beizutragen.
+
+#### Aufgabenbereiche mit Vorteilen für virtuelle Teams
+
+Virtuelle Teams können in verschiedenen Aufgabenbereichen besonders erfolgreich sein, insbesondere wenn es um komplexe, global ausgerichtete oder projektbasierte Aufgaben geht. Beispiele hierfür sind: 
+
++ **Internationale Projekte**: Virtuelle Teams ermöglichen es Unternehmen, Experten und Fachkräfte aus verschiedenen Ländern einzusetzen, um globale Projekte zu realisieren. Die Vielfalt der Perspektiven kann zu innovativen Lösungen führen.
++ **24/7-Support und Service**: Virtuelle Teams, die in verschiedenen Zeitzonen arbeiten, können einen kontinuierlichen Kundensupport und Service rund um die Uhr bieten. 
++ **Forschung und Entwicklung:** Virtuelle Teams können Forscher, Ingenieure und Wissenschaftler aus der ganzen Welt zusammenbringen, um gemeinsam an neuen Technologien und Innovationen zu arbeiten.
++ **Kollaborative Projekte**: Wenn die Zusammenarbeit mehrerer Fachbereiche erforderlich ist, können virtuelle Teams die räumlichen Hindernisse überwinden und eine nahtlose Zusammenarbeit ermöglichen.
+
+
+### Kriterien für Projekte mit Vorteilen für klassische Teams
+
+Allerdings gibt es auch Aufgaben, bei denen klassische Teams im Vergleich zu virtuellen Teams einige Vorteile haben können:
+
++ **Empfindliche oder vertrauliche Projekte**:  In einigen Fällen, in denen die Sicherheit und Vertraulichkeit der Informationen besonders wichtig ist, können klassische Teams bevorzugt werden, um das Risiko von Datenlecks zu minimieren.
+
++ **Face-to-Face-Kommunikation**: In Aufgaben, die hohe zwischenmenschliche Interaktion erfordern, kann die persönliche Kommunikation in klassischen Teams effektiver sein als virtuelle Kommunikation.
+
++ **Kreative Brainstorming-Sitzungen**: Das spontane und ungezwungene Zusammenkommen in einem physischen Raum kann die Kreativität und Innovation in bestimmten Szenarien fördern. 
+
++ **Team Building und Vertrauensbildung**: Der persönliche Kontakt kann das Vertrauen unter den Teammitgliedern stärken und den Teamgeist fördern.
+
++ **Manuelle oder physische Aufgaben**: Bei Aufgaben, die physische Anwesenheit und praktische Fähigkeiten erfordern, sind klassische Teams möglicherweise besser geeignet.
+
+Sowohl virtuelle als auch klassische Teams haben ihre spezifischen Vor- und Nachteile. Die Wahl des geeigneten Teamansatzes hängt von den spezifischen Anforderungen der Aufgabe, der Art der Zusammenarbeit und den verfügbaren Ressourcen ab. 
+
+::: {.callout-caution}
+## Tipp!
+Workshops und Klausuren besitzen auch heute noch Berechtigung und können helfen, im Team schwierige Entscheidungen zu fällen oder tiefgehende Konflikte zu lösen. Das Hinzuziehen eines guten externen Moderators oder Coaches kann dabei hilfreich sein. 
+:::
+
+::: {.callout-caution}
+## Tipp!
+Beim Start von virtuellen Teams im Vorfeld genügend Begegnung und Raum zum gegenseitigen Kennenlernen und auch zum Kennenlernen des jeweiligen Arbeitsumfelds geben. 
+:::
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Ringelmann-Effekt
+
+-------------------------------------------------------------------------- -->
+
+### Ringelmann-Effekt
+
+::: {.callout-tip}
+## Definition: *"Ringelmann-Effekt"*
+Der Ringelmann-Effekt bezeichnet das Phänomen, dass die individuelle Leistung von Einzelpersonen innerhalb einer Gruppe abnimmt, wenn die Gruppengröße zunimmt. Mit anderen Worten: Je größer die Gruppe, desto geringer ist die individuelle Leistung jedes einzelnen Mitglieds.
+:::
+
+Dieses Phänomen wurde erstmals vom französischen Ingenieur Max Ringelmann in den 1910er Jahren in Experimenten mit Seilen untersucht und später nach ihm benannt. Hintergrund waren Beobachtungen Ringelmanns beim Tauziehen von Gruppen. Er ließ daraufhin Probanden an einem Seil ziehen und maß die aufgebrachte Zugkraft sowohl bei Einzelpersonen als auch bei Gruppen unterschiedlicher Größen. Dabei stellte er fest, dass die Gesamtleistung der Gruppe nicht proportional zur Anzahl der Mitglieder steigt. Tatsächlich fand er heraus, dass die durchschnittliche individuelle Leistung in einer Gruppe geringer war als die Leistung der einzelnen Personen, wenn sie alleine arbeiteten.
+
+Der Ringelmann-Effekt kann dabei in der Theorie durch mehrere mögliche Ursachen begründet werden:
+
+1. **Kommunikationsprobleme und Koordinationsschwierigkeiten**: Mit zunehmender Gruppengröße kann die Kommunikation schwieriger werden, was zu Missverständnissen und ineffektiven Zusammenarbeiten führen kann. In größeren Gruppen kann auch über Kommunikationsprobleme hinaus die Koordination der Anstrengungen schwieriger werden, was zu ineffizienten Bewegungen und Verzögerungen führen kann.
+
+2. **Sozialer Druck und Soziale Faulheit**: In größeren Gruppen kann der individuelle Beitrag eines Einzelnen weniger wahrnehmbar sein, was den Anreiz mindern kann, sich besonders anzustrengen. Einige Gruppenmitglieder könnten sich dadurch weniger engagieren und weniger Anstrengungen unternehmen, wenn sie das Gefühl haben, dass ihre individuelle Leistung in der Gruppe weniger sichtbar ist oder weniger Gewicht hat. 
+
+Der Ringelmann-Effekt hat wichtige Implikationen für das Management von Teams und Organisationen. Um die negativen Auswirkungen des Ringelmann-Effekts zu minimieren, ist es wichtig, klare Rollen und Verantwortlichkeiten in Gruppen festzulegen, die Kommunikation zu fördern und eine positive Teamkultur zu schaffen, in der jedes Mitglied sich als wertvoller Teil des Teams fühlt und motiviert ist, sein Bestes zu geben.
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Leistungsbeurteilung im Team
+
+-------------------------------------------------------------------------- -->
+
+### Leistungsbeurteilung im Team {#sec-leistungsbeurteilung}
+
+> *„Neid. Missgunst. Angst. Häme.“ (Die vier Anzeichen einer eher ungünstigen Zusammenarbeitskultur in einer Organisation oder in einem Team).*
+
+Eine faire Leistungsbeurteilung einen positiven Einfluss auf die Zufriedenheit und Motivation der Mitarbeitenden. Wenn Mitarbeitende das Gefühl haben, dass ihre Leistungen fair und objektiv bewertet werden, werden in der Regel die folgenden Aspekte positiv beeinflusst:
+
++ **Motivation und Leistungsbereitschaft**: Eine faire Beurteilung erkennt die Anstrengungen und Leistungen der Mitarbeitenden an und stärkt dadurch ihre Motivation, sich weiterhin anzustrengen und gute Arbeit zu leisten.
++ **Selbstwertgefühl und Selbstvertrauen**: Wenn Mitarbeitende wissen, dass ihre Leistungen fair bewertet werden, steigt ihr Selbstwertgefühl und Selbstvertrauen. Sie sind eher bereit, Herausforderungen anzunehmen und ihre Fähigkeiten zu verbessern.
++ **Gerechtigkeitswahrnehmung**: Eine faire Beurteilung trägt zur Wahrnehmung der Gerechtigkeit im Arbeitsumfeld bei. Mitarbeitende sehen, dass ihre Beiträge angemessen anerkannt und honoriert werden, was zu einem positiven Arbeitsklima beiträgt.
++ **Vertrauen in das Management**: Eine transparente und faire Beurteilung schafft Vertrauen zwischen Mitarbeitenden und dem Management. Die Mitarbeitenden können darauf vertrauen, dass Entscheidungen auf objektiven Kriterien basieren und nicht willkürlich oder subjektiv getroffen werden.
++ **Verbesserte Teamdynamik**: Wenn Leistungsbeurteilungen fair sind, kann dies dazu beitragen, dass die Zusammenarbeit im Team verbessert wird. Teammitglieder haben weniger Gründe für Missgunst oder Konflikte, die durch eine ungerechte Beurteilung entstehen könnten.
++ **Förderung der individuellen Entwicklung**: Eine faire Leistungsbeurteilung identifiziert sowohl Stärken als auch Entwicklungsbereiche. Dadurch können Mitarbeitende gezielt an ihrer persönlichen und beruflichen Weiterentwicklung arbeiten.
+
+Es ist wichtig zu betonen, dass die Wahrnehmung der Fairness subjektiv ist und von verschiedenen Faktoren wie der Transparenz des Bewertungsprozesses, der klaren Kommunikation von Zielen und Erwartungen und der Konsistenz der Bewertungen beeinflusst wird. Eine faire Leistungsbeurteilung ist ein wesentlicher Aspekt für eine positive Unternehmenskultur, die Mitarbeiterzufriedenheit und -motivation fördert und zu einer produktiveren und effektiveren Arbeitsumgebung beiträgt.
+
+Die Bewertung der Leistungen von Mitarbeitenden in einem Team sollte eine ausgewogene Kombination aus Team- und individueller Bewertung sein, da beide Ansätze ihre eigenen Vorzüge haben und bestimmte Aspekte der Leistungserbringung erfassen.
+
+Die Bewertung des gesamten Teams kann in folgenden Fällen sinnvoll sein:
+
+- **Teamleistung**: Wenn die Aufgabe oder das Projekt in erster Linie eine gemeinsame Anstrengung des gesamten Teams ist ***und die individuelle Leistung der Mitarbeitenden schwer zu trennen ist***, ist es angemessen, die Teamleistung zu bewerten.
+- **Zusammenarbeit und Teamarbeit**: In Aufgaben, die eine starke Zusammenarbeit und Teamarbeit erfordern, ist es wichtig, die Fähigkeit des Teams als Ganzes zu bewerten, effektiv zusammenzuarbeiten und gemeinsame Ziele zu erreichen.
+- **Teamziele**: Wenn die Erfüllung der Teamziele und -ergebnisse wichtiger ist als die individuellen Beiträge, sollte die Bewertung auf der Teamleistung beruhen.
+- **Motivation und Teamgeist**: Durch die Bewertung des Teams als Ganzes können positive Anreize für das Teambuilding und die Förderung eines starken Teamgeistes geschaffen werden.
+
+Die individuelle Bewertung der Mitarbeitenden ist in folgenden Situationen angemessen:
+
+- **Individuelle Verantwortung** : ***Wenn die Aufgaben und Verantwortlichkeiten der Teammitglieder unterscheiden, klar definiert sind und die individuelle Leistung der Teammitglieder einen deutlichen (messbaren) Einfluss auf den Erfolg der Aufgabe hat,*** ist eine individuelle Bewertung angebracht.
+- **Entwicklungsfokus**: Individuelle Bewertungen ermöglichen eine gezieltere Identifizierung von Stärken und Entwicklungsbereichen der Mitarbeitenden, was deren individuelles Wachstum und Verbesserung fördern kann.
+- **Führungskräftebewertung**: Bei der Bewertung von Führungskräften oder Teamleitern ist es wichtig, ihre Fähigkeiten zur Motivation, Führung und Entwicklung ihrer Teammitglieder individuell zu bewerten.
+
+Die richtige Balance zwischen Team- und individueller Bewertung hängt von den Zielen der Organisation, der Natur der Aufgabe und den spezifischen Kriterien für die Leistungsbewertung ab. Eine faire und transparente Bewertung fördert die Motivation und das Engagement der Mitarbeitenden und unterstützt das Wachstum und den Erfolg des gesamten Teams und der Organisation.
+
+### Senioritäts- vs Leistungsprinzip
+
+Das Senioritätsprinzip ist ein Prinzip in der Personalwirtschaft und bezieht sich auf die Vergabe von Beförderungen, Gehaltserhöhungen, Boni oder anderen Vergünstigungen basierend auf der Dauer der Beschäftigung oder der Anzahl der Dienstjahre eines Mitarbeiters in einem Unternehmen. Es bedeutet, dass Mitarbeitende, die länger in einem Unternehmen arbeiten, in der Regel bevorzugt behandelt werden, wenn es um solche Aufstiegs- und Vergütungsentscheidungen geht.
+
+Unter dem Senioritätsprinzip werden in der Regel diejenigen Mitarbeitenden priorisiert, die über eine längere Betriebszugehörigkeit verfügen, unabhängig von ihrer individuellen Leistung oder ihren erreichten Ergebnissen. Das Senioritätsprinzip kann dazu dienen, Mitarbeitende für ihre Loyalität und ihre langfristige Bindung an das Unternehmen zu belohnen. Es kann auch dazu beitragen, eine stabile Belegschaft aufzubauen, da langjährige Mitarbeiter dazu neigen, ein stärkeres Gefühl der Verbundenheit mit dem Unternehmen zu haben.
+
+Allerdings kann das Senioritätsprinzip auch einige Nachteile haben, da es nicht unbedingt die individuelle Leistung, die Fähigkeiten oder das Potenzial der Mitarbeitenden berücksichtigt. Dies kann zu einer geringeren Motivation für jüngere oder leistungsfähigere Mitarbeiter führen, da ihre Bemühungen möglicherweise nicht ausreichend belohnt werden.
+
+Das Gegenteil des Senioritätsprinzips ist das Leistungsprinzip oder auch das Prinzip der Leistungsbeurteilung. Während das Senioritätsprinzip bei Personalentscheidungen und Beförderungen die Dauer der Beschäftigung oder die Anzahl der Dienstjahre berücksichtigt, basiert das Leistungsprinzip auf der individuellen Leistung und den erreichten Ergebnissen eines Mitarbeiters.
+
+Unter dem Leistungsprinzip werden Mitarbeiter aufgrund ihrer Fähigkeiten, ihrer Effektivität, ihres Engagements und ihrer tatsächlichen Beiträge zur Organisation bewertet und belohnt. Es legt den Schwerpunkt auf die individuelle Leistung und die damit verbundenen Ergebnisse anstelle der bloßen Anwesenheit oder der Zeit im Unternehmen.
+
+Im Leistungsprinzip werden Mitarbeiter anhand objektiver Kriterien und messbarer Ergebnisse beurteilt, wie zum Beispiel:
+
++ Erreichung von Zielen und Ergebnissen,
++ Qualität der Arbeit,
++ Produktivität und Effizienz,
++ Kreativität und Innovation,
++ Kundenfeedback und Kundenzufriedenheit,
++ Fähigkeit zur Teamarbeit und Zusammenarbeit,
++ Übernommene Verantwortung
++ Entwicklung und Weiterbildung.
+
+Das Leistungsprinzip kann dazu beitragen, dass Mitarbeiter motiviert sind, sich weiterzuentwickeln und ihre Fähigkeiten zu verbessern, da ihre individuellen Bemühungen und Erfolge Anerkennung und Belohnung finden. Es fördert einen wettbewerbsorientierten Ansatz und kann eine leistungsstarke Unternehmenskultur schaffen. Es ist jedoch wichtig, dass die Bewertung objektiv, fair und transparent erfolgt, um mögliche Vorurteile oder Ungerechtigkeiten zu vermeiden.
+
+In der heutigen Arbeitswelt setzen viele Unternehmen auf eine Kombination aus dem Senioritätsprinzip und dem Leistungsprinzip, um eine ausgewogene und gerechte Personalpolitik zu verfolgen. Dies bedeutet, dass sowohl die Betriebszugehörigkeit als auch die individuelle Leistung und die erzielten Ergebnisse bei Personalentscheidungen berücksichtigt werden.
+
+
+::: {.callout-caution}
+## Tipp 
+Digital Nomads, Freelancer und befristet Beschäftigte profitieren nicht von den Langzeiteffekten des Senioritätsprinzips und sollten daher bei der Vergütung der Leistung stets darauf achten, für die erbrachten Leistungen angemessen entlohnt zu werden (d.h. i.d.R deutlich höher als vergleichbare jüngere Mitarbeiter die in einem Unternehmen arbeiten, das ganz oder teilweise auf das Senioritätsprinzip zurückgreift).
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Führung: Management vs. Leadership
+
+-------------------------------------------------------------------------- -->
+
+
+### Führung: Management vs. Leadership
+
+Der deutsche Begriff *"Führung"* bezieht sich auf den Prozess, in dem eine Person oder eine Gruppe von Personen andere Personen oder Ressourcen in einer Organisation leitet, lenkt oder lenkt, um bestimmte Ziele zu erreichen. Führung umfasst die Planung, Organisation, Koordination und Kontrolle von Aktivitäten und Ressourcen, um die Effizienz und Effektivität innerhalb einer Organisation sicherzustellen. Sie beinhaltet auch die Motivation von Mitarbeitern, die Schaffung einer positiven Arbeitsumgebung und die Förderung der persönlichen und beruflichen Entwicklung der Mitarbeiter. Führung findet auf verschiedenen Ebenen einer Organisation statt, von der obersten Führungsebene bis hin zu Teamleitern oder Abteilungsleitern.
+
+Im Angloamerikanischen ist der Begriff der Führung klarer als im Deutschen in die zwei Begriffe *"Management"* und *"Leadership"* aufgespalten:
+
+::: {.callout-tip}
+## Definition: *"Management"*
+"Management" im Sinne von Führung kann definiert werden als der Prozess der Planung, Organisation, Steuerung und Kontrolle von Ressourcen (wie Menschen, Geld, Zeit und Materialien) innerhalb einer Organisation, um bestimmte Ziele effektiv und effizient zu erreichen. Es beinhaltet die Koordination von Personen und Ressourcen, um die Unternehmensziele zu erreichen und sicherzustellen, dass die Arbeitsabläufe reibungslos funktionieren.
+:::
+
+::: {.callout-tip}
+## Definition: *"Leadership"*
+"Leadership" kann auf als "Führungskompetenz" oder "Führungsfähigkeit" übersetzt werden. Es bezieht sich auf die Fähigkeit einer Person, andere zu inspirieren, zu motivieren und zu leiten, um gemeinsame Ziele zu erreichen. Leadership umfasst die Fähigkeit, Visionen zu entwickeln, Strategien zu formulieren, Entscheidungen zu treffen und Menschen zu befähigen, ihr volles Potenzial auszuschöpfen. Es geht darum, andere Menschen positiv zu unterstützen und zu führen.
+:::
+
+::: {.callout-caution}
+## Tipp
+Dem  Leser wird empfohlen sich diesen zwei sehr unterschiedlichen Aspekten der Führung stets bewusst zu sein. Der Vorgesetzte in einer Organisation ist in der Regel aus Sicht der Organisation und seiner Aufgabenbeschreibung nach Manager. Gute Manager sind nicht automatisch gute Führungspersönlichkeiten (auch der Umkehrschluss gilt leider nicht). Tatsächlich scheinen Personen, die sowohl gute Manager als auch gute Führungspersönlichkeiten sind, in der Realität sehr selten vorzukommen.
+:::
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Shareable Links & Literaturempfehlungen
+
+-------------------------------------------------------------------------- -->
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
++ @kunert_failure_2016: [Scheitern in Teams](https://rdcu.be/dJjB7)
++ @kunert_failure_2016: [Scheitern in der Führung](https://rdcu.be/dJjD5)
+:::
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Literaturempfehlung
+
+-------------------------------------------------------------------------- -->
+
+<!--
+#### Literaturempfehlung
+
+![@kunert_failure_2016: [Failure Management](https://link.springer.com/book/10.1007/978-3-662-47357-3)](images/Kunert_Failure_Management_978-3-662-47357-3.webp){width=40%}
+
+-->

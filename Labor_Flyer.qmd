@@ -1,0 +1,287 @@
+---
+title: "DEB3 Produktentwicklung 1"
+resource-path: ["../images"]
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+keywords:
+  - Produktentwicklung
+  - Ideenfindung
+  - Konzeptentwicklung
+  - Labor
+  - Flyer
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       LABOR FLYER
+
+-------------------------------------------------------------------------- -->
+
+# Labor "Flyer"
+
+![Projekt Flyer (Quelle: Adobe Stock)](images/ProjectFlyer.jpeg){width=100% #fig-labflyer}
+
+<!-- -------------------------------------------------------------------------
+
+                       CALLOUT PRÄMISSEN
+
+-------------------------------------------------------------------------- -->
+<!--
+::: { .callout-note}
+## Prämissen
++ Für das Labor "Flyer" und die damit verbundenen Übungen steht eine Laboreinheit zu je 2 mal 45 Minuten (insgesamt 90 Minuten) zur Verfügung.
++ Das Labor wird in Zweiergruppen oder - sollte das aufgrund ungerader Anzahl an Teilnehmern nicht möglich sein - in Einzelarbeit durchgeführt.
+:::
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       CALLOUT LERNZIELE
+
+-------------------------------------------------------------------------- -->
+<!--
+::: { .callout-note}
+## Lernziele
+- Phasen der Produktentwicklung verstehen
+- Grundlagen des Projektmanagements erleben
+- Konzeptphase erleben.
+- Bedeutung des Lastenhefts erleben
+- Prototyp und Test "Was man nicht messen kann kann man nicht optimieren"
+- Spaß haben, Erfolg erleben und eine gute Zeit haben
+:::
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       CALLOUT MISSIONS-STATEMENT
+
+-------------------------------------------------------------------------- -->
+## Mission-Statement Labor Flyer
+
+::: { .callout-note}
+## Mission-Statement Labor Flyer
+*"Bauen Sie einen Papierflieger, der ihr auf der Königstraße in Stuttgart vorbeieilendes Zielpublikum mittels kurzer Ansprache zum Stehenbleiben veranlasst, nach einer Vorführung des Papierfliegers begeistert und zum Kauf Ihres Papierfliegers veranlasst!"*
+:::
+
+<!--
+#### Mission-Statement
+
+::: {.callout-tip}
+## Definition: *"Mission-Statement"*
+Ein Mission Statement (auch als Unternehmensleitbild, Unternehmensmission oder Unternehmenszweck bezeichnet) ist eine schriftliche Erklärung, die den grundlegenden Zweck, die Ziele und die Werte einer Organisation oder eines Unternehmens zusammenfasst. Es dient dazu, die Identität und den Zweck der Organisation klar zu kommunizieren, sowohl intern an die Mitarbeiter als auch extern an Kunden, Lieferanten, Investoren und die Öffentlichkeit.
+:::
+
+Ein Mission Statement sollte folgende Fragen beantworten:
+
+1. **Zweck**: Warum existiert die Organisation? Welches Problem oder Bedürfnis versucht sie zu lösen, und welchen Nutzen bringt sie der Gesellschaft?
+
+2. **Ziele**: Welche langfristigen Ziele oder Visionen verfolgt die Organisation? Wohin strebt sie an?
+
+3. **Werte**: Welche Prinzipien und Werte leiten die Organisation bei ihren Aktivitäten und Entscheidungen? Welche ethischen Standards sind wichtig?
+
+4. **Zielgruppe**: Wen möchte die Organisation ansprechen oder bedienen? Welche Zielgruppen oder Kunden sind von Interesse?
+
+5. **Alleinstellungsmerkmale**: Was unterscheidet die Organisation von anderen in ihrer Branche oder ihrem Bereich? Welche besonderen Stärken oder Eigenschaften hat sie?
+
+Mission Statements können in verschiedenen Organisationen und Branchen gefunden werden, einschließlich Unternehmen, gemeinnützigen Organisationen, Bildungseinrichtungen, Regierungen und anderen. Sie dienen als Rahmen für die strategische Ausrichtung und Entscheidungsfindung und können als Leitfaden für Mitarbeiter und Stakeholder dienen.
+
+Ein gut formuliertes Mission Statement ist klar im Inhalt, prägnant formuliert und wirkt inspirierend. Es sollte die Identität und den Zweck der Organisation auf den Punkt bringen und dazu beitragen, die Motivation und den Zusammenhalt innerhalb der Organisation zu stärken. Unternehmen und Organisationen überarbeiten gelegentlich ihre Mission Statements, um sicherzustellen, dass sie weiterhin relevant und aussagekräftig sind, insbesondere in sich wandelnden Geschäftsumfeldern.
+
+::: {.callout-caution}
+## Mission-Statement im Alltag
+Mission-Statements gehen aber auch eine Ebene kleiner und können zu einer wertvollen Hilfe für den Alltag werden. Ziel eines solchen "kleinen" Mission-Statements ist es, das Ziel einer anstehenden Aktivität, der nächsten Besprechung, des nächsten Workshops, ... "auf den Punkt" zu bringen. Auch hier gilt: Ein gut formuliertes Mission Statement enthält eine klare und präzise Darstellung des Auftrags, kann ggf. auch spezifische Anweisungen zur Ausführung des Auftrags enthalten, ist in jedem Fall aber klar im Inhalt, prägnant formuliert und wirkt inspirierend (→ SMART)^[Eine bekannte Form von Mission Statements findet sich z.B. in den Auftragskarten des Spiels „Risiko“. Im Spiel "Risiko" werden die Karten mit den Aufträgen als "Mission Cards" oder auf Deutsch als "Auftragskarten" bezeichnet. Diese Karten enthalten spezifische Missionsziele, die die Spieler erfüllen müssen, um das Spiel zu gewinnen. Jede Mission Card enthält normalerweise eine bestimmte Aufgabe oder ein Ziel, das der Spieler erreichen muss.]
+:::
+-->
+
+
+## Los geht's!
+
+<!--
+![Symboldbild Papierflieger (Quelle: Adobe Stock)](images/PaperAirplane.jpeg){width=80% #fig-labpaperairplane}
+-->
+
+<p style="text-align: center;">
+![](images/PaperAirplane.jpeg){width=80%}
+</p>
+
+## Übung: Gantt-Diagramm zum Entwicklungsprojekt "Flyer"
+
+{{< include Aufgabe_Gantt_Flyer.qmd >}}
+
+<!-- 
+ACHTUNG!!! Mermaid-Grafiken zum Gantt-Diagramm werden in der Quarto-Preview nicht dargestellt, erscheinen nach dem Compilieren aber im Dokument. Zur Vorschau der Gantt-Charts sei auf den Mermaid-Live-Editor verwiesen
+
+```{mermaid}
+%%| fig-width: 6.4
+%%| label: fig-label-gntflyer01
+%%| fig-cap: "Gantt-Diagramm eines ersten Entwurfs zum Ablauf des Labors des Flyers"
+gantt
+title Gantt-Diagramm eines ersten Entwurfs zum Ablauf des Labors des Flyers
+    dateFormat HH:mm
+    axisFormat %H:%M
+    Start : milestone, m1, 00:00, 0m
+    Idee  : a1, after m1, 20m
+    Lastenheft : a2, after a1, 30m
+    Entwicklung : a3, after a2, 15m
+    Prototyp: a4, after a3, 20m
+    Test: a5, after a4, 10m
+    Pause: done, a6, after a5, 15m
+    Dokumentation: a7, after a6, 30m
+    Ende : milestone, m2, after a7, 0m
+```
+-->
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Theorieblock: Mindmap
+
+-------------------------------------------------------------------------- -->
+
+<!-- include Mindmap.qmd -->
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Aufgaben: Mindmap Anforderungen 
+
+-------------------------------------------------------------------------- -->
+## Übung: Mindmap der Anforderungen
+
+{{< include Aufgabe_Mindmap_Flyer.qmd >}}
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Theorieblock: Kosten und deren Beeinflussung im PEP
+
+-------------------------------------------------------------------------- -->
+
+<!-- include Kosten_im_Produktentstehungsprozess.qmd -->
+
+<!-- -------------------------------------------------------------------------
+
+                       Aufgaben: Lastenheft Flyer
+
+-------------------------------------------------------------------------- -->
+## Übung: Lastenheft zum Flyer
+
+{{< include Aufgabe_Lastenheft_Flyer.qmd >}}
+
+<!-- -------------------------------------------------------------------------
+
+                       Aufgaben: Lastenheft Flyer
+
+-------------------------------------------------------------------------- -->
+## Übung: Entwicklungsmethodik zum Flyer
+
+{{< include Aufgabe_Entwicklungsmethodik_Flyer.qmd >}}
+
+<!-- -------------------------------------------------------------------------
+
+                       AUFGABE: GANTT-DIAGRAMM PROTOTYP UND TEST DES FLYERS
+
+-------------------------------------------------------------------------- -->
+<!--
+```{mermaid}
+%%| fig-width: 6.4
+%%| label: fig-label-gntflyer02
+%%| fig-cap: "Beispiel eines möglichen Gantt-Diagramms der Projektphasen zum Prototyp und Test des Flyers"
+gantt
+title Gantt-Diagramm der Projektphasen zum Prototyp und Test des Flyers
+    dateFormat HH:mm
+    axisFormat %H:%M    
+
+    Start Projektphase Prototyp und Test : milestone, m1, 00:00, 0m
+
+    section Beschaffung
+    Papier : a1, after m1, 1m
+    Schere : a2, after m1, 5m
+    Klebstoff : a3, after m1, 5m
+    Alle Teile im Haus : milestone, m2, after a3, 0m
+
+    section Fertigung Prototyp
+    Papier zuschneiden : b1, after m2, 2m
+
+    section Montage Prototyp
+    Papier falten : c1, after b1, 5m
+    Papier kleben : c2, after c1, 5m
+    Prototyp anmalen und beschriften: c3, after c2, 2m
+    Aufbau Prototyp abgeschlossen : milestone, m3, after c3, 0m
+
+    section Test Prototyp
+    Test des Prototyps gemäß Testkriterien : e1, after m3, 5m
+    Dokumentation des Test und der Ergebnisse : e2, after e1, 5m
+
+    Projektphase Prototyp und Test abgeschlossen: milestone, m4, after e2, 0m
+```
+-->
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Aufgaben: Entwicklung und Prototyp des Flyers
+
+-------------------------------------------------------------------------- -->
+## Übung: Entwicklung und Prototyp des Flyers
+
+{{< include Aufgabe_Entwicklung_Flyer.qmd >}}
+
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Aufgaben: Test des Flyers
+
+-------------------------------------------------------------------------- -->
+## Übung: Test des Flyers
+{{< include Aufgabe_Test_Flyer.qmd >}}
+
+
+::: {.callout-important}
+## ACHTUNG! WICHTIG!
+*“If you can't measure it, you can't manage it.”* (Peter F. Drucker)
+:::
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Aufgaben: Dokumentation des Flyers
+
+-------------------------------------------------------------------------- -->
+## Übung: Produktdokumentation des Flyers
+
+{{< include Aufgabe_Dokumentation_Flyer.qmd >}}
+

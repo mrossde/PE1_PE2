@@ -1,0 +1,36 @@
+<!-- -------------------------------------------------------------------------
+
+                       Labor Earthlander - Morphologischer Kasten
+
+-------------------------------------------------------------------------- -->
+
+
+<!-- 
+Author: Christian Anders
+Version: 2024-02-14
+-->
+
+::: {#nte-mkearthlander .callout-note}
+## Morphologischer Kasten "Earthlander" Flyer (Dauer 30 min)
+
+<!-- 
+ID: #nte-mkearthlander
+Reference: @nte-mkearthlander
+-->
+
+**a)** Erstellen Sie einen morphologischen Kasten für den Earthlander für Flug- und Landungsphase. Ergänzen Sie hierzu so viele Spalten und Zeilen wie für Ihre Arbeit erforderlich ist. 
+
+**b)** Erstellen Sie bei Bedarf zusätzlich die zugehörige Kompatibilitätsmatrix. 
+
+
+| Merkmal       | Option 1            | Option 2          | Option 3        |
+|---------------|---------------------|-------------------|-----------------|
+| Flugphase     | Fallschirm          | Luftballon        | Keine           |
+| Landephase    | Luftpolsterfolie    | Küchenpapier      | Keine           |
+
+: Beispiel eines vereinfachten morphologischen Kasten für den Earthlander zur Orientierung.  {#tbl-mkearthlander .striped .hover .bordered tbl-colwidths="[25,25,25,25]"}
+
+Leitfragen:
+
+- Wann ist eine Kompatibilitätsmatrix erfoderlich?
+:::

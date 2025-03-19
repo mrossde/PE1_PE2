@@ -1,0 +1,33 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Eisenhower-Prinzip
+
+-------------------------------------------------------------------------- -->
+
+## Eisenhower-Prinzip {#sec-eisenhower}
+
+Das [Eisenhower-Prinzip](https://de.wikipedia.org/wiki/Eisenhower-Prinzip) ist eine Methode zur Priorisierung von Aufgaben und Entscheidungen. Benannt ist es nach [Dwight D. Eisenhower](https://de.wikipedia.org/wiki/Dwight_D._Eisenhower), dem 34. Präsidenten der Vereinigten Staaten, der bekannt war für seine effiziente Herangehensweise an Zeitmanagement und Entscheidungsfindung.
+
+Das Eisenhower-Prinzip ist eine Technik im [Zeitmanagement](https://de.wikipedia.org/wiki/Zeitmanagement) und hilft dabei, die Effektivität und Effizienz^[Effizienz bedeutet, die *Dinge richtig tun*, Effektivität heißt, die *richtigen Dinge tun*. (Quelle: [Wikipedia](https://de.wikipedia.org/wiki/Effektivit%C3%A4t))] in der Arbeit und im täglichen Leben zu steigern. Es basiert auf der Idee, dass Aufgaben und Entscheidungen in vier Kategorien eingeteilt werden können, je nach deren **Dringlichkeit** und **Wichtigkeit**:
+
++ **Dringend und Wichtig:** Aufgaben, die sowohl dringend als auch wichtig sind, haben höchste Priorität und sollten sofort erledigt werden. Hierzu gehören beispielsweise akute Probleme, Fristen oder Krisen.
+
++ **Wichtig, aber nicht Dringend:** Aufgaben, die wichtig, aber nicht dringend sind, sollten langfristig geplant und priorisiert werden. Hierzu zählen strategische Planung, persönliche Entwicklung oder langfristige Projekte.
+
++ **Dringend, aber nicht Wichtig:** Aufgaben, die dringend, aber nicht wichtig sind, können oft delegiert oder eliminiert werden. Diese Kategorie enthält oft Ablenkungen, Unterbrechungen oder unwichtige Anfragen.
+
++ **Nicht Dringend und nicht Wichtig:** Aufgaben, die weder dringend noch wichtig sind, sollten vermieden oder auf ein Minimum reduziert werden. Dies können Zeitverschwendungen, unnötige Aktivitäten oder unproduktive Gewohnheiten sein.
+
+![Eisenhower-Prinzip](images/EisenhowerPrinzip.png){width=80% #fig-eisenhower}
+
+<!--
+Die Methode des Eisenhower-Prinzips fördert eine proaktive Herangehensweise an die Arbeit, bei der wichtige langfristige Ziele nicht durch kurzfristige Dringlichkeiten vernachlässigt werden. Die Anwendung des Eisenhower-Prinzips erfordert jedoch eine regelmäßige Bewertung und Aktualisierung der Aufgabenliste, um sicherzustellen, dass die Prioritäten angemessen bleiben. 
+-->

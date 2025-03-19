@@ -1,0 +1,327 @@
+---
+title: "DEB3 Produktentwicklung 1"
+resource-path: ["../images"]
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+keywords:
+  - Terminplanung
+  - Zeitplanung
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+---
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+<!--
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS WORK IN PROGRESS!!!**
+:::
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Termine Wintersemester 2024/2025 DEB3
+
+-------------------------------------------------------------------------- -->
+
+### Aktuelle Informationen
+
+::: {.callout-tip}
+## Noten DE3.PRO1-V3 in HE-Online ab Freitag, 31.01.2025 EoB
+Die Noten der Klausur DE3.PRO1-V3 vom 20.01.2025 sind ab **Freitag, 31.01.2025 EoB** in [HE-Online](https://heonline.hs-esslingen.de/) verfügbar!
+:::
+
+
+::: {.callout-tip}
+## Termin zur Prüfungseinsicht DE3.PRO1-V3
+Zur Vereinbarung eines individuellen Termins zur Prüfungseinsicht melden Sie sich bitte per Mail ([christian.anders@hs-esslingen.de](mailto:christian.anders@hs-esslingen.de)).
+:::
+
+
+
+### Termine zur [Vorlesung](https://moodle.hs-esslingen.de/moodle/course/view.php?id=32955) im Wintersemester 2024/2025
+
++-------------+------------+---------------------------------------------------------------------+
+| Vorlesung   | Labor      | Inhalt                                                              |
++=============+============+=====================================================================+
+| 23.09.2024  |            | Warm Welcome & Organisatorisches                                    | 
++-------------+------------+---------------------------------------------------------------------+
+| 30.09.2024  |            | Modelle zum Produktentstehungsprozess, Projekt, SMARTe Ziele        | 
++-------------+------------+---------------------------------------------------------------------+
+| 07.10.2024  |            | Technology-Hype-Cycle, Gantt-Diagramme, SI-Einheiten                | 
++-------------+------------+---------------------------------------------------------------------+
+|             | 14.10.2024 | **Labor** "Flyer", Lasten- und Pflichtenheft, Mindmap, Reifegrade   | 
++-------------+------------+---------------------------------------------------------------------+
+| 21.10.2024  |            | Softskills, PWT, Moore's Law, Beispiel Apple A17 Pro, Famous Laws   | 
++-------------+------------+---------------------------------------------------------------------+
+|             | 28.10.2024 | **Labor** "Magnetpendel", Euler-Verfahren, FE-Sim., Log. Gleichung  | 
++-------------+------------+---------------------------------------------------------------------+
+| 04.11.2024  |            | Reverse Engineering, 3D-Master, Betriebsfestigkeit, Bruchtheorie    | 
++-------------+------------+---------------------------------------------------------------------+
+| 11.11.2024  |            | NVH, PPG, Rule-of-10, Vorgehen zur Umweltqualifizierung, EMV        | 
++-------------+------------+---------------------------------------------------------------------+
+|             | 18.11.2024 | **Labor** "Earthlander Teil 1"                                      | 
++-------------+------------+---------------------------------------------------------------------+
+| 25.11.2024  |            | Qualität, KVP, SPC, PDCA, 8D-Methode, Ishikawa-Diagramm, 5-Why      | 
++-------------+------------+---------------------------------------------------------------------+
+|             | 02.12.2024 | **Labor** "Earthlander Teil 2"                                      | 
++-------------+------------+---------------------------------------------------------------------+
+| 09.12.2024  |            | Labor Logistik, Produktionsplanung, TPS, Kaizen, JIT-JIS, Kanban    | 
++-------------+------------+---------------------------------------------------------------------+
+| 16.12.2024  |            | Prüfungsvorbereitung (in Präsenz, TN empfohlen)                     | 
++-------------+------------+---------------------------------------------------------------------+
+| 13.01.2025  |            | Prüfungsvorbereitung (online via Webex, TN empfohlen)               | 
++-------------+------------+---------------------------------------------------------------------+
+| 20.01.2025  |            | **Prüfung** (20.01.2025, 14.oo - 15.3o h, Raum G02.110)             | 
++-------------+------------+---------------------------------------------------------------------+
+
+: Termine der Vorlesungen und Labore im Wintersemester 2024/2025 {#tbl-terminess24 .striped .hover .bordered tbl-colwidths="[15,15,70]"}
+
+
+### Gantt-Diagramm zur Vorlesung im Wintersemester 2024/2025
+
+```{mermaid}
+%%| fig-width: 
+%%| label: fig-label-gntvorlesungpe1
+%%| fig-cap: "Gantt-Diagramm zur Vorlesung PE1 im Wintersemester 2024/2025 (1 Zeiteinheit = 4x45min)"
+gantt
+title Gantt-Diagramm zur Vorlesung "Produktentwicklung 1"
+    dateFormat HH:mm
+    axisFormat %H
+    todayMarker off
+
+    section Welcome
+    START des Semesters: done, milestone, m1, 00:00, 0m
+    Vorlesung 1 (23.09.) : done, t1, after m1, 1h
+    section Grundlagen
+    Vorlesung 2 (30.09.) : done, t2, after t1, 1h
+    Vorlesung 3 (07.10.) : done, t3, after t2, 1h
+    section Ideenfindung und Konzept
+    Labor 1 "Flyer" (14.10.): done, l1, after t3, 90m
+    Vorlesung 4 (21.10.) : done, t4, after l1, 1h
+    section Entwurf und Entwicklung
+    Labor 2 "Magnetpendel" (28.10.) : done, l2, after t4, 90m
+    Vorlesung 5 (04.11.) : done, t5, after l2, 1h
+    Vorlesung 6 (11.11.) : done, t6, after t5, 1h
+    section Prototyping und Test
+    Labor 3 "Earthlander Teil 1" (18.11.) : done, l3, after t6, 90m
+    Vorlesung 7 (25.11.) : done, t7, after l3, 1h
+    Labor 4 "Earthlander Teil 2" (02.12.) : done, l4, after t7, 90m
+    section Produktionsplanung und Produktion
+    Vorlesung 8 (09.12.): done, t8, after l4, 1h
+    section Prüfungsvorbereitung
+    Prüfungsvorbereitung (16.12.) : done, t9, after t8, 1h
+    Jahreswechsel 2024/2025 : done, milestone, m2, after t9, 0m
+    Prüfungsvorbereitung (13.01.) : done, t10, after m2, 1h
+    section Prüfung
+    Prüfung (20.01.2025 14.oo - 15.3o h, Raum G02.110): done, p1, after t10, 30m
+    Korrektur (Noten sind ab 31.01. in HE-Online verfügbar) : done, t11, after p1, 90m
+    ENDE des Semesters : done, milestone, m3, after t11, 0m
+```
+
+<!--
+::: {.callout-important}
+## Prüfungstermin DEB3 "Produktentwicklung 1" im WS2024/2025
+**Montag, 20. Januar 2025, 14.oo - 15.30 h**!
+WICHTIG! Bitte mindestens **15 Minuten VOR Beginn der Prüfung** im Prüfungsraum (**Raum G02.110**) eintreffen! (Diese 15 Minuten sind die absolute DEADLINE!) Ein früheres, deutlich stressfreies Erscheinen wird dringendst empfohlen!!! (Tipp: 30 Minuten vor Beginn der Prüfung). 
+:::
+
+::: {.callout-warning}
+## ÄNDERUNGEN BEI ZEITEN VON VORLESUNGEN UND LABOREN!
+Abweichend vom Raster der Vorlesungs-Zeiten der Hochschule Esslingen werden die Zeiten der Vorlesung und Labore *"Produktentwicklung 1"* im Wintersemester 2024/2025 in einem abweichenden Zeitraster erfolgen. Diese Abweichung gründet auf Wünschen und Vorschlägen der Studierenden und ist gültig, bis von Seiten der Studierenden oder des Dozenten oder der Hochschule andere Wünsche und Vorschläge geäußert werden. Für den Fall, dass kein gemeinsam getragener Vorschlag zum Zeitraster erreicht werden kann gelten die Zeitvorgaben der Hochschule Esslingen. Die [Bringschuld](https://de.wikipedia.org/wiki/Bringschuld#Informationsverwaltung) für Anregungen zu Änderungen am jeweils gültigen Zeitraster liegt beim jeweils mit dem aktuell gültigen Zeitraster Unzufriedenen.
+:::
+
+### Vorlesungs-Zeiten PE1 im WS2024/2025 (ab 30.09.2024)
+
+**11:30 bis 12:45 Uhr → Vorlesung**
+12:45 bis 13:15 Uhr → Pause
+**13:15 bis 15:00 Uhr → Vorlesung**
+
+
+### Labor-Zeiten PE1 im WS2024/2025 (ab 30.09.2024)
+
+**11:30 bis 12:30 Uhr → Labor**
+12:30 bis 13:00 Uhr → Pause
+**13:00 bis 16:30 Uhr → Labor**
+
+
+
+### Vorlesungs-Zeiten lt. Hochschule Esslingen
+ 
+1.	Stunde: 8:00 bis 9:30 Uhr
+2.	Stunde: 9:45 bis 11:15 Uhr
+3.	Stunde: **11:30 bis 13:00 Uhr → Vorlesung/Labor**
+4.	Stunde: 13:00 bis 14:00 Uhr → Pause
+5.	Stunde: **14:00 bis 15:30 Uhr → Vorlesung/Labor**
+6.	Stunde: **15:45 bis 17:15 Uhr → Labor**
+7.	Stunde: 17:30 bis 19:00 Uhr
+
+<!--
+### Gantt-Diagramme zu den Vorlesungen im WS 2024/2025
+
+```{mermaid}
+%%| fig-width: 
+%%| label: fig-label-gntvorlesung241021
+%%| fig-cap: "Gantt-Diagramm zur 4. Vorlesung PE1 am 2024-10-21"
+gantt
+title Gantt-Diagramm zur 4. Vorlesung PE1 am 2024-10-21
+    dateFormat HH:mm
+    axisFormat %H:%M
+    todayMarker off
+
+    section V4.1
+    Softskills (Kapitel 6) : t1, 11:30, 75m
+
+    section Pause
+    Mittagspause: done, p1, after t1, 30m
+   
+    section V4.2
+    Rezept Brownies : t2, after p1, 5m
+    PWT (Kapitel 3.1) : t3, after t2, 25m
+    Apple A17 Pro SoC : t4, after t3, 45m
+    Famous Laws : t5, after t4, 30m
+```
+
+
+```{mermaid}
+%%| fig-width: 
+%%| label: fig-label-gntvorlesung241104
+%%| fig-cap: "Gantt-Diagramm zur 5. Vorlesung PE1 am 2024-11-04"
+gantt
+title Gantt-Diagramm zur 5. Vorlesung PE1 am 2024-11-04
+    dateFormat HH:mm
+    axisFormat %H:%M
+    todayMarker off
+
+    section V5.1
+    Rückblick Labor Magnetpendel : t1, 11:30, 30m
+    Reverse Engineering (Kapitel 3.3) : t2, after t1, 45m
+
+    section Pause
+    Mittagspause : done, p1, after t2, 30m
+   
+    section V5.2
+    Reverse Engineering (Kapitel 3.3) : t3, after p1, 15m
+    3D-Master (Kapitel 3.6) : t4, after t3, 15m
+    Betriebsfestigkeit (Kapitel 3.7) : t5, after t4, 50m
+    Bruchtheorie (Kapitel 3.7.3) : t6, after t5, 25m
+```
+
+<!-- 
+Tipp: Reverse-Engineering 15 min kürzen.
+Idee: Übungsaufgabe Betriebsfestigkeit in der Vorlesung rechnen.
+-->
+
+<!--
+```{mermaid}
+%%| fig-width: 
+%%| label: fig-label-gntvorlesung241111
+%%| fig-cap: "Gantt-Diagramm zur 6. Vorlesung PE1 am 2024-11-11"
+gantt
+title Gantt-Diagramm zur 6. Vorlesung PE1 am 2024-11-11
+    dateFormat HH:mm
+    axisFormat %H:%M
+    todayMarker off
+
+    section V6.1
+    Rückblick Betriebsfestigkeit + Video Wind Turbine Blade Fatigue Testing : t1, 11:30, 30m
+    NVH (Kapitel 3.8) : t2, after t1, 15m
+    Kostenbeeinflussung im PEP (Kapitel 3.9.1) : t3, after t2, 30m
+
+    section Pause
+    Mittagspause : done, p1, after t3, 30m
+   
+    section V6.2
+    Rule-of-10 + PPG (Kapitel 3.9.2 + 3.9.3) : t4, after p1, 15m
+    Besichtigung Klimaschrank : crit, t5, after t4, 15m
+    Umweltqualifizierung (Kapitel 4.3) : t6, after t5, 75m
+```
+-->
+
+<!--
+### Gantt-Diagramme zur Prüfungsvorbereitung im WS 2024/2025
+
+```{mermaid}
+%%| fig-width: 
+%%| label: fig-label-gntpv1_241216
+%%| fig-cap: "Gantt-Diagramm zur 1. Prüfungsvorbereitung PE1 am 2024-12-16"
+gantt
+title Gantt-Diagramm zur 1. Prüfungsvorbereitung PE1 am 2024-12-16
+    dateFormat HH:mm
+    axisFormat %H:%M
+    todayMarker off
+
+    section PV1.1
+    Skript PE1 Version WS24/25 ist in Moodle online (→ Freeze der prüfungsrelevanten Inhalte ist erfolgt) : crit, milestone, m1, 11:30, 0m
+    Gemeinsame Sichtung der im Skript im Semester ergänzten und geänderten Inhalte : t1, after m1, 60m
+    Feedback zu den zurückliegenden Vorlesungen und Laboren : t2, after t1, 15m
+    section Pause
+    Mittagspause : done, p1, after t2, 30m
+   
+    section PV1.2
+    HTML-Dokument zur Prüfungsvorbereitung ist in Moodle online: crit, milestone, m2, after p1, 0m
+    Q & A (in Präsenz, TN freiwillig) : t3, after p1, 105m
+```
+
+
+```{mermaid}
+%%| fig-width: 
+%%| label: fig-label-gntpv2_250113
+%%| fig-cap: "Gantt-Diagramm zur 2. Prüfungsvorbereitung PE1 am 2025-01-13"
+gantt
+title Gantt-Diagramm zur 2. Prüfungsvorbereitung PE1 am 2025-01-13
+    dateFormat HH:mm
+    axisFormat %H:%M
+    todayMarker off
+
+    section PV2.1
+    Templates der Prüfungsfragen Version WS24/25 ist in Moodle online : crit, milestone, m1, 11:30, 0m
+    Q & A (online via Webex, TN freiwillig) : t1, 11:30, 75m
+
+    section Pause
+    Mittagspause : done, p1, after t1, 30m
+   
+    section PV2.2
+    Q & A (online via Webex, TN freiwillig) : t2, after p1, 105m
+```
+-->
+
+<!--
+::: {.callout-important}
+## Fragen zur Prüfungsvorbereitung?
+Bei Fragen zur Prüfungsvorbereitung melden Sie sich bitte gerne jederzeit mit Ihrer Frage oder zur Vereinbarung eines individuellen [Webex-Meetings](https://hs-esslingen.webex.com/meet/christian.anders) per Mail ([christian.anders@hs-esslingen.de](mailto:christian.anders@hs-esslingen.de)).
+:::
+-->

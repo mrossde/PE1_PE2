@@ -1,0 +1,116 @@
+
+<!-- -------------------------------------------------------------------------
+
+                       Kick-Off zur Vorlesung
+
+-------------------------------------------------------------------------- -->
+
+# 1. Vorlesung "Entwicklungsmethodik mechatronischer Systeme" am 13.03.2023, 09.45 - 13.oo h, G 02.105
+
+---
+
+*Author: Christian Anders*
+
+*Version: 2024-02-23*
+
+---
+
+
+## Agenda
+
++ Warm welcome!
++ Kurzvorstellung Dozent Christian Anders
++ Kurzvorstellung des Teams (falls gewünscht)
+
+{{< include vorwissen.qmd >}}
+
+
+
+## Kick-Off Projektstart "Vorlesung Entwicklungsmethodik mechatronischer Systeme"
+
+
+### Mission-Statement
+
+::: { .callout-note}
+## Mission-Statement zur Vorlesung
++ *"Erweitern Sie Ihre Kompetenz zur Entwicklung von komplexen technischen Produkten, indem Sie gemeinsam mit dem Team das Produkt "Vorlesung Entwicklungsmethodik Mechatronischer Systeme" entwickeln und realisieren!"*
++ *"Lernen Sie dabei die Entwicklungsmethodik komplexer technischer Produkte und die wichtigsten methodischen Werkzeuge praxisnah kennen und wenden Sie diese Kompetenzen bei Entwicklung der Vorlesung an!"*
++ *"Haben Sie Freude an der Entwicklungsarbeit und dem Lernen! Erweitern Sie Ihr Wissen und Ihre Fähigkeiten und bestehen Sie am Ende des Semsters die Prüpfung mit hervorragendem Ergebnis!"*
+:::
+
+
+### Kommunikation und Zusammenarbeit
+
++ Gute Kommunikation ist **DER** Erfolgsfaktor für jedes erfolgreiche Projekt!
++ Lies Deine Mails und beantworte sie (falls eine Antwort erforderlich ist) in einem Zeitfenster von max. 24 Stunden. Nutze bei Abwesenheit über einen Tag hinaus den Abwesenheitsassistenen!
++ Sei zuverlässig und verbindlich! Sei pünktlich zu Meetings und Verabredungen! Sage rechtzeitig zu oder ab! Lade rechtzeig und kooperativ ein! Informieren proaktiv bei Änderungen, die andere betreffen! 
+
+
+> *"Words are cheap. Don't tell me, show me!"*
+
+
+Abstimmungsbedarf:
+
++ Wie wollen wir zusammenarbeiten? Gibt es bereits *"Best Practices"*? im Team, die wir gemeinsam nutzen können?
++ Welche Werkzeuge wollen wir nutzen, z.B. E-Mail vs. Moodle?
+
+
+
+### Arbeitsmethodiken in der Vorlesung
+
++ Prämise: Gemeinsames Arbeiten in Präsenz! Aktueller Planungsstand sind 13 Vorlesungen und 4 Laboren zu je 4x45 Minuten (Stand 2024-02-23).
++ Das Produkt "Vorlesung Entwicklungsmethodik Mechatronischer Systeme" ist durch die Projektgruppe gestaltbar!
++ Termine für die Labore sind durch die Gruppe mitgestaltbar!
++ Integration von Laborinhalten (Gruppenarbeiten, Übungen) ist möglich und schafft uns Spielräume zur Gestaltung der Vorlesung! **Prämisse:** Die Änderung der Termine muss vom gesamten Team einstimmig befürwortet werden. Baseline ist andernfalls **immer** der offizielle Stundenplan!
++ Bei Vorlesungen, Übungen und Laboren sind stets alle technischen Hilfsmittel erlaubt (Internet, Wikipedia, ChatGPT, usw.). Deren sinnhafte Nutzung liegt in der Verantwortung des jeweiligen Nutzers!
+
++ Maximale Transparenz von Seiten des Dozenten. *"It's real, it's live, it's not a fake!"*
+
+
+
+### Prüfung (Entwurf)
+
++ Schriftliche Prüfung; im Wesentlichen ausgestaltet als Multiple-Choice-Test (90%)
++ Zusätzliche Credits durch aktive Mitarbeit bei den Aufgaben im Labor (Vorschlag: 4x3%; max. 10%)
+
+
+
+### Werkzeuge und Methoden (Auswahl)
+
++ Flussdiagramme einführen und nutzen (*"Technische und organisatorische Abläufe"*) 
++ Gantt-Chart einführen und nutzen (*"Wo stehen wir in der Vorlesung"*)
++ Optional: Kanban-Board einführen und nutzen (*"Wo stehen wir in der Vorlesung"*)
++ Mindmap (als ein Beispiel für eine Kreativtechnik) einführen und nutzen
+
+
+
+<!-- 
+ACHTUNG!!! Mermaid-Mindmap-Diagramme werden in der Quarto-Preview nicht dargestellt, erscheinen nach dem Compilieren aber im Dokument. Zur Vorschau der Mindmaps sei auf den Mermaid-Live-Editor verwiesen!
+-->
+```{mermaid}
+%%| fig-width: 6.4
+%%| label: fig-label-mindmapstartvorlesung
+%%| fig-cap: "Startstruktur einer Mindmap zur Vorlesung"
+mindmap
+  root((Projekt Vorlesung))
+    [Vorlesungen]
+    [Labore]
+        ((Projekt Flyer))
+        ((Projekt Earthlander))
+    [Inhalte]
+    [Merker]
+```
+
+``` r
+mindmap
+  root((Projekt Vorlesung))
+    [Vorlesungen]
+    [Labore]
+        ((Projekt Flyer))
+        ((Projekt Earthlander))
+    [Inhalte]
+    [Merker]
+```
+
+
+[Mermaid Live-Editor](https://mermaid.live/)

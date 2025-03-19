@@ -1,0 +1,43 @@
+<mxfile host="Electron" modified="2024-09-16T09:00:04.373Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.5.3 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="qa6CCSZKrQ9XehGDyUzb" version="24.5.3" type="device">
+  <diagram name="Seite-1" id="tQ0ftKxHk6KphrgHs4fO">
+    <mxGraphModel dx="988" dy="592" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="mLHIJTyr5hpvtW-Wlfsm-3" value="Fachkompetenz" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="349" y="478" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mLHIJTyr5hpvtW-Wlfsm-9" value="Methodenkompetenz" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="292" y="662" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mLHIJTyr5hpvtW-Wlfsm-1" value="" style="triangle;whiteSpace=wrap;html=1;rotation=-90;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="337.63" y="498.38" width="154" height="173.25" as="geometry" />
+        </mxCell>
+        <mxCell id="mLHIJTyr5hpvtW-Wlfsm-4" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;jumpSize=6;startSize=6;endSize=6;dashPattern=1 4;" parent="1" target="mLHIJTyr5hpvtW-Wlfsm-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="414.63" y="608.38" as="sourcePoint" />
+            <mxPoint x="427.63" y="648.38" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mLHIJTyr5hpvtW-Wlfsm-5" value="" style="endArrow=none;dashed=1;html=1;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;dashPattern=1 4;" parent="1" source="mLHIJTyr5hpvtW-Wlfsm-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="337.63" y="698.38" as="sourcePoint" />
+            <mxPoint x="414.63" y="611.38" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mLHIJTyr5hpvtW-Wlfsm-6" value="" style="endArrow=none;dashed=1;html=1;rounded=0;exitX=0.002;exitY=0.994;exitDx=0;exitDy=0;exitPerimeter=0;dashPattern=1 4;" parent="1" source="mLHIJTyr5hpvtW-Wlfsm-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="377.63" y="698.38" as="sourcePoint" />
+            <mxPoint x="415.63" y="612.38" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mLHIJTyr5hpvtW-Wlfsm-10" value="Produkt-entwicklung" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#fff2cc;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="384.63" y="585" width="60" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="oB--57uGbdaJ3v9jcPXn-1" value="Softskills" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="479.63" y="661" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

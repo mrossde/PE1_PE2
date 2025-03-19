@@ -1,0 +1,56 @@
+---
+title: "MTB3 Entwicklung mechatronischer Systeme 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    email: christian.anders@hs-esslingen.de
+    affiliations: Hochschule Esslingen
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       DMU:: Digital Mock Up
+
+-------------------------------------------------------------------------- -->
+
+### Digital Mock Up (DMU)
+
+::: {.callout-tip}
+## Definition: *"Digital Mock-Up (DMU)"*
+Ein Digital Mock-Up ist eine virtuelle Darstellung eines Produkts oder Systems, das oft mithilfe von CAD-Software (Computer-Aided Design) erstellt wird. Es repräsentiert das Produkt in digitaler Form, einschließlich aller Komponenten, Baugruppen, Verbindungen und Funktionen.
+:::
+
+Dieser Begriff [Digital Mock-Up](https://de.wikipedia.org/wiki/Digital_Mock-Up) stammt aus dem Bereich des Produktdesigns und der Produktentwicklung, insbesondere in der Fertigungsindustrie.
+
+![DMU (links) und PMU (rechts) des Motorraums eines Autos (Quelle: (Rainer Stark) Virtual Product Creation in Industry (Springer Verlag, 2022))](images/PMU-DMU.png){width=100% #fig-pmu-dmu}
+
+Die Verwendung eines Digital Mock-Ups bietet verschiedene Vorteile:
+
+1. **Kosteneffizienz**: Die Erstellung und Iteration von virtuellen Prototypen ist in der Regel kostengünstiger als die Herstellung physischer Prototypen.
+
+2. **Zeitersparnis**: Änderungen und Anpassungen können schnell und einfach am digitalen Modell vorgenommen werden, ohne dass [physische Prototypen](https://de.wikipedia.org/wiki/Physical_Mock-Up) extra aufgebaut oder modifiziert werden müssen.
+
+3. **Kollaboration**: Digitale Mock-Ups ermöglichen eine verbesserte Zusammenarbeit zwischen verschiedenen Teams und Abteilungen, da das Modell leicht zugänglich und über das Internet geteilt werden kann.
+
+4. **Visualisierung**: Ein Digital Mock-Up bietet eine realistische Visualisierung des Produkts und dessen Montagefolge, was es dem Entwicklungsteam ermöglicht, das Design sehr frühzeitig zu überprüfen und potenzielle Probleme frühzeitig zu identifizieren.
+
+5. **Simulationsmöglichkeiten**: Durch die Integration von Simulationssoftware können in einem Digital Mock-Up verschiedene Tests durchgeführt werden, um das Verhalten des Produkts unter verschiedenen Bedingungen zu analysieren (siehe → [Functional Digital Mock-Up (FMU)](https://de.wikipedia.org/wiki/Functional_Digital_Mock-Up))
+
+

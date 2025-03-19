@@ -1,0 +1,122 @@
+---
+title: "MTB3 Entwicklung mechatronischer Systeme 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    email: christian.anders@hs-esslingen.de
+    affiliations: Hochschule Esslingen
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Digitaler Zwilling
+
+-------------------------------------------------------------------------- -->
+
+## Digitaler Zwilling
+
+### Beschreibung der Technologie
+Der digitale Zwilling (Englisch: digital twin) bezeichnet die digitale Repräsentanz eines oder mehrerer physischer Objekte über den gesamten Lebenszyklus von der Entwicklung über den operativen Betrieb bis zur Wiederverwertung. Ein Anwendungsbeispiel sind Maschinen einer Fertigungslinie. Das virtuelle Abbild der Realwelt spiegelt die Eigenschaften und Verhaltensweisen des realen Objekts bzw. der Objekte so genau wie möglich wider, um auf dieser Basis beispielsweise Simulationen möglicher Szenarien durchführen zu können. Ein Beispiel abgebildeter Daten sind neben der ID und einer digitalen Visualisierung des Objekts seine Betriebsdaten wie Laufzeiten und Unterbrechungen einer Maschine, gefertigte Stückzahlen, Störungsmeldungen oder Immissionswerte. Der digitale Zwilling als „Kopie“ der Wirklichkeit dient als Informationsquelle für die Identifikation und Zustandsüberwachung der Objekte, für dezentrale Entscheidungen und für Simulationen, beispielsweise für die Optimierung des Materialflusses in einem Produktionssystem. Neue Lösungen oder Planungen werden zunächst im digitalen Abbild getestet, bevor sie in der realen Welt umgesetzt werden. Dafür werden Betriebs- und Zustandsdaten des realen Objekts zum Beispiel über Sensoren erfasst, um seine Eigenschaften und sein Verhalten dynamisch zu beschreiben (vgl. Abb. 4.18). Diese Daten werden ausgewertet und danach für Steuerungs- oder Simulationszwecke genutzt. Beispielsweise werden unterschiedliche Parameter wie etwa die Geschwindigkeit eines Förderbands in einer Simulation variiert, um die Reaktion des Systems auf verschiedene Parametereinstellungen virtuell zu testen. Nach der Analyse werden die verbesserten Parameter wieder auf das reale Objekt übertragen.
+
+![Digitaler Zwilling zur Verknüpfung des realen Produkts mit einem digitalen Abbild. (Quelle: @appelfeller_digitale_2023)](images/436275_2_De_4_Fig18_HTML.png){width=94% #fig-digitalerzwilling}
+
+Digitale Zwillinge stiften Nutzen in verschiedenen Phasen des Lebenszyklus eines Objekts (zu Beispielen vgl. Abschnitt „Typische Anwendungsfelder und Praxisbeispiele“). In den Phasen Entwicklung und Erstellung unterstützt der digitale Zwilling die Simulation bzw. das virtuelle Testen. Daraus kann abgelesen werden wie verschiedene Designoptionen die technischen Anforderungen jeweils erfüllen. In der Phase der Nutzung erhöht der Zwilling die Prozesseffizienz und Output- Qualität, indem Simulationsergebnisse mit Echtzeitdaten aus den Sensoren der physischen Objekte in die Prozesssteuerung einfließen. In der letzten Phase des Lebenszyklus, der Wiederverwertung, unterstützt der digitale Zwilling die Planung einer Ersatzinvestition oder beim Analysieren von Upcycling-Potenzialen.
+
+Im Folgenden ein Beispiel für den Einsatz eines digitalen Zwillings im operativen Betrieb: In einer Smart Factory werden die Sensordaten der Realobjekte aus Lager, Produktion und Liefernetzwerk (z. B. Temperaturmessungen in einer Kühlkette, aus einem RFID-Tag ausgelesene Stücklisten oder Geolokationsdaten aus GPS-Sensoren der Nachschublieferungen) mit den Plandaten der operativen IT-Systeme zur Produktionsplanung und Lagerbewirtschaftung (z. B. Aufträge, Materialbestände) verknüpft. So werden relevante Ereignisse auf dem Shopfloor wie beispielsweise der Ausfall einer Maschine und ein daraus resultierender Kapazitätsengpass digital abgebildet. Das digitale Abbild des Materialflusses integriert alle maßgebenden Informationen für die Entscheidungsfindung, sodass die aktuellen Statusdaten verschiedener Objekte wie etwa Maschinen und Werkstücke automatisiert geprüft und alternative zukünftige Zustände simuliert werden können. Im Beispiel des Maschinenausfalls werden die Werkstücke automatisch zu einer zweiten Maschine umgeleitet, um einen Produktionsstillstand zu vermeiden.
+
+Der digitale Zwilling stellt eine Grundlage für die automatisierte Kommunikation der Objekte mit anderen Objekten über das Internet of Things (vgl. Abschn. 4.3.6) oder anderen Netzwerken dar. Voraussetzung ist die eindeutige Identifikation der Objekte durch ihre individuelle IP-Adresse und die Möglichkeit zum Datenaustausch über eine Cloud (vgl. Abschn. 4.3.9). Wenn Sensoren an den Objekten permanent Daten zum Beispiel über ihren Zustand (z. B. An/Aus, Kapazitätsauslastung) und ihre Umwelt (z. B. Temperatur, andere Objekte in der Nähe) erfassen, so ermöglicht dies die Kontrolle und Steuerung eines Systems wie eine Fertigungslinie in Echtzeit. Das vorrangige Ziel eines solchen digitalen „Klons“ der Realwelt ist, Lösungsoptionen für eine Problemstellung wie etwa einen Kapazitätsengpass in der Fertigung zu simulieren, bevor diese in der realen Welt umgesetzt werden. Darüber hinaus können Simulationen frühzeitig Risiken antizipieren, beispielsweise im Rahmen der prädiktiven Wartung (vgl. Abschn. 3.5). In Abgrenzung zum digitalen Zwilling wird ein digitaler Schatten in der Prototypenphase der Produktentwicklung genutzt. Entsprechend bildet er nur die für Entwicklung relevanten Daten ab. Einschränkend sei angemerkt, dass der Begriff „digitaler Schatten“ und „digitaler Zwilling“ in der Literatur teilweise synonym verwendet wird.
+
+Digitale Zwillinge lassen sich auf verschiedenen Ebenen realisieren. Es können digitale Zwillinge für einzelne Komponenten eines Produkts, für ein einzelnes Produkt, für ein System aus verschiedenen Produkten und für Prozesse unterschieden werden.
+
+Komponenten-Ebene: Ein virtuelles Abbild einer einzelnen Komponente eines Produkts ermöglicht es Ingenieuren, die physikalischen, mechanischen oder elektrischen Eigenschaften dieser Komponente zu analysieren, beispielsweise auf seine Beständigkeit bei statischen oder thermischen Belastungen. Exemplarisch ist die Konstruktion einer Windkraftanlage, bei der der Rotor auf die vorgenannten Aspekte untersucht wird.
+
+Produkt-Ebene: Ein digitaler Zwilling eines Produkts wie etwa einer Druckmaschine dient vor allem dem Testen bzw. der Simulation des Zusammenspiels verschiedener Komponenten des Produkts. So lassen sich etwa die Betriebseigenschaften des Produkts verbessern oder Ausfall- und Reparaturzeiten minimieren. Ein Beispiel ist das Testen des Zusammenspiels verschiedener Komponenten einer Windkraftanlage wie Rotor und Turm auf die Statik bei verschiedenen Windstärken.
+
+System-Ebene: Auf der höheren Ebene eines Systems aus mehreren Produkten wie etwa eine Fertigungslinie aus mehreren Fertigungsmaschinen und Förderbändern lässt sich zum Beispiel die Konfiguration aller Objekte des Systems testen und optimieren. Ein weiteres Beispiel: Ein Verkehrsleitsystem, bei dem zukünftige Verkehrssituationen simuliert und darauffolgend verschiedene Objekte wie Ampeln und Geschwindigkeitsbegrenzungen durch Verwendung des Simulationsergebnisses bedarfsgerecht gesteuert werden.
+
+Prozess-Ebene: Neben physischen Objekten kann ein digitaler Zwilling ebenso Prozesse abbilden. Ein virtueller Prozess-Klon unterstützt durch Visualisierung und Entscheidungsunterstützung sowohl bei der Planung als auch bei der operativen Echtzeit-Steuerung der Abläufe, beispielsweise über Kennzahlen auf Basis von Sensordaten. Ein Beispiel ist die vorgenannte Fertigungsplanung und -steuerung. In diesem Kontext könnte Process Mining (vgl. Abschn. 3.1) zum Einsatz kommen.
+
+Ein digitaler Zwilling schafft eine Grundlage für die Automatisierung von Prozessen: Entscheidungssituationen werden in Software abgebildet und mit Hilfe der Erkenntnisse der Simulationsmodelle automatisiert. Dies verkürzt Entscheidungsprozesse, zum Beispiel durch weniger Iterationen zwischen den Entscheidungsträgern. Ein digitaler Zwilling führt Daten aus verschiedenen Datenquellen konsistent zusammen. Dieser konsolidierte Datenbestand eröffnet gegebenenfalls weitere Möglichkeiten zur Digitalisierung und Optimierung von Prozessen.
+
+Typische Anwendungsfelder und Praxisbeispiele
+Die folgenden Praxisbeispiele illustrieren in Anlehnung an Dilmegami (2020) typische Anwendungsfälle eines digitalen Zwillings in verschiedenen Branchen:
+
+Produzierendes Gewerbe
+
+Produktentwicklung (Produkt-Ebene): Digitale Zwillinge unterstützen mittels Simulationen Entwickler dabei, die Eigenschaften neuer Produkte vor der Markteinführung zu testen. Beispielsweise werden in der Automobilindustrie sowohl die späteren Produktionsprozesse als auch der Fahrbetrieb simuliert.
+
+Design-Individualisierung (Produkt-Ebene): Mit digitalen Zwillingen können Unternehmen verschiedene Varianten des Produkts entwerfen, sodass sie ihren Kunden personalisierte Produkte und Dienstleistungen anbieten können. Diese lassen sich über die Variation bestimmter Parameter an die Kundenwünsche anpassen und dem Kunden zur Auswahl virtuell präsentieren, beispielsweise mittels einer VR-Brille (vgl. Abschn. 4.3.5)
+
+Qualitätssicherung in der Fertigung (Prozess-Ebene): Überwachung und Analyse von Fertigungsprozessen und Endprodukten, um frühzeitig zu erkennen, welche Produkte potenziell fehlerhaft sind. Dafür werden im digitalen Zwilling Simulationen durchgeführt, beispielsweise auf Basis der Auftragsdaten wie Stückzahlen und Qualitäten sowie der Betriebsdaten wie Temperatur und Laufzeiten der Maschine.
+
+Prädiktive Wartung (Komponenten- oder Produkt-Ebene): Prognose potenzieller Ausfallzeiten von Maschinen, um folgend nicht wertschöpfende Wartungsaktivitäten bzw. Stillstandsaktivitäten zu minimieren und die Gesamteffizienz von Maschinen zu verbessern.
+
+Logistik
+
+Vorhersage der Qualität von Verpackungsmaterialien (Komponenten-Ebene): Produktverpackungen werden virtualisiert und vor dem Verpacken auf Qualitätsrisiken getestet: Simulation der Auswirkungen unterschiedlicher Transportschutzmaßnahmen auf die Qualität der Lieferprozesse.
+
+Optimierung von Lagerdesign und operativen Prozessen (System- und Prozess-Ebene): Virtuelles Testen alternativer Lagerlayouts, sodass das effizienteste Lagerdesign, beispielsweise die Laufwege der Kommissionierer betreffend, realisiert wird.
+
+Management eines Logistiknetzwerks (Prozess-Ebene): Ein digitaler Zwilling eines Straßennetzes enthält Informationen über Verkehrssituation, Straßenführung und Baustellen. Mit diesen Informationen können Logistikunternehmen die Routenplanung für ihre LKW dynamisch echtzeitnah planen.
+
+Luftfahrtindustrie: Prädiktive Analysen zur Vorhersage möglicher Probleme mit der Flugzeugzelle, dem Triebwerk oder anderen kritischen Komponenten eines Flugzeugs, um die Sicherheit der Passagiere zu gewährleisten (Komponenten-Ebene).
+
+Autonomes Fahren: Selbstfahrende Autos enthalten zahlreiche Sensoren, die Daten über das Fahrzeug selbst und seine Umwelt sammeln (System-Ebene in der Entwicklung). Ein digitaler Zwilling des Fahrzeugs hilft durch das Testen und Überwachen des Fahrbetriebs, Unfälle zu vermeiden (Prozess-Ebene im operativen Betrieb): Für die Ortsbestimmung des Fahrzeugs erfasst die Distanzsensorik laufend Objekte im Umfeld und gleicht diese dezimetergenau mit den Daten des digitalen Zwillings (z. B. Eigenlokalisierung über GPS-Daten) ab, um ggf. automatisiert in die Quer- oder Längsführung des Fahrzeugs einzugreifen.
+
+
+### Betriebswirtschaftlicher Nutzen
+Die Erkenntnisse aus der Nutzung digitaler Zwillinge verbessern den operativen Gewinn (EBIT) eines Unternehmens. Zum einen lassen sich die Betriebskosten senken, z. B. durch optimierte Prozessdurchführung. Zum anderen lässt sich der Umsatz erhöhen, sowohl durch eine höhere oder kundenindividuelle Leistung der Produkte als auch Geschäftsmodell-Innovationen. Die betriebswirtschaftlichen Nutzeffekte digitaler Zwillinge werden im Folgenden getrennt für die Entwicklung und den operativen Betrieb der digital gespiegelten Objekte erläutert.
+
+In der Entwicklung lassen sich mit dem digitalen Zwilling bzw. einem digitalen Schatten sowohl Prozesse als auch das Produktdesign optimieren, indem virtuelle Szenarien entwickelt, geprüft und verbessert werden. Dafür muss weder eine physische Infrastruktur zum Herstellen des Produkts aufgebaut noch das physische Produkt selbst hergestellt werden. Digitale Simulationsmodelle verringern die Notwendigkeit realer Prototypen, sodass Kosten für die Entwicklung gespart werden. Die Qualität der Produkt- oder Dienstleistungsentwicklung lässt sich verbessern, wenn die Ergebnisse verschiedener Designentscheidungen in Simulationen getestet werden. Das technische Risiko einer Investition lässt sich durch Erkenntnisse der Simulationen senken. Beispielsweise werden im Maschinenbau Anlagen virtuell in Betrieb genommen und geprüft, um potenzielle Störungen vor der Inbetriebnahme zu entdecken und zu beheben. Die Markteinführungszeit (Engl. time-to-market) bei der Produkt- und Prozessentwicklung verkürzt sich, da die Verbesserungsschleifen der Entwicklungszyklen beschleunigt werden.
+
+Werden im operativen Betrieb die Betriebs- und Zustandsdaten der Objekte wie etwa einer Fertigungslinie in Echtzeit virtuell im digitalen Zwilling gespiegelt, so lassen sich aus deskriptiven (Was ist in der Vergangenheit passiert?) und diagnostische Analysen (Warum ist es passiert?) Erkenntnisse für Prozess- oder Produktverbesserungen ableiten. So erfährt der Hersteller beispielsweise, welche Verbesserungspotenziale die Herstellprozesse aufweisen und wie Kunden seine vernetzten Produkte verwenden. Zudem können auf Basis von Simulationen bzw. prädiktiven (Was wird in der Zukunft passieren?) und präskriptiven Analysen (Was sollte nun getan werden?) optimale Parametereinstellungen eines Systems ermittelt werden, um die Kosten zu senken und die Qualität des Outputs zu verbessern. Ein Beispiel sind dynamische Anpassungen von Temperatur und Geschwindigkeit einer Fertigungslinie für Brote in Echtzeit auf der Grundlage von Prozess- bzw. Sensordaten, um eine optimale Konsistenz und Farbe der Brote zu erzielen.
+
+In einer Smart Factory ermöglicht ein digitaler Zwilling in Kombination mit IoT- und CPS-Lösungen (vgl. Abschn. 4.3.6 und 4.3.7) die wirtschaftliche Fertigung von Kleinserien bis zu kundenindividuellen Produkten als Einzelstück (Losgröße Eins). Die Flexibilität des Produktionssystems erhöht sich: Maschinen, die aufgrund von Wartung oder Reparatur nicht zur Verfügung stehen, werden im Materialfluss automatisch ignoriert und die Werkstücke auf alternative Maschinen umgeleitet. Bearbeitungsreihenfolgen werden dezentral dynamisch an die aktuelle Situation angepasst, sodass Durchlaufzeiten verkürzt werden und die Maschinen besser ausgelastet sind – und zwar ohne eine zentrale Steuerungsinstanz. Kurzfristige Änderungswünsche von Kunden lassen sich so realisieren, ohne dass zentrale Planungen zu Maschinenbelegung und Losgrößen angepasst werden müssen. Außerdem erlaubt die laufende Erfassung der Betriebsdaten eine Vorhersage für den Verschleiß bestimmter Komponenten, sodass sich prädiktive Wartungsaktivitäten ableiten lassen, um die Verfügbarkeit von Maschinen und Anlagen zu erhöhen und kostenintensive Reparaturen zu vermeiden.
+
+Digitale Zwillinge sind nicht auf die interne Supply Chain eines Unternehmens begrenzt. Externe, unternehmensübergreifende Supply Chains sind zunehmend komplex und es gilt eine Vielzahl an Prozessen bei mehreren Partnern für die Leistungserstellung effizient zu steuern. Der Einsatz eines unternehmensübergreifenden digitalen Zwillings mit entsprechenden Simulationen erzielt ein verbessertes Verständnis und eine echtzeitnahe Steuerung in der Supply Chain, nicht zuletzt durch dezentrale, autonome Entscheidungen der Objekte. Dies verbessert die Durchlaufzeiten, erhöht das Service-Level oder ermöglicht nachfrageorientierte Anpassungen des Produktportfolios.
+
+Des Weiteren ermöglicht ein digitaler Zwilling die Erweiterung eines Geschäftsmodells. Ein Beispiel bietet die Fernüberwachung und -wartung von Anlagen (sog. Remote Condition Monitoring), für die der Kunde etwa einen monatlichen Betrag zahlt. Im Falle einer digitalisierten Maschine erfasst der digitale Zwilling über Sensoren beispielsweise die Betriebs- und Nutzungsdaten oder die Umwelteinflüsse, Der digitale Zwilling ermöglicht es dem Unternehmen, den Status der Maschine, die eventuell viele Kilometer entfernt bei einem Kunden im Einsatz ist, durch Fernwartung zu analysieren und darauf zu reagieren. Wenn der Kunde für diese Zusatzdienstleistung zum physischen Produkt eine monatliche Gebühr an den Anbieter entrichtet, handelt es sich um ein digital erweitertes Geschäftsmodell (vgl. Abschn. 3.10).
+
+### Zusammenfassung
+Ein digitaler Zwilling bietet zahlreiche Anwendungsfelder in verschiedenen Branchen, die weit über die Simulation von Fertigungsprozessen einer Smart Factory hinausgehen. Voraussetzung sind die Sensordaten der vernetzten Objekte, die in der virtuellen Repräsentanz beispielsweise für Simulationen abgebildet werden. Hier besteht zum einen ein enger Zusammenhang mit dem Internet of Things (IoT, vgl. Abschn. 4.3.6). Zum anderen können digitale Zwillinge ihren Nutzen in Cyber-physischen Systemen (CPS, vgl. Abschn. 4.3.7) entfalten, indem über Simulationen gewonnene Erkenntnisse wieder auf die Objekte der Realwelt wie etwa eine Fertigungsmaschine rückgekoppelt und dort zur Prozesssteuerung eingesetzt werden.
+
+
+<!--
+::: {.callout-tip}
+## Weiterführende Links
+
+:::
+-->
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
+
++ @appelfeller_digitale_2023: [Digitale Technologien](https://rdcu.be/dIzVf)
+
+:::
+
+## Literaturempfehlung
+
+![@appelfeller_digitale_2023: [Die digtiale Transformation des Unternehmens](https://link.springer.com/book/10.1007/978-3-662-65413-2)](images/Appelfeller_Die_digitale_Transformation.webp){width=40%}
+
+
+
+![@verl_echtzeitsimulation_2024: [Echtzeitsimulation in der Produktionsautomatisierung](https://link.springer.com/book/10.1007/978-3-662-66217-5)](images/Verl_Echtzeitsimulation.webp){width=40%}

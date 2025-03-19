@@ -1,0 +1,234 @@
+<!--
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Entwurfs- und Entwicklungsphase
+  - Zielsetzung
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 2
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Ziele Entwurfs- und Entwicklungsphase
+
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Entwurfs- und Entwicklungsphase
+:::
+
+---
+
+<!--
+![Henri Poincaré](images/Henri_Poincare.jpg){width=25% #fig-henripoincare}
+-->
+
+> *"It is by logic that we prove, but by intuition that we discover. To know how to criticize is good, to know how to create is better."* (Henri Poincaré)
+
+---
+
+## Ziele der Entwurfs- und Entwicklungsphase {#sec-ziele_entwurf_und_entwicklung}
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+
+<!--::: {.callout-warning}
+## WARNING!
+**THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+::: {.callout-tip}
+## Definition: *"Konstruieren"*
+[Konstruieren](https://de.wikipedia.org/wiki/Konstruieren_(Technik)) heißt, den Entwurf eines technischen Produkts so auszuarbeiten, dass dessen Produktion möglich wird. Das Arbeitsergebnis sind die zur Produktion nötigen Unterlagen.
+:::
+
+Ziel der Entwurf- und Entwicklungsphase ist es, den als Ergebnis der Konzeptphase vorliegenden Konzeptentwurf des Produkts im Detail festzulegen und so auszuarbeiten, dass das Produkt die im Lastenheft festgelegten Anforderungen erfüllt und gemäß den im Lastheft festgelegten Anforderungen hergestellt werden kann. 
+
+Die in der Entwurf- und Entwicklungsphase entstehenden Dokumente (z.B. CAD-Daten, Stückliste, Software, Simulationen, technische Zeichnungen, Verfahrensanweisungen, Prüfrichtlinien,…) sind die Grundlage der Phasen Prototyping und Test sowie Produktionsplanung und Produktion. 
+
+Das Speichern und Verwalten der im Produktentstehungsprozess entstehenden Dokumente erfolgt heute oftmals unterstützt durch [PLM-Systeme](https://de.wikipedia.org/wiki/Product-Lifecycle-Management).
+
+```{mermaid}
+%%| label: fig-label-mmzieleentwurfundentwicklung
+%%| fig-cap: "(Unvollständige) Mindmap einiger wichtiger Kompetenzen in der Phase Entwurf und Entwicklung"
+mindmap
+   root(Entwurf und Entwicklung)
+
+      (Fachkompetenz)
+
+        (Physische Produkte)
+          (Produktions- und Werkstofftechnik)
+          (Materialermüdung)
+          (Betriebsfestigkeit)
+ 	       
+        (Mechatronische Produkte)
+          (EMV)
+          (Sensoren und Aktoren)
+          (Steuerungs- und Regelungstechnik)
+          (Programmiersprachen)
+          
+      (Verwendung von Werkzeugen)
+        (CAD-Systeme)
+        (Simulation)
+	        (Monte-Carlo-Simulation)
+	        (Finite-Elemente-Simulation)
+          (Systemsimulation)
+          (Elektronik-Simulation)
+        (PDM/PLM-Systeme)
+        (Reverse Engineering)
+        (Rapid Prototyping)
+
+      (Methodenkompetenz)
+        (3D-Master)
+        (Produktionsgerechte Produktgestaltung)
+        (Qualitätssicherung)
+        (Projektmanagement)
+        (Risikomanagement)
+        (Softwareentwicklung)
+
+```
+ 
+
+
+<!--
+mindmap
+  root((Ziele der Phase "Entwicklung" im V-Modell))
+    Systementwurf
+      Architekturdefinition
+      Schnittstellenspezifikation
+      Materialauswahl
+    Detailentwurf
+      Design der Komponenten
+      Auswahl von Fertigungstechnologien
+      Erstellung von Fertigungszeichnungen
+    Prototypenbau
+      Herstellung von Prototypen
+      Test von Material- und Fertigungsprozessen
+      Optimierung des Designs basierend auf Testergebnissen
+    Verifikation
+      Komponententests
+      Validierung der Schnittstellen
+      Funktionsprüfungen
+    Dokumentation
+      Technische Zeichnungen
+      Fertigungshandbücher
+      Wartungs- und Benutzeranleitungen
+    Qualitätssicherung
+      Einhaltung von Normen und Standards
+      Durchführung von Prüfungen (z. B. Belastungstests)
+      Qualitätskontrollen in der Produktion
+    Risikominimierung
+      Analyse potenzieller Ausfallursachen
+      Durchführung von FMEA (Fehlermöglichkeits- und Einflussanalyse)
+      Einführung von Kontrollmaßnahmen
+-->
+
+<!--
+mindmap
+  root((Entwurf und Entwicklung))
+    Funktionalität
+    Mechanisches Design
+      Geometrie und Struktur
+      Materialauswahl
+      Produktionsgerechte Produktgestaltung
+      Belastungsanalyse
+    Thermisches Design
+      Wärmequellen und -senken
+    Elektrisches Design
+      Sensoren und Aktoren
+      Stromversorgung und EMV
+      Kabel
+      Software
+    Integration von Komponenten
+      Schnittstellen
+      Gewicht und Bauraum
+    Werkzeuge und Technologien
+      CAD-Systeme
+      FEM-Analyse
+      3D-Druck und Rapid Prototyping
+      PDM/PLM-Systeme
+-->
+
+<!--
+mindmap
+  root((Simulation))
+    Virtuelle Modelle
+      Mechanische Simulation
+        Struktur- und Belastungsanalyse
+        Schwingungsverhalten
+        Wärmeausdehnung
+      Elektrische Simulation
+        Signalflussanalyse
+        EMV-Tests
+        Stromverbrauch
+    Funktions- und Systemtests
+      Mechatronische Interaktion prüfen
+      Dynamik- und Regelungssimulation
+      Sensorik- und Aktorikverhalten
+    Optimierung
+      Parameterstudien
+      Multi-Physik-Simulation
+      Kosten-Nutzen-Bewertung
+    Werkzeuge und Plattformen
+      FEM-Software (z. B. ANSYS)
+      Elektronik-Simulationssoftware (z. B. LTSpice)
+      Systemsimulation (z.B. MATLAB/Simulink)
+-->
+
+<!--
+In der Entwurfs- und Entwicklungsphase werden die in der Phase Ideenfindung und Konzeptentwicklung definierten Anforderungen und Spezifikationen in ein reales Produkt umgesetzt. Die Hauptziele dieser Phase sind:
+
+1. **Design und Architektur des Produkts**: Auf Grundlage der Anforderungen aus der Konzeptphase wird das technische Design entwickelt. Dies umfasst die detaillierte Architektur des Systems, die Auswahl der verwendeten Technologien und die Festlegung der Module und ihrer Schnittstellen.
+
+2. **Entwicklung/Implementierung**: Die eigentliche Programmierung und Entwicklung des Produkts oder der einzelnen Module erfolgt in dieser Phase. Die Entwickler erstellen den Code gemäß den festgelegten Spezifikationen und sorgen für eine saubere Umsetzung des Designs.
+
+3. **Integration der Module**: Die einzelnen Komponenten und Module werden zusammengeführt, um das Gesamtprodukt zu bilden. Dabei wird sichergestellt, dass alle Module nahtlos miteinander funktionieren und die definierten Schnittstellen korrekt umgesetzt sind.
+
+4. **Erstellen von Dokumentationen**: Begleitend zur Entwicklung wird die technische Dokumentation erstellt, die die Architektur, den Code und das Design beschreibt. Diese Dokumentation dient sowohl für die zukünftige Wartung als auch für spätere Verbesserungen des Produkts.
+
+5. **Interne Tests**: Während der Entwicklung werden häufig interne Tests durchgeführt, um sicherzustellen, dass die einzelnen Module und das Gesamtsystem den Anforderungen entsprechen und ordnungsgemäß funktionieren. Dadurch können frühzeitig Fehler identifiziert und behoben werden, bevor das Produkt in die Testphase geht.
+
+Die Entwicklungsphase endet, wenn das Produkt vollständig implementiert, integriert und grundlegend getestet ist, sodass es für die umfangreiche Qualitätsprüfung in der Testphase bereit ist.
+-->
+
+
+
+

@@ -1,0 +1,58 @@
+---
+title: "MTB3 Entwicklung mechatronischer Systeme 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    email: christian.anders@hs-esslingen.de
+    affiliations: Hochschule Esslingen
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+---
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Inhalt dieses Dokuemnts
+
+-------------------------------------------------------------------------- -->
+
+
+<!-- 
+ACHTUNG!!! Mermaid-Grafiken zum Gantt-Diagramm werden in der Quarto-Preview nicht dargestellt, erscheinen nach dem Compilieren aber im Dokument. Zur Vorschau der Gantt-Charts sei auf den Mermaid-Live-Editor verwiesen
+-->
+```{mermaid}
+%%| fig-width: 6.4
+%%| label: fig-label-gntvlmtb3vl02
+%%| fig-cap: "Gantt-Diagramm der Vorlesung vom 20.03.2024"
+gantt
+title Gantt-Diagramm der Vorlesung vom 20.03.2024
+    dateFormat HH:mm
+    axisFormat %H:%M
+    Start : milestone, m1, 00:00, 0m
+    Offene Punkte aus letzter Vorlesung: lop, after m1, 10m
+    SI-Einheiten : si, after lop, 30m
+    Vision - Strategie - Ziele : vsz, after si, 30m
+    Projekte : pr1, after vsz, 90m
+    Modelle zum Produktentstehungsprozess : mp1, after pr1, 60m
+    Pause : p1, 01:30, 15m
+    Famous Laws : fl1, after p1, 15m
+    Aufgabe Starhip: a4, after fl1, 25m
+    Famous Laws : fl2, after a4, 15m
+    Ende : milestone, m2, 03:15, 0m
+```

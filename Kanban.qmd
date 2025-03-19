@@ -1,0 +1,113 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+
+<!-- -------------------------------------------------------------------------
+
+                       KANBAN
+
+-------------------------------------------------------------------------- -->
+### Kanban {#sec-kanban}
+
+::: {.callout-tip}
+## Definition: *"Kanban"*     
+Kanban ist eine agile Methode, die sich auf die Visualisierung von Arbeit und die kontinuierliche Verbesserung konzentriert. Kanban ist ein zentrales Element des Toyota Produktionssystems (TPS).
+:::
+
+
+Kanban bedeutet wörtlich Aufkleber, Label oder Behälterbeschriftung und steht für eine einfache, fast triviale Steuerungsmethode, die im Toyota-Produktions-System (TPS) entwickelt wurde. 
+
+Die Methode, mit Behältern zu steuern, ist eine der ältesten Steuerungsmethoden überhaupt. In vielen Bereichen des täglichen Lebens setzten wir sie in Ansätzen um. Dieser Umstand alleine ist sicherlich nicht verantwortlich für den Siegeszug, den diese Steuerungsmethode seit der ersten Einführung bei Toyota hatte. Auch erklärt dies nicht, warum Kanban in der Produktion weit verbreitet ist, trotz Konkurrenz durch immer ausgereifte Algorithmen in der IT. 
+
+Kanban umfasst nicht nur eine Steuerungsmethode, sondern gibt sehr klare und strenge Verfahrensregeln vor. Mit der gleichen strengen Akribie und Liebe wie in der weltweit bekannten Teezeremonie werden in Japan für andere Kulturen banale Abläufe auch im Arbeitsleben zur Perfektion fortgeführt. Typisch für diesen Ritus sind die klare Definition exakter Plätze und das Einhalten eines genauen Ablaufs („Der perfekte Prozess ist das Ziel“). 
+
+Dieser wesentliche Erfolgsfaktor wird im westlichen Kulturkreis weitläufig unterschätzt. Die Selbstverantwortung und das Erleben der Perfektion obliegen dem Einzelnen. Im Fall von Kanban betrifft dies den Umgang mit Behältern durch den Mitarbeiter.
+
+#### Kanban-Verfahrensablauf
+Die Basiselemente der Kanban-Steuerung sind physische Gebinde bzw. Behälter, oder die Label darauf. 
+
+---
+
+**1.)** Das Material in einem Behälter wird verbraucht, bis dieser leer ist. **2.)** Der Behälter oder auch nur die Kanban-Karte wandert danach an die Nachschubquelle bzw. zum internen oder externen Lieferanten zurück (*"Bedarfsanforderung"*), wo er **3.)** erneut befüllt wird. **4.)** Nach dem Befüllen wird das Material wieder zum Verbraucher oder Kunden geschickt. 
+
+--- 
+
+Dieser Vorgang ist extrem einfach und besitzt daher wenig mögliche Störgrößen. Der Ablauf ist visuell und erreicht durch seine Transparenz eine enorme Prozesssicherheit. 
+
+Der Kreis, den der Behälter beschreibt, wird auch als Kanban-Kreis bezeichnet. 
+
+Das Material bewegt sich aufgrund eines physischen Verbrauchs. Der Nachschub wird gleichsam vom Kunden gezogen, woraus sich der englische Begriff des **"Pull-Prinzips"** ableitet. 
+
+Eine weitere implementierte Verfahrensregel ist die Begrenzung des dynamischen maximalen Lagervolumens. Die Summe der in Umlauf befindlichen Karten im Kreis definiert und begrenzt die maximale Kapitalbindung in Form von Lagerbeständen oder Aufträgen.
+
+#### Kanban-Elemente
+
++ **Der Kanban-Kreis**: Der Kanban-Kreis umfasst eine Kunden-Lieferantenverbindung, also den Abschnitt entlang der Wertschöpfungskette mit allen Teilprozessen, die das Material physisch durchläuft und den vollständigen Informationsfluss.
+
++ **Kanban-Karten**: Kanban-Karten entsprechen der Abstraktion des realen Gebindes. Karten und Gebinde müssen jedoch nicht immer physisch miteinander verbunden sein. Der Rückweg des Leerguts kann dadurch vom Informationsfluss entkoppelt werden. Ist es nicht möglich, die Behälter zurückzuführen, können damit Zeiten eingespart und Kosten reduziert werden. So wird durch Einwegbehälter in Kombination mit Karten eine unnötige Aufblähung der Kanban-Dimensionierung vermieden und dadurch werden lange Transportwege für die Behälter eingespart. Der Aufwand zum Erstellen der Papiere wird zudem reduziert, da die Karten im Kreis laufen.
+
++ **Kanban-Tafel**: Karten werden auf der Tafel z. B. in Fächer gesteckt oder mittels Magnettaschen festgeheftet, sodass das Sammeln von Karten über Felder visualisiert wird. Sie visualisiert das Sammeln von Karten, bis ein Auftrag gestartet werden kann. Die Kanban-Plantafel ermöglicht die Abbildung der wirtschaftlichen Losgröße durch eine Freigaberegel. Durch die Verwendung eines Freigabebereichs kann zudem eine Nivellierung von Kapazitäten und eine dezentrale Feinsteuerung umgesetzt werden.
+
++ **Regelkarten**: Auf Regelkarten werden alle Abweichungen vom Standard vermerkt. Kein realer Materialfluss ist identisch zu einem anderen. So muss für eine optimale Konfiguration erst der optimale Ablauf selektiert werden. Dieses Tool hilft, den Prozess systematisch, effizient und zielorientiert umzusetzen. Störgrößen, Sonderbedarfe und Sonderfreigaben werden dokumentiert und können zu einer Veränderung des Standards führen. Ohne die Regelkarten würde sehr viel Effizienz durch „blinden“ Gehorsam vernichtet.
+
++ **Prioritätsfindung im Arbeitssystem**: Das Kanban-System hat grundsätzlich eine dezentrale Entscheidungshoheit. Der Werkende entscheidet dezentral und selbstverantwortlich aufgrund des Erreichens der Sammelmenge. Sollte es zu einer Überschneidung verschiedener Bedarfe kommen, muss der Werkende nach Kriterien wie etwa niedrigem Lagerbestand oder niedriger Bestandsreichweite selbst priorisieren.
+
+<!--
+#### Eigenschaften der Steuerungsmethode
+
++ **Steuern ohne EDV**: Kanban stammt aus einer Zeit, in der kaum EDV für die Produktion verwendet wurde und kommt daher grundsätzlich auch ohne EDV aus. Die „Kostenfalle“ EDV kann gänzlich vermieden werden. Es sind weder Hard- noch Software-Anschaffungen notwendig, noch sind aufwändige und fehleranfällige Datenkonvertierungen in andere Systeme nötig. Risiken durch Versorgungsunterbrechungen, Fehler aufgrund von MRP-Fehlern oder Störungen durch das Rechnersystem können umgangen werden. In Bereichen, in denen keine EDV vorhanden oder sinnvoll ist, wird damit eine komfortable Materialflusssteuerung erreicht, etwa bei Kleinstunternehmen, bei denen der Aufwand für EDV in keiner Relation zu den Werten des Materialstroms steht. Dies kann zudem bei geringer Mitarbeiterqualifikation, bei Sprachbarrieren oder in Regionen, in welchen die Strom- oder IT-Versorgung einen Risikofaktor darstellt, vorteilhaft sein. Aufgrund der notwendigen Material- und Lohnbuchung ist bei mittelständischen bis großen Unternehmen in Industriestaaten eine Steuerung ohne EDV heute selten geworden. Auch Supply Chain-Managementvorgaben zwingen zum Einsatz von EDV, wie etwa in der Automobilbranche. Eine Anbindung von Kanban an EDV ist heute durch sehr individuelle EDV-Tools möglich und für Standards teils auch sehr kostengünstig. Zur Dimensionierung, Ablaufunterstützung und Anbindung an Firmen-IT kann aus einer Palette bestehender, unterschiedlicher Standard-Tools ausgewählt werden.
+
++ **Visualisierung – ergonomisch effizientes Arbeiten**: Die Bestandsverfolgung und die Kontrolle der Reichweite erfolgen durch statisch und visuelle Bestandswahrnehmung. Die Abbildung des dynamischen Materialflusses ist dabei unübertroffen direkt und ergonomisch. Die Qualität dieser Form der Bestandsverfolgung mittels realer Lagerplätze, d. h. ob ein Lagerplatz vorhanden oder leer ist, ist selbst durch hoch entwickelte EDV-Systeme nicht zu übertreffen. Der Start erfolgt ereignisgetrieben: Der Behälter war leer und führt dadurch zu einer unmittelbaren Handlung des Betroffenen. Der Anstoß zum Nachschub erfolgt visuell und aktiv durch den Arbeitenden. Ein klarer Vorteil ist das Nutzen physischer Informationen, im Gegensatz zur abstrakten EDV-Eingabe. Fehlerpotenziale durch die Übertragung und Abstraktion werden vermieden.
+
++ **Einfache, selbstregelnde Dimensionierung**: Dem Mitarbeitenden steht im Kanban-Kreis eine definierte Anzahl an Behältern bzw. Kanban-Karten zur Verfügung. Bei steigender Bedarfsmenge oder -häufigkeit erhöht sich die Geschwindigkeit des Flusses im Kreis. Das System kann dadurch gewisse Bedarfsspitzen und Bedarfsreduzierungen selbstständig ausgleichen. Bei zu starkem Anstieg sinkt der Endproduktpuffer, bis das System schließlich abreißt. Um dies zu verhindern muss daher, sobald der Nachschub knapp wird, die Anzahl der Behälter im Kanban-Kreis oder auch die Kapazität erhöht werden.
+
++ **Dezentrale Steuerung – Verantwortung vor Ort**: Der operative Mitarbeitende steuert den Nachschub selbstständig vor Ort, nur geleitet durch die Karten oder die Freigabe des Auftragsstarts auf der Kanban-Tafel. Er hat grundsätzlich keine anderen Kriterien zu beachten und kann ohne weitere Freigaben selbstständig entscheiden und handeln. In vielen Anwendungsfällen wird die Entscheidung an einen Meister oder Gruppenleitenden delegiert, z.B. aufgrund von Interessenkonflikten mit Entlohnungssystemen oder fehlerträchtigen Manufacturing Resources Planning (MRP)-Softwaresystemen.
+
++ **Hohe Lieferfähigkeit**: Bei Kanban ist immer ein Mindestpuffer von Endprodukten in jeder Produktionsstufe vorhanden. Der Kunde kann immer sofort mit Lagerware zufrieden gestellt werden, auch bei kurzfristigem Bedarf. Ein Höchstmaß an Lieferfähigkeit und Servicegrad wird dadurch sichergestellt. Der definierte Puffer stellt auf allen Ebenen mittelfristig eine optimale Strategie zur Prävention von Versorgungsengpässen dar. Nebenbei werden durch kleine Puffer Bedarfsspitzen geglättet und infolgedessen eine hohe Effizienz und maximale Auslastung erreicht. Investitionen in Zusatzkapazität für Bedarfsspitzen können eingespart werden
+
++ **Kundenorientierung**: Durch das Holprinzip (Pull-Prinzip) wird der Produktionsprozess nach den Bedürfnissen des Kunden ausgerichtet. Über den Kundenauftrag hinaus wird nichts produziert. Ein weiterer Aspekt ist die strikte Abbildung des Kundenbedarfs in der Ausbringung. Der Kundentakt sollte in möglichst kleinen Intervallen abgebildet werden, um Verschwendung zu vermeiden.
+
++ **Produktorientierung**: Im Rahmen einer Kanban-Einführung sollten die Materialflusswege produktspezifisch nach dem Fließprinzip optimiert werden, was eine enorme Steigerung der Effizienz zur Folge hat. Es werden Wege optimiert und Puffer abgebaut. Durch Visualisierung und kurze Distanzen wird der Informationsfluss deutlich verbessert.
+
++ **Vermeidung von Verschwendung**: Durch die Produktion nach Verbrauch werden Bestände und Durchlaufzeiten (DLZ) reduziert, da sich das Produktionsangebot an der aktuellen Nachfrage orientiert. Es wird ausschließlich der Kundenverbrauch nachproduziert. Verschwendung durch Überproduktion, etwa aufgrund nicht eingetroffener Planungen, wie in Material Requirements Planning (MRP), wird verhindert.
+
++ **Wenig störungsanfällig**: Aufgrund realer, dezentraler und visueller Bestände sind die Abläufe sehr einfach und sicher. Verglichen mit den Störgrößen und der Anzahl der Einflussfaktoren in EDV-Daten, treten bei Kanban kaum Störungen auf. Wenig Komplexität führt zu extrem sicheren Prozessen. Aufträge werden ohne Störungen begonnen und fertig gestellt, sie werden „fertig produziert“.
+
++ **Standardisierung von einfachen, wiederkehrenden Prozessen**: Ein wesentliches Element von Kanban ist der Verbesserungszyklus. Aufgrund z. B. der Informationen der Regelkarten werden kontinuierlich Verbesserungen geplant, umgesetzt, verifiziert und dokumentiert. Wenn ein neuer, besserer Prozess dokumentiert ist, wird er zum neuen gültigen Standard. Das strikte Einhalten der kontinuierlichen Verbesserung mit Standards ist charakteristisch für das TPS und auch für Kanban.
+-->
+
+#### Kanban im Produktentstehungsprozess
+
+Die Methodik von Kanban wurde schnell auch in über die Produktion hinausgehend in indirekte Bereiche übernommen. 
+
+So finden Kanban-Tafeln heute im Projektmanagement von Produktentstehungsprozessen Anwendung. Kanban-Boards werden hierbei von Projektteams genutzt, um den Fortschritt der Aufgaben zu verfolgen. Die Aufgaben werden in verschiedene Spalten organisiert, die den Status der Aufgaben widerspiegeln (z. B. "Speicher", "Adressiert", "in Arbeit", "Erledigt gemeldet", "Erledigt bestätigt").
+
+![Screenshot des Kanban-Boards des Projektteams zur Vorbereitung des Studiengangs DEB (Quelle: Eigene Bildschirmaufnahme vom 2024-03-04, entstanden mit freundlicher Genehmigung des Projektteams)](images/Kanban-Board.jpeg){width=100% #fig-kanban}
+
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
+
++ @dickmann_schlanker_2015: [Elemente moderner, schlanker Produktionssysteme](https://rdcu.be/dI72u)
+
+:::
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Literaturempfehlung
+
+-------------------------------------------------------------------------- -->
+
+<!--
+#### Literaturempfehlung
+
+![@dickmann_schlanker_2015: [Schlanker Materialfluss](https://link.springer.com/book/10.1007/978-3-662-44869-4)](images/Dickmann_Schlanker_Materialfluss_978-3-662-44869-4.webp){width=40%}
+
+-->
+

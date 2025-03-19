@@ -1,0 +1,61 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       5-Why-Methode
+
+-------------------------------------------------------------------------- -->
+
+
+### [5-Why-Methode](https://de.wikipedia.org/wiki/5-Why-Methode) {#sec-5why}
+
+Die 5-Why-Methode ist eine einfache, aber wirkungsvolle Technik im Qualitätsmanagement, die verwendet wird, um die zugrundeliegenden Ursachen eines Problems zu identifizieren. Sie hilft dabei, die Wurzel eines Problems zu ergründen, anstatt sich nur mit den oberflächlichen Symptomen zu befassen. Die Methode basiert auf der Idee, dass man, wenn man fünf aufeinanderfolgende "Warum"-Fragen stellt, in der Regel zur eigentlichen Ursache des Problems vordringen kann.
+
+Schritte der 5-Why-Methode:
+
+1. **Identifiziere das Problem**: Stelle zuerst das Problem klar und präzise fest. Stelle sicher, dass das gesamte Team das Problem versteht und es einheitlich beschrieben wird.
+
+2. **Frage "Warum" zum Problem**: Stelle die Frage "Warum ist das Problem aufgetreten?" Versuche, die unmittelbare Ursache des Problems zu ermitteln. Das ist der Ausgangspunkt der Analyse.
+
+3. **Frage "Warum" zur vorangegangenen Antwort**: Nimm die Antwort aus dem vorangegangenen Schritt und frage erneut "Warum" dazu. Dies bringt dich eine Schicht tiefer, um die zugrundeliegende Ursache für die erste Antwort zu finden.
+
+4. **Wiederhole den Schritt 3 viermal**: Wiederhole diesen Prozess insgesamt fünfmal. Mit jeder "Warum"-Frage gehst du eine Ebene tiefer in der Ursachenanalyse. Ziel ist es, durch die aufeinanderfolgenden Fragen die eigentliche Wurzel des Problems zu identifizieren.
+
+5. **Ergreife Maßnahmen**: Sobald die Hauptursache identifiziert ist, können entsprechende Maßnahmen ergriffen werden, um das Problem zu beheben. Diese Maßnahmen sollten darauf abzielen, nicht nur die Symptome zu behandeln, sondern auch die zugrunde liegenden Ursachen zu beseitigen.
+
+Die 5-Why-Methode ist eine effektive Technik, um tiefere Einblicke in komplexe Probleme zu gewinnen und systematische Lösungen zu finden. Sie erfordert jedoch eine ernsthafte und sorgfältige Anwendung, da die Antworten auf die "Warum"-Fragen subjektiv sein können. Es ist wichtig, die Ergebnisse zu überprüfen und gegebenenfalls weitere Fragen zu stellen, um sicherzustellen, dass die ermittelten Ursachen korrekt sind und die effektivsten Maßnahmen ergriffen werden können.
+
+#### Beispiel: 5-Why-Methode
+Wenn ein Auto unterwegs liegen bleibt (Fehler F1), kann dies viele Ursachen haben. Ein möglicher Fehler (F2) ist eine zu geringe Motorleistung, die durch einen überhitzten Motor (F3) verursacht wird. Diese Überhitzung ist selbst ein Fehler, der eine Folge der zu geringen Kühlleistung des Ventilators ist (F4). Der Ventilator kühlt nicht ausreichend, da er sich zu langsam dreht (F5). Die niedrige Drehzahl ist die Folge eines schwergängigen Lagers (F6), das aus einem falschen Wellendurchmesser des Lagers (F7) und letztlich aus einem verschlissenen Werkzeug (F8) bei der Herstellung resultiert. (Quelle: @jakoby_qualitatsmanagement_2022)
+
+In der gesamten Wirkungskette ist jeder Fehler zugleich die Wirkung davorliegender und die Ursache nachfolgender Fehler.
+
+#### Ursache-Wirkungs-Kette
+
+Oftmals ist die Ursache-Wirkungs-Kette eine Baumstruktur, bei der mehrere Ursachen zu einem nachfolgenden Fehler zusammenwirken. Die Ursachen müssen dabei nicht technischer, sondern können häufig auch organisatorischer Struktur sein. Es gibt eine Vielzahl von Möglichkeiten, die Ursache-Wirkungsketten zu visualisieren. Ein Beispiel zeigt @fig-schadensverknuepfung:
+
+![Schadensverknüpfung des Fährschiffsunfalls der Harold of Free Enterprise^[Am Anfang der durch die Untersuchung des Fährschiffsunfalls der Harold of Free Enterprise zu Tage gebrachten Ereigniskette standen Zeitdruck, Personalmangel und unklare Zuständigkeiten. Der erste Offizier versäumte, das Schließen der Bugklappen zu überwachen, der Bootsmann, der ihr Offenstehen bemerkte, sah das Schließen nicht als seine Aufgaben an und sein Stellvertreter, der dafür zuständig gewesen wäre, schlief nach Erledigung anderer Aufgaben in seiner Kabine. Der Kapitän ahnte nichts – erstens, weil ihm die Betriebsvorschrift nahelegte, sich nur um Gemeldetes zu kümmern, zweitens, weil es auf der Kommandobrücke keine Bugklappenanzeige gab. Trotz offener Bugklappen wäre die Fähre vielleicht nicht gleich gekentert, wenn sie nicht vornüber im Wasser gelegen hätte. Weil die Laderampe unter den gegebenen Umständen nicht die richtige Höhe hatte, hatte die Besatzung das Schiff buglastig getrimmt, um das Ein- und Ausfahren zu ermöglichen. Weil der Fahrplan drängte, waren die Ballasttanks vor dem Ablegen jedoch nicht wieder geleert worden. Daß bei dem durch die betrachteten Umstände bedingten Kentern der Fähre 192 Menschen ums Leben kamen, ist schließlich der mangelhaften Notfallausrüstung zuzuschreiben. Die Rettungswesten waren nicht nur schwer handhabbar, sondern teilweise sogar weggeschlossen, aus Angst vor Vandalismus.] vor der belgischen Küste am 06.03.1987 (Quelle: @schmitt-thomas_integrierte_2015)](images/978-3-662-46134-1_4_Fig3_HTML.webp){width=76% #fig-schadensverknuepfung}
+
+
+<!--
+**Weiterführende Links** (Wikipedia):
+
++ [Alt text](https://de.wikipedia.org/wiki/W%C3%B6hlerversuch)
+-->
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
++ @jakoby_qualitatsmanagement_2022: [Elementare QM-Methoden](https://rdcu.be/dIy3K)
+:::
+
+<!--
+#### Literaturempfehlung
+
+![@jakoby_qualitatsmanagement_2022: [Qualitätsmanagement für Ingenieure](https://link.springer.com/book/10.1007/978-3-658-36677-3)](images/Jakoby_Qualitaetsmanagement.webp){width=40%}
+-->

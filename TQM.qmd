@@ -1,0 +1,58 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Total Quality Management (TQM)
+
+-------------------------------------------------------------------------- -->
+
+### Total Quality Management (TQM) {#sec-tqm}
+
+::: {.callout-tip}
+## Definition: *"Total Quality Management (TQM)"*
+[Total Quality Management (TQM)](https://de.wikipedia.org/wiki/Total-Quality-Management) ist eine Strategie zur kontinuierlichen Verbesserung der Leistung auf allen Ebenen und in allen Verantwortungsbereichen. Es kombiniert grundlegende Managementtechniken, bestehende Verbesserungsbemühungen und spezialisierte technische Tools in einer disziplinierten Struktur, die auf die kontinuierliche Verbesserung aller Prozesse ausgerichtet ist.
+:::
+
+TQM fußt auf den grundlegenden Arbeiten zum [Qualitätsmanagement](https://de.wikipedia.org/wiki/Qualit%C3%A4tsmanagement) von [Walter Deming](https://de.wikipedia.org/wiki/William_Edwards_Deming), wurde jedoch erst in der japanischen Automobilindustrie zum Erfolgsmodell gemacht ([Toyota-Produktionssystem](https://de.wikipedia.org/wiki/Toyota-Produktionssystem)). 
+
+TQM benötigt die volle Unterstützung aller Mitarbeiter, um zum Erfolg zu führen.
+
+Zu den wesentlichen Prinzipien der TQM-Philosophie zählen:
+
++ Qualität orientiert sich am Kunden.
++ Qualität wird durch Mitarbeiter aller Bereiche und Ebenen erzielt.
++ Qualität ist kein Ziel, sondern ein Prozess, der nie zu Ende geht.
++ Qualität bezieht sich auf Produkte und Dienstleistungen, vor allem aber auf die Prozesse zur Erzeugung derselben.
++ Qualität setzt aktives Handeln voraus und muss erarbeitet werden.
+
+Mit TQM sind mehrere Ziele verbunden, unter anderem:
+
++ Fertigungsfehler erkennen, reduzieren und beseitigen
++ Probleme verhindern, bevor sie auftreten
++ Konzentration auf die kontinuierliche Prozessverbesserung der Verfahren (siehe @sec-kvp → Kontinuierlicher Verbesserungsprozess (KVP))
+
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
++ @helmold_qualitat_2023: [Total Quality Management (TQM)](https://rdcu.be/dJ5tF)
+
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Literaturempfehlung
+
+-------------------------------------------------------------------------- -->
+
+<!--
+#### Literaturempfehlung
+
+![@helmold_qualitat_2023: [Qualität neu denken](https://link.springer.com/book/10.1007/978-3-658-40220-4)](images/Helmold_Qualitaet_978-3-658-40220-4.webp){width=40%}
+-->
+

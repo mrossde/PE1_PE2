@@ -1,0 +1,141 @@
+---
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Produktions- und Werkstofftechnik
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+---
+
+<!--
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+-->
+
+<!--
+resource-path: ["c:/temp/images/"]
+resource-path: ["../images"]
+resource-path: ["images"]
+-->
+
+ 
+
+<!-- -------------------------------------------------------------------------
+
+                       Rezept Anders' Grießbrei Winterzauber
+
+-------------------------------------------------------------------------- -->
+
+
+### Rezept *"Anders' Grießbrei Winterzauber"*
+
+![Grießbrei (Symbolbild) (Quelle: Adobe Stock)](images/AdobeStock_480642657.jpeg){width=64% #fig-brownies}
+
+::: {.callout-tip}
+## Definition: *"Grießbrei"*
+Grießbrei ist ein aus Grieß gekochter Brei, der mit Milch zubereitet wird. Serviert wird Grießbrei meist mit Zucker, Kakaopulver, Zimt, Rosinen, Apfelmus oder Fruchtsirup.
+(Quelle: [Wikipedia](https://de.wikipedia.org/wiki/Grie%C3%9Fbrei))
+:::
+
+#### Zutaten (für 4 Portionen à 300 g)
+
++ 1   L frische Vollmilch 3,5% Fett
++ 120	g	Hartweizengrieß
++ 84	g	Zucker
++ 16	g	Vanillezucker (2 Päckchen à 8 g)
++ 2   g Zimt, gemahlen
+
+#### Maschinen und Werkzeuge
+
++ 1 Herdplatte, Leistung steuerbar oder mit automatischer Temperaturregelung
++ 1 Topf (1,5 L) mit Deckel
++ 1 Küchenwaage
++ 1 Schüssel
++ 1 Großer Löffel
++ (4 Dessertschalen)
++ (4 Kleine Löffel)
+
+#### Produktionsdauer 
++ 1,50 h Gesamtproduktionsdauer (HPU, Hours per Unit), davon
+  + 0,25 h (15 min.) Vorbereitungszeit 
+  + 0,50 h (30 min.) Kochzeit
+  + 0,75 h (45 min.) Ruhezeit
+
+<!--
+#### Produktselbstkosten (für 4 Portionen à 300 g)
++ 24,25 € Produktselbstkosten, davon
+  + 1,40 € Materialeinzelkosten^[Milch, Hartzweizengrieß, Zucker, Vanillezucker]
+  + 0,20 € Produktionseinzelkosten Energie^[Strom 0,5 kWh * 0,40 €/kWh]
+  + 0,10 € Produktionseinzelkosten Medien^[Wasser, Spühlmittel]
+  + 19,20 € Produktionseinzelkosten Personal Produktion^[1,5 h * 12,80 €/h]
+  + 2,56 € Produktionseinzelkosten Personal Instandhaltung Maschinen und Werkzeuge^[0,2 h * 12,80 €/h]
+  + 0,10 € Produktionsgemeinkosten^[Herd, Topf, Waage, Schale, Löffel]
+  + 0,69 € Produktionsgemeinkosten Produktentwicklung^[Gesamtentwicklungskosten: 68,85 €. Prämisse: Geplante Gesamtstückzahl 100 * 4 Portionen]
+-->
+#### Zubereitung
+
+1. Milch in einem mit einem Deckel bedeckten Topf vorsichtig erhitzen, dabei regelmäßig umrühren. **Anbrennen der Milch vermeiden!** Vorsicht: Gefahr von [Siedeverzug](https://de.wikipedia.org/wiki/Siedeverzug)!
+
+2. Hartweizengrieß, Zucker und Vanillezucker abwiegen und in einer Schüssel vermischen.
+
+3. **Vor dem Erreichen des Siedepunkts der Milch** nach und nach die vorbereitete Mischung aus Hartweizengrieß, Zucker und Vanillezucker in die Milch einrühren. **Klumpenbildung vermeiden!** 
+
+4. Die Milch mit den eingerührten Zutaten bei reduzierter Hitze ca. 30 Minuten unterhalb des Siedepunktes halten. Dabei in kurzen Zeitabständen den sich stetig verfestigenden Grießbrei **umrühren um ein Anbrennen des Grießbreis zu vermeiden**. Zwischen dem Umrühren den Topf mit einem Deckel schließen.
+
+5. Nach (20 ... 30) Minuten hat der Grießbrei eine zähflüssige Konsistenz erreicht. Herd abschalten und den Topf von der heißen Herdplatte nehmen. Nochmals umrühren und den Grießbrei anschließend im Topf mit aufgesetztem Deckel ca. 45 Minuten ruhen lassen.
+
+6. Je 300 g Grießbrei in eine Dessertschale umfüllen, mit gemahlenem Zimt bestreuen und servieren!
+
+#### Qualität
++ Gleichmäßig cremige bis feste Konsistenz, kein Verklumpen oder Anbrennen der Zutaten
++ Gleichmäßig milchig warmweiße bis helle, leicht gelbliche Farbe
++ Leichte Hautbildung an der in der Ruhephase der Atmosphäre ausgesetzten Oberfläche ist ein Qualitätsmerkmal und kein Grund zur Beanstandung!
+
+#### Wichtige Informationen zum Produkt
+
++ **Kein Spielzeug! Nur für den bestimmungsgemäßen Gebrauch geeignet!**
++ Der Grießbrei hält im Kühlschrank mehrere Tage und kann bei Bedarf vor dem Verzehr in der Mikrowelle erwärmt werden. **Übermäßiges Erwärmen ist zu vermeiden!**
++ Zimt erst kurz vor dem Verzehr über den Grießbrei streuen. **Das Zimtpulver dabei nicht einatmen!**
++ Für den Verzehr wird ein kleiner Löffel empfohlen (nicht im Lieferumfang enthalten).
+
+#### Nährwert pro 100 Gramm
++ Kalorien insgesamt 119 kcal
++ Fett		3,0 g
++ Eiweiß	1,2 g
++ Kohlenhydrate	 18,9 g

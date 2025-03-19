@@ -1,0 +1,27 @@
+---
+format:
+  html:
+    embed-resources: true
+
+
+toc: false
+number-sections: false
+scrollable: true
+---
+
+<!-- title: "MTB3 Entwicklung mechatronischer Systeme 1"
+author:
+  - name: "Christian Anders"
+    email: christian.anders@hs-esslingen.de
+    affiliations: Hochschule Esslingen
+
+date: last-modified
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Daniel Duesentrieb
+
+-------------------------------------------------------------------------- -->
+
+![Der Inbegriff des genialen Genies und Erfinders: Daniel Düsentrieb mit Helferlein](images/DanielDuesentrieb.webp){width=20% #fig-danielduesentrieb}

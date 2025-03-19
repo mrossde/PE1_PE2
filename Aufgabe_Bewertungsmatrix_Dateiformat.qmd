@@ -1,0 +1,98 @@
+---
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Übungsaufgabe zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+keywords:
+  - Entscheidungsfindung
+  - Laboraufgabe
+  - Bewertungsmatrix
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+---
+
+<!--
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Aufgabe: Auswahl Dateiformat
+
+-------------------------------------------------------------------------- -->
+
+::: {.callout-note}
+## Bewertungsmatrix zur Auswahl des Dateiformats für das Skript zur Vorlesung (Dauer (20 min)
+
+**Ausgangssituation**: Ihr Dozent erstellt das Skript zur Vorlesung mittels [Quarto](https://quarto.org/) im Format *HTML*. Bei Bedarf bietet Ihr Dozent an, statt *HTML* (XODER!) ein alternatives Dateiformat zur Verfügung zu stellen, sofern dafür aus der Gruppe eine überzeugende Begründung vorliegt. Möglich sind die Formate Adobe *PDF* und Microsoft Word (*docx*). Den Aufbau einer Matrix zur Bewertung der drei möglichen Dateiformate zeigt @tbl-bewertungsmatrix: 
+
+|                      | HTML     | PDF      | Word (*.docx) |
+|----------------------|----------|----------|-----------|
+| Kriterium 1          |          |          |           |
+| Kriterium 2          |          |          |           |
+| Kriterium 3          |          |          |           |
+| Kriterium 4          |          |          |           |
+| Kriterium 5          |          |          |           |
+| **Summe**:           |          |          |           |
+
+: **Bewertungsmatrix** zur Auswahl des Dateiformats für das Skript zur Vorlesung {#tbl-bewertungsmatrix .striped .hover .bordered tbl-colwidths="[40,20,20,20]"}
+
+**Aufgabe:**
+
+**a)** Erarbeiten Sie in der Gruppe die Bewertungskriterien, die im Hinblick auf das Dateiformat für Sie wichtig sind.
+
+Vorgaben:
+
++ Nehmen Sie sich hierzu 10 Minuten Zeit. Sollten Sie mehr als fünf Kriterien erarbeiten erweitern wir die Matrix zum zusätzliche Zeilen; bei weniger als fünf Kriterien entfernen wir die leeren Zeilen aus der Matrix.
++ Achten Sie darauf, dass die Kriterien voneinander unabhängig sind, so dass eine versteckte Über- oder Untergewichtung eines einzelnen Aspekts vermieden wird.
++ Überlegen Sie, wie Sie mit KO-Kriterien in der Bewertungsmatrix umgehen wollen sollten diese auftreten.
+ 
+**b)** Bewerten Sie die möglichen drei Dateiformate. Gehen Sie dafür Zeile für Zeile vor und treffen Sie eine Bewertung für jedes der vier Dateiformate.
+
+Vorgaben:
+
++ Die Bewertungen reichen von 1 bis 5 Punkte, wobei 1 Punkt die schlechteste Bewertung und 5 Punkte die beste Bewertung ist. Bitte achten Sie darauf die Bewertungsspanne von 1 bis 5 möglichst vollständig auszunutzen!
+
+**c)** Ermitteln Sie das Ergebnis Ihrer Bewertung durch Aufsummieren der Einzelbewertungen für jedes der vier Dateiformate.
+
+**d)** Bitte Reflektieren Sie zum Abschluss noch kurz gemeinsam in der Gruppe: 
+
++ Entspricht das Ergebnis Ihren Erwartungen? 
++ Können Sie das gefundene Ergebnis nachvollziehen? 
++ Sind Sie persönlich mit dem Vorgehen zur Entscheidungsfindung zufrieden?
+
+
+
+
+:::

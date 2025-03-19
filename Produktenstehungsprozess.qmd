@@ -1,0 +1,237 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Grundlagen
+  - SI-Basiseinheiten
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+
+# DEB3 Produktentwicklung 1
+
+<!--
+
+> *"Jammern lockt keine Kunden!"* [Unbekannt]
+
+
+Die Redewendung betont die Bedeutung einer positiven Einstellung und proaktiven Herangehensweise, insbesondere im Geschäfts- und Verkaufsumfeld. Die Idee dahinter ist, dass Kunden eher von Unternehmen angezogen werden, die Lösungen anbieten, Chancen nutzen und sich auf positive Weise präsentieren, anstatt sich über Probleme zu beklagen oder negative Energie auszustrahlen.
+
+Die Redewendung unterstreicht die Wichtigkeit von Effizienz, Optimismus und Lösungsorientierung im Unternehmenskontext. Unternehmen, die sich auf das Finden von Lösungen konzentrieren und einen positiven Kundenservice bieten, neigen dazu, besser bei ihren Kunden anzukommen und langfristige Beziehungen aufzubauen. Es betont auch die Notwendigkeit, Herausforderungen als Gelegenheiten zur Innovation zu betrachten und sich auf positive Weise von der Konkurrenz abzuheben.
+
+Das Zitat "Jammern lockt keine Kunden!" ist kein bekanntes Zitat mit einer spezifischen Urheberschaft. Es handelt sich eher um eine allgemeine Aussage oder Redewendung, die in verschiedenen Kontexten verwendet wird, insbesondere im Bereich des Verkaufs, des Marketings oder der Unternehmensführung. Es gibt keinen bekannten Autor oder Ursprung, der diesem Zitat zugeordnet wird. Es wird oft als Ratschlag für Unternehmer und Verkäufer verwendet, um die Bedeutung von positiver Energie und proaktivem Handeln in geschäftlichen Angelegenheiten zu betonen.
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                        PRODUKT
+
+-------------------------------------------------------------------------- -->
+{{< include Produkt.qmd >}}
+
+<!-- -------------------------------------------------------------------------
+
+                        PRODUKTENTSTEHUNGSPROZESS
+
+-------------------------------------------------------------------------- -->
+
+# Produktentstehungsprozess (PEP)
+
+::: {.callout-tip}
+## Definition: *"Produktentstehungsprozess"*
+Die zur Herstellung und Vermarktung eines Produkts notwendigen Tätigkeiten.
+:::
+
+Der Start eines Produktentstehungsprozesses kann die Folge einer Produktidee sein. In der Regel ist der Start eines Produktentstehungsprozesses aber die Folge eines entsprechenden Auftrags. 
+
+```{mermaid}
+%%| label: fig-label-startentstehung
+%%| fig-cap: "Start des Produktentstehungsprozesses aufgrund von Produktidee oder Auftrag"
+flowchart TD
+    A(Produktidee) --> C
+    B(Auftrag) --> C[Produktentstehungsprozess]
+```
+
+Der wesentliche Unterschied besteht darin, dass bei Vorliegen eines entsprechenden Auftrags oft eine Vielzahl von Vorgaben, sowohl zum Produkt, als auch zur Gestaltung des Produktentstehungsprozesses vorliegen. Vorgaben können sein: Gewichts, Leistungs- und Kostenziele, Bauraumvorgaben, Termin der geplanten Markteinführung, für den Produktentstehung vorgesehene Organisationen und Personal, beteiligte externe Unternehmen und geplante Zulieferstrategie, verfügbare Produktionsanlagen für die spätere Serienfertigung.
+
+::: {.callout-caution}
+## Erfahrungen aus der Praxis
+Solche Vorgaben können dabei sowohl ein Hemmnis, als auch eine Chance für den Produktentstehungsprozess ein. Die Chancen bestehen darin, dass langwierige Diskussionen, die eine kreative Findungsphase oft begleiten, stark abgekürzt werden und die Vorgaben zumeist klare Richtlinien für das zu entwickelnde Produkt beinhalten, auf die unmittelbar ab Projektstart hingearbeitet werden kann.
+:::
+
+
+Jeder Produktentstehungsprozess kann in verschiedene Phasen unterteilt werden, die einen strukturierten Ablauf von der Ideenfindung bis zur Markteinführung umfassen. Die genaue Einteilung kann je nach Branche, Unternehmen und Art des Produkts variieren. Phasen, die immer im Produktentwicklungsprozess physikalischer und mechatronischer Produkte zu finden sind:
+
+```{mermaid}
+%%| label: fig-label-pep01
+%%| fig-cap: "Phasen im Produktentstehungsprozess nach dem Wasserfallmodell"
+flowchart TD
+    A[Ideenfindung und Konzeptentwicklung] --> B[Konzeptvalidierung und Machbarkeitsprüfung]
+    B --> C[Entwurfs- und Entwicklungsphase]
+    C --> D[Prototyping und Test]
+    D --> E[Fertigungs- und Produktionsvorbereitung]
+    E --> F[Markteinführung und Vermarktung]
+```
+
+1. **Ideenfindung und Konzeptentwicklung**:
+- Identifikation von Marktchancen und Kundenbedürfnissen.
+- Generierung von Ideen für neue Produkte oder Verbesserungen bestehender Produkte.
+- Entwicklung erster Konzepte und Skizzen.
+
+2. **Konzeptvalidierung und Machbarkeitsprüfung**:
+- Bewertung der Marktfähigkeit und Wirtschaftlichkeit der Konzepte.
+- Analyse von technischen, rechtlichen und regulatorischen Aspekten.
+- Auswahl vielversprechender Konzepte für die weitere Entwicklung.
+
+3. **Entwurfs- und Entwicklungsphase**:
+- Erstellung von detaillierten Designspezifikationen.
+- Entwicklung von Prototypen, Modellen oder Simulationen.
+- Zusammenarbeit zwischen Designern, Ingenieuren und anderen Fachleuten.
+
+4. **Prototyping und Testen**:
+- Bau von Prototypen für Tests und Evaluierung.
+- Durchführung von Funktionstests, Benutzerfeedback und Iterationen.
+- Optimierung des Designs basierend auf den Testergebnissen.
+
+5. **Fertigungs- und Produktionsvorbereitung**:
+- Auswahl von Herstellern und Lieferanten.
+- Feinabstimmung der Fertigungsprozesse.
+- Planung der Massenproduktion und Sicherstellung der Qualität.
+
+6. **Markteinführung und Vermarktung**:
+- Entwicklung von Marketingstrategien und Werbemaßnahmen.
+- Vorbereitung auf die Markteinführung, inklusive Verpackung und Logistik.
+- Schulung von Vertriebsmitarbeitern und Händlern.
+- Überwachung des Produktlebenszyklus und ggf. Aktualisierung oder Verbesserung des Produkts.
+- Kundenfeedback sammeln und in zukünftige Entwicklungen einfließen lassen.
+- Start der Entwicklung von Produktvarianten oder -erweiterungen.
+
+Diese Phasen verlaufen in der Praxis in der Regel nicht sequenziell. Oft gibt es Rückkopplungsschleifen und Iterationen zwischen den Phasen, um auf neue Erkenntnisse oder Anforderungen zu reagieren. Flexibilität und die Fähigkeit, sich den sich ändernden Umständen anzupassen, sind entscheidend für einen erfolgreichen Produktentwicklungsprozess.
+
+<!-- -------------------------------------------------------------------------
+
+                        Modell zum Produktentstehungsprozess
+
+-------------------------------------------------------------------------- -->
+{{< include Modelle_zum_Produktentstehungsprozess.qmd >}}
+
+<!-- -------------------------------------------------------------------------
+
+                        Reifegrad
+
+-------------------------------------------------------------------------- -->
+
+### Reifegrad
+
+::: {.callout-tip}
+## Definition: *"Reifegrad"*
+Im Kontext eines Produktentwicklungsprozesses bezieht sich der Reifegrad eines Produkts auf den Grad, in dem das Produkt oder System seine Entwicklungsziele erreicht hat und bereit ist, in die Produktion oder auf den Markt zu gehen. Der Reifegrad wird oft anhand verschiedener Kriterien bewertet, darunter die Funktionalität, Zuverlässigkeit, Qualität, Herstellbarkeit und Wirtschaftlichkeit des Produkts. Ein höherer Reifegrad deutet darauf hin, dass das Produkt besser entwickelt, getestet und vorbereitet ist, um erfolgreich hergestellt, vertrieben und genutzt zu werden. 
+:::
+
+Die in @fig-label-pep01 dargestellten Phasen dienen dazu, den Reifegrad eines Produkts schrittweise zu erhöhen bis das Produkt schließlich als reif genug betrachtet wird, um in Serienproduktion zu gehen.
+
+::: {.callout-important}
+## ACHTUNG! WICHTIG!
+*“If you can't measure it, you can't manage it.”* [Peter F. Drucker]
+:::
+
+
+
+
+### Prinzip-, Konzept- und Serientauglichkeit
+
+```{mermaid}
+%%| fig-width: 6.0
+%%| label: fig-label-reifegrade
+%%| fig-cap: "Prinzip-, Konzept- und Serientauglichkeit"
+flowchart LR
+    A[1. Prinziptauglichkeit] --> B[2. Konzepttauglichkeit]
+    B --> C[3. Serientauglichkeit]
+```
+
+### Produkt - Prozess - Ressouce
+
+```{mermaid}
+%%| label: fig-label-ppr
+%%| fig-cap: "Produkt - Prozess - Ressouce"
+flowchart TD
+    A(Produkt) <--> B(Prozess)
+    B <--> C(Ressource)
+```
+
+
+
+<!--
+::: {.callout-tip}
+## Weiterführende Links
+
+:::
+-->
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
+
++ @bender_pahlbeitz_2021: [Der Produktentwicklungsprozess](https://rdcu.be/dIz36)
+
+:::
+
+## Literaturempfehlung
+
+![@bender_pahlbeitz_2021: [Konstruktionslehre](https://link.springer.com/book/10.1007/978-3-662-57303-7)](images/Pahl_Konstruktionslehre.webp){width=40%}
+

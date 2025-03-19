@@ -1,0 +1,80 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Kontinuierlicher Verbesserungsprozess (KVP)
+
+-------------------------------------------------------------------------- -->
+
+
+### Kontinuierlicher Verbesserungsprozess (KVP) {#sec-kvp}
+Der Kontinuierliche Verbesserungsprozess (KVP) hat sich in der Unternehmenswelt als essenzielles Konzept etabliert, um Effizienz, Qualität und Wettbewerbsfähigkeit zu steigern. 
+
+::: {.callout-tip}
+## Definition: *"Kontinuierlicher Verbesserungsprozess"*
+Der [Kontinuierliche Verbesserungsprozess](https://de.wikipedia.org/wiki/Kontinuierlicher_Verbesserungsprozess) (KVP) ist eine systematische Herangehensweise, bei der Organisationen kontinuierlich ihre Arbeitsabläufe, Prozesse und Leistungen analysieren, bewerten und optimieren. 
+:::
+
+Das Hauptziel des KVP besteht darin, stetige und inkrementelle Verbesserungen in sämtlichen Bereichen eines Unternehmens zu erreichen, um sowohl die Effizienz als auch die Qualität zu steigern. 
+
+::: {.callout-important}
+## Viele kleine Verbesserungen führen langfristig zu bedeutenden Veränderungen 
+KVP basiert auf der Überzeugung, dass jede noch so kleine Verbesserung langfristig zu bedeutenden Veränderungen führen kann.
+:::
+
+Der KVP gründet sich auf einer Reihe von Prinzipien, die seine Effektivität und Anwendbarkeit gewährleisten:
+
+1. **Kontinuität**: Der KVP ist ein fortlaufender Prozess, der nie abgeschlossen ist. Organisationen sollten ständig nach Verbesserungsmöglichkeiten suchen und diese umsetzen.
+
+2. **Partizipation und Teamarbeit**: Der KVP involviert Mitarbeitende auf allen Ebenen des Unternehmens. Teamarbeit und das Sammeln von Ideen aus verschiedenen Quellen sind zentral für den Erfolg.
+
+3. **Datengestützte Entscheidungen**: Verbesserungen sollten auf validen Daten und Fakten basieren. Eine genaue Datenerfassung und -analyse sind daher entscheidend.
+
+4. **Kundenorientierung**: Der Fokus liegt darauf, die Kundenbedürfnisse zu verstehen und Prozesse entsprechend anzupassen, um diese besser zu erfüllen.
+
+5. **Ständige Schulung und Entwicklung**: Mitarbeitende sollten kontinuierlich geschult und weiterentwickelt werden, um innovative Ideen und Lösungsansätze einzubringen.
+
+6. **Fehlerkultur**: Fehler sollten als Lernmöglichkeiten betrachtet werden, um daraus zu lernen und Prozesse zu verbessern.
+
+Der KVP findet in einer Vielzahl von Branchen Anwendung. Unternehmen implementieren KVP in ihren Produktionsabläufen, der Qualitätskontrolle, der Lieferkette, dem Kundenservice und anderen Geschäftsbereichen. Die kontinuierliche Überwachung und Anpassung von Prozessen führen zu gesteigerter Effizienz, geringeren Kosten, höherer Produktqualität und letztlich zu zufriedeneren Kunden.
+
+Die Wurzeln des KVP können auf mehrere historische Entwicklungen zurückgeführt werden. Der Ansatz selbst hat seine Wurzeln im japanischen Qualitätsmanagement und wurde stark von US-amerikanischen Pionieren wie [Walter Andrew Shewhart](https://de.wikipedia.org/wiki/Walter_A._Shewhart), [Walter Edwards Deming](https://de.wikipedia.org/wiki/William_Edwards_Deming) und [Joseph M. Juran](https://de.wikipedia.org/wiki/Joseph_M._Juran)^[Juran wurde auf Initiative von William Edwards Deming im Jahr 1953 nach Japan geholt, nachdem er in den Vereinigten Staaten ähnlich wie Deming nur wenig Anerkennung für seine Ideen zur Qualitätsentwicklung und -bedeutung fand. In Japan wirkte er vor allem als persönlicher Berater von Mr. Toyoda (siehe → Toyota), wodurch er eine Schlüsselrolle in der Entwicklung der japanischen Automobilindustrie einnahm.] beeinflusst.
+
++ **Frühe Einflüsse (1940er-1950er Jahre)**: Während der Nachkriegszeit wandten japanische Unternehmen, insbesondere Toyota, Methoden des Qualitätsmanagements an. Diese Philosophie legte den Grundstein für den KVP.
+
++ **Toyota-Produktionssystem (TPS)**: In den 1950er Jahren entwickelte der Ingenieur und Produktionsleiter [Taiichi Ohno](https://de.wikipedia.org/wiki/%C5%8Cno_Taiichi) das [Toyota-Produktions-System](https://de.wikipedia.org/wiki/Toyota-Produktionssystem), das auf kontinuierlicher Verbesserung und Verschwendungseinsparung beruht. Das TPS, das auch als Lean-Produktion bekannt ist, wurde zu einem bahnbrechenden Konzept für den KVP.
+
++ **Verbreitung und Weiterentwicklung (1960er-1980er Jahre)**: Der Erfolg des TPS und die Umsetzung von KVP-Prinzipien in japanischen Unternehmen führten zur weltweiten Verbreitung dieses Ansatzes. In den folgenden Jahrzehnten entwickelten sich verschiedene Methoden und Konzepte des KVP weiter.
+
+Der KVP umfasst eine Vielzahl von Methoden, die darauf abzielen, kontinuierliche Verbesserungen in allen Aspekten eines Unternehmens zu erzielen:
+
+1. **Deming-Zyklus** (PDCA-Zyklus, Plan-Do-Check-Act): Dies ist ein fundamentaler Bestandteil des KVP. Es beinhaltet die Schritte Planung, Durchführung/Umsetzung, Überprüfung und Anpassung, um kontinuierliche Verbesserungen zu erzielen.
+
+2. **Six Sigma**: Bei [Six Sigma](https://de.wikipedia.org/wiki/Six_Sigma) handelt es sich um eine Sammlung verschiedener Methoden. Alle diese Methoden zielen im Grundsatz auf die Reduzierung von Prozessabweichungen ab, um die Produktqualität zu steigern und die Kundenzufriedenheit zu verbessern.
+
+3. **Total Quality Management** (TQM): Beim [Total Quality Management](https://de.wikipedia.org/wiki/Total-Quality-Management) steht die ständige Verbesserung der Qualität und der Prozesse im Vordergrund, wobei alle Mitarbeiter in den Verbesserungsprozess eingebunden sind.
+
+4. **Lean-Prinzipien**: Basierend auf dem TPS von Toyota zielt Lean darauf ab, Verschwendung (*"Muda"*) zu reduzieren (siehe → [Kaizen](https://de.wikipedia.org/wiki/Kaizen)), effiziente Prozesse zu schaffen und eine schlanke Produktion zu erreichen.
+
+5. **Kaizen**: Diese japanische Philosophie betont kontinuierliche, schrittweise Verbesserungen durch Einbeziehung aller Mitarbeitenden und das Sammeln von Ideen aus der gesamten Organisation.
+
+Die hier genannten Methoden überschneiden sich teilweise und sind sich teilweise sehr ähnlich. Einige der wichtigen Methoden (Deming-Zyklus, 8D-Methode, Ishikawa-Diagramme, …) werden im Folgenden kurz vorgestellt.
+
+
+
+<!--
+**Weiterführende Links** (Wikipedia):
+
++ [Alt text](https://de.wikipedia.org/wiki/W%C3%B6hlerversuch)
+-->
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
++ @jakoby_qualitatsmanagement_2022: [Elementare QM-Methoden](https://rdcu.be/dIy3K)
+:::

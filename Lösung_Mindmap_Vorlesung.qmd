@@ -1,0 +1,67 @@
+---
+title: "MTB3 Entwicklung mechatronischer Systeme 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    email: christian.anders@hs-esslingen.de
+    affiliations: Hochschule Esslingen
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+---
+
+<!-- 
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+
+<!-- -------------------------------------------------------------------------
+
+                       1. Vorlesung Lösung Mindmap Vorlesung
+
+-------------------------------------------------------------------------- -->
+
+
+<!--
+::: {.callout-caution}
+*"Wenn Du gerade keinen positiven Beitrag leisten kannst, dann stehe den anderen wenigstens nicht im Weg herum."*
+:::
+-->
+
+
+::: {.callout-tip}
+## In der Vorlesung am 13.03.2024 im Team erarbeitete Mindmap zur Vorlesung
+
+```{mermaid}
+%%| label: fig-label-loesungmindmapvorlesung
+%%| fig-cap: "In der Vorlesung am 13.03.2024 im Team erarbeitete Mindmap zur Vorlesung."
+mindmap
+  root((Vorlesung))
+    Erwartungen
+      Nutzbar im Arbeitsleben
+      Erfahrungen im Arbeitsalltag
+    Erfolgreiche Produktentwicklung
+        Erfolgsfaktoren
+        Umgang mit Firmen
+        Wie dokumentiere ich richtig?
+    Kommunikation
+        Auf Augenhöhe
+        Gemeinsame Lösungen erarbeiten
+    Rollen und Sichten
+        z.B. Einkauf vs. Qualität
+    Persönlichkeitsentwicklung
+        Anforderungen an Projektleiter
+    Kreativitätstechniken
+    Optimierungspotenziale in der Produktentwicklung
+```
+
+Vielen Dank ans ganze Team für Ihre heutige aktive Mitarbeit! Wie werden am Ende des Semesters spiegeln, ob Ihre Erwartungen an die Vorlesung getroffen wurden!
+:::
+

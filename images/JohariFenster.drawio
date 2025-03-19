@@ -1,0 +1,34 @@
+<mxfile host="Electron" modified="2025-03-05T10:25:56.977Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.5.3 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="M8vpgGNCWTG7jvYoMF3v" version="24.5.3" type="device">
+  <diagram name="Seite-1" id="wbKzrDslZjSC3c9pPJzk">
+    <mxGraphModel dx="2074" dy="1244" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="jeDcAwQA-8IsZO7BGQtT-1" value="Offener Bereich" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=20;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="230" y="390" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="jeDcAwQA-8IsZO7BGQtT-2" value="Verborgener Bereich" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=20;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="230" y="570" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="jeDcAwQA-8IsZO7BGQtT-3" value="Blinde Flecken" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=20;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="410" y="390" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="jeDcAwQA-8IsZO7BGQtT-4" value="Unbekannte Zone" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=20;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="410" y="570" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="jeDcAwQA-8IsZO7BGQtT-5" value="Mir bekannt" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="230" y="350" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jeDcAwQA-8IsZO7BGQtT-6" value="Mir unbekannt" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="410" y="350" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jeDcAwQA-8IsZO7BGQtT-7" value="Anderen&lt;div&gt;&amp;nbsp;bekannt&lt;/div&gt;" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="104" y="390" width="110" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="jeDcAwQA-8IsZO7BGQtT-8" value="Anderen&lt;div&gt;&amp;nbsp;unbekannt&lt;/div&gt;" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="104" y="570" width="110" height="160" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

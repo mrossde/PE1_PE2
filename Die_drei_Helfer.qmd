@@ -1,0 +1,55 @@
+---
+title: "MTB3 Entwicklung mechatronischer Systeme 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    email: christian.anders@hs-esslingen.de
+    affiliations: Hochschule Esslingen
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Die drei Helfer
+
+-------------------------------------------------------------------------- -->
+
+### Die drei Helfer
+
+Die drei Helfer:
+
+- Hilflosigkeit
+
+- Verwirrung
+
+- Unwissenheit
+
+Für mich war es eine wertvolle Erkenntnis, dass es drei Helfer gibt, sowohl im Projektmanagement als auch allgemein, wenn es darum geht, Aufgaben zu lösen. 
+
+Das sind Unwissenheit, Verwirrung und Hilflosigkeit. Das Verrückte ist, dass uns als erstes einfällt: „Um Gottes Willen!“, „Nein!“, „Bloß nicht!“ Der Witz ist nur, dass diese drei Gefühle instinktiv vorhanden sind, und wir uns dagegen wehren. Wir laufen buchstäblich vor Unwissenheit, Verwirrung und Hilflosigkeit weg, anstatt die an die Hand zu nehmen. Was heißt denn Unwissenheit überhaupt? Das heißt, ich habe hier noch Lernpotential, da ist eine versteckte Resource. Wenn ich Unwissenheit anders sehe – die Psychologen nennen das „Reframing“ – kann ich damit besser umgehen. Häufig wird Unwissenheit als Makel empfunden, und nicht als versteckte Resource. Deshalb trauen sich Leute in Projekten nicht zu fragen. Dadurch entstehen unglaublich viele Missverständisse.
+
+Das erinnert mich an die Aussage von Professor Berry, dass jedes Projekt einen „Ignoramus“ haben sollte. Damit meinte er eine Person, die zwar intelligent ist, aber vom Fach nichts versteht. Denn der darf dumme Fragen stellen.
+
+Ja, das ist absolut so. Das sind ganz wertvolle Informationsquellen! Wenn Sie eine Frage haben, Fragen Sie! Gehen Sie davon aus, dass es mindestens eine Person im Raum gibt, die die Frage auch auf den Lippen hat, aber sich nicht traut zu fragen. Die ist glücklich, dass Sie sich getraut haben, zu fragen.
+
+> *„Wenn Sie eine Frage haben, Fragen Sie! Mindestens eine Person im Raum hat die selbe Frage und wird Ihnen danken!“*
+
+Das zweite ist die Verwirrung. Diese zeigt uns, dass Struktur fehlt. Es stellen sich die Fragen: Wo können wir strukturieren? Wer hilft uns beim Strukturieren? Das ist auch etwas, wovon wir davonlaufen. Es verführt, in unzulässiger Weise zu vereinfachen, um die Verwirrung loszuwerden. Dadurch entstehen Platitüden oder Populismus. Manche Menschen akzeptieren lieber ein blödsinnig vereinfachte Weltbild, als dass sie für sich zugeben, dass es manchmal eben kompliziert ist. Es gibt Dinge, die kann man nicht unbedingt verstehen, aber man kann lernen, damit umzugehen. Auch ein systemisches Prinzip: Mach Dir nie die Illusion, ein System zu verstehen, aber es gibt Methoden, ein System anzuregen, damit sich so die Wahrscheinlichkeit erhöht, dass es richtig reagiert. Also: Verwirrung ist auch ein großer Helfer, wenn wir sie zulassen und auch mal hinnehmen. Wir dürfen nicht der Illusion verfallen, dass wir alles zu 100% verstehen. Das trifft gerade auf das Zwischenmenschliche zu: Wir verstehen uns ja selber nicht, wie wollen wir denn dann unsere Beziehungen vollständig verstehen? Das kann ja nicht funktionieren.
+
+Der dritte Punkt ist Hilflosigkeit. Wir trauen uns einfach zu selten, andere um Hilfe zu bitten, also sich einfach zu öffnen. Je mehr wir auch in Führungspositionen kommen, desto mehr glauben wir, dass es unserem Status zuwider läuft, um Hilfe zu bitten. Aber das halte ich für totalen Blödsinn. Ich finde, dass auch diese Leute um Hilfe bitten können, solange sie den Prozess in der Hand haben und sie als Menschen in der Beziehung geschätzt und respektiert werden. Das tut deren Status keinen Abbruch, ganz im Gegenteil: Der Mitarbeiter sagt: „Hey, super! Ich kann dem Chef mal helfen!“, oder: „Ich weiß etwas, wo ich einen Wert in unsere Beziehung bringen kann.“

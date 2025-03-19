@@ -1,0 +1,85 @@
+---
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Übungsaufgabe zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Übungsaufgabe
+  - Betriebsfestigkeit
+  - Wöhlerkurve
+  - Lastkollektiv
+  - Lineare Schadensakkumulation
+  - Miner-Regel
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+---
+
+<!-- 
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Aufgabe: Betriebsfeste Auslegung eines Bauteils
+
+-------------------------------------------------------------------------- -->
+
+::: {.callout-note}
+## Betriebsfeste Auslegung eines Bauteils
+
+**Ausgangssituation**: Sie sind der für die betriebsfeste Auslegung von Bauteilen verantwortliche Entwickelnde in einem Unternehmen das Mountainbikes herstellt. 
+
+Für ein neues Modell eines Mountainbikes wird von Seiten der Unternehmensführung dringend Ihre Freigabe einer neuen Fahrradgabel gefordert. Das neue Mountainbike soll zeitnah in die Serienproduktion gehen um in der bevorstehenden Saison in großer Stückzahl verkauft werden zu können. Das Unternehmen ist auf einen Verkaufserfolg des neuen Mountainbikes dringend angewiesen um weiterhin wirtschaftlich erfolgreich am Markt bestehen zu können.
+
+Für das neue Mountainbike wurde von dem Team der Bauteilerprobung durch Auswertung von aus erfassten Kundendaten ermittelten Fahrprofilen das in @tbl-lastkollektiv dargestellte Lastkollektiv sowie durch Wöhlerversuche der in @fig-bauteilwoehlerlinie für den Bereich der Betriebsfestigkeit dargestellte relevante Teil der Bauteilwöhlerlinie ermittelt.
+
+| Spannungsamplitude [Mpa] | Anzahl Lastwechsel | 
+|-------------------------:|:-------------------|
+| 300                      | 10                 |
+| 200                      | 4000               |
+| 100                      | 500000             |
+
+: Lastkollektiv {#tbl-lastkollektiv .striped .hover .bordered tbl-colwidths="[50,50]"}
+
+![Bauteilwöhlerlinie der neu entwickelten Fahrradgabel](images/Aufgabe_Betriebsfestigkeit_Aufgabe.drawio.svg){width=80% #fig-bauteilwoehlerlinie}
+
+Sie sind von der Unternehmensführung zu der entscheidenden Besprechung eingeladen worden, an der die Serienproduktion des neuen Modells des Mountainbikes formal beschlossen werden soll. 
+
+**Frage**: Geben Sie die Serienproduktion der neuen Fahrradgabel für das neue Modell des Mountainbikes frei?
+
+- [ ] Ja
+- [ ] Nein
+:::

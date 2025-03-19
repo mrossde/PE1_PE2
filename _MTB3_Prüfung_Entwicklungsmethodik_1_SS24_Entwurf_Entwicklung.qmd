@@ -1,0 +1,368 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Prüfung MTB3 Entwicklungsmethodik 1 SS24
+
+-------------------------------------------------------------------------- -->
+
+<!--
+//-------------------------------------------------------------------------
+//
+//                     Entwurfs- und Entwicklungsphase
+//
+//-------------------------------------------------------------------------
+-->
+
+# Entwurfs- und Entwicklungsphase
+
+<!--
+::: {.callout-warning}
+## WARNING!
+**THIS PART OF THE DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+## Aufgabe *"Peter F. Drucker"*
+Eine durch ein Zitat von Peter F. Drucker bekannten Grundregeln bei der Produktentwicklung lautet: 
+
+*"If you can't measure it, you can't _____________________________________ it!"*
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+*"optimize"* oder, ebenfalls richtig *"manage"*
+:::
+
+<!--
+## Aufgabe *"Produkteigenschaften"*
+Welche zwei Faktoren bestimmen maßgeblich die Eigenschaften von physischen Produkten:
+ 
+1. *_____________________________________*
+2. *_____________________________________*
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+1.) Die verwendeten **Werkstoffe** 2.) Die bei der Produktion verwendeten **Produktionsprozesse**
+:::
+-->
+
+## Aufgabe "Innovationen bei Produkten"
+Wirklich neuartige Produkte oder Produkte mit neuartigen Eigenschaften basieren (fast) immer auf Innovationen in den zwei Bereichen:
+
+1. *_____________________________________*
+2. *_____________________________________*
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+1.) Produktionstechnik 2.) Werkstofftechnik
+:::
+
+## Aufgabe "3D-Scanner"
+Was unterscheidet Lasertriangulation von Streifenlichtprojektion? (1 Antwort ist richtig)
+
+- [ ] Lasertriangulation und Streifenlichtprojektion sind synonyme Begriffe für dasselbe Verfahren.
+- [ ] Bei der Lasertriangulation wird ein Laserstrahl auf die Oberfläche eines Objekts gerichtet und die Position des reflektierten Strahls gemessen.
+- [ ] Bei der Lasertriangulation werden Muster aus Laserstrahlen auf die Oberfläche projiziert, während bei der Streifenlichtprojektion ein einzelner Laserstrahl verwendet wird.
+- [ ] Bei der Lasertriangulation wird die Zeit gemessen wird, die das Licht benötigt, um vom Objekt zurückzuprallen.
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [x] Bei der Lasertriangulation wird ein Laserstrahl auf die Oberfläche eines Objekts gerichtet und die Position des reflektierten Strahls gemessen.
+:::
+<!--
+
+- [x] Bei der Streifenlichtprojektion werden Streifenmuster auf die Oberfläche eines Objekts projiziert und die Verformung dieser Muster wird analysiert.
+-->
+
+## Aufgabe "Genauigkeit von 3D-Scannern"
+Welche Aussage beschreibt am besten die Genauigkeit der verschiedenen Verfahren zum Scannen von Objekten? (1 Antwort ist richtig)
+
+- [ ] Die Genauigkeit hängt ausschließlich von der Auflösung der verwendeten Kameras ab.
+- [ ] Die Genauigkeit hängt hauptsächlich von der Farbtiefe der aufgenommenen Bilder ab.
+- [ ] Alle Verfahren bieten dieselbe Genauigkeit unabhängig von den verwendeten Techniken.
+- [ ] Die Genauigkeit ist ausschließlich von der Größe des gescannten Objekts abhängig.
+- [ ] Die Genauigkeit variiert je nach dem verwendeten Verfahren. 
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [x] Die Genauigkeit von 3D-Scannern variiert je nach dem verwendeten Verfahren. 
+:::
+
+<!--
+
+::Genauigkeit von 3D-Scannern::
+Welche Genauigkeit kann mit welchem Verfahren zum Scannen von Objekten erreicht werden?
+{
+  =Computertomographie -> 0.001mm
+  =Lasertriangulation -> 0.01mm
+  =Streifenlichtscanner -> 0.01mm
+  =Photogrammetrie -> 0.1mm
+}
+
+
+::Lichtquelle bei 3D-Scannern::Welche physikalischen Eigenschaften machen Licht für die Verwendung in 3D-Scannern besonders geeignet?
+{
+    ~%100%Die Wellenlänge des Lichts beeinflusst die Präzision und Detailgenauigkeit des Scans.
+    ~%-33.333%Die Farbe des Lichts hat keinen Einfluss auf die Qualität des 3D-Scans.
+    ~%-33.333%Die Intensität des Lichts ist entscheidend für die Geschwindigkeit des Scanvorgangs.
+	~%-33.333%Die Polarisation des Lichts beeinträchtigt die Auflösung des 3D-Scanners.
+}
+
+
+::Time-of-Flight vs. Lasertriangulation::
+Welche der folgenden Aussagen beschreibt die Vor- und Nachteile des Time-of-Flight-Verfahrens im Vergleich zur Lasertriangulation am besten?
+{
+    ~%50%Das Time-of-Flight-Verfahren ermöglicht eine schnellere Datenerfassung und ist weniger empfindlich gegenüber Umgebungslicht.
+	~%50%Die Lasertriangulation ermöglicht eine höhere Genauigkeit und Auflösung, ist aber anfälliger für Reflexionen.
+	~%-33.333%Die Lasertriangulation ermöglicht das Scannen größerer Objekte als dies mit dem Time-of-Flight-Verfahren möglich ist.
+    ~%-33.333%Das Time-of-Flight-Verfahren ermöglicht eine höhere Genauigkeit und Auflösung als die Lasertriangulation.
+	~%-33.333%Die Lasertriangulation ist schneller und weniger anfällig für Störungen durch andere Lichtquellen als das Time-of-Flight-Verfahren.    
+}
+-->
+
+## Aufgabe "Abschätzung ToF Datenpunkte/Sekunde"
+Ein von einem ToF-Scanner zu scannendes Objekt sei maximal 1 Meter von dem Scanner entfernt. Wie viele Datenpunkte pro Sekunde könnte ein ToF-Scanner in diesem Fall theoretisch erfassen? (1 Antwort ist richtig)
+
+- [ ] >100 Millionen Datenpunkte/Sekunde
+- [ ] ~1 Million Datenpunkte/Sekunde
+- [ ] <100 Tausend Datenpunkte/Sekunde
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [x] >100 Millionen Datenpunkte/Sekunde
+
+Zur Abschätzung: Lichtgeschwindigkeit ~299.000.000 Meter/Sekunde → Wegstrecke ToF 2 x 1 Meter (Hin- und Rückweg) → Laufzeit $6.69 \cdot 10^{-9}$ Sekunden → ~150 Millionen Datenpunkte/Sekunde!
+:::
+
+
+## Aufgabe "Simulation"
+Welche der folgenden Aussagen ist richtig? 
+
+- **1.)** *"Der Aufwand für eine Simulation ist immer deutlich geringer als der Aufwand für einen Versuch mit einem Hardware-Prototyp."*
+- **2.)** *"Der Aufwand für eine Simulation ist immer deutlich höher als der Aufwand für einen Versuch mit einem Hardware-Prototyp."*
+- **3.)** *"Mit einer Simulation können oftmals Zusammenhänge erkannt werden die bei einem Versuch mit einem Hardware-Prototyp verborgen bleiben."*
+- **4.)** *"Der Aufwand für eine Simulation kann in frühere Phasen des PEP verschoben werden. Dies ermöglicht es, Fehler frühzeitiger zu erkennen."*
+- **5.)** *"Finite-Elemente-Simulationen sind extrem hoch entwickelte Werkzeuge und liefern immer Ergebnisse die mit der Realität überein stimmen."*
+- **6.)** *"Transiente FEM ist leistungsfähiger als stationäre FEM. Daher sollte grundsätzlich immer transiente FEM genutzt werden."*
+
+Antwort (1 Antwort ist richtig):
+
+- [ ] Nur 1 ist richtig.
+- [ ] Nur 3 und 4 sind richtig.
+- [ ] Nur 4 und 6 sind richtig.
+- [ ] Nur 5 und 6 sind richtig.
+- [ ] Nur 1, 3 und 4 sind richtig.
+- [ ] Nur 4, 5 und 6 sind richtig.
+- [ ] Alle sind richtig.
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [x] Nur 3 und 4 sind richtig.
+:::
+
+
+## Aufgabe "Arbeitsschritte bei der FEM"
+Welche vier Arbeitsschritte sind vom Menschen bei einer Finite-Elemente-Simulation abzuarbeiten?
+
+1. *_____________________________________*
+2. *_____________________________________*
+3. *_____________________________________*
+4. *_____________________________________*
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+1.) Modellierung → 2.) Festlegen der Materialeigenschaften → 3.) Festlegen der Randbedingungen → 4.) Analyse der Ergebnisse (siehe → Skript zur Vorlesung Abbildung 70 "Vorgehen bei der Finite-Elemente-Simulation").
+
+Anm.: Die Arbeitsschritte 2 und 3 können in der Reihenfolge auch vertauscht sein und zählen dann auch als richtig!
+:::
+
+
+## Aufgabe "Betriebsfestigkeit"
+Was beschreibt der Begriff Betriebsfestigkeit?  (1 Antwort ist richtig)
+
+- [ ] Die Fähigkeit eines Bauteils, den bei bestimmungsgemäßem Gebrauch im Betrieb auftretenden wiederholten Belastungen für eine zuvor festgelegte Zeit standzuhalten, ohne ein Ermüdungsversagen zu erleiden.
+- [ ] Die Fähigkeit eines Bauteils, den bei bestimmungsgemäßem Gebrauch im Betrieb auftretenden wiederholten Belastungen beliebig lange standzuhalten, ohne ein Ermüdungsversagen zu erleiden.
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [ ] Die Fähigkeit eines Bauteils, den bei bestimmungsgemäßem Gebrauch im Betrieb auftretenden wiederholten Belastungen für eine zuvor festgelegte Zeit standzuhalten, ohne ein Ermüdungsversagen zu erleiden.
+:::
+
+
+## Aufgabe "Wöhler-Kurven"
+Wöhler-Kurven werden in drei Bereiche aufgeteilt. Wie werden die drei Bereiche bezeichnet?
+
+1. *_____________________________________*
+2. *_____________________________________*
+3. *_____________________________________*
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+1.) Kurzzeitfestigkeit 2.) Zeit- oder Betriebsfestigkeit 3.) Dauer- oder Endfestigkeit (siehe @fig-woehlerlinie):
+
+![Wöhler-Kurve](images/Woehlerdiagramm.jpg){width=80% #fig-woehlerlinie}
+
+**Tipp:** Ab $10^6$ Lastwechseln gilt ein Werkstoff für die aus der Wöhler-Kurve ablesbare Spannungsamplitude als Dauer-/Endfest.
+:::
+
+
+## Aufgabe "Dauerfestigkeit"
+Ab wie vielen Lastwechseln ohne Ermüdungsversagen gilt ein Werkstoff für die aus der Wöhler-Kurve ablesbare Spannungsamplitude als dauerfest? (1 Antwort ist richtig)
+
+- [ ] $10^4$ Lastwechsel
+- [ ] $10^5$ Lastwechsel
+- [ ] $10^6$ Lastwechsel
+- [ ] $10^7$ Lastwechsel
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [x] $10^6$ Lastwechsel
+:::
+
+## Aufgabe "Lastkollektiv"
+Was beschreibt der Lastkollektiv?  (1 Antwort ist richtig)
+
+- [ ] Die maximale Anzahl von Lastwechseln, denen ein Bauteil während seines Betriebs ausgesetzt ist.
+- [ ] Die minimale, mittlere und maximale Last, der ein Bauteil während seines Betriebs ausgesetzt ist.
+- [ ] Die charakteristischen Belastungen, denen ein Bauteil während seines Betriebs ausgesetzt ist.
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [x] Die charakteristischen Belastungen, denen ein Bauteil während seines Betriebs ausgesetzt ist.
+:::
+
+## Aufgabe "Ermittlung Lastkollektiv"
+Wie kann das Lastkollektiv ermittelt werden?
+
+- **1.)** Messungen
+- **2.)** Simulationen
+- **3.)** Statistische Analysen
+
+Antwort (1 Antwort ist richtig):
+
+- [ ] Nur 1 ist richtig.
+- [ ] Nur 3 ist richtig.
+- [ ] Nur 2 und 3 sind richtig.
+- [ ] Alle sind richtig.
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [X] Alle sind richtig.
+:::
+
+
+## Aufgabe "Miner-Regel"
+Welche der folgenden Aussagen ist richtig? (1 Antwort ist richtig)
+
+- [ ] *"Die Miner-Regel ermöglicht eine genaue Vorhersage der Betriebsfestigkeit von Bauteilen."*
+- [ ] *"Die Miner-Regel gibt nur eine vereinfachte Näherung zur Abschätzung der Betriebsfestigkeit."*
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [x] *"Die Miner-Regel gibt nur eine vereinfachte Näherung zur Abschätzung der Betriebsfestigkeit."*
+:::
+
+
+## Aufgabe "Bauteilauslegung"
+Die Auslegung eines Bauteils auf eine definierte Lebensdauer erfolgt in vier Schritten. Welches sind diese vier Schritte?
+
+1. *_____________________________________*
+2. *_____________________________________*
+3. *_____________________________________*
+4. *_____________________________________*
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+1.) Feslegung der vorgesehenen Betriebsdauer → 2.) Definition oder Ermittlung der Lasten (→ Lastkollektiv) → 3.) Abschätzung der Belastbarkeit des Bauteils (Bauteil-Wöhlerlinie) → 4.) Berechnung der Lebensdauer des Bauteils (z.B. mittels Miner-Regel).
+:::
+
+## Aufgabe "Berechnung Gesamtschädigung"
+
+**ACHTUNG!** Diese Aufgabe wird mit **4 Punkten** gewichtet!
+
+**Fallbeispiel**: Für ein neu zu entwickelndes Bauteil (Lager einer Festplatte) wurde das in @tbl-lastkollektivpruefung dargestellte Lastkollektiv sowie durch Wöhlerversuche die in @fig-bauteilwoehlerkurvepruefung dargestellte Bauteilwöhlerkurve ermittelt.
+
+| Spannungsamplitude  | Anzahl Lastwechsel | 
+|--------------------:|:-------------------|
+| $\sigma_{a,1}$      | $50$               | 
+| $\sigma_{a,2}$      | $4000$             |
+| $\sigma_{a,3}$      | $5000$             |
+| $\sigma_{a,4}$      | $5 \cdot 10^6$     |
+
+: Lastkollektiv {#tbl-lastkollektivpruefung .striped .hover .bordered tbl-colwidths="[30,30]"}
+
+![Bauteilwöhlerkurve](images/Pruefung_Betriebsfestigkeit.drawio.svg){width=76% #fig-bauteilwoehlerkurvepruefung}
+
+**Aufgabe**: Berechnen Sie die nach der Miner-Regel über die gesamte Lebensdauer zu erwartende Gesamtschädigung des Bauteils.
+
+**Lösung**: $D=$ *_________________*
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+Miner-Regel (lineare Schadensakkumulation): 
+$$
+D=\sum_{i=1}^{a} {\frac {n_{i}}{N_{i}}}
+$$
+
+Berechnung der Gesamtschädigung nach der Miner-Regel für das Bauteil: 
+$$
+D={\frac {0,5 \cdot 10^2}{10^2}} + {\frac {0,4 \cdot 10^4}{10^4}} + {\frac {0,05 \cdot 10^5}{10^5}} + {\frac {5 \cdot 10^6}{\infty}} = 0,95
+$$
+:::
+
+## Aufgabe "Bruchtheorie"
+Welche der folgenden Aussagen ist richtig?  (1 Antwort ist richtig)
+
+- [ ] *"Die Ermüdung von Bauteilen ist stets von Aussen durch Rissbildung erkennbar."*
+- [ ] *"Die Ermüdung von Bauteilen kann durch zerstörungsfreie Prüfverfahren zuverlässig erkannt und bewertet werden."*
+- [ ] *"Risse sind ein Hinweis auf ein bevorstehendes Versagen von Bauteilen."*
+- [ ] *"Ohne das Vorhandensein von Kerben erleiden Bauteile keine Ermüdung."*
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [x] *"Risse sind ein Hinweis auf ein bevorstehendes Versagen von Bauteilen."*
+:::
+
+
+## Aufgabe "PPG"
+Was bedeutet die in der Produktentwicklung verwendete Abkürzung "PPG"? 
+
+Antwort: *_______________________________________________________________________*
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+*"Produktionsgerechte Produktgestaltung"* oder, ebenso richtig *"Design for Manufacturing"*
+:::
+
+## Aufgabe "Rule of 10"
+Welche der folgenden Aussagen ist richtig?  (1 Antwort ist richtig)
+
+- [ ] Die Kosten, um einen Fehler zu entdecken, steigen je Phase des PEP um den Faktor 10.
+- [ ] Die Kosten für jeden unentdeckten Fehler betragen am Ende des PEP den Faktor 10.
+- [ ] Die Kosten für jeden unentdeckten Fehler steigen je Phase des PEP um den Faktor 10.
+
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [x] Die Kosten für jeden unentdeckten Fehler steigen je Phase des PEP um den Faktor 10.
+
+![Rule of 10 ("Zehnerregel")](images/Zehnerregel.drawio.svg){width=76% #fig-zehnerregelpruefung}
+:::
+
+
+## Aufgabe "Produktkosten"
+Welche Phase der Produktentstehung und Produktion verursacht bei in Großserie produzierten Produkten i.d.R. die höchsten Produktkosten? (1 Antwort ist richtig)
+
+- [ ] Konstruktion
+- [ ] Fertigung
+- [ ] Montage
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [x] Montage (siehe Skript zur Vorlesung → Abbildung 90)
+:::

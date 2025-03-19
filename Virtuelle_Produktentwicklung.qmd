@@ -1,0 +1,51 @@
+---
+title: "MTB3 Entwicklung mechatronischer Systeme 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    email: christian.anders@hs-esslingen.de
+    affiliations: Hochschule Esslingen
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+---
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Virtuelle Produktentstehung
+
+-------------------------------------------------------------------------- -->
+
+## Virtuelle Produktentstehung
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Sharable Link (Springer Verlag)
+
+-------------------------------------------------------------------------- -->
+::: {.callout-tip}
+## Weiterführender Sharable-Link (Springer-Verlag)
+@bender_dubbel_2020-1: [Virtuelle Produktentstehung](https://rdcu.be/dH0Yu) 
+:::
+
+## Literaturempfehlung
+
+![@bender_dubbel_2020-1: [Taschenbuch für den Maschinenbau Band 2](https://link.springer.com/book/10.1007/978-3-662-59713-2)](images/Dubbel_GrundlagenMaschinenbau_Anwendungen.webp){width=40%}

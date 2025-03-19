@@ -1,0 +1,89 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+title: "DEB3 Produktentwicklung 1"
+resource-path: ["../images"]
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+keywords:
+  - Produktentwicklung
+  - Ideenfindung
+  - Konzeptentwicklung
+  - Labor
+  - Flyer
+  - Gantt-Diagramm
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!-- 
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       LABOR "FLYER" AUFGABE LASTENEHFT FLYER
+
+-------------------------------------------------------------------------- -->
+
+::: {.callout-note}
+## Entwicklungsmethodik Flyer (Dauer tbd. min)
+
+**a)** Wählen Sie die geeignete Entwicklungsmethodik für Ihr Entwicklungsprojekt "Flyer":
+
+ - [ ] Wasserfallmodell
+ - [ ] V-Modell
+ - [ ] Spiralmodell
+
+Vorgaben:
+
+- Halten Sie Ihre getroffene Entscheidung und die wichtigsten Argumente, die für Sie bei der Entscheidung ausschlaggebend waren, in Form einer Bewertungsmatrix schriftlich fest.
+
+
+<!--
+Leitfragen:
+
+- Ist die Spezifikation für Sie verständlich? 
+- Haben Sie ein klares Bild davon, welche Anforderungen der zu bauende Papierflieger zu erfüllen hat?
+- Haben Sie z.B. eine Vorstellung davon, wie groß der Papierflieger sein soll? 
+- Welche Ressourcen zum Bau des Papierfliegers verwendet werden sollen? 
+- Welche Abnahmekriterien erfüllt sein müssen um den Papierflieger als Erfolg zu werten?
+-->
+:::

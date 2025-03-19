@@ -1,0 +1,151 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+
+<!-- -------------------------------------------------------------------------
+
+                       BEWERTUNGSMATRIX
+
+-------------------------------------------------------------------------- -->
+
+### Bewertungsmatrix {#sec-bewertungsmatrix}
+
+::: {.callout-tip}
+## Definition: *"Bewertungsmatrix"*
+Eine Bewertungsmatrix (auch als Entscheidungsmatrix bezeichnet) ist ein strukturiertes Werkzeug, das verwendet wird, um verschiedene Lösungsoptionen oder Alternativen anhand vordefinierter Kriterien zu bewerten, zu vergleichen und zu priorisieren. Eine Bewertungsmatrix besteht typischerweise aus einem Raster oder einer Tabelle, in der die zu bewertenden Optionen entlang der Spalten aufgeführt sind und die Bewertungskriterien entlang der Zeilen angeordnet sind. 
+:::
+
+Eine Bewertungsmatrix ermöglicht es, die Vor- und Nachteile jeder Lösungsoption oder Alternative in Bezug auf die festgelegten Kriterien systematisch zu bewerten und zu quantifizieren. 
+
+Bewertungsmatrizen werden im Produktentstehungsprozess als leistungsfähiges Werkzeug zur Entscheidungsfindung eingesetzt, um bestmöglich objektive Entscheidungen zu treffen und komplexe Probleme unter Einbindung aller relevanten Fachexperten und eines breiten Spektrums als Lösungsoptionen oder Alternativen zu lösen. 
+
+<!--
+Das Arbeiten mit Bewertungsmatrizen entstammt dem Feld der [Entscheidungstheorie](https://de.wikipedia.org/wiki/Entscheidungstheorie) und ist eng verwandt mit der Arbeit mit [Nutzwertanalysen](https://de.wikipedia.org/wiki/Nutzwertanalyse).
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Beispiel Bewertungsmatrix
+
+-------------------------------------------------------------------------- -->
+
+#### Beispiel: Bewertungsmatrix für Leuchtmittel
+
+<!--
+``` r
+You: Kannst Du eine Bewertungsmatix erstellen bei der die drei Optionen Kerze, Glühbirne und LED im Hinblick auf Ihre Eignung zur Beleuchtung eines Zimmers bewertet werden? Bitte wähle mindestens fünf sinnvolle Bewertungskriterien aus und fälle eine Entscheidung, welche der drei Optionen die Beste ist.
+
+ChatGPT: Natürlich, hier ist eine Bewertungsmatrix zur Bewertung der Eignung von Kerze, Glühbirne und LED-Lampe zur Beleuchtung eines Zimmers. Ich wähle fünf sinnvolle Bewertungskriterien aus: Helligkeit, Energieeffizienz, Sicherheit, Umweltfreundlichkeit und Langlebigkeit.
+```
+-->
+
+| Kriterium         | Kerze          | Glühbirne      | LED-Lampe      |
+|-------------------|----------------|----------------|----------------|
+| Helligkeit        | Niedrig        | Mittel         | Hoch           |
+| Energieeffizienz  | Niedrig        | Mittel         | Hoch           |
+| Sicherheit        | Gering         | Mittel         | Hoch           |
+| Umweltfreundlichkeit | Gering       | Niedrig        | Hoch           |
+| Langlebigkeit     | Kurz           | Mittel         | Lang           |
+| **Bewertung:**    | **Ausreichend** | **Befriedigend** | **Sehr gut**  |
+
+: Bewertungsmatrix zur Bewertung der Eignung von Kerze, Glühbirne und LED-Lampe zur Beleuchtung eines Zimmers, erstellt von ChatGPT 3.5.  {#tbl-bmleuchtmittel .striped .hover .bordered tbl-colwidths="[40,20,20,20]"}
+
+
+Basierend auf den in @tbl-bmleuchtmittel aufgeführten Bewertungskriterien (linke Spalte) ist die LED-Lampe die beste der drei bewerteten Optionen Beleuchtung eines Zimmers. Sie bietet eine hohe Helligkeit, hohe Energieeffizienz, hohe Sicherheit, hohe Umweltfreundlichkeit und Langlebigkeit im Vergleich zu den zwei alternativen Optionen "Kerze" und "Glühbirne".
+
+Wäre das Kriterium "Sicherheit" ein Ausschlusskriterium für alle Lösungsoptionen, die keine hohe Sicherheit bieten, würden die Lösungsoptionen "Kerze" und "Glühbirne" unabhängig von den Eigenschaften, die sie bei den anderen Kriterien bieten, als Lösungsoptionen wegfallen.
+
+Bewertungsmatrizen werden häufig in der Produktentwicklung eingesetzt. Das Verwenden von Bewertungsmatrizen hilft dabei, objektive und fundierte Entscheidungen zu treffen, indem sie den Bewertungsprozess systematisch strukturiert. Grundlegenden Komponenten und Schritte, die in einer Bewertungsmatrix enthalten sein können:
+
+<!-- -------------------------------------------------------------------------
+
+                       Bewertungsmatrix in der Realität
+
+-------------------------------------------------------------------------- -->
+
+#### Leitfragen bei der Erstellung von Bewertungsmatrizen
+
+1. **Kriterien**: Die Kriterien sind die Merkmale oder Faktoren, nach denen die verschiedenen Optionen oder Alternativen bewertet werden sollen. Diese Kriterien sollten quantifizierbar und relevant für die Entscheidung sein.
+
+2. **Optionen/Alternativen**: Dies sind die verschiedenen Möglichkeiten oder Handlungsalternativen, die miteinander verglichen werden sollen. Es sollten zwei oder mehr Optionen sein. In der Praxis existiert in manchen Fällen nur eine Option, in Ausnahmefällen auch keine Option. Die 
+
+3. **Bewertungsskala**: Eine Skala oder Punktebewertung wird festgelegt, um die Bewertung für jedes Kriterium und jede Option auszudrücken. Die Skala kann numerisch sein, z.B., von 1 bis 5 oder von 1 bis 10, oder sie kann qualitative Beschreibungen wie "sehr schlecht", "schlecht", "neutral", "gut" und "sehr gut" verwenden. Eine quantitative Skala ist dabei einer qualitativen Skala stets vorzuziehen. 
+
+4. **Gewichtung der Kriterien (optional)**: In einigen Fällen kann es notwendig sein, die Kriterien zu gewichten, um bestimmten Kriterien mehr Bedeutung beizumessen als anderen. Dies ist besonders relevant, wenn einige Kriterien wichtiger sind als andere für die zu treffende Entscheidung. [Ausschlusskriterien](https://de.wikipedia.org/wiki/Ausschlusskriterium) (*"k.o.-Kriterien"*) können in Bewertungsmatrizen aufgenommen werden, müssen jedoch bei der Bewertung besonders berücksichtigt werden. 
+
+5. **Bewertung**: Die Bewertungsmatrix wird verwendet, um jede Option für jedes Kriterium zu bewerten. Dies erfolgt in der Regel durch die Zuweisung von Punkten oder Werten entsprechend der Skala.
+
+6. **Gesamtbewertung**: Die Gesamtbewertung für jede Option wird berechnet, indem die Einzelbewertungen für jedes Kriterium gewichtet (falls zutreffend) und addiert werden. Dies ergibt eine Gesamtbewertung für jede Option. 
+
+::: {.callout-warning}
+**Lösungsoptionen, die bereits eines der Ausschlusskriterien nicht erfüllen können, sind kein Lösungsoptionen!**
+:::
+
+7. **Entscheidung:** Auf Grundlage der Gesamtbewertungen können Entscheidungen getroffen werden. Die Option mit der höchsten Gesamtbewertung kann bevorzugt werden, oder es können weitere Analysen durchgeführt werden, um die endgültige Entscheidung zu treffen.
+
+::: {.callout-tip}
+## Tipp!
+Die Bewertungsmatrix ist ein überaus nützliches Instrument, um komplexe oder auch emotionale Entscheidungen zu unterstützen, indem sie den Entscheidungsprozess transparenter und objektiver macht. Die Arbeit mit Bewertungsmatrizen ermöglicht es, die Vor- und Nachteile verschiedener Optionen systematisch und bestmöglich objektiv zu bewerten und so im Idealfall bestmöglich rational zu entscheiden. Die Verwendung von Bewertungsmatrizen baut im Idealfall auch von sich selbst überzeugten erfahrenen Fachexperten einen Weg, ohne Gesichtsverlust andere Lösungsoptionen als die von ihnen Favorisierten mitzutragen. Durch die Verwendung von Bewertungsmatrizen wird zudem die Verantwortung für die Entscheidung auf eine Gruppe von Fachexperten verteilt, die eine gemeinsam erarbeitete **Entscheidungsempfehlung** aussprechen können.
+:::
+
+#### Risiken bei der Verwendung von Bewertungsmatrizen
+
+Bei der Verwendung von Bewertungsmatrizen in der Praxis können gleichwohl verschiedene Risiken und Herausforderungen auftreten. Es ist wichtig, sich dieser Risiken bewusst zu sein und geeignete Maßnahmen zu ergreifen, um die Genauigkeit und Nützlichkeit der Bewertungsmatrix sicherzustellen:
+
++ **Subjektivität**: Die Bewertungsmatrix basiert auf menschlichen Bewertungen und Meinungen. Dies kann zu subjektiven Einschätzungen führen, insbesondere wenn keine klaren Kriterien oder Bewertungsrichtlinien festgelegt werden. Einzelne Bewerter können ihre eigenen Vorurteile und Vorlieben einbringen.
+
++ **Fehlende Klarheit bei den Kriterien**: Wenn die Kriterien in der Bewertungsmatrix nicht klar definiert sind oder wenn sie mehrdeutig sind, kann dies zu Missverständnissen und inkonsistenten Bewertungen führen.
+
++ **Gewichtung**: Die Gewichtung der Kriterien kann schwierig sein und möglicherweise zu Verzerrungen führen, wenn einige Kriterien unbeabsichtigt über- oder unterbewertet werden.
+
++ **Unzureichende Daten**: Wenn die Daten zur Bewertung nicht ausreichend sind oder von schlechter Qualität sind, kann dies zu ungenauen Bewertungen führen.
+
++ **Auswahl der Optionen**: Die Auswahl der zu bewertenden Optionen oder Alternativen ist wichtig. Wenn wichtige Alternativen fehlen oder unwichtige Alternativen enthalten sind, kann dies die Qualität der Bewertung beeinträchtigen.
+
++ **Ungeeignete Skala**: Die gewählte Bewertungsskala kann Probleme verursachen, insbesondere wenn sie nicht angemessen die Unterschiede zwischen den Optionen widerspiegelt.
+
++ **Interaktionseffekte**: In komplexen Entscheidungssituationen können Wechselwirkungen zwischen verschiedenen Kriterien auftreten, die in der Bewertungsmatrix nicht berücksichtigt werden. Dies kann zu unerwarteten Ergebnissen führen.
+
++ **Fehlende Berücksichtigung von Unsicherheit**: Die Bewertungsmatrix berücksichtigt oft nicht die Unsicherheit in den Daten oder Annahmen, die in den Bewertungen verwendet werden. Dies kann dazu führen, dass Risiken und Unsicherheiten nicht angemessen berücksichtigt werden.
+
++ **Verwenden von Standardlösungen**: Manchmal neigen Unternehmen dazu, Bewertungsmatrizen einfach nach Standardverfahren zu erstellen, ohne die spezifischen Anforderungen des Problems angemessen zu berücksichtigen. Dies kann zu nicht optimalen Entscheidungen führen (*"Pseudo-Lösungen"*)
+
+
+#### Tipps zur Verwendung von Bewertungsmatrizen
+
+Um die Risiken bei der Verwendung von Bewertungsmatrizen zu minimieren, sollte der geneigte Leser:
+
++ Klare und objektive Kriterien festlegen!
+
++ Die Gewichtung der einzelnen Kriterien sorgfältig durchdenken! Ausschlusskriterien als solche kennzeichnen!
+
++ Die Qualität der zu den Lösungsoptionen oder Alternativen verfügbaren Daten sicherstellen!
+
++ Expertenmeinungen einholen und dokumentieren. Ggf. die Experten zum Erstellen der Bewertungsmatrix und das Durchführen der Bewertung hinzuziehen!
+
++ Die Bewertungsmatrix iterativ überprüfen und verbessern!
+
++ Unsicherheit und Wechselwirkungen zwischen Kriterien berücksichtigen.
+
++ Alternative Analysemethoden in Betracht ziehen, wenn die Situation komplex ist!
+
+Die bewusste Berücksichtigung dieser Faktoren trägt dazu bei, dass Bewertungsmatrizen ein effektives und von allen Mitwirkenden **akzeptiertes** Werkzeug zur Unterstützung von Entscheidungen bleiben.
+
+
+::: {.callout-caution}
+## Erfahrungen aus der Praxis
+Das Problem bei der Verwendung von Bewertungsmatrizen ist, das erfahrene Profis die Arbeit mit Bewertungsmatrizen hervorragend kennen und ggf. auf alle relevanten Schritte bei der Arbeit mit Bewertungsmatrizen Einfluss nehmen können um ein aus ihrer Sicht gewünschtes Ergebnis des Bewertungsprozesses zu erreichen.
+
+Praxiserfahrung: *„Hinmoderieren“* vermeiden, auf *„Orthogonalität der Kriterien“* achten, **alle wichtigen Mitwirkende und Betroffene von Anfang an fair einbinden**. 
+
+Die vielleicht wichtigste Stärke und größter Vorteil der Verwendung von Bewertungsmatrizen: **Die Entscheidung und der Weg dorthin wird transpartent und nachvollziebar, die Beiträge aller Mitwirkenden werden gehört,gewertschätzt, bei der Entscheidung berücksichtigt und dokumentiert.**
+
+Die Arbeit mit Bewertungsmatrizen ist nicht der *Stein der Weisen*, aber nach der bescheidenen Erfahrung des Erstellers dieses Skripts eines der in der Realität bestmöglichen Vorgehens zur Entscheidungsfindung.
+:::
+
+

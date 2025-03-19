@@ -1,0 +1,675 @@
+<!--
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Grundlagen der Umformtechnik
+  - Betriebsfestigkeit
+  - Lastkollektiv
+  - Wöhler-Versuch
+  - Wöhler-Kurve
+  - Kurzzeitfestigkeit
+  - Zeit- oder Betriebsfestigkeit
+  - Dauer- oder Endfestigkeit
+  - Bauteilauslegung
+  - Lineare Schadensakkumulation
+  - Minder-Regel
+  - Bruchtheorie nach Griffith
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 2
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+
+<!-- -------------------------------------------------------------------------
+
+                        BETRIEBSFESTIGKEIT
+                        In diesem Kapitel geht es um die Betriebsfestigkeit von Bauteilen. 
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Entwurfs- und Entwicklungsphase
+:::
+
+## Betriebsfestigkeit {#sec-betriebsfestigkeit}
+
+### Grundlagen der Umformtechnik
+
+Grundsätzlich unterscheidet man zwei Arten der Verformung:
+
++ reversible/elastische Verformung
+
++ irreversible/plastische Verformung.
+
+Das Spannungs-Dehnungs-Diagramm @fig-spannungsdehnungsdiagramm stellt das mechanische Verhalten eines Werkstoffs unter homogenen einachsigen Zugspannungen dar.
+
+![Spannungs-Dehnungs-Diagramm sowie Fließkurve aus dem Flachzugversuch (Quelle: @doege_handbuch_2016)](images/978-3-662-43891-6_2_Fig1_HTML.webp){width=80% #fig-spannungsdehnungsdiagramm}
+
+Das Spannungs-Dehnungs-Diagramm ist durch die folgenden charakteristischen Bereiche und Kennwerte gekennzeichnet:
+
++ Die [Hookesche Gerade](https://de.wikipedia.org/wiki/Hookesches_Gesetz) gibt den Spannungsbereich an, den ein Werkstoff ertragen kann, ohne sich plastisch zu verformen. In diesem Bereich erfolgt lediglich eine elastische Dehnung des Werkstoffs.
+
++ Das Ende der Hookeschen Geraden wird als [Streckgrenze](https://de.wikipedia.org/wiki/Streckgrenze) $R_e$ bezeichnet. Die meisten reinen Metalle z. B. Al, Cu weisen jedoch keine ausgeprägte Streckgrenze auf, so dass hier die 0,2 % plastische Dehngrenze $R_{p0,2}$ definiert wird (die elastische Dehnung $Δε^{el}$ ergibt sich hierbei aus der Gesamtdehnung bei $R_{p0,2}$ abzüglich 0,2 % plastischer Dehnung: $Δε^{el} = ε_{Rp0,2}$ − 0,2 %.).
+
++ Die Beanspruchung der Bauteile darf im Bereich der Elastizitätsrechnung die Streck-/Dehngrenze, um einen Sicherheitsfaktor reduziert, nicht überschreiten.
+
++ Bis zum Erreichen der Zugfestigkeit $R_m$ (Höchstwert der Prüfkraft), wird die Probe über die gesamte Länge ohne Einschnürung zusätzlich plastisch verformt. Dieser Bereich erstreckt sich bis zur Gleichmaßdehnung $ε_{gl}$. Danach beginnt die Probe, sich an einer Stelle einzuschnüren.
+
++ Die weitere plastische Dehnung bis zum Bruch vollzieht sich dann nur noch im Bereich der Einschnürstelle. Hier wird von der Bruchdehnung A gesprochen.
+
+
+Man kann verschiedene Arten der Festigkeit (Kennwerte unterschiedlicher Prüfverfahren) unterscheiden. Es wird unterschieden in:
+
+1. **Standfestigkeit (statisch)**:
+
++ 1.1. Es liegt eine rein statische Beanspruchung vor: Die **Standfestigkeit** eines Werkstoffs wird im **Zugversuch** ermittelt.
+
++ 1.2 Zeit- und temperaturabhängiges statisches Verformungsverhalten: Die **Zeitstandfestigkeit** eines Werkstoffs wird im **Zeitstandversuch** (Kriechkurve) ermittelt.
+
+2. **Schwingfestigkeit (dynamisch)**:
+
++ 2.1 [Dauerfestigkeit](https://de.wikipedia.org/wiki/Schwingfestigkeit#Dauerfestigkeit) eines Werkstoffs bei Anliegen einer sich zeitlich ändernden Beanspruchung: Die **Schwingfestigkeit** eines Werkstoffs wird im **Dauerschwingversuch** ermittelt.
+
+Bei dem Themenkomplex der Betriebsfestigkeit handelt es sich um eine detaillierte Betrachtung der Schwingfestigkeit von Werkstoffen und Bauteilen.
+
+<!--
+a.
+Zugversuch
+
+(F ≠ konst.; v = konst.)
+
+Die Probe wird mit konstanter Geschwindigkeit vBelastung bis zum Bruch gedehnt.
+
+Kennwerte zur Beschreibung der Festigkeit sind:
+
+Zugfestigkeit (Rm) und
+
+Dehn-/Streckgrenze (Rp0,2/Re).
+
+Dauerstandfestigkeit:
+Größte ruhende Nennspannung, die eine Probe „unendlich“ lange bei konstanter Last ohne Bruch ertragen kann.
+
+Zeitstandfestigkeit:
+Nennspannung, die nach Ablauf einer bestimmten Zeit den Bruch hervorruft.
+
+c.
+Dauerschwingversuch
+
+Die Prüfung erfolgt durch eine sich zeitlich ändernde/schwingende Beanspruchung bei:
+
+konstanter Spannungsamplitude oder
+
+zeitlich veränderlicher Belastung (Lastkollektive).
+-->
+
+<!--
+Zur Beurteilung der Dauerfestigkeit werden Wöhler-Kurven herangezogen. Es werden die drei in @fig-woehlerdreibereiche dargestellten Beanspruchungsbereiche unterschieden:
+
+![Beanspruchungsbereiche im Wöhler-Diagramm (Lastspielzahl N logarithmisch aufgetragen, Spannungsamplitude linear) (Quelle: @doege_handbuch_2016)](images/978-3-662-43891-6_2_Fig12_HTML.webp){width=64% #fig-woehlerdreibereiche}
+
++ Bereich a: Überbeanspruchung mit Schädigung des Werkstoffs,
+
++ Bereich b: Beanspruchung oberhalb der Dauerschwingfestigkeit ohne Werkstoffschädigung,
+
++ Bereich c: Beanspruchung unterhalb der Dauerschwingfestigkeit.
+
+-->
+
+<!--
+Wechsel-/Zeitfestigkeit: Spannung, bei der ein Werkstück nach einer großen Zahl von Be- und Entlastungen bricht.
+
++ Dauerfestigkeit
+Spannung, unterhalb der ein Werkstoff eine unendliche Zahl von Lastspielen aufnehmen kann, ohne zu brechen (bei Stahl wird bis 106 Lastspiele geprüft).
+
+Da eine ausreichend große Anzahl von Dauerschwingversuchen bei verschiedenen Spannungsamplituden und konstanter Mittelspannung bis zum Probenversagen durchgeführt werden muss, ist eine experimentelle Bestimmung der Schwingfestigkeit/Wöhlerkurve sehr aufwändig.
+
+Aus einfach zu ermittelnden Werkstoffkenngrößen lässt sich auf die Dauerfestigkeit schließen. Die Schwingfestigkeit eines Stahls kann dementsprechend aus seiner Zugfestigkeit und Brucheinschnürung abgeschätzt warden [Jus81].
+
+((2.20))
+Z :
+Brucheinschnürung
+
+R m :
+Zugfestigkeit [MPa]
+
+b :
+Lastspielexponent
+
+Mit b = 0,08 und Z = 0,6 ergibt sich näherungsweise für die Dauerfestigkeit
+
+((2.21))
+Im Allgemeinen gilt:
+
+Bei gleicher Zugfestigkeit aber einer höheren Brucheinschnürung besitzt ein Werkstoff eine bessere Schwingfestigkeit.
+-->
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
++ @doege_handbuch_2016: [Grundlagen der Umformtechnik](https://rdcu.be/dJcdT)
+:::
+
+![Eisenbahnunfall von Eschede, 1998. Nach dem Unfall führte das mit der Katastrophenanalyse beauftragte [Fraunhofer-Institut für Betriebsfestigkeit und Systemzuverlässigkeit](https://www.lbf.fraunhofer.de/) (Darmstadt) einen Belastungstest durch, der die Verschleißzeit der Radsätze abschätzte. Wie sich später im Rahmen dieser Untersuchung herausstellte, wurde bei der statischen Berechnung der Radsätze nicht genügend auf dynamisch auftretende, wiederkehrende Kräfte geachtet, so dass die Räder und die maximal zulässige Abnutzung nicht mit ausreichendem Sicherheitsaufschlag dimensioniert waren. (Quelle: [Wikipedia](https://de.wikipedia.org/wiki/Eisenbahnunfall_von_Eschede))](images/enschede1998.png){width=80% #fig-enschede1998}
+
+
+::: {.callout-tip}
+## Definition: *"Betriebsfestigkeit"*
+Die [Betriebsfestigkeit](https://de.wikipedia.org/wiki/Schwingfestigkeit#Betriebsfestigkeit) eines Werkstoffs oder Produkts bezieht sich auf seine Fähigkeit, den wiederholten Belastungen im Betrieb standzuhalten, ohne ein Ermüdungsversagen zu erleiden. Sie hängt von verschiedenen Faktoren ab, wie dem verwendeten Werkstoff, der Bauteilgeometrie, der Oberflächenbeschaffenheit, der Betriebsumgebung und anderen Einflussgrößen. Die Betriebsfestigkeit wird oft als eine bestimmte Anzahl von Zyklen bis zum Bruch definiert, die das Bauteil bei einer bestimmten Belastung überleben sollte.
+:::
+
+Neben der [Betriebsfestigkeit](https://de.wikipedia.org/wiki/Schwingfestigkeit#Betriebsfestigkeit) stehen die Begriffe der [Dauerfestigkeit](https://de.wikipedia.org/wiki/Schwingfestigkeit#Dauerfestigkeit) oder dem synonym gebrauchten Begriff der Endfestigkeit. [Dauerfestigkeit](https://de.wikipedia.org/wiki/Schwingfestigkeit#Dauerfestigkeit) beschreibt die Fähigkeit, wiederholten (meist sehr kleinen) Belastungen **unendlich lange** standzuhalten (siehe → Wöhler-Kurve @fig-woehlerlinie). Manchen Werkstoffen (z.B. Stahl) wird Dauerfestigkeit zugestanden, anderen Werkstoffen (insbesondere das bei einer Vielzahl von Produkten eingesetzte Aluminium) gelten hingegen als **nicht dauerfest**.
+
+<!--
+::: {.callout-important}
+## Aluminium ist NICHT Dauerfest!
+Aluminium verfügt **NICHT** über die Eigenschaft der Dauerfestigkeit! 
+:::
+-->
+
+Die Begriff der Betriebsfestigkeit ist unmittelbar mit dem Begriff des Lastkollektivs und der Wöhler-Kurve verbunden. Lastkollektiv und Wöhler-Kurven spielen dabei die wesentliche Rolle bei der Bewertung der Lebensdauer von Bauteilen unter zyklischer Belastung.
+
+<!-- -------------------------------------------------------------------------
+
+                       LASTKOLLEKTIV
+
+-------------------------------------------------------------------------- -->
+
+#### Lastkollektiv {#sec-lastkollektiv}
+
+::: {.callout-tip}
+## Definition: *"Lastkollektiv"*
+Ein Lastkollektiv beschreibt die charakteristischen Belastungen denen ein Bauteil während seines Betriebs ausgesetzt ist. 
+:::
+
+
+![[Dale Creek Bridge](https://de.wikipedia.org/wiki/Dale_Creek_Crossing), Wyoming, 1885 (Quelle: [Smithonian American Art Musemum](https://americanart.si.edu/)). Bei jeder Überfahrt eines Zugs über die Brücke wirken mehrere Lastwechsel verschiedener Amplituden auf die die Brücke tragenden Stahlträger.](images/DaleCreekBridge1885.jpg){width=64% #fig-dalecreek}
+
+Das Lastkollektiv umfasst Informationen über die Belastungsamplitude, die Anzahl der Belastungszyklen, die Dauer der einzelnen Belastungsphasen und andere relevante Informationen. Das Lastkollektiv kann durch Messungen, Simulationen oder statistische Analysen ermittelt werden und dient als Grundlage für die Lebensdauerbewertung des Bauteils.
+
+::: {.callout-important}
+## Lastkollektiv ist wichtiger Bestandteil des Lastenhefts!
+Das Lastkollektiv ist entscheidend für die Auslegung aller Produkte, die zyklischen mechanischen Belastungen ausgesetzt sind. Die Auslegung des Produkts bestimmt wiederum in hohem Maße wichtige Eigenschaften des Produkts mit, z.B. die zu verwendenden Werkstoffe, das Gewicht des Produkts und letztlich die Produktkosten. Das Lastkollektiv ist daher eine überaus wichtiger Bestandteil des → Lastenhefts @sec-lastenheft.
+:::
+
+
+Die Wöhler-Kurve, auch bekannt als Ermüdungsfestigkeitskurve oder S-N-Kurve, stellt die Beziehung zwischen der Belastungsamplitude (S) und der Anzahl der Zyklen bis zum Bruch (N) dar. Sie wird durch eine große Zahl von Ermüdungsversuche ermittelt, bei denen Proben unter verschiedenen Belastungsamplituden bis zum Versagen getestet werden. Die Wöhler-Kurve zeigt, bei welcher Belastungsamplitude das Bauteil eine bestimmte Anzahl von Zyklen bis zum Bruch erreicht. 
+
+
+#### Wöhlerversuch {#sec-woehlerversuch}
+
+::: {.callout-tip}
+## Definition: *"Wöhlerversuch"*
+Der [Wöhlerversuch]((https://de.wikipedia.org/wiki/W%C3%B6hlerversuch)) bzw. Dauerschwingversuch ist ein Versuch zur Bestimmung der Schwingfestigkeit eines Werkstoffs oder eines Bauteils.
+:::
+
+Mit den Wöhlerversuchen wird die **Zeit- oder Betriebsfestigkeit** und die **Dauer- oder Endfestigkeit** von Werkstoffen oder Bauteilen ermittelt. Hierfür werden mehrere Versuchskörper zyklisch, meist unter einer sinusförmigen Beanspruchungs-Zeit-Funktion, belastet. Jeder Wöhlerversuch läuft, bis ein definiertes Versagen der Probe (Bruch, Anriss) eintritt oder eine festgelegte Anzahl Schwingungen (auch Grenzschwingspielzahl) überstanden wird. 
+
+Wöhlerversuche weisen eine sehr große Streuung auf (siehe → [Weibullverteilung](https://de.wikipedia.org/wiki/Weibull-Verteilung)). Diese Streuung kommt nur geringfügig aus Unzulänglichkeiten der Versuche, sondern aus in der Praxis stark streuenden Werkstoffeigenschaften der Bauteile.
+
+![Versuchsaufbau für Wöhlerversuche an Zugstäben (Quelle: [Adobe Stock](https://stock.adobe.com/)).](images/AdobeStock_171678254.jpeg){width=64% #fig-wöhlerversuch}
+
+<!-- -------------------------------------------------------------------------
+
+                       Wöhler-Kurve
+
+-------------------------------------------------------------------------- -->
+
+#### Wöhler-Kurve {#sec-woehlerkurve}
+
+![August Wöhler (* 22. Juni 1819 in Soltau; † 21. März 1914 in Hannover).](images/Augsut_Woehler.jpg){width=25% #fig-augustwoehler}
+
+Das Wöhlerdiagramm geht auf den deutschen Eisenbahningenieur [August Wöhler](https://de.wikipedia.org/wiki/August_W%C3%B6hler) zurück, der im 19. Jahrhundert aufgrund sich häufender Eisenbahnunfälle das Materialverhalten unter Dauerschwingbelastung untersuchte und dabei Pionierarbeit geleistet hat. Auslöser war der [Eisenbahnunfall von Timelkam](https://de.wikipedia.org/wiki/Eisenbahnunfall_von_Timelkam) zwischen Linz und Salzburg, verursacht durch den Bruch eines Radreifens.
+
+Wöhler führte umfangreiche Experimente durch, bei denen er Metallproben unterschiedlichen Belastungszyklen aussetzte und die Anzahl der Zyklen bis zum Bruch der Proben aufzeichnete.
+
+Basierend auf seinen Untersuchungen konnte Wöhler feststellen, dass die Lebensdauer von Materialien nicht nur von der maximalen Beanspruchung abhängt, sondern auch von der Schwankungsbreite der Belastung (→ Schwingungsamplitude) und anderen Faktoren wie der Oberflächenbeschaffenheit des Materials und der Temperatur. Die grafische Darstellung des Zusammenhangs von Spannungsamplitude und ertragbarer Anzahl der Schwingspiele wird als Wöhler-Kurve bezeichnet:
+
+::: {.callout-tip}
+## Definition: *"Wöhlerkurve"*
+Die [Wöhler-Kurve](https://de.wikipedia.org/wiki/W%C3%B6hlerversuch#W%C3%B6hlerkurve) ist eine grafische Darstellung, die den Zusammenhang zwischen der Spannungsamplitude und der Anzahl der Lastwechsel bis zum Bruch eines Werkstoffs oder Produkts beschreibt.
+:::
+
+Die Wöhler-Kurven repräsentieren die statistische Verteilung der Lebensdauer des Werkstoffs unter zyklischer Belastung. Sie geben an, wie viele Zyklen der Werkstoff bei einer bestimmten Belastung aushalten kann, bevor ein Ermüdungsversagen auftritt.
+
+Die Wöhler-Kurve dient dazu, die Lebensdauer eines Bauteils unter zyklischer Belastung abzuschätzen. Durch Vergleich des Lastkollektivs mit der Wöhler-Kurve kann die Beanspruchung des Bauteils bestimmt werden. Wenn die Beanspruchung des Bauteils innerhalb des zulässigen Bereichs liegt (unterhalb der Wöhler-Kurve), wird erwartet, dass das Bauteil eine ausreichende Lebensdauer hat. Wenn die Beanspruchung jedoch über der Wöhler-Kurve liegt, deutet dies auf eine potenzielle Ermüdungsproblematik hin und es müssen Maßnahmen ergriffen werden, um das Bauteil zu verstärken oder das Lastkollektiv anzupassen.
+
+
+Wöhler-Kurven werden zumeist als doppellogarithmische Diagramme dargestellt, in denen die Anzahl der Belastungszyklen bis zum Bruch auf der vertikalen Achse und die Beanspruchung (z. B. Spannung, Dehnung oder Last) auf der horizontalen Achse aufgetragen werden. Die Kurven repräsentieren die empirisch ermittelten Grenzwerte, unterhalb derer ein Werkstoff eine nahezu unbegrenzte Lebensdauer aufweist^[Bei kubisch raumzentrierten Werkstoffen wie z.B. Stahl geht die Wöhlerkurve mit abnehmender Spannungsamplitude häufig in eine horizontale Linie über, d. h., es existiert eine zuordenbare Dauerfestigkeit. Bei kubisch flächenzentrierten Metallen wie z.B. Aluminum fällt die Wöhlerkurve in der Regel kontinuierlich ab, sodass diesen Werkstoffe meist nur eine Zeitfestigkeit zugeordnet werden kann]. Über diesen Grenzwerten wird der Werkstoff jedoch versagen, selbst bei scheinbar niedrigen Belastungen.
+
+Unterschieden werden die Bereiche der **Kurzzeitfestigkeit**, der **Zeit-** oder auch **Betriebsfestigkeit**^[Die Begriffe *"Zeitfestigkeit"* und *"Betriebsfestigkeit"* werden als Synonyme verwendet.] und der **Dauer-** oder auch **Endfestigkeit**^[Die Begriffe *"Dauerfestigkeit"* und *"Endfestigkeit"* werden als Synonyme verwendet.]. 
+
+Der Bereich der Betriebsfestigkeit (engl. *"high cycle fatigue"*, HCF) ist der Bereich der Wöhler-Kurve, in dem die Wöhler-Kurve bei doppellogarithmischer Darstellung nahezu gerade verläuft (→ Wöhler-Linie). Dieser Bereich der Betriebsfestigkeit ist materialabhängig und liegt zumeist zwischen $10^{4}$ und $2 \cdot 10^{6}$ Schwingspielen.
+
+<!-- ABBILDUNG: Wöhler-Linie 
+![Wöhler-Linie. K ist der Bereich der Kurzzeitfestigkeit, Z ist der Bereich der Zeitfestigkeit, D ist der Bereich der Dauerfestigkeit.](images/Woehlerlinie.png){width=60% #fig-woehlerlinie}
+-->
+
+![Wöhler-Kurve](images/Woehlerdiagramm.jpg){width=80% #fig-woehlerlinie}
+
+<!-- Mit Quellenangabe:
+![Wöhlerlinie (Quelle: [EnArgus](https://www.enargus.de/pub/bscw.cgi/d14290-2/*/*/W%c3%b6hlerlinie?op=Wiki.getwiki&search=zugversuch&scope=all))](images/W%C3%B6hlerlinie-W%C3%B6hlerlinie.jpg){width=80% #fig-woehlerlinie}
+-->
+
+Wöhler-Kurven sind von großer Bedeutung bei der Konstruktion und dem Design von Bauteilen, die zyklischen Belastungen ausgesetzt sind, wie zum Beispiel in der Luftfahrt- und Automobilindustrie. Sie beschreiben die Beanspruchungsgrenzen von Werkstoffen und sind von hoher Bedeutung um sicherzustellen, dass die Konstruktionen eine ausreichende Lebensdauer haben, um Ermüdungsversagen auszuschließen. 
+
+Durch die Anwendung von Wöhler-Kurven im Produktentstehungsprozess bei der Auslegung der Bauteile kann deren optimale Dimensionierung erreicht werden, um ein Ermüdungsversagen während des Betriebs auszuschließen und eine zuverlässige Lebensdauer des Produkts zu gewährleisten^[Randbedingung hierfür ist der bestimmungsgemäße Gebrauch des jeweiligen Produkts, z.B. kein Überladen der heimischen Waschmaschine oder überwiegendes Fahren auf unbefestigten Straßen mit dem für asphaltierte Straßen ausgelegten PKW.].
+
+::: {.callout-tip}
+## Definition: *"Bestimmungsgemäßer Gebrauch"*
+Bestimmungsgemäßer Gebrauch ist die Verwendung eines Produktes entsprechend seiner vorgesehenen Funktion und gemäß den Anweisungen des Herstellers, einschließlich der Einhaltung aller relevanten Sicherheits- und Betriebsanweisungen.
+:::
+
+![Smartphone-Klapptest. Simuliert werden 30000 Faltvorgänge mittels Industrieroboter (Quelle: [Stiftung Warentest](https://www.test.de/)).](images/5901048_smartphones-klapptest-t2208.jpg){width=64% #fig-klapptest}
+
+
+### Bauteilauslegung
+
+Die Auslegung eines Bauteils auf eine definierte Lebensdauer erfolgt dabei in vier Schritten:
+
+1. **Festlegung der Betriebsdauer** inkl. der geforderten Ausfallwahrscheinlichkeiten.
+2. **Definition oder Ermittlung der Lasten**, die über die Lebensdauer auf das Bauteil wirken.
+
+::: {.callout-tip}
+## Ermittlung der Lasten mittels Finite-Elemente-Simulation nutzen!
+Mittels Finite-Elemente-Simulation kann die Schwingungsamplitude ortsaufgelöst ermittelt werden. Dies ermöglicht eine hochdetaillierte Bauteilauslegung auch für Bauteile, die zyklischen Belastungen ausgesetzt sind!
+:::
+
+3. **Abschätzung der Belastbarkeit des Bauteils** (Bauteil-Wöhlerlinie).
+4. **Berechnung der Lebensdauer des Bauteils** ([Schadensakkumulation](https://de.wikipedia.org/wiki/Lineare_Schadensakkumulation) nach der Miner-Regel).
+
+<!--
+#### Festlegung der Betriebsdauer
+
+Eine Auslegung auf eine definierte Ausfallwahrscheinlichkeit von z.B. 10 % und auf eine festgelegte Betriebsdauer von z.B. 20 Jahre führt zwangsläufig dazu, dass noch 90 % der Bauteile intakt sind. Diese Bauteile haben eine Restlebensdauer. Für die Gesamtheit der Bauteile kann dann für eine höhere Betriebsdauer die Ausfallwahrscheinlichkeit berechnet werden. Mit zunehmender Betriebsdauer steigt dabei die Ausfallwahrscheinlichkeit. In der Betriebsfestigkeit wird die Ausfallwahrscheinlichkeit über die logarithmische Normalverteilung beschrieben. Erfahrungswerte für die Streuungen finden sich z.B. in @haibach_betriebsfestigkeit_2006
+
+
+#### Ermittlung der Lasten
+
+Sind die Betriebslasten kleiner als in der Auslegung angenommen, wird am Ende der Betriebsdauer die Ausfallwahrscheinlichkeit deutlich geringer sein, als angenommen. In diesem Fall kann von einer „echten“ Restlebensdauer gesprochen werden.
+
+Bei der Annahme von Lasten handelt es sich um den in der Praxis zumeist mit Abstand unsichersten Einflussfaktor bei der Auslegung von Bauteilen. Die Annahmen zu den Lasten können um Faktoren streuen. 
+
+Für eine Restlebensdauerberechnung ist es deshalb essentiell die genauen, während der Lebensdauer aufgetretenen Lasten zu kennen. Sind diese aus z.B. Messungen bekannt, kann daraus ein Amplitudenkollektiv mittels Rainflow-Zählung abgeleitet werden.
+
+Schwingbrüche resultieren aus Spannungsamplituden. Deshalb sind für den schwingbruchkritischen Bereich die lokal auftretenden Spannungen zu ermitteln (über Messungen oder Rechnungen) und mittels Rainflow-Zählung in ein Spannungs-Amplitudenkollektiv umzurechnen. Siehe folgende Abbildung:
+
+![Rainflow-Zählung](images/Rainflow-Zaehlung_zum_Lastkollektiv.png)
+
+
+#### Abschätzung der Belastbarkeit des Bauteils (Bauteil-Wöhlerlinie)
+
+Die Belastbarkeit des Bauteils wir durch die Bauteil-Wöhlerlinie beschrieben. Unter der Wöhlerlinie wird hierbei die lokale Werkstofffestigkeit verstanden. Lokal bedeutet dabei, dass die Wöhlerlinie neben dem Werkstoff wesentlich von der Geometrie, der Oberflächenbeschaffenheit, dem Fertigungsverfahren und den Umgebungsbedingungen abhängt, weshalb von einer Bauteilwöhlerlinie gesprochen wird. Diese kann entweder experimentell am realen Bauteil ermittelt, oder rechnerisch abgeschätzt werden.
+
+Für das vorliegende Beispiel wird die Bauteilwöhlerlinie rechnerisch abgeschätzt. Wichtig ist dabei, dass hier Abnahmen der Festigkeit durch z.B. Korrosion nicht berücksichtigt werden können. Ist dies relevant, muss ein experimenteller Nachweis erfolgen.
+
+Bei einem rechnerischen Nachweis sollte auf eine Richtlinie oder Norm zurückgegriffen werden. Dies können z.B. die FKM-Richtlinie* sein. Da diese relativ komplex sind, wird eine Alternative vorgestellt.
+
+Im Buch Leitfaden für eine Betriebsfestigkeitsrechnung: Empfehlungen zu Lebensdauerabschätzung von Maschinenbauteilen*
+wird ein Vorgehen für die rechnerische Abschätzung der Bauteilwöhlerlinie beschrieben, das in seinem Ablauf einem Kochrezept ähnelt. 
+Nach diesem Vorgehen wird ausgehend von der Wöhlerlinie des Werkstoffes über mehrere Zwischenschritte die Bauteilwöhlerlinie berechnet. In diesen Zwischenschritten werden die Einflüsse
+der Geometrie (über den Spannungsgradienten und die Bauteilgröße),
+der Belastung (über die Belastungsart und Mittelspannung),
+der Oberfläche (über die Rauheit) und
+des Fertigungsverfahrens (über den Einfluss des Schmiedens)
+berücksichtigt. Als Ergebnis erhält man die Wöhlerlinie (Dauerfeste Amplitude, Knickpunktzyklenzahl und Neigung) für eine Ausfallwahrscheinlichkeit von 50 %. Vergleiche auch nachfolgende Abbildung.
+
+![Bauteil-Wöhlerlinie](images/Bauteil_Woehlerkurve_aus_Werkstoffdaten_berechnen.png)
+-->
+
+#### Berechnung der Lebensdauer des Bauteils
+
+Um die Lebensdauer von Bauteilen unter variablen Lasten abzuschätzen und entsprechende Konstruktionsentscheidungen zu treffen kann als einfache Näherung die Miner-Regel verwendet werden. 
+
+Die Miner-Regel besagt, dass die Lebensdauer eines Bauteils durch die Summe der Anteile, die jede Laststufe an der Ermüdungsbeanspruchung hat, bestimmt wird ("[linear Schadensakkumulation](https://de.wikipedia.org/wiki/Lineare_Schadensakkumulation)"). Überschreitet die Gesamtschädigung $D$ den Wert 1, so ist mit einem Bruch bzw. Anriss im Bauteil unter dem betrachteten Lastkollektiv zu rechnen.
+
+::: {.callout-tip}
+## Miner-Regel
+Die Miner-Regel ist nur eine vereinfachte Näherung zur Abschätzung der Betriebsfestigkeit von Bauteilen und kann die tatsächliche Lebensdauer nicht exakt vorhersagen. Sie stellt jedoch eine in der Praxis hinreichend gute Näherung dar und wird daher häufig verwendet.
+:::
+
+Zur Berechnung der Gesamtschädigung $D$ wird das Lastkollektiv in $a$ Rechteckkollektive mit konstanter Amplitude $S_{a}$ und einer Teilschwingspielzahl $n_{i}$ unterteilt. Bei der linearen Schadensakkumulation wird für jedes Teilkollektiv eine Teilschädigung berechnet. Hierzu wird die Teilschwingspielzahl durch die maximal ertragbare Schwingspielzahl $N_{i}$ bei $S_{a}$ einer Wöhlerlinie geteilt. Die Teilschädigungen aller Teilkollektive werden aufsummiert und ergeben die Gesamtschädigung $D$ des Bauteils:
+
+$$
+D=\sum_{i=1}^{a} {\frac {n_{i}}{N_{i}}}
+$$
+
+
+In die Betrachtung der Betriebsfestigkeit fließen in der Praxis noch eine Vielzahl weiterer Faktoren mit ein (siehe → Materialermüdung @sec-materialermuedung).
+
+::: {.callout-important}
+## Versagen eines Produkts nach Erreichen des Lastkollektivs ist zulässig!
+Ein betriebsfest ausgelegtes Produkt ist immer nur auf ein zuvor definiertes Lastkollektiv ausgelegt und **darf nach dem Überschreiten der im Lastkollektiv beschriebenen Belastung versagen**. Das Versagen des Produkts nach dem Erreichen des Lastkollektivs ist eine mit der Definition des Lastkollektivs im Lastenheft festgelegte Produkteingenschaft.
+:::
+
+::: {.callout-important}
+## Entwicklungsziel: Versagen durch Verformung!
+Sicherheitsrelevante Bauteil sind so auszulegen, dass ein Versagen durch (langsame) Verformung und nicht durch (spontanen) Bruch erfolgt, um eine verbleibende Restsicherheit im Versagensfall zu gewährleisten und ein Risiko schwerer Unfälle zu verringern!
+:::
+
+<!--
+Bauteile, die nicht dauerfest, sondern betriebsfest sind, benötigen weniger Material und haben daher eine geringere Masse. Ein leichteres Fahrzeug hat beispielsweise einen geringeren Treibstoffverbrauch, eine leichtere Struktur erlaubt eine höhere Nutzlast. Gelegentlich dient die betriebsfeste Auslegung auch der Erfüllung der Funktion: Dauerfeste Flugzeuge würden nicht fliegen können, weil sie zu schwer wären.
+-->
+
+
+<!--
+Über den Vergleich der Lasten (Lastkollektiv) und der Belastbarkeiten (Bauteil-Wöhlerlinie) kann die Lebensdauer des Bauteils berechnet werden. Dazu wird für jedes Niveau der Spannungsamplituden die Anzahl der auftretenden Schwingspiele ni aus dem Lastkollektiv bestimmt und die Anzahl der ertragbaren Schwingspiele Ni aus der Bauteilwöhlerlinie berechnet. Der Quotient aus auftretender zu ertragbarer Schwingspielzahl ist die Teil-Schädigung ($di = ni/Ni) für eine Spannungsamplitude. Es wird dabei die Annahme getroffen, dass Spannungsamplituden unterhalb der Dauerfestigkeit zu keiner Schädigung des Bauteils führen. Die Summe aller Teilschädigungen ergibt die Schadenssumme des Amplitudenkollektives DKoll . Erreicht die Schadenssumme einen Grenzwert, z.B. DGrenz = 1, ist das Lebensdauerende erreicht. Ist die Schadenssumme des Amplitudenkollektives DKoll < 1 bedeutet dies, dass das Kollektiv i-mal wiederholt werden kann, bis die Schadenssumme Dgrenz erreicht wird (Dgrenz = 1 = i * DKoll).
+
+Dabei ist zu beachten, dass nur ganzzahlige Wiederholungen i des Kollektives erlaubt sind, bis die Grenzschadenssumme erreicht ist. Die nachstehende Abbildung zeigt das Vorgehen.
+
+![Schadensakkumulation nach der Miner-Regel](images/Lineare_Schadensakkumulation_Miner_Regel.png){width=100% #fig-minerregel}
+-->
+
+### Bruchtheorie {#sec-bruchtheorie}
+
+![[Alan Arnold Griffith](https://de.wikipedia.org/wiki/Alan_Arnold_Griffith) (* 13. Juni 1893 in London; † 13. Oktober 1963) (Quelle: [National Portrait Gallery, London](https://www.npg.org.uk/collections/search/portrait/mw188958/Alan-Arnold-Griffith))](images/Alan-Arnold-Griffith.png){width=25% #fig-aagriffith}
+
+
+Die Bruchmechanik-Theorie von [Alan Arnold Griffith](https://de.wikipedia.org/wiki/Alan_Arnold_Griffith) (* 13. Juni 1893 in London; † 13. Oktober 1963) ist ein grundlegendes Konzept in der Werkstoffwissenschaft und Ingenieurwissenschaften, das sich mit dem Verhalten von Materialien unter Rissbildung und -ausbreitung befasst. Griffith gilt als Begründer der Bruchtheorie. Griffith entwickelte diese Theorie in den 1920er Jahren, und sie bildet bis heute die Grundlage für das Verständnis von Rissausbreitung in Materialien, insbesondere in spröden Werkstoffen wie Glas, Keramik und Metallen bei niedrigen Temperaturen.
+
+Die wichtigsten Erkenntnisse der Bruchtheorie von Griffith sind:
+
+1. **Rissinitiierung und Rissausbreitung**: Griffith zeigte, dass Rissinitiierung und Rissausbreitung in Materialien aufgrund von Spannungskonzentrationen auftreten, die an **Defekten wie Einschlüssen oder Kerben** auftreten. Die Spannungskonzentrationen führen zu lokalen Spannungsspitzen, die ausreichend hoch sind, um das Material an dieser Stelle zu überwinden und einen Riss zu initiieren.
+
+::: {.callout-tip}
+## Mechanische und metallurgische Kerben vermeiden!
++ Mechanische Kerbe: Deswegen keine Ecken, sondern stets Radien bei Bauteilen verwenden! Aber auch Schäden an den Oberflächen (z.B. Kratzer) können Ausgangspunkte für Rissbildung sein (siehe → @fig-woehlerdiagrammenormiert).
++ Metallurgische Kerbe: Verunreinigungen im Gefüge können Ausgangspunkt für Rissbildung sein. Metallurgische Kerben können aber durch die Effekte der verschiedenen Fertigungsverfahren entstehen, z.B. beim Schweißen.
+:::
+
+![Normierte Wöhlerdiagramme (Quelle: @schlottmann_auslegung_2016)](images/33630_3_De_3_Fig45_HTML.webp){width=64% #fig-woehlerdiagrammenormiert}
+
+2. **Spannungsintensitätsfaktor**: Griffith führte den Begriff des Spannungsintensitätsfaktors (auch K-Faktor genannt) ein. Dieser Faktor beschreibt die Intensität der Spannungsspitzen an der Rissfront und ist ein Maß für die Wahrscheinlichkeit der Rissausbreitung. Ein hoher Spannungsintensitätsfaktor führt zu einer schnelleren Rissausbreitung.
+
+3. **Energieansatz**: Ein wichtiger Aspekt der Griffith-Theorie ist der Energieansatz. Griffith argumentierte, dass die Rissausbreitung durch die Freisetzung von elastischer Energie an der Rissfront angetrieben wird. Diese gespeicherte elastische Energie wird als Rissenergie bezeichnet und steht in Beziehung zur Rissausbreitungsgeschwindigkeit.
+
+4. **Kritische Risslänge**: Griffith stellte fest, dass es eine kritische Risslänge gibt, bei der die freigesetzte Rissenergie ausreicht, um die notwendige Energie zur Schaffung neuer Rissflächen zu liefern. Wenn der Riss kleiner als diese kritische Länge ist, wird er nicht weiter ausbrechen. Dies legt die Grundlage für die Rissstabilität und das Verhalten von Rissen in spröden Materialien fest.
+
+Die Erkenntnisse aus der Griffith-Theorie haben weitreichende Anwendungen in der Werkstoffwissenschaft und Ingenieurwissenschaft, insbesondere in Bezug auf das Design von Bauteilen, die Lebensdauerbewertung von Materialien und die Vorhersage von Rissausbreitung in verschiedenen Umgebungen.
+
+Griffiths Bruchmechanik-Theorie war ein bahnbrechender Beitrag zur Materialwissenschaft und hat die Grundlage für die moderne Rissmechanik gelegt, die in zahlreichen technischen Anwendungen Anwendung findet.
+
+![[REM](https://de.wikipedia.org/wiki/Rasterelektronenmikroskop)-Aufnahme des Bruchbilds bei einem [Verformungsbruch](https://de.wikipedia.org/wiki/Verformungsbruch).](images/Bruchbild.jpg){width=40% #fig-bruchbildrem}
+
+![Bruchbild bei einem Ermüdungsbruch (Quelle: [IWT AG](https://iwt-ag.de/)).](images/Gewaltbruch.jpg){width=64% #fig-bruchbildermuedungsbruch}
+
+Zur Erkennung von Rissen, die auf ein bevorstehendes Versagen von Bauteilen hinweisen, stehen verschiedene zerstörungsfreie Prüfverfahren zur Rissprüfung zur Verfügung (z.B. Rissprüfung mit Ultraschall). 
+
+::: {.callout-warning}
+## Aus dem Fehlen von Rissen kann NICHT auf das Fehlen von Vorschädigung geschlossen werden!
+Die zerstörungsfreien Prüfverfahren können lediglich das Vorhandensein von Rissen detektieren. Über die bereits vor dem Auftreten eines Risses erfolgte Vorschädigung des Bauteils können diese Verfahren keine Auskunft geben.
+:::
+
+![Riss in der Schweißnaht eines Bauteils, sichtbar gemacht mittels Magnetpulverprüfung (Quelle: [Adobe Stock](https://stock.adobe.com/)).](images/AdobeStock_493269423.jpeg){width=64% #fig-bruchschweissnahtmagnetpulver}
+
+
+**Weiterführende Links** (Wikipedia):
+
++ [Wöhlerversuch](https://de.wikipedia.org/wiki/W%C3%B6hlerversuch)
++ [Verformungsbruch](https://de.wikipedia.org/wiki/Verformungsbruch)
++ [Ermüdungsbruch](https://de.wikipedia.org/wiki/Schwingbruch)
++ [Schwingfestigkeit](https://de.wikipedia.org/wiki/Schwingfestigkeit)
++ [Lastkollektiv](https://de.wikipedia.org/wiki/Lastkollektiv)
++ [Lineare Schadensakkumulation](https://de.wikipedia.org/wiki/Lineare_Schadensakkumulation)
+
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
++ @haibach_betriebsfestigkeit_2006: [Einführung und Übersicht](https://rdcu.be/dHdpo)
++ @naunheimer_betriebsfestigkeit_2019: [Betriebsfestigkeit und Lebensdauer](https://rdcu.be/dF8Tk)
++ @sander_sicherheit_2018: [Konzepte zur festigkeitsgerechten und bruchsicheren Gestaltung](https://rdcu.be/dINKO)
++ @schlottmann_auslegung_2016: [Schädigung und Versagen technischer Gebilde](https://rdcu.be/dI6LW)
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Literaturempfehlung
+
+-------------------------------------------------------------------------- -->
+
+<!--
+#### Literaturempfehlung
+
+![@haibach_betriebsfestigkeit_2006: [Betriebsfestigkeit](https://link.springer.com/book/10.1007/3-540-29364-7)](images/Haibach_Betriebsfestigkeit.webp){width=40%}
+
+![@sander_sicherheit_2018: [Sicherheit und Betriebsfestigkeit von Maschinen und Anlagen](https://link.springer.com/book/10.1007/978-3-662-54443-3)](images/Sander_Betriebsfestigkeit.webp){width=40%}
+
+![@schlottmann_auslegung_2016: [Auslegung von Konstruktionselementen](https://link.springer.com/book/10.1007/978-3-662-48807-2)](images/Schlottmann_Auslegung_von_Konstruktionselemeneten_978-3-662-48807-2.webp){width=40%}
+
+![@bertsche_zuverlassigkeit_2004: [Zuverlässigkeit im Fahrzeug- und Maschinenbau](https://link.springer.com/book/10.1007/3-540-34996-0)](images/Bertsche_Zuverl%C3%A4ssigkeit_978-3-540-34996-9.webp){width=40%}
+
+![@schmitt-thomas_integrierte_2015: [Integrierte Schadenanalyse](https://link.springer.com/book/10.1007/978-3-662-46134-1)](images/Schmitt-Thomas_Schadensanalyse_978-3-662-46134-1.webp){width=40%}
+
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Bild: Work in progress
+
+-------------------------------------------------------------------------- -->
+<!--
+![Work in progress](images/WorkInProgress.jpeg){width=60% #fig-workinprogress}
+
+
+
+
+
+
+---
+
+
+Die Wöhlerlinie ist eine Kennlinie aus der Werkstofftechnik, die das Verhalten von Materialien unter dynamischer Belastung beschreibt.
+
+Die dynamische Belastung bezeichnet eine Veränderung der einwirkenden mechanischen Kraft und deren Richtung mit der Zeit. Es handelt sich somit um mechanische Schwingungen, wobei die Frequenz, d. h. die Häufigkeit, der Beanspruchungsänderung als mechanischer Lastwechsel bezeichnet wird. Im Unterschied dazu bleiben die Kraft und die Wirkrichtung bei der statischen Belastung konstant. Materialkennwerte für eine statische Belastung werden beispielsweise im Zugversuch ermittelt.
+
+Nahezu alle Komponenten von Maschinen und Anlagen unterliegen im Betrieb einer dynamischen Belastung. Dabei ist die mechanische Spannungsamplitude, d. h. der Maximalwert, der dynamischen Belastung niedriger als die Zugfestigkeit der Werkstoffe. Im Regelfall sind die Spannungsamplituden sogar geringer als die Fließgrenzen der Werkstoffe. Obwohl die Spannungsamplituden der dynamischen Belastung meist geringer sind als die mechanischen Festigkeiten, kann es trotzdem zum Bruch und somit zum Versagen von Bauteilen kommen. Grund hierfür sind Veränderungen im Werkstoff, welche als Materialermüdung bezeichnet werden. Bei dynamischen Belastungen können diese Werkstoffschädigungen bei metallischen Werkstoffen bereits bei niedrigen Temperaturen stattfinden, d. h. die homologe Temperatur ist deutlich niedriger als 0,4. Somit spielt beim Einsatz auch das Kriechen der Werkstoffe praktisch keine Rolle.
+
+Zur Ermittlung des Werkstoffverhaltens unter dynamischer Belastung wird der sogenannte Wöhlerversuch, auch Dauerschwingversuch bezeichnet, durchgeführt. Dabei werden eine Vielzahl von identischen Proben mit unterschiedlichen dynamischen Schwingungen belastet und die jeweilige Anzahl der Lastwechsel bis zum Bruch ermittelt. Die Spannungsamplituden der jeweiligen Versuche werden bei den Versuchen stetig verringert. Proben die mit einer hohen Spannungsamplitude belastet werden versagen hierbei recht schnell, wohingegen geringere Spannungsamplituden zu einer höheren Anzahl von Lastwechseln und somit zu größeren Lebensdauern führen. Werden die Spannungsamplituden über die zugehörige Anzahl der Lastwechsel, auch Lastwechselzahl genannt, in einem Diagramm aufgetragen, so ergibt dies die Wöhlerlinie. Die Darstellung kann hierbei in linearer, halblogarithmischer oder doppeltlogarithmischer Form erfolgen. In der folgenden Abbildung ist eine Wöhlerlinie für einen unlegierten Stahl in einem halblogarithmischen Koordinatensystem schematisch dargestellt.
+
+Wöhlerlinie
+Abb. 1: Schematische Darstellung einer Wöhlerlinie eines unlegierten Stahls
+Anhand der Wöhlerlinie werden charakteristische Festigkeiten für dynamisch beanspruchte Werkstoffe definiert. Es handelt sich hierbei um die die Kurzzeitfestigkeit, die Zeitfestigkeit und die Dauerfestigkeit.
+
+Die Dauerfestigkeit, auch Schwingfestigkeit genannt, bezeichnet jene maximale Spannungsamplitude unterhalb der ein Werkstoff eine unendlich hohe Anzahl von Lastwechsel erduldet. Die Bestimmung einer unendlich hohen Lastwechselzahl ist allerdings praktisch nicht möglich. Daher werden Werkstoffe, die etwa 106 bis 107 Lastwechsel überleben als dauerfest bezeichnet. Der exakte Wert dieser sogenannten Grenzlastspielzahl ist abhängig vom Werkstoff.
+
+Die Zeitfestigkeit bezeichnet den Bereich von etwa 103 oder 104 Lastwechseln bis hin zur Dauerfestigkeit. In der halblogarithmischen oder doppeltlogarithmischen Wöhlerlinie ist der Bereich durch eine nahezu schräg verlaufende Gerade gekennzeichnet.
+
+Die Kurzzeitfestigkeit ist jene Spannungsamplitude, die ein Werkstoff maximal nur bis etwa 103 oder 104 Lastwechsel überlebt. Dabei ist der Übergang von der Kurzzeitfestigkeit in den Zeitfestigkeitsbereich nicht immer eindeutig bestimmbar.
+
+Bei vielen Werkstoffen zeigt die Wöhlerlinie keine horizontal verlaufende Dauerfestigkeitslinie, wie in der oberen Abbildung dargestellt. Dazu zählen beispielsweise Aluminium, Kupfer oder Legierungen wie Messing. Diese Werkstoffe können auch bei niedrigen Spannungsamplituden und sehr hohen Lastwechselzahlen, d. h. größer 107, versagen. Trotzdem wird bei diesen Werkstoffen eine Dauerfestigkeit angegeben sobald sie im Wöhlerversuch etwa 106 bzw. 107 Lastwechsel überleben.
+
+Neben der Werkstoffzusammensetzung können auch Umgebungsbedingungen die Dauerfestigkeit von Werkstoffen reduzieren. Ein Beispiel hierfür wäre die Schwingungsrisskorrosion. Dabei kann durch die Anwesenheit eines korrosionsfördernden Mediums die Lebensdauer von Bauteilen deutlich verringert werden, was sich in einer Verschiebung der Wöhlerlinie zu geringeren Werten äußert. Aus diesem Grund müssen bei der Planung von Bauteilen und Anlagen alle Betriebsbedingungen berücksichtigt werden, um Schäden zu vermeiden.
+
+Quelle: [EnArgus](https://www.enargus.de/pub/bscw.cgi/d14290-2/*/*/W%C3%B6hlerlinie?op=Wiki.getwiki)
+
+
+
+Zusammenfassend lässt sich sagen, dass das Lastkollektiv die Belastungen beschreibt, denen ein Bauteil ausgesetzt ist, die Betriebsfestigkeit die Fähigkeit des Bauteils ist, diesen Belastungen standzuhalten, und die Wöhler-Kurve die Grundlage bietet, um die Lebensdauer des Bauteils unter Berücksichtigung des Lastkollektivs abzuschätzen.
+
+
+
+Ein Beispiel für einen vergleichsweise klar definierten maximalen Lastfall gibt es in Luft- und Raumfahrt mit „Max-Q“: In der Luft- und Raumfahrttechnik bezeichnet „Max Q“ den Punkt (im räumlichen und zeitlichen Sinn), an dem die aerodynamische Belastung auf ein Flugobjekt, das sich in Bereichen mit stark veränderlicher Luftdichte bewegt, ihr Maximum erreicht. Max Q ist einer der kritischen Zeitpunkte während eines Raketenstarts. Der Zeitpunkt von Max Q und die bei Max Q auf die einzelnen Komponenten der Rakete wirkenden Lasten können heute mittels Finite-Elemente-Simulation berechnet werden.
+
+
+Wöhler-Kurven beschreiben Grenzwerte für die Beanspruchung von Materialien im Bereich der Dauerfestigkeit. Sie werden verwendet, um die Belastungsgrenzen von Materialien unter zyklischer Beanspruchung zu bestimmen.
+
+
+
+
+
+
+Die Ermittlung von Wöhler-Kurven für einen bestimmten Werkstoff erfolgt in der Regel durch spezifische Ermüdungsversuche mittels hierfür entwickelter Prüfmaschinen:
+
+1. **Probenvorbereitung**: Zunächst werden repräsentative Proben des zu untersuchenden Werkstoffs hergestellt. Die Proben können in Form von Zugstäben, Biegebalken oder anderen geometrischen Formen vorliegen, je nachdem, welche Art von Belastung auf den Werkstoff ausgeübt wird.
+
+2. **Belastungsaufbringung**: Die Proben werden einer zyklischen Belastung ausgesetzt, die repräsentativ für die erwarteten Belastungen im realen Einsatz ist. Dies kann durch mechanische Prüfmaschinen oder andere spezielle Vorrichtungen erfolgen, die in der Lage sind, die gewünschte Belastung zu erzeugen. Die Belastung kann hierbei je nach Versuchsdurchführung durch Zug-/Druckbelastung, Biegung, Torsion oder Querkraftschub entstehen.
+
+3. **Durchführung von Ermüdungsversuchen**: Die Proben werden über eine bestimmte Anzahl von Belastungszyklen hinweg belastet und entlastet. Dabei wird die Anzahl der Zyklen bis zum Bruch jeder Probe aufgezeichnet.
+
+4. **Wiederholung bei verschiedenen Belastungsniveaus**: Der vorherige Schritt wird für verschiedene Belastungsniveaus wiederholt, um eine breitere Datenbasis zu erhalten. Es werden mehrere Proben bei unterschiedlichen Belastungsamplituden getestet.
+
+5. **Aufzeichnung der Daten**: Die Anzahl der Zyklen bis zum Bruch für jede Belastungsstufe wird aufgezeichnet. Dieser Vorgang wird für eine ausreichende Anzahl von Proben wiederholt, um statistisch signifikante Daten zu erhalten.
+
+6. **Kurvenerstellung**: Basierend auf den aufgezeichneten Daten werden Wöhler-Linien erstellt. Hierbei wird die Anzahl der Zyklen bis zum Bruch gegen die Belastungsamplitude aufgetragen. Wöhler-Linien werden in der Regel logarithmisch dargestellt.
+
+
+#### *SCHWINGUNGSPRÜFSTAND*
+[Fa. ZwickRoell: Dynamische Prüfmaschinen](https://www.zwickroell.com/de/produkte/dynamische-und-ermuedungspruefmaschinen/)
+
+![Logo der Fa. ZwickRoell (Quelle: [ZwickRoell](https://www.zwickroell.com/de/))](images/Zwick_Roell-Logo.svg){width=25% #fig-zwickroell}
+
+
+
+### Betriebsfestigkeit vs. Dauerfestigkeit
+
+
+
+### Werkstoffkunde
+
++ Literatur zur Werkstoffkunde, siehe z.B. [Prof. Dr. –Ing. J. Prochotta, Hochschule Düsseldorf, 2020](https://ei.hs-duesseldorf.de/personen/prochotta/lehre/werkstoffe/Documents/WeKu%2008%20Mechanische%20Eigenschaften%202020_01_06.pdf)
+
++ [Zugversuch](https://www.enargus.de/pub/bscw.cgi/d14426-2/*/*/Zugversuch?op=Wiki.getwiki&search=zugversuch&scope=all)
+
++ [Elastizitätsmodul](https://www.enargus.de/pub/bscw.cgi/d2831-2/*/*/Elastizit%c3%a4tsmodul?op=Wiki.getwiki&search=zugversuch&scope=all)
+
++ [Wöhlerlinie](https://www.enargus.de/pub/bscw.cgi/d14290-2/*/*/W%c3%b6hlerlinie?op=Wiki.getwiki&search=zugversuch&scope=all)
+
++ [Werkstoffprüfung](https://wiki.arnold-horsch.de/index.php/Werkstoffpr%C3%BCfung)
+
++ [Zugversuch](https://wiki.arnold-horsch.de/index.php/Zugversuch)
+
+
+![Zugversuch (Quelle: [Minz GmbH](https://www.minz-gmbh.de/_bilder/methoden/Zugversuche_11_DSC_4440_F%C3%BChler%20Neu.jpg?width=1920)).](images/Zugversuch.jpg){width=80% #fig-zugversuchkunststoff}
+
+
+![Zugversuch an Stahl nach ISO 6892-1. Zu bestimmende Parameter: Elastizitätsmodul, Dehngrenze, Zugfestigkeit, Bruchdehnung, Brucheinschnürung (Quelle: [Schweizerisches Institut für Eignungsprüfung](https://swissproficiency.com/produkt/zugversuch-stahl-iso-6892-1/)).](images/Zugpr%C3%BCfungStahl.jpg){width=80% #fig-zugversuchstahl}
+
+#### Zerstörende Prüfverfahren
+
++ **Härteprüfung**
++ **Zugversuch**
+
+![Spannungs-Dehnungs-Diagramm eines Stahls mit ausgeprägter Streckgrenze und Bezeichnung wichtiger Werkstoffkennwerte (Quelle: [EnArgus](https://www.enargus.de/pub/bscw.cgi/d14426-2/*/*/Zugversuch?op=Wiki.getwiki&scope=all&jsearch=1&search=zugversuch)).](images/Zugversuch-SpannungsDehnungsDiagramm.jpg){width=80% #fig-spannungsdehnungsdiagramm}
+
+![Beispiel für Probekörper für Zugversuche. Beim Zugversuch wird der Probekörper an den Enden eingespannt und langsam (quasistatisch) bis zum Bruch gedehnt. Der Verlauf von Kraft und Weg werden dabei von der Zugprüfmaschine zur Erstellung des Spannungs-Dehnungs-Diagramms kontinuierlich erfasst.](images/ZugversuchProbekoerper_ISO_527-4.jpg){width=80% #fig-zugprobekoerper}
+
+![Zugversuch (Quelle: [ZwickRoell](https://www.zwickroell.com/de/))](images/ZwickRoell_zugversuch.png){width=100% #fig-zwickroellzugversuch}
+
+![Probekörper für Zugproben nach ISO 6892 / DIN 50125 (Quelle: [Schütz+Licht](https://www.schuetz-licht.de/wissen-normen-seminare/zugversuch/zugprobe)).](images/Zugproben-DIN-50125_grau.jpg){width=100% #fig-probekoerperiso6892}
+
+
++ **Kerbschlagbiegeversuch**
+
+
+::: { .callout-note}
+## Aufgabenstellung
+Diskussionsfrage z.B. für Peer-Learning: Gibt es etwas Vergleichbares wie die Dauerfestigkeit in der Mechanik auch im Bereich der Software?
+:::
+
+::: {.callout-tip}
+## Lösung
+(Tipp z.B. Memory-Leaks, Fragmentierung des Speichers, Cache-Overflows). Warum brauchen Geräte immer wieder einen Neustart?
+:::
+
+
+## Schädigungsmechanik
+Die Schädigungsmechanik ist ein wichtiger Bereich der Werkstoffwissenschaft und Ingenieurwissenschaften, der sich mit dem Verhalten von Materialien beschäftigt, wenn sie schädlichen Einflüssen, wie Belastungen, Temperaturen oder Umgebungsbedingungen, ausgesetzt sind. Ein Ingenieur, der sich mit Schädigungsmechanik beschäftigt, sollte folgende Konzepte und Aspekte verstehen:
+
+1\. \*\*Bruchmechanik\*\*: Verständnis der Bruchmechanik-Konzepte, einschließlich der Einflüsse von Spannungskonzentrationen, Rissinitiierung, Rissausbreitung und Rissstabilität.
+
+2\. \*\*Spannungsanalyse\*\*: Fähigkeit zur Durchführung von Spannungs- und Deformationsanalysen, um kritische Bereiche zu identifizieren, in denen Schädigungen auftreten könnten.
+
+3\. \*\*Ermüdung und Rissausbreitung\*\*: Kenntnis der Mechanismen der Ermüdung und der Rissausbreitung in Materialien unter zyklischer Belastung. Dies beinhaltet das Verständnis von Ermüdungsbruch und Lebensdauerprognosen.
+
+4\. \*\*Kriechen\*\*: Verständnis des Kriechverhaltens von Materialien unter langfristigen Belastungen bei hohen Temperaturen.
+
+5\. \*\*Korrosion und Oxidation\*\*: Wissen über die Auswirkungen von chemischer Reaktion und Korrosion auf die Schädigung von Materialien, insbesondere bei aggressiven Umgebungsbedingungen.
+
+6\. \*\*Materialcharakterisierung\*\*: Kenntnisse über Techniken zur Charakterisierung von Materialien, um schädigungsbezogene Eigenschaften wie Bruchzähigkeit, Härte, Dehnung usw. zu bewerten.
+
+7\. \*\*Fehleranalyse\*\*: Fähigkeit zur Fehleranalyse, um Defekte oder Risse zu identifizieren und ihre Auswirkungen auf die Integrität von Bauteilen zu bewerten.
+
+8\. \*\*Lebensdauerbewertung\*\*: Die Fähigkeit, die erwartete Lebensdauer von Bauteilen oder Strukturen unter bestimmten Belastungen und Umgebungsbedingungen abzuschätzen.
+
+9\. \*\*Sicherheitsbewertung\*\*: Die Fähigkeit, die Sicherheit und Zuverlässigkeit von Bauteilen oder Strukturen unter Berücksichtigung von Schädigungsmechanik-Aspekten zu bewerten.
+
+10\. \*\*Werkstoffauswahl\*\*: Wissen darüber, wie verschiedene Werkstoffe auf Belastungen, Temperaturen und Umgebungsbedingungen reagieren, um die geeigneten Materialien für bestimmte Anwendungen auszuwählen.
+
+11\. \*\*Numerische Simulation\*\*: Kenntnisse über die Anwendung von Computermodellen und Simulationen zur Vorhersage von schädigungsbedingtem Verhalten und zur Optimierung von Designs.
+
+12\. \*\*Normen und Richtlinien\*\*: Vertrautheit mit den relevanten Normen, Richtlinien und Standards, die bei der Bewertung von schädigungsbezogenen Aspekten in der Konstruktion und Fertigung von Bauteilen und Strukturen eine Rolle spielen.
+
+Insgesamt ist ein fundiertes Verständnis der Schädigungsmechanik für Ingenieure entscheidend, um sicherzustellen, dass die entworfenen Komponenten und Strukturen unter den vorgesehenen Belastungen und Umgebungsbedingungen sicher und zuverlässig funktionieren.
+
+## Gurson-Tvergaard-Needleman (GTN)-Modell
+Das Gurson-Modell, auch bekannt als Gurson-Tvergaard-Needleman (GTN)-Modell, ist eine wichtige Theorie in der Materialwissenschaft und speziell im Bereich der Bruchmechanik. Es wurde entwickelt, um das Verhalten von porösen und geschädigten Materialien unter mechanischer Belastung zu beschreiben. Das Modell wurde von Olunloyo A. Gurson in den 1970er Jahren entwickelt und später von Tvergaard und Needleman erweitert.
+
+Das Gurson-Modell berücksichtigt das Vorhandensein von Mikroporen (auch als Einschlüsse oder Hohlräume bezeichnet) in einem Material. Diese Poren können aufgrund von Fertigungsprozessen, Materialeigenschaften oder anderen Einflüssen entstehen. Das Modell zielt darauf ab, das Verhalten eines solchen porösen Materials unter Belastung zu analysieren, insbesondere in Bezug auf die Initiation und Ausbreitung von Rissen.
+
+Die Hauptannahme des Gurson-Modells ist, dass Mikroporen in einem Material als Initiatoren für Rissbildung wirken können. Diese Poren fungieren als Schwachstellen, an denen Risse initiiert werden können, auch wenn das umgebende Material an sich eine ausreichend hohe Festigkeit hat. Das Modell verwendet spezifische mathematische Formeln, um die Spannungsverteilung in der Nähe von Poren und die Auswirkungen von Poren auf die Rissinitiierung zu beschreiben.
+
+Ein Schlüsselparameter im Gurson-Modell ist der sogenannte Gurson-Parameter oder Porositätsparameter. Dieser Parameter kombiniert die Größe und Verteilung der Poren im Material mit der Bruchzähigkeit und den mechanischen Eigenschaften des Materials. Er beeinflusst die Wahrscheinlichkeit der Rissinitiierung und beeinflusst auch den Übergang zwischen duktilem und sprödem Bruchverhalten.
+
+Das Gurson-Modell ist besonders nützlich, um das Verhalten von Materialien mit poröser Mikrostruktur zu analysieren, wie sie in vielen praktischen Anwendungen vorkommen, zum Beispiel in Guss- oder pulvermetallurgischen Werkstoffen. Es erlaubt Ingenieuren und Forschern, das Rissverhalten und die Bruchfestigkeit solcher Materialien besser zu verstehen und präzise Vorhersagen über ihr mechanisches Verhalten zu treffen.
+
+## Rousselier-Cohesive Zone Model (CZM)
+Das Rousselier-Modell, auch bekannt als Rousselier-Cohesive Zone Model (CZM), ist eine Theorie in der Materialwissenschaft und speziell im Bereich der Bruchmechanik. Es wurde entwickelt, um das Verhalten von Materialien unter Berücksichtigung von Schädigungen, Rissinitiierung und Rissausbreitung genauer zu beschreiben. Das Modell wurde von Daniel Rousselier in den 1980er Jahren eingeführt.
+
+Das Rousselier-Modell ist ein sogenanntes Cohesive Zone Model, was bedeutet, dass es sich auf die Beschreibung der Zone der schwachen Bindung oder "Kohäsionszone" konzentriert, die sich um den Riss bildet. Im Gegensatz zu klassischen Bruchmechanik-Theorien, die oft auf klaren Schnittstellen zwischen Rissflächen und unbeschädigtem Material basieren, berücksichtigt das Cohesive Zone Model den Übergangsbereich zwischen intaktem Material und Rissflächen genauer.
+
+Die Hauptidee hinter dem Rousselier-Modell ist, dass die Integrität eines Materials nicht nur von seiner Bruchzähigkeit abhängt, sondern auch von der Wechselwirkung zwischen Rissflächen und dem umgebenden Material. Das Modell beschreibt die mechanische Energie, die in der Kohäsionszone absorbiert oder freigesetzt wird, während der Riss sich ausbreitet. Es verwendet spezifische Kohäsionsgesetze, um die Spannungs-Dehnungs-Beziehung in dieser Zone zu beschreiben und wie sie das Rissverhalten beeinflusst.
+
+Das Rousselier-Modell wird oft in Verbindung mit numerischen Simulationen verwendet, um das Verhalten von Materialien und Strukturen unter realen Belastungsbedingungen besser zu verstehen. Es hat Anwendungen in vielen Bereichen, darunter die Luft- und Raumfahrt, Automobilindustrie, Werkstoffentwicklung und Strukturanalyse.
+
+Insgesamt ermöglicht das Rousselier-Modell eine genauere Modellierung von Rissinitiierung und Rissausbreitung in Materialien im Vergleich zu einfacheren Bruchmechanik-Theorien. Es bietet Ingenieuren und Forschern eine präzisere Methode, um das Verhalten von Materialien unter mechanischer Belastung und Schädigung zu analysieren und vorherzusagen.
+
+
+
+
+Berechnung der (Rest-) Lebensdauer von Bauteilen auf Basis synthetischer Wöhlerkurven
+Maschinen und Anlagen werden auf eine festgelegte Betriebsdauer ausgelegt. Nach Ablauf dieser Betriebsdauer sind die Anlagen oftmals noch intakt, da die Auslegung mit Sicherheiten bzgl. der Lastannahmen und der Materialstreuungen geschehen ist. Erfahren Sie in zwei Artikeln, wie Sie die Restlebensdauer eines Bauteils am Ende seiner Betriebsdauer berechnen können.
+
+In diesem ersten Artikel bekommen Sie einen Überblick über die wichtigsten Schritte und Methoden zur Berechnung der Lebensdauer anhend synthetischer Wöhlerkurven.
+Im zweiten Artikel lernen Sie anhand eines kurzen Beispieles wie Sie die Restlebensdauer eines Bauteiles berechnen können.
+
+
+![Lastkollektiv (Quelle: [wikipedia](https://de.wikipedia.org/wiki/Lastkollektiv)).](images/Lastkollektiv.png){width=60% #fig-lastkollektiv}
+ 
+
+
+![Mechanische Prüfverfahren](images/Mechanische_Pruefverfahren.drawio.svg){width=100% #fig-mechanischepruefverfahren}
+
+Beanspruchungen: 
+1. Zug/Druck
+2. Biegung
+3. Schub
+4. Torsion
+-->

@@ -1,0 +1,71 @@
+
+<!-- -------------------------------------------------------------------------
+
+                       Software: Versionierung
+
+-------------------------------------------------------------------------- -->
+
+### Versionierung
+
+---
+
+*Author: Christian Anders*
+
+*Version: 2024-02-27*
+
+---
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Versionierung von Software
+
+-------------------------------------------------------------------------- -->
+
+::: {.callout-tip}
+## Definition: *"Versionierung"*
+Versionierung ist der Prozess der Verwaltung und Kontrolle von verschiedenen Versionen eines Softwareprojekts oder einer Datei über die Zeit hinweg. 
+:::
+
+Bei der Versionierung werden Änderungen an der Software oder Datei während des gesamten Entwicklungsprozesses protokolliert, gespeichert und nachvollziehbar gemacht. 
+
+Jede Version repräsentiert eine bestimmte Stufe der Entwicklung und enthält möglicherweise neue Funktionen, Fehlerkorrekturen oder andere Änderungen im Vergleich zur vorherigen Version. 
+
+Dies ermöglicht es Entwicklern, den Fortschritt der Softwareentwicklung zu verfolgen, jederzeit auf frühere Versionen zurückzugreifen, Änderungen nachzuverfolgen, Konflikte zu lösen und die Zusammenarbeit im Team zu erleichtern.
+
+#### Vorteile der Versionierung
+
+Die Versionierung bietet insbesondere folgende Vorteile:
+
+1. **Rückverfolgbarkeit**: Durch die Verwendung von Versionen kann jederzeit zurückverfolgt werden, wie sich die Software im Laufe der Zeit entwickelt hat und welche Änderungen in welcher Version vorgenommen wurden.
+
+2. **Fehlerbehebung**: Wenn ein Fehler in einer bestimmten Version gefunden wird, kann das Entwicklungsteam den Fehler in dieser Version beheben und sicherstellen, dass er in zukünftigen Versionen nicht mehr auftritt.
+
+3. **Kollaboration**: Versionierung ermöglicht es mehreren Entwicklern, gleichzeitig an unterschiedlichen Teilen der Software zu arbeiten, ohne die Arbeit der anderen zu beeinträchtigen.
+
+4. **Stabilität**: Durch das Festhalten von stabilen Versionen kann das Entwicklungsteam sicherstellen, dass zu jedem Zeitpunkt eine funktionsfähige Version der Software verfügbar ist.
+
+5. **Veröffentlichung**: Versionen werden häufig für die Veröffentlichung und den Vertrieb der Software verwendet, wodurch Kunden oder Benutzer die Möglichkeit haben, eine bestimmte Version der Software zu nutzen.
+
+6. **Parallelentwicklung**: Versionierung ermöglicht die gleichzeitige Entwicklung verschiedener Funktionen oder Module, die dann später zu einer stabilen Gesamtversion zusammengeführt werden können.
+
+7. **Rollback**: Wenn eine neuere Version der Software Probleme oder Fehler aufweist, kann das Team auf eine vorherige stabile Version zurückkehren, um das Produkt in einem sicheren Zustand zu halten.
+
+Die Versionierung kann auf verschiedene Arten durchgeführt werden, wobei das Versionskontrollsystem (VCS) eine gängige Methode ist. Beispiele für verbreitete VCS sind das für diese Vorlesung verwendte Git (bzw. GitLab) oder SVN (Subversion). 
+
+Alle diese Systeme ermöglichen es Entwicklern, Änderungen zu verfolgen, verschiedene Entwicklungsstränge zu verwalten und sicherzustellen, dass die Zusammenführung von Code aus verschiedenen Quellen weitgehend reibungslos erfolgt.
+
+Insgesamt trägt die Versionierung entscheidend dazu bei, die Softwareentwicklung organisiert, kollaborativ und nachvollziehbar zu gestalten. 
+
+::: {.callout-important}
+## Versionierung
+Ohne Versionierung keine Entwicklung von qualitativ hochwertiger und dauerhaft stabiler Software! Entscheidend ist darüber hinaus die Bereitschaft des Entwicklungsteams, die Versionsverwaltungssysmte aktiv und verantwortungsvoll zu nutzen und als hilfeiches Werkzeug für den Erfolg des Entwicklungsprojekts zu begreifen!
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Versionierung von Produktdaten
+
+-------------------------------------------------------------------------- -->
+
+Die Vorgehensweise der Versionierung ist nicht auf die Entwicklung von Software beschränkt sondern wird ebenso bei der Entwicklung von Produkten eingesetzt um die Verwaltung der Produktdaten zu unterstützen. Entsprechende Funktionen zur Versionierung sind heute als Selbstverständlichkeit in einer Vielzahl der gängigen Softwarewerkzeugen zum Product Lifecycle Management (PLM) in unterschiedlicher Ausprägung integriert.

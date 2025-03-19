@@ -1,0 +1,164 @@
+---
+title: "MTB3 Entwicklung mechatronischer Systeme 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung *"Entwicklungsmethodik mechatronischer Systeme 1"* für den Studiengang Mechatronik MTB3 im Sommersemester 2024
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+---
+
+<!-- 
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+ <!-- -------------------------------------------------------------------------
+
+                       Lösung Lastenheft Flyer
+
+-------------------------------------------------------------------------- -->
+
+::: {.callout-tip}
+## Dokumentation Flyer (Dauer 30 min)
+
+### Produktdokumentation (allg.)
+
+Die technische Dokumentation eines Produkts umfasst in der Regel eine große Anzahl von Einzeldokumenten, die in ihrer Gesamtheit detaillierte Informationen über alle relevanten technischen Aspekte des Produkts und dessen Herstellung, Betrieb, Wartung und Reparatur enthalten. Hierzu gehören zum Beispiel:
+
+1. **Produktbeschreibung:** Eine allgemeine Beschreibung des Produkts, einschließlich seiner Funktionen, Zwecke und möglichen Anwendungen.
+
+2. **Produktspezifikationen:** Diese Dokumente enthalten spezifische Informationen über die technischen Merkmale des Produkts, wie Abmessungen, Materialien, Gewicht, Leistung, Betriebsumgebung, Komponenten, Schnittstellen usw., aber auch alle relevanten Informationen zur Herstellung des Produkts.  
+
+3. **Technische Zeichnungen:** Stückliste, Zeichnungen, Skizzen oder CAD-Modelle, die detaillierte Darstellungen des Produkts und seiner Komponenten bieten. Dies kann 2D- oder 3D-Zeichnungen umfassen. Auch Fertigungsabschnittszeichnungen gehören in diese Kategorie. Bei mechatronischen Produkten kommen zusätzlich der Quellcode der Software sowie eine Vielzahl weiterer softwarespezifischer Informationen hinzu.
+
+4. **Leistungsdaten:** Informationen über die Leistungsfähigkeit des Produkts, einschließlich seiner Kapazität, Geschwindigkeit, Genauigkeit, Ausgangsleistung usw.
+
+5. **Normen und Zertifizierungen:** Eine Liste der Standards, Richtlinien oder Vorschriften, denen das Produkt entspricht, sowie eventuelle Zertifizierungen oder Prüfberichte.
+
+6. **Verpackungsspezifikationen:** Details zur Verpackung des Produkts, einschließlich Verpackungsgröße, Materialien, Gewicht, Transportanweisungen usw. Zu den Verpackungsinformationen gehören z.B. auch Informationen zum Schutz gegen Einflüsse der Temperatur sowie gegen Feuchtigkeit und Korrosion beim Transport.
+
+7. **Test- und Validierungsprotokolle:** Protokolle von Tests und Validierungen, die durchgeführt wurden, um sicherzustellen, dass das Produkt seinen Spezifikationen entspricht und ordnungsgemäß funktioniert.
+
+8. **Liste der mitgelieferten Zubehörteile:** Eine Auflistung aller Zubehörteile, die mit dem Produkt geliefert werden, sowie deren Funktionen und Verwendungszwecke.
+
+9. **Haftungsausschluss und Einschränkungen:** Eine Erklärung, die die Grenzen und Einschränkungen des Produkts sowie mögliche Haftungsausschlüsse klarstellt.
+
+10. **Betriebsanleitung:** Betriebsanleitung, Nutzungshinweise, Wartungsanweisungen, Fehlerbehebungstipps, FAQ, Liste der Servicepartner.
+
+All diese Dokumente zusammen bilden die zum jeweiligen Produkt gehörende, die für die Entwicklung, Herstellung, Vermarktung und den Einsatz des Produkts relevant ist. In der Regel sind nicht alle zur Produktdokumentation gehörenden Dokumente für jede Zielgruppe (Entwickler, Marketing, Vertrieb, Kundenservice, Endkunden) zugänglich.
+
+
+### Mindmap zur Dokumentation des Flyers
+
+Unser im Labor gebauter Papierflieger stellt ein erkennbar einfaches Produkt dar. Würde es sich um ein tatsächlich auf den Markt zu bringendes technisches Produkt handeln, wäre dennoch eine vielleicht auf den ersten Blick überraschend große Anzahl von Dokumenten erforderlich, um die erforderliche vollständige Dokumentation des Flyers zu erhalten.
+
+@fig-label-mindmapdokuflyer gibt ein einen ersten unvollständigen Einblick auf die Vielzahl der bei hinsichtlich Dokumentation zu berücksichtigen Aspekte.
+
+```{mermaid}
+%%| label: fig-label-mindmapdokuflyer
+%%| fig-cap: "Beispiel einer Mindmap zur Produktdokumentation des Flyers"
+mindmap
+  root((Produktdokumentation))
+    [Art der Dokumentation]
+      [Benutzerhandbuch]
+      [Technische Spezifikationen]
+    [Inhalte]
+      [Produktbeschreibung]
+        [Technische Zeichnungen]
+        [Stückliste]
+        [Fertigungsabschnitts- zeichnungen]
+      [Nutzungshinweise]
+      [Wartungsanweisungen]
+      [Fehlerbehebungstipps]
+      [FAQ]
+    [Zielgruppen]
+      [Endbenutzer]
+      [Entwicklung]
+      [Vertrieb]
+    [Format]
+      [Gedrucktes Handbuch]
+      [Digitale PDFs]
+      [Videoanleitungen]
+```
+
+
+### Dokumentation des Flyers
+
+Eine Dokumentation zum Bau eines Papierfliegers sollte gemäß dieser Vorüberlegungen alle erforderlichen Schritte und Informationen enthalten, um sicherzustellen, dass der Endbenutzer den Flieger gemäß dem vorgesehenen Verwendungszweck nutzen kann. 
+
+Je nach gewählter Produktspezifikation und Verwendungszweck (siehe → Aufgabe Lastenheft Flyer) kann hierzu auch der erfolgreiche Nachbau des Flyers gehören. 
+
+Informationen, die daher in der Dokumentation des Flyers enthalten sein sollten:
+
+1. **Materialliste:** Eine Auflistung aller Materialien, die benötigt werden, um den Papierflieger zu bauen. Dazu gehören normalerweise nur zwar nur ein Blatt Papier, eventuell ein Stift oder Bleistift für Markierungen. Aber auch alle weiteren ggf. von uns genutzten notwendige Ressourcen wie z.B. Schere und Klebstoff, Drähte, Klebeband, Farbstifte sind unverzichtbarer Bestandteil der Materialliste.
+
+2. **Schritt-für-Schritt-Anleitung:**^[Beispiele für Schritt-für-Schritt-Anleitungen finden sich im z.B. im Modellbau ([Fa. Revell](https://downloads.revell.de/Manuals-Modelkits/CM_00811.pdf)) oder der Möbelindustrie ([Fa. Ikea](https://www.ikea.com/de/de/customer-service/services/assembly/montageanleitungen-pub07969421)).] Eine detaillierte Anleitung, die den gesamten Bauprozess in klaren und einfachen Schritten erklärt. Beginnend mit dem Ausgangspunkt des Blattes Papier bis hin zum fertigen Papierflieger. Diese Schritt-für-Schritt-Anleitungen entsprechen den im industriellen Umfeld der Fertigung verwendeten Fertigungsabschnittszeichnungen.
+
+3. **Illustrationen oder Diagramme:** Grafische Darstellungen, die jeden Schritt vom Blatt Papier bis zum fertigen Flyer visuell erklären. Dies kann Skizzen oder Diagramme von Falttechniken sowie den verschiedenen Flügel- und Rumpfkonfigurationen des Papierfliegers umfassen.
+
+4. **Faltmuster:** Wenn der Papierflieger komplexere Falttechniken erfordert, sollten Muster oder Vorlagen bereitgestellt werden, die die genauen Faltschritte zeigen.
+
+5. **Tipps und Tricks:** Zusätzliche Hinweise oder Empfehlungen, die den Bau erleichtern oder die Flugleistung verbessern können. Dies kann Informationen über die Wahl des Papiers, die richtige Falttechnik oder Anpassungen für bessere Flugeigenschaften umfassen.
+
+6. **Testfluganleitung:** Anweisungen, wie man den Papierflieger korrekt testet und mögliche Anpassungen vornimmt, um die Flugstabilität oder -weite zu verbessern.
+
+7. **Sicherheitshinweise:** Jegliche Sicherheitsvorkehrungen, die beachtet werden sollten, insbesondere wenn scharfe Gegenstände wie Scheren verwendet werden, um das Papier zu schneiden.
+
+8. **Quellenangaben:** Falls die Anleitung auf spezifische Quellen oder Inspirationen zurückgreift, sollten diese korrekt zitiert werden.
+
+![Schritt-für-Schritt-Anleitung zum Bau eines Papiervogels (Quelle: [Adobe Stock](https://stock.adobe.com/))](images/Fertigungsabschnittszeichnungen.jpeg){width=80% #fig-fertigungszeichnungen}
+
+:::
+
+
+<!--
+::: {.callout-tip}
+## Weiterführende Links
+
+:::
+-->
+
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
+
++ @juhl_technische_2015: [Technische Dokumentation](https://rdcu.be/dKtdV)
+
+:::
+
+
+#### Literaturempfehlung
+
+![@juhl_technische_2015: [Technische Dokumentation](https://link.springer.com/book/10.1007/978-3-662-46865-4)](images/Juhl_Technische_Dokumentation_978-3-662-46865-4.webp){width=40%}

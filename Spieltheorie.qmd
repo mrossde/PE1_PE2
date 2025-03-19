@@ -1,0 +1,118 @@
+---
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Spieltheorie
+  - Nullsummenspiel
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+---
+
+<!--
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Spieltheorie
+
+-------------------------------------------------------------------------- -->
+
+### Spieltheorie {#sec-spieltheorie}
+
+
+::: {.callout-tip}
+## Definition: *"Spieltheorie"*
+Die [Spieltheorie](https://de.wikipedia.org/wiki/Spieltheorie) ist eine mathematische Theorie, in der Entscheidungssituationen modelliert werden, in denen mehrere Beteiligte miteinander interagieren. Sie versucht dabei unter anderem, das rationale Entscheidungsverhalten in sozialen Konfliktsituationen zu erfassen. Die Spieltheorie ist originär ein Teilgebiet der Mathematik.
+:::
+
+Ein Spiel im Sinne der Spieltheorie ist eine Entscheidungssituation mit mehreren Beteiligten, die sich mit ihren Entscheidungen gegenseitig beeinflussen. Im Unterschied zur klassischen Entscheidungstheorie modelliert die Spieltheorie  Situationen, in denen der Erfolg des Einzelnen nicht nur vom eigenen Handeln, sondern auch von dem anderer abhängt. 
+
+::: {.callout-caution}
+## Pro-Tipp!
+Solche Entscheidungssituationen finden sich in aller Regel auch im Rahmen von Produktentstehungsprozessen, z.B. immer dann, wenn aus verschiedenen möglichen, zuvor erarbeiteten konstruktiven Alternativen oder Vorgehensweisen eine dieser Alternativen oder Vorgehensweisen für die Weiterentwicklung oder der Verwendung in einem zu entwickelnden Produkt ausgewählt werden muss. Bewertungsmatrizen (siehe → Bewertungsmatrix<!-- @sec-bewertungsmatrix -->) oder vergleichbare Methoden bieten hier eine wichtige Hilfestellung zur Entscheidungsfindung, **jedoch handeln, interagieren und entscheiden die Betroffen in der Praxis nicht nur rational sondern immer auch vor dem Kontext verschiedenster, oftmals nur den einzelnen Personen bekannten und nicht an die weiteren Beteiligten kommunizierten (Eigen-)Interessen.** (siehe → *"Verborgener Bereich"* des Johari-Fensters<!-- @sec-johari -->).
+:::
+
+#### Nullsummenspiel
+
+::: {.callout-tip}
+## Definition: *"Nullsummenspiel"*
+[Nullsummenspiel](https://de.wikipedia.org/wiki/Nullsummenspiel) ist in der [Spieltheorie](https://de.wikipedia.org/wiki/Spieltheorie) eine Situation, bei denen die Summe der Gewinne und Verluste aller Spieler gleich null ist.
+:::
+
+::: {.callout-caution}
+## Pro-Tipp!
+Langfristig für die Beteiligten als erfolgreich wahrgenommene Zusammenarbeit setzt voraus dass die Zusammenarbeit so gestaltet werden kann, dass als Ergebnis der Zusammenarbeit Nicht-Nullsummenspiele entstehen und so alle Beteiligten aus der jeweils eigenen Wahrnehmung heraus mit einem Gewinn aus der Zusammenarbeit hervorgehen (siehe → Fritz B. Simon *“Verhalten als Ware”* <!-- @sec-verhaltenalsware -->) (siehe → [Positivsummenspiel](https://de.wikipedia.org/wiki/Win-win)).
+:::
+
+::: {.callout-caution}
+## Pro-Tipp!
+Das wechselseitige Kennen des individuellen Wertesystems der Beteiligten biete eine wichtige Grundlage um die individuellen Bewertungsmaßstäbe der in der Zusammenarbeit gehandelten "Waren" bei der Zusammenarbeit gezielt berücksichtigen zu können.
+:::
+
+  {{< include Verhalten_als_Ware.qmd >}}
+  {{< include Johari-Fenster.qmd >}}
+
+<!--
+# Literatur 
+-->
+
+#### Literaturempfehlungen zur Spieltheorie
+
+<!--
+![@hehl_zufall_2021: [Der Zufall in Physik, Informatik und Philosophie](https://link.springer.com/book/10.1007/978-3-658-32063-8)](images/Hehl_Zufall_978-3-658-32063-8.webp){width=20%}
+
+![@santra_einfuhrung_2023: [Einführung in die Theoretische Physik](https://link.springer.com/book/10.1007/978-3-662-67439-0)](images/Santra_Theoretische_Physik_978-3-662-67439-0.webp){width=20%}
+-->
+
+![@winter_grundzuge_2019: [Grundzüge der Spieltheorie](https://link.springer.com/book/10.1007/978-3-662-58215-2)](images/Winter_Spieltheorie_978-3-662-58215-2.webp){width=20%}
+
+![@peyrolon_spieltheorie_2019: [Spieltheorie](https://link.springer.com/book/10.1007/978-3-658-26486-4)](images/Peyrolon_Spieltheorie_978-3-658-26486-4.webp){width=20%}
+
+![@bewersdorff_gluck_2018: [Glück, Logik und Bluff](https://link.springer.com/book/10.1007/978-3-658-21765-5)](images/Bewersdorff_Glueck_Logik_Bluff978-3-658-21765-5.webp){width=20%}

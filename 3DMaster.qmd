@@ -1,0 +1,79 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       3D-Master
+
+-------------------------------------------------------------------------- -->
+
+## 3D-Master {#sec-3dmaster}
+
+<!--
+
+> *„Die Leichen der Pioniere pflastern die Straßen zum Erfolg.“ (Quelle: Hans-Joachim Schöpf, Entwicklungsvorstand Mercedes-Benz AG)*
+
+-->
+
+::: {.callout-tip}
+## Definition: *"3D-Master"*
+Der Begriff "3D-Master" bezieht sich auf eine Methode in der Produktentwicklung und Produktion, bei der ein 3D-Modell eines Produkts als **einzige Quelle für Produktinformationen und -daten** verwendet wird. Dieses 3D-Modell enthält nicht nur die geometrischen Informationen zur Form des Produkts, sondern auch alle relevanten technischen und funktionalen Informationen, die für die Herstellung, Montage, Inspektion und den Betrieb des Produkts erforderlich sind.
+:::
+
+Der 3D-Master ersetzt traditionelle 2D-Zeichnungen als primäre Informationsquelle in der Produktentwicklung und Produktion. Stattdessen werden alle Produktinformationen in einem vollständigen und detaillierten 3D-Modell erfasst. Daten des 3D-Masters umfassen insbesondere:
+
++ **Geometrische Daten**: Das 3D-Modell enthält die geometrischen Informationen zur Form, Größe und Lage der Produktkomponenten. Dies umfasst 3D-CAD-Modelle von Bauteilen, Baugruppen und Produktzusammenstellungen.
+
++ **PMI (Product and Manufacturing Information)**: PMI ist der Begriff, der verwendet wird, um alle anderen technischen Informationen zu beschreiben, die im 3D-Modell enthalten sind. Dazu gehören Toleranzen, Maße, Oberflächenspezifikationen, Gewindeinformationen, Montage- und Prüfanweisungen, Angaben zu Werkstoff und Restschmutz und sehr vieles mehr.
+
+Beim 3D-Master werden die nativen, parametrischen CAD-Daten des 3D-Modells in der Regel um ein reduziertes, meist tesselliertes^[Zerlegung von (gekrümmten) Oberflächen von räumlichen Objekten in Dreiecke (Triangulation) als STL-Dateien im Bereich CAD, z. B. für deren Visualisierung, den 3D-Druck bzw. die additive Fertigung.] 3D-Datenformat ergänzt, das zum einen die Menge der zu Übertragenden und Visualisierenden Daten reduziert und zum anderen die Integration und den Austausch von 3D-Informationen zwischen verschiedenen Softwareanwendungen und Systemen erleichtert. Beispiele für solche Formate sind [STL](https://de.wikipedia.org/wiki/STL-Schnittstelle), [STEP](https://de.wikipedia.org/wiki/Standard_for_the_exchange_of_product_model_data) (Standard for the Exchange of Product model data) und [JT](https://de.wikipedia.org/wiki/JT_(Grafikformat)) (The Siemens JT Open Program).
+
+
+![Symbolbild 3D-Master (Quelle: Adobe Stock)](images/3D-Master.jpg){width=100% #fig-3d-master}
+
+Angestrebte Vorteile beim Einsatz von 3D-Master:
+
++ **Reduzieren von Fehlern**: Der Einsatz von 3D-Master zielt darauf ab, Missverständnisse und Fehler in der Kommunikation zwischen Design, Entwicklung , Planung und Produktion zu minimieren (siehe: → Single Point Of Truth ([SPOT](https://de.wikipedia.org/wiki/Single_Point_of_Truth))). Da alle relevanten Informationen im 3D-Modell enthalten sind, gibt es weniger Raum für Interpretationsfehler, die bei der Verwendung von 2D-Zeichnungen auftreten können.
+
++ **Digitale Herstellung und Inspektion**: Das 3D-Master-Modell kann direkt in die Fertigungsmaschinen und Prüfeinrichtungen integriert werden. Dies ermöglicht die automatisierte Herstellung und Inspektion von Produkten auf der Grundlage des digitalen Modells.
+
++ **Effizienzsteigerung**: Der Übergang zum 3D-Master-Konzept kann die Produktentwicklungs- und Produktionsprozesse effizienter und agiler gestalten, da Änderungen und Aktualisierungen schneller und genauer umgesetzt werden können.
+
+Das 3D-Master-Konzept ist in Branchen wie der Luft- und Raumfahrt und dem Automobilbau besonders relevant und - nach einer langen Einführungszeit von oftmals über 20 Jahren - mittlerweile weit verbreitet. 3D-Master hat erheblich dazu beigetragen, die Arbeit mit Produkt- und Produktionsdaten zu verbessern und beginnend ab den 2000er Jahren durchgängige digitale Prozessketten von der Entwicklung bis in die (Serien-)Produktion und darüber hinaus (Vertrieb, Service, Wartung und Reparatur) aufzubauen.
+
+<!--
+### 3D-CAD-Technik
+
+3D-CAD-Systeme werden für unterschiedliche Anwendungen wie die Mechanik, Elektrotechnik und Elektronik eingesetzt In vielen Branchen wie Fahrzeugbau, Luft- und Raumfahrttechnik oder Anlagenbau ist die Entwicklungs- und Konstruktionsarbeit ohne die 3D-CAD-Technik nicht mehr denkbar. 3D-CAD-Systeme haben sich in den letzten Jahren zu sehr leistungsfähigen Werkzeugen entwickelt und gelten heute als wichtiges und unverzichtbares Instrument für die Unterstützung und Durchführung von Entwicklungs- und Konstruktionsaufgaben. Die 3D-CAD-Technik stellt damit den Backbone der Rechnerunterstützung in der Entwicklung und Konstruktion im Maschinen- und Anlagenbau dar.
+
+![Übersicht über die Anwendungsgebiete von 3D-CAD (Quelle: @bender_pahlbeitz_2021)](images/7540_9_De_25_Fig3_HTML.png){width=90% #fig-cadanwendungen}
+
+-->
+
+<!--
+::: {.callout-tip}
+## Weiterführende Links
+
+:::
+-->
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
+
++ @kitsios_ihre_2021: [Der Digital (3D-)Master-Prozess](https://rdcu.be/dIzQ7)
++ @appelfeller_digitale_2023: [Digitale Technologien](https://rdcu.be/dIzVf)
++ @bender_pahlbeitz_2021: [Themengebiete der virtuellen Produktentwicklung](https://rdcu.be/dIAaT)
+
+:::
+
+<!--
+#### Literaturempfehlung
+
+![@kitsios_ihre_2021: [Ihre Produktentwicklung digitalisieren](https://link.springer.com/book/10.1007/978-3-658-33862-6)](images/Kitsios_Produktentwicklungdigitalisieren.webp){width=40%}
+
+-->

@@ -1,0 +1,247 @@
+---
+title: "DEB3 Produktentwicklung 1"
+resource-path: ["../images"]
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Abfrage Vorwissen
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+---
+
+<!-- 
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Abfrage verfügbaren Vorwissens
+
+-------------------------------------------------------------------------- -->
+
+# Abfrage verfügbaren Vorwissens {.unnumbered}
+
+![Bridgeing the void (Quelle: [Adobe Firefly](https://firefly.adobe.com/))](images/Luecke.jpg){width=60% #fig-thevoid}
+
+Ziel der folgenden Abfrage ist es, die Vorlesung an Ihr bereits vorhandenes Vorwissen und Ihre Randbedingungen anzupassen. Ich bitte Sie um aktive Mitarbeit beim Beantworten der Fragen! Es gibt hierbei keine richtigen oder falschen Antworten. Ihre ehrliche Rückmeldung hilft dabei, die Vorlesung optimal auf Ihre Anforderungen hin zu gestalten!
+
+## Technische Grundlagen
+
+Welche der folgenden Methoden/Werkzeuge haben Sie schon aktiv genutzt?
+
+- [ ] Office (Word, Excel, Powerpoint)
+- [ ] $\LaTeX$
+- [ ] Quarto
+- [ ] MatLab
+- [ ] Programmierkenntnisse (z.B. Python)
+- [ ] Objektorientierte Programmierung (z.B. C++, C#) 
+- [ ] Flussdiagramme
+- [ ] Vorranggraphen
+<!--
+- [ ] Sequenzdiagramme
+- [ ] Zustandsdiagramme
+-->
+
+## Methodische Grundlagen
+
+- [ ] Projektmanagement
+    - [ ] Gantt-Diagramm
+    - [ ] Kanban-Board
+    - [ ] Meilenstein
+    - [ ] Kritischer Pfad
+- [ ] Reporting
+- [ ] Controlling
+- [ ] Wasserfallmodell, V-Modell, Spiralmodell
+
+<!-- -------------------------------------------------------------------------
+
+                       Ideenfindung und Konzeptentwicklung
+
+-------------------------------------------------------------------------- -->
+
+## Ideenfindung und Konzeptentwicklung
+
+Welche der folgenden Methoden/Werkzeuge haben Sie schon aktiv genutzt?
+
+- [ ] Vision-Board
+- [ ] Brainstorming
+- [ ] Mindmap
+- [ ] User-Journey
+- [ ] Pitch/Elevator-Speech
+- [ ] Lasten-/Pflichtenheft
+- [ ] Vision → Mission → Strategie → Ziele
+
+
+## Konzeptvalidierung und Machbarkeitsprüfung
+
+
+- [ ] Produktreifegrad; Prinzip-, Konzept- und Serientauglichkeit
+
+
+<!-- -------------------------------------------------------------------------
+
+                        Entwurfs- und Entwicklungsphase
+
+-------------------------------------------------------------------------- -->
+
+## Entwurfs- und Entwicklungsphase
+
+Welche der folgenden Abkürzungen und Begriffe ist Ihnen bekannt?
+
+- [ ] SI-Einheiten
+- [ ] DIN8580
+- [ ] AKV
+- [ ] SMART
+- [ ] DoD
+- [ ] Technology-Hype-Cycle
+
+
+Welche der folgenden Methoden/Werkzeuge haben Sie schon aktiv genutzt?
+
+- [ ] CAD-Kenntnisse (z.B. [AutoDesk Inventor](https://de.wikipedia.org/wiki/Autodesk_Inventor), [CATIA](https://de.wikipedia.org/wiki/CATIA))
+- [ ] Technisches Zeichnen
+- [ ] Simulation (allg.) (z.B. [SPICE](https://de.wikipedia.org/wiki/SPICE_(Software)))
+- [ ] Finite-Elemente-Methoden (FEM)
+- [ ] DMU
+- [ ] Digitaler Zwilling
+- [ ] Product Lifecycle Management (PLM)
+- [ ] Versionskontrollsysteme (VCS) (z.B. Git, Subversion)
+- [ ] Produktionsgerechte Produktgestaltung (PPG)
+- [ ] Produktions- und Werkstofftechnik (PWT)
+- [ ] Betriebsfestigkeit, Lastkollektiv, Wöhler-Linien
+- [ ] Design of Experiments (DoE)
+- [ ] Bewertungsmatrix
+- [ ] Morphologischer Kasten
+
+
+<!-- -------------------------------------------------------------------------
+
+                        Prototyp und Test
+
+-------------------------------------------------------------------------- -->
+
+## Prototyping und Test
+
+- [ ] 3D-Laserscanner
+- [ ] Photogrammetrie
+- [ ] 3D-Koordinaten-Messmaschine
+- [ ] 3D-Druck
+- [ ] Qualitätsmanagement
+    - [ ] 8D-Methode
+    - [ ] 5-Why-Methode
+    - [ ] Ishikawa-Diagramm
+    - [ ] Statistical Process Control (SPC)
+    - [ ] Six-Sigma 
+    - [ ] KVP
+
+
+<!-- -------------------------------------------------------------------------
+
+                        Produktion
+
+-------------------------------------------------------------------------- -->
+
+
+## Fertigungs- und Produktionsvorbereitung
+
+Welche der folgenden Methoden/Werkzeuge haben Sie schon aktiv genutzt?
+
+- [ ] Produktionsplanung
+- [ ] Powerwall
+- [ ] Robotersimulation
+- [ ] NC-Simulation
+- [ ] Materialflusssimulation
+
+<!-- -------------------------------------------------------------------------
+
+                        Softskills
+
+-------------------------------------------------------------------------- -->
+
+## Softskills und Motivation
+
+- [ ] Teamentwicklung nach Tuckman
+- [ ] Lencioni-Pyramide
+- [ ] [Ringelmann-Effekt](https://de.wikipedia.org/wiki/Ringelmann-Effekt)
+- [ ] Eisenhower-Prinzip
+- [ ] Johari-Fenster
+- [ ] TED-Talks
+
+<!--
+## Markteinführung und Vermarktung
+-->
+
+
+<!-- -------------------------------------------------------------------------
+
+                        Abfrage gewünschter Inhalte
+
+-------------------------------------------------------------------------- -->
+
+::: { .callout-note}
+## Abfrage wichtiger Themen
+Gibt es Inhalte/Fragestellungen, die aus Ihrer Sicht unbedingt in der Vorlesung behandelt werden sollten?
+:::
+
+
+<!-- -------------------------------------------------------------------------
+
+                        Verfügbare Hard- und Software
+
+-------------------------------------------------------------------------- -->
+
+
+# Abfrage verfügbarer Hard- und Software {.unnumbered}
+
+Welche der folgenden Hard- und Software werden Sie in der Vorlesung zum Lesen des Skripts und zur Anfertigung von Notizen nutzen?
+
+- [ ] Notebook (Windows/iOS) inkl. Microsoft Office
+- [ ] Notebook (Windows/iOS) 
+- [ ] Tablet (Android/iOS)
+- [ ] Mobiltelefon (Android/iOS)
+- [ ] Papier und Bleistift
+
+Wie lesen Sie E-Mails?
+
+- [ ] Installierte Software (z.B. Outlook)
+- [ ] Web-Client/Web-Browser
+- [ ] Proprietäre App auf Smartphone/Tablet (z.B. Gmail)
+
+Wie verwalten Sie Termine?
+
+- [ ] Installierte Office-Software (z.B. Outlook)
+- [ ] Web-Client/Web-Browser
+- [ ] Proprietäre App auf Smartphone/Tablet (z.B. Google Kalender)

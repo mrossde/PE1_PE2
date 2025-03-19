@@ -1,0 +1,111 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Reverse Engineering
+
+-------------------------------------------------------------------------- -->
+
+## Reverse Engineering {#sec-reverse}
+
+::: {.callout-tip}
+## Definition: *"Reverse Engineering"*
+Reverse Engineering bezeichnet den Prozess der Analyse eines Produkts, um seine Struktur, Funktionsweise und Gestaltung zu verstehen. Es zielt darauf ab, das zugrunde liegende Wissen zu gewinnen, um das Objekt zu reproduzieren, zu verbessern, zu reparieren oder in andere Produkte zu integrieren.
+:::
+
+Der Begriff des [Reverse Engineering](https://de.wikipedia.org/wiki/Reverse_Engineering) ist teilweise negativ besetzt und wird mit dem Versuch des Diebstahl geistigen Eigentums assoziiert, z.B. um an Wissen zu gelangen ein Produkt eines Wettbewerbers OHNE eigene Entwicklungstätigkeit nachzubauen oder wettbewerbsrelevantes Know-How mit geringem eigenen Aufwand aus den Produkten der Wettbewerber zu extrahieren. 
+
+Reverse Engineering ist im Allgemeinen jedoch legal. In einigen Fällen können Verträge oder Lizenzvereinbarungen Bestimmungen enthalten, die das Reverse Engineering einschränken oder verbieten. In vielen Fällen kann das Reverse Engineering aber ein legitimes und mächtiges Werkzeug für Innovation, Forschung und Entwicklung sein. Insbesondere große Unternehmen betreiben eigene Abteilungen zur Wettbewerbsanalyse mit dem Ziel, über die Neuentwicklungen der Wettbewerber stets bestmöglich informiert zu sein.
+
+::: {.callout-tip}
+In der Praxis ist der Wettbewerb zwischen mehreren Unternehmen und das ständige Bemühen um die wirtschaftlich erfolgreichste Lösung - zu dem auch das Reverse Engineering beiträgt - ein positiv zu bewertender Antrieb des Fortschritts. 
+:::
+
+Die für das Reverse Engineering eingesetzten Technologien können sowohl für die Entwicklung und Verbesserung eigenentwickelter Produkte, als auch zum "billigen Kopieren" von Produkten und zum Gewinn von Wissen über Produkte und Kompetenzen der Wettbewerber verwendet werden. 
+
+Für das Reverse Engineering von physischen Objekten kommen in der Praxis heute - neben der Zerlegung der Objekte, z.B. im Rahmen der Wettbewerbsanalyse - insbesondere [3D-Scanner](https://de.wikipedia.org/wiki/Laserscanning#Laser_3D-Laserscanning) und [Computertomographen](https://de.wikipedia.org/wiki/Computertomografie) zur Anwendung. 
+
+
++ **3D-Scanner**: 3D-Scanner erfassen die geometrischen Daten eines physischen Objekts und erstellen daraus mittel spezieller Software ein digitales 3D-Modell. Diese Daten können für die Analyse und Rekonstruktion verwendet werden. 3D-Scanner sind vergleichsweise günstig und auch für klein- und mittelständige Unternehmen wirtschaftlich nutzbar. Sind sind das für das Reverse Engineering mit Abstand meistgenutzte Werkzeug. 
+
+![Handgeführter 3D-Scanner der [Fa. HEXAGON](https://hexagon.com/de/products/product-groups/measurement-inspection-hardware/3d-laser-scanners), zur Erhöhung der Genauigkeit des Scanners montiert auf einem 7-achsigen Messarm. Der Messkopf enthält neben dem Laserscanner auch noch eine taktile Messeinheit, zu erkennen an der Kugel aus rotem Rubin an der Spitze des Messkopfs (Quelle: Fa. HEXAGON).](images/Hexagon-Absolute-Arm-7-Axis.jpg){width=50% #fig-hexagon}
+
++ **Computertomographen (CT)**: Computertomographie (CT)-Scans ermöglichen die interne Darstellung eines Objekts, indem sie Röntgen- oder Neutronenstrahlen durch das Objekt senden und die Dichteunterschiede in hoher räumlicher Auflösung erfassen. Dies ist besonders nützlich für die Analyse von komplexen inneren Strukturen sowie zum Verständnis der eingesetzten Werkstoffe und der verwendeten Produktionsverfahren. Aufgrund der für die Anschaffung und den Betrieb von Computertomographen hohen Kosten ist der Einsatz von CT für das Reverse Engineering in der Regel großen Unternehmen vorbehalten.
+
+![Röntgen-CT für industrielle Anwendungen der [Fa. Zeiss](https://www.zeiss.de/messtechnik/home.html) (Quelle: Fa. Zeiss).](images/zeiss_metronom_CT.jpg){width=100% #fig-zeissct}
+
+Die Genauigkeit von Röntgen-CT-Scannern erreicht bis zu 1 µm und ermöglicht damit auch das Erkennen feinster Strukturen des Produkts sowie Fehlern im Werkstoff, z.B. infolge von Unregelmäßigkeiten beim Gießprozess oder Verunreinigungen im eingesetzten Werkstoff.
+
+Die Innenansicht eines Röntgen-CT-Scanners zeigt @fig-ctscanner:
+
+![Innenansicht eines Röntgen-CT-Scanners. Links im Bild die [Röntgenröhre](https://de.wikipedia.org/wiki/R%C3%B6ntgenr%C3%B6hre) mit den Anschlüssen zur Kühlung der Anode, in der Bildmitte das zu scannende Bauteil auf einem in horizontaler und vertikaler Richtung verfahrbaren Drehtisch, rechts im Bild der Bildsensor zur Aufnahme der Einzelbilder (Quelle: [Fa. Freeform](https://www.freeform-gmbh.de/)).](images/CT-Scanner.jpg){width=100% #fig-ctscanner}
+
+::: {.callout-tip}
+Sowohl 3D-Scans als auch CT-Scans werden auch von auf diese Werkzeuge spezialisierte Dienstleistungsunternehmen oder Forschungseinrichtungen angeboten und können auf diese Weise als externe Dienstleistung auch von klein- und mittelständigen Unternehmen bezogen und für die eigenen Produktentstehungsprozesse genutzt werden^[Wichtig ist dies für die Kostenbetrachtung: Durch den einmaligen Bezug der extern beauftragten Dienstleistung des Scans entstehen für das das Produkt entwickelnde und den Scan beauftragende Unternehmen keine dauerhaften (Sach-)Gemeinkosten sondern "nur" dem jeweiligen Produktentstehungsprozess direkt zugeordnete Einmalkosten. Werden Scans nur ein oder wenige Mal im Produktentstehungsprozess benötigt kann die Vergabe des Scans an einen geeigneten Dienstleister eine für alle Beteilige technisch und wirtschaftlich sehr vorteilhafte Lösung darstellen.].
+:::
+
+### Optische 3D-Scanner-Technologien
+
+Beim 3D-Scannen kommen verschiedene Technologien zum Einsatz, die jeweils unterschiedliche Prinzipien nutzen, um die geometrischen Daten eines Objekts zu erfassen. Die verwendeten 3D-Scantechnologien können unterschieden werden in:
+
+1. **Lasertriangulation**: Bei dieser Methode wird ein Laserstrahl auf die Oberfläche des Objekts gerichtet. Eine Kamera erfasst das reflektierte Licht und bestimmt anhand der Geometrie die Entfernungen zu verschiedenen Punkten auf der Oberfläche. Durch Bewegung des Lasers und/oder des Objekts wird versucht eine möglichst vollständige 3D-Darstellung des Objekts zu erzeugen.
+
+2. **Strukturiertes Licht**: Hierbei wird ein Muster aus Lichtstrukturen (meistens Streifenmuster) auf die Oberfläche des Objekts projiziert. Eine Kamera erfasst das deformierte Muster und analysiert die Verzerrungen, um die 3D-Geometrie des Objekts zu rekonstruieren. Der an der Hochschule Esslingen verfügbaren 3D-Scanner der [Fa. GOM](https://www.gom.com/de-de) nutzt dieses Funktionsprinzip. Aufgrund der Tatsache, dass als Projektionsmuster zumeist Streifenmuster verwendet werden, werden diese Scanner zumeist auch als Streifenprojektionsscanner bezeichnet.
+
+![Streifenlichtprojektion auf einen Wickelkopf aus Profildrähten und das Elektroblechpaket des Stators eines Elektromotors. Das im Bild leicht diagonal liegende Streifenmuster ist deutlich zu erkennen (Quelle: [Fa. Freeform](https://www.freeform-gmbh.de/)).](images/Streifenlichtscan_E-Motor.jpg){width=100% #fig-streifenemotor}
+
+Streifenprojektionsscanner und die zumeist noch deutlich genaueren Lasertriangulationsscanner können typischerweise Genauigkeiten im Bereich von 0,01 mm bis 0,1 mm erreichen, abhängig von der Größe des zu scannenden Objekts und anderen Faktoren, wie z.B. des vorhandenen (störenden) Umgebungslicht, der Farbe^[So können z.B. mit rotem Isolationslack überzogene Kupferdrähte, wie sie häufig im Elektromotoren- und Transformatorenbau verwendet werden, mit 3D-Lasertriangulationsscannern, die mit rotem Laserlicht arbeiten, nicht zuverlässig gescannt werden. In diesem Fall muss auf (teurere, aber auch genauere) 3D-Laserscanner zurückgegriffen werden, die kurzwelliges blaues Laserlicht verwenden. Eine weitere Herausforderungen beim Scannen von Objekten sind z.B. glänzende oder sogar spiegelnde Oberflächen, wie sie bz.B. ei Oberflächen zerspanter Bauteile oder z.B. bei Batteriezellen und deren Kontaktierung vorkommen.] und der Oberflächenbeschaffenheit des zu gescannten Objekts und der Positionierung des Scanners.  
+
+![3D-Scanner der [Fa. GOM]((https://www.gom.com/de-de)), zur Erhöhung der Messgenauigkeit ausgestattet mit einem kurzwelligen blauen Laser (Quelle: Fa. GOM).](images/3D-Scanner_Fa_GOM.jpg){width=60% #fig-3dgom}
+
+
+3. **Time-of-Flight (ToF)**: Bei dieser Technologie wird die Zeit gemessen, die ein Lichtimpuls benötigt, um von einer Lichtquelle zum Objekt zu gelangen und zurück zur Kamera. Durch Messung dieser Zeit können Entfernungen zu verschiedenen Punkten auf der Oberfläche des Objekts bestimmt werden, was zur Erstellung eines 3D-Modells genutzt wird. Auf dem Funktionsprinzip des ToF basierenden [Lidar](https://de.wikipedia.org/wiki/Lidar)-Sensoren werden heute bei einer Vielzahl von eigenständigen Produkten eingesetzt, die über das Reverse Engineering weit hinaus gehen.
+
+Die von ToF-Scannern erreichten Genauigkeiten können an die hohen Genauigkeiten von Lasertriangulation oder auch den nicht ganz so hohen Genauigkeiten der Streifenprojektion nicht heranreichen. Die Genauigkeit von ToF-Scannern liegt oft im Bereich von einigen Millimetern bis hin zu Zentimetern, abhängig von der spezifischen Implementierung und den Bedingungen der Anwendung. ToF-Scanner können jedoch sehr schnell sehr große Objekte (Dimension der Objekte von einigen Metern bis zu einigen Kilometern(!)) scannen.
+
+Für viele Anwendungen, insbesondere solche, die keine extrem hohe Genauigkeit im Submillimeterbereich erfordern, wie beispielsweise die Objekterfassung für Virtual Reality oder Umgebungs- und Bewegungserfassung für das autonome Fahren, sind ToF-Scanner oftmals völlig ausreichend. Sie sind robust, vergleichsweise günstig und bieten zudem den Vorteil einer extrem schnellen Erfassung von Oberflächen und Bewegungen aufgrund ihrer extrem hohen Messraten.
+
+![3D-Laserscanner der [Fa. Leica](https://leica-geosystems.com/de-de/products/laser-scanners) (Quelle: Fa. Leica Geosystems)](images/LeicaRTC360.jpg){width=50% #fig-3dleica}
+
+4. **Photogrammetrie**: Diese im Vergleich zu den zuvor genannten Technologien neue Methode verwendet eine Serie von Fotos, die um das Objekt herum aufgenommen werden. Durch Analyse von gemeinsamen Merkmalen in den Bildern und Verwendung von Triangulationstechniken kann eine 3D-Darstellung des Objekts erstellt werden. Die Photogrammetrie ist im industriellen Umfeld aufgrund begrenzter Auflösung den drei zuvor genannten Technologien unterlegen, kommt aber im Bereich des Film- und Spieleindustrie (→ Characterdesign und -animation) und zunehmend z.B. im Bereich der Vermessungstechnik von Gebäuden zum Einsatz (→ Verwendung von Drohnen zum Erfassen der Objekte). Aufgrund ihres auf einer Serien von Bildern basierenden Funktionsprinzips stellt die Photogrammetrie eine grundsätzliche andere Art der 3D-Scan-Technologie dar als die auf der Erfassung von einzelnen Punkten im Raum basierenden zuvor genannten Funktionsprinzipien.
+
+Die Genauigkeit von photogrammetrischen Scannern hängt von der Qualität der Kamerahardware, der Kalibrierung und der Anzahl der verwendeten Referenzpunkte ab. Sie können maximale Genauigkeiten im Bereich von 0,1 mm bis 1 mm erreichen.
+
+![Studio zum Erfassen eines Characters mittels [Photogrammetrie](https://de.wikipedia.org/wiki/Photogrammetrie) (Quelle: [Fa. Autodesk](https://www.autodesk.de/)).](images/Photogrammetrie_Bodyscan_Autodesk.jpg){width=80% #fig-bodyscan}
+
+
+### Ablauf eines 3D-Scans
+
+Lasertriangulation, Strukturiertes Licht und Time-of-Flight gemeinsam ist der Ablauf des 3D-Scans von der Erfassung der Punkte im Raum bis hin zu einem weiter zu nutzenden CAD-Modell (Quelle der Bilder: [TH Nürnberg](https://www.th-nuernberg.de/)):
+
+![**Schritt 1**: Zusammenführen der Scans zu einer Punktewolke des Objekts.](images/1Punktwolke_Bauteilscan.jpg){width=80%}
+
+![**Schritt 2**: Bereinigen der Punktewolke und Vernetzung der Punktewolke zu einem Netzmodell des Objekts.](images/2Netzmodell_Bauteilscan.jpg){width=80%}
+
+![**Schritt 3**: Erstellung eines Flächenmodells auf Basis des Netzmodells des Objekts (sog. **"Flächenrückführung"**). In der Abbildung farbig dargestellt ist die Abweichung zwischen Punktewolke und Flächenmodell. Zur Vereinfachung wird im Beispiel hier die Symmetrie des Objekts genutzt und nur eine Hälfte des Objekts dargestellt. Das Flächenmodell kann z.B. als Step-Datei gespeichert und in CAD-Programmen oder für den 3D-Druck weiter verwendet werden.](images/3Flaechenmodell_Bauteilscan.jpg){width=80%}
+
+![**Schritt 4** (Optional): Erstellung eines (parametrischen) CAD-Modells des Objekts auf Basis des Flächenmodells. Das Erstellen eines parametrischen CAD-Modells aus Flächendaten ist in der Regel nicht automatisiert möglich und erfordert häufig hohen Aufwand hochqualifizierten Konstruktionspersonals.](images/4CADModell_Bauteilscan.jpg){width=80%}
+
+
+### Industrielle Anwendung von 3D-Scannern
+
+In der industriellen Praxis werden 3D-Scanner insbesondere als unterstützendes Werkzeug im Produktentstehungsprozess sowie zur Qualitätskontrolle in der Produktion verwendet. 
+
+![Handgeführter 3D-Lasertriangulationsscanner als unterstützendes Werkzeug im Produktentstehungsprozess, z.B. im Gießwerkzeugbau (Quelle: [Adobe Stock](https://stock.adobe.com/)).](images/AdobeStock_288444629.jpeg){width=80% #fig-pepscan}
+
+Im Mittelpunkt der Anwendungen steht dabei immer die Fähigkeit, mittels 3D-Scannern sehr schnell und falls erforderlich hochautomatisiert präzise Messungen von komplexen Formen und Oberflächen physikalischer Objekte durchzuführen, die gewonnenen Daten in digitale 3D-Modelle umzuwandeln und diese Modelle für nachfolgende Aufgaben nutzen zu können.
+
+![Mittels Roboter und 3D-Scanner automatisierte Qualitätskontrolle in der Automobilindustrie um sicherzustellen, dass die produzierten Bauteile den spezifizierten Toleranzen entsprechen und frei von Defekten sind (Quelle: [Adobe Stock](https://stock.adobe.com/)).](images/AdobeStock_158225448.jpeg){width=80% #fig-qualityscan}
+
+Eine häufig genutzte Aufgabe, bei denen die Flächendaten aus dem 3D-Scan verwendet werden, ist ein Soll-Ist-Vergleich zwischen dem CAD-Datensatz und den Flächendaten aus dem 3D-Scan. Die Darstellung erfolgt zumeist durch Überlagerung der Datensätzen. Die Abweichungen werden zur besseren Interpretierbarkeit zumeist farbig dargestellt. @fig-sollistvergleich zeigt am Beispiel eines Wischwassertanks eine für Soll-Ist-Vergleiche im Automotivebereich typische Art der Visualisierung. 
+
+![Soll-Ist-Vergleich 3D-CAD-Modell vs. 3D-Scan des Bauteils. Die Abweichungen und deren Richtung zur Flächennormale zwischen Soll-Geometrie (CAD-Daten) und Ist-Daten (3D-Scan) werden farbig dargestellt (Quelle: [Fa. Freeform](https://www.freeform-gmbh.de/)).](images/Auswertung_3D-Scan_Soll-Ist-Vergleich.png){width=90% #fig-sollistvergleich}
+
+

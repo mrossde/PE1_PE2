@@ -1,0 +1,320 @@
+<!--
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Modelle zum Produktentstehungsprozess
+  - Wasserfallmodell
+  - V-Modell
+  - Spiralmodell
+  - Software Development Life Cycle (SDLC)
+  - Produktionsplanung im Produktentstehungsprozess
+  
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 1
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Traditionelle Modelle zum Produktentstehungsprozess
+
+-------------------------------------------------------------------------- -->
+
+<!--
+### Prolog: Boeing's Mission Update
+
+![Boeing’s Starliner landed safely at 12:01 a.m. Eastern time on Saturday, Sept. 7.  After an extended stay at the International Space Station, Starliner’s reusable crew module touched down at its designated landing site, White Sands Space Harbor at the U.S. Army’s White Sands Missile Range in New Mexico. (Quelle: [Boeing)](https://starlinerupdates.com/)](images/CFT_Landing_Jetton_03-1024x539.jpg){width=80% #fig-boeingmissionupdatestarliner}
+
+> *"I want to recognize the work the Starliner teams did to ensure a successful and safe undocking, deorbit, re-entry and landing,"* said Mark Nappi, vice president and program manager of Boeing’s Commercial Crew Program. ***"We will review the data and determine the next steps for the program. The Starliner crew module will be transported back to NASA’s Kennedy Space Center in Florida, where Boeing teams will analyze mission data."*** (Quelle: Boeing's Mission Update nach der Landung von [Starliner](https://starlinerupdates.com/) am 7. September 2024)
+-->
+
+
+::: {.content-visible unless-meta="headlines.off"}
+# Ideenfindung und Konzeptentwicklung
+## Methodische Grundlagen
+:::
+
+### Modelle zum Produktentstehungsprozess
+
+Es gibt verschiedene formale Modelle zur Produktentwicklung. Diese sind in der Literatur umfassend beschrieben.
+Die Modelle variieren in ihrer Struktur, Komplexität und Anwendbarkeit je nach den Anforderungen und Zielen eines bestimmten Projekts. In der betrieblichen Praxis finden heute das [Wasserfallmodell](https://de.wikipedia.org/wiki/Wasserfallmodell), das [V-Modell](https://de.wikipedia.org/wiki/V-Modell) und das [Spiralmodell](https://de.wikipedia.org/wiki/Spiralmodell) bei der Produktentwicklung Anwendung:
+
+
+#### Wasserfallmodell {#sec-wasserfallmodell}
+
+Das Wasserfallmodell besteht aus klar definierten, voneinander abgegrenzten Phasen, die sequenziell (nicht-iterativ) durchlaufen werden, wie z. B. Anforderungsanalyse, Entwurf, Implementierung, Testen und Wartung. Das Wasserfallmodell wurde in den 1970er Jahren für den Softwareentwicklungsprozess erarbeitet, jedoch schnell auch für hardwarenahe Produktentstehungsprojekte übernommen.
+
+![Wasserfallmodell nach [Winston W. Royce](https://en.wikipedia.org/wiki/Winston_W._Royce) von 1970 ([Quelle: Wikipedia](https://en.wikipedia.org/wiki/Waterfall_model))](images/1970_Royce_Managing_the_Development_of_Large_Software_Systems_Fig10.png){width=100% #fig-wasserfallmodell}
+
+Das Wasserfallmodell ist vermutlich das älteste der formal beschriebenen Modell zum Produktentstehungsprozess. 
+
+#### Stärken des Wasserfallmodells:
+
++ **Einfachheit**: Das Wasserfallmodell ist einfach und leicht zu verstehen. Es folgt einem streng linearen und sequenziellen Ansatz, bei dem jede Phase nacheinander durchlaufen und abgeschlossen wird. Dieses Vorgehen macht die Planung der Projekte im Vergleich zu den weiteren Modellen extrem einfach.
+
++ **Strukturierung**: Das Wasserfallmodell bietet eine klare Projektstruktur, die die Aufgaben und Verantwortlichkeiten für jeden Entwicklungsschritt deutlich definiert. Dieser Vorteil macht die Kommunikation und Koordination innerhalb des gesamten Projektteams sowie in Richtung Auftraggeber und Kunden einfach.
+
++ **Klarheit der Anforderungen**: Da das Wasserfallmodell darauf abzielt, alle Anforderungen in der ersten Phase (*"System Requirements"*) festzulegen, entsteht unmittelbar zu Projektbeginn quasi automatisch eine klare und einheitliche Vision für das Produkt. Diese Vision bleibt während des gesamten Ablaufs des Wasserfallmodells unverändert.
+
+5. **Klare Meilensteine**: Das Wasserfallmodell definiert klare Meilensteine für jeden Entwicklungsschritt. Auf der Grundlage dieser Meilensteine können Projekte, die nach dem Wasserfallmodell ablaufen, sehr einfach im Hinblick auf den Projektfortschritt verfolgt und überwacht werden. 
+
++ **Dokumentation**: Das Wasserfallmodell legt einen starken Schwerpunkt auf die Dokumentation, da jede Phase vor dem Fortschreiten zur nächsten Phase abgeschlossen und dokumentiert sein muss. Neben dem zu entwickelnden Produkt werden dabei auch wichtige Informationen und getroffene Entscheidungen dokumentiert (siehe z.B. → Bewertungsmatrizen). 
+
+Diese Eigenschaften und Anforderungen zusammen genommen machen das Wasserfallmodell besonders geeignet für Projekte mit **stabilen Anforderungen**, **klaren Zielsetzungen** und nur **minimaler Unsicherheit**. Es eignet sich auch gut für Projekte, bei denen eine umfassende Planung im Voraus möglich ist und keine Änderungen zu erwarten sind.
+
+Bereits zur Zeit der Entwicklung des Wasserfallmodells wurde als dessen grundlegende Schachstelle erkannt, dass das späte Testen des Produkts erhebliche Risiken mit sich bringt und als riskant und dies geradezu als Einladung für Fehler wirken kann. Entsprechend gilt die Empfehlung, die Testphase so früh als möglich, idealerweise beginnend zeitlich parallel zur Entwicklungsarbeit, zu starten. Bei hardwarenahem Produkten erfolgt das in der Praxis heute zumeist durch Simulation und den frühzeitigen Test einzelner Komponenten oder [Module](https://de.wikipedia.org/wiki/Modultest) des Produkts. 
+
+
+::: {.callout-caution}
+## Grenzen des Wasserfallmodells in der Praxis
+Das Wasserfall ist perfekt bis zu dem Moment, an dem am letzten Ende der Produktentwicklung ein Test mit überraschendem, katastrophalem Ergebnis eintritt. In diesem Moment bricht auch das bis dahin perfekte Projektcontrolling zusammen. Zeit und Kostenplanung werden von einer Sekunde auf die andere wertlos. Dieses Risiko des plötzlichen und zugleich potenziell vollständigen Scheiterns eines Produktentstehungsprozesses möchte letztlich niemand im Projektentwicklungsteam, im Management oder beim Kunden eingehen. Das Wasserfallmodell erwies sich als theoretisch wunderschön, aber in seiner reinen Form als leider nicht praxistauglich.
+:::
+
+Um dieses als äußerst unschön erkannte Problem, dass in der Wirklichkeit leider sehr viele Unwägbarkeiten mit fatalen Folgen auftreten können, zu beheben wurde das Wasserfallmodell rasch weiterentwickelt: Das V-Modell entstand und hat heute das Wasserfallmodells bei der Softwareentwicklung (und in der Regel auch bei der Hardwareentwicklung) abgelöst.
+
+Siehe auch → [weiterführende Literatur](https://en.wikipedia.org/wiki/Waterfall_model#References)
+
+
+#### V-Modell {#sec-v-modell}
+
+Das V-Modell ist dem Wasserfallmodell ähnlich, jedoch mit einem Schwerpunkt auf Verifikation und Validierung, wobei jede Phase mit einem entsprechenden Test verknüpft ist. Das V-Modell wurde ursprünglich für die Softwareentwicklung konzipiert, findet aber auch bei Entwicklung mechatronische Produkte häufig Anwendung. Die [Richtlinie VDI/VDE 2206](https://www.vdi.de/richtlinien/details/vdivde-2206-entwicklung-mechatronischer-und-cyber-physischer-systeme) empfiehlt das V-Modell als Teil der „Entwicklungsmethodik für mechatronische Systeme“.
+
+![V-Modell nach VDI/VDE 2206 aus dem Jahr 2021 ([Quelle: Wikipedia](https://de.wikipedia.org/wiki/V-Modell#/media/Datei:V-Modell_VDI-VDE-2206_Nov2021.png))](images/V-Modell_VDI-VDE-2206_Nov2021.png){width=100% #fig-v-modell}
+
+#### Stärken des V-Modells
+
++ **Klare Verknüpfung von Entwicklung und Test**: Das V-Modell legt einen starken Schwerpunkt auf die Verknüpfung von Entwicklung und Test. Jeder Entwicklungsprozess hat eine entsprechende Testphase, die sicherstellt, dass die Anforderungen korrekt implementiert wurden und das System wie erwartet funktioniert.
+
++ **Frühes Fehlererkennung**: Durch die parallele Entwicklung und Testung werden Fehler frühzeitig im Entwicklungsprozess erkannt. Dies hilft, Kosten und Zeit für spätere Fehlerbehebungen zu reduzieren, da Probleme bereits in frühen Phasen identifiziert und behoben werden können.
+
++  **Klare Strukturierung**: Ähnlich wie das Wasserfallmodell bietet auch das V-Modell eine klare Struktur, die die verschiedenen Entwicklungsphasen und Testaktivitäten definiert. Dies erleichtert die Planung, Durchführung und Überwachung des Projekts.
+
++ **Betriebliche Integration**: Das V-Modell berücksichtigt nicht nur die Entwicklungsphasen, sondern integriert erstmals auch die späteren Phasen des Systembetriebs (im Wasserfallmodell als "*Operations*" bezeichnet) und (NEU!!!) die Phase der Wartung und Pflege als Phasen im Produktentstehungsprozess. Dies trägt maßgeblich dazu bei, dass die entwickelten Produkte und Systeme langfristig funktionsfähig und wartbar sind.
+
++ **Risikomanagement**: Das V-Modell unterstützt ein systematisches Risikomanagement, indem es frühzeitig Testaktivitäten integriert und Risiken identifiziert. Dies hilft, potenzielle Probleme zu antizipieren und angemessene Maßnahmen zu ergreifen, um sie zu bewältigen.
+
+Das V-Modell eignet sich besonders gut für Projekte, bei denen eine enge Verknüpfung von Entwicklung und Test erforderlich ist und eine hohe Qualität und Zuverlässigkeit des Systems gewährleistet sein muss. Es ist auch geeignet für Projekte, die komplexe Anforderungen haben und bei denen ein systematisches Risikomanagement erforderlich ist. Gleichzeitig bietet das V-Modell noch weitgehend die Vorteile des Wasserfallmodells. Das V-Modell ist das vermutlich erfolgreichste der drei hier vorgestellten Modelle. 
+
+
+|                   | Wasserfallmodell                                                                  | V-Modell                                                             |
+|------------------:|:----------------------------------------------------------------------------------|:---------------------------------------------------------------------|
+| **Entwicklung**   | Sequenzieller Ansatz, bei der jede Phase nacheinander abgeschlossen wird          | Iterativer Ansatz, bei der Entwicklung und Test parallel stattfinden |
+| **Test**          | Testaktivitäten finden erst nach Abschluss der Entwicklungsphasen statt           | Entwicklung und der dazugehörige Test sind jeweils miteinander verbunden und erfolgen in einem V-förmigen Prozess |
+| **Risikomanagement** | Risiken werden möglicherweise erst spät im Prozess erkannt                        | Frühzeitige Tests und Validierungen helfen dabei, Risiken frühzeitig zu identifizieren und zu beherrschen |
+| **Flexibilität**  | Nicht vorgesehen                                                                  | Iterative Schleifen und eine kontinuierliche Überprüfung und Anpassung des zu entwickelnden Produkts |
+| **Dokumentation** | Umfangreiche Dokumentation des zu entwickelnden Produkts                          | Umfangreiche Dokumentation des zu entwickelnden Produkts, zusätzliche Dokumentation der verschiedenen Testphasen und Entscheidungsprozesse |
+| **Projektmanagement** | Einfaches Verfolgen von Meilensteinen und Projektfortschritt                      | Höhere Anforderungen aufgrund interativem Ansatz und V-förmigem Prozess |
+
+: Hauptunterschiede zwischen Wasserfallmodell und dem V-Modell {#tbl-wasserfallvsvmodell .striped .hover .bordered tbl-colwidths="[20,40,40]"}
+
+
+<!--
+Das V-Modell bietet im Vergleich zum Wasserfallmodell einige wichtige Vorteile, bringt jedoch auch spezifische Nachteile mit sich, insbesondere in Bezug auf Komplexität und Ressourcenaufwand:
+
++ **Höherer Aufwand und Komplexität**
+   - **Erhöhter Dokumentationsaufwand**: Das V-Modell erfordert eine umfassende Dokumentation für jede Phase und deren Tests. Dies führt zu einem erheblichen zusätzlichen Arbeitsaufwand und kann die Komplexität des Entwicklungsprozesses erhöhen.
+   - **Aufwendige Tests**: Da jeder Entwicklungsschritt mit einem eigenen Testprozess gekoppelt ist, wird der gesamte Entwicklungsaufwand erhöht. Der Fokus auf parallele Tests macht den Ablauf komplexer, da Tests kontinuierlich vorbereitet, dokumentiert und durchgeführt werden müssen.
+
++ **Höhere Ressourcen- und Kostenanforderungen**
+   - **Erheblicher Ressourcenbedarf**: Die parallele Durchführung von Entwicklung und Test erfordert mehr personelle und finanzielle Ressourcen. Die Notwendigkeit, Testteams bereits frühzeitig einzubeziehen und durchgängig Testaktivitäten durchzuführen, kann die Kosten im Vergleich zum Wasserfallmodell erhöhen.
+   - **Zeitintensiv**: Die aufwendige Struktur und die frühzeitige Einbindung von Tests verlängern oft den Projektzeitraum, besonders bei kleineren Projekten, die nicht die umfassende Teststrategie des V-Modells benötigen.
+
+Das V-Modell bringt im Vergleich zum Wasserfallmodell viele Vorteile im Hinblick auf Fehlerfrüherkennung und Qualitätssicherung, ist jedoch komplexer und zumeist ressourcenintensiver.
+-->
+
+Im Bereich der Softwareentwicklung wurde jedoch bald deutlich, dass auch die vom V-Modell geboten Flexibilität im Produktentstehungsprozess in einigen Fällen noch immer nicht ausreicht. Die dadurch angestoßene Weiterentwicklung des V-Modells führte schließlich zum Spiralmodell, bei dem der Entwicklungszyklus in Schleifen mehrfach durchlaufen wird.
+
+<!--
++ **Eingeschränkte Flexibilität für agile Anpassungen**
+   - **Anforderungsänderungen**: Zwar ist das V-Modell flexibler als das Wasserfallmodell, jedoch ist es weniger anpassungsfähig als agile Modelle. Anpassungen der Anforderungen sind während der Entwicklung zwar möglich, aber sie erfordern oft die Überarbeitung mehrerer Dokumentationen und Testszenarien, was zeitaufwendig und ressourcenintensiv sein kann.
+   - **Fester Ablauf**: Das V-Modell setzt auf eine stark strukturierte Vorgehensweise mit klar definierten Phasen und Teststufen, was es schwer macht, spontan auf sich verändernde Anforderungen oder neue Erkenntnisse zu reagieren.
+
++ **Schwierig bei sich stark entwickelnden Projekten**
+   - **Geringe Eignung für dynamische Projekte**: Das V-Modell ist besser für Projekte mit stabilen Anforderungen geeignet. Wenn sich Anforderungen im Laufe des Projekts häufig ändern, kann die strukturierte Vorgehensweise des V-Modells hinderlich sein und erfordert viele Nacharbeiten.
+   - **Kompliziert für kleinere Projekte**: Bei kleineren Projekten kann das V-Modell überdimensioniert und unpraktisch sein, da der Aufwand für die parallelen Test- und Entwicklungsphasen oft nicht verhältnismäßig zur Größe des Projekts steht.
+-->
+
+::: {.callout-important}
+## Pro-Tipp!
+Sowohl beim Wasserfallmodell als auch beim V-Modell sollte nach jedem abgeschlossenen Projekt eine Analysephase hinzugefügt werden, in der das Erreichte, im Positiven wie im Negativen, zusammengestellt, (in einer perfekten Welt auch dokumentiert) und als extrem wertvoller Beitrag für Folgeprojekte zur Verfügung gestellt wird. Bei kompletten Neuentwicklungen von Produkten gelingt es in der Regel erst bei der zweiten oder dritten Produktgeneration das volle technische und wirtschaftliche Potenzial des Produkts zu heben.
+:::
+
+![Vergleich der ersten und zweiten Generation der von SpaceX entwickelten [Raptor-Antriebseinheit](https://de.wikipedia.org/wiki/Raptor_(Raketentriebwerk)). Technische Daten: 1. Generation (links) Schub auf Meereshöhe 185 tf, Schub im Vakuum 200 tf; 2. Generation (rechts) Schub auf Meereshöhe 230 tf, Schub im Vakuum 258 tf (1 tf = 9807 N). Dieser Leistungszuwachs konnte trotz einer deutlich einfacheren, kompakteren und leichteren Bauweise der Antriebseinheit erreicht werden (Quelle: [SpaceX](https://www.spacex.com/), Stand: 2022).](images/SpaceX-Raptor-V1-vs-V2_2022.jpg){width=80% #fig-spacex_raptor}
+
+
+
+
+#### Spiralmodell {#sec-spiralmodell}
+
+Schwerpunkt des Spiralmodells ist die iterative Natur insbesondere im Bereich der Softwareentwicklung: Entwicklung und Verbesserung durch Prototyping, Risikoanalyse und Kundenfeedback werden dabei wieder und wieder in Schleifen durchlaufen.
+
+::: {.callout-warning}
+## Vorsicht bei der Verwendung des Spiralmodells bei der Entwicklung von Hardware!
+Das Spiralmodell ist für die Produktentwicklung von Hardware (und damit auch für mechatronische Produkte) aufgrund der starken Fokussierung auf ein iterativen Vorgehens in der Praxis sehr häufig nicht geeignet. 
+:::
+
+![Spiralmodell nach Barry W. Boehm aus dem Jahr 1986 ([Quelle: Wikipedia](https://de.wikipedia.org/wiki/Spiralmodell))](images/Spiralmodel_nach_Boehm.png){width=100% #fig-spiralmodell}
+
+#### Stärken des Spiralmodells
+
++ **Risikomanagement**: Das Spiralmodell legt einen starken Schwerpunkt auf das Risikomanagement, indem es iterative Schleifen verwendet, um Risiken frühzeitig im Entwicklungsprozess zu identifizieren, zu bewerten und zu behandeln. Durch regelmäßige Risikoanalysen und Prototypenentwicklung können potenzielle Probleme proaktiv angegangen werden.
+
++ **Flexibilität und Anpassungsfähigkeit**: Das Spiralmodell ist äußerst flexibel und anpassungsfähig an sich ändernde Anforderungen, da es iterative Schleifen verwendet, um kontinuierliches Feedback zu erhalten und das zu entwickelnde Produkt entsprechend anzupassen. Dies ermöglicht es, sich dynamisch an sich ändernde Bedingungen und Anforderungen anzupassen.
+
++ **Frühe Prototypenentwicklung**: Das Spiralmodell unterstützt die Entwicklung von frühen Prototypen, die es den Projektbeteiligten ermöglichen, das zu entwickelnde Produkt frühzeitig zu überprüfen und Feedback zu geben. Dies erleichtert die Validierung der Anforderungen und das Verständnis der Kundenbedürfnisse.
+
++ **Kontrollierte und graduell wachsende Entwicklung**: Das Spiralmodell ermöglicht eine schrittweise und kontrollierte Entwicklung, bei der das System schrittweise erweitert wird. Dies trägt dazu bei, dass das Projekt in kleinen Zeitschritten verwaltet wird, während gleichzeitig die Qualität und Zuverlässigkeit des zu entwickelnden Produkts verbessert werden. All dies hilft, plötzliche und völlig unerwartet *"aus heiterem Himmel"* kommende unliebsame Überraschungen weitgehend auszuschließen. 
+
++ **Kommunikation und Zusammenarbeit**: Durch die iterative Natur des Spiralmodells wird die Kommunikation und Zusammenarbeit zwischen den verschiedenen Projektbeteiligten, dem Management und dem Kunden gefördert. Dies trägt dazu bei, Missverständnisse zu reduzieren und sicherzustellen, dass alle Beteiligten ein gemeinsames Verständnis des zu entwickelnden Produkts haben.
+
+Das Spiralmodell eignet sich besonders gut für komplexe Projekte mit sich ändernden Anforderungen und hohem Risiko. Es ist auch geeignet für Projekte, bei denen frühzeitiges Feedback und die Möglichkeit zur iterativen Entwicklung wichtig sind.
+
+
+#### Nachteile des Spiralmodells im direkten Vergleich zum V-Modell
+
++ **Komplexität**: Das Spiralmodell kann aufgrund seiner iterativen Natur und der damit verbundenen kontinuierlichen Risikobewertung und Prototypenentwicklung äußerst komplex sein. Dies erfordert ein erfahrenes Projektteam und eine sorgfältige Projektplanung, um sicherzustellen, dass das Projekt erfolgreich durchgeführt und auch erfolgreich (→ Kostenrahmen; → Zeitrahmen) beendet werden kann.
+
++ **Kostenrahmen**: Die iterative Natur des Spiralmodells führt häufig zu unerwartet höheren Kosten als geplant, insbesondere wenn viele Iterationen und Prototypenentwicklungen erforderlich sind. Dies kann zu Budgetüberschreitungen führen, insbesondere wenn die Risiken nicht effektiv gemanagt werden.
+
++ **Zeitrahmen**: Die kontinuierliche Überprüfung, Bewertung und Anpassung des Systems im Spiralmodell erfordert einen beträchtlichen zeitlichen Aufwand. Dies führt häufig zu beträchtlich längeren Entwicklungszeiten als geplant, insbesondere wenn es zu Verzögerungen kommt oder wenn Änderungen in späteren Iterationen vorgenommen werden müssen.
+
++ **Anforderungsmanagement**: Das Spiralmodell erfordert ein effektives Anforderungsmanagement, da sich Anforderungen während des Entwicklungsprozesses ändern können. Wenn Anforderungen nicht klar definiert oder kontrolliert werden, kann dies zu Problemen führen und den Erfolg des Projekts gefährden (siehe → Moving Targets).
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Weitere Modelle zum Softwareentstehungsprozess
+
+-------------------------------------------------------------------------- -->
+
+
+
+#### Exkurs: Software Development Life Cycle (SDLC)
+
+Speziell für die [Softwareentwicklung](https://de.wikipedia.org/wiki/Vorgehensmodell_zur_Softwareentwicklung) existieren neben den drei oben vorgestellten Modellen zum Produktentstehungsprozess (Wasserfallmodell, V-Modell und Spiralmodell) einer Vielzahl weiterer Modelle. Alle Modelle stützen sich jedoch auf die gemeinsame Grundlage des in @fig-sdlc dargestellten Software Development Life Cycles (SDLC):
+
+![Software Development Life Cycle (SDLC)](images/SoftwareDevelopmentLifeCycel_SDLC.png){width=64% #fig-sdlc}
+
+<!--
+#### Exkurs: Weitere Modelle für Softwareentwicklungsprozesse
+
+
+
+
+, von denen einige hier kurz genannt sein sollen:
+
++ **Agile Modelle** (z. B. Scrum, Kanban): Diese Modelle betonen die Flexibilität und Anpassungsfähigkeit während des gesamten Entwicklungsprozesses. Sie verwenden iterative Ansätze und kurze Entwicklungszyklen, um kontinuierliche Verbesserungen zu ermöglichen.
+
++ **Lean Softwareentwicklung**: Dieses Modell zielt darauf ab, Verschwendung zu minimieren und Wert für den Kunden zu maximieren, indem es sich auf kontinuierliche Verbesserung, Teamarbeit und die Optimierung des Entwicklungsprozesses konzentriert.
+
++ **Rational Unified Process (RUP)**: Ein strukturiertes Framework für Softwareentwicklung, das iterative Entwicklung, Risikomanagement und eine Fülle von Best Practices umfasst.
+
++ **Formale Methoden**: Diese umfassen mathematische Techniken und Werkzeuge zur Spezifikation, Verifikation und Validierung von Software, um deren Korrektheit und Zuverlässigkeit sicherzustellen.
+
+Formale Methoden sind mathematische Techniken und Werkzeuge, die in der Softwareentwicklung eingesetzt werden, um die Spezifikation, Verifikation und Validierung von Software zu unterstützen. Sie finden Anwendung bei der Entwicklung von sicherheitskritischen oder hochzuverlässigen Systeme, bei denen Fehler schwerwiegende Konsequenzen haben können. Sie bieten eine strenge und systematische Herangehensweise an die Softwareentwicklung, die dazu beiträgt, Fehler frühzeitig im Entwicklungsprozess zu erkennen und zu beheben. Die Hauptaspekte und Techniken formaler Methoden sind:
+
++ **[Formale Spezifikation](https://de.wikipedia.org/wiki/Formale_Spezifikation)**: Dies beinhaltet die Verwendung mathematischer Notationen und formaler Sprachen, um Anforderungen und Spezifikationen klar und präzise zu beschreiben. Formal spezifizierte Modelle können dazu beitragen, Missverständnisse zwischen Entwicklern und Kunden zu reduzieren.
+
++ **Formale Verifikation**: Dies ist der Prozess, bei dem mathematische Beweise oder Analysetechniken verwendet werden, um zu zeigen, dass ein Softwareprodukt die spezifizierten Anforderungen erfüllt. Hierbei werden Logik und formale Methoden verwendet, um sicherzustellen, dass die Implementierung einer Software korrekt ist und bestimmte Eigenschaften aufweist, wie z. B. Abwesenheit von Fehlern oder Einhaltung von Sicherheitsrichtlinien.
+
++ **Formale Validierung**: Ähnlich der Verifikation, befasst sich die Validierung mit der Frage, ob das entwickelte System die tatsächlichen Bedürfnisse und Erwartungen der Benutzer erfüllt. Formale Methoden können verwendet werden, um die Konsistenz zwischen den Anforderungen und dem entwickelten System sicherzustellen.
+
++ **Formale Sprachen und Logiken**: Dies umfasst die Verwendung von formalen Sprachen wie zum Beispiel [temporalen Logiken](https://www.vdi.de/richtlinien/details/vdivde-2206-entwicklung-mechatronischer-und-cyber-physischer-systeme) oder [Hoare-Kalkülen](https://de.wikipedia.org/wiki/Hoare-Kalk%C3%BCl), um Eigenschaften von Programmen zu spezifizieren, zu verifizieren oder zu validieren. Diese Sprachen sind präzise und ermöglichen eine genaue Beschreibung von Systemeigenschaften und Verhaltensweisen.
+
++ **Automatisierte Werkzeuge und Beweiser**: Es gibt eine Vielzahl von automatisierten Werkzeugen und Theorembeweisern, die auf formalen Methoden basieren. Diese Werkzeuge können dazu beitragen, die Komplexität der Verifikation und Validierung zu bewältigen, indem sie automatisch Beweise generieren oder Fehler in Softwaremodellen identifizieren.
+
+-->
+
+
+
+<!--
+::: {.callout-tip}
+## Weiterführende Links
+
+:::
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Produktionsplanung im Produktentstehungsprozess
+
+-------------------------------------------------------------------------- -->
+
+#### Produktionsplanung im Produktentstehungsprozess {#sec-ppimpep}
+
+Bei den in der Literatur zu findenden und auch in diesem Skript hier gezeigten Darstellungen zu den Modellen zum Produktentstehungsprozess werden die Aufgaben der → Produktionsplanung und Produktion nur extremst verkürzt dargestellt (z.B. in Form des isoliert dargestellten Blocks "Operations" beim Wasserfallmodell → @fig-wasserfallmodell, als "Übergabe" beim V-Modell → @fig-v-modell oder als "Abnahme" beim Spiralmodell → @fig-spiralmodell). 
+
+Diese Darstellung mag aus Sicht ihres Dozenten aus einer antiquierten, nicht mehr zeitgemäßen Entwicklungssicht herrühren, wird der tatsächlichen Bedeutung der Produktionsplanung und Produktion, insbesondere bei Produkten, die in (Groß-)Serie hergestellt werden sollen, jedoch überhaupt nicht gerecht.
+
+<!-- Abbildung: Gelbes WARNING-Dreieck
+<p style="text-align: center;">![](images/AdobeStock_589506892.png){width=24%}</p>
+-->
+
+::: {.callout-important}
+## Produktionsplanung ist wichtiger Partner für die Produktentwicklung
+In der betrieblichen Praxis, insbesondere bei Produkten, die in Serienfertigung hergestellt werden sollen, spielt die Produktionsplanung eine wichtige Rolle und wirkt in der Regel auf die Produktentwicklung mit ein. Die Produktionsplanung vertritt dabei auch die Interessen der späteren (Serien-)Produktion im Produktentstehungsprozess.
+:::
+
+In der betrieblichen Praxis ist die spätere wirtschaftliche Serienproduktion von Produkten oftmals nur durch frühzeitige Einbindung und die Mitwirkung der Produktionsplanung bei der Produktentwicklung zu erreichen (z.B. → Produktionsgerechte Produktgestaltung (PPG); z.B. → Wiederverwendung ("Reuse") von Produktionsanlagen; z.B. → serienproduktionstaugliche Konzepte zur Qualitätssicherung). 
+
+::: {.callout-important}
+## Produktionsplanung erfolgt in der Regel zeitgleich zur Produktentwicklung
+Die Produktionsplanung findet daher in der Regel bereits zeitlich parallel zu Entwicklung, Prototyping und Test statt und stellt sicher, dass das fertig entwickelte Produkt zu einem definierten Meilenstein an eine dann mit einem geeigneten Produktionssystem ausgestattete Produktion übergeben werden kann. 
+:::
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
+
++ @bender_pahlbeitz_2021: [Der Produktentwicklungsprozess](https://rdcu.be/dIz36)
++ @kellner_produktionswirtschaft_2022: [Produktionsplanung und -steuerung (PPS)](https://rdcu.be/d21O5)
++ @thommen_allgemeine_2023: [Produktionsplanung und -steuerung (PPS)](https://rdcu.be/d21Mu)
+
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Literaturempfehlung
+
+-------------------------------------------------------------------------- -->
+
+<!--
+#### Literaturempfehlung
+
+![@bender_pahlbeitz_2021: [Konstruktionslehre](https://link.springer.com/book/10.1007/978-3-662-57303-7)](images/Pahl_Konstruktionslehre.webp){width=40%}
+
+![@kellner_produktionswirtschaft_2022: [Produktionswirtschaft](https://link.springer.com/book/10.1007/978-3-662-65803-1)](images/Kellner_Produktionswirtschaft_978-3-662-65803-1.webp){width=40%}
+
+![@thommen_allgemeine_2023: [Allgemeine Betriebswirtschaftslehre](https://link.springer.com/book/10.1007/978-3-658-39395-3)](images/Thommen_Betriebswirtschaftslehre_978-3-658-39395-3.webp){width=40%}
+-->

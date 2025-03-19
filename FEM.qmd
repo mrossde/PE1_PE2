@@ -1,0 +1,251 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Finite-Elemente-Simulation
+
+-------------------------------------------------------------------------- -->
+
+## Finite-Elemente-Simulation (FEM) {#sec-fem}
+
+---
+
+> "The greatest enemy of knowledge is not ignorance, it is the illusion of knowledge." (Stephen Hawking) 
+
+---
+
+![Finite-Elemente-Simulation der von-Mises-Spannungen eines einfachen Bauteils (Quelle: Adobe Stock)](images/FEM.png){width=80% #fig-fem}
+
+::: {.callout-tip}
+## Definition: *"Finite-Elemente-Simulation"*
+Die Finite-Elemente-Simulation oder auch Finite-Elemente-Methode (FEM) und Finite-Elemente-Analysen (FEA) genannt, ist ein allgemeines, bei unterschiedlichen physikalischen Aufgabenstellungen angewendetes numerisches Verfahren zur Lösung von physikalischen Problemen, insbesondere strukturmechanischen Fragestellungen. 
+:::
+
+Am bekanntesten ist die Anwendung der FEM bei der Festigkeits- und Verformungsuntersuchung von Festkörpern (siehe @#fig-fem) mit geometrisch komplexer Form, weil sich hier der Gebrauch der klassischen Methoden (z. B. die Balkentheorie) als zu aufwändig oder nicht möglich erweist. Die FEM basiert auf dem numerischen Lösen eines komplexen Systems aus Differentialgleichungen.
+
+Das Berechnungsgebiet (z. B. der Festkörper) wird in endlich viele Teilgebiete (z. B. Teilkörper) einfacher Form aufgeteilt, z. B. in viele kleine Quader oder Tetraeder. Diese Elemente sind endlich klein (finit), ihre tatsächliche Größe bleibt jedoch mathematisch relevant. Ihr physikalisches Verhalten kann aufgrund ihrer einfachen Geometrie mit bekannten Ansatzfunktionen gut berechnet werden. Das Aufteilen des Gebiets/Bauteils in eine bestimmte Anzahl Elemente finiter Größe, die sich mit einer endlichen Zahl von Parametern beschreiben lassen, gab der Methode den Namen „Finite-Elemente-Methode“.
+
+Das physikalische Verhalten des Gesamtkörpers wird dadurch nachgebildet, wie diese Elemente auf die Kräfte, Lasten und Randbedingungen reagieren und wie sich Lasten und Reaktionen beim Übergang von einem Element ins benachbarte fortpflanzen durch ganz bestimmte problemabhängige Stetigkeitsbedingungen, die die Ansatzfunktionen erfüllen müssen.
+
+Die Ansatzfunktionen enthalten Parameter, die in der Regel eine physikalische Bedeutung besitzen, wie z. B. die Verschiebung eines bestimmten Punkts im Bauteil zu einem bestimmten Zeitpunkt. Die Suche nach der Bewegungsfunktion ist auf diese Weise auf die Suche nach den Werten der Parameter der Funktionen zurückgeführt. Indem immer mehr Parameter (z. B. immer mehr, kleinere Elemente) oder immer höherwertige Ansatzfunktionen benutzt werden, kann die Genauigkeit der Näherungslösung verbessert werden. Das näherungsweise Lösen den zu lösenden Gleichungssystems ist die Aufgabe des FE-Gleichungslösers. Die Größe des zu lösenden Gleichungssystems hängt maßgeblich von der Anzahl der finiten Elemente ab. Seine Lösung stellt letztlich die numerische Lösung des betrachteten Differentialgleichungsproblems dar.
+
+Die Entwicklung der FEM war in wesentlichen Etappen nur mittels der Entwicklung leistungsfähiger Computer möglich, da sie erhebliche Rechenleistung benötigt. Daher wurde diese Methode von vorneherein computergerecht formuliert. Sie brachte einen wesentlichen Fortschritt bei der Behandlung von Berechnungsgebieten beliebiger Form.
+
+::: {.callout-warning}
+Simulationswerkzeuge zur Finite-Elemente-Simulation sind heute extrem mächtig und die in den Softwarewerkzeugen enthaltenen Algorithmen auch von geübten Anwendern nicht mehr zu durchdringen. 
+
+Der bestimmungsgemäße Gebrauch und die insbesondere die fachlich richtige Interpretation der mit den Simulationen errechneten Ergebnisse erfordert ein extrem hohes Maß an fachlicher Kompetenz der Anwender dieser Werkzeuge. Von einer *„gelegentlichen Nutzung der Werkzeuge und Deutung der mit den Simulationswerkezugen erzielten Ergebnisse“* wird daher dringendst abgeraten!
+:::
+
+Die Kenntnis und das Verständnis der Vorgehensweise ist dennoch auch für den „Nicht-Anwender“ relevant um Anschlussfähig mit den jeweiligen Spezialisten zu sein. Wie also läuft eine Finite-Elemente-Simulation grundsätzlich ab?
+
+### Vorgehen bei der FEM
+Im Allgemeinen besteht das Vorgehen bei der FEM-Simulation aus folgenden Schritten:
+
+```{mermaid}
+%%| fig-width: 6.0
+%%| label: fig-label-fem01
+%%| fig-cap: "Vorgehen bei der Finite-Elemente-Simulation"
+flowchart TD
+    A[Modellierung] 
+    --> B[Festlegen der Materialeigenschaften]
+    --> C[Festlegen der Randbedingungen]
+    --> D[Diskretisierung]
+    --> E[Aufstellung der Gleichungssystems]
+    --> F[Lösung des Gleichungssystems]
+    --> G[Analyse der Ergebnisse]
+style D fill:#fff,stroke:#aaa,color:#aaa
+style E fill:#fff,stroke:#aaa,color:#aaa
+style F fill:#fff,stroke:#aaa,color:#aaa
+```
+
+1. **Modellierung:** Das zu untersuchende Bauteil oder System wird in einem CAD-Programm modelliert. Dabei werden die Geometrie, Materialien und Randbedingungen definiert. Das Modell wird dann in ein FEM-Programm importiert.
+
+2. **Festlegung der Materialeigenschaften:** Den einzelnen Elementen werden Materialeigenschaften zugewiesen, wie z. B. Elastizitätsmodul, Poisson-Zahl, Dichte und thermische Eigenschaften. Diese Parameter beeinflussen das Verhalten des Bauteils und sind wichtig für die Berechnungen.
+
+3. **Diskretisierung:** Das Modell wird in kleinere Elemente, typischerweise Dreiecke oder Tetraeder für 2D- bzw. 3D-Probleme, unterteilt. Diese Elemente werden durch Knotenpunkte verbunden, an denen die Lösung berechnet wird. Diese Diskretisierung ermöglicht die numerische Analyse des Problems.
+
+4. **Festlegung der Randbedingungen:** Die Randbedingungen werden definiert, um das Verhalten des Systems zu beschreiben. Dies umfasst Einspannungen, Auflagerungen, Lasten und andere äußere Einflüsse. Die Randbedingungen sind entscheidend für die Lösung des Problems und die Vorhersage des Verhaltens des Systems.
+
+5. **Aufstellen der Gleichungen:** Basierend auf den geometrischen und physikalischen Eigenschaften des Modells werden die Gleichungen aufgestellt, die das Verhalten des Systems beschreiben. Diese Gleichungen werden in der Regel durch partielle Differentialgleichungen, wie die Gleichungen der Statik, Dynamik oder Wärmeleitung, repräsentiert. Das Aufstellen des Gleichungssystems erfolgt in aller Regel vor den Anwender verborgen innerhalb des Softwarewerkzeugs.
+
+6. **Lösung der Gleichungen:** Die aufgestellten Gleichungen werden gelöst, um die Verteilung der Unbekannten (z. B. Verschiebungen, Spannungen, Temperaturen) im Modell zu berechnen. Dies wird in der Regel durch iterative Verfahren, wie beispielsweise die Methode der finiten Elemente oder die Methode der finiten Differenzen, erreicht. Das näherungsweise Lösen des Gleichungssystems erfolgt in aller Regel ebenfalls vor dem Anwender verborgen. Aufgrund der teils langen Zeit, die das Lösen des Gleichungssystems erfordert (typische Dauern variieren zwischen wenigen Sekunden bis mehreren Tagen) wird der Anwender zumeist über den Fortschritt informiert, z.B. im Form der Anzeige eines Fortschrittsbalkens oder weiterer relevanter Angaben (z.B. die aktuell gewählte Schrittweite der Iterationen).
+
+7. **Analyse der Ergebnisse:** Nach Abschluss der Simulation werden die berechneten Ergebnisse analysiert. Dies umfasst die Auswertung von Verschiebungen, Spannungen, Temperaturen, Strömungsgeschwindigkeiten oder anderen relevanten Größen. Die Ergebnisse können verwendet werden, um das Verhalten des Systems zu verstehen, mögliche Schwachstellen zu identifizieren und Designverbesserungen vorzunehmen. 
+
+<!-- Callout: Warnung zur Interpretation von Ergebnissen der Finite-Elemente-Simulation -->
+::: {.callout-caution}
+Eine sichere Interpretation der mittel Finite-Elemente-Simulation erzielten Berechnungsergebnisse setzt umfangreiche fachliche Kenntnisse voraus und sollte keinesfalls von ungeübten Anwendern durchgeführt werden!
+
+Nur weil die Ergebnisse optisch beeindruckend dargestellt sind und zudem teilweise noch animiert dargestellt werden können heißt das keinesfalls, dass die Ergebnisse irgendetwas mit der Realität zu tun haben! 
+ 
+**Dem geneigten Leser wird dringendst empfohlen immer mit der Haltung an die Ergebnisse heran zu treten, dass die Ergebnisse falsch sind** (→ [Bestätigungsfehler](https://de.wikipedia.org/wiki/Best%C3%A4tigungsfehler)). Der geneigte Leser sollte zunächst nach Kräften zu versuchen zu beweisen, dass ein Fehler bei den Ergebnissen vorliegt. Falls möglich sollten Experten zur Bewertung der Ergebnisse hinzu gezogen werden. 
+
+Erst wenn trotz viel Sorgfalt und Mühe aller Beteiligten keine Indizien für fehlerhafte Resultate gefunden werden können ist der nächste Schritt den skeptischen Glauben zu wagen, dass die Ergebnisse zumindest in Teilen etwas mit der Realität zu tun haben könnten.
+:::
+
+Trotz aller Herausforderungen ermöglicht es die Finite-Elemente-Simulation, das Verhalten von Bauteilen und Systemen unter verschiedenen physikalischen Bedingungen vorherzusagen und zu optimieren. FEM ist eine extrem leistungsstarke Methode, um im Produktentstehungsprozess auftretende komplexe Probleme zu analysieren und Lösungen zu finden. Heute geht an der Verwendung von FEM bei der Produktentwicklung kein Weg mehr vorbei.
+
+### Anwendungsfälle der FEM
+Typische Anwendungsfälle für FEM im Kontext Produktentwicklung sind insbesondere:
+
+1. **Strukturmechanik**: Diese Werkzeuge werden für die Analyse von Festkörperstrukturen verwendet. Sie ermöglichen die Berechnung von Spannungen, Verformungen, Steifigkeiten und Schwingungen von Bauteilen unter verschiedenen Belastungen. Sie finden Anwendung in Bereichen wie Maschinenbau, Bauwesen, Luft- und Raumfahrt, Automobilindustrie usw.
+
+
+<!--
+Aufgrund ihrer Bedeutung soll auf einige der oben genannten Anwendungsfälle der FEM hier noch etwas genauer eingegangen werden:
+
+#### Exkurs: Generatives Design
+
+[Precision Advanced Manufacturing](https://www.precisionadm.com/)
+Siehe auch 3D-Druck!
+-->
+
+![Generatives Design als Beispiel einer Anwendung von FEM](images/GenerativeDesign.png){width=80% #fig-generativedesign}
+
+![Generatives Design und metallischer 3D-Druck eines Radträgers (Quelle: [Precision ADM](https://www.precisionadm.com/))](images/PrecisionADM_GenerativeDesign2.jpg){width=80% #fig-precisionadm}
+
+2. **Strömungsmechanik**: Diese Werkzeuge werden zur Untersuchung von Fluidströmungen, wie z. B. Luftströmungen oder Strömungen von Flüssigkeiten, eingesetzt. Sie ermöglichen die Analyse von Strömungsgeschwindigkeiten, Druckverteilungen, Wärmeübertragung und anderen strömungsbezogenen Parametern. Sie werden in der Luft- und Raumfahrt, der Automobilindustrie, der Energietechnik und anderen Bereichen eingesetzt.
+3. **Thermische Analyse**: Diese Werkzeuge werden verwendet, um die Wärmeübertragung und Temperaturverteilung in einem Bauteil oder System zu analysieren. Sie ermöglichen die Berechnung von Wärmeleitfähigkeit, Konvektion, Strahlung und thermischen Spannungen. Sie finden Anwendung in der Elektronikindustrie, der Energieerzeugung, der Gebäudetechnik und anderen Bereichen.
+4. **Elektromagnetische Analyse**: Diese Werkzeuge werden zur Untersuchung elektromagnetischer Felder und ihrer Wechselwirkung mit Bauteilen eingesetzt. Sie ermöglichen die Berechnung von elektromagnetischen Kräften, Induktivität, Kapazität, elektromagnetischer Abschirmung und anderen elektromagnetischen Parametern. Sie finden Anwendung in der Elektronik, der Hochfrequenztechnik, der Energietechnik und anderen Bereichen (siehe z.B. [Ansys Maxwell](https://www.ansys.com/products/electronics/ansys-maxwell))
+5. **Akustische Analyse**: Diese Werkzeuge werden zur Analyse des Schallverhaltens von Bauteilen oder Systemen eingesetzt. Sie ermöglichen die Berechnung von Schallpegeln, Schalldämpfung, Schwingungen und Resonanzen. Sie finden Anwendung in der Automobilindustrie, der Luft- und Raumfahrt, der Elektronikindustrie und anderen Bereichen (siehe → [NVH](https://de.wikipedia.org/wiki/Noise_Vibration_Harshness)).
+6. **Mehrphysik-Analyse**: Diese Werkzeuge ermöglichen die gleichzeitige Betrachtung mehrerer physikalischer Effekte, wie z. B. Strukturmechanik und Strömungsmechanik, Strukturmechanik und Thermik oder Elektromagnetik und Strömungsmechanik. Sie werden in komplexen Anwendungen eingesetzt, bei denen mehrere physikalische Phänomene miteinander interagieren.
+
+
+#### Eigenfrequenzen und Resonanzen
+Eigenfrequenzen von Bauteilen sind die natürlichen Schwingungsfrequenzen, bei denen das Bauteil ohne äußere Anregung in Resonanz gerät. Sie sind abhängig von der Geometrie, den Materialeigenschaften und den Randbedingungen des Bauteils. Die Finite-Elemente-Methode (FEM) kann zur Bestimmung der Eigenfrequenzen von Bauteilen verwendet wird. Der Prozess umfasst die bereits genannten Schritte: Modellierung – Diskretisierung- Festlegung der Materialien und deren Eigenschaften.
+
+**Festlegung der Randbedingungen**: Die Randbedingungen, wie beispielsweise Einspannungen oder Auflagerungen, werden definiert. Diese Bedingungen beeinflussen das Schwingverhalten des Bauteils und bestimmen die Form der Schwingungsmoden.
+
+Mithilfe der FEM werden anschließend die Eigenfrequenzen und die dazugehörigen Schwingungsmoden des Bauteils berechnet. Die Lösung erfolgt durch die Lösung der Eigenwertgleichung des Systems.
+
+**Analyse der Ergebnisse**: Nach Abschluss der Simulation werden die berechneten Eigenfrequenzen und Schwingungsmoden analysiert. Häufig werden die niedrigsten Eigenfrequenzen betrachtet, da sie am stärksten mit strukturellen Problemen und Resonanzen in Verbindung stehen. Zur Analyse der Eigenschwingungen kommen besondere Softwarebausteine zur Visualisierung der Schwingen zur Anwendung. Häufig werden hierzu auch bewegte Darstellungen in Form von Videos verwendet.
+
+Durch die Bestimmung der Eigenfrequenzen mit Hilfe von FEM-Simulation können potenzielle Probleme frühzeitig identifizieren, die mit Resonanzen oder strukturellen Schwingungen verbunden sind. Dies ermöglicht die gezielte Gestaltung von Bauteilen, um unerwünschte Schwingungen zu vermeiden und die strukturelle Integrität und Leistungsfähigkeit zu gewährleisten.
+
+Die Berechnung der Schwingungsmoden und mit damit einhergehenden lokalen Amplituden ermöglicht die Bewertung der → [Betriebsfestigkeit](https://de.wikipedia.org/wiki/Schwingfestigkeit) von Bauteilen. Hierzu werden die Wöhler-Linien verwendet, die aus praktischen Versuchen Kenntnisse über die Schwingungsfestigkeit einzelner Werkstoffe geben.
+
+
+### Herausforderungen bei der FEM
+Beim Einsatz von Finite-Elemente-Simulationswerkzeugen treten eine Reihe von Schwierigkeiten auf. Zu den am häufigsten auftretenden Herausforderungen zählen:
+
+1. **Modellierung**: Die Erstellung eines genauen und repräsentativen Modells stellt eine Herausforderung dar. Die Modellierung erfordert detaillierte Kenntnisse über das zu simulierende System, dessen Materialeigenschaften, die Randbedingungen und andere relevante Parameter. Fehlende oder ungenaue Informationen führen in aller Regel zu extrem fehlerhaften Simulationsergebnissen.
+
+2. **Diskretisierung**: Die richtige Wahl der Elemente und deren Diskretisierung ist entscheidend für die Genauigkeit der Simulation. Die Anzahl und Größe der Elemente müssen sorgfältig abgewogen werden, um ein ausgewogenes Verhältnis zwischen Rechenzeit und Genauigkeit zu erreichen. Zu grobe oder zu feine Diskretisierung kann zu ungenauen Ergebnissen oder unangemessener Berechnungsdauer führen.
+
+3. **Materialeigenschaften**: Die genaue Kenntnis der Materialeigenschaften ist von großer Bedeutung. Ungenaue oder unzureichende Materialdaten können zu inkorrekten Simulationsergebnissen führen. Es ist wichtig, präzise Daten zu Elastizitätsmodul, Poisson-Zahl, Dichte, thermischen Eigenschaften usw. zu verwenden. 
+
+::: {.callout-caution}
+Werden bei der Produktentwicklung neue Werkstoffe eingesetzt stehen entsprechende Kennwerte zu den Materialeigenschaften häufig nicht zur Verfügung und müssen durch entsprechend Versuche (zumeist in dafür speziell ausgestatteten Laboren) erst ermittelt werden. 
+:::
+
+4. **Randbedingungen**: Die richtige Festlegung der Randbedingungen ist von entscheidender Bedeutung. Fehlerhafte oder ungenaue Randbedingungen führen in der Regel zu unrealistischen Ergebnissen. Es ist wichtig, die realen Belastungen, Verschiebungen, Temperaturen oder Strömungsbedingungen korrekt zu berücksichtigen.
+
+5. **Numerische Stabilität**: Die numerische Lösung des Finite-Elemente-Problems kann instabil sein, insbesondere bei komplexen Geometrien oder großen Verformungen. Es können Konvergenzprobleme, Oszillationen oder Instabilitäten auftreten. Fortgeschrittene numerische Techniken und sorgfältige Parameterauswahl sind erforderlich, um stabile und zuverlässige Ergebnisse zu erzielen.
+
+6. **Validierung**: Die Validierung der Simulationsergebnisse durch experimentelle Messungen ist oft eine Herausforderung. Die Vergleichbarkeit der Simulationsergebnisse mit experimentellen Daten kann durch Unsicherheiten in den Messungen, Abweichungen in den Randbedingungen oder andere Faktoren beeinträchtigt sein.
+
+7. **Rechenressourcen**: Finite-Elemente-Simulationen erfordern oft erhebliche Rechenressourcen, insbesondere bei komplexen Modellen oder hochdetaillierten Analysen. Die Verfügbarkeit von leistungsfähigen Computern oder Rechenclustern kann in der Praxis vieler Unternehmen eine Herausforderung sein. Die Optimierung der Rechenzeit und die effiziente Nutzung der Ressourcen sind wichtige Aspekte.
+
+Neben diesen technischen Herausforderungen kann in der Praxis das Problem von fehlender Unterstützung durch das Management sowie gelegentlich auch mit praxisnah (sprich: lieber mit Hardware statt Software) arbeitenden Kollegen*innen bestehen. Insbesondere das Management gilt es zu überzeugen, alleine schon, um die Ressourcen zu erhalten, FEM in der Praxis einsetzen zu können.
+
+Die Steigerung der Akzeptanz des Managements gegenüber den Ergebnissen von Finite-Elemente-Simulationen kann eine Herausforderung sein. Hier sind einige Ansätze, die helfen können, die Akzeptanz zu erhöhen:
+
++ **Validierung**: Eine umfassende Validierung der Simulationsergebnisse durch Vergleich mit experimentellen Daten oder anderen anerkannten Referenzquellen ist wichtig. Durch den Nachweis der Genauigkeit und Zuverlässigkeit der Simulationen wird das Vertrauen in die Ergebnisse gestärkt.
+
++ **Dokumentation**: Eine klare und umfassende Dokumentation der Vorgehensweise, der Annahmen, der verwendeten Modelle, der Randbedingungen und der verwendeten Materialdaten ist entscheidend. Eine transparente und nachvollziehbare Darstellung der Simulationsmethodik ermöglicht es dem Management, die Ergebnisse besser zu verstehen und zu bewerten.
+
++ **Kommunikation**: Die Kommunikation der Simulationsergebnisse sollte in einer für das Management verständlichen Sprache erfolgen. Technische Begriffe und komplexe Details sollten auf das Wesentliche reduziert und die Bedeutung der Ergebnisse in Bezug auf geschäftliche oder technische Entscheidungen deutlich gemacht werden.
+
++ **Vergleich mit Alternativen**: Es kann hilfreich sein, die Ergebnisse der Finite-Elemente-Simulationen mit alternativen Analysemethoden oder traditionellen Ansätzen zu vergleichen. Der Vergleich kann zeigen, wie die Simulationen zusätzliche Einblicke bieten, Kosten und Zeit sparen oder die Qualität und Leistung des Produkts verbessern können.
+
++ **Schulung und Weiterbildung**: Eine gezielte Schulung und Weiterbildung des Managements zu den Grundlagen der Finite-Elemente-Simulation und ihrer Anwendung sollte in der Theorie dazu beitragen können, das Verständnis und die Wertschätzung für FEM zu fördern. 
+
+::: {.callout-caution}
+## Schulung und Weiterbildung des Managements 
+In der Praxis erscheint Ihrem Dozenten der Ansatz der fachlichen Schulung und Weiterbildung des Managements zu einem fachlich derartig herausfordernden Themenfeld wie der FEM eine große Herausforderung und letztlich nicht vielversprechend. Ihr Dozent hat es in über 25 Jahren beruflicher Tätigkeit trotz einer Vielzahl von Versuchen nicht einmal geschafft, diesen Weg erfolgreich zu beschreiben. Es scheint vielmehr so zu sein, dass Personen einen offenen Zugang zu digitalen Welten haben - oder eben auch nicht.
+:::
+
+Wesentlich erfolgreicher scheinen hingegen die zwei letzten der hier angebotenen Optionen, das Management zu überzeugen:
+
++ **Erfolgreiche Fallstudien**: Das Präsentieren von erfolgreichen Fallstudien, in denen Finite-Elemente-Simulationen zur Lösung von realen Problemen beigetragen haben, kann die Akzeptanz erhöhen. Diese Fallstudien zeigen den Mehrwert und die Vorteile der Simulationstechnologie in der Produktentwicklung und können das Vertrauen des Managements stärken.
+
++ **Partnerschaft mit Experten**: Die Zusammenarbeit mit externen Experten oder Ingenieurdienstleistern, die über umfangreiche Erfahrung und Fachwissen in der Finite-Elemente-Simulation verfügen, kann die Glaubwürdigkeit und Akzeptanz von Finite-Elemente-Simulationswerkzeugen deutlich erhöhen.
+
+
+<!-- -------------------------------------------------------------------------
+
+                        GRENZEN DER FINITE-ELEMENTE-SIMULATION
+
+-------------------------------------------------------------------------- -->
+
+### Grenzen der Finite-Elemente-Simulation
+Die Verwendung von Finite-Elemente-Simulationswerkzeugen im Produktentstehungsprozess ist nicht in allen Situationen geeignet. Hier sind einige Fälle, in denen der Einsatz von FEM nicht angezeigt sein kann:
+
+1. **Einfache Geometrien**: Bei einfachen Geometrien, die analytisch oder mit einfacheren numerischen Methoden gut gelöst werden können, ist der Einsatz von FEM möglicherweise nicht erforderlich. Die Komplexität und Kosten der FEM-Modellierung und -analyse könnten in solchen Fällen unverhältnismäßig sein. 
+
+::: {.callout-caution}
+## Pro-Tipp!
+Der hier skizzierte Fall der einfachen Geometrien kommt in der betrieblichen Praxis leider nicht vor! Der geneigte Leser wird sich daher stets mit komplexeren (*"bösartigen"*) Fällen beschäftigen müssen. 
+
+**ABER**: Beim Erlernen eines Finite-Elemente-Simulationswerkzeugs sei dem geneigten Leser geraten, einen solchen einfachen Fall zu simulieren und die Ergebnisse mit den analytisch berechneten Werten zu vergleichen. 
+
+Auf diese Weise entsteht Sicherheit und Zuversicht im Umgang mit dem Simulationswerkzeug und grobe Fehler bei der Bedienung des Werkzeugs werden frühzeitig erkannt und können rasch korrigiert werden.
+:::
+
+2. **Schnelle Designiterationen**: Wenn sehr schnelle oder häufige Designänderungen oder -iterationen erforderlich sind, kann die FEM-Analyse zeitaufwändig sein. In solchen Fällen könnten vereinfachte Modelle oder empirische Methoden angemessener sein, um schnellere Ergebnisse zu erzielen.
+3. **Zu hohe Rechenleistung**: Bei sehr großen oder komplexen Modellen können die Rechenressourcen, Zeit und Kosten für eine FEM-Analyse erheblich sein. In solchen Fällen könnten alternative Methoden, wie beispielsweise Skalierungsansätze oder Vereinfachungen (Tipp: Nutzung von Symmetrien!), eine praktikablere Lösung bieten.
+4. **Nichtlinearitäten und instabile Systeme**: Wenn das System oder das Materialverhalten stark nichtlinear ist oder instabile Effekte aufweist, kann die FEM-Analyse möglicherweise nicht zuverlässige Ergebnisse liefern. In solchen Fällen müssen spezielle Simulationsmethoden oder andere Analyseverfahren in Betracht gezogen werden.
+5. **Nicht ausreichende Eingabedaten**: Wenn genaue Eingabedaten für Materialien, Randbedingungen oder Geometrien nicht verfügbar sind, kann dies die Genauigkeit der FEM-Analyse beeinträchtigen. In solchen Fällen ist eine sorgfältige Datenbeschaffung oder der Einsatz alternativer Methoden ratsam.
+
+Es ist wichtig, die spezifischen Anforderungen und Einschränkungen einer Situation zu berücksichtigen und die Vor- und Nachteile der FEM-Analyse abzuwägen, **BEVOR** man sich für den Einsatz von FEM entscheidet. Entscheidend ist, die Grenzen der eigenen Fähigkeiten und die Grenzen des mit der jeweiligen Finite-Elemente-Simulation Machbaren zu kennen.
+
+::: {.callout-warning}
+Es ist besser nicht zu simulieren als falsch zu simulieren!
+:::
+
+### Stationäre und transiente FEM
+Eine transiente Finite-Elemente-Simulation und eine nicht-transiente (stationäre) Finite-Elemente-Simulation unterscheiden sich in der Betrachtung des zeitlichen Verhaltens eines Systems:
+
++ **Nicht-transiente (stationäre) Simulation**: Bei einer nicht-transienten Simulation wird das System im stationären Zustand betrachtet, bei dem sich die betrachteten physikalischen Größen nicht mehr ändern. Es werden nur die Gleichgewichtszustände analysiert, in denen sich das System in Ruhe befindet oder in einem stabilen Zustand ist. Diese Art der Simulation eignet sich gut für statische Probleme, bei denen die physikalischen Größen keine zeitliche Veränderung aufweisen.
+
++ **Transiente Simulation**: Bei einer transienten Simulation wird das zeitliche Verhalten des Systems betrachtet. Es werden die Veränderungen der physikalischen Größen im Laufe der Zeit analysiert. Dies ermöglicht die Untersuchung von dynamischen Effekten wie Schwingungen, zeitabhängigen Belastungen, Wärmeverteilung im zeitlichen Verlauf usw. Transiente Simulationen liefern Informationen über das Verhalten des Systems über einen bestimmten Zeitraum hinweg.
+
+
+![Finite-Elemente-Simulation der Strömung und Druckverhältnisse um ein Windrad (Quelle: Adobe Stock)](images/FEM2.jpg){width=80% #fig-fem}
+
+
+Der Hauptunterschied liegt darin, dass eine nicht-transiente Simulation den stationären Zustand eines Systems betrachtet, während eine transiente Simulation die zeitliche Entwicklung des Systems berücksichtigt. Die Wahl zwischen den beiden hängt von der Art des zu untersuchenden Problems ab. Bei statischen oder quasistatischen Problemen, bei denen sich das System im Gleichgewicht befindet, sollte eine nicht-transiente Simulation ausreichend sein. Nur für dynamische oder zeitabhängige Probleme ist eine transiente Simulation erforderlich, um das Systemverhalten im Zeitverlauf zu verstehen.
+
+Eine transiente Finite-Elemente-Simulation weist im Vergleich zu einer stationären Finite-Elemente-Simulation zusätzliche Komplexitäten aufgrund der Berücksichtigung des zeitlichen Verhaltens auf:
+
+1. **Zeitdiskretisierung**: Bei einer transienten Simulation muss die Zeit in diskrete Zeitschritte unterteilt werden, um das zeitliche Verhalten des Systems zu erfassen. Dies erfordert die Auswahl einer geeigneten Zeitinkrementierung und eine ausreichend feine Zeitschrittgröße, um genaue Ergebnisse zu erzielen. Die Wahl der Zeitdiskretisierung kann die numerische Stabilität und Genauigkeit der Simulation beeinflussen.
+
+2. **Dynamische Belastungen**: Transiente Simulationen ermöglichen die Analyse von dynamischen Belastungen, wie zum Beispiel zeitabhängige Kräfte oder Beschleunigungen. Die Berücksichtigung solcher dynamischer Belastungen erhöht die Komplexität der Simulation im Vergleich zu einer stationären Simulation, bei der nur statische Belastungen betrachtet werden.
+
+3. **Zeitabhängige Randbedingungen**: In einer transienten Simulation können sich die Randbedingungen im Laufe der Zeit ändern. Dies umfasst zum Beispiel zeitabhängige Temperaturen, Verschiebungen, Kräfte oder Strömungszustände. Die Modellierung und Handhabung solcher zeitabhängiger Randbedingungen erfordert zusätzliche Komplexität und Sorgfalt.
+
+4. **Dämpfung und Resonanzen**: Transiente Simulationen ermöglichen die Untersuchung von Dämpfungseffekten und Resonanzen im System. Dies erfordert eine genaue Modellierung von Materialdämpfung, Kontaktbedingungen oder Strukturresonanzen, um realistische Ergebnisse zu erzielen. Die Analyse solcher Effekte erhöht die Komplexität der Simulation.
+
+5. **Rechenzeit und Speicherbedarf**: Aufgrund der zeitlichen Diskretisierung und des erhöhten Modellumfangs kann eine transiente Simulation mehr Rechenzeit und Speicherplatz erfordern als eine stationäre Simulation. Die Anzahl der Zeitschritte und die erforderliche Genauigkeit können die Rechenressourcenbelastung erhöhen.
+
+::: {.callout-caution}
+## Tipp!
+Transiente Simulationen sind in der Modellierung, der Randbedingungen, der Berechnung und der Analyse der Ergebnisse immer herausfordernder als stationäre Simulationen. Falls immer möglich sollte daher mit nicht-transienter FEM gearbeitet werden und nur in den Fällen, in denen es sich um ein instationäres System handelt auf transiente Simulation gewechselt werden!
+:::
+
+
+
+### Weiterführende Links
+
++ [Wolfram FEM](https://www.wolfram.com/language/core-areas/fem/) 
++ [ANSYS, Inc.^[ANSYS ist einer der weltweit führenden Anbieter von Ingenieursimulationstechnologien und bietet eine umfangreiche Palette von FEM-Softwareprodukten an. Ihre Softwarelösungen umfassen ANSYS Mechanical, ANSYS Fluent für Strömungs- und Wärmeanalysen, ANSYS HFSS für elektromagnetische Simulationen und vieles mehr. ANSYS wird in verschiedenen Branchen wie Luft- und Raumfahrt, Automobilindustrie, Energieerzeugung, Elektronik und Biotechnologie eingesetzt.]](https://www.ansys.com/)
++ [MSC Software Corporation^[MSC Software (Teil von Hexagon Manufacturing Intelligence)ist ein weltweit führender Anbieter von Simulationssoftware und Dienstleistungen mit Schwerpunkt auf FEM-Technologien. Zu ihren Produkten gehören MSC Nastran für strukturelle Analysen, Marc für nichtlineare Finite-Elemente-Analysen, Adams für Mehrkörpersimulationen und vieles mehr. MSC Software wird in verschiedenen Branchen eingesetzt, darunter Luft- und Raumfahrt, Automobilindustrie, Schifffahrt, Energie und Fertigung.]](https://hexagon.com/company/divisions/manufacturing-intelligence/msc-software) → [MSC Nastran](https://hexagon.com/de/products/product-groups/computer-aided-engineering-software/msc-nastran) → [Marc](https://hexagon.com/products/marc)
++ [Dassault Systèmes - SIMULIA^[SIMULIA ist eine Marke von Dassault Systèmes für fortschrittliche Simulationstechnologien, darunter auch Finite-Elemente-Anwendungen. Die Flaggschiff-Produktreihe Abaqus bietet leistungsfähige FEM-Software für lineare und nichtlineare Strukturanalysen, Multiphysik-Simulationen und mehr. SIMULIA-Produkte werden in einer Vielzahl von Branchen eingesetzt, darunter Luft- und Raumfahrt und Automobilindustrie]](https://www.3ds.com/products/simulia) → [Abaqus](https://www.3ds.com/products/simulia/abaqus)
++ [Siemens Digital Industries Software - Simcenter^[Simcenter ist die Produktreihe von Siemens für Simulation und Testlösungen, die auch eine breite Palette von FEM-Software umfasst. Simcenter wird in verschiedenen Branchen eingesetzt, darunter Automobilindustrie, Luft- und Raumfahrt, Elektronik und Maschinenbau.]](https://plm.sw.siemens.com/de-DE/simcenter/)

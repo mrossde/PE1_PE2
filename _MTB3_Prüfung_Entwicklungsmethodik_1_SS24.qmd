@@ -1,0 +1,152 @@
+---
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+toc: true
+number-sections: true
+scrollable: true
+cap-location: bottom
+link-external-icon: true
+link-external-newwindow: true
+---
+
+<!-- Extended Header
+---
+title: "MTB3 Entwicklungsmethodik"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Fragen zur Vorbereitung der Prüfung zur Vorlesung *"Entwicklungsmethodik"* für den Studiengang Mechatronik MTB3 im Sommersemester 2024
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Prüfungsvorbereitung
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+date: last-modified
+toc: false
+number-sections: true
+scrollable: true
+cap-location: bottom
+link-external-icon: true
+link-external-newwindow: true
+---
+-->
+
+<!-- Minimalistic Header
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+---
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Prüfung MTB3 Entwicklungsmethodik 1 SS24
+
+-------------------------------------------------------------------------- -->
+
+<!--
+![](images/blank.png){width=8%}
+
+![](images/HochschuleEsslingen_Logo_Goeppingen_SW_DE.png){width=40% fig-align="center"} 
+
+![](images/blank.png){width=8%}
+-->
+
+<!-- --------------------------------------------------------------------- -->
+
+![](images/blank.png){height=2cm}
+
+| **Prüfungsfach**: Entwicklungsmethodik  |![](images/HochschuleEsslingen_Logo_Goeppingen_SW_DE.png){width=60% fig-align="center"}|
+|---|---|
+| **Semester**: Sommersemester 2024 | **Zahl der Blätter**: tbd. |
+| **Fakultät**: Wirtschaft & Technik | **Semester**: MTB3 |
+| **Prüfungsfach**: Entwicklungsmethodik | **Prüfungsnummer**: MTB007 |
+| **Hilfsmittel**: 8 DIN A4 Seiten (4 Blätter) handschriftliche und gedruckte Unterlagen, Taschenrechner (nicht-programmierbarer). | **Zeit**: tbd. Minuten (entspr. tbd. Punkte). Sofern nicht anders gekennzeichnet entspricht jede Aufgabe einem Punkt. |
+| **Hinweise**: Die Aufgabenblätter dürfen nicht abgetrennt werden. Geben Sie die Aufgabenblätter in einer beschrifteten Umschlaghülle wieder ab. Es dürfen keine Blätter hinzugefügt werden. Lose Blätter werden bei der Bewertung der Prüfung nicht berücksichtigt. | **Dozent/Prüfer**: Christian Anders |
+
+: { .bordered tbl-colwidths="[55,45]"}
+
+![](images/blank.png){height=2cm}
+
+
+<!-- --------------------------------------------------------------------- -->
+
+|   |   |
+|--:|---|
+| **Name**: |    |
+| **Vorname**: | |
+| **Matrikelnummer**: |   |
+
+: { tbl-colwidths="[20,80]"}
+
+
+![](images/blank.png){height=2cm}
+
+<!-- --------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------- -->
+
+<!--
+//-------------------------------------------------------------------------
+//
+//                     Grundlagen
+//
+//-------------------------------------------------------------------------
+-->
+
+{{< pagebreak >}}
+{{< include _MTB3_Prüfung_Entwicklungsmethodik_1_SS24_Grundlagen.qmd >}}
+
+{{< pagebreak >}}
+{{< include _MTB3_Prüfung_Entwicklungsmethodik_1_SS24_Idee_Konzept.qmd >}}
+
+{{< pagebreak >}}
+{{< include _MTB3_Prüfung_Entwicklungsmethodik_1_SS24_Entwurf_Entwicklung.qmd >}}
+
+{{< pagebreak >}}
+{{< include _MTB3_Prüfung_Entwicklungsmethodik_1_SS24_Prototyping_Test.qmd >}}
+
+{{< pagebreak >}}
+{{< include _MTB3_Prüfung_Entwicklungsmethodik_1_SS24_Produktion.qmd >}}
+
+{{< pagebreak >}}
+{{< include _MTB3_Prüfung_Entwicklungsmethodik_1_SS24_Softskills.qmd >}}
+
+
+
+

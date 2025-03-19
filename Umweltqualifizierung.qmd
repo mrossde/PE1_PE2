@@ -1,0 +1,234 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+
+<!-- -------------------------------------------------------------------------
+
+                       UMWELTQUALIFIZIERUNG
+
+-------------------------------------------------------------------------- -->
+
+## Umweltqualifizierung {#sec-umwelt}
+
+In diesem Kapitel geht es um die Umweltqualifizierung von Prozessen^[Der Begriff der Umweltqualifizierung von Prozessen kann leicht falsch verstanden werden. Es geht bei der Umweltqualifizierung von Prozessen **NICHT** um die Qualifizierung der Prozesse an sich, sondern um die Qualifizierung der bei Einsatz der Prozesse im Produktionsprozess resultierenden Eigenschaften der Produkte (siehe → Produktions- und Werkstofftechnik (PWT): "Der Prozess und der Werkstoff bestimmen die Eigenschaften des Produkts.")] und Produkten. 
+
+![Klimakammer des Fraunhofer CSP (46 m³, -60 … +100°C, 10 … 90% rel. Feuchte mit Bestrahlungseinheit mit 1000 W/m² für bis zu 6 m² bestrahlte Fläche) (Quelle: [Fraunhofer CSP](https://www.csp.fraunhofer.de/)).](images/Klimakammer_Fraunhofer_CSP.jpg){width=80% #fig-klimakammercsp}
+
+::: {.callout-important}
+Physikalische Produkte unterliegen während ihrer gesamten Lebensdauer einer Vielzahl von Einflüssen aus deren Umgebung. Diese beeinflussen ihre Leistungsfähigkeit und ihre Lebensdauer.
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Beispiel: Rückrufaktion Mercedes-Benz wg. Feuchte
+
+-------------------------------------------------------------------------- -->
+### Praxisbeispiel zur Motivation
+
+{{< include Abbildung_Rueckruf_Mercedes-Benz.qmd >}}
+
+::: {.callout-tip}
+## Zielsetzung: *"Umweltqualifizierung"*
+Ziel der Umweltqualifizierung ist es, in möglichst kurzer Zeit belastbare Informationen über die zu erwartenden sich ändernden Eigenschaften des Produkts über dessen Lebensdauer zu erhalten (→ beschleunigte Lebensdauertests).
+:::
+
+Bei der Produktentwicklung bezieht sich der Begriff "Umweltsimulation" auf den Einsatz von Tests und Analysen, um die Auswirkungen der Umweltbedingungen auf ein Produkt zu verstehen und zu bewerten. Diese Simulationen ermöglichen es Ingenieuren und Entwicklern, die Leistungsfähigkeit, Haltbarkeit und Zuverlässigkeit eines Produkts unter verschiedenen Umweltbedingungen vorherzusagen.
+
+
+Mit Methoden der Umweltsimulation werden die Wechselwirkungen zwischen einem Objekt und seiner Umwelt untersucht. Auf der Basis einer ganzheitlichen Betrachtung werden die in der Regel komplex vernetzten Wirkungsketten modellhaft strukturiert und Kausalzusammenhänge analysiert.
+
+Umweltsimulations-Untersuchungen befassen sich dabei mit den Auswirkungen der Umwelt auf
+
++ **Leistungsfähigkeit** und **Funktionsverhalten**
++ **Langzeitverhalten** bzw. **Lebensdauer**
+
+Ziel der Umweltsimulation ist die Aufdeckung von Ursache-Wirkungs-Zusammenhängen, die Qualifikation von Erzeugnissen für gegebene Umweltbedingungen.
+
+Bei Alterungs- und Verwitterungsprozessen (z.B. Korrosion) und bei Zuverlässigkeitsstudien spielen Fragen der Zeitraffung und der künstlichen Alterung eine große Rolle.
+
+Als Umwelteinflüsse bezeichnet man alle Formen der physikalischen, chemischen oder sonstigen Einwirkung auf das zu untersuchende Produkt. Diese stammen im Allgemeinen aus der unmittelbaren und mittelbaren Umgebung zunächst während der Produktion und dem Versand, im Wesentlichen jedoch aus dem Betrieb der Produkte.
+
+Von hoher Bedeutung für die Umweltqualifikation bei physischen Produkten sind insbesondere die Faktoren:
+
+1. **Temperatur**: Produkte müssen oft in Umgebungen mit unterschiedlichen Temperaturen funktionieren. Umweltsimulationen können extrem hohe oder niedrige Temperaturen simulieren, um sicherzustellen, dass das Produkt in verschiedenen Klimazonen oder unter extremen Bedingungen stabil bleibt.
+
+2. **Feuchtigkeit und Druck**: Einige Produkte könnten Feuchtigkeit ausgesetzt sein, sei es durch Regen, hohe Luftfeuchtigkeit oder sogar Wat- oder Tauchanwendungen. Umweltsimulationen helfen dabei, die Auswirkungen von Feuchtigkeit auf Materialien und elektronische Komponenten zu bewerten.
+
+3. **Vibration und Schock:** Produkte, die in Fahrzeugen oder Maschinen eingebaut sind, müssen oft Vibrationen und Stöße standhalten. Umweltsimulationen können diese Bedingungen nachstellen, um die Belastbarkeit des Produkts zu testen. Nahezu alle Produkte des Alltags, die uns umgeben, müssen bei deren Entwicklung hinsichtlich Vibration und Schock ausgelegt und entsprechend getestet werden. 
+
+4. **Salznebel und Chemikalien**: Insbesondere für Produkte, die in Meeresumgebungen oder in der Nähe von Chemikalien eingesetzt werden, ist die Simulation von Salznebel oder chemischer Exposition wichtig, um die Korrosionsbeständigkeit zu prüfen.
+
+5. **UV-Strahlung**: Produkte im Freien (→ Farben, → Lacke, → Kunststoffe) müssen UV-Strahlung standhalten, die zu Verfärbungen, Materialverschlechterung oder anderen Schäden führen kann. Umweltsimulationen können UV-Licht verwenden, um diese Bedingungen nachzuahmen.
+
+Durch Umweltsimulationen können Hersteller sicherstellen, dass ihre Produkte den Anforderungen verschiedener Umweltbedingungen standhalten und den erwarteten Leistungsstandard erfüllen. Dies hilft, die Produktqualität und die Kundenzufriedenheit zu gewährleisten.
+
+Dabei ist es aus der Sicht des betroffenen Objekts zunächst unerheblich, ob die einwirkenden Umwelteinflüsse natürlichen Ursprungs, wie z.B. Klima oder technisch bedingt sind, wie z.B. Vibrationen, Stöße oder Luftverunreinigungen.
+
+### Vorgehensweise zur Umweltqualifizierung
+
+Die Umweltsimulation ist eine ingenieurwissenschaftliche Disziplin, die sehr breit und interdisziplinär angelegt ist. Ihre Vorgehensweise umfasst die Teilschritte
+
+1. **Messen der Umwelteinflüsse**. Keine Umweltqualifikation ohne Kenntnis des Anforderungs-(Last-)profils!
+
+2. **Simulieren der Umwelteinwirkungen** unter kontrollierbaren Randbedingungen.
+
+3. **Analysieren und Beurteilen der Wirkungen der Umwelt** auf das Produkt.
+
+Umweltprüfungen werden maßgeschneidert ("Test-Tailoring"), um zu gewährleisten, dass ein Erzeugnis ausreichend, aber nicht übertrieben geprüft wird. Wirtschaftliche Überlegungen spielen in der Umweltsimulation eine große Rolle. Der Aufwand für die Umweltqualifikation technischer Erzeugnisse rechnet sich in der Regel durch die höhere Qualität und die größere Zuverlässigkeit und die bessere Entsorgbarkeit. Umweltsimulationsuntersuchungen finden auch Eingang in das Life-Circle-Engineering und das ressourcenschonende Materialmanagement.
+
+Für die Umweltsimulation benutzt man Versuchseinrichtungen wie Klimakammern, Schwingerreger, Stoßtische, [EMV](https://de.wikipedia.org/wiki/Elektromagnetische_Vertr%C3%A4glichkeit)-Messplätze, Begasungsanlagen oder Strahlungssimulatoren und Labors zur Identifikation der Wirkungen, d.h. der Beanspruchungen, wie Rasterelektronenmikroskopie, IR-Spektroskopie oder mechanische Prüfung.
+
+Derartig ausgestattete Labors findet man bei großen Industrieunternehmen, Instituten, Prüfämtern und Erprobungsstellen. Teilweise sind diese auch für externe Benutzer gegen Kostenerstattung zugänglich.
+
+### Ausgewählte Tests zur Umweltqualifizierung
+
+Mit Temperaturschockprüfungen können Produkte künstlich gealtert werden. So werden langfristige Belastungen simuliert sowie eventuelle Schwachstellen und vorhandenes technisches Optimierungspotenzial aufgezeigt.
+
+Darüber hinaus stellen Temperaturwechsel höchste Anforderungen insbesondere an tragbare Produkte und Fahrzeugkomponenten dar. Im Alltag können diese Temperaturänderungen zu mechanischen Spannungen im Material führen, was Fehlfunktionen oder im Extremfall sogar einen kompletten Ausfall des Produkts nach sich ziehen kann.
+
+Eine Temperaturschockprüfung durch TÜV SÜD kann derartige Umwelteinflüsse praxisgerecht simulieren. So können Sie Ihre Produkte vor der Serienproduktion an die Anforderungen der praktischen Anwendung anpassen.
+
++ **High Temperature Humidity Endurance (HTHE)**:
+    - Der High-Temperature-High-Humidity-Endurance Test wird verwendet, um die Zuverlässigkeit und Beständigkeit von Materialien oder elektronischen Bauteilen unter Bedingungen hoher Temperatur und hoher Luftfeuchtigkeit zu bewerten. Typischerweise wird das Produkt bei hohen Temperaturen (z.B. 85°C) und hoher Luftfeuchtigkeit (z.B. 85% relative Luftfeuchtigkeit) über einen längeren Zeitraum (z.B. 1000 Stunden) getestet. Ziel des HTHE-Tests ist es, die Auswirkungen von thermischen und feuchten Umgebungen auf die langfristige Leistungsfähigkeit und Haltbarkeit des Testobjekts zu untersuchen.
+
++ **High Temperature Operation Endurance (HTOE)**:  
+    - Der High-Temperature-Operating-Endurance-Test wird verwendet, um die Leistungsfähigkeit und Zuverlässigkeit insbesondere von elektronischen oder mechatronischen Komponenten bei hohen Betriebstemperaturen zu bewerten. Dabei wird das Testobjekt über einen bestimmten Zeitraum kontinuierlich bei hoher Temperatur betrieben, um die Auswirkungen der thermischen Belastung auf dessen Funktionsfähigkeit und Lebensdauer zu untersuchen.
+
++ **Powered-Thermal-Cycle-Endurance (PTCE)**: 
+    - Der-Power-Temperature-Cycling-Endurance-Test wird verwendet, um die Zuverlässigkeit und Lebensdauer insbesondere von elektronischen oder mechatronischen Komponenten unter wechselnden Temperaturbedingungen zu bewerten. Beim PTCE-Test werden die Komponenten zyklisch zwischen hohen und niedrigen Temperaturen betrieben um die Auswirkungen thermischer Spannungen und Alterung auf die Funktionalität und Haltbarkeit der Komponenten beurteilen zu können.
+
++ **Temperature Shock Test (TST)**:  
+    - Der Temperature-Shock-Test wird verwendet, um die Beständigkeit eines Materials oder eines Produkts gegenüber extremen Temperaturwechseln zu überprüfen. Dabei wird das Testobjekt zumeist schnell zwischen hohen und niedrigen Temperaturzonen innerhalb einer Klimakammer umgelagert.
+
+![Klimakammer im Entwicklungs- und Versuchszentrum (EVZ) des Daimler Truck Werks Wörth (Temperaturbereich der Klimakammer: -40°C bis +70°C, Feuchte bis 100 Prozent) (Quelle: [Daimler Truck](https://www.daimlertruck.com/))](images/Daimler_Truck_eActros_Klimakammer.jpg){width=80% #fig-klimakammerevz}
+
+
+Neben diesen vier genannt Tests gibt es noch eine Vielzahl weiterer wichtige Tests im Bereich der Umweltqualifizierung. Einige davon sind:
+
++ **Thermal Cycling Test (TCT)**:
+    - Dieser Test bewertet die Fähigkeit eines Produkts, wiederholten Temperaturwechseln standzuhalten. Es wird zwischen niedrigen und hohen Temperaturen zyklisch gewechselt, um die Auswirkungen auf das Material oder die Komponenten zu überprüfen. Der TCT ist ähnlich dem PTCE, verzichtet jedoch auf den Betrieb der Komponenten.
+
++ **Humidity Test (HUM)**:
+    - Bei diesem Test wird das Produkt über einen längeren Zeitraum hohen Luftfeuchtigkeitsbedingungen (z.B. 85% relative Luftfeuchtigkeit) bei moderaten Temperaturen (z.B. 25°C bis 40°C) ausgesetzt, um seine Beständigkeit gegen Feuchtigkeit und Korrosion zu prüfen. 
+
++ **Salt Spray Test (SST)**:
+   - Dieser Test simuliert korrosive Salznebelumgebungen, um die Korrosionsbeständigkeit von Materialien, insbesondere Metallen und Beschichtungen, zu testen.
+
++ **Vibration Test (VIB)**:
+   - Der Vibrationstest bewertet die Fähigkeit eines Produkts, mechanischen Schwingungen und Stößen standzuhalten, die während des Transports oder des Betriebs auftreten können.
+
+![Schwingungsprüfstand (Quelle: [Kai Arndt](https://www.fotoarndt.de/))](images/fahrzeugtest_01.jpg){width=80% #fig-schwingungspruefstand}
+
++ **Shock Test (SHOCK)**:
+   - Bei diesem Test wird das Produkt plötzlichen mechanischen Stößen ausgesetzt, um seine Robustheit und Widerstandsfähigkeit gegen plötzliche Krafteinwirkungen zu prüfen.
+
+![Smartphone-Falltest mittels Falltrommel. Simuliert werden 100 Stürze auf Steinboden aus einer Höhe von 80 cm (Quelle: [Stiftung Warentest](https://www.test.de/)).](images/5901117_smartphones-falltest-t2208.jpg){width=80% #fig-falltest}
+
++  **Low Temperature Operating Test (LTOP)**:
+   - Dieser Test untersucht die Leistung eines Produkts bei niedrigen Betriebstemperaturen.
+
++  **Pressure Test (PRESS)**:
+   - Hierbei wird das Produkt unter unterschiedlichen Druckbedingungen getestet, um seine Integrität und Dichtigkeit zu überprüfen.
+
++  **Dust Test (DUST)**:
+   - Der Staubtest bewertet die Beständigkeit eines Produkts gegen das Eindringen von Staubpartikeln, was besonders wichtig für elektronische Geräte ist, die in staubigen Umgebungen betrieben werden.
+
++  **Altitude Test (ALT)**:
+   - Dieser Test simuliert die Bedingungen großer Höhen, um die Auswirkungen von niedrigem Druck und niedrigen Temperaturen auf das Produkt zu untersuchen.
+
+Diese Tests sind entscheidend, um sicherzustellen, dass Produkte unter verschiedenen Umweltbedingungen zuverlässig funktionieren und ihre Lebensdauer den Anforderungen entspricht.
+
+<!--
+Die Klimawechselkammer im Entwicklungs- und Versuchszentrum im Werk Wörth arbeitet im Temperaturbereich von -40°C bis +70°C. Neben der Temperatur- verfügt sie auch über eine Feuchtigkeitsregelung, mit der sich unterschiedliche Feuchtigkeitsstufen bis zu 100 Prozent bedarfsgerecht innerhalb der physikalischen Möglichkeiten punktgenau einstellen lassen. So können technische Neuheiten sowie mechanische, elektrische und Komfort-Funktionen wie Klimaanlagen sowohl für konventionelle wie auch für alternative Antriebe unter arktischen bis hin zu subtropischen Klimabedingungen getestet werden.
+
+Zwei Sattelzugmaschinen finden in der Klimawechselkammer Platz. In ihr wird die Funktion unterschiedlichster Systeme umfassend auf ihr Verhalten bei wechselnden Temperaturen und Feuchtigkeitszuständen getestet. Die Optimierung des Kaltstartverhaltens von Verbrenner- und Elektrofahrzeugen ist dabei eine wichtige Komponente. Bei E-Lkw werden vor allem das Batteriemanagement und der Batterieladestand (SoC) getestet.
+
+Die Fahrerhausklimatisierung wird ebenso in der Klimawechselkammer geprüft wie der Zustand und die Effizienz der verwendeten Kälte- und Hitzeisolierung. Darüber hinaus werden Funktionstests mit mechanischen und elektrischen Komponenten wie Lenkung, Kippzylinder und Vorbauklappe unter unterschiedlichen Klimabedingungen durchgeführt. Spezielle Lkw-Sonderausstattungen für Einsätze in nordischen Ländern werden ebenfalls intensiven Prüfverfahren auf ihre einwandfreie Funktion bei arktischer Kälte hin unterzogen.
+
+Es gelten strenge Zugangsbestimmungen zur Klimakammer. In der Kammer darf sich kein Mitarbeiter allein und ohne angepasste Schutzkleidung aufhalten. Es sind immer zwei Mitarbeiter anwesend, unter -25°C ist der Aufenthalt nur mit einer ärztlichen Unbedenklichkeitsbescheinigung möglich. Ab +50°C darf sich kein Mitarbeiter mehr innerhalb der Klimawechselkammer aufhalten.
+-->
+
+
+#### Weitere Umweltsimulationsprüfungen (Auswahl)
+
++ Schwingprüfungen unter Temperatur- und Klimaeinfluss, auch mit [Laservibrometrie](https://de.wikipedia.org/wiki/Vibrometer).
++ Normenkonformitätsprüfungen, z.B. Zertifizierung der IP-Schutzarten (IP x6 Spritzwasser, IP x7 Zeitweise unter Wasser, IP x8 Dauerhaft unter Wasser, IPx9 Druckwasser, Dampfstrahler, …).
++ Elektromagnetische Verträglichkeit (EMV)
+
+::: {.callout-tip}
+## Definition: *"Elektromagnetische Verträglichkeit (EMV)"*
+[Elektromagnetische Verträglichkeit](https://de.wikipedia.org/wiki/Elektromagnetische_Vertr%C3%A4glichkeit) (EMV) bezeichnet die Fähigkeit eines technischen Geräts, andere Geräte nicht durch ungewollte elektrische oder elektromagnetische Effekte zu stören oder durch andere Geräte gestört zu werden. 
+:::
+
+<!--
+::: {.callout-tip}
+## Weiterführende Links
+
++ **Fa. BOSCH**: Eine der besten Quellen (@reynvaan_wie_2022) für weitergehende Informationen, die Ihr Dozent gefunden hat ist so zu finden: Gehen Sie auf die Seite
+
+[https://www.bosch.com/de/unternehmen/supply-chain/informationen-fuer-geschaeftspartner/#qualitaet-regelungen-und-standards](https://www.bosch.com/de/unternehmen/supply-chain/informationen-fuer-geschaeftspartner/#qualitaet-regelungen-und-standards)
+
+Auf dieser Seite scrollen Sie nach unten bis zu dem Thema „Bosch Schriftenreihe: Qualitätsmanagement in der Bosch-Gruppe“. Klicken Sie auf das *"+"* Zeichen rechts. Dann erscheint die Liste dieser Bosch-Hefte, die Sie als *.PDF herunterladen können. Zur Vertiefung der Inhalte in dieser Vorlesung sind die Hefte über SPC, über Versuchsplanung, und Methoden zur Problemlösung zu empfehlen, und zwar dann, wenn Sie selbst ein solches Tool anwenden sollen.
+
+
++ **Six-Sigma**: Auf der sehr gut gemachten Seite [https://www.sixsigmablackbelt.de/](https://www.sixsigmablackbelt.de/) finden Sie ebenfalls viele wertvolle Informationen. Diese Seite enthält auch viele Excel-Sheets zum kostenfreien Herunterladen, mit denen Sie die Berechnungen zu vielen der angegebenen Themen durchführen können, beispielsweise für die Ermittlung des $c_pk$-Wertes.
+:::
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
+
++ @jakoby_qualitatsmanagement_2022: [Elementare QM-Methoden](https://rdcu.be/dIy3K)
++ @reynvaan_wie_2022: [Qualität](https://rdcu.be/dIzt1)
+
+:::
+
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Literaturempfehlung
+
+-------------------------------------------------------------------------- -->
+
+<!--
+#### Literaturempfehlung
+
+![@jakoby_qualitatsmanagement_2022: [Qualitätsmanagement für Ingenieure](https://link.springer.com/book/10.1007/978-3-658-36677-3)](images/Jakoby_Qualitaetsmanagement.webp){width=40%}
+
+-->
+
+### Zeitliche Dauer von Tests
+
+::: {.callout-tip}
+## Zielsetzung: *"Umweltqualifizierung"*
+Ziel der Umweltqualifizierung ist es, in möglichst kurzer Zeit belastbare Informationen über die zu erwartenden sich ändernden Eigenschaften des Produkts über dessen Lebensdauer zu erhalten (→ beschleunigte Lebensdauertests).
+:::
+
+#### Arrhenius-Gleichung
+Die Arrhenius-Gleichung, benannt nach [Svante Arrhenius](https://de.wikipedia.org/wiki/Svante_Arrhenius), beschreibt näherungsweise eine quantitative Temperaturabhängigkeit bei physikalischen und vor allem chemischen Prozessen, bei denen auf molekularer Ebene eine Aktivierungsenergie überwunden werden muss. 
+
+Sie beschreibt eine phänomenologische Beziehung und gilt für sehr viele chemische Reaktionen. Eine Temperaturerhöhung, gleichbedeutend mit auf molekularer Ebene mehr verfügbarer Energie, führt demnach stets zu einer Zunahme der Reaktionsgeschwindigkeit. Eine gute Näherung, die sogenannte Reaktionsgeschwindigkeit-Temperaturregel (RGT-Regel), sagt bei einer Temperaturerhöhung von 
+$$
+T_{2}-T_{1}=\text{10 K}
+$$
+
+eine Verdopplung bis Vervierfachung der Reaktionsgeschwindigkeit voraus. Der Faktor, um den sich die Reaktionsgeschwindigkeit bei einer Temperaturerhöhung von 10 K ändert, wird Q10-Wert genannt. Die RGT-Regel wird auch als Arrhenius-Regel bezeichnet.
+
+::: {.callout-important}
+## Arrhenius-Regel
+Die chemische Reaktionsrate verdoppelt sich für jede 10 Grad Celsius Erhöhung der Temperatur. 
+:::
+
+::: {.callout-warning}
+## Warnung
+Die beim Testing angestrebte möglichst starke Zeitraffung (z.B. zur Absicherung von Klebeprozesse, der Alterung von Klebstoffen und Kunststoffen, Farben und Lacken, …) ist trotz der RGT-Regel in der Praxis zumeist nicht möglich, **OHNE** die Werkstoffe unzulässig bereits durch das dann stark erhöhte Temperaturniveau unzulässig zu schädigen (Schlagwort → *"Todtesten"*). 
+:::
+
+So bleibt es in der Praxis bei typischen Testdauern von 1000 h (→ ca. 7 Wochen!) oder mehr. Die Anzahl möglicher wiederholter Tests (z.B. notwendig z.B. beim Vorgehen nach dem → Spiralmodel) wird bei gegebener geforderter kurzer Dauer für den gesamten Produktentstehungsprozess dadurch stark eingeschränkt. 
+
+Tests zur Umweltqualifizierung und die zugrundeliegende gewählte Testmethodik müssen daher im Vorfeld durch das Entwicklungsteam sehr sorgfältig durchdacht und durch geeignete statistische Methoden begleitet werden!

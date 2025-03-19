@@ -1,0 +1,102 @@
+<!--
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Fermi-Problem
+  - Messung
+  - Messprinzip
+  - Messmethode
+  - Messverfahren
+
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: true
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 3
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Fermi-Problem
+
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Prototyping und Test
+## Testing
+:::
+
+
+### Fermi-Problem {#sec-fermiproblem}
+
+::: {.callout-tip}
+## Definition: *"Fermi-Problem"*
+[Fermi-Problem](https://de.wikipedia.org/wiki/Fermi-Problem) bezeichnet eine quantitative Abschätzung für ein Problem, zu dem zunächst praktisch keine Daten verfügbar sind.
+:::
+
+Der Begriff Fermi-Problem ist benannt nach dem Physiker [Enrico Fermi](https://de.wikipedia.org/wiki/Enrico_Fermi) (* 29. September 1901; † 28. November 1954) , der dafür bekannt war, trotz mangelnder Informationen spontan gute Abschätzungen liefern zu können. 
+
+So warf Fermi beim Test der ersten Atombombe ([Trinity-Test](https://de.wikipedia.org/wiki/Trinity-Test)) Papierschnipsel in die Luft und beobachtete, wie weit diese durch die Druckwelle weggeblasen wurden. Aus dieser improvisierten Messung (siehe → Messung @sec-messung) konnte Fermi noch direkt vor Ort die ungefähre Sprengkraft der Bombe abschätzen, lange bevor die Sensormessungen ausgewertet waren.
+
+
+::: {.callout-tip}
+## Tipp: Die Fähigkeit zur schnellen Erstellung quantitativer Abschätzungen zahlt sich aus!
+Die Fähigkeit, schnell quantitative Abschätzungen zu erstellen kann in ihrer Bedeutung für die Arbeit im Produktentwicklungsprojekten nicht überschätzt werden! Dem geneigten Leser wird empfohlen, am Aufbau der eigenen Fähigkeiten zur schnellen Erstellung quantitativer Abschätzungen zu arbeiten. In sehr vielen Fällen genügt es bereits, die Größenordnung richtig einzuschätzen. Oder es kann sein, dass eine exakte Berechnung gar nicht möglich ist, weil keine Daten vorhanden sind, dennoch aber Kenntnis der zu erwartenden Größenordnung im Produktentstehungsprozess zwingend erforderlich ist.
+:::
+
+::: {.callout-important}
+## Pro-Tipp: Fehler bis zu einem Faktor 5 bis 10 ist fast immer ausreichend!
+Erfahrungswert aus der Praxis: Ein Fehler bei der quantitativen Abschätzung in der Größenordnung **kleiner Faktor 5 bis 10** ist in der Praxis bereits fast immer ausreichend!
+:::
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Exkurs: Messung
+                       
+-------------------------------------------------------------------------- -->
+#### Messung, Messprinzip, Messmethode, Messverfahren {#sec-messung}
+
+::: {.callout-tip}
+## Definition: *"Messung"*
+Eine [Messung](https://de.wikipedia.org/wiki/Messung) ist der experimentelle Vorgang, durch den ein spezieller Wert einer physikalischen Größe als Vielfaches einer Einheit oder eines Bezugswertes ermittelt wird. DIN 1319 definiert Messung als das Ausführen von geplanten Tätigkeiten zu einer quantitativen Aussage über eine Messgröße durch Vergleich mit einer Einheit.
+:::
+
+::: {.callout-tip}
+## Definition: *"Messprinzip"*
+[Messprinzip](https://de.wikipedia.org/wiki/Messung#Messprinzip) ist die wissenschaftliche Grundlage eines Messverfahrens. DIN 1319-1 definiert Messprinzip als die physikalische Grundlage der Messung, z.B. die Gravitationskraft als Grundlage einer Messung der Masse eines Körpers.
+:::
+
+::: {.callout-tip}
+## Definition: *"Messmethode"*
+[Messmethode](https://de.wikipedia.org/wiki/Messung#Messmethode) ist nach DIN 1319-1 die spezielle, vom Messprinzip unabhängige Art des Vorgehens bei der Messung, z.B Nullabgleichs-Messmethode oder Differenz-Messmethode.
+:::
+
+::: {.callout-tip}
+## Definition: *"Messverfahren"*
+[Messverfahren](https://de.wikipedia.org/wiki/Messung#Messverfahren) ist nach DIN 1319-1 die praktische Anwendung eines Messprinzips und einer Messmethode, Masseermittlung mit einer Balkenwaage und Gewichtsstücken nach der Nullabgleichs-Messmethode.
+:::

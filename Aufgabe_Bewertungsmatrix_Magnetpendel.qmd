@@ -1,0 +1,119 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Labor 
+  - Magnetpendel
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Aufgabe: Bewertungsmatrix Magnetpendel
+
+-------------------------------------------------------------------------- -->
+
+
+::: {.callout-important}
+Sollte Ihnen zu irgend einem Zeitpunkt bei der Bearbeitung der Aufgabe etwas unklar sein oder sollten Ihnen wichtige Informationen fehlen: **Bitte fragen Sie Ihren Dozenten!**
+:::
+
+```{mermaid}
+%%| fig-width: 6.4
+%%| label: fig-label-gntzeitverfahrenpendel
+%%| fig-cap: "Gantt-Diagramm der Aufgabe Bewertungsmatrix Magnetpendel"
+gantt
+title Gantt-Diagramm der Aufgabe Bewertungsmatrix Magnetpendel
+    dateFormat HH:mm
+    axisFormat %H:%M    
+
+    section Auswahl Verfahren zur Erfassung von Lage und Bahn des Pendels
+    Erarbeitung der Bewertungskriterien : a1, 00:00, 30m
+    Bewertung der Verfahren : a2, after a1, 8m
+    Reflektion der Gruppenarbeit : a3, after a2, 2m
+```
+
+
+::: {.callout-note}
+## Bewertungsmatrix zur Auswahl des Verfahrens zur Lage- und Bahnerfassung des Magnetpendels
+
+**Ausgangssituation**: Zur Erfassung der Lage und der Bahn des Magnetpendels wurden im Vorfeld die Verfahren mittels optischem Kamerasystem, eines Potentiometers an der Verbindung zwischen Aufnahme und Pendel sowie eines Beschleunigungsaufnehmers im Pendelkopf ausgewählt.
+
+
+
+|                      | Kamera         | Potentiometer  | Beschleunigungs- aufnehmer |
+|----------------------|----------------|----------------|----------------------------|
+| Kriterium 1          |                |                |                            | 
+| Kriterium 2          |                |                |                            | 
+| Kriterium 3          |                |                |                            | 
+| Kriterium 4          |                |                |                            | 
+| Kriterium 5          |                |                |                            | 
+| **Bewertung**:       |                |                |                            | 
+
+: Entwurf einer Bewertungsmatrix zur Auswahl des Verfahrens zur Erfassung der Lage und der Bahn des Magnetpendels {#tbl-bewertungsmatrixpendel .striped .hover .bordered tbl-colwidths="[25,25,25,25]"}
+
+
+
+**a)** Erarbeiten Sie in der Gruppe die Bewertungskriterien, die für die Erfassung der Lage und der Bahn des Pendels Ihrer Meinung nach wichtig sind. Bitte nutzen Sie hierzu auch die Ihnen zur Verfügung stehenden Informationsquellen, z.B. [Wikipedia](https://www.wikipedia.de/), [ChatGPT](https://chat.openai.com/), ...
+
+Vorgaben:
+
++ Bitte arbeiten sind in Einzel- oder Gruppenarbeit (maximale Größe der Gruppe: 3 Personen).
++ Bitte nehmen Sie sich für diese und die folgenden Aufgaben die im → Gantt-Diagramm @fig-label-gntzeitverfahrenpendel jeweils vorgesehene Zeit. 
++ Sollten Sie mehr als fünf Kriterien erarbeiten erweitern Sie die Matrix zum zusätzliche Zeilen; bei weniger als fünf Kriterien entfernen Sie bitte die leeren Zeilen aus der Matrix.
++ **Dokumentieren Sie die Ihren Bewertungskriterien zugrunde liegenden Prämissen**, so dass die von Ihnen gewählten Bewertungskriterien später auch für Aussenstehenden nachvollziehbar ist! Diese Dokumente sind ein wichtiger Bestandteil der Arbeit mit Bewertungsmatrizen!
++ Wie immer bei der Arbeit mit Bewertungsmatrizen gilt: Bitte achten Sie darauf, dass die Bewertungskriterien voneinander unabhängig sind, so dass eine versteckte Über- oder Untergewichtung eines einzelnen Aspekts vermieden wird.
+ 
+**b)** Bewerten Sie die drei Verfahren zur Erfassung der Lage und Bahn des Magnetpendels gemäß der von Ihnen erarbeiteten Bewertungskriterien. Gehen Sie dafür Zeile für Zeile vor und treffen Sie eine Bewertung für jedes der drei Verfahren. Ermitteln Sie zum Schluss das Ergebnis Ihrer Bewertung durch Aufsummieren der Einzelbewertungen für jedes der drei bewerteten Verfahren.
+
+Vorgaben:
+
++ Vorschlag: Die Bewertungen sollten von 1 bis 5 Punkte reichen, wobei 1 Punkt die schlechteste Bewertung und 5 Punkte die beste Bewertung ist. Bitte achten Sie darauf die Bewertungsspanne von 1 bis 5 möglichst vollständig auszunutzen! 
+
+**c)** Bitte Reflektieren Sie zum Abschluss noch kurz gemeinsam in der Gruppe: 
+
++ Entspricht das Ergebnis Ihren Erwartungen? 
++ Sind Sie persönlich mit dem Vorgehen zur Entscheidungsfindung zufrieden?
++ **Wie überzeugt sind sie, eine fachlich gute Entscheidung getroffen zu haben?**
+:::

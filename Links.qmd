@@ -1,0 +1,276 @@
+---
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+     roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Weiterführende Links
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+---
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+
+<!-- -------------------------------------------------------------------------
+
+          Sammlung weiterführender Links zu Vorlesungen und Laboren
+
+-------------------------------------------------------------------------- -->
+
+# Weiterführende Links
+## Labor "Magnetpendel"
+
+<!-- -------------------------------------------------------------------------
+
+                       Wikipedia
+
+-------------------------------------------------------------------------- -->
+<p style="text-align: center;">![](images/Wikipedia_Logo.png){width=15%}</p>
+
+### Euler-Verfahren
+
++ [Explizites Euler-Verfahren](https://de.wikipedia.org/wiki/Explizites_Euler-Verfahren) 
+
+<p style="text-align: center;">![](images/Microsoft_Office_Excel-Logo.png){width=16%} → Excel-Worksheet *"Euler-Verfahren"*</p>
+
++ [Methode der kleinen Schritte](https://de.wikipedia.org/wiki/Methode_der_kleinen_Schritte)
+
+### Dirac-Funktion
+
++ [Dirac-Funktion](https://de.wikipedia.org/wiki/Delta-Distribution)
+
+### Taylorreihe
+
++ [Taylorreihe](https://de.wikipedia.org/wiki/Taylorreihe)
+
+::: {.callout-tip}
+## Definition: *"Taylorreihe"*
+Die [Taylorreihe](https://de.wikipedia.org/wiki/Taylorreihe) wird in der Analysis verwendet, um eine analytische Funktion in der Umgebung einer Stelle durch eine Potenzreihe darzustellen, die der Grenzwert der Taylor-Polynome ist. Diese Reihenentwicklung wird Taylor-Entwicklung genannt. 
+:::
+Reihe und Entwicklung sind nach dem britischen Mathematiker [Brook Taylor](https://de.wikipedia.org/wiki/Brook_Taylor) (* 18. August 1685; † 29. Dezember 1731) benannt. Im Spezialfall $a=0$ wird die Taylorreihe auch Maclaurin-Reihe genannt, benannt nach [Colin Mclaurin](https://de.wikipedia.org/wiki/Colin_Maclaurin) (* Februar 1698; † 14. Juni 1746).
+
+
+Die Taylor-Reihe einer Funktion $f(x)$ um $x = 0$ (auch Maclaurin-Reihe genannt) lautet im Allgemeinen:
+
+$$
+f(x) = f(0) + f'(0) \cdot x + \frac{f''(0)}{2!} \cdot x^2 + \frac{f'''(0)}{3!} \cdot x^3 + \ldots = \sum_{n=0}^{\infty} \frac{f^{(n)}(0)}{n!} \cdot x^n
+$$
+
+Elementare Beispiele für Maclaurin-Reihen:
+
+$$
+e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + \ldots = \sum_{n=0}^{\infty} \frac{x^n}{n!}
+$$
+
+$$
+\sin(x) = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \ldots = \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n+1}}{(2n+1)!}
+$$
+
+$$
+\cos(x) = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \ldots = \sum_{n=0}^{\infty} \frac{(-1)^n x^{2n}}{(2n)!} 
+$$
+
+
+::: {.callout-caution}
+## Pro-Tipp! Für kleine $x$ gilt in guter Näherung:
+$$
+\sin(x) = x
+$$
+
+$$
+\cos(x) = 1
+$$
+:::
+
+### Fourierreihe
+
++ [Fourierreihe](https://de.wikipedia.org/wiki/Fourierreihe)
+
+::: {.callout-tip}
+## Definition: *"Fourierreihe"*
+Als [Fourierreihe](https://de.wikipedia.org/wiki/Fourierreihe) bezeichnet man die Reihenentwicklung einer periodischen, abschnittsweise stetigen Funktion in eine Funktionenreihe aus Sinus- und Kosinusfunktionen. Mit Hilfe der Fourier-Reihe können periodische Funktionen als Summen von sinus- und kosinusförmigen Funktionen dargestellt werden. Eine Verallgemeinerung der Fourier-Reihe ist die Fourier-Transformation. 
+:::
+
+Benannt ist die Fourier-Reihe nach dem französischen Mathematiker [Jean-Baptiste Joseph Fourier](https://de.wikipedia.org/wiki/Joseph_Fourier) (* 21. März 1768; † 16. Mai 1830). 1797 wurde Fourier Nachfolger von [Lagrange](https://de.wikipedia.org/wiki/Joseph-Louis_Lagrange) (siehe → [Lagrange-Formalismus](https://de.wikipedia.org/wiki/Lagrange-Formalismus)) als Professor für Analysis und Mechanik an der École polytechnique in Paris.
+
++ [Fourier-Transformation](https://de.wikipedia.org/wiki/Fourier-Transformation)
++ [Schnelle Fourier-Transformation (FFT)](https://de.wikipedia.org/wiki/Schnelle_Fourier-Transformation)
++ [Diskrete Fourier-Transformation (DFT)](https://de.wikipedia.org/wiki/Diskrete_Fourier-Transformation)
++ [Frequenzspektrum](https://de.wikipedia.org/wiki/Frequenzspektrum)
+
+### Logistische Gleichung
+
+Die [Logistische Gleichung](https://de.wikipedia.org/wiki/Logistische_Gleichung) ist ein heute weithin bekanntes und extrem einfaches Beispiel dafür, wie komplexes, chaotisches Verhalten bereits aus sehr einfachen nichtlinearen Gleichungen entstehen kann. 
+
+Die logistische Gleichung wurde bereits 1837 von [Pierre François Verhulst](https://de.wikipedia.org/wiki/Pierre-Fran%C3%A7ois_Verhulst) als demographisches mathematisches Modell eingeführt, jedoch fand sie erst in der Folge einer richtungsweisenden Arbeit des theoretischen Biologen [Robert May](https://de.wikipedia.org/wiki/Robert_May) aus dem Jahr 1976 weite Verbreitung und Aufmerksamkeit.
+
+Logistische Gleichung:
+
+$$
+X_{n+1}=r⋅X_n ​⋅ (1-X_n)
+$$
+
+mit *Reproduktionsrate* $r$ [0;4] und der *Population* zum Start $X_0$ [0;1].
+
+
+::: {.callout-note}
+## Logistische Gleichung (Dauer 10 min)
+**Aufgabe:**
+
+**a)** Bitte berechnen Sie näherungsweise den Wert für $X_{\infty}$ für $r = 2.0$ und $X_0 = 0.1$.
+
+**b)** Bitte berechnen Sie näherungsweise den Wert für $X_{\infty}$ für $r = 3.2$ und $X_0 = 0.1$.
+
+**c)** Bitte berechnen Sie näherungsweise den Wert für $X_{\infty}$ für $r = 3.8$ und $X_0 = 0.1$.
+:::
+
+<p style="text-align: center;"> ![](images/Microsoft_Office_Excel-Logo.png){width=16%} → Excel-Worksheet *"Logistische Gleichung"*</p>
+
++ [Logistische Gleichung](https://de.wikipedia.org/wiki/Logistische_Gleichung)
+
+<!--
+::: {.callout-tip collapse="true"}
+-->
+::: {.callout-tip}
+## Feigenbaum-Diagramm
+**Lösung:**
+
+**a)** $X_{\infty}$ für $r = 2.0$ und $X_0 = 0.1$ → Stabile Population: $0.5$.
+
+**b)** $X_{\infty}$ für $r = 3.2$ und $X_0 = 0.1$ → Oszillierende Population: $0.513$ und $0.799$.
+
+**c)** $X_{\infty}$ für $r = 3.8$ und $X_0 = 0.1$ → Stark und ohne erkennbares Muster fluktuierende Population (siehe → @fig-bifurcation "Feigenbaum-Diagramm").
+
+![Ausschnitt des Feigenbaum-Diagramms der logistischen Gleichung aus dem Bereich der Bifurkationen am Übergang von Ordnung (links) zum Chaos (rechts)](images/LogisticMap_BifurcationDiagram.png){width=80% #fig-bifurcation}
+
+<!--
+![Ausschnitt des Feigenbaum-Diagramms um r =3.57](images/LogisticMap_BifurcationDiagram_Detail.jpg){width=80% #fig-bifurcation}
+-->
+:::
+
+<!--
+.
+-->
++ [Laplacescher Dämon](https://de.wikipedia.org/wiki/Laplacescher_D%C3%A4mon)
++ [Quantenmechanik](https://de.wikipedia.org/wiki/Quantenmechanik)
++ [Chaosforschung](https://de.wikipedia.org/wiki/Chaosforschung)
++ [Butterfly-Effekt](https://de.wikipedia.org/wiki/Schmetterlingseffekt)
++ [Deterministisches Chaos](https://de.wikipedia.org/wiki/Deterministisches_Chaos)
++ [Feigenbaum-Konstante](https://de.wikipedia.org/wiki/Feigenbaum-Konstante)
+
+
+<!-- -------------------------------------------------------------------------
+
+                       YouTube
+
+-------------------------------------------------------------------------- -->
+<p style="text-align: center;">![](images/YouTube-Logo-2017.png){width=20%}</p>
+
++ [https://youtu.be/eB9NHPG-MPE](https://youtu.be/eB9NHPG-MPE) 
++ [https://youtu.be/EhyNxBeNZuM](https://youtu.be/EhyNxBeNZuM)
++ [https://youtu.be/3dombW_THfo](https://youtu.be/3dombW_THfo)
+
+
+<p style="text-align: center;">![](images/New_GOCE_geoid.jpg){width=50%}![](images/2011_GOCE_geoid.jpg){width=50%}</p>
+
+<!-- -------------------------------------------------------------------------
+
+                       Internet
+
+-------------------------------------------------------------------------- -->
+<p style="text-align: center;">![](images/AdobeStock_246023350.jpeg){width=16%}</p>
+
++ [https://beltoforion.de/de/magnetisches_pendel](https://beltoforion.de/de/magnetisches_pendel/index.php#idStart)
+
+
+<!--
+::: {.callout-important}
+## Vorgehen der statistischen Prozesslenkung
+*"Verringere zuerst die Streuung des Prozesses und optimiere danach den Mittelwert des Prozesses!"*
+:::
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Wolfram Alpha
+
+-------------------------------------------------------------------------- -->
+<p style="text-align: center;">![](images/Wolfram_Alpha-Logo.svg){width=40%}</p>
+
++ [https://www.wolframalpha.com/](https://www.wolframalpha.com/)
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
++ @bender_dubbel_2020: [Finite Berechnungsverfahren](https://rdcu.be/dYlt2)
++ @demtroder_experimentalphysik_2021: [Nichtlineare Dynamik und Chaos](https://rdcu.be/dX3MZ)
+:::
+
+# Literaturempfehlungen
+
+![@bender_dubbel_2020: [Taschenbuch für den Maschinenbau Band 1](https://link.springer.com/book/10.1007/978-3-662-59711-8)](images/Dubbel_GrundlagenMaschinenbau.webp){width=20%}
+
+![@hahn_kompaktkurs_2021: [Kompaktkurs Finite-Elemente für Einsteiger](https://link.springer.com/book/10.1007/978-3-658-33411-6)](images/HahnKompaktkursFEfuerEinsteiger.png){width=20%}
+
+![@bulenda_finite-element-modellierung_2024: [Finite-Elemente-Modellierung](https://link.springer.com/book/10.1007/978-3-658-42204-2)](images/Bulenda_Finite_Elemente_978-3-658-42204-2.webp){width=20%}
+
+![@demtroder_experimentalphysik_2021: [Experimentalphysik 1](https://link.springer.com/book/10.1007/978-3-662-62728-0)](images/Demtroeder_Experimentalphysik1_978-3-662-62728-0.webp){width=20%}
+
+![@reith_modellbildung_2024: [Modellbildung und Simulation](https://link.springer.com/book/10.1007/978-3-658-44250-7)](images/Reith_Modellbildung_978-3-658-44250-7.webp){width=20%}
+
+![@ries_ubungsbuch_2024: [Übungsbuch Signale und Systeme](https://link.springer.com/book/10.1007/978-3-658-42425-1)](images/Riess_Signale_und_Systeme_978-3-658-42425-1.webp){width=20%}
+
+
+#### To whom it may concern...
+
+<!-- -------------------------------------------------------------------------
+
+                       YouTube
+
+-------------------------------------------------------------------------- -->
+<p style="text-align: center;">![](images/YouTube-Logo-2017.png){width=20%}</p>
+
+Videos vom Chinas Deep Blue Aerospace's wiederverwendbarer Nebula-1 Rakete 10 km VTVL-(Vertical-Take-Off-Vertical-Landing-)Test vom 22. September 2024:
+
++ [https://youtube.com/shorts/ZNmMe-5tveo](https://youtube.com/shorts/ZNmMe-5tveo)
++ [https://youtu.be/Iq5NhGYKIqs](https://youtu.be/Iq5NhGYKIqs)
++ [https://youtu.be/aPZEXw93LE0](https://youtu.be/aPZEXw93LE0)
++ [https://youtu.be/WN_TVcI8LP8](https://youtu.be/WN_TVcI8LP8)

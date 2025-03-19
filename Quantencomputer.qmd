@@ -1,0 +1,145 @@
+---
+title: "MTB3 Entwicklung mechatronischer Systeme 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    email: christian.anders@hs-esslingen.de
+    affiliations: Hochschule Esslingen
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       EXKURS Quantencomputer
+
+-------------------------------------------------------------------------- -->
+
+## Exkurs: Quantencomputer
+
+::: {.callout-tip}
+## Quantencomputer
+Ein Quantencomputer ist ein Rechner, der auf den Prinzipien der Quantenmechanik basiert. Im Gegensatz zu klassischen Computern, die auf binären Bits basieren (die entweder den Zustand 0 oder 1 haben können), verwenden Quantencomputer sogenannte Quantenbits oder "Qubits", die auf quantenmechanischen Phänomenen wie Superposition und Verschränkung basieren.
+:::
+
+Superposition ermöglicht es einem Qubit, gleichzeitig in mehreren Zuständen zu existieren, was bedeutet, dass es gleichzeitig den Wert 0 und den Wert 1 annehmen kann. Verschränkung ermöglicht es, dass Qubits miteinander verbunden sind und ihre Zustände miteinander korreliert sind, selbst wenn sie physisch voneinander getrennt sind. Durch die Nutzung dieser quantenmechanischen Eigenschaften können Quantencomputer theoretisch eine immense parallele Verarbeitung von Informationen durchführen und komplexe Probleme möglicherweise wesentlich schneller lösen als klassische Computer. 
+
+Ein Quantenprozessor oder Quantencomputer nutzt die Prinzipien der Quantenmechanik, einer physikalischen Theorie, die das Verhalten von Teilchen auf subatomarer Ebene beschreibt, und arbeitet anders als ein klassischer Computer, der auf makroskopischen Zuständen elektronischer Schaltkreise basiert. Stattdessen verwendet er quantenmechanische Zustände spezieller Systeme. Zwei wichtige Konzepte dabei sind das Superpositionsprinzip und die Quantenverschränkung.
+
+Quantenalgorithmen haben das Potenzial, die Berechnungszeit für viele mathematische und physikalische Probleme erheblich zu verkürzen. Beispielsweise können sie effizienter als klassische Algorithmen extrem große Datenbanken durchsuchen und große Zahlen faktorisieren.
+
+Quantencomputer waren lange Zeit eher theoretische Konzepte, wurden aber in kleinem Maßstab im Labor erprobt. Der Rekord für die Anzahl der Qubits, die ein solcher Prozessor verwenden kann, lag im November 2021 bei 127 und stieg ein Jahr später auf 433 an. Neben der Qubit-Anzahl ist die Fehlerquote und die Stabilität der Qubit-Zustände von Bedeutung.
+
+Seit 2018 investieren Regierungen, Forschungsorganisationen und große Technologieunternehmen weltweit in die Entwicklung von Quantencomputern. Diese werden als eine der Schlüsseltechnologien des 21. Jahrhunderts angesehen.
+
+Quantencomputer sind eine spezielle Art von Computern, die auf den Prinzipien der Quantenmechanik basieren. Die Quantenmechanik ist eine Theorie der Physik, die das Verhalten von Partikeln auf atomarer und subatomarer Ebene beschreibt. Quantencomputer unterscheiden sich in mehreren wichtigen Aspekten von herkömmlichen klassischen Computern:
+
++ **Quanten-Bits (Qubits) statt klassischer Bits**: Während klassische Computer Informationen in Bits speichern, die entweder den Zustand 0 oder den Zustand 1 haben können, verwenden Quantencomputer sogenannte Qubits. Qubits können gleichzeitig in einem Zustand von 0, 1 oder einer Überlagerung dieser Zustände existieren. Dies ermöglicht es Quantencomputern, eine immense Menge an Informationen parallel zu verarbeiten.
+
++ **Quantenüberlagerung**: Durch die Quantenüberlagerung können Quantencomputer viele Berechnungen gleichzeitig durchführen. Während ein klassischer Computer sequenziell durch eine Liste von Aufgaben geht, kann ein Quantencomputer alle möglichen Lösungen gleichzeitig untersuchen. Dies macht Quantencomputer besonders geeignet für bestimmte Arten von Optimierungs- und Suchproblemen.
+
++ **Verschränkung**: Verschränkung ist ein weiteres quantenmechanisches Phänomen, das Quantencomputern zugute kommt. Verschränkte Qubits sind auf eine Weise miteinander verbunden, dass der Zustand eines Qubits von dem Zustand eines anderen Qubits abhängt, selbst wenn sie räumlich getrennt sind. Dies ermöglicht es Quantencomputern, hochparallele Berechnungen durchzuführen.
+
++ **Quantenparallelismus**: Aufgrund der Quantenüberlagerung und Verschränkung können Quantencomputer bestimmte Berechnungen exponentiell schneller durchführen als klassische Computer. Dies macht sie besonders geeignet für komplexe mathematische und wissenschaftliche Aufgaben, bei denen die Anzahl der möglichen Lösungen sehr groß ist.
+
++ **Quantenverschlüsselung**: Quantencomputer könnten auch die Sicherheit von Verschlüsselungsverfahren bedrohen, da sie in der Lage sind, klassische kryptografische Algorithmen viel schneller zu knacken als herkömmliche Computer. Daher wird viel Forschung betrieben, um post-quanten-kryptografische Methoden zu entwickeln, die gegen Quantenangriffe widerstandsfähig sind.
+
+Quantencomputer sind jedoch trotz aller Euphorie nicht notwendigerweise schneller oder leistungsfähiger sind als herkömmliche Computer für alle Arten von Aufgaben. Es gibt bestimmte Probleme, bei denen Quantencomputer aufgrund ihrer quantenmechanischen Eigenschaften einen erheblichen Vorteil bieten könnten, während sie für andere Aufgaben nicht effizienter sind. Die Entwicklung und Nutzung von Quantencomputern befindet sich noch in einem frühen Stadium, und es werden weiterhin Fortschritte gemacht, um die volle Bandbreite ihrer Fähigkeiten zu erkunden und zu nutzen.
+
+### Eine kurze Geschichte der Quantencomputer:
+
+- 1905: Albert Einstein explains the photoelectric effect and suggests that light consists of quantum particles or photons
+- 1924: Max Born uses the term quantum mechanics for the first time
+- 1925: Werner Heisenberg, Max Born, and Pascual Jordan formulate matrix mechanics, the first formulation of quantum mechanics
+- 1925-1927: Niels Bohr and Werner Heisenberg develop the Copenhagen interpretation, one of the earliest and most common interpretations of quantum mechanics
+- 1930: Paul Dirac publishes The Principles of Quantum Mechanics, a standard textbook on quantum theory
+- 1935: Albert Einstein, Boris Podolsky, and Nathan Rosen publish a paper highlighting the counterintuitive nature of quantum superposition and arguing that quantum mechanics is incomplete
+- 1935: Erwin Schrödinger develops a thought experiment involving a cat that is simultaneously dead and alive, and coins the term “quantum entanglement”
+- 1944: John von Neumann publishes Mathematical Foundations of Quantum Mechanics, a rigorous mathematical framework for quantum theory
+- 1957: Hugh Everett proposes the many-worlds interpretation of quantum mechanics, which suggests that every possible outcome of a quantum measurement actually occurs in a parallel universe
+- 1961: Rolf Landauer shows that erasing a bit of information dissipates a minimum amount of energy, known as Landauer’s principle
+- 1965: John Bell proves that quantum entanglement cannot be explained by any local hidden variable theory, known as Bell’s theorem
+- 1973: Alexander Holevo proves that n qubits cannot carry more than n classical bits of information, known as Holevo’s theorem or Holevo’s bound
+- 1980: Paul Benioff proposes a model of a quantum Turing machine, a theoretical device that can perform any computation using quantum mechanical principles
+- 1981: Richard Feynman suggests that simulating quantum systems would require a new type of computer based on quantum mechanics
+- 1982: David Deutsch generalizes Benioff’s model and proposes the concept of a universal quantum computer
+- 1984: Charles Bennett and Gilles Brassard develop a protocol for quantum key distribution, which allows two parties to securely exchange cryptographic keys using quantum states
+- 1985: David Deutsch and Richard Jozsa devise an algorithm that can solve a specific problem faster than any classical algorithm, known as the Deutsch-Jozsa algorithm
+- 1991: Artur Ekert proposes another protocol for quantum key distribution based on quantum entanglement, known as the E91 protocol
+- 1992: David Deutsch and Richard Jozsa extend their algorithm to handle multiple inputs, known as the Deutsch-Jozsa algorithm
+- 1994: Peter Shor discovers an algorithm that can factor large numbers in polynomial time using a quantum computer, known as Shor’s algorithm
+- 1996: Lov Grover invents an algorithm that can search an unsorted database in square root time using a quantum computer, known as Grover’s algorithm
+- 1997: Isaac Chuang, Neil Gershenfeld, and Mark Kubinec demonstrate the first implementation of Shor’s algorithm using nuclear magnetic resonance (NMR) techniques
+- 2000: David DiVincenzo proposes five criteria for building a practical quantum computer, known as the DiVincenzo criteria
+- 2001: IBM researchers implement Grover’s algorithm using NMR techniques and achieve a modest speedup over classical algorithms
+- 2007: D-Wave Systems claims to have built the first commercial quantum computer, but its validity is disputed by many experts
+- 2019: Google announces that it has achieved quantum supremacy by performing a calculation on a 53-qubit quantum processor that would take a classical supercomputer thousands of years to complete
+- 2020: IBM demonstrates that its 65-qubit quantum processor can perform calculations beyond the reach of any classical computer
+
+![Kern eines Quantencomputers (Quelle: [IBM](https://www.ibm.com/de-de), [James Estrin](https://www.nytimes.com/2023/06/14/science/ibm-quantum-computing.html))](images/Quantencomputer.jpg){width=80% #fig-quantencomputer}
+
+### Eignung und Leistungsfähigkeit von Quantencomputern
+
+Quantencomputer sind besonders gut für bestimmte Arten von Aufgaben und Problemstellungen geeignet, die mit herkömmlichen klassischen Computern schwer oder ineffizient zu lösen sind. Als Beispiele für solche Aufgaben werden diskutiert:
+
++ **Kryptographische Sicherheitsanalysen**: Quantencomputer könnten herkömmliche Verschlüsselungsalgorithmen, wie RSA und ECC, in kurzer Zeit knacken. Daher werden Quantencomputer für die Analyse von kryptografischen Sicherheitssystemen und die Entwicklung post-quanten-kryptografischer Lösungen verwendet. Quantencomputer können auch für die Entwicklung sicherer Verschlüsselungsmethoden und Sicherheitsprotokolle genutzt werden, um gegen quantenbasierte Angriffe widerstandsfähig zu sein.
+
++ **Quantenchemie und Materialwissenschaften**: Die Berechnung der elektronischen Struktur von Molekülen und Materialien ist ein extrem rechenintensiver Prozess. Quantencomputer können solche Simulationen effizient durchführen, was Anwendungen in der Entwicklung von Medikamenten, der Materialentwicklung und der chemischen Forschung ermöglicht.
+
++ **Optimierungsprobleme**: Quantencomputer können Optimierungsprobleme lösen, bei denen es darum geht, die beste Lösung aus einer großen Anzahl von Möglichkeiten zu finden. Beispiele hierfür sind das Traveling Salesman Problem, die Ressourcenplanung in Unternehmen und die Optimierung von Logistik- und Transportrouten.
+
++ **Maschinelles Lernen und künstliche Intelligenz**: Quantencomputer können beim Training von komplexen neuronalen Netzwerken und bei der Lösung großer Datenverarbeitungsaufgaben im maschinellen Lernen und in der künstlichen Intelligenz eine Rolle spielen.
+
+
+::: {.callout-important}
+## Quantencomputer als universelle Supercomputer?
+Quantencomputer sind und werden nicht automatisch in allen Bereichen besser sind als klassische Computer. Es gibt viele Aufgaben und Anwendungen, für die herkömmliche Computer nach wie vor sehr effizient und dauerhaft Quantencomputern überlegen sind.
+:::
+
+Erschwerend für den breiten Einsatz von Quantencomputern kommt, dass Quantencomputer bei extremen Betriebsbedingungen betrieben werden müssen, um ihre Funktionalität zu gewährleisten. Dies ist keine Frage der technischen Weiterentwicklung sondern fußt auf den fundamentalen Prinzipien der Quantenphysik. 
+
+::: {.callout-note}
+Nach heute verfügbaren Wissenstand der Physik sind Quantencomputer für den Heimgebrauch in dem Sinne, wie heute PCs Verbreitung gefunden haben, technisch unmöglich.
+:::
+
+Die Hauptanforderungen und Bedingungen für den Betrieb von Quantencomputern umfassen:
+
++ **Extrem niedrige Temperaturen**:Die meisten Quantencomputer, insbesondere sogenannte Gate-basierte Quantencomputer, müssen bei extrem niedrigen Temperaturen nahe dem absoluten Nullpunkt (0 Kelvin oder -273,15 Grad Celsius) betrieben werden. Dies ist notwendig, um die quantenmechanischen Effekte, wie die Quantenüberlagerung und Verschränkung, zu erhalten und die Störungen durch thermische Fluktuationen zu minimieren.
+
++ **Hohe Vakuumbedingungen**: Quantencomputer werden oft in Hochvakuumkammern betrieben, um atomare und molekulare Wechselwirkungen zwischen den Qubits und ihrer Umgebung zu reduzieren.
+
++ **Elektromagnetische Abschirmung**: Quantencomputer benötigen eine strenge elektromagnetische Abschirmung, um Störungen von äußeren elektromagnetischen Feldern zu minimieren, die die Quantenberechnungen beeinträchtigen könnten.
+
++ **Stabile Umgebung**: Die Umgebung, in der ein Quantencomputer betrieben wird, muss stabil und frei von Vibrationen und Erschütterungen sein, da selbst geringfügige Störungen die Quantenüberlagerung und Verschränkung beeinflussen können.
+
++ **Präzise Steuerung**: Quantencomputer erfordern präzise Kontrolle und Ausleseverfahren, um die Qubits zu manipulieren und ihre Zustände zu messen.
+
++ **Lange Kohärenzzeiten**: Die Kohärenzzeit, die Zeitspanne, in der ein Qubit in einem quantenüberlagerten Zustand bleibt, muss ausreichend lang sein, um komplexe Berechnungen durchzuführen. Daher ist es wichtig, die Kohärenzzeiten der Qubits zu verlängern und gegenüber äußeren Störungen zu schützen.
+
++ **Redundanz und Fehlerkorrektur**: Aufgrund von Quantenfehlern und Rauschen müssen Quantencomputer oft Fehlerkorrekturverfahren implementieren, um zuverlässige Berechnungen durchzuführen. Dies kann die Verwendung einer größeren Anzahl von Qubits erfordern, um die Fehler zu erkennen und zu korrigieren.
+
+### Ausblick auf die Entwicklung von Quantencomputern
+
+Die Entwicklung von Quantencomputern ist in Bezug auf diese Bedingungen und Anforderungen noch immer in einem Forschungsstadium ist, und es werden viele Bemühungen unternommen, die Technologie robuster und praktikabler zu machen. Dennoch sind die aktuellen Quantencomputer aufgrund dieser Anforderungen für den Alltagsgebrauch und den breiten Einsatz auf absehbare Zeit nicht bereit, sondern können nur für spezielle wissenschaftliche und technische Anwendungen verwendet werden.
+
+Es wird erwartet, dass Quantencomputer zunächst in spezialisierten Bereichen wie der Quantenchemie, der Materialwissenschaft und der Verschlüsselung eine Rolle spielen werden, bevor sie in breiterem Maßstab für allgemeine Berechnungen und Anwendungen einsatzbereit sind. Ein breiter Einsatz von Quantencomputern ist im nächsten Jahrzehnt noch nicht zu erwarten.
+
+Im Mai 2023 stellte der Physiker Wissenschaftsjournalist Michael Brooks in der Fachzeitschrift Nature die Frage: *„Quantencomputer: Wozu sind sie gut?“*. In dem Artikel zitiert er Winfried K. Hensinger, der fünf Quantencomputer betreibt, mit den Worten: *„Sie sind alle schrecklich. Sie können nichts Nützliches tun.“* Der zum Zeitpunkt der Veröffentlichung an der Anzahl der Qubits weltweit größte Quantencomputer, Osprey von IBM, hat 433 Qubits. Selbst mit 2 Millionen Qubits könnten einige Berechnungen in der Quantenchemie ein Jahrhundert dauern, wie ein Preprint zeigt. Um die aktuell modernste Kryptografie (2048 Bit RSA) in acht Stunden zu entschlüsseln wären 20 Millionen Qubits erforderlich.
+
+Insgesamt sei es noch ein weiter und langer Weg, um mit Quantencomputern über das hinauszugehen, was mit klassischen Computern möglich ist. Auch der Start-up-Szene und ihren Investoren sei klar, dass *„es noch viele Jahre dauern wird, bis der Zahltag kommt“*. Der kurzfristige Hype und die Erwartung der baldigen Quantenüberlegenheit sei zu hoch.
+

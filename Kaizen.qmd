@@ -1,0 +1,69 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Kaizen (Methode des Lean-Managements)
+
+-------------------------------------------------------------------------- -->
+
+### Kaizen {#sec-kaizen}
+
+::: {.callout-tip}
+## Definition: *"Kaizen"*
+Der Begriff [Kaizen](https://de.wikipedia.org/wiki/Kaizen) stammt aus Japan. „Kai“‛ steht für „Veränderung“, „Zen“‛ für „zum Besseren“. Ziel ist dabei, aus guten Produkten und guten Unternehmen noch bessere Produkte bzw. Unternehmen zu machen. Kaizen bedeutet ständige Verbesserung unter Einbeziehung aller Mitarbeiter. 
+:::
+
+<!--
+Das heißt, Geschäftsleitung, Führungskräfte und Werker bzw. Sachbearbeiter machen mit. 
+-->
+
+Voraussetzung für den erfolgreichen Einsatz der Kaizen-Methoden ist, dass das Management die Ziele klar und verständlich formuliert, sodass sie von allen Menschen am „Ort des Geschehens“ (jap. Gemba ) verstanden werden. Dann gilt es, die Mitarbeiter zu trainieren und zu motivieren, damit gemeinsam auf die Ziele hingearbeitet wird. Kaizen ist jedermanns Angelegenheit und setzt eine prozessorientierte Denkweise voraus. Laut [Masaaki Imai](https://en.wikipedia.org/wiki/Masaaki_Imai), der den Begriff geprägt hat und mehrere Bücher über Kaizen veröffentlichte, soll kein Tag ohne irgendeine Verbesserung im Unternehmen vergehen.
+
+::: {.callout-tip}
+## Das Kaizen-Prinzip
+Gehe an Gemba (Ort des Geschehens), achte auf Gembutsu (die realen Dinge), suche nach Muda (Verluste, Verschwendung), mache Kaizen (ständige Verbesserungen). 
+:::
+
+![Das Kaizen-Prinzip (Quelle: @dickmann_schlanker_2015)](images/127947_3_De_1_Fig9_HTML.webp){width=48% #fig-kaizen}
+
+Wichtig ist dabei, dass beim Entdecken von Verschwendung und Problemen niemand angeklagt oder bestraft wird. Vielmehr sind *"Probleme als Schätze"* zu sehen. 
+
+Das Entdecken dieser Schätze und die Beseitigung der Problemursachen bergen große Einsparpotenziale. Doch der Fokus liegt nicht nur auf der Kosteneinsparung. Schnelligkeit, Flexibilität und Steigerung der Qualität sind die entscheidenden Faktoren, die zur angestrebten hohen Kundenzufriedenheit beitragen. 
+
+::: {.callout-important}
+In der westlichen Wirtschaftspraxis wurde das Konzept übernommen und unter dem Begriff "[Kontinuierlicher Verbesserungsprozess (KVP)](https://de.wikipedia.org/wiki/Kontinuierlicher_Verbesserungsprozess)" (engl. continuous improvement process, CIP) eingeführt (siehe @sec-kvp).
+:::
+
+<!--
+Kaizen hat als eine Methode im Toyota-Produktionssystems bewiesen, dass sie einen wichtigen Beitrag zum Erreichen dieser Ziele leisten kann.
+
+Parallel hierzu verbessern sich die Arbeitsbedingungen für die Mitarbeiter. Denn der Einsatz von Kaizen bringt einen Wandel der Unternehmenskultur mit sich. Mehr Eigeninitiative von Seiten der Mitarbeiter wird gefordert und gefördert. Der Handlungsspielraum des Einzelnen weitet sich aus und die Kommunikation wird verbessert. Weniger Stress und mehr Freiraum für Kreativität sind die Folge. 
+
+Damit Kaizen funktioniert, ist es wichtig, dass das entsprechende Know-how vermittelt wird. Sinnvoll sind Qualifizierungsmaßnahmen in den unterschiedlichen Ebenen. Prozessbegleiter, Kaizen-Praktiker und Kaizen-Coaches sorgen dafür, dass der Kaizen-Prozess in Bewegung bleibt. Sie geben das Methodenwissen an die Mitarbeiter weiter. Der Kaizen-Manager als Bindeglied zwischen Gemba und Management koordiniert die Aktivitäten und erstellt in Zusammenarbeit mit Mitarbeitern und Management eine Roadmap, in der die Vorgehensweise festgelegt wird.
+
+
+<!--
+::: {.callout-tip}
+## Weiterführende Links
+
+:::
+-->
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
+
++ @dickmann_schlanker_2015: [Elemente moderner, schlanker Produktionssysteme](https://rdcu.be/dI72u)
+
+:::
+
+<!--
+#### Literaturempfehlung
+
+![@dickmann_schlanker_2015: [Schlanker Materialfluss](https://link.springer.com/book/10.1007/978-3-662-44869-4)](images/Dickmann_Schlanker_Materialfluss_978-3-662-44869-4.webp){width=40%}
+-->

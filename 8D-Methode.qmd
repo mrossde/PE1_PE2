@@ -1,0 +1,57 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       8D-Methode
+
+-------------------------------------------------------------------------- -->
+### 8D-Methode {#sec-8d-methode}
+
+<!--
+![8 Disciplines Problem Solving (Quelle: Adobe Stock)](images/AdobeStock_479282239.jpg){width=80% #fig-8disciplices}
+-->
+
+::: {.callout-tip}
+## Definition: *"8D-Methode"*
+Die [8D-Methode](https://de.wikipedia.org/wiki/8D-Report) ist eine strukturierte Methode zur Problemlösung, die in der Qualitätsmanagement- und Qualitätsverbesserungsprozessen verwendet wird. Sie wurde ursprünglich von der Ford Motor Company entwickelt, um Qualitätsprobleme zu analysieren, Lösungen zu finden und Maßnahmen zur Vermeidung zukünftiger Fehler zu ergreifen. Der Name "8D" steht für "Eight Disciplines".
+:::
+
+![8D-Ablauf nach dem Vorgehensmodell PDCA (Plan - Do - Check - Act)](images/8d-ablauf-nach-pdca-1024x617.webp){width=86% #fig-8dmethode}
+
+Die 8D-Methode folgt einem systematischen Ansatz und umfasst die in @fig-8dmethode gezeigten acht Schritten nach Ford:
+
++ **Disziplin 1**: Das Team zusammenstellen - Ein interdisziplinäres Team wird gebildet, das die notwendigen Fähigkeiten und Kenntnisse besitzt, um das Problem anzugehen.
+
++ **Disziplin 2:** Das Problem beschreiben - Das Team definiert das Problem klar und präzise. Es ist wichtig, das Problem zu verstehen, um es effektiv zu lösen.
+
++ **Disziplin 3**: Sofortmaßnahmen ergreifen - Um das Problem vorübergehend zu beheben und weitere Schäden zu verhindern, werden Sofortmaßnahmen ergriffen.
+
++ **Disziplin 4**: Die Ursache analysieren - Das Team identifiziert die Hauptursachen des Problems. Hier kommen verschiedene Werkzeuge zur Fehlerursachenanalyse (wie 5-Why-Methode, Ishikawa-Diagramm, FMEA) zum Einsatz.
+
++ **Disziplin 5**: Lösungen entwickeln - Potenzielle Lösungen werden erarbeitet und bewertet. Die wirksamsten Lösungen werden ausgewählt.
+
++ **Disziplin 6**: Lösungen umsetzen - Die ausgewählten Lösungen werden in die Praxis umgesetzt. Es ist wichtig, die Fortschritte zu überwachen und sicherzustellen, dass die Lösungen effektiv sind.
+
++ **Disziplin 7**: Wirksamkeit überprüfen - Das Team überprüft die Wirksamkeit der umgesetzten Lösungen. Es wird analysiert, ob das Problem vollständig behoben wurde oder ob weitere Maßnahmen erforderlich sind.
+
++ **Disziplin 8** : Maßnahmen standardisieren und lernen - Nachdem das Problem erfolgreich gelöst wurde, werden die ergriffenen Maßnahmen standardisiert, um ähnliche Probleme in Zukunft zu vermeiden. Das Team zieht auch Lehren aus dem gesamten Prozess, um das Wissen zu erweitern und kontinuierlich zu verbessern. 
+
+
+::: {.callout-caution}
+## Appreciate the team!
+Disziplin 8 wird in der Literatur oft auch als *„Appreciate the team!“* beschrieben, wobei in der Praxis die Disziplin 8 oft nicht erreicht wird. Sobald das Problem als gelöst gilt verliert das Management zumeist das Interesse und das Team verdampft zurück in die jeweiligen entsendenden Organisationseinheiten. Sollte einer der geneigten Leser in der betrieblichen Praxis jemals bis zur achten Disziplin vordringen: **Herzlichen Glückwunsch!**
+:::
+
+Die 8D-Methode ist - auch ohne das Erreichen der achten Disziplin - bei konsequenter Ausführung eine überaus leistungsfähige Vorgehensweise zur Fehlerbehebung und Qualitätsverbesserung und wird in vielen Branchen, insbesondere in der Automobilindustrie und anderen produzierenden Unternehmen, mit großem Erfolg angewendet. 
+
+::: {.callout-warning}
+## Arbeitsaufwand für die 8D-Methode nicht unterschätzen!
+Der Zeitraum für das Durchlaufen der "8D" kann dabei von einigen Tagen bis zu einigen Monaten dauern und erfordert von allen Beteiligten teils erheblichen Arbeitsaufwand, kann also zumeist - und zur Enttäuschung des Managements - von den aktiv Mitwirkenden nicht *"einfach mal so nebenbei"* gemacht werden. Bevor die 8D-Methode angewendet wird, sollte geklärt werden, ob diese aufwändige Methode tatsächlich erforderlich ist. Kleinere Probleme können oftmals schneller durch andere Methoden gelöst werden.
+:::
+

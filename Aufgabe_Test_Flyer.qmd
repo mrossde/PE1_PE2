@@ -1,0 +1,76 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+title: "DEB3 Produktentwicklung 1"
+resource-path: ["../images"]
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+keywords:
+  - Produktentwicklung
+  - Ideenfindung
+  - Konzeptentwicklung
+  - Labor
+  - Flyer
+  - Abnahmetest
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!-- 
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       LABOR "FLYER" AUFGABE LASTENEHFT FLYER
+
+-------------------------------------------------------------------------- -->
+
+::: {#nte-testflyer .callout-note}
+## Abnahmetest Flyer (Dauer max. 5 min)
+
+**Aufgabe** Führen Sie den Abnahmetest des von Ihnen gebauten Prototyp des Flyers durch!
+
+Leitfragen:
+
+- Erfüllt der Flyer die zuvor im Lastenheft festgelegten Anforderungen? 
+- Wie stellen Sie fest, ob die Anforderungen erfüllt werden?
+- Wenn einzelne Anforderungen nicht erfüllt werden: Wie hoch schätzen Sie den Aufwand ein, den Flyer weiterzuentwickeln, dass er die noch fehlenden Anforderungen erfüllt? Genügen kleinere Anpassungen, oder ist eine Neuentwicklung erforderlich?
+:::

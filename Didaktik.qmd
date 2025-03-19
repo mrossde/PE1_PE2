@@ -1,0 +1,128 @@
+---
+title: "MTB3 Entwicklung mechatronischer Systeme 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    email: christian.anders@hs-esslingen.de
+    affiliations: Hochschule Esslingen
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+---
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Inhalt dieses Dokuemnts
+
+-------------------------------------------------------------------------- -->
+
+
+<!--
+
+## Exkurs: Eine Frage und der Versuch einer Antwort
+
+---
+
+> *„Herr Professor, warum soll ich etwas lernen, wenn ich es in Wikipedia jederzeit nachschlagen kann? Warum sollte ich mein Gehirn mit Informationen füllen, die ich jetzt gar nicht nutzen kann?"*
+
+---
+
+Ziel der Vorlesungen und Labore ist das bestmögliche Vermitteln von grundlegendem Fachwissen und das Vermitteln von praxisnahen Kenntnissen und Verständnis über grundlegende Zusammenhänge (“praxisnahe fachliche und methodische Grundlagen”), die im späteren Berufsleben der Studierenden von großem Nutzen sein können. 
+
+Hierzu ist das Wissen um die Grundlagen und Zusammenhänge so im Gedächtnis der Studierenden zu verankern, dass diese im Berufsleben das Gelernte jederzeit in ihre Entscheidungen einfließen lassen können. Entsprechendes Wissen wird als explizites oder auch ***verfügbares Wissen*** bezeichnet. Im Gegensatz dazu bezeichnet **latentes Wissen** Informationen, die grundsätzlich verfügbar sind und mittels Recherche erworben werden können (z.B. via Wikipedia, Google, ChatGPTusw.), die aber mangels Verfügbarkeit im Gedächtnis zunächst **NICHT** bei Entscheidungen einbezogen werden können. 
+
+Bei Entscheidungen kann grundsätzlich nur verfügbares Wissen einbezogen werden. Bevor latentes Wissen bei Entscheidungen einfließen kann muss es erst durch Aneignung in verfügbares Wissen umgewandelt werden. Die Verfügbarkeit fast unbegrenzten latenten Wissens hilft somit nicht ohne weitere Mühe, bessere Entscheidungen zu treffen.
+
+Aufgabe der Vorlesungen und Labore ist daher das Vermitteln praxisnahen, langfristig relevanten, verfügbaren Wissens und Verstehens, auf das die Studierenden in ihrem Berufsleben jederzeit und dauerhaft zugreifen und bei ihren Entscheidungen einfließen lassen können um ***informierte Entscheidungen*** zu treffen:
+
+::: {.callout-tip}
+## Definition: *"Informierte Entscheidungen"*
+Informierte Entscheidungen werden getroffen, wenn eine Person umfassende und relevante Informationen berücksichtigt, bevor sie eine Wahl trifft oder eine Handlung ausführt. Informierte Entscheidungen basieren auf einer sorgfältigen Analyse und Bewertung der verfügbaren Fakten, Daten, Erfahrungen und Meinungen. 
+:::
+
+Informierte Entscheidungen sind durch folgenden Merkmale gekennzeichnet:
+
+1. **Informationsbeschaffung:** Bei informierten Entscheidungen wird im Vorfeld bewusst nach Informationen gesucht. **Das bedeutet, dass man sich der Grenzen des eigenen verfügbaren Wissens bewusst ist** (siehe → Johari-Fenster), zielgerichtet verschiedene Quellen konsultiert, Experten befragt, Forschungsergebnisse analysiert oder andere Informationsquellen nutzt.
+1. **Relevanz:** Informierte Entscheidungen berücksichtigen relevante Informationen, die für den spezifischen Kontext und die Situation der Entscheidung von Bedeutung sind. Es geht darum, die Informationen zu identifizieren, die einen direkten Einfluss auf die Entscheidung haben können, und irrelevante oder unzuverlässige Informationen auszusortieren.
+1. **Bewertung:** Informierte Entscheidungen beinhalten eine kritische Bewertung der verfügbaren Informationen. Dabei werden die Glaubwürdigkeit, die Qualität und die Quelle der Informationen berücksichtigt. Es wird darauf geachtet, mögliche Vorurteile, Verzerrungen oder Fehlinformationen zu erkennen und zu berücksichtigen.
+1. **Abwägung:** Informierte Entscheidungen beinhalten die Abwägung verschiedener Optionen oder Alternativen. Es werden die Vor- und Nachteile jeder Option betrachtet und die potenziellen Auswirkungen und Konsequenzen bewertet.
+1. **Rationalität:** Informierte Entscheidungen werden auf der Grundlage logischer Schlussfolgerungen und vernünftiger Überlegungen getroffen. Emotionen können eine Rolle spielen, aber sie werden nicht dominant und beeinflussen nicht die rationale Analyse der Informationen.
+1. **Verantwortung:** Informierte Entscheidungen werden verantwortungsbewusst getroffen, indem potenzielle Auswirkungen und Konsequenzen berücksichtigt werden. Es wird versucht, die bestmögliche Wahl zu treffen, basierend auf dem vorhandenen Wissen und den Zielen oder Werten der Person.
+
+::: {.callout-caution}
+## Tipp
+Informierte Entscheidungen sind nicht in jedem Fall richtige Entscheidungen, sie führen jedoch zu einer höheren Wahrscheinlichkeit, dass die gewählte Handlung den Zielen entspricht.
+:::
+
+---
+
+> *„Man muss dem Glück eine breite Straße bauen.“ (Quelle: Dr. Erich Lamprecht)*
+
+--- 
+
+::: {.callout-warning}
+## Warnung
+Verfügbares Wissen altert und muss regelmäßig auf Gültigkeit überpfügt, ggf. aktualisiert und stets erweitert werden um relevant und zuverlässig zu bleiben. Ein großer, historisch gewachsener Erfahrungsschatz ist somit nicht in jedem Fall wertvolles verfügbares Wissen, sondern kann, im Gegenteil, sogar fehlleitend wirken. Älterne Menschen haben oft Probleme anzuerkennen, dass der über viele Jahre gewonnene Erfahrungsschatz in einer sich rasch entwickelnden Welt zumindest teilweise über die Zeit erheblich an Wert verloren haben kann.
+:::
+
+
+### Prämissen zur Vorlesung
+
+Prinzip: Why → What → How
+
+1. Neue Wahrnehmung ist nicht über kognitives Lernen zu vermitteln! 
+
+2. Neue Erlebnisse ("Katalysator") führen zu neuen Erfahrungen! 
+
+3. Neue Erfahrungen führen zu neuen Wahrnehmung! 
+
+Wir werden in den Laboren versuchen, Erlebnisse zu schaffen um so eine erweiterte Sicht auf den in dieser Vorlesung angebotenen Lernstoff zu bekommen.
+
+
+### Didaktische Ziele
+
+Reproduktion | Wissen (kennen, nennen, zitieren, aufsagen)
+
+Reorganisation | Verstehen (erkennen, erklären, einordnen)
+
+Transfer | Anwendung (benutzen, verwenden) – Analyse (auswerten, überprüfen)
+
+Problemlösung | Synthese (entwickeln, konzipieren) – Bewertung (entscheiden)
+-->
+
+<!--
+> *"If you can't explain it simply, you don't understand it well enough." (Albert Einstein)*
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Lernziele der Vorlesung
+
+-------------------------------------------------------------------------- -->
+
+<!--
+Lernziele ver Vorlesung hier einfügen! 
+Motivation für Datenverarbeitung und Datenwirtschaft
+Aufbau und Funktionsweise von Sensoren & Konzept der Zeit
+Begriffe der Datenverarbeitung kennen und nutzen
+Tätigkeiten Datenverarbeitung (Datenoperationen) kennen & anwenden
+
+
+Erklärung des Symbolbilds der Eisschollen hier einfügen!
+-->

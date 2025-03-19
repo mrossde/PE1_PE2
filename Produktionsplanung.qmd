@@ -1,0 +1,207 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Produktionsplanung und Produktion
+  - Zielsetzung
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: true
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 3
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- 
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+<!-- -------------------------------------------------------------------------
+
+                        FERTIGUNGS- UND PRODUKTIONSVORBEREITUNG
+
+-------------------------------------------------------------------------- -->
+
+# Fertigungs- und Produktionsvorbereitung {#sec-planung}
+
+In diesem Kapitel geht es um die Phase der Fertigungs- und Produktionsvorbereitung im Produktentstehungsprozess. Diese Phase wird oftmals auch als Phase der Produktionsplanung bezeichnet.
+
+
+--
+
+### Produkt - Prozess - Ressouce (PPR)
+
+```{mermaid}
+%%| fig-width: 6.0
+%%| label: fig-label-ppr
+%%| fig-cap: "PPR: Produkt - Prozess - Ressource"
+flowchart TD
+    A[PPR] --> B[Produkt]
+    A --> C[Prozess]
+    A --> D[Ressource]
+``` 
+
+---
+
+## Produktionsplanung
+
+Aufgaben der Produktionsplanung (unvollständige Auswahl):
+
+- Prozessplanung
+- Montageplanung
+- Spannkonzepte und Werkstückträger
+- Werkzeugplanung
+- Bestuhlungsplanung
+- Gebäudeplanung
+- Layoutplanung; Flächenplanung; Flucht- und Rettungswege planen
+- Leittechnik und Steuerungstechnik planen
+- Wertstrommapping durchführen
+- Logistik
+- Losgrößenuntersuchung durchführen (à Reichweite ermitteln)
+- Ladungsträgerplanung
+- Kapazitätsplanung
+- Ver- und Entsorgungsplanung inkl. Festlegung Versorgungsstraßen
+- Zeitwirtschaft; Zeitanalyse
+- Arbeitszeitmodell festlegen
+- Maschinenverfügbarkeit prognostizieren
+- Ergonomie
+- Austaktung der Linien, insb. bei Montage (Automatic Line Balancing) à **Vorranggraph vs. Fertigungsreihenfolge!**
+- Qualifizierungspläne erstellen
+- Prüfplanung; Prüfkonzepte
+- Kostenermittlung
+- Konstruktionsänderungen bewerten und in die Planung mit Einfließen lassen.
+- SE-Partner festlegen
+- Lieferantenkreis festlegen. 
+- Erstellung von Lastenheften für Ausschreibungen
+- Angebote vergleichen (nicht ganz trivial!)
+- Koordination Lieferanten; Verstand- und Endabnahme
+- Festlegung Anzahl Erprobungsteile für Lieferanten
+- Fertigung Prototypenteile (à Entwicklungsabteilungen)
+- Kennzahlen der Betriebsmittel ermitteln (Verfügbarkeitsabschätzung)
+
+
+
+Nach der Homogenität der Produkte und der Häufigkeit der Leistungswiederholung wird zwischen Einzelfertigung, Serienfertigung und Sortenfertigung unterschieden:
+
+- **Einzelfertigung:** Ein Produkt wird nur einmal hergestellt, auch wenn später gleiche oder ähnliche Produkte hergestellt werden („Losgröße 1“). Beispiel: Raumfahrt.
+- **Serienfertigung:** Die gleichzeitige oder unmittelbar aufeinander folgende Produktion mehrerer gleichartiger Produkte („Serie“) auf einer oder verschiedenen Produktionsanlagen. Beispiel: Automobilbau.
+- **Sortenfertigung:** Produktions- und absatzverwandte Produkte in verschiedenen Ausprägungen, die in größeren [Stückzahlen](https://de.wikipedia.org/wiki/St%C3%BCckzahl "Stückzahl") (sog. „Losen“) nacheinander auf derselben Produktionsanlage hergestellt werden. Beispiel: Buchdruck.
+
+
+### Bezugsart
+In der Produktionsplanung und im Bereich des Supply Chain Managements bezieht sich der Begriff "Bezugsart" auf die Art und Weise, wie Produkte, Rohstoffe oder Materialien beschafft oder bezogen werden, um den Produktionsbedarf zu decken. Die Auswahl der richtigen Bezugsart ist entscheidend für die effiziente Planung und Steuerung von Produktionsprozessen und Lagerbeständen. Es gibt verschiedene Bezugsarten, die in der Produktionsplanung berücksichtigt werden, darunter:
+
+1. **Eigenfertigung (In-House-Produktion):** Bei dieser Bezugsart werden Produkte oder Teile intern im eigenen Unternehmen hergestellt. Dies bedeutet, dass das Unternehmen die vollständige Kontrolle über den Produktionsprozess hat. Es erfordert jedoch Investitionen in Maschinen, Anlagen und Arbeitskräfte.
+
+2. **Beschaffung (Externe Beschaffung):** Hierbei werden Produkte oder Materialien von externen Lieferanten oder Herstellern bezogen. Dies kann Rohstoffe, Halbfabrikate oder fertige Produkte umfassen. Unternehmen können auf diese Weise Kosten sparen und sich auf ihre Kernkompetenzen konzentrieren.
+
+3. **Make-to-Order (MTO):** Bei dieser Bezugsart werden Produkte nur dann hergestellt, wenn eine Bestellung von einem Kunden eingeht. Dies reduziert Lagerbestände, erhöht jedoch die Produktionszeit und erfordert eine schnelle Reaktion auf Kundenbestellungen.
+
+4. **Make-to-Stock (MTS):** Hierbei werden Produkte im Voraus produziert und in Lagerbeständen gehalten, um auf Bestellungen von Kunden oder den prognostizierten Bedarf zu reagieren. Dies ermöglicht eine schnellere Lieferung, erhöht jedoch das Risiko von Lagerüberbeständen.
+
+5. **Assemble-to-Order (ATO):** Bei dieser Bezugsart werden Produkte aus vorproduzierten Komponenten oder Teilen gemäß den individuellen Anforderungen der Kunden zusammengestellt. Dies ermöglicht eine gewisse Anpassung, ohne die gesamte Produktion von Grund auf neu zu starten.
+
+6. **Engineer-to-Order (ETO):** In dieser Bezugsart werden Produkte nach den individuellen technischen Anforderungen und Spezifikationen eines Kunden entworfen und hergestellt. Dies ist typisch für maßgeschneiderte oder hochspezialisierte Produkte.
+
+7. **Just-in-Time (JIT):** Hierbei werden Materialien oder Produkte nur dann geliefert oder produziert, wenn sie unmittelbar für den nächsten Produktionsschritt benötigt werden. Dies reduziert Lagerkosten, erfordert jedoch eine enge Abstimmung mit Lieferanten.
+
+Die Auswahl der richtigen Bezugsart hängt von verschiedenen Faktoren ab, darunter die Art der Produkte, die Kundennachfrage, die Produktionskapazität, die Lagerkosten und die strategischen Ziele des Unternehmens. Effektives Management der Bezugsarten kann dazu beitragen, die Effizienz, Flexibilität und Rentabilität in der Produktionsplanung zu optimieren.
+
+
+### Bezugsartrahmen
+Der Begriff "Bezugsartrahmen" wird in der Produktionsplanung und im Supply Chain Management verwendet, um die allgemeinen Leitlinien und Parameter zu beschreiben, die für die Beschaffung von Materialien oder Produkten festgelegt sind. Der Bezugsartrahmen ist eine strategische Vereinbarung oder ein Regelwerk, das die Beziehung zwischen einem Unternehmen und seinen Lieferanten regelt und die grundlegenden Bedingungen für die Beschaffung festlegt.
+
+Der Bezugsartrahmen kann verschiedene Aspekte der Beschaffung und Zusammenarbeit zwischen Unternehmen und Lieferanten abdecken, darunter:
+
++ **Preisgestaltung**: Der Rahmen legt die Preise oder Preisstrukturen fest, zu denen die Materialien oder Produkte bezogen werden. Dies kann feste Preise, Rabatte, Mengenrabatte, variable Preise oder andere Preisvereinbarungen umfassen.
+
++ **Lieferbedingungen**: Die Vereinbarung kann die Lieferbedingungen definieren, einschließlich Lieferfristen, Mindestbestellmengen, Lieferhäufigkeit und Versandkosten.
+
++ **Qualitätsanforderungen**: Der Bezugsartrahmen kann die erforderlichen Qualitätsstandards, Prüfverfahren und Qualitätskontrollen festlegen, um sicherzustellen, dass die gelieferten Materialien oder Produkte den Anforderungen entsprechen.
+
++ **Lieferantenleistung**: Er kann Kriterien und Indikatoren für die Beurteilung der Leistung des Lieferanten enthalten, wie beispielsweise Pünktlichkeit der Lieferungen, Produktqualität und Reaktionsfähigkeit auf Anfragen.
+
++ **Zahlungsbedingungen**: Die Vereinbarung kann die Zahlungsbedingungen und -modalitäten, wie Fristen, Rabatte für schnelle Zahlungen und Zahlungsmethoden, regeln.
+
++ **Kündigungsbedingungen**: Der Bezugsartrahmen kann Bedingungen für die Kündigung oder Änderung der Vereinbarung festlegen, einschließlich Kündigungsfristen und -prozesse.
+
++ **Geheimhaltung und Datenschutz**: Er kann auch Bestimmungen zur Geheimhaltung von Geschäftsgeheimnissen, zum Schutz von geistigem Eigentum und zur Datenschutzregelung enthalten.
+
++ **Lieferantenauswahl**: Der Rahmen kann die Kriterien und den Prozess für die Auswahl von Lieferanten oder potenziellen Lieferanten festlegen.
+
+Der Bezugsartrahmen dient dazu, die Beziehung zwischen einem Unternehmen und seinen Lieferanten zu formalisieren und sicherzustellen, dass beide Parteien die gleichen Erwartungen und Bedingungen verstehen. Dies kann zur Reduzierung von Unsicherheiten und Konflikten in der Beschaffungskette beitragen. Der Rahmen kann auch als Grundlage für die Verhandlung detaillierterer Einzelverträge oder Bestellungen dienen, die auf der Grundlage der festgelegten Rahmenbedingungen erstellt werden.
+
+
+
+
+
+
+
+
+
+<!--
+::: {.callout-tip}
+## Weiterführende Links
+
+:::
+-->
+
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
+
++ @dickmann_schlanker_2015: [Elemente moderner, schlanker Produktionssysteme](https://rdcu.be/dI72u)
+
+:::
+
+
+## Literaturempfehlung
+
+![@dickmann_schlanker_2015: [Schlanker Materialfluss](https://link.springer.com/book/10.1007/978-3-662-44869-4)](images/Dickmann_Schlanker_Materialfluss_978-3-662-44869-4.webp){width=40%}
+
+
+<!--
+![@appelfeller_digitale_2023: [Die digtiale Transformation des Unternehmens](https://link.springer.com/book/10.1007/978-3-662-65413-2)](images/Appelfeller_Die_digitale_Transformation.webp){width=40%}
+-->

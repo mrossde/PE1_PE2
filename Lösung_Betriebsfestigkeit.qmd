@@ -1,0 +1,153 @@
+---
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Übungsaufgabe zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Übungsaufgabe
+  - Betriebsfestigkeit
+  - Wöhlerkurve
+  - Lastkollektiv
+  - Lineare Schadensakkumulation
+  - Miner-Regel
+  - Lösung
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+---
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Aufgabe: Betriebsfeste Auslegung eines Bauteils
+
+-------------------------------------------------------------------------- -->
+
+::: {.callout-note collapse="true"}
+## Betriebsfeste Auslegung eines Bauteils
+
+**Ausgangssituation**: Sie sind der für die betriebsfeste Auslegung von Bauteilen verantwortliche Entwickelnde in einem Unternehmen das Mountainbikes herstellt. 
+
+Für ein neues Modell eines Mountainbikes wird von Seiten der Unternehmensführung dringend Ihre Freigabe einer neuen Fahrradgabel gefordert. Das neue Mountainbike soll zeitnah in die Serienproduktion gehen um in der bevorstehenden Saison in großer Stückzahl verkauft werden zu können. Das Unternehmen ist auf einen Verkaufserfolg des neuen Mountainbikes dringend angewiesen um weiterhin wirtschaftlich erfolgreich am Markt bestehen zu können.
+
+Für das neue Mountainbike wurde von dem Team der Bauteilerprobung durch Auswertung von aus erfassten Kundendaten ermittelten Fahrprofilen das in @tbl-lastkollektiv dargestellte Lastkollektiv sowie durch Wöhlerversuche der in @fig-bauteilwoehlerlinie für den Bereich der Betriebsfestigkeit dargestellte relevante Teil der Bauteilwöhlerlinie ermittelt.
+
+| Spannungsamplitude [Mpa] | Anzahl Lastwechsel | 
+|-------------------------:|:-------------------|
+| 300                      | 10                 |
+| 200                      | 4000               |
+| 100                      | 500000             |
+
+: Lastkollektiv {#tbl-lastkollektiv .striped .hover .bordered tbl-colwidths="[50,50]"}
+
+![Bauteilwöhlerlinie der neu entwickelten Fahrradgabel](images/Aufgabe_Betriebsfestigkeit_Aufgabe.drawio.svg){width=80% #fig-bauteilwoehlerlinie}
+
+Sie sind von der Unternehmensführung zu der entscheidenden Besprechung eingeladen worden, an der die Serienproduktion des neuen Modells des Mountainbikes formal beschlossen werden soll. 
+
+**Frage**: Geben Sie die Serienproduktion der neuen Fahrradgabel für das neue Modell des Mountainbikes frei?
+
+- [ ] Ja
+- [ ] Nein
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Lösung: Betriebsfeste Auslegung eines Bauteils
+
+-------------------------------------------------------------------------- -->
+
+::: {.callout-tip collapse="true"}
+## Betriebsfeste Auslegung eines Bauteils
+
+**Betriebsfestigkeit**
+
+Der Bereich der [Betriebsfestigkeit](https://de.wikipedia.org/wiki/Schwingfestigkeit#Betriebsfestigkeit) (engl. *"high cycle fatigue"*, HCF) ist der Bereich der [Wöhler-Linie](https://de.wikipedia.org/wiki/Schwingfestigkeit#W%C3%B6hlerlinie_und_Unterscheidung_von_Kurzzeit-,_Zeit-_und_Dauerfestigkeit), in dem die Wöhler-Linie bei doppellogarithmischer^[Zur einfacheren Ablesung der zur Lösung der Aufgabe notwendigen Zahlenwerte wurde in der Aufgabenstellung auf die doppellogarithmische Darstellung verzichtet. Der geneigte Leser möge sich jedoch bitte einprägen dass Wöhlerlinien in aller Regel doppellogarithmisch dargestellt werden!] Darstellung nahezu gerade verläuft. Dieser Bereich der Betriebsfestigkeit ist materialabhängig und liegt zumeist zwischen $10^{4}$ und $2 \cdot 10^{6}$ Schwingspielen.
+
+**Miner-Regel**
+
+Um die Lebensdauer von Bauteilen unter variablen Lasten abzuschätzen und entsprechende Konstruktionsentscheidungen zu treffen kann als einfache Näherung die [Miner-Regel](https://de.wikipedia.org/wiki/Lineare_Schadensakkumulation) verwendet werden. 
+
+Die Miner-Regel besagt, dass die Lebensdauer eines Bauteils durch die Summe der Anteile, die jede Laststufe an der Ermüdungsbeanspruchung hat, bestimmt wird ("[linear Schadensakkumulation](https://de.wikipedia.org/wiki/Lineare_Schadensakkumulation)"). Überschreitet die Gesamtschädigung $D$ den Wert 1, so ist mit einem Bruch bzw. Anriss im Bauteil unter dem betrachteten Lastkollektiv zu rechnen.
+
+Die Miner-Regel ist nur eine vereinfachte Näherung zur Abschätzung der Betriebsfestigkeit von Bauteilen und kann die tatsächliche Lebensdauer nicht exakt vorhersagen. Sie stellt jedoch eine in der Praxis hinreichend gute Näherung dar und wird daher häufig verwendet.
+
+**Berechnung der Gesamtschädigung $D$ des Bauteils**
+
+Zur Berechnung der Gesamtschädigung $D$ wird das Lastkollektiv in $a$ Rechteckkollektive mit konstanter Amplitude $S_{a}$ und einer Teilschwingspielzahl $n_{i}$ unterteilt. Bei der linearen Schadensakkumulation wird für jedes Teilkollektiv eine Teilschädigung berechnet. Hierzu wird die Teilschwingspielzahl durch die maximal ertragbare Schwingspielzahl $N_{i}$ bei $S_{a}$ einer Wöhlerlinie geteilt. Die Teilschädigungen aller Teilkollektive werden aufsummiert und ergeben die Gesamtschädigung $D$ des Bauteils:
+
+$$
+D=\sum_{i=1}^{a} {\frac {n_{i}}{N_{i}}}
+$$
+
+In der Aufgabenstellung geben sind das in @tbl-lastkollektivloesung gegebene Lastkollektiv sowie die in @fig-loesungwoehlerlinie gegebene Bauteilwöhlerlinie.
+
+
+| Teilkollektiv | Spannungsamplitude [Mpa] | Anzahl Lastwechsel | 
+|:-------------:|-------------------------:|:-------------------|
+|    $i$ = 1    | 300                      | 10                 |
+|    $i$ = 2    | 200                      | 4000               |
+|    $i$ = 3    | 100                      | 500000             |
+
+: Lastkollektiv {#tbl-lastkollektivloesung .striped .hover .bordered tbl-colwidths="[20,40,40]"}
+
+![Bauteilwöhlerlinie der neu entwickelten Fahrradgabel](images/Aufgabe_Betriebsfestigkeit_Loesung.drawio.svg){width=80% #fig-loesungwoehlerlinie}
+
+In der Aufgabenstellung ist das Lastkollektiv in drei Teilkollektive aufgeteilt:
+
+$$
+D=\sum_{i=1}^{3} {\frac {n_{i}}{N_{i}}}
+$$
+
+$$
+D = {\frac {10}{10^{2}}} + {\frac {4000}{10^{4}}} + {\frac {500000}{10^{6}}} = 1.0
+$$
+
+Die Gesamtschädigung liegt also genau in dem Bereich, an dem zum Ende der in der Bauteilauslegung vorgesehenen Lebensdauer das Bauteil versagen wird. In der Praxis ist damit zu rechnen, dass ein Teil der Bauteile bereits vor dem Erreichen der angestrebten Lebensdauer versagen werden, andere Bauteile hingegen länger als die vorgesehenen Lebensdauer halten werden. 
+
+Rein technisch gesehen kann die Frage der Bauteilauslegung nicht sicher beantwortet werden. Um eine Entscheidung pro/contra Freigabe des Bauteils zu treffen ist eine vielschichtige Abwägung erforderlich.
+
+**Überlegungen zur Freigabe des Bauteils**
+
++ Die Bauteile, die versagen werden, werden dies (bei bestimmungsgemäßem Gebrauch der Mountainbikes) mit hoher Wahrscheinlichkeit erst zum Ende der vorgesehenen Lebensdauer der Mountainbikes (d.h. i.d.R. lange nach Ablauf der Garantiefrist) tun. Die Freigabe des Bauteils sichert daher zunächst die wirtschaftliche Wettbewerbsfähigkeit des Unternehmens. 
+
++ Bei dem Bauteil handelt es sich mit der Fahrradgabel um ein Bauteil, das bei spontanem Versagen zu schweren Verletzungen und ggf. sogar dem Tod des Fahrenden führen kann. 
+
++ Auf lange Sicht kann das gehäufte Versagen des Bauteils den Ruf des Unternehmens als Hersteller qualitativ hochwertiger Mountainbikes und damit die langfristige wirtschaftliche Wettbewerbsfähigkeit des Unternehmens gefährden, selbst wenn die grenzwertige Auslegung des Bauteils möglicherweise keine juristischen Folgen nach sich ziehen sollte. 
+
+
+Sie haben jetzt alle vorliegenden Fakten nach bestem Wissen bewertet. Sie sind noch immer von der Unternehmensführung zu der entscheidenden Besprechung eingeladen worden, an der die Serienproduktion des neuen Modells des Mountainbikes formal beschlossen werden soll. Die Besprechung beginnt in wenigen Minuten. Was tun Sie?
+
+**Frage**: Geben Sie die Serienproduktion der neuen Fahrradgabel für das neue Modell des Mountainbikes frei?
+
+- [ ] Ja
+- [ ] Nein
+:::

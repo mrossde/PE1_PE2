@@ -1,0 +1,25 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Product Lifecycle Management
+
+-------------------------------------------------------------------------- -->
+
+
+### Product Lifecycle Management {#sec-plm}
+
+[Product-Lifecycle-Management](https://de.wikipedia.org/wiki/Product-Lifecycle-Management) bzw. Produktlebenszyklusmanagement (PLM) ist ein Konzept zur nahtlosen Integration sämtlicher Informationen, die im Verlauf des Lebenszyklus eines Produktes anfallen.
+
+Das Konzept beruht auf abgestimmten Methoden, Prozessen und Organisationsstrukturen und bedient sich üblicherweise IT-Systemen für die Aufzeichnung und Verwaltung der Daten. PLM entstand aus dem enger definierten Produktdatenmanagement (PDM) und entwickelte sich im frühen 21. Jahrhundert zum beherrschenden Paradigma in der Produktentwicklung. 
+
+Unternehmen erhoffen sich vom PLM eine verbesserte Kontrolle über die diversen Prozesse, die in jedem Teil eines Lebenszyklus erforderlich sind, und damit auch transparente Aufwände und Erträge. Die von dem Konzept betroffenen Systeme umfassen also Konstruktion (CAD) und Berechnung (CAE) über die Produktionsplanung (Anlagen und Technologie) und PPS bis hin zu Verkaufsplanung, Verkauf, Vertriebslogistik, End-of-life-Management, einschließlich Service- und Recyclingfragen.
+
+![Übersicht PLM (Quelle: [Wikipedia](https://de.wikipedia.org/wiki/Product-Lifecycle-Management))](/images/PLM.png){width=60% #fig-uebersichtplm}

@@ -1,0 +1,114 @@
+<!--
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Softskills
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 5
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       SOFTSKILLS
+
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Softskills
+:::
+
+## Softskills {#sec-introsoftskills}
+
+::: {.callout-tip}
+## Definition: *"Softskills"*
+Softskills sind persönliche Eigenschaften, [soziale Kompetenzen](https://de.wikipedia.org/wiki/Soziale_Kompetenz) und Verhaltensweisen, die nicht unbedingt auf formalem Wissen oder technischen Fähigkeiten beruhen, sondern die auf zwischenmenschlichen Beziehungen und [emotionaler Intelligenz](https://de.wikipedia.org/wiki/Emotionale_Intelligenz) basieren. 
+:::
+
+Zu den wichtigsten Softskills für die erfolgreiche Mitarbeit in Produktentstehungsprojekten gehören unter anderem Kommunikationsfähigkeit, Teamfähigkeit, Empathie, Zeitmanagement, Problemlösungsfähigkeiten und Kreativität, aber auch Resilienz, Ausdauer und Beharrlichkeit. 
+
+
+```{mermaid}
+%%| label: fig-label-mmsoftskills
+%%| fig-cap: "Mindmap wichtiger Softskills für die erfolgreiche Mitarbeit in Projekten zur Produktentwicklung"
+mindmap
+  root(Softskills)
+    (Entwicklungsteam)
+        (Kommunikation)
+            (Aktives Zuhören)
+            (Klare Ausdrucksweise)
+            (Feedback geben)
+        (Teamfähigkeit)
+            (Empathie)
+            (Konfliktmanagement)
+            (Lösungsorientierung)
+    (Eigenentwicklung)
+        (Selbstmanagement)
+            (Zeitmanagement)
+            (Stressbewältigung)
+            (Priorisierung)
+      (Selbstreflexion)
+            (Feedback annehmen)
+            (Eigenmotivation)
+      (Lernbereitschaft)
+            (Offenheit für Neues)
+            (Kontinuierliche Weiterbildung)
+      (Resilienz)
+        (Ausdauer)
+        (Beharrlichkeit)
+    (Projektzusammenarbeit)
+        (Problemlösungsfähigkeit)
+            (Analytisches Denken)
+            (Entscheidungsfreude)
+        (Kreativität)
+        (Flexibilität)
+        (Zielorientierung)
+    (Verantwortungsbewusstsein)
+        (Zuverlässigkeit)
+        (Eigeninitiative)
+        (Qualitätsbewusstsein)
+    (Führungskompetenz)
+        (Motivation anderer)
+        (Delegation)
+        (Vision vermitteln)
+```
+
+
+Diese Fähigkeiten sind in der Praxis mit entscheidend für den beruflichen Erfolg, da sie die Art und Weise beeinflussen, wie erfolgreich Menschen in Teams und Hierarchien miteinander interagieren, zusammenarbeiten und Probleme lösen. 
+
+Oftmals erweisen sich in der Praxis Softskills als wichtigere Erfolgsfaktoren für den beruflichen Erfolg als reine Fach- oder Methodenkompetenz.
+
+::: {.callout-caution}
+## Pro-Tipp!
+Die folgenden Seiten sollen dem geneigten Lesen einen Überblick zu Inhalten bieten, die unmittelbar mit Softskills in Zusammenhang stehen. Sie sollen zugleich den geneigten Leser anregen, diesem für den beruflichen Erfolg wichtigen Thema mit der gebotenen Aufmerksamkeit zu begegnen und (last but not least) sollen sie Anstoß an den geneigten Leser für die Weiterentwicklung der eigenen den Softskills zugeordneten Kompetenzen zu sein.
+:::

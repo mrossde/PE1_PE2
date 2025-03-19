@@ -1,0 +1,71 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!-- -------------------------------------------------------------------------
+
+Herbert Simon: "Parable of two watchmakers"
+
+-------------------------------------------------------------------------- -->
+
+### *"Parable of Two Watchmakers"* {#sec-twowatchmakers}
+
+Die Parabel erzählt die Geschichte von zwei Uhrmachern, die komplizierte mechanische Uhren herstellen. Sie entstammt der 1962 erschienenen Veröffentlichung "[The Architecture of Complexity](https://www.cc.gatech.edu/classes/AY2013/cs7601_spring/papers/Simon-Complexity.pdf)" des Nobelpreisträgers [Herbert Simon](https://de.wikipedia.org/wiki/Herbert_A._Simon). 
+
+<!--
+
+In his 1962 he laid out an argument for how complexity emerges, which is largely focused on the central role of hierarchy in complex systems. To start, let’s define hierarchy so we’re all on the same page. Here’s Simon:
+
+Etymologically, the word “hierarchy” has had a narrower meaning than I am giving it here. The term has generally been used to refer to a complex system in which each of the subsystems is subordinated by an authority relation to the system it belongs to. More exactly, in a hierarchic formal organization, each system consists of a “boss” and a set of subordinate subsystems. Each of the subsystems has a “boss” who is the immediate subordinate of the boss of the system. We shall want to consider systems in which the relations among subsystems are more complex than in the formal organizational hierarchy just described. We shall want to include systems in which there is no relation of subordination among subsystems. (In fact, even in human organizations, the formal hierarchy exists only on paper; the real flesh-and-blood organization has many inter-part relations other than the lines of formal authority.) For lack of a better term, I shall use hierarchy in the broader sense introduced in the previous paragraphs, to refer to all complex systems analyzable into successive sets of subsystems, and speak of “formal hierarchy” when I want to refer to the more specialized concept.
+
+So it’s more or less the way we think of it, except he is drawing a distinction to the formal hierarchy we see in an org chart where each subordinate has just one boss and the informal hierarchy that actually exists inside organizations, where subordinates interact in a variety of ways. And he points out the many complex systems we find hierarchy, including biological systems, “The hierarchical structure of biological systems is a familiar fact. Taking the cell as the building block, we find cells organized into tissues, tissues into organs, organs into systems. Moving downward from the cell, well-defined subsystems — for example, nucleus, cell membrane, microsomes, mitochondria, and so on — have been identified in animal cells.”
+
+The question is why did all these systems come to be arranged this way and what can we learn from them? Here Simon turns to story:
+
+Let me introduce the topic of evolution with a parable. 
+-->
+
+---
+
+*"There once were two watchmakers, named Hora and Tempus, who manufactured very fine watches. Both of them were highly regarded, and the phones in their workshops rang frequently — new customers were constantly calling them. However, Hora prospered, while Tempus became poorer and poorer and finally lost his shop. What was the reason?*
+
+*The watches the men made consisted of about 1,000 parts each. Tempus had so constructed his that if he had one partly assembled and had to put it down — to answer the phone say — it immediately fell to pieces and had to be reassembled from the elements. The better the customers liked his watches, the more they phoned him, the more difficult it became for him to find enough uninterrupted time to finish a watch.*
+
+*The watches that Hora made were no less complex than those of Tempus. But he had designed them so that he could put together subassemblies of about ten elements each. Ten of these subassemblies, again, could be put together into a larger subassembly; and a system of ten of the latter subassemblies constituted the whole watch. Hence, when Hora had to put down a partly assembled watch in order to answer the phone, he lost only a small part of his work, and he assembled his watches in only a fraction of the man-hours it took Tempus."*
+
+---
+
+<!--
+Whether the complexity emerges from the hierarchy or the hierarchy from the complexity, he illustrates clearly why we see this pattern all around us and articulates the value of the approach. It’s not just hierarchy, he goes on to explain, but also modularity (which he refers to as near-decomposability) that appears to be a fundamental property of complex systems. That is, each of the subsystems operates both independently and as part of the whole. As Simon puts it, “Intra-component linkages are generally stronger than intercomponent linkages” or, [even more simply](https://www.amazon.com/Sciences-Artificial-Herbert-Simon/dp/0262691914/ref=as_li_ss_tl?ie=UTF8&qid=1537278334&sr=8-1&keywords=science+of+the+artificial&linkCode=ll1&tag=noahbrierdotc-20&linkId=4c1ba46a78406244c11ac42996829638), “In a formal organization there will generally be more interaction, on the average, between two employees who are members of the same department than between two employees from different departments.”
+
+Why is that? Well, for one, it’s an efficiency thing. Just as we see inside organizations, we want to use specialized resources in a specialized way. But beyond that, as Simon outlines in the parable, it’s also about resiliency: By relying on subsystems you have a defense against catastrophic failure when one piece of the whole breaks down. Just as Hora was able to quickly start building again when he put something down, any system made up of subsystems should be much more capable of dealing with changes in environment. It works in organisms, companies, and even empires, as Simon pointed out in [*The Sciences of the Artificial*](https://www.amazon.com/Sciences-Artificial-Herbert-Simon/dp/0262691914/ref=as_li_ss_tl?ie=UTF8&qid=1537278334&sr=8-1&keywords=science+of+the+artificial&linkCode=ll1&tag=noahbrierdotc-20&linkId=4c1ba46a78406244c11ac42996829638):
+
+We have not exhausted the categories of complex systems to which the watchmaker argument can reasonably be applied. Philip assembled his Macedonian empire and gave it to his son, to be later combined with the Persian subassembly and others into Alexander’s greater system. On Alexander’s death his empire did not crumble to dust but fragmented into some of the major subsystems that had composed it.
+
+Hopefully the application of this framework is pretty clear (and also instructive) in every day business life. Interestingly, Simon’s theories were the ultimate inspiration for a management fad we saw burn bright (and flame out) just a few years ago: [Holacracy, the fluid organizational structure made up of self-organizing teams](https://www.economist.com/business/2014/07/05/the-holes-in-holacracy). [Invented by Brian Robertson](https://www.holacracy.org/team/brian-robertson/) and made famous by Tony Hsieh and Zappos, the method (it’s a registered trademark) is based on ideas about “holons” from Hungarian author and journalist Arthur Koestler. In his 1967 book *The [Ghost in the Machine*](https://www.amazon.com/Ghost-Machine-Arthur-Koestler/dp/1939438349/ref=as_li_ss_tl?s=books&ie=UTF8&qid=1537279670&sr=1-1&keywords=ghost+in+the+machine&linkCode=ll1&tag=noahbrierdotc-20&linkId=ced90cd43dcbaa9b501ab64e8b056fc9)*, Koestler repeats Simon’s story of Tempus and Hora and then goes on to theorize that holons (a name he coined “from the Greek holos—whole, with the suffix on (cf. neutron, proton) suggesting a particle or part”) are “meant to supply the missing link between atomism and holism, and to supplant the dualistic way of thinking in terms of ‘parts’ and ‘wholes,’ which is so deeply engrained in our mental habits, by a multi-levelled, stratified approach. A hierarchically-organized whole cannot be “reduced” to its elementary parts; but it can be ‘dissected’ into its constituent branches of holons, represented by the nodes of the tree-diagram, while the lines connecting the holons stand for channels of communication, control or transportation, as the case may be.”
+
+Holacracy aside, there’s a ton of goodness in the parable and the architecture of modularity that it posits as critical. It’s not an accident that every company is built this way and as we think about those companies designing systems, it’s also not surprising many of those should also follow suit (a good lead-in for [Conway’s Law]( ), which is up next). Although I’m pretty out of words at this point, Simon also applies the same hierarchy/modularity concept to problem solving and there’s a pretty good argument to be made that the “latticework of models” [Charlier Munger described in his 1994 USC Business School Commencement Address](https://old.ycombinator.com/munger.html) would fit the framework.
+
+- Exkurs: Vorteile und Nachteile der Modularisierung; Gibt es Nachteile bei der Modularisierung? Falls ja: Nennen Sie Beispiele, bei denen die Modularisierung Nachteile mit sich bringt (Praxisbeispiel z.B. Energiedichte von Batterien).
+
+-->
+
+<!--
+Herbert Simon war ein Pionier der Modellierung von Entscheidungsprozessen und hat auch wichtige Beiträge zur Modularisierung geleistet. Hier sind die wichtigsten Aussagen von Herbert Simon zur Modularisierung zusammengefasst:
+
+1. **Modularisierung als Problemlösungsstrategie**: Simon betonte, dass die Zerlegung von komplexen Systemen in kleinere, leichter zu handhabende Module eine effektive Strategie ist, um komplexe Probleme zu lösen.
+
+2. **Hierarchische Struktur von Modulen**: Er beschrieb die modulare Organisation von Systemen als hierarchische Struktur, bei der jedes Modul eine klar definierte Funktion erfüllt und mit anderen Modulen interagiert, um größere Aufgaben zu erfüllen.
+
+3. **Begrenzte Rationalität und Modularität**: Simon argumentierte, dass menschliche Entscheidungsträger aufgrund ihrer begrenzten kognitiven Fähigkeiten dazu neigen, komplexe Probleme durch die Nutzung modularer Strukturen zu bewältigen, anstatt alle Informationen gleichzeitig zu verarbeiten.
+
+4. **Evolutive Entwicklung von Modulen**: Er betonte, dass Module im Laufe der Zeit evolvieren können, indem sie sich an neue Anforderungen anpassen oder durch Erfahrung verbessert werden.
+
+5. **Flexibilität und Wiederverwendbarkeit**: Modularität ermöglicht es, Teile eines Systems flexibel zu ersetzen oder zu aktualisieren, ohne das gesamte System ändern zu müssen. Dadurch wird die Wiederverwendbarkeit von Komponenten verbessert.
+
+Insgesamt betonte Simon die Bedeutung von Modularisierung als Mittel zur Bewältigung von Komplexität und zur Verbesserung der Effizienz und Flexibilität von Systemen.
+-->

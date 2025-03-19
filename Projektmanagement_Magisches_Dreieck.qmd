@@ -1,0 +1,78 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Magisches Dreieck des Projektmanagements
+
+-------------------------------------------------------------------------- -->
+
+### [Magisches Dreieck des Projektmanagements](https://de.wikipedia.org/wiki/Magisches_Dreieck_%28Projektmanagement%29) {#sec-magischesdreieck}
+
+::: {.callout-tip}
+## Definition: *"Magisches Dreieck des Projektmanagements"*
+Das magische Dreieck ist ein Konzept aus dem Projektmanagement. Ziel ist es, die drei Dimensionen Zeit, Umfang/Qualität^[Das ursprüngliche Konzept des magischen Dreiecks wird heute teilweise um eine vierte Dimension erweitert. Man spricht hierbei vom magischen Viereck bzw. dem Teufelsquadrat. Dabei wird die Dimension "Umfang” in zwei verschiedene Dimensionen aufgeteilt, nämlich den Dimensionen "Inhalt" und die ["Qualität"](https://de.wikipedia.org/wiki/Qualit%C3%A4t). Der Inhalt wird dabei fast mit dem Umfang gleichgesetzt. Bei der Qualität geht es beispielsweise darum, hochwertige Ergebnisse zu liefern.] und Aufwand in ein optimales Gleichgewicht zu bringen. 
+:::
+
+Die Ursprünge des [Magischen Dreiecks]((https://de.wikipedia.org/wiki/Magisches_Dreieck_%28Projektmanagement%29)) sind unklar, es wird aber mindestens seit den 1950er Jahren verwendet.
+
+Das magische Dreieck veranschaulicht das Problem der „dreifachen Bedingung“ – also die Notwendigkeit, Umfang/Qualität, Aufwand und Zeit unter einen Hut zu bringen, um ein qualitativ hochwertiges Produkt mit hohem Kundennutzen zu erhalten. 
+
+Wird eine Dimension des Magischen Dreiecks verändert, sind Kompromisse bei den anderen beiden Dimensionen des Dreiecks unumgänglich. Das Projektmanagement hat im Rahmen des Projektcontrollings die Aufgabe, alle drei Dimensionen unter einen Hut zu bringen, damit das Projekt Budget und Zeitplan einhält und gleichzeitig die Spezifikationen des Projektumfangs erfüllt.
+
+![Magisches Dreieck des Projektmanagements (Input-Output-Dreieck)](images/Magisches_Dreieck_PM_Grundlagen.drawio.svg){width=90% #fig-magischesdreieckpmgrundlagen}
+
+
+#### Dimension ["Umfang/Qualität"](https://de.wikipedia.org/wiki/Magisches_Dreieck_%28Projektmanagement%29#Umfang)
+
+Der Begriff Umfang/Qualität steht für die Größe des Projekts in Bezug auf Qualität, Details und Umfang der Projektergebnisse. Je größer das Projekt ist, desto mehr Zeit und Geld wird für die Fertigstellung benötigt. Zu den Elementen des Projektumfangs kann Folgendes zählen:
+
++ Leistungsumfang 
++ Anzahl und Komplexität der Funktionen
++ Qualität 
++ Komplexität des Projekts
+
+#### Dimension ["Aufwand"](https://de.wikipedia.org/wiki/Magisches_Dreieck_%28Projektmanagement%29#Kosten)
+Im Sinne vom magischen Dreieck sind die Kosten nicht auf Euro-Beträge beschränkt. Diese Dimension des magischen Dreiecks wird daher teilweise auch als „Ressourcen“ bezeichnet und umfasst alle Werkzeuge, Geräte und Unterstützung, die für die Ressourcenplanung erforderlich sind, z.B.:
+
++ Finanzieller Rahmen, also das Projektbudget
++ Anzahl der Mitarbeitenden im Team
++ Geräte und Ausstattung
+
+#### Dimension ["Zeit"](https://de.wikipedia.org/wiki/Magisches_Dreieck_%28Projektmanagement%29#Zeit)
+Die Dimension Zeit umfasst den im Projektzeit vorgesehenen zeitlichen Ablauf des Projekts. Der Projektzeitplan muss ggf. im Laufe des Projekts angepasst werden. Im Projekt geleistete Arbeitsstunden werden unter der Dimension "Umfang" berücksichtigt, nicht unter der Dimension Zeit.
+
+
+Der zentrale Gedanke hinter dem magischen Dreieck ist, dass ein Projekt mit drei starr fixierten Punkten in der Praxis in der Regel nicht erfolgreich sein kann. Mindestens ein Punkt muss flexibel sein um eventuell notwendige Anpassungen vorzunehmen zu können. Wird z.B. der Projektumfang vergrößert, müssen Wege gefunden werden, dies zu kompensieren, im einfachsten Fall indem z.B. eine oder mehrere der Beschränkungen des Projekts gelockert werden, z.B. eine Erhöhung des Projektbudgets. 
+
+::: {.callout-important}
+Neben diesen simplen Anpassungen, die auch von einem unambitionierten, wenig performantem Projektmanagement umgesetzt werden können, können Projektziele bei wachsenden Anforderungen auch **OHNE** aufweichen der Vorgaben bei den Dimensionen Umfang/Qualität, Aufwand und Zeit erreicht werden. 
+
+Schlüssel hierfür sind die zumeist schwerer zu realisierenden Effekte aus den Stellschrauben der Steigerung von
+
++ **[Produktivität](https://de.wikipedia.org/wiki/Arbeitsproduktivit%C3%A4t)**
++ **Effizienz**
++ **Intensität**
+
+(→ siehe @fig-magischesdreieckpmgrundlagen). 
+
+Inwieweit diese Potenziale bei Produktivität, Effizienz und Intensität bei einem Projekt tatsächlich gehoben werden können ist ein maßgebliches Kriterium für die Leistung des Projektmanagements. Der in einem Projekt erreichte Grad an Produktivität, Effizienz und Intensität trennen durchschnittliches von hervorragendem Projektmanagement. 
+
+In einem technisch nicht korrekten, aber anschaulichen Sinn entspricht der in einem Projekt erreichte Grad an Produktivität, Effizienz und Intensität dem [Wirkungsgrad](https://de.wikipedia.org/wiki/Wirkungsgrad) des Projekts.
+:::
+
+Neben der Leistung des Projektmanagements und des Projektteams spielt schließlich die Projektmethodik noch eine wichtige Rolle bei dem Versuch, das Magische Dreieck in ein für das jeweilige Projekt optimales Gleichgewicht zu bringen (siehe @fig-magischesdreieckpmgklassikvsagil):
+
++ **[Wasserfall](https://de.wikipedia.org/wiki/Wasserfallmodell)**: Bei diesem klassischen Projektmanagement werden die Projektphasen der Reihe nach durchlaufen. Daher müssen mindestens die Zeitpläne flexibel sein, da eine Verzögerung in einer Phase Anpassungen in allen nachfolgenden Phasen erfordert. Mit einer zeitlichen Verlängerung des Projekts geht oftmals auch noch ein erhöhter Projektaufwand einher.
+
++ **Lean**: Priorisiert minimalen Projektaufwand und macht zumeist längere Zeiträume oder Abstriche beim Umfang möglich, damit das Projekt den vorgegebenen Kostenrahmen nicht sprengt.
+
++ **Agile**: [Agiles](https://de.wikipedia.org/wiki/Agile_Softwareentwicklung#Agile_Prinzipien) Projektmanagement räumt flexiblen Prozessen einen hohen Stellenwert ein, sodass das Projektteam darauf vorbereitet sind, auf Änderungswünsche schnell und flexibel mit Anpassungen zu reagieren, die nur eine minimale Erhöhung bei Zeit oder Aufwand erfordern, allerdings zu Lasten des Umfangs/Qualität des Projektergebnisses.
+
+![Magisches Dreieck des Projektmanagements: Klassisches (Wasserfall) vs. Agiles Projektmanagement](images/Magisches_Dreieck_PM.drawio.svg){width=90% #fig-magischesdreieckpmgklassikvsagil}
+

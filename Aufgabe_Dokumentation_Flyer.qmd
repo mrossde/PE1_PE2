@@ -1,0 +1,86 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+title: "DEB3 Produktentwicklung 1"
+resource-path: ["../images"]
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+keywords:
+  - Produktentwicklung
+  - Ideenfindung
+  - Konzeptentwicklung
+  - Labor
+  - Flyer
+  - Abnahmetest
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!-- 
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                 Labor "Flyer" - Aufgabe Produktdokumentation des Flyers
+
+-------------------------------------------------------------------------- -->
+
+::: {.callout-note}
+## Produktdokumentation des Flyer (Dauer min. 20 min)
+
+
+**Aufgabe** Erstellen Sie die Struktur für eine Produktdokumentation für den von Ihnen entwickelten und gebauten Papierflieger. Überlegen Sie sich, welche Informationen Sie dokumentieren müssen! Erstellen Sie hierzu eine Mindmap oder eine vergleichbare Übersicht über die zu dokumentierenden Informationen zu Ihrem Papierflieger. 
+
+Vorgaben:
+
+<!-- Nehmen Sie sich hierzu 20 Minuten Zeit (bei Arbeit in Einzelgruppe 30 Minuten).-->
+- Nutzen Sie zur Erstellung der Dokumentation Medien Ihrer Wahl (z.B. PC, Tablet, Word, Powerpoint, ...) 
+- Gehen Sie als Prämisse davon aus, dass der Adressat Ihrer Dokumentation zwar Papierflieger grundsätzlich kennt, den von Ihnen entwickelten Flyer jedoch nie gesehen hat und auch sonst über keinerlei Vorwissen im Hinblick auf den von Ihnen entwickelten Flyer verfügt.
+
+<!--
+**b)** Wenn Sie in einer Zweiergruppe arbeiten stellen Sie sich die Produktdokumentation gegenseitig vor und geben Sie sich gegenseitig Feedback. Stellen Sie beim Abgleich gravierende Lücken in Ihrer Dokumentation fest, schließen Sie diese bitte! 
+-->
+
+Leitfragen:
+
+- Ist die Dokumentation für eine Person, die bei Entwicklung und Bau des Flyers **NICHT** dabei war, Ihrer Meinung nach vollständig und verständlich? 
+- Kann diese Person Ihren Flyer alleine auf der Grundlage Ihrer Dokumentation nachbauen, so dass tatsächlich ein Duplikat Ihres Flyers entsteht?
+:::

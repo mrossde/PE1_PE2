@@ -1,0 +1,42 @@
+//-------------------------------------------------------------------------
+//
+//                     Tryout-Area
+//
+//-------------------------------------------------------------------------
+
+::Berufliche-E-Mails::
+Innerhalb welches Zeitraums solle auf eine eingehende geschäftliche E-Mail geantwortet werden (1 Antwort ist richtig)?
+{
+	~%-33.333%Sobald das in der E-Mail formulierte Anliegen bearbeitet ist und die E-Mail inhaltlich beantwortet werden kann.
+	~%-33.333%Immer schnellstmöglich, auch wenn dafür ggf. das Unterbrechen einer anderen Arbeit notwendig ist.
+	~%100%Innerhalb von 24 Stunden.
+	~%-33.333%Innerhalb von 5 Arbeitstagen.
+}
+
+::Fragetyp Short Anwer::
+Wie lautet die Hauptstadt von Frankreich { =Paris }
+
+::Fragetyp Essay::
+Wie lautet die Hauptstadt von Frankreich {  }
+
+//-------------------------------------------------------------------------
+//
+//                     Referenz für Fragen
+//
+//-------------------------------------------------------------------------
+
+::Missing Text::
+Missing Text
+{=Lösung ~Fehler 1 ~Fehlder 2}
+
+
+
+::Kommentar zur Antwort::
+Hinzufügen eines Kommentars zur Antwort
+{
+  = Rictige Antwort
+  #Kommentar zur richtigen Antwort.
+  ~ Falsche Antwort
+  #Kommentar zur falschen Antwort.
+}
+

@@ -1,0 +1,152 @@
+---
+title: "MTB3 Entwicklung mechatronischer Systeme 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    email: christian.anders@hs-esslingen.de
+    affiliations: Hochschule Esslingen
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+---
+
+<!-- 
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Industrie 4.0
+
+-------------------------------------------------------------------------- -->
+
+### Industrie 4.0
+
+---
+
+> *„Industrie 4.0. Die herbeigeredete Revolution.“ (Quelle: Unbekannt)*
+
+---
+
+#### Die ersten drei Industriellen Revolutionen: Eine Chronik der Industrieentwicklung
+
+Die industrielle Entwicklung hat im Verlauf der Geschichte grundlegende Veränderungen durchlaufen, die als industrielle Revolutionen bezeichnet werden. Jede dieser Revolutionen markierte einen Wendepunkt in der Art und Weise, wie Güter hergestellt wurden, und hatte tiefgreifende Auswirkungen auf die Gesellschaft, die Wirtschaft und die Technologie. Hier sind die ersten drei industriellen Revolutionen im Überblick:
+
+
+##### 1. Erste Industrielle Revolution (Ende des 18. bis Mitte des 19. Jahrhunderts)
+
+Die erste industrielle Revolution war geprägt von der Einführung von Mechanisierung und Dampfkraft. Zu den bedeutendsten Entwicklungen zählten:
+
+- **Dampfmaschine**: Die Erfindung der Dampfmaschine durch James Watt um 1775 führte zu einer Energiequelle, die die menschliche und tierische Muskelkraft ersetzte und die Produktion in Fabriken effizienter machte.
+
+- **Textilindustrie**: Die Mechanisierung der Textilproduktion, insbesondere durch die Spinnmaschine und die Webmaschine, revolutionierte die Herstellung von Stoffen und führte zur Entstehung von Fabriken.
+
+- **Eisenbahn**: Die Entwicklung der Eisenbahn als effizientes Transportsystem ermöglichte den schnellen und kostengünstigen Transport von Waren und Menschen über große Entfernungen.
+
+Diese Revolution leitete den Übergang von handwerklichen Produktionsmethoden hin zur Fabrikproduktion ein und legte den Grundstein für die Industrialisierung.
+
+![Erste deutsche Eisenbahn von Nürnberg nach Fürth am 8. Dezember 1835 (Schwarzweiss-Lithographie: Eine Menschenmenge hat sich um den Zug versammelt.)](images/Adler1835.jpg){width=80% #fig-adler1835}
+
+
+##### 2. Zweite Industrielle Revolution (Mitte bis Ende des 19. Jahrhunderts)
+
+Die zweite industrielle Revolution wurde durch technologische Fortschritte in der Stahlproduktion, Elektrizität und Chemie geprägt. Zu den wichtigsten Entwicklungen gehörten:
+
+- **Stahlproduktion**: Die Einführung des Bessemer-Verfahrens zur kostengünstigen Herstellung von Stahl ermöglichte den Bau von stärkeren Strukturen und Maschinen.
+
+- **Elektrizität**: Die kommerzielle Nutzung der Elektrizität ermöglichte die Entwicklung von elektrischen Maschinen, Beleuchtung und Kommunikationssystemen. Maschinen konnten damit an dem Ort aufgestellt werden, an dem sie für die Produktionsabläufe am effizientesten waren.
+
+- **Verbrennungsmotor**: Die Erfindung des Verbrennungsmotors leitete eine neue Ära der Mobilität ein und ermöglichte den Einsatz von Automobilen und Flugzeugen. Der Logistiksektor, wie wir ihn heute kennen, entstand.
+
+Diese Phase brachte eine verstärkte Industrialisierung, eine zunehmende Urbanisierung und einen raschen technologischen Fortschritt mit sich.
+
+
+##### 3. Dritte Industrielle Revolution (20. Jahrhundert)
+
+Die dritte industrielle Revolution wurde durch die Einführung von Informationstechnologie und Automation gekennzeichnet. Zu den Schlüsselentwicklungen zählten:
+
+- **Elektronik und Computer**: Die Entwicklung von Transistoren und Computern ermöglichte die Automatisierung von Prozessen und die Verarbeitung großer Datenmengen.
+
+- **Mikroprozessor**: Die Erfindung des Mikroprozessors revolutionierte die Computertechnologie und legte den Grundstein für moderne IT-Systeme.
+
+- **Internet**: Die Einführung des Internets schuf eine vernetzte Welt, in der Informationen und Kommunikation global verfügbar wurden.
+
+Die dritte industrielle Revolution brachte die Automatisierung in Fertigungsprozesse und führte zu einer verstärkten Integration von Computertechnologie in verschiedenen Bereichen.
+
+Jede dieser industriellen Revolutionen hatte tiefgreifende Auswirkungen auf die Gesellschaft, Wirtschaft und Technologie und ebnete den Weg für die fortschreitende Entwicklung der Industrie bis zur heutigen vierten industriellen Revolution, auch bekannt als Industrie 4.0.
+
+
+#### Industrie 4.0: Die Evolution der Fertigungsprozesse und Technologien
+
+In den letzten Jahrzehnten hat die Industrielandschaft eine transformative Entwicklung durchlaufen, die durch die fortschreitende Integration von Informationstechnologie in die Fertigungsprozesse geprägt ist. Dieser Paradigmenwechsel wird als "Industrie 4.0" bezeichnet und kennzeichnet den Übergang von konventionellen Fertigungsanlagen zu intelligenten, vernetzten und autonom agierenden Produktionsumgebungen. Industrie 4.0 hat das Potenzial, die Effizienz, Flexibilität und Qualität der Fertigung erheblich zu steigern. 
+
+Der Begriff "Industrie 4.0" wurde erstmals im Jahr 2011 in Deutschland geprägt und steht für die vierte industrielle Revolution. Diese Revolution baut auf den vorherigen Entwicklungsstufen auf: Die erste mechanisierte Produktion, die zweite Massenproduktion mit Hilfe von Elektrizität und Fließbändern und die dritte Phase, die durch die Automatisierung von Produktionsprozessen mithilfe von Elektronik und IT geprägt war. Industrie 4.0 stellt eine integrierte Symbiose aus Produktions- und Informationstechnologie dar.
+
+1. **Vernetzung und Kommunikation**: Ein Kernmerkmal von Industrie 4.0 ist die nahtlose Vernetzung von Maschinen, Anlagen, Produkten und Menschen. Das Internet der Dinge (IoT) ermöglicht die Kommunikation und Datenaustausch in Echtzeit. Dadurch können Informationen über den gesamten Produktionsprozess hinweg erfasst und analysiert werden, was zu einer verbesserten Transparenz und Überwachung führt.
+
+2. **Intelligente Produktionssysteme**: Industrie 4.0 führt zu autonomen Produktionsprozessen, bei denen intelligente Maschinen und Systeme eigenständige Entscheidungen treffen können. Dies wird durch fortschrittliche Sensorik, künstliche Intelligenz (KI) und maschinelles Lernen ermöglicht. Die Fertigung kann sich so flexibel an veränderte Bedingungen anpassen und optimieren.
+
+3. **Digitaler Zwilling**: Ein weiteres Schlüsselkonzept ist der **"Digitale Zwilling"**. Hierbei handelt es sich um eine virtuelle Darstellung eines physischen Produkts oder einer Anlage. Durch den digitalen Zwilling können Simulationen und Analysen durchgeführt werden, um die Effizienz zu steigern, Fehler vorherzusagen und innovative Produkte zu entwickeln.
+
+4. **Dezentrale Entscheidungsstrukturen**: Industrie 4.0 bricht mit den hierarchischen Strukturen der Vergangenheit. Entscheidungen werden vermehrt dezentral getroffen, da die intelligenten Systeme vor Ort reagieren können. Dies erhöht die Reaktionsfähigkeit und ermöglicht eine schnellere Anpassung an Marktveränderungen.
+
+5. **Individualisierung**: Durch die nahezu maßgeschneiderte Produktion wird die Massenproduktion abgelöst. Kundenanforderungen können flexibel und effizient erfüllt werden, was zu personalisierten Produkten führt.
+
+Industrie 4.0 markiert den Verfechtern der vierten industriellen Revolution nach eine weitere entscheidende Phase in der Entwicklung der Industrie. Die Verschmelzung von Produktionstechnologie und Informationsverarbeitung bietet demnach ein enormes Potenzial zur Steigerung der Effizienz, Qualität und Anpassungsfähigkeit von Fertigungsprozessen. Die Einführung von intelligenten, vernetzten Produktionssystemen verändert nicht nur die Art und Weise, wie Produkte hergestellt werden, sondern auch die Art und Weise, wie Unternehmen ihre Wettbewerbsfähigkeit gestalten. Die erfolgreiche Umsetzung erfordert jedoch nicht nur technologische Innovationen, sondern auch einen kulturellen Wandel und eine strategische Neuausrichtung der Unternehmen.
+
+Die seit 2023 aufkommende Euphorie rund um die Künstliche Intelligenz hat das Potenzial, den Hype um die Industrie 4.0 weit in den Schatten zu stellen. Im Rückblick mag der geneigte Leser in einigen Jahren feststellen, dass in der Zukunft die KI als Treiber der vierten Industriellen Revolution bezeichneten industrieller Entwicklung gesehen wird und der in Deutschland aufgeflackerte Hype der vergangenen Jahre um das Internet der Dinge (IoT) schnell durch die KI in den Schatten gestellt werden wird.
+
+<!--
+### Internet of Things (IoT)
+
+#### Beschreibung der Technologie
+
+Das Internet of Things (IoT, Deutsch: Internet der Dinge) bezeichnet die Vernetzung physischer Objekte (Things, Dinge) über das Internet oder andere Netzwerke. Über das Netzwerk können diese Objekte kommunizieren bzw. Daten empfangen, verarbeiten und senden (vgl. Abschn. 3.9). Die Objekte sind eindeutig digital identifizierbar und lassen sich über das Netzwerk einzeln ansteuern. Sie sammeln über Sensoren Daten über ihre Umwelt oder ihren eigenen Zustand und können ggf. autonom darauf reagieren. Ziel des Datenaustauschs ist vielfach die selbstständige Erbringung einer Leistung im Verbund mehrerer Objekte. Ein Beispiel illustriert Abb. 4.13: Ein Werkstück identifiziert sich selbst und seinen Bearbeitungszustand in einer Smart Factory mit Hilfe eines RFID-Chips (Radio Frequency Identification, vgl. Abschn. 3.9). Mittels des RFID-Chips lässt sich das Werkstück in der Fabrik kontaktlos über Funkwellen lokalisieren und über seine IP-Adresse, die in den Daten des RFID-Chips hinterlegt ist, eindeutig identifizieren. Während der Bearbeitung des Werkstücks werden von den Maschinen die erforderlichen Fertigungsschritte aus dem RFID-Chip ausgelesen, anschließend durchgeführt und dann im Chip dokumentiert. Danach wird das Werkstück über ein Transportsystem automatisiert zur nächsten Bearbeitungsstation weitergeleitet.
+
+Bei den Anwendungsfällen für IoT handelt es sich nicht nur um die vernetzte Infrastruktur industrieller Anwendungen wie etwa Maschinen einer Fertigungslinie in einer Smart Factory, sondern ebenso um die Vernetzung von Alltagsgegenständen im privaten Bereich wie beispielsweise Küchenmaschinen. Sensoren an diesen Objekten erfassen Daten wie Temperatur, Druck, Feuchtigkeit oder Bewegung und übertragen diese an andere vernetzte Objekte oder IT-Systeme. Ein Beispiel ist ein Fitness-Armband, das Daten über die Körperfunktionen des Trägers sammelt und an eine Smartphone-App überträgt. Die App dient der Überwachung und Analyse der Körperfunktionsdaten und leitet Hinweise zu Ernährung und sportlichen Aktivitäten ab, um die Fitness des Nutzers zu steigern. Häufige Eigenschaften eines IoT-Netzwerks sind die selbstständige Kommunikation unter den einzelnen Objekten, eine automatisierte Steuerung der verbundenen Objekte in einem IoT-Netzwerk oder die für den Nutzer unsichtbare Integration der Objekte zwecks alltagsfähiger Akzeptanz wie etwa bei einer vernetzten Küchenmaschine.
+
+Wie funktioniert das IoT? Eine generische IoT-Architektur wie das illustrative Beispiel in Abb. 4.14 besteht im Wesentlichen aus drei Schichten. Die erste Schicht sind die Datenquellen, vor allem aus den Sensoren der Objekte in der physischen Welt. Die Basis für die Datenverarbeitung sind sogenannte eingebettete Systeme. Dies sind aufeinander abgestimmte IT-Komponenten wie zum Beispiel Sensoren und Mikroprozessoren. Ggf. speisen weitere IT-Systeme wie etwa ein Manufacturing Execution System (MES) weitere Daten ins Netzwerk. In der zweiten Schicht erfolgt die Vernetzung der Objekte untereinander oder mit einem zentralen Steuerungssystem. Die Grundlage für die Vernetzung der Objekte bildet eine Kommunikationsinfrastruktur. Die Objekte sind entweder über ein lokales Netzwerk, über einen Funkstandard wie etwa LoRaWAN, oder via Internet miteinander verbunden. Die Basis für den automatisierten Informationsaustausch sind häufig Cloud-Lösungen (vgl. Abschn. 4.3.9), da diese nicht nur die großen Datenmengen effizient verarbeiten können, sondern den Zugriff auf die gespeicherten Daten von jedem Ort aus über das Internet ermöglichen. Für den Datenaustausch sind zusätzliche Integrationsplattformen erforderlich, welche die Konnektivität zwischen den Objekten und IT-Systemen sowie die Sicherheit und das Datenmanagement unterstützen. Diese Zwischenschicht lässt sich auch als „Datendrehscheibe“ zwischen der physischen und digitalen Welt auffassen. Die digitale Welt der Applikationen und der Analyse stellt die dritte Schicht dar. Diese umfasst die digitalen Dienste wie die Auswertung oder Präsentation von Sensordaten, die Steuerung von Objekten oder die Automatisierung von Prozessen. Die Daten werden wiederum via Cloud oder durch andere IT-Server bereitgestellt.
+
+![Beispielhafte IoT-Architektur mit drei Schichten. (Quelle: @bender_pahlbeitz_2021)](images/436275_2_De_4_Fig14_HTML.png){width=80% #fig-iotebenen}
+
+Was ist der Unterschied zwischen dem IoT und dem IIoT? Das IoT umfasst sowohl die Vernetzung von Objekten aus dem geschäftlichen als auch aus dem privaten Umfeld. Das IIoT (Industrial Internet of Things) ist der IoT-Ansatz, der sich auf die industriellen Anwendungen im Bereich von Produktionssystemen bezieht. Dabei unterstützen Sensordaten die genaue und echtzeitnahe Steuerung der Prozesse, die Qualitätskontrolle der Produkte und das frühzeitige Erkennen erforderlicher Wartungsmaßnahmen. In der Logistik dienen RFID-Tags (vgl. Abschn. 3.9) dem automatisierten Lokalisieren von Packstücken oder dem Erfassen von Warenein- und -ausgängen.
+
+Der Begriff Edge Computing bezieht sich auf Technologien, die lokal die Klassifizierung, Aggregation und Vorverarbeitung von Daten an den „Rändern“ eines Netzes nahe an den Sensoren ermöglichen. Sogenannte „Edge Devices“ verwalten verschiedene IIoT-Geräte im Sensornetzwerk. Von diesen erhalten sie ständig eine hohe Rate an (Maschinen-)Daten. Das Edge Device verarbeitet die Rohdaten direkt im IIoT-Gerät selbst oder in dessen unmittelbarer Nähe. Edge Computing wird typischerweise für einfache Analysen genutzt und verarbeitet die Daten außerhalb der Cloud, um sie dann weiterzuleiten. Der Informationsfluss funktioniert aber auch andersherum. Die Analyseergebnisse aggregierter Daten aus der Cloud können wiederum an die Edge Devices zurück übertragen werden. Die Edge Devices können somit über die Steuerung der IIoT-Geräte autonom mit den Fertigungsmaschinen interagieren und die über die Cloud Services erstellten Regeln und Befehle ausführen.
+
+Typische Anwendungsfelder und Praxisbeispiele
+Das IoT wird in diversen Bereichen angewendet und dient dabei in der Regel der Auswertung und/oder Weiterverarbeitung der gewonnenen Daten zu Steuerungszwecken. Anwendungsfelder für IoT lassen sich nicht nur im geschäftlichen Umfeld, sondern ebenso im privaten und öffentlichen Kontext finden. Ein Beispiel für die Anwendung von IoT im geschäftlichen Kontext ist eine Smart Factory. Eine Smart Factory (deutsch: intelligente Fabrik) ist ein Fertigungskonzept der Industrie 4.0 (vgl. Abschn. 3.7). Die Produkte, Bauteile, Werkstücke, Maschinen oder auch Roboter kommunizieren untereinander mittels eines IoT-Netzwerks, sodass sich beispielsweise Produkte eigenständig durch die Fertigung steuern können (vgl. auch digitaler Zwilling und CPS, Abschn. 4.3.7 bzw. 4.3.8). Wichtige Informationen für den Fertigungsprozess wie Produktvariante und Bearbeitungsstatus werden dabei aus Werkstücken oder Werkstückträgern ausgelesen, vgl. das einleitende Beispiel. Der Datenaustausch erfolgt ggf. nicht nur zwischen den vorgenannten Elementen, sondern gleichermaßen mit einem zentralen IT-System zur Überwachung des Produktionssystems. Ein weiteres Beispiel sind Drucker, deren Sensoren den Füllstand der Tonerkartuschen an ein zentrales IT-System melden. Bei Unterschreiten eines Mindestfüllstands bestellt das vernetzte IT-System automatisch Nachschub. Ferner werden die Nutzungs- und Betriebsdaten des vernetzten Druckers laufend analysiert, sodass mögliche Störungen vorzeitig erkannt und Wartungsmaßnahmen eingeleitet werden.
+
+Ein verbreitetes Anwendungsbeispiel im privaten Bereich ist das so genannte Smart Home (vgl. Abschn. 3.9). Ein Smart Home ist ein privater Haushalt, in dem vernetzte Geräte miteinander kommunizieren. Dabei kann es sich um ein Thermostat handeln, der sich autonom an wechselnde Gegebenheiten, die über den Sensor eines Außenthermometers digital gemeldet werden, anpasst und dadurch zu einer verbesserten Energiebilanz beiträgt. Die Temperaturregelung erfolgt dabei nicht nur über die Heizung, sondern ebenso durch Ansprechen des Aktors zum Ein- und Ausfahren der Markise, welche die Temperatur über die Intensität der Sonneneinstrahlung regelt. Neben dieser autonomen Anpassung ist eine weitere Option die zentrale Steuerung durch das Smartphone des Bewohners, um beispielsweise eine Waschmaschine anzustellen. Ein anderes Beispiel im privaten Bereich ist ein mit einer Smartphone-App vernetzter Schlüsselbund wie etwa Apple AirTag oder Tile. Sollte der Nutzer seinen Schlüsselbund verlegt haben, so lässt sich dieser über ein eingebettetes System (vgl. Abschn. 3.6) lokalisieren, indem der Ablageort auf einer Karte bzw. einem Richtungsanzeiger in der App visualisiert oder ein Klingelton des Schlüsselbunds initiiert wird. Ein vernetztes Auto meldet automatisch seinen Standort an eine Notrufzentrale, wenn es einen Unfall registriert.
+
+Ein Beispiel im öffentlichen Kontext bietet eine sogenannte Smart City. Der Begriff Smart City bezeichnet digitale Entwicklungskonzepte für Städte und Kommunen. Für einen intelligenten Verkehr und eine höhere Lebensqualität erfassen Sensoren die aktuelle Verkehrslage in Echtzeit, um mittels dynamischer Ampelschaltungen den Verkehrsfluss zu optimieren. Zu mehr Nachhaltigkeit tragen in den Smart Cities autonom steuerbare Straßenbeleuchtungen bei. Diese schalten sich erst dann an, wenn ein Bewegungssensor meldet, dass sich eine Person oder ein Fahrzeug nähert. Distanzsensoren in öffentlichen Mülltonnen melden ihren Füllstand an ein zentrales IT-System des Entsorgungsdienstleisters, sodass sich eine effiziente Abholung nicht nach einer festen Frequenz richtet, sondern nach dem realen Bedarf.
+
+Betriebswirtschaftlicher Nutzen
+Das IoT ermöglicht über die Vernetzung der physischen IoT-Objekte die Sammlung und Speicherung großer Datenmengen wie beispielsweise die Nutzungs- oder Sensordaten der Objekte. Durch die Analyse dieser Daten lassen sich ökonomisch verwertbare Erkenntnisse über die Steuerung operativer Prozesse, die Erweiterung von Geschäftsmodellen und die Verbesserung der Customer Experience gewinnen. Über die Sensordaten lassen sich Prozesse automatisiert steuern bzw. in Echtzeit optimieren und dadurch Kosten sparen. Beispielsweise werden energieintensive Fertigungsprozesse nur dann gestartet, wenn der dynamische Strompreis des Energieanbieters im Tagesverlauf besonders günstig ist. Anwendungen in der Echtzeitkontrolle und -steuerung von Prozessen erhöhen die Prozesssicherheit und ermöglichen Optimierungen im Hinblick auf Zeit und Kosten, beispielsweise bei Online-Diagnosen von Flugzeugen zum Zwecke der Wartung während des Flugs. Mit einer verbesserten Datenverfügbarkeit lassen sich neue Dienste für Kunden anbieten und dadurch Geschäftsmodelle erweitern, beispielsweise durch die prädiktive Wartung von Anlagen, für die der Kunde einen monatlichen Betrag bezahlt. IoT-Plattformen ermöglichen gänzlich neue Geschäftsmodelle (vgl. Abschn. 3.10). IoT-Lösungen sind zudem die Voraussetzung für Angebote eines „Product-as-a-Service“ (vgl. Abschn. 3.6). Dabei wird nicht einmalig ein Produkt an den Kunden verkauft, sondern Gebühren je abgerufener Nutzungseinheit eines Produkts erhoben, beispielsweise ein Geldbetrag je gefahrenem Kilometer eines Car-Sharing-Angebots. Die Customer Experience (vgl. Abschn. 3.2) lässt sich verbessern, wenn die Analyse der Sensordaten Erkenntnisse über das Nutzungsverhalten individueller Kunden erlaubt und diese bei Entwicklung „maßgeschneiderter“ Produkte und Dienstleistungen umgesetzt werden.
+
+
+
+Zusammenfassung
+Welche zentralen Zusammenhänge bestehen mit anderen Technologien? Die vernetzten Sensoren des IoT sammeln immer mehr Daten im geschäftlichen, privaten und öffentlichen Umfeld. Die dabei anfallenden großen Mengen an strukturierten und unstrukturierten Daten (Big Data) lassen sich durch Methoden der Datenanalyse (vgl. Abschn. 3.5) und künstliche Intelligenz (vgl. Abschn. 4.3.10) in nutzbares Wissen überführen. Dieses Wissen lässt sich beispielsweise zur Optimierung von Prozessen (vgl. Abschn. 3.1) oder zur Innovation von Geschäftsmodellen (vgl. Abschn. 3.10) nutzen. Neue Möglichkeiten für IoT-Lösungen eröffnet der Mobilfunkstandard 5G, der hohe Datenraten, eine hohe Anzahl verbundener Geräte und sehr niedrige Latenzzeiten bietet, beispielsweise für die Überwachung fahrerloser Transportsysteme und die Fahrzeug-zu-Fahrzeug-Kommunikation in Echtzeit.
+
+Etablierte Unternehmen haben im Vergleich zu Start-ups eine gute Ausgangssituation für den Aufbau von IoT-Angeboten. Sie haben Zugang zu Echtzeit-Daten eines großen Kundenstamms bzw. ihren Produkten beim Kunden vor Ort. Es liegen ggf. historische Produkt-/Maschinen-Daten für das Trainieren von KI-Lösungen vor und sie verstehen bereits die Prozesse ihrer (B2B-)Kunden, wenn langjährige Kundenbeziehungen vorliegen. Dies gilt umso mehr, wenn das eigene Produkt ein zentraler Bestandteil einer Anlage beim Kunden ist und dieses einen direkten Einfluss auf die Prozesssteuerung hat.
+
+Um das betriebswirtschaftliche Nutzenpotenzial des IoT realisieren zu können, sind Cloud-basierte IT-Systeme bzw. IoT-Plattformen erforderlich. Diese speichern, kontrollieren und analysieren die IoT-Sensordaten und generieren Prognosen. Die Implementierung von IoT-Lösungen erfordert eine komplexe Integration der vernetzten physischen Objekte und IT-Systeme. Dies erfordert zum einen qualifizierte Mitarbeiter, die nicht in jedem Unternehmen zur Verfügung stehen. Zum anderen geht mit einer höheren Anzahl vernetzter Objekte ein höheres Risiko in Bezug auf Datensicherheit einher.
+
+Ausgewählte Beispiele zu Anwendungsfällen in Tab. 4.6 konkretisieren typische betriebswirtschaftliche Effekte des IoT-Einsatzes.}
+
+-->
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
+
++ @bender_pahlbeitz_2021: [Themengebiete der virtuellen Produktentwicklung](https://rdcu.be/dIAaT)
+
+:::

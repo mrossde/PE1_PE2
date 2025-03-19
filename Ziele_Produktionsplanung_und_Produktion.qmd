@@ -1,0 +1,173 @@
+<!--
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Produktionsplanung und Produktion
+  - Zielsetzung
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: true
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 3
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Ziele Produktionsplanung und Produktion
+
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Produktionsplanung und Produktion
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Ziele der Phase Produktionsplanung
+
+-------------------------------------------------------------------------- -->
+## Ziele der Phase Produktionsplanung {#sec-ziele_produktionsplanung}
+
+
+::: {.callout-important}
+## Gleichzeitigkeit von Produktionsplanung, Entwicklung, Prototyping und Test beim V-Modell
+Beim Produktentstehungsprozess nach dem → V-Modell @sec-v-modell erfolgt die Produktionsplanung in aller Regel **zeitgleich** zur Entwicklung, Prototyping und Test. 
+
+Die Verantwortung für die Entwicklung des Produkts liegt dabei in aller Regel bei der Entwicklung, die Verantwortung für die Gestaltung des Produktionssystems bei der Produktionsplanung. Die Produktionsplanung vertritt dabei auch die Interessen der späteren (Serien-)Produktion im Produktentstehungsprozess.
+:::
+
+
+::: {.callout-tip}
+## Definition: *"Produktionsplanung und -steuerung (PPS)"*
+Die [Produktionsplanung und -steuerung (PPS)](https://de.wikipedia.org/wiki/Produktionsplanung_und_-steuerung) beschäftigt sich mit der operativen, zeitlichen, mengenmäßigen und räumlichen Planung, Steuerung und Kontrolle, damit zusammenhängend auch der Verwaltung aller Vorgänge, die bei der Produktion von Produkten notwendig sind.
+:::
+
+
+```{mermaid}
+%%| label: fig-label-mmzieleproduktionsplanung
+%%| fig-cap: "Mindmap wichtiger Ziele in der Phase Produktionsplanung"
+mindmap
+   root(Produktionsplanung)
+      (Fertigungsstrategie entwickeln)
+         (Make-or-Buy entscheiden)
+         (Technologie auswählen)
+      (Produktionskapazität planen)
+         (Ressourcenbedarf ermitteln)
+         (Standortplanung)
+      (Produktionsprozesse optimieren)
+         (Ablaufplanung erstellen)
+         (Materialflussanalyse durchführen)
+         (Automatisierungsgrad festlegen)
+      (Qualitätssicherung integrieren)
+         (Qualitätsstandards)
+         (Prüf- und Kontrollsysteme festlegen)
+      (Kosten und Zeitrahmen definieren)
+         (Budgetplanung durchführen)
+         (Zeitpläne erstellen)
+      (Supply Chain Management durchführen)
+         (Lieferanten auswählen)
+         (Logistikkonzepte erstellen)
+```
+
+
+Kurzbeschreibung der Ziele:
+
++ **Fertigungsstrategie**: Strategische Entscheidungen wie z.B. Eigenfertigung vs. Fremdbeschaffung und Auswahl der Produktionsverfahren durchführen.
++ **Produktionskapazität**: Sicherstellen, dass alle notwendigen Ressourcen und Standorte optimal geplant sind.
++ **Produktionsprozesse**: Maximale Effizienz durch Analyse und Verbesserung von Abläufen.
++ **Qualitätssicherung**: Gewährleistung der Produktqualität durch frühzeitige Integration von Maßnahmen zur Sicherung der Qualität.
++ **Kosten und Zeitrahmen**: Planung von Budget und Zeit, mit den Ziel, Projekte wirtschaftlich und termingerecht umzusetzen.
++ **Supply Chain Management**: Aufbau effizienter Lieferketten, um Materialfluss- und Logistik optimal zu gestalten.
+
+<!--
+(siehe → Vorlesung **DEB5 Produktentwicklung 2**)
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Ziele der Phase Produktion
+
+-------------------------------------------------------------------------- -->
+
+## Ziele der Phase (Serien-)Produktion {#sec-ziele_produktion}
+
+
+::: {.callout-important}
+## Übergabe der Verantwortung von der Produktionsplanung an die Produktion
+Die Übergabe der Verantwortung von der Produktionsplanung an die Produktion erfolgt in aller Regel nach Abschluss der Produktentwicklung (→ Abschluss von Entwicklung, Prototyping und Test) sowie der Planungsphase (→ Abschluss Gestaltung, Aufbau und Inbetriebnahme des Produktionssystems) im Rahmen eines wichtigen (oftmals des letzten) Meilensteins im Produktentstehungsprozess (z.B. Meilenstein *"Job #1"* → Start der Serienproduktion des neu entwickelten Produkts).
+:::
+
+::: {.callout-tip}
+## Definition: *"Produktion"*
+[Produktion](https://de.wikipedia.org/wiki/Produktion) ist der transformative Prozess, bei dem Eingangsfaktoren wie Werkstoffe, Energie und Arbeit in marktfähige Produkte umgewandelt werden.
+:::
+
+```{mermaid}
+%%| label: fig-label-mmzieleproduktion
+%%| fig-cap: "Mindmap wichtiger Ziele in der Phase Produktion"
+mindmap
+   root(Produktion)
+      (Effizienz)
+         (Maximierung der Ausbringungsmenge)
+         (Minimierung des Ressourcenverbrauchs)
+      (Qualität)
+         (Sicherstellung von Produktstandards)
+         (Fehlervermeidung durch Qualitätskontrollen)
+      (Wirtschaftlichkeit)
+         (Kostensenkung durch Prozessoptimierung)
+         (Gewinnmaximierung durch effiziente Produktion)
+      (Termintreue)
+         (Einhaltung von Lieferfristen)
+         (Zuverlässige Produktionsplanung)
+      (Flexibilität)
+         (Anpassung der Ausbringung an Marktanforderungen)
+         (Fähigkeit zur Herstellung variierender Produkte)
+      (Nachhaltigkeit)
+         (Reduktion von Emissionen und Abfall)
+         (Einsatz umweltfreundlicher Technologien)
+```
+
+
+Kurzbeschreibung der Ziele:
+
++ **Effizienz**: Optimale Nutzung von Ressourcen und Erhöhung der Produktivität.
++ **Qualität**: Sicherstellen, dass Produkte den Anforderungen und Standards entsprechen, um Kundenzufriedenheit zu gewährleisten.
++ **Wirtschaftlichkeit**: Streben nach kosteneffizienter Produktion zur Steigerung der Rentabilität.
++ **Flexibilität**: Anpassungsfähigkeit an sich ändernde Markt- oder Kundenanforderungen.
++ **Termintreue:** Rechtzeitig Lieferung der richtigen Produkte in der richtigen Reihenfolge sicherstellen.
++ **Nachhaltigkeit**: Integration von umweltfreundlichen Prozessen und Minimierung negativer Umweltauswirkungen.
+
+<!--
+(siehe → Vorlesung **DEB5 Produktentwicklung 2**)
+-->

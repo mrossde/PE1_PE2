@@ -1,0 +1,160 @@
+---
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Komplexe Systeme und Statistik"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Zufallszahlen
+  - Regentropfen
+  - Pi
+  - Flächenformel
+  - Formel von John Wallis
+  - Formel von Srinivasa Ramanujan
+  - Formel von David und Gregory Chudnovsky
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+---
+
+<!--
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Berechnung von Pi mit Hilfe von Regentropfen
+
+-------------------------------------------------------------------------- -->
+
+<!--
+### Pi
+-->
+
+:::{.column-screen}
+![](images/AdobeStock_337924964.jpeg){width=100%}
+:::
+
+
+Die Berechnung von $\pi$ über nichtnumerische Verfahren ist mittels der statischen Methode der [Monte-Carlo-Simulation](https://de.wikipedia.org/wiki/Kreiszahl#Berechnung_mit_einem_Monte-Carlo-Algorithmus) möglich. Bei dieser Berechnung lässt man *"zufällige"* Punkte auf ein Quadrat *„regnen“* und berechnet, ob die Punkte innerhalb oder außerhalb eines einbeschriebenen Kreises liegen. Der Anteil der innen liegenden Punkte ist approximiert $\frac{\pi}{4}$.
+
+![Bestimmung von $\pi$ mittels Monte-Carlo-Simulation (Quelle: [Wikipedia](https://upload.wikimedia.org/wikipedia/commons/6/6a/Pi_monte_carlo_all.svg))](images/Pi_monte_carlo_all.svg){width=60% #fig-pi_monte-carlo}
+
+
+
+![](images/blank.png){height=5mm}
+<div style="border: 2px solid black; padding: 10px;">
+$$
+\pi = 3.096
+$$ 
+</div>
+![](images/blank.png){height=1mm}
+
+
+
+<!--
+::: {.callout-tip collapse="true"}
+-->
+## Flächenformel zur Bestimmung von $\pi$
+Die Berechnung von $\pi$ erfolgte auf der Grundlage von 62 gezählten Regentropfen. Bereits ein einziger Tropfen Abweichung führt bei dieser geringen Gesamtanzahl gezählter Tropfen zu einem Fehler bei der Berechnung von $\pi$ in der Größenordnung von ~0,05.
+
+In Anlehnung an die [Flächenformel](https://de.wikipedia.org/wiki/Kreiszahl#Berechnung_mittels_Fl%C3%A4chenformel) erkennt der geneigte Leser sofort die Richtigkeit der nachfolgend abgeleiteten Formel zur Berechnung von $\pi$ mit Hilfe von Regentropfen:
+
+$$
+\pi = 4 \cdot \frac{T_i}{T_i + T_a}
+$$ {#eq-pi}
+
+Mit $T_i$ = 48 Tropfen und $T_a$ = 14 Tropfen ergibt sich nach @eq-pi für $\pi$ der Wert 3.096.
+
+<!-- -------------------------------------------------------------------------
+
+                       Excel-Worksheet "Pi"
+
+-------------------------------------------------------------------------- -->
+<p style="text-align: center;">![](images/Microsoft_Office_Excel-Logo.png){width=16%} → Excel-Worksheet *"Pi_Worksheet.xlsx"*</p>
+
+## Exkurs: Formel von John Wallis (1655)
+
+Eine der ältesten Formeln zur Berechnung von $\pi$ wurde bereits 1655 vom englischen Mathematiker [John Wallis](https://en.wikipedia.org/wiki/John_Wallis) (* 3. Dezember 1616; † 8. November 1703) entdeckt:
+
+<!--
+$$
+\frac{\pi}{2} = \frac{2}{1} \times \frac{2}{3} \times \frac{4}{3} \times \frac{4}{5} \times \frac{6}{5} \times \frac{6}{7} \times \frac{8}{7} \times \frac{8}{9} \times \dots
+$$
+-->
+$$
+\frac{\pi}{2} = \frac{2 \cdot 2 \cdot 4 \cdot 4 \cdot 6 \cdot 6 \cdot 8 \cdot 8 \cdot \dots}{1 \cdot 3 \cdot 3 \cdot 5 \cdot 5 \cdot 7 \cdot 7 \cdot 9 \cdot \dots} 
+$$ {#eq-wallis}
+
+Die Formel von Wallis ist eine der ersten unendlichen Produkte zur Berechnung von $\pi$ und zeigt eine Verbindung zwischen $\pi$ und rationalen Zahlen. Die Herleitung der Formel basiert auf ersten Arbeiten von Wallis zur Integralrechnung. Sie konvergiert jedoch relativ langsam und hat daher heute keine praktische Bedeutung.  
+
+## Exkurs: Formel von Srinivasa Ramanujan (1910)
+
+$$
+\frac{1}{\pi} = \frac{\sqrt{8}}{9801} \cdot \sum_{n=0}^\infty \frac{(4n)! \cdot (1103 + 26390n)}{(n!)^4 \cdot (396)^{4n}}
+$$ {#eq-ramanujan}
+
+
+Die [Formel von Ramanujan](https://de.wikipedia.org/wiki/Srinivasa_Ramanujan#Kreiszahlberechnung) ist eine der elegantesten und am schnellsten konvergierenden Reihen zur Berechnung von π. Sie wurde bereits 1910 von [Srinivasa Ramanujan](https://de.wikipedia.org/wiki/Srinivasa_Ramanujan) (* 22. Dezember 1887; † 26. April 1920) formuliert und bildet die Grundlage heute genutzter Algorithmen zur Berechnung von π. Die Formel von Ramanujan war - wie der Großteil seiner Arbeiten - der Mathematik seiner Zeit weit voraus.
+
+
+## Exkurs: Formel von David und Gregory Chudnovsky (1988)
+
+Der [Chudnovsky-Algorithmus](https://de.wikipedia.org/wiki/Chudnovsky-Algorithmus) ist eine Weiterentwicklung der Formel von Ramanujan. Er wurde 1988 von den Brüdern [David](https://de.wikipedia.org/wiki/David_Chudnovsky) und [Gregory Chudnovsky](https://de.wikipedia.org/wiki/Gregory_Chudnovsky) entwickelt. Der Chudnovsky-Algorithmus ist bis heute einer der effizientesten Algorithmen zur Berechnung von $\pi$.
+
+$$
+\frac{1}{\pi} = 12 \sum_{n=0}^{\infty} \frac{(-1)^n (6n)! \cdot (545140134n + 13591409)}{(3n)! (n!)^3 (640320)^{3n + \frac{3}{2}}}
+$$ {#eq-chudnovsky}
+
+<!--
+Eine vollständige Herleitung von Ramanujans Formel und auch des Chudnovsky-Algorithmus ist möglich, allerdings ist sie mathematisch anspruchsvoll und erfordert ein tiefes Verständnis von Analysis, elliptischen Funktionen, modularen Formen und Transformationen, das leider sehr, sehr weit über das Können Ihres Dozenten hinaus geht. Der geneigte Leser sei an dieser Stelle auf die mathematische Fachliteratur verwiesen.
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Sharable-Links und Literatur
+
+-------------------------------------------------------------------------- -->
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
+
++ @gerlach_computerphysik_2024: [Zufallszahlen](https://rdcu.be/d1NX4)
++ @gerlach_computerphysik_2024: [Stochastische Methoden](https://rdcu.be/d1NUo)
+
+:::
+
+::: {.callout-tip collapse=true}
+## Literaturempfehlung (Springer-Verlag)
+![@weitz_pi_2021 [Pi und die Primzahlen](https://link.springer.com/book/10.1007/978-3-662-62880-5)](images/Weitz_Pi_978-3-662-62880-5.webp){width=20%}
+
+![@gerlach_computerphysik_2024: [Computerphysik](https://link.springer.com/book/10.1007/978-3-662-69347-6)](images/Gerlach_Computerphysik_978-3-662-69347-6.webp){width=20%}
+:::

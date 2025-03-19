@@ -1,0 +1,96 @@
+---
+title: "DEB3 Produktentwicklung 1"
+resource-path: ["../images"]
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+keywords:
+  - Takeaways
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+---
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS WORK IN PROGRESS!!!**
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Takeaways - Prüfungsvorbereitung
+
+-------------------------------------------------------------------------- -->
+
+::: {.callout-important collapse="true"}
+## Kapitel 1. Grundlagen
+- Technische Grundlagen
+  - SI-Einheiten (kg, sec, ...)
+  - DIN 8580 "Fertigungsverfahren"
+- Methodische Grundlagen
+  - Projektmanagement
+    - Gantt-Diagramme
+
+:::
+
+
+::: {.callout-important collapse="true"}
+## Kapitel 2. Ideenfindung und Konzeptentwicklung
+- Technology-Hype-Cycle
+:::
+
+
+::: {.callout-important collapse="true"}
+## Kapitel 3. Entwurfs- und Entwicklungsphase
+
+:::
+
+
+::: {.callout-important collapse="true"}
+## Kapitel 4. Prototyping und Test
+
+:::
+
+
+::: {.callout-important collapse="true"}
+## Kapitel 5. Produktionsplanung und Produktion
+
+:::
+
+
+::: {.callout-important collapse="true"}
+## Kapitel 6. Softskills
+
+:::

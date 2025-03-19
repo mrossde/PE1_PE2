@@ -1,0 +1,57 @@
+---
+title: "MTB3 Entwicklung mechatronischer Systeme 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    email: christian.anders@hs-esslingen.de
+    affiliations: Hochschule Esslingen
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+---
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Datensicherung
+
+-------------------------------------------------------------------------- -->
+
+
+### Datensicherung
+
+---
+
+> *"Oft speichern rettet Leben." (Weisheit erfahrener Computerspieler)*
+
+> *"Lots of copies keep stuff safe." (Quelle: Unbekannt)*
+
+---
+
+
+#### Fallbeispiel: Film "Toy Story 2" (1998)
+
+---
+
+The work done on the film to date was nearly lost in 1998 when one of the animators, while routinely clearing some files, accidentally entered the deletion command code 
+``` r
+/bin/rm -r -f * 
+```
+on the root folder of the Toy Story 2 assets on Pixar's internal servers. Associate technical director Oren Jacob was one of the first to notice as character models disappeared from their works in progress. They shut down the file servers but had already lost 90% of the last two years of work, and it was also found that the backups had not been working for about a month. The film was saved when technical director Galyn Susman, who had been remote working to take care of her newborn child, revealed she had a backup copy of the film on her home computer. The Pixar team was able to recover nearly all of the lost assets save for a few recent days of work, allowing the film to proceed. (Quelle: [Wikipedia](https://en.wikipedia.org/wiki/Toy_Story_2#Troubled_production))
+
+---

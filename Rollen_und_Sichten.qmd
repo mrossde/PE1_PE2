@@ -1,0 +1,47 @@
+---
+title: "MTB3 Entwicklung mechatronischer Systeme 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    email: christian.anders@hs-esslingen.de
+    affiliations: Hochschule Esslingen
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+---
+
+<!-- 
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Rollen und Sichten
+
+-------------------------------------------------------------------------- -->
+
+
+## ROLLEN UND SICHTEN
+
+- Projektauftraggeber (PAG)
+- Projektentscheider
+- Projektleiter/Projektmanager (PL, PM)
+- Projektleiter-Unterstützung (PLU)
+- Fachentscheider(-kreis)
+- Teilprojektleiter (TPL)
+- Planung und Controlling Manager
+- Projektmitarbeiter, ihre Gesamtheit (aka „Projektteam“)
+- Steering Committee/Projektlenkungsausschuss („PLA“)
+- Review Team (Qualitätsmanager; vor allem bei Softwareentwicklungsprojekten)
+- Tätigkeitsbasierte Rollen wie: Requirements-Engineer, Entwicklungsingenieur, Fertigungsverfahrensingenieur, Programmierer, Testingenieur, usw.
+- Projektträger (zur Organisation von Projektförderung)
+
+Je nach Größe eines Projekts können bestimmte Rollen in Personalunion besetzt sein. Projektmitarbeiter können gleichzeitig in mehreren Projekten tätig sein. Im Laufe von Projekten können sich Projektmitarbeiter und deren Rollen ändern.
+

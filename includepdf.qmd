@@ -1,0 +1,14 @@
+```{quarto}
+---
+title: "Einbinden einer PDF-Datei"
+output:
+  quarto::pdf_document:
+    latex_engine: xelatex
+---
+
+# Einbinden einer PDF-Datei
+
+Um eine PDF-Datei in deine Quarto-Datei einzubinden, kannst du die `include`-Funktion verwenden.
+
+```{include, src="test.pdf"}
+

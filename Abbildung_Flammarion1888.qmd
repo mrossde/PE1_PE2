@@ -1,0 +1,66 @@
+<!--
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Flammarions Holzstich "La forme du ciel"
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Bild Flammarions Holzstich 
+                       erstmals erschienen in 2L’atmosphère", Paris 1888, 
+                       als Illustration zu "La forme du ciel" im Kapitel "Le jour"
+
+-------------------------------------------------------------------------- -->
+
+![[Flammarions Holzstich](https://de.wikipedia.org/wiki/Flammarions_Holzstich), 1888](images/Flammarion1888.jpg){width=100% #fig-flammarion}
+
+::: {.callout-tip}
+## Illustration *"La forme du ciel"*
+Der sogenannte Flammarion-Holzschnitt ist eine ikonische Darstellung, die eine Person zeigt, die am Rand der Welt steht und den Himmel durchbricht, um einen Einblick in die Mechanik des Universums dahinter zu gewinnen. Der Holzschnitt erschien erstmals 1888 in Flammarions Werk L'Atmosphère: "Météorologie Populaire" als Illustration zu "La forme du ciel".
+
+Der Flammarion-Holzschnitt veranschaulicht die Idee, über die bekannten Grenzen des Wissens hinaus blicken und das Unbekannte erforschen zu wollen. Die Person, die die Himmelskuppel durchstößt, verkörpert den Forschergeist und die Neugier. Die Darstellung einer festen Kristallkuppel, die Himmel und Erde trennt, spiegelt ein kosmologisches Weltbild wider, das im Mittelalter verbreitet war, während der Akt des Durchbrechens den Übergang von Unwissenheit zu Erkenntnis symbolisiert.
+::: 
+
+
+<!--
+
+>
+*"To boldly go where no one has gone before."* (Star Trek)
+
+-->

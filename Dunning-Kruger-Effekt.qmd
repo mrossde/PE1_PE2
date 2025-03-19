@@ -1,0 +1,39 @@
+---
+title: "MTB3 Entwicklung mechatronischer Systeme 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    email: christian.anders@hs-esslingen.de
+    affiliations: Hochschule Esslingen
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+---
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Dunning-Kruger-Effekt
+
+-------------------------------------------------------------------------- -->
+
+# Dunning-Kruger-Effekt
+
+[Dunning-Kruger-Effekt](https://de.wikipedia.org/wiki/Dunning-Kruger-Effekt)
+
+![Dunning-Kruger-Effekt](images/Dunning-Kruger.png){width=70% #fig-dunning-kruger}

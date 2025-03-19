@@ -1,0 +1,66 @@
+---
+title: "MTB3 Entwicklung mechatronischer Systeme 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    email: christian.anders@hs-esslingen.de
+    affiliations: Hochschule Esslingen
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+---
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Psychologische Sicherheit
+
+-------------------------------------------------------------------------- -->
+
+
+## PSYCHOLOGISCHE SICHERHEIT
+Der Begriff der psychologischen Sicherheit wurde von Amy C. Edmondson geprägt. Amy C. Edmondson ist eine angesehene Forscherin und Professorin in den Bereichen Organizational Behavior und Leadership an der Harvard Business School. Edmondson hat wichtige Beiträge zur Forschung und Praxis des Teammanagements, der psychologischen Sicherheit und der organisatorischen Lernfähigkeit geleistet. Ihr Forschungsschwerpunkt liegt auf der Untersuchung, wie Organisationen eine Kultur der psychologischen Sicherheit schaffen können, die es den Mitarbeitern ermöglicht, offen zu kommunizieren, Risiken einzugehen und voneinander zu lernen. Sie hat gezeigt, wie psychologische Sicherheit dazu beiträgt, die Teamleistung zu verbessern, Innovationen zu fördern und Fehlerkultur zu unterstützen.
+
+Amy Edmondson ist auch Autorin mehrerer Bücher, darunter "Teaming: How Organizations Learn, Innovate, and Compete in the Knowledge Economy" und "The Fearless Organization: Creating Psychological Safety in the Workplace for Learning, Innovation, and Growth". Ihre Arbeit hat dazu beigetragen, das Verständnis für die Bedeutung von Vertrauen, Offenheit und Lernen in Organisationen zu vertiefen.
+
+Amy Edmondson hat umfangreiche Forschung zur psychologischen Sicherheit durchgeführt und wichtige Erkenntnisse zu diesem Konzept gewonnen:
+
+
+::: {.callout-tip}
+## Definition: *"Psychologische Sicherheit"*
+Psychologische Sicherheit ist nach Edmondson definiert als ein Klima, in dem Teammitglieder sich sicher fühlen, ihre Ideen, Meinungen, Bedenken und Fragen frei zu äußern, ohne Angst vor negativen Konsequenzen wie Zurückweisung, Kritik oder Bestrafung.
+:::
+
++ **Förderung von Offenheit und Lernen:** Sie betont, dass psychologische Sicherheit die Grundlage für effektive Kommunikation und kollektives Lernen in Teams und Organisationen ist. Wenn Mitarbeiter sich sicher fühlen, ihre Gedanken zu teilen, können sie gemeinsam Wissen aufbauen und Probleme lösen.
+> *„It’s hard to team if you see the others as competitors.”*
+>
+> *“It’s hard to learn if you already know.”*
+
++ **Psychologische Sicherheit und Fehlerkultur:** Edmondson zeigt, dass eine Kultur der psychologischen Sicherheit eine positive Fehlerkultur unterstützt. Mitarbeiter sind eher bereit, Fehler zuzugeben und aus ihnen zu lernen, wenn sie wissen, dass ihre Offenheit nicht bestraft wird.
+
++ **Einfluss auf Teamleistung und Innovation:** Ihre Forschung legt nahe, dass psychologische Sicherheit die Teamleistung steigert. Teams, in denen Mitglieder sich sicher fühlen, sind eher bereit, unterschiedliche Standpunkte zu teilen und kreative Ideen zu generieren.
+
++ **Führung und Führungskräfte:** Edmondson betont die Rolle von Führungskräften bei der Schaffung von psychologischer Sicherheit. Führungskräfte sollten den Ton setzen, Offenheit vorleben und eine Umgebung fördern, in der sich Mitarbeiter gehört und unterstützt fühlen.
+
++ **Bedeutung der Kommunikation:** Sie zeigt auf, dass klare Kommunikation und regelmäßiger Austausch zur Schaffung von psychologischer Sicherheit beitragen. Offene Kommunikation über Erwartungen, Ziele und Probleme hilft, Missverständnisse zu vermeiden.
+
++ **Kulturelle und organisatorische Aspekte:** Edmondson hebt hervor, dass psychologische Sicherheit auf organisatorischer Ebene gefördert werden sollte. Dies erfordert eine Kultur, die Werte wie Offenheit, Zusammenarbeit und Lernen schätzt.
+
+Die Erkenntnisse von Amy Edmondson zur psychologischen Sicherheit haben Organisationen und Führungskräften geholfen, eine positive Arbeitsumgebung zu schaffen, in der Mitarbeiter sich trauen, ihre Stimme zu erheben, Ideen zu teilen und gemeinsam erfolgreich zu sein.
+
+

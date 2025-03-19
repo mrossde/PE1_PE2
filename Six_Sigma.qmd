@@ -1,0 +1,99 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Six Sigma
+
+-------------------------------------------------------------------------- -->
+
+### Six Sigma ($6σ$) {#sec-sixsigma}
+
+Der Sigma Wert 6-Sigma ist der statistische Wert für 3,4 Defekte pro eine Million Einheiten (bei zugrunde gelegter Gauß-Verteilung). 
+
+Sigma Werte ermöglichen als standardisierte Messwert den Vergleich unterschiedlicher Prozesse. Ein höherer Wert zeugt von einem leistungsfähigeren Prozess mit weniger Streuung. In risikogefährdeten Branchen der Luft- und Raumfahrt sowie der Automobilindustrie werden 5 bis 6 Sigma erreicht.
+
+::: {.callout-important}
+Der Kerngedanke bei Six Sigma ist, die Streuung der Prozesse zu verringern und die Treffsicherheit der Maßnahmen auf das geplante Ziel zu erhöhen. 
+:::
+
+#### Exkurs: Gauß- oder Normalverteilung
+
+Die Normal- (oder Gauß-) Verteilung,ist die häufigste Verteilung in der Statistik. Sie kann vollständig durch den Mittelwert $μ$ und die Standardabweichung $σ$ beschrieben werden. Dabei handelt es sich um eine symmetrische Verteilung, die sich um den Mittelwert aufbaut. Die Streuung der Werte wird durch die Standardabweichung bestimmt. Je größer die Standardabweichung, desto größer ist die Streuung der Werte. Nützliche Faustregeln für eine Normalverteilung:
+
++ 68 % aller aus einer Normalverteilung gezogenen Werte liegen innerhalb des Intervalls $μ ± σ$.
++ 95 % aller Werte liegen innerhalb von $μ ± 2σ$.
++ 99,7 % aller Werte liegen innerhalb von $μ ± 3σ$.
++ 999 999 von einer Million Werten, die aus einer Normalverteilung stammen, liegen innerhalb des Intervalls $μ ± 6σ$. Diese Beobachtung ist der Ursprung für die $6σ$-Prozesskontrolle und -analyse und Namensgebend für Six Sigma. 
+
+Die Wahrscheinlichkeitsdichte der Normalverteilung ist gegeben durch:
+$$
+f(x) = \frac{1}{\sqrt{2\pi\sigma^2}} \exp\left( -\frac{(x - \mu)^2}{2\sigma^2} \right)
+$$
+
+
+![Wahrscheinlichkeitsdichtefunktion für die Normalverteilung mit $μ$ = 0 und $σ$ = 4](images/329633_1_De_2_Fig2_HTML.png){width=64% #fig-normalverteilung}
+
+<!--
+#### Abgrenzung von Lean, TQM, TPM und Six Sigma
+Der schnelle Nutzen von Six Sigma ist ein wesentlicher Unterschied zu verwandten Initiativen wie TQM (Total Quality Management), deren Amortisierung zumeist erst mittelfristig erfolgt. Six Sigma bildet somit eine Ergänzung zu Lean und zeigt seine Stärken durch die rasche Fokussierung auf kritische Faktoren für die Verbesserung von Prozessen. Während sich TPM (Total Productive Maintenance) auf die umfassende Verfügbarkeit von Betriebsmitteln konzentriert, JIT auf die optimale Verfügbarkeit von Teilen und Materialien konzentiert optimiert Six Sigma den ausgewählten Prozess. Bei all diesen Vorgehensweisen geht es um die Reduzierung von „Muda “ (Verschwendung).
+-->
+
+
+#### DMAIC und DFSS
+Bei Six Sigma werden zwei Vorgehensweisen unterschieden. Der standardisierte **DMAIC**-Prozess (Define, Measure, Analyze, Improve, Control) hat das Ziel, bestehende Prozesse und Produkte, die nicht den Spezifikationen oder dem Soll entsprechen, innerhalb der Projektlaufzeit (von zumeist 3 bis 5 Monaten) wesentlich zu verbessern. Dabei werden die kritischen Einflussfaktoren in Bezug auf das geplante Prozessergebnis identifiziert, analysiert und optimiert. 
+
+Bei DMAIC handelt es sich um DEN zentralen Kernprozess innerhalb von Six Sigma. Eine hervorragende Darstellung zum Six Sigma Kernprozess DMAIC findet sich bei Wikipedia. Dem geneigten Leser sei das Studium dieses Artikels zum [Six Sigma Kernprozess DMAIC](https://de.wikipedia.org/wiki/Six_Sigma#Der_Six-Sigma-Kernprozess:_DMAIC) empfohlen!
+
+Im Gegensatz dazu wird das **DFSS**-Vorgehen (Design for Six Sigma) angewendet wenn es darum geht, neue Produkte und Prozesse unter Berücksichtigung aller Faktoren für ein hohes Sigma-Niveau zu entwickeln. Die Projektphasen sind bei DFSS nicht standardisiert. Es gibt einige Varianten, die sich inhaltlich ähnlich sind, z. B. Sigma Breakthrough Technologies IDOC (Invent, Develop, Optimize, Control) oder Scripps IDEAS (Identify, Design, Evaluate, Assess, Scale up).
+
+<!--
+Hier möchte ich insbesondere auf die Folgekosten der Nicht-Qualität hinweisen. Bei einer Umfrage in einem mittelständischen Unternehmen gaben alle 35 Führungskräfte an, mehr als 50 % ihrer Zeit mit Feuerwehr-Aktionen zu verbringen, d. h. Zeit für Sitzungen und Aktivitäten, die sich mit Abweichungen von der Planung oder den Spezifikationen beschäftigen. Ein sinnvoller Einsatz dieser „verschwendeten“ Zeit der Führung hätte den Unternehmensertrag bereits mehr als verdoppelt.
+-->
+
+
+### Critical To Quality (CTQ)
+
+In Six Sigma bezieht sich "CTQ" auf "Critical To Quality". CTQ definiert die entscheidenden Merkmale oder Qualitätskriterien eines Produkts, Prozesses oder einer Dienstleistung, die direkt die Kundenzufriedenheit beeinflussen. CTQs sind diejenigen Aspekte, die unmittelbar die wahrgenommene Qualität aus Sicht des Kunden bestimmen.
+
+Die Identifizierung und genaue Definition von CTQs ist ein wichtiger Schritt im Six-Sigma-Prozess, da sie als Grundlage für die Qualitätsverbesserung dienen. Durch das Verstehen und Quantifizieren der CTQs können Unternehmen gezielt Maßnahmen ergreifen, um diese Aspekte zu überwachen, zu steuern und zu optimieren, um die Kundenzufriedenheit zu erhöhen.
+
+Die CTQs werden in der Regel aus den Kundenanforderungen abgeleitet und können je nach Branche und Produkt unterschiedlich sein. Sie sind konkret, messbar und helfen dabei, den Fokus auf diejenigen Merkmale zu legen, die den größten Einfluss auf die Qualität haben. CTQs spielen eine wichtige Rolle bei der Durchführung von Six-Sigma-Projekten, bei denen es darum geht, Prozesse zu optimieren, um eine höhere Qualität und Effizienz zu erreichen.
+
+<!--
+CTQ-Analyse
+Zum gleichen Zweck wie das House-of-Quality dient die so genannte CTQ-Analyse (Critical to Quality). Sie stammt aus der Six-Sigma-Methodik (siehe Abschn. 6.1), wird aber mittlerweile auch unabhängig davon eingesetzt und kann mit dem HoQ kombiniert werden.
+
+Die CTQ-Analyse dient dazu, aus vorliegenden Anforderungen die Produktmerkmale zu bestimmen, die am stärksten zur Anforderungserfüllung beitragen. Zunächst werden die wichtigen Anforderungen der externen Kunden ermittelt (Critical Customer Requirements, CCR). Dies ist bei einer großen Zahl von Kunden nicht ganz einfach und kann z. B. durch Einzel-Interviews, durch repräsentative Befragungen oder durch formalisierte Fragebögen erfolgen.
+
+Auch die Anforderungen der internen Beteiligten (Critical Business Requirements, CBR) werden erfasst. Hierdurch sollen die dort gewonnenen Erfahrungen sowie Anforderungen an die Herstellung oder die Wartung der Produkte berücksichtigt werden. Oft ist die Liste der Anforderungen sehr umfangreich, so dass eine Untergliederung notwendig ist.
+
+Weitere Anforderungen ergeben sich aus gesetzlichen Bestimmungen, Vorschriften und Normen. Sie sind auf jeden Fall als kritisch einzustufen, da sie unbedingt einzuhalten sind.
+-->
+
+<!--
+::: {.callout-tip}
+## Weiterführende Links
+
+:::
+-->
+
+<!--
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
+
++ @lotter_primare_2016: [Produktionsgerechte Produktgestaltung](https://rdcu.be/dI6Es)
+
+:::
+-->
+
+<!--
+## Literaturempfehlung
+
+![@lotter_primare_2016: [Die Primäre Produktion](https://link.springer.com/book/10.1007/978-3-662-53212-6)](images/Lotter_Produktion_978-3-662-53212-6.webp){width=40%}
+-->

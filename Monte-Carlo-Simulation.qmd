@@ -1,0 +1,143 @@
+<!--
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Monte-Carlo-Simulation
+
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: true
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 2
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+-->
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Monte-Carlo-Simulation
+
+-------------------------------------------------------------------------- -->
+
+
+::: {.content-visible unless-meta="headlines.off"}
+# Entwurfs- und Entwicklungsphase
+:::
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+<!--
+::: {.callout-warning}
+## WARNING!
+**THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+## Monte-Carlo-Simulation {#sec-montecarlosimulation}
+
+::: {.callout-tip}
+## Definition: *"Monte-Carlo-Simulation"*
+[Monte-Carlo-Simulation](https://de.wikipedia.org/wiki/Monte-Carlo-Simulation) ist ein Verfahren aus der [Stochastik](https://de.wikipedia.org/wiki/Stochastik), bei dem wiederholt Zufallsstichproben einer Verteilung mithilfe von Zufallsexperimenten gezogen werden.
+:::
+
+Die Monte-Carlo-Simulation ist ein äußerst leistungsstarkes, probabilistisches Analysewerkzeug. Die Monte-Carlo-Simulation ist nach der berühmten [Spielbank Monte Carlo](https://de.wikipedia.org/wiki/Spielbank_Monte-Carlo) im Fürstentum Monaco benannt. Die Monte-Carlo-Simulation wurde 1944 erstmals zur Lösung von Problemen mit der Neutronenstreuung beim [Manhattan-Projekt](https://de.wikipedia.org/wiki/Manhattan-Projekt) im [Los Alamos National Laboratory](https://de.wikipedia.org/wiki/Los_Alamos_National_Laboratory) eingesetzt. 
+
+Seit ihrer Einführung während des Zweiten Weltkriegs ist die Monte-Carlo-Simulation eines der am häufigsten verwendeten mathematischen Werkzeuge in der (ingenieur-)wissenschaftlichen Praxis geblieben.
+
+Ziel von Monte-Carlo-Simulationen ist es, analytisch nicht oder nur aufwendig lösbare Probleme mithilfe der gezogenen Stichproben numerisch zu lösen. Hierbei werden zur Simulation von zufälligen Ereignissen [Zufallszahlen](https://de.wikipedia.org/wiki/Zufallszahl) oder auch [Pseudozufallszahlen](https://de.wikipedia.org/wiki/Pseudozufall) benutzt.
+
+<!-- -------------------------------------------------------------------------
+
+                       Excel-Worksheet "Pi"
+
+-------------------------------------------------------------------------- -->
+<p style="text-align: center;">![](images/Microsoft_Office_Excel-Logo.png){width=16%} → Excel-Worksheet *"Pi_Worksheet.xlsx"*</p>
+
+
+Grundlage für Monte-Carlo-Simulationen ist das [Gesetz der großen Zahlen](https://de.wikipedia.org/wiki/Gesetz_der_gro%C3%9Fen_Zahlen).
+
+::: {.callout-tip}
+## Definition: *"Gesetz der großen Zahlen"*
+In einfacher Form besagt das [Gesetz der großen Zahlen](https://de.wikipedia.org/wiki/Gesetz_der_gro%C3%9Fen_Zahlen), dass sich die relative Häufigkeit eines Zufallsergebnisses in der Regel um die theoretische Wahrscheinlichkeit eines Zufallsergebnisses stabilisiert, wenn das zugrundeliegende Zufallsexperiment immer wieder unter denselben Voraussetzungen durchgeführt wird.
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Excel-Worksheet "Gaultonbrett"
+
+-------------------------------------------------------------------------- -->
+<p style="text-align: center;">![](images/Microsoft_Office_Excel-Logo.png){width=16%} → Excel-Worksheet *"Galtonbrett_Worksheet.xlsx"*</p>
+
+```{mermaid}
+%%| label: fig-label-mmmontecarlosimulatoin
+%%| fig-cap: "Mindmap zu Anwendungen von Monte-Carlo-Simulationen im Produktentstehungsprozess"
+mindmap
+  root(Monte-Carlo-Simulation)
+    (Maschinenbau)
+      (Bauteil- und Strukturoptimierung)
+      (Thermodynamische Prozesse)
+      (Belastungs- und Stabilitätsanalysen)
+      (Lebensdaueranalysen)
+    (Elektrotechnik)
+      (Schaltungssimulation)
+      (Signalverarbeitung)
+    (Produktionsplanung)
+      (Fertigungsoptimierung)
+      (Kapazitäts- und Ressourcenauslastung)
+      (Fehleranalyse und Qualitätssicherung)
+      (Logistik)
+```
+
+<!-- -------------------------------------------------------------------------
+
+                       Sharable-Links und Literatur
+
+-------------------------------------------------------------------------- -->
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
++ @tijms_faszinierende_2024: [Simulation und Wahrscheinlichkeitsrechnung](https://rdcu.be/d1Odz)
++ @gerlach_computerphysik_2024: [Stochastische Methoden](https://rdcu.be/d1NUo)
+:::
+
+::: {.callout-tip collapse=true}
+## Literaturempfehlung (Springer-Verlag)
+![@tijms_faszinierende_2024: [Die faszinierende Welt der Wahrscheinlichkeitsrechnung](https://link.springer.com/book/10.1007/978-3-662-69280-6)](images/Tijms_Wahrscheinlichkeitsrechnung_978-3-662-69280-6.webp){width=20%}
+
+![@gerlach_computerphysik_2024: [Computerphysik](https://link.springer.com/book/10.1007/978-3-662-69347-6)](images/Gerlach_Computerphysik_978-3-662-69347-6.webp){width=20%}
+:::
+ 

@@ -1,0 +1,63 @@
+---
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Videos zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Betriebsfestigkeit
+  - Fatigue Testing
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+---
+
+#### Video: Wind Turbine Blade Fatigue Testing
+
+{{< video https://youtu.be/v7hpYJwiuIA start="0" >}}
+
+Link zum Video (YouTube): <https://youtu.be/v7hpYJwiuIA>
+
+#### Video: Fatigue Phenomenon
+
+{{< video https://youtu.be/kbtZTWzg6Hk start="0" >}}
+
+> *"Martin Eder: High cycle fatigue is to date among the most frequent root causes for structural failure in wind turbines which need to endure billions of load cycles during their lifespan. Join me in this video to learn more about the fascinating phenomenon - high cycle fatigue - in wind turbine materials. Let us take an excursion starting at the nanostructure of different materials to observe where fatigue originates and how it evolves by zooming out across the characteristic length scales from micro to macro. This video provides an overview of the fundamental inner workings of the high cycle fatigue phenomenon and the differences observed in metallic materials such as steel and fibre-polymer composite materials, both of which being prominently represented in modern wind turbines. The observations made in this video are the steppingstone for understanding the process of fatigue life predictions presented in the second video – Fatigue life prediction."* (Quelle: Fa. [DTU](https://wind.dtu.dk/))
+
+Link zum Video (YouTube): <https://youtu.be/kbtZTWzg6Hk>
+
+#### Video: Blade Testing and Modelling
+
+{{< video https://youtu.be/W1WnjkXW54s start="0" >}}
+
+> *"Xiao Chen introduces structural testing of rotor blades and their subcomponents using state-of-the-art experimental methods including measurements and inspection. In addition, this lecture introduces advanced finite element modeling to predict structural failure and damage where both simulation accuracy and efficiency are highlighted."* (Quelle: Fa. [DTU](https://wind.dtu.dk/))
+
+Link zum Video (YouTube): <https://youtu.be/W1WnjkXW54s>

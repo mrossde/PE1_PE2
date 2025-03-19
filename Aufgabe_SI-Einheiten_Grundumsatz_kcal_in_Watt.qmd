@@ -1,0 +1,57 @@
+---
+title: "MTB3 Entwicklung mechatronischer Systeme 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    email: christian.anders@hs-esslingen.de
+    affiliations: Hochschule Esslingen
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+---
+
+
+<!-- -------------------------------------------------------------------------
+
+                       SI-Einheiten: Aufgabe und Lösung Umrechnung Kcal in Wh
+
+-------------------------------------------------------------------------- -->
+
+
+::: {#nte-kcal .callout-note}
+## Umrechnung kcal in Wh (Dauer: 5 Min)
+
+
+**a)** Betrachten Sie sich selbst als mechatronisches System und berechnen Sie Ihre mittlere Leistung bei Grundumsatz (Basal-Metabolic-Rate, BMR) in der SI-Einheit Watt ($\text{W}$)!
+
+Vorgaben:
+
+- Nehmen Sie sich hierzu in Einzelarbeit 5 Minuten Zeit.
+- Google is your friend!
+
+
+**b)** Googeln Sie den Anteil unseres Gehirns am Grundumsatz. Wie viel Leistung hat danach unser Gehirn?
+:::
+
+
+::: {.callout-tip}
+## Lösung
+1. Berechnung des Grundumsatzes (z.B. mittels Harris-Benedict-Formel, siehe unten).
+2. Umrechnung des Grundumsatzes in kcal je 24h in Watt.
+3. (20 ... 25) Prozent des Grundumsatzes entfallen auf unser Gehirn.
+
+- Berechnung des Grundumsatzes (z.B. „Harris-Benedict-Formel nach Roza und Shizgal^[Das 95%-Vertrauensintervall liegt bei ±213,0 kcal/Tag bei Männern und and ±201,0 kcal/Tag für Frauen.] (1984)): 
+
+    - BMR(Frauen)(in kcal) = (9,247 × Masse in kg) + (3,098 × Größe in cm) – (4,330 × Alter in Jahren) + 447,593
+    - BMR(Männer)(in kcal) = (13,397 × Masse in kg) + (4,799 × Größe in cm) – (5,677 × Alter in Jahren) + 88,362
+
+- 1 kcal = 0,001163 kWh.
+
+**Ergebnis**: Unsere Grundleistung liegt bei rund 100 Watt. Unser Gehirn hat eine Leistung von 20 bis 25 Watt.
+
+:::
+

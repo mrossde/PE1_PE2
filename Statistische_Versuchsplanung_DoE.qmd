@@ -1,0 +1,228 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - SMARTe Ziele
+  - Goodharts Gesetz
+  - KPIs
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Statistische Versuchsplanung (DoE)
+
+-------------------------------------------------------------------------- -->
+
+### Statistische Versuchsplanung (DoE) {#sec-doe}
+
+::: {.callout-tip}
+## Definition: *"Design of Experiments"*
+[Statistische Versuchsplanung](https://de.wikipedia.org/wiki/Statistische_Versuchsplanung) (SVP) (englisch [Design of Experiments](https://en.wikipedia.org/wiki/Design_of_experiments), DoE) ist eine systematische Methode zur Planung, Durchführung und Analyse von Experimenten, um die Auswirkungen von Variablen auf das Ergebnis eines Prozesses oder Systems zu verstehen und zu optimieren.
+:::
+
+::: {.callout-tip}
+## Definition: *"Optimierungskriterium"*
+Das Optimierungskriterium ist das Ziel oder die Funktion, die in einem Optimierungsproblem maximiert oder minimiert werden soll. Es definiert die spezifische Leistungsmetrik oder den gewünschten Zustand, den das System erreichen soll. Das Optimierungskriterium kann aus einer einzelnen Zielfunktion bestehen oder aus mehreren Zielfunktionen, die gleichzeitig optimiert werden müssen, je nach den Anforderungen des Problems. In jedem Fall dient das Optimierungskriterium als Leitfaden für den Optimierungsprozess, um die bestmögliche Lösung zu finden.
+:::
+
+
+- **Ziele**: DoE zielt darauf ab, den Einfluss verschiedener Faktoren auf ein Ergebnis zu quantifizieren, Muster und Wechselwirkungen zwischen den Variablen zu identifizieren sowie optimale Einstellungen für diese Variablen zu finden, um die gewünschten Ergebnisse zu erzielen.
+
+
+::: {.callout-important}
+## Messbare Ziele sind entscheidend!
+Entscheidend für den Erfolg jeder DoE ist, dass das Optimierungskriterium bekannt und messbar ist!
+:::
+
+#### Beispiel: Edisons Weiterentwicklung der Glühbirne
+
+Ein überliefertes Beispiel eines erfolgreichen DoE (und zugleich ein höchst eindrucksvolles Beispiel für die Bedeutung der → Produktions- und Werkstofftechnik) ist [Thomas Alva Edisons](https://de.wikipedia.org/wiki/Thomas_Alva_Edison) (* 11. Februar 1847; † 18. Oktober 1931) Vorgehen zur weiterentwicklung der [Glühbirne](https://de.wikipedia.org/wiki/Gl%C3%BChlampe) zum nutzbaren Alltagsgegenstand. 
+
+Edison etablierte eine systematische Herangehensweise die darin bestand, eine Vielzahl von Werkstoffen für den Glühfaden, die Geometrie und die Länge des Fadens auszuprobieren, um eine optimale Lösungen für das bis dato bestehende Problem (sehr frühzeitiges Durchbrennen des Glühfadens) zu finden. 
+
+Insgesamt benötige Edison 1014 Versuch um die richtige Kombination aus Werkstoffen und Produktionstechniken zu finden. Edisons Arbeit basierte auf systematischem Prototyping und Testen. Das Optimierungskriterium war die Brenndauer des Glühfadens bei als konstant gegebener Spannung und Stromstärke der Glühbirne. Am 27. Januar 1880 wurde Edison das Patent auf die "Electric Lamp" erteilt. 
+
+<!-- -------------------------------------------------------------------------
+                        Abbildung: Thomas Edison
+-------------------------------------------------------------------------- -->
+![Thomas Edison mit der von ihm entwickelten Weißglühlampe aus dem Jahre 1883](images/thomasedison.jpg){width=60% #fig-thomasedison}
+
+#### Eigenschaften der statistischen Versuchsplanung
+
+- **Vorteile**: Durch den Einsatz von DoE können Ressourcen effizienter genutzt werden, da weniger Experimente benötigt werden, um wichtige Informationen zu gewinnen. Außerdem ermöglicht es DoE, das Verständnis für komplexe Systeme zu verbessern, die Robustheit von Prozessen zu erhöhen und die Zeit bis zur Markteinführung zu verkürzen.
+
+- **Methoden**: Es gibt verschiedene Designs und Methoden innerhalb von DoE, darunter vollständige faktorielle Versuchspläne (siehe → Kombinatorische Explosion), [Taguchi-Methode](https://de.wikipedia.org/wiki/Taguchi-Methode), [Response Surface Methodology](https://en.wikipedia.org/wiki/Response_surface_methodology) (RSM), und vieles mehr. Jede Methode hat ihre eigenen Anwendungsgebiete und Vor- und Nachteile.
+
+- **Anwendungen**: DoE wird in einer Vielzahl von Branchen und Bereichen eingesetzt, einschließlich Fertigung, Ingenieurwesen, Pharmazie, Chemie, Lebensmitteltechnologie, Qualitätssicherung und mehr.
+
+- **Schritte**: Die typischen Schritte bei der Anwendung von DoE umfassen die Definition des Ziel des Experiments (siehe → Optimierungskriterium), die Auswahl der relevanten Variablen, die Planung des Versuchsdesigns, die Durchführung der Experimente, die Analyse der Daten und die Interpretation der Ergebnisse.
+
+Design of Experiments kann bei richtiger Verwendung ein extrem mächtiges und leistungsfähiges Werkzeug, um systematisch und effizient experimentelle Daten zu sammeln und zu analysieren, um fundierte Entscheidungen zu treffen und Prozesse zu verbessern.
+
+#### Vorgehen bei der statistischen Versuchsplanung
+
+Ein erfolgreiches Design of Experiments (DoE) folgt einem klaren, schrittweisen Vorgehen:
+
+1. **Festlegung des Ziels**: Klären Sie das Ziel des Experiments. Was möchten Sie erreichen? Identifizieren Sie die spezifischen Fragen, die das Experiment beantworten soll, und definieren Sie klare Zielvorgaben.
+
+2. **Identifikation der Variablen**: Bestimmen Sie die unabhängigen (Eingangs-)variablen, die potenziell Einfluss auf das Ergebnis haben könnten, sowie die abhängige (Ausgangs-)variable, die das zu optimierende Ergebnis darstellt. Es ist wichtig, alle relevanten Variablen zu berücksichtigen, die den Prozess beeinflussen könnten.
+
+3. **Auswahl des Versuchsdesigns**: Wählen Sie das am besten geeignete Versuchsdesign basierend auf Ihren Zielen, den verfügbaren Ressourcen und der Komplexität des Systems. Die gängigsten Designs umfassen vollständige faktorielle Versuchspläne, [Taguchi-Methode](https://de.wikipedia.org/wiki/Taguchi-Methode) und [Response Surface Methodology](https://en.wikipedia.org/wiki/Response_surface_methodology) (RSM).
+
+4. **Planung der Versuche**: Basierend auf dem gewählten Versuchsdesign planen Sie die spezifischen Experimente, einschließlich der Einstellungen für jede Variable und der Anzahl der Wiederholungen. Stellen Sie sicher, dass die Experimente so durchgeführt werden, dass alle relevanten Informationen gewonnen werden können. Tipp: Schätzen Sie ab, wie viel Zeit und Ressourcen das Durchführen der Versuche in Anspruch nehmen wird und überlegen Sie, ob die Zeit und die Ressourchen tatsächlich zur Verfügung stehen!
+
+5. **Durchführung der Experimente**: Führen Sie die geplanten Experimente gemäß dem Versuchsplan durch. Achten Sie darauf, **alle Variablen sorgfältig zu kontrollieren und die Experimente unter möglichst konstanten Bedingungen** durchzuführen, um die **Genauigkeit und Reproduzierbarkeit** der Ergebnisse sicherzustellen.
+
+6. **Datensammlung und -analyse**: Erfassen Sie systematisch Daten während der Experimente, einschließlich der Einstellungen der unabhängigen Variablen und der resultierenden Werte der abhängigen Variablen. Stellen Sie sicher, dass **die Daten genau und vollständig erfasst und dokumentiert** werden. Analysieren Sie die gesammelten Daten, um Muster, Trends und Wechselwirkungen zwischen den Variablen zu identifizieren. Verwenden Sie statistische Methoden wie [Analysis of Variance](https://en.wikipedia.org/wiki/Analysis_of_variance) (ANOVA), [Regressionsanalyse](https://de.wikipedia.org/wiki/Regressionsanalyse) oder andere geeignete Techniken, um die Daten zu analysieren.
+
+7. **Interpretation der Ergebnisse**: Interpretieren Sie die analysierten Daten, um die Schlussfolgerungen zu ziehen und Antworten auf die ursprünglichen Fragen des Experiments zu erhalten. Identifizieren Sie die wichtigsten Einflussfaktoren und Optimierungsmöglichkeiten auf das Prozessergebnis.
+
+8. **Validierung und Überprüfung**: Überprüfen Sie die Validität Ihrer Ergebnisse und die Robustheit Ihrer Schlussfolgerungen. Führen Sie gegebenenfalls zusätzliche Experimente durch, um die Ergebnisse zu bestätigen und sicherzustellen, dass die vorgeschlagenen Änderungen tatsächlich die gewünschten Verbesserungen bewirken  → Achtung! Gefahr des [Bestätiungsfehlers](https://de.wikipedia.org/wiki/Best%C3%A4tigungsfehler).
+
+::: {.callout-tip}
+## Definition: *"Bestätigungsfehler"*
+Ein [Bestätiungsfehlers](https://de.wikipedia.org/wiki/Best%C3%A4tigungsfehler) (englisch [confirmation bias](https://en.wikipedia.org/wiki/Confirmation_bias)) ist ein Begriff der [Kognitionspsychologie](https://de.wikipedia.org/wiki/Kognitionspsychologie), der die Neigung bezeichnet, Informationen so zu ermitteln, auszuwählen und zu interpretieren, dass diese die eigenen Erwartungen erfüllen (bestätigen). Der Bestätigungsfehler betrifft viele Prozesse der Informationsverarbeitung und wird mittlerweile als Grundlage für verschiedene Verzerrungen und Urteilsfehler angesehen.
+:::
+
+9. **Implementierung und Überwachung**: Implementieren Sie die empfohlenen Änderungen oder Optimierungen basierend auf den Ergebnissen des Experiments. Überwachen Sie den Prozess weiterhin, um sicherzustellen, dass die Verbesserungen nachhaltig sind und die gewünschten Ergebnisse langfristig erzielt werden.
+
+Durch das systematische Durchlaufen dieser Schritte können Sie ein erfolgreiches Design of Experiments durchführen und wertvolle Einblicke gewinnen, um Prozesse zu optimieren und Innovationen voranzutreiben.
+
+#### Einflussfaktoren bei der statistischen Versuchsplanung
+
+Auch bei bester Vorbereitung gibt es Einflussfaktoren, die einem erfolgreich DoE entgegen stehen:
+
+1. **Ungenügende Planung und Vorbereitung**: Eine unzureichende Planung und Vorbereitung kann zu unklaren Zielen, unvollständigen Versuchsdesigns oder **mangelnder Zeit und Ressourcenallokation** führen, was die Durchführung und Analyse des Experiments beeinträchtigt.
+
+2. **Unzureichende Variablenkontrolle**: Wenn wichtige Variablen nicht angemessen kontrolliert werden, können externe Einflüsse oder Störungen die Genauigkeit der Experimente beeinträchtigen und die Validität der Ergebnisse in Frage stellen.
+
+3. **Mangelnde Datenqualität**: Unzureichende Datenerfassungsmethoden oder ungenaue Messinstrumente können zu Daten führen, die unzuverlässig oder ungenau sind, was die Analyse und Interpretation der Ergebnisse erschwert.
+
+4. **Zeit- und Ressourcenbeschränkungen**: Begrenzte Zeit- und Ressourcenbudgets können die Durchführung umfassender Experimente oder die Implementierung von komplexen Versuchsdesigns erschweren, was die Qualität und Aussagekraft der Ergebnisse beeinträchtigen kann.
+
+<!-- -------------------------------------------------------------------------
+                     Exkurs: Kombinatorische Explosion
+-------------------------------------------------------------------------- -->
+::: {.callout-tip}
+## Exkurs: *"Kombinatorische Explosion"*
+Die "kombinatorische Explosion" ist ein Begriff, der in verschiedenen Bereichen, insbesondere in der Informatik und Mathematik, verwendet wird. Er bezieht sich auf das explosionsartige Wachstum der Anzahl von Kombinationen oder Möglichkeiten, wenn die Anzahl der Elemente oder Variablen zunimmt (siehe [Brute-Force-Methode](https://de.wikipedia.org/wiki/Brute-Force-Methode)).
+
+Im Allgemeinen tritt eine kombinatorische Explosion auf, wenn eine Menge von Elementen oder Variablen in Kombination miteinander betrachtet wird und die Anzahl der möglichen Kombinationen stark ansteigt, wenn die Anzahl der Elemente zunimmt. Dieses Phänomen kann dazu führen, dass die Berechnung oder Analyse von allen möglichen Kombinationen extrem ressourcenintensiv und dadurch praktisch unmöglich wird.
+
+Bei einem DoE kann eine kombinatorische Explosion auftreten, wenn ein Algorithmus oder eine Suchmethode alle möglichen Kombinationen von Variablen oder Zuständen durchgehen muss, um eine optimale Lösung zu finden. In solchen Fällen kann die Berechnung oder Analyse sehr zeitaufwändig und möglicherweise nicht praktikabel sein, insbesondere bei großen Datensätzen oder komplexen Problemen.
+
+Weiterführende Literatur: [Mathematische Formeln zur Kombinatorik](https://de.wikibooks.org/wiki/Formelsammlung_Mathematik:_Elementare_Kombinatorik)
+:::
+
+5. **Unzureichende statistische Kenntnisse**: Wenn das Team unzureichende Kenntnisse in statistischen Methoden und Analysetechniken hat, können Fehler bei der Experimentplanung, Datenanalyse und Interpretation auftreten, die die Gültigkeit der Ergebnisse beeinträchtigen können.
+
+6. **Komplexe Systeme**: In komplexen Systemen mit vielen Variablen und Wechselwirkungen kann es schwierig sein, alle relevanten Faktoren zu berücksichtigen und angemessen zu modellieren, was die Planung und Durchführung von Experimenten erschwert.
+
+7. **Unerwartete Ereignisse und Störungen**: Unerwartete Ereignisse (→ "[Black Swans](https://de.wikipedia.org/wiki/Black_Swan_(Risiken))"), Störungen oder unvorhergesehene Veränderungen können die Experimente beeinträchtigen und die Zuverlässigkeit der Ergebnisse beeinträchtigen.
+
+
+::: {.callout-caution}
+## DoE in CAD und/oder FEM
+DoE sind heute auch in vielen in der Industrie eingesetzten CAD und/oder FEM-Systemen verfügbar. Bei guter parametrischer Modellierung, einer nicht zu hohen Anzahl zu variierender Parameter und hinreichend verfügbarer Rechenleistung können umfassende DoEs vollständig im Computer durchgeführt und so ein optimales Produktdesign errechnet werden. Vorbedingung hierfür ist, dass die Qualität jeder errechneten Lösung anhand eines (oder maximal einiger weniger) Kenngrößen ausgedrückt werden kann. Bei diesem Vorgehen entspricht DoE der Lösung eines (meist komplexen) Optimierungsproblems.
+:::
+
+<!-- -------------------------------------------------------------------------
+                        Abbildung: Generatives Design
+-------------------------------------------------------------------------- -->
+
+<!--
+![Beispiel für ein mittels generativen Designs in FEM berechnetes Bauteil (Quelle: [CellCore3D](https://cellcore3d.com/))](images/GenerativeDesign.png){width=80% #fig-cellcore3d} 
+-->
+
+<!--
+Beispiele für den Einsatz von Design of Experiments (DoE) in verschiedenen Bereichen:
+
+1. **Pharmazeutische Industrie**: Ein Pharmazieunternehmen möchte die optimale Zusammensetzung eines Medikaments bestimmen, um die gewünschte Wirksamkeit und Verträglichkeit zu erzielen. Ein DoE könnte verwendet werden, um die Auswirkungen verschiedener Wirkstoffkonzentrationen, Trägerstoffe und Herstellungsbedingungen auf die Medikamenteneigenschaften zu untersuchen.
+
+2. **Automobilindustrie**: Ein Autohersteller möchte die Leistung und Zuverlässigkeit eines neuen Motorentyps verbessern. Ein DoE könnte eingesetzt werden, um die Auswirkungen von Variablen wie Kraftstoffzusammensetzung, Zündzeitpunkt, Zylinderkopfdesign und Motortemperatur auf den Kraftstoffverbrauch und die Emissionswerte zu untersuchen.
+
+3. **Chemische Industrie**: Ein Chemieunternehmen möchte die Effizienz eines Produktionsprozesses verbessern und gleichzeitig die Kosten senken. Ein DoE könnte eingesetzt werden, um die Auswirkungen von Variablen wie Reaktionstemperatur, Reaktionszeit, Katalysatormenge und Druck auf die Produktionsausbeute und die Produktqualität zu untersuchen.
+
+4. **Qualitätssicherung**: Ein Hersteller von elektronischen Bauteilen möchte die Zuverlässigkeit seiner Produkte verbessern und die Ausfallraten reduzieren. Ein DoE könnte verwendet werden, um die Auswirkungen von Faktoren wie Materialqualität, Fertigungsprozessparametern und Umgebungseinflüssen auf die Produktzuverlässigkeit zu analysieren.
+-->
+
+
+<!--
+::: {.callout-tip}
+## Weiterführende Links
+
+:::
+-->
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Shareable Links & Literaturempfehlungen
+
+-------------------------------------------------------------------------- -->
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
+
++ @siebertz_statistische_2017: [Grundlagen der statistischen Versuchsplanung](https://rdcu.be/dI6Jz)
+
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Literaturempfehlung
+
+-------------------------------------------------------------------------- -->
+
+<!--
+#### Literaturempfehlung
+
+![@siebertz_statistische_2017: [Statistische Versuchsplanung](https://link.springer.com/book/10.1007/978-3-662-55743-3)](images/Siebertz_Statistische_Versuchsplanung_978-3-662-55743-3.webp){width=40%}
+
+![@shardt_methoden_2021: [Methoden der Statistik und Prozessanalyse](https://link.springer.com/book/10.1007/978-3-662-61626-0)](images/Shardt_Methoden_der_Statistik_978-3-662-61626-0.webp){width=40%}
+
+![@shina_industrial_2022: [Industrial Design of Experiments](https://link.springer.com/book/10.1007/978-3-030-86267-1)](images/Shina_DoE_978-3-030-86267-1.webp){width=40%}
+
+-->

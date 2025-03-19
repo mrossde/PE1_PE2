@@ -1,0 +1,234 @@
+---
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Übungsaufgabe zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Übungsaufgabe
+  - Gantt-Diagramm
+  - Lösung
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+---
+
+<!--
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Erstellen eines Gantt-Diagramms
+
+-------------------------------------------------------------------------- -->
+
+
+::: {.callout-note}
+## Aufgabe: Gantt-Diagramm zur Prüfung "Produktentwicklung 1" (Dauer 20 min)
+
+**Fallbeispiel**: An der Hochschule Esslingen findet im Wintersemester 2024/2025 eine schriftliche Prüfung im Fach "Produktentwicklung 1" in DEB3 statt. Die Prüfung folgt der aktuellen SPO und den Vorgaben vom Prüfungsamt. Folgender Ablauf der Prüfung ist vorgesehen: 
+
+10.3o h: Öffnen des Seminarraums durch den Dozenten und anschließendes Lüften des Raums für 15 Minuten. Parallel zum Lüften erfolgt bereits das Auslegen der Prüfungsvordrucke. Hierfür sind 10 Minuten vorgesehen. 
+
+Das Verlesen des Prüfungsprotokolls wird 10 Minuten dauern und muss so rechtzeitig erfolgen, dass die Studierenden um 11.oo h mit dem Bearbeiten der Prüfungsvordrucke beginnen können. Das Verlesen des Prüfungsprotokolls erfolgt jedoch so spät als möglich um spät eintreffenden Studierenden ein möglichst großes Zeitfenster zur regulären Teilnahme an der Prüfung zu geben. 
+
+Für das Bearbeiten der Prüfungsvordrucke steht den Studierenden 90 Minuten zur Verfügung. Unmittelbar danach erfolgt die Abgabe der bearbeiteten Prüfungsvordrucke (vorgesehen hierfür sind 5 Minuten) sowie in den folgenden 10 Minuten die Verabschiedung der Studierenden und schließlich das Schließen des Seminarraums durch den Dozenten. 
+
+**Aufgabe**: Erstellen Sie das Gantt-Diagramm zum im Fallbeispiel geschilderten Ablauf der Prüfung. Tragen Sie zusätzlich zu allen mit einer Dauer versehenen Prozessen die Zeitpunkte des Öffnens und Schließens des Seminarraums sowie den Start und das Ende der Bearbeitung der Prüfungsvordrucke als Meilensteine ins Gantt-Diagramm ein.
+:::
+
+<!--
+::: {.callout-important}
+## Tipp! Aufgaben bitte stets sehr sorgfältig lesen und alle gegebenen Informationen beachten!
+:::
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Hinweis auf Fehler in der Aufgabenstellung
+
+-------------------------------------------------------------------------- -->
+::: {.callout-warning}
+## Abweichung zwischen Fallbeispiel und Aufgabe!
+Das **Fallbeispiel** weist leider zwei kleinere Abweichungen zur **Aufgabe** auf: Das Öffnen und Schließen des Seminarraums sind im **Fallbeispiel** mit einer zeitlichen Dauer versehene Aufgaben/Tasks, und mithin **KEINE** Meilensteine. In der **Aufgabe** wird das Öffnen und Schließen des Seminarraums davon abweichend als Zeitpunkte, mithin Meilensteine, beschrieben. Im folgenden wird von der in der **Aufgabe** gegebenen Auffassung ausgegangen und **das Öffnen und Schließen des Seminarraums** als **Meilensteine** dargestellt. 
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Lösung Gantt-Diagramme
+
+-------------------------------------------------------------------------- -->
+::: {.callout-tip} 
+## Lösung: Gantt-Diagramme zur Prüfung "Produktentwicklung 1"
+:::
+
+@fig-label-gntuebungprüfungdeb3 zeigt nachfolgend die einfachst mögliche Darstellung des Gantt-Diagramms, die der Aufgabenstellung wortgetreu folgt. @fig-label-gntuebungprüfungdeb3alternative2 zeigt darüber hinaus einen Vorschlag eines Gantt-Diagramms, der der Aufgabenstellung ebenfalls gerecht wird, den geforderten Detaillierungsgrad bietet und gegenüber @fig-label-gntuebungprüfungdeb3 den Vorteil einer strukturierten Darstellung aufweist. In @fig-label-gntuebungprüfungdeb3alternative2 ist der Task *"Auslegen der Prüfungsvordrucke"* zeitlich verschoben. Aus dem Fallbeispiel kann der genau Start- und Endzeitpunkt dieses Tasks nicht bestimmt werden, nur dessen Dauer von 10 Minuten. Beide in den Abbildungen gegebenen Gantt-Diagramme wären in einer Prüfung richtig.
+
+
+```{mermaid}
+%%| fig-width: 
+%%| label: fig-label-gntuebungprüfungdeb3
+%%| fig-cap: "Gantt-Diagramm zur Prüfung (einfachst mögliche Darstellung, wortgetreu gemäß Aufgabenstellung)."
+gantt
+title Gantt-Diagramm zur Prüfung "Produktentwicklung 1"
+    dateFormat HH:mm
+    axisFormat %H:%M
+    Seminarraum ist offen : milestone, m1, 10:30, 0m
+    Lüften des Seminarraums : a1, after m1, 15m
+    Auslegen der Prüfungsvordrucke : a2, after m1, 10m
+    Verlesen des Prüfungsprotokolls : a3, 10:50, 10m
+    Start der Bearbeitung der Prüfungsvordrucke : milestone, m2, 11:00, 0m
+    Bearbeitung der Prüfungsvordrucke durch die Studierenden : a4, after m2, 90m
+    Ende der Bearbeitung der Prüfungsvordrucke : milestone, m3, 12:30, 0m
+    Abgabe der Prüfungsvordrucke: a5, after m3, 5m
+    Verabschiedung der Studierenden: a6, after a5, 10m
+    Seminarraums ist geschlossen: milestone, m4, after a6, 0m
+```
+
+<!--
+```{mermaid}
+%%| fig-width: 
+%%| label: fig-label-gntuebungprüfungdeb3alternative
+%%| fig-cap: "Gantt-Diagramm zur Prüfung (alternative, erweiterte Darstellung)."
+gantt
+title Gantt-Diagramm zur Prüfung "Produktentwicklung 1"
+    dateFormat HH:mm
+    axisFormat %H:%M
+    section Vorbereitung
+    Seminarraum ist offen : milestone, m1, 10:29, 2m
+    Lüften des Seminarraums : t11, 10:30, 15m
+    Auslegen der Prüfungsvordrucke : t12, 10:35, 10m
+    Zeitpuffer : t14, 10:45, 5m
+    Studierende treffen im Seminarraum ein : t15, 10:30, 20m
+    ALLE Studierende sind anwesend : crit, milestone, m5, 10:50, 0m
+    Verlesen des Prüfungsprotokolls : crit, t13, 10:50, 10m
+    section Prüfung
+    BEGINN der Prüfung : crit, milestone, m2, 10:59, 2m
+    Bearbeitung der Prüfungsvordrucke durch die Studierenden : crit, t21, 11:00, 90m
+    ENDE der Prüfung : crit, milestone, m3, 12:29, 2m
+    section Abschluss
+    Abgabe der Prüfungsvordrucke : crit, t31, 12:30, 5m
+    ALLE Prüfungsvordrucke sind abgegeben : crit, milestone, m6, 12:35, 0m
+    Verabschiedung der Studierenden : t32, after t31, 10m
+    Seminarraum ist geschlossen : milestone, m4, 12:44, 2m
+```
+
+@fig-label-gntuebungprüfungdeb3alternative zeigt eine alternative Darstellung des Gantt-Diagramms und geht dabei über die in der Aufgabenstellung geforderte Darstellung hinaus: Der genaue Start- und Endzeitpunkt des Prozesses des Auslegens der Prüfungsvordrucke ist in der Aufgabenstellung nicht genannt (nur dessen Dauer von 10 Minuten sowie dass der Prozess zeitlich parallel zum Lüften des Seminarraum erfolgt) sodass verschiedene Darstellungen möglich sind. 
+
+Zwei wichtige Meilensteine wurden zusätzlich hinzugefügt und der formal kritische Teil der Prüfung farbig hervorgehoben. Die vom Dozenten vorgesehene Pufferzeit von 5 Minuten wurde als zusätzlicher Task ins Gantt-Diagramm eingefügt und so deutlich als Puffer gekennzeichnet. Das für das Eintreffen der Studierenden vorgesehen Zeitfenster wurde als weiterer zusätzlicher Task im Gantt-Diagramm aufgenommen.
+
+::: {.callout-caution collapse="true"}
+## Vorsicht vor zu hohem Detaillierungsgrad bei Gantt-Diagrammen!
+Bei der Gestaltung von Gantt-Diagrammen bestehen in der Praxis erhebliche Freiheiten bezüglich des Detaillierungsgrads der Darstellung. Dem geneigten Leser sei von einer zu detaillierten Darstellung abgeraten, nicht zuletzt aufgrund des mit dem Detaillierungsgrad entlang des Projektfortschritts oftmals explosionsartig anwachsenden Pflegeaufwands. Zu detaillierte Gantt-Diagramme stellen einen der häufig anzutreffenden Anfängerfehler dar. → *"Gut gemeint ist nicht gut gemacht!"*
+:::
+-->
+
+
+```{mermaid}
+%%| fig-width: 
+%%| label: fig-label-gntuebungprüfungdeb3alternative2
+%%| fig-cap: "Gantt-Diagramm zur Prüfung (einfache, stukturierte Darstellung)."
+gantt
+title Gantt-Diagramm zur Prüfung "Produktentwicklung 1"
+    dateFormat HH:mm
+    axisFormat %H:%M
+
+    section Vorbereitung
+    Seminarraum ist offen : milestone, m1, 10:30, 0m
+    Lüften des Seminarraums : t11, 10:30, 15m
+    Auslegen der Prüfungsvordrucke : t12, 10:35, 10m
+    Verlesen des Prüfungsprotokolls : t13, 10:50, 10m
+
+    section Prüfung
+    Beginn der Prüfung : milestone, m2, 11:00, 0m
+    Bearbeitung der Prüfungsvordrucke durch die Studierenden : t21, 11:00, 90m
+    Ende der Prüfung : milestone, m3, 12:30, 0m
+
+    section Abschluss
+    Abgabe der Prüfungsvordrucke : t31, 12:30, 5m
+    Verabschiedung der Studierenden : t32, after t31, 10m
+    Seminarraum ist geschlossen : milestone, m4, 12:45, 0m
+```
+
+
+
+#### Mermaid-Code
+
+Zur Erstellung der in in @fig-label-gntuebungprüfungdeb3 und @fig-label-gntuebungprüfungdeb3alternative2 dargestellten Gantt-Diagramme wird [Mermaid](https://mermaid.js.org/) verwendet:
+
++ + [Mermaid](https://mermaid.js.org/) ![Logo von Mermaid](images/Mermaid.jpg){width=15% #fig-mermaid}
+
+Nachfolgend dargestellt ist der Mermaid-Code der in @fig-label-gntuebungprüfungdeb3 und @fig-label-gntuebungprüfungdeb3alternative2 dargestellten Gantt-Diagramme. Der Code kann mittels Copy&Paste in den [Mermaid Live-Editor](https://mermaid.live/) übernommen und dort als Startpunkt für das eigene Editieren der Gantt-Diagramme verwendet werden. Viel Erfolg!
+
+```r
+gantt
+title Gantt-Diagramm zur Prüfung "Produktentwicklung 1"
+    dateFormat HH:mm
+    axisFormat %H:%M
+    Seminarraum ist offen : milestone, m1, 10:30, 0m
+    Lüften des Seminarraums : a1, after m1, 15m
+    Auslegen der Prüfungsvordrucke : a2, after m1, 10m
+    Verlesen des Prüfungsprotokolls : a3, 10:50, 10m
+    Start der Bearbeitung der Prüfungsvordrucke : milestone, m2, 11:00, 0m
+    Bearbeitung der Prüfungsvordrucke durch die Studierenden : a4, after m2, 90m
+    Ende der Bearbeitung der Prüfungsvordrucke : milestone, m3, 12:30, 0m
+    Abgabe der Prüfungsvordrucke: a5, after m3, 5m
+    Verabschiedung der Studierenden: a6, after a5, 10m
+    Seminarraums ist geschlossen: milestone, m4, after a6, 0m
+```
+
+```r
+gantt
+title Gantt-Diagramm zur Prüfung "Produktentwicklung 1"
+    dateFormat HH:mm
+    axisFormat %H:%M
+
+    section Vorbereitung
+    Seminarraum ist offen : milestone, m1, 10:30, 0m
+    Lüften des Seminarraums : t11, 10:30, 15m
+    Auslegen der Prüfungsvordrucke : t12, 10:35, 10m
+    Verlesen des Prüfungsprotokolls : t13, 10:50, 10m
+
+    section Prüfung
+    Beginn der Prüfung : milestone, m2, 11:00, 0m
+    Bearbeitung der Prüfungsvordrucke durch die Studierenden : t21, 11:00, 90m
+    Ende der Prüfung : milestone, m3, 12:30, 0m
+
+    section Abschluss
+    Abgabe der Prüfungsvordrucke : t31, 12:30, 5m
+    Verabschiedung der Studierenden : t32, after t31, 10m
+    Seminarraum ist geschlossen : milestone, m4, 12:45, 0m
+```

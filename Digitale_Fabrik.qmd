@@ -1,0 +1,84 @@
+---
+title: "MTB3 Entwicklung mechatronischer Systeme 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    email: christian.anders@hs-esslingen.de
+    affiliations: Hochschule Esslingen
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Digitale Fabrik
+
+-------------------------------------------------------------------------- -->
+
+### Digitale Fabrik
+
+> *"Keine Fabrik wird geplant, gebaut und in Betrieb genommen ohne vorher durch digitale Methoden vollständig abgesichert worden zu sein."* (Quelle: Mercedes-Benz AG, Projekt "Digitale Fabrik")
+
+Die Bezeichnung "Digitale Fabrik" bezieht sich auf eine fortschrittliche Herstellungsstrategie und einen Ansatz, bei dem digitale Technologien und Datenintegration eingesetzt werden, um die Effizienz, Qualität und Flexibilität in der Fertigungsindustrie zu steigern. Die Digitale Fabrik ermöglicht es Unternehmen, Produktionsprozesse zu optimieren, Prototypen zu erstellen, Produktionsplanung zu verbessern und die Gesamtleistung der Fabrik zu steigern. Hier sind einige wichtige Aspekte der Digitalen Fabrik:
+
++ **Digitaler Zwilling**: Ein zentrales Konzept in der Digitalen Fabrik ist der "digitale Zwilling". Dies ist eine virtuelle Darstellung eines physischen Produkts oder einer Produktionsanlage. Ein digitaler Zwilling kann detaillierte Informationen über das physische Objekt enthalten und wird in Echtzeit aktualisiert, um Änderungen oder Probleme zu reflektieren.
+
++ **Datenintegration**: Die Digitale Fabrik erfordert eine nahtlose Integration von Daten aus verschiedenen Quellen, darunter CAD (Computer-Aided Design)-Modelle, Sensordaten aus der Produktion, ERP (Enterprise Resource Planning)-Systeme und andere Quellen. Diese Datenintegration ermöglicht es, den Zustand und die Leistung der Produktion in Echtzeit zu überwachen und zu steuern.
+
++ **Simulation und Modellierung**: Digitale Fabriken nutzen Simulations- und Modellierungstools, um Produktionsprozesse im Voraus zu planen und zu optimieren. Dies ermöglicht es, verschiedene Szenarien zu testen, bevor physische Änderungen in der Fabrik vorgenommen werden.
+
++ **Automatisierung und Robotik**: Die Automatisierung von Fertigungsprozessen und der Einsatz von Robotern sind Schlüsselkomponenten der Digitalen Fabrik. Dies ermöglicht es, Aufgaben effizienter und präziser durchzuführen und die Flexibilität in der Produktion zu erhöhen.
+
++ **IoT (Internet of Things)**: Das Internet der Dinge spielt eine wichtige Rolle in der Digitalen Fabrik, indem es die Vernetzung von Sensoren und Geräten in der Produktion ermöglicht. Dies ermöglicht die Erfassung und Analyse von Echtzeitdaten zur Optimierung der Produktion und zur Vorhersage von Wartungsbedarf.
+
++ **Augmented Reality (AR) und Virtual Reality (VR)**: AR- und VR-Technologien können in der Digitalen Fabrik eingesetzt werden, um Schulungen, Wartung und Fertigungsprozesse zu unterstützen. Mitarbeiter können beispielsweise mithilfe von AR-Brillen Anweisungen direkt vor ihren Augen sehen.
+
+Die Digitale Fabrik ermöglicht es Unternehmen, Produktionsprozesse schnell anzupassen und auf sich ändernde Marktanforderungen zu reagieren. Dies trägt zur Steigerung der Wettbewerbsfähigkeit bei.
+
+Die Digitale Fabrik ist ein Schlüsselelement des Konzepts der Industrie 4.0 und zielt darauf ab, die Fertigungsindustrie in eine hochgradig vernetzte, datengesteuerte und flexible Umgebung zu transformieren. Sie ermöglicht es Unternehmen, die Effizienz zu steigern, Kosten zu senken und qualitativ hochwertige Produkte schneller auf den Markt zu bringen.
+
+
+<!--
+::: {.callout-tip}
+## Weiterführende Links
+
+:::
+-->
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
+
++ @bracht_digitale_2018: [Methoden und Modelle in der Digitalen Fabrik](https://rdcu.be/dI6Bi)
+
+:::
+
+## Literaturempfehlung
+
+![@bracht_digitale_2018: [Digitale Fabrik](https://link.springer.com/book/10.1007/978-3-662-55783-9)](images/Bracht_Digitale_Fabrik_978-3-662-55783-9.webp){width=40%}
+
+<!-- 1. Auflage
+![@bracht_digitale_2011: [Digitale Fabrik](https://link.springer.com/book/10.1007/978-3-540-88973-1)](images/Bracht_Digitale_Fabrik_978-3-540-88973-1.webp){width=40%}
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Industrie 4.0
+
+-------------------------------------------------------------------------- -->
+{{< include Industrie40.qmd >}}

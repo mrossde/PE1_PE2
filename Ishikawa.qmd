@@ -1,0 +1,85 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Ursachenanalyse | Ishikawa-Diagramm
+
+-------------------------------------------------------------------------- -->
+
+
+### Ursachenanalyse | Ishikawa-Diagramm {#sec-ishikawa}
+
+<!--
+![A fishbone or cause and effect or Ishikawa diagram (Quelle: Adobe Stock)](images/AdobeStock_511266397.jpeg){width=80% #fig-causeandeffectdiagram}
+-->
+
+Die Idee der Ursachenanalyse besteht darin, die Grundursache eines Problems zu identifizieren und zu beseitigen, anstatt seine Symptome zu behandeln. Eine Grundursache unterscheidet sich von einem Kausalfaktor, der das Ergebnis eines Ereignisses beeinflusst, aber nicht die Grundursache ist. 
+
+#### Root-Cause
+::: {.callout-tip}
+## Definition: *"Root-Cause"*
+Ein Root-Cause („Grundursache“) ist die früheste, grundlegendste oder „tiefste“ Ursache eines Problems, die die gesamte Ursache-Wirkungs-Reaktion in Gang setzt, die zum letztlich beobachteten Ergebnis oder Effekt führt. 
+:::
+
+Die [Fehler-Ursache-Analyse](https://de.wikipedia.org/wiki/Fehler-Ursachen-Analyse) (engl. Root cause analysis, RCA) gehört zu den wesentlichen Instrumenten der Produktentwicklung. Sie beinhaltet die Erfassung von Fehlern, ihrer Ursachen und die statistische Auswertung dieser Daten, an die sich eine Bewertung und abgeleitete Maßnahmen zur Fehlerreduzierung (und Fehlerkostenreduzierung) anschließen.
+
+Die Suche nach kausalen Einflussfaktoren auf die Güte von Qualitätsmerkmalen und damit auch die Suche nach aufgetretenen Fehlern, erfordert ein tiefer gehendes Verständnis des zugrunde liegenden Sachverhalts. Dieses Verständnis kann z. B. durch eine theoretische Analyse des Sachverhalts gewonnen werden und auch über die empirische Auswertung aufgenommener Messwerte.
+
+In der Regel sind die einzelnen Teile und Größen eines Sachverhalts sehr stark vernetzt. Auf eine bestimmte Größe wirken viele andere ein und die Größe selbst hat Auswirkungen auf viele andere. Mit Hilfe von [Ursachen-Wirkungs-Diagrammen](https://de.wikipedia.org/wiki/Ursache-Wirkungs-Diagramm) versucht man, alle Einflussfaktoren (Ursachen) auf eine bestimmte Größe (die Wirkung) zu erfassen und darzustellen. 
+
+Eine spezielle (und heute die bekannteste) Struktur und Darstellungsweise weisen dabei die Ishikawa-Diagramme auf.  Sie wurden Anfang der 1940er Jahre vom japanischen Wissenschaftler [Kaoru Ishikawa](https://de.wikipedia.org/wiki/Ishikawa_Kaoru) entwickelt und später auch nach ihm benannt. 
+
+Bei Ishikawa-Diagrammen wird eine zu einem Ergebnis/Fehler führende Hauptwirkungslinie und davon abzweigend auf die Haupteinflussgrößen (z.B. Mensch, Maschine, Material, Methode, Messung, …) verweisende Unter-Wirkungslinien gezeichnet. An diesen Linien werden die verschiedenen Ursachen, gruppiert nach bestimmten Merkmalen, in Form von Hauptursachen und ggf. Unterursachen angehängt (siehe @fig-ishikawadiagramm):
+
+<!-- -------------------------------------------------------------------------
+
+                        BILD: ISHIKAWA-DIAGRAMM
+
+-------------------------------------------------------------------------- -->
+
+![Ursache-Wirkungs-Diagramm in Form eines Ishikawa-Diagramms)](images/Ishikawa_Diagramm_Allgemein.drawio.svg){width=84% fig-align="center" #fig-ishikawadiagramm}
+
+<!--
+![Ursache-Wirkungs-Diagramm in Form eines Ishikawa-Diagramms (Quelle: @jakoby_qualitatsmanagement_2022)](images/479391_2_De_2_Fig19_HTML.png){width=78% #fig-ishikawadiagramm}
+-->
+
+Das Ursache-Wirkungs-Diagramm ist die grafische Darstellung von Ursachen, die zu einem Ergebnis führen oder dieses maßgeblich beeinflussen. Alle Problem-/Fehlerursachen sollen identifiziert und ihre Abhängigkeiten dargestellt werden. Die bekannteste Form wurde Anfang der 1940er Jahre vom japanischen Wissenschaftler [Kaoru Ishikawa](https://de.wikipedia.org/wiki/Ishikawa_Kaoru) entwickelt und später auch nach ihm benannt. Das Ishikawa-Diagramm wurde ursprünglich im Rahmen des Qualitätsmanagements zur Analyse von Qualitätsproblemen und deren Ursachen angewendet. Es lässt sich auch auf andere Problemfelder übertragen und hat eine weltweite Verbreitung gefunden.
+
+**Vorteile**:
+
++ Gute Diskussionsgrundlage bei Gruppenarbeit
++ Teamarbeit ermöglicht vielseitige Betrachtungsweise
++ Geringer Aufwand bei der Durchführung
++ Leicht erlern- und anwendbar
++ Förderung eines besseren Verständnisses von Problemen und ihrer vielseitigen Ursachen
++ Flexible Einsatzmöglichkeiten
++ Detaillierte Sammlung von Ursachen für Probleme
+
+**Nachteile**:
+
++ Unübersichtlich und umfangreich bei komplexen Problemen
++ Keine vernetzten Ursache-Wirkungs-Zusammenhänge darstellbar
++ Wechselwirkungen und zeitliche Abhängigkeiten können nicht erfasst werden!
+
+<!--
+**Weiterführende Links** (Wikipedia):
+
++ [Alt text](https://de.wikipedia.org/wiki/W%C3%B6hlerversuch)
+-->
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
++ @jakoby_qualitatsmanagement_2022: [Elementare QM-Methoden](https://rdcu.be/dIy3K)
+:::
+
+<!--
+#### Literaturempfehlung
+
+![@jakoby_qualitatsmanagement_2022: [Qualitätsmanagement für Ingenieure](https://link.springer.com/book/10.1007/978-3-658-36677-3)](images/Jakoby_Qualitaetsmanagement.webp){width=40%}
+-->

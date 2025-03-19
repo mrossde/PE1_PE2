@@ -1,0 +1,51 @@
+---
+title: "MTB3 Entwicklung mechatronischer Systeme 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    email: christian.anders@hs-esslingen.de
+    affiliations: Hochschule Esslingen
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+---
+
+<!-- 
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Analog-Digital-Wandler
+
+-------------------------------------------------------------------------- -->
+
+### Analog-Digital-Wandler
+
+::: {.callout-tip}
+## Definition: *"Analog-Digital-Wandler (ADCs)"*
+[Analog-Digital-Wandler](https://de.wikipedia.org/wiki/Analog-Digital-Umsetzer) (ADCs) sind elektronische Bauteile, die analoge Signale in digitale Werte umwandeln. 
+:::
+
+Analog-Digital-Wander sind durch die folgenden wichtigsten Eigenschaften gekennzeichnet:
+
+1. **Auflösung**: Die Auflösung eines ADCs gibt an, wie fein er eine analoge Eingangsspannung in diskrete digitale Werte umwandeln kann. Sie wird in Bits gemessen und bestimmt die Anzahl der möglichen Ausgabewerte. Eine höhere Auflösung führt zu einer genaueren Digitalisierung des analogen Signals.
+
+2. **Abtastrate**: Die Abtastrate eines ADCs gibt an, wie oft er das Eingangssignal pro Sekunde misst und in digitale Werte umwandelt. Sie wird in Samples pro Sekunde (SPS) gemessen und beeinflusst die Genauigkeit der digitalen Repräsentation des analogen Signals. Eine höhere Abtastrate ermöglicht eine genauere Erfassung schneller Änderungen im Eingangssignal.
+
+3. **Eingangsbereich**: Der Eingangsbereich eines ADCs definiert den Bereich der analogen Eingangsspannungen, die er akzeptieren kann, ohne Überlastung oder Verzerrung zu verursachen. Ein größerer Eingangsbereich ermöglicht die Erfassung eines breiteren Spektrums von analogen Signalen.
+
+4. **Linearität**: Die Linearität eines ADCs bezieht sich auf seine Fähigkeit, eine proportionale Beziehung zwischen der Eingangsspannung und dem digitalen Ausgangswert aufrechtzuerhalten. Ein linearer ADC wandelt analoge Signale präzise in digitale Werte um, ohne nichtlineare Verzerrungen einzuführen.
+
+5. **Rauschen**: Das Rauschen eines ADCs bezieht sich auf unerwünschte elektrische Störungen oder Schwankungen im Ausgangssignal, die die Genauigkeit der digitalen Repräsentation des analogen Signals beeinträchtigen können. Ein ADC mit geringem Rauschen liefert präzisere und zuverlässigere Ergebnisse.
+
+6. **Leistungsaufnahme**: Die Leistungsaufnahme eines ADCs gibt an, wie viel elektrische Leistung er benötigt, um seine Funktionen auszuführen. Eine niedrige Leistungsaufnahme ist insbesondere für batteriebetriebene Geräte oder Anwendungen, bei denen Energieeffizienz eine Rolle spielt, ein wichtiger Faktor bei der Auswahl eines geeigneten ADCs für ein Produkt.
+
+Neben diesen Eigenschaften bestehen einen Vielzahl weiterer Anforderungen, die ADCs erfüllen müssen, um für eine bestimmte Anwendung geeignet zu sein. ADCs finden sich heute in einer nicht mehr zu überblickenden Anzahl von Produkten und sind ein grundlegender Baustein unserer IT-Infrastruktur.

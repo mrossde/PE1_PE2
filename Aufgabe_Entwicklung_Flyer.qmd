@@ -1,0 +1,75 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+title: "DEB3 Produktentwicklung 1"
+resource-path: ["../images"]
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+keywords:
+  - Produktentwicklung
+  - Ideenfindung
+  - Konzeptentwicklung
+  - Labor
+  - Flyer
+  - Lastenheft
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!-- 
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       LABOR "FLYER" AUFGABE LASTENEHFT FLYER
+
+-------------------------------------------------------------------------- -->
+
+::: {#nte-entwicklungflyer .callout-note}
+## Entwicklung und Prototyp Flyer (Dauer tbd. min)
+
+**Aufgabe** Entwickeln Sie einen Papierflieger gemäß dem von Ihnen zuvor erarbeiteten Lastenheft und bauen Sie einen Prototyp für den nachfolgenden Abnahmetest.
+
+Vorgaben:
+
+<!-- Nehmen Sie sich hierzu 30 Minuten Zeit.-->
+- Gerne können Sie bei gegebenem **Reifegrad**^[Unterschieden wird in → Prinzip-, Konzept- und Serientauglichkeit] (→ **Erprobungswürdigkeit**) bereits auch in der frühen Entwicklungsphase erste Tests vornehmen. Entspricht, das Vorgehen, dass Sie jetzt diskutieren, noch Ihrer Entscheidung zur Entwicklungsmethodik? (→ Wasserfallmodell, → V-Modell, → Spiralmodell).
+:::

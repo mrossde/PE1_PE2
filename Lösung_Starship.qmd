@@ -1,0 +1,45 @@
+---
+title: "MTB3 Entwicklung mechatronischer Systeme 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    email: christian.anders@hs-esslingen.de
+    affiliations: Hochschule Esslingen
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+---
+
+
+:::: {.callout-tip}
+## "Successfull miss" SpaceX's Starship (Dauer 20 min)
+
+#### Abstimmung zur Einschätzung des zweiten Orbitaltestflugs
+
+Fragestellung: *"Alles in allem betrachtet, war der zweite Orbitaltestflug von Starship aus Ihrer ganz persönlichen Sicht ein Erfolg oder ein Misserfolg?"*
+
+|              | Success! | Failure! |
+|:------------:|:--------:|:--------:|
+| **Stimmen**: |    15    |    2     |
+
+
+: Ergebnis der Abstimmung: War der zweite Orbitaltestflug von Starship ein Erfolg oder ein Misserfolg?  {#tbl-starship .striped .hover .bordered tbl-colwidths="[20,40,40]"}
+
+#### Argumente/Kriterien zur Beurteilung des zweiten Orbitaltestflugs
+
+Fragestellung: *"Welches waren die für Ihre Entscheidung relevanten Bewertungskriteren?"*
+
++ Insert your criterias here!
++ Lernerfolg (z.B. Trennung der Oberstufe).
++ Großer Fortschritt im Vergleich zum 1. Testflug (aber: Ziel noch nicht erreicht).
++ Erwartungshaltung tief halten dann Erfolg garantiert.
+- Gesehen, was bei bestimmten Fehlern passiert --> Ansätze für Lösungen.
+- Nicht bis in Orbit gekommen; aber großer Teilerfolg.
+- Viel Geld gekostet.
+
+:::
+

@@ -1,0 +1,103 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Vision - Strategie - Ziele
+
+-------------------------------------------------------------------------- -->
+
+### Vision – Mission - Strategie - Ziele - Werkzeuge {#sec-vision}
+
+![Vision (Quelle: Adobe Stock)](images/Vision.jpeg){width=100% #fig-vision}
+
+---
+
+> *„Because it‘s there.“ (George Mallory)*
+^[Das Zitat *"Because it's there."* wird dem berühmten Bergsteiger George Mallory zugeschrieben. Als er gefragt wurde, warum er den Mount Everest besteigen wolle, soll er mit diesen Worten geantwortet haben. Mallory war Teil mehrerer Expeditionen zum Mount Everest in den 1920er Jahren. Sein Zitat *"Because it's there."* ist zu einem Symbol für den menschlichen Drang nach Abenteuer und Eroberung geworden. Es drückt die Idee aus, dass der Grund, eine Herausforderung anzunehmen, oft in der bloßen Existenz und Erreichbarkeit der Herausforderung selbst liegt. Es ist bis heute nicht eindeutig geklärt, ob George Mallory tatsächlich den Gipfel des Mount Everest erreicht hat. Mallory und sein Kletterpartner Andrew Irvine unternahmen im Jahr 1924 einen Versuch, den Gipfel zu besteigen, verschwanden jedoch während des Aufstiegs und wurden nie wieder lebend gesehen.]
+
+---
+
++----------------------------------------------+----------------+
+| **Begriff**                                  | **Zeitrahmen** |
++----------------------------------------------+----------------+
+| Vision *(„Wo wollen wir hin?“)*              | 10 Jahre       |
++----------------------------------------------+----------------+
+| Mission *(„Was tun wir?")*                   | 5 Jahre        |
++----------------------------------------------+----------------+
+| Strategie *(„Wie wollen wir es erreichen?“)* | 3 – 5 Jahre    |
++----------------------------------------------+----------------+
+| Ziele *(„Wie machen wir es messbar?“)*       | 1 Jahr         |
++----------------------------------------------+----------------+
+| Werkzeuge *(„Womit machen wir es?“)*         | bei Bedarf     |
++----------------------------------------------+----------------+
+
+: Vision-Mission-Strategie-Ziele-Werkzeuge {#tbl-vision .striped .hover .bordered tbl-colwidths="[75,25]"}
+
+
+Eine Vision und eine Strategie sind zwei konzeptionell sehr unterschiedliche Aspekte. Sie unterscheiden sich in ihrer Definition, ihrem Zeitrahmen, ihrer Ausrichtung, ihrem Inhalt und der Art ihrer Kommunikation:
+
+---
+
+1. **Definition**:
+
++ **Vision**: Die Vision beschreibt eine inspirierende und langfristige Vorstellung davon, wohin eine Organisation oder eine Person in der Zukunft gehen möchte. Sie gibt einen allgemeinen Ausblick und definiert das angestrebte Ziel.
++ **Strategie**: Die Strategie ist der Plan oder die Methodik, die angewendet wird, um die Vision zu verwirklichen. Es sind die geplanten Schritte, Ressourcenallokationen und Maßnahmen, um die gesetzten Ziele zu erreichen.
+
+---
+
+2. **Zeitrahmen**:
+
++ **Vision**: Die Vision ist oft zeitlos und hat einen langfristigen Horizont. Sie beschreibt, was langfristig erreicht werden soll, und dient als Leitstern über einen längeren Zeitraum, oftmals über 10 Jahre oder länger.
++ **Strategie**: Die Strategie ist zeitlich begrenzter und konkreter. Sie bezieht sich auf die mittelfristigen Handlungspläne, um die Vision zu realisieren.
+
+---
+
+3. **Ausrichtung**:
+
++ **Vision**: Die Vision ist breit angelegt und orientiert sich stark an Werten und Überzeugungen. Sie bietet eine Richtlinie für Entscheidungen und Handlungen, die im Einklang mit der langfristigen Ausrichtung stehen.
++ **Strategie**: Die Strategie ist spezifischer und zielt darauf ab, wie Ressourcen optimal genutzt werden können, um die Vision zu erreichen. Sie legt den Fokus auf die Umsetzung.
+
+---
+
+4. **Inhalt**:
+
++ **Vision**: Die Vision ist eher abstrakt und inspirierend. Sie beschreibt das *"Warum"* und bietet ein attraktives, einprägsames Bild des gewünschten Endzustands.
++ **Strategie**: Die Strategie ist konkreter und operationalisiert die Vision. Sie beschreibt das *"Wie"* und gibt Orientierung für die messbaren Schritte (aka Ziele), die unternommen werden müssen.
+
+---
+
+5. **Kommunikation**:
+
++ **Vision**: Die Vision wird oft breit kommuniziert und dient dazu, Menschen zu inspirieren und zu motivieren.
++ **Strategie**: Die Strategie wird eher intern kommuniziert und dient als Leitfaden für diejenigen, die an der Umsetzung beteiligt sind.
+
+---
+
+![Veranschaulichung der Begriffe Vision - Strategie - Ziele](images/Vision-Strategie-Ziele.jpg){width=80% #fig-visionstrategieziel}
+
+::: {.callout-caution}
+## Tipp zur Vision
+Je **einfacher** und **klarer** und **attraktiver** eine Vision ist desto besser!
+:::
+
+<!--
+![Vision Erstbesteigung Mount Everest: Tenzing Norgay auf dem Gipfel des Mount Everest am 29.05.1953](images/Tenzing-Norgay-Mount-Everest-1953-05-29.jpg){width=40% #fig-tenzing}
+-->
+
+In einem effektiven Produktentstehungsprozess ergänzen sich Vision und Strategie. Die Vision liefert die übergeordnete Ausrichtung und Motivation, während die Strategie und die untergeordneten Ziele die praktischen Schritte zur Erreichung dieser Vision festlegt. 
+
+Eine Strategie ist ein konkreter, langfristig ausgerichteter Plan, der dazu dient, bestimmte Ziele zu erreichen. Eine Strategie liegt auch fest, wie Ressourcen eingesetzt werden sollen, um die Vision zu verwirklichen.
+
+
+::: {.callout-caution}
+Ist eine Strategie erst einmal gewählt ist ein Wechsel auf eine andere Strategie meist nicht mehr möglich.
+:::
+
+
+Zum Erreichen der Ziele kommen Werkzeuge zum Einsatz, im Produktentstehungsprozess technischer Produkte z.B. CAD, @sec-fem FEM oder 3D-Druck. Bei Werkzeugen kann es sich aber auch um Methoden handeln, z.B. Morphologischer Kasten, @sec-kanban Kanban oder die @sec-8d-methode 8D-Methodik. In der in @fig-visionstrategieziel gezeigten Veranschaulichung der Begriffe Vision, Strategie und Ziele entsprächen die Werkzeuge z.B. Seilen, Leitern und Steigeisen.

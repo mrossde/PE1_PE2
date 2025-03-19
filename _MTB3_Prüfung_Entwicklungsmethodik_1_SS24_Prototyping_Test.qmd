@@ -1,0 +1,163 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Prüfung MTB3 Entwicklungsmethodik 1 SS24
+
+-------------------------------------------------------------------------- -->
+
+<!--
+//-------------------------------------------------------------------------
+//
+//                     Prototyping & Test
+//
+//-------------------------------------------------------------------------
+-->
+
+<!--
+::: {.callout-warning}
+## WARNING!
+**THIS PART OF THE DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+# Prototyping und Test
+
+<!-- -------------------------------------------------------------------------
+
+                       Umweltqualifizierung
+
+-------------------------------------------------------------------------- -->
+## Aufgabe "Umweltqualifizierung"
+Welche Faktoren sind für die Umweltqualifizierung von mechatronischen Bauteilen von hoher Bedeutung?
+
+- **1.)** Druck
+- **2.)** Feuchtigkeit
+- **3.)** Schock
+- **4.)** Temperatur
+- **5.)** UV-Strahlung
+- **6.)** Vibration
+
+Antwort (1 Antwort ist richtig):
+
+- [ ] Nur 1, 2 und 4 sind richtig.
+- [ ] Nur 1, 3 und 6 sind richtig.
+- [ ] Nur 1, 2, 3, 4 und 6 sind richtig.
+- [ ] Alle sind richtig.
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [x] Alle sind richtig.
+:::
+
+## Aufgabe "Beschleunigte Alterung"
+
+**Fallbeispiel**: Ein HTHE-Test für ein in der Entwicklung befindliches mechatronisches Bauteil benötigt bei 85°C und 85% relative Feuchte 1000 Stunden. In Absprache mit den Werkstoffexperten erhalten Sie die Freigabe, den Test bei einer um 25°C erhöhten Temperatur durchzuführen.
+
+**Aufgabe**: Wie viele Tage benötigt der HTHE-Test bei dem erhöhten Temperaturniveau? (1 Antwort ist richtig)
+
+- [ ] 42 Tage.
+- [ ] 32 Tage.
+- [ ] 8 Tage.
+- [ ] 4 Tage.
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+Nach der Arrhenius-Regel verdoppelt sich die Reaktionsrate für jede 10°C Erhöhung der Temperatur → $(1000 / 2^{2.5}) h = 176,8 h = 7,4 d$ → (bei Tests zählen angefangene Tage als ganze Tage) → **8 Tage**.
+:::
+
+
+## Aufgabe "Zerstörungsfreie Prüfverfahren"
+Welches von den im Folgenden genannten zerstörungsfreien Prüfverfahren ist am besten geeignet, dicht unter der Oberfläche eines metallischen Bauteils liegende innere Risse gut zu detektieren? (1 Antwort ist richtig)
+
+- [ ] Farbeindringprüfung
+- [ ] Rissprüfung mit Magnetpulver
+- [ ] Rissprüfung mit Wirbelstrom
+- [ ] Rissprüfung mit Thermographie
+- [ ] Rissprüfung mit Ultraschall
+- [ ] Röntgen und Röntgen-CT
+- [ ] Sichtprüfung
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [x] Röntgen und Röntgen-CT (siehe → Skript zur Vorlesung → Abbildung 106).
+:::
+
+
+## Aufgabe "Toleranzen"
+Welches Montageverfahren stellt die höchsten Anforderungen an die von den zu fügenden Bauteilen einzuhaltenden Toleranzen? (1 Antwort ist richtig)
+
+- [ ] Auswählende Montage
+- [ ] Automatisierte Montage
+- [ ] Manuelle Montage
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [x] Automatisierte Montage (siehe → Skript zur Vorlesung → Abbildung 109).
+:::
+
+
+## Aufgabe "Deming-Zyklus"
+Welches sind die vier Phasen des in der Qualitätssicherung häufig genutzten Deming-Zyklusses?
+
+1. *_____________________________________*
+2. *_____________________________________*
+3. *_____________________________________*
+4. *_____________________________________*
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+1.) Planen/Plan - 2.) Durchführen/Do - 3.) Überprüfen/Check - 4.) Anpassen/Act (PTCA-Zyklus)
+:::
+
+
+## Aufgabe "Ursachenanalyse"
+
+**ACHTUNG!** Diese Aufgabe wird mit **4 Punkten** gewichtet!
+
+**Fallbeispiel**: Für Ihre Feier zum Ende des Semesters backen Sie Waffeln mit einem Waffeleisen und stellen fest, dass die Waffeln angebrannt sind. Sofort beginnen Sie mit der Ursachenanalyse. 
+
+**Aufgabe**: Erstellen Sie eine Ishikawa-Diagramm mit den vier **Haupteinflussgrößen** **1.)** Mensch **2.)** Maschine (Waffeleisen) **3.)** Material (Zutaten) und **4.)** Methode (Rezept). Ordnen Sie insgesamt mindestens fünf **Hauptursachen** den Haupteinflussgrößen zu.
+
+![Aufgabe: Ishikawa-Diagramm zum Fehler *"Waffel ist angebrannt"*.](images/blank.png){height=12cm}
+
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+![Mögliche Lösung: Ishikawa-Diagramm zum Fehler *"Waffeln ist angebrannt"*.](images/Ishikawa_Diagramm_Waffeleisen.drawio.svg){width=80%}
+
+Neben der hier beispielhaft dargestellten Lösung mit zehn Hauptursachen sind sehr viele weitere, ebenfalls richtige Lösungen möglich!
+
+**Tipp**: In der Prüfung (sollte eine vergleichbare Aufgabe kommen) wird eine technischere Fragestellung zu bearbeiten sein, z.B. ein Verbrennungsmotor eines Autos, der nicht anspringt, oder ein Mobiltelefon, das nicht startet wenn es nicht vom Netzteil mit Strom versorgt wird. Der geneigte Leser möge bedenken: Es geht darum in der Prüfung zu zeigen, mit Ishikawa-Diagrammen umgehen zu können, nicht darum zu wissen, warum Waffeln anbrennen, Motoren nicht anspringen oder dass Mobiltelefone mit leerem Akku nicht funktionieren! 
+
+**Fragen, die Sie beantworten können sollten** (siehe @fig-ishikawadiagramm):
+
++ Wie ist ein Ishikawa-Diagramm grundsätzlich aufgebaut?
++ Wie werden die Hauptwirkungslinie und die Haupteinflussgrößen angeordnet?
++ Wie werden die Hauptursachen (und ggf. Nebenursachen) angeordnet?
+
+![Grundsätzlicher Aufbau eines Ishikawa-Diagramms](images/Ishikawa_Diagramm_Allgemein.drawio.svg){width=84% fig-align="center" #fig-ishikawadiagramm}
+:::
+
+
+## Aufgabe "SPC"
+
+**Fallbeispiel**: Sie arbeiten in der mechanischen Fertigung eines Unternehmens und haben die Aufgabe, einen normalverteilten Fertigungsprozess zu optimieren, bei dem aktuell sowohl der Mittelwert nicht mit den auf den technischen Zeichnungen gegebenen Vorgaben übereinstimmt und der darüber hinaus eine zu große Streuung aufweist, so dass die auf den technischen Zeichnungen gegebenen Toleranzen oftmals nicht eingehalten werden. All dies führt zu erheblichen Problemen im nachfolgenden Montageprozess. 
+
+**Aufgabe**: Wie gehen Sie vor? (1 Antwort ist richtig)
+
+- [ ] Sie versuchen, Streuung und Mittelwert gleichzeitig zu optimieren um das Problem schnellstmöglich zu lösen.
+- [ ] Sie versuchen, zunächst den Mittelwert des Prozesses zu optimieren um so schnell mehr Teile für die nachfolgende Montage zur Verfügung stellen zu können.
+- [ ] Sie versuchen, zunächst die Streuung des Prozesses zu optimieren und erst danach den Mittelwert des Prozesses zu optimieren.
+
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [x] Sie versuchen, zunächst die Streuung des Prozesses zu optimieren und erst danach den Mittelwert des Prozesses zu optimieren.
+:::
+

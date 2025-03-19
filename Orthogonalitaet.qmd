@@ -1,0 +1,54 @@
+---
+title: "MTB3 Entwicklung mechatronischer Systeme 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    email: christian.anders@hs-esslingen.de
+    affiliations: Hochschule Esslingen
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+---
+
+
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+
+
+<!-- -------------------------------------------------------------------------
+
+                       ORTHOGONALITÄT
+
+-------------------------------------------------------------------------- -->
+
+### Orthogonalität
+
+
+![Symbolbild](images/Visual_Studio_Code_1.35_icon.svg){width=40%}
+
+
+Orthogonalität im Zusammenhang mit Begriffen kann auf unterschiedliche Weise definiert werden, abhängig von der spezifischen Anwendung oder Disziplin. In verschiedenen Bereichen wie Mathematik, Logik, Informatik, Physik oder anderen Wissenschaften kann der Begriff Orthogonalität unterschiedliche Bedeutungen haben, die spezifisch auf den Kontext zugeschnitten sind, jedoch gibt es einige wichtige Gemeinsamkeiten des Begriffs Orthogonalität:
+
+- **Unabhängigkeit oder Unkorreliertheit**: Orthogonalität bezieht sich allgemein auf das Fehlen einer inhaltlichen oder konzeptuellen Beziehung zwischen zwei Elementen. Es bedeutet, dass die Elemente unabhängig voneinander sind und keine direkte Verbindung oder Abhängigkeit zueinander haben.
+- **Mangel an Interferenzen oder Wechselwirkungen**: Orthogonalität impliziert, dass verschiedene Elemente oder Aspekte eines Systems keine unerwünschten Interaktionen oder Abhängigkeiten aufweisen. Orthogonalität ermöglicht eine klare Trennung und Unabhängigkeit der Elemente, so dass sie unabhängig voneinander betrachtet oder gändert werden können.
+- **Modularität und Kompositionsfähigkeit**: Orthogonalität wird oft mit der Modularität und Kompositionsfähigkeit von Systemen in Verbindung gebracht. In Informationstechnologie und Datenverarbeitung bedeutet Orthogonalität, dass verschiedene Begriffe oder Funktionen in einem System unabhängig voneinander arbeiten und keine unerwünschten Interaktionen oder Abhängigkeiten aufweisen. Orthogonalität ermöglicht eine hohe Modularität und Kompositionsfähigkeit in Systemen. Durch die Orthogonalität können verschiedene Elemente oder Funktionen eines Systems unabhängig voneinander entwickelt, verstanden und kombiniert werden. Dies ermöglicht eine flexible und skalierbare Systemarchitektur. 
+
+Orthogonalität wird angestrebt, um Klarheit und Einfachheit in einem System oder Konzept zu gewährleisten. Durch die Aufrechterhaltung einer klaren Trennung und Unabhängigkeit der Elemente können komplexe Zusammenhänge vereinfacht und besser verstanden werden. Das Fehlen von Orthogonalität kann hingegen schwerwiegende Folgen haben, ohne dass die Ursache für die entstehenden Fehler sofort offensichtlich ist.
+
+<!-- -------------------------------------------------------------------------
+
+     Beispiele für Fehler aufgrund fehlender Orthogonalität
+
+-------------------------------------------------------------------------- -->
+
+**Vorgriff**: Beispiel hierfür kann eine fehlerhafte Bewertung von Alternativen aufgrund fehlender Orthogonalität der Bewertungskriterien bei einer Bewertungsmatrix sein. Das Finden orthogonaler Kriterien ist ein wichtiger Aspekt bei der Verwendung von Bewertungsmatrizen im Produktentstehungsprozess.
+
+
+FAZIT
+**Begriff der Orthogonalität von Begriffen in die Diskussion einführen. Das Verständnis von Orthogonalität von Begriffen ist entscheidend für eindeutige Beschreibung von Sachverhalten. Merke: Ein Ding – Ein Begriff. Ein Sachverhalt – Ein Begriff. Kein „schräges“ Überschneiden von Bedeutungen, sofern es irgendwie vermieden werden kann!** 

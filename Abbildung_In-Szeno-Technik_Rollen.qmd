@@ -1,0 +1,31 @@
+---
+format:
+  html:
+    embed-resources: true
+
+
+toc: false
+number-sections: false
+scrollable: true
+---
+
+<!-- title: "MTB3 Entwicklung mechatronischer Systeme 1"
+author:
+  - name: "Christian Anders"
+    email: christian.anders@hs-esslingen.de
+    affiliations: Hochschule Esslingen
+
+date: last-modified
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       In-Szeno-Technik: Rollen und Sichten
+
+-------------------------------------------------------------------------- -->
+
+
+![In-Szeno-Technik^[Die In-Szeno-Technik ist eine spezifische Methode innerhalb der [systemischen Aufstellungsarbeit](https://de.wikipedia.org/wiki/Organisationsaufstellung), die darauf abzielt, dynamische Prozesse in Organisationen sichtbar zu machen und Lösungen für komplexe Probleme zu finden. Im Wesentlichen werden bei der In-Szeno-Technik die relevanten Elemente einer Organisation (wie z.B. Mitarbeiter, Abteilungen, Projekte) von den Teilnehmenden räumlich mithilfe von Spielfiguren angeordnet, um die aktuelle Situation oder Problemstellung zu repräsentieren. Durch die räumliche Positionierung und Interaktion dieser Elemente können verborgene Dynamiken und Zusammenhänge ans Licht kommen, die sonst möglicherweise nicht offensichtlich wären. Die Teilnehmenden können dann beobachten, wie sich Veränderungen in der Anordnung der Elemente auf das System auswirken und welche neuen Erkenntnisse dadurch gewonnen werden. Auf dieser Grundlage können dann konkrete Maßnahmen entwickelt werden, um positive Veränderungen in der realen Organisationsstruktur herbeizuführen. Die In-Szeno-Technik basiert auf systemischen Ansätzen und Prinzipien und wird oft in Coaching, Beratung und Organisationsentwicklung eingesetzt, um komplexe Probleme zu analysieren und Lösungswege aufzuzeigen. Die In-Szeno-Technik wurde in den späten 1990er Jahren von [Matthias Varga von Kibéd](https://de.wikipedia.org/wiki/Matthias_Varga_von_Kib%C3%A9d) und [Insa Sparrer](https://de.wikipedia.org/wiki/Insa_Sparrer) entwickelt. Heute nimmt die In-Szeno-Technik einen festen Platz im Bereich der [Organisationsentwicklung](https://de.wikipedia.org/wiki/Organisationsentwicklung) ein.] zur Visualisierung möglicher Rollen als in einem Projekt mitarbeitender Person. Ein und dieselbe Person nimmt in einem Projektteam meist mehrere Rollen ein. Dies geschieht nicht immer bewußt. In einem Team/einem Projekt mitarbeitende Personen nehmen zumeist als aktiv Beteiligte automatisch eine Rolle im Team/Projekt und eine Rolle gegenüber der Team-/Projektleitung ein. In einigen Fällen kommt im Laufe des Projekts die (ggf. befristete) Leitung z.B. einer Arbeitsgruppe oder einer Task-Force dazu. Aus den wechselnden und teils gegenläufigen Anforderungen und Erwartungen, die mit den Rollen verbunden sind, können Konflikte entstehen. Ein Ansatz, sich der eigenen Rollen und Sichten bewußt zu werden ist es, gedanklich die Arbeitsebene zu verlassen und die Rolle des unbeteiligten Studierenden einzunehmen. Hierbei kann ein Moderator oder Coach hilfreich sein. Aus dieser Sicht des unbeteiligten Studierenden heraus kann oftmals mehr Klarheit der eigene Rollen im Team/Projekt und der aktuellen Situation erreicht werden. Auf dieser Grundlage können dann Lösungsansätze für das eigene weitere Vorgehen gefunden werden.](images/InSzenoTechnik-RollenundSichten.jpg){width=60% #fig-inszeno-rollenundsichten
+}
+
+

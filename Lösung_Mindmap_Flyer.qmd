@@ -1,0 +1,93 @@
+---
+title: "MTB3 Entwicklung mechatronischer Systeme 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    email: christian.anders@hs-esslingen.de
+    affiliations: Hochschule Esslingen
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+---
+
+<!-- 
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+ <!-- -------------------------------------------------------------------------
+
+                       Lösung Mindmap Flyer
+
+-------------------------------------------------------------------------- -->
+
+::: {.callout-tip}
+## Mindmap Flyer (Dauer 20 min)
+
+Je nach vorgesehenem Verwendungszweck des Papierfliegers ergeben sich sehr unterschiedliche Anforderungen, z.B. hinsichtlich verwendetem Material, Größe und Bauform, Flugeigenschaften und deren Beeinflussbarkeit, optischem Design, Baubarkeit, **p**roduktionsgerechter **P**rodukt**g**estaltung (PPG), Handhabung und Befestigung, usw., die es zu im Detail zu erarbeiten gilt! 
+
+Die folgende Mindmap und nachfolgende Aufzählung bieten eine Auswahl möglicher kreative Ideen als Grundlage für die nachfolgende Entwicklung eines Papierfliegers:
+
+```{mermaid}
+%%| label: fig-label-lsgmindmapflyer
+%%| fig-cap: "Beispiel eines Ausschnitts einer möglichen Mindmap zum Flyer"
+mindmap
+  root((Projekt Flyer))
+    [Lehre und Wissenschaft]
+      [Lehrmittel]
+      [Rekordversuche]
+      [Forschungsprojekt]
+    [Wirtschaft]
+      [Marketing]
+      [Teambuilding]
+    [Familie und Gemeinschaft]
+      [Geschenkidee]
+      [Dekoration]
+    [Kunst und Unterhaltung]
+      [Geschichten erzählen]
+      [Filmprojekt]
+    [Gesundheit]
+      [Entspannungsübung]
+      [Therapeutisches Spielzeug]
+    [Polititk und Gesellschaft]
+      [Umweltbewußtsein]
+```
+
+
+1. **Lehre und Wissenschaft**:
+  + **Lehrmittel:** Verwende den Papierflieger, um Grundkonzepte der Physik und Mathematik zu vermitteln. Schüler können die Flugbahn des Fliegers analysieren und Berechnungen zur Fluggeschwindigkeit, Flugzeit usw. durchführen.
+  + **Wissenschaftliches Experiment:** Verwende den Papierflieger, um die Grundlagen der Aerodynamik zu erforschen. Experimentiere mit verschiedenen Flügelprofilen, Größen und Formen, um zu sehen, wie sie sich auf die Flugleistung auswirken.
+  + **Forschungsprojekt:** Verwende Papierflieger als Teil eines wissenschaftlichen Forschungsprojekts, um bestimmte Flugmuster zu untersuchen.
+  + **Rekordversuche:** Organisiere einen Wettbewerb für den längsten Papierfliegerflug, den höchsten Flug oder die kreativste Papierfliegerkonstruktion. 
+
+2. **Wirtschaft**:
+  + **Marketingaktion:** Entwerfe Papierflieger, die das Logo oder die Botschaft eines Unternehmens tragen, und verteile sie als originelle Werbeaktion auf Veranstaltungen oder Messen.
+   + **Team Building:** Veranstalte einen Wettbewerb, bei dem Teams Papierflieger bauen und fliegen lassen. Dies fördert Teamarbeit, Kreativität und Problemlösungsfähigkeiten.
+
+3. **Familie und Gemeinschaft**:
+  + **Geschenkidee:** Füge einem Geschenk einen selbstgebauten Papierflieger bei, um eine persönliche Note hinzuzufügen. Der Flieger könnte mit einer Nachricht versehen werden, die den Empfänger inspirieren oder zum Lächeln bringen soll.
+  + **Gemeinschaftsaktion:** Organisiere eine Aktion, bei der Menschen Papierflieger bauen und dann gleichzeitig fliegen lassen, um Verbundenheit und Zusammengehörigkeit in der Gemeinschaft zu symbolisieren.
+  + **Hochzeit oder Veranstaltung:** Verwende dekorative Papierflieger als Teil der Dekoration für eine Hochzeit oder eine besondere Veranstaltung. Die Flieger könnten mit Botschaften oder Wünschen der Gäste versehen werden und dann im Laufe des Tages in den Himmel fliegen gelassen werden.
+
+4. **Kunst und Unterhaltung**:
+  + **Geschichten erzählen:** Nutze Papierflieger als Requisiten in einer Geschichte oder einem Theaterstück. Die Flieger könnten Charaktere repräsentieren oder Teil eines Abenteuers sein, das die Zuschauer mit auf eine imaginäre Reise nimmt.
+  + **Kunstinstallation:** Verwende mehrere Papierflieger, die kunstvoll gestaltet und in einer Installation angeordnet sind, um eine Aussage über Freiheit, Träume oder kindliche Freude zu machen.
+  + **Filmprojekt:** Integriere Papierflieger in einen Kurzfilm oder ein Animationsprojekt, um eine metaphorische Reise oder einen Moment der Erleuchtung darzustellen.
+  + **Künstlerisches Ausdrucksmittel:** Verwende Papierflieger als künstlerisches Medium, um Skulpturen, Installationen oder Kunstwerke zu schaffen, die die Fantasie anregen und die Grenzen der Kreativität erforschen.
+
+5. **Gesundheit**:
+  + **Entspannungsübung:** Nutze das Bauen und Fliegenlassen von Papierfliegern als Entspannungsübung oder Meditationstechnik, um den Geist zu beruhigen und den Fokus zu schärfen.
+  + **Therapeutisches Spielzeug:** Verwende den Bau und das Fliegenlassen von Papierfliegern als therapeutisches Spielzeug für Kinder mit besonderen Bedürfnissen oder für Menschen, die unter Stress oder Angstzuständen leiden.
+
+6. **Politik und Gesellschaft**:
+  + **Umweltbewusstsein:** Verwende biologisch abbaubare Papierflieger, um auf Umweltthemen aufmerksam zu machen, wie zum Beispiel das Recycling oder den Schutz der Natur. Die Flieger könnten mit umweltfreundlichen Botschaften versehen werden und dann in Parks oder anderen öffentlichen Orten verteilt werden.
+  + **Politische Protestaktion:** Nutze Papierflieger als Symbol für den Frieden oder für politische Veränderungen. Organisiere eine Aktion, bei der Menschen Flugblätter mit politischen Forderungen oder Botschaften auf Papierfliegern in die Luft steigen lassen.
+
+:::
+  

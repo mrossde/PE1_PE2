@@ -1,0 +1,146 @@
+//-------------------------------------------------------------------------
+//
+//                     Ideenfindung und Konzeptentwicklung
+//
+//-------------------------------------------------------------------------
+
+//-------------------------------------------------------------------------
+//
+//                     Projekt
+//
+//-------------------------------------------------------------------------
+
+::Projekt::
+Welche Eigenschaften muss ein Projekt gemäß der Definition erfüllen?
+{
+    ~%25%Zeitliche Befristung
+    ~%25%Definierter Start- und Endzeitpunkt
+    ~%25%Hohe Komplexität der Aufgabenstellung
+    ~%25%Einmaligkeit der Aufgabenstellung
+    ~%-50%Wirtschaftlicher Nutzen
+    ~%-50%Begrenzte interne Ressoucen
+}
+
+
+::Projekt- vs. Linienorganisation::
+Wann ist es angemessen, ein Produkt in einer Projektorganisation im Vergleich zu einer Linienorganisation zu entwickeln?
+{
+    ~%100%Ein Produkt wird in einer Projektorganisation entwickelt, wenn es sich um ein einmaliges Projekt handelt, das spezifische Ziele hat und eine zeitlich begrenzte Teamzusammenstellung erfordert. In einer Linienorganisation wird ein Produkt entwickelt, wenn es sich um einen wiederkehrenden Prozess handelt, der in den normalen Betriebsablauf integriert ist.
+    ~%-33.333%Ein Produkt wird in einer Projektorganisation entwickelt, wenn die Unternehmensstruktur hierarchisch und starr ist. In einer Linienorganisation wird ein Produkt entwickelt, wenn das Unternehmen flache Hierarchien und flexible Strukturen aufweist.
+    ~%-33.333%Ein Produkt wird in einer Projektorganisation entwickelt, wenn die Unternehmenskultur auf Innovation und Agilität ausgerichtet ist. In einer Linienorganisation wird ein Produkt entwickelt, wenn die Hauptpriorität auf der kontinuierlichen Verbesserung bestehender Prozesse liegt.
+    ~%-33.333%Ein Produkt wird in einer Projektorganisation entwickelt, wenn die finanziellen Ressourcen begrenzt sind und das Unternehmen externe Experten für spezifische Projekte einsetzen möchte. In einer Linienorganisation wird ein Produkt entwickelt, wenn das Unternehmen über ausreichende interne Ressourcen verfügt und die Entwicklung intern erfolgen kann.
+}
+
+
+::Wasserfallmodell::
+Wann und aus welchem Anlass wurde das Wasserfallmodell im Produktentstehungsprozess entwickelt?
+{
+    ~%-33.333%In den 1960er Jahren als Antwort auf den Bedarf nach mehr Flexibilität in der Projektabwicklung.
+    ~%100%In den 1970er Jahren als Reaktion auf die steigende Komplexität von Softwareprojekten.
+    ~%-33.333%In den 1980er Jahren als Reaktion auf die Einführung agiler Methoden.
+    ~%-33.333%In den 1990er Jahren als Lösung für Probleme bei der Ressourcenplanung in großen Unternehmen.
+}
+
+
+::Wasserfallmodell, V-Modell und Spiralmodell::
+Welche Aussage beschreibt am besten die Unterschiede zwischen dem Wasserfallmodell, dem V-Modell und dem Spiralmodell?
+{
+	~%33.333%Das Wasserfallmodell beinhaltet eine lineare Abfolge von Entwicklungsphasen.
+	~%33.333%Das V-Modell ist eine Weiterentwicklung des Wasserfallmodells.
+  	~%33.333%Das Spiralmodell verfolgt einen stärker iterativen Ansatz als das V-Modell.
+	~%-33.333%Das Wasserfallmodell ist ein agiles Entwicklungsmodell, das besonders geeignet ist für schnelle und dynamische Projekte.
+	~%-33.333%Das V-Modell ist ein adaptives Entwicklungsmodell, das auf schnelle Anpassungen an sich ändernde Anforderungen abzielt.
+	~%-33.333%Das Spiralmodell ist ein inkrementelles Entwicklungsmodell, das auf starre Phasen und feste Liefertermine setzt.
+}
+
+//-------------------------------------------------------------------------
+//
+//                     Gantt-Diagramme
+//
+//-------------------------------------------------------------------------
+
+::Historie des Gantt-Diagramms::
+Wann wurde das Gantt-Diagramm entwickelt?
+{
+    ~%100%In den frühen 1910er Jahren von Henry Gantt.
+    ~%-50%In den 1950er Jahren von Joseph Gantt.
+    ~%-50%In den 1980er Jahren von John Gantt.
+}
+
+
+::Gantt-Diagramm::
+Was zeigt ein Gantt-Diagramm hauptsächlich an?
+{
+    ~%50%Die zeitliche Planung von Aufgaben und deren Dauer in einem Projekt.
+    ~%50%Die Abhängigkeiten zwischen verschiedenen Aufgaben in einem Projekt.
+    ~%-25.0%Die finanzielle Aufteilung eines Projekts.
+    ~%-25.0%Die Verfügbarkeit von Ressourcen für ein Projekt.
+    ~%-25.0%Die erwarteten Risiken im Projektverlauf.
+    ~%-25.0%Die organisatorische Struktur des Projektteams.
+}
+
+
+::Kritischer Pfad im Gantt-Diagramm::
+Was ist der kritische Pfad in einem Gantt-Diagramm?
+{
+	~%100%Die Abfolge von Aufgaben, die die kürzest mögliche Dauer für die Fertigstellung des Projekts bestimmt.
+	~%-100%Die Abfolge von Aufgaben, die am wenigsten Ressourcen für die Fertigstellung des Projekts benötigt.
+}
+
+//-------------------------------------------------------------------------
+//
+//                     Lastenheft
+//
+//-------------------------------------------------------------------------
+
+::Informationen im Lastenheft::
+Welche Informationen sollten typischerweise in einem Lastenheft im Produktentstehungsprozess enthalten sein?
+{
+    ~%100%Technische Anforderungen und Spezifikationen
+    ~%-33.333%Budget und Finanzierungsinformationen
+    ~%-33.333%Marketingstrategien und Werbekampagnen
+    ~%-33.333%Organigramme und Mitarbeiter-Ressourcenplanung
+}
+
+::Rolle des Lastenhefts im Produktentstehungsprozess::
+Welche Rolle spielt das Lastenheft im Produktentstehungsprozess?
+{
+    ~%100%Es dient als formale Spezifikation der Anforderungen an das zu entwickelnde Produkt.
+    ~%-33.333%Es unterstützt bei der Planung von Marketingkampagnen und Vertriebsstrategien.
+    ~%-33.333%Es definiert die Organisationsstruktur des Unternehmens.
+    ~%-33.333%Es überwacht die Budgetierung und Finanzierung des Projekts.
+}
+
+::Funktion des Lastenhefts::
+Welche Funktion erfüllt das Lastenheft im Produktentstehungsprozess?
+{
+    ~%100%Es dient als Grundlage für die Entwicklung des Produkts.
+    ~%-50%Es überwacht den Projektfortschritt und stellt sicher, dass die Zeitpläne eingehalten werden.
+    ~%-50%Es dokumentiert die betrieblichen Abläufe und Organisationsstrukturen des Unternehmens.
+}
+
+::Verantworlichkeiten für die Erstellung des Lastenhefts::
+Wer ist in der Regel für die Erstellung des Lastenhefts im Produktentstehungsprozess verantwortlich?
+{
+    ~%100%Das Projektteam in Zusammenarbeit mit den Projektverantwortlichen.
+    ~%-50%Der Vertrieb in Zusammenarbeit mit dem Controlling.
+    ~%-50%Externe Berater ohne direkte Beteiligung am späteren Projekt.
+}
+
+//-------------------------------------------------------------------------
+//
+//                     Produktdokumentation
+//
+//-------------------------------------------------------------------------
+
+::Produktdokumentation::
+Welche Inhalte sollten typischerweise in einer Produktdokumentation zum Abschluss eines Produktentstehungsprozesses enthalten sein?
+{
+    ~%33.333%Technische Spezifikationen
+    ~%33.333%Bedienungsanleitungen
+    ~%33.333%Wartungshinweise
+    ~%-25.0%Marketingstrategien
+    ~%-25.0%Werbematerialien
+    ~%-25.0%Organigramme
+    ~%-25.0%Finanzberichte
+}

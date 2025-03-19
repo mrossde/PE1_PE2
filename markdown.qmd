@@ -1,0 +1,566 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+
+path:
+  to:
+    metadata: true
+
+test: false
+---
+
+::: {.content-hidden unless-meta="path.to.metadata"}
+
+This content will be hidden unless there exists a metadata entry like such:
+
+```yml
+path:
+  to:
+    metadata: true
+```
+
+:::
+
+lore ipsum
+
+::: {.content-hidden unless-meta="test"}
+This content will be hidden unless there exists a metadata entry **test: true**.
+:::
+
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+
+
+<!-- --- -->
+<!-- Horizontale Linie -->
+
+::: {.callout-tip}
+Dieses Dokument enthält Beispiele für Elemente in Markdown, die von Quarto zwar leider in der visuellen Anmutung teils sehr unterschiedlich, aber bezüglich des Inhalts lesbar in die Ausgabeformate HTML, PDF und DOCX übersetzt werden können (Stand Quarto 1.3.450).
+:::
+
+# Markdown  {.unnumbered}
+
+## Kapitel Ebene 2
+### Kapitel Ebene 3
+#### Kapitel Ebene 4
+
+
+#### Aufzählungen: <!-- Kapitel Ebene 4 -->
+
+1.  **Punkt 1:** Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.
+
+2.  **Punkt 2:** Sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+
+<!-- -------------------------------------------------------------------------
+
+                       TABELLEN
+
+-------------------------------------------------------------------------- -->
+
+#### Tabellen
+
+
++----------+----------+----------+----------+
+| Spalte 1 | Spalte 2 | Spalte 3 | Spalte 4 |
++==========+==========+==========+==========+
+| Zelle A1 |          |          |          |
++----------+----------+----------+----------+
+|          |          |          | Zelle B4 |
++----------+----------+----------+----------+
+|          |          | Zelle C3 |          |
++----------+----------+----------+----------+
+
+: Beispieltabelle  {#tbl-beispiel .striped .hover .bordered tbl-colwidths="[25,25,25,25]"}
+
+See @tbl-beispiel.
+
+<!-- ACHTUNG!!! In order for a table to be cross-referenceable, its label must start with the tbl- prefix!!! -->
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       DIAGRAMME
+
+-------------------------------------------------------------------------- -->
+
+#### Diagramme
+
+
+::: {.callout-caution}
+Das Compilieren von Mermaid-Diagrammen erfordert beim der Option LaTeX (PDF) hohen Rechenaufwand und entsprechend viel Zeit!
+:::
+
+
+```{mermaid}
+%%| fig-width: 6.0
+%%| label: fig-label-flow01
+%%| fig-cap: "Beispiel für ein Flowchart von Links nach Rechts"
+flowchart LR
+  A(Start) --> B[Schritt 1]
+  B --> C{Auswahl}
+  C --> D[Schritt 2]
+  C --> E[Schritt 3]
+  E --> F(Ende)
+```
+
+```{mermaid}
+%%| fig-width: 4.2
+%%| label: fig-label-pie01
+%%| fig-cap: "Beispiel für ein Tortendiagramm"
+pie title Studierende
+    "Abitur" : 21
+    "Ausbildung" : 9
+    "Studium" : 2
+```
+
+<!-- 
+ACHTUNG!!! Mermaid-Grafiken zum Gantt-Diagramm werden in der Quarto-Preview nicht dargestellt, erscheinen nach dem Compilieren aber im Dokument. Zur Vorschau der Gantt-Charts sei auf den Mermaid-Live-Editor verwiesen
+-->
+```{mermaid}
+%%| fig-width: 6.4
+gantt
+title Beispiel für ein einfaches Gantt-Diagramm in Mermaid
+    dateFormat HH:mm
+    axisFormat %H:%M
+    Start : milestone, m1, 17:49, 2m
+    Aufgabe 1 : 10m
+    Aufgabe 2 : 5m
+    Aufgabe 3 : 5m
+    Ende : milestone, m2, 18:13, 4m
+```
+
+```{mermaid}
+%%| fig-width: 6.4
+%%| label: fig-label-box01
+%%| fig-cap: "Beispiel für ein Balkendiagramm"
+gantt
+    title Beispiel für ein einfaches Balkendiagramm in Mermaid
+    dateFormat X
+    axisFormat %s
+    section Balken 1
+    Beschriftung Balken 1   : 10, 90
+    section Balken 2
+    Beschriftung Balken 2   : 0, 42
+    section Balken 3
+    Beschriftung Balken 3   : 0, 34
+    section Balken 4
+    Beschriftung Balken 4   : 0, 9
+    section Balken 5
+    Beschriftung Balken 5   : 50, 100
+```
+
+```{mermaid}
+%%| label: fig-label-flow02
+%%| fig-cap: "Beispiel für ein eingebundenes Mermaid-Diagramm"
+%%| file: flowchart.mmd
+```
+
+
+<!--
+```{mermaid}
+%%| fig-width: 6.4
+%%| label: fig-label-mmddin8580ext
+%%| fig-cap: "Hauptgruppen und ausgewählte Gruppen und Verfahren der Fertigungsverfahren nach DIN 8580"
+%%| file: mmddin8580.mmd
+```
+-->
+
+
+<!-- 
+ACHTUNG!!! Mermaid-Mindmap-Diagramme werden in der Quarto-Preview nicht dargestellt, erscheinen nach dem Compilieren aber im Dokument. Zur Vorschau der Mindmaps sei auf den Mermaid-Live-Editor verwiesen!
+-->
+```{mermaid}
+%%| fig-width: 6.4
+%%| label: fig-label-mindmapflyer
+%%| fig-cap: "Beispiel für eine Mindmap zum Flyer"
+mindmap
+  root((Projekt Flyer))
+    [Anforderungen]
+        [Flugdauer]
+        [Flugstrecke]
+        [Kunden]
+        [Design]
+        [Lastenheft]
+    [Entwicklung]
+        [Flugverhalten]
+            [Gewicht]
+            [Größe]
+            [Form]
+    [Prototyp]
+        [Werkstoff]
+            [Papier]
+            [Pappe]
+        [Prozesse]
+            [Schneiden]
+            [Falten]
+            [Kleben]
+            [Malen]
+        [Ressoucen]
+            [Stift]
+            [Lineal]
+            [Schere]
+            [Klebstoff]
+    [Test]
+        [Startphase]
+            [Werfen]
+            [Loslassen]
+        [Flugphase]
+    [Projetmanagement]
+```
+
+
+```{mermaid}
+%%| label: fig-label-zustandsdiagramm
+%%| fig-cap: "Beispiel für ein Zustandsdiagramm"
+stateDiagram-v2
+    [*] --> Still
+    Still --> [*]
+    Still --> Moving
+    Moving --> Still
+    Moving --> Crash
+    Crash --> [*]
+```
+
+
+ACHTUNG! Das folgende Callout wird bei beim Compilieren in DOCX falsch formatiert!
+
+::: {.callout-tip}
+Wird bei Mermaid-Diagrammen ein label vergeben erhält das eingebundene Diagramm automatisch eine Nummer, sofern eine Caption angelegt wird. Grundsätzlich sollte daher immer ein label und eine Caption angelegt werden!
+:::
+
+#### Fussnoten
+
+Fussnoten werden erstellt durch ein accent circonflexe gefolgt von einen Paar eckiger Klammern. Fussnoten werden automatisch nummeriert.
+^[Ich bin eine Fussnote. Dieser Text befindet sich in Markdown innerhalb eines Paars eckiger Klammern.]
+
+#### Formeln
+
+$$
+(a + b)^2 = a^2 + 2ab + b^2
+$$ {#eq-binomische_formel}
+
+$$
+a^{XYZ}_{123}
+$$
+
+$a^{XYZ}_{123}$
+
+#### Formeln nummerieren
+
+Gleichungen werden automatisch nummeriert.
+$$
+\pi = 4 \cdot \frac{T_i}{T_i + T_a}
+$$ {#eq-pi}
+
+Mit $T_i$ = 48 Tropfen und $T_a$ = 14 Tropfen ergibt sich nach @eq-pi $\pi$ = 3.096
+
+<!-- -------------------------------------------------------------------------
+
+                       BILDER
+
+-------------------------------------------------------------------------- -->
+
+
+#### Bilder
+
+![Ein einfaches Testbild](images/ChatGPT_Logo_640x640.png){width=40% #fig-testbild}
+
+Hier ein Beispiel für eine Crossreference: Bild @fig-testbild zeigt ein eingebundenes Testbild im Format JPG, @fig-label-pie01 hingegen eine im Quellcode des Dokuments geschriebene Mermaid-Grafik.
+
+
+#### Videos
+
+{{< video https://youtu.be/M4tdMR5HLtg start="10" >}}
+
+::: {.callout-note}
+Bei Ausgabe als HTML werden die Videos direkt als Link eingebettet (inkl. Vorschaubild) und können direkt im Browser abgespielt werden. Bei Ausgabe als PDF wird lediglich ein klickbarer Link in das Dokument eingebunden. 
+:::
+
+
+#### Links
+[Google](https://www.google.com)
+
+#### eMail-Adressen
+[christian.anders@hs-esslingen.de](mailto:christian.anders@hs-esslingen.de)
+
+#### Callouts
+
+::: {.callout-note}
+Das hier ist ein Hinweis!
+:::
+
+::: {.callout-tip}
+Das hier ist ein Tipp!
+:::
+
+<!--
+::: {.callout-tip}
+## Beschreibung des Tipps
+Das hier ist ein Tipp mit einem Text in der Überschrift!
+:::
+-->
+
+::: {.callout-caution}
+Das hier ist eine Warnung!
+:::
+
+::: {.callout-important}
+Das hier ist wichtig!
+:::
+
+::: {.callout-warning}
+Das hier ist ist eine Warnung!
+:::
+
+
+::: {.callout-tip #callout-bezeichnung}
+#### Definition: *"lore ipsum"*
+Lore ipsum
+:::
+
+Verweis im Text [Definition: *"Lore ipsum"*](#callout-bezeichnung) dolor sit amet, consetetur sadipscing elitr.
+
+#### Zitate
+
+> "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren."
+
+#### Begriffsdefinition
+
+Begriff
+: Definition des Begriffs. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+
+<!-- Begriffsdefinition, wie er in der Vorlesungsreihe zum DEB verwendet wird: -->
+::: {.callout-tip}
+## Definition: *"Zu definierender Begriff"*
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+:::
+
+#### Aufzählung 
+
++ Aufzählung 1
++ Aufzählung 2
++ Aufzählung 3
+
+
+Das hier ist ein Stückchen Text um zu sehen, ob es sich tatsächlich um einen Fehler beim Rednering der nachfolgenden Aufzählung handelt.
+
+1. Aufzählung 1
+    - Aufzählung 1.1
+    - Aufzählung 1.2
+2. Aufzählung 2
+
+Und noch ein Stückchen Text, diesmal mit dem Zweck, die obige Aufzählung vom nachfolgenden Test für den Blocksatz zu trennen.
+
+<p style="text-align: justify;">Dies ist ein Text im Blocksatz. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+Dies ist ein Text OHNE explizite Angaben. Bei Ausgabe als Quaro Book erscheint dieser Text im Blocksatz. Bei Ausgabe als HTML erscheint dieser Text linksbündig. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. 
+
+#### Rahmen um Text/Formel
+<div style="border: 1px solid black; padding: 10px;">
+$$
+\ddot{\theta} + \beta \cdot \dot{\theta} + \alpha \cdot \theta = 0
+$$
+</div>
+
+
+#### Bilder zentrieren
+
+<p style="text-align: center;">![](images/Microsoft_Office_Excel-Logo.png){width=16%} → Excel-Worksheet *"Name des Worksheets"*</p>
+
+#### Text zentrieren
+<div style="text-align:center;">
+    AUFGABE | KOMPETENZ | VERANTWORTUNG
+</div>
+
+#### Text zentriert mit umgebendem Rahmen
+<div style="border: 1px solid black; padding: 10px; text-align:center;">AUFGABE | KOMPETENZ | VERANTWORTUNG</div>
+
+Symbolischer Link auf eine Datei in Moodle:
+siehe → ``` Moodle:Allgemeines/Termine.html ```
+
+#### Code
+
+Hier ist ein Beispiel zum Einfügen eines Codeblock:
+
+```r
+code
+```
+::: {.callout-note}
+Gibt es bessere Wege, einen Codeblock in ein Quarto-Dokument aufzunehmen?
+:::
+
+---
+
+# Struktur von Dokumenten
+
+Die Struktur der Dokumente folgt dem Aufbau aus Hauptkapitel (Überschrift Ebene #), Kapitel (Überschrift Ebene ##) und Unterkapitel (Überschrift Ebene ###). 
+
+Diese Elemente sind jeweils eigenständige Quarto-Dokumente (*.qmd). In den Dokumenten der Ebene 3 (Unterkapitel) können auch Textbausteine der Ebenen 4 ff. aufgenommen werden. Diese werden jedoch nicht mehr als eigene Dateien ausgeführt.
+
+```{mermaid}
+%%| fig-width: 6.0
+%%| label: fig-label-dokumentenstruktur
+%%| fig-cap: "Beispiel für die Strukturierung der Quarto-Dokumente im DEB"
+flowchart LR
+  id1[Dokument] --> id2[# Hauptkapitel 1]
+  id1 --> id5[# Hauptkapitel 2]
+  id1 --> id6[# Hauptkapitel n]
+  id2 --> id3[## Kapitel 1.1]
+  id2 --> id7[## Kapitel 1.2]
+  id2 --> id9[## Kapitel 1.n]
+  id3 --> id4[### Unterkapitel 1.1.1]
+  id3 --> id8[### Unterkapitel 1.1.2]
+  id3 --> id10[### Unterkapitel 1.1.n]
+  id5 --> id11[## Kapitel 2.n]
+  id7 --> id12[### Unterkapitel 1.2.n]
+  style id12 fill:#fff,stroke:#aaa,color:#aaa
+ ```
+
+Das Zusammenführen der Textbausteine erfolgt mittels include.
+
+Bei diesem Vorgehen können alle Textbausteine voneinander unabhängig erstellt und in verschiedenen Dokumente verwendet werden. 
+
+Die Textbausteine sind hierzu als in sich abgeschlossene Einheiten zu gestalten. 
+
+Querverweise über den jeweiligen Textbaustein hinaus sind in Hinblick auf die angestrebte Kompatibilität aller Textbausteine nicht möglich.
+
+## Bezeichungen
+
+Abbildungen: fig-*
+
+Abbildungen umfassen alle Arten von Grafiken, einschließlich Mermaid-Diagrammen. 
+Das Label von Abbildungen ist 'fig-label-'.
+Bei eingebundenen Dateien ist der Dateiname ohne die Dateiendung (z.B. JPG) zugleich Element des Labels. 
+
+Beispiel: Datei und zugehöriges Label:
+
+``` r
+fig-Abbildung.jpg
+fig-label-Abbildung
+```
+
+Die Dateinamen sind sprechend und eineindeutig zu wählen (vgl. SRM zur Vergabe von Sachnummern im Hause Mercedes-Benz).
+
+#### Sonderzeichen
+Logo von LaTeX in Quarto: $\LaTeX$
+
+Unicode-Sonderzeichen "folgt aus": ⇒ 
+Unicode-Sonderzeichen "folgt aus": → 
+Unicode-Sonderzeichen "...": …
+
+::: {.callout-tip}
+Das Vorgehen zur Erstellung der Quarto-Dokumente für die Vorlesungen kann zugleich ein gutes Beispiel sein für die Herausforderungen beim Datenmanagement von Produktdaten.
+:::
+
+---
+
+#### Referenzen auf Kapitel {#sec-referenzaufkapitel}
+
+To reference a section, add a #sec- identifier to any heading. For example:
+@sec-referenzaufkapitel
+
+
+#### Include
+
+# To boldy go where no one gone before...
+<!-- Das nachfolgende "include" führt zu eine Warnung beim Compilieren: "Shortcode 'include' not found"-->
+<!--
++ {< include dateiname.qmd >}
+-->
+
+ICH BIN EIN TEXTBAUSTEIN IN DER DATEI "markdown.qmd"!
+
+Und hier geht es nach der Einbindung eines Includes, in dem ebenfalls ein weiteres Include eingebunden wird,  einfach weiter! Quarto hat den Test bestanden, wenn das am Ende des Buches steht!
+
+#### Seitenbreite
+:::{.column-page}
+| Kriterium            | Lösung 1 | Lösung 2 | Lösung 3 | Lösung 4 |
+|----------------------|----------|----------|----------|----------|
+| Kriterium 1          |          |          |          |          |
+| Kriterium 2          |          |          |          |          |
+| Kriterium 3          |          |          |          |          |
+| Kriterium 4          |          |          |          |          |
+| Kriterium 5          |          |          |          |          |
+:::
+
+#### Seitenbreite
+:::{.column-screen}
+| Kriterium            | Lösung 1 | Lösung 2 | Lösung 3 | Lösung 4 |
+|----------------------|----------|----------|----------|----------|
+| Kriterium 1          |          |          |          |          |
+| Kriterium 2          |          |          |          |          |
+| Kriterium 3          |          |          |          |          |
+| Kriterium 4          |          |          |          |          |
+| Kriterium 5          |          |          |          |          |
+:::
+
+
+#### Seitenumbruch
+
+
+page 1
+
+{{< pagebreak >}}
+
+page 2
+
+
+#### Spalten
+
+
+::: columns
+::: {.column width="40%"}
+Spalte Links 40 Prozent breit
+:::
+
+::: {.column width="60%"}
+Spalte Rechts 60 Prozent breit
+:::
+:::
+
+#### Zentrieren
+
+<p style="text-align: center;">Dieser Text ist zentriert</p>
+
+
+
+#### Shareable Link und Literaturverweis
+<!-- -------------------------------------------------------------------------
+
+                       Sharable Link (Springer Verlag)
+
+-------------------------------------------------------------------------- -->
+::: {.callout-tip}
+## Weiterführender Sharable-Link (Springer-Verlag)
+@forster_einfuhrung_2023: [Einteilung der Fertigungsverfahren nach DIN 8580](https://rdcu.be/dHab8) 
+:::
+
+
+::: {.callout-tip collapse=true}
+## Literaturempfehlung (Springer-Verlag)
+![@gerlach_computerphysik_2024: [Computerphysik](https://link.springer.com/book/10.1007/978-3-662-69347-6)](images/Gerlach_Computerphysik_978-3-662-69347-6.webp){width=20%}
+:::
+
+<!-- Zwischenspeicher -->
+
+```{mermaid}
+%%| label: fig-label-mmddin8580
+%%| fig-cap: "Hauptgruppen der Fertigungsverfahren nach DIN 8580"
+flowchart LR
+  A[Hauptgruppen] --> B[Urformen]
+  A --> C[Umformen]
+  A --> D[Trennen]
+  A --> E[Fügen]
+  A --> F[Beschichten]
+  A --> G[Stoffeigenschaften ändern]
+ ```
+
+<!--
+%%| fig-width: 6.4
+-->

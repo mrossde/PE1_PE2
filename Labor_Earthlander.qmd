@@ -1,0 +1,355 @@
+---
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Labor 
+  - Earthlander
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: true
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+---
+
+<!--
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+-->
+
+<!-- 
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Labor "Earthlander"
+
+-------------------------------------------------------------------------- -->
+
+# Labor "Earthlander"
+
+<!--
+![Earthlander (Quelle: [Adobe Firefly](https://www.adobe.com/de/products/firefly.html))](images/LabEarthlander.jpg){width=64% #fig-labflyer}
+-->
+
+![Labor Earthlander (Quelle: Marie-Madlen Kühnel)](images/Earthlander01.png){width=60% #fig-labflyer01}
+
+## Prolog
+
+---
+
+> *"No flying machine will ever fly from New York to Paris … [because] no known motor can run at the requisite speed for four days without stopping."* (Orville Wright, c. 1908)
+
+> *"If it doesn't work, it doesn't matter how fast it doesn't work."* (Quelle: Unbekannt)
+
+---
+
+<!-- Quotes
+"Weeks of coding can save you hours of planning." [Programming wisdom, Unknown] 
+"So much complexity in software comes from trying to make one thing do two things." [Ryan Singer] 
+"You haven't mastered a tool until you understand when it should not be used." [Kelsey Hightower] 
+-->
+
+
+
+
+
+<!--
+Anders‘ ToDo: Das verfügbare Material und alle relevanten „Spielregeln“ für den Earthlander sind präzise zu definieren!!! 
+
+Vorschlag: Insgesamt stehen jedem Projektteam ein Pack mit sechs Eiern zur Verfügung. Maßgeblich ist der vom Projektteam vorab als „Landeversuch“ vorab deklarierte Versuch! Ein Basisset des für den Earthlander nutzbaren Materials wird vorgegeben. Sollten Gruppen weitere Materialien benötigen können diese nach Rücksprache ggf. zusätzlich verwendet werden.
+
+Idee von Fabian: Bei Entwicklungstests und der „realen“ Landung z.B. Datenaufnehmer (z.B. Beschleunigungssensoren) mit integrieren (à Möglichkeit, durch Erfassung der Beschleunigung beim Testing (Fall- und Aufschlagtest) gezielt das Design des Earthlanders zu optimieren).
+
+Anmerkung: Es gibt nicht „DEN“ einen richtigen Projektplan, noch gibt es „DEN“ einen richtigen Earthlander. Beispielsweise kann diskutiert werden, wie viele Kapazitäten in Forschung zur Stabilität von Eiern investiert werden, und ob mehrere Konzepte von Landern parallel verfolgt werden.
+-->
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Einstimmung "7 Minutes to Mars"
+
+-------------------------------------------------------------------------- -->
+## Einstimmung *"7 Minutes to Mars"*
+
+<!--
+Landung des Rovers Perseverance auf dem Mars (18. Februar 2021):
+
+{{< video https://youtu.be/M4tdMR5HLtg>}}
+-->
+
+<p style="text-align: center;">![](images/7_Minutes_to_Mars.png){width=100%}</p>
+
++ Link *"7 Minutes to Mars"*: <https://youtu.be/M4tdMR5HLtg>
+
+Weitere Videos zur Landung: 
+
++ Link *"Perseverance Rover’s Descent and Touchdown on Mars (onboard camera views)"*: <https://youtu.be/4czjS9h4Fpg> 
+
++ Link *"NASA's Mars 2020 Perseverance Rover Landing Animations"*: <https://youtu.be/rzmd7RouGrM>
+
++ Link *"Preparing to Land Perseverance"*: <https://youtu.be/v7iUb_wDHxk>
+
+![Mars Perseverance Sol 2: Parachute Up-Look Camera (Quelle: [NASA](https://mars.nasa.gov/mars2020/multimedia/raw-images/EAF_0002_0667110220_972ECV_N0010052EDLC00002_0010LUJ01)).](images/Mars_Perseverance.png){width=64% #fig-perseverancemarsrover}
+
+<!--
+
+> *"First, I believe that this nation should commit itself to achieving the goal, before this decade is out, of landing a man on the moon and returning him safely to the earth. No single space project in this period will be more impressive to mankind, or more important for the long-range exploration of space; and none will be so difficult or expensive to accomplish. We propose to accelerate the development of the appropriate lunar space craft. We propose to develop alternate liquid and solid fuel boosters, much larger than any now being developed, until certain which is superior. We propose additional funds for other engine development and for unmanned explorations--explorations which are particularly important for one purpose which this nation will never overlook: the survival of the man who first makes this daring flight. But in a very real sense, it will not be one man going to the moon--if we make this judgment affirmatively, it will be an entire nation. For all of us must work to put him there." (J.F. Kennedy, 25.05.1961)*
+
+> *"We choose to go to the moon. We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard." (J.F. Kennedy, 12.09.1962)*
+
+-->
+
+![NASA’s Perseverance Mars rover took this selfie, made up of 62 individual images, on July 23. A rock nicknamed “Cheyava Falls,” which has features that may bear on the question of whether the Red Planet was long ago home to microscopic life, is to the left of the rover near the center of the image. (Quelle: [NASA/JPL-Caltech/MSSS](https://science.nasa.gov/resource/perseverances-selfie-with-cheyava-falls/))](images/pia26344-perseverance-selfie-at-cheyava_2024x1454.jpg){width=64% #fig-nasaperseverance}
+
+
+**Weiterführende Links**
+
++ [NASA Mars 2020 Mission Perseverance Rover](https://mars.nasa.gov/mars2020)
+
++ [NASA Mars 1997 Mission Pathfinder Rover](https://science.nasa.gov/mission/mars-pathfinder/)
+
+---
+
+"Testing leads to failure, and failure leads to understanding." [Burt Rutan] 
+
+---
+
+![Test das [Airbaglandesystems](https://de.wikipedia.org/wiki/Airbaglandesystem) des NASA Marsrovers [Pathfinder](https://science.nasa.gov/mission/mars-pathfinder/). *"Pathfinder used an innovative method of directly entering the Martian atmosphere, assisted by a parachute to slow its descent through the thin Martian atmosphere and a giant system of airbags to cushion the impact. It was the first time this airbag technique had been used. At a speed of 31 mph (14 meters per second) and measuring 19 feet (5.8 meters) in diameter, Pathfinder bounced like a giant beach ball about 15 times, as high as 50 feet (15 meters), before coming to rest 2 1/2 minutes later about six-tenths of a mile (1 kilometer) from the point of initial impact."* (Quelle: [NASA](https://science.nasa.gov/mission/mars-pathfinder/))](images/Airbaglandesystem_Pathfinder.jpg){width=64% #fig-airbaglandesystem}
+
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       CALLOUT LERNZIELE
+
+-------------------------------------------------------------------------- -->
+## Lernziele des Labors "Earthlander"
+
+::: { .callout-important}
+## Wann waren wir erfolgreich?
+*"Der Erfolg des Labors bemisst sich daran, wieviel wir lernen."* 
+:::
+
+::: { .callout-tip}
+## Lernziele des Labors
+- Einen 'echten' Produktentstehungsprozess selbst gestalten und ganzheitlich erleben.
+- Die drei wichtigsten Phasen im Produktentwicklungsprozess erleben und verstehen.
+- Grundlagen des Projektmanagements selbst anwenden.
+- Wichtige Dokumente jedes Produktentstehungsprozesses selbst erstellen.
+- Gemeinsam im Team Spaß haben, viel Lernen, Erfolge feiern und eine gute Zeit haben!
+:::
+
+---
+
+> *"You're unlikely to discover something new without a lot of practice on old stuff, but further, you should get a heck of a lot of fun out of working out funny relations and interesting things."* ([Richard P. Feynman](https://de.wikipedia.org/wiki/Richard_Feynman))
+
+---
+
+<!--
+![Earthlander - Symbolbild Landungsphase (Quelle: [Adobe Firefly](https://www.adobe.com/de/products/firefly.html))](images/LabEarthLandung.jpg){width=60% #fig-labflyerlandung}
+-->
+
+![Labor Earthlander (Quelle: Marie-Madlen Kühnel)](images/Earthlander02.png){width=60% #fig-labflyer02}
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Gantt-Diagramm zum Labor "Earthlander"
+
+-------------------------------------------------------------------------- -->
+## Zeitlicher Ablauf des Labors "Earthlander" {#sec-ganttearthlander}
+
+- Für das Labor "Earthlander" und die damit verbundenen Übungen stehen 2 Laboreinheiten zu je 6 mal 45 Minuten (insg. 540 Minuten = 9 h) zur Verfügung.
+
+
+```{mermaid}
+%%| fig-width: 6.4
+%%| label: fig-label-labearthlander
+%%| fig-cap: "Gantt-Diagramm zum Labor Earthlander (2x6x45 Minuten)"
+gantt
+title Gantt-Diagramm zum Labor Earthlander (2x6x45 Minuten)
+    dateFormat HH:mm
+    axisFormat %H:%M
+
+    section  Teil 1/2
+    START Labor "Earthlander" Teil 1/2 (T = +00h00min) : milestone, m1, 00:00, 0m
+
+    Vorstellung Projekt "Earthlander" : a1, after m1, 30m
+    START Projektphase (T = +00h30min) : milestone, m5, after a1, 0m
+    Ideenfindung und Konzept + Entwurf und Entwicklung : a2, after a1, 240m
+
+    section  Pause
+    ENDE Teil 1/2 - Vorlesung - Start Teil 2/2 : milestone, m2, 04:30, 0m
+
+    section  Teil 2/2
+    Entwurf und Entwicklung + Prototyping und Test : b1, after m2, 225m
+    Landung und Aufräumen : b2, after b1, 15m
+    DEADLINE Abgabe Projektdokumentation + ENDE Projektphase (T = +08h30min): crit, milestone, m3, 08:30, 0m
+    Learnings & Feedbackrunde : b3, after b2, 30m
+    
+    ENDE Labor "Earthlander" Teil 2/2 (T = +09h00min): milestone, m4, 09:00, 0m
+```
+
+<!-- -------------------------------------------------------------------------
+
+                       CALLOUT MISSIONS-STATEMENT
+
+-------------------------------------------------------------------------- -->
+## Mission-Statement zum "Earthlander"
+
+::: { .callout-note}
+## Mission-Statement zum "Earthlander"
+*"Ihre Aufgabe ist es, ein rohes Ei^[Hühnerei, im folgenden abkürzend stets nur als "Ei" bezeichnet] mittels freiem Fall aus dem obersten Stockwerk im Lichthof des Geb. G 04 der Hochschule Esslingen erfolgreich auf der Fläche des Erdgeschosses an einem vorgegebenen Punkt zu landen."*
+:::
+
+## Spielregeln zum "Earthlander"
+
+::: { .callout-note}
+## Spielregeln zum "Earthlander" - Bitte aufmerksam lesen!!!"
+
++ Gewonnen hat die Projektgruppe, die das rohe Ei erfolgreich aus dem obersten Stockwerk des Geb. G 04 landet **UND** dem markierten Landepunkt am nächsten kommt **UND** innerhalb der für das Labor vorgesehen Zeit auch wieder aufräumt!
++ Zeitfenster der Landung öffnet sich ab Laborzeit T = +08h15min (siehe → Gantt-Diagramm @sec-ganttearthlander). 
++ Als Merkmal für eine erfolgreiche Landung gilt, dass keine Flüssigkeit in einem Zeitraum von mindestens 5 Minuten nach den Landung aus dem Inneren des Ei austritt. Auch gilt eine zu frühe oder zu späte Landung als Misserfolg.
++ Für das Labor verwenden wir handelsübliche Eier der Größe M (53...63 Gramm). Mögliche Schwankungen bei der Beschaffenheit der Eier, insbesondere der Beschaffenheit der Schale, sind von Ihrem Dozenten leider nicht zu beeinflussen und daher bei der Produktentwicklung durch die Projektteams zu berücksichtigen.
++ Der Start des Landeversuchs wird durch einen oder mehrere Mitarbeitende der jeweiligen Projektgruppe durchgeführt.
++ Es ist nur **ein einziger bewerteter Landeversuch** für jede Projektgruppe zulässig. Der Landeversuch und der von der Projektgruppe festgelegte Startpunkt **muss im Vorfeld bei der Laborleitung angemeldet werden**. Zu Testzwecken können jedoch beliebig viele Landungen durchgeführt werden.
++ Zur Entwicklung, Bau und Test des Earthlanders und dessen Werkstoffen, Produktionsprozessen und Baugruppen dürfen alle an der Hochschule verfügbaren Materialien und Werkzeuge **"in haushaltsüblichen Mengen"** verwendet werden. Bitte achten Sie darauf die Hochschule nicht zu verwüsten und arbeitsfähig zu halten! Bitte bei der Beschaffung von Materialien, die nicht allgemeinverfügbar sind (z.B. Luftpolsterfolien) vorab des konstruktive Gespräch mit den für die Materialien Verantwortlichen führen! **Fair-Play und gutes Miteinander is key!!!** 
++ Für Ideenfindung, Konzeptentwurf, Entwurf und Entwicklung des Earthlanders stellt die Laborleitung in Teil 1 des Labors für jede Projektgruppe drei gekochte Eier zur Verfügung.
++ Für Entwurf und Entwicklung, Prototyping, Test und Landung des Earthlanders stellt die Laborleitung in Teil 2 des Labors für jede Projektgruppe sechs Eier zur Verfügung. Die gewünschte Beschaffenheit der in Teil 2 beigestellten Eier kann durch die Projektgruppen bestimmt werden (Optionen sind roh und gekocht (10 Min)).
++ Zur Beschaffung von an der Hochschule nicht verfügbaren Materialien und Werkzeugen erhält jede Projektgruppe von Projektauftraggeber ein Projektbudget von 10 €. Dieses Projektbudget darf nicht überschritten werden!
++ Die Aufteilung der verfügbaren Zeit an den beiden Labortagen obliegt - ab Durchschreiten des Meilensteins "START Projektphase" (geplant bei T = +00h30min) und bis zum Durchschreiten des Meilensteins ENDE Projektphase (geplant bei T = +08h30min) - der freien Gestaltung durch die Projektgruppen (siehe → Gantt-Diagramm @sec-ganttearthlander).
+:::
+
+::: { .callout-important}
+## Fair-Play is key!!!
+- Bitte verzichten Sie darauf, über das verfügbare Projektbudget hinaus weitere (private) Mittel einzusetzen. 
+- Bitte verzichten Sie auch darauf, in der Zeit zwischen den zwei Labortagen an dem Projekt "Earthlander" zu arbeiten. 
+- Bitte verzichten Sie darauf, zwischen den Labortagen externe Beratungs- und Unterstützungsleistung durch Familie, Freunde, Bekannte für das Projekt "Earthlander" zu akquirieren.
+:::
+
+Das Labor lebt (wie auch alle realen Produktentstehungsprozesse) davon, dass Zeit und Ressourcen endlich und das verfügbare Wissen begrenzt ist. Es steht Ihnen jedoch mit den zwei Labortagen und dem an der Hochschule vorhandenen Material hinreichend Zeit und Ressourcen zur Verfügung um eine erfolgreich Landung tatsächlich zu schaffen - gute Arbeit von Ihrer Seite aus vorausgesetzt!
+
+::: { .callout-important}
+## Wichtig! Gilt an beiden Labortragen (und eigentlich immer): Bei Fragen bitte immer fragen!
+*"Haben Sie Fragen? Bitte fragen Sie!!!"*
+:::
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Einführung in das Labor "Earthlander"
+
+-------------------------------------------------------------------------- -->
+
+## Aufgaben Labor "Earthlander" Teil 1/2
+
+::: { .callout-note}
+## Aufgaben Labor "Earthlander" Teil 1/2
+
+**a)** Erarbeiten Sie eine Projektorganisation. Bestimmen Sie die Projektleitung (aka Ansprechpartner*in Ihrer Projektgruppe) gegenüber dem Auftraggeber des Projekts (aka Laborleitung).
+
+**b)** Erstellen Sie einen Projektplan (inkl. Zeit- und Ressourcenplanung) in Form eines Gantt-Diagramms (z.B. in Mermaid, Powerpoint, Excel). Legen Sie Ihre AKV (*"Wer macht was?*") anhand der von Ihnen gewählten Projektorganisation und des von Ihnen erarbeiteten Projektplans fest. Stellen Sie den Projektplan und die von Ihnen gewählte Projektorganisation dem Auftraggeber des Projekts vor. Archivieren Sie Projektplan, Projektorganisation und AKV. Nach Freigabe des Projektplans erhält die Projektleitung die Freigabe des Projektbudgets.
+
+**c)** Erarbeiten Sie ein Lastenheft für den Earthlander und halten Sie die aus Ihrer Sicht wichtigsten Punkte schriftlich fest. Archivieren Sie das Lastenheft.
+
+**d)** Entscheiden Sie sich für die Vorgehensweise zum Produktentstehungsprozess (Wasserfallmodell oder V-Modell). Erarbeiten Sie ein erstes technisches Konzept des Earthlanders und legen Sie die konkreten durchzuführenden Entwicklungs- und Produktionsschritte sowie die für Komponenten- und Produkttests vorgesehenen Aktivitäten fest. Falls möglich erarbeiten Sie verschiedenen Lösungsoptionen für jede der verschiedenen einzelnen Herausforderung. Führen Sie erste Entwicklungsarbeiten zum Nachweis der Prinziptauglichkeit durch und dokumentieren Sie die durchgeführten Aktivitäten und die erzielten Ergebnisse. Aktualisieren Sie den Projektplan falls erforderlich oder für die Arbeit in der Projektgruppe hilfreich. Denken Sie daran den ggf. geänderten Projektplan ebenfalls zu archivieren!
+
+**e)** Bewerten Sie die erarbeiteten Lösungsoptionen mit Bewertungsmatrizen und treffen Sie eine Auswahl. Mit diesem Schritt legen Sie das finale technische Konzept Ihres Earthlanders fest. Stellen Sie das von Ihnen ausgewählte Konzept dem Projektauftraggeber vor und Dokumentieren Sie das Konzept in Form einer kurzen Produktdokumentation. Archivieren Sie Produktdokumentation und die Bewertungsmatrizen um Ihre Entscheidungen später bewerten zu können. 
+
+**f)** Definieren Sie, welche Maßnahmen zur Sicherstellung der Konzepttauglichkeit der ausgewählten Lösungsansätze Sie ergreifen wollen und welche Entwicklungsarbeiten und Ressourcen Sie für das Testing aufwenden wollen. Halten Sie dies schriftlich fest und archivieren Sie diese Unterlagen.
+
+**g)** Legen Sie die Budgetplanung schriftlich fest ("Priorisierte Einkaufsliste") und bestimmen Sie den oder die für die Beschaffung Verantwortliche. Archivieren Sie auch diese Unterlagen.
+:::
+
+<!--
+Anders‘ Vorschlag für einen Baustein oder ein Thema für ein Labor: Morphologischer Kasten für den „Earthlander“. Kompatibilitätsmatrix ebenfalls erstellen. Variante A (Ambitioniert) und Variante B (Sicher) erarbeiten und bewerten.
+
+- Teilaufgabe: Erarbeiten Sie eine erste technische Skizze erarbeiten Sie eine eine Elevator-Speach (180 Sekunden), um mit Ihrer Projektidee beim Management überzeugen.
+
+- Teilaufgabe: Erarbeiten Sie einen Projektplan (inkl. Zeit- und Ressourcenplanung) und weisen Sie jedem Mitwirkendem des Projektteams AKV zu. Legen Sie besonderen Wert auf das Festlegen des Verhältnisses zwischen Verteilung von Ressourcen für Entwicklung und für Tests. (siehe agiles Vorgehen beim SpaceX Starship vs. NASA SLS). Legen Sie die das Design sowie die konkreten durchzuführenden Entwicklungs- und Produktionsschritte fest. Definieren Sie, welche Maßnahmen zur Qualitätssicherheit sie ergreifen wollen!
+
+- Teilaufgabe: Bewerten Sie die verschiedenen Lösungsoptionen für einzelne funktionale Module des Earthlanders anhand eines Morphologischen Kastens. Erarbeiten Sie hierzu die erforderlichen technischen Lösungen und erwerben Sie das erforderliche Wissen, um die Teillösungen hinsichtlich ihrer Eigenschaften, Vor- und Nachteile bewerten zu können.
+
+- Erarbeiten Sie auf Basis des Morphologischen Kastens eine hochleistungsvariante (potenziell hohe performance bei gleichzeitig höherem Risiko) und eine „sichere“ Variante („Plan B“). Dokumentieren Sie die zwei Varianten in Form einer geeigneten Dokumentation, so dass potenziell ein Ihnen unbekanntes Projektteam die zwei von Ihnen erarbeiteten Earthlander nachempfinden kann.
+-->
+
+
+
+<!--
+![Earthlander - Symbolbild Flugphase (Quelle: [Adobe Firefly](https://www.adobe.com/de/products/firefly.html))](images/LabEarthFlug.jpg){width=64% #fig-labflyerflug}
+-->
+
+![Labor Earthlander (Quelle: Marie-Madlen Kühnel)](images/Earthlander03.png){width=60% #fig-labflyer03}
+
+
+## Aufgaben Labor "Earthlander" Teil 2/2
+
+::: { .callout-note}
+## Aufgaben Labor "Earthlander" Teil 2/2
+**h)** Treiben Sie die Entwurfs- und Entwicklungsphase voran, bauen Sie Prototypen für Komponenten und/oder Systemtests auf, führen Sie alle notwendigen Tests und falls erforderlich Optimierungen durch. Dokumentieren Sie alle aus Ihrer Sicht relevanten (Zwischen-)Ergebnisse und abgeleitete Maßnahmen und archivieren Sie diese für die spätere Projektdokumentation.
+
+**i)** Melden Sie bei der Laborleitung spätestens 10 Minuten vor der geplanten Landung Ihren Landezeitpunkt an. Der Landezeitpunkt muss im dafür vorgesehenen Zeitfenster liegen (siehe → Gantt-Diagramm @sec-ganttearthlander).
+
+**j)** Führen Sie die Landung durch und dokumentieren Sie diese! ***Viel Erfolg!!!***
+
+**k)** Räumen Sie auf und sein Sie rechtzeitig zur Feedbackrunde bei T = +08h30min in Raum G1.004 zurück!
+
+**l)** Stellen Sie die im Laufe des Labors von Ihnen erarbeiteten Dokumente zum Projektmanagement, Ideenfindung und Konzeptentwicklung, Entwurf- und Entwicklung, Prototyping und Test sowie der Landung zu einer Projektdokumentation zusammen. Bitte senden Sie diese Projektdokumentation an Ihren Dozenten. 
+:::
+
+## Bewertung Labor "Earthlander"
+
+
+<p style="text-align: center;">![](images/AdobeStock_589506892.png){width=24%}</p>
+
+::: { .callout-important}
+## ACHTUNG!!! DEADLINE!!! Wann gilt das Labor als bestanden?
+Das Labor gilt als bestanden wenn die **Projektdokumentation** bis zum (**ACHTUNG!!! DEADLINE!!!**) **ENDE Projektphase (T = +08h30min)** bei Ihrem Dozenten ([christian.anders@hs-esslingen.de](mailto:christian.anders@hs-esslingen.de)) eingegangen ist und die in der Aufgabenstellung aufgeführten Dokumente in angemessener fachlicher Tiefe und angemessenem Umfang enthält. Hinsichtlich angemessener fachlicher Tiefe und angemessenem Umfang gilt die Einschätzung Ihres Dozenten als maßgeblich. Sollte Ihre Projektdokumention eine Größe von >10 MB aufweisen nutzen Sie bitte ein geeignetes Transfertool, z.B. [wetransfer](https://wetransfer.com/). Vielen Dank!
+:::
+
+<p style="text-align: center;">![](images/AdobeStock_589506892.png){width=24%}</p>
+
+---
+
+> *"It doesn't matter how beautiful your theory is, it doesn't matter how smart you are. If it doesn't agree with experiment, it's wrong." ([Richard P. Feynman](https://de.wikipedia.org/wiki/Richard_Feynman))*
+
+---

@@ -1,0 +1,135 @@
+---
+title: "DEB3 Produktentwicklung 1"
+resource-path: ["../images"]
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    - Dr.-Ing.
+    - Dipl.-Phys.
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+---
+
+<!--
+resource-path: ["c:/temp/images/"]
+resource-path: ["../images"]
+resource-path: ["images"]
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Inhalt dieses Dokuments
+
+-------------------------------------------------------------------------- -->
+
+# Ebene 1
+## Ebene 2
+### Ebene 3
+#### Ebene 4
+##### Ebene 5
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+![Logo von ChatGPT](images/ChatGPT_Logo_640x640.png){width=20% #fig-logochatgpt1}
+![Logo von ChatGPT](ChatGPT_Logo_640x640.png){width=20% #fig-logochatgpt2}
+
+:::{.column-page}
+| Kriterium            | Lösung 1 | Lösung 2 | Lösung 3 | Lösung 4 |
+|----------------------|----------|----------|----------|----------|
+| Kriterium 1          |          |          |          |          |
+| Kriterium 2          |          |          |          |          |
+| Kriterium 3          |          |          |          |          |
+| Kriterium 4          |          |          |          |          |
+| Kriterium 5          |          |          |          |          |
+: Beispieltabelle  {#tbl-tabelle .striped .hover .bordered tbl-colwidths="[40,20,20,20,20]"}
+:::
+
+
+![Drawio Testbild](test.drawio.svg)
+
+::: columns
+::: {.column width="40%"}
+Spalte Links 40 Prozent breit
+:::
+
+::: {.column width="60%"}
+Spalte Rechts 60 Prozent breit
+:::
+:::
+
+<!--
+![Deming-Zyklus](images/Deming_Zyklus.png){width=54% #fig-demingzyklus}
+-->
+
+
+<!--
+::: {.callout-important}
+## Vorgehen der statistischen Prozesslenkung
+*"Verringere zuerst die Streuung des Prozesses und optimiere danach den Mittelwert des Prozesses!"*
+:::
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Sharable-Links und Literatur
+
+-------------------------------------------------------------------------- -->
+<!--
+**Weiterführende Links** (Wikipedia):
+
++ [Alt text](https://de.wikipedia.org/wiki/W%C3%B6hlerversuch)
+-->
+
+<!--
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
+
++ @jakoby_qualitatsmanagement_2022: [Elementare QM-Methoden](https://rdcu.be/dIy3K)
+
+:::
+
+## Literaturempfehlung
+
+![@jakoby_qualitatsmanagement_2022: [Qualitätsmanagement für Ingenieure](https://link.springer.com/book/10.1007/978-3-658-36677-3)](images/Jakoby_Qualitaetsmanagement.webp){width=40%}
+-->

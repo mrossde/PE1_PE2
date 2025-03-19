@@ -1,0 +1,130 @@
+---
+title: "MTB3 Entwicklung mechatronischer Systeme 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung *"Entwicklungsmethodik mechatronischer Systeme 1"* für den Studiengang Mechatronik MTB3 im Sommersemester 2024
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Skriptum zur Vorlesung SS2024
+
+-------------------------------------------------------------------------- -->
+
+![](images/blank.png){width=8%}
+{{< include Abbildung_Flammarion1888.qmd >}}
+![](images/blank.png){width=8%}
+
+# Grundlagen
+## Technische Grundlagen
+    {{< include SI-Einheiten.qmd >}}
+    {{< include DIN8580.qmd >}}
+
+## Methodische Grundlagen
+    {{< include Vision-Strategie-Ziele.qmd >}}
+    {{< include SMART.qmd >}}
+
+## Projektmanagement
+    {{< include Projekt.qmd >}}
+    {{< include Gantt.qmd >}}
+    {{< include Kritischer_Pfad.qmd >}}
+    {{< include Meilenstein.qmd >}}
+    {{< include Projektmanagement_Magisches_Dreieck.qmd >}}
+    {{< include Projektmanagement_Reporting.qmd >}}
+    {{< include Controlling.qmd >}}
+    {{< include Zielhierarchie.qmd >}}
+    {{< include Projektmanagement_Haertegradlogik.qmd >}}
+
+
+# Ideenfindung und Konzeptentwicklung
+## Methodische Grundlagen
+    {{< include Produkt.qmd >}}
+    {{< include Modelle_zum_Produktentstehungsprozess.qmd >}}
+    {{< include Technology_Hype_Cycle.qmd >}}
+## Konzeptentwicklung und Entscheidungsfindung
+    {{< include Lasten-_und_Pflichtenheft.qmd >}}
+    {{< include Produktdokumentation.qmd >}}
+    {{< include Mindmap.qmd >}}
+    {{< include Bewertungsmatrix.qmd >}}
+    {{< include Prinzip-_Konzept_und_Serientauglichkeit.qmd >}}
+  {{< include Modularisierung.qmd >}}
+  {{< include Simultaneous_Engineering.qmd >}}
+
+
+# Entwurfs- und Entwicklungsphase
+  {{< include PWT.qmd >}}
+  {{< include Reverse_Engineering.qmd >}}
+  {{< include Simulation.qmd >}}
+  {{< include FEM.qmd >}} 
+  {{< include 3DMaster.qmd >}}
+  {{< include Betriebsfestigkeit.qmd >}}
+## NVH
+    {{< include NVH.qmd >}}
+## Kostenbeeinflussung im Produktentstehungsprozess
+    {{< include Kosten_im_Produktentstehungsprozess.qmd >}}
+    {{< include Rule-of-10.qmd >}}
+    {{< include PPG.qmd >}}
+
+
+# Prototyping und Test
+## Testing
+    {{< include Statistische_Versuchsplanung_DoE.qmd >}}
+  {{< include Umweltqualifizierung.qmd >}}
+  {{< include Rissprüfung.qmd >}}
+{{< include Qualitaet.qmd >}}
+
+
+# Produktionsplanung und Produktion
+## Lean Production
+    {{< include Toyota_Produktionssystem.qmd >}}
+    {{< include TQM.qmd >}}
+    {{< include Kaizen.qmd >}}
+    {{< include JIT-JIS.qmd >}}
+    {{< include Kanban.qmd >}}
+
+
+# Softskills
+  {{< include Softskills.qmd >}}
+  {{< include Team.qmd >}}
+  {{< include Die_fünf_Hüte_einer_Führungskraft.qmd >}}
+  {{< include Vier_Formen_Des_Kapitals.qmd >}}
+  {{< include Verhalten_als_Ware.qmd >}}
+  {{< include Johari-Fenster.qmd >}}
+  {{< include Eisenhower-Prinzip.qmd >}}
+
+
+# Literatur
+  {{< include Literatur.qmd >}}
+

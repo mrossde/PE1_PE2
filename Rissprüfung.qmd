@@ -1,0 +1,168 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Verfahren zur Rissprüfung an Werkstoffen
+
+-------------------------------------------------------------------------- -->
+
+![Magnetic filed fluorescent test (Quelle: Adobe Stock).](images/AdobeStock_579032939.jpeg){width=80% #fig-symbolbildrisspruefung}
+
+### Zerstörungsfreie Verfahren zur Rissprüfung
+
+Die zerstörungsfreie Werkstoffprüfung ist ein unverzichtbarer Baustein der Überwachung von Fertigungsprozessen. Durch die effiziente Leistung ist die zerstörungsfreie Prüfung (ZfP), auch bekannt als ‘Non Destructive Testing’ (NDT), inzwischen unverzichtbar bei der umfassenden Prozesskontrolle. Zudem ist es in vielen Branchen nicht mehr ausreichend, nur die geometrische Dimension einer Komponente zu prüfen. Denn an Bauteile im anspruchsvollen Dauereinsatz werden zunehmend höhere Anforderungen gestellt. Daher sind weitaus umfangreichere Prüfungen notwendig, um die entsprechenden Eigenschaften über die Einsatzdauer hinweg nachzuweisen.
+
+Es gibt viele sicherheitskritische Anwendungen beziehungsweise große wirtschaftliche Folgeschäden, wo Bauteile versagen oder ihre Anforderungen nicht erfüllen. Daher werden zum Beispiel im Automobilbereich, aber auch in vielen anderen Branchen Normen definiert. Diese stellen sicher, dass sicherheitsrelevante Bauteile während des Herstellungsprozesses und vor dem Einbau eingehend kontrolliert werden, oftmals in einer 100%-Prüfung.
+
+Die gängigsten Fehlerarten, die bei einer Oberflächenprüfung gefunden werden sollen, sind:
+
++ Risse
++ Lunker
++ Dellen
++ Schleifbrand
++ Hard Spots
++ Soft Spots (*"Weichfleckigkeit"*)
++ Magnetische Einschlüsse (Remanenzen)
+
+Eines der wichtigsten Herausforderungen bei der Erkennung von Fehlern im Bauteil sind Risse in der Materialoberfläche. Auch kleinste Risse, die zunächst kein Problem darstellen, können sich durch eine dauerhafte wechselnde Belastung vergrößern und schließlich zum Versagen des Bauteils führen (siehe → Betriebsfestigkeit). 
+
+
+Für die Prüfung von Bauteilen auf bestehende Fehler gibt es viele unterschiedliche Methoden. Hierbei werden zwei Herangehensweisen voneinander unterschieden:
+
+1. **Zerstörende Prüfungen**
+2. **Zerstörungsfreie Prüfungen**
+
+Bauteile aus Chargen, die später weiterverkauft und verbaut werden, können prinzipiell nur stichprobenartig zerstörend geprüft werden. Mit zunehmendem Prüfbedarf steigen die Kosten des durch die Prüfung verursachten Ausschusses. Somit ist  eine vollständige Prüfung methodenbedingt ausgeschlossen.
+
+![Zerstörende Prüfung (Quelle: [Adobe Stock](https://stock.adobe.com/)).](images/AdobeStock_726583211.jpeg){width=64% #fig-zerstoerendepruefung}
+
+Daher hat sich das Gebiet der zerstörungsfreien Prüfung entwickelt. Je nach Prüfaufgabe stehen unterschiedliche Methoden zur Verfügung. Wesentliche Einflussfaktoren sind das Prüfmaterial, die Größe, das Fehlerbild und die Prüfaufgabe, sowie die geforderte Taktzeit und das verfügbare Budget. 
+
++ Sichtprüfung 
++ Farbeindringprüfung
++ Magnetpulverprüfung
++ Wirbelstromprüfung 
++ Thermographische Prüfungen 
++ Ultraschallprüfung
++ Röntgen und Röntgen-CT
+
+![Zerstörungsfreie Rissprüfung einer Schweißnaht mittels Magnetpulververfahren (Quelle: [Adobe Stock](https://stock.adobe.com/)).](images/AdobeStock_586547062.jpeg){width=64% #fig-zerstoerungsfreiepruefung}
+
+::: {.callout-warning}
+Bei Sichtprüfung, Farbeindringprüfung und Magnetpulverprüfung handelt es sich um subjektiven Methode. Die Prüfergebnisse sind stark von der Erfahrung und subjektiven Bewertung des Prüfenden abhängig. Eine Vergleichbarkeit von Prüfergebnissen ist nicht gegeben. Die Zuverlässigkeit und Wiederholbarkeit der Erkennung von Rissen kann stark variieren.
+:::
+
+
+#### Rissprüfung mit Sichtprüfung
+
+Bei der Sichtprüfung werden oberflächenbezogene Qualitätsmerkmale, wie Gestaltabweichungen, Fehler oder die Oberflächenbeschaffenheit eines Bauteils, mit dem bloßen Auge oder unter Nutzung optischer Hilfsmittel (zum Beispiel Lupen, Mikroskope oder Endoskope) gesichtet und bewertet. 
+
+![Sichtprüfung mit Endoskop (Quelle: Adobe Stock).](images/AdobeStock_316268455.jpeg){width=64% #fig-sichtpruefung}
+
+Vor allen anderen zerstörenden und zerstörungsfreien Prüfmethoden wird bei einer umfassenden Prüfung zunächst die Sichtprüfung durchgeführt. Sie kommt bei verschiedenen Produktformen nach vorgegebenen Prüfanweisungen zum Einsatz. Umgesetzt wird das Prüfverfahren als direkte und indirekte Sichtprüfung im Rahmen der Fertigungsüberwachung, Inspektion und Schadensuntersuchung von Komponenten, Anlagen oder sonstigen Prüfgegenständen.
+
+
+#### Rissprüfung mit Farbeindringprüfung
+
+Zu den weiteren zerstörungsfreien Prüfverfahren von Materialoberflächen zählt die Farbeindringprüfung. Grundlage des Verfahrens ist die Kapillarwirkung. Hierbei wird der Eindringvorgang als visueller Nachweis von Oberflächenfehlern, wie Risse oder Poren, genutzt. Das Verfahren wird hauptsächlich bei Metallen eingesetzt. Bei entsprechender Eignung kann die Farbeindringprüfung auch Fehlstellen an Kunststoffen und Keramik aufzeigen. 
+
+![Riss in einem Bauteil, sichtbar gemacht mittels Farbeindringprüfung](images/Rissbildung.webp){width=64% #fig-riss}
+
+
+#### Rissprüfung mit Magnetpulverprüfanlagen
+
+Die vermutlich älteste Methode, Risse in Materialien zu finden, ist die Magnetpulverprüfung. Bei diesem Verfahren werden ferromagnetische Bauteile aufmagnetisiert und mit einem magnetischen Pulver besprüht. Fehlstellen im Prüfteil reagieren dabei anders auf die Aufmagnetisierung. An diesen Stellen tritt das Magnetfeld stärker an die Oberfläche und entsprechend besser kann das magnetische Pulver anhaften. Durch die Beimengung fluoreszierenden Materials in das Magnetpulver „leuchten“ die Fehlstellen unter bestimmten Lichtbedingungen anders als nicht betroffene Gebiete (siehe @fig-magnetpulverriss).
+
+![Magnetic particle inspection or magnetic particle testing. It is a nondestructive examination (NDE) technique used to detect surface and slightly subsurface flaws in most ferromagnetic materials (Quelle: Adobe Stock).](images/AdobeStock_793303395.jpeg){width=64% #fig-magnetpulverriss}
+
+::: {.callout-warning}
+Die Anlagen für eine Magnetpulverprüfung lassen sich nur sehr aufwändig automatisieren. Das Prüfverfahren ist daher nur sinnvoll, wenn die Stückzahl der Prüflinge nicht zu groß ist. Zudem besteht nach der Prüfung ein hoher Reinigungsaufwand der Bauteile, da das magnetische Pulver am Prüfteil haften bleibt.
+:::
+
+
+#### Rissprüfung mit Wirbelstrom
+
+Für die Oberflächenprüfung leitfähiger Werkstücke hat sich das Wirbelstromverfahren (Englisch: „eddy current testing“; kurz ECT) als Prüfverfahren etabliert. 
+
+![Wirbelstromprüfung eines Bauteils](images/Wirbelstrompruefung.jpg){width=64% #fig-wirbelstrom}
+
+Beim Wirbelstromverfahren enthält die Prüfsonde eine Erregerspule (Primärspule) und eine Differenzspule (Sekundärspule). Die Prüfsonde wird über die Oberfläche des Bauteils bewegt. Die dabei mit Rissen einhergehende Änderung des Signals der Sekundärspule wird erfasst und ausgewertet. 
+
+Da die Eindringtiefe bei Wirbelstromprüfungen von der verwendeten Frequenz abhängt stößt dieses Prüfverfahren bei Rissen oder Materialanomalien, die sich im Inneren eines Prüfkörpers befinden, rasch an seine Grenzen. Typische Fehlertiefen, die mit dem Wirbelstromverfahren detektiert werden können, bewegen sich im Bereich von 30 µm bis 1 mm.
+
+
+#### Rissprüfung mit Thermographie
+
+Die Rissprüfung mittels Thermographie nimmt bei industriellen Anwendung stetig zu. Die thermographische Rissprüfung wird normalerweise mit dem Impuls-Thermographieverfahren oder dem LockIn-Thermographieverfahren durchgeführt. Dabei wird das Bauteil mit einer Energiequelle (zum Beispiel per Induktion, optisch über Lampen oder Laser) in kurzen Impulsen lokal aufgeheizt. Die Oberfläche wird mit einer Thermographiekamera erfasst. 
+
+Risse und andere lokale Unterschiede an der Oberfläche reagieren unterschiedlich auf die eingebrachte Wärme. Ein Riss speichert weniger Wärme und hebt sich im Thermographiebild deutlich von seiner Umgebung ab. Auch zeigen die unterschiedlichen Wärmequellen unterschiedliche Effekte auf. Wird zum Beispiel ein leitfähiges Bauteil mit einem Induktor angeregt, findet an den Spitzen eines Risses eine stärkere Aufwärmung statt, als an anderen Stellen des Prüfteils. Die Wirbelströme haben sich hier verdichten und der Wärmeeintrag fällt höher aus.
+
+Der große Vorteil des Thermographieverfahrens bei der Rissprüfung  ist, dass die Bauteile in ihrer Größe und Geometrie einen hohen Freiheitsgrad haben können. Zudem kann das Verfahren bei nichtleitenden Bauteilen angewendet werden. Die Thermographie ist zudem relativ stabil gegenüber Umgebungseinflüssen. 
+
+::: {.callout-tip}
+Die Thermographie eignet sich neben der Rissprüfung auch zur Prüfung der Kontaktierung elektrischer Bauteile, z.B. im Automotive-Bereich zur zerstörungsfreien Prüfung der Kontaktierung von Hochvoltbatterien und von Elektromotoren. 
+:::
+
+![Electrical infrared thermography (Quelle: Adobe Stock).](images/AdobeStock_207230921.jpeg){width=64% #fig-thermographie}
+
+
+#### Rissprüfung mit Ultraschall
+
+Das Ultraschallverfahren eignet sich, um Bauteile bis in die Tiefe zu prüfen. Mit dem Verfahren kann jegliche Art von Materialien komplett „durchleuchtet“ werden. Dazu wird ein Messkopf mit Ultraschallsender und Empfänger auf das Prüfteil aufgesetzt. Der im Messkopf erzeugte Ultraschall wird durch ein Koppelmedium, meist eine Gel, in das Prüfteil übertragen. Eine gute Kopplung ist wichtig für eine effektive Prüfung. 
+
+![Non-Destructive Testing(NDT) of welding with process Ultrasonic testing (UT) (Quelle: Adobe Stock).](images/AdobeStock_118129878.jpeg){width=64% #fig-ultraschallriss}
+
+Der Ultraschall durchdringt den Prüfkörper und es entstehen Echos der Ultraschallwellen durch Reflexionen an der Rückwand. Fehlstellen, wie Risse oder Einschlüsse, führen zu einer zusätzlichen Reflexion des Ultraschalls. Diese werden im Prüfkopf erfasst. Die Art und Größe der Reflexionen lassen Rückschlüsse zu, wo sich die gefundene Anomalie im Prüfkörper befindet.
+
+
+#### Röntgen und Röntgen-CT
+
+Röntgen- und Röntgencomputertomographie (CT)-Scans ermöglichen die interne Darstellung eines Objekts, indem sie Röntgenstrahlen durch das Bauteil senden und die Dichteunterschiede in hoher räumlicher Auflösung erfassen. 
+
+Aufgrund der für die Anschaffung und den Betrieb von Computertomographen hohen Kosten ist der Einsatz dieser Geräte in der Regel großen oder auf diese Prüftechnik spezialisierten Unternehmen vorbehalten.
+
+<!--
+![X-ray inspection of welded seams of pipes (Quelle: Adobe Stock).](images/AdobeStock_464135470.jpeg){width=64% #fig-roentgenriss}
+-->
+
+![X-ray of a monorail beam (Quelle: Adobe Stock).](images/AdobeStock_428312166.jpeg){width=64% #fig-roentgenmonorail}
+
+::: {.callout-warning}
+Die Genauigkeit von Röntgen-CT-Scannern erreicht bis zu 1 µm und ermöglicht damit auch das Erkennen feinster Strukturen des Produkts sowie Fehlern im Werkstoff, z.B. infolge von Unregelmäßigkeiten beim Gießprozess oder Verunreinigungen im eingesetzten Werkstoff. **Trotz der hohen Auflösung sind Röntgengeräte und Röntgen-CT zum Erkennen feinster Risse im Bauteil jedoch nicht geeignet!**
+:::
+
+
+**Weiterführende Links**
+
++ [Werkstoffprüfung (Wikipedia)](https://de.wikipedia.org/wiki/Werkstoffpr%C3%BCfung)
++ [ZEISS Industrielle CT- und Röntgensysteme](https://www.zeiss.de/messtechnik/produkte/systeme/computertomographie.html)
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
++ @bender_dubbel_2020: [Shareable Link](https://rdcu.be/dHTOv)
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+<!--
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+### Übersicht Eignung zerstörungsfreien Prüfverfahren
+
+![Übersicht der Eignung zerstörungsfreier Prüfverfahren. Legende: A = Best suitable, B = Kind of OK to use, C = Not so good, D = Not at all suitable)](images/Risspr%C3%BCfungsverfahren_Final.webp){width=100% #fig-verfahrenrisspruefung}
+
+

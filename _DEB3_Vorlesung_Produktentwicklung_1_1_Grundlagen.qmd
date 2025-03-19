@@ -1,0 +1,89 @@
+---
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Grundlagen
+  - SI-Einheiten
+  - DIN 8580 "Fertigungsverfahren"
+  - Vision-Strategie-Ziele
+  - SMART
+  - KPI
+  - Gantt-Diagramm
+  - Kritischer Pfad
+  - Meilensteine
+  - Magisches Dreieck des Projektmanagements
+  - Reporting
+  - Controlling
+  - Zielhierarchie
+  - Härtegradlogik
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+
+headlines:
+  off: true
+exercises:
+  solutions:
+  off: true
+worksheets:
+  off: true
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Skriptum zur Vorlesung WS2024/2025
+
+-------------------------------------------------------------------------- -->
+
+# Grundlagen
+  {{< include Grundlagen_Produktentwicklung.qmd >}}
+
+## Technische Grundlagen
+    {{< include SI-Einheiten.qmd >}}
+    {{< include Werkstofftechnik.qmd >}}
+    {{< include DIN8580.qmd >}}
+
+## Methodische Grundlagen
+    {{< include Vision-Strategie-Ziele.qmd >}}
+    {{< include SMART.qmd >}}
+
+## Projektmanagement
+    {{< include Projekt.qmd >}}
+    {{< include Gantt.qmd >}}
+    {{< include Kritischer_Pfad.qmd >}}
+    {{< include Meilenstein.qmd >}}
+    {{< include Projektmanagement_Magisches_Dreieck.qmd >}}
+    {{< include Projektmanagement_Reporting.qmd >}}
+    {{< include Controlling.qmd >}}
+    {{< include Zielhierarchie.qmd >}}
+    {{< include Projektmanagement_Haertegradlogik.qmd >}}

@@ -1,0 +1,203 @@
+---
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Prototyping und Test
+  - Anforderungen
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 3
+link-external-icon: true
+link-external-newwindow: true
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Anforderungen Testing
+
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Prototyping und Test
+## Testing
+:::
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Grundlegende Begriffe
+
+-------------------------------------------------------------------------- -->
+### Grundlegende Begriffe zum Projektmanagement (to be relocated)
+
+::: {.callout-tip}
+## Definition: *"Termin"*
+Ein [Termin](https://de.wikipedia.org/wiki/Termin) ist ein festgelegter **Zeitpunkt** in einem Zeitablauf und wird durch ein Kalenderdatum und häufig auch eine Uhrzeit festgelegt. Ein Termin hat **keine Dauer**.
+:::
+
+::: {.callout-tip}
+## Definition: *"Deadline"*
+Im Projektmanagement bezeichnet Deadline einen **verbindlicher Zeitpunkt**, bis zu dem eine Aktivität abgeschlossen sein **muss**. Deadlines dienen der **Zeitsteuerung** und stellen sicher, dass alle Aktivitäten des Projektes innerhalb eines festgelegten Zeitrahmens erfolgreich abgeschlossen werden.
+:::
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Grundlegende Begriffe
+
+-------------------------------------------------------------------------- -->
+### Grundlegende Begriffe
+
+::: {.callout-tip}
+## Definition: *"Teststrategie"*
+Eine [Teststrategie](https://de.wikipedia.org/wiki/Softwaretest#Teststrategie) ist ein übergeordneter **Plan**, der die **Vorgehensweise, Methoden und Ziele** für das Testen eines Produkts definiert. Die Teststrategie legt fest, **welche Testarten, Testumfänge, Werkzeuge und Qualitätskriterien** angewendet werden, um sicherzustellen, dass das Produkt die Anforderungen erfüllt und fehlerfrei funktioniert.  
+:::
+
+Die Teststrategie dient als **Richtlinie** für das Testteam und stellt sicher, dass die Tests effizient, nachvollziehbar und reproduzierbar durchgeführt werden. Sie umfasst typischerweise Aspekte wie **Testziele, Teststufen, Automatisierungsgrad, Testumgebungen, Risikobetrachtung** sowie **Dokumentation** und **Berichterstattung**.
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Anforderungen an Tests
+
+-------------------------------------------------------------------------- -->
+### Anforderungen an Tests {#sec-anforderungen_an_tests}
+
+Die folgende Mindmap fasst die **grundsätzlichen Anforderungen an Tests** in der Prototyping- und Testphase zusammen. Diese Anforderungen sind bei der Erarbeitung der Teststrategie zu berücksichtigen.
+
+```{mermaid}
+%%| label: fig-label-mmanforderungentests
+%%| fig-cap: "Mindmap wichtiger Anforderungen an Test in der Phase Prototyping und Test"
+mindmap
+  root(Anforderungen an Test)
+    (Automatisierbarkeit)
+    (Reproduzierbarkeit)
+    (Skalierbarkeit)
+    (Messbarkeit)
+    (Realitätsnähe)
+    (Nachvollziehbarkeit)
+    (Sicherheit)
+    (Effizienz)
+    (Modularität)
+    (Flexibilität)
+```
+
+
+
+
+
+<!--
+Automatisierbarkeit
+      - Skalierbarkeit
+      - Wiederholbarkeit
+    Reproduzierbarkeit
+      - Konsistente Ergebnisse
+      - Unabhängig von Testumgebung
+    Skalierbarkeit
+      - Tests auf verschiedene Produktversionen anwendbar
+      - Anpassbar für größere Testumfänge
+    Messbarkeit
+      - Klare Metriken und KPIs
+      - Objektive Bewertungskriterien
+    Realitätsnähe
+      - Simulation realer Nutzungsbedingungen
+      - Berücksichtigung von Störfaktoren
+    Nachvollziehbarkeit
+      - Detaillierte Dokumentation
+      - Klare Testprotokolle
+    Sicherheit
+      - Identifikation von Risiken
+      - Absicherung gegen Fehlfunktionen
+    Effizienz
+      - Schnelle Durchführung
+      - Minimaler Ressourcenverbrauch
+    Modularität
+      - Tests unabhängig voneinander durchführbar
+      - Austauschbarkeit einzelner Testkomponenten
+    Flexibilität
+      - Anpassbarkeit an sich ändernde Anforderungen
+      - Erweiterbarkeit für neue Funktionen
+-->
+
+
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       ab hier alter Textbaustein als Vorlage :-)
+
+-------------------------------------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+<!--
+::: {.callout-warning}
+## WARNING!
+**THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Automatisieren von Tests
+
+-------------------------------------------------------------------------- -->
+<!--
+### Automatisieren von Tests
+
+(siehe → Vorlesung **DEB5 Produktentwicklung 2**)
+-->
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+<!--
+::: {.callout-warning}
+## WARNING!
+**THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
+:::
+-->

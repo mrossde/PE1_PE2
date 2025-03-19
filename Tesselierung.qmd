@@ -1,0 +1,80 @@
+
+<!-- -------------------------------------------------------------------------
+
+                       CAD: Tesselierte Daten vs. Native Daten
+
+-------------------------------------------------------------------------- -->
+
+### CAD: Native vs. tesselierte Daten
+
+---
+
+*Author: Christian Anders*
+
+*Version: 2024-02-27*
+
+---
+
+
+<!-- -------------------------------------------------------------------------
+
+                       CAD: Tesselierte Daten vs. Native Daten
+
+-------------------------------------------------------------------------- -->
+
+::: {.callout-tip}
+## Definition: *"Definition von Begriffen"*
+Tesselierung bezeichnet den Prozess der Umwandlung von 3D-Modellen in eine Reihe diskreter, kleiner, homogener geometrischer Elemente wie Dreiecke oder Vierecke, die als Polygone bezeichnet werden. Diese Polygone bilden eine digitale Darstellung des 3D-Modells, die von Computern besser verarbeitet und dargestellt werden kann.
+:::
+
+
+
+Die Tesselierung ist ein wichtiger Schritt in der Computergrafik und im 3D-Design, da sie die Grundlage für die Darstellung von komplexen geometrischen Formen und Modellen auf Bildschirmen bildet. Durch die Zerlegung eines 3D-Modells in eine Menge von Polygonen wird die Darstellung und Manipulation des Modells in CAD-Software vereinfacht. Je feiner die Tesselierung, desto genauer und detaillierter ist die Darstellung des 3D-Modells, allerdings kann dies auch zu einer größeren Dateigröße führen.
+
+Die Tesselierung ist ein zentraler Aspekt bei der Erstellung von hochwertigen 3D-Modellen und spielt eine wichtige Rolle in verschiedenen Bereichen, darunter Architektur, Ingenieurwesen, Produktentwicklung und Animation.
+
+Die Rückumwandlung tesselierter Daten in native CAD-Daten wird auch als Reverse Engineering bezeichnet. Reverse Engineering bezieht sich auf den Prozess der Analyse eines vorhandenen Produkts oder einer bestehenden Komponente, um dessen Struktur, Funktion und Design zu verstehen und daraus ein neues CAD-Modell zu erstellen. **Der Begriff des Reverse Engineering wird darüber hinaus jedoch oftmals auch allgemeingültiger verstanden (siehe Abschnitt: Reverse Engineering).**
+
+Im Zusammenhang mit tesselierten Daten beinhaltet der Reverse-Engineering-Prozess typischerweise die Konvertierung von tesselierten, also in Polygonen dargestellten, 3D-Modellen zurück in das ursprüngliche CAD-Format. Dieser Vorgang erfordert spezialisierte Software und Techniken, um die tesselierten Daten zu analysieren, zu bereinigen und in ein präzises CAD-Modell zu konvertieren, das dann weiter bearbeitet und modifiziert werden kann.
+
+Reverse Engineering wird häufig in Bereichen wie Produktentwicklung, Fertigung, Ingenieurwesen und Architektur eingesetzt, um bestehende physische Objekte in CAD-Modelle umzuwandeln, die als Grundlage für Designänderungen, Reparaturen, Replikationen oder zur Integration in neue Produktentwicklungen dienen können.
+
+
+
+
+
+
+
+### Native vs. tesselierte CAD-Daten 
+
+Ein gewisse Vergleichbarkeit zur Tesselierung von CAD-Daten aus dem Bereich der Computergrafik und Bildverarbeitung ist die Umwandlung von Vektorgrafiken in Pixelgrafiken: Auch wenn in der Anwendung bei entfernter Betrachtung keine großen Unterschiede bestehen, offenbaren sich in der Arbeit mit den unterschielichen Datentypen erhebliche Unterschiede. Die verschiedenen Datentypen (Nativ vs. Tesseliert, Vektor vs. Pixel) haben dabei unterschiedliche Vor- und Nachteile; beide Datentypen besitzen daher eine Berechtigung und spezifische Anwendungen. Zur Bearbeitung der jeweiligen Datentypen existieren hochspezialisierte Programme, sowohl im CAD-Bereich als auch im Bereich der Computergrafik (z.B. Adobe Illustrator vs. Adobe Photoshop)
+
+Wie auch bei der Computergrafik, so unterscheidet sich die Verwendung von nativen CAD-Daten im Vergleich zu tesselierten CAD-Daten hinsichtlich der Darstellung und des Informationsgehalts von 3D-Modellen erheblich. Hauptunterschiede bestehen insbesondere hinsichtlich folgender Aspekte:
+
+
+1. **Native Daten**:
+
+- Originalformat: Native Daten beziehen sich auf das ursprüngliche Dateiformat, in dem ein 3D-Modell oder eine CAD-Zeichnung erstellt wurde. Dieses Format ist spezifisch für das verwendete CAD-System (z. B. Autodesk AutoCAD, SolidWorks, CATIA) und enthält alle detaillierten geometrischen und konstruktiven Informationen des Modells. 
+
+- Hoher Informationsgehalt: Native Daten enthalten umfassende Informationen über das Modell, einschließlich parametrischer Konstruktion, Materialien, Baugruppenstruktur, Toleranzen und mehr. Dies ermöglicht es, das Modell in seinem ursprünglichen Zustand zu bearbeiten und alle Konstruktionsdetails zu ändern.
+
+- Bearbeitbarkeit: Die Datensätze sind parametrisch aufgebaut und können bei nicht-destruktiver Arbeitsweise des Konstrukteurs ohne Qualitätsverlust zu jedem Zeitpunkt editiert werden. Mit nativen Daten können Änderungen und Anpassungen am Modell leicht vorgenommen werden, solange das entsprechende CAD-System zur Verfügung steht.
+
+- Große Dateigröße: Diesen Vorteilen steht eine oftmals große Datengröße als Nachteil gegenüber. Native CAD-Dateien haben oftmals größere Dateigrößen im Vergleich zu tesselierten Dateiformaten aufgrund ihrer detaillierten Informationen und Präzision. Die Visualisierung nativer CAD-Daten erfordert größere Leistung der Grafikkarten, da die nativen CAD-Daten zunächst für das Rendering aufbereitet (gleichsam in Echtzeit tesseliert) werden müssen.
+
+
+2. **Tesselierte Daten**:
+
+- Vereinfachte Darstellung: Tesselierte Daten sind eine vereinfachte (Netz-)Darstellung eines 3D-Modells, die aus einer Vielzahl von Dreiecken oder Polygonen besteht. Dieses Format wird häufig für die Visualisierung und Darstellung verwendet.
+
+- Geringerer Informationsgehalt: Tesselierte Daten enthalten nur Informationen über die äußere Form des Modells und repräsentieren nicht die Konstruktionsdetails oder parametrische Informationen, die im ursprünglichen Modell vorhanden sein können.
+
+- Kleine Dateigröße: Tesselierte Dateien sind oftmals kleiner als native CAD-Dateien aufgrund ihrer vereinfachten Struktur. Dies erleichtert den Datenaustausch und die Anzeige auf verschiedenen Plattformen und Geräten.
+
+- Begrenzte Bearbeitbarkeit: Im Allgemeinen sind tesselierte Daten schwerer zu bearbeiten und zu modifizieren als native Daten. Konstruktive Änderungen eines Produkts erfordern daher zumeist den Zugriff auf das ursprüngliche CAD-Modell.
+
+
+
+Die Wahl zwischen der Verwendung von nativen Daten und tesselierten Daten hängt von den spezifischen Anforderungen und Zwecken ab. Wenn es darum geht, das ursprüngliche 3D-Modell zu bearbeiten, es zu ändern oder weitere Konstruktionsarbeiten durchzuführen, sind native Daten unerlässlich. Auf der anderen Seite werden tesselierte Daten häufig in Anwendungen für die Visualisierung, Animation, Rapid Prototyping und den Datenaustausch verwendet, bei denen die präzise Konstruktion nicht erforderlich ist.
+
+In einigen Fällen ist es auch üblich, sowohl native als auch tesselierte Daten für verschiedene Zwecke in einem CAD-System zu verwenden, um die Vorteile beider Ansätze zu kombinieren.

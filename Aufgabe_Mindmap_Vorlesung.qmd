@@ -1,0 +1,113 @@
+---
+title: "DEB3 Produktentwicklung 1"
+resource-path: ["../images"]
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+keywords:
+  - Ideenfindung
+  - Mindmap
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+---
+<!-- 
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+
+<!-- -------------------------------------------------------------------------
+
+                       1. Vorlesung Aufgabe Mindmap Vorlesung
+
+-------------------------------------------------------------------------- -->
+
+<!--
+::: {.callout-caution}
+*"Wenn Du gerade keinen positiven Beitrag leisten kannst, dann stehe den anderen wenigstens nicht im Weg herum."*
+:::
+-->
+
+::: {#nte-vorlesung .callout-note}
+## Mindmap zur Vorlesung (Dauer 30-45 min)
+
+
+**a)** Sammeln und notieren Sie Ihre Erwartungen/Wünsche/Hoffnungen zu Inhalten, die in dieser Vorlesung aufgegriffen werden sollen.
+
+Vorgaben:
+
+- Nehmen Sie sich hierzu in Einzelarbeit 10 Minuten Zeit. Notieren Sie sich Ihre Gedanken auf einem Medium Ihrer Wahl. Bei Bedarf nutzen Sie gerne die nachfolgenden Leitfragen als Anschubhilfe für Ihre Gedanken!
+   
+Leitfragen:
+
+- Welche Inhalte bringen Sie spontan mit dem Begriff Produktentstehungsprozess in Verbindung?
+- Was wissen Sie bereits zur Entwicklungsmethodik von Produkten?
+- Welche Werkzeuge und Methoden, die bei der Produktentwicklung Verwendung finden, kennen Sie bereits? 
+- Welche eigenen Erfahrungen haben Sie bereits gemacht (z.B. aus Freizeit, Ferienjob, Werkstudententätigkeit, Lehre, Praktikum)? 
+- Wo erkennen Sie konkrete Lücken bei Ihrem Wissen und Fähigkeiten, die es zu schließen gilt?
+- Was macht Ihrer Meinung nach eine Produktentwicklung erfolgreich? Was könnte zum Scheitern von solchen Projekten führen?
+
+
+**b)** Erarbeiten Sie gemeinsam im Team eine Mindmap zur Vorlesung. Nutzen Sie die von Ihnen zuvor erarbeiteten Notizen und bringen Sie Ihre Gedanken bei der Gestaltung der Mindmap ein.
+
+Vorgaben:
+
+- Vorgesehen sind hierfür 15 Minuten Zeit. Sollten in dieser Zeit nicht alle Beiträge im Team vorgestellt und in die Mindmap eingearbeitet werden können erweitern Sie das Zeitfenster um maximal weitere 15 Minuten.
+- Nutzen Sie zur Erstellung der Mindmap ein Medium Ihrer Wahl (z.B. Flipchart, Whiteboard, Mermaid). Wichtig ist nicht das Medium sondern das Ergebnis. Wenn Sie kein digitales Medium verwenden, fotografieren Sie Ihre Mindmap zum Abschluss ab.
+
+
+**c)** Reflektieren Sie Ihre individuellen Eindrücke bei der Erstellung der Mindmap in der Gruppe.
+
+Vorgaben:
+
+- Nehmen Sie sich 5 Minuten Zeit. Wenn Sie in der Reflexionsphase keinen Wortbeitrag leisten möchten ist das auch okay!
+
+Leitfragen:
+
+- Wie ging es Ihnen dabei, Ihre Notizen in der Gruppe vorzutragen? 
+- Was hinderte Sie vielleicht daran, Ihre Gedanken in der Gruppe einzubringen?
+- Hat das Erarbeiten der Mindmap aus Ihrer Sicht Mehrwerte gebracht? 
+- Insgesamt betrachtete: Wie beurteilen Sie die erarbeitete Mindmap?
+:::
+
+Link zum → [Mermaid Live-Editor](https://mermaid.live/)
+
+``` r
+mindmap
+  root((Vorlesung))
+    Thema 1
+      Thema 1.1
+    
+    Thema 2
+
+    Thema 3
+```

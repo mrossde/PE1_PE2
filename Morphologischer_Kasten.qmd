@@ -1,0 +1,89 @@
+---
+title: "MTB3 Entwicklung mechatronischer Systeme 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    email: christian.anders@hs-esslingen.de
+    affiliations: Hochschule Esslingen
+date: last-modified
+toc: true
+number-sections: false
+scrollable: true
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+<!-- -------------------------------------------------------------------------
+
+                       Morphologischer Kasten
+
+-------------------------------------------------------------------------- -->
+
+
+
+### Morphologischer Kasten
+
+Kreativitätsmethode für komplexe Probleme • 1960 von Fritz Zwicky entwickelt • Einsatz in Bereichen wie Design, Ingenieurswesen, Architektur und Marketing • Der morphologische Kasten ist eine Tabelle aus: Zeilen repräsentieren die einzelnen Teilaspekte des Problems, die Spalten enthalten mögliche Lösungen und deren wichtigsten Vor- und Nahteile • Ziel: mögliche Lösungen für jeden Teilaspekt zu kombinieren um eine gesamtheitliche Lösung für das Problem zu finden Der morphologische Kasten ist ein mächtiges Werkzeug zur Lösung von komplexen Fragestellungen im Bereich der Produktentwicklung. Es erfordert jedoch Zeit und Sorgfalt bei der Erstellung der Tabelle und der Auswertung der Ergebnisse
+
+
+Der morphologische Kasten ist ein systematisches Kreativitätswerkzeug, das verwendet wird, um verschiedene Varianten von Komponenten, Eigenschaften oder Merkmalen eines Produkts, Systems oder einer Lösung zu generieren und zu organisieren. Er besteht aus einer Tabelle, die die einzelnen Merkmale oder Komponenten in separaten Spalten auflistet, während die möglichen Varianten oder Optionen für jedes Merkmal in den entsprechenden Zeilen aufgeführt werden. 
+
+Durch die systematische Kombination der verschiedenen Varianten können neue Ideen entwickelt werden, um Probleme zu lösen, Innovationen voranzutreiben oder neue Produkte zu entwerfen. Der morphologische Kasten fördert strukturiertes Denken, Kreativität und die Generierung vielfältiger Lösungsmöglichkeiten durch die Analyse und Kombination von verschiedenen Elementen.
+
+##### Beispiel: Morphologischen Kastens für die Gestaltung eines Autos:
+
+| Merkmal       | Option 1            | Option 2         | Option 3        |
+|---------------|---------------------|-------------------|-----------------|
+| Karosserie    | Limousine           | Kombi             | SUV             |
+| Antrieb       | Verbrennungsmotor   | Elektromotor      | Hybridantrieb   |
+| Farbe         | Rot                 | Blau              | Silber          |
+| Interieur     | Stoff               | Leder             | Alcantara       |
+| Ausstattung   | Klimaanlage         | Navigationssystem | Panorama-Dach   |
+
+: Morphologischer Kasten für die Gestaltung eines Autos.  {#tbl-mkauto .striped .hover .bordered tbl-colwidths="[25,25,25,25]"}
+
+In diesem Beispiel werden verschiedene Merkmale eines Autos aufgelistet, einschließlich der Karosserieform, des Antriebs, der Farbe, des Interieurs und der Ausstattung. Für jedes Merkmal werden mehrere Optionen aufgeführt, die kombiniert werden können, um verschiedene Varianten eines Autos zu erstellen.
+
+Durch die Kombination der verschiedenen Optionen aus jedem Merkmal können zahlreiche verschiedene Autos entworfen werden, wie z.B. eine Limousine mit Verbrennungsmotor, roter Farbe, Lederausstattung und Klimaanlage oder ein SUV mit Elektromotor, blauer Farbe, Alcantara-Interieur und Panorama-Dach.
+
+Natürlich, hier ist eine vereinfachte Kompatibilitätsmatrix, die auf dem vorherigen Beispiel des morphologischen Kastens für die Gestaltung eines Autos basiert:
+
+
+Die Kompatibilitätsmatrix zeigt, welche Kombinationen der einzelnen Optionen miteinander kompatibel sind, basierend auf praktischen oder technischen Einschränkungen oder Präferenzen. Hier ist eine einfache Darstellung:
+
+|                 | Limousine             | Kombi            | SUV            |
+|-----------------|-----------------------|------------------|----------------|
+| Verbrennungsmotor | Ja                    | Ja               | Ja             |
+| Elektromotor      | Ja                    | Ja               | Ja             |
+| Hybridantrieb     | Ja                    | Ja               | Ja             |
+| Rot               | Ja                    | Ja               | Ja             |
+| Blau              | Ja                    | Ja               | Ja             |
+| Silber            | Ja                    | Ja               | Ja             |
+| Stoff             | Ja                    | Ja               | Ja             |
+| Leder             | Ja                    | Ja               | Ja             |
+| Alcantara         | Ja                    | Ja               | Ja             |
+| Klimaanlage       | Ja                    | Ja               | Ja             |
+| Navigationssystem | Ja                    | Ja               | Ja             |
+| Panorama-Dach     | Ja                    | Ja               | Ja             |
+
+: Kompatibilitätsmatrix zum in @tbl-mkauto gezeigten morphologischen Kasten zur Gestaltung eines Autos.  {#tbl-kmauto .striped .hover .bordered tbl-colwidths="[25,25,25,25]"}
+
+Da es sich um ein vereinfachtes Beispiel handelt, sind alle Kombinationen in dieser Kompatibilitätsmatrix als kompatibel markiert. In der Praxis können jedoch bestimmte Kombinationen aufgrund von technischen Einschränkungen oder Designentscheidungen möglicherweise nicht möglich oder empfohlen sein.
+
+
+
+#### Leitfragen bei der Erstellung eines morphologischen Kastens
+
+Analog der Leifragen zur Bewertungsmatrix, mit folgenden Ergänzungen:
+
+2. **Optionen/Alternativen**: In der Praxis existiert in manchen Fällen nur eine Option, in Ausnahmefällen auch keine Option. Die 

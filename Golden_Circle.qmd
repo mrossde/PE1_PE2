@@ -1,0 +1,88 @@
+<!--
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Grundlagen
+  - Golder Circle
+  - Simon Sinek
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+<!--
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+
+::: {.content-visible unless-meta="headlines.off"}
+# Grundlagen
+:::
+### Golden Circle
+
+---
+
+> *"Why we work determines how well we work."* (Lindsay McGregor & Neel Dosh)
+
+---
+
+<!--
+::: {.callout-tip}
+## Definition: *"Golden Circle"*
+Der Golden Circle ist ein strategisches Modell für die Produktentwicklung, das den Fokus darauf legt, zunächst das **"Warum"** (den Zweck und die Vision des Produkts) zu definieren, dann das **"Wie"** (die einzigartigen Werte und Methoden der Umsetzung) zu bestimmen und erst zuletzt das **"Was"** (die konkreten Funktionen und Eigenschaften des Produkts) zu entwickeln.
+-->
+
+![The Golden Circle ([Simon Sinek](https://en.wikipedia.org/wiki/Simon_Sinek) [*"Start with Why"*](https://en.wikipedia.org/wiki/Start_with_Why))
+](images/Golden_Circle_reduced.drawio.svg){width=34% #fig-goldencircle}
+
+
+1. **Why/Warum:** Der Zweck. *"Warum wird getan, was getan wird?"*
+2. **How/Wie:** Das Vorgehen, der Prozess. *"Wie wird vorgegangen? Wie werden die Ziele erreicht?"*
+3. **What/Was:** Die Ergebnisse. Das Resultat aus dem *"Warum"*. *"Was wird entwickelt? Welche Ergebnisse stehen am Ende?"*
+
+
+---
+
+> *"Great salespeople always start with Who. Then they move to Why, What, and How. And then eventually to When, and How Much. ... Now once you get to the right Who, Simon Sinek is spot-on about beginning the conversation with Why. Why is a game-changer in selling modern technology."* (Ken Krogue)
+
+---

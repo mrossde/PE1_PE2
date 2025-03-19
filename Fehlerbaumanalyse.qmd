@@ -1,0 +1,55 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Fehlerbaumanalyse
+
+-------------------------------------------------------------------------- -->
+
+
+### [Fehlerbaumanalyse](https://de.wikipedia.org/wiki/Fehlerbaumanalyse) {#sec-fehlerbaumanalyse}
+
+Zu den Ursache-Wirkungs-Diagrammen zählen auch die Fehlerbäume. 
+
+Die Wirkung, deren Ursachen untersucht werden soll, ist hier ein Fehler. Wie der Name schon nahelegt, besitzt ein Fehlerbaum ebenfalls eine Baumstruktur. Allerdings verwendet er andere Symbole und erlaubt auch weitergehende Analysen, wie z. B. die Art der Verknüpfung von Ursachen oder die Wahrscheinlichkeit des Auftretens aufzunehmen.
+
+Die Herleitung eines Fehlerbaums erfolgt „top-down“, d. h. sie beginnt mit der Definition und Abgrenzung des zu untersuchenden Fehlers als „top“-Ereignis. Nicht jedes unerwünschte Ereignis muss als Fehler eingestuft werden. Nur wenn eine geforderte Produktfunktion nicht mehr erfüllt wird, liegt ein Fehler vor. Es muss daher festgelegt werden, welches Erscheinungsbild und welches Ausmaß ein unerwünschtes Ereignis zu einem Fehler macht.
+
+Nach der Fehlerdefinition werden wie bei einem → Ishikawa-Diagramm (@sec-ishikawa) Ereignisse gesucht, die zum Auftrete des Fehlers beitragen. Statt aber diese Ursachen nur aufzuzählen und begrifflich zu sortieren, wird zusätzlich untersucht, welche Verknüpfungen schädlicher Ereignisse zum betrachteten Fehler führen. 
+
+Es können drei Arten von Verknüpfungen auftreten: Verkettungen, Konjunktionen und Disjunktionen.
+
+Bei einer Verkettung wird ein Fehler durch eine Kette aufeinander folgende Ereignisse verursacht. Derartige Wirkungsketten werden z. B. durch die → 5-Why-Methode (@sec-5why) aufgedeckt. Bei disjunktiv verknüpften (ver-oderten) Ereignissen, tritt der Fehler auf, sobald eines der Ereignisse eingetreten ist. Bei konjunktiv verknüpften (ver-undeten) Ereignissen entsteht der Fehler nur dann, wenn alle verursachenden Ereignisse auftreten. 
+
+Die Ergebnisse der qualitativen Analyse möglicher Ereignisse und deren Verknüpfungen werden in graphischer Form dargestellt. Ein Beispiel für eine solche Fehlerbaumanalyse zeigt @fig-fehlerbaumdiagramm.
+
+![Fehlerbaum für das Entstehen eines Feuers (Quelle: @jakoby_qualitatsmanagement_2022)](images/479391_2_De_2_Fig20_HTML.png){width=90% #fig-fehlerbaumdiagramm}
+
+Die verwendeten Symbole und auch die Vorgehensweise zur Erstellung und Analyse der Fehlerbäume sind in der Norm DIN EN 61025 beschrieben. In rechteckigen Feldern werden die Bezeichnungen bzw. Kommentare für die Ereignisse dargestellt. Die Ereignisse werden über Linien miteinander verbunden, bei denen sequentielle Ketten oder nebeneinanderliegende Konjunktionen und Disjunktionen darstellbar sind. Konjunktiv verknüpfte Ursachen ("&") müssen alle vorliegen, damit es zu einem Fehler kommt. Bei dem in @fig-fehlerbaumdiagramm dargestellten Beispiel tritt ein Feuer nur dann auf, wenn sowohl ein Brennstoff, Sauerstoff und eine Wärmequelle vorhanden sind. Bei disjunktiv verknüpften Ursachen ("≥"), genügt es, wenn eine einzige Ursache vorliegt (z.B. mechanische Reibung oder elektrische Energie als Wärmequelle). 
+
+Des Weiteren werden in den Fehlerbäumen durch Kreise Basis-Ereignisse beschrieben, die nicht weiter untersucht werden und als Dreiecke die Transfer-Ereignisse, die von anderen Fehlerbäumen kommen oder zu diesen hinführen.
+
+Aufbauend auf der Darstellung als Fehlerbaum können die Fehler auch quantitativ analysiert werden. Im Mittelpunkt steht hierbei die Berechnung der Fehlerauftrittswahrscheinlichkeit.
+
+<!--
+**Weiterführende Links** (Wikipedia):
+
++ [Alt text](https://de.wikipedia.org/wiki/W%C3%B6hlerversuch)
+-->
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
++ @jakoby_qualitatsmanagement_2022: [Elementare QM-Methoden](https://rdcu.be/dIy3K)
+:::
+
+<!--
+#### Literaturempfehlung
+
+![@jakoby_qualitatsmanagement_2022: [Qualitätsmanagement für Ingenieure](https://link.springer.com/book/10.1007/978-3-658-36677-3)](images/Jakoby_Qualitaetsmanagement.webp){width=40%}
+-->

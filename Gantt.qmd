@@ -1,0 +1,396 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+
+<!--
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Übungsaufgabe zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Übungsaufgabe
+  - Gantt-Diagramm
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       GANTT-Diagramme
+
+-------------------------------------------------------------------------- -->
+
+### Gantt-Diagramme {#sec-gantt}
+
+#### Historischer Hintergrund von Gantt-Diagrammen
+
+::: {.callout-tip}
+## Definition: *"Gantt-Diagramm"*
+Ein Gantt-Diagramm, auch als Gantt-Chart bezeichnet, ist ein horizontaler Balkenplan, der im Projektmanagement verwendet wird, um den Zeitplan von Aktivitäten und den Fortschritt eines Projekts grafisch darzustellen. Es zeigt den Zeitrahmen, die Dauer und die Abhängigkeiten von Aufgaben in einem Projekt. 
+:::
+
+Benannt ist das Diagramm nach einem der Pioniere des wissenschaftlichen Managements, Henry Gantt (1861-1919), einem amerikanischen Ingenieur und Managementberater, der als Pionier im Bereich des wissenschaftlichen Managements bekannt ist. Henry Gantt war Mitglied der American Society of Mechanical Engineers (ASME) und wurde posthum in die International Hall of Fame of Production and Operations Management aufgenommen. 
+
+![Henry Gantt (1916)](images/HenryGantt1916.jpg){width=30% #fig-henrygantt}
+
+Um 1910 entwickelte er das nach ihm benannte Gantt-Diagramm, das heute aus dem Projektmanagement nicht mehr wegzudenken ist. 
+
+Henry Gantt entwickelte das Diagramm als er als Ingenieur und Berater in verschiedenen Industrien arbeitete. Das Gantt-Diagramm fand jedoch erst einige Jahre später während des Ersten Weltkriegs weite Verbreitung und kam zunächst insbesondere in der Rüstungsproduktion zur Anwendung. Es wurde hauptsächlich verwendet, um die Fortschritte bei der Produktion von Rüstungsgütern zu verfolgen und zu planen.
+
+Das Gantt-Diagramm revolutionierte das Projektmanagement und wurde zu einem der wichtigsten Instrument zur Visualisierung von Zeitplänen, zur Überwachung des Projektfortschritts und zur Optimierung von Produktentstehungsprozessen. Gantt trug damit maßgeblich zur Entwicklung von Managementprinzipien bei, die die Grundlage für moderne Managementansätze bilden und die Effizienz und Produktivität in vielen Branchen verbessert haben. 
+
+Gantt-Diagramme erscheinen uns heute einfach und selbstverständlich, können in ihrer Bedeutung für das Projektmanagement aber nicht überschätzt werden.
+
+
+#### Aufbau von Gantt-Diagrammen
+
+Ein Gantt-Diagramm ist eine visuelle Darstellung eines Projektzeitplans. Es bietet eine übersichtliche und strukturierte Methode, um Aktivitäten, deren Dauer und deren Abhängigkeiten im Rahmen eines Projekts zu planen, zu organisieren und zu verfolgen.
+
+Jedes Gantt-Diagramm besteht aus einer horizontalen Zeitachse, die den gesamten Projektablauf oder den Ablauf einer Projektphase repräsentiert, und untereinander angeordneten horizontalen Balken, die die einzelnen Aufgaben oder Aktivitäten darstellen. Meilensteine werden als Rauten dargestellt.
+
+Die Balken im Gantt-Diagramm repräsentieren die verschiedenen Aktivitäten oder Aufgaben des Projekts. Die Länge der Balken entspricht der geplanten Dauer der jeweiligen Aktivität, während ihre Position auf der Zeitachse den geplanten Start- und Endzeitpunkt angibt. Durch eine Farbcodierung oder andere visuelle Kennzeichnungen kann der Status jeder Aufgabe angezeigt werden, ob sie beispielsweise noch aussteht, in Bearbeitung ist oder abgeschlossen wurde. 
+
+Ein Beispiel für ein einfaches Gantt-Diagramm zeigt @fig-label-gntbsp01 .
+
+<!-- 
+ACHTUNG!!! Mermaid-Grafiken zum Gantt-Diagramm werden in der Quarto-Preview nicht dargestellt, erscheinen nach dem Compilieren aber im Dokument. Zur Vorschau der Gantt-Charts sei auf den Mermaid-Live-Editor verwiesen
+-->
+```{mermaid}
+%%| fig-width: 6.4
+%%| label: fig-label-gntbsp01
+%%| fig-cap: "Gantt-Diagramm der Phasen zum Produktentstehungsprozess eines Papierfliegers"
+gantt
+title Gantt-Diagramms der Phasen zum Produktentstehungsprozess eines Papierfliegers
+    dateFormat HH:mm
+    axisFormat %H:%M
+    Start : milestone, m1, 00:00, 0m
+    Idee  : a1, after m1, 5m
+    Konzept : a2, after a1, 10m
+    Entwicklung : a3, after a2, 15m
+    Prototyp: a4, after a3, 5m
+    Test: a5, after a4, 1m
+    Ende : milestone, m2, after a5, 0m
+```
+
+<!--
+Die dem Gantt-Diagramm zugrundeliegende Logik kann dem nachfolgenden [Mermaid](https://mermaid.js.org/)-Code entnommen werden, in dem Typ ("milestone"), Startbedingung ("after") und Dauer (# min) zur Erzeugung des Gantt-Diagramms verwendet werden. Mit diesen Angaben ist das Gantt-Diagramm vollständig beschrieben. Wird keine Angabe gemacht werden als Standardwerte bei Status "active" (daneben möglich: "done" und "crit") und Typ "action" verwendet.
+
+``` r
+title Gantt-Diagramm der Phasen zum Produktentstehungsprozess eines Papierfliegers
+    dateFormat HH:mm
+    axisFormat %H:%M
+    Start : milestone, m1, 00:00, 0m
+    Idee  : a1, after m1, 5m
+    Konzept : a2, after a1, 10m
+    Entwicklung : a3, after a2, 15m
+    Prototyp: a4, after a3, 5m
+    Test: a5, after a4, 1m
+    Ende : milestone, m2, after a5, 0m
+```
+-->
+Ein Gantt-Diagramm erleichtert die Visualisierung des Projektzeitplans, die Überwachung des Fortschritts, die Identifizierung von Engpässen und die Anpassung von Zeitplänen. Es ist ein unverzichtbares Werkzeug für das Projektmanagement, um den Überblick über komplexe Projekte zu behalten und sicherzustellen, dass das Projekt innerhalb des geplanten Zeitrahmens abgeschlossen wird.
+
+Zusätzlich zu den Balken können in einem Gantt-Diagramm auch Abhängigkeiten zwischen den Aktivitäten dargestellt werden. Das bedeutet, dass bestimmte Aktivitäten erst begonnen werden können, wenn andere Aktivitäten abgeschlossen sind. Die Abhängigkeiten werden oftmals durch Pfeile oder Verbindungen zwischen den entsprechenden Balken dargestellt^[Nicht alle als Freeware oder kommerzielle Produkte verfügbare Softwarewerkzeuge unterstützen jede der hier genannten Optionen zur Visualisierung und Darstellung von Abhängigkeiten. So kann z.B. [Mermaid](https://mermaid.js.org/) die Abhängigkeiten zwischen den Aktivitäten nicht darstellen.].
+
+<!--
+```{mermaid}
+%%| fig-width: 6.4
+%%| label: fig-label-gntbeispiel01
+%%| fig-cap: "Gantt-Diagramm eines fiktiven Projekts zur Produktentwicklung"
+gantt
+    title Projektplan
+
+    section Konzept
+    Projektstart :milestone, m0, 2024-02-01, 0d
+    Aufgabe 1 :a1, 2024-02-01, 30d
+    Aufgabe 2 :a2, after a1 , 20d
+    Meilenstein 1 :milestone, m1, 2024-03-15, Meilenstein 1 erreicht
+
+    section Entwicklung
+    Aufgabe 3 :2024-03-01, 25d
+    Aufgabe 4 :a4, after a3 , 15d
+    Meilenstein 2 :milestone, m2, 2024-04-10, Meilenstein 2 erreicht
+
+    section Prototyp
+    Aufgabe 5 :2024-04-01 , 30d
+    Aufgabe 6 :a6, after a5 , 20d
+    Meilenstein 3 :milestone, m3, 2024-05-15, Meilenstein 3 erreicht
+
+    section Serie
+    Aufgabe 7 :a7, 2024-05-10, 25d
+    Aufgabe 8 :a8, after a7 , 20d
+    Projektende :milestone, m4, 2024-07-05, Meilenstein 4 erreicht
+```
+
+
+```{mermaid}
+%%| fig-width: 6.4
+%%| label: fig-label-gntbeispiel02
+%%| fig-cap: "Gantt-Diagramm mit Kennzeichnung des Projektfortschritts"
+gantt
+    title Gantt-Diagramm mit Kennzeichnung des Projektfortschritts
+    Start     :done, milestone, m1, 2024-03-30, 0d
+    Aufgabe 1 :done, a1, after m1, 3d
+    Aufgabe 2 :active, a2, after a1, 4d
+    Aufgabe 3 :active, a3, after a2, 1d
+    Ende      :active, milestone, m2, after a3, 0d
+```
+-->
+
+Gantt-Diagramme finden als selbstverständliche Werkzeuge auch Einsatz im Bereich der Softwareentwicklung (siehe z.B. → @fig-label-gntmermaid).
+
+```{mermaid}
+%%| fig-width: 6.4
+%%| label: fig-label-gntmermaid
+%%| fig-cap: "Gantt-Diagramm eines Softwareprojekts (Quelle: [Mermaid](https://mermaid.js.org/syntax/gantt.html)). Der → kritische Pfad ist rot gekennzeichnet."
+gantt
+    dateFormat  YYYY-MM-DD
+    title       Adding Gantt diagram functionality to mermaid
+    excludes    weekends
+    %% (`excludes` accepts specific dates in YYYY-MM-DD format, days of the week ("sunday") or "weekends", but not the word "weekdays".)
+
+    section A section
+    Completed task            :done,    des1, 2014-01-06,2014-01-08
+    Active task               :active,  des2, 2014-01-09, 3d
+    Future task               :         des3, after des2, 5d
+    Future task2              :         des4, after des3, 5d
+
+    section Critical tasks
+    Completed task in the critical line :crit, done, 2014-01-06,24h
+    Implement parser and jison          :crit, active, after des1, 2d
+    Create tests for parser             :crit, active, 3d
+    Future task in critical line        :crit, 5d
+    Create tests for renderer           :crit, 2d
+    Add to mermaid                      :crit, 1d
+    Functionality added                 :crit, milestone, 2014-01-25, 0d
+
+    section Documentation
+    Describe gantt syntax               :active, a1, after des1, 3d
+    Add gantt diagram to demo page      :after a1  , 20h
+    Add another diagram to demo page    :doc1, after a1  , 48h
+
+    section Last section
+    Describe gantt syntax               :after doc1, 3d
+    Add gantt diagram to demo page      :20h
+    Add another diagram to demo page    :48h
+```
+
+<!--
+Geneigte Studierende, die den Aufbau des @fig-label-gntmermaid dargestellten Gantt-Diagramm nachvollziehen möchten, seien auf den nachfolgenden [Mermaid](https://mermaid.js.org/)-Code des Diagramms verwiesen:
+
+``` r
+    dateFormat  YYYY-MM-DD
+    title       Adding Gantt diagram functionality to mermaid
+    excludes    weekends
+    %% (`excludes` accepts specific dates in YYYY-MM-DD format, days of the week ("sunday") or "weekends", but not the word "weekdays".)
+
+    section A section
+    Completed task            :done,    des1, 2014-01-06,2014-01-08
+    Active task               :active,  des2, 2014-01-09, 3d
+    Future task               :         des3, after des2, 5d
+    Future task2              :         des4, after des3, 5d
+
+    section Critical tasks
+    Completed task in the critical line :crit, done, 2014-01-06,24h
+    Implement parser and jison          :crit, active, after des1, 2d
+    Create tests for parser             :crit, active, 3d
+    Future task in critical line        :crit, 5d
+    Create tests for renderer           :crit, 2d
+    Add to mermaid                      :crit, 1d
+    Functionality added                 :crit, milestone, 2014-01-25, 0d
+
+    section Documentation
+    Describe gantt syntax               :active, a1, after des1, 3d
+    Add gantt diagram to demo page      :after a1  , 20h
+    Add another diagram to demo page    :doc1, after a1  , 48h
+
+    section Last section
+    Describe gantt syntax               :after doc1, 3d
+    Add gantt diagram to demo page      :20h
+    Add another diagram to demo page    :48h
+```
+-->
+#### Vorteile von Gantt-Diagrammen
+
+Gantt-Diagramme bietet eine Vielzahl von Vorteilen, darunter:
+
+1. **Übersichtliche Darstellung des Projektzeitplans**: Es ermöglicht Projektmanagement und Mitarbeitenden im Projektteam, den gesamten Projektablauf auf einen Blick zu erfassen und zu verstehen.
+2. **Identifizierung von Engpässen und Verzögerungen**: Durch die Visualisierung von Abhängigkeiten und Zeitrahmen können potenzielle Engpässe und Verzögerungen im Projekt frühzeitig identifiziert und rechtzeitig angegangen werden.
+3. **Ressourcenplanung**: Mit einem Gantt-Diagramm können Ressourcen wie Personal oder Materialien den entsprechenden Aktivitäten zugeordnet werden, um sicherzustellen, dass sie zur richtigen Zeit verfügbar sind.
+
+::: {.callout-warning}
+Die Kapazität- und Ressourcenplanung ist eine eigenständige Aufgabe im Projektmanagement, die Parallel und in engster Abstimmung mit der Erstellung des Gantt-Diagramms jeden Projektes durchgeführt werden muss und wie auch das Gantt-Diagramm entlang des Projektfortschritts ständiger Aktualisierung bedarf!
+:::
+
+4. **Kommunikation und Zusammenarbeit**: Ein Gantt-Diagramm dient als Kommunikationsmittel, um den Projektstatus und den Fortschritt mit dem Projektteam, dem Management und ggf. auch dem Kunden zu teilen und zu diskutieren.
+
+Es gibt verschiedene Projektmanagement-Software und Tools, die die Erstellung und Aktualisierung von Gantt-Diagrammen erleichtern, z.B. [Microsoft Project](https://de.wikipedia.org/wiki/Microsoft_Project). Diese Tools bieten oftmals  zusätzliche Funktionen wie Ressourcenmanagement, Aufgabenzuweisung, Fortschrittsverfolgung und Berichterstellung, um den Projektfortschritt effektiv zu verwalten.
+
+
+#### Parallelisierung von Aktivitäten
+
+@fig-label-gntflyer02 zeigt beispielhaft ein Gantt-Diagramm der Projektphase Prototyp und Test eines Papierfliegers.
+
+```{mermaid}
+%%| fig-width: 6.4
+%%| label: fig-label-gntflyer02
+%%| fig-cap: "Gantt-Diagramm der Projektphasen zum Prototyp und Test des Papierfliegers"
+gantt
+title Gantt-Diagramm der Projektphase zum Prototyp und Test
+    dateFormat HH:mm
+    axisFormat %H:%M    
+
+    Start Projektphase Prototyp und Test : milestone, m1, 00:00, 0m
+
+    section Beschaffung
+    Papier : a1, after m1, 1m
+    Schere : a2, after m1, 5m
+    Klebstoff : a3, after m1, 5m
+    Alle Teile im Haus : milestone, m2, after a3, 0m
+
+    section Fertigung Prototyp
+    Papier zuschneiden : b1, after m2, 2m
+
+    section Montage Prototyp
+    Papier falten : c1, after b1, 5m
+    Papier kleben : c2, after c1, 5m
+    Prototyp anmalen und beschriften: c3, after c2, 2m
+    Aufbau Prototyp abgeschlossen : milestone, m3, after c3, 0m
+
+    section Test Prototyp
+    Test des Prototyps gemäß Testkriterien : e1, after m3, 5m
+    Dokumentation des Test und der Ergebnisse : e2, after e1, 5m
+
+    Projektphase Prototyp und Test abgeschlossen: milestone, m4, after e2, 0m
+```
+
+In @fig-label-gntflyer02 wird davon ausgegangen dass die Aktivitäten der Beschaffung von Papier, Schere und Klebstoff zeitlich parallel durchgeführt werden können.
+
+Das parallele Ausführen von Aktivitäten und Projektphasen ist in der Praxis eines der wichtigsten Vorgehen um bei Projekten überhaupt in einem sinnvollen Zeitrahmen Projekte durchführen zu können. Dies setzt jedoch voraus, dass die einzelnen Aktivitäten voneinander unabhängig sind UND hinreichend Kapazität geeigneter Ressourcen zur Verfügung steht um die Aktivitäten wirklich zeitlich parallel ausführen zu können.
+
+
+::: {.callout-caution}
+## Besondere Aufmerksamkeit ist bei der  Parallelisierung von Aktivitäten erforderlich!
+In der Praxis sind diese zwei für die Parallelisierung von Aktivitäten notwendigen Bedingungen nicht immer erfüllt. Dies kann dazu führen, dass die Aktivitäten zumindest teilweise seriell ausgeführt werden müssen. Dies wiederum führt zu einer längeren zeitlichen Dauer der jeweiligen Projektphase. Sofern sich die Projektphase auf dem kritischen Pfad des Projekts befindet führt dies zu einer Verschiebung nachfolgender Aktivitäten und zu einer Verlängerung der gesamten Dauer des Projekts. Bei der Planung der Parallelisierung von Aktivitäten ist daher stets besondere Aufmerksamkeit erforderlich!
+:::
+
+
+#### Kapazität und Dauer einer Aktivität
+
+In der Regel wird eine in einem Gantt-Diagramm dargestellte Aktivität nicht in Vollzeit von einer Person bearbeitet. Die Folge ist eine zumeist erhebliche Differenz zwischen für eine Aktivität erforderliche (Personen-)Kapazität^[Tipp: Normierung der Personenkapazität in Gantt-Diagrammen immer auf FTE ("**F**ull-**T**ime-**E**quivalent"), NICHT auf individuelle Personen vornehmen] und der geplanten Dauer der Aktivität. 
+
+Als Beispiel für den Unterschied zwischen der Dauer eine Aktivität und der für die Aktivität erforderlichen Personenkapazität zeigt @fig-label-gntzeitvskapa eine Alternative der in @fig-label-gntflyer02 in der Unterphase Beschaffung dargestellten Teilebeschaffung der Schere:
+
+```{mermaid}
+%%| fig-width: 6.4
+%%| label: fig-label-gntzeitvskapa
+%%| fig-cap: "Gantt-Diagramm der Aktivität zur Beschaffung der Schere"
+gantt
+title Gantt-Diagramm der Aktivität zu Beschaffung der Schere
+    dateFormat HH:mm
+    axisFormat %H:%M    
+
+    section Beschaffung Schere
+    Bestellung   : a1, 00:00, 2m
+    Lieferung    : a2, after a1, 20m
+    Warenannahme : a3, after a2, 1m
+    
+```
+
+In der in @fig-label-gntflyer02 dargestellten Projektplanung wurde davon ausgegangen, dass die Ressource Schere kurzfristig verfügbar ist. In der Praxis stehen Ressourcen häufig jedoch nicht kurzfristig zur Verfügung sondern müssen zunächst verfügbar gemacht werden (z.B. durch Beschaffung von Extern). In diesem Fall benötigt die Aktivität der Beschaffung der Schere zwar nicht mehr, jedoch ggf. andere (interne) Personenkapazität (Bestellung und Warenannahme), jedoch verlängert sich die Dauer der Aktivität aufgrund der Dauer für die Lieferung der Schere um ein Vielfaches. 
+
+Im vorliegendem Fall würde die massive Verzögerung bei der Beschaffung der Schere die gesamte in @fig-label-gntflyer02 dargestellten Projektplanung über den Haufen werfen - das Projekt müsste zeitlich erheblich verlängert werden. In der Praxis könnte dies möglicherweise sogar ein Scheitern des gesamten Projekts bedeuten. 
+
+::: {.callout-warning}
+## Kapazität und Dauer einer Aktivität stimmen in der Regel NICHT überein!
+In der Praxis stimmen die in einem Gantt-Diagramm dargestellte Dauer einer Aktivität **NICHT** mit der für die Abarbeitung der Aktivität erforderlichen (Personen-)Kapazität überein! Gantt-Diagramme stellen **AUSSCHLIESSLICH** die zeitliche Dimension des jeweiligen Projekts dar! Neben dem Gantt-Diagramm ist daher in Projekten stets eine separate Kapazitätsplanung erforderlich, die mit der im Gantt-Diagramm dargestellten zeitlichen Projektplanung abgeglichen werden muss.
+:::
+
+::: {.callout-warning}
+## Verfügbarkeit von Ressourcen bei der Projektplanung unbedingt mit berücksichtigen!
+Bei der zeitlichen Planung eines Projekts muss entsprechend die verfügbare (Personen-)Kapazität berücksichtigt werden. Aber auch die Verfügbarkeit von weiteren Ressourcen und ebenso von Lieferketten (z.B. Verfügbarkeit von Zukaufteilen) und externen Dienstleistungen (z.B. externe Dienstleistungen zum Testing, die spezielle Anlagentechnik erfordern) ist zwingend mit zu berücksichtigen.
+:::
+
+
+#### Tipps zum Umgang mit Gantt-Diagrammen
+
+::: {.callout-caution}
+## Nutzung von Gantt-Diagrammen 
+Die gewinnbringende Nutzung von Softwaretools wie z.B. Microsoft Project setzt eine hohe Disziplin des Projektteams voraus. Bei erfahrenen, großen Projektteams wird oft die Rolle des PLU (Projektleitungs-Unterstützers) geschaffen mit der Aufgabe, das Gantt-Diagramm auf dem aktuellen Stand zu halten und bei Bedarf Rückmeldungen von allen Mitwirkenden im Projekt einzufordern (siehe → AKV; siehe → Hol- und Bringschuld). 
+
+Die Nutzung des Gantt-Diagramms als wertvolles Werkzeug im Projektteam kann dadurch unterstützt werden, dass die gemeinsame Sichtung des Projektstands im Projektteam in der Regelkommunikation des Projekts erfolgt.
+:::
+
+::: {.callout-caution}
+## Detaillierungsgrad von Gantt-Diagrammen 
+Eine hohe Kunst ist es, den Detaillierungsgrad des Gantt-Diagramms zielführend zu wählen. Zu hoher Detaillierungsgrad bedeutet viel Pflegeaufwand und birgt die Gefahr, dass das Gantt-Diagramm nicht regelmäßig gepflegt wird und so schnell seinen Nutzen verliert. Ein zu geringer Detaillierungsgrad birgt die Gefahr, dass kritische Entwicklungen nicht oder erst zu spät erkannt werden können. 
+
+Bei der Gestaltung des Detaillierungsgrads ist Erfahrungswissen aus vorangegangenen Projekten hilfreich. Grundsätzlich erscheint es Ihrem Dozenten zielführend, nicht mit einem hohen Detaillierungsgrad zu beginnen, sondern zunächst die Nutzung des Gantt-Diagramms im Projektteam als selbstverständliches Werkzeug zu etablieren und erst bei wirklichem Bedarf den Detaillierungsgrad dort wo erforderlich zu erhöhen.
+:::
+
+
+::: {.callout-warning}
+## Aufwand für Erstellung und Pflege von Gantt-Diagrammen niemals unterschätzen! 
+Bei umfangreichen Projekten^[Unverbindlicher Praxistipp: Ab einer verplanten Personenkapazität von mehr als 10 Personenjahren und einer Projektlaufzeit von mehr als einem Jahr] ist das Erstellen und die Pflege von Gantt-Diagrammen und der damit verbundenen Planung des Einsatzes von (Personen-)Kapazitäten und Ressourcen eine herausfordernde Aufgabe, die nicht mehr einfach mal so *"g'schwind, schnell, kurz, gleich"* nebenbei bewältigt werden kann.
+:::
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Shareable Link
+
+-------------------------------------------------------------------------- -->
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
++ @@kumper_controlling_2024: [Projektcontrolling)](https://rdcu.be/dIUdn)
+:::
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Literaturempfehlung
+
+-------------------------------------------------------------------------- -->
+
+<!--
+#### Literaturempfehlung
+
+![@kumper_controlling_2024: [Contolling](https://link.springer.com/book/10.1007/978-3-658-43745-9)](images/Kuemper_Controlling.webp){width=40%}
+
+-->

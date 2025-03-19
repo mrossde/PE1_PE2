@@ -1,0 +1,142 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+title: "DEB3 Produktentwicklung 1"
+resource-path: ["../images"]
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Produktions- und Werkstofftechnik
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+resource-path: ["c:/temp/images/"]
+resource-path: ["../images"]
+resource-path: ["images"]
+-->
+
+<!-- 
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+ -->
+<!-- -------------------------------------------------------------------------
+
+                       Rezept für Schoko-Brownies
+
+-------------------------------------------------------------------------- -->
+
+
+### Rezept Schoko-Brownies
+Quelle des Rezepts: [www.gutekueche.at](https://www.gutekueche.at/)
+
+![Schoko-Brownies (Quelle: Adobe Stock)](images/AdobeStock_257686783.jpeg){width=64% #fig-brownies}
+
+::: {.callout-tip}
+## Definition: *"Brownie"*
+Ein [Brownie](https://de.wikipedia.org/wiki/Brownie_(Geb%C3%A4ck)) (auch Boston Brownie) ist ein traditionelles Gebäck der US-amerikanischen Küche. Zur Herstellung verwendet man einen Rührteig mit wenig Mehl und Kakaopulver (viel typischer mit geschmolzener ungesüßter Schokolade in den USA), Butter und Eiern. Mit der weltweiten Verbreitung der amerikanischen Lebensart und Küche wurde das Gebäck auch in anderen Regionen bekannt und in das Angebot von Gastronomie und Handwerk aufgenommen. (Quelle: [Wikipedia](https://de.wikipedia.org/wiki/Brownie_(Geb%C3%A4ck)))
+:::
+
+#### Zutaten:
+
++ 85	g	Zartbitterschokolade
++ 85	g	Halbbitterschokolade
++ 170	g	Butter
++ 4	Stk	Eier
++ 180	g	Staubzucker
++ 0.5	EL	Vanillezucker
++ 140	g	Mehl (glatt)
++ 1	Prise	Salz
++ 1	TL	Butter zum Einfetten
+
+#### Zeit
++ 45 min. Gesamtzeit 
++ 15 min. Zubereitungszeit 
++ 30 min. Koch & Ruhezeit
+
+#### Zubereitung
+1. Eine eckige Blechkuchenform/Springform (ca. 18x20x4 cm) mit Butter befetten, leicht bemehlen und beiseite stellen. Den Backofen auf 170°C Ober- und Unterhitze vorheizen.
+
+2. Die Schokoladen fein hacken und gemeinsam mit der Butter in einem kleinen Topf bei mäßiger Temperatur zum Schmelzen bringen, dabei umrühren. Danach vom Herd nehmen und glatt rühren.
+
+3. In einer Rührschüssel nun Eier mit Zucker und Vanillezucker mit einem Mixer schaumig schlagen. Danach die geschmolzene Schokolade einrühren, bis die Masse flaumig ist. Schließlich Mehl mit Salz unterheben (kurz einrühren) – am besten per Hand mit einem Schneebesen, damit man nicht zu viel rührt.
+
+4. Schließlich die Masse in der Form verteilen und im vorgeheizten Backofen ca. 30 Minuten backen.
+Nach dem Backen auskühlen lassen. Die fertigen Brownies sind innen noch etwas speckig/feucht bzw. sehr saftig. Schließlich in Stücke schneiden und servieren.
+
+<!--
+#### Tipps zum Rezept
+Nimmt man die doppelte Menge, kann die Masse auf ein ganzes Backblech gestrichen werden. Sie gehen auch toll auf.
+
+Zur Verzierung kann man noch Schokolade im Wasserbad schmelzen und über die Brownies gießen.
+
+Luftdicht verpackt halten die Brownies einige Tage bei Zimmertemperatur und im Kühlschrank rund eine Woche. Dann eine Stunde vor Verzehr aus dem Kühlschrank nehmen und auf Raumtemperatur bringen.
+
+Die Brownies lassen sich auch gut einfrieren.
+-->
+
+#### Nährwert pro Portion
++ kcal 		619
++ Fett		35,78 g
++ Eiweiß	9,03 g
++ Kohlenhydrate	64,61 g
+
+
+
+<!--
+**Weiterführende Links** (Wikipedia):
+
++ [Alt text](https://de.wikipedia.org/wiki/W%C3%B6hlerversuch)
+-->
+
+<!--
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
+
++ @jakoby_qualitatsmanagement_2022: [Elementare QM-Methoden](https://rdcu.be/dIy3K)
+
+:::
+
+## Literaturempfehlung
+
+![@jakoby_qualitatsmanagement_2022: [Qualitätsmanagement für Ingenieure](https://link.springer.com/book/10.1007/978-3-658-36677-3)](images/Jakoby_Qualitaetsmanagement.webp){width=40%}
+-->

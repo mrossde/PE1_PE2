@@ -1,0 +1,119 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Deming-Zyklus
+
+-------------------------------------------------------------------------- -->
+
+
+### Deming-Zykus | PDCA-Zyklus {#sec-deming}
+
+<!--
+![PDCA-Zyklus: Planen (Plan) - Durchführen (Do) - Überprüfen (Check) - Anpassen (Act) (Quelle: Adobe Stock)](images/AdobeStock_65336929.jpeg){width=60% #fig-pdca-methode}
+-->
+
+::: {.callout-tip}
+## Definition: *"Deming-Zyklus"*
+Der [Deming-Zylus](https://de.wikipedia.org/wiki/Demingkreis) oder auch PDCA-Zyklus ist eine iterative Methode zur kontinuierlichen Verbesserung von Prozessen, Produkten und Dienstleistungen. Er ist eine wichtige Grundlage des [Kontinuierlichen Verbesserungsprozesses](https://de.wikipedia.org/wiki/Kontinuierlicher_Verbesserungsprozess) (KVP) sowie des [Qualitätsmanagements](https://de.wikipedia.org/wiki/Qualit%C3%A4tsmanagement). 
+:::
+
+Benannt ist der Deming-Zyklus nach dessen Erfinder, dem US-amerikanischen Physiker und Statistiker [Walter Edwards Deming](https://de.wikipedia.org/wiki/William_Edwards_Deming). Deming war ein Schüler von [Walter A. Shewhart](https://de.wikipedia.org/wiki/Walter_A._Shewhart), dem Begründer der statistischen Prozesslenkung (SPC).
+
+Der Deming-Zyklus besteht aus vier aufeinanderfolgenden Schritten: **Planen** (Plan), **Durchführen** (Do), **Überprüfen** (Check) und **Anpassen** (Act). Jeder dieser vier PDCA-Schritte spielt eine entscheidende Rolle bei der Erreichung kontinuierlicher Verbesserungen. Die Ursprünge des Deming-Zyklus liegen in der [Qualitätssicherung](https://de.wikipedia.org/wiki/Qualit%C3%A4tssicherung) der 1940er Jahre.
+
+![Deming-Zyklus](images/Deming_Zyklus.png){width=54% #fig-demingzyklus}
+
+
+<!--
+```{mermaid}
+%%| fig-width: 6.0
+%%| label: fig-label-deming
+%%| fig-cap: "Deming-Zyklus"
+graph TD;
+    Start((Start)) -> A[1. Planen] 
+    A ->|Ursache und Lösung verstehen und erkennen| B[2. Durchführen]
+    B ->|Testen mit schnellen und einfachen Mitteln| C[3. Überprüfen]
+    C ->|Resulate mit den Erwartungen abgleichen| D[4. Anpassen]
+    D ->|Am Problem weiterarbeiten| A
+    D ->|Umsetzung freigeben| E((Ende))
+```
+-->
+
+1. **Planen (Plan)**: In diesem ersten Schritt werden die Ziele und Prozesse definiert, die verbessert werden sollen. Es werden konkrete Pläne erstellt, die festlegen, welche Schritte unternommen werden müssen, um die gewünschten Verbesserungen zu erreichen. Dies umfasst die Festlegung von Zielen, die Identifizierung von Ressourcen, die Bestimmung von Messkriterien und die Festlegung von Methoden zur Durchführung der Änderungen.
+
+2. **Durchführen (Do)**: Nachdem der Plan erstellt wurde, wird er in die Tat umgesetzt. Dieser Schritt beinhaltet die Implementierung der geplanten Veränderungen gemäß den zuvor festgelegten Schritten und Maßnahmen. Daten und Informationen werden gesammelt, während die Änderungen durchgeführt werden.
+
+3. **Überprüfen (Check)**: Im Überprüfungsabschnitt werden die gesammelten Daten und Informationen analysiert und mit den zuvor festgelegten Zielen und Messkriterien verglichen. Es wird bewertet, ob die erzielten Ergebnisse den angestrebten Verbesserungen entsprechen und ob die Ziele erreicht wurden.
+
+4. **Anpassen (Act)**: Basierend auf den Ergebnissen der Überprüfung werden Anpassungen vorgenommen. Wenn die Ziele erreicht wurden, kann der Prozess standardisiert werden. Wenn die Ziele nicht erreicht wurden, werden Anpassungen am Plan vorgenommen, um die Ergebnisse zu verbessern. Die gewonnenen Erkenntnisse aus dem Zyklus werden genutzt, um den nächsten Zyklus zu planen und durchzuführen.
+
+Der Deming-Zyklus ist ein sich wiederholender Prozess, bei dem jeder Zyklus auf dem vorherigen aufbaut. Dies ermöglicht kontinuierliche Lern- und Verbesserungsmöglichkeiten. Der Zyklus fußt auf der Idee, dass kontinuierliche Verbesserungen am besten durch schrittweises Vorgehen und regelmäßige Überprüfung erreicht werden können. 
+
+![Elementare Vorgehensmodelle des Problemlösens (Quelle: @jakoby_qualitatsmanagement_2022)](images/479391_2_De_2_Fig4_HTML.webp){width=80% #fig-vorgehensmodelleproblemloesung}
+
+<!--
+Der Aktivitätsablauf beim Lösen von Aufgaben und Problemen ist sicherlich genau so vielfältig wie die zu lösenden Aufgabenstellungen. Betrachtet man den Schwierigkeitsgrad eines Problems als wesentliches Unterscheidungsmerkmal, so gibt es zwei grundlegende Vorgehensweisen. Bei geringem Schwierigkeitsgrad kann auf umfangreiches Vorwissen zum Sachverhalt zurückgegriffen werden. Aus der verfügbaren Menge bekannter Maßnahmen, werden geeignete Maßnahmen ausgewählt. Deren Reihenfolge wird geplant, so dass der Lösungsweg dann gedanklich vorweggenommen werden kann. Anschließend erfolgt die Umsetzung der geplanten Maßnahmen. In seiner Reinform kann man dieses Vorgehen als „plan&do“ bezeichnen: Zuerst wird ein vollständiger Lösungsplan entworfen, dann wird er verwirklicht.
+
+Als formalisiertes Vorgehensmodell ist plan&do im Qualitätsmanagement als PDCA-Schema bekannt. Beim Auftreten eines Problems wird eine Lösung geplant (plan), sie wird dann umgesetzt (do), auf ihre Wirksamkeit überprüft (check) und schließlich dauerhaft eingesetzt (act).
+
+Am entgegengesetzten Ende des Vorgehensspektrums findet sich das Modell „try&error“ . Bei schwierigen Problemen ist das Wissen über den Sachverhalt noch sehr lückenhaft. In diesem Fall müssen mehr oder weniger zufällig experimentelle Lösungsversuche unternommen werden. Die Erwartung richtet sich in diesem Fall weniger auf einen Zufallstreffer, als auf einen Erkenntnisgewinn. Je mehr Erkenntnisse über den problematischen Sachverhalt gewonnen werden, desto stärker kann sich das zufällige, „blinde“ Probieren zu einem zielgerichteten Versuchen entwickeln.
+
+Auch für diese Verhaltensweise gibt es ein formalisiertes Schema, das so genannte TOTE-Modell. Zunächst wird ein Problem in Gestalt einer Abweichung zwischen einem erwünschten Zielzustand und einem unerwünschten Istzustand festgestellt (Test), Durch eine Handlung wird versucht die Diskrepanz zu beseitigen (Operate). Anschließend werden Soll- und Istzustand wieder miteinander verglichen (Test). Konnte das Problem beseitigt werden, wird die Aktivität beendet (Exit). Ist das nicht der Fall, werden weitere Lösungsversuche unternommen.
+
+Da „p&d“ auf der einen und „t&e“ auf der anderen Seite die beiden Extrema eines Spektrums an Vorgehensweisen zur Lösung unterschiedlich schwieriger Probleme darstellen, muss jede dazwischenliegende Vorgehensweise Elemente beider Extremfälle beinhalten (Abb. 2.4). Sowohl bei „p&d“ als auch bei „t&e“ ist die Handlungskomponente anzutreffen, bei der Maßnahmen ausgeführt werden: „do“ und „try“. Diese Komponente soll im Weiteren als „operate“ bezeichnet werden. Bei vollständigem Vorwissen über den Sachverhalt, kann eine Lösung vollständig vorausgeplant werden. Ist das Vorwissen lückenhaft, kann die Lösung zwar nicht vollständig, aber zumindest teilweise geplant werden. Eine Planungskomponente wird auf jeden Fall enthalten sein. Das Überprüfen der erreichten Lösung wird bei unvollständigem Wissen und damit unvollständigem Plan ebenfalls notwendig sein. Diese Komponente soll statt der etwas pessimistisch stimmenden Bezeichnung „error“ durch den neutralen Begriff „check“ beschrieben werden. Eine vierte Komponente kommt zwar weder in „p&d“ noch in „t&e“ explizit vor, kann aber dennoch als selbstverständlicher Bestandteil angenommen werden, nämlich die Analyse des vorgefundenen Sachverhalts (study). Eine Analyse ist sowohl bei einfachen Aufgaben vor Beginn der Planung als auch bei schwierigen Problemen vor dem Ausprobieren von Maßnahmen notwendig. Wie die weiteren Untersuchungen bestätigen werden, ist diese Analyse-Phase in sehr vielen detaillierter ausgearbeiteten Vorgehensmodellen enthalten. Man erhält somit das spoc-Modell mit 4 Phasen des Problemlösens:
+-->
+
+1. **Study**: Nach dem Auftreten und Erkennen eines Problems werden zunächst Informationen zum problematischen Sachverhalt gesammelt. Sie werden analysiert und als Modell des Sachverhalts und des angestrebten Zielzustands strukturiert.
+
+2. **Plan**: Die nächste Phase besteht aus den verschiedenen Schritten der Lösungssuche: Es werden Lösungsideen gesammelt und zu möglichen Lösungswegen zusammengesetzt. Aus den möglichen Lösungen wird schließlich eine als beste oder erfolgversprechendste ausgewählt.
+
+3. **Operate**: Nach der Entscheidung für eine grundsätzliche Lösung wird diese detailliert ausgearbeitet und verwirklicht.
+
+4. **Check**: Das erreichte Ergebnis wird überprüft. Es wird entschieden, ob das Problem vollständig gelöst wurde oder ob ein weiterer Durchlauf der vier "study → plan → operate → check"-Phasen erforderlich ist. Außerdem werden gewonnene Erkenntnisse gesichert.
+
+Hinsichtlich des Ablaufs weist das planvolle Lösen unproblematischer Aufgaben einen rein sequenziellen Charakter auf, während bei schwierigen Problemen das iterative Vorgehen sehr stark ausgeprägt ist. Beide Ablaufmuster werden also bei den dazwischenliegenden Schwierigkeitsgraden benötigt. 
+
+Der Gesamtablauf besteht daher aus dem sequenziellen Durchlaufen der vier Komponenten "study → plan → operate → check". 
+
+Für die zu erwartenden Wiederholungen sind zunächst Rücksprünge zur unmittelbar vorangehenden Phase möglich. Erweist sich dagegen die erreichte Lösung in der „check“-Phase als gar nicht oder nicht vollständig zielführend, müssen alle Schritte in einer vollständigen Iteration durchlaufen werden 
+
+
+
+<!--
+**Weiterführende Links** (Wikipedia):
+
++ [Alt text](https://de.wikipedia.org/wiki/W%C3%B6hlerversuch)
+-->
+
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
+
++ @jakoby_qualitatsmanagement_2022: [Elementare QM-Methoden](https://rdcu.be/dIy3K)
+
+:::
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Literaturempfehlung
+
+-------------------------------------------------------------------------- -->
+
+<!--
+#### Literaturempfehlung
+
+![@jakoby_qualitatsmanagement_2022: [Qualitätsmanagement für Ingenieure](https://link.springer.com/book/10.1007/978-3-658-36677-3)](images/Jakoby_Qualitaetsmanagement.webp){width=40%}
+
+![@helmold_qualitat_2023: [Qualität neu denken](https://link.springer.com/book/10.1007/978-3-658-40220-4)](images/Helmold_Qualitaet_978-3-658-40220-4.webp){width=40%}
+
+-->
+

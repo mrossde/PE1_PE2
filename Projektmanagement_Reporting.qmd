@@ -1,0 +1,83 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!-- 
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Reporting
+
+-------------------------------------------------------------------------- -->
+
+### Reporting {#sec-reporting}
+
+
+::: {.callout-tip}
+## Definition: *"Reporting"*
+In Produktentstehungsprozess bezieht sich der Begriff "Reporting" (deutsch: "[Berichtswesen](https://de.wikipedia.org/wiki/Berichtswesen)") auf den Prozess der Erstellung, Darstellung und Analyse von Berichten oder Berichtsdokumenten, die wichtige Informationen über den Produktentstehungsprozess und die damit verbundenen Aktivitäten liefern. 
+::: 
+
+Das Reporting im Produktentstehungsprozess ist ein wesentlicher Bestandteil des Projektmanagements. Gutes Reporting trägt dazu bei, die Leistung, Effizienz und Qualität des Produktentstehungsprozess zu überwachen und zu steuern. Hauptaspekte des Reporting sind:
+
+1. **Berichterstellung**: Dieser Schritt umfasst die Erfassung von Daten und Informationen aus verschiedenen Quellen im Produktionsprozess, wie z. B. Produktionsmaschinen, Lagerbeständen, Arbeitskräften, Lieferanten und Qualitätskontrolle. Diese Daten werden dann in Berichtsformaten aufbereitet.
+
+2. **Berichtsdarstellung:** Berichte können in verschiedenen Formaten erstellt werden, wie z. B. Tabellen, Grafiken, Diagramme (besonders häufig in der Produktentwicklung: Gantt-Diagramme) oder Dashboards. Die Wahl des Formats hängt von den Bedürfnissen des Managements und der Art der darzustellenden Informationen ab.
+
+3. **Zeitliche Dimension**: Berichte können in Echtzeit oder zu festgelegten Zeitpunkten (täglich, wöchentlich, monatlich) erstellt werden. Echtzeitberichte ermöglichen es dem Management, aktuelle Informationen zur Produktionsleistung zu erhalten und schnell auf Probleme oder Chancen zu reagieren.
+
+4. **Analyse**: Das Reporting beinhaltet oft auch die Analyse der gesammelten Daten, um Trends, Muster oder Abweichungen zu identifizieren. Auf diese Weise können Entscheidungsträger fundierte Entscheidungen treffen und Verbesserungen im Entwicklungsprozess vornehmen.
+
+5. **Kommunikation**: Berichte dienen dazu, Informationen an verschiedene Ebenen im Unternehmen zu kommunizieren, von der Geschäftsführung bis zu den Mitarbeitern auf der operativen Ebene. Klare und präzise Berichte tragen zur reibungslosen Kommunikation und Zusammenarbeit bei.
+
+6. **Leistungssteuerung**: Das Reporting spielt eine wichtige Rolle bei der Überwachung und Steuerung der Leistung. Wenn Probleme oder Engpässe auftreten, können Maßnahmen ergriffen werden, um die Entwicklung zu optimieren und die gesteckten Ziele zu erreichen.
+
+Das Reporting ist ein von den meisten Entwicklern ungeliebtes, aber letztlich hilfreiches Werkzeug, um den Erfolg der Produktentwicklung sicherzustellen. Ein gutes Reporting unterstützt Unternehmen und Projektteams, ihre Entwicklungsprozesse zu überwachen, zu analysieren und zu verbessern, um trotz der teils turbulenten, ungeplanten Einflussfaktoren auch in der Praxis die Projektziele (meist) zu erreichen. Last but not least hilft gutes Reporting bei der Koordination der verschiedenen Projektaktivitäten.
+
+
+::: {.callout-caution}
+## Vorsicht bei der Nutzung von geliehener Macht!
+Die Mitarbeitenden des Reportings erhalten in Projekten oder Organisationen oftmals viel *"geliehene Macht"* ^[Geliehene Macht ist die Autorität oder Einfluss, die eine Person nicht aus ihrer eigenen Position oder Kompetenz bezieht, sondern durch die Unterstützung oder Legitimation einer anderen, oft mächtigeren, Person oder Institution erhält. Diese Macht ist daher abhängig von der fortgesetzten Unterstützung und kann jederzeit entzogen werden, was sie zu einer überaus fragilen und unsicheren Form der Autorität macht.], deren Missbrauch zu teils heftigen Konflikten innerhalb des Entwicklungsteams führen kann. Jedem Mitarbeitenden des Reportings wird im Sinne eines gemeinsamen Projekterfolgs empfohlen, mit der geliehenen Macht äußerst sensibel und nicht konfrontativ gegenüber den Entwicklern umzugehen. 
+:::
+
+
+Reporting ist nicht nur ein wichtiges Element in der Produktentwicklung sondern findet sich ebenso als wichtiger Baustein erfolgreicher Planungs- und Produktionsprozesse. Das Reporting ist eine Aufgabe des **Controllings** und wird bei Projekten meist als eigene Rolle (siehe → [Projektcontrolling](https://de.wikipedia.org/wiki/Projektcontrolling)), in Organisationen meist als eigene Organisationseinheit (siehe → [Controlling](https://de.wikipedia.org/wiki/Controlling)) ausgestaltet. 
+
+<!-- -------------------------------------------------------------------------
+
+                       Shareable Links & Literaturempfehlungen
+
+-------------------------------------------------------------------------- -->
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
++ @kumper_controlling_2024: [Projektcontrolling](https://rdcu.be/dIUdn)
++ @becker_handbuch_2022: [Projektcontrolling in der Unternehmenspraxis](https://rdcu.be/dIUio)
+:::
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Literaturempfehlung
+
+-------------------------------------------------------------------------- -->
+
+<!--
+#### Literaturempfehlung
+
+![@kumper_controlling_2024: [Contolling](https://link.springer.com/book/10.1007/978-3-658-43745-9)](images/Kuemper_Controlling.webp){width=40%}
+
+![@becker_handbuch_2022: [Handbuch Controlling](https://link.springer.com/book/10.1007/978-3-658-26431-4)](images/Becker_Handbuch_Controlling_978-3-658-26431-4.webp){width=40%}
+
+![@kunert_failure_2016: [Failure Management](https://link.springer.com/book/10.1007/978-3-662-47357-3)](images/Kunert_Failure_Management_978-3-662-47357-3.webp){width=40%}
+
+-->

@@ -1,0 +1,79 @@
+//-------------------------------------------------------------------------
+//
+//                     Projekt
+//
+//-------------------------------------------------------------------------
+
+::Projekt::
+Welche Eigenschaften muss ein Projekt gemäß der Definition erfüllen?
+{
+    ~%25%Zeitliche Befristung
+    ~%25%Definierter Start- und Endzeitpunkt
+    ~%25%Hohe Komplexität der Aufgabenstellung
+    ~%25%Einmaligkeit der Aufgabenstellung
+    ~%-100%Wirtschaftlicher Nutzen
+}
+
+
+::Wasserfallmodell, V-Modell und Spiralmodell::
+Welche Aussage beschreibt am besten die Unterschiede zwischen dem Wasserfallmodell, dem V-Modell und dem Spiralmodell?
+{
+	~%33.333%Das Wasserfallmodell beinhaltet eine lineare Abfolge von Entwicklungsphasen.
+	~%33.333%Das V-Modell ist eine Weiterentwicklung des Wasserfallmodells.
+  	~%33.333%Das Spiralmodell verfolgt einen stärker iterativen Ansatz als das V-Modell.
+	~%-33.333%Das Wasserfallmodell ist ein agiles Entwicklungsmodell, das besonders geeignet ist für schnelle und dynamische Projekte.
+	~%-33.333%Das V-Modell ist ein adaptives Entwicklungsmodell, das auf schnelle Anpassungen an sich ändernde Anforderungen abzielt.
+	~%-33.333%Das Spiralmodell ist ein inkrementelles Entwicklungsmodell, das auf starre Phasen und feste Liefertermine setzt.
+}
+
+//-------------------------------------------------------------------------
+//
+//                     Gantt-Diagramme
+//
+//-------------------------------------------------------------------------
+
+::Gantt-Diagramm::
+Was zeigt ein Gantt-Diagramm hauptsächlich an?
+{
+    ~%50%Die zeitliche Planung von Aufgaben und deren Dauer in einem Projekt.
+    ~%50%Die Abhängigkeiten zwischen verschiedenen Aufgaben in einem Projekt.
+    ~%-25.0%Die finanzielle Aufteilung eines Projekts.
+    ~%-25.0%Die Verfügbarkeit von Ressourcen für ein Projekt.
+    ~%-25.0%Die erwarteten Risiken im Projektverlauf.
+    ~%-25.0%Die organisatorische Struktur des Projektteams.
+}
+
+
+::Kritischer Pfad::
+Was ist der kritische Pfad in einem Gantt-Diagramm?
+{
+	~%100%Die Abfolge von Aufgaben, die die kürzest mögliche Dauer für die Fertigstellung des Projekts bestimmt.
+	~%-100%Die Abfolge von Aufgaben, die am wenigsten Ressourcen für die Fertigstellung des Projekts benötigt.
+}
+
+::Kritischer Pfad::
+Was ist der kritische Pfad in einem Gantt-Diagramm?
+     {
+     ~ Die Abfolge von Aufgaben, die am wenigsten Ressourcen für die Fertigstellung des Projekts benötigt.
+     = Die Abfolge von Aufgaben, die die kürzest mögliche Dauer für die Fertigstellung des Projekts bestimmt.
+     }
+
+::Grundlagen Entwicklugsmethodik::
+If you can't measure it, you can't {
+    ~control 
+    =optimize 
+    ~document} 
+    it.
+
+
+::PTCA-Zyklus::
+Wie wird der PTCA-Zyklus noch bezeichnet? {=Deming}
+
+::Begriffe::
+Was bedeutet die in der Produktentwicklung verwendete Abkürzung "PPG"? {=Produktionsgerechte Produktgestaltung}
+
+Japanese characters originally came from what country? {
+    ~India#Falsch
+    =China#Richtig
+    ~Korea#Falsch
+    ~Egypt#Falsch}

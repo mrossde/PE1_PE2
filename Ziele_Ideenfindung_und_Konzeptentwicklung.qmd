@@ -1,0 +1,134 @@
+<!--
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Ideenfindung und Konzeptentwicklung
+  - Zielsetzung
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 1
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Ziele der Ideenfindung und Konzeptentwicklung
+
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Ideenfindung und Konzeptentwicklung
+:::
+
+## Ziele der Ideenfindung und Konzeptentwicklung {#sec-ziele_ideenfindung_und_konzeptentwicklung}
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+<!--::: {.callout-warning}
+## WARNING!
+**THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+In der Phase Ideenfindung und Konzeptentwicklung gilt es, die Grundlagen und Rahmenbedingungen des Produktentstehungsprojekts zu erarbeiten und zu dokumentieren. 
+
+Die Hauptziele in der Phase Ideenfindung und Konzeptentwicklung sind:
+
+```{mermaid}
+%%| label: fig-label-mmzielekonzeptentwicklung
+%%| fig-cap: "Mindmap wichtiger Ziele in der Phase Ideenfindung und Konzeptentwicklung"
+mindmap
+   root(Ideenfindung und Konzeptentwicklung)
+      (Anforderungsanalyse und Spezifikation)
+      (Machbarkeitsanalyse)
+      (Definition des Produkts)
+      (Risikoanalyse und Risikomanagement)
+      (Projektplan)
+      (Ressourcen- und Kostenplan)
+```
+
+Kurzbeschreibung der Ziele:
+
++ **Anforderungsanalyse und Spezifikation**: In dieser Phase werden alle **Anforderungen** des zu entwickelnden Produkts identifiziert und dokumentiert. Es geht darum, Anforderungen zu erkennen und zu verstehen und in klare technische und funktionale Anforderungen umzuwandeln. Zu den Anforderungen gehören neben den funktionalen Anforderungen auch Sicherheitsanforderungen sowie rechtliche Anforderungen.
+
++ **Machbarkeitsanalyse**: Es wird geprüft, ob das Produkt **technisch** und **wirtschaftlich** realisierbar ist. Dies schließt eine Analyse der benötigten Ressourcen, Technologien, Kosten und Zeitpläne ein.
+
++ **Definition des Produkts**: Die Zielsetzung und das Konzept des Produkts werden festgelegt, einschließlich der geplanten Funktionen, des Designs und der grundlegenden Architektur (siehe → Produktarchitektur @sec-architektur). Dies soll sicherstellen, dass alle am Produktentstehungsprozess Beteiligte von Anfang an eine klare und einheitliche Vorstellung vom zu entwickelnden Produkt haben.
+
++ **Risikoanalyse und Risikomanagement**: Potenzielle Risiken, die den Erfolg des Produktentwicklungsprojekts gefährden könnten, werden identifiziert und bewertet. Maßnahmen zur Risikominimierung werden geplant und über den Projektfortschritt verfolgt.
+
++ **Projektplan**: Notwendige **Aktivitäten** (*"Tasks"*) und wichtige **Meilensteine** sowie deren wechselseitige **Abhängigkeiten** werden auf einer Zeitskala angeordnet und dokumentiert (siehe → Gantt-Diagramm @sec-gantt), um eine strukturierte und erfolgversprechende Vorgehensweise in den folgenden Phasen sicherzustellen.
+
++ **Ressourcen- und Kostenplan**: Ressourcenanforderungen und Aufgabenverteilung werden detailliert ausgearbeitet und dokumentiert.
+
+
+::: {.callout-important}
+## Ergebnis der Ideenfindung und Konzeptentwicklung
+Das Ergebnis der Konzeptphase ist ein **detailliertes Lastenheft** (und optional zusätzlich ein Pflichtenheft), das als Basis für die folgenden Entwicklungs- und Testphase dient und sicherstellt, dass das zu entwickelnde Produkt klar definiert und das das Produktentwicklungsprojekt technisch und wirtschaftlich durchführbar ist. Die Durchführung des Produktentwicklungsprojekt wird in einem **Projektplan** beschrieben der die zeitliche Abfolge und Dauer der weiteren Aktivitäten vorgibt. Der Projektplan wird in der Regel um einen **Ressourcen- und Kostenplan** ergänzt.
+:::
+
+
+### Exkurs: Produktarchitektur {#sec-architektur}
+
+::: {.callout-tip}
+## Definition: *"Produktarchitektur"*
+Unter dem Begriff "grundlegende Architektur des Produkts" wird im Folgenden die Struktur und das Gesamtdesign des Produkts verstanden, das die einzelnen Komponenten und ihre Interaktionen definiert. Die Produktarchitektur bildet den grundlegenden Aufbau des Produkts und beschreibt, wie die verschiedenen Bauteile und Baugruppen ("Module") des Produkts zusammenwirken, um die gewünschten Funktionen des Produkts zu ermöglichen.
+:::
+
+Die Produktarchitektur ist ein entscheidender Schritt bei der Konzeption jedes Produkts. Die Produktarchitektur für mechatronische Produkte ist dabei in der Regel komplexer und umfassender als bei rein mechanischen Produkten (siehe → Modularisierung @sec-modularisierung)
+
+<!--
+(siehe → Vorlesung **DEB5 Produktentwicklung 2**)
+-->
+
+<!--
+Bei mechatronischen Produkten umfasst die Produktarchitektur folgende Aspekte (unvollständige Aufzählung):
+
+1. **Modulaufteilung und Komponentenstruktur**: Die Architektur beschreibt, welche Hauptkomponenten oder Module das Produkt umfasst, wie diese aufgeteilt sind und welche spezifischen Aufgaben sie übernehmen. Zum Beispiel könnte eine Software in Frontend und Backend unterteilt sein, die wiederum jeweils aus weiteren Modulen bestehen.
+
+2. **Interaktion und Kommunikation zwischen Komponenten**: Die Architektur legt fest, wie die einzelnen Komponenten miteinander kommunizieren und Daten austauschen. Das kann über festgelegte Schnittstellen, APIs oder Messaging-Systeme geschehen.
+
+3. **Datenfluss und Datenarchitektur**: Sie beschreibt, wie Daten innerhalb des Systems verarbeitet, gespeichert und weitergegeben werden. Dies umfasst auch Datenbanken, Speicherorte und den Weg, den die Daten durch das System nehmen.
+
+4. **Technologie- und Plattformwahl**: Die grundlegende Architektur legt fest, welche Technologien, Programmiersprachen und Plattformen für das Produkt verwendet werden. Diese Entscheidungen beeinflussen maßgeblich die Leistungsfähigkeit und Skalierbarkeit des Systems.
+
+5. **Sicherheits- und Performanceanforderungen**: Es werden auch grundsätzliche Entscheidungen zur Sicherheit und Performance getroffen, etwa wie Sicherheitsmaßnahmen in das System integriert werden und wie die Systemleistung durch bestimmte Strukturentscheidungen optimiert werden kann.
+
+6. **Systemumgebung und Infrastruktur**: Bei der grundlegenden Architektur wird auch berücksichtigt, auf welchen Systemen oder in welcher Umgebung das Produkt später eingesetzt wird (z. B. Cloud-Architektur, On-Premises-Lösung oder hybride Systeme).
+
+Zusammengefasst sorgt die grundlegende Architektur dafür, dass das System als Ganzes stabil, wartbar und erweiterbar ist. Sie dient den Entwicklern als Leitlinie und hilft, eine kohärente Struktur zu schaffen, in der jede Komponente ihre definierte Rolle hat und das Gesamtprodukt reibungslos funktionieren kann.
+-->

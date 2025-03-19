@@ -1,0 +1,259 @@
+---
+title: "DEB3 Produktentwicklung 1"
+resource-path: ["../images"]
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Vorlesung
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+---
+
+<!-- 
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+# DEB3 Produktentwicklung 1
+
+![Herzlich Willkommen zu Vorlesung und Labor "DEB3 Produktentwicklung 1" im Wintersemester 2024/2025! (Quelle: [Adobe Stock](https://stock.adobe.com/de))](images/Welcome.jpeg){width=100% #fig-warmwelcome}
+
+<!-- -------------------------------------------------------------------------
+
+                       Mission-Statement zur Vorlesung
+
+-------------------------------------------------------------------------- -->
+<!--
+!["The world is changing!" (Saruman, Lord of the Rings)](images/TheWorldIsChanging.jpg){width=100% #fig-mermaid}
+-->
+
+---
+
+<!--
+# Mission-Statement zur Vorlesung
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       CALLOUT MISSIONS-STATEMENT
+
+-------------------------------------------------------------------------- -->
+<!--
+::: { .callout-note}
+## **Mission-Statement zur Vorlesung** (Entwurf)
+*"Wir wollen die Welt im Wandel aktiv für uns und unsere Umwelt zum Guten gestalten."*
+
+*"Hierzu bilden wir Experten aus, die über das notwendige zeitgemäße Wissen verfügen, die relevanten Zusammenhänge verstehen und aus dieser Qualifikation heraus erfolgreich für sich und andere wirken und einen Unterschied machen können."*
+
+*"Dies machen wir, indem wir in den Vorlesungen die relevanten fachlichen Grundlagen vermitteln und in Laboren Raum für Erfahrungen schaffen, die das Gelernte plastisch erlebbar und damit in der Praxis nachhaltig nutzbar machen."*
+:::
+
+---
+-->
+
+<!--
+# Einleitung zur Vorlesung und zum Skript
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Vorwort zur Vorlesung
+
+-------------------------------------------------------------------------- -->
+## Vorwort zur Vorlesung
+
+> 
+*"The goal of teaching should not be to help the students learn how to memorize and spit out information under academic pressure. The purpose of teaching is to inspire the desire for learning in them and make them able to think, understand, and question."* ([Richard Feynman](https://de.wikipedia.org/wiki/Richard_Feynman), Physiker)
+
+> 
+*"Any fool can know. The point is to understand."* ([Albert Einstein](https://de.wikipedia.org/wiki/Albert_Einstein), Physiker)
+
+> 
+*"A new idea comes suddenly and in a rather intuitive way. But intuition is nothing but the outcome of earlier intellectual experience."* ([Albert Einstein](https://de.wikipedia.org/wiki/Albert_Einstein), Physiker) 
+
+> 
+*„Wenn wir nicht die richtigen Fragen stellen werden wir auch nicht die richtigen Antworten erhalten!“* (Klaus Davideit, Unternehmensberater)
+
+---
+
+
+## Modulares Design der Vorlesung und des Skripts
+
+Die Vorlesung, die Labore und das Skript sind aus einzelnen, in sich abgeschlossenen Modulen und sehr flacher Hierarchie aufgebaut, vergleichbar Eisschollen, die sich über ein Wasser verteilen (siehe @fig-ice). Jedes der Module behandelt ein oder ggf. mehrere in enger Wechselwirkung stehende Themenfelder. Wir werden in der Vorlesung die Module entlang des typischen Ablaufs eines Produktentstehungsprozesses kennenlernen. 
+
+Der geneigte Leser sei hiermit ausdrücklich ermuntert, jederzeit vom Pfad der Vorlesung abzuweichen und Module vorauseilend selbst zu erkunden. Einige Module enthalten Informationen, die über den für das Verständnis der Vorlesung notwendigen Inhalt hinaus gehen. Ihr Dozent würde sich freuen, wenn Sie Motivation und Zeit finden, diese zusätzlichen Informationen sich selbstständig zu erarbeiten. Sollten dabei Fragen aufkommen, so bringen Sie diese bitte als willkommenen Beitrag in die Vorlesung ein!
+
+::: {.callout-important}
+## Work in progress!
+Die Vorlesung ist kein fertiger Monolith. Sie gestalten durch Ihre Mitarbeit und Ihre Rückmeldungen zu Vorlesung, Laboren und Skript den Umfang und Inhalt der Module aktiv mit, ebenso den roten Faden, den wir auf unserem Weg durch das Semester nehmen werden! Bitte bringen Sie sich aktiv ein! Vielen Dank!
+:::
+
+![Symbolbild für die Struktur des Skripts: Eisschollen (Quelle: [Adobe Stock](https://stock.adobe.com/de))](images/ice.jpeg){width=100% #fig-ice}
+
+<!-- -------------------------------------------------------------------------
+
+                       Gendergerechte Sprache
+
+-------------------------------------------------------------------------- -->
+<!--
+::: { .callout-note}
+## Gendergerechte Sprache
+Ihrem Dozenten fehlt (wie Sie sicher schon nach den wenigen Zeilen gemerkt haben) noch ein gutes Händchen für [gendergerechte Sprache](https://de.wikipedia.org/wiki/Geschlechtergerechte_Sprache) beim Schreiben dieses Skripts. Bitte sein Sie nachsichtig und unterstützen Sie ihren Dozenten dabei, besser zu werden und dazu zu lernen, indem Sie konkrete Vorschläge einbringen, wie die Formulierungen im Skript verbessert werden können! Vielen Dank!
+:::
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Tools 'n Rools'
+
+-------------------------------------------------------------------------- -->
+{{< include ToolsnRules.qmd >}}
+
+<!-- -------------------------------------------------------------------------
+
+                       Syntax des Sktripts zur Vorlesung
+
+-------------------------------------------------------------------------- -->
+## Syntax des Skripts zur Vorlesung
+
+> *"Zitate, die zur Erheiterung und Mahnung des geneigten Lesers in die Vorlesung eingebettet sind, werden als Zitate dargestellt."*
+
+::: {.callout-tip}
+## Definition: *"Definition von Begriffen"*
+Definitionen von Begriffen sind in einem Callout dargestellt.
+:::
+
+::: {.callout-caution}
+## Erfahrungen aus der Praxis
+Erfahrungen aus der Praxis, die dem geneigten Leser zur Beachtung ans Herz gelegt werden, sind in einem Callout dargestellt.
+:::
+
+::: { .callout-note}
+## Lernziele
+Lernziele sind in einem Callout dargestellt.
+:::
+
+::: { .callout-note}
+## Aufgabenstellung
+Aufgaben sind in einem Callout dargestellt.
+:::
+
+::: {.callout-tip}
+## Lösung
+Lösungen zu den Aufgaben sind in einem Callout dargestllt.
+:::
+
+::: {.callout-important}
+## Wichtig
+Wichtige Inhalte, die dem geneigten Leser zur dauerhaften Beachtung ans Herz gelegt werden, sind in einem Callout dargestellt
+:::
+
+Der Rückschluss, dass Inhalte, die **NICHT** in einem solchen Callout als wichtig gekennzeichnet sind, in der Prüfung nicht bewertet werden können, ist nicht zutreffend. Dem geneigten Leser wird empfohlen, zur Vorbereitung der Prüfung sich auch Inhalten ausserhalb dieser Callouts zuzuwenden!
+
+::: {.callout-warning}
+## Warnung
+Warnungen sind in einem Callout dargestellt.
+:::
+
+Im Skript wird versucht, dem Leser eine Vielzahl vertiefender und weiterführender Informationen in Form von in das Skript eingearbeiteter [Hyperlinks](https://de.wikipedia.org/wiki/Hyperlink) anzubieten. Diese Links verweisen auf Quellen ausserhalb dieses Skripts, oftmals auf [Wikipedia](https://de.wikipedia.org/wiki/Wikipedia:Hauptseite), aber auch auf externe Seiten von Hochschulen oder Unternehmen. Falls immer irgend möglich wird in den Skripten dieser Vorlesung auf die Originalquellen verlinkt. 
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+
+Das gesamte Sktrip zur Vorlesung wird ständig weiterentwickelt. Neue Inhalte und Links werden hinzugefügt. Fehler werden beseitigt und neue oder überarbeitete Dokumente auf Moodle hochgeladen. Der geneigte Leser sei auf das Datum der Veröffentlichung hingewiesen, das sich am Kopf der Dokumente des Skripts findet. Eine aktive Benachrichtigung über Änderungen am Skript erfolgt nicht.
+
+<!-- -------------------------------------------------------------------------
+
+                       Struktur der Vorlesung
+
+-------------------------------------------------------------------------- -->
+## Struktur der Vorlesung
+
+Wichtige Inhalte werden in dieser Vorlesung anhand von *"Projekten"* erklärt und in den Laboren erlebbar gemacht. Die bei der Produktentwicklung typischen Phasen werden in den Projekten dieser Vorlesung mehrfach durchlaufen. Der Schwierigkeitsgrad nimmt dabei von Projekt zu Projekt zu. Die jeweils neu hinzutretenden Inhalte werden in der Vorlesung vorgestellt und mit praktischen Übungen erlebbar gemacht. 
+
+Auch in den Vorlesungen sind in Form von [Breakout-Sessions](https://en.wiktionary.org/wiki/breakout_session) aktive Übungen eingearbeitet um das Gelernte erlebbar zu machen.
+
+@fig-label-struktur zeigt den vorgesehenen Aufbau und ausgewählte Inhalte der Vorlesung und Labore.
+
+```{mermaid}
+%%| fig-width: 6.4
+%%| label: fig-label-struktur
+%%| fig-cap: "Geplanter Aufbau und ausgewählte Inhalte der Vorlesung und Labore"
+graph TD;
+    Start[Einleitung] 
+    --> |Vorlesung| Lab1[Projekt 1]
+    --> |Vorlesung| Lab2[Projekt 2]
+    --> |Vorlesung| Lab3[Projekt 3]
+    --> |Vorbereitung| Ende[Prüfung]
+  
+
+    A[Projekt 1: Papierflieger];
+    A --> B[Mindmap];
+    B --> C[Lastenheft];
+    C --> D[Produktentwicklung];
+    D --> E[Prototyp, Testing];
+    E --> E2[Produktdokumentation];    
+
+    F[Projekt 2: Magnetpendel];
+    F --> G[Versuchsaufau vs. Simulation];
+    G --> H[Technische Datenerfassung];
+    H --> I[Bewertungsmatrix];
+        
+    L[Projekt 3: Earthlander];
+    L --> M[Projektmanagement];
+    M --> N[Morphologischer Kasten];
+    N --> S[Produktions- und Werkstofftechnik]
+    S --> |Unterbrechung| Q[Produktentwicklung]
+    Q --> O[Prototyp, Testing];
+    O --> P[Landing];
+    P -->|Success| R[Labor Ende];
+```
+
+### Weiterführende Informationen, Quellen und Literatur
+
+Korrekturhinweise jeglicher Art sind ausdrücklich willkommen! Das schließt auch Hinweise auf Rechtschreibfehler ein. Jede Rückmeldung hilft Ihrem Dozenten die Qualität des Skripts zu verbessern und allen Lesern eine bessere Erfahrung zu geben. Hierfür schon jetzt vielen Dank!
+
+Wenn in diesem Skript auf externe Seiten verlinkt wird, dann wurden diese bei der Erstellung des Skripts nach bestem Wissen und Gewissen geprüft und keine bösartigen und/oder rechtswidrigen Inhalte zum Zeitpunkt der Prüfung festgestellt. Der Ersteller dieses Skripts hat jedoch keinen Einfluss auf den Inhalt der verlinkten externen Seiten und macht sich den Inhalt dieser Seiten nicht zu eigen. 
+
+Bitte geben Sie Nachricht, falls Sie bösartige und/oder rechtswidrige Inhalte in diesem Skript oder den verlinkten externen Seiten finden. Sollten Sie einen Broken-Link finden machen Sie bitte mit Angabe des Links auf den Fehler aufmerksam! Vielen Dank!
+
+## Fragen? Anregungen? Kritik?

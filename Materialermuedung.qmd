@@ -1,0 +1,216 @@
+<!--
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Werkstoffkunde
+  - Materialermüdung
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: true
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 2
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Materialermüdung
+
+-------------------------------------------------------------------------- -->
+
+
+::: {.content-visible unless-meta="headlines.off"}
+# Entwurfs- und Entwicklungsphase
+:::
+
+## Materialermüdung {#sec-materialermuedung}
+
+![Einsturz der [Morandibrücke](https://de.wikipedia.org/wiki/Polcevera-Viadukt) in Genua am 14. August 2018 aufgrund von Materialermüdung.](images/Genua_Morandibruecke_20180814.jpg){#fig-genua1998 width="80%"}
+
+::: {.callout-tip}
+## Definition: *"Materialermüdung"*
+[Materialermüdung](https://de.wikipedia.org/wiki/Materialerm%C3%BCdung) bezeichnet einen langsam voranschreitenden Schädigungsprozess in einem Werkstoff unter Umgebungseinflüssen wie z.B. wechselnder mechanischer Belastung ("[Schwingfestigkeit](https://de.wikipedia.org/wiki/Schwingfestigkeit)") (siehe → [Betriebsfestigkeit](https://de.wikipedia.org/wiki/Schwingfestigkeit#Betriebsfestigkeit) @sec-betriebsfestigkeit), wechselnder Temperatur, UV- und ionisierender Strahlung und Einwirkung eines korrosiven Mediums (siehe → Umweltqualifizierung @sec-umwelt).
+:::
+
+```{mermaid}
+%%| label: fig-label-mmmaterialermuedung
+%%| fig-cap: "Mindmap wichtiger Einflussfaktoren auf die Materialermüdung bei Produkten"
+mindmap
+  root(Materialermüdung)
+    (Zyklische mechanische Lasten)
+      (Spannungsamplitude)
+      (Mittelspannung)
+      (Lastfrequenz)
+      (Zyklendauer)
+      (Belastungsmodi)
+        (Zug)
+        (Druck)
+        (Biegung)
+        (Torsion)
+    (Umwelteinflüsse)
+      (Korrosion)
+        (Feuchtigkeit)
+        (Salze)
+        (Säuren)
+        (Laugen)
+      (Temperatur)
+        (Hohe Temperaturen)
+        (Niedrige Temperaturen)
+        (Temperaturwechsel)
+      (Strahlung)
+        (IR-Strahlung)
+        (UV-Strahlung)
+        (Ionisierende Strahlung)
+      (Mechanische Einflüsse)
+        (Abrasion)
+        (Erosion)
+    (Produkteigenschaften)
+      (Geometrie)
+      (Werkstoffe)
+        (Mikrostruktur)
+          (Kornstruktur)
+          (Phasenanordnung)
+          (Metallurgische Kerben)
+        (Härte)
+      (Oberfläche)
+        (Mechanische Kerben)
+        (Rauheit)
+        (Bearbeitung)
+```
+
+Einer der wichtigsten Einflussfaktoren bei der Entwicklung von materiellen Produkten sind zyklische mechanische Lasten.
+
+::: {.callout-tip}
+## Definition: *"Schwingfestigkeit"*
+[Schwingfestigkeit](https://de.wikipedia.org/wiki/Schwingfestigkeit) (engl. fatigue behaviour) bezeichnet in der Werkstofftechnik das Verformungs- und Versagensverhalten von Werkstoffen und Produkten bei zyklischer, d. h. schwingender Belastung.
+:::
+
+Die Schwingfestigkeit von Werkstoffen und Produkten wird in die drei Bereiche 1.) **Kurzzeitfestigkeit**, 2.) **Zeit-** oder **Betriebsfestigkeit** und 3.) **Dauer-** oder **Endfestigkeit** unterteilt (siehe → Wöhler-Kurve @sec-woehlerkurve).
+
+::: {.callout-important}
+## Alle Produkte, die **nicht** Dauer- oder Endfest ausgelegt sind, werden versagen!
+Alle Produkte, die nicht Dauer- oder Endfest ausgelegt sind, versagen in dem Bereich des Erreichens der Anzahl der bei der Auslegung der Produkte angenommenen zyklischer Belastungen (siehe → Lastkollektiv @sec-lastkollektiv). 
+:::
+
+Die zwei Bereiche der Zeit- oder [Betriebsfestigkeit](https://de.wikipedia.org/wiki/Schwingfestigkeit#Betriebsfestigkeit) und der Dauer- oder Endfestigkeit sind entsprechend entscheidend für die Dimensionierung von allen Produkten, die zyklischen mechanischen Belastungen ausgesetzt sind. 
+
+<!--
+Da die dauer- oder endfeste Auslegung der Produkte in der Praxis in der Regel nicht möglich ist besitzt die Auslegung der Produkte auf Zeit- oder Betriebsfestigkeit überragende Bedeutung.
+-->
+<!--
+Die Schwingfestigkeit von Werkstoffen, aber auch von Produkten, kann mittels Wöhlerversuch untersucht werden. Liegt eine große Zahl von Wöhlerversuchen vor können die ermittelten Ergebnisse in Form einer Wöhlerkurve dargestellt werden. Die Wöhlerkurve gibt in Abhängigkeit von der Spannungsamplitude die Anzahl der ertragbaren Lastwechsel bis zum erwarteten Schwingbruch an. Wöhlerkurven können in die drei Bereiche 1.) Kurzzeit-, 2.) Zeit- oder Betriebsfestigkeit und 3.) Dauer- oder Endfestigkeit unterteilt werden. 
+--> 
+
+::: {.callout-warning}
+## Auslegung von Produkten in der Regel nur auf Zeit- oder Betriebsfestigkeit möglich!
+Aus wirtschaftlichen und technischen Gründen (→ [Leichtbau](https://de.wikipedia.org/wiki/Leichtbauweise)) ist die dauer- oder endfeste Auslegung der Produkte in der Praxis in der Regel nicht möglich^[So würden z.B. dauerfest ausgelegte Flugzeuge wegen zu hohen Gewichts nicht wirtschaftlich sinnvoll fliegen können; auch wäre die heute alltägliche Verwendung von Aluminium in Fahrzeugen aller Art praktisch unmöglich weil Aluminium mit seinem kubisch-flächenzentriertem Kristallgitter keine Dauerfestigkeit erreicht.]. Nahezu alle Produkte werden entsprechend "nur" auf Zeit- oder Betriebsfestigkeit ausgelegt! 
+:::
+
+::: {.callout-warning}
+## Pro-Tipp!
+Diese "richtige" Auslegung auf → **Betriebsfestigkeit** (siehe → @sec-betriebsfestigkeit) besitzt in der Praxis entscheidende Bedeutung bei der Produktentwicklung aller zyklischen mechanischen Lasten ausgesetzten Produkte. 
+:::
+
+<!--
+Materialermüdung ist ein wichtiger Aspekt in den Ingenieurwissenschaften, da sie zu strukturellem Versagen führen kann, wenn Materialien über längere Zeit wiederholten Belastungen ausgesetzt sind. Die Materialermüdung ist besonders relevant in Bereichen wie Maschinenbau, Luft- und Raumfahrttechnik, Bauingenieurwesen und vielen anderen Disziplinen, wo Bauteile unter zyklischen Lasten arbeiten. 
+
+Wichtige Einflussfaktoren für die Materialermüdung sind
+
++ (Zylische) mechanische Lasten
+### 1. **Spannungsamplitude und Mittelspannung**
+
+-   **Spannungsamplitude**: Die Differenz zwischen der höchsten und der niedrigsten Spannung während eines Lastzyklus. Höhere Amplituden führen oft zu schnellerem Ermüdungsversagen.
+-   **Mittelspannung**: Die Durchschnittsspannung im Lastzyklus. Eine hohe Zugmittelspannung kann die Rissausbreitung beschleunigen, während eine Druckmittelspannung die Lebensdauer verlängern kann.
+
+### 2. **Lastfrequenz**
+
+-   Die Frequenz, mit der die Lastzyklen auftreten, beeinflusst die Ermüdung. Eine höhere Frequenz führt oft zu einer schnelleren Erschöpfung der Mikrostrukturen im Material und somit zu einer kürzeren Lebensdauer.
+
+### 3. **Umgebungseinflüsse (Korrosion, Temperatur)**
+
+-   **Korrosion**: Materialien, die in einer korrosiven Umgebung betrieben werden, sind anfälliger für Ermüdung, da Korrosion die Oberfläche schwächt und Risse beschleunigt.
+-   **Temperatur**: Hohe Temperaturen führen oft zu einer schnelleren Ermüdung durch thermische Ausdehnung und Materialschwächung. Bei tieferen Temperaturen können bestimmte Materialien spröder werden und dadurch schneller Risse entwickeln.
+
+### 4. **Werkstoffstruktur und Mikrostruktur**
+
+-   Die Mikrostruktur des Materials (z. B. Kornstruktur, Phasenanordnung) beeinflusst, wie das Material auf wiederholte Belastungen reagiert. Feinkörnige Strukturen sind oft widerstandsfähiger gegen Ermüdung als grobkörnige Strukturen.
+-   Legierungen, Wärmebehandlung und Härte können die Ermüdungsbeständigkeit ebenfalls erheblich beeinflussen.
+
+### 5. **Oberflächenbeschaffenheit**
+
+-   Eine raue Oberfläche kann Spannungskonzentrationen erhöhen und somit als Initiationsstelle für Risse dienen. Glatte Oberflächen oder behandelte Oberflächen (z. B. durch Polieren oder Kugelstrahlen) sind in der Regel widerstandsfähiger gegen Ermüdung.
+
+### 6. **Geometrie und Bauteildesign**
+
+-   Kerben, Ecken und scharfe Kanten führen oft zu Spannungskonzentrationen, die den Startpunkt für Risse bilden können. Ein designtechnischer Ansatz zur Verringerung von Spannungskonzentrationen, wie z. B. abgerundete Ecken oder Verstärkungsstrukturen, kann die Ermüdungsbeständigkeit erhöhen.
+
+### 7. **Belastungsart (Zug, Druck, Biegung, Torsion)**
+
+-   Verschiedene Belastungsarten haben unterschiedliche Auswirkungen auf die Ermüdungslebensdauer. Zug- und Biegespannungen fördern oft die Rissbildung und -ausbreitung, während reine Druckbelastung das Material eher stabilisiert.
+
+### 8. **Zyklendauer (Creep und Kriecherscheinungen)**
+
+-   Bei Materialien, die über lange Zeiträume belastet werden, können Kriechprozesse (langsames, zeitabhängiges plastisches Fließen) die Ermüdung verstärken. Diese Erscheinungen treten besonders bei hohen Temperaturen auf.
+
+Diese Faktoren und ihre Wechselwirkungen sollten in der Vorlesung detailliert erläutert werden, mit Beispielen aus der Praxis, um Studierenden ein Verständnis für die Bedeutung der Materialermüdung und die Maßnahmen zur Erhöhung der Lebensdauer von Bauteilen zu vermitteln.
+
+Umwelteinflüsse spielen eine bedeutende Rolle bei der Materialermüdung, da sie die Mikrostruktur, Oberflächenbeschaffenheit und chemische Stabilität des Materials beeinflussen. Sie lassen sich in mehrere Klassen unterteilen, die jeweils unterschiedliche Mechanismen haben und daher gesondert betrachtet werden sollten:
+
+### 1. **Korrosive Einflüsse**
+
+Korrosion durch chemische Reaktionen zwischen dem Material und der Umgebung ist ein Hauptfaktor, der zur Ermüdung beitragen kann. Korrosion greift die Materialoberfläche an und schafft Schwachstellen, an denen Risse beginnen und sich schneller ausbreiten können. - **Feuchte Luft**: In einer feuchten Umgebung kann Rostbildung (bei Metallen wie Stahl) zur lokalen Materialschwächung führen. Die Korrosion wird durch Feuchtigkeit und Luftsauerstoff verstärkt. - **Salzhaltige Umgebungen**: In maritimen Umgebungen oder bei Straßenstreusalz kann Salz das Korrosionsrisiko massiv erhöhen, indem es die elektrische Leitfähigkeit der Oberfläche verändert und Reaktionen fördert. - **Säurehaltige und chemische Atmosphären**: In industriellen Anlagen, wo saure oder basische Dämpfe vorkommen, können spezifische chemische Reaktionen zur schnellen Materialdegradation führen.
+
+### 2. **Temperatur (thermische Einflüsse)**
+
+Temperaturen wirken auf die mechanischen Eigenschaften des Materials und beeinflussen seine Lebensdauer bei Ermüdung. Wichtige Aspekte hierbei sind: - **Hohe Temperaturen**: Bei hohen Temperaturen kann das Material erweichen, was die Kriechneigung erhöht und die Rissbildung fördert. Dies ist besonders bei Metallen und Polymeren kritisch. - **Niedrige Temperaturen**: Einige Materialien, wie Stahl, werden bei niedrigen Temperaturen spröde und neigen eher zur Rissbildung. Die reduzierte Zähigkeit führt zu einer erhöhten Empfindlichkeit gegenüber stoßartigen Belastungen. - **Temperaturwechsel (Thermoschock)**: Wiederholte Temperaturwechsel, wie z. B. bei Flugzeugen oder Bauteilen in Verbrennungsmotoren, führen zu thermischer Ermüdung. Die ständige Ausdehnung und Kontraktion kann zu Rissbildung an der Oberfläche führen.
+
+### 3. **Feuchtigkeit und Wasseraufnahme**
+
+Wasser kann sowohl als Medium für chemische Reaktionen wie Korrosion wirken als auch physische Materialveränderungen bewirken: - **Materialquellen**: Einige Materialien, wie Polymere und bestimmte Holzarten, können Wasser aufnehmen und dadurch aufquellen, was die mechanischen Eigenschaften verändert. - **Wassermolekül-induzierte Mikrostrukturen**: Wasseraufnahme kann die Mikrostruktur von Materialien beeinflussen, z. B. durch Reduzierung der Haftung zwischen Polymerketten. Dies erhöht die Empfindlichkeit gegenüber Ermüdung.
+
+### 4. **UV-Strahlung und Sonneneinstrahlung**
+
+Materialien, insbesondere Polymere und Kunststoffe, werden durch UV-Strahlung beeinflusst. UV-Strahlung kann chemische Bindungen schwächen und die mechanischen Eigenschaften verringern. - **Photochemische Zersetzung**: UV-Strahlung kann Polymere abbauen, indem sie chemische Bindungen bricht, was zur Versprödung und Rissbildung führt. - **Verfärbung und Oberflächenveränderungen**: Langfristige UV-Bestrahlung führt häufig zu Verfärbung und Versprödung der Oberfläche, wodurch das Material gegenüber zyklischen Belastungen anfälliger wird.
+
+### 5. **Strahlungseinflüsse (ionisierende Strahlung)**
+
+Materialien, die hohen Strahlendosen ausgesetzt sind, etwa in Kernkraftwerken oder in der Raumfahrt, können durch ionisierende Strahlung geschwächt werden. - **Atomare Defekte**: Strahlung führt zu atomaren Defekten im Material, was zu einer geringeren Zähigkeit und veränderten Materialeigenschaften führen kann. - **Mikrorissbildung**: Die Strahlung erzeugt mikroskopische Risse und Fehler, die als Ausgangspunkt für Ermüdungsrisse dienen können.
+
+### 6. **Mechanische Abrasion und Erosion**
+
+Wenn Materialoberflächen abrieb- oder erosionsanfällig sind, können mechanische Umwelteinflüsse eine Rolle spielen: - **Wind und Sand**: In wüstenähnlichen Umgebungen können Sandpartikel eine abrasive Wirkung auf Materialoberflächen haben und diese abtragen, was die Materialermüdung beschleunigt. - **Wasserströmung (Erosion)**: Wasser kann, besonders wenn Partikel wie Sand oder Schlamm mitgeführt werden, die Oberfläche erodieren und Materialabtrag fördern.
+
+### 7. **Biofouling und biologische Einflüsse**
+
+Biologische Einflüsse spielen eine Rolle, vor allem in feuchten und warmen Umgebungen, wo Mikroorganismen wie Bakterien und Pilze wachsen können: - **Mikrobiologisch beeinflusste Korrosion (MIC)**: Bakterien, die in feuchten Umgebungen vorkommen, können durch Ausscheidungen und enzymatische Prozesse Korrosion fördern, besonders bei Metallen und Kunststoffen. - **Biologische Belastung von Polymermaterialien**: Pilze und andere Mikroorganismen können die Oberflächenstruktur angreifen, was die mechanische Integrität verringern kann.
+-->
+
+

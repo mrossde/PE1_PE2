@@ -1,0 +1,59 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!-- -------------------------------------------------------------------------
+
+            Härtegrad-Logik - Steuerung der Umsetzung von Maßnahmen
+
+-------------------------------------------------------------------------- -->
+
+### Steuerung der Umsetzung von Maßnahmen {#sec-haertegradlogik}
+
+Die Steuerung der Umsetzung von Maßnahmen ist eine Herausforderung im Projektmanagement. 
+
+Ein mächtiges Werkzeug hierfür ist die Härtegrad-Logik. Der Härtegrad ist dabei eine Kennzahl (meist zwischen 1 und 5) für den bei der Umsetzung einer Maßnahme erreichten Realisierungsstand (*"Härtegrad"*).
+
+Bei eine Härtegrad-Logik wird für jede zur Zielerreichung identifizierten Maßnahme beschrieben, welchen Realisierungsstand diese in Bezug auf den Projektfortschritt erreicht hat. Bei der Härtegrad-Logik werden ein geplanter Umsetzungszeitpunkt und eine erwartete Umsetzungswahrscheinlichkeit hinterlegt, anhand derer ein Planungs- und Kontrollprozess in Bezug auf die Einkaufsaktivitäten in Gang gesetzt werden kann, der eine termingerechte Umsetzung der Maßnahmen erleichtert. 
+
+Die Härtegrade können dabei wie folgt eingeteilt werden:
+
++ **Härtegrad 1**:	Idee, Zieldefinition, Vorgehensmethodik und Meilensteine der Maßnahme sind festgelegt.
+
++ **Härtegrad 2**:	Die Maßnahme ist durch Genehmigungsinstanz freigegeben.
+
++ **Härtegrad 3**:	Die Maßnahme ist in der Umsetzungsphase.
+
++ **Härtegrad 4**:	Die Umsetzung der Maßnahme ist abgeschlossen.
+
++ **Härtegrad 5**:	Das Ziel der Maßnahme wurde realisiert, die Maßnahme ist im Ergebnis wirksam.
+
++ **Härtegrad X**:	Projektabbruch, d. h., es werden keine Maßnahmen mehr realisiert.
+
+Aufgrund der Umsetzungswahrscheinlichkeit der Maßnahmen und vor dem Hintergrund einer Risikobetrachtung macht es nur Sinn, die Werte, die den Maßnahmen ab Härtegrad 3 zugrunde liegen, ergebniswirksam im Plan oder Forecast zu berücksichtigen. Im Ist-Reporting (@sec-reporting → Reporting) werden dann nur die tatsächlich realisierten Ergebniseffekte aus den Maßnahmen gezeigt.
+
+::: {.callout-caution}
+## Tipp!
+Neben einer eindeutigen Definition und Datenquelle ist es zu empfehlen, dass die Kennzahlen zur Bewertung des erreichten Realisierungsstands von einer unabhängigen Stelle (z.B. dem @sec-controlling → Controlling) ermittelt werden, da sonst die Gefahr der Subjektivität besteht. 
+:::
+
+<!--
+Dieses Beispiel veranschaulicht, wie die Einsparpotenziale des Einkaufs für die einzelnen Härtegrade verfolgt werden können. Wichtig ist hierbei, dass eine Maßnahmenliste hinterlegt ist mit folgenden Angaben:
+
+- Beschreibung der Maßnahme, um das Einsparpotenzial zu realisieren
+- Erwartetes Einsparpotenzial
+- Härtegradeinteilung
+- Umsetzungszeitpunkt
+- Umsetzungswahrscheinlichkeit
+
+Wichtig
+
+Bestandteil in jedem Monatsreporting
+
+Diese Maßnahmenliste ist im Rahmen eines jeden Monatsreportings zu aktualisieren. Wichtig sind hierbei vor allem die Aktualisierung des Einsparpotenzials, des Umsetzungszeitpunkts und der Umsetzungswahrscheinlichkeit. Die Einteilung in die Härtegrade ergibt sich weitestgehend aus der Umsetzungswahrscheinlichkeit.
+-->
+

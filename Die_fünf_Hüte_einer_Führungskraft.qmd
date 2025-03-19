@@ -1,0 +1,79 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Die fünf Hüte einer Führungskraft
+
+-------------------------------------------------------------------------- -->
+
+
+
+## Die fünf Hüte einer Führungskraft {#sec-diefuenfhuete}
+
+---
+
+> *"Wie soll ich glauben was du sagst wenn ich sehe was du tust?" (Quelle: Unbekannt)* 
+
+---
+
+Die [Führungskraft](https://de.wikipedia.org/wiki/Manager_(Wirtschaft)) von heute und im speziellen in [agilen Umfeld](https://de.wikipedia.org/wiki/Agile_Softwareentwicklung) sollte in der Lage sein, je nach Situation, auf verschiedene Anforderungen der Mitarbeiter zu reagieren. Dies setzt voraus, dass die Führungskraft sich über die Unterschiede der Situationen und der daraus folgenden unterschiedlichen Anforderungen an das eigene Handeln bewusst ist. 
+
+Diese unterschiedlichen Rollen, die als Reaktion auf die unterschiedlichen Anforderungen oder dem Erteilten Auftrag von einer Person eingenommen werden, werden auch als Hüte bezeichnet. Das Bild, sich verschiedene Hüte für verschiedene Situationen vorstellen und aufsetzen zu können, hilft uns den Wechsel bildlich zu machen und damit auch leichter nachzuvollziehen.
+
+Das Bild der Hüte erlaubt eine Veranschaulichung der Trennung der Rolle, die eine Person (temporär) in einer bestimmte Situation, z.B. bei einer Projektbesprechung, einnimmt, von der Person als solches.
+
+Eine häufig gebrachte Formulierung ist *"Ich habe gerade den Hut xyz auf!"* (heisst: *"Ich vertrete gerade die Rolle xyz"*). Das Bild des Hutes wird auch verwendet, um die Verantwortlichkeit zu klären, ausgedrückt z.B. in der Frage *"Wer hat gerade den Hut auf?"* (heisst: *"Wer ist gerade für eine Aufgabe verantwortlich?"*). Beispiel: *"Wer hat den Hut auf die Getränke für die Geburtstagsfeier am Wochenende zu besorgen?"* (siehe → AKV)
+
+Bei Projekten kann eine oder mehrere Rollen (aka ein oder mehrere Hüte) auch einer Person gleichzeitig zugewiesen werden. Beispiele hierfür sind z.B. die Rolle/der Hut des Kostenverantwortlichen, des Gewichtsverantwortlichen, des Bauraumverantwortlichen, des Qualitätsverantwortlichen, usw…
+
+::: {.callout-caution}
+## Tipp: Versuchen Sie den Hut zu verstehen, den Ihr Gegenüber in einer Situation auf hat! 
+Zur Vorbereitung und zur erfolgreichen Gestaltung von Projekt-/Team-Besprechungen sowie zur Verbesserung der Zusammenarbeit im Projekt/im Team insgesamt hilft es zu verstehen, welchen Hut Ihr Gegenüber in der jeweiligen Situation auf hat! Verstehen Sie die Rolle Ihres Gegenübers können Sie sich besser vorbereiten, zielgerichteter und wirkungsvoller für Ihre eigenen Anliegen argumentieren, und insgesamt mögliche aus den verschiedenen Rollen resultierende Konflikte weniger "persönlich" nehmen!
+::: 
+
+![Die fünf Hüte einer Führungskraft (Quelle: [netzwerkknoten.com](https://www.netzwerkknoten.com/die-5-huete-einer-fuehrungskraft))](images/5Huete.png){width=80% #fig-5huete}
+
+Die fünf Hüte einer Führungskraft sind: 
+
+1. **[Coach (Mentor)](https://de.wikipedia.org/wiki/Coaching)**: *"So habe ich es gemacht. Wie würdest Du es machen?"*   
+Als Coach ermöglicht man seinem Gegenüber, neue Lösungsräume und Perspektiven zu gewissen Themen zu öffnen. Coaching ist ein co-kreativer Prozess, in dem davon ausgegangen wird, dass der Mitarbeitende der Herausforderung offen gegenüber steht und somit auch offen für das Finden einer Lösung ist. Der Mentor bringt die eigene Erfahrungen zum Finden möglicher Schritte zur Lösung ein. Im Mittelpunkt des [Coachings](https://de.wikipedia.org/wiki/Coaching) durch die Führungskraft steht jedoch immer die Befähigung seiner Mitarbeitenden zum eigenverantwortlichen Handeln — auch außerhalb der eigenen [Komfortzone](https://de.wikipedia.org/wiki/Komfortzone). Der Coach/Mentor übernimmt also prozessuale aber kaum inhaltliche Verantwortung. 
+
+2. **[Moderator](https://de.wikipedia.org/wiki/Moderation_(Gruppenarbeit))**: *"Wie werdet ihr es machen?"*  
+Der klassische Moderator muss über kein fundiertes Fachwissen verfügen. Er führt durch Meetings oder generell Veranstaltungen zu einem gewissen Thema. Er sorgt für den strukturierten Ablauf eines Meetings, einer Brainstorming Session, Retrospektive, etc. und bietet dort, wo nötig oder angebracht ist, Übersetzung und Interpretationen an, um mögliche Unklarheiten zu verringern und das Verständnis zu erhöhen. Er paraphrasiert also, z. B. mit “Was ich verstanden habe, ist…” / “Person X hat gerade Y beschrieben.” / “Ich höre daraus…” / “Wie kommt das bei euch an…?” / “Aus der Sicht von Person X, stellt es sich also wie folgt dar…” Auch hier besteht lediglich prozessuale aber keine inhaltliche Verantwortung. 
+
+Bei den folgenden drei Hüten überwiegt die inhaltliche Verantwortung über die prozessuale:
+
+3. **Trainer**: *"So wird es gemacht!"*  
+Der Trainer hat fundiertes Wissen in einem bestimmten Bereich und soll oder möchte dieses Wissen weitergeben. Der Trainer lässt Mitarbeitende von seinen Erfahrungen und Kenntnissen lernen. Trainer wissen, wie etwas gemacht werden muss und möchten genau dieses Wissen weitergeben und auch angewendet sehen. Ihr Dozent sieht sich im Setting dieser Vorlesung in der Rolle eines Trainers.
+
+4. **[Der disziplinarische Vorgesetzte](https://de.wikipedia.org/wiki/Vorgesetzter)**: *"Wer macht was?"*  
+Der disziplinarische Vorgesetzte sagt, was getan werden muss, um ein gegebenes Ziel zu erreichen^[2M-Methode: *"Machen! Maul halten!"*].
+
+5. **Visionär**: *"Da wollen wir hin!"*  
+Der Visionär zeigt auf „wo die Reise hingeht“. Der Visionär formuliert ein Bild von der Zukunft, je nach Position entweder für das ganze Unternehmen oder im Fall der z.B. Abteilungs- oder Teamleitung auch ("nur") für die eigene Abteilung oder das eigene Team. 
+
+Als Menschen haben wir als Führungskraft natürlich nie nur einen Hut auf. Vielmehr befinden sich alle diese fünf Rollen zu verschiedenen Anteilen immer in uns. Das Bild der Hüte hilft aber (sowohl als Führungskraft, als auch als Mitarbeiter), sich über die Differenzierung bewusst zu sein und dadurch auch seiner Führungskraft bzw. seinem Mitarbeiter zielgerichteter begegnen zu können. 
+
+
+::: {.callout-caution}
+## Tipp: Den aufgesetzten Hut kommunizieren!
+In vielen, insbesondere angespannten, kontrovers und emotional diskutierten Situationen ist es oftmals sehr hilfreich zu Kommunizieren, welchen Hut man aus der eigenen Wahrnehmung heraus gerade auf hat. Das macht es den Mitwirkenden einfacher, die vertretene Position besser zu verstehen und Konflikte auch weniger "persönlich" zu nehmen. Wichtige Voraussetzung hierfür ist, dass allen Beteiligten das hier vorgestellte Denkmodell der verschiedenen Hüte, die jede Person aufsetzen kann, bekannt ist.
+::: 
+
+Zwei einfache Beispiele zum Tragen verschiedener Hüte in der Praxis: 
+
+Wenn ein Mitarbeiter auf mich als Führungskraft zukommt und nach einer spezifischen Funktion in einer Software fragt, würde ich wahrscheinlich nicht meinen Coaching Hut aufziehen und fragen, wie lange er denn schon Schwierigkeiten mit der Funktion hat und was er schon alles versucht hat. In diesem Fall geht es ganz einfach um die Vermittlung dieses spezifischen Wissens und der Hut des Trainers ist die richtige Wahl.
+
+Kommt ein Mitarbeiter allerdings auf mich als Führungskraft zu und ist sich unsicher in seiner Rolle z.B. in einem Projekt oder wie er mit einer schwierigen Situation im Team umgehen soll, lohnt es sich sehr, den Mitarbeiter die Situation genauer beschrieben zu lassen und durch die richtigen Fragen zur eigenen Lösungsfindung zu verhelfen, also den Hut des Coaches zu nutzen. Gebe ich dem Mitarbeiter hier eine Lösung vor, nehme ich ihm die Chance eigene Erfahrungen zu machen und zu wachsen. 
+
+::: {.callout-caution}
+## Die Anteile der Hüte im Führungsalltag können extrem stark variieren!
+Je nach Organisationseinheit, Führungsverständnis in der Organisation, den Mitarbeitenden im Projekt/Team und den bestehenden Aufgaben werden die fünf Hüte unterschiedlich in der Führungsaufgabe gefordert. Bei sehr starren, streng hierarchisch geführten Organisationseinheiten und oftmals auch noch entsprechendem eigenen Führungsverständnis der Führungskraft kann es z.B. passieren, dass die Führungskraft nahezu ausnahmslos den Hut des Disziplinarischen Vorgesetzten auf hat und ganz in dieser Rolle aufgeht. Andere Führungskräfte, die Aufgrund ihrer exzellenten fachlichen Kompetenz zur Führungskraft mit Personalverantwortung aufgestiegen sind, nehmen hingegen immer wieder die Rolle des Trainers ein, selbst dann, wenn ihr Fachwissen vielleicht schon seit vielen Jahren veraltet ist. Am Ende gilt: Führungskräfte sind auch nur Menschen und bringen ihre unterschiedlichen Stärken und Schwächen bewusst (oder schlimmstenfalls unbewusst) in die Ausgestaltung der Führungsaufgabe ein!
+:::

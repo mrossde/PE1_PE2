@@ -1,0 +1,117 @@
+<!--
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Softskills
+  - Johari-Fenster
+  - Black Swans
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Johari-Fenster
+
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Softskills
+:::
+
+## Johari-Fenster {#sec-johari}
+
+Das [Johari-Fenster](https://de.wikipedia.org/wiki/Johari-Fenster) ist ein Konzept aus der Psychologie und Kommunikation, das dazu dient, die Interaktion und das Verhalten zwischen Menschen zu analysieren und zu verbessern. Es wurde von den Psychologen Joseph Luft und Harry Ingham 1955 entwickelt und ist nach einer Kombination ihrer Vornamen benannt.
+
+Das Johari-Fenster dient dazu, das gegenseitige Verständnis, die Selbstwahrnehmung und die zwischenmenschliche Kommunikation zu fördern, indem es verschiedene Aspekte des individuellen Wissens und der Wahrnehmung visualisiert. Es besteht aus einem Vier-Felder-Modell:
+
+1. **Offener Bereich (Öffentliche Zone)**: Informationen, die sowohl für die Person selbst als auch für andere sichtbar sind. Es sind Dinge wie Fähigkeiten, Erfahrungen, Verhalten und Meinungen, die offen kommuniziert und von allen wahrgenommen werden können.
+
+2. **Blinde Flecken**: Eigenschaften oder Verhalten, die von anderen wahrgenommen werden, aber von der Person selbst nicht erkannt werden. Andere können beispielsweise eine Person auf bestimmte Verhaltensmuster hinweisen, die ihr möglicherweise nicht bewusst sind.
+
+3. **Verborgener Bereich**: Informationen, die die Person selbst kennt, aber nicht anderen mitteilt. Es können persönliche Gedanken, Gefühle oder Erfahrungen sein, die aus verschiedenen Gründen nicht offen geteilt werden.
+
+4. **Unbekannte Zone**: Aspekte, die weder von der Person selbst noch von anderen erkannt oder verstanden werden. Es könnte sich um tief vergrabene Erinnerungen oder unbewusste Einflüsse handeln, die das Verhalten beeinflussen.
+
+![[Johari-Fenster](https://de.wikipedia.org/wiki/Johari-Fenster)](images/JohariFenster.drawio.svg){width=50% #fig-johari}
+
+Das Konzept des Johari-Fensters wird häufig in Bereichen wie Persönlichkeitsentwicklung, Teamarbeit, Konfliktlösung, Führung und Coaching verwendet, um Menschen dabei zu helfen, ihre eigenen Verhaltensmuster zu verstehen und bessere Kommunikatoren zu werden (siehe z.B. → [Allgemeine Kommunikationsmodelle](https://de.wikipedia.org/wiki/Eisbergmodell#Allgemeine_Kommunikationsmodelle_mit_Pareto-Verteilung).)
+
+Das populäre Schlagwort des ["Unbekannten Unbekannten"](https://de.wikipedia.org/wiki/There_are_known_knowns) bezieht sich auf den vierten Quadranten des Johari-Fensters, der "Unbekannten Zone". 
+
+Das Konzept des "Unbekannten Unbekannten" sagt aus, dass es Dinge gibt, von denen wir nicht einmal wissen, dass wir sie nicht wissen. Das bedeutet, dass es Bereiche in unserem Verständnis und unserer Wahrnehmung gibt, die vollständig außerhalb unseres Bewusstseins liegen. Das Unbekannte Unbekannte bedeutet, dass unser Wissen und unsere Wahrnehmung begrenzt sind und dass es immer Raum für neue Entdeckungen, Erkenntnisse und Perspektiven gibt.
+
+::: {.callout-caution}
+## Das "Unbekannte Unbekannte" im Produktentstehungsprozess technischer Produkte 
+Das aus der Psychologie und Kommunikationsforschung stammende Konzept des [Johari-Fensters]((https://de.wikipedia.org/wiki/Johari-Fenster)) kann auch auf technisches Wissen übertragen werden. Auch hier ist das *"*Unbekannte Unbekannte"* der entscheidende Bereich, im Positiven wie im Negativen. 
+
+So können Lösungen auf Herausforderungen existieren, die aktuell noch vollständig außerhalb des heute gedachten liegen, ebenso kann es im Produktentstehungsprozess auch immer wieder zu *„bösen Überraschungen“* kommen, indem Probleme *„aus dem Nichts“* zu Tage treten, auch bei Fragestellungen, die schon lange als beherrscht gelten! (siehe → [„Black Swan“](https://de.wikipedia.org/wiki/Black_Swan_(Risiken)) @sec-blackswan).
+:::
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Black-Swans
+
+-------------------------------------------------------------------------- -->
+
+## Black Swan {#sec-blackswan}
+
+::: {.callout-tip}
+## Definition: *"Black Swan"*
+[Black Swan](https://de.wikipedia.org/wiki/Black_Swan_%28Risiken%29) ist ein Anglizismus für unerwartete und unwahrscheinliche zukünftige Ereignisse mit erheblichen Auswirkungen. Der Finanzmathematiker [Nassim Nicholas Taleb](https://de.wikipedia.org/wiki/Nassim_Nicholas_Taleb) definierte den „Schwarzen Schwan“ als ein "historisches, ökonomisches, wirtschaftliches oder persönliches Ereignis, das von Beobachtern einerseits nicht vorhergesagt wurde, andererseits massive Folgen hat".
+:::
+
+Der Begriff "Black Swan" bezieht sich auf den selten vorkommenden Schwarzschwan. Ein „schwarzer Schwan“ verkörperte bis in das 18. Jahrhundert hinein das Nichtvorstellbare, denn nach damaligem Wissensstand waren alle Schwäne weiß.
+
+Von **echten** „Schwarzen Schwänen“ wird in der Theorie gesprochen, wenn sämtliche bekannten Fakten keinen Rückschluss auf ein zukünftiges Risiko zulassen und allen Akteuren nicht bewusst ist, dass es Unerwartetes geben könnte. Das Auftreten von echten Schwarzen Schwäne kann in der Realität grundsätzlich nicht vollständig ausgeschlossen werden.
+
+<!--
+In vielen Prognosemodellen werden „Schwarze Schwäne“ daher meist als Worst Case wegen der zu geringen Eintrittswahrscheinlichkeit nicht berücksichtigt. Ebenso werden "Schwarze Schwäne" in statistischen Modellen vollständig ausgeblendet. Eine Begründung hierfür ist, dass in vielen Fällen die Berücksichtigung "Schwarzer Schwäne" zu keinen hilfreichen Ergebnissen führt. 
+-->
+
+Um **unechte** „Schwarze Schwäne“ handelt es sich dagegen, wenn bei genauerer Analyse der bereits bekannten Fakten das bestehende Risiko hätte erkannt werden können, aber dies leichtfertigerweise nicht geschehen ist. 
+
+::: {.callout-caution}
+## "Unechte schwarze Schwäne" im Produktentstehungsprozess technischer Produkte 
+Exzellente Arbeit im Produktentstehungsprozess ist dadurch gekennzeichnet dass unechte "Schwarze Schwäne" frühzeitig erkannt und die mit diesen unechten "Schwarzen Schwänen" verbundenen Risiken im Produktentstehungsprozess vorausschauend und proaktiv berücksichtigt werden - sprich: den Risiken durch konstruktive Maßnahmen entgegengewirkt wird. 
+
+Ziel ist es, das Auftreten unechter "Schwarzer Schwäne" beim späteren Produkt vollständig auszuschließen.
+:::
+
+<!--
+Im Gegensatz zum nicht erwartbaren "Schwarzen Schwan" ist das "graue Nashorn" (englisch "grey rhino") "eine sehr unwahrscheinliche, mit wesentlichen Auswirkungen verbundene, jedoch vernachlässigte Bedrohung…", die trotz Erkennbarkeit übersehen oder absichtlich ignoriert wurde.
+-->

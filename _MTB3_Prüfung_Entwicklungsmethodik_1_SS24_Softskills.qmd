@@ -1,0 +1,116 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Prüfung MTB3 Entwicklungsmethodik 1 SS24
+
+-------------------------------------------------------------------------- -->
+
+<!--
+//-------------------------------------------------------------------------
+//
+//                     Softskills
+//
+//-------------------------------------------------------------------------
+-->
+
+# Softskills
+
+
+## Aufgabe "Teamentwicklung nach Tuckman"
+Wie lauten die vier Phasen der Teamentwicklung nach Tuckman?
+
+1. *_____________________________________*
+2. *_____________________________________*
+3. *_____________________________________*
+4. *_____________________________________*
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+1.) Forming - 2.) Storming - 3.) Norming - 4.) Performing 
+:::
+
+## Aufgabe "Phasen der Teamentwicklung"
+Welche der folgenden Aussagen ist richtig? (1 Antwort ist richtig)
+
+- [ ] Alle Teams durchlaufen die vier Phasen und schließen die Teamentwicklung erfolgreich ab. 
+- [ ] Die ersten Phasen können übersprungen werden um sehr schnell die Teamentwicklung abzuschließen.
+- [ ] Viele Teams kommen über die zweite Phase nicht hinaus.
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [x] Viele Teams kommen über die zweite Phase nicht hinaus und schöpfen ihr Leistungspotenzial nicht aus.
+:::
+
+
+## Aufgabe "Lencioni-Pyramide"
+Welches ist nach dem Modell von Patrick Lencioni die Grundursache für das Scheitern von Teamentwicklungen? (1 Antwort ist richtig)
+
+- [ ] Angst vor Konflikten
+- [ ] Fehlende Fokussierung auf Ziele und Ergebnisse
+- [ ] Fehlendes Engagement
+- [ ] Fehlendes Verantwortungsbewusstsein
+- [ ] Fehlendes Vertrauen
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [x] Fehlendes Vertrauen
+:::
+
+
+## Aufgabe "Ringelmann-Effekt"
+Welche der folgenden Aussagen ist nach Ringelmann richtig? (1 Antwort ist richtig)
+
+- [ ] Die individuelle Leistung von Einzelpersonen ist unabhängig von der Gruppengröße.
+- [ ] Die individuelle Leistung von Einzelpersonen steigt mit der Gruppengröße.
+- [ ] Die individuelle Leistung von Einzelpersonen fällt mit der Gruppengröße.
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [x] Die individuelle Leistung von Einzelpersonen fällt mit der Gruppengröße.
+:::
+
+
+## Aufgabe "Führung"
+Der Begriff "Führung" fasst zwei verschiedene Eigenschaften zusammen, die im angloamerikanischen in zwei Begriffe getrennt sind. Welche zwei verschiedene Eigenschaften von "Führung" verbergen sich hinter dem Begriff?
+
+1. *_____________________________________*
+2. *_____________________________________*
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+1.) *"Management"* - 2.) *"Leadership"*
+:::
+
+
+## Aufgabe "Eisenhower-Prinzip"
+Sie haben viel zu tun. Eine neue Aufgabe ist dringend, aber nicht wichtig. Wie gehen Sie die Aufgabe an? (1 Antwort ist richtig)
+
+- [ ] Ich bearbeite die Aufgabe sofort.
+- [ ] Ich schaue, ob jemand die Aufgabe für mich übernehmen kann.
+- [ ] Ich bearbeite die Aufgabe später.
+- [ ] Ich habe zu viel zu tun; ich bearbeite die Aufgabe falls mich nochmal jemand darauf anspricht.
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [x] Ich schaue, ob jemand die Aufgabe für mich übernehmen kann.
+:::
+
+
+## Aufgabe "E-Mail"
+Innerhalb welches Zeitraums sollte auf eine geschäftliche E-Mail geantwortet werden (1 Antwort ist richtig)?
+
+- [ ] Immer schnellstmöglich, aber erst, wenn die E-Mail inhaltlich richtig beantwortet werden kann.
+- [ ] Immer schnellstmöglich, auch wenn dafür ggf. das Unterbrechen einer anderen Arbeit notwendig ist.
+- [ ] Innerhalb von 24 Stunden.
+- [ ] Innerhalb von 5 Arbeitstagen.
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [X] Innerhalb von 24 Stunden.
+:::

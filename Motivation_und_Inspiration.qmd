@@ -1,0 +1,124 @@
+---
+title: "DEB3 Produktentwicklung 1"
+resource-path: ["../images"]
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+keywords:
+  - Motivation 
+  - Inspiration
+  - Ideen
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+---
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS WORK IN PROGRESS!!!**
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Anregung und Inspiration
+
+-------------------------------------------------------------------------- -->
+
+::: {.callout-important}
+## Wichtiger Hinweis!
+Die im Folgenden aufgeführten/verlinkten Beiträge geben persönliche Meinung und Sichtweisen wieder, die Auswahl der Beiträge basiert ausschließlich auf subjektiven Kriterien Ihres Dozenten. Die Beiträge sollen  lediglich Denkanstösse anbieten. Der geneigte Leser ist dringendst aufgefordert die aufgeführten Beiträge kritisch zu hinterfragen und eigene Perspektiven zu entwickeln!
+:::
+
+### Motivation und Inspiration
+
+#### TED-Talks (via YouTube)
+
+<p style="text-align: center;">![](images/TED-Logo.png){width=20%}</p>
+
++ [TED](https://www.youtube.com/@TED)
++ [TEDx](https://www.youtube.com/@TEDx)
++ [TED-Archives](https://www.youtube.com/@TEDTalks)
+
+
+
+#### YouTube
+
+<p style="text-align: center;">![](images/YouTube-Logo-2017.png){width=20%}</p>
+
++ [Simon Sinek](https://www.youtube.com/@SimonSinek)
+
+
+
+#### Instagram
+
+<!-- -------------------------------------------------------------------------
+
+                       Bild Instagram-Logo 2022
+
+-------------------------------------------------------------------------- -->
+<p style="text-align: center;">![](images/Instagram-Logo-2022.png){width=20%}</p>
+
++ [Simon Sinek](https://www.instagram.com/simonsinek/)
+
+
+
+#### Leadership
+
+<p style="text-align: center;">![](images/TED-Logo.png){width=20%}</p>
+
++ [Martin Gutmann: *"Why do we celebrate incompetent leaders?"*](https://www.youtube.com/watch?v=DU06c7f9fzc)
+
++ [Hamdi Ulukaya: *"The anti-CEO playbook"*](https://www.youtube.com/watch?v=SGTMSV8QUrs)
+
+
+### Miscellaneous
+
+<p style="text-align: center;">![](images/YouTube-Logo-2017.png){width=20%}</p>
+
+#### Cashflow Quadrant
+
+::: {.callout-important}
+## Wichtiger Hinweis!
+Der folgende Link zum Cashflow-Quadranten verweist auf das von weiteren Autoren teils heftig kritisierte, aber gleichwohl millionenfach verkaufte Buch [*"Rich Dad Poor Dad"*](https://en.wikipedia.org/wiki/Rich_Dad_Poor_Dad) des Autors [Robert Kiyosaki](https://de.wikipedia.org/wiki/Robert_Kiyosaki). Der geneigte Leser möge sich den von Robert Kiyosaki in seinem Bestseller vertretenen Thesen zum Cashflow-Quadranten mit Aufgeschlossenheit, aber auch mit besonderer Vorsicht nähern.
+:::
+
++ [Robert Kiyosaki: *"Rich Dad's cashflow quadrant"*](https://youtu.be/HJ-Ubr5fFxs)
+
+<!--
++ [Simon Sinek](https://youtu.be/4oN5JShOs2I)
++ [Simon Sinek](https://www.youtube.com/watch?v=NcaQUH2K-wo)
++ [Simon Sinek](https://www.youtube.com/watch?v=xNgQOHwsIbg)
+-->
+

@@ -1,0 +1,213 @@
+<!--
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Prototyping und Test
+  - Qualität
+  - KVP
+  - SPC
+  - Six-Sigma
+  - Deming-Zyklus
+  - 8D-Methode
+  - Ishikawa-Diagramm
+  - Fehlerbaumanalyse
+  - 5-Why-Methode
+  - FMEA
+  - 5S-Methode
+  - Poka-Yoke
+
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 3
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Qualität und Qualitätsmanagement
+
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Prototyping und Test
+:::
+
+## Qualität
+
+![Symbolbild Qualitätsmanagement (Quelle: [Adobe Stock](https://stock.adobe.com/de/search?k=qualit%C3%A4t))](images/AdobeStock_396094113.jpeg){width=100% #fig-symbolbildqualitaet}
+
+In diesem Kapitel geht es um die Qualitätssicherung in der Entwurfs- und Entwicklungsphase im Produktentstehungsprozess. Die hier vorgestellten Methoden finden sich aber ebenso in den Phasen Prototyping und Test sowie in der späteren (Serien-)Produktion. 
+
+::: {.callout-important}
+## ACHTUNG! WICHTIG!
+*“If you can't measure it, you can't manage it.” (Peter F. Drucker)*
+:::
+
+
+::: {.callout-tip}
+## Definition: *"Qualität"*
+*"Qualität"* beschreibt die Eigenschaften oder Merkmale eines Objekts, Produkts, Dienstes oder einer Erfahrung, die es in Bezug auf seinen beabsichtigten Zweck, seine Anforderungen oder die Erwartungen der Benutzer oder Kunden als besonders gut oder zufriedenstellend auszeichnen. Qualität kann verschiedene Dimensionen umfassen, darunter Zuverlässigkeit, Leistung, Haltbarkeit, Sicherheit, Effektivität, Ästhetik und Benutzerfreundlichkeit. Eine umfassende Definition von Qualität bezieht sich nicht nur auf die materiellen Eigenschaften eines Objekts, sondern auch auf die Erfüllung der Erwartungen und Bedürfnisse der Menschen, die es nutzen oder davon betroffen sind.
+:::
+
+
+<!-- -------------------------------------------------------------------------
+
+                        Qualitätsmanagement
+
+-------------------------------------------------------------------------- -->
+{{< include KVP.qmd >}}
+{{< include SPC.qmd >}}
+{{< include Six_Sigma.qmd >}}
+{{< include Deming-Zyklus.qmd >}}
+{{< include 8D-Methode.qmd >}}
+{{< include Ishikawa.qmd >}}
+{{< include Fehlerbaumanalyse.qmd >}}
+{{< include 5-Why-Methode.qmd >}}
+{{< include FMEA.qmd >}}
+{{< include 5S-Methode.qmd >}}
+{{< include Poka_Yoke.qmd >}}
+
+
+::: {.callout-tip}
+## Weiterführende Links
+
++ **Fa. BOSCH**: Eine der besten Quellen (@reynvaan_wie_2022) für weitergehende Informationen, die Ihr Dozent gefunden hat ist so zu finden: Gehen Sie auf die Seite
+
+[https://www.bosch.com/de/unternehmen/supply-chain/informationen-fuer-geschaeftspartner/#qualitaet-regelungen-und-standards](https://www.bosch.com/de/unternehmen/supply-chain/informationen-fuer-geschaeftspartner/#qualitaet-regelungen-und-standards)
+
+Auf dieser Seite scrollen Sie nach unten bis zu dem Thema „Bosch Schriftenreihe: Qualitätsmanagement in der Bosch-Gruppe“. Klicken Sie auf das *"+"* Zeichen rechts. Dann erscheint die Liste dieser Bosch-Hefte, die Sie als *.PDF herunterladen können. Zur Vertiefung der Inhalte in dieser Vorlesung sind die Hefte über SPC, über Versuchsplanung, und Methoden zur Problemlösung zu empfehlen, und zwar dann, wenn Sie selbst ein solches Tool anwenden sollen.
+
+
++ **Six-Sigma**: Auf der sehr gut gemachten Seite [https://www.sixsigmablackbelt.de/](https://www.sixsigmablackbelt.de/) finden Sie ebenfalls viele wertvolle Informationen. Diese Seite enthält auch viele Excel-Sheets zum kostenfreien Herunterladen, mit denen Sie die Berechnungen zu vielen der angegebenen Themen durchführen können, beispielsweise für die Ermittlung des $c_pk$-Wertes.
+:::
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
+
++ @jakoby_qualitatsmanagement_2022: [Elementare QM-Methoden](https://rdcu.be/dIy3K)
++ @reynvaan_wie_2022: [Qualität](https://rdcu.be/dIzt1)
+
+:::
+
+<!--
+#### Literaturempfehlung
+
+![@jakoby_qualitatsmanagement_2022: [Qualitätsmanagement für Ingenieure](https://link.springer.com/book/10.1007/978-3-658-36677-3)](images/Jakoby_Qualitaetsmanagement.webp){width=40%}
+
+![@prorok_statistische_2022: [Statistische Unsicherheit in der industriellen Produktion](https://link.springer.com/book/10.1007/978-3-662-63889-7)](images/Prorok_Statistische_Produktion_978-3-662-63889-7.webp){width=40%}
+
+
+<!-- Buch über Account der HS-Esslingen nicht downloadbar
+![@bertsche_zuverlassigkeit_2004: [Zuverlässigkeit im Fahrzeug- und Maschinenbau](https://link.springer.com/book/10.1007/3-540-34996-0)](images/Bertsche_Zuverl%C3%A4ssigkeit_978-3-540-34996-9.webp){width=40%}
+-->
+
+<!--
+Probleme sind Schätze – Management-Ethik als Folge der Lean Production
+
+
+Materialfluss- oder Produktionssysteme werden maßgeblich in ihrem Leistungsgrad durch Entscheidungen begrenzt, die auf den jeweiligen Managementphilosophien basieren. Durch umfassende Lean Production-Methoden ist ein enormer Effizienzgewinn möglich. Wenn lediglich isolierte Elemente umgesetzt werden, etwa Kanban, oder wesentliche Anforderungen des TPS z. B. an die Ethik nicht implementiert werden, wird nur ein Bruchteil des Fortschritts erreicht. Auch durch perfektionierte Steuerungsalgorithmen, Arbeitsmethoden oder vollautomatisierte IT können Begrenzungen, die durch strategische Rahmenbedingungen definiert sind, nicht kompensiert werden. Das TPS gibt hierzu sehr einfache Regeln vor, die jedoch Änderungen der gelebten Managementphilosophie notwendig machen. Die Inhalte der Managementhandbücher deutscher Unternehmen unterscheiden sich zu diesen Vorgaben des TPS kaum. Die Philosophien der Shareholder Value führen jedoch in Bezug auf die Grundthesen des TPS zu Konflikten. TPS fordert einen kooperativen Managementstil, um einen starken Bottom-up-Prozess zu erzeugen, der die Potenziale der Belegschaft zur Effizienzerhöhung nutzbar macht. T. C. Ohno verwendet den Vergleich: „Das beste Team gewinnt!“ [Ohno 78]. Teamgeist, Vorbildfunktion und das Einhalten von Regeln rückt in den Vordergrund. Womack und Jones [Woma 05] gehen in der Anforderung soweit, dass der CEO persönlich die Maßnahmen zur Verbesserung anführen muss. „An diesem Punkt scheitern die meisten amerikanischen Unternehmen gleich am Anfang (…) Die CEO wollen die Verbesserung delegieren, teils weil sie Angst davor haben in die (…) Abteilungen (…) zu gehen und bei der Verbesserung Hand an zu legen (…) Sie machen weiter mit ihrer alten Art des Managements – den Zahlen“. Welche konkreten Mittel stehen zur Verfügung, um ein an der Nachhaltigkeit orientiertes Unternehmen mit einer weltweit konkurrenzfähigen Effizienz auch in den indirekten Bereichen zu erreichen?
+
+1.22.1 Ethik und Managementziele des Toyota Produktionssystems (TPS)
+In TPS und moderner Lean Production [Suza 89, Ohno 78] werden Zielsetzungen an Ethik und Unternehmenskultur detailliert beschrieben. Es lassen sich bei einigen der bereits erwähnten Elemente konkrete Forderungen oder Vorgaben bezogen auf Ethik oder Managementziele ableiten:
+
+„Probleme sind Schätze “: Kritikfähigkeit und ein positiver Umgang mit Hinweisen, die auf Probleme aufmerksam machen, führen zu einem starken Bottom-up-Prozess der Verbesserung.
+
+Bandstopp : Dies beschreibt das Recht und die Pflicht des Werkers, in Problemfällen die „Reißleine“ zu ziehen, bevor es zum Eklat kommt. Der Bandstopp ist dabei nicht als „Schande“ zu verstehen, sondern als herausragende „Verantwortung“ für das Team und das Management.
+
+5W-Ursachenanalyse : Diese grundlegende Methode der Problembehandlung fordert, in allen Bereichen eines Unternehmens fundiert Ursachen zu ermitteln, statt Symptome zu beheben.
+
+Prozessorientierung: Optimale Prozesse haben minimale Kosten zur Folge. Im Vergleich zur Zielorientierung wird viel Aufwand durch Prävention erspart, weniger Bürokratie ist notwendig und es werden nicht oder schwer messbare „Softfacts“ mitoptimiert.
+
+Gemba -Orientierung : Die Problemstellung der operativen Wertschöpfungsprozesse hat oberste Priorität. Gemba-Orientierung fordert schlanke Strukturen mit großer sozialer und räumlicher Nähe zum internen oder externen Kunden.
+
+Kaizen: Kaizen ist die Methode der ständigen Verbesserung im TPS. Wesentliche Elemente bezogen auf die Ethik und Management sind das Arbeiten mit Standards, die Forderung nach Kontinuität und Selbstdisziplin sowie das Prinzip der einfachen Umsetzung, statt aufwändiger bürokratischer und theoretischer Methoden.
+
+Teamorientierung: Konstruktiver Mannschaftsgeist ist gefordert, anstelle von „Ellenbogen“-Philosophien, hierarchischen und bürokratischen „Machtspielen“.
+
+Autonomation : Eine menschliche Arbeitswelt für die Mitarbeiter schaffen; dies beinhaltet die goldene Regel der Ethik oder Fairness: „Fordere von niemanden etwas, was Du nicht selbst bereit bist zu tun.“
+
+Poka Yoke: Gute Qualität zu produzieren ist ein Selbstanspruch, nicht nur bei operativen Prozessen. Zudem sollten Prozesse optimiert werden, anstelle nachträglicher Qualität durch Selektion oder Prüfung zu erreichen.
+
+Gelenkte Selbstbestimmung: „Wenn eine Führungsperson/ein Manager Zukunftspläne entwickelt und Mitarbeiter so führt, dass sie sich für ihre Arbeit verantwortlich fühlen und darauf stolz sind, wird er damit dem Unternehmen so viel Leistungsfähigkeit verschaffen, wie es kein traditioneller Managementstil je erreichen kann.“ [Suza 89]
+
+Kanban -Dezentralisierung: Ein wesentliches Merkmal von Kanban ist die Dezentralisierung der Produktionssteuerung auf den operativen Werker. Macht und Verantwortung wandert an den Werker. „Der Spieler muss vor Ort entscheiden können, das kann nicht der Trainer auf der Bank.“
+
+Die Management- und Führungsansätze, die das TPS fordert, klingen teils trivial, die reale Umsetzung ist aber höchst anspruchsvoll. Sie ähneln den grundlegenden Prinzipien und dem Selbstverständnis, wie es im Handwerk in Europa etabliert ist. Hierin liegt ein deutlicher Konflikt zu den in der Realität weit verbreiteten bürokratischen Systemen. Die Lean-Elemente können nicht in Einklang gebracht werden mit machtbasierten hierarchischen Führungsmethoden. Vorgesetzte sind in dieser Situation gezwungen, mehr fachlich kompetente Führungs- bzw. Managementmethoden einzusetzen.
+
+
+
+#### Der Managementkreis – verbesserte Kommunikation und Führung
+Das TPS kommt zu ähnlichen Vorgaben wie wissenschaftliche Publikationen der Personalführung und Ergonomie in Bezug auf reales Management. Das wissenschaftlich etablierte und fundierte Tool zur Führung ist der Managementkreis oder Deming-Kreis [Demi 47]: „Ziele setzen – Planung – Entscheidung – Durchführung – Kontrolle“. Die Methode wurde sehr umfassend ergonomisch untersucht und wissenschaftlich belegt. Um fundiert zu arbeiten, müssen die grundlegenden Ansätze jedoch detailliert untergliedert werden: So müssen Ziele präzise, zeitbezogen, zielbezogen sowie möglichst quantifizierbar sein. Sie müssen eine Ober- und Untergrenze besitzen, mit anderen Zielen in der Organisation integriert und abgestimmt werden, die Erfüllung muss realistisch beurteilbar sowie erstrebenswert sein. Diese Vorgehensweise des Managementkreises ist im täglichen Leben geläufig und allgegenwärtig. Es werden aber permanent pragmatische Vereinfachungen vorgenommen, wobei das Risiko durch Vereinfachung in Kauf genommen wird. Es bleibt jedoch festzuhalten, dass Abweichung von dieser formalen Vorgehensweise einen Großteil der Fehler und unproduktiven Konflikte in Unternehmen verursachen. Konsequentes Führen umfasst konsequentes Abarbeiten des Managementkreises mit einem wirkungsvollen Führungsstil.
+
+#### Probleme sind Schätze – Kooperativer Führungsstil
+Es lässt sich zwischen einem imperativen (autoritären) und einem kooperativen Führungsstil unterscheiden. Der imperative Führungsstil verwendet einen mit Autorität anordnenden und manipulativ überredenden Umgang. Der kooperative Stil überzeugt primär kooperativ und lässt andere bei der Entscheidung partizipieren. Am Beispiel der operativen Qualitätsoptimierung oder im Rahmen von Kaizen-Projekten wird schnell deutlich, dass die repressive Form der Zusammenarbeit mit einem gehorchenden, fremdbestimmten Mitarbeiter wenig effizient ist. Wesentlich ergebnisorientierter ist die emanzipative Form der Zusammenarbeit. Der Mitarbeiter stimmt innengesteuert zu oder bestimmt selbst mit. Das kooperative Führungsprinzip wurde durch das Harzberger Modell bekannt: Typische Merkmale sind dabei der eindeutig begrenzte Aufgabenbereich, in den die Führung nicht eingreifen darf. Aufgaben, Kompetenz und Verantwortung müssen übereinstimmen. Der Mitarbeiter trägt Handlungsverantwortung, der Manager die Führungsverantwortung.
+
+Die theoretischen Grundregeln des Harzberger Modells wurden durch praxisnahe, einfache Leitsätze erweitert. Für die Aufgaben wird nur eine Richtlinie übergeben, die aber Alternativen zulässt. Neben der Handlungsverantwortung, wird auch die Führungs- und die Entscheidungsverantwortung übertragen. Das Management kontrolliert das Ergebnis und nicht die einzelnen Tätigkeiten. Für die verbesserte Abstimmung bei überschneidenden Aufgaben muss der Leiter koordinieren und auch die Detailarbeiten kontrollieren. Ein wesentlicher Nachteil des kooperativen Führungsstils ist die Tatsache, dass der Vorgesetzte wesentlich mehr Zeit für Information und aufgrund des Mitspracherechts der Mitarbeiter bessere Kritikfähigkeit benötigt. Andererseits entlastet sich der Vorgesetzte in vielen Punkten durch die Arbeitsweise der Mitarbeiter, wie etwa durch Selbstkontrolle, Selbstständigkeit, eigenes Mitdenken. Zudem wird sowohl der Vorgesetzte, als auch das Unternehmen durch das Interesse der Mitarbeiter an Verbesserungen der Arbeit belohnt.
+
+#### Ethik als evolutionäres Erfolgskonzept
+Unter soziologischer oder entwicklungsbiologischer Sicht entsprechend der Energontheorie von H. Hass [Hass 70] lässt sich Ethik als evolutionäre Erfolgsstrategie interpretieren. Energone, also die eigentlichen Lebewesen, aber auch Lebensformen entsprechende Gebilde wie etwa Staaten, Firmen oder allgemein Gruppenstrukturen, verhalten sich nicht grundsätzlich ethisch, sondern wägen ab und entscheiden sich für die Strategie, die im jeweiligen Fall subjektiv erfolgversprechender erscheint. Ethisches oder kooperatives Verhalten, wie Fairness oder das Eingestehen von Fehlern, erbringt nachweislich den größeren Vorteil. Er resultiert aber erst mittelfristig und nicht unmittelbar für den Einzelnen, sondern primär die Gesamtgruppe. Nach der Spieltheorie [Neum 44] gilt: Wenn die Mehrzahl einer Gruppe bezüglich der „Spielregel“ kooperiert, profitieren alle gleichermaßen davon. Betriebswirtschaftlich sagt die Spieltheorie aus, dass die maximale Leistung nur erzielt werden kann, wenn sich alle kooperativ verhalten und die Spielregeln beachten. Konflikte, egoistisches Verhalten und Konkurrenz reduzieren das Ergebnis. Verschiedene Effekte wie zielorientiertes und dadurch unkooperatives Verhalten (Kooperationsprobleme), behindern die Erreichung des Gesamtoptimums [Axel 86]. Um bei dem Beispiel von T. C. Ohno zu bleiben: Wenn eine Sportmannschaft mit internen Kämpfen beschäftigt ist, kann sie nicht erfolgreich sein. Entscheidend für die Entwicklung und damit den Erfolg, sind zudem die vorgegebenen Kriterien, nach denen sich Varianten bevorzugt entwickeln können. Die oberste Priorität jedes Managements sollte folglich sein, mittels eines kooperativen Führungsstils möglichst ethisches Verhalten in einem Unternehmen zu erzeugen. Durch diese Zielerreichung wird die maximale Leistung des Unternehmens möglich. Aus diesem Grund sind derartige Leitsätze meist auch in Managementhandbüchern klar definiert. Nach der Energontheorie lassen sich nicht nur Unternehmen, sondern auch ihr gesamtes Netz an Zulieferern als ein Energon verstehen. Um den Maximalerfolg bei einer Lieferantenbeziehung zu erzielen, gelten soziologisch dieselben Grundregeln wie bei der Spieltheorie.
+
+
+
+### Abschließende Bemerkungen zum Thema Qualität
+
+Die Entwicklungsgeschichte des betrieblichen Qualitätswesens kann in drei sukzessive Phasen eingeteilt werden:
+
++ **Kontroll-orientierte qualitätssichernde Phase**: Die qualitätssichernden Maßnahmen beschränkten sich in dieser Phase auf die Prüfung des Endproduktes (Taylor).
+
++ **Kontrollprozess-orientierte qualitätssichernde Phase**: In dieser Phase wurden die qualitätssichernden Maßnahmen von der Prüfung des Endproduktes auf die stattfindenden Prozesse verlagert. Die Anwendung von statistischen Methoden und die Entwicklung eines Qualitätsbewusstseins seitens der Mitarbeiter wurden unterstützt (Ford).
+
++ **Total Quality Control**: Die Ansätze der totalen Qualitätskontrolle (TQC) gehen davon aus, dass Produktqualität mit unterschiedlichen Einflussfaktoren zusammenhängt und über die Prüfung der Produktbeschaffenheit hinausgeht. Es handelt sich um ganzheitliche Konzepte, die die Führungsebenen, alle Fachabteilungen und die gesamte Belegschaft als qualitätssichernde Faktoren begreifen und mit einbeziehen.
+
+
+<!--
+::: {.callout-tip}
+## Weiterführende Links
+
+:::
+-->
+
+<!--
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
+
++ @dickmann_schlanker_2015: [Elemente moderner, schlanker Produktionssysteme](https://rdcu.be/dI72u)
+
+:::
+
+
+## Literaturempfehlung
+
+![@dickmann_schlanker_2015: [Schlanker Materialfluss](https://link.springer.com/book/10.1007/978-3-662-44869-4)](images/Dickmann_Schlanker_Materialfluss_978-3-662-44869-4.webp){width=40%}
+
+-->

@@ -1,0 +1,221 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+-->
+
+<!--
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Produktentwicklungssystem
+
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: true
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Produktentwicklungssystem
+
+-------------------------------------------------------------------------- -->
+
+### Produktentwicklungssystem {#sec-produktentwicklungssystem}
+
+::: {.callout-tip}
+## Definition: *"Produktentwicklungssystem"*
+Ein Produktentwicklungssystem ist eine strukturierte Methodik und ein System aus Prozessen, die ein Unternehmen anwendet, um ein Produkt von der Ideenfindung bis zur Markteinführung und darüber hinaus zu entwickeln. 
+:::
+
+Ein Produktentwicklungssystem stellt sicher, dass alle Phasen des Produktentstehungsprozesses effizient, zielgerichtet und qualitätsgesichert ablaufen. Es zielt darauf ab, Risiken zu minimieren, die Qualität und Sicherheit des Produkts zu maximieren und den gesamten Produktentstehungsprozess innerhalb des vorgegebenen Zeit- und Budgetrahmens zu halten.
+
+::: {.callout-note}
+Unternehmen definieren in der Regel ihr jeweils eigenes Produktentwicklungssystem und teilen dieses bei Bedarf an die jeweiligen beim Produktentstehungsprozess Mitwirkenden (z.B. Entwicklungsdienstleister, Zulieferer, Maschinen- und Anlagenhersteller) mit. So geben z.B. die großen Automobilhersteller (BMW, Mercedes-Benz, VW) die wichtigen Meilensteine eines Projekts und deren zeitliche Abfolge den am Projekt beteiligten Zulieferern vor. 
+:::
+
+<!--
+::: {.callout-tip}
+## Definition: *"Produktlebenszyklus"*
+Der [Produktlebenszyklus](https://de.wikipedia.org/wiki/Produktlebenszyklus) ist ein Konzept der Betriebswirtschaftslehre und eine Produktstrategie, die den Prozess von der Markteinführung bzw. Fertigstellung eines marktfähigen Produktes bis zu seiner Produkteliminierung aus dem Markt beschreiben.
+:::
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Quality-Gates (Teil eines Produktentwicklungssystems)
+
+-------------------------------------------------------------------------- -->
+
+### Quality-Gates {#sec-qualitygates}
+
+::: {.callout-tip}
+## Definition: *"Quality-Gate (QG)"*
+[Quality Gates](https://de.wikipedia.org/wiki/Quality_Gate) sind Punkte im Ablauf eines Produktentstehungsprojekts, bei denen anhand von im Voraus eindeutig bestimmten Qualitätskriterien über die Freigabe des nächsten Projektschrittes entschieden wird.
+:::
+
+Quality-Gates und die zugeordneten Qualitätskriterien werden im Produktentwicklungssystem definiert. 
+Quality Gates sind eine Weiterentwicklung und Verfeinerung der im Projektmanagement eingesetzten [Meilenstein-Technik](https://de.wikipedia.org/wiki/Meilenstein_(Projektmanagement)) (siehe → Projektmanagement, siehe → Gantt-Diagramm @sec-gantt, siehe → Meilenstein @sec-meilensteine).
+
+Quality-Gates dienen dazu, sicherzustellen, dass bestimmte Qualitätsstandards, technische Anforderungen und andere Kriterien erfüllt sind, bevor das jeweilige Produktprojekt fortgesetzt wird. Quality-Gates helfen, Risiken frühzeitig zu identifizieren, Fehler zu vermeiden und die Qualität des Endprodukts zu sichern.
+
+Beispiel für Quality-Gates innerhalb eines Produktentwicklungssystems:
+
+1. **QG I - Konzept-Quality-Gate (Concept Gate):**
+   - Ziel: Überprüfung, ob die grundlegenden Ideen und Konzepte des Produkts tragfähig und marktfähig sind. Hier werden die ersten Anforderungen und das grundlegende Konzept des Produkts definiert.
+
+2. **QG II - Design-Quality-Gate (Design Gate):**
+   - Ziel: Validierung des Entwurfs und der Architektur des Produkts. Es wird geprüft, ob die Konstruktion des Produkts den technischen, sicherheitsrelevanten und funktionalen Anforderungen entspricht.
+
+3. **QG III - Prototypen-Quality-Gate (Prototype Gate):**
+   - Ziel: Sicherstellung, dass der erste funktionale Prototyp gebaut und getestet wurde. Es wird überprüft, ob das Produkt die grundlegenden Funktionalitäten und Designanforderungen erfüllt.
+
+4. **QG IV - Test-Quality-Gate (Test Gate):**
+   - Ziel: Überprüfung der Testergebnisse und Validierung der Funktion und Zuverlässigkeit des Produkts durch verschiedene Tests, darunter die Umweltqualifizierung.
+
+5. **QG V - Industrialisierungs-Quality-Gate (Industrialization Gate):**
+   - Ziel: Vorbereitung der Produktion. Hier wird geprüft, ob die Produktionsprozesse und -systeme für die Serienfertigung vorbereitet sind, einschließlich Fertigungsanlagen und Lieferantenmanagement.
+
+6. **QG VI - Produktionsvorbereitungs-Quality-Gate (Production Preparation Gate):**
+   - Ziel: Sicherstellung, dass die Produktionsvorbereitung abgeschlossen ist und das Produkt in der (Serien-)Produktion hergestellt werden kann. Hier werden Qualitätsmanagement und Produktionsprozesse überprüft.
+
+7. **QG VII - Start-of-Production (SOP) Gate:**
+   - Ziel: Bestätigung, dass das Produkt für die (Serien-)produktion freigegeben ist. Die ersten Produkte werden unter Serienbedingungen hergestellt und auf Übereinstimmung mit den Qualitätstandards überprüft.
+
+8. **QG VIII - Marktlaunch-Quality-Gate (Market Launch Gate):**
+   - Ziel: Überprüfung der Markteinführung und der Marktfähigkeit des Produkts. Hier wird sichergestellt, dass das Produkt bereit ist, auf den Markt gebracht zu werden, und dass alle notwendigen Vorbereitungen getroffen wurden.
+
+9. **QG IX - After-Sales-Quality-Gate (After-Sales Gate):**
+   - Ziel: Analyse der Kundenfeedbacks und Performance-Daten nach der Markteinführung. Es wird überprüft, ob das Produkt im Einsatz die Erwartungen der Kunden erfüllt und keine kritischen Fehler auftreten.
+
+10. **QG X - End-of-Life-Quality-Gate (End-of-Life Gate):**
+    - Ziel: Dieser Punkt markiert das Ende des Produktlebenszyklus. Es wird geprüft, ob alle Anforderungen für das Ende der Fahrzeugproduktion erfüllt sind und ob das Fahrzeug ordnungsgemäß aus dem Markt genommen wird.
+
+::: {.callout-warning}
+Je nach Produkt und Unternehmen können die Quality-Gates vom hier gezeigten Beispiel grundlegend abweichen, sowohl hinsichtlich Anzahl der Quality-Gates, der mit den Quality-Gates verbundenen Inhalte und der zeitlichen Anordnung der Quality-Gates innerhalb eines Produktentwicklungssystems. In vielen Unternehmen bildet das QG "Start-of-Production (SOP)" zudem das zeitlich letzte Quality-Gate des Produktentwicklungssystems.
+:::
+<!--
+
+Ah, verstehe! Du sprichst vom **Mercedes-Benz Development System (MDS)**, einem strukturierten Ansatz zur Produktentwicklung bei Mercedes-Benz. Dieses System beschreibt die Methodik und die Prozesse, die das Unternehmen verwendet, um neue Fahrzeuge und Technologien zu entwickeln. Es dient dazu, die Qualität, Effizienz und Innovationskraft in der Fahrzeugentwicklung zu maximieren.
+
+Das MDS basiert auf verschiedenen Phasen, die die Entwicklung eines Fahrzeugs von der ersten Idee bis zur Serienproduktion umfassen. Hier sind die wesentlichen Phasen des Systems:
+
+1. **Konzeptphase:** 
+   - Hier wird das Fahrzeugkonzept definiert. Ziel ist es, die Anforderungen des Marktes, der Kunden und der gesetzlichen Bestimmungen zu berücksichtigen. Die ersten Ideen und Skizzen werden entworfen, und erste technische Konzepte werden ausgearbeitet.
+
+2. **Designphase:** 
+   - Das Fahrzeugdesign wird detailliert ausgearbeitet. Dabei werden sowohl äußere Designaspekte als auch die Funktionsweise des Fahrzeugs berücksichtigt. Diese Phase umfasst CAD-Modellierung, aerodynamische Tests und weitere Simulationen.
+
+3. **Prototypenbau und Tests:** 
+   - In dieser Phase werden Prototypen gebaut und umfangreiche Tests durchgeführt, um sicherzustellen, dass alle Systeme korrekt funktionieren und die Fahrzeugperformance den Anforderungen entspricht. Hierzu gehören Crash-Tests, Fahrtests und Tests für die Haltbarkeit und Sicherheit.
+
+4. **Serienproduktion:** 
+   - Nach erfolgreichen Tests wird die Serienproduktion vorbereitet und gestartet. Dabei wird die Fertigungslinie eingerichtet, und alle Produktionsprozesse werden optimiert, um eine hohe Qualität und Effizienz zu gewährleisten.
+
+5. **Markteinführung und After-Sales:** 
+   - Nach der Markteinführung beginnt die Überwachung des Fahrzeugbetriebs, um sicherzustellen, dass alle Systeme wie erwartet arbeiten. Kundenfeedback wird gesammelt, und etwaige Verbesserungen oder Anpassungen werden vorgenommen.
+
+Das MDS ist sehr strikt und methodisch, um die Qualität und Sicherheit der Fahrzeuge zu gewährleisten und gleichzeitig Innovation und Effizienz in den Entwicklungsprozessen zu fördern. Es umfasst auch enge Kooperationen mit Zulieferern und Partnern, um neue Technologien zu integrieren und den Entwicklungsprozess kontinuierlich zu verbessern.
+
+
+
+Ja, der Begriff **Quality-Gates** ist ein wichtiger Bestandteil des **Mercedes-Benz Development Systems (MDS)** und wird in der Produktentwicklung verwendet, um sicherzustellen, dass ein Produkt (z. B. ein Fahrzeug oder eine Technologie) zu jedem Zeitpunkt der Entwicklung die festgelegten Qualitätsstandards erfüllt. Quality-Gates sind spezifische Prüfpunkte oder Meilensteine, an denen die Qualität und der Fortschritt des Projekts überprüft werden, bevor es zur nächsten Phase übergeht.
+
+In der Regel handelt es sich bei Quality-Gates um kontrollierte Entscheidungspunkte, die vor dem Übergang von einer Entwicklungsphase zur nächsten stehen. Während jedes Quality-Gates wird überprüft, ob bestimmte Kriterien erfüllt sind, um sicherzustellen, dass das Projekt den Anforderungen an Qualität, Sicherheit, Leistung und Zuverlässigkeit entspricht.
+
+### Wichtige Aspekte der Quality-Gates:
+- **Prüfung der Erfüllung von Anforderungen:** Zu jedem Gate werden die Anforderungen und Spezifikationen überprüft, um sicherzustellen, dass sie korrekt umgesetzt wurden. Das umfasst beispielsweise technische Anforderungen, Sicherheitsvorschriften und gesetzliche Vorgaben.
+  
+- **Validierung von Tests und Ergebnissen:** Alle Tests, wie z. B. Sicherheitstests, Fahrversuche oder Tests der Fahrzeugfunktionen, müssen erfolgreich abgeschlossen und dokumentiert sein, bevor das Projekt in die nächste Phase übergeht.
+  
+- **Überprüfung der Projektziele:** Es wird kontrolliert, ob die gesetzten Ziele hinsichtlich Budget, Zeitrahmen und Qualität erreicht wurden.
+
+- **Entscheidungsfindung:** An einem Quality-Gate erfolgt eine Entscheidung darüber, ob das Projekt fortgeführt wird, ob Anpassungen notwendig sind oder ob das Projekt gestoppt werden sollte, weil kritische Mängel festgestellt wurden.
+
+### Typische Quality-Gates im MDS:
+1. **Vorentwicklung (Concept Gate):** Überprüfung, ob das Konzept des Produkts machbar ist und die grundlegenden Anforderungen erfüllt.
+2. **Design Gate:** Validierung des Designs, sowohl in Bezug auf die Funktionalität als auch auf die Integrität der Bauteile und Systeme.
+3. **Prototypengate:** Sicherstellung, dass alle Prototypen getestet und validiert wurden und alle notwendigen Anpassungen vorgenommen wurden, bevor in die Produktion übergegangen wird.
+4. **Produktionsvorbereitungs-Gate:** Überprüfung der Produktionsprozesse, der Lieferkette und der Fertigungsfähigkeit des Produkts.
+5. **Markteinführungs-Gate:** Entscheidung, ob das Produkt bereit ist, auf den Markt gebracht zu werden, basierend auf den letzten Tests und der Überprüfung der Marktbereitschaft.
+
+Quality-Gates sind also eine entscheidende Methode zur Qualitätssicherung, um sicherzustellen, dass keine kritischen Fehler oder Mängel in den späteren Phasen der Produktentwicklung auftreten und die Produkte von Mercedes-Benz den hohen Standards entsprechen. Sie helfen auch dabei, Risiken frühzeitig zu erkennen und zu minimieren.
+
+
+
+Diese zehn Quality-Gates strukturieren die gesamte Produktentwicklung und stellen sicher, dass jedes Fahrzeug, das in die Serienproduktion und auf den Markt kommt, den hohen Qualitätsanforderungen von Mercedes-Benz entspricht. Sie dienen der Qualitätssicherung und Risikominimierung und sind entscheidend für den Erfolg der Entwicklungsprozesse.
+
+
+
+
+Ein Produktentwicklungssystem sorgt dafür, dass die Entwicklung eines Produkts nicht nur effizient und termingerecht verläuft, sondern auch hohe Qualitätsstandards erfüllt, Innovationspotenziale genutzt werden und Risiken minimiert werden. Es stellt sicher, dass alle beteiligten Abteilungen und Fachbereiche koordiniert zusammenarbeiten und dass das Endprodukt die Anforderungen des Marktes, der Kunden und der gesetzlichen Bestimmungen erfüllt.
+
+
+
+<!--
+::: {.callout-tip}
+## Weiterführende Links
+
+:::
+-->
+
+<!--
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
+
++ @dickmann_schlanker_2015: [Elemente moderner, schlanker Produktionssysteme](https://rdcu.be/dI72u)
+
+:::
+-->
+
+<!--
+#### Literaturempfehlung
+
+![@dickmann_schlanker_2015: [Schlanker Materialfluss](https://link.springer.com/book/10.1007/978-3-662-44869-4)](images/Dickmann_Schlanker_Materialfluss_978-3-662-44869-4.webp){width=40%}
+-->
+
+
+

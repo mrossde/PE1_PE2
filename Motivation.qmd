@@ -1,0 +1,94 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Motivation zur Vorlesung
+
+-------------------------------------------------------------------------- -->
+
+{{< include Abbildung_Flammarion1888.qmd >}}
+
+# Motivation zur Vorlesung
+
+Am Ende Ihres Studiums sollten die Studierenden folgende Frage beantworten können und Sie sollten die Kompetenzen erworben haben, auf Ihre Antwort auf diese Frage mit Ihrem nachfolgenden Handeln angemessen reagieren zu können:
+
+--- 
+
+> *"Was weiss/kann ich nicht, sollte ich aber wissen/können?"*
+
+> *"Wie kann ich mir das fehlende Wissen/Können schnell aneignen und in meine Arbeit integrieren?"*
+
+---
+
+<!--
+Prof. Dr. Miriam Clincy formuliert die Herausforderung zur Motivation für die Studierenden im Rahmen des *"Didaktiktreff Künstliche Intelligenz"* am 25.04.2024 folgendermaßen: *"Man muss sehr lange lernen (was die KI zunächst besser kann), bis ich einen Punkt erreiche, an dem ich besser bin als die KI."* ^[Eine wirklich unwiderlegbare Antwort, wie den Studierenden geholfen werden kann, erfolgreich durch diese mühevolle Phase zu kommen, steht nach Eindruck Ihres Dozenten noch aus. Letztlich bleibt es scheinbar dabei, dass die Studierenden darauf vertrauen müssen, dass der Erwerb eigenen Wissens und Könnens auch im Zeitalter von Google, Wikipedia, [WolframAlpha](https://www.wolframalpha.com/) und der aufsteigenden Künstlichen Intelligenz lohnend und sinnstiftend ist.]
+
+Die von Seiten der Studierenden gestellte Frage *"Warum muss ich Dinge zunächst ohne KI können, wenn ich sie später doch nur mit KI machen werde?"* wurde hingegen bereits lange vor Verfügbarkeit von künstlichen Intelligenz von Albert Einstein beantwortet: *"Any fool can know. The point is to understand."* 
+-->
+
+## Ziel der Vorlesung
+
+Ziel der Vorlesungen und Labore ist das bestmögliche Vermitteln von grundlegendem aktuellem Fachwissen und das Vermitteln von praxisnahen Kenntnissen und Verständnis über grundlegende Zusammenhänge (*“praxisnahe fachliche und methodische Grundlagen”*), die im späteren Berufsleben der Studierenden über eine lange Zeit hinweg von großem Nutzen sein können. 
+
+Hierzu ist das Wissen um die Grundlagen und Zusammenhänge (→ [Verständnis](https://de.wikipedia.org/wiki/Verstehen)) so im Gedächtnis der Studierenden zu verankern, dass diese im Berufsleben das Gelernte jederzeit in ihre Entscheidungen einfließen lassen können. Entsprechendes Wissen wird als explizites oder auch ***aktives oder auch verfügbares Wissen*** bezeichnet. Im Gegensatz dazu bezeichnet latentes Wissen Informationen, die grundsätzlich verfügbar sind und mittels Recherche erworben werden können (z.B. via Google, [Wikipedia](https://de.wikipedia.org/wiki/Wikipedia:Hauptseite), [WolframAlpha](https://www.wolframalpha.com/), usw.), die aber mangels Verfügbarkeit im Gedächtnis nicht bei Entscheidungen einbezogen werden können. 
+
+::: {.callout-caution}
+Bei Entscheidungen kann grundsätzlich nur aktives Wissen einbezogen werden. Bevor latentes Wissen bei Entscheidungen einfließen kann muss es erst durch Aneignung (→ Lernen, Studium) in aktives Wissen umgewandelt werden.
+:::
+
+Dies beantwortet eine weitere Frage der Studierenden: *"Warum soll ich etwas lernen, wenn ich es in Wikipedia jederzeit nachschlagen kann?"* Antwort → Die Verfügbarkeit fast unbegrenzten latenten Wissens (irgendwo, auf irgend einem Server, in irgend einer Cloud) hilft ohne dessen mühevolle Umwandlung in *"aktives Wissen"* nicht, richtige(re) Entscheidungen zu treffen. 
+
+<!--
+Prof. Dr. Miriam Clincy hat im Rahmen des *"Didaktiktreff Künstliche Intelligenz"* am 25.04.2024 *"aktives Wissen"* auch als *"andockfähiges Wissen"* bezeichnet.
+-->
+
+::: { .callout-note}
+## Mission Statement
+Aufgabe der Vorlesungen und Labore ist das Vermitteln praxisnahen, relevanten, verfügbaren Wissens und Verstehens, auf das die Studierenden in ihrem Berufsleben jederzeit und dauerhaft zugreifen und bei ihren Entscheidungen einfließen lassen können um ***informierte Entscheidungen*** zu treffen.
+:::
+
+::: {.callout-caution}
+Informierte Entscheidungen sind nicht in jedem Fall richtige Entscheidungen, sie führen jedoch zu einer höheren Wahrscheinlichkeit, dass die gewählte Handlung den Zielen entspricht.
+:::
+
+---
+
+> *„Man muss dem Glück eine breite Straße bauen.“ (E. Lamprecht)*
+
+---
+
+
+## Informierte Entscheidungen
+
+::: {.callout-tip}
+## Definition: *"Informierte Entscheidungen"*
+Informierte Entscheidungen werden getroffen, wenn eine Person umfassende und relevante Informationen berücksichtigt, bevor sie eine Wahl trifft oder eine Handlung ausführt. Solche Entscheidungen basieren auf einer sorgfältigen Analyse und Bewertung der verfügbaren Fakten, Daten, Erfahrungen und Meinungen. 
+:::
+
+Informierte Entscheidungen sind durch folgenden Merkmale gekennzeichnet:
+
+1. **Informationsbeschaffung:** Bei informierten Entscheidungen wird im Vorfeld bewusst nach Informationen gesucht. Die bedeutet, dass man sich der Grenzen des eigenen verfügbaren Wissens bewusst ist, zielgerichtet verschiedene Quellen konsultiert, Experten befragt, Forschungsergebnisse analysiert oder andere Informationsquellen nutzt.
+2. **Relevanz:** Informierte Entscheidungen berücksichtigen relevante Informationen, die für den spezifischen Kontext und die Situation der Entscheidung von Bedeutung sind. Es geht darum, die Informationen zu identifizieren, die einen direkten Einfluss auf die Entscheidung haben können, und irrelevante oder unzuverlässige Informationen auszusortieren.
+3. **Bewertung:** Informierte Entscheidungen beinhalten eine kritische Bewertung der verfügbaren Informationen. Dabei werden die Glaubwürdigkeit, die Qualität und die Quelle der Informationen berücksichtigt. Es wird darauf geachtet, mögliche Vorurteile, [Verzerrungen](https://de.wikipedia.org/wiki/Liste_kognitiver_Verzerrungen)^[z.B. [Bestätigungsfehler](https://de.wikipedia.org/wiki/Best%C3%A4tigungsfehler). Bestätigungsfehler (engl. *"confirmation bias"*) ist ein Begriff der Kognitionspsychologie, der die Neigung bezeichnet, Informationen so zu ermitteln, auszuwählen und zu interpretieren, dass diese die eigenen Erwartungen erfüllen (bestätigen).] oder Fehlinformationen zu erkennen und zu berücksichtigen.
+3. **Abwägung:** Informierte Entscheidungen beinhalten die Abwägung verschiedener Optionen oder Alternativen. Es werden die Vor- und Nachteile jeder Option betrachtet und die potenziellen Auswirkungen und Konsequenzen bewertet. Siehe → z.B. Bewertungsmatrix. 
+4. **Rationalität:** Informierte Entscheidungen werden auf der Grundlage logischer Schlussfolgerungen und vernünftiger Überlegungen getroffen. Emotionen können eine Rolle spielen, aber sie werden nicht dominant und beeinflussen nicht die rationale Analyse der Informationen.
+5. **Verantwortung:** Informierte Entscheidungen werden verantwortungsbewusst getroffen, indem potenzielle Auswirkungen und Konsequenzen berücksichtigt werden. Es wird versucht, die bestmögliche Wahl zu treffen, basierend auf dem vorhandenen Wissen und den Zielen oder Werten der Person.
+
+::: {.callout-warning}
+Aktives Wissen kann (je nach Fachgebiet mehr oder weniger schnell) altern und muss daher regelmäßig auf Aktualität überprüft, aktualisiert und zumeist in Teilen immer wieder neu erworben/erweitert werden um relevant und zuverlässig zu bleiben. Ein großer, historisch erworbener Wissensschatz ist somit nicht in jedem Fall wertvolles verfügbares Wissen, sondern kann, im Gegenteil (insbesondere bei sich schnell entwickelnden Fachgebieten), sogar fehlleitend wirken.
+:::
+
+::: {.callout-caution}
+Der Wert von einmalig erworbenem aktivem Wissen und Erfahrung wird in der heutigen Wirklichkeit eines sich stetig und schnell verändernden Umfelds insbesondere von älteren Fachexperten, die sich selbst höchste Kompetenz zuschreiben, häufig überbewertet.
+
+>
+*"Der Wert von (einmalig erworbenem) aktiven Wissens und Erfahrung halbiert sich alle 10 Jahre.“ (Christian Anders)*
+:::
+
+

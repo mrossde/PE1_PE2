@@ -1,0 +1,20 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Rückruf bei Mercedes-Benz 
+                       Screenshot tagesschau.de vom 21.09.2024 08h22
+
+-------------------------------------------------------------------------- -->
+
+![Rückrufaktion beim Mercedes-Benz (Quelle: [tagesschau.de](https://www.tagesschau.de/) vom 21.09.2024)](images/Screenshot_20240921_082142_tagesschau.jpg){width=40% #fig-rueckruf}
+
+
+![Raddrehzahlsonsor von Fa. [BOSCH](https://www.bosch-mobility.com/de/loesungen/sensoren/raddrehzahlsensor/). Der Verkaufspreis im Handel beträgt zwischen 50€ und 70€ (Stand: 2024).](images/BOSCH_Raddrehzahlsensor_Mercedes-Benz.jpg){width=60% #fig-drehzahlsensor}

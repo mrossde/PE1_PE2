@@ -1,0 +1,73 @@
+---
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Ziele Produktionsplanung und Produktion
+  - Lean Production
+  - Toyota Produktionssystem
+  - Total Quality Management
+  - Kaizen
+  - JIT
+  - JIS
+  - Kanban
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 4
+link-external-icon: true
+link-external-newwindow: true
+
+headlines:
+  off: true
+exercises:
+  solutions:
+  off: true
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Skriptum zur Vorlesung WS2024/2025
+
+-------------------------------------------------------------------------- -->
+
+<!-- -------------------------------------------------------------------------
+
+                       Kapitel 5: Produktionsplanung und Produktion
+
+-------------------------------------------------------------------------- -->
+
+# Produktionsplanung und Produktion {#sec-produktionsplanungundproduktion}
+  {{< include Ziele_Produktionsplanung_und_Produktion.qmd >}}
+## Lean Production
+    {{< include Toyota_Produktionssystem.qmd >}}
+    {{< include TQM.qmd >}}
+    {{< include Kaizen.qmd >}}
+    {{< include JIT-JIS.qmd >}}
+    {{< include Kanban.qmd >}}

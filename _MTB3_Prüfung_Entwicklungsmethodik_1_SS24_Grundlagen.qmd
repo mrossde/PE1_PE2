@@ -1,0 +1,337 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Prüfung MTB3 Entwicklungsmethodik 1 SS24
+
+-------------------------------------------------------------------------- -->
+
+<!--
+//-------------------------------------------------------------------------
+//
+//                     Grundlagen
+//
+//-------------------------------------------------------------------------
+-->
+
+# Grundlagen
+
+<!--
+//-------------------------------------------------------------------------
+//
+//                     SI-Einheiten
+//
+//-------------------------------------------------------------------------
+--> 
+## Aufgabe "SI-Einheiten" 
+Welche der folgenden Einheiten gehört zu den SI-Basiseinheiten?  (1 Antwort ist richtig)
+<!--
+- [ ] Meter (m)
+- [ ] Sekunde (s)
+-->
+
+- [ ] Grad Celsius (°C)
+- [ ] Kilogramm (kg)
+- [ ] Newton (N) 
+- [ ] Joule (J) 
+- [ ] Watt (W)
+- [ ] Hertz (Hz)
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [x] Kilogramm (kg)
+:::
+
+## Aufgabe "Fertigungsverfahren" 
+Welche Fertigungsverfahren gehören zu den in DIN 8580 definierten Hauptgruppen?
+
+- **1.)** Urformen
+- **2.)** Umformen
+- **3.)** Trennen
+- **4.)** Bohren
+- **5.)** Fräsen
+- **6.)** Schweißen
+- **7.)** Beschichten
+
+Antwort (1 Antwort ist richtig):
+
+- [ ] Nur 1, 2, 3, 7 sind richtig.
+- [ ] Nur 1, 2, 4, 5, 6, 7 sind richtig.
+- [ ] Alle sind richtig.
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [X] Nur 1, 2, 3, 7 sind richtig.
+:::
+
+
+## Aufgabe "Stoffeigenschaften ändern"
+Welche Fertigungsverfahren können Stoffeigenschaften ändern?
+
+- **1.)** Umformen
+- **2.)** Bohren
+- **3.)** Fräsen
+- **4.)** Schweißen
+- **5.)** Wärmebehandeln
+
+Antwort (1 Antwort ist richtig):
+
+- [ ] Nur 5 ist richtig.
+- [ ] Nur 1 und 5 sind richtig.
+- [ ] Nur 4 und 5 sind richtig
+- [ ] Alle sind richtig.
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [x] Alle sind richtig.
+:::
+
+
+## Aufgabe "Produktion"
+Der Begriff "Produktion" fasst zwei verschiedene Teilbereiche zusammen, die in vielen Unternehmen in zwei Begriffe getrennt sind. Welche zwei Teilbereiche verbergen sich hinter dem Begriff "Produktion"?
+
+1. *_____________________________________*
+2. *_____________________________________*
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+1.) *"Fertigung/Manufacturing"* - 2.) *"Montage/Assembly"*
+:::
+
+## Aufgabe "Grundbegriffe"
+Bitte ordnen Sie die vier Begriffe 1.) "Strategie", 2.) "Vision", 3.) "Werkzeuge" und 4.) "Ziele" einem der in der folgenden Tabelle gegebenen Zeitrahmen zu:
+
+| Begriff   | Zeitrahmen  |
+|---|:--|
+| **1.)**  | 10 Jahre |
+| **2.)**  | 3 - 5 Jahre |
+| **3.)**  | 1 Jahr |
+| **4.)**  | bei Bedarf |
+
+: { .bordered tbl-colwidths="[65,35]"}
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+**1.)** Vision (10 Jahre) → **2.)** Strategie (3-5 Jahre) → **3.)** Ziele (1 Jahr) → **4.)** Werkzeuge (bei Bedarf)
+:::
+
+
+## Aufgabe "SMART"
+Für welche fünf Eigenschaften, die jede gute Formulierung von Zielen erfüllen sollte, stehen die Buchstaben im Akronym *"SMART"*?
+
+1. *_____________________________________*
+2. *_____________________________________*
+3. *_____________________________________*
+4. *_____________________________________*
+5. *_____________________________________*
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+1.) Spezifisch/Specific - 2.) Messbar/Measurable - 3.) Attraktiv/Erreichbar/Achievable - 4.) Relevant/Relevant - 5.) Terminiert/Zeitgebunden/Time-Bound
+:::
+
+<!--
+## Aufgabe (1 Punkt:)
+Welche fünf Eigenschaften sollte jede gute Formulierung von Zielen erfüllen?
+
+1. *_____________________________________*
+2. *_____________________________________*
+3. *_____________________________________*
+4. *_____________________________________*
+5. *_____________________________________*
+
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+1.) Spezifisch/Specific - 2.) Messbar/Measurable - 3.) Attraktiv/Erreichbar/Achievable - 4.) Relevant/Relevant - 5.) Terminiert/Zeitgebunden/Time-Bound
+:::
+-->
+
+<!--
+//-------------------------------------------------------------------------
+//
+//                     Projektmanagement
+//
+//-------------------------------------------------------------------------
+-->
+## Aufgabe "Projekt"
+Welche Eigenschaften muss ein Projekt gemäß Definition erfüllen? 
+
+- **1.)** Wirtschaftlicher Nutzen
+- **2.)** Zeitliche Befristung
+- **3.)** Interdisziplinäre Organisation
+- **4.)** Hohe Komplexität der Aufgabenstellung
+- **5.)** Einmaligkeit der Aufgabenstellung
+
+Antwort (1 Antwort ist richtig):
+
+- [ ] Nur 1, 2 und 3 sind richtig
+- [ ] Nur 1, 2, 3 und 4 sind richtig
+- [ ] Nur 2, 3, 4 und 5 sind richtig
+- [ ] Keine ist richtig
+- [ ] Alle sind richtig
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [x] Nur 2, 3, 4 und 5 sind richtig.
+:::
+
+## Aufgabe: "Projektphasen"
+Welches sind (neben dem Projektcontrolling) die vier grundlegenden Phasen von Projekten?
+
+1. *Projekt-_____________________________*
+2. *Projekt-_____________________________*
+3. *Projekt-_____________________________*
+4. *Projekt-_____________________________*
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+1.) Projekt**initiierung** → 2.) Projekt**planung** → 3.) Projekt**durchführung** → 4.) Projekt**abschluss**  
+:::
+
+## Aufgabe: "Projektphasen bei der Produktentwicklung"
+Welches sind die drei grundlegenden Projektphasen bei der Produktentwicklung?
+
+1. *_____________________________________*
+2. *_____________________________________*
+3. *_____________________________________*
+
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+1.) Ideenfindung und Konzeptentwicklung/-validierung → 2.) Entwurfs- und Entwicklungsphase → 3.) Prototyping und Test (**Anm.**: Für die richtige Antwort genügt je Phase jeweils einer der Begriffe, z.B. wäre 1.) Ideenfindung - 2.) Entwicklung - 3.) Prototyping bereits eine richtige Antwort).
+:::
+
+
+## Aufgabe "AKV"
+Die drei Buchstaben des Akronyms "AKV" stehen für drei zentrale Begriffe in jedem Produktentwicklungsprojekt. Wofür stehen diese drei Buchstaben?
+
+1. *_____________________________________*
+2. *_____________________________________*
+3. *_____________________________________*
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+1.) Aufgabe - 2.) Kompetenz - 3.) Verantwortung
+:::
+
+
+## Aufgabe "Kompetenz"
+Was umfasst der im Projektmanagement gebrauchte Begriff der "Kompetenz"?
+
+- **1.)** Wissen, Erfahrung, Qualifikation.
+- **2.)** Verständnis für Methoden, Werkzeuge und Techniken.
+- **3.)** Weisungs- und Entscheidungsbefugnis.
+
+Antwort (1 Antwort ist richtig):
+
+- [ ] Nur 1 ist richtig.
+- [ ] Nur 1 und 2 sind richtig.
+- [ ] Alle sind richtig.
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [x] Alle sind richtig.
+:::
+
+<!--
+## Aufgabe Modelle zum PEP (1 Punkt) 
+Welche Aussage beschreibt am besten die Eigenschaften von Wasserfallmodell, V-Modell und Spiralmodell?
+
+- [X] Das Wasserfallmodell beinhaltet eine lineare Abfolge von Entwicklungsphasen.
+- [X] Das V-Modell ist eine Weiterentwicklung des Wasserfallmodells.
+- [X] Das Spiralmodell verfolgt einen stärker iterativen Ansatz als das V-Modell.
+- [ ] Das Wasserfallmodell ist ein agiles Entwicklungsmodell, das besonders geeignet ist für schnelle und dynamische Projekte.
+- [ ] Das V-Modell ist ein adaptives Entwicklungsmodell, das auf schnelle Anpassungen an sich ändernde Anforderungen abzielt.
+- [ ] Das Spiralmodell ist ein inkrementelles Entwicklungsmodell, das auf starre Phasen und feste Liefertermine setzt.
+-->
+
+<!--
+//-------------------------------------------------------------------------
+//
+//                     Gantt-Diagramm
+//
+//-------------------------------------------------------------------------
+-->
+## Aufgabe "Historie des Gantt-Diagramms"
+Wann wurde das Gantt-Diagramm entwickelt? (1 Antwort ist richtig)
+
+- [ ] In den frühen 1910er Jahren von Henry Gantt.
+- [ ] In den 1950er Jahren von Joseph Gantt.
+- [ ] In den 1980er Jahren von John Gantt.
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [x] In den frühen 1910er Jahren von Henry Gantt.
+:::
+
+
+## Aufgabe "Gantt-Diagramm" 
+Was zeigt ein Gantt-Diagramm hauptsächlich an?  (1 Antwort ist richtig)
+
+- [ ] Die zeitliche Planung von Aufgaben und deren Dauer in einem Projekt.
+- [ ] Die finanzielle Aufteilung der Ressourcen eines Projekts.
+- [ ] Die Verfügbarkeit von Ressourcen für ein Projekt.
+- [ ] Die im Projektverlauf zu erwarteten Risiken.
+- [ ] Die organisatorische Struktur des Projektteams.
+<!-- - [X] Die Abhängigkeiten zwischen verschiedenen Aufgaben in einem Projekt. -->
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [X] Die zeitliche Planung von Aufgaben und deren Dauer in einem Projekt.
+:::
+
+
+## Aufgabe "Kritischer Pfad"
+Was ist der kritische Pfad in einem Gantt-Diagramm? (1 Antwort ist richtig)
+
+- [ ] Die Abfolge von Aufgaben, die mit den höchsten Risiken für den Projekterfolg verbunden ist.
+- [ ] Die Abfolge von Aufgaben, die am meisten kritische Ressourcen für die Fertigstellung des Projekts benötigt.
+- [ ] Die Abfolge von Aufgaben, die die kürzest mögliche Dauer für die Fertigstellung des Projekts bestimmt.
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [X] Die Abfolge von Aufgaben, die die kürzest mögliche Dauer für die Fertigstellung des Projekts bestimmt.
+:::
+
+<!--
+## Aufgabe "Meilensteine"
+-->
+
+## Aufgabe "Magisches Dreieck"
+Wie lauten die drei Dimensionen des magischen Dreiecks des Projektmanagements?
+
+1. *_____________________________________*
+2. *_____________________________________*
+3. *_____________________________________*
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+1.) Zeit/Verfügbarkeit - 2.) Umfang/Qualität/Nutzen - 3.) Aufwand/Kosten (**Anm.**: Für die richtige Antwort genügt je Dimension jeweils einer der Begriffe, z.B. wäre 1.) Verfügbarkeit - 2.) Qualität - 3.) Kosten bereits eine richtige Antwort).
+:::
+
+
+## Aufgabe "Klassisches vs. Agiles PM"
+Welche der Dimensionen des magischen Dreiecks sind bei welcher Form des Projektmanagements in der Regel variabel:
+
++ Klassisches Projektmanagement: *_____________________________________________________________*
++ Agiles Projektmanagement: *__________________________________________________________________*
+
+::: {.callout-tip collapse="true"} 
+## Lösung
+Siehe → @fig-magischesdreieckpmgklassikvsagilpruefung
+
++ Klassisches Projektmanagement: 1.) **Zeit/Verfügbarkeit** UND 2.) **Aufwand/Kosten**. Beispiel: Projekt Bahnhof "Stuttgart 21" - Jahre später, Milliarden € teurer als geplant, ABER: Bahnhof wird technisch unverändert gebaut wie von Anfang an geplant. 
+
+Achtung! Hier sind für die richtige Antwort beide Angaben 1.) + 2.) erforderlich!
+
++ Agiles Projektmanagement: 1.) **Umfang/Qualität**. Beispiel: Projekt "Vorlesung MTB3 Entwicklungsmethodik": Aufwand (Arbeitsstunden von Christian Anders UND Zeit/Verfügbarkeit lt. Vorgaben HS Esslingen wie geplant (fest), ABER: Umfang/Qualität variabel im Rahmen der festen Randbedingungen Aufwand und Zeit.
+
+![Magisches Dreieck des Projektmanagements: Klassisches (Wasserfall) vs. Agiles Projektmanagement](images/Magisches_Dreieck_PM.drawio.svg){width=90% #fig-magischesdreieckpmgklassikvsagilpruefung}
+
+:::

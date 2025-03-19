@@ -1,0 +1,64 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Produktionsgerechte Produktgestaltung (PPG)
+
+-------------------------------------------------------------------------- -->
+
+### Produktionsgerechte Produktgestaltung (PPG) {#sec-ppg}
+
+::: {.callout-tip}
+## Definition: *"Produktionsgerechte Produktgestaltung"*
+Produktionsgerechte Produktgestaltung (PPG) (engl.: [Design for Manufacturing](https://en.wikipedia.org/wiki/Design_for_manufacturability) (DFM)) beschreibt den Prozess der Entwicklung und Gestaltung von Produkten unter Berücksichtigung der Anforderungen und Bedingungen der Werkstoffe und Produktionsprozesse. 
+:::
+
+Bei der produktionsgerechten Produktgestaltung (PPG) wird darauf geachtet, dass die Konstruktion eines Produkts nicht nur funktional ist, sondern auch so gestaltet wird, dass es effizient, kostengünstig und qualitativ hochwertig hergestellt werden kann. Dies umfasst die Optimierung der verwendeten Werkstoffe, die Berücksichtigung von Produktionsverfahren sowie die Minimierung von Produktionszeiten und -kosten, um eine reibungslose und wirtschaftliche (Serien-)Produktion zu gewährleisten.
+
+
+![Kostenverursachung und Kostenverantwortung der Konstruktion (Quelle: @lotter_primare_2016)](images/323382_1_De_2_Fig1_HTML.webp){width=54% #fig-produktionskosten}
+
+
+Die produktionsgerechte Produktgestaltung ermöglicht es, potenzielle bei der Herstellung des Produkts auftretende Probleme und Nachteile einzelner Fertigungsverfahren und Werkstoffe bereits in frühen Phasen Produktentstehungsprozess zu beheben und so die späteren Produktkosten erheblich positiv zu beeinflussen (siehe → @sec-rule-of-10 Rule-of-10 der Fehlerkosten).
+
+Abhängig von den verschiedenen Arten von Produktionsprozessen gibt es abhängig von Unternehmen mehr oder weniger verbindliche Handlungsempfehlungen zur produktionsgerechten Produktgestaltung, z.B. zu geeigneten Gestaltungskriterien und Werkstoffen, Produktionsverfahren und deren Abfolgen, Maße und unter Großserienbedingungen realistisch zu erreichende Toleranzen, aber auch Regeln und Vorgehensweisen zur Qualitätssicherung (siehe z.B. → @sec-spc SPC), → @sec-poka-yoke Poka Yoke).
+
+<!--
+::: {.callout-tip}
+## Weiterführende Links
+
+:::
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Shareable Links & Literaturempfehlungen
+
+-------------------------------------------------------------------------- -->
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
+
++ @lotter_primare_2016: [Produktionsgerechte Produktgestaltung](https://rdcu.be/dI6Es)
+
+:::
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Literaturempfehlung
+
+-------------------------------------------------------------------------- -->
+
+<!--
+#### Literaturempfehlung
+
+![@lotter_primare_2016: [Die Primäre Produktion](https://link.springer.com/book/10.1007/978-3-662-53212-6)](images/Lotter_Produktion_978-3-662-53212-6.webp){width=40%}
+
+-->

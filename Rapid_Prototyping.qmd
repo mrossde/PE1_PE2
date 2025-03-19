@@ -1,0 +1,149 @@
+---
+title: "MTB3 Entwicklung mechatronischer Systeme 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    email: christian.anders@hs-esslingen.de
+    affiliations: Hochschule Esslingen
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       3D-Druck
+
+-------------------------------------------------------------------------- -->
+
+## Rapid Prototyping
+
+
+::: {.callout-tip}
+## Definition: *"Rapid Prototyping"*
+Rapid Prototyping
+:::
+
+### 3D-Druck
+
+Der Begriff 3D-Druck ist ein Überbegriff für verschiedene Technologien bzw. additive Fertigungsverfahren, die dreidimensionale Objekte aus einem oder mehreren Materialien schichtweise mittels physikalischer oder chemischer Schmelz- oder Härtungsverfahren aufbauen. Entscheidendes Merkmal ist der schichtweise (additive) Aufbau, bei dem durch Hinzufügen, Auftragen und Ablagern von Material mit anhand eines digitalen CAD-Modells ein physisches Objekt erzeugt wird – im Gegensatz zu subtraktiven Fertigungsverfahren wie Drehen oder Fräsen. Dafür sind keine produktspezifischen Werkzeuge erforderlich. Die mechanisch-technischen Eigenschaften des Objekts entstehen simultan zur Erstellung der geometrischen Charakteristika. Das virtuelle 3D-Modell auf Basis der digitalen CAD-Daten (Computer Aided Design) wird direkt bzw. relativ „nahtlos“ in ein physisches Bauteil umgesetzt („What You See Is What You Build“, WYSIWYB). Der Begriff 4D-Druck bezeichnet die additive Fertigung von 3D-Druckobjekten, die nach dem Druck beim Einwirken externer Faktoren wie mechanischer Kraft, Magnetfelder oder Temperaturänderungen neue Formen annehmen oder sich selbstständig auffalten.
+
+Als Synonyme zum 3D-Druck werden vielfach die Begriffe additive Fertigungsverfahren, additive manufacturing (AM), Rapid-Technologien, generative Fertigungsverfahren und 3D Printing verwendet. Dabei ist der Begriff 3D Printing als Gattungsbegriff ungeeignet, weil er ein spezifisches 3D-Druckverfahren, das sog. Pulver-Binder-Verfahren, bezeichnet. Die Anzahl an neuangemeldeten Patenten nimmt stetig zu, gleichzeitig laufen viele bestehende Patente aus. Der dadurch bedingte Preisverfall begünstigte die zunehmende Verbreitung des 3D-Drucks in den letzten Jahren. Neben sinkenden Anschaffungskosten fördern steigende Baugeschwindigkeit, Zuverlässigkeit und Genauigkeit diese Entwicklung.
+
+Die 3D-Druckverfahren sind durch eine große Vielfalt gekennzeichnet, sowohl das Drucken an sich als auch die verwendeten Materialien. Vereinfacht lassen sich zwei Verfahrensgruppen unterscheiden: Bei der ersten Verfahrensgruppe „Heißklebepistole“ trägt der Druckkopf dünnste Schichten zum Beispiel aus geschmolzenem Kunststoff auf, mit jeder Schicht wächst das Werkstück in die Höhe. Bei der zweiten Verfahrensgruppe „Sandkasten“ ist der Ausgangspunkt ein beispielsweise mit Metallpulver gefülltes Gefäß. Bei einigen Varianten dieses Verfahrens fährt der Druckkopf ähnlich wie bei einem Tintenstrahldrucker über das Pulverbett und trägt flüssiges Bindemittel auf, sodass das Material an den gewünschten Stellen „verklebt“ wird; danach wird die nächste Schicht aufgetragen. Eine andere Variante zum schichtweisen Aufbau eines Objekts ist das punktgenaue Beschießen von Pulver oder Flüssigkeit mit einem Lichtstrahl zum Härten von lichtempfindlichen Polymeren oder mit einem Laser- oder Elektronenstrahl zum Schmelzen etwa von Metallen. Durch dieses gezielte Aushärten bzw. Schmelzen wird aus immer wieder neu aufgetragenen Schichten, die den bereits generierten Schichten hinzugefügt werden, ein dreidimensionales Objekt geformt. Das Fundament dafür ist ein dreidimensionales digitales Modell des Objekts.
+
+Typische Anwendungsfelder
+Im Folgenden sind die Anwendungsfelder, die Werkstoffe und die Anwendergruppen des 3D-Drucks vorzustellen. Zudem ist die Integration des 3D-Drucks in den Lebenszyklus eines Bauteils bzw. eines Produkts zu erörtern.
+
+Die Anwendungsfelder des 3D-Drucks sind vielfältig. Sie reichen beispielsweise von Präsentations- und Funktionsmodellen, künstlerischen Objekten, Ersatzteilen, Gussformen bis hin zu (Klein-)Serienproduktion. Branchen, die sich vor allem aufgrund der Individualisierbarkeit der Produkte und der Gewichtsreduktion durch interne Wabenstrukturen für den 3D-Druck eignen, sind unter anderem Luftfahrt-, Automobil-, Bekleidungs- und Schuhindustrie, Medizintechnik (Bioprinting, Hörgeräteschalen, Implantate und Orthopädie), Ersatzteile, Nanotechnologie, Werkzeugbau, Gießereiwesen, Architektur, Kunst, Möbel-, Schmuck- und Lebensmittelindustrie sowie sonstige Konsumgüter. 3D-Druck eignet sich insbesondere für die Fertigung von Produktportfolios, die durch eine hohe Variantenvielfalt bei relativ geringer Stückzahl je Variante gekennzeichnet sind. Ein hoher monetärer Wert der Objekte und auch die Komplexität des Designs können weitere Merkmale sein, die auf die Eignung eines additiven Fertigungsverfahrens hindeuten. Die Einsatzmöglichkeiten des 3D-Drucks nehmen aufgrund laufender Verbesserungen der Technologie im Hinblick auf Qualität und Druckgeschwindigkeit bei gleichzeitig sinkenden Kosten stetig zu. Neue Werkstoffe kommen stetig hinzu: Gips, (Hochleistungs-)Keramiken, Kunststoffe, Glas, Holzverbindungen, Lebensmittel, Metalle und Legierungen, organische Materialien etc.
+
+Die Anwendergruppen lassen sich in private und gewerbliche Nutzer einteilen. Private Nutzer erwerben oder bauen sich einen eigenen Drucker, sodass der vormalige Käufer eines physischen Produkts die Rolle des Herstellers übernimmt. Die Anwendungen reichen hier vom Modellbau über personalisierte Gebrauchsgegenstände bis zur Kunst. Der gewerbliche Bereich lässt sich in visionär (zum Beispiel Mahlzeiten für die Raumfahrt, Häuser) und industrielle Anwendungen unterscheiden. Die industriellen Anwendungen umfassen die Unterstützung der Produktentwicklung und das Drucken von Objekten, die selbst als Endprodukt verwendet werden oder zusammen mit anderen Komponenten als Baugruppe montiert werden.
+
+Hinsichtlich der Integration des 3D-Drucks in den Lebenszyklus eines Bauteils bzw. eines Produkts lassen sich vier grundlegende Ausprägungen unterscheiden:
+
+Rapid Prototyping: Das additive Herstellen von Prototypen und Modellen bzw. Bauteilen mit eingeschränkter Funktionalität (ohne Produktcharakter), deren spezifische Merkmale jedoch zum Testen ausreichend gut ausgebildet sind.
+
+Rapid Tooling: Das additive Herstellen von Werkzeugen, Werkzeugkomponenten und -einsätzen, Lehren, Formen oder Formeinsätzen. Synonym wird der Begriff Direct Tooling verwendet.
+
+Rapid Manufacturing: Das additive Herstellen von Endprodukten bzw. Bauteilen für Endprodukte, zum Beispiel für Kleinserien. Als Synonym ist der Begriff Direct Manufacturing gebräuchlich.
+
+Rapid Repair: Der materialauftragende Prozess zur Instandhaltung oder Reparatur abgenutzter Komponenten. Eng damit verbunden ist das Re-Engineering von Bauteilen mittels 3D-Scan, für die keine Lieferquellen mehr existieren.
+
+Somit sind additive Fertigungsverfahren sowohl im Entwicklungs- und Fertigungsprozess (Produktentstehungsprozess, PEP) als auch im Bereich After Sales einsetzbar (vgl. Abb. 4.9). 3D-Druck ist insbesondere dazu prädestiniert, den Produktentstehungsprozess zu beschleunigen und so Kosten zu senken: Rapid Prototyping kann in der Konzeptions- bzw. Entwicklungsphase genutzt werden, um Design-, Geometrie- oder Funktionsprototypen bzw. Modelle zu erstellen. Dabei kann sowohl der Fit der Bauteil-Dimensionen zum Gesamtsystem validiert werden als auch ein erster Eindruck unter ästhetischen Gesichtspunkten erlangt werden. Die Vorteile des Einsatzes von Rapid Prototyping in der Produktentwicklung umfassen reduzierte Entwicklungszeit (time-to-market) und -kosten durch den frühzeitigen Test von Modellen, verbesserte Interaktion mit den Anwendern und die geometrische Freiheit im Produktdesign.
+
+![Integration des 3D-Drucks in den Lebenszyklus eines Bauteils bzw. Produkts. (Quelle: @appelfeller_digitale_2023)](images/436275_2_De_4_Fig9_HTML.png){width=80% #fig-3ddruckanwendungen}
+
+Additiv erzeugte Werkzeuge oder Formen (Direct bzw. Rapid Tooling) können zum Beispiel für die Vorserie oder die Serienfertigung eingesetzt werden. Beispiele für die Werkzeugherstellung sind Montagegestelle, Heft- und Spannvorrichtungen, Formbretter, Schablonen sowie Führungsschienen. (Klein)Serien können im Rahmen des Rapid Manufacturing direkt hergestellt werden. Insbesondere eröffnet 3D-Druck die Möglichkeit einer wirtschaftlichen Fertigung kleiner Losgrößen stark individualisierbarer und geometrisch komplexer Produkte.
+
+Gebrauch und äußere Einwirkungen führen bei Komponenten zu Verschleiß, Verformung, Defekten etc. und gegebenenfalls zur Verkürzung der Lebensdauer. Ansätze des Rapid Repair unterstützen den After-Sales-Service durch Reparatur oder Herstellung von Ersatzteilen unter Verwendung dreidimensionaler digitaler Daten. Eine Reparatur mittels 3D-Druck kann insbesondere bei Bauteilen mit komplexer Geometrie kosteneffizienter und zeitsparender sein als ein Austausch.
+
+Im Entwicklungsprozess werden Concept Models genutzt, um komplexe Informationen oder Ideen visuell zu vereinfachen und für die Entwickler oder mögliche zukünftige Nutzer „erfahrbar“ zu gestalten. Beim Functional Prototyping werden Muster oder Modelle eines späteren Bauteils oder Produkts gedruckt, um ein Konzept oder einen Prozess zu testen. Prototype Tooling bezeichnet das Herstellen von Werkzeugen für Prototypen.
+
+Trotz signifikanter Qualitätssteigerungen und des erheblichen Preisverfalls seit Erfindung des 3D-Drucks setzen Unternehmen diese Technologie vor allem beim Rapid Prototyping und dem Herstellen von Werkzeugen und Vorrichtungen (Rapid Tooling) für die eigene Fertigung ein. Bislang stellt nur ein geringer Anteil der der Unternehmen des verarbeitenden Gewerbes verkaufsfähige Produkte bzw. Bauteile für die Produkte mit dieser Technologie her (Rapid Manufacturing). Der Abschnitt „Betriebswirtschaftlicher Nutzen“ greift die Ursachen auf.
+
+3D-Druck als Element der Fertigungsstrategie
+Bei der Ausprägung einer unternehmens- bzw. werksspezifischen Fertigungsstrategie ist nicht nur zwischen einem nicht-additiven (subtraktiven oder formativen) Fertigungsverfahren und einem additiven 3D-Druckverfahren zu unterscheiden. Beim Vergleich konkurrierender Szenarien ist einerseits die Anschaffung eines eigenen Druckers („Make“, Eigenfertigung) und andererseits die alternative Nutzung von 3D-Druckdienstleistern als Lieferanten („Buy“, externe Beschaffung) zu differenzieren.
+
+
+
+
+
+
+Die dargestellten Strategien sind nicht als einander ausschließend zu verstehen. Ggf. kann sich eine kombinierte Strategie bezüglich Kosten- und Risikokriterien als optimal erweisen. Im Falle der Eigenfertigung mittels 3D-Druck muss ein konventionelles Fertigungsverfahren nicht komplett substituiert werden: Teile mit hohen Stückzahlen und relativ stabiler Nachfrage („Renner“) können weiterhin nicht-additiv beispielsweise mittels Spritzgussverfahren produziert werden. Teile mit kleinen Stückzahlen je Variante und diskontinuierlicher Nachfrage („Exoten“) oder kundenindividuelle Produkte hingegen werden mittels 3D-Druck gefertigt. Alternativ kann sich eine „Make-and-Buy“-Strategie als vorteilhaft erweisen, d. h. die gleichen Objekte werden sowohl intern in Eigenfertigung hergestellt als auch extern von Lieferanten beschafft. Dabei sind eigene Kapazitäten nicht für alle denkbaren Produktvarianten und Nachfragespitzen vorzuhalten, da die Kapazität des Lieferanten bei Bedarf in Anspruch genommen wird. Dies ermöglicht es Unternehmen, schnell und flexibel auf unerwartete Nachfrageschwankungen und kundenindividuelle Anforderungen zu reagieren, ohne die entsprechenden Fixkosten bzw. das Auslastungsrisiko tragen zu müssen. Dies dient der Vermeidung von Verschwendung im Sinne der Lean Production.
+
+Betriebswirtschaftlicher Nutzen
+In der Produktentwicklung ist 3D-Druck seit Jahrzehnten im Einsatz, da der Druck von Prototypen (Rapid Prototyping) die Zeit von der Produktidee bis zur Markteinführung (time-to-market) signifikant verkürzt. Im Hinblick auf die Attraktivität und die Einsatzgebiete für die Serienproduktion scheinen sich vor allem die Luftfahrt-, die Automobil- und die Elektronikindustrie für den Einsatz des 3D-Drucks zu eignen. Diese Branchen profitieren besonders von der Gewichtsersparnis, wenn Teile in Wabenstruktur mit Hohlräumen gedruckt werden (im Gegensatz zu massiven Objekten bei Spritzguss- oder subtraktiven Fertigungsverfahren). Dies führt zu deutlichen Senkungen des Treibstoffverbrauchs im operativen Betrieb der Endprodukte wie etwa Flugzeuge und Fahrzeuge.
+
+Eine Stärke des 3D-Drucks sind die hohen Freiheitsgrade beim Produktdesign: Fast alle Formen sind realisierbar – selbst komplexe Geometrien, die mit nicht-additiven Fertigungsverfahren aufgrund gegebener Werkzeuge, Formen und Vorrichtungen nur schwierig oder gar nicht herstellbar sind. Beim 3D-Druck besteht keine direkte Beziehung zwischen Produktkomplexität und Herstellungskosten, da die Komplexität des Designs nicht die Komplexität der Werkzeuge oder Fertigungsschritte bestimmt. Werkstoffeigenschaften lassen sich durch 3D-Druck geplant und kontinuierlich über das Werkstück hinweg so verändern, dass definiert anisotropes Verhalten erreicht wird, d. h. die Richtungsabhängigkeit der physikalisch-chemischen Eigenschaften eines Materials gezielt beeinflusst wird. Das schnelle Experimentieren mit Modellen wird erheblich erleichtert, sodass sich die Entwicklungszeit von der ersten Produktidee bis zum ersten Verkauf („time-to-market“) signifikant verkürzt. Entsprechend schneller lassen sich Entwicklungskosten durch Umsätze amortisieren.
+
+3D-Druck hat ein hohes Anwendungspotenzial für das Geschäftsmodell der kundenindividuellen Massenfertigung. Dabei werden individualisierbare, durch den Kunden ggf. mitentwickelte Produkte (Co-Design) durch flexible Fertigungsverfahren mit der Effizienz der Massenproduktion hergestellt (mass customization). Einerseits sind die individuellen Bedürfnisse des Kunden an ein Produkt zu berücksichtigen. Andererseits sind diese individuellen Produktanforderungen nicht mit den Mitteln der traditionellen Einzelfertigung (Werkstattfertigung) zu decken, sondern mit effizienten Fertigungsverfahren, die flexibel und reaktionsschnell genug sind, die Massennachfrage zu decken. Dabei dienen Vertriebskonfiguratoren als „Übersetzer“ der Kundenbedürfnisse in technische Spezifikationen. Mit solchen individuell nach Kundenwunsch „maßgeschneiderten“ Produkten können auch kleinste Marktsegmente profitabel bedient werden, ohne dabei auf eine Vielzahl von produktspezifischen Fertigungsanlagen und Werkzeugen angewiesen zu sein – es gibt nur ein digitales Modell, das jederzeit verändert werden kann. Dies schafft in vielen Branchen wie zum Beispiel der Medizintechnik mit personalisierten Implantaten große Umsatzpotenziale, im Extremfall mit der Stückzahl bzw. Losgröße 1 wie z. B. bei einer individuellen Anpassung eines Hörgeräts an das Ohr des Patienten. Durch die geringere Investition in produktspezifische Maschinen, Werkzeuge und Vorrichtungen sinkt auch das betriebswirtschaftliche Risiko bei der Einführung neuer Produkte. Im Gegensatz zur werkzeuggebundenen Fertigung entfallen Rüstkosten und -zeit für den Wechsel zwischen verschiedenen Bauteilen bzw. Produkten, sodass kleine Losgrößen bis hin zur kundenindividuellen Einzelproduktion wirtschaftlich werden. Somit hat der 3D-Druck das Potenzial, den herkömmlichen Zielkonflikt zwischen einer Vielfalt des Produktportfolios einerseits und einem stabilen und effizienten Produktionsprozess andererseits aufzulösen.
+
+Durch den 3D-Druck kann die Zahl der Einzelteile verringert werden, indem ehemals separate Bauteile nun als komplette Baugruppe „in einem Zug“ gedruckt werden (Funktionsintegration). Sogar frei bewegliche Teile (zum Beispiel Kugelgelenke) können in einer einzigen monolithischen Struktur gedruckt werden, die nicht zusammengesetzt werden muss. Die geringere Anzahl an Teilen und Fertigungsschritten senkt insbesondere über die Lohn- bzw. Montagekosten die Herstellkosten und reduziert Qualitätsrisiken, die beispielsweise aus der Genauigkeit und der Justierung resultieren. Diese Integration einer (vorher zu montierenden) Baugruppe in einem einzigen Teil kann ebenso die Anzahl der Wertschöpfungsstufen der unternehmensübergreifenden Supply Chain reduzieren, sodass beispielsweise die Koordinationskosten mit einem Teile-Lieferanten entfallen. Durch die Verringerung der Lohn- und Koordinationskosten kann ein sog. Reshoring, also die Rückverlagerung der Produktion aus Niedriglohnländern in die Absatzregion, wirtschaftlich werden.
+
+3D-Druck bietet wesentliche Vorteile im Vergleich zu Spritzguss- oder subtraktiven Fertigungsverfahren im Hinblick auf Rüstkosten und Kosten für Werkzeuge, Vorrichtungen und Formen. Ohne Werkzeugwechsel beim Wechsel der Fertigung von einem Produkt A auf ein Produkt B werden die Rüstkosten bei Verwendung des gleichen Druckmaterials stark reduziert oder entfallen im Extremfall. Damit stellen Rüstkosten gleichermaßen keinen Treiber für große Lose bzw. Kampagnenfertigung dar, die bei konventionellen Fertigungsverfahren Stückkosten durch Mengendegressionseffekte senken. Kleine Stückzahlen kundenindividueller Produkte werden wirtschaftlich. Hohe Bestände an Endprodukten durch rüstkostengetriebene große Lose, denen keine konkrete Nachfrage gegenübersteht, gehören der Vergangenheit an – zumindest, wenn die Druckgeschwindigkeit bzw. die Ausbringungsmenge je Zeiteinheit mit der Absatzgeschwindigkeit synchronisiert ist. Statt physischer Bestände an Endprodukten „lagern“ Firmen nur digitale 3D-Daten.
+
+Wenn Produkte respektive Teile erst bei konkreter Nachfrage gedruckt werden, entfallen Lagerkosten und Verschrottungsrisiken unverkaufter Bestände. Somit bietet 3D-Druck insbesondere Kostensenkungspotenziale bei einem Produktportfolio, das sich durch eine große Vielfalt an Varianten mit geringer Stückzahl („high mix, low volume“) auszeichnet oder stark schwankende bzw. sporadische Nachfrageverläufe in Kombination mit hoher Prognoseungenauigkeit aufweist. Dies trifft z. B. auf das Ersatzteil- und Projektgeschäft zu. Ebenso sinken Transportkosten, wenn die Güter erst bei konkretem Bedarf am Ver- oder Gebrauchsort lokal gedruckt werden.
+
+Im Vergleich zu subtraktiven Fertigungsverfahren, die Werkstücke durch abtragende Bearbeitung wie Fräsen oder Bohren in die gewünschte Form bringen, fällt weniger Abfallmaterial als bei subtraktiven Fertigungsverfahren wie etwa Drehen oder Fräsen an. Zudem kann ein Großteil des Abfallmaterials beim 3D-Druck für die Fertigung wiederverwendet werden. Auch in indirekten Bereichen wie etwa der Beschaffung bestehen Kostensenkungspotenziale: Anstatt eine Vielzahl an Komponenten von zahlreichen Lieferanten zu bestellen, wird nur einmal eine große Menge an Druckrohstoff von einem Lieferanten geordert. Dadurch sinken die Prozesskosten im administrativen Bereich. Kritisch ist anzumerken, dass die vorgenannten Nutzeneffekte in Abhängigkeit von Unternehmen, Nachfragestruktur, Produktportfolio, Bauteilkomplexität, Druckverfahren und -material deutlich variieren können.
+
+Trotz eines rasanten Anstiegs der Qualität der Druckerzeugnisse und eines rapiden Preisverfalls setzen Hersteller 3D-Druck primär bei der Produktentwicklung ein. Ob und wann 3D-Druck in der Serienfertigung bedeutsam und damit die viel beschworene industrielle „Revolution“ auslösen wird, hängt von der Entwicklung der aktuellen Grenzen der Technologie ab. Aktuelle Grenzen der Verbreitung in der Industrie, insbesondere im Hinblick auf die Serienfertigung, sind die im Vergleich zu alternativen Fertigungsverfahren geringe Druckgeschwindigkeit, die Limitation auf bestimmte Materialien und die begrenzte Größe der druckbaren Bauteile (limitiert durch die Dimensionen des Bauraums bzw. die erforderliche Zeit für den Bauprozess). Eine weitere Barriere ist die Maßhaltigkeit bzw. die Oberflächenbeschaffenheit der Bauteile und damit die exakte Reproduzierbarkeit des Druckobjekts bei großen Mengen. Die Gefährdungspotenziale für Mitarbeiter, der Mangel Mitarbeiterkompetenz sowie Standards und Zertifizierungen für 3D-Druckprozesse sind Herausforderungen, die zunehmend in Forschung und Praxis angenommen werden. Angesichts der rasanten Entwicklungsgeschwindigkeit der Technologie stellen die vorgenannten Grenzen der Verbreitung vermutlich nur eine zeitlich limitierte Barriere dar.
+
+Praxisbeispiele
+In einer Supply Chain (Lieferkette bzw. unternehmensübergreifendes Wertschöpfungsnetzwerk) kann der 3D-Druck zu radikalen Strukturänderungen bzw. Verkürzungen führen, indem komplette Wertschöpfungsstufen umgangen werden (sog. Disintermediation). In konventionellen Supply Chains erbringen ein oder mehrere Unternehmen arbeitsteilig eine Leistung für einen Endkunden. Die Wertschöpfung ist durch hohe Investitionen in Maschinen und Infrastruktur gekennzeichnet, sodass die Produktion hoher Stückzahlen angestrebt wird. Die Vielzahl der beteiligten Partner und die Erstellung von Werkzeugen und Formen bedingen eine lange Zeitspanne von der Produktidee bis zum ersten Verkauf. Transport- und Lagerkosten bestimmen wesentlich die Höhe der Gesamtkosten in der Supply Chain.
+
+Folgendes Szenario ist keine Vision, sondern bei zahlreichen eCommerce-Anbietern wie beispielsweise shapeways.com bereits Realität: Statt ein Produkt (oder andere Konsumgüter) aus einem vorgefertigten Sortiment zu wählen (bzw. auf die Lieferung zu warten), designen Endkunden ihr Produkt selbst oder kaufen im Internet die Design-Rechte. Das neue Produkt drucken die Kunden zu Hause bzw. im eigenen Betrieb aus oder lassen es sich von einem Druckdienstleister zusenden. Im Extremfall des Drucks beim Endverbraucher entfallen Teile-Lieferanten, Produktionsstufen, Transportdienstleister und lokaler Handel: Statt physischer Produkte bestimmen Transaktionen digitaler Daten und Druckrohstoffe die Supply Chain. Die Eigenproduktion mit hoher Fertigungstiefe findet nah am Ver- bzw. Gebrauchsort statt, sodass Lager- und Transportkosten sinken. Ein solches Szenario findet sich nicht nur im Bereich Business-to-Consumer, sondern lässt sich ebenso auf den Bereich Business-to-Business übertragen. Beispielsweise produziert der Flugzeughersteller Airbus zahlreiche Bauteile mittels 3D-Druck selbst, die bisher von externen Lieferanten bezogen wurden (sog. Insourcing).
+
+Interessante Anwendungsfelder sind insbesondere Produktionsprozesse an Orten, wo zum einen der Bedarf an Teilen bzw. Produkten hinsichtlich Art und Menge nicht vorhersehbar ist und alternative Logistikketten eine zeitnahe Lieferung nicht zulassen. Beispiele sind Raumstationen wie die International Space Station (ISS), die einen 3D-Drucker für Werkzeuge an Bord hat, und Containerschiffe, die Ersatzteile während der Fahrt drucken, um kostenintensive Hafenliegezeiten zu vermeiden.
+
+Zusammenfassung
+Der 3D-Druck bietet die Möglichkeit, in verschiedenen Anwendungsbereichen unterschiedlichste Bauteile und Endprodukte zu drucken. Dafür ist mittels CAD-Software ein dreidimensionales digitales Modell des Werkstücks zu erstellen, das schichtweise (additiv) durch Hinzufügen von Material generiert wird. Es gibt sowohl private als auch gewerbliche Anwendergruppen. Die gewerblichen Anwendungen lassen sich im Verlauf des Lebenszyklus eines Bauteils bzw. Endprodukts in Rapid Prototyping, Rapid Tooling, Rapid Manufacturing und Rapid Repair differenzieren. Trotz vielfältiger Nutzenpotenziale stehen diverse Barrieren aktuell einer stärkeren Verbreitung in der industriellen Serienfertigung (Rapid Manufacturing) entgegen.
+
+Ein Ausblick: Die stärksten Treiber der Technologieentwicklung bleiben Leichtbau und Funktionsintegration, d. h. die Möglichkeit, die Anzahl der Teile und Fertigungsschritte zu verringern. Ein höherer Automatisierungsgrad und kontinuierlich arbeitende Verfahren führen zu höheren Baugeschwindigkeiten. Bauräume werden vergrößert, sodass größere Objekte bzw. mehrere gleichzeitig gedruckt werden können. Die Vielfalt an druckbaren Materialien steigt weiter, mechanische und optische Eigenschaften sowie die Auflösung werden optimiert. Preise für Drucker und Rohstoffe sinken weiter. Neue Geschäftsmodelle entwickeln sich, so bieten beispielsweise Logistikdienstleister 3D-Druck an. Bei der weiteren Verbreitung der 3D-Druckverfahren sind die Risiken der sogenannten Produktpiraterie und die ökologische Nachhaltigkeit zu beleuchten.
+
+
+
+![FDM-Drucker (Quelle: [Fa. Ultimaker](https://ultimaker.com/de/)).](images/Ultimaker_MakerBot.jpg){width=80% #fig-ultimaker}
+
+[Fa. Ultimaker](https://ultimaker.com/de/)
+[Werkstoffe für FDM am Beispiel Fa. Ultimaker S-Series](https://ultimaker.com/materials/s-series-materials/#metal)
+
+
+[Dienstleister am Markt verfügbar](https://3d-print-solutions.de/)
+
+
+
+<!--
+::: {.callout-tip}
+## Weiterführende Links
+
+:::
+-->
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
+
++ @bender_pahlbeitz_2021: [Themengebiete der virtuellen Produktentwicklung](https://rdcu.be/dIAaT)
+
+:::
+
+<!--
+## Literaturempfehlung
+
+![@kitsios_ihre_2021: [Ihre Produktentwicklung digitalisieren](https://link.springer.com/book/10.1007/978-3-658-33862-6)](images/Kitsios_Produktentwicklungdigitalisieren.webp){width=40%}
+
+-->

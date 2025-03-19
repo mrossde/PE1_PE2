@@ -1,0 +1,79 @@
+---
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Softskills
+  - Team
+  - Teamentwicklung nach Tuckman
+  - Lencioni-Pyramide
+  - Ringelmann-Effekt
+  - Johari-Fenster
+  - Black Swan
+  - Eisenhower-Prinzip
+  - Bildzeitung-Test
+  - Love it - Change it - Leave it
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 5
+link-external-icon: true
+link-external-newwindow: true
+
+
+headlines:
+  off: true
+exercises:
+  solutions:
+  off: true
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Skriptum zur Vorlesung WS2024/2025
+
+-------------------------------------------------------------------------- -->
+
+<!-- -------------------------------------------------------------------------
+
+                       Kapitel 6: Softskills
+
+-------------------------------------------------------------------------- -->
+
+# Softskills
+  {{< include Softskills.qmd >}}
+  {{< include Team.qmd >}}
+  {{< include Die_fünf_Hüte_einer_Führungskraft.qmd >}}
+  {{< include Vier_Formen_Des_Kapitals.qmd >}}
+  {{< include Verhalten_als_Ware.qmd >}}
+  {{< include Johari-Fenster.qmd >}}
+  {{< include AIDA-Modell.qmd >}}
+  {{< include Eisenhower-Prinzip.qmd >}}
+  {{< include Bildzeitung-Test.qmd >}}
+  {{< include LoveChangeLeave.qmd >}}

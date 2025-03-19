@@ -1,0 +1,303 @@
+<!--
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Grundlagen
+  - Kompetenzen
+  - Einflussfaktoren
+  - (Zufalls-)Glück
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+<!--
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Grundlagen
+:::
+## Ziele der Vorlesung
+
+
+<!--
++ {{< include Abbildung_Flammarion1888.qmd >}}
+-->
+<!--
+![](images/blank.png){height=5cm}
+-->
+<!-- -------------------------------------------------------------------------
+
+                       Ziele der Vorlesung
+
+-------------------------------------------------------------------------- -->
+
+---
+
+> 
+*"Education is not about filling your mind with facts; it’s about sparking curiosity and fostering the ability to think critically."* ([Richard Feynman](https://de.wikipedia.org/wiki/Richard_Feynman))
+
+> 
+*"The goal of teaching should not be to help the students learn how to memorize and spit out information under academic pressure. The purpose of teaching is to inspire the desire for learning in them and make them able to think, understand, and question."* ([Richard Feynman](https://de.wikipedia.org/wiki/Richard_Feynman))
+
+>
+*"Any fool can know. The point is to understand."* ([Albert Einstein](https://de.wikipedia.org/wiki/Albert_Einstein))
+
+---
+
+
+![](images/blank.png){height=1cm}
+
+
+### Mission Statement
+<!-- -------------------------------------------------------------------------
+
+                       Mission Statement zur Vorlesung "Produktentwicklung 1"
+
+-------------------------------------------------------------------------- -->
+::: { .callout-note}
+## Mission Statement zur Vorlesung "DEB3 Produktentwicklung 1"
+Aufgabe der Vorlesungen ist das Vermitteln praxisnahen, relevanten, verfügbaren ***aktiven Wissens*** und des ***Verstehens von Zusammenhängen***, auf das die Studierenden in ihrem Berufsleben jederzeit und dauerhaft zugreifen und bei ihren Entscheidungen einfließen lassen können um ***informierte Entscheidungen*** zu treffen.
+:::
+
+
+![](images/blank.png){height=1.2cm}
+
+
+
+### Erfolgsfaktoren für die Produktentwicklung
+
+#### Erfolgsfaktor Kompetenzen
+
+![Grundlagen erfolgreicher Produktentwicklung (I)](images/Magisches_Dreieck_Produktentwicklung_Grundlagen.svg){width=60% #fig-mdpeg}
+
+::: {.callout-tip}
+## Definition: *"Fachkompetenz"*
+Unter [Fachkompetenz](https://de.wikipedia.org/wiki/Fachkompetenz) (auch: Sachkompetenz, englisch Hardskill) versteht man die Fähigkeit von Arbeitskräften, berufstypische Aufgaben und Sachverhalte den theoretischen Berufsbeschreibungen gemäß selbständig und eigenverantwortlich bewältigen zu können. Es handelt sich um eine Handlungskompetenz mit entsprechendem Kontextwissen.
+:::
+
+<!--
+Die Norm ISO 9000 definiert das Wort „Kompetenz“ als: „Fähigkeit, Wissen und Fertigkeiten anzuwenden, um beabsichtigte Ergebnisse zu erzielen.“ Diese Definition ist in einige andere ISO-Normen übernommen worden. Der dadurch beschriebene Begriff einer fachlichen Kompetenz wird sowohl auf Personen als auch auf organisatorische Einheiten angewendet.
+-->
+
+::: {.callout-tip}
+## Definition: *"Methodenkompetenz"*
+[Methodenkompetenz](https://de.wikipedia.org/wiki/Methodenkompetenz) umfasst die Fähigkeiten und Fertigkeiten, die erforderlich sind, um Informationen einzuholen, insbesondere Fachwissen zu beschaffen, und zu verwerten sowie allgemein um Probleme zielorientiert, vor allem durch Treffen von Entscheidungen und Setzen von Prioritäten, zu lösen. 
+::: 
+
+<!--
+Methodenkompetenz ist für den Aufbau und die erfolgreiche Anwendung von Fachkompetenz erforderlich. Bei Methodenkompetenz handelt sich somit um eine Kompetenz, die Kompetenzen erschließt – eine Schlüsselqualifikation bzw. -kompetenz. Im Einzelnen versteht man darunter z. B.:
+
++ die Fertigkeit, Informationen zu beschaffen, zu strukturieren, zu bearbeiten, aufzubewahren, wiederzuverwenden und darzustellen.
++ die Fertigkeit, Ergebnisse von Verarbeitungsprozessen richtig zu interpretieren und in geeigneter Form zu präsentieren.
++ die Fertigkeit zur Anwendung von Problemlösungstechniken.
++ die Fertigkeit zur Gestaltung von Problemlösungsprozessen, z. B. im → Projektmanagement.
+-->
+
+<!--
+Methodenkompetenz kann auch als Bestandteil der Fachkompetenz verstanden werden.
+-->
+
+::: {.callout-tip}
+## Definition: *"Softskills"*
+[Softskills](https://de.wikipedia.org/wiki/Soziale_Kompetenz) sind ein Komplex von Fähigkeiten, die dazu dienen, in Kommunikations- und Interaktionssituationen entsprechend den Bedürfnissen der Beteiligten Realitätskontrolle zu übernehmen und effektiv zu handeln. Als effektiv kann Handeln bezeichnet werden, wenn sich dadurch positive (erwünschte) Konsequenzen maximieren und negative (unerwünschte) minimieren lassen. Softskills lassen sich als Kombination aus Durchsetzungsfähigkeit und Anpassungsfähigkeit verstehen.
+:::
+
+<!--
+In [Unternehmen](/de.wikipedia.org/wiki/Soziale_Kompetenz#Wirtschaftsleben) wird "Softskills" häufig synonym mit „Sozialer Kompetenz“ verwendet. Softskills beschreiben in diesem Zusammenhang die Fähigkeit, Teamgeist und Motivation in die Zusammenarbeit mit anderen (Kollegen, Kunden, Vorgesetzten, Mitarbeitern) einzubringen und für gemeinsame Ziele zu nutzen. Als Softskills gelten auch die erfolgreiche Einwirkung von Vorgesetzten auf die Arbeitsleistung von Mitarbeitern.
+-->
+
+
+::: {.callout-warning}
+## Das Vermitteln von Grundlagen zu Fach-/Methodenkompetenz und zu Softskills ist Ziel dieser Vorlesung!
+Grundlagen zu Fach- und Methodenkompetenz werden in dieser Vorlesung orientiert am zeitlichen Ablauf im Produktentstehungsprozess in den Kapiteln → Grundlagen @sec-grundlagen, → Ideenfindung und Konzeptentwicklung @sec-ideenfindungundkonzept, → Entwurfs- und Entwicklungsphase @sec-entwurfundentwicklung, → Prototyping und Test @sec-prototypingundtest und → Produktionsplanung und Produktion @sec-produktionsplanungundproduktion vorgestellt. Die Grundlagen zu Softskills sind im Kapitel → Softskills @sec-softskills zusammengefasst. Zum weiterführenden Studium sei der geneigte Leser auf die umfangreichen Literaturempfehlungen @sec-literatur verwiesen. 
+:::
+
+#### Erfolgsfaktoren Aktives Wissen, Verstehen und Nutzen von Werkzeugen
+
+![Grundlagen erfolgreicher Produktentwicklung (II)](images/Magisches_Dreieck_Produktentwicklung_Grundlagen_Kompetenzen.svg){width=60% #fig-mdpegk}
+
+::: {.callout-tip}
+## Definition: *"Aktives Wissen"*
+Aktives Wissen bezeichnet die Fähigkeit, erworbenes Wissen jederzeit anzuwenden, kritisch zu reflektieren und flexibel auf neue Situationen zu übertragen, um Probleme zu lösen oder kreative Ideen zu entwickeln.
+:::
+
+Im Gegensatz zu "aktivem Wissen" bezeichnet "latentes Wissen" Informationen, die grundsätzlich verfügbar sind und mittels Recherche erworben werden können (z.B. via Google, [Wikipedia](https://de.wikipedia.org/wiki/Wikipedia:Hauptseite), [WolframAlpha](https://www.wolframalpha.com/), usw.), die aber mangels Verfügbarkeit im Gedächtnis **NICHT** bei Entscheidungen einbezogen werden können. 
+
+::: {.callout-important}
+Bei Entscheidungen kann grundsätzlich nur aktives Wissen einbezogen werden. Bevor latentes Wissen bei Entscheidungen einfließen kann muss es erst durch Aneignung (→ Lernen, Studium) in aktives Wissen umgewandelt werden.
+:::
+
+
+::: {.callout-warning}
+## Aktives Wissen muss stets aktuell gehalten werden!
+Aktives Wissen kann (je nach Fachgebiet mehr oder weniger schnell) altern und muss daher regelmäßig auf Aktualität überprüft, aktualisiert und zumeist in Teilen immer wieder neu erworben/erweitert werden um relevant und zuverlässig zu bleiben. Ein großer, historisch erworbener Wissensschatz ist somit nicht in jedem Fall wertvolles verfügbares Wissen, sondern kann, im Gegenteil (insbesondere bei sich schnell entwickelnden Fachgebieten), sogar fehlleitend wirken.Der Wert von einmalig erworbenem aktivem Wissen und Erfahrung wird in der heutigen Wirklichkeit eines sich stetig und schnell verändernden Umfelds insbesondere von älteren Fachexperten, die sich selbst höchste Kompetenz zuschreiben, häufig überbewertet.
+:::
+
+---
+
+>
+*"Der Wert von einmalig erworbenem aktiven Wissen halbiert sich alle 10 Jahre.“ (Christian Anders)*
+
+---
+
+::: {.callout-tip}
+## Definition: *"Verstehen von Zusammenhängen"*
+Verstehen von Zusammenhängen bedeutet, die Beziehungen und Wechselwirkungen zwischen verschiedenen Elementen, Prozessen oder Faktoren in einem System oder einer Situation zu erkennen, um ein ganzheitliches Verständnis zu entwickeln und → informierte Entscheidungen @sec-informierteentscheidungen treffen zu können.
+:::
+
+::: {.callout-tip #callout-nutzenvonwerkzeugen}
+#### Definition: *"Nutzen von Werkzeugen"*
+Die Nutzung von Werkzeugen umfasst die Fähigkeit, digitale und physische Werkzeuge gezielt einzusetzen, um technische Aufgaben im Produktentstehungsprozess effizient und effektiv zu bewältigen. Dies schließt die Auswahl geeigneter Werkzeuge, die sichere und fachgerechte Anwendung sowie die Interpretation und Weiterverarbeitung der erzielten Ergebnisse ein.
+:::
+
+::: {.callout-warning}
+## Das Vermitteln von Fachkenntnissen zu spezifischen Werkzeugen ist **NICHT** Teil dieser Vorlesung!
+Zu diesen Werkzeugen gehören CAD-Systeme (z.B. [Autodesk Inventor](https://www.autodesk.com/de/products/inventor) oder [Dassault Systèmes CATIA](https://www.3ds.com/de/produkte-und-services/catia/)), FEM-Software (z.B. [ANSYS](https://www.ansys.com/de-de/company-information/ansys-simulation-software) oder [Dassault Systèmes ABAQUS](https://www.3ds.com/products/simulia/abaqus)), Elektronik-Simulationssoftware (z.B. Spice), Systemsimulation (z. B. [Mathworks MATLAB](https://de.mathworks.com/products/matlab.html)/Simulink), aber auch 3D-Druck ebenso wie PDM/PLM-Systeme (z.B. [Siemens Teamcenter](https://plm.sw.siemens.com/de-DE/teamcenter/)). 
+
+Die Nutzung dieser Werkzeuge im Sinne der [Definition: *"Nutzen von Werkzeugen"*](#callout-nutzenvonwerkzeugen) setzt tiefe und sehr spezifische Kenntnisse des jeweiligen Werkzeugs voraus. Diese Kenntnisse können im Rahmen dieser Vorlesung nicht vermittelt werden, entsprechend ist das Erlernen der Kenntnisse zur Nutzung einzelner, spezifischer Werkzeuge kein Ziel und daher auch kein Teil dieser Vorlesung.
+:::
+
+
+#### Exkurs: Informierte Entscheidungen {#sec-informierteentscheidungen}
+
+::: {.callout-tip}
+## Definition: *"Informierte Entscheidungen"*
+Informierte Entscheidungen werden getroffen, wenn eine Person umfassende und relevante Informationen berücksichtigt, bevor sie eine Wahl trifft oder eine Handlung ausführt. Solche Entscheidungen basieren auf einer sorgfältigen Analyse und Bewertung der verfügbaren Fakten, Daten, Erfahrungen und Meinungen. 
+:::
+
+Informierte Entscheidungen sind durch folgenden Merkmale gekennzeichnet:
+
+1. **Informationsbeschaffung:** Bei informierten Entscheidungen wird im Vorfeld bewusst nach Informationen gesucht. Die bedeutet, dass man sich der Grenzen des eigenen verfügbaren Wissens bewusst ist, zielgerichtet verschiedene Quellen konsultiert, Experten befragt, Forschungsergebnisse analysiert oder andere Informationsquellen nutzt.
+2. **Relevanz:** Informierte Entscheidungen berücksichtigen relevante Informationen, die für den spezifischen Kontext und die Situation der Entscheidung von Bedeutung sind. Es geht darum, die Informationen zu identifizieren, die einen direkten Einfluss auf die Entscheidung haben können, und irrelevante oder unzuverlässige Informationen auszusortieren.
+3. **Bewertung:** Informierte Entscheidungen beinhalten eine kritische Bewertung der verfügbaren Informationen. Dabei werden die Glaubwürdigkeit, die Qualität und die Quelle der Informationen berücksichtigt. Es wird darauf geachtet, mögliche Vorurteile, [Verzerrungen](https://de.wikipedia.org/wiki/Liste_kognitiver_Verzerrungen)^[z.B. [Bestätigungsfehler](https://de.wikipedia.org/wiki/Best%C3%A4tigungsfehler). Bestätigungsfehler (engl. *"confirmation bias"*) ist ein Begriff der Kognitionspsychologie, der die Neigung bezeichnet, Informationen so zu ermitteln, auszuwählen und zu interpretieren, dass diese die eigenen Erwartungen erfüllen (bestätigen).] oder Fehlinformationen zu erkennen und zu berücksichtigen.
+3. **Abwägung:** Informierte Entscheidungen beinhalten die Abwägung verschiedener Optionen oder Alternativen. Es werden die Vor- und Nachteile jeder Option betrachtet und die potenziellen Auswirkungen und Konsequenzen bewertet (siehe → z.B. Bewertungsmatrix @sec-bewertungsmatrix). 
+4. **Rationalität:** Informierte Entscheidungen werden auf der Grundlage logischer Schlussfolgerungen und vernünftiger Überlegungen getroffen. Emotionen können eine Rolle spielen, aber sie werden nicht dominant und beeinflussen nicht die rationale Analyse der Informationen.
+5. **Verantwortung:** Informierte Entscheidungen werden verantwortungsbewusst getroffen, indem potenzielle Auswirkungen und Konsequenzen berücksichtigt werden. Es wird versucht, die bestmögliche Wahl zu treffen, basierend auf dem vorhandenen Wissen und den Zielen oder Werten der Person.
+
+::: {.callout-important}
+Informierte Entscheidungen sind nicht in jedem Fall richtige Entscheidungen, sie führen jedoch zu einer **höheren Wahrscheinlichkeit**, dass die gewählte Handlung den Zielen entspricht (siehe → (Zufalls-)Glück @sec-glueck).
+:::
+
+
+#### Einflussfaktoren auf die Produktentwicklung
+
+![Einflussfaktoren erfolgreicher Produktentwicklung](images/Anforderungen_Produktentwicklung_Grundlagen.drawio.svg){width=70% #fig-ape}
+
+
+::: {.callout-tip}
+## Definition: *"Kundenbedarf"*
+Kundenbedarf bezeichnet die expliziten und impliziten Anforderungen, Erwartungen und Wünsche der Zielgruppe, die ein Produkt erfüllen muss, um deren Probleme zu lösen, [Nutzen](https://de.wikipedia.org/wiki/Kundennutzen)^[Grundhypothese zur Definition des Kundennutzens: Unter Wettbewerbsbedingungen entscheidet sich ein Kunde immer für den Anbieter, der ihm den höchsten Kundennutzen bietet] zu stiften und die [Zufriedenheit](https://de.wikipedia.org/wiki/Kundennutzen#Kundenzufriedenheit) der Kunden sicherzustellen.
+:::
+
+::: {.callout-tip}
+## Definition: *"Machbarkeit"*
+[Machbarkeit](https://de.wikipedia.org/wiki/Machbarkeit) bedeutet technische oder wirtschaftliche Durchführbarkeit, d.h. eine Anforderung oder ein Projektziel steht in Einklang mit den wissenschaftlichen Erkenntnissen, rechtlichen oder wirtschaftlichen Rahmenbedingungen des jeweiligen Fachgebiets.
+:::
+
+::: {.callout-tip}
+## Definition: *"Profitabilität"*
+Profitabilität bezeichnet das Maß, in dem ein zu entwickelndes Produkt dazu beiträgt, nachhaltige finanzielle Gewinne für das Unternehmen zu erzielen, indem die Einnahmen aus dem Produkt die Kosten für Entwicklung, Produktion, Vertrieb und Betrieb übersteigen.
+:::
+
+::: {.callout-tip}
+## Definition: *"Wettbewerb"*
+Wettbewerb bezeichnet die Gesamtheit der externen Marktakteure und deren Produkte oder Dienstleistungen, die um dieselben Zielkunden oder Marktanteile konkurrieren.
+:::
+
+
+
+#### Erfolgsfaktor (Zufalls-)Glück {#sec-glueck}
+
+![Erfolgsfaktor (Zufalls-)Glück](images/Glück.svg){width=40% #fig-glueck}
+
+
+::: {.callout-tip}
+## Definition: *"Zufallsglück"* (Quelle: [Wikipedia](https://de.wikipedia.org/wiki/Gl%C3%BCck#Etymologie_und_Sprachgebrauch))
+Glück haben im Zufalls-Sinn bedeutet, entweder schicksalhaft oder durch ein unvorhersehbares Ereignis begünstigt zu sein. Zu Zufallsglück gehört auch durch Zufall einen Nachteil zu vermeiden. 
+:::
+
+::: {.callout-warning}
+## Warnung: Auf (Zufalls-)Glück ist (leider) kein Verlass!
+Der Erfolgsfaktor (Zufalls-)Glück taucht in der akademischen Lehre zum Produktentstehungsprozess nicht auf, spielt in der Praxis aber eine (oftmals versteckte, und erst in der Rückschau zu erkennende, teilweise aber sogar große) Rolle! Auch wenn das Glück manchmal seine helfende Hand im Spiel hat sei der geneigte Leser an dieser Stelle dringendst aufgefordert durch bestmögliches eigenes Zutun auf Glück beim Produktentstehungsprozess nicht angewiesen zu sein! Diese Vorlesung soll hierzu einen Beitrag leisten.
+:::
+
+<!--
+Voraussetzung dafür auf Seiten des „Beglückten“ sind weder ein bestimmtes Talent noch auch nur eigenes Zutun. 
+
+Dagegen behauptet der Volksmund eine mindestens teilweise Verantwortung des Einzelnen für die Erlangung von Lebensglück in dem Ausspruch: „Jeder ist seines Glückes Schmied“. Demnach hinge die Fähigkeit, in einer gegebenen Situation glücklich zu sein, außer von äußeren Umständen auch von eigenen Einstellungen und Bemühungen ab.
+
+Eine Glückssträhne wird die Aneinanderreihung mehrerer positiver Erlebnisse genannt. Die Glückssträhne wird, wie der Wortursprung „Glück“ andeutet, dem (glücklichen) Zufall zugeschrieben, auch wenn sie in vielen Fällen das absehbare Ergebnis harter Arbeit und nur die zeitliche Nähe Zufall ist.
+
+Das Gegenteil von Glück (im Sinne von „Glück haben aus Zufall“) ist Pech.
+
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Beispiel: Boeing's Starliner vs. SpaceX's Dragon
+
+-------------------------------------------------------------------------- -->
+<!--
+![[Boeing's](https://www.boeing.com/) [Starliner](https://www.boeing.com/space/starliner) (Quelle: [NASA](https://www.nasa.gov/))](images//Boeing_Starliner_NASA.jpg){width=60% #fig-starliner}
+
+![[SpaceX's](https://www.spacex.com/) [Dragon](https://www.spacex.com/vehicles/dragon/) (Quelle: [NASA](https://www.nasa.gov/))](images/SpaceX_Crew_Dragon_NASA.jpg){width=60% #fig-crewdragon}
+-->
+
+<!--
+{{< video https://youtu.be/0nYxAHkiaTo?feature=shared >}}
+-->
+
+<!--
+![Nachricht in den Medien zur Entlassung von Ted Colbert (Quelle: [Focus Online](https://www.focus.de/))](images/TedColbert.png){width=74% #fig-tedcolbert}
+
+![](images/blank.png){height=5cm}
+-->
+
+::: {.callout-important}
+## Erfolg bei der Produktentwicklung ist **KEIN** glücklicher Zufall, sondern Ergebnis sorgfältiger Arbeit!
++ *"Man muss dem Glück eine breite Straße bauen."* (Erik Lamprecht)
++ *"Das Glück des Tüchtigen"* (Sprichwort, Quelle unbekannt)
+:::
+

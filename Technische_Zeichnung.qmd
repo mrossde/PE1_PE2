@@ -1,0 +1,43 @@
+---
+title: "MTB3 Entwicklung mechatronischer Systeme 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    email: christian.anders@hs-esslingen.de
+    affiliations: Hochschule Esslingen
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+---
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Technische Zeichnungen
+
+-------------------------------------------------------------------------- -->
+
+# Technische Zeichnungen
+
+
+::: {.callout-tip}
+## Definition: *"Technische Zeichnungen"*
+Technische Zeichnungen sind detaillierte Darstellungen von Objekten, die spezifische technische Informationen enthalten. Technische Zeichnungen dienen dazu, ein Objekt genau zu beschreiben und zu dokumentieren, sodass es hergestellt, gewartet oder repariert werden kann. Technische Zeichnungen verwenden dazu standardisierte Symbole, Maße, Schriftarten und Linientypen, um die Informationen verständlich und präzise zu vermitteln. 
+:::
+
+Technische Zeichnungen sind ein zentraler Bestandteil jeder Produktdokumentation.

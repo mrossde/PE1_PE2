@@ -1,0 +1,368 @@
+---
+title: "DEB3 Produktentwicklung 1"
+resource-path: ["../images"]
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+---
+
+<!-- 
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+# Tools 'n rules
+
+In diesem Kapitel geht es um Vorschläge zur Zusammenarbeit in den Vorlesungen und Laboren. Die Spielregeln, die wir uns zur Zusammenarbeit und Kommunikation geben wollen, werden vorgestellt. Einige organisatorische Aspekte werden angesprochen. Die wichtigsten in dieser Vorlesung verwendeten Softwarewerkzeuge werden kurz zusammengefasst dargestellt.
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Zusammenarbeit 
+
+-------------------------------------------------------------------------- -->
+
+## Zusammenarbeit
+
+
+{{< include Dozent.qmd >}}
+
+
+### Unser Team
+
++ Bitte um eine kurze Vorstellungsrunde. 
+
+<!--
++ Bitte um Namensschilder bei der ersten Vorlesung.
+--> 
+
+### Vorlesung und Labore: Wann waren wir erfolgreich?
+
+Zwei Sichten auf diese Vorlesung und die zugehörigen Labore: *"Wann waren wir erfolgreich?"*"
+
+```{mermaid}
+%%| label: fig-label-success
+%%| fig-cap: "Zwei mögliche Sichten auf die Vorlesung und Labore: Wann waren wir erfolgreich? (Links: Sicht der Studierenden. Rechts: Sicht des Dozenten)"
+graph TD;
+    Start[Start] 
+    --> |Vorlesung| Lab1[Projekt 1]
+    --> |Vorlesung| Lab2[Projekt 2]
+    --> |Vorlesung| Lab3[Projekt 3]
+    --> |Vorbereitung| Ende[Prüfung]
+    --> |5 ECS| Bestanden[SUCCESS!!! Kurs erfolgreich bestanden!]
+    --> |Nächstes Semester|DEB4
+
+    A[Start]
+    --> |Vorlesung| B[Projekt 1]
+    --> |Vorlesung| C[Projekt 2]
+    --> |Vorlesung| D[Projekt 3]
+    --> |Ausarbeitung| E[Prüfung]
+    --> |Update| F[SUCCESS!!! Verbesserte Vorlesung ist verfügbar!]
+    --> |Nächstes Semester|A
+```
+
+---
+
+<!--
+#### Ausblick: Software Development Life (SDLC)
+
+![Software Development Life Cycle (SDLC)](images/SoftwareDevelopmentLifeCycel_SDLC.png){width=64% #fig-sdlc}
+
+---
+-->
+
+### Ihre Mithilfe ist gefragt!
+
+> *"Ich benötige Ihre Hilfe und Mitarbeit! Wir können dieses Projekt der Vorlesung nur gemeinsam erfolgreich gestalten!"*
+
+---
+
+<!--
+![It takes two to tango! (Quelle: Adobe Stock)](images/ItTakesTwoToTango.jpeg){width=40% #fig-two2tango}
+
+
+
+> *"[It takes two to tango!](https://en.wikipedia.org/wiki/It_takes_two_to_tango)"*
+-->
+
+
+::: {.callout-important}
+## Nochmals: Eine wichtige Bitte!
+Ihre Fragen, Anregungen & Kritik sind erwünscht und entscheidend! Ihre Fragen, Anregungen und Kritik sind notwendig um Ihren Lernerfolg zu sichern und die Vorlesung für die Ihnen nachfolgenden Komilitonen zu verbessern! Ohne Ihre Mitarbeit können wir unsere gemeinsamen Ziele nicht erreichen! Bitte helfen Sie mit! 
+:::
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Spielregeln (Vorschlag)
+
+-------------------------------------------------------------------------- -->
+
+## Spielregeln
+
+### Vertrauensvolle Zusammenarbeit
+
+Eine professionelle, vertrauensvolle Zusammenarbeit ist entscheidend für den Erfolg von Teams. Vertrauensvolle Zusammenarbeit erfordert das Beachten und Einhalten einiger grundlegender Regeln im Miteinander:
+
+1. **Respektvoller Umgang**: Vermeiden Sie Vorurteile. Behandeln Sie Ihre Kollegen respektvoll und mit Wertschätzung. Respektieren Sie deren Meinungen, Ideen und Grenzen. 
+
+2. **Ehrlichkeit und Transparenz**: Kommunizieren Sie offen und ehrlich miteinander. Teilen Sie Informationen transparent, ohne zu verbergen oder zu verschleiern.
+
+3. **Verlässlichkeit und Zuverlässigkeit**: Halten Sie Ihre Versprechen und erfüllen Sie Ihre Verpflichtungen. Seien Sie zuverlässig und halten Sie sich an vereinbarte Termine und Fristen.
+
+4. **Verantwortung übernehmen**: Nehmen Sie Verantwortung für Ihre Handlungen und Entscheidungen. Stehen Sie zu Fehlern und suchen Sie gemeinsam nach Lösungen, um daraus zu lernen und sich zu verbessern.
+
+5. **Vertraulichkeit wahren**: Respektieren Sie die Vertraulichkeit persönlicher oder sensibler Informationen.
+
+---
+
+> *"[What Happens Here, Stays Here](https://en.wikipedia.org/wiki/What_Happens_Here,_Stays_Here)."*
+
+---
+
+6. **Teamwork und Zusammenarbeit**: Arbeiten Sie gemeinsam an Zielen und Projekten. Fördern Sie eine Kultur der Zusammenarbeit, in der jeder seine Stärken einbringen und von den Fähigkeiten anderer profitieren kann.
+
+7. **Konfliktlösung**: Das Auftreten von Konflikten in Teams ist ein normaler Vorgang. Treten Konflikte auf, gehen Sie respektvoll und konstruktiv damit um. Suchen Sie nach Lösungen, die die Bedürfnisse aller Beteiligten berücksichtigen und die Beziehung stärken.
+
+8. **Offenheit für Feedback**^[Gut Feedback zu geben und Feedback richtig anzunehmen ist in der Praxis oftmals für alle Kommunikationspartner eine große Herausforderung. Auf das Thema Feedback wird daher in der Vorlesung zu einem späteren Zeitpunkt nochmals detailliert eingegangen.]: Seien Sie offen für konstruktives Feedback und sehen Sie es als Chance, um sich persönlich und beruflich weiterzuentwickeln. Wenn dies vom Feedbacknehmer gewünscht wird, Geben Sie auch selbst Feedback, um zur Verbesserung der Zusammenarbeit beizutragen.
+
+9. **Unterstützung und Empathie**: Unterstützen Sie Ihre Kollegen in schwierigen Situationen und zeigen Sie Empathie für ihre Herausforderungen und Belastungen.
+
+
+### Kommunikation
+
+Eine gute Kommunikation ist in der Arbeitswelt entscheidend für das reibungslose Funktionieren von Teams und für den Erfolg des Einzelnen und für den Erfolg von Unternehmens. Ziel ist es, eine positive und produktive Arbeitsumgebung aufzubauen und langfristig aufrecht zu erhalten.
+
+<!--
+Für eine gute Kommunikation gelten einige goldene Regeln:
+
+1. **Klarheit und Prägnanz**: Nachrichten sollten klar und präzise sein, um Missverständnisse zu vermeiden. Vermeiden Sie unnötige Fachsprache oder nur Ihnen bekannte Codewörter, um sicherzustellen, dass alle Kommunikationspartner verstehen, worum es geht.
+
+2. **Aktives Zuhören**: Kommunikationspartner sollten aktiv zuhören, wenn andere sprechen, um vollständig zu verstehen, was gesagt wird. Dies schließt die Vermeidung von Unterbrechungen und die Nachfrage nach Klarstellungen ein.
+
+3. **Respekt und Höflichkeit**: Alle Interaktionen sollten respektvoll und höflich sein, unabhängig von Meinungsverschiedenheiten oder Konflikten. Dies schafft eine positive Arbeitsumgebung und fördert das gegenseitige Vertrauen.
+
+4. **Offenheit und Ehrlichkeit**: Alle Kommunikationspartner sollten offen und ehrlich miteinander kommunizieren, auch wenn es um schwierige Themen geht. Dies ermöglicht eine transparente Arbeitsumgebung und erleichtert die Problemlösung.
+
+5. **Angemessene Kanäle nutzen**: Wählen Sie die richtigen Kommunikationskanäle für verschiedene Arten von Nachrichten. Manche Dinge sind besser geeignet für persönliche Gespräche, während andere effektiv per E-Mail oder Chat übermittelt werden können.
+
+6. **Zeitmanagement**: Respektieren Sie die Zeit anderer (→ [Wertschätzung](https://de.wikipedia.org/wiki/Wertsch%C3%A4tzung)), indem Sie Nachrichten und Meetings effizient gestalten. Halten Sie sich an vereinbarte Zeitpläne und geben Sie anderen ausreichend Zeit, um auf Nachrichten zu reagieren. Dazu gehört auch, pünktlich zum vereinbarten oder vorgegebenen Zeitpunkt zu erscheinen.
+
+7. **Empathie zeigen**: Versuchen Sie, die Perspektive anderer zu verstehen und sich in ihre Lage zu versetzen. Dies fördert das Verständnis und die Zusammenarbeit im Team.
+
+8. **Professionelle Grenzen respektieren**: Vermeiden Sie es, persönliche oder unangemessene Themen am Arbeitsplatz zu diskutieren, um eine professionelle Umgebung aufrechtzuerhalten.
+-->
+
+Gute Kommunikation folgt einer festen Sequenz bestehend aus drei Phasen (siehe @fig-label-communication): Phase 1: Aufbau der Kommunikation → Phase 2: Kommunikation der Inhalte → Phase 3: Abbau der Kommunikation. 
+
+```{mermaid}
+%%| label: fig-label-communication
+%%| fig-cap: "[Sequenzdiagramm](https://de.wikipedia.org/wiki/Sequenzdiagramm) des typischen Verlaufs einer alltäglichen Kommunikation zwischen zwei Personen."
+sequenceDiagram
+    Alice->>+John: Hello John, how are you?
+    Alice->>+John: John, can you hear me?
+    John-->>-Alice: Hi Alice, I can hear you!
+    John-->>-Alice: I feel great!
+    Alice->>+John: Excellent! Bye, John!
+    John-->>-Alice: Bye, Alice!
+```
+
+Diese Sequenz ist nicht nur bei der Kommunikation zwischen Personen erfolgreich, sondern hat sich ebenso als Standard bei der technischen Datenübertragung etabliert (siehe z.B. [Transmission Control Protocol (TCP)](https://de.wikipedia.org/wiki/Transmission_Control_Protocol)).
+
+Bitte achten Sie bei Ihrer Kommunikation darauf, Phase 3 ("Abbau der Kommunikationsbeziehung") nicht zu vergessen! Der bewußte Abbau einer Kommunikationsbeziehung schafft Klarheit und Verbindlichkeit für alle Kommunikationsteilnehmer und ermöglicht eine definierten Startpunkt für den erneuten Aufbau einer neuen Kommunikation. 
+
+::: {.callout-important}
+## No ghosting, please! No! Never! No exceptions!
+[Ghosting](https://de.wikipedia.org/wiki/Ghosting_(Beziehung)#Beruflicher_Kontext) ist im Kontext professioneller Zusammenarbeit keine Option!
+:::
+
+::: {.callout-caution}
+## Tipp!
+Versuchen Sie stets, auf jede eingehende Nachricht in einer der Nachricht angemessenen Zeit zu reagieren. Wenn Nachrichten mit einer Bitte um Rückmeldung bis zu einem bestimmten Zeitpunkt versehen sind, halten Sie diesen Zeitpunkt nach besten Kräften ein. **Ein guter Richtwert für eine Antwort auf eine eingehende E-Mail ist eine Antwort innerhalb von 24 Stunden.** Sollten Sie in der Arbeitszeit länger als 24 Stunden nicht im Hause sein, aktivieren Sie den Abwesenheitsassistenten!
+:::
+
+##  Organisatorisches
+
+### Moodle
+Einschreiben in den Moodle-Kurs zur Vorlesung [DEB3 Produktentwicklung 1](https://moodle.hs-esslingen.de/moodle/user/index.php?id=32955)
+
+### Termine Vorlesungen und Labore
+
++ Die Vorlesungen finden gemäß dem veröffentlichten Stundenplan statt. 
++ Die Vorlesung ist als Präsenzveranstaltung konzipiert.
+
+Mit Hinblick auf Feiertage und vorlesungsfreier Zeit sind 14 Vorlesungswochen (je 5x45 Minuten) in diesem Semester möglich. 
+
+Laut Modulhandbuch teilen sich die für den Kurs vorgesehenen 5 SWS im Verhältnis 3:2 auf. Vorschlag: 10 Vorlesungen zu je 4x 45 Minuten → 4 Labore zu je 6x 45 Minuten → 1 Exkursion 3D-Druck 180 Minuten → 90 Minuten tbd.
+
+Bei der zeitlichen Ausgestaltung der Labore besteht für uns als Team Handlungsspielraum, sofern wir eine von allen gemeinsam getragene Terminplanung finden. Einen Vorschlag für die Termine zu den Laboren finden Sie in Moodle (siehe → ```Moodle:Allgemeines/Termine.html ```).
+
+### Termine Sprechstunde
+Ihr Dozent ist gerne für Sie erreichbar! Bitte kommen Sie zum Zweck einer Terminvereinbarung auf mich zu!
+
++ Am Rande der Vorlesung/Labor (vor oder nach der Vorlesung/Labor; in den Pausen)
++ Wenn Sie mich am Standort Göppingen sehen
++ Montags, Raum G 01.108 (jederzeit; aber leider keine Garantie auf Anwesenheit)
++ **Tipp**: → Terminvereinbarung per [E-Mail](christian.anders@hs-esslingen.de)!
+
+### Arbeitsaufwand und Prüfungen
++ Vorlesungen = 3 ECTS
++ Abschluss durch schriftliche Klausur (Dauer der Klausur lt. SPO: 90 Minuten).
++ Labore = 2 ECTS (Benotung gemäß Prüfungsordnung: Bestanden/Nicht bestanden)
++ Erforderlich für das Bestehen der Labore ist die aktive Teilnahme an den zwei Laboreinheiten zum Projekt "Earthlander". Für die Teilnahme an den Laboren ist ggf. vorab das Bestehen eines Moodle-Tests erforderlich. 
++ Klausur in Form eines Single-Choice-Tests, zusätzlich Fragen die textuell oder durch das Anfertigen von Diagrammen zu beantworten sind. Ziel ist es, maximale Objektivität und Unabhängigkeit von der zu prüfenden Person bei der Klausur zu erreichen. Als Hilfsmittel zur Klausur sind handschriftliche Notizen im Umfang von 4 Seiten DIN A4 zugelassen.
+
+Ein Leistungspunkt (ECTS) entspricht einem Workload von 30 Zeitstunden (siehe → Modulhandbuch). 
+
+::: {.callout-important}
+## Selbststudium und Nach-/Vorbereitung der Vorlesung und Labore
+Selbststudium und Vorbereitung sind unabdingbar als Grundlage für das Bestehen der Klausur!
+:::
+
+### Smartphone-Nutzung in der Vorlesung
+
+Eine nicht an der Vorlesung orientierte Nutzung des Smartphones kann Sie von der Vorlesung ablenken, mit möglichen negativen Folgen für die Inhalte, die Sie sich in der Vorlesung aneignen können. Solange dies ohne Störung Ihrer Komilitonen möglich ist und erfolgt: Ihre Entscheidung, ob Sie die Zeit an der Hochschule dafür investieren wollen. 
+
+Stören Sie mit Ihrer Nutzung des Smartphones Ihre Komilitonen ist dies nicht mehr in Ordnung. Die Grenzen, ab wann eine Störung eintritt, sind fließend, aber doch erkennbar. Ich verlasse mich auf Ihre faire Selbsteinschätzung. In dem Fall verlassen Sie bitte von sich aus für den Zeitraum Ihrer intensiveren Smartphone-Nutzung den Hörsaal oder das Labor. Gleiches gilt für dringende Telefonate: Bitte dann für das Telefonat mit so wenig Störung wie möglich den Raum verlassen. Vielen Dank!
+
+
+::: {.callout-caution}
+## Bitte Smartphones leise stellen! 
+Smartphones bitte vor Beginn der Vorlesung oder des Labors lautlos/leise stellen (und bitte auch den Vibrationsalarm ausschalten wenn Sie Ihr Smartphone gerne auf den Tisch legen)! Vielen Dank!
+:::
+
+::: {.callout-caution}
+## Fair-Play is key! 
+Bei absehbarer längerer Nutzung digitaler Endgeräte für privates Surfen, Videos, Messengerdienste usw. während der Vorlesung/Labor bitte im Sinne von Fair-Play und Wertschätzung gegenüber Dozent und Komilitonen die Vorlesung verlassen oder gar nicht erst zur Vorlesung/Labor erscheinen. Vielen Dank!
+:::
+
+### Abwesenheit in der Vorlesung
+
+Sollten Sie absehen können, dass Sie der Vorlesung nicht konzentriert werden folgen können, so fühlen Sie sich frei, der Vorlesung fernzubleiben. Ihr Dozent freut sich in diesem Fall über einen kurze Nachricht von Ihrer Seite. Bitte stellen Sie sicher, dass Sie den versäumten Inhalt der Vorlesung selbstständig nacharbeiten. 
+
+Bitte gehen Sie hierzu auch auf Ihre Komilitonen um zu erfahren, welche Themen und Fragestellungen spontan in den Gruppendiskussionen behandelt wurden, die möglicherweise (noch) nicht im Skript stehen. Ihr Dozent ist bemüht, diese Themen und Fragestellungen im Skript nachzudokumentieren. 
+
+::: {.callout-important}
+## Hinweis zur Bitte zur Beachtung bei Abwesenheit in der Vorlesung
+Eine Garantie, dass das Skript vollumfänglich alle in den Vorlesungen aufgekommenen und somit möglicherweise auch in der Prüfung vorkommenden Themen umfasst, kann leider nicht gegeben werden! Aufpassen in der Vorlesung kann zum Bestehen der Prüfung hilfreich sein!
+:::
+
+### Exkurs: Arbeiten in Präsenz vs. Arbeiten im Homeoffice
+<!-- -------------------------------------------------------------------------
+
+                       Include: Ende Homeoffice bei Amazon
+
+-------------------------------------------------------------------------- -->
+
+{{< include Abbildung_Amazon_Homeoffice.qmd >}}
+
+::: {.callout-caution}
+## Tipp!
+Versuchen Sie die Arbeit stets dort durchzuführen, wo Sie für die jeweilige Arbeit am produktivsten sind! Das kann ein Besprechungszimmer sein, dass kann aber auch das Café um die Ecke sein. Produktives Arbeiten setzt neben der richtigen Umgebung auch ein gut gestaltetes Arbeitsumfeld voraus. Bitte versuchen Sie, für sich selbst eine Arbeitsumgebung zu schaffen, die für Sie ein produktives Arbeiten bestmöglich unterstützt. 
+:::
+
+::: {.callout-caution}
+## Tipp!
+Bitte unterschätzten nicht den Mehrwert, der Arbeiten in Präsenz, zusammen im Team, bieten kann, im Studium z.B. in Form von Lerngruppen und auch Vorlesungen "vor Ort".
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Softwarewerkzeuge
+
+-------------------------------------------------------------------------- -->
+
+## Softwarewerkzeuge
+
+To whom it may concern: 
+
+Für die Erstellung dieses Skrips werden folgende Softwarewerkzeuge verwendet:
+
++ [Visual Studio Code](https://code.visualstudio.com/) (Microsoft) 
+![Logo von Visual Studio Code](images/VisualStudioCode.jpg){width=20% #fig-vsc}
+
++ [Quarto 1.4.549](https://quarto.org/) 
+![Logo von Quarto](images/Quarto.png){width=20% #fig-quarto}
+
++ [Python 3.12.1](https://www.python.org/) 
+![Logo von Python](images/Python.png){width=20% #fig-python}
+
++ TinyTeX 
+![Logo von TinyTeX](images/TinyTeX.png){width=15% #fig-tinytex}
+
++ [Diagrams.net](https://www.drawio.com/) (aka Draw.io) 
+![Logo von Draw.io](images/Diagrams-Logo.svg){width=15% #fig-drawio}
+
++ [Mermaid](https://mermaid.js.org/)
+![Logo von Mermaid](images/Mermaid.jpg){width=15% #fig-mermaid}
+
++ [Zotero](https://www.zotero.org/)
+![Logo von Zotero](images/Zotero-Logo.png){width=15% #fig-zotero}
+
++ [Github](https://github.com/) 
+![Logo von Github](images/Github_Logo.jpg){width=15% #fig-gitlab}
+
+<!--
++ GitLab 
+![Logo von GitLab](images/GitLab_Logo.png){width=15% #fig-gitlab}
+-->
+
++ Moodle 
+![Logo von Moodle](images/Moodle-Logo.png){width=20% #fig-moodle}
+
+::: {.callout-warning}
+## Moodle in dieser Vorlesung
+In dem zu dieser Vorlesung gehörenden Moodle-Kurs [DEB3 Produktentwicklung 1](https://moodle.hs-esslingen.de/moodle/user/index.php?id=32955) werden Ihnen alle Informationen bereitgestellt. Dort finden Sie auch die in der Vorlesung verwendeten Skripte im HTML-Format als "Self-Containing-Files".
+:::
+
++ [Wikipedia](https://www.wikipedia.de/) 
+![Logo von Wikipedia](images/Wikipedia_Logo.png){width=15% #fig-wikipedia}
+
++ [ChatGPT](https://chat.openai.com/) 
+![Logo von ChatGPT](images/ChatGPT_Logo_640x640.png){width=15% #fig-chatgpt}
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!! ChatGPT 
+
+-------------------------------------------------------------------------- -->
+
+::: {.callout-warning}
+## Zum Umgang mit ChatGPT in dieser Vorlesung
+[ChatGPT](https://chat.openai.com/) ist ein mächtiges Werkzeug, das im Rahmen dieser Vorlesung gerne genutzt werden sollte! Wie Sie aber sicher wissen, halluziniert ChatGPT leider ab und an und erzeugt für den unwissenden Nutzer glaubhaft erscheinende, aber leider falsche Antworten. Ertappt und zur Rede gestellt redet sich ChatGPT zumeist mit einer kurzen Entschuldigung heraus, verweist dabei zumeist auf ein Missverständnis und macht dann aber völlig unbeeindruckt munter mit einer Mischung aus wertvollen Informationen und erträumten Fakten weiter. Hinterfragen Sie daher alle Antworten, die ChatGPT gibt, und nutzen Sie hierzu alternative Informationsquellen, wie z.b. [Wikipedia](https://www.wikipedia.de/).
+:::

@@ -1,0 +1,63 @@
+---
+title: "MTB3 Entwicklung mechatronischer Systeme 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    email: christian.anders@hs-esslingen.de
+    affiliations: Hochschule Esslingen
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+---
+
+<!-- -------------------------------------------------------------------------
+
+            Vorstellung Aufstellungsarbeit und Aufgabe Teamaufstellung
+
+-------------------------------------------------------------------------- -->
+
+::: {.callout-tip}
+## Definition: *"Aufstellungsarbeit"*
+Aufstellungsarbeit ist eine Methode, die häufig in der Organisationsentwicklung und im Coaching eingesetzt wird. Bei einer Aufstellungsarbeit werden Personen im Hinblick auf bestimmte Aspekte einer Organisation positioniert oder aufgestellt, um die zwischenmenschlichen Beziehungen, Kommunikationsmuster und Dynamiken innerhalb des Teams sichtbar zu machen.
+:::
+
+Typischerweise werden hierbei etwaige Konflikte, Rollenverteilungen oder unbewusste Muster innerhalb des Teams dargestellt. Durch die physische Anordnung können Teilnehmer und Coaches die Interaktionen zwischen den einzelnen "Aufstellungen" beobachten und analysieren. Dies kann dazu beitragen, Verständnis und Einsicht zu fördern, potenzielle Probleme aufzudecken und Lösungsansätze für eine verbesserte Zusammenarbeit zu entwickeln.
+
+Aufstellungsarbeit kann aber auch dazu genutzt werden, bei Projektstart oder beim Hinzukommen neuer Personen zu einem Projektteam "das Eis zu brechen" und das gegenseitige Kennenlernen zu fördern.
+
+Aufstellungsarbeit kann in verschiedenen Formen durchgeführt werden, je nach dem spezifischen Kontext und den Zielen der Teamentwicklung.
+
+Weiterführende Informationen siehe z.B. [Wikipedia: Organisationsaufstellung](https://de.wikipedia.org/wiki/Organisationsaufstellung)
+
+
+::: {#nte-mmflyer .callout-note}
+## Aufstellungsarbeit (Dauer (5...10) min)
+
+*... zum Warmwerden mit der Methode der Aufstellungsarbeit und zum besseren gegenseitigen Kennenlernen:*
+
+**a)** Stellen Sie sich bitte entlang einer Linie in alphabetischer Reihenfolge (A - Z) Ihrer Nachnamen auf!
+
+**b)** Stellen Sie sich bitte entlang einer Linie in alphabetischer Reihenfolge (Z - A) Ihrer Vornamen auf!
+
+**c)** Stellen Sie sich bitte entlang einer Linie geordnet nach Ihrer üblicherweise zurückgelegten Entfernung zwischen Wohnort und Hochschule Esslingen Campus Göppingen auf!
+
+
+*... jetzt wird's etwas schwieriger:*
+
+**d)** Gruppieren Sie sich bitte nach dem Fortbewegungsmittel, das Sie für den Weg zwischen Wohnort und Hochschule Esslingen Campus Göppingen üblicherweise benutzen (z.B. zu Fuß, mit dem Fahrrad, mit der Bahn, mit dem Motorrad, mit dem eigenen Auto, mit dem Taxi)!
+
+
+*... wenn Sie noch Lust haben, hier eine "echte" Aufstellungsarbeit, wie sie in einer Teamentwicklung in einer Organisation tatsächlich häufig vorkommt* (Teilnahme ist gerne freiwillig):
+ 
+**e)** Stellen Sie sich bitte so auf, dass die Entfernung zwischen Ihnen das Maß der regelmäßigen Zusammenarbeit (z.B. in Lerngruppen, in Vorlesungen, bei Übungen, bei Projekten) widerspiegelt!
+
+
+**f)** Bitte Reflektieren Sie zum Abschluss noch kurz gemeinsam in der Gruppe: 
+
++ Wie haben Sie sich bei den Aufstellungen gefühlt? 
++ Haben Sie für sich persönlich neue Informationen zu den Personen und zur Interaktion der Personen im Team bekommen?
+:::

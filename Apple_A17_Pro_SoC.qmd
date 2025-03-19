@@ -1,0 +1,323 @@
+<!--
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Produktions- und Werkstofftechnik
+  - Apple A17 Pro
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 2
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+
+<!-- -------------------------------------------------------------------------
+
+            EXKURS Apple A17 Pro - Produktions- und Werkstofftechnik
+
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Entwurfs- und Entwicklungsphase
+## Produktions- und Werkstofftechnik
+:::
+
+### Produktions- und Werkstofftechnik am Beispiel Apple A17 Pro
+
+![Logo von [Apple Inc.](https://www.apple.com/de/)](images/Apple.jpg){width=25% #fig-applegrey}
+
+Der Apple A17 Pro ist ein aktuelles Beispiel dafür, wie die Entwicklung im Bereich der Werkstoffe und der Produktionstechnologien immer leistungsstärkere Produkte mit neuartigen Eigenschaften ermöglichen.
+
+#### Apple A17 Pro System-on-a-Chip
+::: {.callout-tip}
+## Apple A17 Pro
+Der Apple A17 Pro ist ein 64-Bit-ARM-basiertes [System-on-a-Chip](https://de.wikipedia.org/wiki/System-on-a-Chip) (SoC), das von [Apple Inc.](https://www.apple.com/de/) entworfen und von [TSMC](https://www.tsmc.com/) hergestellt wird. Er besteht aus 19 Milliarden Transistoren auf einer Fläche von rund 100 mm² (10 mm x 10 mm) und ist das erste weit verbreitete SoC das in 3nm Technik hergestellt wird. Erstmals verbaut wurde der Apple A17 Pro im iPhone 15 Pro ab 09/2023.
+
+Wesentliche Features des Apple A17 Pro:
+
+- 2 High-Performance-CPU-Kerne
+- 4 High-Efficiency-Kerne
+- 16 Neural-Engine-Cores
+- 6 Pro-Class GPUs (Apple-designed shader architecture)
+- Dedicated Engines (ProRes codec, Pro display engine, AV1 decoder)
+- USB-Controller (USB3 support, up to 10 gigabits per second)
+:::
+
+<!--
+![Apple's iPhone 15 Pro (Stand 2024)](images/Apple_Iphone15Pro.jpg){width=40% #fig-appleiphone15pro}
+-->
+
+Die Herstellung des Apple A17 Pro erfolgt durch die [Taiwan Semiconductor Manufacturing Company](https://www.tsmc.com/) Limited, kurz TSMC. TSMC ist der mit weitem Abstand weltweit größte unabhängige Auftragsfertiger für Halbleiterprodukte. Der Hauptsitz und die wichtigsten Unternehmensteile befinden sich in Hsinchu, Taiwan.
+
+![Logo der [Taiwan Semiconductor Manufacturing Company Limited (TSMC)](https://www.tsmc.com/)](images/Tsmc.jpg){width=25% #fig-tsmc}
+
+TSMC produziert (Stand 2023) mehr als die Hälfte aller Halbleiter weltweit (laut Angaben der US-Regierung mindestens 70 %) – bei den modernsten Varianten hat TSMC einen Weltmarktanteil von mehr als 90 Prozent (Quelle: [Wikipedia](https://de.wikipedia.org/wiki/TSMC)).
+
+Neben vielen weiteren der aktuell modernsten und leistungsfähigen Chips produziert TSMC auch die Prozessoren für die Grafikkarten von [NVIDIA](https://www.nvidia.com/). TSMC ist damit auch von zentraler Bedeutung für die Entwicklungen im Bereich der Künstlichen Intelligenz.
+
+![Logo von [NVIDIA Corporation](https://www.nvidia.com/de-de/)](images/Nvidia-Logo.png){width=25% #fig-nvidiablack}
+
+
+#### 3nm-Technologie als Grundlage des Apple A17 Pro
+
+Apple A17 Pro basiert auf der 3-Nanometer-Technologie. Bei dieser Technik weisen die Strukturen des Halbleiters eine Größe von 3 nm auf (siehe → [Technologieknoten](https://de.wikipedia.org/wiki/Technologieknoten))
+
+Die Gitterkonstante von Silicium beträgt ungefähr 0,543 Nanometer. Bei einer Leiterbahn der Breite von 3 Nanometern im Siliciumkristallgitter würden sich rechnerisch also etwa 6 Siliciumatome direkt nebeneinander befinden. Laut Produktvorstellung zum Apple A17 Pro entsprechen die 3 Nanometer tatsächlich der Breite von 12 Atomen.
+
+| Technologie   | Verfügbarkeit (Serienfertigung)       |
+|--------------:|:--------------------|
+| 10000 nm (10 µm)  | 1971            |
+| 1000 nm (1 µm)    | 1984            |
+| 100 nm        | 2003                |
+| 10 nm         | 2016                |
+| 5 nm          | 2020                |
+| 3 nm          | 2022                |
+| 2 nm          | 2024                |
+| 1,4 nm        | 2027 … 2029         |
+
+: Fertigungstechnik Halbleiterchips.  {#tbl-applea17 .striped .hover .bordered .tbl-colwidths="[50,50]"}
+
+<!--
+| Technologie   | Verfügbarkeit       |
+|--------------:|:--------------------|
+| 10 µm         | 1971                |
+| 6 µm          | 1974                |
+| 3 µm          | 1977                |
+| 1,5 µm        | 1981                |
+| 1 µm          | 1984                |
+| 800 nm        | 1987                |
+| 600 nm        | 1990                |
+| 350 nm        | 1993                |
+| 250 nm        | 1996                |
+| 180 nm        | 1999                |
+| 130 nm        | 2001                |
+| 90 nm         | 2003                |
+| 65 nm         | 2005                |
+| 45 nm         | 2007                |
+| 32 nm         | 2009                |
+| 22 nm         | 2012                |
+| 14 nm         | 2014                |
+| 10 nm         | 2016                |
+| 7 nm          | 2018                |
+| 5 nm          | 2020                |
+| 3 nm          | 2022                |
+| 2 nm          | 2024                |
+
+: Fertigungstechnik Halbleiterchips.  {#tbl-applea17 .striped .hover .bordered .tbl-colwidths="[50,50]"}
+-->
+
+Die Herstellung von Chips auf Basis von 3-Nanometer-Technologie stellt die Halbleiterindustrie gleich vor eine ganze Reihe von Herausforderungen. Mit einer Strukturbreite von nur 3 Nanometer wird es immer schwieriger, die einzelnen Komponenten auf dem Chip zu fertigen. Bereits Fehler in der Größe einiger Atome können die Funktionalität beeinträchtigen. 
+
+Zur Herstellung derartig feiner Strukturen in der Serienproduktion findet einzig das Fertigungsverfahren der EUV-Lithographie Verwendung. Die EUV-Lithographie ist neben der Herstellung von [Wafern](https://de.wikipedia.org/wiki/Wafer) (siehe @sec-wafer) der zweite entscheidende fertigungstechnische Prozess bei der Chip-Herstellung. 
+
+#### EUV-Lithographie als Grundlage der 3nm-Technologie
+
+![Lithografie (Quelle: [Adobe Stock](https://stock.adobe.com/))](images/AdobeStock_498638760.jpeg){width=80% #fig-lithografie}
+
+Die Entwicklung und Produktion von Maschinen zur Fertigung von Chips mit 3nm-Technologie erfordern höchstes Fachwissen und aufwändigste Produktionstechnik. Weltweiter Marktführer für diese Maschinen ist ASML.
+
+![Logo der [ASML Holding N.V. (Advanced Semiconductor Materials Lithography)](https://www.asml.com/en)](images/ASML_Holding.jpg){width=25% #fig-asml}
+
+Die ASML Holding N.V. (Advanced Semiconductor Materials Lithography) ist ein niederländisches multinationales Unternehmen und der weltweit größte Anbieter von Lithographieanlagen für die Halbleiterindustrie. Die von ASML entwickelt und gebauten überaus komplexen Maschinen spielen eine zentrale Rolle bei der Herstellung moderner Hochleistungschips. Der Großteil der weltweiten Chiphersteller sind Kunden von ASML. Der globale Marktanteil von ASML für Lithographie-Ausrüstungsindustrie wird auf 80–90 % geschätzt (Quelle: [Wikipedia](https://de.wikipedia.org/wiki/ASML))
+
+![Schematischer Aufbau einer EUV-Lithographieanlage (Quelle: [ASML](https://https://www.asml.com/en))](images/ASLM-euv-Lithografieanlage.jpg){width=80% #fig-asml-lithographie}
+
+Zur Herstellung von Strukturen von 3 Nanometer ist die herkömmliche optische Lithographie nicht mehr ausreichend. Zur Herstellung von Strukturen von 3 Nanometer und kleiner sind neueste EUV-Lithographie-Technologien erforderlich, die überaus teuer und technisch höchst komplex sind. Die Verwendung von EUV-Strahlung ermöglicht es jedoch, sehr viel kleinere Strukturen auf Halbleiterchips zu projizieren als dies mit herkömmlicher optischer Lithographie möglich ist. 
+
+::: {.callout-tip}
+## Produktions- und Werkstofftechnik als strategischer Wettbewerbsfaktor für Wirtschaft und Gesellschaft
+Die Produktions- und Werkstofftechnik zur EUV-Lithografie ist in den letzten Jahren zu einem strategischen Wettbewerbsfaktor für die gesamte Chipindustrie und allen nachgelagerten Produkten geworden. Die hohe Bedeutung dieser Unternehmen, die sich mit Produktions- und Werkstofftechnik rund um die Halbleitertechnik mit 3nm-Strukturen beschäftigen, spiegelt sich unter anderem auch an der Kursentwicklung deren Aktien an den  internationalen Börsen wider (siehe z.B. → [NVIDIA](https://www.bing.com/search?q=aktenkurse%20nvidia), [TSMC](https://www.bing.com/search?q=%2baktenkurse+tsmc), [ASML](https://www.bing.com/search?q=aktienkurse%20asml)).
+:::
+
+![Spektrum von Lichtquellen für die Lithografie (Quelle: [Wikipedia](https://de.wikipedia.org/wiki/Fotolithografie_(Halbleitertechnik)))](images/Spectrum_of_lithography_lights.png){width=100% #fig-spektrum}
+
+Die typische Arbeitswellenlänge der EUV-Lithographie liegen im Bereich von etwa 13,5 Nanometer. Zum Vergleich: Das für das Auge sichtbare Spektrum liegt bei (400 … 800) Nanometer, UVA-Strahlung erstreckt sich im Bereich von etwa 320 bis 400 Nanometer, UVB-Strahlung liegt im Bereich von etwa 280 bis 320 Nanometern. Ab Wellenlängen von unter 10 (bis 0,01) nm spricht man von Röntgenstrahlung.
+
+#### Hochleistungsoptiken als Grundlage der EUV-Lithographie 
+
+Die Entwicklung und Produktion Hochleistungsoptiken für die EUV-Lithographie erfordern ihrerseits wiederum höchstes Fachwissen und aufwändigste Produktionstechnik. Weltweiter Marktführer für diese Optiken ist Fa. ZEISS.
+
+![Logo von [ZEISS]((https://www.zeiss.de/semiconductor-manufacturing-technology/home.html))](images/Zeiss-Logo.png){width=25% #fig-zeiss}
+
+
+![Beleuchtungssystem im [Reinraum](https://de.wikipedia.org/wiki/Reinraum) (Quelle: [ZEISS](https://www.zeiss.de/semiconductor-manufacturing-technology/inspiring-technology/euv-lithographie.html))](images/ZEISS_euv-beleuchtungssystem-der-smt.jpg){width=80% #fig-euvbeleuchtung}
+
+
+> *"Weil ultraviolettes Licht von allen Materialien – auch Luft – absorbiert wird, hat ZEISS SMT für die EUV-Lithographie-Maschine ein optisches System geschaffen. Dieses wird im [Hochvakuum](https://de.wikipedia.org/wiki/Vakuum) (100 mPa…1 μPa) betrieben und ist aus gekrümmten Spiegeln aufgebaut. Selbst kleinste Unregelmäßigkeiten führen zu Abbildungsfehlern. Deswegen wurde für die EUV-Lithographie der weltweit präziseste Spiegel mit einer Multilagenbeschichtung entwickelt (sogenannte [Bragg-Spiegel](https://de.wikipedia.org/wiki/Bragg-Spiegel)). Würde man einen solchen Spiegel auf die Größe Deutschlands vergrößern, wäre die größte Unebenheit – also sozusagen die Zugspitze – ganze 0,1 Millimeter hoch. Auf die Glasoberfläche werden extrem dünne Silizium- und Molybdän-Schichten aufgedampft – nur wenige Atomlagen stark. Dafür liegen hier bis zu 100 Schichten übereinander. Eine einzelne Schicht würde nur gut ein Prozent des Lichts reflektieren – der Verlust wäre viel zu groß. Um die Effizienz der Spiegel zu steigern hat [ZEISS SMT]((https://www.zeiss.de/semiconductor-manufacturing-technology/home.html)) gemeinsam mit dem [Fraunhofer Institut für Angewandte Optik und Feinmechanik (IOF)](https://www.iof.fraunhofer.de/) ein einzigartiges Schichtsystem entwickelt, das Präzision auf Atombasis erfordert."* (Quelle: Fa. ZEISS)
+
+
+![Logo des [Fraunhofer Institut für Angewandte Optik und Feinmechanik (IOF)](https://www.iof.fraunhofer.de/)](images/Fraunhofer_IOF_Logo.gif){width=25% #fig-iof}
+
+
+> *"Die Schichtdicken sind nur wenige Nanometer dünn. Das Ergebnis ist eine Reflektivität, die bis zu 70 Prozent des Lichts nutzbar macht. Dies passiert durch konstruktive Interferenz: Das EUV-Licht wird jeweils von einzelnen Schichten reflektiert. Wenn diese präzise übereinander aufgetragen sind, verstärkt sich das Licht, weil sich die einzelnen Strahlungswellen perfekt überlagern. Weil die Spiegel während des Belichtungsvorgangs so stabil wie möglich in ihrer Position gehalten werden müssen, war für maximale Kippstabilität ein völlig neues mechatronisches Konzept erforderlich. Dessen Ergebnis spricht für sich. Würde ein Laserstrahl über einen dieser EUV-Spiegel umgelenkt und auf den Mond gerichtet, könnte man damit einen Golfball auf der Mondoberfläche treffen.*" (Quelle: Fa. ZEISS)
+
+
+#### Extrem ultraviolettes Licht als Grundlage der EUV-Lithographie
+
+Um EUV-Licht zu erzeugen, haben die Firmen ASML und [TRUMPF](https://www.trumpf.com/) eine einzigartige Lichtquelle konstruiert. 
+
+![Logo von [Trumpf]((https://www.trumpf.com/))](images/Trumpf-Logo.svg){width=25% #fig-trumpf}
+
+> *"In einer von [ASML](https://www.asml.com/en) entwickelten Plasmaquelle werden 50.000 Zinntropfen pro Sekunde in ein Hochvakuum geschossen und dabei jeweils von zwei aufeinanderfolgenden Pulsen eines Hochleistungs-[CO2-Lasers](https://de.wikipedia.org/wiki/Kohlendioxidlaser) von [TRUMPF](https://www.trumpf.com/) getroffen. Der sogenannte Vorpuls trifft die Zinntropfen, sodass diese quasi aufquellen. Der hinterhereilende Hauptpuls trifft nun den Tropfen mit voller Leistung. Dadurch wird das Zinnplasma gezündet, welches die EUV-Strahlung abgibt. Damit EUV-Licht erzeugt werden kann, muss das Plasma eine Temperatur von rund 220.000 Grad Celsius erreichen. Das ist fast 40-mal heißer als die durchschnittliche Temperatur auf der Oberfläche der Sonne."* (Quelle: Fa. ZEISS)
+
+![Erzeugung extrem ultravioletten Lichts (Quelle: [ZEISS](https://www.zeiss.de/semiconductor-manufacturing-technology/inspiring-technology/euv-lithographie.html))](images/ZEISS_euv-smt-mikrochipherstellung-zinntropfen.jpg){width=60% #fig-euvlicht}
+
+
+#### Hochreines Silizium als Grundlage der 3nm-Technologie {#sec-wafer}
+
+Neben der EUV-Lithografie stellt auch die Herstellung von Werkstoffen, die bei dieser extremen Miniaturisierung noch funktionieren, eine große technologische Herausforderung dar, die ihrerseits modernste Fertigungsverfahren erfordert. 
+
+Die Qualität des für die Waver verwendeten Werkstoffs entscheidet über Funktionsfähigkeit und die Lebensdauer des Prozessors. Entscheidend sind die Reinheit und die fehlerfreie Gitterstruktur des Siliciumkristalles.
+
+![[Ingot](https://de.wikipedia.org/wiki/Ingot) und [Wafer](https://de.wikipedia.org/wiki/Wafer) (Quelle: [Adobe Stock](https://stock.adobe.com/))](images/AdobeStock_47721534.jpeg){width=80% #fig-siliziumwafer}
+
+Die Hauptlieferanten von Siliciumwafern für TSMC sind [SUMCO Corporation](https://www.sumcosi.com/english/), [GlobalWafers](https://www.gw-semi.com/), [Shin-Etsu Handotai](https://www.sehe.com/), [Siltronic AG](https://www.siltronic.com/de/) und [Soitec Microelectronics](https://www.soitec.com/en).
+
+Zusammen haben diese sechs Unternehmen in den Jahren 2018, 2019 und 2020 etwa 92 Prozent des gesamten Bedarfs an Wafern an TSMC geliefert.
+
+![[Wafer](https://de.wikipedia.org/wiki/Wafer) (Quelle: [Adobe Stock](https://stock.adobe.com/))](images/AdobeStock_553638697.jpeg){width=80% #fig-waferchips}
+
+
+#### Learnings & Takeaways
+
+::: {.callout-important}
+## Produktions- und Werkstofftechnik (PWT)
+Innovative Produkte entstehen meist in Netzwerken aus Fachexperten verschiedenster Disziplinen, oftmals in Firmenübergreifender zusammenarbeit! Entscheidend für den Projekterfolg ist es, die Kompetenzen alle Mitwirkenden auf ein Ziel bündeln und die Zusammenarbeit aller Mitarbeitenden gut organisieren und leiten zu können (siehe → Projektmanagement).
+:::
+
+**Weiterführende Links** (ZEISS):
+
+<!--
+Video: Wie Mikrochips hergestellt werden ([Quelle: ZEISS](https://www.zeiss.de/semiconductor-manufacturing-technology/inspiring-technology/euv-lithographie.html)){{< video https://youtu.be/H7dQQJ-Ljcg  >}}
+-->
+
++ [Zeiss SMT](https://www.zeiss.de/semiconductor-manufacturing-technology/home.html)
++ [Zeiss SMT (Optics)](https://www.zeiss.de/semiconductor-manufacturing-technology/produkte/semiconductor-manufacturing-optics.html)
++ [ZEISS Magazin (EUV-Lithographie)](https://www.zeiss.de/semiconductor-manufacturing-technology/smt-magazin/so-funktioniert-euv-lithographie-.html)
+
+
+**Weiterführende Links** (Wikipedia):
+
++ Siehe auch [Wikipedia: Halbleitertechnik](https://en.wikipedia.org/wiki/Semiconductor_device_fabrication)
++ Siehe auch [Wikipedia: Wafer](https://de.wikipedia.org/wiki/Wafer)
++ Siehe auch [Wikipedia: Lithografie](https://de.wikipedia.org/wiki/Fotolithografie_(Halbleitertechnik))
++ Siehe auch [Wikipedia: Apple](https://de.wikipedia.org/wiki/Apple)
++ Siehe auch [Wikipedia: NVIDIA](https://de.wikipedia.org/wiki/Nvidia)
++ Siehe auch [Wikipedia: TSMC](https://de.wikipedia.org/wiki/TSMC)
++ Siehe auch [Wikipedia: ASML](https://de.wikipedia.org/wiki/ASML)
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Hintergrundinfos zur Entwicklung von Prozessoren mit
+
+-------------------------------------------------------------------------- -->
+
+<!--
+4\. \*\*Leckstrom:\*\* Bei kleineren Strukturbreiten tritt verstärkt Leckstrom auf, was zu einem erhöhten Energieverbrauch und potenziell zu Wärmeentwicklung führt. Das Management von Leckströmen wird kritisch.
+
+5\. \*\*Wärmeableitung:\*\* Die Miniaturisierung führt zu einer höheren Wärmedichte auf den Chips. Effiziente Methoden zur Wärmeableitung sind entscheidend, um eine Überhitzung zu verhindern.
+
+6\. \*\*Komplexität:\*\* Die Chips werden immer komplexer, was die Fertigung und den Test schwieriger macht. Es erfordert hoch entwickelte Techniken und Anlagen, um sicherzustellen, dass die Chips fehlerfrei und kosteneffizient hergestellt werden können.
+
+7\. \*\*Kosten:\*\* Die Entwicklung von 3nm-Chips erfordert beträchtliche Investitionen in Forschung und Entwicklung sowie in Produktionsanlagen. Die Kosten pro Chip können erheblich steigen.
+
+8\. \*\*Zuverlässigkeit:\*\* Da die Strukturen immer kleiner werden, sind die Chips anfälliger für äußere Einflüsse wie Strahlung oder statische Elektrizität. Die Sicherstellung der Zuverlässigkeit und Langlebigkeit der Chips ist entscheidend.
+
+9\. \*\*Design-Komplexität:\*\* Das Design von 3nm-Chips erfordert fortgeschrittene Tools und Fähigkeiten. Die Entwickler müssen sicherstellen, dass die Schaltkreise in dieser winzigen Größe zuverlässig funktionieren.
+
+10\. \*\*Marktanforderungen:\*\* Schließlich müssen die Hersteller sicherstellen, dass die 3nm-Chips den Anforderungen und Erwartungen der Verbraucher und der Industrie entsprechen. Dies erfordert eine kontinuierliche Anpassung an die sich wandelnden Bedürfnisse des Marktes.
+
+Insgesamt sind 3nm-Chips ein technologischer Meilenstein, der erhebliche technische, finanzielle und logistische Herausforderungen mit sich bringt. Die Halbleiterindustrie investiert jedoch weiterhin stark in Forschung und Entwicklung, um diese Herausforderungen zu bewältigen und die Vorteile der Miniaturisierung auszuschöpfen.
+
+**Ein durchschnittlicher Transistor besteht bei Chips auf Basis von 3nm wegen dessen dreidimensionaler Struktur immer noch aus einigen Tausend Atomen.**
+
+**Warum 3nm? Schmelzpunkt Silizium 120°. Wärmeentwicklung. Laufzeit im GHz-Bereich. Wie lange dauert es bist ein Takt beim ganzen Chip angekommen ist?**
+
+#### *EXKURS: MAXIMALE TEMPERATUR BEI COMPUTERCHIPS*
+Die Temperatur, bei der ein Computerchip zerstört wird oder dauerhaft beschädigt werden kann, hängt von verschiedenen Faktoren ab, darunter die spezifische Chip-Architektur, die Materialien, aus denen der Chip hergestellt ist, die verwendeten Schutz- und Kühlungsmaßnahmen sowie die Dauer, bei der die Temperatur aufrechterhalten wird. In der Regel sind moderne Computerchips so konzipiert, dass sie Temperaturen bis zu einer gewissen Grenze tolerieren können, ohne dauerhaft beschädigt zu werden. Diese Temperaturgrenze wird als "maximale zulässige Betriebstemperatur" oder "Tj max" bezeichnet.
+
+Für viele moderne Computerchips, insbesondere Prozessoren (CPUs) und Grafikprozessoren (GPUs), liegt die Tj max typischerweise im Bereich von 90°C bis 105°C. Dies bedeutet, dass der Chip bei normalen Betriebsbedingungen Temperaturen innerhalb dieses Bereichs tolerieren sollte, ohne dauerhaft beschädigt zu werden. Wenn die Temperatur jedoch über diese Grenze ansteigt, kann dies zu thermischer Überlastung führen, die die Leistung beeinträchtigen und langfristig die Lebensdauer des Chips verkürzen kann.
+
+Es ist wichtig zu beachten, dass die tatsächliche maximale Temperaturtoleranz je nach Chip und Hersteller variieren kann. Die Hersteller geben in der Regel die Tj max-Werte in den technischen Datenblättern für ihre Produkte an. Darüber hinaus haben moderne Computer häufig Schutzmechanismen wie Temperaturüberwachung und automatische Abschaltung, um Schäden an den Chips zu verhindern, wenn die Temperaturen kritische Werte erreichen.
+
+Um sicherzustellen, dass ein Computerchip innerhalb sicherer Temperaturgrenzen bleibt, ist eine angemessene Kühlung und Belüftung entscheidend. Overclocking (Übertakten) eines Chips, bei dem die Betriebsspannung und -frequenz erhöht werden, kann dazu führen, dass die Temperatur stark ansteigt und sollte nur mit Vorsicht und Kenntnis darüber, was der Chip tolerieren kann, durchgeführt werden.
+
+Die Taktfrequenz moderner Prozessoren in Computern kann je nach Modell und Hersteller über 5 GHz liegen. Die Taktfrequenz gibt an, wie viele Schwingungen oder Zyklen ein Prozessor pro Sekunde durchführt. Ein Prozessor mit einer höheren Taktfrequenz kann normalerweise mehr Befehle pro Sekunde ausführen und daher Aufgaben schneller erledigen.
+
+Es gibt jedoch einige Gründe, warum die Taktfrequenz nicht unbegrenzt weiter erhöht werden kann:
+
++ **Wärmeentwicklung**: Je höher die Taktfrequenz, desto mehr elektrische Energie wird verbraucht, und desto mehr Wärme wird erzeugt. Die Wärmeentwicklung ist ein ernstes Problem, da zu hohe Temperaturen die Stabilität des Prozessors beeinträchtigen und zu einer vorzeitigen Alterung führen können. Es ist schwierig, diese Wärme effektiv abzuleiten, wenn die Taktfrequenz zu hoch ist.
+
+\*\*Elektrische und physikalische Grenzen:\*\* Es gibt physikalische und elektrische Grenzen für die Taktfrequenz. Bei sehr hohen Taktfrequenzen können elektrische Signale Verzerrungen und Interferenzen aufweisen, was die Zuverlässigkeit beeinträchtigen kann. Darüber hinaus können elektrische Leckströme ein Problem werden.
+
+\*\*Gesetze der Physik:\*\* Gemäß den Gesetzen der Physik gibt es Grenzen für die Geschwindigkeit, mit der Transistoren schalten können. Je kleiner die Transistoren werden desto schwieriger ist es, die Taktfrequenz weiter zu erhöhen.
+
+Anstelle die Taktfrequenz weiter zu steigern, konzentriert sich die Halbleiterindustrie auf andere Methoden, um die Leistung von Prozessoren zu verbessern, darunter:
+
++ **Mehr Prozessorkerne**: Anstatt die Taktfrequenz zu erhöhen, werden Prozessoren mit mehreren Rechenkernen ausgestattet, um parallel mehr Aufgaben zu erledigen.
+
++ **Verbesserte Mikroarchitektur**: Die Verbesserung der internen Struktur und der Befehlsausführungseffizienz ermöglicht es, mehr Arbeit in einer Taktperiode zu erledigen.
+
++ **Höhere Integration**: Durch die Integration von mehr Funktionen in einen Chip, wie Grafikprozessoren (integrierte GPUs) und Speichercontroller, kann die Gesamtleistung gesteigert werden.
+
++ **Effizientere Fertigungstechnologien**: Die Herstellung von Prozessoren in kleineren und effizienteren Fertigungsprozessen ermöglicht es, die Leistung bei gleichzeitig geringerem Energieverbrauch zu steigern.
+
+Insgesamt gibt es also viele Faktoren, die die Taktfrequenz von Prozessoren begrenzen, und die Industrie konzentriert sich auf andere Wege, um die Rechenleistung von Computern zu steigern.
+
+Die Erhöhung der Taktfrequenz bei kleineren Transistoren ist schwieriger aus mehreren Gründen:
+
++ **Wärmeentwicklung**: Kleinere Transistoren haben eine geringere Masse und eine kleinere Fläche, um Wärme abzuleiten. Da die Taktfrequenzerhöhung in der Regel mit einem erhöhten Energieverbrauch einhergeht, führt dies zu einer höheren Wärmeentwicklung. Kleinere Transistoren können diese Wärme weniger effizient abführen, was zu Überhitzungsproblemen führen kann. Wenn die Temperatur zu hoch wird, kann dies die Stabilität des Chips beeinträchtigen und sogar dauerhafte Schäden verursachen.
+
++ **Leckstrom**: Bei kleineren Transistoren steigt der Leckstrom tendenziell an. Leckströme sind Ströme, die durch die Transistoren fließen, auch wenn sie ausgeschaltet sind. Ein höherer Leckstrom kann den Energieverbrauch erhöhen und die Batterielaufzeit reduzieren.
+
++ **Signalintegrität**: Bei kleineren Transistoren können elektrische Signale aufgrund von physikalischen Effekten wie elektrischem Rauschen und Interferenzen schwieriger zu kontrollieren sein. Dies kann die Signalintegrität beeinträchtigen und die Fähigkeit des Prozessors, Daten zuverlässig zu verarbeiten, beeinflussen.
+
++ **Elektrische Kapazität**: Kleinere Transistoren haben eine geringere elektrische Kapazität. Dies kann dazu führen, dass sie schneller schalten, was die Taktfrequenz erhöhen könnte. Allerdings kann dies auch zu höheren Stromspitzen und instabilen Schaltungen führen.
+
+5\. \*\*Elektromigration:\*\* Bei kleineren Transistoren sind die Leiterbahnen enger beieinander, was die Gefahr der Elektromigration erhöht. Elektromigration ist ein Prozess, bei dem Metallatome sich entlang der Leiterbahnen bewegen, was zu Schäden führen kann. Dies kann die Langzeitstabilität der Chips beeinträchtigen.
+
+Aufgrund dieser Herausforderungen ist es schwieriger geworden, die Taktfrequenz allein durch die Verkleinerung der Transistoren zu erhöhen. Stattdessen konzentriert sich die Halbleiterindustrie auf andere Ansätze, um die Leistung von Prozessoren zu steigern, wie die Integration von mehr Kernen, die Verbesserung der Mikroarchitektur, die Optimierung der Fertigungstechnologien und die Erhöhung der Energieeffizienz. Diese Maßnahmen ermöglichen es, die Gesamtleistung von Prozessoren zu steigern, ohne die Taktfrequenz übermäßig zu erhöhen und die genannten Probleme zu verschärfen.
+
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       EXKURS Quantencomputer
+
+-------------------------------------------------------------------------- -->
+
+
+<!--
+Siehe auch [Gartner-Hype-Cycle 2023]https://www.gartner.de/de/artikel/was-ist-neu-im-2023-gartner-hype-cycle-fuer-neue-technologien
+-->

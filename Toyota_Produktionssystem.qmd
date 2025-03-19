@@ -1,0 +1,92 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Lean Production – Toyota Produktionssystem (TPS)
+
+-------------------------------------------------------------------------- -->
+
+
+### Toyota Produktionssystem (TPS) {#sec-tps}
+
+Es gibt heute kaum ein namhaftes produzierendes Unternehmen, das hohem Konkurrenzdruck ausgesetzt ist und dabei noch völlig ohne an die schlanke Produktion angelehnte Methoden auskommt. Die als "[Lean Production](https://de.wikipedia.org/wiki/Schlanke_Produktion)" oder das "[Toyota Produktionssystem](https://de.wikipedia.org/wiki/Toyota-Produktionssystem)" (TPS) nach dem Ingenieur und Produktionsleiter [Taiichi Ohno](https://de.wikipedia.org/wiki/%C5%8Cno_Taiichi) bekannt gewordenen Methoden stellen eine elementare Basis für effizienten, konkurrenzfähigen und modernen Materialfluss in der Produktion dar. Sie finden unter anderem erfolgreich Anwendung im Automobilbau, in der Luft- und Raumfahrttechnik und im Sondermaschinenbau.
+
+Die einfachen Prozesse des TPS, die auf eine direkt erkennbare und dadurch sehr schnelle Verbesserung zielen, führen jedoch trotz ihrer Einfachheit zu einem teils rapiden Ansteigen der Wirtschaftlichkeit, auch wenn es das typische Merkmal dieser Methode ist, primär Abläufe und Prozesse mit einfachen Methoden zu optimieren und dadurch nur "nebenbei" betriebswirtschaftliche Kennzahlen zu verbessern. 
+
+Die Methode der schnellen, nachhaltigen und ganzheitlichen Optimierung wurde für Toyota in der Zeit nach dem zweiten Weltkrieg bis in die 1960er Jahre notwendig, um im internationalen Konkurrenzkampf die USA und Europa einzuholen und nach Möglichkeit zu überholen. Wesentliche Probleme waren hierbei die schlechte Absatzmöglichkeit, da die Qualität und die Effizienz im Vergleich zur Konkurrenz in den USA und Europa ungenügend waren. Das heute weitgehend vergessene Ford-Produktionssystem setzte zu diesem Zeitpunkt den Maßstab und wurde bei Toyota gleichsam extrahiert und neu synthetisiert.
+
+<!--
+Heute ist die Situation vieler Unternehmen vor allem auch in Europa damit vergleichbar. Aufgrund der politischen Veränderung in Osteuropa und China, sowie der neuen Möglichkeiten im Internet, konkurrieren selbst kleine Unternehmen heute immer mehr auf dem Weltmarkt. Darin liegt ein enormes Potenzial für die Unternehmen, aber auch ein Zwang zur Wirtschaftlichkeit, die heute in vielen Bereichen allein nicht mehr ausreichend ist. Nicht primär der Unterschied in der Startposition, sondern die Schnelligkeit, Prozesse bei höchster Flexibilität zu optimieren, entscheidet vielfach in diesem Wettkampf – und genau hierin liegt die Stärke dieser umfassenden Systematik.
+-->
+
+Neben Ford wurden von Toyota aber auch andere Unternehmen bereist und brauchbare Methoden systematisch involviert. Das Prädikat *„Made in Germany“* galt unter anderem als Gütesiegel oder Zielmarke, an das sich Toyota annähern wollte. Im Vergleich zu amerikanischen oder europäischen Ansätzen wurden auch traditionell asiatische und speziell japanische Denkprinzipien in die Methode mit einbezogen. Arbeit muss wiederholbar und einfach sein. Die unerhört detaillierte, pragmatische Systematik im Vorgehen beim TPS entspricht einem rituellen Muster, umgesetzt auf die Abläufe in der Produktion.
+
+Einer der wesentliche Leitsätze des Toyota Produktionssystems lautet: ***"Lerne von den Besten."***
+<!--
+Daraus leitet sich das Best Practice-Konzept ab.
+Verbessere diese Methoden mit einer gleichermaßen einfachen wie schnellen Methode.
+Toyota hat hier einen neuen Maßstab gesetzt. Über mehrere Jahrzehnte hinweg wurde das Toyota Produktionssystem in verschiedenen Stufen entwickelt und umgesetzt. 
+-->
+
+
+### Elemente des Toyota Produktionssystems
+
+Das Toyota Produktionssystem beinhaltet eine enorme Vielfalt an Vorgehensweisen, neben vielen weiteren unter anderem:
+
++ Total Quality Management (TQM) (siehe @sec-tqm)
++ Kaizen (siehe @sec-kaizen)
++ 5S-Methode (siehe @sec-5s)
++ PDCA (siehe @sec-deming)
++ 5-Why-Methode (siehe @sec-5why)
++ JIT-JIS (siehe @sec-jitjis)
++ Kanban (siehe @sec-kanban)
+
+<!--
++ Verschwendung vermeiden: Um einen Fortschritt zu erreichen wird nach Problemen und Verschwendung gesucht. Ignorieren von Problemen fördert negative Entwicklungen. Erst das bewusste systematische Suchen mit der konkreten Absicht, die Prozesse zu verbessern, bringt den Fortschritt. (vgl. 1.17 Prozessorientierung). Im TPS oder Kanban wird daher nach einer einfachen überschaubaren Liste von Verschwendungsarten gesucht.
+
++ Überproduktion vermeiden: Die Überproduktion ist eine der wesentlichen Verschwendungsarten.
+
++ Poka Yoke: Dieser Begriff wird vielfach als vollständige Kontrolle oder auch 100 % Kontrolle interpretiert. Fehler zu selektieren ist in jedem Fall günstiger, als die vielfältigen Auswirkungen von Fehlern zu beheben. Grundsätzlich unterscheidet man im TPS das „Tun“, also das physische Arbeiten und das eigentliche „Arbeiten“, bei dem der Selbstanspruch zur Verbesserung hinzukommt. Charakterisierend ist zudem die Forderung nach konsequenter Fehlervermeidung durch einfachste Prüfprozesse, die präventiv stattfinden. (vgl. 1.13 Poka Yoke)
+
++ Andon : Andon ist zunächst die Linienstoppampel, also eine Ampel, die den Status der Produktionslinie anzeigt und direkt darüber hängt. Die Signalfarben entsprechen der Straßenverkehrsampel. Sie erlaubt visuelle Kontrolle und die Online-Steuerung des Produktionsprozesses. Wenn der Werker eine Abnormität erkennt, kann er mit dem gelben Signal Hilfe holen. Hat er ein gravierendes Problem erkannt, muss er die rote Ampel auslösen und damit die Linie stilllegen. Die Werker übernehmen mit dieser Pflicht die Verantwortung für die Produktion. Ihre Philosophie lautet: Der Produktionsmitarbeiter ist so nah am Ort des Geschehens, dass er die Vorgänge am besten beurteilen kann.
+
++ Autonomation : Autonomation ist Automation mit einem menschlichen Touch. Autonomation soll die Linie oder die Produktion allgemein vor Schäden bewahren, indem die Anlage bei allen Störungen oder abnormen Situationen automatisch auf Stopp geht.
+
++ Baton Passing Room: Um bei einer Fließfertigung einen gleichmäßigen Fluss zu erreichen, ist es wesentlich, einen Pufferraum zu schaffen, an dem Werker, die im Hintertreffen sind, aufholen können.
+
++ „Do not make isolated islands “: Werker sollen im Team arbeiten, da sie so als Ganzes höhere Flexibilität und Leistung erzielen. Die moderne Ergonomie bestätigt, dass die Gesamteffizienz des Einzelnen in der Gruppe deutlich höher ist als bei isolierten Einzelarbeitsplätzen. Ergänzend kommt es zum Kapazitätsausgleich in der Gruppe, wodurch sich der Mittelwert verbessert.
+
++ Mehrmaschinenbedienung: Mehrere Maschinen werden in einem Rhythmus nacheinander bedient. Dies setzt voraus, dass die Maschinentakte dies zulassen. Die Arbeitszeit des Werkers wird effizienter genutzt, da Verschwendung durch Wartezeiten eliminiert wird. Eine Sonderform ist die Gruppenarbeit mit Mehrmaschinenbedienung. Trotz ungünstiger Austaktung kann damit eine höhere Effizienz erreicht werden.
+
+
++ Die Kraft der individuellen Fertigkeiten und des Teamworks: Eine der wesentlichen Säulen, auf die TPS baut, ist die möglichst umfassende Nutzung der Innovationskraft und Kompetenz der Belegschaft. Der operative Spezialist soll nicht nur arbeiten, sondern auch sein Know-how soll entscheiden. Hieraus leiten sich gravierende Anforderungen an das Management ab (vgl. 1.22 Probleme sind Schätze).
+
++ Vom Belegschaftsschutz über den Schutz des Einzelnen zur Reduzierung der Anzahl der Werker: Nach dem traditionellen Verständnis von TPS sind Mitarbeiter ein „Teil der Familie“, daher ist jeder Einzelne vor den Auswirkungen von Einsparungen zu bewahren. Durch offensiven Umgang mit Flexibilisierung der Qualifikation wird zunächst ein universellerer Einsatz der Werker ermöglicht und eine höhere interdisziplinäre Kompetenz erreicht, zudem steigt dadurch die Effizienz. Im TPS ist es gelebte Realität, dass der Schutz der Mitarbeiter zu höherer Effizienz und Flexibilisierung führt, was ein klarer Gegensatz zu vielen modernen Managementthesen ist. T. Ohno betont an verschiedenen Stellen den Wert des Teamworks für die Leistung, dies ist nachhaltig nur auf Basis dauerhaft vertrauensvoller Verbindungen und Sicherheit für jeden Einzelnen zu gewährleisten.
+
++ Produktionsfluss und Arbeitsfluss (Work Flow): TPS gibt verschiedene Elemente vor, um einen harmonischen Fluss zu erreichen und dabei strikt auf die hohe Dichte an Wertschöpfung zu achten.
+
++ Just-in-time: Just-in-time (JIT) umfasst zunächst, dass das Material zur richtigen Zeit in der geforderten Menge am notwendigen Ort bereitgestellt wird. Dadurch wird Verschwendung durch Wartezeiten, unnötige Puffer und damit Ineffizienz vermieden (vgl. 1.4 Just-in-time). Im weiteren Sinne beinhaltet es aber auch bedingungslose Kundenorientierung , Neuausrichtung der Produktionsabläufe, Produktionsvorrichtungen (vgl. 1.9 Low Cost Intelligent Automation) sowie angepasste Managementeigenschaften.
+
+Supermarkt-Prinzip und Lieferanten- Kanban: Kanban wird, bezogen auf Lieferanten-Kanban, mit dem Supermarkt-Prinzip dargestellt. Im Supermarkt wird nach dem Pull-Vorgehen durch jeden Verbrauch ein neuer Bedarf beim Lieferanten angestoßen. (vgl. 4.1 Lieferanten-Kanban)
+
++ Produktionsglättung (Production Leveling, Produktionsnivellierung, Heijunka): Hiermit ist zum einen der Ausgleich der Arbeitsinhalte mit dem Ziel einer Fließfertigung gemeint, also die Abbildung eines gleichmäßigen Taktes. Andererseits umfasst dies die Anpassung und das Modellieren der Arbeitsinhalte, um möglichst wenig Verschwendung zu erreichen. Letztlich beinhaltet die Produktionsglättung aber auch die Pufferbildung und das Vermeiden des Peitscheneffektes (vgl. Kap. 2.1 Ruhiger kontinuierlicher Materialfluss), mit dem Ziel, einen kontinuierlichen Materialfluss und JIT-orientierte Prozesse zu erreichen
+
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
+
++ @dickmann_schlanker_2015: [Elemente moderner, schlanker Produktionssysteme](https://rdcu.be/dI72u)
+
+:::
+
+<!--
+#### Literaturempfehlung
+
+![@dickmann_schlanker_2015: [Schlanker Materialfluss](https://link.springer.com/book/10.1007/978-3-662-44869-4)](images/Dickmann_Schlanker_Materialfluss_978-3-662-44869-4.webp){width=40%}
+-->

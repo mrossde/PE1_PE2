@@ -1,0 +1,214 @@
+---
+format:
+  html:
+    embed-resources: true
+    papersize: a4
+toc: false
+toc-depth: 2
+number-sections: false
+number-depth: 5
+scrollable: false
+lang: de
+---
+
+
+<!-- 
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+ -->
+
+<!-- -------------------------------------------------------------------------
+
+                       Prüfung MTB3 SS24 (08.07.2024, 11.oo - 12.3o h)
+
+  pdf:
+    documentclass: scrartcl
+    papersize: a4
+
+author:
+  - name: "Christian Anders"
+    email: christian.anders@hs-esslingen.de
+    affiliations: Hochschule Esslingen
+date: last-modified
+-------------------------------------------------------------------------- -->
+
+<!--
+:::{.column-page}
+| Kriterium            | Lösung 1 | Lösung 2 | Lösung 3 | Lösung 4 |
+|----------------------|----------|----------|----------|----------|
+| Kriterium 1          |          |          |          |          |
+| Kriterium 2          |          |          |          |          |
+| Kriterium 3          |          |          |          |          |
+| Kriterium 4          |          |          |          |          |
+| Kriterium 5          |          |          |          |          |
+:  { .bordered tbl-colwidths="[20,20,20,20,20]"}
+:::
+-->
+
+# Grundlagen zur Gestaltung der Prüfung
+
+## Rechtsprechung
+
+Die Rechtslage ist seit einer Grundsatzentscheidung des OVG Münster aus dem Jahr 2008 eindeutig:
+
+::: {.callout-warning}
+*„[…] ein Bewertungsverfahren [ist] insoweit rechtsfehlerhaft, wenn für eine falsche Antwort Punkte abgezogen werden, die durch eine richtige Antwort erreicht worden sind.“ Ein Prüfungsverfahren, das so gestaltet ist, kann keine „[…] Aussagen darüber gewinnen, welche berufsbezogenen Kenntnisse der Prüfling hat.“* (Quelle: OVG Münster, Beschl. v. 16.12.2008 – 14 A 2154/08)
+:::
+
+Dieser Rechtsprechung folgen seither die Gerichte der Instanzen. Es sind demnach keine Maluspunkte erlaubt.
+
++ **Problem**: Die Prüflinge könnten alle Antwortoptionen ankreuzen und erhalten so die volle Punktzahl oder aber setzen willkürlich Kreuze und erreichen eine gewisse Trefferquote. 
+
+::: {.callout-tip}
++ **Lösung**: Die Anzahl der richtigen Antworten muss angegeben werden und bei Überschreiten dieser Angabe gibt es Null Punkte.
+:::
+
+::: {.callout-tip}
+*"Vielmehr empfiehlt der ZPA Prüfungen im Antwort-Wahl-Verfahren als ***Single-Choice Prüfungen*** umzusetzen. Die entsprechenden Regelungen sind analog von normalen schriftlichen Prüfungen zu sehen und unterliegen deshalb nicht den strengen Regelungen von Multiple Choice Prüfungen."* (Quelle: Hochschule Aalen, Leitfaden Multiple Choice, Stand 2020-12-17)
+:::
+
+## Single-Choice-Aufgaben
+Unter Single-Choice-Aufgaben (Einfach-Wahl-Aufgaben) werden Aufgaben verstanden, bei der der Prüfling aus den vorgegebenen Antwortoptionen exakt eine richtige Antwort auswählen soll. 
+
+Hinweise zur Erstellung von Single Choice Fragen:
+
++ Der Aufgabenstamm (d.h. die eigentliche Single-Choice-Frage) kann als Frage formuliert werden, so dass die Antwortalternativen die Antwortmöglichkeiten auf diese Frage darstellen. Der Aufgabenstamm kann auch als unvollständiger Satz formuliert sein, der dann von den Antwortoptionen in verschiedener Weise vervollständigt wird. Zudem sollte darauf geachtet werden, dass der Aufgabenstamm einfach, klar und positiv formuliert ist und alle für die Beantwortung der Frage erforderlichen Informationen enthält. Idealerweise lässt sich die Frage beantworten auch ohne die Antwortoptionen zu lesen.
++ Die Schwierigkeit einer Frage sollte sich aus der Komplexität des Aufgabeninhalts ergeben und nicht aufgrund einer künstlichen Verkomplizierung durch Schachtelsätze, doppelte Verneinungen, überflüssige Informationen o.ä. Falls der Aufgabenstamm eine Verneinung enthält, sollte diese kenntlich gemacht werden.
++ Auf die Wahl und Formulierung der falschen Antwortalternativen sollte besondere Aufmerksamkeit gelegt werden, denn die falschen Antwortoptionen bestimmen die Schwierigkeit der Frage. Eine Frage wird umso schwieriger, je näher richtige und falsche Antworten beieinander liegen.
++ Antwortoptionen sind möglichst in einer logischen Reihenfolge (aufsteigend, absteigend, alphabetisch) anzuordnen. Die Platzierung der richtigen Antwort sollte nach dem Zufallsprinzip erfolgen.
++ Es müssen mindestens 3 Antwortmöglichkeiten zur Verfügung stehen, ausgenommen Fragetypen der Art Richtig/Falsch. Auf diese Weise wird ein „Raten“ mit hoher Trefferwahrscheinlichkeit unterbunden.
+
+---
+
+#### Fragetyp 1: Einfachauswahl
+
+Frage: Welche Aussage ist richtig? (1 Antwort ist richtig):
+
+- [ ] Antwort 1 (*"Berlin ist die Hauptstadt von Deutschland"*)
+- [ ] Antwort 2
+- [ ] Antwort 3
+- [ ] Antwort 4
+- [ ] Antwort 5
+- [ ] Antwort 6
+
+---
+
+#### Fragetyp 2: Einfachauswahl negativ
+
+Frage: Welche Aussage ist **nicht** richtig? (1 Antwort ist richtig):
+
+- [ ] Antwort 1 (*"Bonn ist die Hauptstadt von Deutschland"*)
+- [ ] Antwort 2
+- [ ] Antwort 3
+- [ ] Antwort 4
+- [ ] Antwort 5
+- [ ] Antwort 6
+
+---
+
+#### Fragetyp 3: Mehrfachauswahl
+
+Frage: Welche Aussagen sind richtig?
+
+- **1)** Aussage 1 (*"Berlin ist die Hauptstadt von Deutschland"*)
+- **2)** Aussage 2 (*"Paris ist die Hauptstadt von Frankreich"*)
+- **3)** Aussage 3
+- **4)** Aussage 4
+- **5)** Aussage 5
+- **6)** Aussage 6
+
+Antwort (1 Antwort ist richtig):
+
+- [ ] Nur 1 ist richtig
+- [ ] Nur 1, 3 und 5 sind richtig
+- [ ] Nur 1, 2, 3 und 5 sind richtig
+- [ ] Keine ist richtig
+- [ ] Alle sind richtig
+
+---
+
+#### Fragetyp 4: Mehrfachauswahl negativ
+
+Frage: Welche Aussagen sind **nicht** richtig?
+
+- **1)** Aussage 1 (*"Bonn ist die Hauptstadt von Deutschland"*)
+- **2)** Aussage 2 (*"Mailand ist die Hauptstadt von Italien"*)
+- **3)** Aussage 3
+- **4)** Aussage 4
+- **5)** Aussage 5
+- **6)** Aussage 6
+
+Antwort (1 Antwort ist richtig):
+
+- [ ] Nur 1 ist richtig
+- [ ] Nur 1, 3 und 5 sind richtig
+- [ ] Nur 1, 2, 3 und 5 sind richtig
+- [ ] Keine ist richtig
+- [ ] Alle sind richtig
+
+---
+
+#### Fragetyp 5: Kausale Verknüpfung
+
+Frage: Aussage 1 weil Aussage 2?
+
+Antwort (1 Antwort ist richtig):
+
+- [ ] Nur Aussage 1 ist richtig
+- [ ] Nur Aussage 2 ist richtig
+- [ ] Aussage 1 und Aussage 2 sind richtig, die Verknüpfung ist richtig
+- [ ] Aussage 1 und Aussage 2 sind richtig, die Verknüpfung ist falsch
+- [ ] Keine Aussage ist richtig
+
+
+## Bewertung beim Multiple-Choice-Verfahren
+
+Eine Prüfung im Multiple-Choice-Verfahren ist bestanden, wenn mindestens 50 % (absolute Bestehensgrenze) der vorgesehenen Höchstpunktzahl erreicht wurde oder die Zahl der erreichten Punkte die durchschnittliche Prüfungsleistung aller an der Prüfung teilnehmenden Prüflinge um nicht mehr als 22 % (Hochschule Aalen) (15% Hochschule Albstadt-Sigmaringen) unterschreitet (relative Bestehensgrenze). 
+
+Die relative Bestehensgrenze ist nur dann zu berücksichtigen, wenn sie unterhalb der absoluten Bestehensgrenze liegt. 
+
+Hat der Prüfling die für das Bestehen der Prüfung erforderliche Mindestpunktzahl nicht erreicht, lautet die Note „nicht ausreichend“ (5,0).
+
+![Leistungsbewertung im Multiple-Choice-Verfahren (Quelle: Hochschule Aalen, Leitfaden Multiple Choice, Stand 2020-12-17)](images/Multiple-Choice_Bewertung_HS_Aalen_Stand_2020.png){width=80% #fig-leistungsbewertungmchsaalen}
+
+
+::: {.callout-tip}
+Die vorstehenden Regelungen zum Multiple–Choice-Verfahren finden keine Anwendung, wenn eine schriftliche Prüfung nur in geringem Umfang Multiple-Choice-Anteile enthält. Dies ist der Fall, wenn Multiple-Choice-Anteile nicht mehr als 15 % der Gesamtprüfungsleistung ausmachen.
+:::
+
+# Prüfungsaufgaben (Beispiele)
+
+Welche Eigenschaften muss ein Projekt gemäß Definition erfüllen?
+
+- **1)** Wirtschaftlicher Nutzen
+- **2)** Zeitliche Befristung
+- **3)** Definierter Start- und Endzeitpunkt
+- **4)** Hohe Komplexität der Aufgabenstellung
+- **5)** Einmaligkeit der Aufgabenstellung
+
+Antwort (1 Antwort ist richtig):
+
+- [ ] Nur 1 ist richtig
+- [ ] Nur 1, 3 und 5 sind richtig
+- [x] Nur 2, 3, 4 und 5 sind richtig
+- [ ] Keine ist richtig
+- [ ] Alle sind richtig
+
+---
+
+Sie arbeiten in der Fertigung eines Unternehmens und haben die Aufgabe, einen normalverteilten Fertigungsprozess zu optimieren, bei dem aktuell sowohl der Mittelwert nicht mit den auf den technischen Zeichnungen gegebenen Vorgaben übereinstimmt und der darüber hinaus eine zu große Streuung aufweist, so dass die auf den technischen Zeichnungen gegebenen Toleranzen oftmals nicht eingehalten werden. All dies führt zu erheblichen Problemen im nachfolgenden Montageprozess. Wie gehen Sie vor? 
+
+- **1)** Sie versuchen, Streuung und Mittelwert gleichzeitig zu optimieren um das Problem schnellstmöglich zu lösen.
+- **2)** Sie versuchen, zunächst den Mittelwert des Prozesses zu optimieren um so schnell mehr Teile für die nachfolgende Montage zur Verfügung stellen zu können.
+- **3)** Sie versuchen, zunächst die Streuung des Prozesses zu optimieren und erst danach den Mittelwert des Prozesses zu optimieren.
+
+Antwort (1 Antwort ist richtig):
+
+- [ ] 1
+- [ ] 2
+- [x] 3
+
+---
+

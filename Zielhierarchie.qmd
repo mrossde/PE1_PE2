@@ -1,0 +1,71 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Zielhierarchie
+
+-------------------------------------------------------------------------- -->
+
+### Zielhierarchie {#sec-zielhierarchie}
+
+[Zielhierarchie](https://de.wikipedia.org/wiki/Hierarchie#Entscheidungstheorie_und_Managementlehre) (engl.: "goal hierarchy") ist ein Begriff aus der [Entscheidungstheorie](https://de.wikipedia.org/wiki/Entscheidungstheorie) und Managementlehre. 
+
+Im Rahmen eines Produktentstehungsprozesses bezieht sich Zielhierarchie auf die Strukturierung und Hierarchisierung von Zielen, die während der Entwicklung eines Produkts verfolgt werden. Die Zielhierarchie dient dazu, die verschiedenen Ziele in eine Rangordnung zu bringen und ihre Abhängigkeiten und Beziehungen zueinander zu verdeutlichen.
+
+Bestehen bei einer Produktentwicklung mindestens zwei (oder häufig mehr) Ziele, die gleichzeitig und gleichrangig erfüllt werden sollen, so stehen diese Ziele in aller Regel in Zielkonkurrenz zueinander, so dass einem oder mehreren der Ziele Priorität vor allen anderen eingeräumt und eine Rangfolge der Ziele gebildet werden muss: Die Zielhierarchie.
+
+::: {.callout-tip}
+## Definition: *"Zielhierarchie"*
+Eine Zielhierarchie ist eine strukturierte Organisation von Zielen, die in einer hierarchischen Reihenfolge angeordnet sind, wobei übergeordnete Ziele in Unterebenen von spezifischeren Zielen unterteilt sind. 
+:::
+
+Eine Zielhierarchie dient dazu, die verschiedenen Ebenen der Zielerreichung klar zu definieren und zu organisieren, wodurch eine systematische Herangehensweise an die Zielsetzung und -erreichung ermöglicht wird. 
+
+Das Identifizieren von Prioritäten und das Festlegen von Gewichtungen ermöglicht eine gezielte Konzentration auf die wichtigsten Ziele und eine Abwägung der Konsequenzen bei Kompromissen. Falls erforderlich sind KO-Kriterien zu berücksichtigen, also Ziele, die zwingend (unabhängig von deren Gewichtungen) erreicht werden müssen.
+
+Zielhierarchien unterstützen die Kommunikation und Zusammenarbeit innerhalb des Entwicklungsteams sowie mit Projektleitung und Projektauftraggebenden. Durch die klare Darstellung der Zielbeziehungen können potenzielle Konflikte oder Zielinkonsistenzen identifiziert und adressiert werden. Dies trägt dazu bei, Missverständnisse zu vermeiden und sicherzustellen, dass alle Beteiligten ein gemeinsames Verständnis der Ziele haben.
+
+Darüber hinaus ermöglichen Zielhierarchien eine systematische Bewertung und Priorisierung von Entscheidungen bei der Produktentwicklung. Indem sie die übergeordneten Ziele im Auge behalten, kann das Entwicklungsteam bewerten, wie gut alternative Designoptionen diese Ziele unterstützen. Dies führt zu fundierten Entscheidungen und trägt zur Entwicklung eines Produkts bei, das den angestrebten Anforderungen und Bedürfnissen bestmöglich entspricht.
+
+Der Königsweg, Zielkonflikte aufzulösen ist das identifizieren von Win-Win-Lösungen. Es gilt, nach Möglichkeiten zu suchen, bei denen bestimmte Ziele sich gegenseitig unterstützen oder ergänzen. Durch die Integration und Kombination von Zielen können im Idealfall Effekte erzielt werden, bei denen das Erreichen eines Ziels auch zur Verbesserung anderer Ziele beiträgt. 
+
+Technische Innovationen und Fortschritte, z.B. im Bereich der Produktions- und Werkstofftechnik können helfen, Zielkonflikte zu überwinden. Durch den Einsatz neuer Technologien, Materialien oder Produktionsverfahren können immer wieder innovative Lösungen gefunden werden, die es ermöglichen, bisherige Einschränkungen zu umgehen oder zu minimieren. 
+
+---
+
+> *„Der Ingenieur löst ein Problem stets dadurch, dass er zusätzliche Teile zum Produkt hinzufügt." (Quelle: Unbekannt)*
+
+---
+
+Bei der Produktentwicklung sind Zielkonflikte jedoch zumeist unvermeidlich und die bestehenden Konflikte müssen durch das Finden von Kompromissen gelöst werden. Leistungsfähige Werkzeuge sind → Bewertungsmatrizen und → morphologische Kästen.
+
+In der Praxis ist es unvermeidbar, Trade-offs zu akzeptieren und bewusst Entscheidungen zu treffen, welche Ziele zuungunsten anderer Ziele priorisiert werden sollen. Hierbei ist es wichtig, die Auswirkungen dieser Entscheidungen auf andere Bereiche zu bewerten und mögliche Kompromisse abzuwägen.
+
+Notwendig ist daher stets ein konstruktiver Dialog und Zusammenarbeit im Projektteam sowie mit den und zwischen den Auftraggebern. Durch einen gemeinsamen Diskussionsprozess können oftmals Kompromisse erarbeitet werden, die den unterschiedlichen Anforderungen gerecht werden. Moderations- und Mediationstechniken können dabei helfen, eine Einigung zu erzielen und den Zielen einen gemeinsamen Nenner zu geben.
+
+
+::: {.callout-caution}
+## Tipp!
+Bei der Leistungsbeurteilung von Projektmitarbeitenden sollten die ggf. zu Projektbeginn vereinbarten Ziele entsprechend den gefundenen Kompromissen angepasst werden, oder zumindest das (teilweise) nichterreichen von individuellen Zielen **NICHT** zu einer geringeren Leistungsbewertung führen. In der Praxis wird diese Anpassung oftmals nicht durchgeführt was zu einem Konflikt bei den Projektmitarbeitenden führen kann, oftmals zuungunsten eines konstruktiven übergeordneten Dialogs im Projektteam. 
+
+Von Seiten der Projektleitung muss vielmehr deutlich kommuniziert (und nachfolgend auch so umgesetzt werden), dass der Erfolg des Projekts wichtiger ist als das Erreichen in der Vergangenheit vereinbarter Zielvorgaben und dem Mitarbeitenden, der zugunsten des übergeordneten Projekterfolgs ggf. individuelle Ziele nicht erreicht, daraus kein Nachteil entsteht (siehe @sec-leistungsbeurteilung → Leistungsbeurteilung im Team).
+:::
+
+::: {.callout-tip}
+Falls es möglich ist kann eine gemeinsame Größe (z.B. Kosten des Produkts) zum quantitativen Vergleich verschiedener Beiträge zur Zielerreichung eine große Hilfe sein. Sollen bei einem Produkt z.B. gleichzeitig sowohl Kosten- als auch Gewichtsziele erreicht werden kann ein Gewichtsziel zur Bewertung anderer Ziele, z.B. der eingesetzten Werkstoffe verwendet werden. So ist z.B. Leichtbau aus Aluminium oftmals teurer als die Verwendung von Stahl, ermöglicht jedoch die Reduktion des Gewichts des Produkts. 
+
+Ein quantitativer Vergleich kann in diesem Fall z.B. durch einen Umrechnungsfaktor *„1 kg geringeres Gewicht rechtfertigt höhere Produktkosten von 20 €“* erreicht werden.
+:::
+
+::: {.callout-important}
+## Pro-Tipp!
+Anzustreben ist stets das Erzielen von Einigungen, nicht nur das Durchführen von Verhandlungen!
+:::
+

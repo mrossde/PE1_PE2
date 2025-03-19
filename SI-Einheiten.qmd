@@ -1,0 +1,396 @@
+---
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Grundlagen
+  - SI-Basiseinheiten
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+---
+
+
+<!-- -------------------------------------------------------------------------
+
+                       SI-Einheiten
+
+-------------------------------------------------------------------------- -->
+::: {.content-visible unless-meta="headlines.off"}
+# Grundlagen
+## Technische Grundlagen
+:::
+
+
+![William Thomson, 1st Baron Kelvin](images/William_Thomson_1st_Baron_Kelvin.jpg){width=40% #fig-vasa}
+
+---
+
+>
+***"When you can measure what you are speaking about, and express it in numbers, you know something about it."*** ([William Thomson](https://de.wikipedia.org/wiki/William_Thomson,_1._Baron_Kelvin), 1st Baron Kelvin)^[Die SI-Einheit [Kelvin](https://de.wikipedia.org/wiki/Kelvin) wurde nach William Thomson benannt, der im Alter von 24 Jahren die thermodynamische Temperaturskala einführte. Thomson ist sowohl für theoretische Arbeiten als auch für die Entwicklung von Messinstrumenten bekannt.]
+
+---
+
+
+
+### SI-Einheiten {#sec-si-einheiten}
+
+<!-- -------------------------------------------------------------------------
+
+                       Fallbeispiele für Fehler aufgrund von Einheiten
+
+-------------------------------------------------------------------------- -->
+
+#### Fallbeispiele zu Einheiten
+Zur Bedeutung von Einheiten und deren Umrechnung. Drei Fallbeispiele:
+
+<!-- -------------------------------------------------------------------------
+
+                       Vasa (1628)
+
+-------------------------------------------------------------------------- -->
+##### Fallbeispiel 1: Vasa (1628)
+
+![Vasa](images/Vasa.jpg){width=40% #fig-vasa}
+
+Die [Vasa](https://de.wikipedia.org/wiki/Vasa_%28Schiff%29) war eine schwedische Galeone die zu den größten und am stärksten bewaffneten Kriegsschiffen ihrer Zeit zählte. Bereits zu Beginn ihrer Jungfernfahrt am 10. August 1628 sank die Vasa bei normalem Seegang wegen – wie später festgestellt wurde - schwerwiegender konstruktiver Instabilität. 
+
+Es wird berichtet, dass das Schiff schon auf den ersten Metern trotz geringen Windes eine bedrohliche Schräglage hatte. Der erste stärkere Windstoß ließ das Schiff kentern; es starben schätzungsweise mindestens dreißig Seeleute. Die Instabilität der Vasa war bereits zuvor bei einem Test im Hafen erkannt worden. Der Test musste abgebrochen werden um ein Kentern der Vasa zu verhindern. Dennoch entschloss man sich zur Jungfernfahrt, die nach nur rund 1300 Metern Fahrstrecke mit dem Untergang der Vasa endete.
+
+Die Vasa hatte konstruktions- und ausstattungsbedingt (angeblich aufgrund eines nach Baubeginn durch den König Gustav II Adolf geäußerten Wunsches nach zusätzlichen und größeren Kanonen auf dem oberen Batteriedeck) einen hohen Schwerpunkt bei gleichzeitig hohem Tiefgang.
+
+Während des Baus der Vasa wurden zudem sowohl schwedische Fuß (29,69 cm) als auch Amsterdamer Fuß (von 28,31 cm) von verschiedenen, jeweils auf einer Seite des Schiffs arbeitenden Teams verwendet. Die Verwendung der zwei verschiedenen Einheiten auf den zwei Seiten des Schiffes führte dazu, dass die Vasa auf der Backbordseite schwerer war, was erheblich zum Untergang des Schiffes beitrug. 
+
+Die Vasa gilt heute als eine der größten Schiffsfehlkalkulationen aller Zeiten.
+
+::: {.callout-caution}
+## Erfahrungen aus der Praxis
+- Seien Sie vorsichtig mit Wünschen von Vorgesetzten! Wünsche von Vorgesetzten - so bestimmt und willensstark sie auch vorgetragen werden - können nicht die Physik aushebeln. *„Die Physik gewinnt immer.“ (Quelle unbekannt)* 
+- Tests helfen, frühzeitig Probleme zu erkennen. Ebenso wichtig ist es aber auch, auf Probleme, die bei Tests zu Tage treten, angemessen zu reagieren!
+- Obacht mit Einheiten! Misstrauen Sie grundsätzlich allen Zahlen und Berechnungen, die OHNE Einheiten daherkommen.
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Hubble Space Telescope (1990)
+
+-------------------------------------------------------------------------- -->
+##### Fallbeispiel 2: Hubble Space Telescope (1990)
+
+![Hubble Space Telescope (Quelle: Adobe Stock)](images/HubbleSpaceTelescope.jpeg){width=64% #fig-hubble}
+
+Beim Bau des [Hubble-Weltraumteleskops](https://de.wikipedia.org/wiki/Hubble-Weltraumteleskop) gab es [Probleme](https://en.wikipedia.org/wiki/Hubble_Space_Telescope#Flawed_mirror) aufgrund der Verwendung unterschiedlicher Maßeinheiten. Dieser Vorfall ist als "Hubble's Blunder" oder "Hubble's Error" bekannt.
+
+Die Hauptursache dieses Fehlers war die Verwendung des imperialen (britischen) Einheitensystems in einem Teil des Entwicklungsprozesses und des metrischen Einheitensystems (SI-Einheiten) in einem anderen Teil. Genauer gesagt verwendete ein Team von Ingenieuren bei der Konstruktion des Hubble-Teleskops das Imperial System für einige Messungen und Spezifikationen, während andere Teams das metrische System verwendeten.
+
+Dieses Missverständnis und die Verwendung von verschiedenen Einheitensystemen führten zu einem schwerwiegenden Fehler bei der Herstellung der Spiegel des Teleskops. Der Hauptspiegel des Hubble-Teleskops wurde mit einer falschen Krümmung hergestellt, was zu erheblichen [Bildunschärfe-Problemen](https://en.wikipedia.org/wiki/Hubble_Space_Telescope#Flawed_mirror) führte, als das Teleskop in den Orbit geschossen wurde.
+
+Nach dem Start des Teleskops im Jahr 1990 stellte sich heraus, dass seine Fähigkeit zur Bildgebung stark beeinträchtigt war, was zu einer öffentlichen Kontroverse und Enttäuschung führte. Das Hubble-Teleskop wurde jedoch erfolgreich repariert und verbessert, indem Astronauten im Jahr 1993 während einer Space-Shuttle-Mission einen korrigierten Hauptspiegel installierten.
+
+Der Vorfall mit den unterschiedlichen Maßeinheiten beim Bau des Hubble-Teleskops unterstreicht die Bedeutung einheitlicher Standards und Kommunikation in technischen und wissenschaftlichen Projekten, insbesondere wenn internationale Teams und Organisationen zusammenarbeiten. Dieser Fehler diente auch als wichtige Lehre für zukünftige Weltraummissionen und Projekte in der Wissenschaft und Technik.
+
+<!-- -------------------------------------------------------------------------
+
+                       Mars Climate Orbiter (1998)
+
+-------------------------------------------------------------------------- -->
+##### Fallbeispiel 3: Mars Climate Orbiter (1998)
+
+![Mars Climate Orbiter (Quelle: NASA)](images/Mars_Climate_Orbiter.jpg){width=64% #fig-marsclimateorbiter}
+
+Der [Mars-Klima-Orbiter](https://de.wikipedia.org/wiki/Mars_Climate_Orbiter) der NASA wurde im Dezember 1998 mit dem Ziel gestartet, die Atmosphäre des Mars zu untersuchen. Als der Orbiter jedoch Monate später seinen endgültigen Anflug auf die Marsumlaufbahn machte, trat ein kritischer Fehler auf. Die Triebwerke, die das Raumschiff in die Umlaufbahn bringen sollten, bremsten den Orbiter zu stark ab, was zum Absturz des Orbiters auf den Mars führte.
+
+Eine nachfolgende Untersuchung der NASA-ergab, dass es zu einer gravierenden Verwechslung der Maßeinheiten gekommen war. Die vom Jet Propulsion Laboratory (JPL) der NASA bereitgestellte Software verwendete metrische Einheiten, während das Konstruktionsteam von Lockheed Martin Astronautics gemäß mit dem englischen System von Zoll und Fuß rechnete. Diese Fehlkommunikation führte dazu, dass der Schub in Newton statt in Kraftpfund („pound-force“) berechnet wurde, mit der Folge, dass die durch die Triebwerke erzeugte Kraft zum Abbremsen des Orbiters fast viermal zu hoch war (1 pound-force entspricht etwa 4,4482 N) Dieser Fehler führte um Absturz (statt zum Einschwenken auf die Umlaufbahn um den Mars) der 125 Millionen Dollar teuren Raumsonde.
+
+::: {.callout-caution}
+## Erfahrungen aus der Praxis
+- Erfahrung aus der Praxis: Diese Art von Fehler passiert nicht nur bei internationalen Projekten, oder bei Projekten, an denen verschiedene Unternehmen oder Teams beteiligt sind. Oft genügt schon eine Kleinigkeit, z.B. die Dichte in g/cm³ vs. kg/m³ (Differenz Faktor 1000 (!)).
+- Einheiten immer(!) mitrechnen und angeben, sowohl welche Einheiten als Eingangsgrößen als auch welche Einheiten als Ergebnis verwendet werden. Bei Berechnungen in der Physik, aber ebenso in den Ingenieurwissenschaften sind die Einheiten immer(!) mitzurechnen. Oft geben Fehler bei Einheiten dem geneigten Leser einen ersten Hinweis, dass mit den Gleichungen irgendetwas nicht stimmt!
+:::
+
+::: {.callout-important}
+## IMMER DAS SI-SYSTEM VERWENDEN!
+- Das [SI-System](https://de.wikipedia.org/wiki/Internationales_Einheitensystem) ist das vermutlich „sicherste“ Einheitensystem. Dem geneigten Leser wird dringendst empfohlen, konsequent in den Einheiten des SI-Systems zu rechnen!
+:::
+
+
+<!-- -------------------------------------------------------------------------
+
+                       SI-Basiseinheiten
+
+-------------------------------------------------------------------------- -->
+
+#### SI-Basiseinheiten
+
+![SI-Basiseinheiten](images/SI-Einheiten.jpg){width=40% #fig-si_einheiten}
+
+@tbl-sibasis zeigt zusammengefaßt die sieben [SI-Basiseinheiten](https://de.wikipedia.org/wiki/Internationales_Einheitensystem):
+
+  
+| Einheit    | Abkürzung | Beschreibung     |
+|------------|-----------|------------------|
+| [Meter](https://de.wikipedia.org/wiki/Meter) | m         | [Länge](https://de.wikipedia.org/wiki/L%C3%A4nge_(Physik)) |
+| [Kilogramm](https://de.wikipedia.org/wiki/Kilogramm) | kg        | [Masse](https://de.wikipedia.org/wiki/Masse_(Physik)) |
+| [Sekunde](https://de.wikipedia.org/wiki/Sekunde) | s         | [Zeit](https://de.wikipedia.org/wiki/Zeit) |
+| [Ampere](https://de.wikipedia.org/wiki/Ampere)   | A         | [Elektrische Stromstärke](https://de.wikipedia.org/wiki/Elektrische_Stromst%C3%A4rke) |
+| [Kelvin](https://de.wikipedia.org/wiki/Kelvin)   | K         | [Thermodynamische Temperatur](https://de.wikipedia.org/wiki/Thermodynamische_Temperatur) |
+| [Mol](https://de.wikipedia.org/wiki/Mol)         | mol       | [Stoffmenge](https://de.wikipedia.org/wiki/Stoffmenge) |
+| [Candela](https://de.wikipedia.org/wiki/Candela) | cd        | [Lichtstärke](https://de.wikipedia.org/wiki/Lichtst%C3%A4rke_(Photometrie)) |
+
+: SI-Basiseinheiten  {#tbl-sibasis .striped .hover .bordered tbl-colwidths="[20,20,40]"}
+
+
+
+<!-- SI-Einheiten
+| Einheit                 | Abkürzung | Beschreibung                                  |
+|-------------------------|-----------|-----------------------------------------------|
+| Meter                   | m         | Länge                                         |
+| Kilogramm               | kg        | Masse                                         |
+| Sekunde                 | s         | Zeit                                          |
+| Ampere                  | A         | Elektrischer Strom                            |
+| Kelvin                  | K         | Temperatur                                    |
+| Mol                     | mol       | Stoffmenge                                    |
+| Candela                 | cd        | Lichtstärke                                   |
+| Hertz                   | Hz        | Frequenz                                      |
+| Newton                  | N         | Kraft                                         |
+| Pascal                  | Pa        | Druck                                         |
+| Joule                   | J         | Energie                                       |
+| Watt                    | W         | Leistung                                      |
+| Coulomb                 | C         | Elektrische Ladung                            |
+| Volt                    | V         | Elektrische Spannung                          |
+| Ohm                     | Ω         | Elektrischer Widerstand                       |
+| Siemens                 | S         | Elektrische Leitfähigkeit                     |
+| Weber                   | Wb        | Magnetischer Fluss                            |
+| Tesla                   | T         | Magnetische Flussdichte                       |
+| Henry                   | H         | Induktivität                                  |
+| Grad Celsius            | °C        | Temperatur (in Celsius)                       |
+| Becquerel               | Bq        | Radioaktive Zerfälle pro Sekunde              |
+| Gray                    | Gy        | Ionendosis                                    |
+| Sievert                 | Sv        | Äquivalente Dosisstrahlung                    |
+| Katal                   | kat       | Katalytische Aktivität                        |
+-->
+
+
+Die sieben SI-Basiseinheiten sind definiert und können **NICHT** auf andere Einheiten zurückgeführt werden.
+
+Die sieben SI-Basiseinheiten bilden das Fundament der Beschreibung der naturwissenschaftlichen Welt. Bis heute sind in den Naturwissenschaften keine Phänomene bekannt, die nicht durch diese sieben Basiseinheiten beschrieben werden können. 
+
+Aus diesen sieben SI-Basiseinheiten können **ALLE** in den Naturwissenschaften relevanten Größen abgeleitet werden - von der Quantenphysik bis zur Relativitätstheorie. 
+
+
+
+<!--
+#### Definitionen der SI-Basiseinheiten
+
+Diese Definitionen basieren heute auf fundamentalen Naturkonstanten und ermöglichen eine präzise und reproduzierbare Definition der Basiseinheiten, unabhängig von äußeren Einflüssen.
+
+
+##### Zeit
+Die SI-Basiseinheit der Zeit ist die Sekunde $\text{s}$. Die Sekunde wird definiert als die Dauer von 9192631770 Perioden der Strahlung, die dem Übergang zwischen den beiden Hyperfeinstrukturniveaus des Grundzustands von Atomen des Isotops Caesium-133 entspricht. Diese Definition wurde 1967 von der Internationalen Konferenz für Maß und Gewicht (CGPM) angenommen und ist seitdem die Grundlage für die Messung von Zeit im SI-System.
+
+
+##### Länge
+Die SI-Basiseinheit der Länge ist das Meter $\text{m}$. Die aktuelle Definition wurde im Jahr 1983 eingeführt und basiert auf der Lichtgeschwindigkeit im Vakuum ($c$ = 299792458 $\text{m/s}$). Ein Meter ist entsprechend definiert als die Strecke, die das Licht im Vakuum während eines Zeitintervalls von 1/299792458 Sekunden zurücklegt.
+
+
+##### Masse
+Die SI-Basiseinheit der Masse ist das [Kilogramm](https://de.wikipedia.org/wiki/Kilogramm) (kg). Die Definition des Kilogramms hat sich im Laufe der Geschichte immer wieder geändert. Die aktuelle Definition des Kilogramms wurde im Jahr 2019 revidiert und basiert seither nicht mehr auf einem realen Referenzgewicht. Seit 2019 basiert das Kilogram auf auf der Planck-Konstanten ($h$) und der Lichtgeschwindigkeit ($c$) und wird wie folgt formuliert:
+
+Ein Kilogram ist definiert, indem für die Planck-Konstante $h$ der Zahlenwert $6.62607015 \times 10^{-34}$ Joule-Sekunden ($J \cdot s$) festgelegt wird.
+
+
+##### Elektrischer Strom
+Die SI-Basiseinheit des elektrischen Stroms ist das Ampere $\text{A}$. Die Definition des Ampere basiert auf dem magnetischen Effekt einer elektrischen Strömung und wurde im Jahr 1948 von der Internationalen Elektrotechnischen Kommission (IEC) festgelegt.
+
+Ein Ampere ist definiert als die elektrische Stromstärke, die durch zwei parallele, unendlich lange Leiter mit vernachlässigbar kleinem Querschnitt fließt und die sich bei einem Meter Abstand in einem Vakuum gegenseitig mit einer Kraft von $2 \times 10^{-7}$ Newton pro Meter Länge anziehen würde.
+
+
+##### Thermodynamische Temperatur
+Die SI-Basiseinheit der [thermodynamischen Temperatur](https://de.wikipedia.org/wiki/Thermodynamische_Temperatur) ist das Kelvin $\text{K}$. Die Definition des Kelvins basiert auf dem absoluten Temperaturnullpunkt, bei dem die thermische Energie aller Teilchen eines Systems minimal ist.
+
+Ein Kelvin wird definiert als 1/273,16 des Temperaturunterschieds zwischen dem [Tripelpunkt](https://de.wikipedia.org/wiki/Tripelpunkt) des Wassers und dem absoluten Nullpunkt. Der Tripelpunkt des Wassers liegt entsprechend bei genau 273,16 Kelvin.
+
+
+##### Stoffmenge
+Die SI-Basiseinheit der Stoffmenge ist das Mol (mol). Das Mol ist eine Einheit für die Stoffmenge und wird definiert als die Menge an Teilchen (wie Atomen, Molekülen oder Ionen) in einem System, die die gleiche Anzahl von Teilchen enthalten wie 12 Gramm Kohlenstoff-12. Diese Definition wurde im Jahr 1971 durch die General Conference on Weights and Measures (CGPM) festgelegt.
+
+Um die Stoffmenge in Mol auszudrücken, verwenden wir die Anzahl der Teilchen (N) geteilt durch die Avogadro-Konstante ($N_A$), die die Anzahl der Atome in einem Mol angibt:
+
+$$
+n = \frac{N}{N_A}
+$$
+
+Die Avogadro-Konstante beträgt $6.02214076 \times 10^{23}$ Teilchen pro Mol (Teilchen/mol). Daher entspricht ein Mol einer Stoffmenge von $6.02214076 \times 10^{23}$ Teilchen.
+
+
+##### Lichtstärke
+Die SI-Basiseinheit der Lichtstärke, des auf den Raumwinkel bezogenen Lichtstroms, ist die [Candela](https://de.wikipedia.org/wiki/Candela) $\text{cd}$. 
+
+Die Candela ist dadurch definiert, dass für Licht einer bestimmten Frequenz (540 THz; dies entspricht grünem Licht mit der Wellenlänge ≈ 555 nm) der Strahlungsfluss (gemessen in Watt) durch einen durchstrahlten Raumwinkel (gemessen in Steradiant $\text{sr}$) in den Lichtstrom (gemessen in Lumen) umgerechnet wird.
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Ableitung aus SI-Basiseinheiten
+
+-------------------------------------------------------------------------- -->
+
+<!--
+#### Abgeleitete SI-Einheiten
+
+Wie können weitere wichtige Einheiten aus den sieben SI-Basiseinheiten abgeleitet werden?
+
+Beispiel: Energie
+
+Die SI-Einheit für Energie ist das Joule ($\text{J}$). 
+
+Energie ist die Fähigkeit, Arbeit zu verrichten. Arbeit wird definiert als die Kraft, die auf einen Körper wirkt, multipliziert mit dem Weg, den der Körper in Richtung dieser Kraft bewegt. Arbeit ist das Produkt aus Kraft und Weg.
+
+Die SI-Basiseinheiten, die wir verwenden, um die Arbeit zu beschreiben, sind:
+
+1. Kraft (F) wird in Newton (N) gemessen, was $\text{kg} \cdot \text{m} / \text{s}^2$ entspricht.
+2. Weg (d) wird in Meter (m) gemessen.
+
+Also die Arbeit (W) ist:
+
+$$
+W = F \cdot d
+$$
+
+Substituieren wir die Einheiten:
+
+$$
+W = \text{N} \cdot \text{m}
+$$
+
+Ein Newton-Meter ist auch als Joule definiert:
+
+$$
+1 \, \text{J} = 1 \, \text{N} \cdot \text{m}
+$$
+
+Daher wird das Joule aus den SI-Basiseinheiten Kilogramm, Meter und Sekunde abgeleitet, wie folgt:
+
+$$
+1 \, \text{J} = 1 \, \text{kg} \cdot \text{m}^2 / \text{s}^2 
+$$
+
+
+$$
+1\, \text{Watt (W)} = 1\, \text{Joule pro Sekunde (J/s)} = 1\, \text{Nm/s} = 1 \left(\frac{kg \cdot m^2}{s^3}\right)
+$$
+
+$$
+1 \, \text{Pa} = 1 \, \frac{\text{N}}{\text{m}^2} = 1 \, \frac{\text{kg} \cdot \text{m}}{\text{s}^2 \cdot \text{m}^2}
+$$
+
+
+Die elektrische Spannung wird in Volt ($\text{V}$) gemessen, was den Einheiten Joule pro Coulomb entspricht ($\text{J/C}$). Um die elektrische Spannung in SI-Basiseinheiten zurückzuführen, müssen wir zuerst die Einheit Joule in Basiseinheiten ausdrücken und dann durch die Einheit Coulomb teilen.
+
+1. **Joule in Basiseinheiten**: Ein Joule ist definiert als ein Kilogramm mal Meter zum Quadrat pro Sekunde zum Quadrat ($\text{kg} \cdot \text{m}^2/\text{s}^2$). Das Joule ist bereits in Basiseinheiten ausgedrückt.
+
+2. **Coulomb in Basiseinheiten**: Ein Coulomb (C) ist die Ladung, die durch einen Strom von einem Ampere in einer Sekunde übertragen wird. Da Ampere eine Basiseinheit ist, bleibt die Einheit Coulomb unverändert.
+
+Daher können wir die elektrische Spannung in SI-Basiseinheiten ausdrücken als:
+
+$$
+1 \, \text{V} = 1 \, \frac{\text{J}}{\text{C}} = 1 \, \frac{\text{kg} \cdot \text{m}^2}{\text{s}^2 \cdot \text{C}}
+$$
+
+Das bedeutet, dass ein Volt einer Energie von einem Joule pro Coulomb entspricht, was wiederum den Basiseinheiten Kilogramm, Meter, Sekunde und Coulomb entspricht.
+-->
+
+| Einheit                 | Abkürzung | Beschreibung          | Ausdruck in Basiseinheiten          |
+|-------------------------|-----------|-----------------------|-------------------------------------|
+| Newton                  | N         | Kraft                 | $\frac{\text{kg} \cdot \text{m}}{\text{s}^2}$     |
+| Pascal                  | Pa        | Druck                 | $\frac{\text{kg}}{\text{m} \cdot \text{s}^2}$     |
+| Joule                   | J         | Energie               | $\frac{\text{kg} \cdot \text{m}^2}{\text{s}^2}$   |
+| Watt                    | W         | Leistung              | $\frac{\text{kg} \cdot \text{m}^2}{\text{s}^3}$   |
+| Coulomb                 | C         | Elektrische Ladung    | $\text{A} \cdot \text{s}$           |
+| Volt                    | V         | Elektrische Spannung  | $\frac{\text{kg} \cdot \text{m}^2}{\text{A} \cdot \text{s}^3}$         |
+| Ohm                     | Ω         | Elektrischer Widerstand | $\frac{\text{kg} \cdot \text{m}^2}{\text{A}^2 \cdot \text{s}^3}$     |
+| Siemens                 | S         | Elektrische Leitfähigkeit | $\frac{\text{A}^2 \cdot \text{s}^3}{\text{kg} \cdot \text{m}^2}$   |
+| Ampere                  | A         | [Magnetische Spannung](https://de.wikipedia.org/wiki/Magnetische_Spannung)  | $\text{A}$ |
+| Weber                   | Wb        | Magnetischer Fluss    | $\frac{\text{kg} \cdot \text{m}^2}{\text{A} \cdot \text{s}^2}$         |
+| Tesla                   | T         | Magnetische Flussdichte | $\frac{\text{kg}}{\text{A} \cdot \text{s}^2}$   |
+| Henry                   | H         | Induktivität          | $\frac{\text{kg} \cdot \text{m}^2}{\text{A}^2 \cdot \text{s}^2}$       |
+| Grad Celsius            | °C        | Temperatur (in Celsius) | $\text{K}$                        |
+| Becquerel               | Bq        | Radioaktiver Zerfall  | $\text{s}^{-1}$          |
+| Gray                    | Gy        | Ionendosis            | $\frac{\text{m}^2}{\text{s}^2}$     |
+| Sievert                 | Sv        | Äquivalente Dosisstrahlung | $\frac{\text{m}^2}{\text{s}^2}$              |
+| Katal                   | kat       | Katalytische Aktivität | $\frac{\text{mol}}{\text{s}}$      |
+
+
+: Abgeleitete SI-Einheiten  {#tbl-sierweitert .striped .hover .bordered tbl-colwidths="[20,20,30,30]"}
+
+<!--
+| Meter                   | m         | Länge                 | $\text{m}$                          |
+| Kilogramm               | kg        | Masse                 | $\text{kg}$                         |
+| Sekunde                 | s         | Zeit                  | $\text{s}$                          |
+| Ampere                  | A         | Elektrischer Strom    | $\text{A}$                          |
+| Kelvin                  | K         | Temperatur            | $\text{K}$                          |
+| Mol                     | mol       | Stoffmenge            | $\text{mol}$                        |
+| Candela                 | cd        | Lichtstärke           | $\text{cd}$                         |
+| Hertz                   | Hz        | Frequenz              | $\text{s}^{-1}$                     |
+--> 
+
+<!-- SI-Einheiten in LaTeX
+$$
+\begin{align*}
+\text{Meter} & : \text{m} \\
+\text{Kilogramm} & : \text{kg} \\
+\text{Sekunde} & : \text{s} \\
+\text{Ampere} & : \text{A} \\
+\text{Kelvin} & : \text{K} \\
+\text{Mol} & : \text{mol} \\
+\text{Candela} & : \text{cd} \\
+\text{Hertz} & : \text{s}^{-1} \\
+\text{Newton} & : \frac{\text{kg} \cdot \text{m}}{\text{s}^2} \\
+\text{Pascal} & : \frac{\text{kg}}{\text{m} \cdot \text{s}^2} \\
+\text{Joule} & : \frac{\text{kg} \cdot \text{m}^2}{\text{s}^2} \\
+\text{Watt} & : \frac{\text{kg} \cdot \text{m}^2}{\text{s}^3} \\
+\text{Coulomb} & : \text{A} \cdot \text{s} \\
+\text{Volt} & : \frac{\text{kg} \cdot \text{m}^2}{\text{A} \cdot \text{s}^3} \\
+\text{Ohm} & : \frac{\text{kg} \cdot \text{m}^2}{\text{A}^2 \cdot \text{s}^3} \\
+\text{Siemens} & : \frac{\text{A}^2 \cdot \text{s}^3}{\text{kg} \cdot \text{m}^2} \\
+\text{Weber} & : \frac{\text{kg} \cdot \text{m}^2}{\text{A} \cdot \text{s}^2} \\
+\text{Tesla} & : \frac{\text{kg}}{\text{A} \cdot \text{s}^2} \\
+\text{Henry} & : \frac{\text{kg} \cdot \text{m}^2}{\text{A}^2 \cdot \text{s}^2} \\
+\text{Grad Celsius} & : \text{K} \\
+\text{Becquerel} & : \text{s}^{-1} \\
+\text{Gray} & : \frac{\text{m}^2}{\text{s}^2} \\
+\text{Sievert} & : \frac{\text{m}^2}{\text{s}^2} \\
+\text{Katal} & : \frac{\text{mol}}{\text{s}}
+\end{align*}
+$$
+-->

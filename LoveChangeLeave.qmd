@@ -1,0 +1,83 @@
+<!--
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Softskills
+  - Love it - Change it - Leave it
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 5
+link-external-icon: true
+link-external-newwindow: true
+
+headlines:
+  off: true
+exercises:
+  solutions:
+  off: true
+-->
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Love it - Change it - Leave it
+
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Softskills
+:::
+ 
+## Love it - Change it - Leave it
+<!-- -------------------------------------------------------------------------
+
+                       Love it - Change it - Leave it
+
+-------------------------------------------------------------------------- -->
+
+<div style="border: 1px solid black; padding: 10px; text-align:center;">Love it - Change it - Leave it</div>
+
+![](images/blank.png){height=2mm}
+
+*"Love it - change it - leave it"* beschreibt die drei grundlegenden Optionen, wie man mit Unzufriedenheit oder Problemen umgehen kann:  
+
+1. **Love it**: Akzeptiere die Situation so, wie sie ist, und lerne sie zu schätzen. Konzentriere dich auf die positiven Aspekte, anstatt dich von den negativen Aspekten überwältigen zu lassen.  
+
+2. **Change it**: Wenn Akzeptanz nicht ausreicht, suche nach Wegen, die Situation aktiv zu verändern, z.B. durch Handeln, Verhandeln, Kommunikation oder andere Maßnahmen, die geeignet sein können, die Umstände zu verbessern.  
+
+3. **Leave it**: Wenn weder Akzeptanz noch Veränderung möglich oder sinnvoll ist, ziehe dich aus der Situation zurück. Das ist oft die schwierigste Option, aber manchmal die einzig richtige, um das eigene Wohlbefinden zu schützen.
+
+<!--
+::: {.callout-important}
+## Pro-Tipp!
+Man hat immer eine Wahl, auch wenn diese nicht immer leicht ist. 
+:::
+-->
