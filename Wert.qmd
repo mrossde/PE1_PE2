@@ -1,0 +1,16 @@
+::: callout-tip
+## Wert (allgemein)
+
+-  Aus Sicht des **Wirtschaftssubjektes (Kunde bzw. Käufer):** ... bewusste oder unbewusste **Vorstellungen des Gewünschten**, die die Wahl zwischen Handlungsalternativen beeinflussen. In der Realität existiert meist ein System bzw. eine Welt, in der W. dauerhafte Kriterien für Entscheidungsprozesse (z.B. **Kauf, Konsum**) darstellen.<!--^[vgl. @Bartsch.2015, S. 91 & @Friedrichs.1968, S. 113]-->
+- Aus Sicht des **Wirtschaftsobjektes (Wirtschaftsgut):** ...innewohnende **Merkmale**, aufgrund deren sie in einem gewissen Maße **begehrenswert** sind^[[duden.de](https://www.duden.de/rechtschreibung/Wert)]
+
+Ein W. entsteht nur, wenn es ein Wirtschaftsobjekt **und** ein Wirtschaftssubjekt (Käufer) gibt. Im heutigen Sprachgebrauch gibt es zur Unterscheidung eine Vielzahl von Begriffen wie z.B. [Marktwert, Restwert, Zeitwert, Ertragswert, etc.](https://de.wikipedia.org/wiki/Wert_(Wirtschaft)#Arten) Hauptbestimmungsgrößen des W. sind<!--^[vgl. @Schloder.1993, S. 41f & [Wikipedia](https://de.wikipedia.org/wiki/Wert_(Wirtschaft)#Geschichte)]-->:
+
+-  dessen subjektiven Nutzen ([John Law](https://de.wikipedia.org/wiki/John_Law), [John Locke](https://de.wikipedia.org/wiki/John_Law))
+-  Herstellkosten ([Adam Smith](https://de.wikipedia.org/wiki/Adam_Smith))
+-  die Arbeitszeit ([David Ricardo](https://de.wikipedia.org/wiki/David_Ricardo), [Karl Marx](https://de.wikipedia.org/wiki/Karl_Marx))
+-  Angebot (Volkswirtschaftslehre) und Nachfrage ([Jean Baptiste Say](https://de.wikipedia.org/wiki/Jean_Baptiste_Say)).
+
+
+
+:::

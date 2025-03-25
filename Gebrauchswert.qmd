@@ -1,0 +1,6 @@
+::: callout-tip
+## Gebrauchswert (auch: Nutzwert)
+... entspricht der Eigenschaft, **menschliche Bedürfnisse** irgendeiner Art zu **befriedigen**. Die Eigenschaft ist ein gemeinsames geometrisches, physikalisches, chemisches oder sonstiges natürliches Merkmal.<!--^[vgl. @Marx.1867, S. 4f]-->
+
+... kann abnehmen bei fortschreitender Verwendung des Gutes. (Beispiel: Autoreifen, Zahnbürste, Eigentumswohnung, Milch, Kleidung)
+:::

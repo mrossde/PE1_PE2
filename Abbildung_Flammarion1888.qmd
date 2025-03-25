@@ -54,7 +54,7 @@ link-external-newwindow: true
 ## Illustration *"La forme du ciel"*
 Der sogenannte Flammarion-Holzschnitt ist eine ikonische Darstellung, die eine Person zeigt, die am Rand der Welt steht und den Himmel durchbricht, um einen Einblick in die Mechanik des Universums dahinter zu gewinnen. Der Holzschnitt erschien erstmals 1888 in Flammarions Werk L'Atmosphère: "Météorologie Populaire" als Illustration zu "La forme du ciel".
 
-Der Flammarion-Holzschnitt veranschaulicht die Idee, über die bekannten Grenzen des Wissens hinaus blicken und das Unbekannte erforschen zu wollen. Die Person, die die Himmelskuppel durchstößt, verkörpert den Forschergeist und die Neugier. Die Darstellung einer festen Kristallkuppel, die Himmel und Erde trennt, spiegelt ein kosmologisches Weltbild wider, das im Mittelalter verbreitet war, während der Akt des Durchbrechens den Übergang von Unwissenheit zu Erkenntnis symbolisiert.
+Der Flammarion-Holzschnitt veranschaulicht die Idee, **über die bekannten Grenzen des Wissens hinaus blicken und das Unbekannte erforschen zu wollen**. Die Person, die die Himmelskuppel durchstößt, verkörpert den Forschergeist und die Neugier. Die Darstellung einer festen Kristallkuppel, die Himmel und Erde trennt, spiegelt ein kosmologisches Weltbild wider, das im Mittelalter verbreitet war, während der Akt des Durchbrechens den Übergang von Unwissenheit zu Erkenntnis symbolisiert.
 ::: 
 
 
