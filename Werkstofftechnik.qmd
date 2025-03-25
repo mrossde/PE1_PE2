@@ -114,6 +114,14 @@ Werkstoffe lassen sich in vier Hauptklassen unterteilen: **Metalle**, **Keramike
 
 - **Verbundwerkstoffe**: Diese Werkstoffe bestehen aus zwei oder mehr Materialien, um die Eigenschaften der einzelnen Komponenten zu kombinieren. Bekannte Beispiele sind faserverstärkte Kunststoffe wie CFK (carbonfaserverstärkter Kunststoff), die hohe Festigkeit und geringes Gewicht vereinen, und häufig in der Luft- und Raumfahrt eingesetzt werden.
 
+::: {.content-visible unless-meta="kommentare.off"}
+
+:::: {style="background-color: #9affa4"}
+\@mrossde hier ein Video ggf. mit den 4 Klassen / Verweis auf Hütte Kapitel Share Link einbauen?
+
+::::
+:::
+
 <!-- -------------------------------------------------------------------------
 
                        Mechanische Eigenschaften
@@ -123,27 +131,13 @@ Werkstoffe lassen sich in vier Hauptklassen unterteilen: **Metalle**, **Keramike
 
 Mechanische Eigenschaften bestimmen, wie Werkstoffe auf äußere Belastungen reagieren, und sind deshalb grundlegende Kenngrößen:
 
-- **Festigkeit**: Die Festigkeit gibt die maximale Belastung an, die ein Material ertragen kann, bevor es versagt. Je nach Art der Beanspruchung unterscheidet man Zugfestigkeit, Druckfestigkeit und Scherfestigkeit. Ingenieure müssen die Festigkeit kennen, um Bauteile so zu dimensionieren, dass sie den Belastungen standhalten.
+- **Festigkeit**: Die Festigkeit ([Erklärvideo für Metalle](https://www.youtube.com/watch?v=uVRffdXT5F8)) gibt die maximale Belastung an, die ein Material ertragen kann, bevor es versagt. Je nach Art der Beanspruchung unterscheidet man [Zugfestigkeit (Video)](https://youtu.be/O2KKHtQRt-k?si=ajWY8OoSTuxVewlH), Druckfestigkeit und Scherfestigkeit. Ingenieure müssen die Festigkeit kennen, um Bauteile so zu dimensionieren, dass sie den Belastungen standhalten. 
 
-- **Härte**: Härte beschreibt den Widerstand eines Materials gegenüber dem Eindringen eines härteren Körpers. Sie ist eng mit der Verschleißfestigkeit verbunden und kann durch Härteprüfungen wie z.B. Rockwell (HR) oder Vickers (HV) gemessen werden.
+- **Härte**: Härte beschreibt den Widerstand eines Materials gegenüber dem Eindringen eines härteren Körpers. 
 
 - **Duktilität und Zähigkeit**: Duktilität ist die Fähigkeit eines Materials, sich plastisch zu verformen, bevor es bricht. Zähigkeit beschreibt das Energieabsorptionsvermögen eines Materials, bevor es bricht, und ist besonders wichtig für Werkstoffe, die stoßartigen Belastungen ausgesetzt sind.
 
 - **Elastizitätsmodul**: Dieser beschreibt die Steifigkeit eines Materials und das Verhältnis von Spannung zu Dehnung im elastischen Bereich. Materialien mit einem hohen Elastizitätsmodul, wie Stahl, verformen sich unter Belastung weniger als Materialien mit niedrigem Modul, wie Aluminium.
-
-##### Exkurs: Härte
-
-::: {.callout-tip}
-## Definition: *"Härte"*
-[Härte](https://de.wikipedia.org/wiki/H%C3%A4rte) beschreibt das Widerstandspotenzial eines Werkstoffs gegenüber plastischer Verformung, wenn eine äußere Kraft auf den Werkstoff einwirkt. 
-:::
-
-Härte ist primär eine Werkstoffeigenschaft. Härte wird dabei durch den Werkstoff selbst bestimmt – also durch dessen chemische Zusammensetzung, dessen Mikrostruktur (z.B. Kristallgitter) und die bei dessen Fertigung verwendeten Fertigungsverfahren, insbesondere der Verfahren zum [Urformen](https://de.wikipedia.org/wiki/Urformen).
-
-Jedoch kann die Härte auch als Oberflächeneigenschaft eines Produkts betrachtet werden, da sie bei vielen Werkstoffen durch gezielt eingesetzte Fertigungsverfahren (siehe → DIN 8580 @sec-din8580, Hauptgruppe "[Stoffeigenschaften ändern](https://de.wikipedia.org/wiki/Stoffeigenschaften_%C3%A4ndern)") (lokal) verändert werden kann, sich aber auch über die Lebensdauer des Produkts (ungewollt) verändern kann.
-
-In der Werkstoffkunde, speziell bei Metallen, werden zur Messung der Härte vor allem Prüfverfahren eingesetzt, welche die Eindringhärte messen. Dabei werden genormte Prüfkörper unter festgelegten Bedingungen in das Werkstück gedrückt. Im Anschluss wird die Oberfläche oder Tiefe des bleibenden Eindruckes gemessen. Gebräuchlich sind die Härteprüfverfahren und Härteskalen Martens (Universalhärte), [Rockwell (HR)](https://de.wikipedia.org/wiki/H%C3%A4rte#Rockwell_(HR)), Brinell und [Vickers (HV)](https://de.wikipedia.org/wiki/H%C3%A4rte#Vickers_(HV)).
-
 
 ##### Exkurs: Festigkeit
 ::: {.callout-tip}
@@ -157,6 +151,20 @@ Festigkeit wird angegeben als **mechanische Spannung (Kraft pro Querschnittsflä
 ## Härte und Festigkeit sind weitgehend voneinander unabhängige Werkstoffeigenschaften!
 Die Härte eines Werkstoffs hat nur bedingt etwas mit dessen Festigkeit zu tun.
 :::
+
+##### Exkurs: Härte
+
+::: {.callout-tip}
+## Definition: *"Härte"*
+[Härte](https://de.wikipedia.org/wiki/H%C3%A4rte) beschreibt das Widerstandspotenzial eines Werkstoffs gegenüber plastischer Verformung, wenn eine äußere Kraft auf den Werkstoff einwirkt. 
+:::
+
+Härte ist primär eine Werkstoffeigenschaft. Sie ist eng mit der Verschleißfestigkeit ([Was ist Verschleiß?](https://youtu.be/mOHo1KyCwjc?si=dzgVyCkgsBQ7ExxE)) verbunden. Härte wird dabei durch den Werkstoff selbst bestimmt – also durch dessen chemische Zusammensetzung, dessen Mikrostruktur (z.B. Kristallgitter) und die bei dessen Fertigung verwendeten Fertigungsverfahren, insbesondere der Verfahren zum [Urformen](https://de.wikipedia.org/wiki/Urformen).
+
+Jedoch kann die Härte auch als Oberflächeneigenschaft eines Produkts betrachtet werden, da sie bei vielen Werkstoffen durch gezielt eingesetzte Fertigungsverfahren (siehe → DIN 8580 @sec-din8580, Hauptgruppe "[Stoffeigenschaften ändern](https://de.wikipedia.org/wiki/Stoffeigenschaften_%C3%A4ndern)") (lokal) verändert werden kann, sich aber auch über die Lebensdauer des Produkts (ungewollt) verändern kann.
+
+In der Werkstoffkunde, speziell bei Metallen, werden zur Messung der Härte vor allem Prüfverfahren eingesetzt, welche die Eindringhärte messen ([Erklärvideo](https://youtu.be/XWuq0mlZwIA?si=-Kga5StCgWn0FMRL)). Dabei werden genormte Prüfkörper unter festgelegten Bedingungen in das Werkstück gedrückt. Im Anschluss wird die Oberfläche oder Tiefe des bleibenden Eindruckes gemessen. Gebräuchlich sind die Härteprüfverfahren und Härteskalen Martens (Universalhärte), [Rockwell (HR)](https://de.wikipedia.org/wiki/H%C3%A4rte#Rockwell_(HR)), Brinell und [Vickers (HV)](https://de.wikipedia.org/wiki/H%C3%A4rte#Vickers_(HV)) / [Vickers (HV) (Video)](https://youtu.be/HxMp4CgmUnM?si=sXokhTjI_lOjw3RK).
+
 
 <!-- -------------------------------------------------------------------------
 
