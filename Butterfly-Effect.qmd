@@ -1,0 +1,69 @@
+---
+title: "DEB3 Komplexe Systeme und Statistik"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Komplexe Systeme und Statistik"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Komplexe Systeme
+  - Chaostheorie
+  - Butterfly-Effect
+  - Schmetterlingseffekt
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+---
+
+<!--
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Butterfly-Effect
+
+-------------------------------------------------------------------------- -->
+
+<!--
+::: {.callout-tip collapse="true"}
+-->
+# Komplexe Systeme
+
+## Chaostheorie
+
+### Butterfly-Effect {#sec-butterflyeffect}
+
+::: {.callout-tip}
+## Definition *"Butterfly-Effect"*
+Der [Butterfly-Effect](https://de.wikipedia.org/wiki/Schmetterlingseffekt) ist ein Phänomen der Nichtlinearen Dynamik. Er tritt in nichtlinearen dynamischen, deterministischen Systemen auf und äußert sich dadurch, dass nicht vorhersehbar ist, wie sich beliebig kleine Änderungen der Anfangsbedingungen des Systems langfristig auf die Entwicklung des Systems auswirken.
+:::
+

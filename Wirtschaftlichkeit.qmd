@@ -1,0 +1,186 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
+
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - Produktentstehungsprozess
+  - Wirtschaftlichkeit
+  - Effektivität
+  - Effizienz
+
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 2
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Wirtschaftlichkeit, Effektivität und Effizienz
+
+-------------------------------------------------------------------------- -->
+
+
+::: {.content-visible unless-meta="headlines.off"}
+# Grundlagen
+## Begriffe
+:::
+
+### Wirtschaftlichkeit, Effektivität, Effizienz
+
+<!-- --------------------------------------------------------------------------
+EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT
+S T A R T -->
+::: {.content-visible unless-meta="extended-content.off"}
+<!-- ---------------------------------------------------------------------- -->
+
+::: {.callout-tip}
+## Definition: *"Wirtschaftlichkeit"*
+[Wirtschaftlichkeit](https://de.wikipedia.org/wiki/Wirtschaftlichkeit) ist ein Wirtschaftssystem- und unternehmenszielindifferenter Ausdruck dafür, inwieweit eine Tätigkeit dem [Wirtschaftlichkeitsprinzip](https://de.wikipedia.org/wiki/%C3%96konomisches_Prinzip) genügt.
+:::
+
+::: {.callout-tip}
+## Definition: *"Wirtschaftlichkeitsprinzip"*
+Das Wirtschaftlichkeitsprinzip ist in den Wirtschaftswissenschaften eine wirtschaftliche Ausprägung des Rationalprinzips und bezeichnet die Rationalitätsannahme, dass Wirtschaftssubjekte aufgrund der Knappheit der Güter bei wirtschaftlichen Interaktionen die eingesetzten Mittel mit dem Ergebnis ins Verhältnis setzen und nach ihren subjektiven Präferenzen durch zweckrationales Handeln eine Nutzenmaximierung (Privathaushalte) beziehungsweise Gewinnmaximierung (bei Unternehmen) anstreben. Das Wirtschaftlichkeitsprinzip ist eine der Annahmen, auf denen das Modell des Homo Oeconomicus basiert.
+:::
+
+<!-- ---------------------------------------------------------------------- -->
+:::
+<!-- S T O P
+EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT
+--------------------------------------------------------------------------- -->
+
+::: {.callout-tip}
+## Definition: *"Effektivität"*
+[Effektivität](https://de.wikipedia.org/wiki/Effektivit%C3%A4t) beschreibt den Grad der Zielerreichung (Wirksamkeit, Qualität der Zielerreichung), beim [Maximalprinzip](https://de.wikipedia.org/wiki/%C3%96konomisches_Prinzip#Maximalprinzip):
+
+$$
+Effektivität = \frac{Erreichtes \space Ist(-Ergebnis)}{Angestrebtes \space Soll(-Ergebnis)}
+$$
+
+Im Deutschen wird dies oft übersetzt mit: **Effektivität: *"Die richtigen Dinge tun."***
+:::
+
+Effektiv ist jede Tätigkeit, die zum Ziel führt, ungeachtet der Relation zwischen Ergebnis und hierfür erforderlichem Aufwand.
+
+
+::: {.callout-tip}
+## Definition: *"Effizienz"*
+Effizienz ist ein Maß für die Wirtschaftlichkeit (Kosten-Nutzen-Relation). 
+
+$$
+Effizienz = \frac{Erreichtes \space Ist(-Ergebnis)}{Mitteleinsatz}
+$$
+
+Im Deutschen wird dies oft übersetzt mit: **Effizienz: *"Die Dinge richtig tun."***, im Zusammenhang mit Mitarbeitenden manchmal auch mit *"Leistungsfähigkeit"*.
+:::
+
+Eine insbesondere in der englischsprachigen betriebswirtschaftlichen Literatur häufige Unterscheidung zwischen Effectiveness (*"Wirksamkeit"*) und Efficiency (*"Effizienz"*) geht auf [Peter F. Drucker](https://de.wikipedia.org/wiki/Peter_Drucker) zurück.
+
+---
+
+>
+*"It is fundamentally the confusion between effectiveness and efficiency that stands between doing the right things and doing things right. **There is surely nothing quite so useless as doing with great efficiency what should not be done at all."*** (Peter F. Drucker)
+
+---
+
+![In der Produktentwicklung schlägt Effektivität (*"Die richtigen Dinge tun."*) Effizienz (*"Die Dinge richtig tun."*)](images/effektivitaet_effizienz.drawio.svg){width=60% #fig-effektivitaetvseffizienz}
+
+
+::: {.callout-important}
+## Pro-Tipp
+Einer der kritischen Erfolgsfaktoren bei der Produktentwicklung ist es richtig zu entscheiden, welches die Dinge sind, die getan werden müssen. Eine Fehlentscheidung bei den Dingen, die getan werden müssen, und auch noch so effizientes Handeln danach kann das Produktentwicklungsprojekt nicht mehr retten (siehe → "Rule of 10" der Fehlerkosten @sec-rule-of-10). Der geneigte Leser sei hiermit dringend angehalten sich stets die notwendige Zeit für die Entscheidung zu nehmen, welches die richtigen Dinge sind, die getan werden müssen, und hierfür auch Hilfe und Unterstützung in Anspruch zu nehmen.
+:::
+
+---
+
+>
+*"If it doesn't work, it doesn't matter how fast it doesn't work."* (Mich Ravera) 
+
+>
+*"Weeks of coding can save you hours of planning."* (Quelle: Unbekannt) 
+
+---
+
+
+
+---
+
+>
+*"The executive is, first of all, expected to get the right things done. And this is simply saying that he is expected to be effective. For manual work, we need only efficiency; that is, the ability to do things right rather than the ability to get the right things done. The manual worker can always be judged in terms of the quantity and quality of a definable and discrete output."* (Peter F. Drucker)
+
+---
+
+::: {.callout-tip}
+## Pro-Tipp
+In der der Produktentwicklung nachfolgenden Phase der Produktion (inkl. indirekter Bereiche wie z.B. der Anlageninstandhaltung) nimmt die Bedeutung Effizienz, ausgedrückt in der Fähigkeit, die dann bereits festgelegten Dinge, die getan werden müssen, richtig, nämlich effizient zu tun, zu und wird oftmals zum für die Wirtschaftlichkeit der Produktion des zuvor entwickelten Produkts zum entscheidenden Erfolgsfaktor.  
+:::
+
+<!--
+Effizient ist jeder Erfolg, der dem [ökonomischen Prinzip](https://de.wikipedia.org/wiki/%C3%96konomisches_Prinzip) entspricht. Effizienz bedeutet demnach, mit gegebenem Aufwand ein maximales Ergebnis zu erzielen (Maximalprinzip) oder ein bestimmtes Ergebnis mit minimalem Aufwand zu erzielen (Minimalprinzip). Jede andere Art, einen Erfolg zu erreichen, ist auch effektiv, aber nicht unbedingt effizient. Wenn Effizienz vorliegt, liegt auch stets Effektivität vor, nicht aber umgekehrt.
+-->
+
+
+<!--
+
+>*"Hobby ist der Versuch mit einem Maximum an Aufwand ein Minimum an Nutzen zu erzielen"* (Quelle: Unbekannt)
+
+-->

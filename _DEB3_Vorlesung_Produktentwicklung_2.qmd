@@ -1,0 +1,180 @@
+---
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+
+headlines:
+  off: true
+exercises:
+  solutions:
+  off: true
+worksheets:
+  off: true
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Skriptum zur Vorlesung WS2024/2025
+
+-------------------------------------------------------------------------- -->
+
+
+![](images/blank.png){width=8%}
+{{< include Abbildung_Flammarion1888.qmd >}}
+![](images/blank.png){width=8%}
+
+
+# Grundlagen {#sec-grundlagen}
+  {{< include Grundlagen_Produktentwicklung.qmd >}}
+## Technische Grundlagen
+    {{< include SI-Einheiten.qmd >}}
+    {{< include Werkstofftechnik.qmd >}}
+    {{< include DIN8580.qmd >}}
+## Methodische Grundlagen
+    {{< include Vision-Strategie-Ziele.qmd >}}
+    {{< include SMART.qmd >}}
+## Projektmanagement
+    {{< include Projekt.qmd >}}
+    {{< include Gantt.qmd >}}
+    {{< include Kritischer_Pfad.qmd >}}
+    {{< include Meilenstein.qmd >}}
+    {{< include Projektmanagement_Magisches_Dreieck.qmd >}}
+    {{< include Projektmanagement_Reporting.qmd >}}
+    {{< include Controlling.qmd >}}
+    {{< include Zielhierarchie.qmd >}}
+    {{< include Projektmanagement_Haertegradlogik.qmd >}}
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Kapitel 2: Ideenfindung und Konzeptentwicklung
+
+-------------------------------------------------------------------------- -->
+# Ideenfindung und Konzeptentwicklung {#sec-ideenfindungundkonzept}
+  {{< include Ziele_Ideenfindung_und_Konzeptentwicklung.qmd >}}
+## Methodische Grundlagen
+    {{< include Produkt.qmd >}}
+    {{< include Modelle_zum_Produktentstehungsprozess.qmd >}}
+    {{< include Technology_Hype_Cycle.qmd >}}
+## Konzeptentwicklung und Entscheidungsfindung
+    {{< include Lasten-_und_Pflichtenheft.qmd >}}
+    {{< include Produktdokumentation.qmd >}}
+    {{< include Mindmap.qmd >}}
+    {{< include Bewertungsmatrix.qmd >}}
+    {{< include Prinzip-_Konzept_und_Serientauglichkeit.qmd >}}
+  {{< include Modularisierung.qmd >}}
+  {{< include Simultaneous_Engineering.qmd >}}
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Kapitel 3: Entwurfs- und Entwicklungsphase
+
+-------------------------------------------------------------------------- -->
+# Entwurfs- und Entwicklungsphase {#sec-entwurfundentwicklung}
+  {{< include Ziele_Entwurfs-_und_Entwicklungsphase.qmd >}}
+  {{< include PWT.qmd >}}
+  {{< include Apple_A17_Pro_SoC.qmd >}}
+  {{< include Reverse_Engineering.qmd >}}
+  {{< include Simulation.qmd >}}
+  {{< include Monte-Carlo-Simulation.qmd >}}
+  {{< include FEM.qmd >}} 
+  {{< include 3DMaster.qmd >}}
+  {{< include Materialermuedung.qmd >}}
+  {{< include Betriebsfestigkeit.qmd >}}
+## NVH
+    {{< include NVH.qmd >}}
+## Kostenbeeinflussung im Produktentstehungsprozess
+    {{< include Kosten_im_Produktentstehungsprozess.qmd >}}
+    {{< include Rule-of-10.qmd >}}
+    {{< include PPG.qmd >}}
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Kapitel 4: Prototyping und Test
+
+-------------------------------------------------------------------------- -->
+# Prototyping und Test {#sec-prototypingundtest}
+  {{< include Ziele_Prototyping_und_Test.qmd >}}
+## Testing
+    {{< include Fermi-Problem.qmd >}}
+    {{< include Statistische_Versuchsplanung_DoE.qmd >}}
+  {{< include Umweltqualifizierung.qmd >}}
+  {{< include Rissprüfung.qmd >}}
+{{< include Qualitaet.qmd >}}
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Kapitel 5: Produktionsplanung und Produktion
+
+-------------------------------------------------------------------------- -->
+# Produktionsplanung und Produktion {#sec-produktionsplanungundproduktion}
+  {{< include Ziele_Produktionsplanung_und_Produktion.qmd >}}
+## Lean Production
+    {{< include Toyota_Produktionssystem.qmd >}}
+    {{< include TQM.qmd >}}
+    {{< include Kaizen.qmd >}}
+    {{< include JIT-JIS.qmd >}}
+    {{< include Kanban.qmd >}}
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Kapitel 6: Softskills
+
+-------------------------------------------------------------------------- -->
+# Softskills {#sec-softskills}
+  {{< include Softskills.qmd >}}
+  {{< include Team.qmd >}}
+  {{< include Die_fünf_Hüte_einer_Führungskraft.qmd >}}
+  {{< include Vier_Formen_Des_Kapitals.qmd >}}
+  {{< include Verhalten_als_Ware.qmd >}}
+  {{< include Johari-Fenster.qmd >}}
+  {{< include AIDA-Modell.qmd >}}
+  {{< include Eisenhower-Prinzip.qmd >}}
+  {{< include Bildzeitung-Test.qmd >}}
+  {{< include LoveChangeLeave.qmd >}}
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Kapitel 7: Literatur
+
+-------------------------------------------------------------------------- -->
+# Literatur {#sec-literatur}
+  {{< include Literatur.qmd >}}

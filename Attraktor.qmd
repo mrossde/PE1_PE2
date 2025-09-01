@@ -1,0 +1,136 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
+
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - Attraktor
+  - Phasenraum
+
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Attraktor
+
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Grundlagen
+## Komplexe Systeme
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+<!--
+::: {.callout-warning}
+## WARNING!
+**THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+### Attraktor {#sec-attraktor}
+
+::: {.callout-tip}
+## Begriffsklärung *"Attraktor"*
+Attraktor ist ein Begriff aus der Theorie dynamischer Systeme und beschreibt eine Untermenge eines Phasenraums (d. h. eine gewisse Anzahl von Zuständen), auf die sich ein dynamisches System im Laufe der Zeit zubewegt und die unter der Dynamik dieses Systems nicht mehr verlassen wird. Das heißt, eine Menge von Variablen nähert sich im Laufe der Zeit (asymptotisch) einem bestimmten Wert, einer Kurve oder etwas Komplexerem (also einer Region im n-dimensionalen Raum) und bleibt dann im weiteren Zeitverlauf in der Nähe dieses Attraktors.
+:::
+
+Ein Attraktor erscheint als klar erkennbare Struktur. Umgangssprachlich könnte man von einer Art *"stabilen Zustand"* eines Systems sprechen (wobei auch periodisch, also wellenartig wiederkehrende Zustände oder andere erkennbare Muster gemeint sein können), also ein Zustand, auf den sich ein System hinbewegt.
+
+### Phasenraum {#sec-phasenraum}
+
+::: {.callout-tip}
+## Definition *"Phasenraum"*
+Der [Phasenraum](https://de.wikipedia.org/wiki/Phasenraum) beschreibt die Menge aller möglichen Zustände eines dynamischen Systems. Ein Zustand wird durch einen Punkt im Phasenraum eindeutig abgebildet. 
+:::
+
+::: {.callout-note}
+## Attraktor einer Pendeluhr im Phasenraum (Dauer 10 min)
+
+**Aufgabe:**
+
+**a)** Skizzieren Sie das Phasenraumdiagramm sowie den zweidimensionalen Attraktor $(x(t),v(t))$ des Pendels einer mechanischen Pendeluhr unter der Annahme kleiner Winkel, eines als konstant angenommenem Antriebs $A$ und Dämpfung durch Luftreibung $−b \cdot \dot{𝑥}$.
+
+**b)** Ergänzen Sie zusätzlich in das von Ihnen bereits erstellte Phasenraumdiagramm die [Trajektorie](https://de.wikipedia.org/wiki/Trajektorie_(Physik)) des Pendels beim Startens der Uhr, ausgehend von einer Startposition eines ruhenden, sehr weit ausgelenkten Pendels (kein *"Anschubsen"* des Pendels).
+:::
+
+<!--
+::: {.callout-tip collapse=true}
+-->
+::: {.callout-tip}
+## Lösung Attraktor einer Pendeluhr im Phasenraum
+Differenzialgleichung einer Pendeluhr für kleine Winkel mit als konstant angenommenem Antrieb $A$ und Dämpfung durch Luftreibung $−b \cdot \dot{𝑥}$
+
+$$
+\ddot{𝑥} + 𝑏 \cdot \dot{𝑥} + \frac{𝑔}{𝐿} \cdot sin(𝑥) = 𝐴
+$$ {#eq-pendel}
+
+**a)**
+
+![Phasenraumdiagramm eines einfachen angetriebenen Pendels](images/Phasenraumdiagramm_Pendel.png){width=64% #fig-pendel}
+:::

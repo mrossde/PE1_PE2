@@ -1,0 +1,302 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+
+
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: false
+exercises:
+  solutions:
+    on: true 
+fileformat-svg:
+  off: true
+---
+
+<!--
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
+
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - Runs-Test
+  
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 2
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+
+::: {.content-visible unless-meta="headlines.off"}
+# Grundlagen
+## Statistik und Stochastik
+:::
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+------------------------------------------------------------------------------ 
+
+::: {.callout-warning}
+## WARNING!
+**THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
+:::
+
+-------------------------------------------------------------------------- -->
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Runs-Test
+
+-------------------------------------------------------------------------- -->
+
+### Runs-Test {#sec-runs-test}
+
+::: {.callout-tip}
+## Definition *"Runs-Test"*
+Der [Runs-Test](https://de.wikipedia.org/wiki/Run-Test) (auch Run-Test, Wald-Wolfowitz-Test, Iterationstest oder Geary-Test) ist ein nichtparametrischer statistischer Test auf Zufälligkeit einer Sequenz von Beobachtungen. Ausgegangen wird von einem [Urnenmodell](https://de.wikipedia.org/wiki/Urnenmodell) mit zwei Sorten Kugeln ([dichotome](https://de.wikipedia.org/wiki/Dichotomie) Grundgesamtheit). Es werden n Kugeln entnommen und es soll die Hypothese geprüft werden, dass die Entnahme zufällig erfolgt ist.
+:::
+
+Ein *"Run"* ist eine Folge gleicher Werte, die von einem anderen Wert unterbrochen wird. Beispiel: Dreimaliges Werfen einer Münze (dichotome Grundgesamtheit: Zahl (Z) und Kopf (K)) und der Folge Z K K sind zwei Runs.
+
+Der Runs-Test überprüft, ob die Anzahl der Runs signifikant von der Erwartung bei Zufälligkeit abweicht, sprich: Ob es zu viele oder zu wenige Runs gibt. Zu viele Runs deuten auf ein ständiges Wechseln (möglicherweise Alternation) hin, zu wenige Runs auf mögliche Muster oder Abhängigkeiten (Clustering).
+
+Voraussetzungen für den Runs-Test sind, dass die Daten aus einer → binären (dichotomen) Sequenz bestehen, die Beobachtungen → nominalskaliert^[Nominalskaliert bedeutet, dass Daten nur in Kategorien eingeteilt werden, ohne dass zwischen den Kategorien eine natürliche Reihenfolge oder Rangfolge besteht. Bei nominalskalierten Daten macht es keinen Sinn zu sagen, dass eine Kategorie *"größer"* oder *"kleiner"* ist als eine andere. Die Nominalskalierung ist das niedrigste Skalenniveau in der Statistik.] sind und dass keine Verteilung vorausgesetzt ist → nichtparametrisch^[Der Begriff nichtparametrisch wird in der Statistik verwendet, um Methoden oder Tests zu beschreiben, die keine Annahmen über die Verteilung der Daten machen – insbesondere keine Annahme einer bestimmten Wahrscheinlichkeitsverteilung wie z.B. der Normalverteilung]. 
+
+::: {.callout-important}
+Die Ergebnisse müssen für die Analyse mittels Runs-Test in ihrer chronologischen Abfolge vorliegen. Ein zeitliches Parallelisieren des Erzeugens von Ereignissen für die Analyse mittels Runs-Test ist daher **NICHT** zulässig!
+:::
+
+Für Stichprobenumfänge $n_1, n_2$ > 20 ist die Zahl der Runs $R$ annähernd normalverteilt. Dies ermöglicht die Berechnung von Erwartungswert und Standardabweichung der Anzahl zu erwartender Runs. Es sei
+
++ $n_1$ : Anzahl der Beobachtungen der ersten Kategorie (z.B. Zahl)
++ $n_2$ : Anzahl der Beobachtungen der zweiten Kategorie (z.B. Kopf)
++ $n$ : Gesamtanzahl der Beobachtungen ($n = n_1 + n_2$)
++ $R$ : beobachtete Anzahl der Runs
+
+Wie der geneigte Leser durch einfaches Nachrechnen sofort erkennen kann, kann der Erwartungswert $\mu$ und die Standardabweichung $\sigma$ der erwartete Anzahl an Runs wie folgt berechnet werden:
+
+$$
+\mu = \frac{2 \cdot n_1 n_2}{n} + 1
+$$ {#eq-runs_test_erwartungswert}
+
+$$
+\sigma = \sqrt{ \frac{2 \cdot n_1 n_2 \cdot (2 \cdot n_1 n_2 - n_1 - n_2)}{n^2 \cdot (n - 1)} }
+$$ {#eq-runs_test_standardabweichung}
+​
+
+Um eine Aussage über die Zufälligkeit zu treffen kann der folgende $z$-Wert mit den Werten einer Standardnormalverteilung verglichen werden.
+
+$$
+z = \frac{R - \mu}{\sigma}
+$$ {#eq-runs_test_z_wert}
+
+
+
+Typische Anwendungen des Runs-Test sind die Analyse von Zeitreihen, z.B. in der Qualitätssicherung (u.a. zur Zufälligkeit der Verteilung von Ereignissen wie z.B. Defekten), aber auch zum Test von Pseudozufallszahlengeneratoren.
+
+Der Run-Test kann angewendet werden, um Stationarität bzw. Nicht-Korrelation in einer Zeitreihe oder anderen Sequenz zu überprüfen, insbesondere auch dann, wenn die Verteilung des Merkmals unbekannt ist → nichtparametrisch. Die [Nullhypothese](https://de.wikipedia.org/wiki/Hypothese_(Statistik)#Nullhypothese) ist hier, dass aufeinanderfolgende Werte unkorreliert sind.
+
+::: {.callout-tip}
+## Grundgesamtheit mit mehr als zwei Ausprägungen des Merkmals
+Liegt eine endliche Folge reeller Zahlen $(x_{i})$ eines metrischen Merkmals vor, wird die Folge zunächst dichotomisiert: Man bestimmt zunächst den Median $\tilde{x}$ der Folge. Werte $x_{i}< \tilde{x}$ werden dann als Kugeln/Ereignesse der ersten Sorte, Werte 
+$x_{i}> \tilde{x}$ als Kugeln/Ereignisse der zweiten Sorte interpretiert. Die entstandene dichotome Folge kann dann wieder auf die bereits beschriebene Weise auf Zufälligkeit getestet werden.
+:::
+
+Der Run-Test wird in der Praxis häufig mit dem [Chi-Quadrat-Test](https://de.wikipedia.org/wiki/Chi-Quadrat-Test) kombiniert, da beide Prüfgrößen asymptotisch unabhängig voneinander sind.
+
+#### Exkurs: Häufig verwendete nichtparametrische Tests
+
+| Test                     | Verwendungszweck                                              |
+|--------------------------|---------------------------------------------------------------|
+| **Runs-Test**            | Test auf Zufälligkeit in einer binären oder allgemeinen Sequenz |
+| **Chi-Quadrat-Test**     | Test auf Häufigkeitsverteilungen bei nominalen Daten         |
+| **Wilcoxon-Test**        | Vergleich zweier gepaarter Stichproben (ordinal oder metrisch, nicht-normalverteilt) |
+| **Mann-Whitney-U-Test**  | Vergleich zweier unabhängiger Gruppen (ordinal oder metrisch, nicht-normalverteilt) |
+| **Kruskal-Wallis-Test**  | Vergleich von mehr als zwei unabhängigen Gruppen (ordinal)    |
+| **Spearman-Rangkorrelation** | Analyse des Zusammenhangs ordinaler oder rangtransformierter Daten |
+
+: Häufig verwendete nichtparametrische Tests  {#tbl-nichtparametrischetests .striped .hover .bordered}
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Aufgabe Runs-Test
+
+-------------------------------------------------------------------------- -->
+
+
+
+::: {.callout-note collapse=true}
+## Runs-Test *"Faire Münze"* (Dauer 15 min)
+
+**a)** Versuchen Sie mit Hilfe des Runs-Tests (und optional zusätzlich des Chi-Quadrat-Tests) einzuschätzen, ob eine Sequenz von jeweils 100 Kopf/Zahl-Ereignissen mittels Werfen einer fairen Münze oder durch "Ausdenken" von einem Menschen erzeugt worden ist. Nehmen Sie sich hierzu in Einzelarbeit 15 Minuten Zeit. 
+
+**Sequenz 1:**
+
+K Z Z K K K Z Z Z Z K K Z K Z K Z Z K K
+Z K K Z Z K K K Z Z Z Z Z Z K Z K K K Z
+Z K K Z Z Z K K Z K Z Z Z K Z K K K Z K
+K Z Z Z Z Z K K Z Z K K K K K K K Z K K
+K Z Z Z Z K Z Z Z K K Z K Z K K K K K Z
+
+**Sequenz 2:**
+
+K Z K K Z Z K Z K K Z Z K Z K K Z Z K Z
+K K Z Z K Z K K Z Z K Z K K Z Z K Z K K
+Z Z K Z K K Z Z K Z K K Z Z K Z K K Z Z
+K Z K K Z Z K Z K K Z Z K Z K K Z Z K Z
+K K Z Z K Z K K Z Z K Z K K Z Z K Z K K
+
+
+Welche der zwei folgenden Sequenzen ist/sind mittels Werfen einer fairen Münze erzeugt worden?
+
+Antwort (1 Antwort ist richtig):
+
+- [ ] Keine ist mittels einer fairen Münze erzeugt worden.
+- [ ] Nur Sequenz 1
+- [ ] Nur Sequenz 2
+- [ ] Alle sind mittels einer fairen Münze erzeugt worden.
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Lösung Runs-Test
+
+-------------------------------------------------------------------------- -->
+<!-- ::: {.content-hidden unless-meta="exercises.solutions"} -->
+::: {.callout-tip collapse=true} 
+## Lösung: Runs-Test *"Faire Münze"*
+
+**Analyse der Sequenz 1:**
+
++ Anzahl K: 52
++ Anzahl Z: 48
++ Anzahl Runs: 50
+
+**Interpretation:**
+
++ Verteilung (Chi-Quadrat-Test): Die Verteilung von 52 Köpfen und 48 Zahlen liegt sehr nahe am erwarteten 50/50-Verhältnis für 100 Würfe. Der Chi-Quadrat-Test würde hier einen sehr kleinen Wert ergeben, was ein Hinweis für Zufälligkeit ist.
++ Anzahl Runs (Runs-Test): Die Anzahl von 50 Runs liegt ebenfalls extrem nah an der erwarteten Anzahl von 51 Runs für 100 faire Münzwürfe. Dies deutet darauf hin, dass die Abfolge der Runs ebenfalls typisch für eine zufällige Sequenz ist und nicht "zu viele" oder "zu wenige" Wechsel aufweist, wie es bei "ausgedachten" Zahlen oft der Fall wäre. 
+
+Sequenz 1 entspricht im Runs- und Chi-Quadrat-Test sehr gut einer fairen Münze.
+
+**Analyse der Sequenz 2:**
+
++ Anzahl K: 50
++ Anzahl Z: 50
++ Anzahl Runs: 67
+
+**Interpretation:**
+
++ Verteilung (Chi-Quadrat-Test): Obwohl die Verteilung exakt 50/50 ist, was einen $\chi^2$-Wert von 0 ergeben würde, ist dies bei nur 100 Würfen bereits auffällig ("zu perfekt"). 
++ Anzahl Runs (Runs-Test): Die 67 Runs liegen deutlich über den erwarteten 51 Runs für eine wirklich zufällige Sequenz (und auch außerhalb des Bereichs der Standardabweichung von ca. 5 Runs um den Erwartungswert). Dies ist ein starkes Anzeichen dafür, dass die Sequenz nicht zufällig ist. Auffällig ist, dass es viele kurze Runs (K Z K Z) gibt und kaum längere Serien als 2 oder 3 gleiche Ergebnisse hintereinander gibt. 
+
+Das Fehlen langer Serien sowie die Tendenz zu zu perfekten Verteilungen sind zwei sehr charakteristische Merkmale, wie Menschen "Zufälligkeit" konstruieren. Mit großer Wahrscheinlichkeit ist Sequenz 2 daher nicht durch das Werfen einer fairen Münze erzeugt worden.
+
+**Lösung:**
+
+- [ ] Nur Sequenz 1
+:::
+<!-- ::: -->
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Aufgabe Runs-Test Verkehrszählung
+
+-------------------------------------------------------------------------- -->
+
+::: {.callout-note collapse=true}
+## Runs-Test *"Verkehrszählung"* (Dauer 5 min)
+
+**a)** **Fallbeispiel**: Sie führen auf der vierspurigen Bundesstraße B10 in Göppingen in Fahrtrichtung Stuttgart eine Verkehrszählung durch und unterscheiden hierbei zwischen PKW (P) und LKW (L). Sie führen die Zählung an einem Montag ab 10.oo h durch und erfassen die folgenden 1000 Fahrzeuge ($n_{gesamt} = n_P + n_L$). Im Anschluss führen Sie einen Runs-Test durch.
+
+**Aufgabe**: Was ist Ihre Erwartung an das Ergebnis des Runs-Test auf der B10 in Göppingen?
+
+- [ ] Der Runs-Test deutet darauf hin dass LKW und PKW voneinander unabhängig fahren.
+- [ ] Der Runs-Test deutet darauf hin dass beim Fahren zwischen LKW und PKW eine Wechselwirkung besteht.
+
+**b)** **Fallbeispiel**: Sie führen die Verkehrszählung mit gleichen Prämissen, jedoch diesmal auf der zweispuren Bundesstraße B10 in Amstetten durch. 
+
+**Aufgabe**: Was ist Ihre Erwartung an das Ergebnis des Runs-Test in Amstetten?
+
+- [ ] Der Runs-Test deutet darauf hin dass LKW und PKW voneinander unabhängig fahren.
+- [ ] Der Runs-Test deutet darauf hin dass beim Fahren zwischen LKW und PKW eine Wechselwirkung besteht.
+:::
+
+::: {.callout-tip collapse=true} 
+## Lösung: Runs-Test *"Verkehrszählung"*
+Ihr Dozent hat die Vermutung, dass aufgrund schlechter Überholmöglichkeit auf der zweispurigen B10 in Amstetten längere Serien vom Typ L P P P P P… (sprich: viele PKW, die sich hinter einem Lastwagen stauen weil sie diesen - anders als auf der vierspurigen B10 in Göppingen - nur schlecht überholen können) und dies zu einer signifikant unter dem Erwartungswert $\mu$ liegenden Anzahl von Runs $R$ führen müsste. 
+
+Da aktuell keine im Experiment erhobenen Daten vorliegen bleibt dies aber bis zur Durchführung einer Verkehrszählung nur eine Theorie, der der geneigte Leser folgen kann oder auch nicht. Ohne eine experimentelle Überprüfung 
+
+---
+
+> *"Versuch macht klug!"* (Quelle: Unbekannt)
+
+---
+:::

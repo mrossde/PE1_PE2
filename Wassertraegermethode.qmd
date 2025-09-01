@@ -1,0 +1,395 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
+
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Softskills
+  - Wasserträgermethode
+
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 2
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+
+::: {.content-visible unless-meta="headlines.off"}
+# Softskills
+## Kooperation und Kollaboration
+:::
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+------------------------------------------------------------------------------ 
+
+::: {.callout-warning}
+## WARNING!
+**THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
+:::
+
+-------------------------------------------------------------------------- -->
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Wasserträgermethode
+
+-------------------------------------------------------------------------- -->
+
+### Wasserträgermethode {#sec-wassertraegermethode}
+
+::: {.callout-tip}
+## Begriffsklärung: *"Wasserträgermethode"*
+Der Begriff *"Wasserträgermethode"* ist ein umgangssprachlicher, abwertender Ausdruck der eine Vermeidungsstrategie durch Personen beschreibt, die durch bewusst schlechte oder übermäßig passive Arbeit vermeiden, in verantwortungsvollere oder kritische Aufgaben eingebunden zu werden. 
+:::
+
+Der Begriff *"Wasserträgermethode"* entstammt einer Anlehnung an den Wasserträger im Sport – eine Person, die im Hintergrund da ist, aber nicht aktiv am Spiel teilnimmt.
+
+Ziel der *"Wasserträgermethode"* ist es, nicht mehr gefragt oder einbezogen zu werden – oftmals aus Bequemlichkeit, Frust oder Widerstand, möglicherweise aber auch aus Unsicherheit oder Überforderung.
+
+---
+
+> *"Arbeit fließt dorthin wo sie gemacht wird."* (Quelle: Unbekannt)
+
+---
+
+<!--
+Tabelle @tbl-merkmalewassertraeger fasst die typischen Merkmale zu Verhalten und Wirkung der Wasserträgermethode zusammen:
+-->
+
+| Verhalten | Wirkung |
+| - | - |
+| Erledigt Aufgaben oberflächlich oder mit Inkompetenz | Vertrauen sinkt, Person wird nicht mehr gefragt |
+| Hält sich aus Diskussionen und Verantwortung heraus | Bleibt *„unter dem Radar“* |
+| Leistet gerade das Minimum, um nicht abgemahnt zu werden | Wird von Führung und/oder Kollegen gemieden |
+| Wählt Aufgaben, die keine Verantwortung oder Sichtbarkeit haben  | Vermeidet Bewertung oder Kritik |
+
+: typischen Merkmale zu Verhalten und Wirkung der Wasserträgermethode  {#tbl-merkmalewassertraeger .striped .hover .bordered tbl-colwidths="[50,50]"}
+
+Personen, die das Verhalten der Wasserträgermethodik zeigen, handeln nicht immer böswillig. Das Veralten kann auch Ausdruck sein von Überforderung, Demotivation oder Resignation, eine psychologische Schutzstrategie in einem toxischem Arbeitsumfeld oder eine Folge fehlender Entwicklungsperspektive. 
+
+::: {.callout-warning}
+## Gefahr für den Erfolg von Projekten und die Leistung von Organisationseinheiten
+Unabhängig von der individuellen Motivation der Person stellen Personen, die der Wasserträgermethodik folgen, eine der größten Herausforderungen für gutes Teamwork überhaupt dar, sowohl in Projekten als auch in klassischen Organisationseinheiten. Personen, die nach der Wasserträgermethodik arbeiten einfach zu ignorieren und damit der Wasserträgermethodik zum Erfolg zu verhelfen mag kurzfristig bequem sein, schränkt aber die Erfolgsaussichten eines Projekts oder die Leistung einer Organisationseinheit nachhaltig ein. Der Schaden geht dabei weit über die fehlende Leistung der jeweiligen Personen hinaus: Nichts demotiviert Leistungstragende so sehr wie das tolerieren von Wasserträgern durch die Projektleitung oder die Führung einer Organisationseinheit.
+:::
+
+::: {.callout-important}
+## Pro-Tipp: Verantwortung liegt bei Projektleitung oder Führungskraft
+Die Aufgabe und Verantwortung, der Wasserträgermethode im Projekt oder der eigenen Organisationseinheit entgegen zu wirken, liegt **immer** bei der Projektleitung oder der für die Personen disziplinarisch vorgesetzten Führungskraft.
+:::
+
+
+#### Handlungsempfehlung in der Rolle Kollege/Kollegin
+
+::: {.callout-important}
+## Pro-Tipp!
+Sie sind als Kollege/Kollegin **nicht** dafür verantwortlich die Probleme mit und durch die jeweilige Person zu lösen, sind aber aufgefordert, bei der Lösung der Probleme aktiv mitzuwirken!
+:::
+
+| Handlung | Ziel |
+| - | - |
+| **Grenzen setzen statt kompensieren!** | Verbindlichkeit schaffen und **Eigenverantwortung erhalten**, ohne (wiederholt/dauerhaft) fremde Aufgaben zu übernehmen! ("*Gut gemeint ist nicht gleichbedeutend mit gut gemacht!"*) |
+| Beobachten statt bewerten | Eine sachliche Grundlage schaffen, um voreilige Urteile und Eskalation zu vermeiden |
+| **Ansprechen statt ausweichen** | **Probleme frühzeitig klären** und verdeckten Konflikten vorbeugen |
+
+: Handlungsempfehlungen in der Rolle Kollege/Kollegin  {#tbl-wassertraegerkollege .striped .hover .bordered tbl-colwidths="[50,50]"}
+
+<!-- Optional zusätzlich (nicht immer AKV des Kollegen/der Kollegin)
+| Ermutigen statt bloßstellen | Motivation und Eigenverantwortung fördern, ohne Scham oder Abwehr zu erzeugen |
+| Teamprozesse stärken statt Einzelne isolieren |Eine gesunde Teamkultur fördern, in der Zusammenarbeit und gegenseitige Verantwortung im Mittelpunkt stehen |
+-->
+
+::: {.callout-important}
+## Pro-Tipp!
+Die Handlungsempfehlung **Ansprechen statt ausweichen** schließt das Einbinden der Projektleitung (bzw. innerhalb der eigenen Organisationseinheit) der für den geneigten Leser selbst verantwortlichen eigenen disziplinarischen Führungskraft mit ein!
+:::
+
+<!--
+## ✅ **1. Haltung klären: Beobachten statt bewerten**
+
+* Versuche, **neutral zu beobachten** statt sofort zu urteilen („faul“, „unfähig“).
+* Überlege: **Was könnte hinter dem Verhalten stecken?** Überforderung? Frust? Schutz?
+
+---
+
+## 🗣️ **2. Gespräch auf Augenhöhe suchen**
+
+* Sprich die Person **respektvoll und direkt** an – nicht vorwurfsvoll, sondern im Sinne von „Mir ist aufgefallen …“.
+* Beispiel:
+  *„Mir ist aufgefallen, dass du dich oft zurückziehst, wenn Aufgaben verteilt werden. Woran liegt das?“*
+
+---
+
+## 🤝 **3. Angebote machen statt Druck erzeugen**
+
+* **Frage**, wo die Person sich sicher fühlt oder beitragen möchte.
+* **Ermutige sie**, sich bei klar umrissenen Aufgaben einzubringen.
+* Biete ggf. **Unterstützung oder Tandemarbeit** an, um Sicherheit zu geben.
+
+---
+
+## 🎯 **4. Verantwortung gemeinsam klären**
+
+* Setze dich dafür ein, dass im Team **Aufgaben fair verteilt** und **Verantwortung klar geregelt** ist.
+* Sprecht im Team offen über **Erwartungen, Rollen und Beiträge** – das hilft, Inaktivität sichtbar zu machen, ohne zu stigmatisieren.
+
+---
+
+## 🚫 **5. Nicht kompensieren oder aufrechnen**
+
+* Vermeide es, dauerhaft ihre Aufgaben mitzumachen – das **festigt** das Muster.
+* Halte die **eigene Grenze**: z. B. *„Ich habe meine Aufgaben, das müsst ihr bitte direkt klären.“*
+
+---
+
+## 🧩 **6. Systemisch denken – nicht nur individuell**
+
+* Frage dich (und ggf. das Team): **Was im System** begünstigt dieses Verhalten?
+
+  * Fehlen klare Verantwortlichkeiten?
+  * Wird Arbeit unfair verteilt?
+  * Fehlt Feedback oder Wertschätzung?
+
+---
+
+## 🧘 **7. Geduld und Klarheit**
+
+* Veränderungen brauchen Zeit – aber klare, ruhige Signale wirken.
+* Wiederhole ruhig, was dir auffällt, ohne dich in Ärger oder Zynismus zu verlieren.
+
+-->
+
+
+#### Handlungsempfehlung in der Rolle verantwortliche Projektleitung/Führungskraft
+
+<!--
+Als Projektleitung oder disziplinarisch verantwortliche Führungskraft ist der Umgang mit der *„Wasserträgermethode“* entscheidend – nicht nur wegen der betroffenen Person, sondern auch wegen der hochproblematischen Signalwirkung ins Projekt oder die Organisationseinheit.
+
+Handlungsempfehlungen: 
+
+
+
+## 🔍 **1. Verhalten beobachten – nicht vorschnell bewerten**
+
+* Unterscheide zwischen:
+
+  * **bewusster Leistungsverweigerung**
+  * **Unklarheit über Rolle oder Erwartungen**
+  * **Überforderung, Demotivation oder Rückzug**
+* Dokumentiere Beispiele für **konkrete Verhaltensmuster**, nicht nur Eindrücke.
+
+---
+
+## 🗣️ **2. Frühzeitig das Gespräch suchen**
+
+* Führe ein **wertschätzendes, klares Einzelgespräch**:
+
+  * **Beobachtung formulieren:** „Mir ist aufgefallen, dass du dich bei Aufgabenverteilungen häufig zurückhältst …“
+  * **Wirkung benennen:** „Das führt im Team zu Spannungen bzw. Unklarheit.“
+  * **Fragen stellen:** „Wie nimmst du deine Rolle im Team wahr?“
+  * **Zuhören. Ursachen klären.**
+
+---
+
+## 🎯 **3. Erwartungen und Verantwortung klären**
+
+* Formuliere **klare Erwartungen**: Was wird konkret von der Person erwartet?
+* Lege gemeinsam **verbindliche Beiträge, Aufgaben und Ziele** fest.
+* Dokumentiere Vereinbarungen – ggf. in einem kurzen Maßnahmenplan.
+
+---
+
+## 🛠️ **4. Unterstützung anbieten – aber nicht übernehmen**
+
+* Kläre, **wo die Person Unterstützung braucht** (z. B. fachlich, organisatorisch, persönlich).
+* Biete **zeitlich begrenzte Unterstützung oder Coaching** an, nicht dauerhafte Schonung.
+* Ziel: **(Wieder-)Befähigung, nicht Schonung.**
+
+---
+
+## ⏳ **5. Konsequenz bei fehlender Veränderung**
+
+* Setze einen **klaren zeitlichen Rahmen** zur Veränderung.
+* Kommuniziere offen: „Wenn sich das Verhalten nicht ändert, müssen wir über weitere Schritte sprechen.“
+* Bei anhaltender Vermeidung: **Personalgespräch, ggf. formale Maßnahmen** einleiten.
+
+---
+
+## 🧭 **6. Teamdynamik beobachten und steuern**
+
+* **Schütze das Team** vor Demotivation durch Unfairness („Einer macht nichts und kommt durch“).
+* Fördere **Transparenz bei Aufgabenverteilung**, z. B. durch Wochenpläne, Check-ins oder gemeinsame Review-Formate.
+* Etabliere eine **Feedbackkultur**, in der Verhalten angesprochen werden kann – ohne Schuldzuweisungen.
+
+---
+
+## 📌 Zusammenfassung: Dein Führungsleitfaden
+
+-->
+
+| Handlung | Ziel |
+| - | - |
+| Beobachten & differenzieren | Ursachen verstehen |
+| Einzelgespräch führen | Wahrnehmung spiegeln, Vertrauen schaffen |
+| Rolle und AKV klar definieren | Verantwortung klar benennen|
+| Erforderliche Ressourcen bereitstellen | Zielgerichtet unterstützen |
+| Konsequenzen kommunizieren | Verbindlich bleiben |
+| Team schützen & führen | Gerechtigkeit und Motivation sichern |
+
+: Handlungsempfehlungen in der Rolle disziplinarische Führungskraft  {#tbl-wassertraegerfuehrung .striped .hover .bordered tbl-colwidths="[50,50]"}
+
+
+
+#### Handlungsempfehlung in der Rolle betroffene Projektleitung/Führungskraft
+
+<!--
+Handlungsempfehlung in der Rolle betroffene Projektleitung/Führungskraft, die auf Zuarbeit des Mitarbeitenden einer anderen Organisationseinheit angewiesen ist
+
+
+Wenn du als Führungskraft **auf Mitarbeiter eines anderen Teams angewiesen bist**, diese aber nach der **„Wasserträgermethode“** agieren (also Aufgaben verschleppen, vermeiden oder bewusst schlecht machen), ist das besonders herausfordernd – denn du hast **keine direkte disziplinarische Führung**, bist aber **von deren Arbeit abhängig**. Hier ist ein klarer Handlungsrahmen für diese Konstellation:
+
+Handlungsempfehlung:
+
+## 🧭 **1. Verantwortung sauber klären**
+
+* **Dokumentiere konkret**, welche Aufgaben, Fristen und Absprachen betroffen sind.
+* Frage dich:
+
+  * **Wurde die Aufgabe klar genug kommuniziert und übergeben?**
+  * **Ist die Verantwortung eindeutig geregelt?** -> siehe A|K|V! -> Absprache mit dem für die Person disziplinarischen Vorgesetzten erforderlich PLUS klare Kommunikation der erzielten Absprachen an die jeweilige Person.
+
+🔧 *Tipp:* Nutze Übergabedokumente, schriftliche Aufträge, gemeinsame Protokolle.
+
+---
+
+## 🗣️ **2. Direkte Ansprache – kollegial, aber bestimmt**
+
+* Sprich den betreffenden Mitarbeitenden **im 4-Augen-Gespräch** an (nicht öffentlich).
+
+* Beispiel:
+
+  > „Wir sind auf deinen Beitrag bei \[XY] angewiesen, aber aktuell liegt \[konkrete Aufgabe] seit \[Datum] ohne Ergebnis vor. Woran liegt es? Wie können wir das auflösen?“
+
+* Kläre:
+
+  * **Kennt die Person die Aufgabe wirklich?**
+  * **Gibt es Überlastung oder Widerstände?**
+  * **Was braucht sie, um liefern zu können?**
+
+---
+
+## 🤝 **3. Über den disziplinarischen Vorgesetzten eskalieren – wenn nötig**
+
+Wenn keine Reaktion erfolgt oder Blockadeverhalten anhält:
+
+* **Sprich mit der zuständigen Führungskraft**:
+
+  * Sachlich, lösungsorientiert, mit Dokumentation.
+  * Kein persönlicher Angriff, sondern: *„Wir haben eine Schnittstellenstörung – ich brauche Ihre Unterstützung.“*
+* Ziel: **Verbindlichkeit über Führung herstellen.**
+
+---
+
+## 📊 **4. Transparenz im Projekt oder Team herstellen**
+
+* Binde Aufgaben und Fortschritte in **sichtbare Formate** ein:
+
+  * Projektboard, Weekly-Check-ins, Statusberichte
+* So wird **Nicht-Erledigung sichtbar**, ohne dass du Einzelpersonen bloßstellen musst.
+* Die Gruppe erzeugt **sozialen Druck** durch Transparenz.
+
+---
+
+## 🛡️ **5. Risiken managen – dich und dein Team schützen**
+
+* Schaffe Puffer oder Workarounds, wo möglich (z. B. redundante Skills, andere Quellen).
+* Kommuniziere Verzögerungen klar nach oben – mit Hinweis auf Abhängigkeiten.
+* Zeige deinem Team: *„Ich kümmere mich – ihr müsst nicht für andere ausbügeln.“*
+
+---
+
+## 🧠 **6. Systemisch denken: Ist es ein Einzelfall oder Muster?**
+
+Wenn diese Probleme **wiederholt mit demselben Team oder Bereich auftreten**, sollte das auf **Bereichs- oder Führungsebene angesprochen werden**:
+
+* z. B. in einer Leitungsrunde, über ein Retrospektivformat oder ein Schnittstellen-Review.
+
+---
+
+## 📌 **Zusammenfassung – dein Handlungsplan**
+-->
+
+| Handlung | Ziel |
+| - | - |
+| Aufgabe, Verantwortung, Fristen dokumentieren | Klarheit schaffen |
+| Direktes Gespräch mit Mitarbeitendem | Verständnis klären, Lösung suchen |
+| Disziplinarische Führung einbinden | Verbindlichkeit herstellen |
+| Aufgaben transparent machen (Board, Meetings) | Sozialer Druck, Sichtbarkeit |
+| Puffer & Eskalationen einplanen | Eigenes (Projekt-)Team schützen! |
+| Ggf. nächste Führungsebene involvieren | Strukturelle Ursachen bearbeiten |
+
+: Handlungsempfehlungen in der Rolle betroffene Projektleitung/Führungskraft  {#tbl-wassertraegerbetroffen .striped .hover .bordered tbl-colwidths="[50,50]"}

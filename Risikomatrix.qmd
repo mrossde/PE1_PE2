@@ -1,0 +1,124 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
+
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - Risikomanagment
+  - Risikomatrix
+
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Attraktor
+
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Grundlagen
+## Methodische Grundlagen
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+<!--
+::: {.callout-warning}
+## WARNING!
+**THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+### Risikomatrix {#sec-risikomatrix}
+
+::: {.callout-tip}
+## Definition *"Risikomatrix"*
+Eine [Risikomatrix](https://de.wikipedia.org/wiki/Risikomatrix) ist eine Methode im Zusammenhang einer [Risikoanalyse](https://de.wikipedia.org/wiki/Risikoanalyse). Sie dient der systematischen Abschätzung und Bewertung von Risiken. Hierzu wird die Wahrscheinlichkeit des Auftretens eines unerwünschten Ereignisses gegenüber dessen Auswirkung tabellarisch ins Verhältnis gesetzt. Die Methode der Risikomatrix ist zumeist Teil eines umfassenderen [Risikomanagements](https://de.wikipedia.org/wiki/Risikomanagement).
+:::
+
+::: {.content-visible unless-meta="fileformat-svg.off"}
+![Einfache Risikomatix](images/Risikomatrix.drawio.svg){width=64% #fig-risikomatrix}
+:::
+::: {.content-hidden unless-meta="fileformat-svg.off"}
+![Einfache Risikomatix](images/Risikomatrix.drawio.png){width=64% #fig-risikomatrix}
+:::
+
+::: {.callout-warning}
+## ACHTUNG! Vorsicht bei Ereignissen mit extremer ($\infty$) Schadenshöhe!
+Bei Ereignissen, denen eine extreme Schadenshöhe zugeschrieben wird kann die Risikomatrix nicht mehr sinnvoll angewendet werden! Bekannte Beispiele finden sich in der Atomtechnik (z.B. Unfälle von [Tschernobyl](Nuklearkatastrophe_von_Tschernobyl) (1986) und [Fukushima](https://de.wikipedia.org/wiki/Nuklearkatastrophe_von_Fukushima) (2011). 
+
+Eine Ursache hierfür ist, dass aufgrund der stets ungenauen Kenntnis der Eintrittswahrscheinlichkeit extremst seltener Ereignisse (die jedoch stets als größer Null angenommen werden muss da in der Realität kein System existiert das nicht versagen kann) die Multiplikation mit der als quasi $\infty$ angenommenen Schadenshöhe keine sinnvolle Bewertung und Klassifizierung des angenommenen Ereignisses mehr möglich ist.
+:::
+
+::: {.callout-tip}
+## Pro-Tipp!
+Ein in diesen Fällen zumeist praktiziertes Vorgehen ist, den [Erwartungswert](https://de.wikipedia.org/wiki/Erwartungswert) des postulierten Ereignisses nach bestem Stand der Erkenntnis abzuschätzen und mit einem bekannten und breit akzeptierten Erwartungswerts zu vergleichen. Beispielsweise gelten fahrerlose Assistenzsysteme als akzeptabel, wenn es gelingt die Systeme so zu ertüchtigen, dass von Assistenzsystemen gesteuerten Fahrzeuge im Mittel weniger Schaden verursachen als Fahrzeuge, die von Personen gesteuert werden.
+:::
+
+<!--
+Anwendung findet die Risikomatrix auch bei der Gefährdungsbeurteilung für die Ausstattung, die in Entwicklungsbereichen und Werkstätten zur Produktentwicklung, ebenso für die Gefährdungsbeurteilung der Werkzeuge, Maschinen und Anlagen in Produktions- und Instandhaltungsbereichen. Der geneigte Leser wird der Risikomatrix mit hoher Wahrscheinlichkeit früher oder später in seinem Berufsleben auf die eine oder andere Art begegnen.
+-->

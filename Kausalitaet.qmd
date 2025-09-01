@@ -1,0 +1,133 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
+
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - Kausalität
+  - Starke Kausalität
+  - Schwache Kausalität
+
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 2
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Korrelation
+
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Grundlagen
+## Komplexe Systeme
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+
+::: {.callout-warning}
+## WARNING!
+**THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
+:::
+
+### Kausalität {#sec-kausalitaet}
+
+::: callout-tip
+## Definition *"Kausalität"*
+Unter dem Begriff der Kausalität verstehen wir die Vorstellung oder die Idee, dass ein bestimmter Zustand A (die sogenannte Ursache) unter gewissen Bedingungen einen bestimmten Zustand B (die sogenannte Wirkung) hervorbringt. Dabei geht die Ursache A der Wirkung B zeitlich voraus.
+:::
+
+### Schwache und starke Kausalität
+
+::: callout-tip
+## Definition *"Schwache Kausalität"*
+Schwache Kausalität liegt vor, wenn exakt gleiche Ursachen die stets exakt gleiche Wirkung zur Folge haben. Bereits kleinste Änderungen im Ausgangszustand führen bei schwacher Kausalität zu erheblichen Änderungen im Ergebnis.
+:::
+
+<!--
+Schießt man z.B. ein Geschoss immer unter dem genau gleichen Winkel mit der genau reproduzierbaren Anfangsgeschwindigkeit bei stets gleichen Bedingungen in der Atmosphäre ab, so wird das Geschoss stets im selben Punkt unter dem selben Winkel landen.
+-->
+
+::: callout-tip
+## Definition *"Starke Kausalität"*
+Starke Kausalität liegt vor, wenn ähnliche Ursachen eine ähnliche Wirkung zur Folge haben. Kleine Änderungen im Ausgangszustand führen bei starker Kausalität nur zu kleinen Änderungen im Ergebnis.
+:::
+
+<!--
+Viele Systeme in der Natur sind labile Gleichgewichtszustände. Hier liegt keine starke Kausalität vor.
+-->
+
+<!--
+Man erkennt sofort, dass die oben geforderten stets exakt gleichen Anfangsbedingungen und die stets exakt gleichen Verhältnisse zwischen Start- und Zielort ideale Forderungen sind, von denen nur Theoretiker ausgehen. Bei der Anwendung der newtonschen Mechanik gingen wir wie selbstverständlich von der Gültigkeit der schwachen Kausalität aus.
+
+Diese Forderung verlangt eigentlich mehr als die schwache Kausalität: Völlig identische Ausgangsbedingungen für einen Versuch lassen sich in der Praxis bei Wiederholung nicht herstellen, trotzdem erhalten wir bei Wiederholungen des Versuchs eine gute Reproduzierbarkeit im Ergebnis.
+
+Schießen wir ein Geschoss mit fast der gleichen Geschwindigkeit und fast dem gleichen Winkel wie bei einem vorangegangen Versuch ab, so werden der Auftreffpunkt und der Auftreffwinkel nur unwesentlich von vorangegangenem Auftreffpunkt und Auftreffwinkel abweichen. Kleine Veränderungen im Anfangszustand des Systems haben auch nur kleine Änderungen im Endzustand zur Folge.
+
+ABBILDUNG
+
+Abb.: Starke und schwache Kausalität
+-->

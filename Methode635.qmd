@@ -1,0 +1,121 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
+
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - Kreativitätstechniken
+  - Methode 635
+
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 2
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+-->
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Methode 635
+
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Softskills
+## Kreativitätstechniken
+:::
+
+### Methode 635
+
+::: {.callout-tip}
+## Definition *"Methode 635"*
+Die [Methode 635](https://de.wikipedia.org/wiki/Methode_635) ist eine Kreativitätstechnik zur strukturierten Ideengenerierung in Gruppen. Die Methode kombiniert Elemente des Brainstormings mit schriftlicher Kollaboration und hilft, in kurzer Zeit viele Ideen zu einem Problem zu sammeln. Die Bezeichnung **635** steht für **6 Personen** in einer Gruppe, **3 Ideen** pro Runde, **5 Runden** des Ideenaustauschs.
+:::
+
+<!-- --------------------------------------------------------------------------
+EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT
+S T A R T -->
+::: {.content-visible unless-meta="extended-content.off"}
+<!-- ---------------------------------------------------------------------- -->
+
+::: {.callout-note}
+## Schritt-für-Schritt-Anleitung *"Methode 635"*
+
+1. **Problemstellung definieren**. Eine klare Fragestellung oder Herausforderung wird formuliert.
+
+2. **Arbeitsblätter verteilen**. Jede der 6 Personen erhält ein Blatt mit 3 leeren Zeilen für Ideen.
+
+3. **Erste Ideenrunde (~5 Minuten)**. Jede Person schreibt in die erste Zeile 3 Ideen zum Thema.
+
+4. **Blätter weitergeben**. Nach ~5 Minuten wird das Blatt im Uhrzeigersinn an die nächste Person weitergereicht.
+
+5. **Auf vorhandenen Ideen aufbauen**. Jede Person liest die vorherigen Einträge und ergänzt in der nächsten Zeile 3 neue oder weiterentwickelte Ideen.
+
+6. **Schritt 4 und 5 wiederholen**. Dies geschieht insgesamt 5 Mal, bis jede Person jedes Blatt einmal hatte.
+
+7. **Ergebnisanalyse**. Am Ende gibt es 6 Blätter mit insgesamt **(6 × 3 × 6) = 108 Ideen**, die anschließend bewertet und weiterentwickelt werden können.
+
+Die *"Methode 635"* ermöglicht ein strukturiertes Brainstorming in einer Gruppe. Sie nutzt Gruppendynamik, **ohne dass laute Stimmen dominieren** und **verhindert Denkblockaden**, da Ideen von anderen als Inspiration dienen. Mit der *"Methode 635"* kann eine hohe Anzahl an Ideen in kurzer Zeit (~30 Minuten) erzeugt werden.
+:::
+
+<!-- ---------------------------------------------------------------------- -->
+:::
+<!-- S T O P
+EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT
+--------------------------------------------------------------------------- -->

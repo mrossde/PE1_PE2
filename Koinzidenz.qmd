@@ -1,0 +1,129 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
+
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - Koinzidenz
+
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Koinzidenz
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Grundlagen
+## Komplexe Systeme
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+
+::: {.callout-warning}
+## WARNING!
+**THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
+:::
+
+
+### Koinzidenz {#sec-koinzidenz}
+
+::: {.callout-tip}
+## Definition *"Koinzidenz"*
+[Koinzidenz](https://de.wikipedia.org/wiki/Koinzidenz) ist ein zeitliches oder räumliches Zusammenfallen von Ereignissen oder Zusammentreffen von Objekten.
+:::
+
+::: {.callout-important}
+## Koinzidenz ist kein Beweis für Kausalität, schließt aber Kausalität auch nicht aus!
+Aus dem Auftreten von Koinzidenz alleine darf nicht auf einen kausalen Zusammenhang geschlossen werden, auch wenn ein kausaler Zusammenhang tatsächlich vorhanden sein kann.
+:::
+
+
+<!-- --------------------------------------------------------------------------
+EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT
+S T A R T -->
+::: {.content-visible unless-meta="extended-content.off"}
+<!-- ---------------------------------------------------------------------- -->
+
+### Notwendige und hinreichende Bedingung
+
+::: {.callout-tip}
+## Definition *"Notwendige und hinreichende Bedingung"*
+[Notwendige Bedingung](https://de.wikipedia.org/wiki/Notwendige_und_hinreichende_Bedingung) und [hinreichende Bedingung](https://de.wikipedia.org/wiki/Notwendige_und_hinreichende_Bedingung) sind Begriffe aus der Theorie wissenschaftlicher Erklärungen, die Bedingungen in zwei verschiedene Typen unterteilen. Die unterschiedlichen Beziehungen zwischen **Bedingendem** und **Bedingtem** werden auch in der Aussagenlogik behandelt.
+:::
+
+::: {.callout-note}
+## Beispiel *"Notwendige und hinreichende Bedingung"*
+*"Gemahlene Bohnen sind eine notwendige Bedingung, um Kaffee zu kochen – ohne sie geht es nicht. Aber sie sind nicht hinreichend, da man zum Kochen auch Wasser benötigt."*
+:::
+
+<!-- ---------------------------------------------------------------------- -->
+:::
+<!-- S T O P
+EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT
+--------------------------------------------------------------------------- -->

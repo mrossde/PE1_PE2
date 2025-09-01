@@ -1,0 +1,122 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+
+
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: false
+exercises:
+  solutions:
+    on: true 
+fileformat-svg:
+  off: true
+---
+
+<!--
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
+
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - Runs-Test
+  
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 2
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+
+::: {.content-visible unless-meta="headlines.off"}
+# Grundlagen
+## Statistik und Stochastik
+:::
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+------------------------------------------------------------------------------ 
+
+::: {.callout-warning}
+## WARNING!
+**THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
+:::
+
+-------------------------------------------------------------------------- -->
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       White Noise
+
+-------------------------------------------------------------------------- -->
+
+### White Noise {#sec-white-noise}
+
+::: {.callout-tip}
+## Definition *"White Noise"*
+In der Stochastik bezeichnet [weißes Rauschen](https://de.wikipedia.org/wiki/Wei%C3%9Fes_Rauschen) in diskreter Zeit einen diskreten stochastischen Prozess von unkorrelierten Zufallsvariablen mit Erwartungswert 0 und konstanter Varianz. Weißes Rauschen ist eine stochastische Distribution. Es ist schwach stationär und hat eine konstante Spektraldichte. Die Autokorrelationsfunktion von weißem Rauschen ist ein [Dirac-Impuls](https://de.wikipedia.org/wiki/Delta-Distribution).
+:::
+
+Das weiße Rauschen stellt den einfachsten stochastischen Prozess dar, jedoch werden viele komplexere Prozesse und Zeitreihen aus solchen konstruiert, etwa der [Random Walk](https://de.wikipedia.org/wiki/Irrfahrt_(Stochastik)).

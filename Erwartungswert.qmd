@@ -1,0 +1,193 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+
+exercises:
+  solutions:
+    on: true 
+---
+
+<!--
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
+
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - Erwartungswert
+
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Zufall
+
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Grundlagen
+## Statistik und Stochastik
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+<!--
+::: {.callout-warning}
+## WARNING!
+**THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+### Statistik {#sec-statistik}
+
+::: {.callout-tip}
+## Begriffsklärung *"Statistik"*
+Die [Statistik](https://de.wikipedia.org/wiki/Statistik) *„ist die Lehre von Methoden zum Umgang mit quantitativen Informationen“* (Daten). Sie ist eine Möglichkeit, *„eine systematische Verbindung zwischen Erfahrung (Empirie) und Theorie herzustellen“*.Unter Statistik versteht man die Zusammenfassung bestimmter Methoden zur Analyse empirischer Daten. Wenn moderne Technologien und Methoden (z. B. Maschinelles Lernen) zum Einsatz kommen, wird Statistik heute auch als Teilgebiet der *"Data Science"* bezeichnet.
+:::
+
+
+
+### Stochastik {#sec-stochastik}
+
+::: {.callout-tip}
+## Begriffsklärung *"Statistik"*
+
+Die [Stochastik](https://de.wikipedia.org/wiki/Stochastik) (*"Kunst des Vermutens"*) ist die Mathematik des Zufalls oder die Mathematik der Daten und des Zufalls und fasst als Oberbegriff die Gebiete Wahrscheinlichkeitstheorie und mathematische Statistik zusammen.
+
+Die Wahrscheinlichkeitstheorie stellt die Begriffe zur mathematischen Modellierung von Vorgängen bereit, in denen zufällige Ereignisse auftreten. Auf dieser Grundlage liefert die Mathematische Statistik Verfahren, um aus Beobachtungsdaten Modellparameter zu bestimmen und Aussagen über die Angemessenheit der Modellierung machen zu können.
+:::
+
+
+
+### Wahrscheinlichkeit 
+
+Wahrscheinlichkeiten werden mit dem Buchstaben $P$ dargestellt (*"probability*"). Eingeführt wurde diese Schreibweise von [Pierre-Simon Laplace](https://de.wikipedia.org/wiki/Pierre-Simon_Laplace) im Jahr 1812.
+
+
+
+### Erwartungswert {#sec-erwartungswert}
+
+Der Erwartungswert ist ein Grundbegriff der ([Stochastik](https://de.wikipedia.org/wiki/Stochastik)). Der Erwartungswert ist eine Kennzahl einer Zufallsvariablen. Der Erwartungswert wird verwendet für theoretische Modelle, nicht für beobachtete Daten.
+
+::: {.callout-tip}
+## Definition *"Erwartungswert"*
+Der Erwartungswert ist der theoretische [Mittelwert](https://de.wikipedia.org/wiki/Mittelwert) (mathematische Erwartung) einer Zufallsvariablen über alle möglichen Ausgänge, gewichtet mit deren Wahrscheinlichkeiten.  
+:::
+
+::: {.callout-note collapse="true"}
+## Exkurs *"Arithmetischer Mittelwert (arithmetisches Mittel)"*"
+Der [arithmetischer Mittelwert](https://de.wikipedia.org/wiki/Mittelwert#Arithmetischer_Mittelwert) $\bar{x}$ ist der Durchschnittswert einer endlichen Anzahl von Beobachtungen. Der Mittelwert wird in der Statistik bei echten, beobachteten Daten verwendet.
+
+$$
+\bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i
+$$ {#eq-mittelwert}
+:::
+
+Der [Erwartungswert](https://de.wikipedia.org/wiki/Erwartungswert) berechnet sich als nach der Wahrscheinlichkeit gewichtetes Mittel der Werte, die die Zufallsvariable annimmt. Der Erwartungswert muss selbst jedoch nicht einer dieser Werte sein.
+
+Das Konzept des Erwartungswertes geht auf [Christiaan Huygens](https://de.wikipedia.org/wiki/Christiaan_Huygens) zurück. In einer Abhandlung über Glücksspiele von 1656 beschreibt Huygens den erwarteten Gewinn eines Spiels als „het is my soo veel weerdt“ (*„es ist mir so viel wert“*). Frans van Schooten verwendete in seiner Übersetzung von Huygens’ Text ins Lateinische den Begriff expectatio (*„Erwartung“*). [Jakob Bernoulli](https://de.wikipedia.org/wiki/Jakob_I_Bernoulli) (siehe → [Binominalverteilung](https://de.wikipedia.org/wiki/Binomialverteilung)) übernahm schließlich den von van Schooten eingeführten Begriff in der Form valor expectationis (*„Erwartungswert“*).
+
+Das Symbol $E$ für Erwartungswert wurde erst ab dem 20. Jahrhundert eingeführt. Heute wird in der mathematischen Literatur häufig die Schreibweise ${E} \left(X\right)$ für den Erwartungswert der Zufallsvariable $X$ verwendet.
+
+<!--
+#### Erwartungswert einer diskreten reellen Zufallsvariable
+-->
+
+Im reellen diskreten Fall errechnet sich der Erwartungswert als die Summe der Produkte aus den Wahrscheinlichkeiten jedes möglichen Ergebnisses des Experiments und den „Werten“ dieser Ergebnisse.
+
+Ist $X$ eine reelle diskrete Zufallsvariable, die die Werte $(x_{i})_{i\in I}$ mit den jeweiligen Wahrscheinlichkeiten $(p_{i})_{i\in I}$ annimmt (mit $I$ als abzählbarer Indexmenge), so errechnet sich der Erwartungswert 
+${E} (X)$ im Falle der Existenz mit:
+
+$$
+{E} (X)=\sum _{i\in I} p_{i} \cdot x_{i}
+$$ {#eq-erwartungswert}
+
+::: {.content-hidden unless-meta="exercises.solutions.on"}
+::: {.callout-tip collapse="true"} 
+## Beispiel *"Erwartungswert eines perfekten (fairen) sechsseitigen Würfels"*
+$$
+  {E}(X) = \sum_{i=1}^{6} i \cdot \frac{1}{6} = 3.5
+$$
+<!--
+${E} = \frac{1}{6} \cdot 1 + \frac{1}{6} \cdot 2 + \frac{1}{6} \cdot 3 + \frac{1}{6} \cdot 4 + \frac{1}{6} \cdot 5 + \frac{1}{6} \cdot 6 = 3,5$
+-->
+:::
+:::
+
+
+::: {.callout-note collapse="true"}
+## Fallbeispiel *"Verbesserte Routenberechnung eines Navigationssystems"* (Dauer 5 min)
+
+**Fallbeispiel:** Für die verbesserte Routenberechnung eines Navigationssystems sollen die zu erwartenden Standdauern vor Bahnübergängen mit in die Berechnung der schnellsten Route einbezogen werden. Ein Beispiel hierfür ist ein auf einer Nebenstrecke liegender Bahnübergang, der durch eine Schranke gesichert wird. Auswertungen aus bereits vorliegenden Daten zeigen, dass 95 Prozent aller Fahrzeuge, die den Bahnübergang passieren, diesen ohne anzuhalten queren können. Eine Rückfrage bei der die Nebenstrecke betreibenden Bahngesellschaft hat ergeben dass die Schranke beim Passieren jedes der die Strecke nur selten am Tag befahrenden Züge 3 Minuten geschlossen bleibt.
+
+**Aufgabe:** Wie lange ist die zu erwartende (und bei der Routenberechnung zu berücksichtigende) Standdauer (→ *"Erwartungswert" $E$*) eines Fahrzeugs beim queren des Bahnübergangs?
+:::
+
+::: {.content-hidden unless-meta="exercises.solutions.on"}
+::: {.callout-tip collapse="true"} 
+## Lösung *"Verbesserte Routenberechnung eines Navigationssystems"*
+$$
+  {E} = (0,95 \cdot 0 + 0,05 \cdot \frac{3 \cdot 60}{2}) \; Sekunden = 4,5 \; Sekunden
+$$
+
+Tipp: Die Standdauer der Fahrzeuge, die bei geschlossener Schranke an den Bahnübergang kommen, ist für sich genommen ein eigener Erwartungswert. Dabei wird davon ausgegangen, dass das Eintreffen der Fahrzeuge vor der geschlossenen Schranke einer [stetigen Gleichverteilung](https://de.wikipedia.org/wiki/Stetige_Gleichverteilung) folgt.
+:::
+:::

@@ -1,0 +1,208 @@
+---
+title: "DEB3 Produktentwicklung 2"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 2"* für den Studiengang Digital Engineering DEB5
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  
+
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: false
+exercises:
+  solutions:
+    on: true 
+fileformat-svg:
+  off: true
+---
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Skriptum zur Vorlesung WS2025/2026
+
+-------------------------------------------------------------------------- -->
+
+<!-- -------------------------------------------------------------------------
+
+                       Kapitel 1: Grundlagen
+
+-------------------------------------------------------------------------- -->
+# Grundlagen {#sec-grundlagen}
+  {{< include Abkürzungen.qmd >}}
+  {{< include Grundlagen_Produktentwicklung.qmd >}}
+
+## Begriffe
+    {{< include Wirtschaftlichkeit.qmd >}}
+    {{< include Messung.qmd >}}
+    
+
+## Methodische Grundlagen
+    {{< include Golden_Circle.qmd >}}
+    {{< include Kano-Modell.qmd >}}
+    {{< include Multi-Moment-Aufnahme.qmd >}}
+    {{< include Risikomatrix.qmd >}}
+
+## Statistik
+    {{< include Statistik.qmd >}}
+
+## Stochastik
+    {{< include Abbildung_Laplace.qmd >}}
+    {{< include Stochastik.qmd >}}
+    {{< include Erwartungswert.qmd >}}
+    {{< include Median.qmd >}}
+
+<!-- Graphentheorie -->
+
+
+## Komplexe Systeme
+
+    {{< include Zufall.qmd >}}
+
+    {{< include Kausalitaet.qmd >}}
+    {{< include Korrelation.qmd >}}
+    {{< include Scheinkorrelation.qmd >}}
+    {{< include Koinzidenz.qmd >}} 
+
+    {{< include Attraktor.qmd >}}
+    {{< include Takens_Theorem.qmd >}}
+
+    {{< include Zufallszahlengeneratoren.qmd >}}
+    {{< include Runs-Test.qmd >}}
+    {{< include Chi-Quadrat-Test.qmd >}}
+    {{< include Pi.qmd >}}
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Kapitel 2: Ideenfindung und Konzeptentwicklung
+
+-------------------------------------------------------------------------- -->
+# Ideenfindung und Konzeptentwicklung {#sec-ideenfindungundkonzept}
+ 
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Kapitel 3: Entwurfs- und Entwicklungsphase
+
+-------------------------------------------------------------------------- -->
+# Entwurfs- und Entwicklungsphase {#sec-entwurfundentwicklung}
+
+## Softwarewerkzeuge
+
+    {{< include CAD.qmd >}}
+    {{< include PLM.qmd >}}
+ 
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Kapitel 4: Prototyping und Test
+
+-------------------------------------------------------------------------- -->
+# Prototyping und Test {#sec-prototypingundtest}
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Kapitel 5: Produktionsplanung und Produktion
+
+-------------------------------------------------------------------------- -->
+# Produktionsplanung und Produktion {#sec-produktionsplanungundproduktion}
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Kapitel 6: Softskills
+
+-------------------------------------------------------------------------- -->
+# Softskills {#sec-softskills}
+
+<!--
+## Persönliche Kompetenzen und interpersonelle Fähigkeiten
+-->
+  {{< include Johari-Fenster.qmd >}}
+  {{< include Vier-Seiten-Modell.qmd >}}
+  {{< include Feedback.qmd >}}
+
+  ## Kooperation und Kollaboration
+  {{< include Spieltheorie.qmd >}}
+  {{< include Verhandlungsstrategie.qmd >}}
+
+    {{< include Harvard-Verhandlungsstrategie.qmd >}}
+
+## Kreativitätstechniken {#sec-kreativitaetstechniken}
+    {{< include Methode635.qmd >}}
+    {{< include Six-Thinking-Hats.qmd >}}
+
+ 
+
+<!-- -------------------------------------------------------------------------
+
+                       Kapitel 7: Literatur
+
+-------------------------------------------------------------------------- -->
+# Literatur {#sec-literatur}
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Kapitel 8: Anhang
+
+-------------------------------------------------------------------------- -->
+# Anhang {#sec-anhang}
+
+## Rezepte
+  {{< include Rezept_Brownies.qmd >}}

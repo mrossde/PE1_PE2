@@ -1,0 +1,151 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
+
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - Zufall
+
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Zufall
+
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Grundlagen
+## Komplexe Systeme
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+<!--
+::: {.callout-warning}
+## WARNING!
+**THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+### Zufall {#sec-zufall}
+
+Obwohl der Begriff *„Zufall“* weit verbreitet ist, gibt es keine allgemeingültige Definition des Zufalls.
+
+::: {.callout-tip}
+## Begriffsklärung *"Zufall"*
+Der Begriff *"Zufall"* bezieht sich auf ein Ereignis oder eine Situation, die ohne erkennbare Ursache oder vorhersehbaren Zweck auftritt. Es handelt sich um ein Phänomen, bei dem das Eintreten oder der Ausgang eines Ereignisses nicht durch bekannte oder kontrollierbare Faktoren beeinflusst wird. 
+:::
+
+In verschiedenen Kontexten kann der Begriff *"Zufall"* unterschiedliche Bedeutungen haben. In der Wahrscheinlichkeitstheorie und Statistik bezieht sich der Zufall auf das Auftreten eines Ereignisses, das nicht vorhersagbar ist, aber durch Wahrscheinlichkeiten beschrieben werden kann. In der Philosophie und Metaphysik gibt es verschiedene Debatten über den wahren Charakter des Zufalls, einschließlich Fragen über Determinismus, Kausalität und die Existenz von reinen Zufallsereignissen.
+
+Der Begriff "Zufall" wird oft im Alltag verwendet wird, um eine Situation zu beschreiben, die als unerwartet oder überraschend wahrgenommen wird. In vielen Fällen kann der vermeintliche Zufall jedoch auf komplexen Ursachen beruhen, die möglicherweise nicht sofort offensichtlich sind.
+
+Wenn von **Zufall** gesprochen wird, kann gemeint sein:
+
+**1.** Ein Ereignis geschieht objektiv ohne Ursache (*"objektiver Zufall"*).
+
+**2.** **Ein Ereignis geschieht, ohne dass eine Ursache erkennbar ist.**
+
+**3.** Ein Ereignis geschieht, bei dem man zwar die Einflussfaktoren kennt, sie aber nicht messen oder steuern kann, so dass das Ergebnis nicht vorhersehbar ist (*„empirisch-pragmatischer Zufall“*).
+
+**4.** Zwei Ereignisse stehen in keinem (bekannten) kausalen Zusammenhang.
+
+**5.** Umgangssprachlich das Gegenteil von Absicht, Planung oder Vorhersehbarkeit.
+
+::: {.callout-important}
+## *"Zufall"* in diesem Skript und der zugehörigen Vorlesung
+In diesem Skript und der zugehörigen Vorlesung wird - sofern nicht anders angegeben - von Zufall gesprochen, wenn gemeint ist oder davon ausgegangen wird, dass **ein Ereignis geschieht, ohne dass eine Ursache erkennbar ist**. Zusätzlich wird in diesem Skript und der zugehörigen Vorlesung jedoch davon ausgegangen, dass es immer eine [Kausaliät](https://de.wikipedia.org/wiki/Kausalit%C3%A4t) zwischen Ursachen und Wirkungen gibt, also für die in Skipt und Vorlesungen behandelten Inhalte **KEIN** *"objektiver Zufall*" wirksam ist.
+:::
+
+
+<!-- --------------------------------------------------------------------------
+EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT
+S T A R T -->
+::: {.content-visible unless-meta="extended-content.off"}
+<!-- ---------------------------------------------------------------------- -->
+
+::: {.callout-note}
+## Exkurs: *"Objektiver Zufall"*
+Der Begriff [Objektiver Zufall](https://de.wikipedia.org/wiki/Indeterminismus#Objektiver_Zufall) bezeichnet Zufallsereignisse, die nicht reduzierbar sind, also nicht von (verborgenen) Ursachen abhängen, sondern fundamental unbestimmt und rational nicht erklärbar sind.
+
+Ob es *"objektiven Zufall"* überhaupt gibt ist bis heute nicht geklärt (siehe z.B. Albert Einsteins berühmtes Zitat *"Der Alte würfelt nicht."*)^[Das Zitat *"Der Alte würfelt nicht."* stammt aus einem Brief, den Albert Einstein am 4. Dezember 1926 an Max Born schrieb. In diesem Brief äußert Albert Einstein seine Bedenken gegenüber der probabilistischen Natur der Quantenmechanik.]. Anders als Einstein sahen und sehen eine Vielzahl von Physikern (u.a. Niels Bohr, siehe →  [Bohr-Einstein-Debatte](https://de.wikipedia.org/wiki/Bohr-Einstein-Debatte)) in einer Reihe quantenmechanische Phänomene (z.B. dem radioaktien Zerfall von Atomen) nach der [Kopenhagener Deutung](https://de.wikipedia.org/wiki/Kopenhagener_Deutung_der_Quantenmechanik) starke Indizien für die Existenz *"objektiven Zufalls"*. Auch wenn nach aktuellem Kenntnisstand vieles für die Existenz des *"objektiven Zufalls"* auf quantenmechanischer Ebene spricht steht ein wissenschaftlicher Beweis bis heute aus.
+:::   
+
+<!-- ---------------------------------------------------------------------- -->
+:::
+<!-- S T O P
+EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT
+--------------------------------------------------------------------------- -->
+
+
+<p style="text-align: center;">![](images/AdobeStock_589506892.png){width=20%}</p>
+
+::: {.callout-important}
+## Pro-Tipp
+Bei der Produktentwicklung wird dem geneigten Leser dringendst empfohlen dem diesem Skript und dieser Vorlesung zugrunde liegenden Vorgehen zu folgen und **stets von gegebener [Kausaliät](https://de.wikipedia.org/wiki/Kausalit%C3%A4t) zwischen Ursache und Wirkung und den Abfolgen von Ereignissen und Zuständen auszugehen**, auch dann, wenn dem geneigten Leser (und ebenso dem Dozenten) die Zusammenhänge zwischen Ursache und Wirkung und der Abfolge von [Ereignissen](https://de.wikipedia.org/wiki/Ereignis) und [Zuständen](https://de.wikipedia.org/wiki/Zustand_(Physik)) vollkommen unbekannt sind und möglicherweise trotz aller Bemühungen auch unbekannt und damit häufig auch unbeeinflussbar bleiben.
+:::

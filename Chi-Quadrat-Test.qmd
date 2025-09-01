@@ -1,0 +1,202 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
+
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - Chi-Quadrat-Test
+  
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 2
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+
+::: {.content-visible unless-meta="headlines.off"}
+# Grundlagen
+## Statistik und Stochastik
+:::
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+------------------------------------------------------------------------------ 
+
+::: {.callout-warning}
+## WARNING!
+**THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
+:::
+
+-------------------------------------------------------------------------- -->
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Chi-Quadrat-Test (χ²-Test)
+
+-------------------------------------------------------------------------- -->
+
+### Chi-Quadrat-Test {#sec-chi-quadrat-test}
+
+::: {.callout-tip}
+## Definition *"Chi-Quadrat-Test"*
+Der Chi-Quadrat-Test ($\chi^2$-Test) ist ein statistisches Verfahren, mit dem überprüft werden kann, ob es einen signifikanten Unterschied zwischen beobachteten und erwarteten Häufigkeiten in kategorialen Daten gibt. Der Chi-Quadrat-Test gehört zu den nicht-parametrischen Tests und basiert auf der Annahme, dass die Daten bestimmten theoretischen Verteilungen folgen.
+:::
+
+
+Es gibt zwei Hauptarten des Chi-Quadrat-Tests:
+
+1. **Chi-Quadrat-Anpassungstest** (Goodness-of-Fit-Test). Der Chi-Quadrat-Anpassungstest prüft, ob eine beobachtete Verteilung einer erwarteten (theoretischen) Verteilung entspricht. Beispiel: Ist eine Münze fair? (Erwartet (Nullhypothese): Kopf und Zahl kommen gleich häufig vor.)
+
+2. **Chi-Quadrat-Unabhängigkeitstest**. Chi-Quadrat-Unabhängigkeitstest prüft, ob zwei kategoriale Variablen statistisch voneinander unabhängig sind. Beispiel: Gibt es einen Zusammenhang zwischen der Storchenpopulation und der Geburtenrate in einem Bundesland? (siehe → Scheinkorrelation @sec-scheinkorrelation)
+
+::: {.callout-tip}
+## Begriffsklärung *"Kategoriale Variablen"*
+[Kategoriale Variablen](https://de.wikipedia.org/wiki/Kategoriale_Variable) (auch qualitative Variablen genannt) sind Variablen, deren Ausprägungen nicht numerisch, sondern kategorisch sind – das heißt, sie bezeichnen Gruppen, Merkmale oder Klassen, nicht Zahlen im mathematischen Sinn. Die Ausprägungen kategorialer Variablen Die Werte diskret (abzählbar). Kategoriale Variable können nicht sinnvoll addiert oder gemittelt werden. Sie beschreiben die Zugehörigkeit zu einer Kategorie, nicht deren Ausmaß.
+:::
+
+
+**Teststatistik**
+
+Die Chi-Quadrat-Teststatistik berechnet sich aus:
+$$
+\chi^2 = \sum_{i=1}^{k} \frac{(O_i - E_i)^2}{E_i}
+$$ {#eq-chiquadrat_test}
+​
+wobei
+
++ $\chi^2$ : Chi-Quadrat-Teststatistik
++ $k$ : Anzahl der Kategorien
++ $O_i$ : Beobachtete Häufigkeit in Kategorie $i$
++ $E_i$ : Erwartete Häufigkeit in Kategorie $i$ 
+
+Die Summe $i$ läuft über alle Kategorien $k$.
+
+**Voraussetzungen**
+
++ Die Daten sind [kategorial](https://de.wikipedia.org/wiki/Kategoriale_Variable) (nominal oder ordinal).
++ Die beobachteten Häufigkeiten stammen aus einer (ein- und derselben) Stichprobe.
++ Die erwarteten Häufigkeiten müssen hinreichend groß sei (Tipp/Empfehlung aus der Praxis: > 20)  
+
+Anders als der Runs-Test erfordert die Ergebnisinterpretation des $\chi^2$-Tests die Berechnung der Wahrscheinlichkeit $p$, die einen Vergleich der Nullhypothese (z.B.: Gleiche Anzahl der Häufigkeiten von Kopf und Zahl beim Werfen einer faire Münze) mit der beobachteten Teststatistik ([Stichprobe](https://de.wikipedia.org/wiki/Stichprobe)) ermöglicht.
+
+Die Berechnung dieser Wahrscheinlichkeit $p$ erfolgt durch Integration der Fläche unter der [Chi-Quadrat-Verteilung](https://de.wikipedia.org/wiki/Chi-Quadrat-Verteilung) rechts von diesem zuvor berechneten $\chi^2$-Wert. 
+
+::: {.callout-tip}
+## Definition *"Chi-Quadrat-Verteilung ($\chi^2$-Verteilung)"*
+Die [Chi-Quadrat-Verteilung](https://de.wikipedia.org/wiki/Chi-Quadrat-Verteilung) ($\chi^2$-Verteilung) ist eine stetige Wahrscheinlichkeitsverteilung über der Menge der nichtnegativen reellen Zahlen. Die Chi-Quadrat-Verteilung hat einen einzigen Parameter, nämlich die Anzahl der Freiheitsgrade $n$.
+:::
+
+Für weitere Informationen zur Berechnung der Wahrscheinlichkeit $p$ sei der geneigte Leser an dieser Stelle auf die umfangreich verfügbare Literatur verwiesen.
+
+::: {.callout-tip}
+## Tipp *"Chi-Quadrat-Test"*
+Der [Chi-Quadrat-Test](https://de.wikipedia.org/wiki/Chi-Quadrat-Test) kann mit einem [Runs-Test](https://de.wikipedia.org/wiki/Run-Test) kombiniert werden, da beide Prüfgrößen asymptotisch unabhängig voneinander sind.
+:::
+
+#### Beispiel: Werfen einer Münze (100 Würfe)
+
+**Aufgabe**: Es soll geklärt werden ob es einen statistisch signifikanten Hinweis darauf gibt dass es sich bei einer Münze um eine unfaire Münze handelt?
+
+**Sequenz:**
+
+K K Z K K K K K Z K K K K K K K Z K Z Z 
+K K Z Z Z K K Z K K Z K Z Z Z K Z K Z K 
+Z Z K K K K Z K K K Z Z Z Z K Z Z K Z K 
+K K K Z Z Z K Z K K K Z Z Z K K Z K Z Z 
+Z K Z K K Z Z Z Z K K Z K K K K K Z K Z
+
+**Analyse der Sequenz ([Stichprobe](https://de.wikipedia.org/wiki/Stichprobe)):**
+
++ Anzahl K: 56
++ Anzahl Z: 44
++ Anzahl Runs: 50 (wird für den $\chi^2$-Test nicht benötigt)
+
+**Erwartete Häufigkeiten ([Nullhypothese](https://de.wikipedia.org/wiki/Hypothese_(Statistik)#Nullhypothese)):**
+
++ Anzahl K: 50
++ Anzahl Z: 50
++ Anzahl Runs: 51
+
+**$\chi^2$-Wert**
+
+$$
+\chi^2 = \frac{(56 - 50)^2}{50} + \frac{(44 - 50)^2}{50} = \frac{36}{50} + \frac{36}{50} = \frac{72}{50} = 1,44
+$$
+
+**$p$-Wert** (2 Kategorien $k$ → Freiheitsgrad $df$=$k-1$)
+
+$$
+p=P(\chi^2 ≥ 1,44∣df=k−1) = 0,2301
+$$
+
+**Interpretation**
+
+Sinkt der $p$-Wert unter ein geeignetes Signifikanzniveau (z.B. 0,05) wird die Nullhypothese verworfen. Ein großer $p$-Wert (wie hier) bedeutet: Die beobachtete Abweichung ist nicht ungewöhnlich und die Nullhypothese bleibt erhalten. 
+
+**Lösung**
+
+Die untersuchte Sequenz gibt keinen statistisch signifikanten Hinweis darauf, dass die Münze unfair ist.
+
+Damit der Chi-Quadrat-Test bei 100 Würfen signifikant wird ($p$ < 0,05), müsste die Münze mindestens so stark abweichen wie ≤ 36 Kopf oder ≥ 64 Kopf. Bei 36 Kopf oder 64 Zahl oder umgekehrt ist der $p$-Wert gerade noch über 0,05. Erst ab 35/65 sinkt der $p$-Wert deutlich darunter.

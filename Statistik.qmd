@@ -1,0 +1,100 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
+
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - Statistik
+
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Zufall
+
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Grundlagen
+## Begriffe
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+<!--
+::: {.callout-warning}
+## WARNING!
+**THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+### Statistik {#sec-statistik}
+
+::: {.callout-tip}
+## Begriffsklärung *"Statistik"*
+Die [Statistik](https://de.wikipedia.org/wiki/Statistik) *„ist die Lehre von Methoden zum Umgang mit quantitativen Informationen“* (→ [Daten](https://de.wikipedia.org/wiki/Daten)^[Daten bezeichnet als Plural von Datum Fakten, Zeitpunkte oder kalendarische Zeitangaben. Als Pluralwort steht es für durch Beobachtungen, Messungen u. a. gewonnene [Zahlen]werte sowie darauf beruhende Angaben oder formulierbare Befunde.]). Die Statistik ist eine Möglichkeit, *„eine systematische Verbindung zwischen Erfahrung (Empirie) und Theorie herzustellen“*. Unter Statistik versteht man die Zusammenfassung bestimmter Methoden zur Analyse empirischer Daten. Wenn moderne Technologien und Methoden (z. B. Maschinelles Lernen) zum Einsatz kommen, wird Statistik heute auch als Teilgebiet der *"Data Science"* bezeichnet.
+:::

@@ -1,0 +1,267 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
+
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - Produktentwicklung
+  - Softskills
+  - Verhandlungsstrategie
+  - Harvard-Verhandlungsstrategie
+
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 2
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Harvard-Verhandlungsstrategie
+
+-------------------------------------------------------------------------- -->
+
+<!--
+::: {.callout-tip collapse="true"}
+-->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Softskills
+## Verhandlungsstrategie
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+
+::: {.callout-warning}
+## WARNING!
+**THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
+:::
+
+### Harvard-Verhandlungsstrategie {#sec-harvard}
+
+::: {.callout-tip}
+## Definition *"Harvard-Verhandlungsstrategie"*
+Die [Harvard-Verhandlungsstrategie](https://de.wikipedia.org/wiki/Harvard-Konzept) ist ein sachbezogenes Verhandlungsmodell, das von Roger Fisher und William Ury an der Harvard-Universität entwickelt wurde. Das Ziel der Harvard-Verhandlungsstrategie ist eine konstruktive, kooperative Verhandlungsführung, die zu nachhaltigen und für beide Seiten vorteilhaften Win-Win-Lösungen führt.
+:::
+
+Die Harvard-Verhandlungsstrategie geht über klassische Kompromisse hinaus. Im Vordergrund steht der größtmögliche beiderseitige Nutzen.
+
+
+
+
+```{mermaid}
+%%| label: fig-label-mmzieleharvardstrategie
+%%| fig-cap: "Mindmap der wichtigsten Bausteine der Harvard-Verhandlungsstrategie"
+%%{init: {'theme': 'forest'}}%%
+mindmap
+  root(Harvard-Verhandlungs- Strategie)
+    (Win-Win-Lösungen erreichen)
+    (Interessen statt Positionen fokussieren)
+    (Objektive Kriterien nutzen)
+    (Sachbezogen statt persönlich verhandeln)
+    (Effiziente Kommunikation fördern)
+    (Kreative Optionen entwickeln)
+```
+
+
+::: {.callout-important}
+## Pro-Tipp: *"Interessen statt Positionen!"*
+**Interessen statt Positionen** in den Mittelpunkt der Verhandlungen rücken!
+:::
+
+<!--
+Die Harvard-Verhandlungsstrategie basiert auf vier Prinzipien:  
+
+1. **Sachbezogen verhandeln** (Trennung von Person und Problem)  
+2. **Interessen statt Positionen fokussieren** (Die wahren Bedürfnisse hinter den jeweiligen Forderungen erkennen)  
+3. **Optionen für beiderseitigen Nutzen entwickeln** (Kreative Lösungen finden)  
+4. **Objektive Kriterien nutzen** (Faire und neutrale Entscheidungsmaßstäbe anwenden)
+-->
+
+
+<!--
+Die **wichtigsten Ziele der Harvard-Verhandlungsstrategie** sind:  
+
+1. **Win-Win-Lösungen erreichen**  
+   - Statt eines Nullsummenspiels sollen beide Parteien von der Verhandlung profitieren.  
+
+2. **Interessen statt Positionen fokussieren**  
+   - Die wahren Bedürfnisse und Motivationen der Parteien verstehen, anstatt sich nur auf Forderungen zu versteifen.  
+
+3. **Objektive Kriterien nutzen**  
+   - Entscheidungen auf neutralen, überprüfbaren Maßstäben basieren, um Fairness zu gewährleisten.  
+
+4. **Sachbezogen statt persönlich verhandeln**  
+   - Das Problem von den Personen trennen, um emotionale Eskalationen zu vermeiden.  
+
+5. **Kreative Optionen entwickeln**  
+   - Mehrere Lösungsmöglichkeiten erarbeiten, um bessere Ergebnisse zu erzielen.  
+
+6. **Effiziente Kommunikation fördern**  
+   - Klarheit und gegenseitiges Verständnis sicherstellen, um Missverständnisse zu vermeiden.  
+-->
+
+<!--
+#### Nullsummenspiel
+-->
+
+::: {.callout-tip}
+## Definition *"Nullsummenspiel"*
+[Nullsummenspiele](https://de.wikipedia.org/wiki/Nullsummenspiel) beschreiben in der Spieltheorie Situationen, also Spiele im verallgemeinerten Sinne, bei denen die Summe der Gewinne und Verluste aller Spieler gleich null ist.
+:::
+
+Ein Nullsummenspiel im ökonomischen Sinne ist eine Konkurrenzsituation, bei welcher der wirtschaftliche Erfolg oder Gewinn eines Marktteilnehmers einem Misserfolg oder Verlust eines anderen in gleicher Höhe gegenübersteht.
+
+In der Konflikttheorie spricht man von einem Nullsummenspiel, wenn Konfliktparteien so miteinander verstrickt sind, dass wenn einer gewinnt, der andere automatisch entsprechend verliert. Beziehungsweise wenn eine Partei (oder alle) glauben, dass sobald einer gewinnen würde, der andere entsprechend verlieren müsste. Dabei ist es unerheblich, ob es sich bei den Konfliktparteien um je eine einzelne Person, um Gruppen, Organisationen, Staaten oder ganze Kulturen oder Religionen handelt. Verbreitete Strategien sind Kampf, wo es Sieger und Verlierer gibt, und Kompromiss, wo alle ein bisschen gewinnen und ein bisschen verlieren.
+
+Konfliktlösung setzt meistens voraus, dass die Beteiligten sich die Idee zu eigen machen, dass es Lösungen geben kann, bei denen alle Beteiligten einen Gewinn haben (auch Win-Win genannt). 
+
+::: {.callout-tip}
+## Definition *"Nicht-Nullsummenspiel"*
+Nicht-Nullsummenspiele sind solche Spiele, bei denen die Summe der Gewinne und die Summe der Verluste sich unterscheiden, oder bei denen es keinen Gewinn oder Verlust gibt.
+:::
+
+::: {.callout-tip}
+## Definition *"Positivsummenspiel"*
+Positivsummenspiele haben das Ziel, dass alle Beteiligten und Betroffenen einen Nutzen erzielen. Jeder Verhandlungspartner respektiert auch sein Gegenüber und versucht, dessen Interessen ausreichend zu berücksichtigen. Es wird von gleichwertigen Partnern um einen für beide Seiten positiven Interessenausgleich gerungen. Die Auswirkungen auf Dritte sind dabei zu berücksichtigen.
+:::
+
+Die den Positivsummenspielen zugrunde liegende [Win-Win-Strategie]((https://de.wikipedia.org/wiki/Win-win)) ist auf langfristigen nachhaltigen Erfolg und auf langfristige Zusammenarbeit ausgerichtet und zielt weniger auf kurzfristigen Gewinn.
+
+<!-- Es soll gemeinsam eine dauerhafte Lösung gefunden werden, die von allen Beteiligten getragen und akzeptiert wird. Dazu ist gegenseitige Achtung erforderlich und ein ernsthaftes Interesse an den Bedürfnissen, Ängsten und Beweggründen des jeweils Anderen. -->
+
+
+<!--
+### Theory of Mind (ToM)
+-->
+
+::: {.callout-tip}
+## Definition *"Theory of Mind" (ToM)"*
+Die "Theory of Mind" (ToM) ist ein Begriff aus der kognitiven Psychologie und bezieht sich auf die Fähigkeit, sich in die mentalen Zustände anderer Personen hineinzuversetzen, wie zum Beispiel Gedanken, Absichten, Überzeugungen oder Emotionen. Diese Fähigkeit ermöglicht es, das Verhalten anderer zu verstehen, ihre Handlungen vorherzusagen und soziale Interaktionen angemessen zu interpretieren und zu steuern. 
+:::
+
+<!--
+In der wissenschaftlichen Forschung wird die Theory of Mind häufig anhand von Experimenten untersucht, die darauf abzielen, das Verständnis und die Entwicklung dieser Fähigkeit bei Kindern, Erwachsenen und auch bei einigen Tierarten zu untersuchen. Beispielsweise wird angenommen, dass Kinder im Alter von etwa vier Jahren beginnen, eine rudimentäre Theory of Mind zu entwickeln, indem sie erkennen, dass andere Menschen unterschiedliche Gedanken und Perspektiven haben können als sie selbst.
+
+Die Fähigkeit zur Theory of Mind ist von grundlegender Bedeutung für die soziale Kognition und das soziale Verhalten, da sie es ermöglicht, sich in sozialen Situationen angemessen zu verhalten, soziale Normen zu verstehen und Empathie für andere zu empfinden. Defizite in der Theory of Mind können zu Schwierigkeiten bei der sozialen Interaktion, bei der Kommunikation und im Verständnis von zwischenmenschlichen Beziehungen führen und sind oft ein Merkmal von Störungen des autistischen Spektrums und anderen neurokognitiven Störungen. Das Verständnis der Theory of Mind ist daher von wesentlicher Bedeutung für das Verständnis menschlicher Interaktionen, sozialer Dynamiken und für die Entwicklung von Interventionen zur Förderung sozialer Fähigkeiten und zur Verbesserung der sozialen Integration.
+
+- Bezüge zum eigenen Handeln à 
+- Bezüge zur KI
+
+EXKURS ToM
+
+Das Zitat "Ein Mensch kann nicht zweimal in denselben Fluss steigen" stammt von dem griechischen Philosophen Heraklit (ca. 535-475 v. Chr.). Diese Aussage ist Teil seines Konzepts des Wandels und der Bewegung, das er als zentrales Prinzip seiner Philosophie entwickelte. Heraklit betonte die Idee, dass alles in einem ständigen Zustand des Flusses und des Wandels begriffen ist. Der Fluss steht hier als Symbol für die ständige Veränderung und den unaufhörlichen Wandel in der Welt.
+
+Das Zitat von Heraklit kann als Aufforderung verstanden werden, die Natur der Realität als dynamisch und in einem fortwährenden Prozess der Veränderung zu erkennen. Es betont die Unbeständigkeit und Unvorhersehbarkeit des Lebens und verweist auf die Unmöglichkeit, etwas genau so zu erleben, wie es zuvor erlebt wurde, da sich alles im ständigen Wandel befindet.
+
+In der modernen Philosophie und Literatur wird dieses Zitat oft zitiert, um die Idee zu veranschaulichen, dass nichts statisch oder unveränderlich ist und dass jede Erfahrung, selbst wenn sie oberflächlich ähnlich erscheint, in Wirklichkeit immer einzigartig ist und sich von vorherigen Erfahrungen unterscheidet.
+-->
+
+::: {.callout-important}
+## Pro-Tipp: *"Keine Türen schließen!"*
+Wenn auch nach intensiven Bemühungen keine Einigung erzielt werden kann, empfiehlt die Harvard-Verhandlungsstrategie, in einer respektvollen und sachlichen Weise zu handeln, indem man die Verhandlung konstruktiv abschließt und auf diese Weise gleichzeitig **die Möglichkeit für eine zukünftige Kooperation offen hält.**
+:::
+
+<!--
+Es gibt mehrere Schritte, die in einer solchen Situation hilfreich sind:  
+
+---
+
+### ✅ **1. Bestandsaufnahme der Positionen und Interessen**  
+- **Ziel:** Die Perspektiven beider Seiten noch einmal klar und objektiv zusammenfassen, um sicherzustellen, dass alle relevanten Punkte verstanden wurden.  
+- **Vorgehen:** Man stellt klar, was genau die Differenzen sind und ob diese auf unterschiedlichen Interessen oder Missverständnissen basieren. Dies hilft, etwaige verbleibende Unsicherheiten zu klären und zeigt dem anderen, dass man die Diskussion ernst genommen hat.  
+- **Beispiel:** *"Es scheint, dass unsere Interessen in diesem Punkt unterschiedlich sind. Lassen Sie uns noch einmal zusammenfassen, was wir beide benötigen, um zu einer Lösung zu kommen."*  
+
+---
+
+### 🛑 **2. Identifikation von unüberbrückbaren Differenzen**  
+- **Ziel:** Den Punkt erreichen, an dem klar wird, dass keine Einigung mehr möglich ist, ohne Kompromisse einzugehen, die für eine der Seiten unakzeptabel sind.  
+- **Vorgehen:** Man sollte ruhig und klar darlegen, dass die vorgeschlagenen Lösungen nicht zu einer Vereinbarung führen, ohne dass eine der Parteien wesentliche Zugeständnisse macht, die nicht im eigenen Interesse liegen.  
+- **Beispiel:** *"Ich verstehe, dass unser Standpunkt in diesem Bereich grundlegend unterschiedlich ist, und wir haben keine Lösung gefunden, die für beide Seiten tragfähig wäre."*  
+
+---
+
+### 🔄 **3. Alternative Lösungen und Wege zur Auflösung vorschlagen**  
+- **Ziel:** Einen konstruktiven Abschluss finden, auch wenn keine Einigung erzielt wird.  
+- **Vorgehen:** Eine alternative Vorgehensweise anbieten, wie etwa die Einbeziehung eines Dritten zur Mediation, die Aussetzung der Verhandlungen oder die Vereinbarung, zu einem späteren Zeitpunkt erneut zu sprechen. Man könnte auch vorschlagen, die Diskussion auf eine andere Ebene zu bringen, z. B. auf eine höhere Management-Ebene oder Expertenebene.  
+- **Beispiel:** *"Vielleicht können wir in Zukunft mit einem neutralen Dritten noch einmal über eine Lösung nachdenken, wenn es für uns beide von Vorteil ist."*  
+
+---
+
+### 💡 **4. Den Fokus auf die Beziehung bewahren**  
+- **Ziel:** Trotz einer gescheiterten Einigung eine positive Beziehung aufrechterhalten, um die Tür für zukünftige Verhandlungen offen zu lassen.  
+- **Vorgehen:** Es ist wichtig, den Respekt für die Position des anderen zu betonen und die Möglichkeit einer zukünftigen Zusammenarbeit hervorzuheben, auch wenn dieses Mal keine Lösung gefunden wurde.  
+- **Beispiel:** *"Auch wenn wir uns heute nicht einigen konnten, hoffe ich, dass wir auch weiterhin eine gute Zusammenarbeit pflegen können."*  
+
+---
+
+### 🔄 **5. Entscheidung über den Ausstieg treffen**  
+- **Ziel:** Den Verhandlungsprozess respektvoll und klar abschließen, falls eine Einigung nicht möglich ist.  
+- **Vorgehen:** Wenn alle anderen Möglichkeiten ausgeschöpft sind, sollte man ruhig und respektvoll den Rückzug aus den Verhandlungen erklären und den Prozess formal abschließen. Wichtig ist, dies nicht emotional oder konfrontativ zu tun, sondern sachlich und professionell.  
+- **Beispiel:** *"Da wir zu keiner Einigung kommen konnten, werde ich die Verhandlungen für heute beenden. Ich danke Ihnen trotzdem für Ihre Zeit und Ihre Bemühungen."*  
+
+---
+
+Der Schlüssel liegt darin, eine sachliche und respektvolle Haltung zu bewahren und keine Türen zu schließen, die eine zukünftige Zusammenarbeit ermöglichen könnten. Auch wenn keine Einigung erzielt wird, ist es wichtig, dass beide Seiten die Verhandlungen als professionell und fair wahrnehmen.
+-->

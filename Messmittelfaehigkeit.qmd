@@ -1,0 +1,355 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
+
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - Messmittelfähigkeit
+  - Messmittelfähigkeitsanalyse
+
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 2
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+
+::: {.content-visible unless-meta="headlines.off"}
+# Grundlagen
+## Begriffe
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+------------------------------------------------------------------------------ 
+
+::: {.callout-warning}
+## WARNING!
+**THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
+:::
+
+-------------------------------------------------------------------------- -->
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Messmittelfähigkeit
+
+-------------------------------------------------------------------------- -->
+
+### Messmittelfähigkeit {#sec-messmittelfaehigkeit}
+
+
+::: {.callout-tip}
+## Definition: *"Messmittelfähigkeit, Messmittelfähigkeitsanalyse"*
+Die Messmittelfähigkeitsanalyse (auch: Messsystemanalyse oder MSA – Measurement System Analysis) untersucht, ob ein Messsystem (i.d.R.: Messmittel + Mensch (Bedienpersonal) + Messprozess) geeignet ("*fähig"*) ist, um verlässliche Messergebnisse zu liefern. Ein Messsystem wird als geeignet angesehen wenn die Streuung der gemessenen Werte *"klein genug"* im Vergleich zur Streuung des Prozesses ist. Die Messmittelfähigkeitsanalyse ist ein zentraler Bestandteil der Qualitätssicherung im industriellen Umfeld.
+:::
+
+Was als *"klein genug"* angesehen wird hängt von den jeweiligen Anforderungen ab und kann je nach Anwendungsfall variieren. Häufig finden sich in Unternehmen Erfahrungswerte (*"Best Practices"*) welche Anforderungen an das Messsystem gestellt werden.
+
+**Typische Fragestellungen:**
+
+* Ist die Streuung durch das Messmittel im Vergleich zur Prozessstreuung akzeptabel?
+* Wie stark beeinflussen Bediener, Gerät oder Wiederholbarkeit die Messergebnisse?
+* Ist das System fähig, Gut- und Schlechtteile sicher zu unterscheiden?
+
+---
+
+
+WICHTG:
+Es wird angenommen dass die Prozesse Gaußverteilt sind!
+
+In der obigen Darstellung wurde davon ausgegangen, dass die Merkmalsdaten annähernd normalverteilt sind. Für andere Verteilungsformen gibt es alternative Berechnungsmethoden.
+Die berechneten Indizes besitzen selbstverständlich nur so lange Aussagekraft, wie der Prozess in gleich bleibender Weise funktioniert (unter Kontrolle bleibt).
+
+
+### 📊 **Wichtige Begriffe:**
+
+| Begriff                                          | Bedeutung                                                                                          |
+| ------------------------------------------------ | -------------------------------------------------------------------------------------------------- |
+| **R\&R (Repeatability & Reproducibility)**       | Wiederholbarkeit (gleiches Bauteil, gleiches Bedienpersonal) und Reproduzierbarkeit (verschiedenes Bedienpersonal) |
+| **Messsystemstreuung (σMS)**                     | Gesamtstreuung des Messsystems                                                                     |
+| **Prozessstreuung (σProc)**                      | Gesamte Streuung des Prozesses                                                                     |
+| **Cg / Cgk-Wert** (bei attributiven Messmitteln) | Fähigkeit des Messsystems im Verhältnis zur Toleranz                                               |
+| **%R\&R**                                        | Prozentualer Anteil der Messsystemstreuung an der Gesamtstreuung                                   |
+
+---
+
+### 🧪 **Durchführung (für variable Merkmale, z. B. Länge in mm):**
+
+1. Auswahl von **10 Prüfstücken**, möglichst aus dem gesamten Toleranzbereich.
+2. **3 Wiederholungen** je Teil, je **3 Bediener** (typischerweise).
+3. **Messplan** erstellen und Ergebnisse erfassen.
+4. **Berechnung der Varianzen**:
+
+   * Wiederholbarkeit (Repeatability)
+   * Reproduzierbarkeit (Reproducibility)
+   * Gesamte Messsystemstreuung
+5. **Vergleich mit Prozessstreuung oder Toleranzbereich**:
+
+   * **%R\&R < 10 %** → Messsystem ist fähig
+   * **10–30 %** → eingeschränkt fähig (je nach Anwendung)
+   * **> 30 %** → nicht fähig
+
+---
+
+### 📌 **Beurteilungskriterien:**
+
+| %R\&R-Wert | Bewertung           |
+| ---------- | ------------------- |
+| ≤ 10 %     | Sehr gut / fähig    |
+| 10 %–30 %  | Eingeschränkt fähig |
+| > 30 %     | Nicht fähig         |
+
+> **Hinweis**: Alternativ zu %R\&R kann auch der Cg/Cgk-Ansatz verwendet werden (insbesondere bei attributiven Merkmalen oder Einzelmessung ohne Prozessdaten).
+
+---
+
+### 📘 **Typische Methoden:**
+
+* **MSA Typ-1-Studie** (Wiederholbarkeit nur eines einzelnen Messgeräts. Kenngrößen sind Cg- und Cgk)
+* **MSA Typ-2-Studie** (Wiederholbarkeit + Reproduzierbarkeit – Gage R\&R)
+* **MSA Typ-3-Studie** (nur Reproduzierbarkeit - bei Automatisierten Messprozessen)
+
+
+[Verfahren 1 (engl. type-1 study)](https://de.wikipedia.org/wiki/Messsystemanalyse#Verfahren_1_(engl._type-1_study))
+Dieses Verfahren untersucht die Genauigkeit und Wiederholpräzision eines Messsystems. Für die Untersuchung wird ein Normal oder Referenzbauteil mit bekanntem Merkmalswert benutzt. Das Normal oder Referenzbauteil wird 50-mal (mindestens 25-mal) gemessen. Das Normal oder Referenzbauteil wird dabei nach jeder Messung wieder zurückgelegt. Basierend auf der Standardabweichung der Messwerte und der systematischen Messabweichung werden dann die Indizes Cg und Cgk berechnet. Die Rechenschritte hierzu sind analog zu denen der Prozessfähigkeitsuntersuchung; als „Toleranzbereich“ wird ein **firmenspezifisch festgelegter Prozentsatz der Merkmalstoleranz oder Merkmalsstreuung verwendet**.
+
+[Verfahren 2 (engl. type-2 study, Gauge R&R study)](https://de.wikipedia.org/wiki/Messsystemanalyse#Verfahren_2_(engl._type-2_study,_Gauge_R&R_study))
+Dieses Verfahren untersucht die Wiederhol- und Vergleichspräzision eines Messmittels (engl. repeatability and reproducibility, daher R&R, auch Gauge R&R bzw. Gage R&R, nach engl. ga[u]ge, Messgerät) **und wird erst dann angewendet, wenn das Messmittel nach Verfahren 1 als fähig eingestuft worden ist**. Hierbei werden zehn Teile, die möglichst den gesamten Streubereich des gemessenen Merkmals abdecken sollten, zwei- oder dreimal von drei verschiedenen Bedienern (bzw. an drei verschiedenen Orten oder mit drei verschiedenen Geräten desselben Typs) gemessen. Keiner der Bediener darf dabei die Ergebnisse der anderen Bediener sehen. Die Teile sollten auch bei jedem Durchgang in randomisierter Reihenfolge gemessen werden, so dass der Bediener sich nie an das Messergebnis im vorigen Durchgang erinnern kann.
+
+Wenn die Messungen abgeschlossen sind, wird für jeden Bediener ein Gesamtmittelwert und ein durchschnittlicher Spannweitenwert (basierend auf den Differenzen zwischen dem größten und kleinsten Messwert, den der Bediener für jedes Teil ermittelt hat) berechnet. Die Differenz zwischen dem größten und dem kleinsten Bedienermittelwert lässt eine Aussage über die Vergleichspräzision zu; der Gesamtmittelwert der für die einzelnen Bediener errechneten durchschnittlichen Spannweitenwerte wird zu einer Aussage über die Wiederholpräzision herangezogen. Ausgehend von Wiederhol- und Vergleichspräzision wird dann die Gesamtstreuung des Messmittels berechnet und in Beziehung zur Merkmalsstreuung bzw. Toleranz gesetzt.[2]
+
+[Verfahren 3 (engl. type-3 study, R&R study)](https://de.wikipedia.org/wiki/Messsystemanalyse#Verfahren_3_(engl._type-3_study,_R&R_study))
+Das Verfahren 3 ist ein Sonderfall des Verfahrens 2, welches annimmt, dass der Bediener die Messeinrichtung nicht beeinflussen kann oder der Einfluss vernachlässigbar ist. Typische Einsatzzwecke sind automatisierte Messsysteme.
+
+Für die Durchführung der Messmittelfähigkeitsanalyse stehen in den Unternehmen häufig spezifische Softwarewerkzeuge, zumindest aber Microsoft Excel mit vorbereiteten Templates zur Verfügung.
+
+::: {.callout-tip}
+## Definition: *"Cg- und Cgk-Werte"*
+Cg- und Cgk-Werte sind Kenngrößen zur Bewertung der Fähigkeitskennwerte eines Messmittels. Die Cg- und Cgk-Werte geben eine quantitative Aussage darüber, ob ein Messgerät für sich alleine ausreichend genau und präzise misst. Die Die Cg- und Cgk-Werte sind die zentralen Kenngrößen bei MSA Typ-1-Studien.
+
+---
+
+## 🧮 **Definitionen:**
+
+### 🔵 **Cg-Wert (Gerätefähigkeitsindex):**
+
+Bewertet die **Streuung (Wiederholgenauigkeit)** des Messgeräts im Vergleich zum vorgegebenen Toleranzbereich.
+
+$$
+Cg = \frac{T}{6 \cdot s}
+$$
+
+* $T$: Prüfmittel-Toleranz (typisch 20 % bis 30 % der Werkstücktoleranz)
+* $s$: Standardabweichung der Messwerte (aus Wiederholmessungen)
+
+→ **Je größer Cg, desto besser die Wiederholbarkeit.**
+
+---
+
+### 🔴 **Cgk-Wert (zentrierter Gerätefähigkeitsindex):**
+
+Bewertet zusätzlich zur Streuung auch die **systematische Abweichung** (also die Lage zum Sollwert).
+
+$$
+Cgk = \frac{T/2 - | \overline{x} - \mu_0 |}{3 \cdot s}
+$$
+
+* $\overline{x}$: Mittelwert der Messungen
+* $\mu_0$: Sollwert / Referenzwert
+* $T$: Prüfmittel-Toleranz
+* $s$: Standardabweichung
+
+→ **Je größer Cgk, desto besser Wiederholbarkeit + Zentrierung.**
+
+
+
+| Wert       | Bewertung                          |
+| ---------- | -----------------------------------|
+| **≥ 1,33** | Messsystem ist fähig               |
+| 1,00–1,33  | Messsystem ist eingeschränkt fähig |
+| < 1,00     | Messsystem ist nicht fähig         |
+
+::: {.callout-tip}
+## Beurteilung der Cg- und Cgk-Werte
+Früher wurde ein Cgk-Wert von mindestens 1,00 (Abstand der nächstgelegenen Toleranzgrenze vom Mittelwert beträgt mindestens ±3 Standardabweichungen) als ausreichend angesehen, später wurde die Forderung auf 1,33 (4 Standardabweichungen) angehoben. Im heutigen Denken wird vielfach ein Cg-Wert von 2,00 (Breite des Toleranzbereichs entspricht einer Streubreite von ±6 Standardabweichungen, siehe --> Six Sigma) kombiniert mit einem Cgk-Wert von 1,67 (Abstand der nächstgelegenen Toleranzgrenze vom Mittelwert beträgt mindestens 5 Standardabweichungen) als wünschenswertes Ziel definiert.
+:::
+
+
+## 🧪 **Typisches Prüfverfahren (Typ-1-Studie):**
+
+1. Kalibrier-Normal (i.d.R. Referenzteil) verwenden (mit bekanntem Sollmaß).
+2. **50 Messungen** (mindestens jedoch 25 Messungen) durch das selbe Bedienpersonal, unter gleichen Bedingungen durchführen.
+3. Berechnung von $s$ und $\overline{x}$.
+4. Berechnung von Cg und Cgk.
+
+
+## 🧠 **Wann Cg/Cgk – wann Gage R\&R?**
+
+| Situation                                                | Methode             |
+| -------------------------------------------------------- | ------------------- |
+| Einzelmessgerät bewerten                                 | Cg/Cgk (Typ-1)    |
+| Wiederholbarkeit & Reproduzierbarkeit (verschiedenes Bedienpersonal) | Gage R\&R (Typ-2) |
+
+---
+
+## 📌 Beispiel:
+
+* Toleranz für das Prüfmittel $T = 0,03 \, \text{mm}$
+* Gemessene Standardabweichung $s = 0,001$
+* Abweichung zum Sollmaß $|\overline{x} - \mu_0| = 0,002$
+
+**Cg:**
+
+$$
+Cg = \frac{0{,}03}{6 \cdot 0{,}001} = 5,0
+$$
+
+**Cgk:**
+
+$$
+Cgk = \frac{0{,}03/2 - 0{,}002}{3 \cdot 0{,}001} = \frac{0{,}013}{0{,}003} \approx 4,33
+$$
+
+→ Sehr gutes Messsystem.
+
+---
+
+Wenn du **besonders hohe Anforderungen** an die Messmittelfähigkeit stellst, solltest du **weiterhin den 3S-Ansatz (±3·s)** verwenden – **aber mit einem höheren Zielwert für Cg bzw. Cgk**. Hier ist die Begründung:
+
+---
+
+## ✅ **Warum 3S bei hohen Anforderungen sinnvoller ist**
+
+| Aspekt                   | Erklärung                                                                                                                                                                     |
+| ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Industriestandard**    | Der **3S-Ansatz** (±3·s, also 6·s-Spanne) ist **Standard in Normen**, z. B. ISO 22514 oder AIAG MSA.                                                                          |
+| **99,73 % Abdeckung**    | Du möchtest bei hoher Qualität möglichst **alle Messwerte sicher im Toleranzband erfassen** – das gewährleistet **3S** besser als 2S (95 %).                                  |
+| **Vergleichbarkeit**     | Cg/Cgk-Werte mit 3S sind **vergleichbar mit Cp/Cpk-Werten** aus der Prozessfähigkeitsanalyse (die ebenfalls auf 6·s basieren).                                                |
+| **Konservativ & sicher** | Die 3S-Methode ist **konservativer**, da sie eine größere Streuung berücksichtigt. Hohe Cg-Werte unter dieser strengeren Annahme garantieren ein wirklich fähiges Messsystem. |
+
+---
+
+## ❌ **Warum 2S bei hohen Anforderungen **nicht** empfehlenswert ist:**
+
+* **Täuscht höhere Cg-Werte vor**: Bei 2S erhältst du **höhere Cg-Werte bei gleicher Streuung**, obwohl du nur 95 % der Verteilung betrachtest.
+* **Geringere Sicherheit**: Du riskierst, dass du Ausreißer oder Grenzwertüberschreitungen **nicht erkennst**, obwohl das System „gut“ erscheint.
+* **Nicht normgerecht**: Die meisten Qualitätsnormen fordern eine Bewertung auf Basis von 6·s (also 3S).
+
+---
+
+## 🧭 **Empfehlung bei hohen Anforderungen:**
+
+| Maßnahme                                               | Warum?                                                                    |
+| ------------------------------------------------------ | ------------------------------------------------------------------------- |
+| ✅ **3S-Verfahren verwenden**                           | Entspricht Norm & bietet höchste Aussagekraft                             |
+| ✅ **Strenge Bewertungsgrenze setzen (z. B. Cg ≥ 2,0)** | Höhere Anforderungen an Wiederholbarkeit                                  |
+| ✅ **Zusätzlich Cgk bewerten**                          | Um auch systematische Fehler (Abweichung vom Sollwert) zu berücksichtigen |
+
+---
+
+## 🧮 Beispiel:
+
+Angenommen, dein Prüfmittel soll nur **5 % der Toleranz** ausnutzen:
+
+$$
+Cg = \frac{T}{6 \cdot s} \geq \frac{1}{0{,}05} = 20
+$$
+
+→ Du würdest dann auf einen **Cg-Wert von ≥ 20** prüfen – auf **3S-Basis**.
+
+---
+
+### Fazit:
+
+> 📌 **Verwende bei besonders hohen Anforderungen den 3S-Ansatz (6·s)** – er ist normgerecht, sicher und aussagekräftig. Nur so kannst du garantieren, dass dein Messsystem wirklich stabil, präzise und für hochqualitative Prozesse geeignet ist.
+
+Wenn du willst, kann ich dir auch ein Diagramm oder eine Vergleichstabelle erstellen, wie sich 2S- und 3S-Ergebnisse verhalten.
+
+Hier siehst du den Vergleich der Cg-Werte bei gleicher Standardabweichung $s$, aber unterschiedlicher Bewertungsbasis:
+
+🔵 2S-Ansatz (blau, gestrichelt) ergibt höhere Cg-Werte – er wirkt auf den ersten Blick besser, ist aber weniger streng.
+
+🔴 3S-Ansatz (rot, durchgezogen) ist konservativer und entspricht dem Industriestandard.
+
+👉 Fazit: Wer hohe Anforderungen hat oder mit Normen arbeitet, sollte immer den 3S-Ansatz verwenden, auch wenn dadurch niedrigere Cg-Werte entstehen. Diese sind ehrlicher und aussagekräftiger
+
+
+<!--
+
+
+::: {.callout-important}
+## Erfolgreiche Produktentwicklung ist KEINE Wissenschaft
+Erfolgreiche Produktentwicklung ist keine Wissenschaft. Erfolgreiche Produktentwicklung ist vielmehr das Ergebnis eines gelungenen Zusammenspiels von *"Best Practices"* und der erfolgreichen gesamtheitlichen Anwendung einer Vielzahl wissenschaftlicher Erkenntnisse. 
+
+:::
+
+In den Wissenschaften ist eine [Erklärung](https://de.wikipedia.org/wiki/Erkl%C3%A4rung) der Versuch, die Ursachen eines beobachteten Sachverhaltes oder Phänomens durch die sprachliche Darlegung seiner logischen und kausalen Zusammenhänge verständlich zu machen. Eine wissenschaftliche Erklärung ist in diesem Sinne die wichtigste Form des Begründens in der Wissenschaftstheorie, nämlich die logische Ableitung einer Tatsachenbehauptung aus einem wissenschaftlichen Gesetz sowie den als gegeben unterstellten Randbedingungen, unter denen selbiges Gesetz wirkt. In diesem Sinn lässt sich Produktentwicklung nicht wissenschaftlich erklären.
+
+::: {.callout-tip}
+## Das Skript als eine kuratierte Sammlung von *"Best Practices"* und wissenschaftlichen Erkenntnissen
+Stattdessen soll in dieser Vorlesung und diesem zur Vorlesung gehörenden Skript der Versuch unternommen werden, dem geneigten Leser eine mit Sorgfalt und aus der Erfahrung langjähriger Produktentwicklung kuratierte Sammlung von *"Best Practices"* und erfolgreich nutzbarer wissenschaftlicher Erkenntnisse vorzustellen.**
+:::
+
+-->

@@ -1,0 +1,96 @@
+---
+format:
+  html:
+    embed-resources: true
+    code-fold: true
+execute: 
+  echo: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
+
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - 6W-Methode
+
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       6W-Methode
+
+-------------------------------------------------------------------------- -->
+### 6W-Methode {#sec-6w-methode}
+
+::: {.callout-tip}
+## Definition: *"6W-Methode"*
+Die 6W Methode ist eine Problembeschreibungstechnik, die sowohl zur Projektbeschreibung als auch zur Beschreibung von Problem- und Aufgabenstellungen verwendet wird. Die sechs W-Fragen stehen für die Was, Warum, Wer, Wo, Wann und Wie. Durch das systematische Beantworten dieser Fragen werden alle relevanten Informationen erfasst und eine umfassende Beschreibung des Problems oder der Aufgabe erstellt.
+:::
+
+Die sechs W-Fragen:
+
+1. **Was**: Diese Frage zielt darauf ab, das Problem oder die Aufgabe genau zu definieren und zu beschreiben. Es geht darum, den Kern des Problems oder der Aufgabe zu erfassen und eine klare Beschreibung zu liefern.
+2. **Warum**: Diese Frage zielt darauf ab, die Gründe oder Ursachen des Problems zu ermitteln. Es geht darum, den Hintergrund und die Motivation für die Lösung des Problems oder die Durchführung der Aufgabe zu verstehen.
+3. **Wer**: Diese Frage zielt darauf ab, die beteiligten Personen oder Akteure zu identifizieren. Es geht darum, zu klären, wer an der Lösung des Problems oder der Durchführung der Aufgabe beteiligt ist und welche Rollen und Verantwortlichkeiten sie haben.
+4. **Wo**: Diese Frage zielt darauf ab, den Ort oder den räumlichen Rahmen des Problems oder der Aufgabe zu bestimmen. Es geht darum, den Kontext zu verstehen und festzulegen, wo das Problem auftritt oder die Aufgabe durchgeführt wird.
+5. **Wann**: Diese Frage zielt darauf ab, den Zeitrahmen oder den Zeitpunkt des Problems oder der Aufgabe zu bestimmen. Es geht darum, zu klären, wann das Problem auftritt oder die Aufgabe durchgeführt werden muss und ob es zeitliche Einschränkungen gibt.
+6. **Wie**: Diese Frage zielt darauf ab, die Methoden, Vorgehensweisen oder Lösungsansätze für das Problem oder die Aufgabe zu bestimmen. Es geht darum, zu beschreiben, wie das Problem gelöst werden soll oder wie die Aufgabe durchgeführt werden kann.
+
+Durch das systematische Beantworten der sechs W-Fragen wird eine umfassende und strukturierte Beschreibung der Problemstellung erarbeitet. Die 6W-Methode ist eines von mehreren Werkzeugen das dabei helfen kann, alle für die erfolgreiche Bearbeitung der Aufgabe relevanten Informationen zu erfassen und bei der nachfolgenden Problemlösung zu berücksichtigen.

@@ -1,0 +1,112 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
+
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - Messung
+  - Messprinzip
+  - Messmethode
+  - Messverfahren
+
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 2
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+-->
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Messung, Messprinzip, Messmethode, Messverfahren
+
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Grundlagen
+## Begriffe
+:::
+
+### Messung, Messprinzip, Messmethode, Messverfahren {#sec-messung}
+
+---
+
+> *"Wer misst, misst Mist"* (Quelle: Unbekannt)
+
+---
+
+::: {.callout-tip}
+## Definition: *"Messung"*
+Eine [Messung](https://de.wikipedia.org/wiki/Messung) ist der experimentelle Vorgang, durch den ein spezieller Wert einer physikalischen Größe als Vielfaches einer Einheit oder eines Bezugswertes ermittelt wird. DIN 1319 definiert Messung als das Ausführen von geplanten Tätigkeiten zu einer quantitativen Aussage über eine Messgröße durch Vergleich mit einer Einheit.
+:::
+
+::: {.callout-tip}
+## Definition: *"Messprinzip"*
+[Messprinzip](https://de.wikipedia.org/wiki/Messung#Messprinzip) ist die wissenschaftliche Grundlage eines Messverfahrens. DIN 1319-1 definiert Messprinzip als die physikalische Grundlage der Messung, z.B. die Gravitationskraft als Grundlage einer Messung der Masse eines Körpers.
+:::
+
+::: {.callout-tip}
+## Definition: *"Messmethode"*
+[Messmethode](https://de.wikipedia.org/wiki/Messung#Messmethode) ist nach DIN 1319-1 die spezielle, vom Messprinzip unabhängige Art des Vorgehens bei der Messung, z.B Nullabgleichs-Messmethode oder Differenz-Messmethode.
+:::
+
+::: {.callout-tip}
+## Definition: *"Messverfahren"*
+[Messverfahren](https://de.wikipedia.org/wiki/Messung#Messverfahren) ist nach DIN 1319-1 die praktische Anwendung eines Messprinzips und einer Messmethode, z.B. die Masseermittlung mit einer Balkenwaage und Gewichtsstücken nach der Nullabgleichs-Messmethode.
+:::

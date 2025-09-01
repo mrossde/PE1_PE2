@@ -1,0 +1,1064 @@
+---
+title: "DEB3 Komplexe Systeme und Statistik"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Komplexe Systeme und Statistik"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Komplexe Systeme
+  - System
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+---
+
+<!--
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Butterfly-Effect
+
+-------------------------------------------------------------------------- -->
+
+<!--
+::: {.callout-tip collapse="true"}
+-->
+# Komplexe Systeme
+
+## Grundlagen
+
+### System {#sec-system}
+
+
+<p style="color: rgb(143, 11, 148);">→ Teile der Vorlesung "Entwicklung mechatronischer Systeme" von Prof. Schlipf übernehmen!</p>
+
+
+
+::: {.callout-tip}
+## Definition *"System"*
+Ein System ist eine geordnete Menge von miteinander in Wechselwirkung stehenden Elementen, die gemeinsam eine bestimmte Funktion oder ein Ziel erfüllen und durch eine definierte Systemgrenze von ihrer Umgebung abgegrenzt sind.
+:::
+
+#### Systemanalyse
+
+::: {.callout-tip}
+## Definition *"Systemanalyse"*
+Die [Systemanalyse](https://de.wikipedia.org/wiki/Systemanalyse) ist der strukturierte Prozess der Untersuchung und Modellierung eines Systems, um dessen Struktur, Funktionen, Abläufe und Wechselwirkungen zu verstehen, Schwachstellen zu identifizieren und Anforderungen für eine Optimierung oder Neuentwicklung abzuleiten.
+:::
+
+
+
+# V-Modell
+(Quelle: Prof. Markus Schlipf, Vorlesung MTB3 Entwicklung mechatronischer Systeme)
+
+
+::: {.callout-note collapse="true"}
+## Exkurs: International Council on Systems Engineering (INCOSE)
+Die Abkürzung [INCOSE](https://en.wikipedia.org/wiki/International_Council_on_Systems_Engineering) steht für die International Council on Systems Engineering. Es ist eine weltweit führende Organisation für Systems Engineering, die Standards, Best Practices und Weiterbildungen in diesem Bereich fördert.
+
+Was ist INCOSE?
+
++ Gegründet: 1990
++ Ziel: Förderung und Weiterentwicklung des Systems Engineering
++ Mitglieder: Ingenieure, Wissenschaftler, Unternehmen, Organisationen aus verschiedenen Branchen (z. B. Luft- und Raumfahrt, Automobil, IT, Verteidigung)
++ Website: [www.incose.org](https://www.incose.org/)
+
+Kernaufgaben von INCOSE:
+
++ Entwicklung von Standards und Methoden für Systems Engineering
++ Bereitstellung von Zertifizierungen (z. B. ASEP, CSEP, ESEP)
++ Publikation des INCOSE Systems Engineering Handbook
++ Organisation von Konferenzen und Fachgruppen
++ Förderung von MBSE (Model-Based Systems Engineering)
+
+INCOSE und der Produktentwicklungsprozess
+
+INCOSE definiert das V-Modell als einen etablierten Entwicklungsprozess für komplexe technische Systeme.
+Begriffe wie SoI (System of Interest) und SoS (System of Systems) stammen aus dem Systems-Engineering-Ansatz, den INCOSE mitprägt.
+Die ISO/IEC 15288-Norm, die den Lebenszyklus von Systemen beschreibt, wurde in Zusammenarbeit mit INCOSE entwickelt.
+
+Zertifizierungen durch INCOSE:
+
++ ASEP (Associate Systems Engineering Professional) – für Einsteiger
++ CSEP (Certified Systems Engineering Professional) – für erfahrene Ingenieure
++ ESEP (Expert Systems Engineering Professional) – für Experten mit langjähriger Erfahrung
+:::
+
+
+
+## System (Folie MSchlipf_VL3Anfoderungen31)
+ 
+Thermodynamik: (A. Frohn, Einführung in die technische Thermodynamik)
+ „Die Substanz, die Gegenstand einer thermodynamischen Untersuchung ist, wird als System bezeichnet. […]
+
+Der Bereich außerhalb des Systems wird Umgebung genannt. Die Grenzen des Systems können als gedachte Grenzen eingeführt werden, sie können aber auch mir realen Begrenzungsflächen zusammenfallen […]
+
+Man kann zwar die Systemgrenzen frei bestimmen, durch eine geeignete Wahl der Systemgrenzen wird aber häufig die Beantwortung einer bestimmten Fragestellung entscheidend vereinfacht.“
+
+Definition des System of Interest (SoI)
++ Systemgrenzen → Inhalt = SoI
++ Einordnung SoI in SoS: welche Nachbarsysteme sind zu beachten?
++ Abgrenzung des Projektes
+
+
+
+![System of Interest](images/system.drawio.svg){width=64% #fig-system}
+
++ Systemgrenze  → Definiert, welche Aspekte durch das geplante System abgedeckt werden sollen und welche Aspekte nur Teil der Umgebung dieses Systems sind
++ Systemkontext  →  Liegt zwischen Systemgrenze und Kontextgrenze, ist relevant für das Verständnis und die Definition der Anforderungen an das System und kann im Rahmen der Entwicklung des Systems nicht bzw. kaum mitgestaltet werden; beeinflusst geplantes System
++ Kontextgrenze  → Grenze des Kontexts zur irrelevanten Umgebung hin (Kontextabgrenzung); schließt alles aus, was keine relevante Beziehung zu dem System hat
++ Irrelevante Umgebung  →  Aspekte, die keine relevante Beziehung zum geplanten System haben, hat keinen Einfluss auf Entwicklung des geplanten Systems.
+
+::: {.callout-important}
+## Pro-Tipp
+Grenzen sind nicht immer eindeutig bestimmbar und werden im Verlauf der Systementwicklung präzisiert und werden an den Erkenntnisfortschritt angepasst.
+:::
+
+<!-- ChatGPT4.0
+Ja, im Zusammenhang mit Systemen steht die Abkürzung **SoI** für **"System of Interest"**.  
+
+### **Bedeutung von SoI (System of Interest):**  
+Das *System of Interest* ist das System, das in einer bestimmten Analyse, Entwicklung oder Untersuchung betrachtet wird. Es ist der zentrale Fokus innerhalb eines Systems Engineering-Prozesses oder einer Systemanalyse.  
+
+### **Abgrenzung zu verwandten Begriffen:**  
+- **Wider Systemkontext:** Das SoI existiert oft innerhalb eines größeren *System of Systems (SoS)*.  
+- **Systemumgebung:** Das SoI interagiert mit externen Systemen, Stakeholdern oder Umwelteinflüssen.  
+- **Subsysteme:** Das SoI kann selbst aus mehreren Subsystemen bestehen, die zusammen eine Funktion erfüllen.  
+
+### **Anwendungsbereiche:**  
++ *Systems Engineering (z. B. nach INCOSE oder ISO/IEC 15288)*  
++ *Komplexe technische Systeme (z. B. Luft- und Raumfahrt, Automobil, IT-Systeme)*  
++ *Modellbasierte Systementwicklung (MBSE)*  
+
+
+## SoI
+
+Im Kontext des **Produktentwicklungsprozesses** bezeichnet der Begriff **SoI (System of Interest)** dasjenige System, das im Fokus der Produktentwicklung steht und für das Anforderungen definiert, entworfen, realisiert, getestet und schließlich in den Betrieb überführt werden.  
+
+### **Definition:**  
+Das *System of Interest (SoI)* ist das betrachtete System innerhalb des Produktentwicklungsprozesses. Es umfasst die relevanten Komponenten, Funktionen und Schnittstellen, die entwickelt und integriert werden müssen, um die gewünschten Anforderungen zu erfüllen.  
+
+### **Merkmale des SoI in der Produktentwicklung:**  
++ **Abgegrenzter Fokus:** Das SoI ist das System, das entwickelt wird, nicht die gesamte Systemlandschaft.  
++ **Dynamische Definition:** Das SoI kann sich in verschiedenen Entwicklungsphasen ändern (z. B. von einer technischen Komponente hin zum Gesamtsystem).  
++ **Interaktion mit Umgebung:** Es steht in Wechselwirkung mit anderen Systemen, Nutzern und Umwelteinflüssen.  
++ **Hierarchische Struktur:** Es kann aus Subsystemen bestehen oder Teil eines *System of Systems (SoS)* sein.  
+
+### **SoI im Entwicklungsprozess (nach Systems Engineering-Ansatz):**  
+1. **Anforderungsanalyse:** Klärung der Stakeholder-Bedürfnisse und Ableitung der SoI-Funktionalitäten.  
+2. **Systemarchitektur:** Definition der Systemstruktur, der Subsysteme und Schnittstellen.  
+3. **Detailliertes Design & Implementierung:** Entwicklung und Verfeinerung der technischen Lösungen.  
+4. **Validierung & Verifikation:** Sicherstellen, dass das SoI spezifikationsgerecht funktioniert.  
+5. **Betrieb & Wartung:** Das SoI wird in seinen realen Nutzungskontext überführt und ggf. weiterentwickelt.  
+
+### **Beispiel: SoI in der Automobilentwicklung**  
+- **SoI auf Fahrzeugebene:** Das gesamte Auto als entwickeltes Produkt.  
+- **SoI als Teilsystem:** Nur das Infotainmentsystem oder das Fahrassistenzsystem.  
+- **SoI als Komponente:** Eine spezifische ECU (Electronic Control Unit) innerhalb eines Fahrzeugsystems.  
+
+## SoS
+
+Im Kontext des **Produktentwicklungsprozesses** und des **Systems Engineering** steht die Abkürzung **SoS (System of Systems)** für ein übergeordnetes, aus mehreren interagierenden Einzelsystemen bestehendes Gesamtsystem.  
+
+### **Definition:**  
+Ein *System of Systems (SoS)* ist eine Konstellation aus mehreren unabhängigen, aber kooperierenden **Systemen**, die zusammen eine übergeordnete Funktion oder einen Mehrwert erzeugen, den die einzelnen Systeme allein nicht bieten könnten.  
+
+### **Merkmale eines SoS:**  
++ **Jedes Teilsystem ist eigenständig** – Die einzelnen Systeme (Sub-Systeme) können unabhängig existieren und operieren.  
++ **Dynamische Interaktionen** – Die Beziehungen zwischen den Systemen können sich über die Zeit verändern.  
++ **Verteilte Kontrolle** – Es gibt oft keine zentrale Steuerung, sondern eine koordinierte Zusammenarbeit der Systeme.  
++ **Emergente Eigenschaften** – Das SoS kann Eigenschaften haben, die nicht allein aus der Summe der Einzelsysteme ableitbar sind.  
++ **Interoperabilität notwendig** – Die Systeme müssen über definierte Schnittstellen und Protokolle zusammenarbeiten.  
+
+### **SoS im Produktentwicklungsprozess**  
+1. **Identifikation des SoS:** Definition des übergeordneten Systems, das aus mehreren Teilsystemen besteht.  
+2. **Abgrenzung des *System of Interest (SoI)*:** Das SoI ist ein spezifisches System innerhalb des SoS, das entwickelt oder analysiert wird.  
+3. **Systemintegration:** Sicherstellen, dass das SoI mit anderen Systemen innerhalb des SoS kompatibel ist.  
+4. **Test & Validierung:** Überprüfung der Gesamtfunktionalität des SoS inklusive Wechselwirkungen zwischen den Systemen.  
+
+### **Beispiele für SoS in der Produktentwicklung**  
+- **Automobilindustrie:** Ein vernetztes Fahrzeug, das mit anderen Fahrzeugen, Verkehrsinfrastruktur und Cloud-Diensten kommuniziert.  
+- **Luft- und Raumfahrt:** Ein Flottenmanagementsystem, das verschiedene Flugzeuge, Satelliten und Bodenstationen integriert.  
+- **Smart Cities:** Ein intelligentes Verkehrssystem, das Ampeln, Fahrzeuge, Navigationssysteme und öffentliche Verkehrsmittel miteinander verbindet.  
+
+
+
+### **Abgrenzung SoI vs. SoS**  
+| **Begriff** | **Bedeutung** |
+|------------|--------------|
+| **System of Interest (SoI)** | Das betrachtete System innerhalb einer Entwicklung oder Analyse |
+| **System of Systems (SoS)** | Eine übergeordnete Struktur aus mehreren kooperierenden, eigenständigen Systemen |
+
+
+Die **Grenze zwischen SoI (System of Interest) und SoS (System of Systems)** wird durch den **Fokus der Analyse und Entwicklung** sowie durch die **Grad der Unabhängigkeit der Systeme** bestimmt.  
+
+### **Definition der Grenze zwischen SoI und SoS:**  
+1. **System of Interest (SoI):**  
+   - Das System, das im aktuellen Entwicklungs- oder Analysefokus steht.  
+   - Wird aktiv entworfen, entwickelt, getestet oder optimiert.  
+   - Besteht oft aus mehreren Subsystemen, die gemeinsam eine definierte Funktion erfüllen.  
+   - **Beispiel:** Ein neues Fahrerassistenzsystem, das entwickelt wird.  
+
+2. **System of Systems (SoS):**  
+   - Eine übergeordnete Struktur, die aus mehreren, eigenständigen Systemen besteht.  
+   - Jedes Teilsystem kann unabhängig existieren und eigene Entwicklungszyklen haben.  
+   - Die Systeme interagieren miteinander, um einen zusätzlichen Mehrwert zu erzeugen.  
+   - **Beispiel:** Ein vernetztes Verkehrsmanagementsystem, in dem mehrere Fahrerassistenzsysteme unterschiedlicher Fahrzeuge miteinander kommunizieren.  
+
+### **Wichtige Unterscheidungskriterien:**  
+
+| Kriterium         | SoI (System of Interest) | SoS (System of Systems) |
+|-------------------|--------------------------|--------------------------|
+| **Fokus**         | Betrachtetes System in der Entwicklung oder Analyse | Übergeordnetes System mit mehreren eigenständigen Systemen |
+| **Unabhängigkeit** | Besteht aus Subsystemen, die nicht autonom sind | Besteht aus eigenständigen Systemen mit eigenen Zielen |
+| **Steuerung**     | Einheitlich geführt und entwickelt | Dezentrale Steuerung mit Koordination der Teilsysteme |
+| **Interaktion**   | Definierte Schnittstellen zu seiner Umgebung | Dynamische Wechselwirkungen zwischen Systemen |
+| **Beispiel Automobil** | Ein einzelnes Fahrzeugmodell oder Assistenzsystem | Ein vernetztes Verkehrssystem mit Fahrzeug-zu-Fahrzeug-Kommunikation |
+
+### **Wann ist ein System ein SoI und wann Teil eines SoS?**  
+- **Ein System ist ein SoI, wenn es aktiv entwickelt oder analysiert wird.**  
+- **Dasselbe System kann jedoch ein Teilsystem eines SoS sein, wenn es mit anderen Systemen in einem übergeordneten Kontext interagiert.**  
+- **Die Grenze ist nicht fix, sondern hängt von der betrachteten Perspektive ab.**  
+
+### **Beispiel zur Abgrenzung:**  
+**Autonomes Fahrzeug in einer Smart City**  
+- Entwickeln Ingenieure das **autonome Fahrsystem** eines Autos? → **Das Fahrzeug ist das SoI.**  
+- Betrachten sie das gesamte **intelligente Verkehrsnetz**, das viele Fahrzeuge, Ampeln und Sensoren verbindet? → **Dann ist es ein SoS.**  
+
+-->
+
+
+
+## System (Folie MSchlipf_VL3Anfoderungen32)
+
+Für erfolgreiche und zielgerichtete Anforderungsermittlung, sollte man sich vor der Anforderungserhebung folgende 3 Fragen stellen:
+
+1. Was soll Teil des Systems sein?  → Das, was spezifiziert werden muss
+2. Was soll nicht Teil des Systems sein?  → Das, was nicht spezifiziert werden muss
+3. Was hat direkten Bezug zu dem System? → Das, was beim Spezifizieren berücksichtigt werden muss
+
+Wichtig: Begriff „System“ erfordert für jeden Bereich eine eigene Definition, weil der Betrachtungsgegenstand unterschiedlich ist.
+
+
+
+
+## Motivation
+<!--
+```{mermaid}
+%%| label: fig-label-quoteitprojekte
+%%| fig-cap: "Erfolg/Misserfolg von IT-Projekten"
+%%{init: {'theme': 'neutral'}}%%
+pie 
+title Erfolg/Misserfolg von IT-Projekten
+    "erfolgreich" : 29
+    "zu spät/über Budget" : 52
+    "abgebrochen" : 19
+```
+-->
+
+![Erfolg/Misserfolg von IT-Projekten (Quelle: [The Standish Group](https://standishgroup.myshopify.com/), [Chaos Report](https://de.wikipedia.org/wiki/Chaos-Studie), Stand: [2015](https://www.standishgroup.com/sample_research_files/CHAOSReport2015-Final.pdf))](images/mermaid_itprojekte.svg){width=54% #fig-quoteitprojekte}
+
+<!--
+```{mermaid}
+%%| label: fig-label-quoteitprojektewasserfall
+%%| fig-cap: "Erfolg/Misserfolg von IT-Projekten (Wasserfallmodell), Quelle: Chaos Report 2020"
+%%{init: {'theme': 'neutral'}}%%
+pie 
+title Erfolg/Misserfolg von IT-Projekten (Wasserfallmodell)
+    "erfolgreich" : 13
+    "zu spät/über Budget" : 59
+    "abgebrochen" : 28
+```
+
+```{mermaid}
+%%| label: fig-label-quoteitprojekteagile
+%%| fig-cap: "Erfolg/Misserfolg von IT-Projekten (Agile Methoden), Quelle: Chaos Report 2020"
+%%{init: {'theme': 'neutral'}}%%
+pie 
+title Erfolg/Misserfolg von IT-Projekten (Agile Methoden)
+    "erfolgreich" : 42
+    "zu spät/über Budget" : 47
+    "abgebrochen" : 11
+```
+-->
+
+
+::: {#fig-erfolgsquoteitentwicklung layout-ncol=2}
+
+![Wasserfallmodell](images/mermaid_itprojektewasserfall.svg){#fig-itwasserfallmodell}
+
+![Agile Methoden](images/mermaid_itprojekte_agile.svg){#fig-itagilemethoden}
+
+Erfolg/Misserfolg von IT-Projekten in Abhängigkeit von der gewählten Entwicklungsmethodik; Wasserfallmodell (links), Agile Methoden (rechts) (Quelle: [The Standish Group](https://standishgroup.myshopify.com/), [Chaos Report](https://de.wikipedia.org/wiki/Chaos-Studie), Stand: 2020)
+:::
+
+<!--
+https://thestory.is/de/journal/chaos-report/
+Der Bericht analysiert eine Stichprobe von rund 50.000 Projekten aus verschiedenen Marktsegmenten und teilt sie in drei Gruppen ein:
+
+Erfolgreiche Projekte: Abgeschlossen pünktlich, mit allen geplanten Funktionen und im Rahmen des Budgets.
+Herausgeforderte Projekte: Überschritten die Frist und das Budget und boten weniger Funktionen als ursprünglich geplant.
+Gescheiterte Projekte: Die Arbeit an ihnen wurde abgebrochen.
+Der im Jahr 2020 veröffentlichte Bericht (die neueste Version des Berichts) zeigt Folgendes an:
+31 % der Projekte sind vollständig erfolgreich
+50 % der Projekte überschreiten die Frist und das Budget
+19 % der Projekte werden abgebrochen
+Vergleicht man die Ergebnisse des Berichts mit den Ergebnissen der früheren, im Internet verfügbaren Studie, so stellt man fest, dass der Prozentsatz der erfolgreichen Projekte (Erfolgsquote) konstant bei etwa 30 % liegt.
+
+
+Erfolgsquote — der Prozentsatz der erfolgreichen Projekte
+
+Bis 2015 wurde in dem Chaos Report eine Definition der Erfolgsquote verwendet, die sich aus drei Faktoren zusammensetzt. Ein erfolgreiches Projekt war eine Software, die fristgerecht, im Rahmen des Budgets und mit allen geplanten Funktionen geliefert wurde (ein klar definierter Projektumfang).
+
+Diese Definition änderte sich jedoch im Jahr 2015. Seitdem gilt ein Projekt, das fristgerecht, im Rahmen des Budgets und mit zufriedenstellenden Ergebnissen abgeschlossen wird, als erfolgreiches Projekt.
+
+The Standish Group hat diese Entscheidung getroffen, weil ein solches Kriterium die Ziele der Manager und die Kundenzufriedenheit besser beschreibt.
+
+Die neue Definition führte zu einem Rückgang der Erfolgsquote um 7 %.
+
+Was beeinflusst den Erfolg eines Projekts?
+Der Bericht beschreibt außerdem ein Dutzend Faktoren, die den Erfolg eines Projekts beeinflussen.
+
+Zu diesen Faktoren gehören:
+
+Führungskräfteunterstützung — das Management unterstützt die Mitarbeiter emotional und finanziell.
+Emotionale Reife — eine Sammlung von Verhaltensweisen, die beschreiben, wie Mitarbeiter zusammenarbeiten.
+Benutzereinbindung — Benutzer werden ermutigt, ihre Erfahrungen zu teilen, und ihre Meinungen werden berücksichtigt.
+Optimierung — Steigerung der Geschäftseffizienz und Optimierung von Prozessen.
+Fachpersonal — beschreibt das hohe Niveau der Mitarbeiterfähigkeiten in Technologie und Wirtschaft.
+SAME (Standard Architectural Management Environment) — eine Sammlung von Praktiken zur Softwareproduktion, -bereitstellung und -nutzung.
+Fundierte Kenntnisse in Agile — bestimmt die Kenntnisse und Fähigkeiten in der Agile-Methodik.
+Bescheidene Ausführung — beschreibt Prozesse, die aus einfachen, automatisierten Elementen und einem begrenzten Einsatz von Projektmanagement-Tools bestehen.
+Projektmanagement-Kompetenz — eine Reihe von Fähigkeiten im Projektmanagement.
+Klare Geschäftsziele — die Fähigkeit, Projektziele mit Geschäftszielen zu verstehen und in Einklang zu bringen.
+
+Im Jahr 2020 stellte The Standish Group drei neue Erfolgsfaktoren vor.
+
+Gute Arbeitsumgebung
+Gutes Team
+Guter Sponsor
+Gute Arbeitsumgebung
+Eine gute Arbeitsumgebung ist ein Ort, an dem das Team an Software arbeitet. Es besteht aus einem Sponsor, einem Team und allen anderen Mitarbeitern, die mit ihnen während des Projekts zusammenarbeiten. Der Einfluss anderer Mitarbeiter kann sich negativ oder positiv auf die Softwareentwicklung auswirken, daher ist es wichtig, die Mitarbeiter kontinuierlich zu schulen und ihre fachlichen Qualifikationen zu verbessern.
+
+Gutes Team
+Ein gutes Team ist die treibende Kraft des Projekts und hat den größten Einfluss auf das Endergebnis. Der Sponsor motiviert, leitet und instruiert das Team. Letztlich hängt es jedoch vom Team ab, ob es die erwarteten Ergebnisse liefern kann. Eine der Empfehlungen von The Standish Group lautet, kleine Teams zu bilden.
+
+Guter Sponsor
+The Standish Group definiert einen guten Sponsor als das Herzstück eines Projekts, ohne das es nicht existieren kann. Ihrer Meinung nach ist der wichtigste Aspekt, der zum Erfolg führt, die kontinuierliche Verbesserung der Fähigkeiten eines Sponsors, damit er das Team während des Projekts effektiv führen und unterstützen kann. Gleichzeitig ist dies der am einfachsten zu verbessernde Teil des Projekts, da jedes Team nur einen Sponsor hat.
+
+Es ist auch erwähnenswert, dass der Chaos Report seit Jahren feststellt, dass die Verwendung der agilen Methodik zur Verwaltung von Projekten viel effektiver ist (etwa dreimal effektiver) als Projekte, die nach dem Wasserfallmodell verwaltet werden.
+
+Können wir die Softwareentwicklung als ein Projekt behandeln?
+The Standish Group ist der Meinung, dass Unternehmen aufhören sollten, die Softwareentwicklung als ein Projekt zu behandeln, da ein Projekt per Definition ein Ende hat. Stattdessen empfiehlt die Gruppe einen kontinuierlichen Entwicklungsansatz ohne definiertes Ende. Software sollte kontinuierlich entwickelt, gewartet und verbessert werden.
+
+Außerdem betont die Gruppe, dass die Aufteilung des Gesamtprojekts in kleinere Projekte auch keine Lösung ist. Das führt dazu, dass man an kleineren Teilen arbeitet, die immer noch ein bestimmtes Budget und eine bestimmte Frist haben, und wenn das Projekt dann in Produktion geht, stellt sich heraus, dass die Benutzer andere Bedürfnisse haben.
+
+Daher wird empfohlen, kleine und kontinuierliche Verbesserungen vorzunehmen, die von den Benutzern leicht verdaut und getestet werden können.
+
+Werden Projektmanager wirklich gebraucht?
+Die folgende umstrittene Aussage in dem Bericht ist die Schlussfolgerung, dass Projektmanager während des Projekts mehr Schaden als Nutzen anrichten. Warum ist diese Aussage so umstritten? Weil sie im Widerspruch zu den Empfehlungen steht, die The Standish Group seit 30 Jahren predigt.
+
+In früheren Berichten wurde die Bedeutung eines qualifizierten Projektmanagers hervorgehoben; im Jahr 2020 zog The Standish Group diese Empfehlung jedoch zurück. Stattdessen identifizierte sie eine andere Gruppe von Faktoren, die für den Projekterfolg ausschlaggebend sind: eine gute Arbeitsumgebung, ein gutes Team und ein guter Sponsor.
+
+Die in dem oben genannten Artikel vorgestellten Daten zeigen, dass die Erfolgsquote von Projekten, die von hochqualifizierten Managern geleitet werden, nur 23 % beträgt (für Projekte, die mit nicht-agilen Methoden durchgeführt werden). Bei Projekten ohne Manager steigt diese Kennzahl auf 58 %.
+
+Im Gegensatz dazu sehen die Statistiken für Projekte, die nach dem Agile-Verfahren durchgeführt werden, folgendermaßen aus: Die Erfolgsquote für Projekte mit einem hochqualifizierten Manager liegt bei 18 %, und für Projekte ohne Manager erreicht sie 91 %.
+
+Auf der Grundlage der oben genannten Daten kam die Gruppe zu dem Schluss, dass Projektmanager häufig unnötigen Papierkram produzieren, was die Entscheidungszeit verlängert und den Projektfortschritt verlangsamt.
+
+Eine weitere interessante Erkenntnis aus dem Chaos Report 2020 ist der negative Einfluss von Projektmanagement-Tools. The Standish Group stützt ihre Schlussfolgerungen auf die Clarity-Softwaretests. Die Tests haben gezeigt, dass die Verwendung dieser Art von Tools die Erfolgsquote senkt und die Projektkosten erhöht.
+
+In der „Review Standish Group - CHAOS 2020: Beyond Infinity“ finden wir eine Einteilung der Software-Entwicklungsgeschichte in 4 Phasen.
+
+Die erste Phase dauerte von 1960 bis 1980 und hieß „Wilder Westen“.
+Die zweite, die „Wasserfallperiode“, dauerte von 1980 bis 2000.
+Die „agile Periode“ begann im Jahr 2000 und dauert bis heute an.
+Die letzte Phase, die noch nicht begonnen hat, wurde „Unendliche Fließperiode“ genannt.
+The Standish Group sagt, dass wir uns am Ende der „Agile Periode“ befinden und dass wir uns einem Punkt nähern, an dem sich Organisationen von Budgets, Plänen, Managern und Scrum-Mastern entfernen werden.
+
+In dieser Phase liegt der Schwerpunkt auf der Integration des direkten Budgets in den Entwicklungsprozess und der Minimierung der Aktivitäten im Zusammenhang mit dem Projektmanagement. Softwareänderungen werden kontinuierlich in kleinen Schritten eingeführt.
+
+In Anbetracht dieser Veränderungen hat The Standish Group angekündigt, dass der Chaos Report 2020 die letzte Ausgabe sein wird. Da sich die Herangehensweise an die Softwareentwicklung ändern und zu einer Abkehr von Projekten führen wird, gibt es keinen Grund, sie weiterhin zu analysieren.
+
+Zusammenfassung
+Der Chaos Report ist zweifellos ein umfangreiches Dokument, das interessante Schlussfolgerungen und Daten über die IT-Branche und die Softwareentwicklung liefert. Unternehmen können darin hilfreiche Hinweise auf Bereiche finden, in denen sie sich verbessern können.
+
+Wir können die wichtigsten Empfehlungen wie folgt zusammenfassen:
+
+Die Teams sollten die agile Methodik anwenden.
+Anstatt Projekte zu schaffen, sollten wir uns auf kontinuierliche und kleine Schritte konzentrieren.
+Wir sollten uns auf die Verbesserung von Faktoren wie eine gute Arbeitsumgebung, ein gutes Team und einen guten Sponsor konzentrieren.
+Wir sollten die Zuweisung von Managern zu Projekten vermeiden und den Einsatz von Projektmanagement-Tools reduzieren.
+-->
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Definition Stakeholder
+
+-------------------------------------------------------------------------- -->
+
+::: {.callout-tip}
+## Definition *"Stakeholder"*
+Als [Stakeholder](https://de.wikipedia.org/wiki/Stakeholder) (deutsch Teilhaber, Interessensgruppe, Interessensvertreter oder Anspruchsberechtigter) wird eine Person oder Gruppe bezeichnet, die ein berechtigtes Interesse am Verlauf oder Ergebnis eines Prozesses oder Projekts hat.
+:::
+
+Stakeholder sind alle Personen(-kreise), die ein Interesse am Produkt oder Projekt haben (Kunde/Auftraggeber, Entwicklungsteam, Management, Betriebsrat, …). 
+
+Stakeholder sind wichtige Quelle bei der Ermittlung von Anforderungen
++ Oft viel Wissen vorhanden
++ Herausforderung: alle Bedürfnisse und Wünsche zusammentragen, dokumentieren, mit unterschiedlichen Stakeholdern abstimmen
++ Welches Wissen liegt bei welchem Stakeholder? Risiko: „Wünsch Dir was“
++ Teils konkrete Lösungsvorstellung/Lösungswünsche vorhanden → Gefahr der Einschränkung des Lösungsraums für das Entwicklungsteam
+
+
+
+
+## Kategorisierung in Stakeholder-Analysematrix („Power-Interest-Grid“)  
+
+::: {.callout-tip}
+## Definition *"Power-Interest-Grid"*
+Ein Power-Interest-Grid ist ein Werkzeug im Stakeholder-Management, das Stakeholder basierend auf ihrer Macht und ihrem Interesse am Projekt in einer Matrix positioniert, um ihre Einflussnahme und die erforderliche Managementstrategie zu bestimmen.
+:::
+
+Das **Power-Interest-Grid** ist eine zweidimensionale Matrix, die Stakeholder anhand ihrer **Macht** (Power) und ihres **Interesses** (Interest) an einem Projekt klassifiziert. Es besteht aus vier Quadranten:  
+
+1. **Hohe Macht – Hohes Interesse** („Eng einbinden“):  
+   - Diese Stakeholder haben einen starken Einfluss auf das Projekt und sind hoch involviert.  
+   - Sie sollten aktiv eingebunden und kontinuierlich informiert werden.  
+
+2. **Hohe Macht – Geringes Interesse** („Zufriedenstellen“):  
+   - Diese Stakeholder können das Projekt erheblich beeinflussen, sind aber nicht direkt involviert.  
+   - Sie sollten regelmäßig informiert und bei Bedarf eingebunden werden, um ihre Unterstützung zu sichern.  
+
+3. **Geringe Macht – Hohes Interesse** („Informieren“):  
+   - Diese Stakeholder haben wenig Einfluss, aber ein starkes Interesse am Projekt.  
+   - Sie sollten regelmäßig auf dem Laufenden gehalten werden, um ihr Engagement aufrechtzuerhalten.  
+
+4. **Geringe Macht – Geringes Interesse** („Beobachten“):  
+   - Diese Stakeholder haben weder großen Einfluss noch starkes Interesse am Projekt.  
+   - Sie benötigen nur minimale Kommunikation und sollten bei relevanten Entwicklungen (bei minimalem eigenem Aufwand) beobachtet werden.  
+
+
+:::{#fig-powerinterestgrid}
+  <canvas id="powerInterestGrid" width="540px" height="540px" style="display: block; margin: auto;"></canvas>
+Power-Interest-Grid <!-- Bildunterschrift -->
+:::
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+        const ctx = document.getElementById('powerInterestGrid').getContext('2d');
+        new Chart(ctx, {
+            type: 'scatter',
+            data: {
+                datasets: [
+                    {
+                        label: 'Eng einbinden',
+                        data: [{x: 80, y: 80}],
+                        backgroundColor: "rgb(215,15,60)",
+                        pointRadius: 40
+                    },
+                    {
+                        label: 'Zufriedenstellen',
+                        data: [{x: 80, y: 20}],
+                        backgroundColor: "rgb(0,45,88)",
+                        pointRadius: 40
+                    },
+                    {
+                        label: 'Informieren',
+                        data: [{x: 20, y: 80}],
+                        backgroundColor: "rgb(0,170,220)",
+                        pointRadius: 40
+                    },
+                    {
+                        label: 'Beobachten → Minimaler Aufwand',
+                        data: [{x: 20, y: 20}],
+                        backgroundColor: "rgb(212,212,212)",
+                        pointRadius: 40
+                    }
+                ]
+            },
+            options: {
+                scales: {
+                    x: {
+                        title: { display: true, text: 'Macht (Power)' },
+                        min: 0, max: 100
+                    },
+                    y: {
+                        title: { display: true, text: 'Interesse (Interest)' },
+                        min: 0, max: 100
+                    }
+                },
+                plugins: {
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return context.raw.label;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+@fig-powerinterestgrid zeigt ein einfaches Power-Interest-Grid.
+
+
+Ein Power-Interest-Grid hilft Projektmanagern, ihre Kommunikationsstrategie anzupassen und Stakeholder gezielt zu steuern:
++ Priorisierung der Stakeholder
++ Indikation bei Bewertung & Entscheidung im Fall von Widersprüchen
++ Abschätzung Kommunikationsaufwand („Betreuung“)
+
+
+
+## Stakeholder Kategorisierung (Folie MSchlipf_VL3Anfoderungen22)
+ 
++ Kategorisierung in Stakeholder-Analysematrix („Power Interest Grid“)  
+  ++ Bewertung Einfluss (auf Erfolg des Projekts/Produkts) und Interesse (Grad der Beteiligung am Projekt)
+  ++ Priorisierung der Stakeholder
+  ++ Indikation bei Bewertung & Entscheidung im Fall von Widersprüchen
+  ++ Abschätzung Kommunikationsaufwand („Betreuung“)
+
+
+## Stakeholder Bewertung (Folie MSchlipf_VL3Anfoderungen23)
+
++ Bedürfnisse müssen i.d.R. bewertet werden
+  ++ Priorisieren
+  ++ Konflikte auflösen 
+  
++ Grundlage ist Stakeholder-Liste mit Kategorisierung
++ Stakeholdern-Sicht einnehmen! (Kommunikation)
+  ++ Prioritäten der repräsentierten Interessengruppe und evtl. Einflussmöglichkeiten verstehen
+  ++ Motivation für erfolgreichen und fristgerechten Projektabschluss verstehen
+  ++ An Definition „Erfolg“ beteiligen
+
++ Bewertung aus Sicht des Projektes (kundenbezogen) z.B. mit Hilfe des „Kano-Modells“ <p style="color: rgb(143, 11, 148);">→ siehe Kano-Modell</p>
+
+
+## Motivation Anforderungsentwicklung
+
+Geschäftsrisiken Entwicklung:
+
++ Fehlende Transparenz
++ Termin- und Kostenüberschreitung
++ Unzureichende Produktivität
++ Nacharbeiten und Fehler
++ Projekt- und Haftungsrisiken
++ Demotivation und Burn-Out der Mitarbeitenden
+
+Kosten für Fehlerbeseitigung steigen über Projektlaufzeit exponentiell <p style="color: rgb(143, 11, 148);">→ siehe Rule-of-10</p>
+
+::: {.callout-tip}
+Frühe Investition in Analyse & Design hilft Entwicklungsprojekte erfolgreich abschließen zu können!
+:::
+
+
+
+## Gründe für Anforderungsmanagement (Folie MSchlipf_VL3Anfoderungen10)
+
++ Unklar formulierte Anforderungen → können (und werden i.d.R.) von jedem unterschiedlich interpretiert werden
++ Fehlende Anforderungen → Entwicklung ohne wirkliche Grundlage
++ Lückenhafte Anforderungen durch implizites Wissen → für Ersteller Selbstverständliches wird oft nicht aufgeschrieben
++ Kommunikationsprobleme zwischen Beteiligten → z.B. durch unterschiedlichen Erfahrungs- und Wissensstand
++ Steigende Erwartungshaltung an Systeme →  Innovativer, individueller, umfangreicher und von höherer Qualität
+
+
+
+## Gründe für Anforderungsmanagement (Folie MSchlipf_VL3Anfoderungen11)
+
+Eine gute Anforderung beschreibt eine Funktion, Eigenschaft oder Attribut, das gewollt wird, überprüfbar und erreichbar ist (vgl. → SMARTe Ziele)
+
++ Bedarf
+++ Was passiert, wenn die Anforderung nicht berücksichtigt wird? 
+++ Welche anderen Anforderungen bedingen diese Anforderung? 
+++ Welchen konkreten Grenznutzen liefert diese Anforderung? 
+
+::: {.callout-tip}
+Kann kein Bedarf identifiziert werden ist das ein Zeichen, dass die Anforderung nicht wichtig ist!
+:::
+
++ Überprüfbar
+++ Wie kann die Anforderung getestet werden?
+++ Was sind Abnahme-Kriterien (bestanden, nicht bestanden)? (vgl. → DoD Definition of Done)
+
++ Erreichbar
+++ Anforderungen müssen technisch und im Rahmen des Budgets und des Zeitrahmens möglich sein 
+++ Anforderungen dürfen nicht im sich gegenseitig ausschließenden Widerspruch zu anderen Anforderungen stehen
+
+
+
+## Qualitätsmerkmale für gute Anforderungen (Folie MSchlipf_VL3Anfoderungen12)
+ 
++ Korrektheit/Adäquatheit: Anforderung entspricht Vorstellung des Stakeholders
++ Eindeutigkeit: vermeidet Fehler durch Fehlinterpretation (ggf. Definition in Glossar)
++ Verständlichkeit: einheitliche Begriffe, kurze Sätze, für alle Stakeholder (intern & extern)
++ Vollständigkeit: gewünschte Funktion muss gänzlich beschrieben sein
++ Konsistenz: Anforderung muss in sich und gegenüber anderen Anforderungen widerspruchsfrei sein, sonst ist Spezifikation nicht realisierbar
++ Abgestimmtheit: eine Anforderung wird von allen Stakeholdern akzeptiert
++ Bewertbarkeit: Priorisierung nach rechtlicher Verbindlichkeit, Stabilität, Wichtigkeit, etc.
++ Verifizierbarkeit: Anforderung muss durch Test oder Messung prüfbar sein
++ Realisierbarkeit: Anforderung muss innerhalb der Rahmenbedingungen umsetzbar sein
++ Aktualität: Anforderungen müssen für gegenwärtige Gegebenheiten gültig sein
+
+
+
+## Qualitätsmerkmale Spezifikationsprozess für Anforderungen (Folie MSchlipf_VL3Anfoderungen13)
+
+Aufgrund Umfang und Bedeutung der Anforderungserhebung und –Entwicklung (Spezifikation) sollte der zugehörige Prozess besondere Qualitätsmerkmale erfüllen: 
+
++ Kundenorientierung → Zufriedenheit des Kunden wichtig für Erfolg
++ Methodisches und zielgerichtetes Vorgehen → Methodik ermöglicht z.B. Vollständigkeit, zielgerichtetes Vorgehen gibt Struktur
++ Verwendung geeigneter Mittel →  Methoden und Tools an Ziel und Umfang des Projektes anpassen
++ Integration von Erstellung und Prüfung von Anforderungen → Definition der Test-Kriterien (verification criteria) bei Erstellung der Anforderungen
+
+
+
+## Anforderungsermittlung (Bedürfnisse/Needs) (Folie MSchlipf_VL3Anfoderungen14)
+
++ Zunächst werden Bedürfnisse (Needs) ermittelt:
+++ Lastenheft-Charakter
+++ Grundlage für System Anforderungen
+++ i.d.R. unsauber formuliert, z.T. widersprüchlich.
+++ Basis für spätere Systemvalidierung
+ 
++ Mögliche Quellen: 
+++ Dokumente (z.B. Gesetze, Normen, Lastenhefte, etc.) (siehe unten)
+++ Systeme in Betrieb (Vorgänger-, Konkurrenz-, Nachbarsysteme)
+++ Stakeholder (Personen oder Organisationen mit Einfluss auf Anforderungen)
+
++ Mögliche Bereiche:
+++ National & International
+++ Auftraggeber & Auftragnehmer
+++ Projektspezifisch & unternehmensspezifisch
+++ Entwicklungsumfeld
+
+## Mögliche Quellen: **Dokumente** (Folie MSchlipf_VL3Anfoderungen15)
+
++ Dokumente als Anforderungsquellen
+++ Enthalten relevante Informationen
+++ allgemeingültige Dokumente wie Normen, Standards, Gesetze haben großen Einfluss auf den Projektverlauf
+++ Dokumentenliste unterstützt bei der Sortierung und Kategorisierung (zentral abgelegt, vom berechtigten Personenkreis lesbar/editierbar)
+
++ Beispiele:
+++ Normen & Standards, Gesetzestexte, Funktionale Sicherheit, Cyber Security,…
+++ Anforderungsdokumente, Lastenhefte,…
+++ branchen- und **organisationsspezifische** Dokumente (z.B. Fehlerberichte, Schulungsunterlagen des Altsystems)
+++ Spezifikationen, Dokumentationen von Geschäftsprozessen
+
+
+## Anforderungsentwicklung
+
+1. Die **Anforderungsentwicklung** (Requirements Engineering) gliedert sich in verschieden Unterdisziplinen 
+
++ **Anforderungserhebung** (engl.: Requirements elicitation) erfolgt als einer der ersten Schritte im Entwicklungsprozess.
++ **Anforderungsdokumentation** beschreibt die Dokumentation der erhobenen Anforderungen nach definierten Regeln
+
+2. Die **Anforderungsverwaltung (-management)** beschreibt Aktivitäten, die den Entwicklungsprozess begleiten und sich z.B. mit Review-Tätigkeiten (prüfen & abstimmen) und Änderungen beschäftigt.
+
+3. Präzisierung der Problem- und Aufgabenstellung am Beginn des Entwicklungsprozesses
+
+::: {.callout-tip}
+## Definition *"Anforderung"*^[Pohl; Rupp: Basiswissen requirements engineering, 4.Auflage, Heidelberg, Dpunkt.verlag, 2015]
+Eine *Anforderung* ist
++ eine Bedingung oder Fähigkeit, die von einem Benutzer (Person oder System) zur Lösung eines Problems oder Erreichung eines Ziels benötigt wird.
++ eine Bedingung oder Fähigkeit, die ein System oder Teilsystem erfüllen oder besitzen muss, um einen Vertrag, eine Norm, eine Spezifikation oder andere formell vorgegebene Dokumente zu erfüllen.
++ eine dokumentierte Repräsentation einer Bedingung oder Eigenschaft gemäß o.g. Punkten
+:::
+
+Anforderungen und Ziele sind nur schwer zu trennen: Ziele definieren einen zu erreichenden Zustand (siehe → SMARTe Ziele), Anforderungen definieren eine zu erreichende Eigenschaft. Zielen liegen meist Anforderungen auf höherer Ebene (z. B. Geschäftsebene) zugrunde.
+
+### System requirements definition process (ISO15288, 6.4.3)
+
+Zweck des Prozesses zur Definition der System Anforderungen ist es, die Stakeholder-Sicht (nutzerorientiert) der gewünschten Fähigkeiten in eine technische Sicht einer Lösung, die die operativen Bedürfnisse (Funktionen) eines Nutzers erfüllt, zu überführen. Ergebnis ist ein Satz messbarer System-Anforderungen, die aus Entwicklersicht beschreiben, welche Charakteristik, Attribute und funktionalen und Leistungs-Anforderungen das System vorweisen soll, um die Stakeholder Anforderungen (Needs) zu erfüllen.
+
+::: {.callout-important}
+Die Anforderungen sollten keine spezifische Implementierung implizieren (lösungsneutral).
+:::
+
+Stakeholder-Bedürfnisse dienen als Grundlage zur Problembeschreibung. Die schrittweise Konkretisierung der Bedürfnisse in Anforderungen über die Systemebenen hinweg unterstützt bei Lösungsfindung:
+1. Stakeholder-Bedürfnisse/Needs: Warum? (Z.B. Anforderungen an ein Produkt aus Sicht des Kunden (Kundenwünsche)
+2. Systemanforderungen: Was? (Z.B. Fähigkeiten oder Eigenschaften eines Systems)
+3. Komponentenanforderungen: Wie? (Z.B. Software-/Elektronik-Anforderungen)
+
+
+<p style="color: rgb(143, 11, 148);">→ siehe Analogie zu Simon Sinek Golden Circle</p>
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Anforderungserhebung
+
+-------------------------------------------------------------------------- -->
+## Anforderungserhebung 
+
+## Anforderungsdokumentation (Folie MSchlipf_VL3Anfoderungen35)
+
+
++ Das Anforderungsdokument (Spezifikation) stellt ein zentrales Artefakt sowohl für die Entwicklung als auch die Eigenschaftsabsicherung dar:
+
+  - Anforderungen als gemeinsame Entwicklungsgrundlage
+  - Nachvollziehbarkeit von Entscheidungen
+  - Komplexität beherrschbar machen
+  - Rechtliche Relevanz
+  - Zugreifbarkeit
+  - Maßnahme gegen Wissensverlust durch Mitarbeiterfluktuation
+  - Grundlage für Nachverfolgbarkeit (Traceability) im System: Was ist zu prüfen, sind alle Anforderungen erfüllt?
+ 
++ Ziel ist eine klare Beschreibung aller ermittelten Anforderungen
+
+  - Missverständnisse durch unverständliche Formulierungen vermeiden
+  - Strukturierte und prüfbare Anforderungen ableitbar
+  -  Unterscheidung zwischen Bedarf (Lastenheft) und Realisierung (Spezifikation)
+
++ Das Anforderungsdokument dient **als gemeinsame Basis für alle Stakeholder** und somit für das gesamte Projekt.
+
+
+
+## Satzschablonen (Folie MSchlipf_VL3Anfoderungen40ff.)
+
++ Satzschablonen bieten Hilfestellung für gute Anforderungen
+
+  - Anforderung im Aktivformulieren um Akteur nicht zu vergessen
+  - Anforderungen als vollständige Sätze formuliert
+  - Anforderungen mit einem Vollverb schreiben, das einen Prozess abbildet
+  - Anforderungen nicht in Nebensätzen formulieren
+
++ Verwendung der Satzschablone nur Empfehlung, teils Darstellung durch Diagramme oder Tabellen sinnvoller
+
+![Satzschablone (Quelle: Schlipf, Markus, Vorlesung Entwicklung mechatronischer Systeme (2024), HS Esslingen)](images/Satzschablonen.drawio.svg){width=100% #fig-satzschablone}
+
+
+
+#### Bedingung (Folie MSchlipf_VL3Anfoderungen46ff.)
+
++ Funktionale Anforderungen oft an Bedingungen geknüpft
+  - Bedingung als Nebensatz an erster Stelle im Anforderungssatz
+  - **optional: ohne Bedingung tauschen <System> und <Wichtigkeit> ihre Position**, 
+  - **Beispiel:** *"Sobald die Spannung unter 11 V sinkt muss das System selbstständig in den Stand-By-Betriebszustand wechseln."*"
+
+
+## Formulierungsregeln (Folie MSchlipf_VL3Anfoderungen46ff.)
+
++ Zahl- und Mengenwörter hinterfragen
+  - ist zu bezeichnende Menge der Objekte genau erfasst?
+  - Signalwörter: alle, jeder, immer, kein,… (Generalisierung)
+ 
++ Eigenschaften mess- bzw. testbar formulieren
+  - auf Adjektive, Adverbien und Vergleiche & Steigerungen achten
+  - Signalwörter: schnell, performant, besser, intuitiv,… 
+
++ Vollverben identifizieren
+  - für jedes Vollverb genau einen Anforderungssatz
+  - Signalwörter: anzeigen und ausdrucken, eingeben und speichern, … 
+ 
++ Nicht exakt definierte Nominalisierung auflösen
+
+  - in eine oder mehrere Anforderungen mit gutem Vollverb umwandeln
+  - Signalwörter: Eingabe, Speicherung, Archivierung, …
+
++ Schwammig formulierte Substantive hinterfragen
+  - feststellen, welches Objekt oder Akteure genau gemeint sind 
+  - Signalwörter: der Anwender, die Meldung, die Funktion, … 
+
+
+## Spezifikation (Folie MSchlipf_VL3Anfoderungen50)
+
+::: {.callout-tip}
+## Definition *"Spezifikation"*
+Eine [Spezifikation](https://de.wikipedia.org/wiki/Spezifikation) ist die genaue Bestimmung der Anforderungen eines Auftraggebers an die Eigenschaften eines Produktes.
+:::
+
++ Die dokumentierten Anforderungen beschreiben als Spezifikation das zu entwickelnde System
+  - Verständlicher Formalismus zur Strukturierung der Inhalte 
+  - Thematische Strukturierung der Anforderungen (z.B. nach Hauptfunktionen)
+  - Referenznummern (ID) verwenden für einfachere Verwaltung und Nachverfolgbarkeit
+  - Anforderungen können durch Beispiele, Begründungen, Kontextinformationen ergänzt werde
+
++ Relevant für Freigabe
+  - Verantwortlichkeiten benennen
+  - Versionierung beachten
+  - Zusammenhänge von Informationen (Anforderungen, CAD-Zeichnungen,…) nachvollziehbar dokumentieren
+
+
+### Versionsverwaltung
+
+::: {.callout-tip}
+## Definition *"Versionsverwaltung"*
+Eine [Versionsverwaltung](https://de.wikipedia.org/wiki/Versionsverwaltung) ist ein System, das zur Erfassung von Änderungen an Dokumenten oder Dateien verwendet wird. Alle Versionen werden in einem Archiv mit Zeitstempel und Benutzerkennung gesichert und können später wiederhergestellt werden. Versionsverwaltungssysteme kommen typischerweise in der Softwareentwicklung oder Content-Management-Systemen zum Einsatz.
+:::
+
++ Hauptaufgaben
+  - Protokollierungen der Änderungen: Es kann jederzeit nachvollzogen werden, wer wann was geändert hat.
+  - Wiederherstellung von alten Ständen einzelner Dateien: Somit können versehentliche Änderungen jederzeit wieder rückgängig gemacht werden.
+  - Archivierung der einzelnen Stände eines Projektes: Dadurch ist es jederzeit möglich, auf alle Versionen zuzugreifen.
+  - Koordinierung des gemeinsamen Zugriffs von mehreren Entwicklern auf die Dateien.
+  - Gleichzeitige Entwicklung mehrerer Entwicklungszweige (engl. Branch) eines Projektes, was nicht mit der Abspaltung eines anderen Projekts (engl. Fork) verwechselt werden darf.
+
++ Beispiel: [GitHub.com](https://github.com/)
+
+
+
+## Anforderungsreview
+
++ Motivation
+
+  - Fehlerhafte Anforderungen beeinträchtigen die Entwicklungsaktivitäten
+  - Anforderungen sind Vertragsgrundlage zwischen Auftraggeber und Auftragnehmer
+  - Sich widersprechende Anforderungen können Konflikte zwischen Stakeholdern erzeugen und zu Fehlern bei der Umsetzung führen
+  - Frühzeitige Bewertung des Produkts aus Stakeholder-Sicht (Kunden & interne Beteiligte)
+  - Belastbare Konfigurationsbasis für alle weiteren Arbeiten
+  - Prüfung der Anforderungen hat den größten Nutzen aller Prüfschritte im Projekt <p style="color: rgb(143, 11, 148);">→ siehe Rule-of-10</p>
+    - Missverständnisse und Lücken ziehen aufwändige Nacharbeiten nach sich
+    - Validierung (***"doing the right things"***) sichert frühzeitig ab, dass das spätere Produkt den angenommenen Wert bringt
+    - Verifikation (***"doing the things right"***) sichert eine konsistente Qualität der Anforderungen und der folgenden Arbeitsergebnisse
+ - Ermöglicht Arbeitsergebnisse mit richtiger Qualität (d.h. *"gut genug"*)
+
+
+## Änderungsmanagement (Folie MSchlipf_VL3Anfoderungen58)
+
+
++ Ziel: Abstimmung, Absicherung, Konsistenzsicherung bei Änderungen. Bearbeitung (Annahme, Ablehnung, Priorisierung) von Änderungsanträgen i.d.R. im „Change Control Board“ (CCB, heterogen besetztes Gremium)
++ Mögliche Ursachen für Änderungen in den Anforderungen:
+  - externe Stakeholder
+    - Wandel in Nutzungswünschen der Anwender (Änderung oder Erweiterung)
+    - Gesetzesänderung
+    - Neue Technologie oder Produkte von Wettbewerbern auf dem Markt
+  - interne Entwicklung
+    - Fehlverhalten des Systems bei Test oder in Betrieb
+    - Fehler bzw. Unvollständigkeit in den Anforderungen
+    - Neue Technologie verfügbar <p style="color: rgb(143, 11, 148);">→ Produktions- und Werkstofftechnik</p>
+    - Anpassung zur Reduktion Aufwand, Komplexität, etc. (z.B. Programmiersprache)
+
+::: {.callout-tip}
+## Definition *"Rückverfolgbarkeit (Traceability)"*
+Die [Rückverfolgbarkeit (Traceability)](https://de.wikipedia.org/wiki/R%C3%BCckverfolgbarkeit_(Anforderungsmanagement)) einer Anforderung ist die Fähigkeit, eine Anforderung über gesamten Lebenszyklus des Systems hinweg eindeutig nachvollziehen zu können.
+:::
+
+
+## Agile Anforderungsentwicklung (Folien MSchlipf_VL3Anfoderungen 60ff)
+
+<p style="color: rgb(143, 11, 148);">→ bei Bedarf auf Folien Prof. Markkus Schlipf verweisen</p>
+
+<!-- -------------------------------------------------------------------------
+
+                       System
+
+-------------------------------------------------------------------------- -->
+# System
+
+## Systemarchitektur 
+### Einordnung
++ Vorgaben an die System-Architektur stammen aus der vorgelagerten Anforderungserhebung (Spezifikation)
+  + Systemarchitektur ist dafür zuständig, dass sich das System derart verhält, wie in den Anforderungen definiert
+
++ Erstes „Erschaffen“ im Systementwurf
+  + Die Systemarchitektur wird durch die Rolle des System-Architekten entworfen (mögliches Pendant in Subsystemen und/oder Domänen)
+  + Die Systemarchitektur definiert die Struktur der Sub-Systeme und Anforderungen an die Sub-Systeme bis hin zu Komponenten-Ebene
+
++Basis für Implementierung der Subsysteme in den Domänen
+  + Physikalische Architektur wird in Technische Architektur (auch Layout oder Design) überführt Auswahl der Bauteile
+
++ Subsystem-Architekturen und zugehörige Anforderungen werden für Integration und Verifikation verwendet
+
+### Ziele
++ Entwicklung Lösungsstruktur, die Nutzer- & System-Anforderungen im operativen Kontext erfüllt
++ Vergleich & Bewertung verschiedener Lösungs-Kandidaten zur Erhöhung der System Effektivität
++ Definition der zu bauenden Komponenten, des Implementierungsansatzes und der Kern-Technologien
++ Definition der Interaktion der Komponenten zur Erfüllung der geforderten Eigenschaften
++ Aufteilung der Systeme zur Zuweisung zu unterschiedlichen Entwicklern (z.B. Domänen)
++ Abschätzung von Kosten, Zeit & Risiko
++ Entwurf einer Integrations-Strategie (abhängig von Architektur)
+
+### Tätigkeiten
++ Entwicklung einer interdisziplinären Gesamtlösungsstruktur/-konzept 
+  + Konzeption und Postulieren neuer möglicher Lösungen (Synthese)
+  + Bestandteile des Systems identifizieren bis auf die unterste relevante Ebene (Dekomposition, Modularisierung)
+  + Elemente, Beziehungen und Prinzipien des Systems
+  + Detaillierung durch funktionale, logische, physische & technische Sicht
+  + Definition der Aufgaben (Funktionen) der Komponenten, die sich aus den Anforderungen ableiten
+
++ Ableitung der Anforderungen an die Subsysteme, die sich aufgrund der Architektur ergeben
+
++ Definition Schnittstellen
+  + extern zu Kontext
+ innerhalb der entwickelten Struktur zwischen den Subsystemen und Komponenten
+ Definition der übertragenen Flüsse (Stoffe, Energie, Signale)
++ Nachverfolgbarkeit
+  + Allokation Anforderungen, Funktionen, Elemente
+ 
++ Bewertung & Entscheidung alternativer Systemarchitekturen  
+
++ Kommunikation mit den Personen, die an der Entwicklung der Komponenten beteiligt sind 
+  + Expertenwissen wird häufig für fundierte Entscheidungen auf Architekturebene benötigt
+
+
+### Erzeugung Struktur
++ Hierarchisierung: 
+  + Einordnung in verschiedene Granularitätsebenen (Super-System & Sub-System)
+  + Feinste Granularitätsebene wird als Komponentenebene bezeichnet
+  + Wahl der Anzahl an Granularitätsebenen projektspezifisch
+
++ Modularisierung: 
+  + Systemelemente oder Bauteile werden zu einer Gruppe zusammengefasst, die z.B. eine Funktion erfüllt (composition → bottom-up) (synergetische Integration verschiedener mechatronischer Module)
+  + Bzw. System wird in Module zerteilt (decomposition → top-down)
+  + Erzeugung von Schnittstellen (interfaces) zwischen den Modulen
+
+::: {.callout-tip}
+## Definition *"Top-Down"*
+Zunächst Erkenntnisse über Grobstruktur, dann schrittweise Verfeinerung zur Spezifikation der Strukturelemente
+:::
+
+::: {.callout-tip}
+## Definition *"Bottom-Up"*
+Getrennt entwickelte Element(gruppen) werden zu Gesamtsystem zusammengefügt
+:::
+
+::: {.callout-tip}
+## Tipp
+ + Kopplung (Schnittstellen) der Module weitestgehend reduzieren
+ + Kritische Schnittstellen nicht über Struktur verteilen
+:::
+
+### Systembegriffe
+
+Ein System (SoI, Kontext, Subsystem,…) wird im Allgemeinen durch Parameter und Zustände beschrieben und charakterisiert. 
+
+#### Parameter
+
++ Systeme werden durch Parameter beschrieben
++ i.d.R. genügt eine Anzahl an Parametern (nicht alle) zur Beschreibung
++ Herausforderung liegt in der Wahl der richtigen (problemspezifischen) Parameter ( Sensitivitätsanalyse)
+ 
+#### Zustände
++ Systembeschreibung wird ergänzt durch Zustände, die das System annehmen kann
++ können sich ändern (variabel)
++ sind prinzipiell messbar
++ werden durch Sensoren gemessen (physisch vorhandene Messwertaufnehmeroder Softwaresensoren/Beobachter) 
++ setzen sich aus den Werten eines oder mehrerer Parameter zusammen
+
+#### SoI (System of Interest):
++ Zu entwickelndes System
++ System-Architektur beschreibt SoI
++ kann „von außen“ (black box) oder „von innen“ (white box) betrachtet werden
+
+#### SoS (System of Systems):
++ Übergeordnete Systemebene des SoI
++ SoI ist Teil des SoS
++ Nicht alle Systeme des SoS liegen zwingend im Kontext des SoI
+ 
+#### HOST:
++ „Gastgeber“ für das SoI
++ Alle Elemente des operativen Kontextes
++ Zugehörige Systeme können auch mehrere System-Ebenen über dem SoI liegen oder auf selber Ebene
+
+#### Black Box
++ System wird abgeschlossen und von außen betrachtet
++ Innere Beschaffenheit wird ausgeblendet
++ Verwendet für Betrachtung der Interaktion mit dem Kontext
++ Fokus auf Schnittstellen des Systems (nach außen) und Verhalten
++ Innere Komplexität bewusst ausgeblendet
+
+#### White Box
++ System wird als ein Satz interagierender Funktionen, Komponenten oder (Sub-)Systeme 
+betrachtet, 
++ Zusammenarbeit dieser Elemente erzeugt das Verhalten der Black Box
++ Fokus auf innerem Aufbau und Beziehungen der Elemente zueinander (strukturell)
++ Fokus auf innere Abläufe (funktional)
++ Elemente werden dabei jeweils als Black Box betrachtet 
+
+#### Abstraktion
+Der Systementwurf untergliedert sich in mehrere Entwurfsschritte im dreidimensionalen Entwurfsraum
+1. Vom Abstrakten zum Konkreten
+  + Architekturen werden zunächst konzipiert und entworfen
+  + Im Folgenden technisch konkretisiert für die Implementierung 
+
+2. Vom Generellen zum Detail
+  + Hierarchisierung in verschiedene Systemebenen
+  + Modularisierung in Funktionsmodulen
+  + Umfassendere Lösungsbeschreibung mit steigender Granularität
+
+3. Von der Funktionalität zur Gestalt
+  + Ausgangspunkt des Entwurfs sind funktionale Anforderungen
+  + Mit zunehmender Konkretisierung rückt der Aspekt der „Gestalt“ in den Vordergrund
+
+<!-- -------------------------------------------------------------------------
+
+                       Use Case
+
+-------------------------------------------------------------------------- -->
+## Systemarchitektur
+
+### Sichten
+
+Die Architektur eines Systems kann in verschiedenen Sichten dargestellt werden. Sichten repräsentieren die selbe Architektur auf unterschiedliche Weise. In der Regel werden in einem Entwicklungsprojekt mehrere Sichten verwendet. Das jeweils gewählte Vorgehen ist i.d.R. projekt- und systemabhängig. Eine spezifische Sicht hat eine Berechtigung wenn die jeweilige Sicht für mindestens einen Stakeholder einen Nutzen bietet. In der Praxis werden zumeist mindestens eine funktionale und eine physische Sicht verwendet.
+
++ Funktional (Funktionale Architektur)
+  - Funktionalitäten des Systems (funktionale Antwort des Systems auf Ereignisse)
+  - Grundlage für Identifikation der benötigten strukturellen Komponenten (funktionale Entwicklung)
+  - Darstellung der Abläufe und funktionaler Hierarchisierung/Modularisierung
+  - Ermittlung der funktionalen Schnittstellen
+
++ Strukturell (Logische Architektur, Physikalische Architektur)
+  - Darstellung der benötigten strukturellen Systeme und Komponenten (Baugruppen und –teile) und ihrer Verbindungen
+
++ Abstrakt (logisch) und im weiteren Verlauf konkret (physikalisch)
+  - Definition der (physikalischen) Flüsse und Schnittstellen (Stecker, Kabel, Leitungen,…)
+  
++ weitere Darstellungen möglich
+  - z.B. Produktionssicht, 
+  - Netzwerk-/Kommunikationssicht
+
+
+#### Funktionale Sicht
+
++ Funktionale Sicht betrachtet das System Verhalten
+  - Betrachtung des dynamischen Verhaltens
+  - Aufbau einer Struktur und Hierarchie von Funktionen
+  - Ableitung von Funktions-Modulen für die Domänen
+  - Ohne Betrachtung von physikalischen Bauteilen
+  - Identifikation und Analyse von Verhaltensabhängigkeiten und Interaktionen zwischen Funktionen ( Schnittstellen)
+ 
++ Start mit zentralen System Anforderungen
+  - Niederprioritäre oder exotische Anforderungen werden nachfolgend zu erster Architektur hinzugefügt
+  - Komplexität kann besser kontrolliert werden
+  - Kosten-Nutzen-Verhältnis kann anhand nötiger Modularisierung abgeschätzt werden 
+
+
++ Ausgangspunkt: Abläufe in verschiedenen Use Cases
+  - Komplexe Abläufe werden durch Zusammenfassen von Aktivitätsgruppen (vgl. Black Box) übersichtlicher dargestellt. 
+  - Beschreibung der Abläufe innerhalb der Gruppe (vgl. White Box) führt auf hierarchische Struktur der Aktivitäten 
+    bzw. Funktionen 
+  - Definiert u.U. neue Anforderungen an Komponenten (z.B. Schnittstellen)
+  - Erweitert Definition der Testfälle: Module definieren Umfang und Inhalt der Verifikation

@@ -1,0 +1,124 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
+
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - Korrelation
+
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Korrelation
+
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Grundlagen
+## Komplexe Systeme
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+
+::: {.callout-warning}
+## WARNING!
+**THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
+:::
+
+### Scheinkorrelation {#sec-scheinkorrelation}
+
+::: {.callout-tip}
+## Definition *"Scheinkorrelation"*
+Scheinkorrelation (englisch spurious relationship oder spurious correlation) bezeichnet eine Korrelation zwischen zwei Größen, der kein Kausalzusammenhang, sondern nur eine zufällige oder indirekte Beziehung zugrunde liegt (englisch: correlation, not causation). Die Scheinkorrelation ist die statistische Entsprechung des in der Philosophie betrachteten Fehlschlusses *"Cum hoc ergo propter hoc"* (*"Mit diesem, also wegen diesem"* oder sinngemäß: *"Gleichzeitigkeit bedeutet Verursachung"*.).
+:::
+
+Der Ausdruck ist Scheinkorrelation ist missverständlich, da eigentlich Scheinkausalität gemeint ist. Denn es liegt nicht nur scheinbar, sondern tatsächlich eine Korrelation vor, aber eben keine Kausalität. 
+
+Eine Scheinkorrelation besteht z. B., wenn konfundierende Variablen (Störvariablen, Störfaktoren) oder intervenierende Variablen einen Einfluss auf die untersuchten Größen haben. Das Phänomen ist seit den Anfängen der Statistik bekannt; der entsprechende englische Begriff *"spurious correlation"* wurde jedoch erst 1954 von Herbert A. Simon geprägt.
+
+
+Scheinkorrelation kann beispielsweise zufällig oder aufgrund von unbeobachteten, erklärenden Variablen auftreten.
+
+Ein mehrfach beobachtetes Zusammentreffen zweier Ereignisse bietet grundsätzlich Anlass für die Vermutung, dass zwischen diesen Ereignissen ein Zusammenhang bestehen könnte. Das zeitliche und räumliche Zusammentreffen zweier Ereignisse begründet jedoch noch keinen kausalen Zusammenhang. Ob ein solcher Zusammenhang besteht, und wenn ja, welches der beiden Ereignisse die Ursache und welches Wirkung ist, oder ob beide Ereignisse gemeinsam Folge eines dritten Ereignisses sind, lässt sich daraus nicht ableiten. In der Statistik spricht man statt von Ursache und Wirkung von Abhängigkeit bzw. im Falle von Zufallsvariablen von Korrelation – selbst bei einer deutlichen Kovarianz im Werteverlauf der Variablen ist nicht auszuschließen, dass es einen dritten gemeinsamen Faktor gibt oder dass die Wirkrichtung zwischen den erhobenen Werten anders verläuft als vermutet.
+
+
+
+Ein bekanntes Beispiel ist die Korrelation zwischen der menschlichen Geburtenrate und der Zahl der Storchenpaare in verschiedenen europäischen Regionen. 
+
+Obwohl es eine Korrelation zwischen der Zahl der Geburten und der Zahl der Storchenpaare gibt (d. h. mehr Geburten und gleichzeitig mehr Storchenpaare), gibt es keinen kausalen Zusammenhang (die falsche Schlussfolgerung, dass die Kinder vom Storch gebracht werden). 
+
+Die Korrelation zwischen Geburten und Storchpaaren ergibt sich daraus, dass in ländlichen Regionen mehr Störche nisten und tendenziell auch mehr Kinder pro Paar geboren werden.
+
+::: callout-tip
+## Definition *"Scheinkorrelation"*
+[Scheinkorrelation](https://de.wikipedia.org/wiki/Scheinkorrelation) bezeichnet eine Korrelation zwischen zwei Größen, der kein Kausalzusammenhang, sondern nur eine zufällige oder indirekte Beziehung zugrunde liegt.
+:::
+
+![Korrelation zwischen dem Rückgang der Storchenpopulation und der Abnahme der Geburtenzahl in Baden-Württemberg im Zeitraum 1966 - 1975 (Quelle: Wikipedia)](images/Scheinkorrelation_Storchenpopulation_Geburtenzahl.jpg){width=80% #fig-scheinkorrelation}
+

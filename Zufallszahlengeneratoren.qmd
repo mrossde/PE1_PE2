@@ -1,0 +1,364 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - Produktentwicklung
+  - Zufallszahlengeneratoren
+  - RNG
+  - PRNG
+
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Zufallszahlengeneratoren
+
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Grundlagen
+## Methodische Grundlagen
+:::
+
+### Zufallszahlengeneratoren
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+
+
+::: {.callout-tip}
+## Definition *"Zufallszahlengenerator"*
+[Zufallszahlengeneratoren](https://de.wikipedia.org/wiki/Zufallszahlengenerator) (englisch: Random Number Generators, RNGs) sind Algorithmen oder physikalische Geräte, die dazu dienen, Zahlenfolgen zu erzeugen, die statistisch zufällig erscheinen. 
+:::
+
+<!--
+
+Diese Zufallszahlen werden in verschiedenen Bereichen für unterschiedliche Aufgaben verwendet. Es gibt zwei Hauptarten von Zufallszahlengeneratoren: Pseudozufallszahlengeneratoren und echte (oder physikalische) Zufallszahlengeneratoren.
+
+#### Pseudozufallszahlengeneratoren (PRNGs): 
+
+**Anwendungen:** Diese Generatoren werden häufig in Computerprogrammen verwendet, um scheinbar zufällige Zahlenfolgen zu erzeugen.
+
+**Aufgaben:** Pseudozufallszahlen werden in Simulationen, Spielen, Kryptographie, Statistik und anderen Anwendungen verwendet, bei denen eine gewisse Zufälligkeit erforderlich ist. Es ist wichtig zu beachten, dass Pseudozufallszahlen auf einem deterministischen Algorithmus basieren und daher bei gleichen Startbedingungen die gleichen Zahlenfolgen erzeugen.
+
+Alle relevanten höheren Programmiersprachen stellen Funktionen zum Erzeugen von Pseudozufallszahlen bereit.
+
+ie erzeugen eine Zahlenfolge, die zwar zufällig aussieht, es aber nicht ist, da sie durch einen deterministischen Algorithmus berechnet wird. Bei jedem Start der Zufallszahlenberechnung mit gleichem Startwert, der sogenannten Saat (englisch seed), wird die gleiche Zahlenfolge erzeugt.
+
+Sie erfüllen damit nicht die Eigenschaften echter Zufallszahlen, sind jedoch von Computern wesentlich einfacher zu erzeugen. Dabei ist die entstehende Zahlenfolge in der Regel periodisch, die Zahlen wiederholen sich also nach einer bestimmten Periodenlänge, die aber meist so groß ist, dass sie in einer Anwendung, die den PRNG nutzt, nicht vollständig durchlaufen wird (typisch ist für viele heutige PRNGs eine Periodenlänge von 
+2
+64
+{\displaystyle 2^{64}}). Der Vorteil von PRNGs im Vergleich zu echten Zufallsgeneratoren ist die einfache Implementierung und die hohe Geschwindigkeit.
+
+::: {.callout-warning}
+## Pro-Tipp!
+Die PRNGs in der Laufzeitbibliothek einer Programmierumgebung sind nicht immer von hoher Qualität. In Anwendungen, in denen die Qualität der verwendeten Pseudozufallszahlen kritisch ist, sollte der geneigte Leser dies überprüfen und ggfs. einen verfügbaren, leistungsfähigen PRNG implementieren.
+:::
+
+##### Deterministische Zufallszahlengeneratoren
+
+::: {.callout-tip}
+## Definition *"Deterministische Zufallszahlengeneratoren"*
+Deterministische Zufallszahlengeneratoren sind als Algorithmen implementierte Pseudozufallszahlengeneratoren, die eine Abfolge von Zahlen erzeugen, die zufällig erscheinen, aber durch einen Startwert oder Seed vollständig reproduzierbar und vorhersehbar sind.
+:::
+
+::: {.callout-tip}
+## Definition *"Seed"*
+Die oder der [Seed](https://de.wikipedia.org/wiki/Seed_key) (aus dem Englischen für „[die] Saat“ oder „[der] Samen“) – auch Seed key (wörtlich „[der] Saatschlüssel“), Random seed oder (deutsch) Startwert genannt – ist ein Wert, mit dem ein Zufallszahlengenerator initialisiert wird. Der Zufallszahlengenerator erzeugt mit der Seed als Startwert eine Folge von Pseudozufallszahlen. Verwendet man in deterministischen Zufallszahlengeneratoren den gleichen Seed, so erhält man die gleiche Folge von Pseudozufallszahlen.
+:::
+
+-->
+
+###### Anforderungen an Zufallszahlengeneratoren
+
+```{mermaid}
+%%| label: fig-label-mmanforderungenzufallsgen
+%%| fig-cap: "Mindmap wichtiger Anforderungen an Zufallszahlengeneratoren"
+%%{init: {'theme': 'forest'}}%%
+mindmap
+  root((Anforderungen an Zufallszahlengeneratoren))
+    (Gleichverteilung)
+    (Unabhängigkeit)
+      ("Jede Zahl sollte unabhängig von vorherigen Zahlen sein")
+    (Reproduzierbarkeit)
+      ("Ergebnisse sollten bei gleichem Seed identisch sein")
+    (Geschwindigkeit)
+    (Periodizität)
+      ("Lange Sequenz bevor Wiederholung auftritt")
+    (Statistische Gleichförmigkeit)
+    (Sicherheit)
+      (Korrelationsresistenz)
+      (Geringe Korrelation zwischen aufeinanderfolgenden Zahlen)
+      (Resistenz gegenüber Vorhersageversuchen)
+    (Seed Management)
+    (Plattformunabhängigkeit)
+      ("Konsistente Ergebnisse auf verschiedenen Plattformen")
+```
+
+<!--
+#### Qualität von Zufallszahlengeneratoren
+
+Die **Qualität eines Zufallszahlengenerators** ist dabei entscheidend, insbesondere wenn es um kryptographische Anwendungen geht, bei denen die Unvorhersehbarkeit der erzeugten Zahlen von größter Bedeutung ist.
+
+Die Qualität eines Zufallszahlengenerators (RNG) hängt von verschiedenen Merkmalen ab, die sicherstellen sollen, dass die erzeugten Zahlenfolgen tatsächlich zufällig erscheinen. Hier sind einige wichtige Merkmale, die die Qualität eines Zufallszahlengenerators bestimmen:
+
+1\. \*\*Gleichverteilung (Uniform Distribution):\*\* Die erzeugten Zahlen sollten gleichmäßig über den definierten Bereich verteilt sein, um eine Verzerrung zu vermeiden.
+
+2\. \*\*Unabhängigkeit:\*\* Jede erzeugte Zahl sollte unabhängig von den vorherigen Zahlen sein. Das bedeutet, dass die Generierung einer Zahl die Wahrscheinlichkeit der nächsten nicht beeinflusst.
+
+**Siehe Abfolge Rot/Schwarz bei Roulette oder Zahl/Kopf bei Münzwurf. Das nächste kommende Ereignis ist NICHT abhängig von den Vorereignissen (auch wenn das der Intuition widersprechen mag^^).**
+
+3\. \*\*Periodizität (Periode):\*\* Bei Pseudozufallszahlengeneratoren ist die Periode die Anzahl der erzeugten Zahlen, bevor die Sequenz sich wiederholt. Eine längere Periode ist wünschenswert, um Muster zu vermeiden.
+
+4\. \*\*Reproduzierbarkeit (Determinismus):\*\* Pseudozufallszahlengeneratoren sollten bei gleichen Startbedingungen („Seed“) die gleiche Zahlenfolge erzeugen, um Ergebnisse reproduzierbar zu machen. In manchen Anwendungen, wie Simulationen, ist dies wichtig.
+
+5\. \*\*Statistische Gleichförmigkeit:\*\* Die erzeugten Zahlen sollten statistische Eigenschaften aufweisen, die denen einer echten Zufallsverteilung ähneln. Dies umfasst Eigenschaften wie Mittelwert, Standardabweichung und Korrelation.
+
+6\. \*\*Korrelationsresistenz:\*\* Die erzeugten Zahlen sollten keine erkennbaren Korrelationen oder Muster aufweisen, um vorhersagbare Sequenzen zu vermeiden.
+
+7\. \*\*Geringe Korrelation zwischen aufeinanderfolgenden Zahlen:\*\* Um sicherzustellen, dass aufeinanderfolgende Zahlen in der Sequenz so wenig wie möglich miteinander korreliert sind.
+
+8\. \*\*Resistenz gegenüber Vorhersageversuchen:\*\* Der Zufallszahlengenerator sollte resistent gegenüber Vorhersageversuchen oder Angriffen sein, die versuchen, die nächste Zahl in der Sequenz vorherzusagen.
+
+In sicherheitskritischen Anwendungen, wie Kryptographie, sind diese Eigenschaften besonders wichtig. Physikalische Zufallszahlengeneratoren haben oft den Vorteil, dass sie natürliche Prozesse nutzen, um echte Zufälligkeit zu erzeugen.
+
+Neben den oben genannten Merkmalen gibt es noch weitere Aspekte, die die Qualität von Zufallszahlengeneratoren beeinflussen können. Hier sind einige zusätzliche Merkmale:
+
+9\. \*\*Seed-Management:\*\* Bei Pseudozufallszahlengeneratoren ist der Startwert oder "Seed" wichtig. Die Qualität des Generators sollte nicht von der Zufälligkeit des Seeds abhängen. Darüber hinaus sollte der Generator über die Fähigkeit verfügen, verschiedene Seeds effektiv zu nutzen.
+
+10\. \*\*Geschwindigkeit:\*\* In vielen Anwendungen, insbesondere in der Informatik, ist die Geschwindigkeit der Zufallszahlengenerierung wichtig. Schnelle Generatoren können entscheidend sein, vor allem wenn viele Zufallszahlen in kurzer Zeit benötigt werden.
+
+11\. \*\*Periodenlänge (Cycle Length):\*\* Bei Pseudozufallszahlengeneratoren ist die Periode die Anzahl der erzeugten Zahlen, bevor sich die Sequenz wiederholt. Eine längere Periode ist wünschenswert, um Periodizitäten zu vermeiden.
+
+12\. \*\*Gleichförmigkeit in höheren Dimensionen:\*\* In einigen Anwendungen, insbesondere in der Monte-Carlo-Simulation und in der mehrdimensionalen Statistik, ist es wichtig, dass der Zufallszahlengenerator auch in höheren Dimensionen gleichförmig ist.
+
+13\. \*\*Hardwaregeneratoren:\*\* Physikalische Zufallszahlengeneratoren, die auf echten physikalischen Prozessen basieren (z.B., Rauschen in elektronischen Schaltungen), bieten oft eine höhere Qualität und sind resistent gegenüber Vorhersageangriffen. Ihre Implementierung in Hardware kann in bestimmten Anwendungen von Vorteil sein.
+
+14\. \*\*Kryptographische Sicherheit:\*\* In kryptografischen Anwendungen ist es entscheidend, dass der Zufallszahlengenerator gegen verschiedene Angriffe resistent ist. Er sollte den Anforderungen von Zufall in kryptografischen Protokollen genügen.
+
+Die Wahl eines geeigneten Zufallszahlengenerators hängt stark von den spezifischen Anforderungen der Anwendung ab. In vielen Fällen ist es ratsam, auf etablierte Zufallszahlengeneratoren zurückzugreifen, die in anerkannten Bibliotheken oder Programmiersprachen implementiert sind.
+-->
+
+
+###### Anwendungen für Deterministische Zufallszahlengeneratoren
+
+```{mermaid}
+%%| label: fig-label-mmdetzufallsgen
+%%| fig-cap: "Mindmap wichtiger Motive für die Verwendung deterministischer Zufallszahlengeneratoren"
+%%{init: {'theme': 'forest'}}%%
+mindmap
+  root((Deterministische Zufallszahlengeneratoren))
+    (Vergleichbarkeit)
+      (Simulationen)
+        ("Gleiche Bedingungen für Tests")
+    (Reproduzierbarkeit)
+      (Entwicklung)
+        ("Ergebnisse müssen nachvollziehbar sein")
+    (Debugging)
+      (Fehlersuche)
+        ("Ermöglicht gezielte Analyse von Abläufen")
+    (Konsistenz)
+      (Spieleentwicklung)
+        ("Gleiche Spielerfahrung gewährleisten")
+      (Maschinelles Lernen)
+        ("Ergebnisse müssen stabil sein")
+```
+
+
+<!--
+Vor allem in Computerprogrammen wird aus Einfachheitsgründen ein Pseudozufallszahlengenerator verwendet, wenn man Zufallszahlen benötigt, die allerdings nicht zwingend echt zufällig sein müssen. Pseudozufallszahlen finden darüber hinaus u. a. Anwendung
+
+in der Computersimulation, bei der stochastische Prozesse mit Hilfe von Software simuliert werden (Monte-Carlo-Simulation),
+in Computerspielen, bei denen prozedural generierte Welten oder z. B. Spielkarten-Mischungen über einen einzigen Wert rekonstruiert werden können,
+bei der Fehlersuche in Computerprogrammen,
+bei der künstlichen Erzeugung von Rauschen (Pseudozufallsrauschen),
+in der Spreizspektrum-Technik,
+im Bereich der Kryptographie, siehe Kryptographisch sicherer Zufallszahlengenerator.
+Unangebracht ist das Nutzen von Pseudozufallszahlen in Bereichen, wo echter Zufall vonnöten ist. Zur Erzeugung echter Zufallszahlen benötigt man entweder einen echten Zufallsgenerator (z. B. durch Digitalisieren von Rauschen oder durch Ausnutzen von Quanteneffekten) oder zumindest eine Quelle quasizufälliger (normalerweise nicht vorhersagbarer) Ereignisse wie Zeiten von Benutzereingaben oder Netzwerkaktivität.
+
+Die PRNGs in der Laufzeitbibliothek einer Programmierumgebung sind nicht immer von hoher Qualität. In Anwendungen, in denen die Qualität der verwendeten Pseudozufallszahlen kritisch ist, sollte man dies überprüfen und ggfs. einen eigenen PRNG implementieren.
+
+
+#### Echte (physikalische) Zufallszahlengeneratoren:
+
+**Anwendungen:** Diese Generatoren basieren auf physikalischen Prozessen, die als intrinsisch zufällig betrachtet werden, wie etwa elektronische Rauschquellen ("White Noise") oder radioaktiven Zerfällen.
+
+**Aufgaben:** Echte Zufallszahlen werden in sicherheitskritischen Anwendungen wie Kryptographie, Lotterien und Glücksspielen verwendet, bei denen absolute Unvorhersehbarkeit erforderlich ist.
+
+**Diskussion: Ist der für Lotto 6 aus 49 genutzte physikalische Zufallszahlengenerator ein echter oder ein Pseudozufallszahlengenerator?**
+
+Zufallszahlengeneratoren sind in vielen wissenschaftlichen, technischen und informatikbasierten Anwendungen unerlässlich. 
+
+Die **Qualität eines Zufallszahlengenerators** ist dabei entscheidend, insbesondere wenn es um kryptographische Anwendungen geht, bei denen die Unvorhersehbarkeit der erzeugten Zahlen von größter Bedeutung ist.
+
+Die Qualität eines Zufallszahlengenerators (RNG) hängt von verschiedenen Merkmalen ab, die sicherstellen sollen, dass die erzeugten Zahlenfolgen tatsächlich zufällig erscheinen. Hier sind einige wichtige Merkmale, die die Qualität eines Zufallszahlengenerators bestimmen:
+
+1\. \*\*Gleichverteilung (Uniform Distribution):\*\* Die erzeugten Zahlen sollten gleichmäßig über den definierten Bereich verteilt sein, um eine Verzerrung zu vermeiden.
+
+2\. \*\*Unabhängigkeit:\*\* Jede erzeugte Zahl sollte unabhängig von den vorherigen Zahlen sein. Das bedeutet, dass die Generierung einer Zahl die Wahrscheinlichkeit der nächsten nicht beeinflusst.
+
+**Siehe Abfolge Rot/Schwarz bei Roulette oder Zahl/Kopf bei Münzwurf. Das nächste kommende Ereignis ist NICHT abhängig von den Vorereignissen (auch wenn das der Intuition widersprechen mag^^).**
+
+3\. \*\*Periodizität (Periode):\*\* Bei Pseudozufallszahlengeneratoren ist die Periode die Anzahl der erzeugten Zahlen, bevor die Sequenz sich wiederholt. Eine längere Periode ist wünschenswert, um Muster zu vermeiden.
+
+4\. \*\*Reproduzierbarkeit (Determinismus):\*\* Pseudozufallszahlengeneratoren sollten bei gleichen Startbedingungen („Seed“) die gleiche Zahlenfolge erzeugen, um Ergebnisse reproduzierbar zu machen. In manchen Anwendungen, wie Simulationen, ist dies wichtig.
+
+5\. \*\*Statistische Gleichförmigkeit:\*\* Die erzeugten Zahlen sollten statistische Eigenschaften aufweisen, die denen einer echten Zufallsverteilung ähneln. Dies umfasst Eigenschaften wie Mittelwert, Standardabweichung und Korrelation.
+
+6\. \*\*Korrelationsresistenz:\*\* Die erzeugten Zahlen sollten keine erkennbaren Korrelationen oder Muster aufweisen, um vorhersagbare Sequenzen zu vermeiden.
+
+7\. \*\*Geringe Korrelation zwischen aufeinanderfolgenden Zahlen:\*\* Um sicherzustellen, dass aufeinanderfolgende Zahlen in der Sequenz so wenig wie möglich miteinander korreliert sind.
+
+8\. \*\*Resistenz gegenüber Vorhersageversuchen:\*\* Der Zufallszahlengenerator sollte resistent gegenüber Vorhersageversuchen oder Angriffen sein, die versuchen, die nächste Zahl in der Sequenz vorherzusagen.
+
+In sicherheitskritischen Anwendungen, wie Kryptographie, sind diese Eigenschaften besonders wichtig. Physikalische Zufallszahlengeneratoren haben oft den Vorteil, dass sie natürliche Prozesse nutzen, um echte Zufälligkeit zu erzeugen.
+
+Neben den oben genannten Merkmalen gibt es noch weitere Aspekte, die die Qualität von Zufallszahlengeneratoren beeinflussen können. Hier sind einige zusätzliche Merkmale:
+
+9\. \*\*Seed-Management:\*\* Bei Pseudozufallszahlengeneratoren ist der Startwert oder "Seed" wichtig. Die Qualität des Generators sollte nicht von der Zufälligkeit des Seeds abhängen. Darüber hinaus sollte der Generator über die Fähigkeit verfügen, verschiedene Seeds effektiv zu nutzen.
+
+10\. \*\*Geschwindigkeit:\*\* In vielen Anwendungen, insbesondere in der Informatik, ist die Geschwindigkeit der Zufallszahlengenerierung wichtig. Schnelle Generatoren können entscheidend sein, vor allem wenn viele Zufallszahlen in kurzer Zeit benötigt werden.
+
+11\. \*\*Periodenlänge (Cycle Length):\*\* Bei Pseudozufallszahlengeneratoren ist die Periode die Anzahl der erzeugten Zahlen, bevor sich die Sequenz wiederholt. Eine längere Periode ist wünschenswert, um Periodizitäten zu vermeiden.
+
+12\. \*\*Gleichförmigkeit in höheren Dimensionen:\*\* In einigen Anwendungen, insbesondere in der Monte-Carlo-Simulation und in der mehrdimensionalen Statistik, ist es wichtig, dass der Zufallszahlengenerator auch in höheren Dimensionen gleichförmig ist.
+
+13\. \*\*Hardwaregeneratoren:\*\* Physikalische Zufallszahlengeneratoren, die auf echten physikalischen Prozessen basieren (z.B., Rauschen in elektronischen Schaltungen), bieten oft eine höhere Qualität und sind resistent gegenüber Vorhersageangriffen. Ihre Implementierung in Hardware kann in bestimmten Anwendungen von Vorteil sein.
+
+14\. \*\*Kryptographische Sicherheit:\*\* In kryptografischen Anwendungen ist es entscheidend, dass der Zufallszahlengenerator gegen verschiedene Angriffe resistent ist. Er sollte den Anforderungen von Zufall in kryptografischen Protokollen genügen.
+
+Die Wahl eines geeigneten Zufallszahlengenerators hängt stark von den spezifischen Anforderungen der Anwendung ab. In vielen Fällen ist es ratsam, auf etablierte Zufallszahlengeneratoren zurückzugreifen, die in anerkannten Bibliotheken oder Programmiersprachen implementiert sind.
+
+-->
+
+<!--
+### BEISPIEL PYTHON
+In Python kannst du den `random`-Modul verwenden, um Zufallszahlen zu generieren. Hier sind einige Beispiele:
+
+**Ganzzahlige Zufallszahl im Bereich [a, b]:**
+
+import random
+
+a = 1
+
+b = 10
+
+random\_integer = random.randint(a, b)
+
+print(random\_integer)
+
+`   `Dieses Beispiel generiert eine zufällige Ganzzahl im Bereich von `a` bis `b`, einschließlich der Grenzen.
+
+**Gleitkommazahl im Bereich [0.0, 1.0):**
+
+import random
+
+random\_float = random.random()
+
+print(random\_float)
+
+Hier wird eine zufällige Gleitkommazahl im Bereich von 0.0 (inklusive) bis 1.0 (exklusive) erzeugt.
+
+**Gleitkommazahl mit gleichverteiltem Zufall im Bereich [a, b]:**
+
+import random
+
+a = 1.0
+
+b = 5.0
+
+random\_float = random.uniform(a, b)
+
+print(random\_float)
+
+`   `Diese Methode generiert eine zufällige Gleitkommazahl im Bereich von `a` bis `b`, wobei alle Werte innerhalb dieses Intervalls gleichwahrscheinlich sind.
+
+Es ist wichtig zu beachten, dass der in Python eingebaute `random`-Modul Pseudozufallszahlen verwendet. Wenn du echte (physikalische) Zufallszahlen benötigst, könntest du externe Hardwaregeneratoren oder spezialisierte Module nutzen, die dies unterstützen.
+
+Du kannst den Seed-Wert im `random`-Modul in Python mit der Funktion `seed()` setzen. Der Seed ist eine Startzahl, die den Anfangszustand des Zufallszahlengenerators festlegt. Wenn du denselben Seed-Wert verwendest, erhältst du dieselbe Zahlenfolge bei aufeinanderfolgenden Zufallszahlengenerierungen. Das ist nützlich, wenn du reproduzierbare Ergebnisse benötigst.
+
+Hier ist ein einfaches Beispiel:
+
+import random
+
+\# Setzen des Seed-Werts
+
+seed\_value = 42
+
+random.seed(seed\_value)
+
+\# Beispiel: Generiere zufällige Ganzzahlen
+
+random\_integer\_1 = random.randint(1, 100)
+
+random\_integer\_2 = random.randint(1, 100)
+
+\# Drucke die generierten Zahlen
+
+print(random\_integer\_1)
+
+print(random\_integer\_2)
+
+In diesem Beispiel wird der Seed-Wert auf `42` gesetzt. Wenn du den Code erneut ausführst, werden die gleichen Zufallszahlen erzeugt, da der Seed-Wert gleich bleibt.
+
+Es ist wichtig zu beachten, dass das Setzen des Seed-Werts optional ist. Wenn du keinen Seed-Wert setzt, wird der Zufallszahlengenerator normalerweise mit einem "zufälligen" Seed-Wert initialisiert, der auf Systemvariablen wie der **Systemzeit** basiert (alternativ z.B. auch Position und Bewegung der Maus). Wenn du jedoch reproduzierbare Ergebnisse wünschst, solltest du den Seed-Wert explizit festlegen.
+-->

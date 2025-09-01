@@ -1,0 +1,139 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
+
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - Produktentwicklung
+  - Softwarewerkzeuge
+  - CAD
+
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 2
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       CAD
+
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Entwurfs- und Entwicklungsphase
+## Softwarewerkzeuge
+:::
+
+### CAD {#sec-cad}
+
+::: {.callout-tip}
+## Definition: *"CAD"*
+[CAD](https://de.wikipedia.org/wiki/CAD) (englisch Computer-Aided Design) bezeichnet die Unterstützung von konstruktiven Aufgaben mittels [EDV](https://de.wikipedia.org/wiki/Elektronische_Datenverarbeitung) zur Herstellung eines Produkts.
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+<!--
+#### Zweck & Nutzen von CAD-Systemen
+- CAD wird zur digitalen Konstruktion von Produkten eingesetzt.
+- Ermöglicht präzises Entwerfen, Modellieren und Dokumentieren von Bauteilen, Baugruppen und ganzen Systemen.
+- Unterstützt Kommunikation, Zusammenarbeit und Versionierung im Team.
+
+#### Modellierung
+- Moderne CAD-Systeme arbeiten primär mit **3D-Modellen**. Daneben finden aber auch weiterhin CAD-Systeme auf Basis von 2D-Modellen Anwendung, z.B. für die Konstruktion von Blechteilen.
+- Vorteil: realistische Darstellung, einfache Ableitung von Fertigungszeichnungen und Simulationen.
+- Beispielhafte Funktionen: **Parametrik**, **Feature-basierte Modellierung**, **Baugruppenmanagement**.
+
+#### Integration in den Produktentwicklungsprozess
+- CAD ist oft direkt verknüpft mit:
+  - **PDM/PLM-Systemen** (Produktdatenmanagement/Produktlebenszyklusmanagement)
+  - **Simulation & FEM** (z. B. Festigkeitsanalyse)
+  - **CAM** (Fertigung: CNC-Programmierung)
+  - **ERP** (für Stücklisten, Materialbedarfe)
+
+#### Zusammenarbeit & Versionskontrolle
+- Teamarbeit erfordert **konsistente Datenhaltung** und klare Prozesse.
+- CAD-Dateien werden oft zentral verwaltet, z. B. in einem PDM-System.
+- Wichtig: Änderungsmanagement, Revisionsstände, Zugriffsrechte.
+
+#### Technisches Verständnis – auch für Nicht-Konstrukteure relevant
+- Mitarbeiter aus Projektmanagement, Einkauf, Fertigung oder Qualitätssicherung müssen oft:
+  - CAD-Modelle **betrachten, messen, kommentieren**
+  - Informationen aus CAD-Zeichnungen **lesen und verstehen**
+  - CAD-Daten für **Angebote, Fertigung oder Prüfprozesse nutzen**
+
+#### Datenaustausch & Formate
+- Interne und externe Zusammenarbeit erfordert Kenntnisse über **gängige Austauschformate**:
+  - **STEP, IGES, STL** (für 3D-Geometrien)
+  - **DXF, PDF** (für Zeichnungen)
+- Datenexport muss **verluste- und konfliktfrei** erfolgen können.
+
+#### Zukunftstrends bei CAD-Systemen
+- **Cloud-CAD** (z. B. Onshape, Fusion 360): ortsunabhängig, kollaborativ
+- **Generatives Design & KI-Unterstützung**: automatische Optimierung von Geometrien
+- **AR/VR-Anwendungen**: für Review, Montageplanung oder Schulung
+-->

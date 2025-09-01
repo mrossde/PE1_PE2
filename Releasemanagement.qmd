@@ -1,0 +1,45 @@
+---
+title: "DEB5 Produktentwicklung 2"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    email: christian.anders@hs-esslingen.de
+    affiliations: Hochschule Esslingen
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+---
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Releasemanagement
+
+-------------------------------------------------------------------------- -->
+
+### Releasemanagement
+
+
+Das [Releasemanagement](https://de.wikipedia.org/wiki/Releasemanagement) ist eine Managementaktivität, die sich mit der Freigabe bzw. dem Übergang von Entwicklungsständen in einen operativen Zustand befasst. Es ist Bestandteil bei der Entstehung von Komponenten, Systemen oder Produkten. Beispiele sind Software, Hardware (Elektrik oder Elektronik), mechanischer Bauteile, Computersysteme und die IT.
+
+Unter Releasemanagement versteht man die Bündelung und Bereitstellung von Änderungen von Versionsständen zu einem sog. Release oder Versionspaket.
+
+Der Begriff findet häufig Verwendung in der Softwareentwicklung, jedoch bezieht sich die Aufgabe ganz allgemein auch auf z. B. Elektronikentwicklung (vgl. Musterstände), Prototypen, Systeme oder generelle Produkte. Releasemanagement ist eine Erweiterung der Versionsverwaltung. Des Weiteren ist die Eingliederung eines freigegebenen Objektes in eine Infrastruktur oder Produktion bedeutend. Als Beispiel kann man sich eine Software (oder Anteile davon) vorstellen, die bei einem Auftragnehmer kodiert wurde und nach Abschluss aller Tests an einen Auftraggeber übergeben wird, welcher diese in seinem Produkt weiterverwendet.
+
+Das Releasemanagement interagiert mit dem Veränderungs- und Konfigurationsmanagement sowie Integrationsmanagement. Es ist jedoch eine eigenständige Disziplin. Es bezieht außerdem Erfahrungen aus dem Produktmanagement.

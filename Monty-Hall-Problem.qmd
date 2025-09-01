@@ -1,0 +1,375 @@
+---
+format:
+  html:
+    embed-resources: true
+    code-fold: true
+execute: 
+  echo: true
+jupyter: python3
+jupyterlite: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
+
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - Zufall
+  - Monty-Hall-Problem
+
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Monty-Hall-Problem
+
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Grundlagen
+## Komplexe Systeme
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+<!--
+::: {.callout-warning}
+## WARNING!
+**THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+### Monty-Hall-Problem {#sec-montyhallproblem}
+
+Das **Monty-Hall-Problem** ist ein klassisches Beispiel für ein kontraintuitives Wahrscheinlichkeitsrätsel aus der Spieltheorie und Statistik. Es basiert auf der US-Spielshow *Let's Make a Deal*, die von Monty Hall moderiert wurde.
+
+### Die Grundsituation:
+- Du bist Kandidat in einer Spielshow.
+- Vor dir stehen **drei Türen**.
+- Hinter einer Tür ist ein **Auto** (Hauptgewinn), hinter den anderen beiden jeweils eine **Ziege** (Niete).
+- Du wählst eine Tür (z. B. Tür 1).
+- Der Moderator (der weiß, was sich hinter den Türen befindet) öffnet **eine der anderen beiden Türen** (z. B. Tür 3) und zeigt dir **eine Ziege**.
+- Dann fragt er dich: **"Möchtest du bei deiner Wahl bleiben oder zu der anderen noch geschlossenen Tür wechseln?"**
+
+### Die entscheidende Frage:
+**Solltest du bei deiner ursprünglichen Wahl bleiben oder wechseln?**
+
+### Die Antwort:
+**Du solltest immer wechseln.**
+
+### Warum?
+- Wenn du **nicht wechselst**, ist deine Gewinnchance **1/3** (du hattest ursprünglich 1 von 3 Chancen, das Auto zu wählen).
+- Wenn du **wechselst**, ist deine Gewinnchance **2/3** – denn:
+  - In 2 von 3 Fällen hattest du anfangs eine Ziege gewählt.
+  - Monty zeigt dir dann eine andere Ziege, und das Auto ist hinter der verbleibenden Tür.
+  - Wechseln bringt dich also in diesen 2 von 3 Fällen zum Gewinn.
+
+Es wirkt paradox, weil es sich intuitiv so anfühlt, als wäre die Chance nach Montys Enthüllung **50:50** – aber das ist ein Trugschluss.
+
+
+
+
+## 🧠 Grundannahmen:
+
+- Es gibt **3 Türen**: hinter einer ist das **Auto**, hinter zwei sind **Ziegen**.
+- Der Spieler wählt eine Tür (z. B. Tür 1).
+- Der Moderator kennt die Position des Autos und öffnet **eine der anderen beiden Türen mit einer Ziege**.
+- Danach darf der Spieler entscheiden: **bleiben** oder **wechseln**.
+
+---
+
+## 🎯 Was sind die Gewinnwahrscheinlichkeiten?
+
+### 1. **Wenn du bei deiner Wahl bleibst:**
+- Deine ursprüngliche Wahl war rein zufällig.
+- Du hast also mit **1/3 Wahrscheinlichkeit** das Auto gewählt.
+- Wenn du **bleibst**, gewinnst du **nur in diesem Fall**.
+  
+📌 **Chance beim Behalten: 1/3 (ca. 33,3 %)**
+
+---
+
+### 2. **Wenn du wechselst:**
+- In **2/3 der Fälle** hast du ursprünglich **eine Ziege** gewählt.
+- In diesen Fällen wird der Moderator dir die **andere Ziege zeigen** – und die **verbleibende Tür enthält das Auto**.
+- Nur wenn du anfangs das Auto gewählt hast (1/3), verlierst du durch den Wechsel.
+
+📌 **Chance beim Wechseln: 2/3 (ca. 66,6 %)**
+
+---
+
+## 🔍 Visualisierte Wahrscheinlichkeitsverteilung:
+
+| Auto ist hinter... | Spieler wählt... | Host zeigt... | Wenn du **bleibst** | Wenn du **wechselst** |
+|---------------------|------------------|---------------|---------------------|------------------------|
+| Tür 1               | Tür 1            | Tür 2 oder 3  | **Gewinn (1/3)**     | Verlust                |
+| Tür 2               | Tür 1            | Tür 3         | Verlust              | **Gewinn (1/3)**       |
+| Tür 3               | Tür 1            | Tür 2         | Verlust              | **Gewinn (1/3)**       |
+
+→ **Behalten bringt nur in 1 von 3 Fällen den Sieg. Wechseln in 2 von 3 Fällen.**
+
+
+
+**100-Türen-Analogie**:
+
+---
+
+## 🎯 Ausgangssituation:
+
+- Du bist in einer Spielshow mit **100 Türen**.
+- Hinter **einer** Tür ist ein **Auto**, hinter den **anderen 99** sind **Ziegen**.
+- Du wählst **eine Tür**, z. B. **Tür 1**.
+- Der Moderator weiß, wo das Auto ist – und öffnet jetzt **98 andere Türen**, hinter denen **nur Ziegen** sind.
+- Es bleiben **zwei Türen übrig**:  
+  👉 Deine ursprünglich gewählte (Tür 1)  
+  👉 Eine andere geschlossene Tür (z. B. Tür 42)
+
+Jetzt fragt er dich:  
+**"Willst du bei deiner Wahl bleiben oder zu Tür 42 wechseln?"**
+
+---
+
+## 🧠 Was ist deine beste Option?
+
+### 1. **Bleiben bei Tür 1:**
+- Deine ursprüngliche Wahl war **zufällig aus 100**.
+- Also hast du mit **1/100 = 1 %** Wahrscheinlichkeit das Auto gewählt.
+
+### 2. **Wechseln zu Tür 42:**
+- In **99 von 100 Fällen** hattest du **eine Ziege** gewählt.
+- Der Moderator **weiß**, wo das Auto ist – also kann er **immer** 98 Türen mit Ziegen öffnen.
+- Das Auto ist dann **in 99 von 100 Fällen** **hinter der verbleibenden Tür**.
+
+---
+
+## 📌 Fazit:
+
+- **Bleiben:** 1 % Gewinnchance  
+- **Wechseln:** **99 % Gewinnchance**
+
+---
+
+
+### 🔁 Das gleiche Prinzip funktioniert auch bei 3 Türen:
+- Bleiben = 1/3  
+- Wechseln = 2/3  
+Aber mit 100 Türen wird der Denkfehler viel klarer – weil es so extrem wirkt.
+
+
+
+### Diagramm 100-Türen-Analogie:
+
+
+Aufbau des Diagramms:
+1. Startpunkt:
+Box oder Kreis mit dem Text:
+
+vbnet
+Kopieren
+Bearbeiten
+Start: 100 Türen
+(1 Auto, 99 Ziegen)
+🔽 Pfeil nach unten zu …
+
+2. Erste Entscheidung des Spielers:
+Nächste Box:
+
+r
+Kopieren
+Bearbeiten
+Spieler wählt zufällig Tür 1
+🔽 Pfeil nach unten zu …
+
+3. Aktion des Moderators:
+Box mit:
+
+css
+Kopieren
+Bearbeiten
+Moderator öffnet 98 Türen mit Ziegen
+(kennt die Position des Autos!)
+🔽 Pfeil nach unten zu …
+
+4. Zwei verbleibende Türen:
+Box:
+
+r
+Kopieren
+Bearbeiten
+Nur 2 Türen bleiben geschlossen:
+- Tür 1 (deine Wahl)
+- Tür 42 (eine andere Tür)
+🔽 Zwei Pfeile zur Seite:
+→ Nach links: Behalten
+→ Nach rechts: Wechseln
+
+5. Entscheidungsäste:
+Links: Behalten
+Box:
+
+r
+Kopieren
+Bearbeiten
+Tür 1 behalten
+→ Gewinnchance: 1 %
+Rechts: Wechseln
+Box:
+
+r
+Kopieren
+Bearbeiten
+Zu Tür 42 wechseln
+→ Gewinnchance: 99 %
+💡 Optional:
+Du kannst farblich hervorheben:
+
+Tür 1 (deine Wahl)
+
+Tür 42 (verbleibende, mögliche Autotür)
+
+Die Wahrscheinlichkeiten fett oder farbig darstellen.
+
+
+
+# Monty Hall Simulation
+# =====================
+# In diesem Notebook wird das berühmte Monty-Hall-Problem simuliert.
+```{python}
+import random
+import matplotlib.pyplot as plt
+
+def monty_hall_simulation(switch: bool, num_trials: int = 10000) -> float:
+    """Simuliert das Monty-Hall-Problem.
+
+    Args:
+        switch (bool): True, wenn der Spieler die Tür wechselt, sonst False.
+        num_trials (int): Anzahl der Simulationsdurchläufe.
+
+    Returns:
+        float: Gewinnrate.
+    """
+    wins = 0
+
+    for _ in range(num_trials):
+        # Verstecke das Auto hinter einer der drei Türen
+        car_door = random.randint(0, 2)
+
+        # Spieler wählt zufällig eine Tür
+        player_choice = random.randint(0, 2)
+
+        # Moderator öffnet eine Tür, die weder die Autotür noch die gewählte Tür ist
+        remaining_doors = [i for i in range(3) if i != player_choice and i != car_door]
+        door_opened_by_host = random.choice(remaining_doors)
+
+        # Wenn Spieler wechselt, wählt er die andere noch geschlossene Tür
+        if switch:
+            final_choice = next(i for i in range(3) if i != player_choice and i != door_opened_by_host)
+        else:
+            final_choice = player_choice
+
+        if final_choice == car_door:
+            wins += 1
+
+    return wins / num_trials
+
+# Simulation durchführen
+trials = 100
+win_rate_switch = monty_hall_simulation(switch=True, num_trials=trials)
+win_rate_stay = monty_hall_simulation(switch=False, num_trials=trials)
+
+# Ergebnisse anzeigen
+print(f"Gewinnrate beim Wechseln: {win_rate_switch:.1%}")
+print(f"Gewinnrate beim Behalten: {win_rate_stay:.1%}")
+
+# Plot
+labels = ['Wechseln', 'Behalten']
+rates = [win_rate_switch, win_rate_stay]
+
+plt.bar(labels, rates, color=['orange', 'red'])
+plt.ylim(0, 1)
+plt.ylabel('Gewinnrate')
+plt.title(f'Monty-Hall-Simulation ({trials} Versuche)')
+plt.grid(True, axis='y', linestyle='--', alpha=0.7)
+plt.show()
+```
+
+
+```{python}
+#| echo: true
+#| eval: true
+#| output: true
+
+import ipywidgets as widgets
+from IPython.display import display
+
+slider = widgets.IntSlider(value=5, min=1, max=10, description='Zahl:')
+output = widgets.Output()
+
+def on_value_change(change):
+    with output:
+        output.clear_output()
+        print(f"Das Quadrat von {change['new']} ist {change['new'] ** 2}")
+
+slider.observe(on_value_change, names='value')
+
+display(slider, output)
+```

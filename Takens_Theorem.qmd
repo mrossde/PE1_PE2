@@ -1,0 +1,183 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
+
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - Taken's Theorem
+
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Zufall
+
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Grundlagen
+## Komplexe Systeme
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+<!--
+::: {.callout-warning}
+## WARNING!
+**THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+### Takens' Theorem {#sec-takenstheorem}
+
+
+::: {.callout-tip}
+## Begriffsklärung *"Takens' Theorem"*
+Takens' Theorem ist ein zentrales Resultat in der nichtlinearen Dynamik und Zeitreihenanalyse, insbesondere im Bereich der rekonstruierten Phasenräume. Es wurde 1981 vom niederländischen Mathematiker [Floris Takens](https://de.wikipedia.org/wiki/Floris_Takens) veröffentlicht und bildet die theoretische Grundlage dafür, wie man aus eindimensionalen Zeitreihen auf das zugrunde liegende dynamische System schließen kann.
+:::
+
+Takens führte den Begriff des [Seltsamen Attraktors](https://de.wikipedia.org/wiki/Seltsamer_Attraktor) ein. Takens gab auch Bedingungen an, unter denen ein Seltsamer Attraktor aus Zeitreihen von Observablen rekonstruiert werden kann. Diese wurden als Takens-Theorem bekannt.
+
+::: {.callout-important}
+## Takens' Theorem in einfachen Worten
+Takens’ Theorem besagt, dass man unter bestimmten Bedingungen die Dynamik eines unbekannten, aber deterministischen Systems allein anhand von Zeitreihenmessungen einer einzelnen beobachtbaren Größe - also einer skalaren Zeitreihe - vollständig rekonstruieren kann.
+:::
+
+
+<!-- --------------------------------------------------------------------------
+EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT
+S T A R T -->
+::: {.content-visible unless-meta="extended-content.off"}
+<!-- ---------------------------------------------------------------------- -->
+
+Im Mittelpunkt von Takens Theorem steht die sogenannte *"Einbettung"*:
+
+$$
+\mathbf{x}(t) = \left( x(t), x(t+\tau), x(t+2\tau), \ldots, x(t+(m-1)\tau) \right)
+$$
+
+Hierbei ist:
+
+- $x(t)$: die gemessene skalare Zeitreihe ("*Skalare"*)
+- $\tau$: ein sinnvoll gewählter Zeitverzug ("*delay"*)
+- $m$: die sogenannte *"Einbettungsdimension"*
+
+Takens zeigte, dass für eine große Klasse von Systemen eine solche Rekonstruktion äquivalent zur ursprünglichen Dynamik ist, nur in einer anderen Koordinatendarstellung. Dies wird auch als *"diffeomorph zum ursprünglichen Phasenraum"* bezeichnet. 
+
+Voraussetzungen hierfür sind, dass das zugrunde liegende System ein deterministisches, glattes dynamisches System ist, die beobachtete Zeitreihe eine glatte Funktion ist und die Einbettungsdimension $m$ mindestens $2d + 1$ beträgt, wobei $d$ die Dimension der zugrunde liegenden Mannigfaltigkeit ist.
+
+Anwendungsbereiche von Takens Theorem sind die **nichtlineare Zeitreihenanalyse**, das Rekonstruieren von Attraktoren sowie die Vorhersage des Verhaltens chaotischer Systeme.
+
+::: {.callout-note}
+## Beispiel: Rekonstruktion des Attraktors eines Lorenz-System mittels Takens' Theorem
+
+Das [Lorenz-System](https://de.wikipedia.org/wiki/Lorenz-Attraktor), erstmals formuliert von dem Meteorologen [Edward N. Lorenz](https://de.wikipedia.org/wiki/Edward_N._Lorenz) im Jahr 1963, ist heute eines der bekanntesten chaotischen System mit drei Zustandsvariablen: $x(t), y(t), z(t)$. 
+
+Populärwissenschaftliche Verbreitung gefunden hat insbesondere der in @fig-lorenzattraktor dargestellte, den *"[Seltsamen Attraktoren](https://de.wikipedia.org/wiki/Seltsamer_Attraktor)"* zugeordnete [Lorenz-Attraktor](https://de.wikipedia.org/wiki/Lorenz-Attraktor), der Aufgrund seines Aussehens dem von [Edward N. Lorenz](https://de.wikipedia.org/wiki/Edward_N._Lorenz) entdeckten *"[Butterfly-Effekt](https://de.wikipedia.org/wiki/Schmetterlingseffekt)"* seinen Namen gab.
+
+![Lorenz-Attraktor (Quelle: [Wikipedia](https://de.wikipedia.org/wiki/Lorenz-Attraktor))](images/Lorenz_attractor_yb.svg){width=62% #fig-lorenzattraktor}
+
+Die Differentialgleichungen des Lorenz-Systems stellen eine starke Vereinfachung eines hydrodynamischen Systems dar und lauten:
+
+$$
+\begin{cases}
+\frac{dx}{dt} = \sigma (y - x) \\
+\frac{dy}{dt} = x (\rho - z) - y \\
+\frac{dz}{dt} = x y - \beta z
+\end{cases}
+$$
+
+Typische Parameter sind $\sigma = 10$, $\rho = 28$ und $\beta = 8/3$.
+
+Das so beschriebene Lorenz-System kann durch numerische Integration in guter Näherung gelöst werden.
+
+Nehmen wir jedoch an, der geneigte Leser könne nur $x(t)$ beobachten – und wollte aus dieser Zeitreihe die zugrunde liegende Dynamik rekonstruieren. 
+
+In diesem Gedankenmodell würde der Autor dieser Vorlesung das Lorenz-System numerisch lösen, jedoch nur $x(t)$ speichern und diese Zeitreihe dem geneigten Leser zur Verfügung stellen.
+
+Aus dieser Zeitreihe $x(t)$ sollte nach Takens' Theorem eine vollständige Rekonstruktion möglich sein. Hierzu wird das sogenannte *"Delay-Embedding"* verwendet. Bei einer gewählten Einbettungsdimension $m = 3$ ergibt sich folgende Darstellung:
+
+$$
+\mathbf{x}(t) = \left( x(t),\ x(t+\tau),\ x(t+2\tau) \right)
+$$
+
+Der geneigte Leser erkennt sofort, dass bei diesem Vorgehen jeder Punkt im Phasenraum ein Vektor aus drei zeitlich versetzten Werten der Zeitreihe $x(t)$ ist.
+
+Wählt der geneigte Leser die Verzögerung $\tau = 10$ Zeitschritte ergibt sich der rekonstruierte Phasenraum wie in @fig-rekonstruierterattraktor dargestellt:
+
+![Aus der eindimensionalen Zeitreihe $\mathbf{x}(t)$ des Lorenz-Systems rekonstruierter Phasenraum $\mathbf{x}(t)$. Jeder Punkt im dreidimensionalen Phasenraum ist ein Vektor $( x(t),\ x(t+\tau),\ x(t+2\tau))$.](images/Lorenz-System_Takens_Rekonstruktion.png){width=68% #fig-rekonstruierterattraktor}
+
+Trotz der Tatsache, dass dem geneigten Leser nur $x(t)$ zur Verfügung steht, wäre es dem geneigten Leser also möglich einen Attraktor zu rekonstruieren der der Originaltrajektorie des Lorenz-Systems qualitativ ähnelt. Dieser Attraktor wird nach Takens auch als *"rekonstruierter Attraktor"* bezeichnet.
+
+Takens Theorem besagt, dass der *"rekonstruierte Attraktor"* nicht nur ähnlich, sondern sogar topologisch äquivalent (*"diffeomorph"*) zum *"echten"* Attraktor ist, auch wenn der *"rekonstruierte Attraktor"* gegenüber dem *"echten"* Attraktor möglicherweise verzerrt sein kann.
+:::
+
+<!-- ---------------------------------------------------------------------- -->
+:::
+<!-- S T O P
+EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT
+--------------------------------------------------------------------------- -->

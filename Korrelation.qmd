@@ -1,0 +1,163 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
+
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - Korrelation
+
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Korrelation
+
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Grundlagen
+## Komplexe Systeme
+:::
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+
+::: {.callout-warning}
+## WARNING!
+**THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
+:::
+
+### Korrelation {#sec-korrelation}
+
+::: {.callout-tip}
+## Begriffsklärung *"Korrelation"*
+Eine Korrelation beschreibt eine Beziehung zwischen zwei oder mehreren Merkmalen, Zuständen oder Funktionen. Die Beziehung muss **keine** kausale Beziehung sein: Manche Elemente eines Systems beeinflussen sich gegenseitig nicht, oder es besteht eine stochastische, also vom Zufall beeinflusste Beziehung zwischen ihnen.
+:::
+
+
+
+::: {.callout-important}
+## Korrelation beschreibt **keine** Ursache-Wirkungs-Beziehung!
+**Korrelation ist ein statistischer Begriff, der weder Kausalität impliziert noch von ihr impliziert wird.** Eine Korrelation beschreibt **keine Ursache-Wirkungs-Beziehung** in die eine und/oder andere Richtung, d. h. **aus einer starken Korrelation folgt nicht, dass es auch eine eindeutige Ursache-Wirkungs-Beziehung gibt!**
+:::
+
+
+Eine Korrelation als Maß des Zusammenhangs soll zwei Fragen klären:
+
+**1.** Wie stark ist der Zusammenhang?
+
+<!--
+Die Maßzahlen der Korrelation liegen betragsmäßig meist in einem Bereich von Null (=kein Zusammenhang) bis Eins (=starker Zusammenhang). Betrachtet man die Haar- und Augenfarbe von Studenten, so ergibt sich ein korrigierter Kontingenzkoeffizient von 0,55. Da dieser im mittleren Bereich zwischen Null und Eins liegt, haben wir einen mittelstarken Zusammenhang vorliegen.
+-->
+
+**2.** Falls möglich, welche Richtung hat der Zusammenhang?
+
+<!--
+Ein Beispiel für eine positive Korrelation (wenn mehr, dann mehr) ist: „Mehr Futter, dickere Kühe.“ Ein Beispiel für eine negative oder Antikorrelation (wenn mehr, dann weniger) ist: „Mehr zurückgelegte Strecke mit dem Auto, weniger Treibstoff im Tank.“
+
+Oft gibt es Sättigungsgrenzen. Beispiel: Wenn ich mehr Gas gebe, fährt mein Auto schneller (aber nicht schneller als seine technisch bedingte Maximalgeschwindigkeit). In vielen Korrelationen der Wirtschaft gilt: die Grenzkosten steigen und der Grenznutzen sinkt.
+-->
+
+
+<!--
+Beispiele:
+
+Aus der Tatsache, dass in Sommern mit hohem Speiseeisumsatz viele Sonnenbrände auftreten, kann man nicht schlussfolgern, dass Eisessen Sonnenbrand erzeugt.
+
+Zwischen dem Rückgang der Störche im Burgenland und einem Rückgang der Anzahl Neugeborener könnte es durchaus eine Korrelation geben. Diese Korrelation hätte ihre Ursache aber weder darin, dass Störche Kinder bringen, noch darin, dass Störche sich zu Kindern hingezogen fühlen. Der Zusammenhang wäre sehr viel indirekterer Natur.
+
+Menschen, die viel lachen, geben in Meinungsumfragen regelmäßig an, glücklicher zu sein als andere. Da diese beiden Phänomene stets zusammen auftreten, ist denkbar,
+
+- dass glückliche Menschen mehr lachen,
+- dass Menschen, die viel zu lachen haben, dadurch glücklicher werden,
+- dass es gar keinen direkten Zusammenhang gibt, sondern dass sowohl das Lachen wie auch das Glück davon abhingen, wie das Wetter an dem Tag war, an dem die Beobachtungen gemacht wurden.
+
+In den ersten beiden Beispielen hängen die jeweiligen Messgrößen über eine dritte Größe ursächlich zusammen. Im ersten Fall ist es die Sonneneinstrahlung, die sowohl Eisverkauf als auch Sonnenbrand bewirkt, im zweiten Fall die Verstädterung, die sowohl Nistplätze vernichtet als auch dazu führt, dass Menschen weniger Kinder bekommen (siehe Vereinbarkeit von Familie und Beruf). Korrelationen dieser Art werden etwas missverständlich Scheinkorrelationen genannt (eigentlich handelt es sich um Schein-Kausalitäten).[1]
+
+In der Presse werden Korrelationen oft in einer Weise berichtet, die eine direkte Kausalität suggeriert, obwohl eine Gemengelage direkter und indirekter Zusammenhänge besteht.
+
+Kausalitäsrichtung
+
+Cum hoc ergo propter hoc (lateinisch für ‚mit diesem, folglich deswegen‘) bezeichnet den Fehlschluss der Scheinkausalität, bei dem das gemeinsame Auftreten von Ereignissen (Koinzidenz) oder die Korrelation zwischen Merkmalen ohne genauere Prüfung als Kausalzusammenhang aufgefasst wird. Doch impliziert eine Korrelation noch nicht Kausalität (englisch Correlation does not imply causation), auch wenn der Zusammenhang kausal scheinen mag (Scheinkorrelation). Ohne kausalen Zusammen¬hang aber erfolgt eine Zuordnung von Ursache und Wirkung willkürlich ohne fundierte Begründung. Will man ausdrücken, dass ein Fehlschluss nach dem Muster cum hoc ergo propter hoc vorliegt, so sagt man cum hoc non est propter hoc (lateinisch *"Mit diesem ist nicht deswegen."*).
+
+Scheinkorrelation kann beispielsweise zufällig oder aufgrund von unbeobachteten, erklärenden Variablen auftreten.
+
+Ein mehrfach beobachtetes Zusammentreffen zweier Ereignisse bietet grundsätzlich Anlass für die Vermutung, dass zwischen diesen Ereignissen ein Zusammenhang bestehen könnte. Das zeitliche und räumliche Zusammentreffen zweier Ereignisse begründet jedoch noch keinen kausalen Zusammenhang. Ob ein solcher Zusammenhang besteht, und wenn ja, welches der beiden Ereignisse die Ursache und welches Wirkung ist, oder ob beide Ereignisse gemeinsam Folge eines dritten Ereignisses sind, lässt sich daraus nicht ableiten. In der Statistik spricht man statt von Ursache und Wirkung von Abhängigkeit bzw. im Falle von Zufallsvariablen von Korrelation – selbst bei einer deutlichen Kovarianz im Werteverlauf der Variablen ist nicht auszuschließen, dass es einen dritten gemeinsamen Faktor gibt oder dass die Wirkrichtung zwischen den erhobenen Werten anders verläuft als vermutet.
+
+Scheinkorrelation (englisch spurious relationship oder spurious correlation bezeichnet eine Korrelation zwischen zwei Größen, der kein Kausalzusammenhang, sondern nur eine zufällige oder indirekte Beziehung zugrunde liegt (englisch: correlation, not causation). Die Scheinkorrelation ist die statistische Entsprechung des in der Philosophie betrachteten Fehlschlusses Cum hoc ergo propter hoc.
+
+Der Ausdruck ist allerdings insofern missverständlich, als eigentlich Scheinkausalität gemeint ist. Denn es liegt nicht nur scheinbar, sondern tatsächlich eine Korrelation vor, aber eben keine Kausalität (zur Abgrenzung der Konzepte siehe Korrelation und Kausalzusammenhang). Ohnehin ist Korrelation ein statistischer Begriff, der weder Kausalität impliziert noch von ihr impliziert wird.
+
+Eine Scheinkorrelation besteht z. B., wenn konfundierende Variablen (Störvariablen, Störfaktoren) oder intervenierende Variablen einen Einfluss auf die untersuchten Größen haben. Das Phänomen ist seit den Anfängen der Statistik bekannt; der entsprechende englische Begriff spurious correlation wurde 1954 von Herbert A. Simon geprägt.
+
+Ein bekanntes Beispiel ist die Korrelation zwischen der menschlichen Geburtenrate und der Zahl der Storchenpaare in verschiedenen europäischen Regionen. 
+
+Obwohl es eine Korrelation zwischen der Zahl der Geburten und der Zahl der Storchenpaare gibt (d. h. mehr Geburten und gleichzeitig mehr Storchenpaare), gibt es keinen kausalen Zusammenhang (die falsche Schlussfolgerung, dass die Kinder vom Storch gebracht werden). 
+
+Die Korrelation zwischen Geburten und Storchpaaren ergibt sich daraus, dass in ländlichen Regionen mehr Störche nisten und tendenziell auch mehr Kinder pro Paar geboren werden.
+-->

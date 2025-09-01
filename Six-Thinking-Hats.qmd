@@ -1,0 +1,99 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Softskills
+  - Kreativitätstechniken
+  - Six Thinking Hats
+
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 6
+link-external-icon: true
+link-external-newwindow: true
+
+headlines:
+  off: false
+extended-content:
+  off: false
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Six Thinking Hats ("Denkhüte") von De Bono
+
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Softskills
+## Kreativitätstechniken
+:::
+
+
+### Six Thinking Hats (*"Denkhüte"*) {#sec-sixthinkinghats}
+
+::: {.callout-tip}
+## Definition: *"Six Thinking Hats"*
+[Six Thinking Hats](https://de.wikipedia.org/wiki/Denkh%C3%BCte_von_De_Bono) ist eine von [Edward de Bono](https://de.wikipedia.org/wiki/Edward_de_Bono) 1986 vorgestellte Kreativitätstechnik. Es handelt sich dabei um ein Werkzeug sowohl für Gruppendiskussionen als auch zur Verbesserung des individuellen Denken. Die Technik beinhaltet sechs verschiedenfarbige *„Hüte“*, wobei jeder Hut für eine andere Art des Denkens und des Herangehens an eine vorgegebene Problemstellung steht.
+:::
+
+Der Methode der Denkhüte liegt das von de Bono entwickelte Konzept des *"parallelen Denkens"* zugrunde. De Bono geht dabei davon aus, dass es zu Kommunikationsschwierigkeiten kommt, wenn verschiedene Person innerhalb einer Diskussion zeitgleich verschiedene Sichtweisen (*"Hüte"*) einnehmen.
+
+@tbl-sixthinkinghats zeigt die mit jeder der sechs Farben der Hüte verbundenen Sichtweisen.
+
+| Farbe | Sichtweise |
+|-|-|
+| 🔵 Blau | **Ordnendes, moderierendes Denken**: Überblick über die Prozesse, momentaner Stand des Entscheidungsprozesses (,Big Picture‘: der blaue Himmel). |
+| ⚪ Weiß | **Analytisches Denken**: Fakten, was ist bekannt und was nicht, welche Anforderungen bestehen und wie können sie erreicht werden (objektiv: das weiße Blatt). |
+| 🔴 Rot | **Emotionales Denken, Empfinden**: Konzentration auf Gefühle und Meinungen (subjektiv: Feuer und Wärme). |
+| ⚫ Schwarz | **Kritisches Denken**: Risikobetrachtung, Probleme, Skepsis, Kritik und Ängste mitteilen (kritisch: Schwarzmalerei, [Advocatus Diaboli](https://de.wikipedia.org/wiki/Advocatus_Diaboli)). |
+| 🟡 Gelb | **Optimistisches Denken**: Chancen, was ist das Best-Case-Szenario (spekulativ: Sonnenschein). |
+| 🟢 Grün | **Kreatives, assoziatives, divergentes bzw. laterales Denken**: neue Ideen, Kreativität (konstruktiv: Wachstum). |
+
+: Six Thinking Hats nach Edward de Bono {#tbl-sixthinkinghats .bordered tbl-colwidths="[20,80]"}
+
+Die Idee hinter dem *"parallelen Denken"* ist, dass bei der Bearbeitung einer Aufgabe alle Beteiligten zu jedem Zeitpunkt der Diskussion die gleiche Sichtweise (*"Hutfarbe"*) aufhaben und gemeinsam, gleichzeitig die Hüte wechseln und auf diese Weise zeitlich synchronisiert, und Hinsichtlich der Sichtweise parallel, jedoch stets die eigenen Gedanken denken und in den Diskussionsprozess einbringen. So sollen nach de Bono Konflikte vermieden und dennoch alle sechs verschiedenen Sichtweisen und die hierzu jeweils individuellen Gedanken aller Beteiligten berücksichtigt werden.
+
+Das Bild der Denkhüte wird heute für weitere Techniken verwendet und teilweise auch in anderem Kontext. So steht die Frage *"Wer hat gerade für die Aufgabe "xyz" den Hut auf?"* z.B. für die Frage *"Wer trägt gerade die Verantwortung für die Aufgabe und hat die damit verbundene Entscheidungskompetenz?"* (siehe → AKV @sec-akv) 
+
+::: {.callout-important}
+## Pro-Tipp: Den gerade aufgesetzten Hut proaktiv kommunizieren!
+In vielen, insbesondere angespannten, kontrovers und emotional diskutierten Situationen ist es oftmals sehr hilfreich proaktiv zu Kommunizieren, welchen *"Hut"* man aus der eigenen Wahrnehmung heraus gerade auf hat. Das macht es den beteiligten Personen einfacher, die jeweils vertretene Position besser einzuordnen und Konflikte weniger "persönlich" zu nehmen. Wichtige Voraussetzung hierfür ist, dass allen Beteiligten das hier vorgestellte Konzept der verschiedenen *"Denkhüte"*, die jede Person aufsetzen und auch immer wieder wechseln kann, bekannt ist.
+::: 
