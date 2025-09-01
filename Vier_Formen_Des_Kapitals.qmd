@@ -5,13 +5,17 @@ format:
 lang: de
 bibliography: Literatur.bib
 
+---
+
+<!--
+
 headlines:
   off: false
 extended-content:
   off: false
 worksheets:
-  off: false
----
+  off: false 
+-->
 
 <!--
 title: "DEB Produktentwicklung"

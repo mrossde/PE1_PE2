@@ -64,13 +64,18 @@ kommentare:
   {{< include Grundlagen_Produktentwicklung.qmd >}}
 
 ## Technische Grundlagen
+
     {{< include SI-Einheiten.qmd >}}
     {{< include Werkstofftechnik.qmd >}}
     {{< include DIN8580.qmd >}}
+
 ## Methodische Grundlagen
+
     {{< include Vision-Strategie-Ziele.qmd >}}
     {{< include SMART.qmd >}}
+
 ## Projektmanagement
+
     {{< include Projekt.qmd >}}
     {{< include Gantt.qmd >}}
     {{< include Kritischer_Pfad.qmd >}}
@@ -91,17 +96,20 @@ kommentare:
   {{< include Ziele_Ideenfindung_und_Konzeptentwicklung.qmd >}}
 
 ## Methodische Grundlagen
+
     {{< include Produkt.qmd >}}
     {{< include Modelle_zum_Produktentstehungsprozess.qmd >}}
     {{< include Technology_Hype_Cycle.qmd >}}
+
 ## Konzeptentwicklung und Entscheidungsfindung
+
     {{< include Lasten-_und_Pflichtenheft.qmd >}}
     {{< include Produktdokumentation.qmd >}}
     {{< include Mindmap.qmd >}}
     {{< include Bewertungsmatrix.qmd >}}
     {{< include Prinzip-_Konzept_und_Serientauglichkeit.qmd >}}
-  {{< include Modularisierung.qmd >}}
-  {{< include Simultaneous_Engineering.qmd >}}
+    {{< include Modularisierung.qmd >}}
+    {{< include Simultaneous_Engineering.qmd >}}
 
 
 <!-- -------------------------------------------------------------------------
@@ -110,6 +118,7 @@ kommentare:
 
 -------------------------------------------------------------------------- -->
 # Entwurfs- und Entwicklungsphase {#sec-entwurfundentwicklung}
+
   {{< include Ziele_Entwurfs-_und_Entwicklungsphase.qmd >}}
   {{< include PWT.qmd >}}
   {{< include Apple_A17_Pro_SoC.qmd >}}
@@ -122,8 +131,11 @@ kommentare:
   {{< include Betriebsfestigkeit.qmd >}}
 
 ## NVH
+
     {{< include NVH.qmd >}}
+
 ## Kostenbeeinflussung im Produktentstehungsprozess
+
     {{< include Kosten_im_Produktentstehungsprozess.qmd >}}
     {{< include Rule-of-10.qmd >}}
     {{< include PPG.qmd >}}
@@ -135,31 +147,16 @@ kommentare:
 
 -------------------------------------------------------------------------- -->
 # Prototyping und Test {#sec-prototypingundtest}
+
   {{< include Ziele_Prototyping_und_Test.qmd >}}
 
 ## Testing
-    {{< include Fermi-Problem.qmd >}}
-    {{< include Statistische_Versuchsplanung_DoE.qmd >}}
+
+  {{< include Fermi-Problem.qmd >}}
+  {{< include Statistische_Versuchsplanung_DoE.qmd >}}
   {{< include Umweltqualifizierung.qmd >}}
   {{< include Rissprüfung.qmd >}}
-{{< include Qualitaet.qmd >}}
-
-
-<!-- -------------------------------------------------------------------------
-
-                       Kapitel 5: Produktionsplanung und Produktion
-
--------------------------------------------------------------------------- -->
-# Produktionsplanung und Produktion {#sec-produktionsplanungundproduktion}
-  {{< include Ziele_Produktionsplanung_und_Produktion.qmd >}}
-  
-## Lean Production
-    {{< include Toyota_Produktionssystem.qmd >}}
-    {{< include TQM.qmd >}}
-    {{< include Kaizen.qmd >}}
-    {{< include JIT-JIS.qmd >}}
-    {{< include Kanban.qmd >}}
-
+  {{< include Qualitaet.qmd >}}
 
 <!-- -------------------------------------------------------------------------
 
@@ -169,6 +166,7 @@ kommentare:
 # Softskills {#sec-softskills}
 
   ## Zusammenarbeit und Selbstorganisation
+
   {{< include Softskills.qmd >}}
   {{< include Team.qmd >}}
   {{< include Die_fünf_Hüte_einer_Führungskraft.qmd >}}
@@ -178,6 +176,7 @@ kommentare:
   {{< include LoveChangeLeave.qmd >}}
 
   ## Arbeitsmethoden
+
   {{< include Eisenhower-Prinzip.qmd >}}
   {{< include 6W-Methode.qmd >}}
   {{< include AIDA-Modell.qmd >}}
@@ -190,4 +189,5 @@ kommentare:
 
 -------------------------------------------------------------------------- -->
 # Literatur {#sec-literatur}
+
   {{< include Literatur.qmd >}}

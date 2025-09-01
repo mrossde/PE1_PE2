@@ -1,10 +1,24 @@
+project:
+  type: book
+
 lang: de
+
+book:
+  title: "PRODUKTENTWICKLUNG 1"
+  author: "Christian Anders"
+  date: "2024-02-01"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - references.qmd
+    - pruefung.qmd
 
 bibliography: references.bib
 
 format:
   html:
     theme: cosmo
+    mermaid:
+      theme: forest
   pdf:
     documentclass: scrreprt
-
