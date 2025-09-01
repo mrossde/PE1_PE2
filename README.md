@@ -1,4 +1,12 @@
-# example-project-with-rye
+# Vorlesung PE1 & PE2
+
+## Nutzung von integrierten Bildformaten
+
+Um direkt in dem Visual Studio Editor auch Vektorgrafiken mit DrawIO zu bearbeiten, kann folgendes [Addon](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio) installiert werden. Die dateien sind dann mit der Endung *.drawio.svg zu speichern.
+
+![integrierte Bildformate](images/integr_BIldformate.png)
+
+## todo
 
 An example python AI project, testing out some best practices for python development
 
