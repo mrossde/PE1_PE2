@@ -65,6 +65,15 @@ link-external-newwindow: true
 ::: {.callout-tip}
 ## Definition: *"KPI"*
 [KPI](https://de.wikipedia.org/wiki/Key-Performance-Indicator) steht für *"Key Performance Indicator"* (auf Deutsch: Schlüsselkennzahl oder Leistungskennzahl). Ein KPI ist eine messbare Größe oder Metrik, die in Organisationen und Unternehmen verwendet wird, um den Fortschritt oder den Erfolg bei der Erreichung von strategischen Zielen oder Projekten zu verfolgen und zu bewerten.
+
+::: {.content-visible unless-meta="kommentare.off"}
+
+:::: {style="background-color: #9affa4"}
+\@mrossde Def prüfen und in einzelne Datei
+
+::::
+:::
+
 :::
 
 KPIs sind wichtige Instrumente zur Leistungsüberwachung und -bewertung und werden in verschiedenen Bereichen und Branchen eingesetzt. Sie dienen dazu, die Leistung in einem bestimmten Bereich oder Aspekt des Geschäfts quantitativ zu erfassen und zu analysieren sowie Trends frühzeitig zu identifizieren. KPIs können dabei helfen, bessere Entscheidungen zu treffen.
