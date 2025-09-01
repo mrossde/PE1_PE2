@@ -166,7 +166,32 @@ Das Trennen bezeichnet eine Gruppe Fertigungsverfahren, bei denen ein Körper du
 Die Trennverfahren gliedern sich anhand des angewendeten Verfahrens in folgende Untergruppen:
 
 1. **Zerteilen**: Beim Zerteilen wird ein Körper unter Einsatz von Schneidkanten in mehrere Körper getrennt, ohne dass dabei Späne entstehen. Beispiele sind das Spalten von Holz mit einer Axt oder das Schneider mit einem Messer.
-2. **Spanen mit geometrisch bestimmten Schneiden**: Bei dieser Art des Spanens kommen Werkzeuge mit definierten Schneidgeometrien zum Einsatz. Beispiele für diese Verfahren sind das Drehen, Fräsen, Hobeln oder Sägen.
+2. **Spanen mit geometrisch bestimmten Schneiden**: Bei dieser Art des Spanens kommen Werkzeuge mit definierten Schneidgeometrien zum Einsatz. Beispiele für diese Verfahren sind das Drehen [ErklärvideoTODO](VideoportalTODO), Fräsen, Hobeln oder Sägen.
+::: {.content-visible unless-meta="kommentare.off"}
+
+:::: {style="background-color: #9affa4"}
+\@mrossde wie findest du das Video - könnte man noch schneiden, komprimieren und hier einbauen - siehe Link bwsync
+
+
+2Spanvorgaenge_Metalltechnik_2.mpg Start - 04:20 -> Thema Urformen und Gefügebildung
+2Spanvorgaenge_Metalltechnik_2.mpg 06:25 - 08:39 -> Umformen
+2Spanvorgaenge_Metalltechnik_2.mpg 08:39 - 10:31 > Fügen
+2Spanvorgaenge_Metalltechnik_2.mpg 10:31 - > Stoffeigenschaften Ändern / Härten
+
+3Einfluss Erstarrungsmorphologie auf Spanbildung bei Gusseisen.mpg - 6:30 Aufbauschneide zeigen
+7fraesen.mpg 0 - 4:00min
+
+Loeten2.mpg 2min - ggf. für umweltquali 
+Loeten3.mpg - leiterplatten loeten
+Tiefziehen.mpg - Tiefziehen / Umformen 
+
+HIER WEITERMACHEN -> 
+1. Videos Schnitt inhalte bestimmen
+2. Videos schneiden
+3. FWU Material über Bibo recherchieren ob Zugang
+
+::::
+:::
 3. **Spanen mit geometrisch unbestimmten Schneiden**: Im Gegensatz zu den zuvor genannten Spanvorgängen ist die Form der Schneiden nicht fest definiert. Entsprechende Schneiden sind beispielsweise beim Schleifen anzutreffen: Eine Schleifscheibe zählt viele kleine ungeordnete Schleifkörner mit unterschiedlichen Formen.
 4. **Abtragen**: Beim Abtragen kommen nicht-mechanische Verfahren zum Einsatz, um Teile des bearbeiteten Körpers abzutrennen oder um Werkstoffschichten zu entfernen. Beispiele hierfür sind das Laserschneiden oder das Ätzen eines Werkstücks.
 5. **Zerlegen**: Beim Zerlegen wird ein Körper in Teile demontiert, ohne dass dabei eine Schädigung der Werkstücke auftritt. Beispiele sind das Herausziehen von Nägeln oder das Lösen von Klebeverbindungen oder Klemmen.

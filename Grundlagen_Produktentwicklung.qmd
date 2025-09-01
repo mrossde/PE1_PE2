@@ -101,7 +101,6 @@ link-external-newwindow: true
 Aufgabe der Vorlesungen ist das Vermitteln praxisnahen, relevanten, verfügbaren ***aktiven Wissens*** und des ***Verstehens von Zusammenhängen***, auf das die Studierenden in ihrem Berufsleben jederzeit und dauerhaft zugreifen und bei ihren Entscheidungen einfließen lassen können um ***informierte Entscheidungen*** zu treffen.
 :::
 
-
 ![](images/blank.png){height=1.2cm}
 
 
@@ -207,6 +206,14 @@ Die Nutzung dieser Werkzeuge im Sinne der [Definition: *"Nutzen von Werkzeugen"*
 Informierte Entscheidungen werden getroffen, wenn eine Person umfassende und relevante Informationen berücksichtigt, bevor sie eine Wahl trifft oder eine Handlung ausführt. Solche Entscheidungen basieren auf einer sorgfältigen Analyse und Bewertung der verfügbaren Fakten, Daten, Erfahrungen und Meinungen. 
 :::
 
+::: {.content-visible unless-meta="kommentare.off"}
+
+:::: {style="background-color: #9affa4"}
+\@mrossde wollen wir die definition vereinheitlichen ? siehe informierte_Entscheidung.qmd
+
+::::
+:::
+
 Informierte Entscheidungen sind durch folgenden Merkmale gekennzeichnet:
 
 1. **Informationsbeschaffung:** Bei informierten Entscheidungen wird im Vorfeld bewusst nach Informationen gesucht. Die bedeutet, dass man sich der Grenzen des eigenen verfügbaren Wissens bewusst ist, zielgerichtet verschiedene Quellen konsultiert, Experten befragt, Forschungsergebnisse analysiert oder andere Informationsquellen nutzt.
@@ -220,11 +227,34 @@ Informierte Entscheidungen sind durch folgenden Merkmale gekennzeichnet:
 Informierte Entscheidungen sind nicht in jedem Fall richtige Entscheidungen, sie führen jedoch zu einer **höheren Wahrscheinlichkeit**, dass die gewählte Handlung den Zielen entspricht (siehe → (Zufalls-)Glück @sec-glueck).
 :::
 
+::: {.content-visible unless-meta="kommentare.off"}
+
+:::: {style="background-color: #9affa4"}
+\@mrossde ggf. eine kleine Übung, über eine Internetrecherche eine informierte Entscheidung zu treffen? oder kommt das noch explizit später in Übungen?
+
+::::
+:::
 
 #### Einflussfaktoren auf die Produktentwicklung
 
 ![Einflussfaktoren erfolgreicher Produktentwicklung](images/Anforderungen_Produktentwicklung_Grundlagen.drawio.svg){width=70% #fig-ape}
 
+::: {.content-visible unless-meta="kommentare.off"}
+
+:::: {style="background-color: #9affa4"}
+\@mrossde gibt es irgendwo eine Definition was Produktentwicklung ist? hier wird es zum ersten Mal verwendet.
+
+::::
+:::
+
+::: {.content-visible unless-meta="kommentare.off"}
+
+:::: {style="background-color: #9affa4"}
+\@mrossde Herleitung in TDE durch Digital Value => Wert. Wert ist die Erfüllung von menschlichen Bedürfnissen. Insofern: PE kein Selbstzweck sondern der logische Schritt um Werte zu erschaffen, durch die Erfüllung von Kundenbedarf.
+Einbauen und Definition von Wert (siehe Gebrauchswert.qmd bzw. direkt wert.qmd)
+
+::::
+:::
 
 ::: {.callout-tip}
 ## Definition: *"Kundenbedarf"*

@@ -1,0 +1,17 @@
+::: callout-tip
+## Informierte Entscheidung
+
+Eine i.E. basiert auf dem gründlichen Verständnis der verfügbaren Informationen und Fakten zu einer bestimmten Situation oder Fragestellung. Sie beruht auf einer sorgfältigen Analyse und ermöglicht es, die potenziellen Konsequenzen und Auswirkungen einer Entscheidung besser abzuwägen <!--[^fn79].-->
+
+In diesem Kontext wird deutlich, dass **effizientes Sammeln, Verarbeiten und Interpretieren** von **Daten** essenziell ist.
+:::
+
+<!-- [^fn79]: [@Gronemeyer.2017, S. 101 ] -->
+
+::: {.content-visible unless-meta="kommentare.off"}
+
+:::: {style="background-color: #9affa4"}
+\@mrossde CA, wie werden Quellen eingebunden - wo ist die Quelldatenbank für die .bib Datei?
+
+::::
+:::
