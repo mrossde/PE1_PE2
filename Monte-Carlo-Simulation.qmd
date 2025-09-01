@@ -1,4 +1,9 @@
-<!--
+---
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
 author:
   - name: "Christian Anders"
     degrees: 
@@ -13,27 +18,25 @@ author:
         country: "Deutschland"
         url: https://www.hs-esslingen.de/
 abstract: > 
-  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
 keywords:
-  - Produktentstehungsprozess
-  - Entwicklungsmethodik
+  - Produktentwicklung
   - Monte-Carlo-Simulation
-
 copyright: 
   holder: Christian Anders
-  year: 2024
+  year: 2025
 lang: de
 bibliography: Literatur.bib
 date: last-modified
-toc: false
+toc: true
 number-sections: true
 scrollable: true
-toc-location: right-body
+toc-location: right
 cap-location: bottom
 number-offset: 2
 link-external-icon: true
 link-external-newwindow: true
--->
+---
 
 <!--
 format:
@@ -55,18 +58,6 @@ bibliography: Literatur.bib
 # Entwurfs- und Entwicklungsphase
 :::
 
-
-<!-- -------------------------------------------------------------------------
-
-                       Callout !!! WARNING !!!
-
--------------------------------------------------------------------------- -->
-<!--
-::: {.callout-warning}
-## WARNING!
-**THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
-:::
--->
 
 ## Monte-Carlo-Simulation {#sec-montecarlosimulation}
 
@@ -106,8 +97,9 @@ In einfacher Form besagt das [Gesetz der großen Zahlen](https://de.wikipedia.or
 ```{mermaid}
 %%| label: fig-label-mmmontecarlosimulatoin
 %%| fig-cap: "Mindmap zu Anwendungen von Monte-Carlo-Simulationen im Produktentstehungsprozess"
+%%{init: {'theme': 'forest'}}%%
 mindmap
-  root(Monte-Carlo-Simulation)
+  root((Monte-Carlo-Simulation))
     (Maschinenbau)
       (Bauteil- und Strukturoptimierung)
       (Thermodynamische Prozesse)

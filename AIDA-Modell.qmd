@@ -1,5 +1,13 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
 <!--
-title: "DEB3 Produktentwicklung 1"
+title: "DEB Produktentwicklung"
 format:
   html:
     embed-resources: true
@@ -18,14 +26,14 @@ author:
         country: "Deutschland"
         url: https://www.hs-esslingen.de/
 abstract: > 
-  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
 keywords:
-  - Produktentstehungsprozess
-  - Entwicklungsmethodik
+  - Produktentwicklung
   - AIDA-Modell
+
 copyright: 
   holder: Christian Anders
-  year: 2024
+  year: 2025
 lang: de
 bibliography: Literatur.bib
 date: last-modified
@@ -34,10 +42,11 @@ number-sections: true
 scrollable: true
 toc-location: right
 cap-location: bottom
-number-offset: 5
+number-offset: 6
 link-external-icon: true
 link-external-newwindow: true
 -->
+
 
 
 <!-- -------------------------------------------------------------------------

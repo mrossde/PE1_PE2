@@ -1,5 +1,13 @@
 ---
-title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+title: "DEB Produktentwicklung"
 format:
   html:
     embed-resources: true
@@ -18,36 +26,55 @@ author:
         country: "Deutschland"
         url: https://www.hs-esslingen.de/
 abstract: > 
-  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
 keywords:
-  - Produktentstehungsprozess
-  - Entwicklungsmethodik
+  - Produktentwicklung
   - Spieltheorie
   - Nullsummenspiel
+  - Positivsummenspiel
+  - Win-Win-Strategie
+
 copyright: 
   holder: Christian Anders
-  year: 2024
+  year: 2025
 lang: de
 bibliography: Literatur.bib
 date: last-modified
-toc: false
-number-sections: false
+toc: true
+number-sections: true
 scrollable: true
-toc-location: right-body
+toc-location: right
 cap-location: bottom
-number-offset: 0
+number-offset: 5
 link-external-icon: true
 link-external-newwindow: true
----
-
-<!--
-format:
-  html:
-    embed-resources: true
-lang: de
-bibliography: Literatur.bib
 -->
 
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Spieltheorie
+
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Softskills
+:::
+
+## Spieltheorie {#sec-spieltheorie}
 <!-- -------------------------------------------------------------------------
 
                        Callout !!! WARNING !!!
@@ -57,14 +84,6 @@ bibliography: Literatur.bib
 ## WARNING!
 **THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
 :::
-
-<!-- -------------------------------------------------------------------------
-
-                       Spieltheorie
-
--------------------------------------------------------------------------- -->
-
-### Spieltheorie {#sec-spieltheorie}
 
 
 ::: {.callout-tip}
@@ -76,10 +95,10 @@ Ein Spiel im Sinne der Spieltheorie ist eine Entscheidungssituation mit mehreren
 
 ::: {.callout-caution}
 ## Pro-Tipp!
-Solche Entscheidungssituationen finden sich in aller Regel auch im Rahmen von Produktentstehungsprozessen, z.B. immer dann, wenn aus verschiedenen möglichen, zuvor erarbeiteten konstruktiven Alternativen oder Vorgehensweisen eine dieser Alternativen oder Vorgehensweisen für die Weiterentwicklung oder der Verwendung in einem zu entwickelnden Produkt ausgewählt werden muss. Bewertungsmatrizen (siehe → Bewertungsmatrix<!-- @sec-bewertungsmatrix -->) oder vergleichbare Methoden bieten hier eine wichtige Hilfestellung zur Entscheidungsfindung, **jedoch handeln, interagieren und entscheiden die Betroffen in der Praxis nicht nur rational sondern immer auch vor dem Kontext verschiedenster, oftmals nur den einzelnen Personen bekannten und nicht an die weiteren Beteiligten kommunizierten (Eigen-)Interessen.** (siehe → *"Verborgener Bereich"* des Johari-Fensters<!-- @sec-johari -->).
+Solche Entscheidungssituationen finden sich in aller Regel auch im Rahmen von Produktentstehungsprozessen, z.B. immer dann, wenn aus verschiedenen möglichen, zuvor erarbeiteten konstruktiven Alternativen oder Vorgehensweisen eine dieser Alternativen oder Vorgehensweisen für die Weiterentwicklung oder der Verwendung in einem zu entwickelnden Produkt ausgewählt werden muss. Bewertungsmatrizen (siehe → Bewertungsmatrix<!-- @sec-bewertungsmatrix -->) oder vergleichbare Methoden bieten hier eine wichtige Hilfestellung zur Entscheidungsfindung, **jedoch handeln, interagieren und entscheiden die Betroffen in der Praxis nicht nur rational sondern immer auch vor dem Kontext verschiedenster, oftmals nur den einzelnen Personen bekannten und nicht an die weiteren Beteiligten kommunizierten (Eigen-)Interessen.** (siehe → *"Verborgener Bereich"* des [Johari-Fensters](https://de.wikipedia.org/wiki/Johari-Fenster)<!-- @sec-johari -->).
 :::
 
-#### Nullsummenspiel
+### Nullsummenspiel
 
 ::: {.callout-tip}
 ## Definition: *"Nullsummenspiel"*
@@ -96,8 +115,14 @@ Langfristig für die Beteiligten als erfolgreich wahrgenommene Zusammenarbeit se
 Das wechselseitige Kennen des individuellen Wertesystems der Beteiligten biete eine wichtige Grundlage um die individuellen Bewertungsmaßstäbe der in der Zusammenarbeit gehandelten "Waren" bei der Zusammenarbeit gezielt berücksichtigen zu können.
 :::
 
-  {{< include Verhalten_als_Ware.qmd >}}
-  {{< include Johari-Fenster.qmd >}}
+### Positivsummenspiel (Win-Win-Strategie)
+
+::: {.callout-tip}
+## Definition: *"Positivsummenspiel"*
+Eine [Win-Win-Strategie](https://de.wikipedia.org/wiki/Win-win), auch als Doppelsieg-Strategie oder als Positivsummenspiel bekannt, hat das Ziel, dass alle Beteiligten und Betroffenen einen Nutzen erzielen. Jeder Verhandlungspartner respektiert auch sein Gegenüber und versucht, dessen Interessen ausreichend zu berücksichtigen. Es wird von gleichwertigen Partnern um einen für beide Seiten positiven Interessenausgleich gerungen. Die Auswirkungen auf Dritte sind dabei zu berücksichtigen.
+:::
+
+Die Win-Win-Strategie ist eher auf langfristigen nachhaltigen Erfolg und auf langfristige Zusammenarbeit als auf kurzfristigen Gewinn ausgerichtet.
 
 <!--
 # Literatur 

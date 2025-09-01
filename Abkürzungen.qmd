@@ -6,6 +6,57 @@ lang: de
 bibliography: Literatur.bib
 ---
 
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - Produktentwicklung
+  - Abkürzungen
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
 
 <!-- -------------------------------------------------------------------------
 
@@ -13,18 +64,24 @@ bibliography: Literatur.bib
 
 -------------------------------------------------------------------------- -->
 
+::: {.content-visible unless-meta="headlines.off"}
+# Grundlagen
+:::
 
-### Abkürzungen {#sec-abkuerzungen}
+## Abkürzungen {#sec-abkuerzungen}
 
 | Abkürzung  | Bedeutung | 
 |--------------------:|:-------------------|
+| AIDA | Attention - Interest - Desire - Action |
 | AKV | Aufgabe - Kompetenz - Verantwortung |
+| CAD | [Computer-Aided Design](https://de.wikipedia.org/wiki/CAD) |
 | DFM | [Design for Manufacturing](https://en.wikipedia.org/wiki/Design_for_manufacturability) → PPG | 
 | DMU | [Digital Mock-Up](https://de.wikipedia.org/wiki/Digital_Mock-Up) |
 | DoD | [Definition of Done](https://de.wikipedia.org/wiki/Scrum#Definition_of_Done) |
 | EDM | [Engineering-Data-Management](https://de.wikipedia.org/wiki/Engineering-Data-Management) |
 | EMV | [Elektromagnetische Verträglichkeit](https://de.wikipedia.org/wiki/Elektromagnetische_Vertr%C3%A4glichkeit)
 | FEM | [Finite-Elemente-Methode](https://de.wikipedia.org/wiki/Finite-Elemente-Methode) |
+| KPI | [Key Performance Indicator](https://de.wikipedia.org/wiki/Key-Performance-Indicator)
 | KVP | [Kontinuierlicher Verbesserungsprozess](https://de.wikipedia.org/wiki/Kontinuierlicher_Verbesserungsprozess) |
 | NVH | Noise - Vibration - Harshness |
 | PDM | [Produktdatenmanagement](https://de.wikipedia.org/wiki/Produktdatenmanagement) |
@@ -32,7 +89,9 @@ bibliography: Literatur.bib
 | PLM | [Product Lifecycle Management](https://de.wikipedia.org/wiki/Product-Lifecycle-Management) |
 | PPG | Produktionsgerechte Produktgestaltung | 
 | PWT | Produktions- und Werkstofftechnik |
-| SoP | [Start of Production](https://de.wikipedia.org/wiki/Start_of_Production) → Job #1 |
+| [SMART](https://de.wikipedia.org/wiki/SMART_(Projektmanagement)) | Specific - Measurable - Achievable - Relevant - Time-bound |
+| RNG | [Random Number Generator](https://de.wikipedia.org/wiki/Zufallszahlengenerator)
+| SoP | [Start of Production](https://de.wikipedia.org/wiki/Start_of_Production) → *"Job #1"* |
 | SPC | [Statistical Process Control](https://de.wikipedia.org/wiki/Statistische_Prozesslenkung)
 | TPS | [Toyota-Produktions-System](https://de.wikipedia.org/wiki/Toyota-Produktionssystem)
 

@@ -1,5 +1,5 @@
-<!--
-title: "DEB3 Produktentwicklung 1"
+---
+title: "DEB Produktentwicklung"
 format:
   html:
     embed-resources: true
@@ -18,26 +18,33 @@ author:
         country: "Deutschland"
         url: https://www.hs-esslingen.de/
 abstract: > 
-  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
 keywords:
-  - Produktentstehungsprozess
-  - Entwicklungsmethodik
+  - Produktentwicklung
   - Werkstoffkunde
   - Materialermüdung
 copyright: 
   holder: Christian Anders
-  year: 2024
+  year: 2025
 lang: de
 bibliography: Literatur.bib
 date: last-modified
-toc: false
+toc: true
 number-sections: true
 scrollable: true
-toc-location: right-body
+toc-location: right
 cap-location: bottom
 number-offset: 2
 link-external-icon: true
 link-external-newwindow: true
+---
+
+<!--
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
 -->
 
 <!-- -------------------------------------------------------------------------
@@ -63,8 +70,9 @@ link-external-newwindow: true
 ```{mermaid}
 %%| label: fig-label-mmmaterialermuedung
 %%| fig-cap: "Mindmap wichtiger Einflussfaktoren auf die Materialermüdung bei Produkten"
+%%{init: {'theme': 'forest'}}%%
 mindmap
-  root(Materialermüdung)
+  root((Materialermüdung))
     (Zyklische mechanische Lasten)
       (Spannungsamplitude)
       (Mittelspannung)
@@ -131,7 +139,7 @@ Die Schwingfestigkeit von Werkstoffen, aber auch von Produkten, kann mittels Wö
 
 ::: {.callout-warning}
 ## Auslegung von Produkten in der Regel nur auf Zeit- oder Betriebsfestigkeit möglich!
-Aus wirtschaftlichen und technischen Gründen (→ [Leichtbau](https://de.wikipedia.org/wiki/Leichtbauweise)) ist die dauer- oder endfeste Auslegung der Produkte in der Praxis in der Regel nicht möglich^[So würden z.B. dauerfest ausgelegte Flugzeuge wegen zu hohen Gewichts nicht wirtschaftlich sinnvoll fliegen können; auch wäre die heute alltägliche Verwendung von Aluminium in Fahrzeugen aller Art praktisch unmöglich weil Aluminium mit seinem kubisch-flächenzentriertem Kristallgitter keine Dauerfestigkeit erreicht.]. Nahezu alle Produkte werden entsprechend "nur" auf Zeit- oder Betriebsfestigkeit ausgelegt! 
+Aus wirtschaftlichen und technischen Gründen (→ [Leichtbau](https://de.wikipedia.org/wiki/Leichtbauweise)) ist die dauer- oder endfeste Auslegung der Produkte in der Praxis in der Regel nicht möglich^[So würden z.B. dauerfest ausgelegte Flugzeuge wegen zu hohen Gewichts nicht wirtschaftlich sinnvoll fliegen können; auch wäre die heute alltägliche Verwendung von Aluminium in Fahrzeugen aller Art praktisch unmöglich, da Aluminium mit seinem kubisch-flächenzentriertem Kristallgitter keine Dauerfestigkeit erreicht.]. **Nahezu alle Produkte sind und werden entsprechend "nur" auf Zeit- oder Betriebsfestigkeit ausgelegt!**
 :::
 
 ::: {.callout-warning}

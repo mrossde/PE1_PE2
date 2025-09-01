@@ -1,25 +1,61 @@
 ---
-title: "MTB3 Entwicklung mechatronischer Systeme 1"
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+title: "DEB Produktentwicklung"
 format:
   html:
     embed-resources: true
 
 author:
   - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
     email: christian.anders@hs-esslingen.de
-    affiliations: Hochschule Esslingen
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Softskills
+  - Feedback
+  - 10 Regeln für konstruktives Feedback
+  - “WWW-Regel”
+  - Umgang mit negativem Feedback
+
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
 date: last-modified
 toc: true
-number-sections: false
+number-sections: true
 scrollable: true
----
+toc-location: right
+cap-location: bottom
+number-offset: 6
+link-external-icon: true
+link-external-newwindow: true
 
-<!-- 
-::: {.callout-warning}
-## WARNING!
-**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
-:::
---> 
+headlines:
+  off: false
+extended-content:
+  off: false
+-->
 
 <!-- -------------------------------------------------------------------------
 
@@ -27,7 +63,11 @@ scrollable: true
 
 -------------------------------------------------------------------------- -->
 
-## Feedback
+::: {.content-visible unless-meta="headlines.off"}
+# Softskills
+:::
+
+## Feedback {#sec-feedback}
 
 ---
 
@@ -35,87 +75,142 @@ scrollable: true
 
 ---
 
+
+::: {.callout-tip}
+## Definition: *"Feedback"*
+[Feedback](https://de.wikipedia.org/wiki/Feedback_(Kommunikation)) bezeichnet in der Kommunikation von Menschen die Rückübermittlung von Informationen durch den Empfänger einer Nachricht an den Sender jener Nachricht. Diese Informationen melden dem Sender, was der Empfänger wahrgenommen bzw. verstanden hat, und ermöglichen dem Sender durch etwaige Korrektur des Verhaltens auf die Rückmeldungen des Empfängers zu reagieren. Dies kann in mündlicher wie in schriftlicher Form übermittelt werden. Feedback ist die Grundlage, um Kommunikationsstörungen zu beseitigen.
+:::
+
+
 ### 10 Regeln für konstruktives Feedback
 
-Diese Regeln helfen dabei, eine angenehme und konstruktive Feedbackkultur zu etablieren und die Kommunikation zu verbessern.
+Die folgenden zehn Regeln helfen dabei, eine angenehme und konstruktive Feedbackkultur zu etablieren und die Kommunikation zu verbessern.
 
 ::: {.callout-important}
 ## 10 Regeln zum Feedback
-**Feedback** ist ein wichtiger Bestandteil der Kommunikation in Projektteams. Hier sind **10 goldene Feedbackregeln**, die sowohl für das Geben als auch für das Empfangen von Feedback gelten:
+**Feedback** ist ein wichtiger Bestandteil der Kommunikation in Projektteams. Folgende **10 goldene Feedbackregeln** gelten dabei sowohl für das Geben als auch für das Empfangen von Feedback:
 
-1. **Erwünscht sein**: Frage vorab, ob der Empfänger bereit für Feedback ist.
-2. **Vorbereitung**: Nimm dir Zeit, um das Feedback sorgfältig vorzubereiten.
-3. **Wertschätzend formulieren**: Achte darauf, dass deine Rückmeldung respektvoll und freundlich ist.
-4. **In der Ich-Form formulieren**: Verwende "Ich"-Aussagen, um deine eigenen Eindrücke zu teilen.
-5. **Beschreibend sein**: Sachlich richtig. Beziehen Sie sich auf Beobachtungen im Gegensatz zu Vermutungen oder Interpretationen. Grundregel: Die Beobachtung muss auch von anderen nachvollzogen werden können.
-6. **Nützlich sein**: Stelle sicher, dass das Feedback für den Empfänger hilfreich ist.
+1. **Erwünscht sein**: Fragen Sie vorab, ob der Empfänger bereit für Feedback ist.
+
+2. **Vorbereitung**: Nehmen Sie sich Zeit, um das Feedback sorgfältig vorzubereiten.
+
+3. **Wertschätzend formulieren**: Achten Sie darauf, dass Ihre Rückmeldung respektvoll und freundlich ist.
+
+4. **In der Ich-Form formulieren**: Verwenden Sie "Ich"-Aussagen, um Ihre eigenen Eindrücke zu teilen.
+
+5. **Beschreibend sein**: Sachlich richtig. Beziehen Sie sich auf Beobachtungen im Gegensatz zu Vermutungen oder Interpretationen. Grundregel: Die Beobachtung muss auch von anderen Personen nachvollzogen werden können.
+
+6. **Nützlich sein**: Stellen Sie sicher, dass das Feedback für den Empfänger hilfreich sein kann.
+
 7. **Spezifisch sein**: Klar und genau formuliert: Das Feedback sollte sich auf ein konkretes Verhalten oder einen konkreten Anlass beziehen.
+
 8. **Konkret und umsetzbar sein**: Geben Sie konkrete Anregungen zu einer auch tatsächlich umsetzbaren Verbesserung.
+
 9. **Positive Aspekte hervorheben**: Lob und Anerkennung sind genauso wichtig wie konstruktive Kritik!
+
 10. **Aktiv zuhören**: Hören Sie aufmerksam zu, wenn Sie Feedback erhalten und fragen Sie bei Unklarheiten nach.
 :::
 
 
+<!-- --------------------------------------------------------------------------
+EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT
+S T A R T -->
+::: {.content-visible unless-meta="extended-content.off"}
+<!-- ---------------------------------------------------------------------- -->
 
-::: {.callout-important}
-## “WWW-Regel”
+### “WWW-Regel”
 
-Idee der WWW-Regel: 
+Idee der WWW-Regel (**Wahrnehmung schildern → Wirkung erläutern → Wunsch formulieren**): 
 
 + Weg vom *“Du hast dieses und jenes getan”* → hin zu *“Mir ist aufgefallen, dass…”*
 
 Umsetzung der WWW-Regel:
 
 + **Wahrnehmung schildern**: Beschreibend, im Gegensatz zu bewertend. Beschreiben Sie Ihre eigene Wahrnehmung und Reaktion. *“Ich habe beobachtet, dass…”* oder *“Mir ist aufgefallen, dass…”*. Überlassen Sie dem Empfänger des Feedbacks, diese Informationen zu verwerten oder auch nicht.
-+ **Wirkung erläutern**: *“Das wirkt auf mich, als ob..”* oder *“Das hat zur Folge, dass …”*. Beschreiben Sie immer, wie Sie sich in der Situation gefühlt haben und warum es Ihnen wichtig ist, das Thema anzusprechen.
-+ **Wunsch formulieren**: *“Ich würde mir wünschen, dass….”* Benennen Sie, was Sie sich stattdessen konkret wünschen würden.
-:::
 
-::: {.callout-important}
++ **Wirkung erläutern**: *“Das wirkt auf mich, als ob..”* oder *“Das hat zur Folge, dass …”*. Beschreiben Sie immer, wie Sie sich in der Situation gefühlt haben und warum es Ihnen wichtig ist, das Thema anzusprechen.
+
++ **Wunsch formulieren**: *“Ich würde mir wünschen, dass….”* Benennen Sie, was Sie sich stattdessen konkret wünschen würden.
+
+
+
 ### Feedback empfangen
 
 + **Zuhören und Aufnehmen**. Akzeptieren Sie die Beobachtungen des Anderen.
-+ **Rückfragen.** Wenn etwas unklar ist.
+
++ **Rückfragen.** Wenn das Feedback für Sie unklar ist, fragen Sie nach.
+
 + **Zusammenfassen**. Wichtige Erkenntnisse formulieren und zurückspiegeln um Missverständnisse zu vermeiden.
-+ **Keine Rechtfertigung, Verteidigung oder Erklärung**. Diskutieren Sie Feedback, das Sie selbst bekommen, nicht oder stelle es infrage. Denken Sie in Ruhe über das Gehörte nach. Bleiben Sie gelassen. Es ist immer die Perspektive der anderen Person.
-+ **Dank an den Feedbackgeber**: Feedback immer eine Gelegenheit zur Weiterentwicklung. Es ist normal, dass es anfangs unangenehm sein kann. Gutes Feedback erfodert aber auch vom Feedbackgeber Anstrengung und ist ein Zeichen der Wertschätzung. Ein *"Dankeschön"* für ein hilfreiches Feedback kann eine gute Möglichkeit sein, ein Feedback positive abzuschließen.
+
++ **Keine Rechtfertigung, Verteidigung oder Erklärung**. Diskutieren Sie Feedback, das Sie selbst bekommen, nicht oder stellen Sie es infrage. Bleiben Sie gelassen. Feedback ist immer nur die subjektive Perspektive der anderen Person. Denken Sie in Ruhe über das Gehörte nach. 
+
++ **Dank an den Feedbackgeber**: Feedback zu erhalten ist anstrengend, zumal wenn es sich um negatives Feedback handelt. Feedback zu erhalten ist aber auch immer eine Gelegenheit zur Weiterentwicklung. Feedback gut zu geben erfordert aber auch vom Feedbackgeber Anstrengung und **ist ein Zeichen der Wertschätzung**. 
+
+
+::: {.callout-caution}
+## Pro-Tipp!
+Ein *"Dankeschön"* für ein erhaltenes, vom Feedbackgeber gut gemeintes Feedback ist immer eine gute Möglichkeit, ein Feedback positiv abzuschließen. Das gilt auch dann, wenn Sie in diesem Moment (noch) keine ehrliche Dankbarkeit für das erhaltende Feedback empfinden. Auch ein verspätetes *"Dankeschön"* ist besser als gar kein Rückmeldung an den Feedbackgeber.
 :::
 
-### Tipps zum Umgang mit negativem Feedback: 
 
-+ **Abstand gewinnen**: Nimm dir Zeit, um das Feedback zu verarbeiten und zu analysieren. Warum hat der Kritiker so reagiert? Berücksichtige mögliche Faktoren wie den Zeitpunkt der Rückmeldung oder die aktuelle Lebenssituation des Kritikers.
 
-+ **Empathie**: Versetze dich in die Lage der anderen Person. Verstehe, dass negatives Feedback nicht persönlich gemeint ist, sondern eine Kritik an der Arbeit oder dem Verhalten.
+### Tipps zum Umgang mit negativem Feedback
 
-+ **Konstruktiv nutzen**: Nutze negatives Feedback als Chance zur Verbesserung. Frage dich, ob es Bereiche gibt, in denen du dich weiterentwickeln kannst.
++ **Abstand gewinnen**: Nehmen Sie sich Zeit, um das Feedback zu verarbeiten und zu analysieren. Warum hat der Kritiker so reagiert? Berücksichtigen Sie mögliche Faktoren wie den Zeitpunkt der Rückmeldung oder die aktuelle Lebenssituation des Kritikers.
 
-+ **Nachfragen**: Wenn das Feedback unklar ist, frage nach. Verstehe, auf welche konkrete Situation sich die Kritik bezieht.
++ **Empathie**: Versetze Sie sich in die Lage der anderen Person. Verstehen Sie, dass negatives Feedback nicht persönlich gemeint ist, sondern eine Kritik an der Arbeit oder dem Verhalten. Manchmal verbirgt sich hinter negativen Feedback ein unaufgelöster innerer Konflikt des Feedbackgebers, weniger eine Kritik an Ihnen.
 
-+ **Positiv sehen**: Negative Rückmeldungen können auch wertvolle Informationen über dich selbst liefern. Sie helfen dabei, den "blinden Fleck" im Selbstbild zu verringern und ergänzen es durch das Fremdbild.
++ **Konstruktiv nutzen**: Nutzen Sie negatives Feedback als Chance zur Verbesserung. Fragen Sie sich, ob es Bereiche gibt, in denen Sie sich weiterentwickeln kannst.
 
++ **Nachfragen**: Wenn das Feedback für Sie unklar ist, fragen Sie nach. Wichtig ist zu verstehen, auf welche konkrete Situation sich die Kritik bezieht.
+
++ **Positiv sehen**: Auch negative Rückmeldungen können wertvolle Informationen über sich selbst liefern. Diese Rückmeldungen können dabei helfen, den "blinden Fleck" im Selbstbild zu verringern und ergänzen es durch das Fremdbild (siehe → Johari-Fenster @sec-johari). Wichtig: Feedback ist nur ein Feedback. Entscheiden Sie selbst, wie Sie auf das Feedback reagieren wollen.
+
+---
+
+> *"Ich bin ich und Du bist Du. Und ich bin nicht auf der Welt um so zu sein wie Du es Dir vorstellst."* (Quelle: Unbekannt)
+
+---
 
 
 ### Dont's! 
 
-+ **Kritik niemals personalisieren**: Sagen Sie nicht *"Sie sind..."* sondern beziehen Sie Sich auf konkrete Beobachtungen und beschreiben Sie, wie Sie diese wahrgenommen und wie diese auf Sie gewirkt haben.
++ **Kritik niemals personalisieren!** Sagen Sie nicht *"Sie sind…"* sondern beziehen Sie Sich auf konkrete Beobachtungen und beschreiben Sie, wie Sie diese wahrgenommen und wie diese auf Sie gewirkt haben.
 
-+ **Versuche Sie niemals, die Emotionen von anderen zu managen.** Spare Sie sich deshalb Formulierungen wie *"Sei nicht trautrig..."* oder *"Sei nicht wütend..."*
++ **Versuche Sie niemals, die Emotionen von anderen zu managen!** Verzichten Sie auf Formulierungen wie *"Sei nicht trautrig…"* oder *"Sei nicht wütend…"*
 
-+ **Keine moralische Verurteilung**: Dadurch mindern Sie den Drang beim Gegenüber, sich zu verteidigen und das Feedback pauschal abzulehnen.
++ **Keine moralische Verurteilung!** Dadurch mindern Sie den Drang beim Gegenüber, sich zu verteidigen und das Feedback pauschal abzulehnen.
 
 
 
-### Situationen, in denen es besser ist, kein Feedback zu geben. 
+### Situationen, in denen es besser ist, kein Feedback zu geben
 
-+ **Ungebetenes Feedback**: Feedback ist dann am wirksamsten, wenn der Empfänger darum gebeten hat. Manchmal möchten Menschen einfach nur ihre Gedanken teilen, ohne eine Rückmeldung zu erhalten.
+::: {.callout-important}
+## Situationen, in denen es besser ist, kein Feedback zu geben
 
-+ **Destruktives Feedback**: Berücksichtigen Sie die Bedürfnisse des Empfängers angemessen. Feedback sollte niemals dazu dienen, jemanden zu verletzen oder anzugreifen. Wenn es Ihnen egal ist, ob es dem Empfänger nützt oder ihm sogar schadet, zerstören Sie Ihre Verbindung. Wenn Sie das Gefühl haben, dass Ihre Worte negativ aufgenommen werden könnten, ist es besser, kein Feedback zu geben.
++ **Ungebetenes Feedback.** Feedback ist dann am wirksamsten, wenn der Empfänger darum gebeten hat. Manchmal möchten Personen einfach nur ihre Gedanken teilen, ohne eine Rückmeldung zu erhalten. Zwingen Sie anderen Personen Ihr Feedback nicht auf!
 
-+ **Emotionale Instabilität**: Wenn jemand emotional aufgeladen ist oder sich in einer schwierigen Situation befindet, ist es möglicherweise nicht der richtige Zeitpunkt für kritisches Feedback. Warten Sie auf einen geeigneteren Moment.
++ **Destruktives Feedback.** Berücksichtigen Sie die Bedürfnisse des Empfängers angemessen. **Feedback sollte niemals dazu dienen, jemanden zu verletzen oder anzugreifen.** Wenn es Ihnen egal ist, ob es dem Empfänger nützt oder ihm sogar schadet, zerstören Sie Ihre Verbindung. Wenn Sie die Gefahr sehen, dass Ihr Feedback trotz guter Intention als destruktiv aufgenommen werden könnte, ist es besser, kein Feedback zu geben.
 
-+ **Mangel an Fachwissen**: Wenn Sie nicht genug über ein bestimmtes Thema wissen, um fundiertes, konstruktives Feedback zu geben, ist es besser, sich zurückzuhalten. Unqualifizierte Ratschläge richten zumeist mehr Schaden als als das sie nützen.
++ **Emotionale Instabilität.** Wenn jemand emotional aufgeladen ist oder sich in einer schwierigen Situation befindet, ist es möglicherweise nicht der richtige Zeitpunkt für kritisches Feedback. **Warten Sie auf einen geeigneteren Moment!**
 
-+ **Unveränderbare Eigenschaften**: Sprechen Sie nur veränderbare Verhaltensweisen an und nicht Eigenschaften, auf die der Betreffende relativ wenig oder gar keinen Einfluss nehmen kann.
++ **Unveränderbare Eigenschaften.** Sprechen Sie nur veränderbare Verhaltensweisen an und nicht Eigenschaften, auf die der Betreffende relativ wenig oder gar keinen Einfluss nehmen kann.
 
-+ **Wiederholtes Feedback**: Wenn Sie bereits mehrmals dasselbe Feedback gegeben haben und keine Veränderung erkennbar ist, ist es möglicherweise an der Zeit, alternative Herangehensweisen zu suchen (Stichwort: *"Love it - Change it - Leave it"*).
++ **Wiederholtes Feedback.** Wenn Sie bereits mehrmals dasselbe Feedback gegeben haben und keine Veränderung erkennbar ist, ist es möglicherweise an der Zeit, alternative Herangehensweisen zu suchen (Stichwort: *"Love it - Change it - Leave it"*).
 
++ **Mangel an Fachwissen.** Unqualifizierte Ratschläge richten zumeist mehr Schaden als als das sie nützen.**Wenn Sie nicht genug über ein bestimmtes Thema wissen, um fundiertes, konstruktives Feedback zu geben, ist es besser, sich zurückzuhalten.** 
+:::
+
+---
+
+>
+*"Ignorance is not a virtue. It's not cool to not know what you're talking about."* (Barack Obama)
+
+---
+
+
+<!-- ---------------------------------------------------------------------- -->
+:::
+<!-- S T O P
+EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT
+--------------------------------------------------------------------------- -->

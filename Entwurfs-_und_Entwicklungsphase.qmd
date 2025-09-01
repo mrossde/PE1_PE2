@@ -308,9 +308,9 @@ Fertigungsabschnittszeichnungen sind wichtig, um sicherzustellen, dass die Ferti
                         DoE: Design of Experiments
 
 -------------------------------------------------------------------------- -->
-
-{{< include DesignofExperiments.qmd >}}
-
+<!--
+include DesignofExperiments.qmd
+-->
 
 <!-- -------------------------------------------------------------------------
 

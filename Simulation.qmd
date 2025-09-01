@@ -1,4 +1,9 @@
-<!--
+---
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
 author:
   - name: "Christian Anders"
     degrees: 
@@ -13,7 +18,7 @@ author:
         country: "Deutschland"
         url: https://www.hs-esslingen.de/
 abstract: > 
-  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
 keywords:
   - Produktentstehungsprozess
   - Entwicklungsmethodik
@@ -21,19 +26,19 @@ keywords:
 
 copyright: 
   holder: Christian Anders
-  year: 2024
+  year: 2025
 lang: de
 bibliography: Literatur.bib
 date: last-modified
-toc: false
+toc: true
 number-sections: true
 scrollable: true
-toc-location: right-body
+toc-location: right
 cap-location: bottom
-number-offset: 2
+number-offset: 6
 link-external-icon: true
 link-external-newwindow: true
--->
+---
 
 <!--
 format:

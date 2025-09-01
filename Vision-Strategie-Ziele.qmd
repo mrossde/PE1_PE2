@@ -6,11 +6,71 @@ lang: de
 bibliography: Literatur.bib
 ---
 
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - Produktentwicklung
+  - Vision
+  - Strategie
+  - Werkzeuge
+
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 6
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
 <!-- -------------------------------------------------------------------------
 
                        Vision - Strategie - Ziele
 
 -------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Grundlagen
+## Projektmanagement
+:::
 
 ### Vision – Mission - Strategie - Ziele - Werkzeuge {#sec-vision}
 
@@ -40,51 +100,33 @@ bibliography: Literatur.bib
 : Vision-Mission-Strategie-Ziele-Werkzeuge {#tbl-vision .striped .hover .bordered tbl-colwidths="[75,25]"}
 
 
-Eine Vision und eine Strategie sind zwei konzeptionell sehr unterschiedliche Aspekte. Sie unterscheiden sich in ihrer Definition, ihrem Zeitrahmen, ihrer Ausrichtung, ihrem Inhalt und der Art ihrer Kommunikation:
 
----
+| Kategorie | Vision | Strategie |
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| **Definition** | Die Vision beschreibt eine inspirierende und langfristige Vorstellung davon, wohin eine Organisation oder eine Person in der Zukunft gehen möchte. Sie gibt einen allgemeinen Ausblick und definiert das angestrebte Ziel. | Die Strategie ist der Plan oder die Methodik, die angewendet wird, um die Vision zu verwirklichen. Es sind die geplanten Schritte, Ressourcenallokationen und Maßnahmen, um die gesetzten Ziele zu erreichen. |
+| **Zeitrahmen** | Die Vision ist oft zeitlos und hat einen langfristigen Horizont. Sie beschreibt, was langfristig erreicht werden soll, und dient als Leitstern über einen längeren Zeitraum, oftmals über 10 Jahre oder länger. | Die Strategie ist zeitlich begrenzter und konkreter. Sie bezieht sich auf die mittelfristigen Handlungspläne, um die Vision zu realisieren. |
+| **Ausrichtung** | Die Vision ist breit angelegt und orientiert sich stark an Werten und Überzeugungen. Sie bietet eine Richtlinie für Entscheidungen und Handlungen, die im Einklang mit der langfristigen Ausrichtung stehen. | Die Strategie ist spezifischer und zielt darauf ab, wie Ressourcen optimal genutzt werden können, um die Vision zu erreichen. Sie legt den Fokus auf die Umsetzung. |
+| **Inhalt**      | Die Vision ist eher abstrakt und inspirierend. Sie beschreibt das “Warum” und bietet ein attraktives, einprägsames Bild des gewünschten Endzustands. | Die Strategie ist konkreter und operationalisiert die Vision. Sie beschreibt das “Wie” und gibt Orientierung für die messbaren Schritte (aka Ziele), die unternommen werden müssen. |
+| **Kommunikation** | Die Vision wird oft breit kommuniziert und dient dazu, Menschen zu inspirieren und zu motivieren. | Die Strategie wird eher intern kommuniziert und dient als Leitfaden für diejenigen, die an der Umsetzung/dem Projekt beteiligt sind. |
 
-1. **Definition**:
+: Unterschiede zwischen Vision und Strategie {#tbl-vergleichvisionstratgie .bordered}
 
-+ **Vision**: Die Vision beschreibt eine inspirierende und langfristige Vorstellung davon, wohin eine Organisation oder eine Person in der Zukunft gehen möchte. Sie gibt einen allgemeinen Ausblick und definiert das angestrebte Ziel.
-+ **Strategie**: Die Strategie ist der Plan oder die Methodik, die angewendet wird, um die Vision zu verwirklichen. Es sind die geplanten Schritte, Ressourcenallokationen und Maßnahmen, um die gesetzten Ziele zu erreichen.
 
----
-
-2. **Zeitrahmen**:
-
-+ **Vision**: Die Vision ist oft zeitlos und hat einen langfristigen Horizont. Sie beschreibt, was langfristig erreicht werden soll, und dient als Leitstern über einen längeren Zeitraum, oftmals über 10 Jahre oder länger.
-+ **Strategie**: Die Strategie ist zeitlich begrenzter und konkreter. Sie bezieht sich auf die mittelfristigen Handlungspläne, um die Vision zu realisieren.
-
----
-
-3. **Ausrichtung**:
-
-+ **Vision**: Die Vision ist breit angelegt und orientiert sich stark an Werten und Überzeugungen. Sie bietet eine Richtlinie für Entscheidungen und Handlungen, die im Einklang mit der langfristigen Ausrichtung stehen.
-+ **Strategie**: Die Strategie ist spezifischer und zielt darauf ab, wie Ressourcen optimal genutzt werden können, um die Vision zu erreichen. Sie legt den Fokus auf die Umsetzung.
-
----
-
-4. **Inhalt**:
-
-+ **Vision**: Die Vision ist eher abstrakt und inspirierend. Sie beschreibt das *"Warum"* und bietet ein attraktives, einprägsames Bild des gewünschten Endzustands.
-+ **Strategie**: Die Strategie ist konkreter und operationalisiert die Vision. Sie beschreibt das *"Wie"* und gibt Orientierung für die messbaren Schritte (aka Ziele), die unternommen werden müssen.
-
----
-
-5. **Kommunikation**:
-
-+ **Vision**: Die Vision wird oft breit kommuniziert und dient dazu, Menschen zu inspirieren und zu motivieren.
-+ **Strategie**: Die Strategie wird eher intern kommuniziert und dient als Leitfaden für diejenigen, die an der Umsetzung beteiligt sind.
-
----
 
 ![Veranschaulichung der Begriffe Vision - Strategie - Ziele](images/Vision-Strategie-Ziele.jpg){width=80% #fig-visionstrategieziel}
 
 ::: {.callout-caution}
-## Tipp zur Vision
+## Pro-Tipp!
 Je **einfacher** und **klarer** und **attraktiver** eine Vision ist desto besser!
 :::
+
+
+
+---
+
+> *"A vision is like a dream - it will disappear unless we do something with it."* ([Simon Sinek](https://en.wikipedia.org/wiki/Simon_Sinek)) 
+
+--- 
 
 <!--
 ![Vision Erstbesteigung Mount Everest: Tenzing Norgay auf dem Gipfel des Mount Everest am 29.05.1953](images/Tenzing-Norgay-Mount-Everest-1953-05-29.jpg){width=40% #fig-tenzing}
@@ -95,9 +137,22 @@ In einem effektiven Produktentstehungsprozess ergänzen sich Vision und Strategi
 Eine Strategie ist ein konkreter, langfristig ausgerichteter Plan, der dazu dient, bestimmte Ziele zu erreichen. Eine Strategie liegt auch fest, wie Ressourcen eingesetzt werden sollen, um die Vision zu verwirklichen.
 
 
+---
+
+> *"[Strategie](https://de.wikipedia.org/wiki/Strategie_(Wirtschaft)#Strategie_nach_Drucker) bedeutet, die Zukunft zu gestalten, nicht auf die Zukunft zu reagieren."* (frei nach [Peter F. Drucker](https://de.wikipedia.org/wiki/Peter_Drucker))
+
+---
+
+
 ::: {.callout-caution}
 Ist eine Strategie erst einmal gewählt ist ein Wechsel auf eine andere Strategie meist nicht mehr möglich.
 :::
 
+::: {.callout-tip}
+## Definition: *"Ziel"*
+Als [Ziel](https://de.wikipedia.org/wiki/Ziel) wird ein Soll-Zustand bezeichnet, der durch (in aller Regel aktives) Zutun angestrebt wird.
+:::
 
-Zum Erreichen der Ziele kommen Werkzeuge zum Einsatz, im Produktentstehungsprozess technischer Produkte z.B. CAD, @sec-fem FEM oder 3D-Druck. Bei Werkzeugen kann es sich aber auch um Methoden handeln, z.B. Morphologischer Kasten, @sec-kanban Kanban oder die @sec-8d-methode 8D-Methodik. In der in @fig-visionstrategieziel gezeigten Veranschaulichung der Begriffe Vision, Strategie und Ziele entsprächen die Werkzeuge z.B. Seilen, Leitern und Steigeisen.
+Ziele sind oft direkt mit **Meilensteinen** (siehe → Meilensteine @sec-meilensteine) im Projektplan (siehe → Gantt-Diagramme @sec-gantt) verknüpft. 
+
+Zum Erreichen der Ziele kommen **Werkzeuge** zum Einsatz, im Produktentstehungsprozess technischer Produkte z.B. CAD, @sec-fem FEM oder 3D-Druck. Bei Werkzeugen kann es sich aber auch um Methoden handeln, z.B. Morphologischer Kasten, @sec-kanban Kanban oder die @sec-8d-methode 8D-Methodik. In der in @fig-visionstrategieziel gezeigten Veranschaulichung der Begriffe Vision, Strategie und Ziele entsprächen die Werkzeuge z.B. Seilen, Leitern und Steigeisen.

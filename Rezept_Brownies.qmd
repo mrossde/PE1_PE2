@@ -7,14 +7,25 @@ bibliography: Literatur.bib
 ---
 
 <!--
-title: "DEB3 Produktentwicklung 1"
-resource-path: ["../images"]
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
+
+<!--
+title: "DEB Produktentwicklung"
 format:
   html:
     embed-resources: true
 
 author:
   - name: "Christian Anders"
+    degrees: 
     roles: "Dozent"
     email: christian.anders@hs-esslingen.de
     affiliation: 
@@ -26,39 +37,38 @@ author:
         country: "Deutschland"
         url: https://www.hs-esslingen.de/
 abstract: > 
-  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
 keywords:
-  - Produktentstehungsprozess
-  - Entwicklungsmethodik
-  - Produktions- und Werkstofftechnik
+  - Zufall
+
 copyright: 
   holder: Christian Anders
-  year: 2024
+  year: 2025
 lang: de
 bibliography: Literatur.bib
 date: last-modified
-toc: false
-number-sections: false
+toc: true
+number-sections: true
 scrollable: true
-toc-location: right-body
+toc-location: right
 cap-location: bottom
-number-offset: 0
+number-offset: 7
 link-external-icon: true
 link-external-newwindow: true
 -->
 
 <!--
-resource-path: ["c:/temp/images/"]
-resource-path: ["../images"]
-resource-path: ["images"]
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
 -->
 
-<!-- 
-::: {.callout-warning}
-## WARNING!
-**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
-:::
- -->
 <!-- -------------------------------------------------------------------------
 
                        Rezept für Schoko-Brownies
@@ -66,7 +76,8 @@ resource-path: ["images"]
 -------------------------------------------------------------------------- -->
 
 
-### Rezept Schoko-Brownies
+### Rezept Schoko-Brownies {#sec-brownies}
+
 Quelle des Rezepts: [www.gutekueche.at](https://www.gutekueche.at/)
 
 ![Schoko-Brownies (Quelle: Adobe Stock)](images/AdobeStock_257686783.jpeg){width=64% #fig-brownies}
@@ -119,24 +130,3 @@ Die Brownies lassen sich auch gut einfrieren.
 + Fett		35,78 g
 + Eiweiß	9,03 g
 + Kohlenhydrate	64,61 g
-
-
-
-<!--
-**Weiterführende Links** (Wikipedia):
-
-+ [Alt text](https://de.wikipedia.org/wiki/W%C3%B6hlerversuch)
--->
-
-<!--
-::: {.callout-tip}
-## Weiterführende Sharable-Links (Springer-Verlag)
-
-+ @jakoby_qualitatsmanagement_2022: [Elementare QM-Methoden](https://rdcu.be/dIy3K)
-
-:::
-
-## Literaturempfehlung
-
-![@jakoby_qualitatsmanagement_2022: [Qualitätsmanagement für Ingenieure](https://link.springer.com/book/10.1007/978-3-658-36677-3)](images/Jakoby_Qualitaetsmanagement.webp){width=40%}
--->

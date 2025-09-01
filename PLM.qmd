@@ -6,6 +6,70 @@ lang: de
 bibliography: Literatur.bib
 ---
 
+<!--
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
+
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - Produktentwicklung
+  - Softwarewerkzeuge
+  - CAD
+
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 2
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+-->
+
 
 <!-- -------------------------------------------------------------------------
 
@@ -13,13 +77,32 @@ bibliography: Literatur.bib
 
 -------------------------------------------------------------------------- -->
 
+::: {.content-visible unless-meta="headlines.off"}
+# Entwurfs- und Entwicklungsphase
+## Softwarewerkzeuge
+:::
 
 ### Product Lifecycle Management {#sec-plm}
 
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+
+::: {.callout-tip}
+## Definition: *"PLM"*
 [Product-Lifecycle-Management](https://de.wikipedia.org/wiki/Product-Lifecycle-Management) bzw. Produktlebenszyklusmanagement (PLM) ist ein Konzept zur nahtlosen Integration sämtlicher Informationen, die im Verlauf des Lebenszyklus eines Produktes anfallen.
+:::
 
 Das Konzept beruht auf abgestimmten Methoden, Prozessen und Organisationsstrukturen und bedient sich üblicherweise IT-Systemen für die Aufzeichnung und Verwaltung der Daten. PLM entstand aus dem enger definierten Produktdatenmanagement (PDM) und entwickelte sich im frühen 21. Jahrhundert zum beherrschenden Paradigma in der Produktentwicklung. 
 
 Unternehmen erhoffen sich vom PLM eine verbesserte Kontrolle über die diversen Prozesse, die in jedem Teil eines Lebenszyklus erforderlich sind, und damit auch transparente Aufwände und Erträge. Die von dem Konzept betroffenen Systeme umfassen also Konstruktion (CAD) und Berechnung (CAE) über die Produktionsplanung (Anlagen und Technologie) und PPS bis hin zu Verkaufsplanung, Verkauf, Vertriebslogistik, End-of-life-Management, einschließlich Service- und Recyclingfragen.
 
+<!--
 ![Übersicht PLM (Quelle: [Wikipedia](https://de.wikipedia.org/wiki/Product-Lifecycle-Management))](/images/PLM.png){width=60% #fig-uebersichtplm}
+-->

@@ -1,12 +1,31 @@
 ---
-title: "DEB3 Produktentwicklung 1"
-resource-path: ["../images"]
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
+
+<!--
+title: "DEB Produktentwicklung"
 format:
   html:
     embed-resources: true
 
 author:
   - name: "Christian Anders"
+    degrees: 
     roles: "Dozent"
     email: christian.anders@hs-esslingen.de
     affiliation: 
@@ -18,31 +37,36 @@ author:
         country: "Deutschland"
         url: https://www.hs-esslingen.de/
 abstract: > 
-  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
 keywords:
-  - Produktentstehungsprozess
-  - Entwicklungsmethodik
+  - Erwartungswert
+
 copyright: 
   holder: Christian Anders
-  year: 2024
+  year: 2025
 lang: de
 bibliography: Literatur.bib
 date: last-modified
-toc: false
-number-sections: false
+toc: true
+number-sections: true
 scrollable: true
-toc-location: right-body
+toc-location: right
 cap-location: bottom
 number-offset: 0
 link-external-icon: true
 link-external-newwindow: true
----
+-->
 
-<!-- 
-::: {.callout-warning}
-## WARNING!
-**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
-:::
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
 -->
 
 # Tools 'n rules
@@ -322,11 +346,16 @@ Für die Erstellung dieses Skrips werden folgende Softwarewerkzeuge verwendet:
 + [Python 3.12.1](https://www.python.org/) 
 ![Logo von Python](images/Python.png){width=20% #fig-python}
 
+<!--
 + TinyTeX 
 ![Logo von TinyTeX](images/TinyTeX.png){width=15% #fig-tinytex}
+-->
 
 + [Diagrams.net](https://www.drawio.com/) (aka Draw.io) 
 ![Logo von Draw.io](images/Diagrams-Logo.svg){width=15% #fig-drawio}
+
++ [Excalidraw](https://excalidraw.com/)
+![Logo von Excalidraw](images/Excalidraw-Logo.svg){width=15% #fig-excalidraw}
 
 + [Mermaid](https://mermaid.js.org/)
 ![Logo von Mermaid](images/Mermaid.jpg){width=15% #fig-mermaid}

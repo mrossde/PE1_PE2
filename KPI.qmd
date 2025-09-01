@@ -7,7 +7,7 @@ bibliography: Literatur.bib
 ---
 
 <!--
-title: "DEB3 Produktentwicklung 1"
+title: "DEB Produktentwicklung"
 format:
   html:
     embed-resources: true
@@ -26,22 +26,22 @@ author:
         country: "Deutschland"
         url: https://www.hs-esslingen.de/
 abstract: > 
-  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
 keywords:
-  - Produktentstehungsprozess
-  - Entwicklungsmethodik
+  - Produktentwicklung
+  - Projektmanagement
   - Key-Performance-Indicator
   - KPI
 copyright: 
   holder: Christian Anders
-  year: 2024
+  year: 2025
 lang: de
 bibliography: Literatur.bib
 date: last-modified
-toc: false
-number-sections: false
+toc: true
+number-sections: true
 scrollable: true
-toc-location: right-body
+toc-location: right
 cap-location: bottom
 number-offset: 0
 link-external-icon: true
@@ -55,27 +55,32 @@ link-external-newwindow: true
 
 -------------------------------------------------------------------------- -->
 
+::: {.content-visible unless-meta="headlines.off"}
+# Grundlagen
+## Methodische Grundlagen
+:::
+
 ### KPIs {#sec-kpi}
 
 ::: {.callout-tip}
 ## Definition: *"KPI"*
-KPI steht für *"Key Performance Indicator"* (auf Deutsch: Schlüsselkennzahl oder Leistungskennzahl). Ein KPI ist eine messbare Größe oder Metrik, die in Organisationen und Unternehmen verwendet wird, um den Fortschritt oder den Erfolg bei der Erreichung von strategischen Zielen oder Projekten zu verfolgen und zu bewerten.
+[KPI](https://de.wikipedia.org/wiki/Key-Performance-Indicator) steht für *"Key Performance Indicator"* (auf Deutsch: Schlüsselkennzahl oder Leistungskennzahl). Ein KPI ist eine messbare Größe oder Metrik, die in Organisationen und Unternehmen verwendet wird, um den Fortschritt oder den Erfolg bei der Erreichung von strategischen Zielen oder Projekten zu verfolgen und zu bewerten.
 :::
 
 KPIs sind wichtige Instrumente zur Leistungsüberwachung und -bewertung und werden in verschiedenen Bereichen und Branchen eingesetzt. Sie dienen dazu, die Leistung in einem bestimmten Bereich oder Aspekt des Geschäfts quantitativ zu erfassen und zu analysieren sowie Trends frühzeitig zu identifizieren. KPIs können dabei helfen, bessere Entscheidungen zu treffen.
 
-Entscheidend dafür ist die Wahl der *"richtigen"* KPIs. Die KPIs sollten hierzu eng mit den strategischen Zielen der Organisation verknüpft sein und objektiv und genau gemessen werden können. 
+Entscheidend dafür ist die Wahl der *"richtigen"* KPIs.
+
+Die KPIs sollten hierzu eng mit den strategischen Zielen der Organisation verknüpft sein und objektiv und genau gemessen werden können. 
 
 KPIs können fast alles sein: Hours per Vehicle (HPV) (die Zeit die benötigt wird um ein Auto zu bauen), Kundenzufriedenheit (eine Kennzahl, die die Zufriedenheit der Kunden misst, oft durch Umfragen oder Rückmeldungen, Return on Investment (ROI) (das Verhältnis zwischen den erzielten Gewinnen und den investierten Kosten), …).
 
-<!--
-
-
 ::: {.callout-caution}
-## KPIs zur Leistungsmessung
-Vorsicht bei KPIs zur Leistungsmessung aka Bewertung von Personen oder Organisationseinheiten! Es kann passieren dass zur Zielerreichung von den Personen oder Organisationseinheiten die Arbeiten auf das Erreichen der KPIs optimiert werden, ohne dass das eigentliche, mit den KPIs verbundene angestrebte Ziel im Auge behalten wird. Siehe auch: Zielvereinbarungen! (siehe Goodharts Gesetz)
+## Vorsicht bei KPIs zur Leistungsmessung von Personen oder Organisationseinheiten!
+Vorsicht bei KPIs zur Leistungsmessung (→ Bewertung) von Personen oder Organisationseinheiten! Es kann passieren dass zur Zielerreichung von den Personen oder Organisationseinheiten die Arbeiten auf das Erreichen der KPIs optimiert werden, ohne dass das eigentliche, mit den KPIs verbundene angestrebte Ziel im Mittelpunkt der erbrachten Arbeiten steht!
 :::
 
+<!--
 #### Exkurs: Das Konzept, das Messbarkeit und Messung ein Schlüsselfaktor für Verbesserung sind
 
 The concept that **measurement is essential for improvement** has been expressed by several notable individuals. While the exact phrasing may vary, the underlying idea remains consistent.

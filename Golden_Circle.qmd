@@ -1,5 +1,24 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
 <!--
-title: "DEB3 Produktentwicklung 1"
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
+
+<!--
+title: "DEB Produktentwicklung"
 format:
   html:
     embed-resources: true
@@ -18,46 +37,51 @@ author:
         country: "Deutschland"
         url: https://www.hs-esslingen.de/
 abstract: > 
-  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
 keywords:
-  - Produktentstehungsprozess
+   - Produktentstehungsprozess
   - Entwicklungsmethodik
   - Grundlagen
   - Golder Circle
   - Simon Sinek
+
 copyright: 
   holder: Christian Anders
   year: 2025
 lang: de
 bibliography: Literatur.bib
 date: last-modified
-toc: false
+toc: true
 number-sections: true
 scrollable: true
 toc-location: right
 cap-location: bottom
-number-offset: 0
+number-offset: 2
 link-external-icon: true
 link-external-newwindow: true
 -->
 
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+-->
 
 <!-- -------------------------------------------------------------------------
 
-                       Callout !!! WARNING !!!
+                       Golden Circle
 
 -------------------------------------------------------------------------- -->
-<!--
-::: {.callout-warning}
-## WARNING!
-**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
-:::
--->
-
 
 ::: {.content-visible unless-meta="headlines.off"}
 # Grundlagen
 :::
+
 ### Golden Circle
 
 ---
@@ -66,23 +90,25 @@ link-external-newwindow: true
 
 ---
 
-<!--
+
 ::: {.callout-tip}
 ## Definition: *"Golden Circle"*
-Der Golden Circle ist ein strategisches Modell für die Produktentwicklung, das den Fokus darauf legt, zunächst das **"Warum"** (den Zweck und die Vision des Produkts) zu definieren, dann das **"Wie"** (die einzigartigen Werte und Methoden der Umsetzung) zu bestimmen und erst zuletzt das **"Was"** (die konkreten Funktionen und Eigenschaften des Produkts) zu entwickeln.
--->
-
-![The Golden Circle ([Simon Sinek](https://en.wikipedia.org/wiki/Simon_Sinek) [*"Start with Why"*](https://en.wikipedia.org/wiki/Start_with_Why))
-](images/Golden_Circle_reduced.drawio.svg){width=34% #fig-goldencircle}
+Der Golden Circle ist ein strategisches Modell für die Produktentwicklung. Im Mittelpunkt des Modells steht, zunächst das **"Warum"** (den Zweck und die Vision des Produkts) zu definieren, dann das **"Wie"** (die einzigartigen Werte und Methoden der Umsetzung) zu bestimmen und erst zuletzt das **"Was"** (die konkreten Funktionen und Eigenschaften des Produkts) zu entwickeln.
+:::
 
 
+![The Golden Circle ([Simon Sinek](https://en.wikipedia.org/wiki/Simon_Sinek) [*"Start with Why"*](https://en.wikipedia.org/wiki/Start_with_Why))](images/Golden_Circle.drawio.svg){width=80% #fig-goldencircle}
+
+::: {.callout-important}
+## Golden Circle (Why → How → What)
 1. **Why/Warum:** Der Zweck. *"Warum wird getan, was getan wird?"*
 2. **How/Wie:** Das Vorgehen, der Prozess. *"Wie wird vorgegangen? Wie werden die Ziele erreicht?"*
 3. **What/Was:** Die Ergebnisse. Das Resultat aus dem *"Warum"*. *"Was wird entwickelt? Welche Ergebnisse stehen am Ende?"*
+:::
 
 
 ---
 
-> *"Great salespeople always start with Who. Then they move to Why, What, and How. And then eventually to When, and How Much. ... Now once you get to the right Who, Simon Sinek is spot-on about beginning the conversation with Why. Why is a game-changer in selling modern technology."* (Ken Krogue)
+> *"Great salespeople always start with Who. Then they move to Why, How, and What. And then eventually to When, and How Much. [...] Now once you get to the right Who, [Simon Sinek](https://en.wikipedia.org/wiki/Simon_Sinek) is spot-on about beginning the conversation with Why. Why is a game-changer in selling modern technology."* (Ken Krogue)
 
 ---

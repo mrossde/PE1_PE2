@@ -1,5 +1,24 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
 <!--
-title: "DEB3 Produktentwicklung 1"
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
+
+<!--
+title: "DEB Produktentwicklung"
 format:
   html:
     embed-resources: true
@@ -18,11 +37,12 @@ author:
         country: "Deutschland"
         url: https://www.hs-esslingen.de/
 abstract: > 
-  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
 keywords:
-  - Produktentstehungsprozess
-  - Entwicklungsmethodik
+  - Produktentwicklung
+  - Softskills
   - Verhandlungsstrategie
+
 copyright: 
   holder: Christian Anders
   year: 2025
@@ -34,15 +54,27 @@ number-sections: true
 scrollable: true
 toc-location: right
 cap-location: bottom
-number-offset: 5
+number-offset: 2
 link-external-icon: true
 link-external-newwindow: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur
+7 Anhang
 -->
 
 
 <!-- -------------------------------------------------------------------------
 
-                       AIDA-Modell
+                       Verhandlungsstrategie
 
 -------------------------------------------------------------------------- -->
 
@@ -50,6 +82,8 @@ link-external-newwindow: true
 # Softskills
 :::
 
+
+## Verhandlungsstrategie {#sec-verhandlungsstrategie}
 <!-- -------------------------------------------------------------------------
 
                        Callout !!! WARNING !!!
@@ -62,20 +96,18 @@ link-external-newwindow: true
 :::
 
 
-## Verhandlungsstrategie {#sec-verhandlungsstrategie}
-
-
 ::: {.callout-tip}
-## Pro-Tipp!
-Anzustreben ist stets das Erzielen von Einigungen, nicht nur das Durchführen von Verhandlungen!
+## Pro-Tipp
+Anzustreben ist stets das Erzielen von Einigungen, nicht nur das Durchführen und Abschließen von Verhandlungen!
 :::
 
 
-
 ::: {.callout-tip}
-## Pro-Tipp: Drei hilfreiche Fragen zum Erzielen von Einigungen
+## Drei hilfreiche Fragen zum Erzielen von Einigungen
 
 **1.** *"What would you suggest?"*
+
 **2.** *"What would it take for you to agree?"*
+
 **3.** *"Can you live with it?"*
 :::

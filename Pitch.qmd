@@ -70,7 +70,7 @@ Das Elevator Statement war nach kurzer Zeit schon so erfolgreich, dass der „Pi
 
 
 ::: {.callout-caution}
-## 1 Minute Vortrag erfordert 1 Stunde Vorbereitung
+## Pro-Tipp
 Eine Minute Vortrag erfordert eine Stunde Vorbereitung!
 :::
 

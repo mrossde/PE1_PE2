@@ -7,7 +7,7 @@ bibliography: Literatur.bib
 ---
 
 <!--
-title: "DEB3 Produktentwicklung 1"
+title: "DEB Produktentwicklung"
 format:
   html:
     embed-resources: true
@@ -26,7 +26,7 @@ author:
         country: "Deutschland"
         url: https://www.hs-esslingen.de/
 abstract: > 
-  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
 keywords:
   - Produktentstehungsprozess
   - Entwicklungsmethodik
@@ -35,20 +35,19 @@ keywords:
   - KPIs
 copyright: 
   holder: Christian Anders
-  year: 2024
+  year: 2025
 lang: de
 bibliography: Literatur.bib
 date: last-modified
-toc: false
-number-sections: false
+toc: true
+number-sections: true
 scrollable: true
-toc-location: right-body
+toc-location: right
 cap-location: bottom
 number-offset: 0
 link-external-icon: true
 link-external-newwindow: true
 -->
-
 
 
 
@@ -58,11 +57,30 @@ link-external-newwindow: true
 
 -------------------------------------------------------------------------- -->
 
+::: {.content-visible unless-meta="headlines.off"}
+# Grundlagen
+## Methodische Grundlagen
+:::
+
 ### SMARTe Ziele {#sec-smart}
 
-SMART ist ein [Akronym](https://de.wikipedia.org/wiki/Akronym) und gleichzeitig eine Sammlung von Kriterien zur eindeutigen Formulierung von **mess- und überprüfbaren Zielen**.
+[SMART](https://de.wikipedia.org/wiki/SMART_(Projektmanagement)) ist ein [Akronym](https://de.wikipedia.org/wiki/Akronym) und gleichzeitig eine Sammlung von Kriterien zur eindeutigen Formulierung von **mess- und überprüfbaren Zielen**.
 
 Um Ziele [SMART](https://de.wikipedia.org/wiki/SMART_(Projektmanagement)) zu formulieren, sind bei deren Formulierung **jede** der fünf folgenden Anforderungen zu berücksichtigen:
+
+```{mermaid}
+%%| label: fig-label-mmsmart
+%%| fig-cap: "Anforderungen an SMARTe Ziele"
+%%{init: {'theme': 'forest'}}%%
+mindmap
+  root((SMARTe Ziele))
+    (Spezifisch)
+    (Messbar)
+    (Attraktiv)
+    (Relevant)
+    (Terminiert)
+```
+
 
 1. **Spezifisch (Specific)**: Das Ziel muss klar und präzise definiert sein, damit alle Beteiligten ein einheitliches Verständnis davon haben.
 

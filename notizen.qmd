@@ -22,8 +22,9 @@
 + Kurzvorstellung Dozent Christian Anders
 + Kurzvorstellung des Teams (falls gewünscht)
 
-{{< include vorwissen.qmd >}}
-
+<!--
+include vorwissen.qmd
+-->
 
 
 ## Kick-Off Projektstart "Vorlesung Entwicklungsmethodik mechatronischer Systeme"

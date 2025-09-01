@@ -1,11 +1,31 @@
 ---
-title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
+
+<!--
+title: "DEB Produktentwicklung"
 format:
   html:
     embed-resources: true
 
 author:
   - name: "Christian Anders"
+    degrees: 
     roles: "Dozent"
     email: christian.anders@hs-esslingen.de
     affiliation: 
@@ -17,7 +37,7 @@ author:
         country: "Deutschland"
         url: https://www.hs-esslingen.de/
 abstract: > 
-  Skript zur Vorlesung und Labor *"Komplexe Systeme und Statistik"* für den Studiengang Digital Engineering DEB3
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
 keywords:
   - Zufallszahlen
   - Regentropfen
@@ -27,29 +47,35 @@ keywords:
   - Formel von Srinivasa Ramanujan
   - Formel von David und Gregory Chudnovsky
   - Feynman-Point
+
 copyright: 
   holder: Christian Anders
   year: 2025
 lang: de
 bibliography: Literatur.bib
 date: last-modified
-toc: false
-number-sections: false
+toc: true
+number-sections: true
 scrollable: true
-toc-location: right-body
+toc-location: right
 cap-location: bottom
 number-offset: 0
 link-external-icon: true
 link-external-newwindow: true
----
+-->
 
 <!--
-format:
-  html:
-    embed-resources: true
-lang: de
-bibliography: Literatur.bib
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
 -->
+
 
 <!-- -------------------------------------------------------------------------
 
@@ -57,18 +83,22 @@ bibliography: Literatur.bib
 
 -------------------------------------------------------------------------- -->
 
-<!--
-### Pi
--->
 
+<!-- -------------------------------------------------------------------------
+
+                       B R E A K I N G   N E W S
+
+-------------------------------------------------------------------------- -->
 :::{.column-screen}
 ![](images/AdobeStock_337924964.jpeg){width=100%}
 :::
 
 
+### $\pi$ {#sec-pi}
+
 Die Berechnung von $\pi$ über nichtnumerische Verfahren ist mittels der statischen Methode der [Monte-Carlo-Simulation](https://de.wikipedia.org/wiki/Kreiszahl#Berechnung_mit_einem_Monte-Carlo-Algorithmus) möglich. Bei dieser Berechnung lässt man *"zufällige"* Punkte auf ein Quadrat *„regnen“* und berechnet, ob die Punkte innerhalb oder außerhalb eines einbeschriebenen Kreises liegen. Der Anteil der innen liegenden Punkte ist approximiert $\frac{\pi}{4}$.
 
-![Bestimmung von $\pi$ mittels Monte-Carlo-Simulation (Quelle: [Wikipedia](https://upload.wikimedia.org/wikipedia/commons/6/6a/Pi_monte_carlo_all.svg))](images/Pi_monte_carlo_all.svg){width=60% #fig-pi_monte-carlo}
+![Bestimmung von $\pi$ mittels Monte-Carlo-Simulation (Quelle: [Wikipedia](https://upload.wikimedia.org/wikipedia/commons/6/6a/Pi_monte_carlo_all.svg))](images/Pi_monte_carlo_all.png){width=60% #fig-pi_monte-carlo}
 
 
 
@@ -85,7 +115,7 @@ $$
 <!--
 ::: {.callout-tip collapse="true"}
 -->
-## Flächenformel zur Bestimmung von $\pi$
+#### Flächenformel zur Bestimmung von $\pi$
 Die Berechnung von $\pi$ erfolgte auf der Grundlage von 62 gezählten Regentropfen. Bereits ein einziger Tropfen Abweichung führt bei dieser geringen Gesamtanzahl gezählter Tropfen zu einem Fehler bei der Berechnung von $\pi$ in der Größenordnung von ~0,05.
 
 In Anlehnung an die [Flächenformel](https://de.wikipedia.org/wiki/Kreiszahl#Berechnung_mittels_Fl%C3%A4chenformel) erkennt der geneigte Leser sofort die Richtigkeit der nachfolgend abgeleiteten Formel zur Berechnung von $\pi$ mit Hilfe von Regentropfen:
@@ -103,7 +133,7 @@ Mit $T_i$ = 48 Tropfen und $T_a$ = 14 Tropfen ergibt sich nach @eq-pi für $\pi$
 -------------------------------------------------------------------------- -->
 <p style="text-align: center;">![](images/Microsoft_Office_Excel-Logo.png){width=16%} → Excel-Worksheet *"Pi_Worksheet.xlsx"*</p>
 
-## Exkurs: Formel von John Wallis (1655)
+#### Exkurs: Formel von John Wallis (1655)
 
 Eine der ältesten Formeln zur Berechnung von $\pi$ wurde bereits 1655 vom englischen Mathematiker [John Wallis](https://en.wikipedia.org/wiki/John_Wallis) (* 3. Dezember 1616; † 8. November 1703) entdeckt:
 
@@ -118,7 +148,7 @@ $$ {#eq-wallis}
 
 Die Formel von Wallis ist eine der ersten unendlichen Produkte zur Berechnung von $\pi$ und zeigt eine Verbindung zwischen $\pi$ und rationalen Zahlen. Die Herleitung der Formel basiert auf ersten Arbeiten von Wallis zur Integralrechnung. Sie konvergiert jedoch relativ langsam und hat daher heute keine praktische Bedeutung.  
 
-## Exkurs: Formel von Srinivasa Ramanujan (1910)
+#### Exkurs: Formel von Srinivasa Ramanujan (1910)
 
 $$
 \frac{1}{\pi} = \frac{\sqrt{8}}{9801} \cdot \sum_{n=0}^\infty \frac{(4n)! \cdot (1103 + 26390n)}{(n!)^4 \cdot (396)^{4n}}
@@ -128,7 +158,7 @@ $$ {#eq-ramanujan}
 Die [Formel von Ramanujan](https://de.wikipedia.org/wiki/Srinivasa_Ramanujan#Kreiszahlberechnung) ist eine der elegantesten und am schnellsten konvergierenden Reihen zur Berechnung von π. Sie wurde bereits 1910 von [Srinivasa Ramanujan](https://de.wikipedia.org/wiki/Srinivasa_Ramanujan) (* 22. Dezember 1887; † 26. April 1920) formuliert und bildet die Grundlage heute genutzter Algorithmen zur Berechnung von π. Die Formel von Ramanujan war - wie der Großteil seiner Arbeiten - der Mathematik seiner Zeit weit voraus.
 
 
-## Exkurs: Formel von David und Gregory Chudnovsky (1988)
+#### Exkurs: Formel von David und Gregory Chudnovsky (1988)
 
 Der [Chudnovsky-Algorithmus](https://de.wikipedia.org/wiki/Chudnovsky-Algorithmus) ist eine Weiterentwicklung der Formel von Ramanujan. Er wurde 1988 von den Brüdern [David](https://de.wikipedia.org/wiki/David_Chudnovsky) und [Gregory Chudnovsky](https://de.wikipedia.org/wiki/Gregory_Chudnovsky) entwickelt. Der Chudnovsky-Algorithmus ist bis heute einer der effizientesten Algorithmen zur Berechnung von $\pi$.
 
@@ -140,7 +170,7 @@ $$ {#eq-chudnovsky}
 Eine vollständige Herleitung von Ramanujans Formel und auch des Chudnovsky-Algorithmus ist möglich, allerdings ist sie mathematisch anspruchsvoll und erfordert ein tiefes Verständnis von Analysis, elliptischen Funktionen, modularen Formen und Transformationen, das leider sehr, sehr weit über das Können Ihres Dozenten hinaus geht. Der geneigte Leser sei an dieser Stelle auf die mathematische Fachliteratur verwiesen.
 -->
 
-## Historie: Symbol $\pi$
+#### Historie: Symbol $\pi$
 
 Das Symbol $\pi$ (*"Periphery"*) wurde erstmals im Jahr 1706 von dem Mathematiker [William Jones](https://de.wikipedia.org/wiki/William_Jones_(Mathematiker)) in seiner Abhandlung *"Synopsis Palmariorum Matheseos"* verwendet. Später wurde es von [Leonhard Euler](https://de.wikipedia.org/wiki/Leonhard_Euler) übernommen und 1737 weiter verbreitet.
 
@@ -152,7 +182,7 @@ Das Symbol $\pi$ (*"Periphery"*) wurde erstmals im Jahr 1706 von dem Mathematike
 **Aufgabe:** Welchen Ansatz verwendete William Jones 1706 zur Berechnung von $\pi$ und was hat das mit dem Wort *"Periphery"* zu tun?
 :::
 
-## Kuriosum: Feynman-Point
+#### Kuriosum: Feynman-Point
 
 Der [Feynman-Point](https://en.wikipedia.org/wiki/Six_nines_in_pi) bezieht sich auf eine auffällige Stelle in der Dezimaldarstellung von $\pi$. Beim Feynman-Point handelt es sich um die Sequenz "999999", die ab der 762. Nachkommastelle auftritt. 
 
@@ -160,7 +190,8 @@ Der [Feynman-Point](https://en.wikipedia.org/wiki/Six_nines_in_pi) bezieht sich 
 1415926535 8979323846 2643383279 5028841971 6939937510 5820974944 5923078164 0628620899 8628034825 3421170679 8214808651 3282306647 0938446095 5058223172 5359408128 4811174502 8410270193 8521105559 6446229489 5493038196 4428810975 6659334461 2847564823 3786783165 2712019091 4564856692 3460348610 4543266482 1339360726 0249141273 7245870066 0631558817 4881520920 9628292540 9171536436 7892590360 0113305305 4882046652 1384146951 9415116094 3305727036 5759591953 0921861173 8193261179 3105118548 0744623799 6274956735 1885752724 8912279381 8301194912 9833673362 4406566430 8602139494 6395224737 1907021798 6094370277 0539217176 2931767523 8467481846 7669405132 0005681271 4526356082 7785771342 7577896091 7363717872 1468440901 2249534301 4654958537 1050792279 6892589235 4201995611 2129021960 8640344181 5981362977 4771309960 5187072113 4999999...
 
 Der Name geht einer urbanen Legende nach auf den Physiker [Richard Feynman](https://de.wikipedia.org/wiki/Richard_Feynman) zurück, der einmal scherzhaft gemeint haben soll, er wolle eine Vorlesung über die Dezimalstellen von $\pi$ so beenden:  
-*"...und dann kommen sechs Neunen und so weiter..."*  
+
+*"...und dann kommen sechs Neunen und so weiter..."*  ([Richard Feynman](https://de.wikipedia.org/wiki/Richard_Feynman))
 
 Das Besondere am Feynman-Point: Für eine normalverteilte Zahl, die zufällig gleichmäßig ausgewählt wird, beträgt die Wahrscheinlichkeit, dass eine bestimmte Folge von sechs Ziffern so früh in der Dezimaldarstellung auftritt, nur ~0,08 Prozent.
 

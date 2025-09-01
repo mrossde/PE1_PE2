@@ -5,6 +5,18 @@ format:
 lang: de
 bibliography: Literatur.bib
 
+headlines:
+  off: true
+extended-content:
+  off: true
+included-content:
+  off: true
+worksheets:
+  off: true
+exercises:
+  solutions:
+    on: true
+
 path:
   to:
     metadata: true
@@ -251,6 +263,10 @@ $$
 
 $a^{XYZ}_{123}$
 
+$$
+\ddot{x} + \dot{x} + x = 0
+$$
+
 #### Formeln nummerieren
 
 Gleichungen werden automatisch nummeriert.
@@ -320,9 +336,17 @@ Das hier ist ist eine Warnung!
 
 
 ::: {.callout-tip #callout-bezeichnung}
-#### Definition: *"lore ipsum"*
+## Definition: *"lore ipsum"*
 Lore ipsum
 :::
+
+
+::: {.callout-note style="background-color: rgb(210, 255, 8); color: rgb(179, 24, 96); border-left: 4px solid rgb(210, 255, 8);"}
+## Benutzerdefinierte Farben
+
+Dieser Callout ist stilistisch angepasst (nur für HTML nutzbar, NICHT bei Ausgabe in PDF).
+:::
+
 
 Verweis im Text [Definition: *"Lore ipsum"*](#callout-bezeichnung) dolor sit amet, consetetur sadipscing elitr.
 
@@ -529,6 +553,27 @@ Spalte Rechts 60 Prozent breit
 <p style="text-align: center;">Dieser Text ist zentriert</p>
 
 
+#### Unterstreichen und Farbe
+
+<u>unterstrichenes Wort</u>
+
+<p style="color: rgb(143, 11, 148);">→ Dieser Text erscheint violett.</p>
+
+
+#### Bullet-Points
+
+| Farbe     | Symbol |
+| --------- | ------ |
+| 🔵 Blau   | `🔵`   |
+| 🔴 Rot    | `🔴`   |
+| 🟢 Grün   | `🟢`   |
+| 🟡 Gelb   | `🟡`   |
+| ⚫ Schwarz | `⚫`    |
+| ⚪ Weiß    | `⚪`    |
+| 🟠 Orange | `🟠`   |
+| 🟣 Lila   | `🟣`   |
+| 🟤 Braun  | `🟤`   |
+
 
 #### Shareable Link und Literaturverweis
 <!-- -------------------------------------------------------------------------
@@ -564,3 +609,136 @@ flowchart LR
 <!--
 %%| fig-width: 6.4
 -->
+
+# Steuerung von Inhalten beim Compilieren in Quarto
+<!--
+headlines:
+  off: true
+extended-content:
+  off: true
+include-content:
+  off: true
+worksheets:
+  off: true
+-->
+
+Folgende Metadaten werden zur Steuerung von Inhalten beim Compilieren des Skripts zur Vorlesung verwendet:
+
+```yml
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: false
+exercises:
+  solutions:
+    on: true 
+fileformat-svg:
+  off: true
+```
+
+**Anders' Konvention**
+
+1. **headlines**: Anzeige der Überschriften. Wird verwendet, um beim Erstellen der einzelnen qmd-Dateien im Fall von Stand-Alone-Dateien ein sinnvolles und falls Nummerierung aktiv auch richtig nummeriertes Inhaltsverzeichnis zu erzeugen.
+
+2. **extended-content**: Anzeige von Inhalten, die dem geneigten Leser weiterführendes Wissen anbieten, aber für das Verständnis der Vorlesung nicht erforderlich sind (an=false/aus=true).
+
+3. **included-content**: Einbindung von Dateien (an=false/aus=true).
+
+4. **worksheets**: Einbindung von Excel-Arbeitsmappen (an=false/aus=true).
+
+5. **excercises.solutions**: Einbindung von Lösungen zu Aufgaben (an=true/aus=false). Lösungen werden in Form von Callouts *{.callout-note collapse=true}* eingebunden.
+
+
+
+## Extended-Content
+
+```yml
+<!-- --------------------------------------------------------------------------
+EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT
+S T A R T -->
+::: {.content-visible unless-meta="extended-content.off"}
+<!-- ---------------------------------------------------------------------- -->
+
+Erweiterte Inhalte finden sich hier.
+
+<!-- ---------------------------------------------------------------------- -->
+:::
+<!-- S T O P
+EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT
+--------------------------------------------------------------------------- -->
+```
+
+
+## Included-Content
+
+```yml
+<!-- --------------------------------------------------------------------------
+INCLUDED CONTENT  -  INCLUDED CONTENT  -  INCLUDED CONTENT  -  INCLUDED CONTENT
+S T A R T -->
+::: {.content-visible unless-meta="included-content.off"}
+<!-- ---------------------------------------------------------------------- -->
+
+Include-Dateien finden sich hier.
+
+{< include filename.qmd >}
+
+<!-- ---------------------------------------------------------------------- -->
+:::
+<!-- S T O P
+INCLUDED CONTENT  -  INCLUDED CONTENT  -  INCLUDED CONTENT  -  INCLUDED CONTENT
+--------------------------------------------------------------------------- -->
+```
+
+
+## Excercises.Solutions
+
+```yml
+## Fallbeispiel *"Leistungsbewertung"* (3 Punkte)**
+
+**a)** **Fallbeispiel**: Sie haben zum ersten Mal die Leitung eines kleinen Entwicklungsteams übertragen bekommen. Das Team besteht aus je einem Spezialisten für 1.) Konstruktion, 2.) Simulation, 3.) Prototypenbau sowie 4.) Testing. 
+
+Welches Vorgehen zur Leistungsbewertung wählen Sie um ein bestmögliches Arbeitsergebnis des Teams zu fördern (1 Antwort auswählen):
+
+- [ ] Ich bewerte die Leistung des Teams als Einheit.
+- [ ] Ich bewerte die Leistung jedes einzelnen Spezialisten individuell.
+
+::: {.content-hidden unless-meta="exercises.solutions.on"}
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [x] Ich bewerte die Leistung jedes einzelnen Spezialisten individuell.
+:::
+:::
+```
+
+## Fallbeispiel *"Leistungsbewertung"* (3 Punkte)**
+
+**a)** **Fallbeispiel**: Sie haben zum ersten Mal die Leitung eines kleinen Entwicklungsteams übertragen bekommen. Das Team besteht aus je einem Spezialisten für 1.) Konstruktion, 2.) Simulation, 3.) Prototypenbau sowie 4.) Testing. 
+
+Welches Vorgehen zur Leistungsbewertung wählen Sie um ein bestmögliches Arbeitsergebnis des Teams zu fördern (1 Antwort auswählen):
+
+- [ ] Ich bewerte die Leistung des Teams als Einheit.
+- [ ] Ich bewerte die Leistung jedes einzelnen Spezialisten individuell.
+
+::: {.content-hidden unless-meta="exercises.solutions.on"}
+::: {.callout-tip collapse="true"} 
+## Lösung
+- [x] Ich bewerte die Leistung jedes einzelnen Spezialisten individuell.
+:::
+:::
+
+## Fileformat-SVG
+
+Möglichkeit zur Steuerung der Einbindung von PNG-Grafiken statt SVG-Grafiken (wg. teilweise fehlerhafter Darstellung von SVG-Grafiken in den compilierten HTML-Dateien (Root-Cause für diese Beobachtung ist noch unbekannt)).
+
+```yml
+::: {.content-visible unless-meta="fileformat-svg.off"}
+![Vier-Seiten-Modell nach Friedemann Schulz von Thun](images/vier-seiten-modell.drawio.svg){width=68% #fig-vierseitenmodell}
+:::
+::: {.content-hidden unless-meta="fileformat-svg.off"}
+![Vier-Seiten-Modell nach Friedemann Schulz von Thun](images/vier-seiten-modell.drawio.png){width=68% #fig-vierseitenmodell}
+:::
+```

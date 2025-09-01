@@ -159,16 +159,21 @@ worksheets:
 
 -------------------------------------------------------------------------- -->
 # Softskills {#sec-softskills}
+
+  ## Zusammenarbeit und Selbstorganisation
   {{< include Softskills.qmd >}}
   {{< include Team.qmd >}}
   {{< include Die_fünf_Hüte_einer_Führungskraft.qmd >}}
   {{< include Vier_Formen_Des_Kapitals.qmd >}}
   {{< include Verhalten_als_Ware.qmd >}}
   {{< include Johari-Fenster.qmd >}}
-  {{< include AIDA-Modell.qmd >}}
-  {{< include Eisenhower-Prinzip.qmd >}}
-  {{< include Bildzeitung-Test.qmd >}}
   {{< include LoveChangeLeave.qmd >}}
+
+  ## Arbeitsmethoden
+  {{< include Eisenhower-Prinzip.qmd >}}
+  {{< include 6W-Methode.qmd >}}
+  {{< include AIDA-Modell.qmd >}}
+  {{< include Bildzeitung-Test.qmd >}}
 
 
 <!-- -------------------------------------------------------------------------

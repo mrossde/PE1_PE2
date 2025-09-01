@@ -53,7 +53,7 @@ bibliography: Literatur.bib
 -------------------------------------------------------------------------- -->
 
 ::: {.callout-note}
-## Bewertungsmatrix zur Auswahl des Dateiformats für das Skript zur Vorlesung (Dauer (20 min)
+## Bewertungsmatrix zur Auswahl des Dateiformats für das Skript zur Vorlesung (Dauer (20 min))
 
 **Ausgangssituation**: Ihr Dozent erstellt das Skript zur Vorlesung mittels [Quarto](https://quarto.org/) im Format *HTML*. Bei Bedarf bietet Ihr Dozent an, statt *HTML* (XODER!) ein alternatives Dateiformat zur Verfügung zu stellen, sofern dafür aus der Gruppe eine überzeugende Begründung vorliegt. Möglich sind die Formate Adobe *PDF* und Microsoft Word (*docx*). Den Aufbau einer Matrix zur Bewertung der drei möglichen Dateiformate zeigt @tbl-bewertungsmatrix: 
 

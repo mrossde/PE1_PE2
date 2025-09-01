@@ -1,13 +1,13 @@
-<!--
+---
 format:
   html:
     embed-resources: true
 lang: de
 bibliography: Literatur.bib
--->
+---
 
 <!--
-title: "DEB3 Produktentwicklung 1"
+title: "DEB Produktentwicklung"
 format:
   html:
     embed-resources: true
@@ -26,7 +26,7 @@ author:
         country: "Deutschland"
         url: https://www.hs-esslingen.de/
 abstract: > 
-  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
 keywords:
   - Produktentstehungsprozess
   - Entwicklungsmethodik
@@ -39,12 +39,12 @@ copyright:
 lang: de
 bibliography: Literatur.bib
 date: last-modified
-toc: false
+toc: true
 number-sections: true
 scrollable: true
 toc-location: right
 cap-location: bottom
-number-offset: 0
+number-offset: 6
 link-external-icon: true
 link-external-newwindow: true
 -->
@@ -57,18 +57,22 @@ link-external-newwindow: true
 
 -------------------------------------------------------------------------- -->
 
-## Bildzeitung-Test {#sec-bildzeitungtest}
-
-::: {.callout-tip}
-## Definition: *"Bildzeitung-Test"*
-Der Bildzeitung-Test ist ein praxisnahes Prüfverfahren im Zusammenhang mit den ethischen Grenzen von Handlungen, das insbesondere im Compliance-Management und in der Unternehmensethik verwendet wird. Der Bildzeitung-Test basiert auf der Idee, dass eine Handlung, Entscheidung oder das Verhalten einer Person, eines Unternehmens oder einer Organisation so gestaltet sein muss, dass sie im Falle einer öffentlichen Berichterstattung (z.B. durch eine große Tageszeitung wie die Bild-Zeitung) gerechtfertigt und gut erklärbar (*"langweilig"*) wäre, ohne dass der Ruf der Person, des Unternehmens oder der Organisation Schaden nehmen würde.
+::: {.content-visible unless-meta="headlines.off"}
+# Softskills
 :::
 
-Der Bildzeitung-Test ist ein in der Praxis für die meisten Personen mit halbwegs funktionierendem moralischem Kompass gut verwendbares Werkzeug, potenzielle Reputationsrisiken (sowie ggf. mögliche zusätzlich rechtliche Probleme) bereits **VOR** einer Handlung zu erkennen, die entstehen könnten, wenn fragwürdige Handlungen öffentlich gemacht werden würden. Er ist sowohl für Einzelpersonen, aber auch Unternehmen und Organisationen anwendbar. 
+## BILD-Zeitung-Test {#sec-bildzeitungtest}
 
-::: {.callout-caution}
-## Pro-Tipp!
-Der geneigte Leser wird hiermit ermutigt, **VOR** eigenen Handlungen, bei denen eine Unsicherheit bezüglich des Reputationsrisikos bestehen könnte, den Bildzeitung-Test zu machen und bei unklarem oder gar problematischem Ausgang des Tests (→ hohes Reputationsrisiko) **von der angedachten Handlung abzusehen**!
+::: {.callout-tip}
+## Definition: *"BILD-Zeitung-Test"*
+Der [BILD-Zeitung](https://de.wikipedia.org/wiki/Bild_(Zeitung))-Test ist ein praxisnahes Prüfverfahren im Zusammenhang mit den ethischen Grenzen von Handlungen, das insbesondere im Compliance-Management und in der Unternehmensethik verwendet wird. Der BILD-Zeitung-Test basiert auf der Idee, dass eine Handlung, Entscheidung oder das Verhalten einer Person, eines Unternehmens oder einer Organisation so gestaltet sein muss, dass sie im Falle einer öffentlichen Berichterstattung (z.B. durch eine große Tageszeitung wie die BILD-Zeitung) gerechtfertigt und gut erklärbar (*"langweilig"*) wäre, ohne dass die [Reputation](https://de.wikipedia.org/wiki/Reputation) der Person, des Unternehmens oder der Organisation Schaden nehmen würde.
+:::
+
+Der BILD-Zeitung-Test ist ein in der Praxis für die meisten Personen (mit halbwegs funktionierendem moralischem Kompass) gut verwendbares Werkzeug, potenzielle Reputationsrisiken (sowie ggf. mögliche zusätzlich rechtliche Probleme) bereits **VOR** einer Handlung zu erkennen, die entstehen könnten, wenn fragwürdige Handlungen öffentlich gemacht werden würden. Der BILD-Zeitung-Test ist sowohl für Einzelpersonen, aber auch Unternehmen und Organisationen anwendbar. 
+
+::: {.callout-important}
+## Pro-Tipp
+Der geneigte Leser wird hiermit ermutigt, **VOR** eigenen Handlungen, bei denen eine Unsicherheit bezüglich des Reputationsrisikos bestehen könnte, den BILD-Zeitung-Test zu machen und bei unklarem oder gar problematischem Ausgang des Tests (→ hohes Reputationsrisiko) **von der angedachten Handlung abzusehen!**
 ::: 
 
 <!--

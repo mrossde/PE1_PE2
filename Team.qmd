@@ -1,3 +1,22 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
+
 <!--
 title: "DEB3 Produktentwicklung 1"
 format:
@@ -26,6 +45,7 @@ keywords:
   - Teamentwicklung nach Tuckman
   - Lencioni-Pyramide
   - Ringelmann-Effekt
+  
 copyright: 
   holder: Christian Anders
   year: 2024
@@ -40,12 +60,18 @@ cap-location: bottom
 number-offset: 5
 link-external-icon: true
 link-external-newwindow: true
+-->
 
-headlines:
-  off: true
-exercises:
-  solutions:
-  off: true
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
 -->
 
 <!-- -------------------------------------------------------------------------
@@ -123,14 +149,7 @@ Als [Teamentwicklung](https://de.wikipedia.org/wiki/Teambildung) werden die Phas
 
 Für die Entwicklung von Teams entwickelte [Bruce Tuckman](https://de.wikipedia.org/wiki/Bruce_Tuckman) bereits 1965 ein nach ihm benanntes Phasenmodell mit vier Phasen. Diese vier [Phasen der Teamentwicklung](https://athena.ecs.csus.edu/~buckley/CSc190/GROUP%20DEV%20ARTICLE.pdf) sind:
 
-```{mermaid}
-%%| label: fig-label-tuckman
-%%| fig-cap: "Phasen der Teamentwicklung nach Tuckman, 1965"
-flowchart TD
-    A[1. Forming] --> B[2. Storming]
-    B --> C[3. Norming]
-    C --> D[4. Performing]
-```
+![Phasen der Teamentwicklung nach Tuckman, 1965](images/Teamentwicklung.drawio.svg){width=18% #fig-label-tuckman}
 
 1. **Forming:** In dieser Phase kommt das Team zusammen und die Mitglieder lernen einander kennen. Es herrscht meist eine gewisse Unsicherheit und Zurückhaltung. Die Teammitglieder versuchen, ihre Rollen und Aufgaben zu verstehen und erste Beziehungen aufzubauen. Es werden Regeln und Erwartungen festgelegt.
 
@@ -154,21 +173,28 @@ Das Ursprungsmodell von Tuckman beschreibt vier Phasen. In der Literatur findet 
 
 5. **Adjourning**: Ablösungsphase (Das Team wird mit → Projektende aufgelöst) ODER Super-Performing (Das Team arbeitet ohne Steuerung von außen zusammen und bringt herausragende Leistungen) ODER Reforming – Erneuerungsphase (Das Team stellt sich selbst neuen Herausforderungen, um so nicht in eine kontraproduktive Routine zu verfallen).
 
-![Teamleistung über die vier Phasen nach Tuckman hinweg (Quelle: [teamfactor & BDTV](https://www.teamentwicklung.org/Teamphasenmodell))](images/Teamleistung.jpg){width=90% #fig-teamleistung}
+![Teamleistung über die vier Phasen nach Tuckman hinweg](images/Teamleistung.drawio.svg){width=90% #fig-teamleistung}
 
 ::: {.callout-important}
 ## Vorsicht! Teamentwicklung ist kein Spaziergang!
 Teamentwicklung passiert nicht *"einfach so"* nebenbei. Bei der Entwicklung von Teams handelt es sich stets um einen sehr dynamischen, zumindest temporär auch konfliktbehafteten Prozess. In der Phase Storming ist das zu Tage treten unabdingbar für die Entwicklung zu einem Hochleistungsteam. Teams können dabei auch wieder in vorherige Phasen zurückfallen, wenn neue Herausforderungen oder Veränderungen auftreten. 
 
-In der Praxis kommen viele Teams über die schon allererste Phase des Forming nicht hinaus!
+**Teamentwicklung ist keine Einbahnstraße!** Und: **In der Praxis kommen viele Teams über die schon allererste Phase des Forming nicht hinaus!**
 :::
 
 ::: {.callout-caution}
-Diese Teams *"prallen"* an der Phase des Stormings ab und finden nicht die Kraft, die stürmische, konfliktbehaftete zweite Phase der Teamentwicklung zu überstehen. Ohne eine gute Teamleitung richten sich die im Team Mitarbeitenden in einem formalen Arbeitsstil ein, der jedoch weit unter der Leistung liegt, den das Team bei erfolgreichem Durchschreiten der Phase des Stormings hätte erreichen können. Die Zusammenarbeit in diesen Teams ist zumeist formal und oberflächlich freundlich (*"Lügenlächeln"*), Überstunden sind eher selten, große Erfolge können in der Regeln nicht gefeiert werden.
+## Storming ist DIE kritische Phase in Projekten!
+Diese Teams *"prallen"* an der Phase des Stormings ab und finden nicht die Kraft, die stürmische, konfliktbehaftete zweite Phase der Teamentwicklung zu überstehen. **Oftmals wird unterschätzt wie anstrengend und lange andauernd der Weg aus dem tiefen Tal der Phase Storming hin zur Phase Norming sein kann.**
+
+Ohne eine gute Projekt- oder Teamleitung richten sich die im Team Mitarbeitenden in einem formalen Arbeitsstil ein, der jedoch weit unter der Leistung liegt, den das Team bei erfolgreichem Durchschreiten der Phase des Stormings hätte erreichen können. 
+
+Die Zusammenarbeit in diesen Teams ist zumeist formal und oberflächlich freundlich (*"Lügenlächeln"*), Überstunden sind eher selten und die aktive Übernahme von Verantwortung durch einzelne Mitarbeitende die Ausnahme. Große Erfolge können in der Regeln nicht gefeiert werden.
 :::
 
-
-Das Verständnis der Phasen der Teamentwicklung kann allen Beteiligten helfen, den Entwicklungsstand des Teams zu erkennen, angemessen zu reagieren und geeignete Maßnahmen zu ergreifen, um die Zusammenarbeit und Effektivität zu fördern.
+::: {.callout-tip}
+## Teamentwicklung nach Tuckman ist wichtiges Grundlagenwissen!
+Das Modell der Teamentwicklung sollte jedem Projekt- oder Teammitarbeitenden bekannt sein. Das Verständnis der Phasen der Teamentwicklung kann allen Beteiligten helfen, den Entwicklungsstand des Teams zu erkennen, angemessen zu reagieren und geeignete Maßnahmen zu ergreifen, um die Zusammenarbeit und Effektivität zu fördern. **Projekt- und Teamerfolg ist immer die Aufgabe aller Mitarbeitenden!**
+:::
 
 <!-- -------------------------------------------------------------------------
 
@@ -181,6 +207,9 @@ Das Verständnis der Phasen der Teamentwicklung kann allen Beteiligten helfen, d
                         Keine Politik - Keine Religion - Kein Geld
 
 -------------------------------------------------------------------------- -->
+
+<p style="text-align: center;">![](images/AdobeStock_589506892.png){width=20%}</p>
+
 ::: {.callout-important}
 ## Empfehlung für die dauerhaft gute Zusammenarbeit in der Arbeitswelt
 Die drei Themenfelder, die in der Arbeitswelt im Sinne einer dauerhaft guten Zusammenarbeit nicht thematisiert werden sollten: **Politik**, **Religion** und **Geld**.
@@ -201,7 +230,7 @@ Zusätzlich zu den Themenfeldern Politik, Religion und Geld zumindest in einigen
 
 Die Lencioni-Pyramide bezeichnet ein Modell von [Patrick Lencioni](https://de.wikipedia.org/wiki/Patrick_Lencioni) und beschreibt die fünf Dysfunktionen bei Teams und ergänzt die Phasen der Teamentwicklung nach Tuckman um die Ursachen für das Scheitern einer Teamentwicklung beim Erreichen der Performing-Phase. Die Lencioni-Pyramide besteht aus fünf aufeinander aufbauenden Ebenen der gestörten Funktion:
 
-1. **Fehlendes Vertrauen**: Das Fundament der Pyramide ist das Vertrauen innerhalb des Teams. Ohne Vertrauen können die Mitglieder des Teams nicht offen und authentisch miteinander kommunizieren oder sich gegenseitig unterstützen.
+1. **Fehlendes Vertrauen**: **Das Fundament der Pyramide ist das Vertrauen innerhalb des Teams.** Ohne Vertrauen können die Mitglieder des Teams nicht offen und authentisch miteinander kommunizieren oder sich gegenseitig unterstützen.
 
 2. **Angst vor Konflikten**: Wenn es im Team an Vertrauen fehlt, meiden die Mitglieder oft Konflikte, um die Harmonie zu bewahren. Dies führt dazu, dass wichtige Themen nicht offen diskutiert und gelöst werden können.
 
@@ -209,9 +238,9 @@ Die Lencioni-Pyramide bezeichnet ein Modell von [Patrick Lencioni](https://de.wi
 
 4. **Scheu vor Verantwortlichkeit**: Wenn sich die Teammitglieder nicht vollständig verpflichtet fühlen, neigen sie dazu, Verantwortung zu vermeiden. Dies führt zu einem Mangel an Verantwortlichkeit für die Ergebnisse des Teams.
 
-5. **Fehlende Ergebnisorientierung**: Die Spitze der Pyramide repräsentiert das Fehlen einer klaren Fokussierung auf gemeinsame Ziele und Ergebnisse. Ohne dieses klare Ziel können Teams Schwierigkeiten haben, erfolgreich zu sein und ihre Leistung zu maximieren.
+5. **Vernachlässigung Projekterfolg**: Die Spitze der Pyramide repräsentiert das Fehlen einer klaren Fokussierung auf gemeinsame Ziele und Projektergebnisse. Ohne dieses klare Ziel können Teams Schwierigkeiten haben, erfolgreich zu sein und ihre Leistung zu maximieren.
 
-![Lencioni-Pyramide (Quelle: [Agile-Sales-Company](https://www.agile-sales-company.de/blog/die-5-dysfunktionen-der-teamarbeit-und-wie-du-sie-erfolgreich-ueberwindest))](images/LencioniPyramide.jpg){width=60% #fig-drone}
+![Lencioni-Pyramide](images/LencioniPyramide.drawio.svg){width=64% #fig-lencioni}
 
 --- 
 

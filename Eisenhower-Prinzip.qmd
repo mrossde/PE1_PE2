@@ -6,6 +6,71 @@ lang: de
 bibliography: Literatur.bib
 ---
 
+<!--
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
+
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - Softskills
+  - Zeitmanagement
+  - Eisenhower-Prinzip
+
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 5
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
 <!-- -------------------------------------------------------------------------
 
                        Eisenhower-Prinzip
@@ -26,7 +91,7 @@ Das Eisenhower-Prinzip ist eine Technik im [Zeitmanagement](https://de.wikipedia
 
 + **Nicht Dringend und nicht Wichtig:** Aufgaben, die weder dringend noch wichtig sind, sollten vermieden oder auf ein Minimum reduziert werden. Dies können Zeitverschwendungen, unnötige Aktivitäten oder unproduktive Gewohnheiten sein.
 
-![Eisenhower-Prinzip](images/EisenhowerPrinzip.png){width=80% #fig-eisenhower}
+![Eisenhower-Prinzip](images/Eisenhower-Prinzip.drawio.svg){width=52% #fig-eisenhower}
 
 <!--
 Die Methode des Eisenhower-Prinzips fördert eine proaktive Herangehensweise an die Arbeit, bei der wichtige langfristige Ziele nicht durch kurzfristige Dringlichkeiten vernachlässigt werden. Die Anwendung des Eisenhower-Prinzips erfordert jedoch eine regelmäßige Bewertung und Aktualisierung der Aufgabenliste, um sicherzustellen, dass die Prioritäten angemessen bleiben. 

@@ -1,5 +1,5 @@
-<!--
-title: "DEB3 Produktentwicklung 1"
+---
+title: "DEB Produktentwicklung"
 format:
   html:
     embed-resources: true
@@ -18,7 +18,7 @@ author:
         country: "Deutschland"
         url: https://www.hs-esslingen.de/
 abstract: > 
-  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
 keywords:
   - Produktentstehungsprozess
   - Entwicklungsmethodik
@@ -34,9 +34,10 @@ keywords:
   - Lineare Schadensakkumulation
   - Minder-Regel
   - Bruchtheorie nach Griffith
+
 copyright: 
   holder: Christian Anders
-  year: 2024
+  year: 2025
 lang: de
 bibliography: Literatur.bib
 date: last-modified
@@ -48,13 +49,13 @@ cap-location: bottom
 number-offset: 2
 link-external-icon: true
 link-external-newwindow: true
--->
+---
 
 
 <!-- -------------------------------------------------------------------------
 
-                        BETRIEBSFESTIGKEIT
-                        In diesem Kapitel geht es um die Betriebsfestigkeit von Bauteilen. 
+                        Betriebsfestigkeit
+
 -------------------------------------------------------------------------- -->
 
 ::: {.content-visible unless-meta="headlines.off"}
