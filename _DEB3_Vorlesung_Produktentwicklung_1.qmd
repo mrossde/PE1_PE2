@@ -59,6 +59,7 @@ worksheets:
 
 # Grundlagen {#sec-grundlagen}
   {{< include Grundlagen_Produktentwicklung.qmd >}}
+
 ## Technische Grundlagen
     {{< include SI-Einheiten.qmd >}}
     {{< include Werkstofftechnik.qmd >}}
@@ -85,6 +86,7 @@ worksheets:
 -------------------------------------------------------------------------- -->
 # Ideenfindung und Konzeptentwicklung {#sec-ideenfindungundkonzept}
   {{< include Ziele_Ideenfindung_und_Konzeptentwicklung.qmd >}}
+
 ## Methodische Grundlagen
     {{< include Produkt.qmd >}}
     {{< include Modelle_zum_Produktentstehungsprozess.qmd >}}
@@ -115,6 +117,7 @@ worksheets:
   {{< include 3DMaster.qmd >}}
   {{< include Materialermuedung.qmd >}}
   {{< include Betriebsfestigkeit.qmd >}}
+
 ## NVH
     {{< include NVH.qmd >}}
 ## Kostenbeeinflussung im Produktentstehungsprozess
@@ -130,6 +133,7 @@ worksheets:
 -------------------------------------------------------------------------- -->
 # Prototyping und Test {#sec-prototypingundtest}
   {{< include Ziele_Prototyping_und_Test.qmd >}}
+
 ## Testing
     {{< include Fermi-Problem.qmd >}}
     {{< include Statistische_Versuchsplanung_DoE.qmd >}}
@@ -145,6 +149,7 @@ worksheets:
 -------------------------------------------------------------------------- -->
 # Produktionsplanung und Produktion {#sec-produktionsplanungundproduktion}
   {{< include Ziele_Produktionsplanung_und_Produktion.qmd >}}
+  
 ## Lean Production
     {{< include Toyota_Produktionssystem.qmd >}}
     {{< include TQM.qmd >}}
