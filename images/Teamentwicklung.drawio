@@ -1,0 +1,40 @@
+<mxfile host="Electron" modified="2025-04-15T09:16:59.528Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.5.3 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="c8PSewJjlVIy4ikViLYP" version="24.5.3" type="device">
+  <diagram name="Seite-1" id="wbKzrDslZjSC3c9pPJzk">
+    <mxGraphModel dx="988" dy="592" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uknjn14DKThbYTZrS1es-1" value="3. Norming" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="380" y="500" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uknjn14DKThbYTZrS1es-2" value="2. Storming" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="380" y="440" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uknjn14DKThbYTZrS1es-3" value="" style="endArrow=blockThin;startArrow=blockThin;html=1;rounded=0;startFill=1;endFill=1;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uknjn14DKThbYTZrS1es-7" target="uknjn14DKThbYTZrS1es-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="310" y="490" as="sourcePoint" />
+            <mxPoint x="360" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uknjn14DKThbYTZrS1es-6" value="4. Performing" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="380" y="560" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uknjn14DKThbYTZrS1es-7" value="1. Forming" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="380" y="380" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uknjn14DKThbYTZrS1es-15" value="" style="endArrow=blockThin;startArrow=blockThin;html=1;rounded=0;startFill=1;endFill=1;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uknjn14DKThbYTZrS1es-2" target="uknjn14DKThbYTZrS1es-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="420" as="sourcePoint" />
+            <mxPoint x="440" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uknjn14DKThbYTZrS1es-16" value="" style="endArrow=blockThin;startArrow=blockThin;html=1;rounded=0;startFill=1;endFill=1;edgeStyle=orthogonalEdgeStyle;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="uknjn14DKThbYTZrS1es-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="530" as="sourcePoint" />
+            <mxPoint x="440" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

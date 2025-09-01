@@ -1,0 +1,28 @@
+<mxfile host="Electron" modified="2025-04-15T08:33:26.382Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.5.3 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="s0jDQpWYuXlgyKuJ1JCf" version="24.5.3" type="device">
+  <diagram name="Seite-1" id="tQ0ftKxHk6KphrgHs4fO">
+    <mxGraphModel dx="2074" dy="1244" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="alhFl-QXhuEKAcvNu6bf-1" value="Fehlendes Vertrauen" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=30;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="241" y="671" width="381" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="alhFl-QXhuEKAcvNu6bf-2" value="Konfliktscheue" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=28.999999999999943;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="275" y="610" width="313" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="alhFl-QXhuEKAcvNu6bf-3" value="Mangelndes Engagement" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=30;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="312" y="549" width="243" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="alhFl-QXhuEKAcvNu6bf-6" value="Fehlendes&amp;nbsp;&lt;div&gt;Verantwortungs-&lt;/div&gt;&lt;div&gt;bewusstsein&lt;/div&gt;" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=28.78571428571439;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="348.5" y="488" width="171.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="alhFl-QXhuEKAcvNu6bf-10" value="" style="triangle;whiteSpace=wrap;html=1;rotation=-90;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#C2C2C2;" parent="1" vertex="1">
+          <mxGeometry x="388.88" y="381.13" width="92" height="102.75" as="geometry" />
+        </mxCell>
+        <mxCell id="alhFl-QXhuEKAcvNu6bf-5" value="Vernach-lässigung&lt;div&gt;Projekterfolg&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="395.59" y="417" width="80.41" height="71" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
