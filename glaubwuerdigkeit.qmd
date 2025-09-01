@@ -1,7 +1,8 @@
+
 Dieser Punkt ist so zentral, dass er einen eigenen Abschnitt verdient. 
 Sowohl die private als auch berufliche Zufriedenheit und der Erfolg wird gesteigert, wenn man sich mit sich selbst und seinem Umfeld in einer Weise beschäftigt, die Zufriedenheit und Harmonie durch täglichen Handlungen erzeugt.
 
-```{mermaid}
+````{mermaid}
 %%{init: {'theme': 'default', 'themeVariables': {'background': '#fff'}, 'flowchart': {'curve': 'monotoneY'}} }%%
 %%| label: fig-glaubwuerdigkeit
 %%| fig-cap: "Kongruenz → beobachtbares Verhalten → Glaubwürdigkeit."
@@ -52,7 +53,7 @@ flowchart TD
     style n06 fill:#cfc,stroke:#0f0,stroke-width:2px,color:#000
 
 
-```
+````
 
 
 

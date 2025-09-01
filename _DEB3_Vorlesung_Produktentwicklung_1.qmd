@@ -2,6 +2,9 @@
 title: "DEB3 Produktentwicklung 1"
 format:
   html:
+    theme: cosmo
+    mermaid:
+      theme: default
     embed-resources: true
 
 author:
@@ -32,7 +35,6 @@ number-sections: true
 scrollable: true
 toc-location: right
 cap-location: bottom
-number-offset: 0
 link-external-icon: true
 link-external-newwindow: true
 
@@ -59,6 +61,14 @@ kommentare:
 {{< include Abbildung_Flammarion1888.qmd >}}
 ![](images/blank.png){width=8%}
 
+
+::: {.content-visible unless-meta="kommentare.off"}
+
+:::: {style="background-color: #9affa4"}
+\@mrossde Nummerierung -> einzelne header in jeder Datei entfernen
+
+::::
+:::
 
 # Grundlagen {#sec-grundlagen}
   {{< include Grundlagen_Produktentwicklung.qmd >}}
