@@ -19,6 +19,6 @@ format:
   html:
     theme: cosmo
     mermaid:
-      theme: forest
+      theme: default
   pdf:
     documentclass: scrreprt

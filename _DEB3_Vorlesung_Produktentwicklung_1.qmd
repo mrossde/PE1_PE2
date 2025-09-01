@@ -78,6 +78,7 @@ kommentare:
 ## Projektmanagement
 
     {{< include Projekt.qmd >}}
+    {{< include Projekt-Arbeit.qmd >}}
     {{< include Gantt.qmd >}}
     {{< include Kritischer_Pfad.qmd >}}
     {{< include Meilenstein.qmd >}}
