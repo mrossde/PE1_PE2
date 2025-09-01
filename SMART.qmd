@@ -110,7 +110,16 @@ Das Setzen von [SMARTen Zielen](https://de.wikipedia.org/wiki/SMART_(Projektmana
 
 ---
 
-Diese generalisierte Erkenntnis, die im Kern auf den britischen Ökonomen [Charles Goodhart](https://en.wikipedia.org/wiki/Charles_Goodhart) zurückgeht, weist auf die Gefahr hin, die entsteht, wenn Indikatoren selbst zu festen Zielen werden, sprich wenn sich alles mehr um die Messgröße dreht als um das dahinter liegende Ziel.
+Diese generalisierte Erkenntnis, die im Kern auf den britischen Ökonomen [Charles Goodhart](https://en.wikipedia.org/wiki/Charles_Goodhart) zurückgeht, weist auf die Gefahr hin, die entsteht, wenn Indikatoren selbst zu festen Zielen werden, sprich wenn sich alles mehr um die Messgröße dreht als um das dahinter liegende Ziel bzw. die Problemlösung.
+
+
+::: {.content-visible unless-meta="kommentare.off"}
+
+:::: {style="background-color: #9affa4"}
+\@mrossde Rücksprache Christian -> KPIs in Unternehmen sind ja Ziele, oder wie ist das gemeint mit der Kenngröße, wenn Sie zum Ziel wird? Sie ist ja Teil des Ziels?
+
+::::
+:::
 
 <!--
 ^[Ein Beispiel aus Hanoi, als dieses noch unter französischer Kolonialherrschaft stand, veranschaulicht die Problematik. Im Bemühen, eine Rattenplage zu bekämpfen, führte das Regime 1902 das Prinzip ein, dass die Menschen eine Prämie erhielten, wenn sie für jede erlegte Ratte einen abgetrennten Rattenschwanz abgaben. Irgendwann allerdings wurden Ratten ohne Schwänze entdeckt. Vietnamesische Rattenfänger fingen die Ratten ein, schnitten ihnen die Schwänze ab und entließen sie dann wieder in die Freiheit, damit sie sich weiter vermehren konnten – um ihnen ein höheres Einkommen zu bescheren.]

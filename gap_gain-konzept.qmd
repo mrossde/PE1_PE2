@@ -1,0 +1,33 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Gap & Gain Konzept
+
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Grundlagen
+## Methodische Grundlagen
+:::
+
+### The Gap & Gain Concept {#sec-gapgain}
+
+::: {.content-visible unless-meta="kommentare.off"}
+
+:::: {style="background-color: #9affa4"}
+\@mrossde 
+
+0. Ziele und Smart und Vision -> Effekte und Folgen bei nicht richtiger pers. Anwendung -> Grund für Gap+Gain Konzept in Kombination
+1. Konzept beschreiben
+2. Literatur einbauen
+3. kleine Übung am Ende -> Thematik pos. Psychologie
+
+::::
+:::

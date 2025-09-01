@@ -73,6 +73,7 @@ kommentare:
 
     {{< include Vision-Strategie-Ziele.qmd >}}
     {{< include SMART.qmd >}}
+    {{< include gap_gain-konzept.qmd >}}
 
 ## Projektmanagement
 
