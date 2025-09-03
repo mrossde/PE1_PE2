@@ -2,7 +2,7 @@
 Dieser Punkt ist so zentral, dass er einen eigenen Abschnitt verdient. 
 Sowohl die private als auch berufliche Zufriedenheit und der Erfolg wird gesteigert, wenn man sich mit sich selbst und seinem Umfeld in einer Weise beschäftigt, die Zufriedenheit und Harmonie durch täglichen Handlungen erzeugt.
 
-````{mermaid}
+```{mermaid}
 %%{init: {'theme': 'default', 'themeVariables': {'background': '#fff'}, 'flowchart': {'curve': 'monotoneY'}} }%%
 %%| label: fig-glaubwuerdigkeit
 %%| fig-cap: "Kongruenz → beobachtbares Verhalten → Glaubwürdigkeit."
@@ -39,7 +39,7 @@ flowchart TD
     n02 -->|Voraussetzung| n03    
     n01 -->|Voraussetzung| n03
     n04 -->|Klarheit| n01
-    n03 -->|was wir sagen, stimmt mit dem ueberein, was wir tun.| n06
+    n03 -->|Was wir sagen, stimmt mit <br> dem ueberein, was wir tuen. <br> & <br> Was wir tuen, stimmt <br> mit dem ueberein, was wir machen.| n06
     
     n10 -->|soll| n11
     n09 -->|ist| n11
@@ -52,8 +52,11 @@ flowchart TD
     style n12 fill:#fcc,stroke:#f00,stroke-width:2px,color:#000
     style n06 fill:#cfc,stroke:#0f0,stroke-width:2px,color:#000
 
+    %% Subgraph-Hintergrund einfärben (Pastellgelb mit 3-stelligem Hex)
+    style S1 fill:#fff,stroke:#999,stroke-width:1px,color:#000
+    style S2 fill:#fff,stroke:#999,stroke-width:1px,color:#000
 
-````
+```
 
 
 

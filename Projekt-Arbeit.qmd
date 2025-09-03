@@ -120,6 +120,13 @@ Damit wird insbesondere verdeutlicht, **wer entscheidet, wer ausführt, wer bera
 Beide Modelle verfolgen das gleiche Ziel: Klarheit schaffen, Verantwortungsdiffusion vermeiden und Projekterfolg sichern.
 :::
 
+::: {.content-visible unless-meta="kommentare.off"}
+
+:::: {style="background-color: #9affa4"}
+\@mrossde Christian - ggf. RISC Tabelle einmal Übung zum Ausfüllen machen?
+
+::::
+:::
 
 #### Weisungs- und Entscheidungsbefugnis {#sec-webefugnis}
 Von zentraler Bedeutung für ein erfolgreiches Projektmanagement ist der oben bereits genannte Aspekt der Weisungs- und Entscheidungsbefugnis als eine Ausprägung der Kompetenz einzelner Projektbeteiligter. Hierbei handelt es sich um eine Führungsaufgabe. Weisungs- und Entscheidungsbefugnis bezieht sich auf die autorisierte Fähigkeit einer Person, Anweisungen zu geben und Entscheidungen zu treffen, die für die Ausführung einer Aufgabe oder die Erreichung eines Projektziels erforderlich sind. **Diese Kompetenz kann zeitlich befristet einer Person zugewiesen werden und hat Priorität über die in einem Unternehmen etablierte Führungshierarchie.**

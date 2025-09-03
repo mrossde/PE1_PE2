@@ -18,7 +18,5 @@ bibliography: references.bib
 format:
   html:
     theme: cosmo
-    mermaid:
-      theme: default
   pdf:
     documentclass: scrreprt
