@@ -20,7 +20,7 @@ author:
         country: "Deutschland"
         url: https://www.hs-esslingen.de/
 abstract: > 
-  Skript zur Vorlesung *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+  Skript zur Vorlesung *"Produktentwicklung 1"*
 keywords:
   - Produktentstehungsprozess
   - Entwicklungsmethodik
