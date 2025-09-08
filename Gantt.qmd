@@ -90,10 +90,10 @@ Ein Beispiel für ein einfaches Gantt-Diagramm zeigt @fig-label-gntbsp01 .
 <!-- 
 ACHTUNG!!! Mermaid-Grafiken zum Gantt-Diagramm werden in der Quarto-Preview nicht dargestellt, erscheinen nach dem Compilieren aber im Dokument. Zur Vorschau der Gantt-Charts sei auf den Mermaid-Live-Editor verwiesen
 -->
-```{mermaid}
+````{mermaid}
 %%| fig-width: 6.4
 %%| label: fig-label-gntbsp01
-%%| fig-cap: "Gantt-Diagramm der Phasen zum Produktentstehungsprozess eines Papierfliegers"
+%%| fig-cap: "Gantt-Diagramm der Phasen zum PEP eines Papierfliegers"
 gantt
 title Gantt-Diagramms der Phasen zum Produktentstehungsprozess eines Papierfliegers
     dateFormat HH:mm
@@ -105,7 +105,8 @@ title Gantt-Diagramms der Phasen zum Produktentstehungsprozess eines Papierflieg
     Prototyp: a4, after a3, 5m
     Test: a5, after a4, 1m
     Ende : milestone, m2, after a5, 0m
-```
+
+````
 
 <!--
 Die dem Gantt-Diagramm zugrundeliegende Logik kann dem nachfolgenden [Mermaid](https://mermaid.js.org/)-Code entnommen werden, in dem Typ ("milestone"), Startbedingung ("after") und Dauer (# min) zur Erzeugung des Gantt-Diagramms verwendet werden. Mit diesen Angaben ist das Gantt-Diagramm vollständig beschrieben. Wird keine Angabe gemacht werden als Standardwerte bei Status "active" (daneben möglich: "done" und "crit") und Typ "action" verwendet.
@@ -259,7 +260,7 @@ Die Kapazität- und Ressourcenplanung ist eine eigenständige Aufgabe im Projekt
 
 4. **Kommunikation und Zusammenarbeit**: Ein Gantt-Diagramm dient als Kommunikationsmittel, um den Projektstatus und den Fortschritt mit dem Projektteam, dem Management und ggf. auch dem Kunden zu teilen und zu diskutieren.
 
-Es gibt verschiedene Projektmanagement-Software und Tools, die die Erstellung und Aktualisierung von Gantt-Diagrammen erleichtern, z.B. [Microsoft Project](https://de.wikipedia.org/wiki/Microsoft_Project). Diese Tools bieten oftmals  zusätzliche Funktionen wie Ressourcenmanagement, Aufgabenzuweisung, Fortschrittsverfolgung und Berichterstellung, um den Projektfortschritt effektiv zu verwalten.
+Es gibt verschiedene Projektmanagement-Software und Tools, die die Erstellung und Aktualisierung von Gantt-Diagrammen erleichtern, z.B. [Microsoft Project](https://de.wikipedia.org/wiki/Microsoft_Project) oder [GanttProject](http://ganttproject.biz/)(Open Source). Diese Tools bieten oftmals  zusätzliche Funktionen wie Ressourcenmanagement, Aufgabenzuweisung, Fortschrittsverfolgung und Berichterstellung, um den Projektfortschritt effektiv zu verwalten.
 
 
 #### Parallelisierung von Aktivitäten
@@ -301,18 +302,35 @@ title Gantt-Diagramm der Projektphase zum Prototyp und Test
 
 In @fig-label-gntflyer02 wird davon ausgegangen dass die Aktivitäten der Beschaffung von Papier, Schere und Klebstoff zeitlich parallel durchgeführt werden können.
 
-Das parallele Ausführen von Aktivitäten und Projektphasen ist in der Praxis eines der wichtigsten Vorgehen um bei Projekten überhaupt in einem sinnvollen Zeitrahmen Projekte durchführen zu können. Dies setzt jedoch voraus, dass die einzelnen Aktivitäten voneinander unabhängig sind UND hinreichend Kapazität geeigneter Ressourcen zur Verfügung steht um die Aktivitäten wirklich zeitlich parallel ausführen zu können.
+Das parallele Ausführen von Aktivitäten und Projektphasen ist in der Praxis eines der wichtigsten Vorgehen in einem sinnvollen Zeitrahmen zu bleiben. Dies setzt jedoch voraus, dass die 
+
+- einzelnen Aktivitäten voneinander unabhängig sind &
+- hinreichend Kapazität geeigneter Ressourcen zur Verfügung steht 
+
+um die Aktivitäten wirklich zeitlich parallel ausführen zu können.
 
 
 ::: {.callout-caution}
 ## Besondere Aufmerksamkeit ist bei der  Parallelisierung von Aktivitäten erforderlich!
-In der Praxis sind diese zwei für die Parallelisierung von Aktivitäten notwendigen Bedingungen nicht immer erfüllt. Dies kann dazu führen, dass die Aktivitäten zumindest teilweise seriell ausgeführt werden müssen. Dies wiederum führt zu einer längeren zeitlichen Dauer der jeweiligen Projektphase. Sofern sich die Projektphase auf dem kritischen Pfad des Projekts befindet führt dies zu einer Verschiebung nachfolgender Aktivitäten und zu einer Verlängerung der gesamten Dauer des Projekts. Bei der Planung der Parallelisierung von Aktivitäten ist daher stets besondere Aufmerksamkeit erforderlich!
+In der Praxis sind diese zwei für die Parallelisierung von Aktivitäten notwendigen Bedingungen nicht immer erfüllt. Dies kann dazu führen, dass die Aktivitäten zumindest teilweise seriell ausgeführt werden müssen. Dies wiederum führt zu einer längeren zeitlichen Dauer der jeweiligen Projektphase. Sofern sich die Projektphase auf dem **kritischen Pfad** des Projekts befindet führt dies zu einer Verschiebung nachfolgender Aktivitäten und zu einer Verlängerung der gesamten Dauer des Projekts. Bei der Planung der Parallelisierung von Aktivitäten ist daher stets besondere Aufmerksamkeit erforderlich!
 :::
 
 
-#### Kapazität und Dauer einer Aktivität
+#### Kapazität und Dauer/Durchlaufzeit einer Aktivität
 
-In der Regel wird eine in einem Gantt-Diagramm dargestellte Aktivität nicht in Vollzeit von einer Person bearbeitet. Die Folge ist eine zumeist erhebliche Differenz zwischen für eine Aktivität erforderliche (Personen-)Kapazität^[Tipp: Normierung der Personenkapazität in Gantt-Diagrammen immer auf FTE ("**F**ull-**T**ime-**E**quivalent"), NICHT auf individuelle Personen vornehmen] und der geplanten Dauer der Aktivität. 
+In der Regel wird eine in einem Gantt-Diagramm dargestellte Aktivität nicht in Vollzeit von einer Person bearbeitet. Die Folge ist eine zumeist erhebliche Differenz zwischen für eine Aktivität erforderliche (Personen-)Kapazität und der geplanten Dauer der Aktivität. Die **Dauer** wird auch als **Durchlaufzeit** bezeichnet.
+
+::: {.callout-tip}
+## Definition: [Durchlaufzeit](https://de.wikipedia.org/wiki/Durchlaufzeit)
+Die Durchlaufzeit (englisch throughput time, lead time) ist im Arbeitsstudium die Zeitspanne, die ein Arbeitsobjekt oder eine Entität zum Durchlaufen eines Systems benötigt. Dieser Begriff gilt insbesondere in der Produktion und Fertigung. 
+
+Dies wird bei Prozessschritten sehr relevant, in denen Tätigkeiten und Wartezeiten und externe Zeitanteile in einem Prozessschritt nicht klar getrennt sind. Hier kann man viel Optimierungszeit finden, indem man diese Zeitanteile identifiziert, isoliert betrachtet und messbar macht.
+:::
+
+::: {.callout-caution}
+## Tipp: Rechnen mit Personenkapaitäten
+Normierung der Personenkapazität in Gantt-Diagrammen immer auf FTE ("**F**ull-**T**ime-**E**quivalent"), NICHT auf individuelle Personen vornehmen
+:::
 
 Als Beispiel für den Unterschied zwischen der Dauer eine Aktivität und der für die Aktivität erforderlichen Personenkapazität zeigt @fig-label-gntzeitvskapa eine Alternative der in @fig-label-gntflyer02 in der Unterphase Beschaffung dargestellten Teilebeschaffung der Schere:
 
@@ -332,7 +350,7 @@ title Gantt-Diagramm der Aktivität zu Beschaffung der Schere
     
 ```
 
-In der in @fig-label-gntflyer02 dargestellten Projektplanung wurde davon ausgegangen, dass die Ressource Schere kurzfristig verfügbar ist. In der Praxis stehen Ressourcen häufig jedoch nicht kurzfristig zur Verfügung sondern müssen zunächst verfügbar gemacht werden (z.B. durch Beschaffung von Extern). In diesem Fall benötigt die Aktivität der Beschaffung der Schere zwar nicht mehr, jedoch ggf. andere (interne) Personenkapazität (Bestellung und Warenannahme), jedoch verlängert sich die Dauer der Aktivität aufgrund der Dauer für die Lieferung der Schere um ein Vielfaches. 
+In der in @fig-label-gntflyer02 dargestellten Projektplanung wurde davon ausgegangen, dass die Ressource Schere kurzfristig verfügbar ist. In der Praxis stehen Ressourcen häufig jedoch nicht kurzfristig zur Verfügung sondern müssen zunächst verfügbar gemacht werden (z.B. durch Beschaffung von Extern). In diesem Fall benötigt die Aktivität der Beschaffung der Schere zwar nicht mehr, jedoch ggf. andere (interne) Personenkapazität (Bestellung und Warenannahme), jedoch verlängert sich die Dauer (Lieferung der Schere)  um ein Vielfaches. 
 
 Im vorliegendem Fall würde die massive Verzögerung bei der Beschaffung der Schere die gesamte in @fig-label-gntflyer02 dargestellten Projektplanung über den Haufen werfen - das Projekt müsste zeitlich erheblich verlängert werden. In der Praxis könnte dies möglicherweise sogar ein Scheitern des gesamten Projekts bedeuten. 
 
@@ -351,7 +369,7 @@ Bei der zeitlichen Planung eines Projekts muss entsprechend die verfügbare (Per
 
 ::: {.callout-caution}
 ## Nutzung von Gantt-Diagrammen 
-Die gewinnbringende Nutzung von Softwaretools wie z.B. Microsoft Project setzt eine hohe Disziplin des Projektteams voraus. Bei erfahrenen, großen Projektteams wird oft die Rolle des PLU (Projektleitungs-Unterstützers) geschaffen mit der Aufgabe, das Gantt-Diagramm auf dem aktuellen Stand zu halten und bei Bedarf Rückmeldungen von allen Mitwirkenden im Projekt einzufordern (siehe → AKV; siehe → Hol- und Bringschuld). 
+Die gewinnbringende Nutzung von Softwaretools wie z.B. Microsoft Project setzt eine hohe Disziplin des Projektteams voraus. Bei erfahrenen, großen Projektteams wird oft die Rolle des **PLU** (Projektleitungs-Unterstützers) geschaffen mit der Aufgabe, das Gantt-Diagramm auf dem aktuellen Stand zu halten und bei Bedarf Rückmeldungen von allen Mitwirkenden im Projekt einzufordern (siehe → AKV; siehe → Hol- und Bringschuld). 
 
 Die Nutzung des Gantt-Diagramms als wertvolles Werkzeug im Projektteam kann dadurch unterstützt werden, dass die gemeinsame Sichtung des Projektstands im Projektteam in der Regelkommunikation des Projekts erfolgt.
 :::
