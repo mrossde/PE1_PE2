@@ -137,14 +137,25 @@ Von zentraler Bedeutung für ein erfolgreiches Projektmanagement ist der oben be
 Bei der in Projekten befristet zugewiesenen Weisungs- und Entscheidungsbefugnis handelt es sich in der Regel um *„geliehene Macht“*. Diese befristet zugewiesenen Befugnisse können gleichwohl sehr weitreichenden Einfluss auf die Arbeiten einiger oder auch sehr vieler Projektbeteiligter haben. Es ist in höchstem Maße ratsam, sich nicht dem *„Rausch der Macht“* hinzugeben, sondern im Gegenteil, mit maximaler Aufmerksamkeit und Energie auf eine faire und kooperative Zusammenarbeit im Projekt hinzuwirken.
 :::
 
-Die zugewiesene Kompetenz der Weisungs- und Entscheidungsbefugnis beinhaltet das Recht und die Verantwortung, anderen, definierten Projektmitarbeitern Anweisungen zu erteilen, ihnen Aufgaben zuzuweisen und ihnen klare Richtlinien und Leitlinien zu geben. Es ermöglicht einer Person, die Kontrolle über bestimmte Aspekte eines Projekts oder einer Aufgabe zu übernehmen und die Durchführung von Aktivitäten zu lenken.
+Die zugewiesene Kompetenz der Weisungs- und Entscheidungsbefugnis beinhaltet das Recht und die Verantwortung: 
 
-Darüber hinaus umfasst die Entscheidungsbefugnis die Fähigkeit, Entscheidungen zu treffen, die für den Fortschritt des Projekts von Bedeutung sind. Dies beinhaltet die Befugnis, zwischen verschiedenen Optionen abzuwägen, Risiken zu bewerten und fundierte Entscheidungen zu treffen, die den Projektzielen dienen. Die Entscheidungsbefugnis kann sich auf strategische, operative oder technische Aspekte beziehen und kann sowohl Einzelpersonen als auch Teams gewährt werden.
+- anderen, definierten Projektmitarbeitern Anweisungen erteilen  
+- Aufgaben zuweisen  
+- klare Richtlinien und Leitlinien geben  
+- Kontrolle über bestimmte Aspekte eines Projekts oder einer Aufgabe übernehmen  
+- Durchführung von Aktivitäten lenken  
+- Entscheidungen treffen, die für den Fortschritt des Projekts von Bedeutung sind  
+- zwischen verschiedenen Optionen abwägen  
+- Risiken bewerten  
+- strategische, operative oder technische Aspekte berücksichtigen  
+- Autorität ausüben  
+- sicherstellen/ kontrollieren, dass die zugewiesenen Aufgaben ordnungsgemäß ausgeführt werden  
 
-Die Kompetenz der Weisungs- und Entscheidungsbefugnis spielt eine wichtige Rolle bei der effektiven Leitung und Steuerung von Projekten. Sie ermöglicht es einer Person, ihre Autorität und Verantwortung auszuüben, um sicherzustellen, dass die zugewiesenen Aufgaben ordnungsgemäß ausgeführt werden und dass Entscheidungen getroffen werden, um den Projekterfolg zu fördern. 
+
+Die Entscheidungsbefugnis kann sich auf strategische, operative oder technische Aspekte beziehen und kann sowohl Einzelpersonen als auch Teams gewährt werden. Die Kompetenz der Weisungs- und Entscheidungsbefugnis spielt eine wichtige Rolle bei der effektiven Leitung und Steuerung von Projekten.
 
 ::: {.callout-caution}
-Grundsätzlich sind die AKV aller Projektbeteiligten VOR Projektbeginn zu klären jeweils den von den AKV betroffenen Projektbeteiligten klar zu kommunizieren.
+Grundsätzlich sind die AKV aller Projektbeteiligten **VOR** Projektbeginn zu klären jeweils den von den AKV betroffenen Projektbeteiligten klar zu kommunizieren.
 :::
 
 
@@ -164,10 +175,6 @@ Das Informationsmanagement benutzt die juristischen Begriffe Holschuld/Bringschu
 ## Wikipedia: *"Bringschuld"*
 Im betrieblichen Informationsmanagement wurde der Begriff Bringschuld aus dem Recht übernommen und bedeutet, dass eine Person im Rahmen ihres Informationsverhaltens verpflichtet ist, die ihr bekanntgewordenen relevanten Informationen rechtzeitig und umfassend und in geeigneter Form horizontal (gleichstufige Mitarbeiter) und/oder vertikal (Vorgesetzte) weiterzugeben, damit diese richtige Entscheidungen treffen können. Diese Bringschulden gibt es auf allen Hierarchieebenen. In diesem Zusammenhang ist auch von Berichtsebenen die Rede, bei denen ein Verantwortungsträger einem übergeordneten Verantwortungsträger gegenüber eine Berichtspflicht besitzt. Umgekehrt besitzen auch Vorgesetzte die Pflicht, die ihnen bekannt gewordenen Informationen – sofern sie nicht geheim sind – an Mitarbeiter weiterzugeben. Den gegenläufigen Informationsverlauf bezeichnet man entsprechend als Holschuld.
 :::
-
-
-> *„Man kann nie genug informieren.“ (Quelle: Jan Odenthal)*
-
 
 In der Praxis werden Holschuld oder Bringschuld der verschiedenen Rollen in einem Projekt oftmals nicht explizit festgelegt. Eine klare Definition der Verantwortlichkeiten trägt jedoch maßgeblich zur reibungslosen Durchführung eines Projekts bei. Je nach Art des Projekts und den darin enthaltenen Rollen können dabei sowohl Holschuld als auch Bringschuld für verschiedene Phasen des Projekts gelten sich im Projektfortschritt auch umkehren.
 

@@ -3,9 +3,10 @@ Dieser Punkt ist so zentral, dass er einen eigenen Abschnitt verdient.
 Sowohl die private als auch berufliche Zufriedenheit und der Erfolg wird gesteigert, wenn man sich mit sich selbst und seinem Umfeld in einer Weise beschäftigt, die Zufriedenheit und Harmonie durch täglichen Handlungen erzeugt.
 
 ```{mermaid}
-%%{init: {'theme': 'default', 'themeVariables': {'background': '#fff'}, 'flowchart': {'curve': 'monotoneY'}} }%%
+%%| echo: false
 %%| label: fig-glaubwuerdigkeit
 %%| fig-cap: "Kongruenz → beobachtbares Verhalten → Glaubwürdigkeit."
+%%{init: {'theme': 'default', 'themeVariables': {'background': '#fff'}, 'flowchart': {'curve': 'monotoneY'}} }%%
 flowchart TD
    
     subgraph S1["Du selbst"]
