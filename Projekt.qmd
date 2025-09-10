@@ -151,7 +151,7 @@ Projektziele sind grundlegend für das Projektmanagement, da sie den Rahmen für
 
 **Wann waren wir erfolgreich?** 
 
-::: {.callout-tip}
+::: {#tip-dod .callout-tip}
 ## Definition: *"Definition of Done (DoD)"*
 Die „Definition of Done“ (DoD) ist eine festgelegte und akzeptierte Vereinbarung innerhalb eines Teams oder Projekts, die die Kriterien und Anforderungen beschreibt, die erfüllt sein müssen, damit eine Aufgabe, ein Feature oder ein Projekt als abgeschlossen gilt. Sie legt die Standards und Erwartungen fest, die erfüllt sein müssen, um sicherzustellen, dass ein Arbeitsergebnis vollständig ist. Die Definition of Done hilft sicherzustellen, dass alle Beteiligte ein gemeinsames Verständnis davon haben, was "fertig" bedeutet.
 :::
@@ -225,7 +225,7 @@ flowchart TD
 ::: {.content-visible unless-meta="kommentare.off"}
 
 :::: {style="background-color: #9affa4"}
-\@mrossde @Christian Pfeil zurück von 3.3 -> 3.2 und 3.3 -> 3.1 ?
+\@mrossde \@Christian Pfeil zurück von 3.3 -> 3.2 und 3.3 -> 3.1 ?
 oder kommt das später?
 
 ::::

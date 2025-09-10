@@ -22,7 +22,7 @@ Das Controlling spielt eine wichtige Rolle in der Produkt- und Softwareentwicklu
 
 2. **Zeit- und Terminmanagement**: Das Controlling erstellt Zeitpläne und Fristen für die Produktentwicklung und überwacht den Fortschritt der Projekte. Es stellt sicher, dass Meilensteine und Termine eingehalten werden und hilft bei der Identifizierung von Verzögerungen oder Engpässen.
 
-3. **Performance-Messung**: Das Controlling entwickelt und überwacht Leistungskennzahlen, um den Fortschritt und den Erfolg des Produktentstehungsprozesses zu bewerten. Dies kann die Überwachung von Key Performance Indicators (KPIs) umfassen, um sicherzustellen, dass die gesteckten Ziele erreicht werden.
+3. **Performance-Messung**: Das Controlling entwickelt und überwacht Leistungskennzahlen, um den Fortschritt und den Erfolg des Produktentstehungsprozesses zu bewerten. Dies kann die Überwachung von Key Performance Indicators [KPIs](@sec-kpi) umfassen, um sicherzustellen, dass die gesteckten Ziele erreicht werden.
 
 4. **Kommunikation und Berichterstattung**: Das Controlling kommuniziert regelmäßig die finanzielle und operationale Leistung der Produktentwicklung an das Management und andere relevante Stakeholder. Dies umfasst die Erstellung von Berichten, Präsentationen und Empfehlungen.
 

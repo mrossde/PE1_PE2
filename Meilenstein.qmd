@@ -61,12 +61,10 @@ link-external-newwindow: true
 
 ::: {.callout-tip}
 ## Definition: *"Meilenstein"*
-Ein Meilenstein ist ein wichtiger Zeitpunkt während der Durchführung eines Projekts. Er markiert einen bedeutenden Fortschritt oder eine Leistung innerhalb des Projekts und dient dazu, den Fortschritt zu verfolgen, den Zeitplan zu überwachen und den Erfolg des Projekts zu messen. Meilensteine werden im Voraus definiert und sind mit bestimmten Zielen oder Ergebnissen verbunden, die erreicht werden müssen, um den Projektverlauf zu beurteilen.
+Ein Meilenstein ist ein wichtiger Zeitpunkt während der Durchführung eines Projekts. Er markiert einen bedeutenden Fortschritt oder eine Leistung innerhalb des Projekts und dient dazu, den Fortschritt & Zeitplan zu überwachen und den Erfolg des Projekts zu messen. Meilensteine werden im Voraus definiert und sind mit bestimmten Zielen, Ergebnissen, Phasenbeginn, -ende verbunden, die erreicht werden müssen, um den Projektverlauf zu beurteilen.
 :::
 
-Meilensteine markieren die wichtigen Zeitpunkte oder den Beginn oder das Ende von Phasen während der Projektumsetzung. Im Gegensatz dazu sind Projektziele sind die konkreten, messbaren Ergebnisse, die ein Projekt erreichen soll:
-
-
+Im Gegensatz dazu sind Projektziele sind die konkreten, messbaren Ergebnisse bzw. Zielzustände, die ein Projekt erreichen soll:
 
 #### Abgrenzung Meilensteine von Projektzielen
 Die Definition von Meilensteinen und Projektzielen unterscheidet sich in Bezug auf ihre Funktionen und zeitlichen Rahmen im Projektmanagement:
@@ -77,7 +75,14 @@ Die Definition von Meilensteinen und Projektzielen unterscheidet sich in Bezug a
 
 Meilensteine sind eng mit der zeitlichen Planung und Steuerung von Projekten verbunden, während Projektziele die allgemeinen Absichten und Visionen des Projekts darstellen.
 
+::: {.content-visible unless-meta="kommentare.off"}
 
+:::: {style="background-color: #9affa4"}
+prio 2
+\@mrossde schwierig und nicht klar unterschieden / ggf. später überarbeiten
+
+::::
+:::
 
 #### Formen und Aufgaben von Meilensteinen
 
@@ -94,8 +99,6 @@ Meilensteine in Entwicklungsprojekten orientieren sich häufig an in Unternehmen
 So ist der Produktentstehungsprozess im MDS in zehn mit Terminen (*"minus x Monate bis Job #1"*) versehenen Quality-Gates (QG X - QG I) gegliedert, die für alle Entwicklungsprojekte wichtige Referenzpunkte darstellen. 
 In Gantt-Diagrammen werden Meilensteine in der Regel als Rauten dargestellt (siehe z.B. @fig-label-gntflyer02).
 :::
-
-Meilensteine sind wichtig, um den Zeitplan des Projekts zu strukturieren um darauf aufbauend den Fortschritt überwachen und den Erfolg des Projekts bewerten zu können. Meilensteine dienen auch dazu, die im Projekt Mitarbeitenden und Stakeholder über den Projektfortschritt zu informieren und sicherzustellen, dass das Projekt auf Kurs bleibt.
 
 Die Bedeutung von Meilensteinen liegt in folgenden Aspekten:
 
@@ -128,7 +131,7 @@ Damit Meilensteine effektiv als Instrumente zur Überwachung und Bewertung des P
 
 + **Realistische Zeitrahmen**: Gute Meilensteine brauchen realistische Zeitrahmen haben, in denen sie erreicht werden können. Sie sollten herausfordernd, aber erreichbar sein, um das Projektteam zu motivieren und gleichzeitig den Fortschritt des Projekts sicherzustellen.
 
-+ **Überprüfbare Ergebnisse**: Jeder Meilenstein sollte mit messbaren Ergebnissen oder Zielen (siehe → SMARTe Ziele @sec-smart) verbunden sein, die überprüfbar sind (siehe → Definition of Done (DoD)).
++ **Überprüfbare Ergebnisse**: Jeder Meilenstein sollte mit messbaren Ergebnissen oder Zielen (siehe → SMARTe Ziele @sec-smart) verbunden sein, die überprüfbar sind ( [siehe → Definition of Done (DoD)](#tip-dod))
 
 + **Relevanz**: Meilensteine sollten eine direkte Beziehung zum Gesamtziel des Projekts haben und einen wichtigen Schritt auf dem Weg zur Zielerreichung darstellen.
 

@@ -62,7 +62,7 @@ link-external-newwindow: true
 
 ### KPIs {#sec-kpi}
 
-::: {.callout-tip}
+::: {#tip-kpi .callout-tip}
 ## Definition: *"KPI"*
 [KPI](https://de.wikipedia.org/wiki/Key-Performance-Indicator) steht für *"Key Performance Indicator"* (auf Deutsch: Schlüsselkennzahl oder Leistungskennzahl). Ein KPI ist eine messbare Größe oder Metrik, die in Organisationen und Unternehmen verwendet wird, um den Fortschritt oder den Erfolg bei der Erreichung von strategischen Zielen oder Projekten zu verfolgen und zu bewerten.
 
