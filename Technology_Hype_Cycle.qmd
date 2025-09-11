@@ -26,8 +26,7 @@ Der [Technologie-Hype-Zyklus](https://de.wikipedia.org/wiki/Hype-Zyklus), oft au
 
 Ein Verständnis des Technologie-Hype-Zyklus ist hilft, den richtigen Zeitpunkt für Investitionen und die Entwicklung von Technologien zu erkennen und sicherzustellen, dass sie effektiv zur Lösung realer Probleme eingesetzt werden können. Entscheidend hierfür ist es, den Hype von der tatsächlichen Leistungsfähigkeit und den potenziellen Anwendungen einer Technologie zu unterscheiden, um realistische Erwartungen zu setzen und Ressourcen effizient zu nutzen.
 
-Der Begriff des Hype-Zyklus wurde von der "Gartner Inc."-Beraterin Jackie Fenn geprägt und dient heute Technologieberatern und Entscheidungsträgern zur Einschätzung des Reifegrads neuer Technologien
-→ Literatur: [Linden, Alexander; Fenn, Jackie (2003-05-30). "Understanding Gartner's Hype Cycles"](http://ask-force.org/web/Discourse/Linden-HypeCycle-2003.pdf).
+Der Begriff des Hype-Zyklus wurde von der "Gartner Inc."-Beraterin Jackie Fenn geprägt und dient heute Technologieberatern und Entscheidungsträgern zur Einschätzung des Reifegrads neuer Technologien ^[vgl. @linden2003understanding].
 
 Der Hype-Zyklus gliedert sich typischerweise in fünf Phasen: 1. Technologie-Auslöser (Technology Trigger), 2. steiler Anstieg der Erwartungen (Peak of Inflated Expectations), 3. Tiefpunkt des Desillusionierens (Trough of Disillusionment), 4. Pfad zur Erleuchtung (Slope of Enlightenment) und 5. Plateau der Produktivität (Plateau der Produktivität).
 
@@ -36,6 +35,11 @@ Die typische Darstellung erfolgt in einem Diagramm, wie in @fig-gartner-hype-cyc
 ![Die fünf Phasen im Technology-Hype-Cycle](images/Gartner-Hype-Cycle.png){width=80% #fig-gartner-hype-cycle}
 
 Die Kurve steigt anfangs explosionsartig an, um dann nach einem Maximum ebenso stark zu fallen. Nach einem Zwischenminimum steigt die Kurve erneut an bis zu einem höheren Niveau der Beharrung. Mathematisch handelt es sich um das Abklingen nach einer Sprunganregung in Form einer stark exponentiell gedämpften Schwingung mit Annäherung an eine Gleichgewichtslage um den Sprung höher als am Anfang der Schwingung.
+
+![Technology-Hype-Cycle - Detaildarstellung^[vgl. @linden2003understanding]](images/Gartner-Hype-Cycle-detail.png){width=80% #fig-gartner-hype-cycle}
+
+
+
 
 
 #### Phasen des Technology-Hype-Cycle

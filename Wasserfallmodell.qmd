@@ -1,0 +1,31 @@
+Das Wasserfallmodell besteht aus klar definierten, voneinander abgegrenzten Phasen, die sequenziell (nicht-iterativ) durchlaufen werden, wie z. B. Anforderungsanalyse, Entwurf, Implementierung, Testen und Wartung. Das Wasserfallmodell wurde in den 1970er Jahren für den Softwareentwicklungsprozess erarbeitet, jedoch schnell auch für hardwarenahe Produktentstehungsprojekte übernommen.
+
+![Wasserfallmodell nach [Winston W. Royce](https://en.wikipedia.org/wiki/Winston_W._Royce) von 1970 ([Quelle: Wikipedia](https://en.wikipedia.org/wiki/Waterfall_model))](images/1970_Royce_Managing_the_Development_of_Large_Software_Systems_Fig10.png){width=100% #fig-wasserfallmodell}
+
+Das Wasserfallmodell ist vermutlich das älteste der formal beschriebenen Modell zum Produktentstehungsprozess. 
+
+#### Stärken des Wasserfallmodells: {.unnumbered}
+
++ **Einfachheit**: Das Wasserfallmodell ist einfach und leicht zu verstehen. Es folgt einem streng linearen und sequenziellen Ansatz, bei dem jede Phase nacheinander durchlaufen und abgeschlossen wird. Dieses Vorgehen macht die Planung der Projekte im Vergleich zu den weiteren Modellen extrem einfach.
+
++ **Strukturierung**: Das Wasserfallmodell bietet eine klare Projektstruktur, die die Aufgaben und Verantwortlichkeiten für jeden Entwicklungsschritt deutlich definiert. Dieser Vorteil macht die Kommunikation und Koordination innerhalb des gesamten Projektteams sowie in Richtung Auftraggeber und Kunden einfach.
+
++ **Klarheit der Anforderungen**: Da das Wasserfallmodell darauf abzielt, alle Anforderungen in der ersten Phase (*"System Requirements"*) festzulegen, entsteht unmittelbar zu Projektbeginn quasi automatisch eine klare und einheitliche Vision für das Produkt. Diese Vision bleibt während des gesamten Ablaufs des Wasserfallmodells unverändert.
+
+5. **Klare Meilensteine**: Das Wasserfallmodell definiert klare Meilensteine für jeden Entwicklungsschritt. Auf der Grundlage dieser Meilensteine können Projekte, die nach dem Wasserfallmodell ablaufen, sehr einfach im Hinblick auf den Projektfortschritt verfolgt und überwacht werden. 
+
++ **Dokumentation**: Das Wasserfallmodell legt einen starken Schwerpunkt auf die Dokumentation, da jede Phase vor dem Fortschreiten zur nächsten Phase abgeschlossen und dokumentiert sein muss. Neben dem zu entwickelnden Produkt werden dabei auch wichtige Informationen und getroffene Entscheidungen dokumentiert (siehe z.B. → Bewertungsmatrizen). 
+
+Diese Eigenschaften und Anforderungen zusammen genommen machen das Wasserfallmodell besonders geeignet für Projekte mit **stabilen Anforderungen**, **klaren Zielsetzungen** und nur **minimaler Unsicherheit**. Es eignet sich auch gut für Projekte, bei denen eine umfassende Planung im Voraus möglich ist und keine Änderungen zu erwarten sind.
+
+Bereits zur Zeit der Entwicklung des Wasserfallmodells wurde als dessen grundlegende Schachstelle erkannt, dass das späte Testen des Produkts erhebliche Risiken mit sich bringt und als riskant und dies geradezu als Einladung für Fehler wirken kann. Entsprechend gilt die Empfehlung, die Testphase so früh als möglich, idealerweise beginnend zeitlich parallel zur Entwicklungsarbeit, zu starten. Bei hardwarenahem Produkten erfolgt das in der Praxis heute zumeist durch Simulation und den frühzeitigen Test einzelner Komponenten oder [Module](https://de.wikipedia.org/wiki/Modultest) des Produkts. 
+
+
+::: {.callout-caution}
+## Grenzen des Wasserfallmodells in der Praxis
+Das Wasserfall ist perfekt bis zu dem Moment, an dem am letzten Ende der Produktentwicklung ein Test mit überraschendem, katastrophalem Ergebnis eintritt. In diesem Moment bricht auch das bis dahin perfekte Projektcontrolling zusammen. Zeit und Kostenplanung werden von einer Sekunde auf die andere wertlos. Dieses Risiko des plötzlichen und zugleich potenziell vollständigen Scheiterns eines Produktentstehungsprozesses möchte letztlich niemand im Projektentwicklungsteam, im Management oder beim Kunden eingehen. Das Wasserfallmodell erwies sich als theoretisch wunderschön, aber in seiner reinen Form als leider nicht praxistauglich.
+:::
+
+Um dieses als äußerst unschön erkannte Problem, dass in der Wirklichkeit leider sehr viele Unwägbarkeiten mit fatalen Folgen auftreten können, zu beheben wurde das Wasserfallmodell rasch weiterentwickelt: Das V-Modell entstand und hat heute das Wasserfallmodells bei der Softwareentwicklung (und in der Regel auch bei der Hardwareentwicklung) abgelöst.
+
+Siehe auch → [weiterführende Literatur](https://en.wikipedia.org/wiki/Waterfall_model#References)
