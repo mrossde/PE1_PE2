@@ -83,7 +83,7 @@ Bewertungsmatrizen werden häufig in der Produktentwicklung eingesetzt. Das Verw
 6. **Gesamtbewertung**: Die Gesamtbewertung für jede Option wird berechnet, indem die Einzelbewertungen für jedes Kriterium gewichtet (falls zutreffend) und addiert werden. Dies ergibt eine Gesamtbewertung für jede Option. 
 
 ::: {.callout-warning}
-**Lösungsoptionen, die bereits eines der Ausschlusskriterien nicht erfüllen können, sind kein Lösungsoptionen!**
+**Lösungsoptionen, die bereits eines der Ausschlusskriterien erfüllen, sind kein Lösungsoptionen!**
 :::
 
 7. **Entscheidung:** Auf Grundlage der Gesamtbewertungen können Entscheidungen getroffen werden. Die Option mit der höchsten Gesamtbewertung kann bevorzugt werden, oder es können weitere Analysen durchgeführt werden, um die endgültige Entscheidung zu treffen.

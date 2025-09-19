@@ -46,7 +46,7 @@ exercises:
 worksheets:
   off: true
 kommentare:
-  off: true
+  off: false
 
 ---
 
@@ -62,3 +62,20 @@ kommentare:
     {{< include Controlling.qmd >}}
     {{< include Zielhierarchie.qmd >}}
     {{< include Projektmanagement_Haertegradlogik.qmd >}}
+
+::: {.content-visible unless-meta="kommentare.off"}
+
+:::: {style="background-color: #9affa4"}
+\@mrossde 
+
+::::
+:::
+    
+  ::: {.content-visible when-profile="kommentare"}
+    
+  :::: {style="background-color: #9affa4"}
+    \@mrossde 
+
+  ::::
+  :::
+

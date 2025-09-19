@@ -71,6 +71,7 @@ Um Ziele [SMART](https://de.wikipedia.org/wiki/SMART_(Projektmanagement)) zu for
 ```{mermaid}
 %%| label: fig-label-mmsmart
 %%| fig-cap: "Anforderungen an SMARTe Ziele"
+%%| echo: false
 %%{init: {'theme': 'forest'}}%%
 mindmap
   root((SMARTe Ziele))

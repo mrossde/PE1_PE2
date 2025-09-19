@@ -47,7 +47,7 @@ Link zum Download:
 
 ::: {.callout-caution}
 ## Lasten- und Pflichtenheft
-Eine in der Praxis kontrovers diskutierte Frage ist, ob ein Lasten- und Pflichtenheft per se Raum für Anpassungen und Änderungen lassen sollte, um auf unvorhergesehene Entwicklungen im Projektverlauf reagieren zu können. Für beide Sichtweisen gibt es gute Argumente, die Frage scheint nicht eineindeutig zu beantworten.
+Eine in der Praxis kontrovers diskutierte Frage ist, ob ein Lasten- und Pflichtenheft per se Raum für Anpassungen und Änderungen lassen sollte, um auf unvorhergesehene Entwicklungen im Projektverlauf reagieren zu können. Für beide Sichtweisen gibt es gute Argumente, die Frage scheint nicht eineindeutig beantwortbar zu sein.
 :::
 
 Organisatorische Vorgaben, wie z.B. eine Zuweisung von Verantwortlichkeiten und Ressourcen für die Entwicklung, Abnahme und Vermarktung des Produkts sind **nicht Bestandteil** von Lasten- oder Pflichtenheft. Diese Fragen zur Organisation des Produktentstehungsprozesses werden im Rahmen des Projektmanagements beantwortet.

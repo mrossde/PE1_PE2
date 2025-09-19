@@ -73,7 +73,7 @@ mindmap
             [Werfen]
             [Loslassen]
         [Flugphase]
-    [Projetmanagement]
+    [Projektmanagement]
 ```
 
 
@@ -100,7 +100,9 @@ Um erfolgreich eine Mindmap zu erstellen, gibt es einige wichtige Dinge zu beach
 
 ::: {.callout-tip}
 ## Das Tool ist Nebensache!
-Mindmaps sollen die Kreativität beflügeln und das gegenseitige inspirieren zu neuen Gedanken unterstützen. **Das bei diesem Prozess verwendete (Software-)tool ist dabei Nebensache.** Eine Whiteboard, farbige Stifte und ein Schwamm haben sich in der Praxis für einen ersten Aufschlag einer Mindmap gerade bei Arbeiten im Team schon oft als wesentlich Leistungsfähiger als mächtige Softwarewerkzeuge erwiesen. Geübte Anwender können hingegen gerade in Einzelarbeit mit ihnen bekannten Softwarewerkzeugen gute Ergebnisse erzielen. Übung ist bei beiden Herangehensweisen ein wesentlicher Schlüssel zum Erfolg!
+Mindmaps sollen die Kreativität beflügeln und das gegenseitige inspirieren zu neuen Gedanken unterstützen. **Das bei diesem Prozess verwendete (Software-)tool ist dabei Nebensache.** Eine Whiteboard, farbige Stifte und ein Schwamm haben sich in der Praxis für einen ersten Aufschlag einer Mindmap gerade bei Arbeiten im Team schon oft als wesentlich Leistungsfähiger als mächtige Softwarewerkzeuge erwiesen. 
+
+Geübte Anwender können hingegen gerade in Einzelarbeit mit ihnen bekannten Softwarewerkzeugen gute Ergebnisse erzielen. Übung ist bei beiden Herangehensweisen ein wesentlicher Schlüssel zum Erfolg!
 :::
 
 

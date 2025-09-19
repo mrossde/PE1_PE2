@@ -116,6 +116,15 @@ kommentare:
 ## Konzeptentwicklung und Entscheidungsfindung
 
     {{< include Lasten-_und_Pflichtenheft.qmd >}}
+
+    ::: {.content-visible unless-meta="kommentare.off"}
+
+    :::: {style="background-color: #9affa4"}
+    ggf. woanders hinverschieben? logisch nicht korrekte Reihenfolge
+
+    ::::
+    :::
+
     {{< include Produktdokumentation.qmd >}}
     {{< include Mindmap.qmd >}}
     {{< include Bewertungsmatrix.qmd >}}
