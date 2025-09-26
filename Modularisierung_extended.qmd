@@ -260,7 +260,7 @@ flowchart TD
 
 
 ::: {.callout-warning}
-Das Zerlegen eines Systems in Module ist keine einfache Aufgabe. Ein einzelnes Systeme kann auf viele verschiedene Weisen Modularisiert werden. Nicht alle entstehenden Lösungen helfen dabei, die oben genannten Vorteile (u.a. klare Strukturierung, Wartbarkeit und Wiederverwendbarkeit) zu realisieren. 
+Das Zerlegen eines Systems in Module ist keine einfache Aufgabe. Ein einzelnes Systeme kann auf viele verschiedene Weisen modularisiert werden. Nicht alle entstehenden Lösungen helfen dabei, die oben genannten Vorteile (u.a. klare Strukturierung, Wartbarkeit und Wiederverwendbarkeit) zu realisieren. 
 :::
 
 
@@ -283,7 +283,7 @@ Beim Zerlegen eines Systems in Module gibt es einige [Best Practices](https://de
 8. **Dokumentation bereitstellen**: Dokumentieren Sie die Schnittstellen, Funktionen und Verantwortlichkeiten jedes Moduls, um anderen Entwicklern zu helfen, die Funktionsweise der Module, letztlich aber auch die Funktionsweise des aus den Modulen aufgebauten Gesamtsystems zu verstehen.
 
 
-### Modularisierung und Hierarchisierung
+### Hierarchisierung
 
 ::: {.callout-tip}
 ## Definition: *"Hierarchisierung"*
@@ -297,17 +297,17 @@ Dieser Prozess ermöglicht eine klare Strukturierung und Ordnung, wodurch komple
 %%| label: fig-label-hierarchisierung
 %%| fig-cap: "Beispiel für die Hierarchie der einzelnen Quarto-Dokumente (Module) dieses Skripts, gegliedert in drei Hierarchieebenen: Ebene 1: Hauptmodule - Ebene 2: Module - Ebene 3: Submodule"
 flowchart TD
-  id1[Skript zur Vorlesung] --> id2[# Hauptkapitel 1]
-  id1 --> id5[# Hauptkapitel 2]
-  id1 --> id6[# Hauptkapitel n]
-  id2 --> id3[## Kapitel 1.1]
-  id2 --> id7[## Kapitel 1.2]
-  id2 --> id9[## Kapitel 1.n]
-  id3 --> id4[### Unterkapitel 1.1.1]
-  id3 --> id8[### Unterkapitel 1.1.2]
-  id3 --> id10[### Unterkapitel 1.1.n]
-  id5 --> id11[## Kapitel 2.n]
-  id7 --> id12[### Unterkapitel 1.2.n]
+  id1[Skript zur Vorlesung] --> id2[Hauptkapitel 1]
+  id1 --> id5[Hauptkapitel 2]
+  id1 --> id6[Hauptkapitel n]
+  id2 --> id3[Kapitel 1.1]
+  id2 --> id7[Kapitel 1.2]
+  id2 --> id9[Kapitel 1.n]
+  id3 --> id4[Unterkapitel 1.1.1]
+  id3 --> id8[Unterkapitel 1.1.2]
+  id3 --> id10[Unterkapitel 1.1.n]
+  id5 --> id11[Kapitel 2.n]
+  id7 --> id12[Unterkapitel 1.2.n]
  ```
 
 Hierarchisierung wird verwendet, um komplexe Systeme zu modellieren, Daten zu organisieren oder organisatorische Strukturen zu definieren. Die Modularisierung ist dabei die Voraussetzung für die Hierarchisierung.
