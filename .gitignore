@@ -1,35 +1,20 @@
-# python generated files
-__pycache__/
-*.py[oc]
-build/
-dist/
-wheels/
-*.egg-info
-
-# pycharm / intellij
-/.idea/
-
 # virtual environment, managed by rye / poetry / ...
+/.env
 /.venv
+
+# build folders of quarto
+**/*_files
 /.quarto
+/quarto-build/
+/release/
+*.quarto_ipynb
+
+# uv specific files
+*.lock
 
 # autogen cache
 /.cache/
 
-# monkeytype db
-/monkeytype.sqlite3
-
-
-# env, secrets
-/.env
-
-# project-specific:
-.DS_Store
-
-/.quarto/
-
-# html previews
-#.html
 
 #Excel temporary files
 ~$*
@@ -37,32 +22,27 @@ wheels/
 # Power Point temporary files
 .~lock.*
 
+
+# pycharm / intellij
+/.idea/
+
+# project-specific:
+.DS_Store
+
 # drawio tmp files
 *.drawio.bkp
 .bkp
 
-# build folders of quarto revealjs
-**/*_files
-
-# C extensions
+# generated or compiled files
+__pycache__/
 *.so
+*.a
+*.pth
+*.pkl
 
 # Jupyter Notebook
 .ipynb_checkpoints
 
-# Uebungs Dateien die beim Ausführen der Präsentation entstehen
-serialized_data.*
-00 Inhalte/serialized_data.json
-00_Inhalte/VL03/ORG/Images/
 
-# Lecture Files
-*.pth
-*.pkl
-*.json
-
-#rye .lock files
-*.lock
-
-# quarto ergebnisse / compiles
-*.html
-*.pdf
+/.quarto/
+/.vscode/
