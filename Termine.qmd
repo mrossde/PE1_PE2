@@ -6,9 +6,9 @@ format:
     embed-resources: true
 
 author:
-  - name: "Christian Anders"
+  - name: "Mario Roßdeutscher"
     roles: "Dozent"
-    email: christian.anders@hs-esslingen.de
+    email: mario.rossdeutscher@hs-esslingen.de
     affiliation: 
       - name: "Hochschule Esslingen"
         department: "Wirtschaft & Technik"
@@ -18,12 +18,12 @@ author:
         country: "Deutschland"
         url: https://www.hs-esslingen.de/
 abstract: > 
-  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2025/2026
 keywords:
   - Terminplanung
   - Zeitplanung
 copyright: 
-  holder: Christian Anders
+  holder: Mario Roßdeutscher
   year: 2025
 lang: de
 bibliography: Literatur.bib
@@ -38,19 +38,6 @@ link-external-icon: true
 link-external-newwindow: true
 ---
 
-
-<!-- -------------------------------------------------------------------------
-
-                       Callout !!! WARNING !!!
-
--------------------------------------------------------------------------- -->
-<!--
-::: {.callout-warning}
-## WARNING!
-**THIS DOCUMENT IS WORK IN PROGRESS!!!**
-:::
--->
-
 <!-- -------------------------------------------------------------------------
 
                        Termine Wintersemester 2024/2025 DEB3
@@ -58,6 +45,8 @@ link-external-newwindow: true
 -------------------------------------------------------------------------- -->
 
 ### Aktuelle Informationen
+
+<!-- -------------------------------------------------------------------------
 
 ::: {.callout-tip}
 ## Noten DE3.PRO1-V3 in HE-Online ab Freitag, 31.01.2025 EoB
@@ -69,11 +58,14 @@ Die Noten der Klausur DE3.PRO1-V3 vom 20.01.2025 sind ab **Freitag, 31.01.2025 E
 ## Termin zur Prüfungseinsicht DE3.PRO1-V3
 Zur Vereinbarung eines individuellen Termins zur Prüfungseinsicht melden Sie sich bitte per Mail ([christian.anders@hs-esslingen.de](mailto:christian.anders@hs-esslingen.de)).
 :::
+-------------------------------------------------------------------------- -->
 
 
+### Termine zur [Vorlesung](https://moodle.hs-esslingen.de/moodle/course/view.php?id=32955) im 25WS
 
-### Termine zur [Vorlesung](https://moodle.hs-esslingen.de/moodle/course/view.php?id=32955) im Wintersemester 2024/2025
+<!--
 
+CA 24WS
 +-------------+------------+---------------------------------------------------------------------+
 | Vorlesung   | Labor      | Inhalt                                                              |
 +=============+============+=====================================================================+
@@ -107,11 +99,37 @@ Zur Vereinbarung eines individuellen Termins zur Prüfungseinsicht melden Sie si
 +-------------+------------+---------------------------------------------------------------------+
 | 20.01.2025  |            | **Prüfung** (20.01.2025, 14.oo - 15.3o h, Raum G02.110)             | 
 +-------------+------------+---------------------------------------------------------------------+
-
 : Termine der Vorlesungen und Labore im Wintersemester 2024/2025 {#tbl-terminess24 .striped .hover .bordered tbl-colwidths="[15,15,70]"}
 
 
-### Gantt-Diagramm zur Vorlesung im Wintersemester 2024/2025
+-->
+
+| Vorlesung             | Labor                  | Inhalt                                                              |
+|:----------------------|:-----------------------|:--------------------------------------------------------------------|
+| 29.09.2025<br>(SW 1)  |                        | Warm Welcome & Organisatorisches                                    |
+| 06.10.2025<br>(SW 2)  |                        | Modelle zum Produktentstehungsprozess, Projekt, SMARTe Ziele        |
+| 13.10.2025<br>(SW 3)  |                        | Technology-Hype-Cycle, Gantt-Diagramme, SI-Einheiten                |
+|                        | 20.10.2025<br>(SW 4)  | **Labor** "Flyer", Lasten- und Pflichtenheft, Mindmap, Reifegrade   |
+| 27.10.2025<br>(SW 5)  |                        | Softskills, PWT, Moore's Law, Beispiel Apple A17 Pro, Famous Laws   |
+|                        | 03.11.2025<br>(SW 6)  | **Labor** "Magnetpendel", Euler-Verfahren, FE-Sim., Log. Gleichung  |
+| 10.11.2025<br>(SW 7)  |                        | Reverse Engineering, 3D-Master, Betriebsfestigkeit, Bruchtheorie    |
+| 17.11.2025<br>(SW 8)  |                        | NVH, PPG, Rule-of-10, Vorgehen zur Umweltqualifizierung, EMV        |
+|                        | 24.11.2025<br>(SW 9)  | **Labor** "Earthlander Teil 1"                                      |
+| 01.12.2025<br>(SW 10) |                        | Qualität, KVP, SPC, PDCA, 8D-Methode, Ishikawa-Diagramm, 5-Why      |
+|                        | 08.12.2025<br>(SW 11) | **Labor** "Earthlander Teil 2"                                      |
+|                       | 15.12.2025<br>(SW 12)  | **Labor** Logistik, Produktionsplanung, TPS, Kaizen, JIT-JIS, Kanban    |
+| 22.12.2025<br>(SW 13) |                        | Prüfungsvorbereitung (in Präsenz, TN empfohlen)                     |
+| 12.01.2026<br>(SW 14) |                        | Prüfungsvorbereitung (online via Webex, TN empfohlen)               |
+| 19.01.2026<br>(SW 15) |                        | **Reserve**                                                         |
+| tbd       <br>        |                        | **Prüfung** (tbd, 14.oo - 15.3o h, Raum G02.110)                    |
+: Termine der Vorlesungen und Labore im 25WS {#tbl-terminess24 .striped .hover .bordered tbl-colwidths="[15,15,70]"}
+
+
+### Gantt-Diagramm zur Vorlesung (24WS)
+
+<!--
+CA 24 WS 
+
 
 ```{mermaid}
 %%| fig-width: 
@@ -150,6 +168,113 @@ title Gantt-Diagramm zur Vorlesung "Produktentwicklung 1"
     Prüfung (20.01.2025 14.oo - 15.3o h, Raum G02.110): done, p1, after t10, 30m
     Korrektur (Noten sind ab 31.01. in HE-Online verfügbar) : done, t11, after p1, 90m
     ENDE des Semesters : done, milestone, m3, after t11, 0m
+```
+
+
+
+Mario - mit Terminen (Achse unten nicht lesbar) 24 WS 
+
+
+```{mermaid}
+%%| label: fig-gnt-vorl-ws25
+%%| fig-cap: "Gantt-Diagramm zur Vorlesung PE1 im Wintersemester 2025/2026 (Aktivitäten dauern bis zum nächsten Termin)"
+gantt
+    title Gantt-Diagramm zur Vorlesung "Produktentwicklung 1" (WS 2025/2026)
+    dateFormat  YYYY-MM-DD
+    axisFormat  %d.%m.%Y
+    todayMarker off
+
+    section Semester
+    START des Semesters                       : milestone, m1, 2025-09-29, 0d
+
+    section Welcome
+    Vorlesung 1 (29.09.)                      : v1,  2025-09-29, 2025-10-06
+
+    section Grundlagen
+    Vorlesung 2 (06.10.)                      : v2,  2025-10-06, 2025-10-13
+    Vorlesung 3 (13.10.)                      : v3,  2025-10-13, 2025-10-20
+
+    section Ideenfindung & Konzept
+    Labor 1 "Flyer" (20.10.)                  : l1,  2025-10-20, 2025-10-27
+    Vorlesung 4 (27.10.)                      : v4,  2025-10-27, 2025-11-03
+
+    section Entwurf & Entwicklung
+    Labor 2 "Magnetpendel" (03.11.)           : l2,  2025-11-03, 2025-11-10
+    Vorlesung 5 (10.11.)                      : v5,  2025-11-10, 2025-11-17
+    Vorlesung 6 (17.11.)                      : v6,  2025-11-17, 2025-11-24
+
+    section Prototyping & Test
+    Labor 3 "Earthlander 1" (24.11.)          : l3,  2025-11-24, 2025-12-01
+    Vorlesung 7 (01.12.)                      : v7,  2025-12-01, 2025-12-08
+    Labor 4 "Earthlander 2" (08.12.)          : l4,  2025-12-08, 2025-12-15
+    Labor 5 "Logistik/Prod./TPS" (15.12.)     : l5,  2025-12-15, 2025-12-22
+
+    section Prüfungsvorbereitung
+    Vorbereitung (22.12.)                     : pv1, 2025-12-22, 2026-01-12
+    Vorbereitung (12.01.)                     : pv2, 2026-01-12, 2026-01-19
+
+    section Reserve & Prüfung
+    Reserve (19.01., SW15)                    : v15, 2026-01-19, 2026-01-26
+    Pufferwoche (eine Woche nach SW15)        : pw,  2026-01-26, 2026-02-02
+    Prüfung (tbd, 14.oo–15.3o, G02.110)       : milestone, px, 2026-02-02, 0d
+
+    section Semester
+    ENDE des Semesters                        : milestone, m3, after px, 0d
+
+```
+
+-->
+
+```{mermaid}
+%%| label: fig-gnt-vorl-ws25-units
+%%| fig-cap: "Gantt-Diagramm zur Vorlesung PE1 im Wintersemester 2025/2026 (1 Zeiteinheit = 4×45 min ≙ 1 Doppelblock)"
+gantt
+title Gantt-Diagramm zur Vorlesung "Produktentwicklung 1"
+    dateFormat HH:mm
+    axisFormat %H
+    todayMarker off
+
+    section Semester
+    START des Semesters                          : done, milestone, m1, 00:00, 0m
+
+    section Welcome
+    Vorlesung 1 (29.09.)                         : done, v1,  after m1, 1h
+
+    section Grundlagen
+    Vorlesung 2 (06.10.)                         : done, v2,  after v1, 1h
+    Vorlesung 3 (13.10.)                         : done, v3,  after v2, 1h
+
+    section Ideenfindung und Konzept
+    Labor 1 "Flyer" (20.10.)                     : done, l1,  after v3, 90m
+    Vorlesung 4 (27.10.)                         : done, v4,  after l1, 1h
+
+    section Entwurf und Entwicklung
+    Labor 2 "Magnetpendel" (03.11.)              : done, l2,  after v4, 90m
+    Vorlesung 5 (10.11.)                         : done, v5,  after l2, 1h
+    Vorlesung 6 (17.11.)                         : done, v6,  after v5, 1h
+
+    section Prototyping und Test
+    Labor 3 "Earthlander Teil 1" (24.11.)        : done, l3,  after v6, 90m
+    Vorlesung 7 (01.12.)                         : done, v7,  after l3, 1h
+    Labor 4 "Earthlander Teil 2" (08.12.)        : done, l4,  after v7, 90m
+
+    section Produktionsplanung und Produktion
+    Labor "Logistik/Prod./TPS" (15.12.)          : done, l5,  after l4, 90m
+
+    section Prüfungsvorbereitung
+    Prüfungsvorbereitung (22.12.)                : done, pv1, after l5, 1h
+    Jahreswechsel 2025/2026                      : done, milestone, m2, after pv1, 0m
+    Prüfungsvorbereitung (12.01.)                : done, pv2, after m2, 1h
+
+    section Reserve & Prüfung
+    Reserve (19.01., SW15)                       : done, rs,  after pv2, 1h
+    Pufferwoche (eine Woche nach SW15)           : done, pw,  after rs, 1h
+    Prüfung (tbd, 14.00–15.30, G02.110)          : done, p1,  after pw, 30m
+    Korrektur (Notenabgabe/Veröffentlichung)     : done, kor, after p1, 90m
+
+    section Semester
+    ENDE des Semesters                           : done, milestone, m3, after kor, 0m
+
 ```
 
 <!--
