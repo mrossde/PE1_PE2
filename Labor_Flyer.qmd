@@ -254,11 +254,10 @@ title Gantt-Diagramm der Projektphasen zum Prototyp und Test des Flyers
                        Aufgaben: Entwicklung und Prototyp des Flyers
 
 -------------------------------------------------------------------------- -->
+
 ## Übung: Entwicklung und Prototyp des Flyers
 
 {{< include Aufgabe_Entwicklung_Flyer.qmd >}}
-
-
 
 
 <!-- -------------------------------------------------------------------------
@@ -266,7 +265,9 @@ title Gantt-Diagramm der Projektphasen zum Prototyp und Test des Flyers
                        Aufgaben: Test des Flyers
 
 -------------------------------------------------------------------------- -->
+
 ## Übung: Test des Flyers
+
 {{< include Aufgabe_Test_Flyer.qmd >}}
 
 

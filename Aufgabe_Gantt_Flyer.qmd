@@ -71,7 +71,7 @@ link-external-newwindow: true
 Vorgaben:
 
 - Nehmen Sie sich hierzu die Zeit, die Sie benötigen und sich geben wollen, mindestens jedoch 10 Minuten.
-- Nutzen Sie zur Erstellung des Gantt-Diagramms Medien Ihrer Wahl (z.B. PC, Tablet, Powerpoint, Mermaid, ...) 
+- Nutzen Sie zur Erstellung des Gantt-Diagramms Medien Ihrer Wahl (z.B. PC, Tablet, Powerpoint, [Mermaid](https://mermaid.live/), [Ganttproject](https://www.ganttproject.biz/), ...) 
 
 ---
 
@@ -98,3 +98,13 @@ Leitfragen:
 - Welche Abnahmekriterien erfüllt sein müssen um den Papierflieger als Erfolg zu werten?
 -->
 :::
+
+::: {.content-visible when-profile="wip-profile"}
+::: {.callout-tip collapse="true"}
+## Lösung
+
+nicht vorhanden - RS CA
+
+
+:::
+::::
