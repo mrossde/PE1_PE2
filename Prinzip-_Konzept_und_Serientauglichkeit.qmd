@@ -13,13 +13,7 @@ bibliography: Literatur.bib
 
 -------------------------------------------------------------------------- -->
 
-::: {.content-visible unless-meta="kommentare.off"}
 
-:::: {style="background-color: #9affa4"}
-HIER WEITERMACHEN
-
-::::
-:::
 
 ### Reifegrad {#sec-reifegrad}
 

@@ -112,6 +112,14 @@ Zu den Eigenschaften von Produkten, die durch die verwendeten Werkstoffe und die
     + **Transparenz und Opazität**: Wie viel Licht ein Werkstoff - abhängig von der Wellenlänge des Lichts - durchlässt oder absorbiert.
     + **Reflexions- und Brechungsindex**: Wie Licht auf der Oberfläche eines Werkstoffs - abhängig von der Wellenlänge des Lichts - reflektiert oder gebrochen wird.
 
+::: {.content-visible unless-meta="kommentare.off"}
+
+:::: {style="background-color: #9affa4"}
+HIER WEITERMACHEN
+
+::::
+:::
+
 5. **Isotropie/Anisotropie**:
 
 ::: {.callout-warning}
