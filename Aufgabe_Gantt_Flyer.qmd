@@ -97,14 +97,5 @@ Leitfragen:
 - Welche Ressourcen zum Bau des Papierfliegers verwendet werden sollen? 
 - Welche Abnahmekriterien erfüllt sein müssen um den Papierflieger als Erfolg zu werten?
 -->
-:::
-
-::: {.content-visible when-profile="wip-profile"}
-::: {.callout-tip collapse="true"}
-## Lösung
-
-nicht vorhanden - RS CA
-
 
 :::
-::::

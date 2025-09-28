@@ -63,9 +63,6 @@ bibliography: Literatur.bib
 
 -------------------------------------------------------------------------- -->
 
-::: {.callout-tip}
-## Lastenheft Flyer (Dauer tbd. min)
-
 Ein Lastenheft für einen Papierflieger sollte eine detaillierte Beschreibung der Anforderungen und Spezifikationen enthalten, um sicherzustellen, dass das endgültige Produkt die Erwartungen erfüllt. 
 
 Zu den Inhalten, die in einem Lastenheft enthalten sein sollten, gehören:
@@ -107,6 +104,3 @@ Ebenso wichtig wie die Inhalte, die in einem Lastenheft enthalten sein sollten, 
 5. **Ungenügende Informationen**: Das Lastenheft sollte alle erforderlichen Informationen enthalten, um die Entwicklung des Papierfliegers zu ermöglichen. Fehlende oder unvollständige Angaben könnten zu Problemen während des Entwicklungsprozesses führen.
 
 6. **Nicht relevante Details**: Das Lastenheft sollte sich auf die wesentlichen Anforderungen konzentrieren und irrelevante Details vermeiden, die die Entwicklung des Produkts unnötig komplizieren könnten.
-
-:::
-  

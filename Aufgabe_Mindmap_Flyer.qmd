@@ -50,20 +50,6 @@ link-external-icon: true
 link-external-newwindow: true
 -->
 
-<!-- 
-::: {.callout-warning}
-## WARNING!
-**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
-:::
--->
-
-<!-- 
-::: {.callout-warning}
-## WARNING!
-**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
-:::
--->
-
 <!-- -------------------------------------------------------------------------
 
  Labor "Flyer" - Aufgabe Mindmap Anforderungen
@@ -95,11 +81,13 @@ Mögliche Leitfragen:
 <!-- Vielleicht kann auch ChatGPT wertvolle Anregungen bieten?-->
 
 **b)** Wenn Sie in einer Zweiergruppe arbeiten stellen Sie sich die Mindmaps gegenseitig vor und versuchen Sie neue Gedanken und Ideen durch Abgleich der Mindmaps zu gewinnen. Vielleicht entdecken Sie ja in anderen Mindmaps Ideen, die Ihre eigene Arbeit nochmals bereichern!
+
 :::
 
 ::: {.callout-caution}
 ## Tipp!
 Versuchen Sie, Mindmaps nicht als einen Wettbewerb zu sehen, bei dem das Prinzip *"Schneller! Höher! Weiter!"* gilt. Versuchen Sie stattdessen, Ihre Kreativität und Kompetenz zu nutzen und offen zu sein für Ihre Ideen! Bringen Sie Ihre Ideen immer wieder mit ins Brainstorming ein! Versuchen Sie, die Arbeiten mit Mindmaps auch später in der beruflichen Praxis nicht zu einem bloßen Kreativitätsritual verkommen zu lassen. Gute, zukunftsfähige Lösungen brauchen kreative Ideen und Menschen die den Mut haben, die solche Ideen auch auszusprechen!
+
 :::
 
 > "*Be brave! You'll never know who you might inspire!" (Quelle: Unbekannt)*

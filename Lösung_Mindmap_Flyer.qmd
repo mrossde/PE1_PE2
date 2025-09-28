@@ -14,21 +14,14 @@ number-sections: false
 scrollable: true
 ---
 
-<!-- 
-::: {.callout-warning}
-## WARNING!
-**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
-:::
--->
-
- <!-- -------------------------------------------------------------------------
+<!-- -------------------------------------------------------------------------
 
                        Lösung Mindmap Flyer
 
 -------------------------------------------------------------------------- -->
 
 ::: {.callout-tip}
-## Mindmap Flyer (Dauer 20 min)
+## Lösung Mindmap Flyer (Dauer 20 min)
 
 Je nach vorgesehenem Verwendungszweck des Papierfliegers ergeben sich sehr unterschiedliche Anforderungen, z.B. hinsichtlich verwendetem Material, Größe und Bauform, Flugeigenschaften und deren Beeinflussbarkeit, optischem Design, Baubarkeit, **p**roduktionsgerechter **P**rodukt**g**estaltung (PPG), Handhabung und Befestigung, usw., die es zu im Detail zu erarbeiten gilt! 
 
@@ -90,4 +83,4 @@ mindmap
   + **Politische Protestaktion:** Nutze Papierflieger als Symbol für den Frieden oder für politische Veränderungen. Organisiere eine Aktion, bei der Menschen Flugblätter mit politischen Forderungen oder Botschaften auf Papierfliegern in die Luft steigen lassen.
 
 :::
-  
+ 

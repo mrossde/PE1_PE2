@@ -63,7 +63,7 @@ link-external-newwindow: true
 
 -------------------------------------------------------------------------- -->
 
-::: {#nte-testflyer .callout-note}
+:::{#nte-testflyer .callout-note}
 ## Abnahmetest Flyer (Dauer max. 5 min)
 
 **Aufgabe** Führen Sie den Abnahmetest des von Ihnen gebauten Prototyp des Flyers durch!
@@ -73,4 +73,5 @@ Leitfragen:
 - Erfüllt der Flyer die zuvor im Lastenheft festgelegten Anforderungen? 
 - Wie stellen Sie fest, ob die Anforderungen erfüllt werden?
 - Wenn einzelne Anforderungen nicht erfüllt werden: Wie hoch schätzen Sie den Aufwand ein, den Flyer weiterzuentwickeln, dass er die noch fehlenden Anforderungen erfüllt? Genügen kleinere Anpassungen, oder ist eine Neuentwicklung erforderlich?
+
 :::

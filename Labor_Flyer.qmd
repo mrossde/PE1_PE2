@@ -1,45 +1,4 @@
----
-title: "DEB3 Produktentwicklung 1"
-resource-path: ["../images"]
-format:
-  html:
-    embed-resources: true
 
-author:
-  - name: "Christian Anders"
-    roles: "Dozent"
-    email: christian.anders@hs-esslingen.de
-    affiliation: 
-      - name: "Hochschule Esslingen"
-        department: "Wirtschaft & Technik"
-        group: "Digital Engineering (DEB)"
-        city: "Esslingen am Neckar"
-        postal-code: 73728
-        country: "Deutschland"
-        url: https://www.hs-esslingen.de/
-abstract: > 
-  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
-keywords:
-  - Produktentwicklung
-  - Ideenfindung
-  - Konzeptentwicklung
-  - Labor
-  - Flyer
-copyright: 
-  holder: Christian Anders
-  year: 2024
-lang: de
-bibliography: Literatur.bib
-date: last-modified
-toc: false
-number-sections: false
-scrollable: true
-toc-location: right-body
-cap-location: bottom
-number-offset: 0
-link-external-icon: true
-link-external-newwindow: true
----
 
 <!-- -------------------------------------------------------------------------
 
@@ -50,6 +9,7 @@ link-external-newwindow: true
 # Labor "Flyer"
 
 ![Projekt Flyer (Quelle: Adobe Stock)](images/ProjectFlyer.jpeg){width=100% #fig-labflyer}
+
 
 <!-- -------------------------------------------------------------------------
 
@@ -130,13 +90,23 @@ Mission-Statements gehen aber auch eine Ebene kleiner und können zu einer wertv
 ![Symboldbild Papierflieger (Quelle: Adobe Stock)](images/PaperAirplane.jpeg){width=80% #fig-labpaperairplane}
 -->
 
-<p style="text-align: center;">
-![](images/PaperAirplane.jpeg){width=80%}
-</p>
+![Projekt Flyer (Quelle: Adobe Stock)](images/PaperAirplane.jpeg){width=80% fig-align="center"}
+
 
 ## Übung: Gantt-Diagramm zum Entwicklungsprojekt "Flyer"
 
 {{< include Aufgabe_Gantt_Flyer.qmd >}}
+
+::: {.content-visible when-profile="wip-profile"}
+
+::: {.callout-tip collapse="true"}
+## Lösung
+
+nicht vorhanden - RS CA
+
+
+:::
+:::
 
 <!-- 
 ACHTUNG!!! Mermaid-Grafiken zum Gantt-Diagramm werden in der Quarto-Preview nicht dargestellt, erscheinen nach dem Compilieren aber im Dokument. Zur Vorschau der Gantt-Charts sei auf den Mermaid-Live-Editor verwiesen
@@ -161,25 +131,17 @@ title Gantt-Diagramm eines ersten Entwurfs zum Ablauf des Labors des Flyers
 ```
 -->
 
-
-<!-- -------------------------------------------------------------------------
-
-                       Theorieblock: Mindmap
-
--------------------------------------------------------------------------- -->
-
-<!-- include Mindmap.qmd -->
-
-
-<!-- -------------------------------------------------------------------------
-
-                       Aufgaben: Mindmap Anforderungen 
-
--------------------------------------------------------------------------- -->
 ## Übung: Mindmap der Anforderungen
 
 {{< include Aufgabe_Mindmap_Flyer.qmd >}}
 
+
+::: {.content-visible when-profile="wip-profile"}
+
+{{< include Lösung_Mindmap_Flyer.qmd >}}
+
+
+:::
 
 <!-- -------------------------------------------------------------------------
 
@@ -198,6 +160,16 @@ title Gantt-Diagramm eines ersten Entwurfs zum Ablauf des Labors des Flyers
 
 {{< include Aufgabe_Lastenheft_Flyer.qmd >}}
 
+::: {.content-visible when-profile="wip-profile"}
+::: {.callout-tip collapse="true"}
+## Lastenheft Flyer (Dauer tbd. min)
+
+{{< include Lösung_Lastenheft_Flyer.qmd >}}
+
+
+:::
+:::
+
 <!-- -------------------------------------------------------------------------
 
                        Aufgaben: Lastenheft Flyer
@@ -206,6 +178,15 @@ title Gantt-Diagramm eines ersten Entwurfs zum Ablauf des Labors des Flyers
 ## Übung: Entwicklungsmethodik zum Flyer
 
 {{< include Aufgabe_Entwicklungsmethodik_Flyer.qmd >}}
+
+::: {.content-visible when-profile="wip-profile"}
+::: {.callout-tip collapse="true"}
+## Lösung
+
+RS CA
+
+:::
+:::
 
 <!-- -------------------------------------------------------------------------
 
@@ -259,6 +240,14 @@ title Gantt-Diagramm der Projektphasen zum Prototyp und Test des Flyers
 
 {{< include Aufgabe_Entwicklung_Flyer.qmd >}}
 
+::: {.content-visible when-profile="wip-profile"}
+::: {.callout-tip collapse="true"}
+## Lösung
+
+RS CA -  Ergebniserwartung aufschreiben
+
+:::
+:::
 
 <!-- -------------------------------------------------------------------------
 
@@ -276,6 +265,14 @@ title Gantt-Diagramm der Projektphasen zum Prototyp und Test des Flyers
 *“If you can't measure it, you can't manage it.”* (Peter F. Drucker)
 :::
 
+::: {.content-visible when-profile="wip-profile"}
+::: {.callout-tip collapse="true"}
+## Lösung
+
+RS CA - Erwartungen Abnahmetest?
+
+:::
+:::
 
 <!-- -------------------------------------------------------------------------
 
@@ -286,3 +283,9 @@ title Gantt-Diagramm der Projektphasen zum Prototyp und Test des Flyers
 
 {{< include Aufgabe_Dokumentation_Flyer.qmd >}}
 
+::: {.content-visible when-profile="wip-profile"}
+
+{{< include Lösung_Dokumentation_Flyer.qmd >}}
+
+
+:::
