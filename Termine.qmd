@@ -106,7 +106,7 @@ CA 24WS
 
 | Vorlesung             | Labor                  | Inhalt                                                              |
 |:----------------------|:-----------------------|:--------------------------------------------------------------------|
-| 29.09.2025<br>(SW 1)  |                        | Warm Welcome & Organisatorisches                                    |
+| 29.09.2025<br>(SW 1)  |                        | Warm Welcome & Organisatorisches, Grundlagen                  |
 | 06.10.2025<br>(SW 2)  |                        | Modelle zum Produktentstehungsprozess, Projekt, SMARTe Ziele        |
 | 13.10.2025<br>(SW 3)  |                        | Technology-Hype-Cycle, Gantt-Diagramme, SI-Einheiten                |
 |                        | 20.10.2025<br>(SW 4)  | **Labor** "Flyer", Lasten- und Pflichtenheft, Mindmap, Reifegrade   |
