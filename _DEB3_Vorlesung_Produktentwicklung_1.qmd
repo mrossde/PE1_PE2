@@ -8,9 +8,9 @@ format:
     embed-resources: true
 
 author:
-  - name: "Christian Anders"
+  - name: "Mario Rossdeutscher"
     roles: "Dozent"
-    email: christian.anders@hs-esslingen.de
+    email: mario.rossdeutscher@hs-esslingen.de
     affiliation: 
       - name: "Hochschule Esslingen"
         department: "Wirtschaft & Technik"
@@ -20,7 +20,7 @@ author:
         country: "Deutschland"
         url: https://www.hs-esslingen.de/
 abstract: > 
-  Skript zur Vorlesung *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+  Skript zur Vorlesung *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
 keywords:
   - Produktentstehungsprozess
   - Entwicklungsmethodik
@@ -40,13 +40,13 @@ link-external-newwindow: true
 
 headlines:
   off: true
+kommentare: 
+  off : false
 exercises:
   solutions:
   off: true
 worksheets:
   off: true
-kommentare:
-  off: false
 
 ---
 

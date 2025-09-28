@@ -1,8 +1,6 @@
 project:
-  type: book
-  output-dir: quarto-build
-  pre-render: 
-  - setup.py
+  type: website
+  output-dir: release
 lang: de
 
 format: 
@@ -36,12 +34,5 @@ profile:
 
 ######################
 
-book:
-  title: "PRODUKTENTWICKLUNG 1"
-  author: "Christian Anders"
-  date: "2024-02-01"
-  chapters:
-    - index.qmd
-    - intro.qmd
-    - references.qmd
-    - pruefung.qmd
+#  pre-render: 
+#  - setup.py

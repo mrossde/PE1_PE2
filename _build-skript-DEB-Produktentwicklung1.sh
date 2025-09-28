@@ -3,3 +3,6 @@
 
 quarto render Labor_Flyer.qmd --to html --profile release-profile,wip-profile -o DEB-PE1-Labor01-Flyer.html
 
+quarto render _DEB3_Vorlesung_Produktentwicklung_1.qmd --to html --profile release-profile,wip-profile -o DEB-PE1-Labor01-Skript.html
+
+quarto render Einleitung_zur_Vorlesung.qmd --to html --profile release-profile -o Einleitung_zur_Vorlesung.html

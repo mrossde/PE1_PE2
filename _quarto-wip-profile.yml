@@ -1,2 +1,8 @@
+project:
+  type: website
+  output-dir: release
+
 kommentare: 
   off : false
+headlines:
+  off: true
