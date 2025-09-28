@@ -1,7 +1,40 @@
 project:
   type: book
-
+  output-dir: quarto-build
+  pre-render: 
+  - setup.py
 lang: de
+
+format: 
+  html:
+    self-contained: false
+    code-overflow: wrap
+    code-fold: true
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+lightbox: true
+search: false
+
+toc: true
+toc-title: "Table of Contents"
+toc-float: true 
+toc-depth: 4 
+
+##number-sections: true
+
+link-external-newwindow: true
+link-external-icon: true
+
+bibliography: references.bib
+
+profile:
+  group: 
+    - [python-profile, cpp-profile, release-profile, wip-profile]
+  default: release-profile
+
+######################
 
 book:
   title: "PRODUKTENTWICKLUNG 1"
@@ -12,11 +45,3 @@ book:
     - intro.qmd
     - references.qmd
     - pruefung.qmd
-
-bibliography: references.bib
-
-format:
-  html:
-    theme: cosmo
-  pdf:
-    documentclass: scrreprt
