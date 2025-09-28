@@ -6,9 +6,9 @@ format:
     embed-resources: true
 
 author:
-  - name: "Christian Anders"
+  - name: "Mario Rossdeutscher"
     roles: "Dozent"
-    email: christian.anders@hs-esslingen.de
+    email: mario.rossdeutscher@hs-esslingen.de
     affiliation: 
       - name: "Hochschule Esslingen"
         department: "Wirtschaft & Technik"
@@ -38,13 +38,6 @@ number-offset: 0
 link-external-icon: true
 link-external-newwindow: true
 ---
-
-<!-- 
-::: {.callout-warning}
-## WARNING!
-**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
-:::
--->
 
 # DEB3 Produktentwicklung 1
 

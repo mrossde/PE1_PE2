@@ -83,7 +83,9 @@ In diesem Kapitel geht es um Vorschläge zur Zusammenarbeit in den Vorlesungen u
 ## Zusammenarbeit
 
 
-{{< include Dozent.qmd >}}
+<!-- {{< include DozentCA.qmd >}} -->
+
+{{< include DozentMR.qmd >}}
 
 
 ### Unser Team
@@ -107,7 +109,7 @@ graph TD;
     --> |Vorlesung| Lab2[Projekt 2]
     --> |Vorlesung| Lab3[Projekt 3]
     --> |Vorbereitung| Ende[Prüfung]
-    --> |5 ECS| Bestanden[SUCCESS!!! Kurs erfolgreich bestanden!]
+    --> |5 ECTS| Bestanden[SUCCESS!!! Kurs erfolgreich bestanden!]
     --> |Nächstes Semester|DEB4
 
     A[Start]
@@ -261,8 +263,8 @@ Ihr Dozent ist gerne für Sie erreichbar! Bitte kommen Sie zum Zweck einer Termi
 
 + Am Rande der Vorlesung/Labor (vor oder nach der Vorlesung/Labor; in den Pausen)
 + Wenn Sie mich am Standort Göppingen sehen
-+ Montags, Raum G 01.108 (jederzeit; aber leider keine Garantie auf Anwesenheit)
-+ **Tipp**: → Terminvereinbarung per [E-Mail](christian.anders@hs-esslingen.de)!
++ Raum G 04.204 (jederzeit; aber leider keine Garantie auf Anwesenheit)
++ **Tipp**: → Terminvereinbarung per [E-Mail](mario.rossdeutscher@hs-esslingen.de)!
 
 ### Arbeitsaufwand und Prüfungen
 + Vorlesungen = 3 ECTS

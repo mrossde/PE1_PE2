@@ -1,0 +1,19 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+### Ihr Dozent
+Kurzvorstellung Mario Roßdeutscher
+
+![Mario Roßdeutscher an der Hochschule Esslingen, 2024](images/Mario_Rossdeutscher.png){width=34% #fig-Mario_Rossdeutscher}
+
++ *1984
++ 2003 Abitur
++ 2003 - 2008 Studium des Maschinenbaus ([BTU Cottbus](https://www.b-tu.de/)) (Dipl.-Ing.)
++ 2008 - 2011 Promotion (Dr.-Ing.) ([BTU Cottbus](https://www.b-tu.de/), [Mercedes-Benz AG](https://www.mercedes-benz.de/)) (*""*)
++ 2007 - 2021 [Mercedes-Benz AG](https://www.mercedes-benz.de/) (Betriebsingenieur CoC Robotertechnik, Koordination Ersatzteilplanung Werk Berlin, Teamleiter *"Systemtechnik Bahnschweißen"*, Teamleiter *"Datenanalyse & KI Powertrain"*)
++ seit 2021 Professor Automatisierungstechnik & digitale Technologien [HS Esslingen](https://www.hs-esslingen.de/) 
