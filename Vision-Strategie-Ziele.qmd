@@ -92,7 +92,7 @@ number-offset:
 +----------------------------------------------+----------------+
 | Strategie *(„Wie wollen wir es erreichen?“)* | 3 – 5 Jahre    |
 +----------------------------------------------+----------------+
-| Ziele *(„Wie machen wir es messbar?“)*       | 1 Jahr         |
+| Ziele *("vorstellbarer, messbarer Zustand?“)*| 1 Jahr         |
 +----------------------------------------------+----------------+
 | Werkzeuge *(„Womit machen wir es?“)*         | bei Bedarf     |
 +----------------------------------------------+----------------+
@@ -118,6 +118,9 @@ number-offset:
 ::: {.callout-caution}
 ## Pro-Tipp!
 Je **einfacher** und **klarer** und **attraktiver** eine Vision ist desto besser!
+
+Die Vision ist emotional verankert und **Treibstofflieferant** für die Erbringung von Anstrengungen zur Erreichung von Zielen.
+
 :::
 
 
@@ -154,13 +157,13 @@ Als [Ziel](https://de.wikipedia.org/wiki/Ziel) wird ein Soll-Zustand bezeichnet,
 
 ::: {.content-visible unless-meta="kommentare.off"}
 
-:::: {style="background-color: #9affa4"}
+::: {style="background-color: #9affa4"}
 \@mrossde 
 
 1. Def prüfen und in einzelne Datei
 2. Abgleich mit PPT für Abschlussarbeiter und Integration hier
 
-::::
+:::
 :::
 
 :::

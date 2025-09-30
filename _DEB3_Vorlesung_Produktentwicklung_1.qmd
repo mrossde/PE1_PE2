@@ -38,16 +38,16 @@ cap-location: bottom
 link-external-icon: true
 link-external-newwindow: true
 
+
 headlines:
   off: true
 kommentare: 
-  off : false
+  off : true
 exercises:
   solutions:
   off: true
 worksheets:
   off: true
-
 ---
 
 <!-- -------------------------------------------------------------------------
@@ -62,41 +62,33 @@ worksheets:
 ![](images/blank.png){width=8%}
 
 
-::: {.content-visible unless-meta="kommentare.off"}
-
-:::: {style="background-color: #9affa4"}
-\@mrossde Nummerierung -> einzelne header in jeder Datei entfernen
-
-::::
-:::
-
 # Grundlagen {#sec-grundlagen}
   {{< include Grundlagen_Produktentwicklung.qmd >}}
 
 ## Technische Grundlagen
 
-    {{< include SI-Einheiten.qmd >}}
-    {{< include Werkstofftechnik.qmd >}}
-    {{< include DIN8580.qmd >}}
+  {{< include SI-Einheiten.qmd >}}
+  {{< include Werkstofftechnik.qmd >}}
+  {{< include DIN8580.qmd >}}
 
 ## Methodische Grundlagen
 
-    {{< include Vision-Strategie-Ziele.qmd >}}
-    {{< include SMART.qmd >}}
-    {{< include gap_gain-konzept.qmd >}}
+  {{< include Vision-Strategie-Ziele.qmd >}}
+  {{< include SMART.qmd >}}
+  {{< include gap_gain-konzept.qmd >}}
 
 ## Projektmanagement
 
-    {{< include Projekt.qmd >}}
-    {{< include Projekt-Arbeit.qmd >}}
-    {{< include Gantt.qmd >}}
-    {{< include Kritischer_Pfad.qmd >}}
-    {{< include Meilenstein.qmd >}}
-    {{< include Projektmanagement_Magisches_Dreieck.qmd >}}
-    {{< include Projektmanagement_Reporting.qmd >}}
-    {{< include Controlling.qmd >}}
-    {{< include Zielhierarchie.qmd >}}
-    {{< include Projektmanagement_Haertegradlogik.qmd >}}
+  {{< include Projekt.qmd >}}
+  {{< include Projekt-Arbeit.qmd >}}
+  {{< include Gantt.qmd >}}
+  {{< include Kritischer_Pfad.qmd >}}
+  {{< include Meilenstein.qmd >}}
+  {{< include Projektmanagement_Magisches_Dreieck.qmd >}}
+  {{< include Projektmanagement_Reporting.qmd >}}
+  {{< include Controlling.qmd >}}
+  {{< include Zielhierarchie.qmd >}}
+  {{< include Projektmanagement_Haertegradlogik.qmd >}}
 
 
 <!-- -------------------------------------------------------------------------
@@ -117,13 +109,13 @@ worksheets:
 
     {{< include Lasten-_und_Pflichtenheft.qmd >}}
 
-    ::: {.content-visible unless-meta="kommentare.off"}
+::: {.content-visible unless-meta="kommentare.off"}
 
-    :::: {style="background-color: #9affa4"}
-    ggf. woanders hinverschieben? logisch nicht korrekte Reihenfolge
+:::: {style="background-color: #9affa4"}
+ggf. woanders hinverschieben? logisch nicht korrekte Reihenfolge
 
-    ::::
-    :::
+::::
+:::
 
     {{< include Produktdokumentation.qmd >}}
     {{< include Mindmap.qmd >}}
@@ -153,13 +145,13 @@ worksheets:
 
 ## NVH
 
-    {{< include NVH.qmd >}}
+  {{< include NVH.qmd >}}
 
 ## Kostenbeeinflussung im Produktentstehungsprozess
 
-    {{< include Kosten_im_Produktentstehungsprozess.qmd >}}
-    {{< include Rule-of-10.qmd >}}
-    {{< include PPG.qmd >}}
+  {{< include Kosten_im_Produktentstehungsprozess.qmd >}}
+  {{< include Rule-of-10.qmd >}}
+  {{< include PPG.qmd >}}
 
 
 <!-- -------------------------------------------------------------------------

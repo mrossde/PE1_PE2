@@ -1,33 +1,123 @@
 ---
-format:
-  html:
-    embed-resources: true
-lang: de
 bibliography: Literatur.bib
 ---
 
-<!-- -------------------------------------------------------------------------
-
-                       Gap & Gain Konzept
-
--------------------------------------------------------------------------- -->
-
-::: {.content-visible unless-meta="headlines.off"}
-# Grundlagen
-## Methodische Grundlagen
-:::
 
 ### The Gap & Gain Concept {#sec-gapgain}
 
-::: {.content-visible unless-meta="kommentare.off"}
+![Hinter den 7 Bergen - bei den 7 Zwergen...](images/gapgain-B1.png){width=100% fig-cap="Eine Visualisierung des Gap & Gain Konzepts." #fig-gapgain-b1}
 
-:::: {style="background-color: #9affa4"}
-\@mrossde 
 
-0. Ziele und Smart und Vision -> Effekte und Folgen bei nicht richtiger pers. Anwendung -> Grund für Gap+Gain Konzept in Kombination
-1. Konzept beschreiben
-2. Literatur einbauen
-3. kleine Übung am Ende -> Thematik pos. Psychologie
+```{mermaid}
+%%| label: fig-label-communication
+%%| fig-cap: "Der Gap im Kopf."
+sequenceDiagram
+    actor Alice
+    actor John
+    Alice->>John: John - hier ist es wunderschön 😍, lass uns eine Pause machen.
+    John-->>Alice: Ja - das stimmt, aber hinter dem Berg ist es noch viel schöner!
+    Note over Alice,John: Einer ist im Gap-Modus
+    John-->>Alice: Wenn wir erstmal hinter diesem Berg sind, wirst du sehen was ich meine! 
+    Alice->>John: Na gut 😐- dir zu Liebe komme Ich mit.
 
-::::
+```
+
+####  Was ist Gap-Denken (Lücke) und Gain-Denken (Gewinn)?^[@hardy_gap_2021]
+
+**Gap**-Denken bedeutet, nach vorne zu messen – sich mit zukünftigen Zielen zu vergleichen. Laut den [Autoren Hardy & Sullivan](https://portal.kobv.de/uid.do?query=kobvindex_ZLB34869709&index=internal&plv=2) ist diese Denkweise ungesund, da ein psychologisches Phänomen greift: Selbst wenn ein Ziel erreicht wird, fühlt man sich oft unbefriedigt und beginnt sofort, dem nächsten nachzujagen. 
+
+::: {.callout-important appearance="simple"}
+## Folgen für Geist + Körper
+
+**Gap**-Denken beeinflusst nicht nur das momentane Selbstbild, sondern auch langfristig Gesundheit und Wohlbefinden. Der Druck, noch nicht das „ideale Selbst“ erreicht zu haben, erzeugt Stress und Mikrotraumata.
+
+:::
+
+**Gain**-Denken bedeutet, rückwärts zu messen – den aktuellen Stand mit dem eigenen früheren Selbst zu vergleichen. Die Autoren empfehlen diesen Ansatz, da die Vergangenheit feststeht. Man misst den Fortschritt also an etwas Realem und Faktischem, nicht an einem idealisierten Bild. Das gibt ein stärkeres Gefühl von Erfolg.
+
+::: {.callout-tip appearance="simple"}
+## Folgen für Geist + Körper
+
+Studien zeigen, dass positives Denken therapeutische Vorteile für den Körper bringt und das allgemeine psychische Wohlbefinden verbessert.
+
+:::
+
+::: {.callout-caution}
+## Pro-Tipp!
+
+Verschiebe deinen Fokus: weg von dem, was fehlt (**Gap**), hin zu dem, was bereits erreicht wurde (**Gain**). 
+
+:::
+
+**Beispiele**
+
+- **Gap:** Ein Ziel wie regelmäßige Bewegung wird erreicht (2 Spaziergänge täglich, 4 Workouts pro Woche). Statt Zufriedenheit folgt der Vergleich mit Fitness-Influencern, wodurch man sich wieder zurückgesetzt fühlt. 
+
+
+- **Gain:** Erinnerung daran: „Ich habe mich verbessert. Ich habe Fortschritt gemacht.“ Die Ziele bleiben, aber die bisherigen Schritte werden neutral beobachtet, gwewürdigt und wertgeschätzt.
+
+**Reflektionsfragen**
+
+- Fühlst du dich oft, als wärst du „noch nicht dort“? → **Gap**  
+- Fokus eher auf dem, was fehlt, als auf dem, was getan wurde? → **Gap**  
+- Vergleichst du dich öfter mit anderen als mit deinem früheren Selbst? → **Gap**  
+- Feierst du Fortschritte, egal wie klein? → **Gain**  
+- Misst du Wachstum daran, wie weit du schon gekommen bist? → **Gain**  
+- Motiviert dich deine eigene Verbesserung und deine Werte? → **Gain**
+
+
+#### persönliche Konsequenzen von Gap Verhalten^[siehe @covey_7_2010]
+
+> Es gibt zwei Gewohnheiten, die uns innerlich langsam auffressen. Sie sind Zwillinge und heißen **Konkurrieren** und **Vergleichen** . Wenn sie ihr Unwesen treiben, ist **Gewinn/Gewinn-Denken praktisch unmöglich**.
+
+![Konkurrieren und Vergleichen - die bösartigen Zwillinge^[@covey_7_2010, S. 207]](images/gapgain-B2.png){width=50% fig-cap="Die bösartigen Zwillinge" #fig-gapgain-zwillinge}
+
+Konkurrenz nichts Schlechtes. Wettbewerb ist ein Basisbaustein der Wirtschaft und Sport. Baut man aber auf Konkurrenzgedanken seinen Selbstwert - ist das **extrem schädlich**.
+
+> Sein Leben darauf aufzubauen, wie gut man im Vergleich zu anderen abschneidet, ist keine Basis für ein gesundes Selbstwertgefühl. 
+
+#### Wie kommt man zum Gain-Denken?
+
+Gains - „Gewinn-Denken“ bedeutet, rückwärts zu messen – den aktuellen Stand mit dem eigenen früheren Selbst zu vergleichen.
+
+Mit der Gewinn-Einstellung wird **Motivation intrinsisch**. Das frühere Selbst dient als **persönlicher Referenzpunkt** für die gewünschte Wirkung. Durch die Fokussierung auf das, was wirklich wichtig ist, und auf das eigene Wachstum, festigt sich eine positive Denkweise.  
+
+#### Übung 1 - Fragenbeantwortung für Gain-Denken
+
+Fragen jeden Tag beantworten:  
+
+-  Was sind 3 Erfolge von heute?  
+-  Worin habe ich mich in den letzten 30 Tagen verbessert?  
+-  Welche Lektion habe ich heute gelernt?  
+-  Welchen Fortschritt habe ich erreicht, von dem ich früher nur geträumt habe?  
+-  Was habe ich heute besser gemeistert als früher?  
+
+Diese Fragen trainieren das Gehirn, Wachstum und Lernen zu erkennen – auch an schwierigen Tagen. Rückschläge lassen sich durch **Gain**-Denken reframen: „Was hat mich das gelehrt?“ So wird aus Fehlern Schwung.
+
+#### Übung 2 - Tägliche 3 Erfolge messen
+
+Die Stunde vor dem Schlafengehen ist ein mentaler „Sweet Spot“. Anstatt diese Zeit für **Gap**-Denken zu nutzen:  
+
+-  Notiere 3 Erfolge des Tages.  
+-  Formuliere 3 Ziele für morgen.  
+
+So endet der Tag mit **Dankbarkeit** und der nächste beginnt klar und zielgerichtet.
+
+::: {.callout-caution}
+## Pro-Tipp!
+
+Machen Sie mit einer Vertrauten Person eine Whatsapp-Gruppe (o.ä.), in der Sie täglich die 3 Gains des Tages senden. 
+
+```{mermaid}
+%%| label: fig-label-3gains
+%%| fig-cap: "Whatsapp Gruppe 3 Gains"
+sequenceDiagram
+    actor Ich
+    actor Freund
+    Ich->>Freund: Gains 30.09.2025:<br> 1. spazieren gewesen <br> 2. was spannendes in der Vorlesung gelernt <br> 3. mit Freundin Zeit verbracht
+    Freund-->>Ich: Gains 30.09.2025:<br> 1. im Urlaub ausgeschlafen <br> 2. Schwimmen im Meer <br> 3. Sport gemacht
+
+```
+
+
 :::

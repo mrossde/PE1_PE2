@@ -57,6 +57,9 @@ exercises:
   off: true
 worksheets:
   off: true
+kommentare:
+  off: true
+  
 ---
 
 <!-- -------------------------------------------------------------------------
