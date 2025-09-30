@@ -117,12 +117,12 @@ CA 24WS
 |                        | 24.11.2025<br>(SW 9)  | **Labor** "Earthlander Teil 1"                                      |
 | 01.12.2025<br>(SW 10) |                        | Qualität, KVP, SPC, PDCA, 8D-Methode, Ishikawa-Diagramm, 5-Why      |
 |                        | 08.12.2025<br>(SW 11) | **Labor** "Earthlander Teil 2"                                      |
-|                       | 15.12.2025<br>(SW 12)  | **Labor** Logistik, Produktionsplanung, TPS, Kaizen, JIT-JIS, Kanban    |
-| 22.12.2025<br>(SW 13) |                        | Prüfungsvorbereitung (in Präsenz, TN empfohlen)                     |
+| 15.12.2025<br>(SW 12) |                        | Logistik, Produktionsplanung, TPS, Kaizen, JIT-JIS, Kanban          |
+| 07.01.2025<br>(SW 13) |                        | Prüfungsvorbereitung (in Präsenz, TN empfohlen)                     |
 | 12.01.2026<br>(SW 14) |                        | Prüfungsvorbereitung (online via Webex, TN empfohlen)               |
 | 19.01.2026<br>(SW 15) |                        | **Reserve**                                                         |
 | tbd       <br>        |                        | **Prüfung** (tbd, 14.oo - 15.3o h, Raum G02.110)                    |
-: Termine der Vorlesungen und Labore im 25WS {#tbl-terminess24 .striped .hover .bordered tbl-colwidths="[15,15,70]"}
+: Termine der Vorlesungen und Labore im 25WS {#tbl-terminess25 .striped .hover .bordered tbl-colwidths="[15,15,70]"}
 
 
 ### Gantt-Diagramm zur Vorlesung (24WS)
@@ -162,7 +162,7 @@ title Gantt-Diagramm zur Vorlesung "Produktentwicklung 1"
     Vorlesung 8 (09.12.): done, t8, after l4, 1h
     section Prüfungsvorbereitung
     Prüfungsvorbereitung (16.12.) : done, t9, after t8, 1h
-    Jahreswechsel 2024/2025 : done, milestone, m2, after t9, 0m
+    Jahreswechsel 2025/2026 : done, milestone, m2, after t9, 0m
     Prüfungsvorbereitung (13.01.) : done, t10, after m2, 1h
     section Prüfung
     Prüfung (20.01.2025 14.oo - 15.3o h, Raum G02.110): done, p1, after t10, 30m
@@ -234,10 +234,8 @@ title Gantt-Diagramm zur Vorlesung "Produktentwicklung 1"
     axisFormat %H
     todayMarker off
 
-    section Semester
+    section Semesterbeginn
     START des Semesters                          : done, milestone, m1, 00:00, 0m
-
-    section Welcome
     Vorlesung 1 (29.09.)                         : done, v1,  after m1, 1h
 
     section Grundlagen
@@ -259,20 +257,17 @@ title Gantt-Diagramm zur Vorlesung "Produktentwicklung 1"
     Labor 4 "Earthlander Teil 2" (08.12.)        : done, l4,  after v7, 90m
 
     section Produktionsplanung und Produktion
-    Labor "Logistik/Prod./TPS" (15.12.)          : done, l5,  after l4, 90m
+    Vorlesung 8 (15.12.)                         : done, l5,  after l4, 90m
 
     section Prüfungsvorbereitung
-    Prüfungsvorbereitung (22.12.)                : done, pv1, after l5, 1h
+    Prüfungsvorbereitung (07.01.)                : done, pv1, after l5, 1h
     Jahreswechsel 2025/2026                      : done, milestone, m2, after pv1, 0m
     Prüfungsvorbereitung (12.01.)                : done, pv2, after m2, 1h
 
     section Reserve & Prüfung
     Reserve (19.01., SW15)                       : done, rs,  after pv2, 1h
-    Pufferwoche (eine Woche nach SW15)           : done, pw,  after rs, 1h
-    Prüfung (tbd, 14.00–15.30, G02.110)          : done, p1,  after pw, 30m
-    Korrektur (Notenabgabe/Veröffentlichung)     : done, kor, after p1, 90m
-
-    section Semester
+    Prüfung (tbd, 14.00–15.30, G02.110)          : done, p1,  after rs, 30m
+    Korrektur (Noten-Veröffentlichung)           : done, kor, after p1, 2h
     ENDE des Semesters                           : done, milestone, m3, after kor, 0m
 
 ```
