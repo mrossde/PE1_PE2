@@ -316,7 +316,7 @@ Eine Messung ist der experimentelle Vorgang, durch den ein spezieller Wert einer
 ::: {.content-visible unless-meta="kommentare.off"}
 
 :::: {style="background-color: #9affa4"}
-\@mrossde Def prüfen und in einzelne Datei
+\@mrossde Ein Nugget Messtechnik zusammenbasteln aus TDE: Bild + Messgerät / Messeinrichtung/ Messwert und hier dann einbinden -> direkt ins lecture-all Repo
 
 ::::
 :::
