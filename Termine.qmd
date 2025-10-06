@@ -106,9 +106,9 @@ CA 24WS
 
 | Vorlesung             | Labor                  | Inhalt                                                              |
 |:----------------------|:-----------------------|:--------------------------------------------------------------------|
-| 29.09.2025<br>(SW 1)  |                        | Warm Welcome & Organisatorisches, Grundlagen                  |
-| 06.10.2025<br>(SW 2)  |                        | Modelle zum Produktentstehungsprozess, Projekt, SMARTe Ziele        |
-| 13.10.2025<br>(SW 3)  |                        | Technology-Hype-Cycle, Gantt-Diagramme, SI-Einheiten                |
+| 29.09.2025<br>(SW 1)  |                        | Warm Welcome                , Grundlagen                  |
+| 06.10.2025<br>(SW 2)  |                        | Grundlagen                                                |
+| 13.10.2025<br>(SW 3)  |                        | Grundlagen +                 |
 |                        | 20.10.2025<br>(SW 4)  | **Labor** "Flyer", Lasten- und Pflichtenheft, Mindmap, Reifegrade   |
 | 27.10.2025<br>(SW 5)  |                        | Softskills, PWT, Moore's Law, Beispiel Apple A17 Pro, Famous Laws   |
 |                        | 03.11.2025<br>(SW 6)  | **Labor** "Magnetpendel", Euler-Verfahren, FE-Sim., Log. Gleichung  |
@@ -118,8 +118,8 @@ CA 24WS
 | 01.12.2025<br>(SW 10) |                        | Qualität, KVP, SPC, PDCA, 8D-Methode, Ishikawa-Diagramm, 5-Why      |
 |                        | 08.12.2025<br>(SW 11) | **Labor** "Earthlander Teil 2"                                      |
 | 15.12.2025<br>(SW 12) |                        | Logistik, Produktionsplanung, TPS, Kaizen, JIT-JIS, Kanban          |
-| 07.01.2025<br>(SW 13) |                        | Prüfungsvorbereitung (in Präsenz, TN empfohlen)                     |
-| 12.01.2026<br>(SW 14) |                        | Prüfungsvorbereitung (online via Webex, TN empfohlen)               |
+| 05.01.2025<br>fällt aus <br>(SW 13) |                        |                                                       |
+| 12.01.2026<br>(SW 14) |                        | Prüfungsvorbereitung (in Präsenz, TN empfohlen)                     |
 | 19.01.2026<br>(SW 15) |                        | **Reserve**                                                         |
 | tbd       <br>        |                        | **Prüfung** (tbd, 14.oo - 15.3o h, Raum G02.110)                    |
 : Termine der Vorlesungen und Labore im 25WS {#tbl-terminess25 .striped .hover .bordered tbl-colwidths="[15,15,70]"}
@@ -260,8 +260,7 @@ title Gantt-Diagramm zur Vorlesung "Produktentwicklung 1"
     Vorlesung 8 (15.12.)                         : done, l5,  after l4, 90m
 
     section Prüfungsvorbereitung
-    Prüfungsvorbereitung (07.01.)                : done, pv1, after l5, 1h
-    Jahreswechsel 2025/2026                      : done, milestone, m2, after pv1, 0m
+    Jahreswechsel 2025/2026                      : done, milestone, m2, after l5, 0m
     Prüfungsvorbereitung (12.01.)                : done, pv2, after m2, 1h
 
     section Reserve & Prüfung

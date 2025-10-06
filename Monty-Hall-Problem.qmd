@@ -3,8 +3,6 @@ format:
   html:
     embed-resources: true
     code-fold: true
-execute: 
-  echo: true
 jupyter: python3
 jupyterlite: true
 lang: de

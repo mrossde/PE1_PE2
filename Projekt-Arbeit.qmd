@@ -81,6 +81,14 @@ AKV ist ein [Akronym](https://de.wikipedia.org/wiki/Akronym) aus Begriffen **A**
 *„Verantwortung ist nicht teilbar.“*
 :::
 
+::: {.content-visible unless-meta="kommentare.off"}
+
+:::: {style="background-color: #9affa4"}
+Hier noch eine Beispieltabelle AKV einfügen und am Beispiel erklären...
+RISC oder AKV entscheiden
+
+::::
+:::
 
 oder doch? Siehe die um sich greifende [Verantwortungsdiffusion](https://de.wikipedia.org/wiki/Verantwortungsdiffusion).
 
