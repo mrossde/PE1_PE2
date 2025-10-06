@@ -2,12 +2,15 @@
 title: "DEB3 Produktentwicklung 1"
 format:
   html:
+    theme: cosmo
+    mermaid:
+      theme: default
     embed-resources: true
 
 author:
-  - name: "Christian Anders"
+  - name: "Mario Rossdeutscher"
     roles: "Dozent"
-    email: christian.anders@hs-esslingen.de
+    email: mario.rossdeutscher@hs-esslingen.de
     affiliation: 
       - name: "Hochschule Esslingen"
         department: "Wirtschaft & Technik"
@@ -37,7 +40,7 @@ keywords:
   - Härtegradlogik
 copyright: 
   holder: Christian Anders
-  year: 2024
+  year: 2025
 lang: de
 bibliography: Literatur.bib
 date: last-modified
@@ -46,20 +49,20 @@ number-sections: true
 scrollable: true
 toc-location: right
 cap-location: bottom
-number-offset: 0
 link-external-icon: true
 link-external-newwindow: true
 
+
 headlines:
   off: true
+kommentare: 
+  off : true
 exercises:
   solutions:
   off: true
 worksheets:
   off: true
-kommentare:
-  off: true
-  
+
 ---
 
 <!-- -------------------------------------------------------------------------
@@ -68,25 +71,30 @@ kommentare:
 
 -------------------------------------------------------------------------- -->
 
-# Grundlagen
+# Grundlagen {#sec-grundlagen}
   {{< include Grundlagen_Produktentwicklung.qmd >}}
 
 ## Technische Grundlagen
-    {{< include SI-Einheiten.qmd >}}
-    {{< include Werkstofftechnik.qmd >}}
-    {{< include DIN8580.qmd >}}
+
+  {{< include SI-Einheiten.qmd >}}
+  {{< include Werkstofftechnik.qmd >}}
+  {{< include DIN8580.qmd >}}
 
 ## Methodische Grundlagen
-    {{< include Vision-Strategie-Ziele.qmd >}}
-    {{< include SMART.qmd >}}
+
+  {{< include Vision-Strategie-Ziele.qmd >}}
+  {{< include SMART.qmd >}}
+  {{< include gap_gain-konzept.qmd >}}
 
 ## Projektmanagement
-    {{< include Projekt.qmd >}}
-    {{< include Gantt.qmd >}}
-    {{< include Kritischer_Pfad.qmd >}}
-    {{< include Meilenstein.qmd >}}
-    {{< include Projektmanagement_Magisches_Dreieck.qmd >}}
-    {{< include Projektmanagement_Reporting.qmd >}}
-    {{< include Controlling.qmd >}}
-    {{< include Zielhierarchie.qmd >}}
-    {{< include Projektmanagement_Haertegradlogik.qmd >}}
+
+  {{< include Projekt.qmd >}}
+  {{< include Projekt-Arbeit.qmd >}}
+  {{< include Gantt.qmd >}}
+  {{< include Kritischer_Pfad.qmd >}}
+  {{< include Meilenstein.qmd >}}
+  {{< include Projektmanagement_Magisches_Dreieck.qmd >}}
+  {{< include Projektmanagement_Reporting.qmd >}}
+  {{< include Controlling.qmd >}}
+  {{< include Zielhierarchie.qmd >}}
+  {{< include Projektmanagement_Haertegradlogik.qmd >}}

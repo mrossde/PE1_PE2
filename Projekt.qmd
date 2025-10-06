@@ -118,17 +118,6 @@ Ein Ziel ist ein angestrebter Zustand oder ein gewünschtes Ergebnis, das eine P
 > *"Ziele sind Ursachen, die in der Zukunft liegen."*
 
 
-::: {.content-visible unless-meta="kommentare.off"}
-
-:::: {style="background-color: #9affa4"}
-\@mrossde Bild mit Boot hier rein / auf Innitiierungsphase abgleichen
-weiterhin -> Boot fährt erst los, wenn Projektauftrag erteilt ist
-Auftraggeber ist am ufer und sitzt nicht im Boot und steuert. 
-sonst ist der Projektleiter nutzlos/ machtlos
-
-::::
-:::
-
 Projektziele sind die konkreten, messbaren Ergebnisse oder Leistungen, die ein Projekt erreichen soll. Im Gegensatz zu Meilensteinen, die wichtige Zeitpunkte oder Phasen während der Projektumsetzung markieren, beschreiben Projektziele die angestrebten Endresultate oder den gewünschten Zustand, der durch das Projekt erreicht werden soll.
 
 Projektziele geben die Richtung und den Zweck des Projekts vor und definieren die Erfolgskriterien, anhand derer der Projektfortschritt bewertet wird. Sie sind spezifisch, messbar, erreichbar, relevant und zeitgebunden (SMART-Kriterien). Typischerweise werden Projektziele zu Beginn des Projekts festgelegt und dienen als Leitfaden für die Planung, Ausführung und Bewertung des Projekts.
@@ -206,6 +195,14 @@ a) **Durchführung**: In dieser Phase werden die im Plan festgelegten Aufgaben d
 a) **Abschluss**: Sobald alle Ziele erreicht sind und das Projekt erfolgreich abgeschlossen ist, oder aber von Seiten des Managements der Abbruch des Projekts beschlossen wird, wird es offiziell beendet. Der Projektabschluss beinhaltet die Übergabe von Ergebnissen an den Auftraggeber, das Erstellen eines Projektberichts, das Dokumentieren von Lernpunkten und - bei erfolgreichem Projektabschluss und meist im Rahmen eines feierlichen Abschlussevents - das Feiern von Erfolgen. Auch die abschließende Bewertung des Projekts hinsichtlich seiner Effektivität und Effizienz gehört zu dieser Phase.
 
 a) **Projektcontrolling**: Während des gesamten Projekts wird in einem nebenläufigen Prozess der Fortschritt überwacht, um sicherzustellen, dass er den geplanten Zielen und Zeitplänen entspricht. Änderungen im Projektumfang, Risiken oder Ressourcen werden identifiziert und bewertet. Anpassungen werden vorgenommen, um bestmöglich sicherzustellen, dass das Projekt erfolgreich abgeschlossen werden kann. Bei massiven Abweichungen zwischen Projektplanung und tatsächlicher Entwicklung des Projekts können Projekte auch jederzeit abgebrochen werden.
+
+![Klare Rolleneinhaltung bei Projektinitiierung / Projektdurchführung zw. Projektleiter und Projektauftraggeber](images/Projektmanagement_Boot.png){width=100% #fig-boot}
+
+<!-- auf Innitiierungsphase abgleichen
+Boot fährt erst los, wenn Projektauftrag erteilt ist
+Auftraggeber ist am ufer und sitzt nicht im Boot und steuert, sonst ist der Projektleiter nutzlos/ machtlos
+
+-->
 
 #### Phasen bei der Projektdurchführung
 
