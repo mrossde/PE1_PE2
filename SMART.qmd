@@ -78,7 +78,7 @@ mindmap
     (Spezifisch)
     (Messbar)
     (Attraktiv)
-    (Relevant)
+    (Realistisch)
     (Terminiert)
 ```
 
@@ -87,9 +87,9 @@ mindmap
 
 2. **Messbar (Measurable)**: Es muss möglich sein, den Fortschritt und das Erreichen des Ziels anhand quantitativer oder qualitativer Kriterien zu messen.
 
-3. **Attraktiv/Erreichbar (Achievable)**: Das Ziel soll anspruchsvoll sein, aber dennoch realistisch und erreichbar, basierend auf den verfügbaren Ressourcen und Fähigkeiten.
+3. **Attraktiv (Appropriate)**: Das Ziel soll für die Person/Organisation ansprechend bzw. erstrebenswert sein, was durch einen Sinn dahinter erreicht wird, um die gewünschten Wirkungen zu erreichen.
 
-4. **Relevant (Relevant)**: Das Ziel muss mit den übergeordneten Zielen und der langfristigen Vision der Organisation in Einklang stehen.
+4. **Realistisch (Realistic)**: Das Ziel muss mit den übergeordneten Zielen und der langfristigen Vision der Organisation in Einklang stehen.
 
 5. **Terminiert/Zeitgebunden (Time-bound)**: Es ist wichtig, einen klaren Zeitrahmen oder ein Fälligkeitsdatum festzulegen, um sicherzustellen, dass das Ziel innerhalb eines bestimmten Zeitraums erreicht wird.
 
