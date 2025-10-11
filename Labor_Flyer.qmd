@@ -34,6 +34,7 @@ scrollable: true
 ![Projekt Flyer (Quelle: Adobe Stock)](images/ProjectFlyer.jpeg){width=100% #fig-labflyer}
 
 
+
 <!-- -------------------------------------------------------------------------
 
                        CALLOUT PRÄMISSEN
@@ -52,7 +53,7 @@ scrollable: true
                        CALLOUT LERNZIELE
 
 -------------------------------------------------------------------------- -->
-<!--
+
 ::: { .callout-note}
 ## Lernziele
 - Phasen der Produktentwicklung verstehen
@@ -60,9 +61,27 @@ scrollable: true
 - Konzeptphase erleben.
 - Bedeutung des Lastenhefts erleben
 - Prototyp und Test "Was man nicht messen kann kann man nicht optimieren"
-- Spaß haben, Erfolg erleben und eine gute Zeit haben
+
+```{mermaid}
+%%| label: fig-label-wz-flyer
+%%| fig-cap: "Werkzeuge im Labor Flyer"
+flowchart TD
+
+  E[Entwicklungsmodell]
+  B[Gantt-Zeitplan]
+  C[Mindmap]
+  A[Lastenheft]
+  D[Dokumentation]
+  
+
+  classDef gelb fill:#FFEB3B,stroke:#000,stroke-width:1.5px,color:#000;
+  class A,B,C,D,E gelb;
+
+```
+
+
 :::
--->
+
 
 <!-- -------------------------------------------------------------------------
 
@@ -125,7 +144,7 @@ Mission-Statements gehen aber auch eine Ebene kleiner und können zu einer wertv
 ::: {.callout-tip collapse="true"}
 ## Lösung
 
-nicht vorhanden - RS CA
+nicht vorhanden
 
 
 :::
@@ -206,7 +225,8 @@ title Gantt-Diagramm eines ersten Entwurfs zum Ablauf des Labors des Flyers
 ::: {.callout-tip collapse="true"}
 ## Lösung
 
-RS CA
+Hier geht es um die Argumentation für den jew. Modellen.
+Keine Lösung vorgegeben.
 
 :::
 :::
@@ -267,7 +287,7 @@ title Gantt-Diagramm der Projektphasen zum Prototyp und Test des Flyers
 ::: {.callout-tip collapse="true"}
 ## Lösung
 
-RS CA -  Ergebniserwartung aufschreiben
+individuell nach Entwicklungsziel.
 
 :::
 :::
@@ -292,7 +312,13 @@ RS CA -  Ergebniserwartung aufschreiben
 ::: {.callout-tip collapse="true"}
 ## Lösung
 
-RS CA - Erwartungen Abnahmetest?
+Abnahmetest soll:
+
+- Reproduzierbarkeit
+- Quantifizierbarkeit
+- Bei positivem Testergebnis - Sicherstellung der Anforderungserfüllung
+
+gewährleisten.
 
 :::
 :::
