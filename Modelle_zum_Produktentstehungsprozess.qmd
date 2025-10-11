@@ -150,7 +150,7 @@ Sowohl beim Wasserfallmodell als auch beim V-Modell sollte nach jedem abgeschlos
 
 ![Vergleich der ersten und zweiten Generation der von SpaceX entwickelten [Raptor-Antriebseinheit](https://de.wikipedia.org/wiki/Raptor_(Raketentriebwerk)). Technische Daten: 1. Generation (links) Schub auf Meereshöhe 185 tf, Schub im Vakuum 200 tf; 2. Generation (rechts) Schub auf Meereshöhe 230 tf, Schub im Vakuum 258 tf (1 tf = 9807 N). Dieser Leistungszuwachs konnte trotz einer deutlich einfacheren, kompakteren und leichteren Bauweise der Antriebseinheit erreicht werden (Quelle: [SpaceX](https://www.spacex.com/), Stand: 2022).](images/SpaceX-Raptor-V1-vs-V2_2022.jpg){width=80% #fig-spacex_raptor}
 
-
+> *„Der Ingenieur löst ein Problem stets dadurch, dass er zusätzliche Teile zum Produkt hinzufügt." (Quelle: Unbekannt)*
 
 
 #### Spiralmodell {#sec-spiralmodell}

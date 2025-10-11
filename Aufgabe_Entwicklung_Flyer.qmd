@@ -71,5 +71,7 @@ link-external-newwindow: true
 Vorgaben:
 
 <!-- Nehmen Sie sich hierzu 30 Minuten Zeit.-->
-- Gerne können Sie bei gegebenem **Reifegrad**^[Unterschieden wird in → Prinzip-, Konzept- und Serientauglichkeit] (→ **Erprobungswürdigkeit**) bereits auch in der frühen Entwicklungsphase erste Tests vornehmen. Entspricht, das Vorgehen, dass Sie jetzt diskutieren, noch Ihrer Entscheidung zur Entwicklungsmethodik? (→ Wasserfallmodell, → V-Modell, → Spiralmodell).
+- Gerne können Sie bei gegebenem **Reifegrad**^[Unterschieden wird in → Prinzip-, Konzept- und Serientauglichkeit] (→ **Erprobungswürdigkeit**) bereits auch in der frühen Entwicklungsphase erste Tests vornehmen.
+ 
+- Entspricht das Vorgehen, dass Sie jetzt diskutieren, noch Ihrer Entscheidung zur Entwicklungsmethodik? (→ Wasserfallmodell, → V-Modell, → Spiralmodell).
 :::

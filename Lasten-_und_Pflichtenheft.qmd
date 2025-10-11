@@ -50,7 +50,12 @@ Link zum Download:
 Eine in der Praxis kontrovers diskutierte Frage ist, ob ein Lasten- und Pflichtenheft per se Raum für Anpassungen und Änderungen lassen sollte, um auf unvorhergesehene Entwicklungen im Projektverlauf reagieren zu können. Für beide Sichtweisen gibt es gute Argumente, die Frage scheint nicht eineindeutig beantwortbar zu sein.
 :::
 
+::: {.callout-tip}
+## Wichtig zu beachten!
+
 Organisatorische Vorgaben, wie z.B. eine Zuweisung von Verantwortlichkeiten und Ressourcen für die Entwicklung, Abnahme und Vermarktung des Produkts sind **nicht Bestandteil** von Lasten- oder Pflichtenheft. Diese Fragen zur Organisation des Produktentstehungsprozesses werden im Rahmen des Projektmanagements beantwortet.
+
+:::
 
 Ein gut ausgearbeitetes Lastenheft bietet eine klare Richtlinie für das gesamte Entwicklungsprojekt. Ein gut ausgearbeitetes Lastenheft ist einer der wichtigsten Erfolgsfaktoren um sicherzustellen, dass der Produktentstehungsprozess erfolgreich abgeschlossen werden kann, das Produkt den Erwartungen aller Projektbeteiligten entspricht und "Moving Targets" im Verlauf des Produktentstehungsprojekts vermieden werden.
 
