@@ -1,4 +1,27 @@
+---
+title: "DEB3 - Labor 1 - Flyer"
+format:
+  html:
+    embed-resources: true
 
+author:
+  - name: "Mario Rossdeutscher"
+    degrees:
+    roles: "Dozent"
+    email: mario.rossdeutscher@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+---
 
 <!-- -------------------------------------------------------------------------
 
