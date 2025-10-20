@@ -1,0 +1,27 @@
+<!-- -------------------------------------------------------------------------
+
+                       LABOR "FLYER" AUFGABE LASTENEHFT FLYER
+
+-------------------------------------------------------------------------- -->
+
+
+
+```{mermaid}
+%%| fig-width: 6.4
+%%| label: fig-label-gntflyer01
+%%| fig-cap: "Gantt-Diagramm eines ersten Entwurfs zum Ablauf des Labors des Flyers"
+gantt
+title Gantt-Diagramm eines ersten Entwurfs zum Ablauf des Labors des Flyers
+    dateFormat HH:mm
+    axisFormat %H:%M
+    Start : milestone, m1, 00:00, 0m
+    Idee & Gantt  : a1, after m1, 50m
+    Lastenheft : a2, after a1, 30m
+    Entwicklung : a3, after a2, 15m
+    Prototyp: a4, after a3, 20m
+    Test: a5, after a4, 10m
+    Pause: done, a6, after a5, 15m
+    Dokumentation: a7, after a6, 30m
+    Ende : milestone, m2, after a7, 0m
+```
+

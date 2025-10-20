@@ -60,7 +60,7 @@ scrollable: true
 - Grundlagen des Projektmanagements erleben
 - Konzeptphase erleben.
 - Bedeutung des Lastenhefts erleben
-- Prototyp und Test "Was man nicht messen kann kann man nicht optimieren"
+- Prototyp und Test "Was man nicht messen kann, kann man nicht optimieren"
 
 ```{mermaid}
 %%| label: fig-label-wz-flyer
@@ -134,6 +134,21 @@ Mission-Statements gehen aber auch eine Ebene kleiner und können zu einer wertv
 
 ![Projekt Flyer (Quelle: Adobe Stock)](images/PaperAirplane.jpeg){width=80% fig-align="center"}
 
+- Für die gesamten heutige Übungsaufgaben stehen Ihnen 3 Stunden zur Verfügung. Ab jetzt läuft die Zeit!
+
+::: {.callout-note}
+### Abgabe
+
+Laden Sie Ihre erstellten Unterlagen und Ergebnisse in den Ordner. Dateien sollen Folendermaßen beschriftet werden: 
+
+- [ ] `Gruppe-1-Nachname1_Nachname2-BspLastenheft-Flyer.docx`
+- [ ] `Gruppe-1-Nachname1_Nachname2-Mindmap-Einscan.pdf`
+
+- [ ] Die Abgabe erfolgt spätestens am Laborarbeitstag eod (end of day) per Moodle.
+
+:::
+
+
 
 ## Übung: Gantt-Diagramm zum Entwicklungsprojekt "Flyer"
 
@@ -141,37 +156,14 @@ Mission-Statements gehen aber auch eine Ebene kleiner und können zu einer wertv
 
 ::: {.content-visible when-profile="wip-profile"}
 
-::: {.callout-tip collapse="true"}
+::: {.callout-tip}
 ## Lösung
 
-nicht vorhanden
+{{< include Lösung_Gantt_Flyer.qmd >}}
 
 
 :::
 :::
-
-<!-- 
-ACHTUNG!!! Mermaid-Grafiken zum Gantt-Diagramm werden in der Quarto-Preview nicht dargestellt, erscheinen nach dem Compilieren aber im Dokument. Zur Vorschau der Gantt-Charts sei auf den Mermaid-Live-Editor verwiesen
-
-```{mermaid}
-%%| fig-width: 6.4
-%%| label: fig-label-gntflyer01
-%%| fig-cap: "Gantt-Diagramm eines ersten Entwurfs zum Ablauf des Labors des Flyers"
-gantt
-title Gantt-Diagramm eines ersten Entwurfs zum Ablauf des Labors des Flyers
-    dateFormat HH:mm
-    axisFormat %H:%M
-    Start : milestone, m1, 00:00, 0m
-    Idee  : a1, after m1, 20m
-    Lastenheft : a2, after a1, 30m
-    Entwicklung : a3, after a2, 15m
-    Prototyp: a4, after a3, 20m
-    Test: a5, after a4, 10m
-    Pause: done, a6, after a5, 15m
-    Dokumentation: a7, after a6, 30m
-    Ende : milestone, m2, after a7, 0m
-```
--->
 
 ## Übung: Mindmap der Anforderungen
 
