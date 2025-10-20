@@ -1,0 +1,68 @@
+AKV ist ein [Akronym](https://de.wikipedia.org/wiki/Akronym) aus Begriffen **A**ufgabe, **K**ompetenz und **V**erantwortung.
+
+::: {.callout-important}
+## Verantwortung
+*„Verantwortung ist nicht teilbar.“*
+:::
+
+oder doch? Siehe die um sich greifende [Verantwortungsdiffusion](https://de.wikipedia.org/wiki/Verantwortungsdiffusion).
+
+::: {.callout-tip}
+## Verantwortungsdiffusion
+Verantwortungsdiffusion, auch als "Bystander-Effekt" bezeichnet, ist ein sozialpsychologisches Phänomen, bei dem Einzelpersonen in einer Gruppe weniger wahrscheinlich Verantwortung übernehmen, wenn andere Personen in der Nähe sind. Dieses Phänomen tritt auf, weil sich die Verantwortung auf mehrere Personen in der Gruppe zu verteilen scheint, wodurch jede Einzelperson weniger wahrscheinlich das Gefühl hat, persönlich handeln zu müssen.
+:::
+
+::: {.callout-important}
+## Verantwortungsdiffusion ist der Tod jedes Projekterfolgs
+Verantwortungsdiffusion ist eine massives Risiko für Projekte. Verantwortungsdiffusion ist um jeden Preis zu vermeiden!
+:::
+
+> *“Die Katastrophe in letzter Sekunde zu verhindern lenkt am besten vom eigenen Versagen davor ab.“ (Quelle: Jörg Howe, Leiter Kommunikation, Mercedes-Benz AG)*
+
+
+<div style="border: 1px solid black; padding: 10px; text-align:center;">AUFGABE | KOMPETENZ | VERANTWORTUNG</div>
+
+
+Im Projektmanagement haben die Begriffe "Aufgabe", "Kompetenz" und "Verantwortung" spezifische Bedeutungen:
+
+1. **Aufgabe**: Eine Aufgabe im Projektmanagement bezieht sich auf eine spezifische Tätigkeit oder Arbeitsanforderung, die zur Erreichung der Projektziele durchgeführt werden muss. Sie stellt einen abgrenzbaren Arbeitsbereich dar, der einer oder mehreren Personen zugewiesen werden kann. Aufgaben sind in der Regel klar definiert, haben einen bestimmten Umfang und sind mit bestimmten Zielen oder Ergebnissen verbunden.
+
+2. **Kompetenz**: Kompetenz bezieht sich im Projektmanagement auf die Fähigkeiten, das Wissen, die Erfahrung und die Qualifikationen, die erforderlich sind, um eine bestimmte Aufgabe erfolgreich auszuführen. Es umfasst das Verständnis der Methoden, Werkzeuge und Techniken, die für die Durchführung der Aufgabe erforderlich sind, sowie die Fähigkeit, die entsprechenden Kenntnisse und Fertigkeiten effektiv anzuwenden. 
+
+Eine entscheidende Ausprägung der Kompetenz ist die Weisungs- und Entscheidungsbefugnis. Aufgrund der hohen Bedeutung für den Projekterfolg wird auf diese Facette der Kompetenz in @sec-webefugnis noch näher eingegangen.
+
+3. **Verantwortung**: Verantwortung im Projektmanagement bezieht sich auf die Verpflichtung und das Pflichtgefühl einer Person, die zugewiesenen Aufgaben ordnungsgemäß und rechtzeitig zu erfüllen. Sie umfasst die Übernahme der Verantwortung für das eigene Handeln, die Qualität der Arbeitsergebnisse und die Einhaltung von Terminen und Vorgaben. Verantwortung kann sowohl auf individueller Ebene als auch auf Team- oder Projektebene wahrgenommen werden.
+
+Es ist wichtig, zwischen diesen Begriffen zu unterscheiden, da sie verschiedene Aspekte der Projektarbeit repräsentieren. Die klare Definition von Aufgaben, die Zuweisung von Kompetenzen entsprechend den Anforderungen und die Übernahme der Verantwortung für die ordnungsgemäße Ausführung der Aufgaben sind entscheidend, um die Effektivität und den Erfolg eines Projekts sicherzustellen.
+
+Eine AKV-Tabelle hilft, um den Überblick über die Aufgaben/ Aufgabenbereiche und die jeweilige Rollenverteilung zu bekommen.
+Auch das Thema **Hol- / Bringschuld** ist durch das `I` für Informationspflicht eingebaut.
+
+![Beispiel einer AKV-Tabelle mit Rollen (ohne zugeordnete Personennamen)](images/AKV-Tabelle.png){width=100% #fig-AKV-Tabelle}
+
+Legende: 
+
+-  D = Durchführend (zuständig, führt aus)
+-  V = Verantwortlich(verantwortlich, Entscheider)
+-  B = Beratend (konsultieren bei Fragen oder Entscheidungen)
+-  I = Informationspflicht (über Status oder Entscheidung/Kennzahlen)
+-  Ü = Bei 4 Augenprinzip - überprüfend / Freigabe, ob Aufgabe erledigt ist
+
+
+> "Ich bin für alles verantwortlich, aber für nichts zuständig" - Jochen Mulfinger
+
+::: {.callout-tip}
+## Vergleich mit der RACI-/RASCI-Methode
+Ein ähnlicher Ansatz findet sich in der **RACI- bzw. RASCI-Methode**. Während AKV die Dimensionen *Aufgabe, Kompetenz und Verantwortung* herausstellt, legt RACI den Fokus auf die Rollen *Responsible, Accountable, Consulted* und *Informed* (in RASCI ergänzt um *Supportive*).  
+Damit wird insbesondere verdeutlicht, **wer entscheidet, wer ausführt, wer beratend eingebunden und wer informiert wird**.  
+
+Beide Modelle verfolgen das gleiche Ziel: Klarheit schaffen, Verantwortungsdiffusion vermeiden und Projekterfolg sichern.
+:::
+
+::: {.content-visible unless-meta="kommentare.off"}
+
+:::: {style="background-color: #9affa4"}
+\@mrossde Christian - ggf. RISC Tabelle einmal Übung zum Ausfüllen machen?
+
+::::
+:::

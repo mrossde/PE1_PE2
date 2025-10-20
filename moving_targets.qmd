@@ -1,0 +1,64 @@
+"Moving Targets" ist ein Begriff, der im Bereich von Projekten und dem Projektmanagement zu finden ist und einen eher zweifelhaften Ruf besitzt.
+
+::: {.callout-tip}
+## Definition: *"Moving Targets"*
+"Moving Targets" bezeichnet sich ändernde Anforderungen, Ziele oder Bedingungen im Verlauf eines Projekts, die die Planung, Umsetzung und Kontrolle beeinflussen können.
+:::
+
+In der Produktentwicklung können sich Anforderungen während eines laufenden Projekts ändern, sei es aufgrund von technischen Entwicklungen, Kundenfeedback, Veränderungen bei Zulieferern, eine neue Kostensituation oder sich entwickelnden Geschäftszielen. Diese sich ändernden Anforderungen machen es für das Entwicklungsteam schwierig, ein festes Ziel zu verfolgen, da sich die Zielvorgaben im Laufe der Zeit verschieben können.
+
+Im Projektmanagement beziehen sich "Moving Targets" auf sich ändernde Ressourcen, Budgets, Zeitpläne oder externe Einflüsse beziehen, die die Durchführung des Projekts beeinflussen können. Es erfordert Flexibilität und Anpassungsfähigkeit seitens des Projektteams, um mit diesen Veränderungen umzugehen und den Projekterfolg sicherzustellen.
+
+
+::: {.callout-caution}
+## Vorsicht bei "Moving Targets"!
+Treten Moving Targets in Projekten auf gerät das ursprüngliche Projektziel rasch schnell in Vergessenheit. Das Projektteam rennt im schlimmsten Fall einem Moving Target hinterher ohne es jemals zu erreichen. Oft stellt sich dann bei Projektleitung und Projektteam Frust und Enttäuschung ein, trotz aller Mühe und Engagement vermeintlich NICHT erfolgreich zu sein. Eine Antwort auf diese insbesondere im Bereich der Softwareentwicklung bestehenden großen Herausforderung wird versucht, mit Hilfe [Agiler Entwicklungsmethoden](https://de.wikipedia.org/wiki/Agile_Softwareentwicklung) zu finden.
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       PROJEKTPHASEN
+
+-------------------------------------------------------------------------- -->
+
+::: {.callout-tip appearance="simple"}
+Neben den technischen Projektphasen durchlaufen Projekte häufig zeitgleich zum Projektfortschritt eine weitere Dimension von Projektphasen, die in der klassischen Literatur zu Projekten häufig nicht genannt wird. Typische Projektphasen hierbei sind:
+
+*1. Begeisterung*
+
+*2. Ernüchterung*
+
+*3. Panik*
+
+*4. Suche nach Schuldigen*
+
+*5. Bestrafung der Unschuldigen*
+
+*6. Belohnung der Nichtbeteiligten*
+:::
+
+
+> *„Je näher ein Projektende rückt, umso näher kommt der vorzeitige Rückzug des Projektleiters.“ (Quelle: Unbekannt)*
+
+
+Diese Projektphasen haben eine erstaunliche Ähnlichkeit mit dem Technologie-Hype-Zyklus und zumindest zum Teil auf ähnliche zugrundeliegenden Mechanismen zurückzuführen.
+
+In der Praxis kommt bei Projekten häufig hinzu, dass, um z.B. die Ressourcen für ein Projekt durch das Management bewilligt zu bekommen, die Abschätzungen für den Bedarf an Ressourcen (Personal- und Sachmittel) oftmals sehr optimistisch ausgeführt werden, ebenso der der zeitliche Aufwand für ein Projekt. Die Gefahr von unerwartet auftretenden Komplikationen und Rückschlägen wird in manchen Fällen aus Unwissenheit, in anderen Fällen, um das Projekt überhaupt gestartet zu bekommen, durchaus wissentlich, zumindest aber leichtfertig unterbewertet. Gleichzeitig werden Projektbeteiligte mit teils überaus optimistischen Prognosen für ein Projekt gewonnen und so (teils unrealistisch) hohe Erwartungen insgesamt an den Projekterfolg geweckt. 
+
+Nach der Phase der Begeisterung setzt dann meist schnell Ernüchterung ein, Verantwortungsträger reagieren teils mit Panik und der Suche nach Schuldigen und der Bestrafung von Sündenböcken. Werden Projekte in dieser Phase nicht abgebrochen oder verschwinden still und leise in der Versenkung stellt sich durch die weitere fachliche Arbeit oftmals, zwar verspätet oder zu hohen Kosten, aber dennoch ein Erfolg ein. Die zu diesem Zeitpunkt im Projekt Mitarbeitenden (oft nur noch ein kleiner Teil des Projektteams, dass das Projekt gestartet hat) erfahren Lob und Anerkennung für den Projekterfolg.
+
+> „*Die Leichen der Pioniere pflastern die Straßen zum Erfolg.“ (Dr. Hans-Joachim Schöpf, Entwicklungsvorstand Mercedes-Benz AG)*
+
+
+::: {.callout-tip appearance="simple"}
+## Exkurs: Phasen von Krisen
+*1. Ignoranz. ("Kann gar nicht sein!"*)
+
+*2. Verdrängung. ("Geh mir weg, das will ich nicht hören!"*)
+
+*3. Entsetzen. ("Wir sind verloren!!!"*)
+
+*4. Akzeptanz. ("Oh je, es ist schlimm, was sollen wir nur tun?"*)
+
+*5. Handlung. ("OK, let’s do it!"*)
+:::

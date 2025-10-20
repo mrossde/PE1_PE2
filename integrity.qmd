@@ -1,0 +1,22 @@
+Der Begriff "Integrity" verwendet, um die Qualität oder Eigenschaft von Personen zu beschreiben, die aufrichtig, ehrlich und moralisch integer sind. "Integrity" bezieht sich auf die Einhaltung ethischer Grundsätze und moralischer Werte, insbesondere wenn es um Verhalten, Entscheidungsfindung und Handeln geht. Im Allgemeinen wird "Integrity" mit folgenden Konzepten in Verbindung gebracht:
+
+1. **Ehrlichkeit**: Integrität beinhaltet die Bereitschaft, die Wahrheit zu sagen und ehrlich zu sein, selbst wenn dies unbequem ist oder persönliche Konsequenzen hat. Menschen mit Integrität vermeiden Täuschung, Betrug und die Verfälschung von Informationen.
+
+::: {.callout-caution}
+## Tipp!
+Ehrlichkeit in verantwortungsbewussten Rollen muss nicht heissen, immer auf alles zu antworten. In vertrauensvollen Teams oder Führungsbeziehungen wird es sicherlich auch akzeptiert, wenn die verantwortliche Person antwortet:
+
+*"Sorry Leute, diese Information ist vertraulich und ich kann es nicht weitergeben."*
+:::
+
+2. **Moralische Grundsätze**: Integrität beinhaltet die Einhaltung moralischer Grundsätze und Werte. Dies bedeutet, dass man sich an Prinzipien wie Fairness, Gerechtigkeit und Ethik hält und in Übereinstimmung mit diesen Prinzipien handelt.
+
+3. **Glaubwürdigkeit (Verlässlichkeit/ Verbindlichkeit)**: siehe @sec-eigenesverhalten
+
+4. **Verantwortlichkeit**: Menschen mit Integrität sind bereit, die Verantwortung für ihre Handlungen und Entscheidungen zu übernehmen. Sie stehen zu ihren Fehlern und bemühen sich, diese zu korrigieren.
+
+5. **Ethik am Arbeitsplatz**: In beruflichen Kontexten bezieht sich Integrität auf die Einhaltung ethischer Standards und Regeln in Bezug auf Geschäftspraktiken, Finanzen und Interaktionen mit Kunden, Kollegen und Partnern.
+
+6. **Selbstachtung**: Integrität schließt auch die Achtung der eigenen moralischen Werte und Prinzipien ein. Dies bedeutet, dass eine Person ihre eigenen Überzeugungen und Werte nicht leichtfertig opfert.
+
+Integrität ist eine wichtige Eigenschaft sowohl für Einzelpersonen als auch für Organisationen. Sie trägt zur Schaffung von Vertrauen, Glaubwürdigkeit und Respekt bei und ist ein wesentlicher Bestandteil einer gesunden, ethischen und verantwortungsvollen Gesellschaft. In vielen Unternehmen und Organisationen ist Integrität ein Schlüsselwert, der in ihren Leitbildern und Ethikkodizes verankert ist.
