@@ -73,5 +73,6 @@ Leitfragen:
 - Erfüllt der Flyer die zuvor im Lastenheft festgelegten Anforderungen? 
 - Wie stellen Sie fest, ob die Anforderungen erfüllt werden?
 - Wenn einzelne Anforderungen nicht erfüllt werden: Wie hoch schätzen Sie den Aufwand ein, den Flyer weiterzuentwickeln, dass er die noch fehlenden Anforderungen erfüllt? Genügen kleinere Anpassungen, oder ist eine Neuentwicklung erforderlich?
+- Dokumentieren Sie die Ergebnisse mittels eines Abnahmeprotokolls und geben Sie dies mit ab.
 
 :::
