@@ -117,12 +117,12 @@ ggf. woanders hinverschieben? logisch nicht korrekte Reihenfolge
 ::::
 :::
 
-    {{< include Produktdokumentation.qmd >}}
-    {{< include Mindmap.qmd >}}
-    {{< include Bewertungsmatrix.qmd >}}
-    {{< include Prinzip-_Konzept_und_Serientauglichkeit.qmd >}}
-    {{< include Modularisierung.qmd >}}
-    {{< include Simultaneous_Engineering.qmd >}}
+  {{< include Produktdokumentation.qmd >}}
+  {{< include Mindmap.qmd >}}
+  {{< include Bewertungsmatrix.qmd >}}
+  {{< include Prinzip-_Konzept_und_Serientauglichkeit.qmd >}}
+  {{< include Modularisierung.qmd >}}
+  {{< include Simultaneous_Engineering.qmd >}}
 
 
 <!-- -------------------------------------------------------------------------
@@ -178,7 +178,7 @@ ggf. woanders hinverschieben? logisch nicht korrekte Reihenfolge
 -------------------------------------------------------------------------- -->
 # Softskills {#sec-softskills}
 
-  ## Zusammenarbeit und Selbstorganisation
+## Zusammenarbeit und Selbstorganisation
 
   {{< include Softskills.qmd >}}
   {{< include Team.qmd >}}
@@ -188,7 +188,7 @@ ggf. woanders hinverschieben? logisch nicht korrekte Reihenfolge
   {{< include Johari-Fenster.qmd >}}
   {{< include LoveChangeLeave.qmd >}}
 
-  ## Arbeitsmethoden
+## Arbeitsmethoden
 
   {{< include Eisenhower-Prinzip.qmd >}}
   {{< include 6W-Methode.qmd >}}

@@ -86,4 +86,5 @@ bibliography: Literatur.bib
 
 -------------------------------------------------------------------------- -->
 ## Übung: Bewertungsmatrix Magnetpendel
+
 {{< include Aufgabe_Bewertungsmatrix_Magnetpendel.qmd >}}
