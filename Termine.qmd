@@ -113,6 +113,11 @@ CA 24WS
 | 27.10.2025<br>(SW 5)  |                        | Softskills, PWT, Moore's Law, Beispiel Apple A17 Pro, Famous Laws   |
 <!-- 2.4 - inkl. 3.2 & von softskills 5.0 - 5.2 (2 Blöcke)-->
 |                        | 03.11.2025<br>(SW 6)  | **Labor** "Magnetpendel", Euler-Verfahren, FE-Sim., Log. Gleichung  |
+
+<!-- 3.3 reverse Engineering
+Soft skills: 5.4 Pierre Bourdieu: “Die vier Formen des Kapitals”-->
+
+
 | 10.11.2025<br>(SW 7)  |                        | Reverse Engineering, 3D-Master, Betriebsfestigkeit, Bruchtheorie    |
 | 17.11.2025<br>(SW 8)  |                        | NVH, PPG, Rule-of-10, Vorgehen zur Umweltqualifizierung, EMV        |
 |                        | 24.11.2025<br>(SW 9)  | **Labor** "Earthlander Teil 1"                                      |

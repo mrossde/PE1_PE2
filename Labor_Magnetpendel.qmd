@@ -1,54 +1,3 @@
----
-title: "DEB3 Produktentwicklung 1"
-format:
-  html:
-    embed-resources: true
-
-author:
-  - name: "Christian Anders"
-    degrees: 
-    roles: "Dozent"
-    email: christian.anders@hs-esslingen.de
-    affiliation: 
-      - name: "Hochschule Esslingen"
-        department: "Wirtschaft & Technik"
-        group: "Digital Engineering (DEB)"
-        city: "Esslingen am Neckar"
-        postal-code: 73728
-        country: "Deutschland"
-        url: https://www.hs-esslingen.de/
-abstract: > 
-  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
-keywords:
-  - Produktentstehungsprozess
-  - Entwicklungsmethodik
-  - Labor 
-  - Magnetpendel
-  - Differenzialgleichung
-  - Bewertungsmatrix
-copyright: 
-  holder: Christian Anders
-  year: 2024
-lang: de
-bibliography: Literatur.bib
-date: last-modified
-toc: false
-number-sections: false
-scrollable: true
-toc-location: right-body
-cap-location: bottom
-number-offset: 0
-link-external-icon: true
-link-external-newwindow: true
----
-
-<!--
-format:
-  html:
-    embed-resources: true
-lang: de
-bibliography: Literatur.bib
--->
 
 <!-- -------------------------------------------------------------------------
 
@@ -58,23 +7,28 @@ bibliography: Literatur.bib
 
 # Labor "Magnetpendel"
 
-
-<!-- -------------------------------------------------------------------------
-
-                       CALLOUT MISSIONS-STATEMENT
-
--------------------------------------------------------------------------- -->
-## Mission-Statement Labor Magnetpendel
-
 ::: { .callout-note}
 ## Mission-Statement Labor Magnetpendel
 *"Lernen Sie die Produktentwicklung eines mechatronischen Systems am Beispiel des Magnetpendels kennen und vertiefen Sie ihre Kompetenz zum Arbeit mit Bewertungsmatrizen."*
 :::
 
+::: { .callout-tip}
+## Lernziele
+
+1.  zeitbegrenzte Einarbeitung in ein unbekanntes Thema und Durchführung einer Bewertung mithilfe einer Bewertungsmatrix.
+2. Die gegebenen Informationen analysieren und die Wesentlichen beurteilen zum Zweck der Aufgabenerfüllung.
+
+:::
 
 <!-- -------------------------------------------------------------------------
 
-                        GRUNDLAGEN MAGNETPENDEL
+                        Ablauf des Labors
+
+                        1. Erläuterung Magnetpendelversuch mithilfe von Video
+                        2. Live Demo mit Sensor Tinkerforge
+                        2. Vorhersage Raum durch [Link](https://beltoforion.de/de/magnetisches_pendel/index.php#idStart) erklären
+                        3. Mathematik dahinter zeigen
+                        4. Aufgabe erläutern
 
 -------------------------------------------------------------------------- -->
 
@@ -85,6 +39,6 @@ bibliography: Literatur.bib
                        Aufgaben: Bewertungsmatrix Position Pendel 
 
 -------------------------------------------------------------------------- -->
-## Übung: Bewertungsmatrix Magnetpendel
+## Übung: Bewertungsmatrix zur Auswahl des Verfahrens zur Lage- und Bahnerfassung des Magnetpendels
 
 {{< include Aufgabe_Bewertungsmatrix_Magnetpendel.qmd >}}

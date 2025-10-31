@@ -7,7 +7,15 @@ quarto render Labor_Flyer.qmd --to html --profile release-profile,wip-profile -o
 
 quarto render Labor_Earthlander.qmd --to html --profile release-profile,wip-profile -o DEB-PE1-Labor03-Earthlander.html
 
-quarto render Labor_Magnetpendel.qmd --to html --profile release-profile,wip-profile -o DEB-PE1-Labor02-Magnetpendel.html
+quarto render Labor_Magnetpendel.qmd --to html --profile release-profile -o DEB-PE1-Labor02-Magnetpendel.html
+
+quarto render Labor_Magnetpendel.qmd --to html --profile release-profile,wip-profile -o DEB-PE1-Labor02-Magnetpendel-loesung.html
+
+quarto render Links.qmd --to html --profile release-profile,wip-profile -o DEB-PE1-Labor02-Links.html
+
+
+quarto render Lösung_Bewertungsmatrix_Magnetpendel.qmd --to html --profile release-profile,wip-profile -o DEB-PE1-Labor02-Magnetpendel-loesung.html
+
 
 
 quarto render _DEB3_Vorlesung_Produktentwicklung_1.qmd --to html --profile release-profile,wip-profile -o DEB-PE1-Skript.html

@@ -1,59 +1,3 @@
----
-format:
-  html:
-    embed-resources: true
-lang: de
-bibliography: Literatur.bib
----
-
-<!--
-title: "DEB3 Produktentwicklung 1"
-format:
-  html:
-    embed-resources: true
-
-author:
-  - name: "Christian Anders"
-    degrees: 
-    roles: "Dozent"
-    email: christian.anders@hs-esslingen.de
-    affiliation: 
-      - name: "Hochschule Esslingen"
-        department: "Wirtschaft & Technik"
-        group: "Digital Engineering (DEB)"
-        city: "Esslingen am Neckar"
-        postal-code: 73728
-        country: "Deutschland"
-        url: https://www.hs-esslingen.de/
-abstract: > 
-  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
-keywords:
-  - Produktentstehungsprozess
-  - Entwicklungsmethodik
-  - Labor 
-  - Magnetpendel
-copyright: 
-  holder: Christian Anders
-  year: 2024
-lang: de
-bibliography: Literatur.bib
-date: last-modified
-toc: false
-number-sections: false
-scrollable: true
-toc-location: right-body
-cap-location: bottom
-number-offset: 0
-link-external-icon: true
-link-external-newwindow: true
--->
-
-<!--
-::: {.callout-warning}
-## WARNING!
-**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
-:::
--->
 
 <!-- -------------------------------------------------------------------------
 
@@ -73,60 +17,219 @@ link-external-newwindow: true
 
 -------------------------------------------------------------------------- -->
 
+## Magnetpendel
+
+{{< include /labor-magnetpendel/L0200-MP_Versuchsaufbau.qmd  >}}
+
+
+## physikalisches Modell des magnetischen Pendels
+
 ### Schwingungsgleichung des gedämpften Pendels
 
-Pendel gehören zu den grundlegenden Versuchsaufbauten in den Naturwissenschaften in Schule und Studium. Entsprechend umfangreich ist die verfügbare Literatur. Der geneigte Leser sei hierzu als Einstieg in der Materie auf [Wikipedia](https://de.wikipedia.org/wiki/Mathematisches_Pendel) verwiesen. Im Folgenden sollen daher nur kurz die wichtigsten Formeln und verwendeten Näherungen für ein Schwerpendel rekapituliert werden.
+Pendel gehören zu den grundlegenden Versuchsaufbauten in Schule und Studium. Entsprechend umfangreich ist die verfügbare Literatur. Der interessierte Leser sei hier auf [Wikipedia – Mathematisches Pendel](https://de.wikipedia.org/wiki/Mathematisches_Pendel) verwiesen. Im Folgenden werden die wesentlichen Gleichungen und Näherungen kurz rekapituliert.
 
-Die Periodendauer $T$ eines ungedämpft schwingenden Pendels mit $L$ als Länge des Pendels (in $\text{m}$) und $g$ als Erdbeschleunigung ($g = 9.81 \, \text{m/s}^2$):
-
+Die Periodendauer $T$ eines ungedämpft schwingenden Pendels der Länge $L$ unter dem Einfluss der Erdbeschleunigung $g=9.81\,\text{m/s}^2$ lautet:
 $$
-T = 2\pi \sqrt{\frac{L}{g}}
-$$
-
-Die Schwingungsgleichung eines ungedämpften schwingenden Pendels mit $θ$ als Auslenkungswinkel, $g$ als Erdbeschleunigung und $L$ als Länge des Pendels:
-
-$$
-\ddot{\theta} + \frac{g}{L} \cdot \sin(\theta) = 0
+T = 2\pi \sqrt{\frac{L}{g}}.
 $$
 
-Die Schwingungsgleichung eines gedämpft schwingenden Pendels mit $θ$ als Auslenkungswinkel, $g$ als Erdbeschleunigung, $L$ als Länge des Pendels und $\gamma$ als Dämpfungskoeffizient:
-
+Die Bewegung eines realen Pendels wird durch den Auslenkungswinkel $\theta$ beschrieben. Für kleine Winkel gilt die Schwingungsgleichung
 $$
-\ddot{\theta} + 2 \cdot \gamma \cdot \dot{\theta} + \frac{g}{L} \cdot \sin(\theta) = 0
-$$
-
-Der geneigte Leser bemerkt sofort, dass die Dämpfung als proportional zur Geschwindigkeit des Pendels angenommen wird. Auch wenn diese Annahme in der Realität nicht immer erfüllt sein mag, so soll im folgenden doch von dieser Annahme ausgegangen werden.
-
-Als weitere Annahme wird beim Pendel zumeist von kleinen Auslenkungen um die Ruhelage ausgegangen, so dass eine weitere Vereinfachung vorgenommen werden kann.
-
-Die Taylorreihe von $\sin(x)$ um $x=0$ lautet: 
-
-$$
-\sin(x) = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \frac{x^9}{9!} - \cdots
+\ddot{\theta} + \frac{g}{L}\sin(\theta) = 0.
 $$
 
-Für kleine Winkel gilt daher als gute Näherung $\sin(x)=x$. Mit $\alpha = \frac{g}{L}$ und $\beta = 2 \gamma$ und ergibt sich daraus eine einfache und elegante Formulierung der Schwingungsgleichung des gedämpften Pendels:
+Unter Berücksichtigung einer linearen Dämpfung $2\gamma\dot{\theta}$ ergibt sich:
+$$
+\ddot{\theta} + 2\gamma \dot{\theta} + \frac{g}{L}\sin(\theta) = 0.
+$$
 
-<!-- Rahmen um Text/Formel -->
+Da die Dämpfung proportional zur Geschwindigkeit angenommen wird, kann man bei kleinen Auslenkungen zusätzlich $\sin(\theta)\approx\theta$ setzen. Damit erhält man die linearisierte Form:
 <div style="border: 1px solid black; padding: 10px;">
 $$
-\ddot{\theta} + \beta \cdot \dot{\theta} + \alpha \cdot \theta = 0
+\ddot{\theta} + \beta \dot{\theta} + \alpha \theta = 0,
+\qquad\text{mit}\quad
+\alpha = \frac{g}{L},\ \beta = 2\gamma.
 $$
 </div>
-<!-- Leerzeile -------------->
-<br>
 
-### Numerische Verfahren zur Lösung der Schwingungsgleichung
+Diese Gleichung beschreibt ein gedämpft harmonisches Pendel, bei dem die Rückstellkraft durch die Schwerkraft bestimmt ist. Für kleine Winkel entspricht sie exakt einem linearen Federpendel.  
+Der Zusammenhang $\omega_0^2 = g/L$ erlaubt es somit, ein reales Pendel auch in einem kartesischen Modell als **lineare Rückstellkraft** zu beschreiben.
+
+---
+
+### Erweiterung um Magneten (magnetisches Pendel)
+
+Im magnetischen Pendelmodell wird diese klassische Rückstellkraft beibehalten, jedoch durch zusätzliche Kräfte von Magneten gestört. Das Pendel verhält sich dabei wie eine Masse $m$, die sich in der Ebene mit der Position $\vec r=(x,y)$ bewegt. Die Bewegung folgt der zweiten Newtonschen Gleichung:
+$$
+m\,\ddot{\vec r}=\vec F_{\text{gesamt}}.
+$$
+
+Die Gesamtkraft setzt sich aus drei Komponenten zusammen:
+$$
+\vec F_{\text{gesamt}}
+=\underbrace{\vec F_{\text{grav}}}_{\text{Rückstellung durch Schwerkraft}}
++\underbrace{\vec F_{\text{mag}}}_{\text{Magnetkräfte}}
++\underbrace{\vec F_{\text{reib}}}_{\text{Dämpfung}}.
+$$
+
+Setzt man diese Anteile explizit ein, ergibt sich:
+$$
+m\,\ddot{\vec r}
+=\bigl(-m\,\tfrac{g}{L}\,\vec r\bigr)
++\left(\sum_{i=1}^N -\,k_i\,\frac{(\vec r-\vec m_i)}{\lVert\vec r-\vec m_i\rVert^{3}}\right)
++\bigl(-\,\gamma\,\dot{\vec r}\bigr).
+$$
+
+Division durch $m$ liefert die beschleunigende Gleichung:
+$$
+\ddot{\vec r}
+=-\,\frac{g}{L}\,\vec r
+-\sum_{i=1}^N\frac{k_i}{m}\,\frac{(\vec r-\vec m_i)}{\lVert\vec r-\vec m_i\rVert^{3}}
+-\frac{\gamma}{m}\,\dot{\vec r}.
+$$
+
+
+Damit sind **alle drei** Beiträge sichtbar in **einer** Gleichung.
+
+1. **Dämpfung**: wirkt immer entgegen der augenblicklichen Bewegung und sorgt dafür, dass das Pendel langfristig in eine Ruhelage geht.
+2. **Lineare Rückstellkraft**: modelliert die Wirkung der Schwerkraft in vereinfachter Form als Federersatzmodell, indem sie den Punkt proportional zu seiner Auslenkung zurück in die Ruhelage zieht.
+3. **Magnetische Kräfte**: stammen von fest liegenden Magnetquellen $\mathbf m_i=(m_{ix},m_{iy})$ im Boden und ziehen (oder drücken, je nach Vorzeichen von $k_i$) das Pendel in ihre Richtung.
+
+Wichtig zur Notation: das Symbol $m$ für die **Masse** unterscheidet sich von den **Magnetpositionen** $\mathbf m_i$. Hier steht $\mathbf m_i$ immer für den Ort des $i$-ten Magneten.
+
+---
+
+### Bewegungsgleichung in kompakter Form
+
+Fasst man die Rückstell- und Magnetanteile zusammen und schreibt $\omega_0^2 = g/L$, ergibt sich die kompakte Gleichung:
+$$
+\ddot{\mathbf r}
+=-\gamma\dot{\mathbf r}-\omega_0^2\mathbf r+\sum_{i=1}^3 k_i\frac{\mathbf m_i-\mathbf r}{\lVert\mathbf m_i-\mathbf r\rVert^3}.
+$$
+
+Mit der Geschwindigkeit $\mathbf v=\dot{\mathbf r}$ entsteht das zugehörige System 1. Ordnung:
+$$
+\dot{\mathbf r}=\mathbf v,\qquad
+\dot{\mathbf v}=-\gamma\mathbf v-\omega_0^2\mathbf r+\sum_{i=1}^3 k_i\frac{\mathbf m_i-\mathbf r}{\lVert \mathbf m_i-\mathbf r\rVert^3}.
+$$
+
+In Komponenten:
+$$
+\dot x=v_x,\quad \dot y=v_y,
+$$
+$$
+\dot v_x=-\gamma v_x-\omega_0^2 x+\sum_{i=1}^3 k_i\frac{m_{ix}-x}{\bigl((m_{ix}-x)^2+(m_{iy}-y)^2\bigr)^{3/2}},
+$$
+$$
+\dot v_y=-\gamma v_y-\omega_0^2 y+\sum_{i=1}^3 k_i\frac{m_{iy}-y}{\bigl((m_{ix}-x)^2+(m_{iy}-y)^2\bigr)^{3/2}}.
+$$
+
+Damit beschreibt das System $(x,y,v_x,v_y)$ die reale Bewegung eines **gedämpften magnetischen Pendels**, bei dem die Schwerkraft über $\omega_0^2=g/L$ direkt in die Rückstellkraft eingeht und die Magnete eine laterale, nichtlineare Störung erzeugen.
+
+# Numerische Verfahren zur Lösung der Schwingungsgleichung
 
 Es gibt verschiedene numerische Verfahren, mit denen diese Schwingungsgleichung eines Pendels gelöst werden kann. Die Verfahren unterscheiden sich stark hinsichtlich ihrer Eigenschaften. Zu den am häufigsten eingesetzten numerischen Verfahren zur Lösung von Differenzialgleichungen zählen:
 
 1. **Euler-Verfahren**: Das [(explizite) Euler-Verfahren](https://de.wikipedia.org/wiki/Explizites_Euler-Verfahren) aus dem Jahr 1768 ein einfaches numerisches Verfahren zur Lösung gewöhnlicher Differentialgleichungen. Es approximiert die Lösung durch eine Taylor-Reihe erster Ordnung und wird oft als erster Schritt zur Lösung von gewöhnlichen Differentialgleichungen verwendet. 
+
+::: {.callout-tip collapse="true"} 
+## 1. Explizites Euler-Verfahren
+
+Sei zum Zeitpunkt $t_n$ der Zustand $(x_n,y_n,v_{x,n},v_{y,n})$ bekannt und die Schrittweite $h$. Zuerst wird die aktuelle Beschleunigung berechnet:
+$$
+a_{x,n}=-\gamma v_{x,n}-\omega_0^2 x_n+\sum_{i=1}^3 k_i\frac{m_{ix}-x_n}{\bigl((m_{ix}-x_n)^2+(m_{iy}-y_n)^2\bigr)^{3/2}},
+$$
+$$
+a_{y,n}=-\gamma v_{y,n}-\omega_0^2 y_n+\sum_{i=1}^3 k_i\frac{m_{iy}-y_n}{\bigl((m_{ix}-x_n)^2+(m_{iy}-y_n)^2\bigr)^{3/2}}.
+$$
+
+Euler-Update:
+$$
+x_{n+1}=x_n+h\,v_{x,n},
+$$
+$$
+y_{n+1}=y_n+h\,v_{y,n},
+$$
+$$
+v_{x,n+1}=v_{x,n}+h\,a_{x,n},
+$$
+$$
+v_{y,n+1}=v_{y,n}+h\,a_{y,n}.
+$$
+
+:::
 
 ::: {.callout-tip}
 Dem geneigten Leser, der erstmals ein tieferes Verständnis zum Vorgehen bei der numerischen Lösung von Differenzialgleichungen erwerben möchte, wird als Übungsaufgabe das Erarbeiten einer eigenen Implementierung des [Euler-Verfahrens]((https://de.wikipedia.org/wiki/Explizites_Euler-Verfahren)) in einer Programmiersprache seiner Wahl empfohlen.
 :::
 
 2. **Runge-Kutta-Verfahren**: Das [Runge-Kutta-Verfahren](https://de.wikipedia.org/wiki/Runge-Kutta-Verfahren) ist eine Familie von numerischen Verfahren zur Lösung von gewöhnlichen Differenzialgleichungen, die ab 1900 entwickelt wurden. Das bekannteste davon ist das klassische Runge-Kutta-Verfahren vierter Ordnung (RK4), das eine höhere Genauigkeit als das Euler-Verfahren bietet. Verschiede Implementierungen des Magnetpendels, die der geneigte Leser bei seiner Recherche im Internet finden mag, nutzen das bewährte Runge-Kutta-Verfahren.
+
+::: {.callout-tip collapse="true"}
+
+## 2. Runge–Kutta 4. Ordnung (RK4)
+
+Um das System numerisch zu lösen, schreiben wir es als ein System erster Ordnung in kompakter Form.
+
+Aus dem Grundmodell wissen wir:
+$$
+\dot x=v_x,\qquad \dot y=v_y,
+$$
+$$
+\dot v_x=-\gamma v_x-\omega_0^2 x+\sum_{i=1}^3 k_i\frac{m_{ix}-x}{\bigl((m_{ix}-x)^2+(m_{iy}-y)^2\bigr)^{3/2}},
+$$
+$$
+\dot v_y=-\gamma v_y-\omega_0^2 y+\sum_{i=1}^3 k_i\frac{m_{iy}-y}{\bigl((m_{ix}-x)^2+(m_{iy}-y)^2\bigr)^{3/2}}.
+$$
+
+Wir fassen alle vier Größen in einem Zustandsvektor zusammen:
+$$
+\mathbf z=
+\begin{pmatrix}
+x\\y\\v_x\\v_y
+\end{pmatrix}.
+$$
+
+Die Zeitableitung dieses Zustandsvektors ergibt sich direkt aus den Gleichungen oben:
+$$
+\dot{\mathbf z}=
+\begin{pmatrix}
+\dot x\\
+\dot y\\
+\dot v_x\\
+\dot v_y
+\end{pmatrix}=
+\begin{pmatrix}
+v_x\\
+v_y\\
+-\gamma v_x-\omega_0^2 x+\sum_{i=1}^3 k_i\dfrac{m_{ix}-x}{\bigl((m_{ix}-x)^2+(m_{iy}-y)^2\bigr)^{3/2}}\\
+-\gamma v_y-\omega_0^2 y+\sum_{i=1}^3 k_i\dfrac{m_{iy}-y}{\bigl((m_{ix}-x)^2+(m_{iy}-y)^2\bigr)^{3/2}}
+\end{pmatrix}.
+$$
+
+Die rechte Seite dieser Gleichung bezeichnen wir als $\mathbf f(\mathbf z)$, also
+$$
+\dot{\mathbf z}=\mathbf f(\mathbf z).
+$$
+
+Dabei gilt: die ersten beiden Komponenten von $\mathbf f$ sind die Geschwindigkeiten $(v_x,v_y)$, die die zeitliche Änderung der Position angeben, während die letzten beiden Komponenten die Beschleunigungen sind, die die zeitliche Änderung der Geschwindigkeit bestimmen. Damit liefert $\mathbf f(\mathbf z)$ **nicht den Zustand selbst**, sondern seine **Zeitableitung** — genau das, was ein Differentialgleichungssystem ausmacht.
+
+Das klassische Runge–Kutta-Verfahren vierter Ordnung (RK4) nutzt vier Zwischenschritte, um aus $\mathbf z_n$ den nächsten Zustand $\mathbf z_{n+1}$ zu bestimmen:
+
+1. $\mathbf k_1=\mathbf f(\mathbf z_n)$  
+2. $\mathbf k_2=\mathbf f(\mathbf z_n+\frac{h}{2}\mathbf k_1)$  
+3. $\mathbf k_3=\mathbf f(\mathbf z_n+\frac{h}{2}\mathbf k_2)$  
+4. $\mathbf k_4=\mathbf f(\mathbf z_n+h\,\mathbf k_3)$  
+
+Dann folgt das Update:
+$$
+\mathbf z_{n+1}=\mathbf z_n+\frac{h}{6}\bigl(\mathbf k_1+2\mathbf k_2+2\mathbf k_3+\mathbf k_4\bigr).
+$$
+
+Damit werden alle vier Größen $(x,y,v_x,v_y)$ gleichzeitig und konsistent fortgeschrieben. Die ersten beiden Komponenten liefern die neue Position, die letzten beiden die neue Geschwindigkeit.
+
+:::
+
 
 3. **Verlet-Algorithmus**: Der [Verlet-Algorithmus](https://de.wikipedia.org/wiki/Verlet-Algorithmus) ist eine Methode zur numerischen Lösung der Newton’schen Bewegungsgleichungen und wird oft bei Molekulardynamik-Simulationen in der theoretischen Chemie verwendet. Er wurde in den 1960er Jahren entwickelt. Der Verlet-Algorithmus eignet sich aber auch zur Lösung der Schwingungsgleichung eines Pendels und wird dem geneigten Leser beim Studium des hier vorgestellten magnetischen Pendels in der Literatur immer wieder begegnen.
 
@@ -191,6 +294,7 @@ Für die Berechnungen wird angenommen, die Magnete üben eine Kraft auf das Pend
 
 <!-- ABBILDUNG: Magnetpendel -->
 ![Simulation des Magnetpendels. Die Farben zeigen den Magnet, an dem das Pendel zum ruhen kommt, die Helligkeit veranschaulicht die Zeit, die das Pendel vom Start bis zum erreichen des Endpunkts benötigt (je dunkler desto länger benötigt das Pendel bis zum Erreichen der Ruhelage).](images/Magnetpendel.jpg){width=80% #fig-magentpendel}
+
 
 
 
