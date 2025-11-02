@@ -1,4 +1,3 @@
-## Versuchsaufbau
 
 Ein magnetisches Pendel (auch: Chaospendel) besteht aus einer an einem Faden aufgehängten Eisenkugel, die über einer Anzahl am Boden befestigter Magneten hängt. 
 

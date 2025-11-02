@@ -13,9 +13,12 @@ quarto render Labor_Magnetpendel.qmd --to html --profile release-profile,wip-pro
 
 quarto render Links.qmd --to html --profile release-profile,wip-profile -o DEB-PE1-Labor02-Links.html
 
-
 quarto render Lösung_Bewertungsmatrix_Magnetpendel.qmd --to html --profile release-profile,wip-profile -o DEB-PE1-Labor02-Magnetpendel-loesung.html
 
+
+quarto render logistische_gleichung.qmd --to html --profile release-profile,wip-profile -o DEB-PE1-Labor02-logistische_gleichung-loesung.html
+
+quarto render logistische_gleichung.qmd --to html --profile release-profile -o DEB-PE1-Labor02-logistische_gleichung.html
 
 
 quarto render _DEB3_Vorlesung_Produktentwicklung_1.qmd --to html --profile release-profile,wip-profile -o DEB-PE1-Skript.html

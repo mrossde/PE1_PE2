@@ -19,8 +19,9 @@
 
 ## Magnetpendel
 
-{{< include /labor-magnetpendel/L0200-MP_Versuchsaufbau.qmd  >}}
+### Versuchsaufbau
 
+{{< include /labor-magnetpendel/L0200-MP_Versuchsaufbau.qmd  >}}
 
 ## physikalisches Modell des magnetischen Pendels
 
@@ -131,6 +132,9 @@ Damit beschreibt das System $(x,y,v_x,v_y)$ die reale Bewegung eines **gedämpft
 Es gibt verschiedene numerische Verfahren, mit denen diese Schwingungsgleichung eines Pendels gelöst werden kann. Die Verfahren unterscheiden sich stark hinsichtlich ihrer Eigenschaften. Zu den am häufigsten eingesetzten numerischen Verfahren zur Lösung von Differenzialgleichungen zählen:
 
 1. **Euler-Verfahren**: Das [(explizite) Euler-Verfahren](https://de.wikipedia.org/wiki/Explizites_Euler-Verfahren) aus dem Jahr 1768 ein einfaches numerisches Verfahren zur Lösung gewöhnlicher Differentialgleichungen. Es approximiert die Lösung durch eine Taylor-Reihe erster Ordnung und wird oft als erster Schritt zur Lösung von gewöhnlichen Differentialgleichungen verwendet. 
+
+{{< include Aufgabe_Euler_Approx.qmd  >}}
+
 
 ::: {.callout-tip collapse="true"} 
 ## 1. Explizites Euler-Verfahren

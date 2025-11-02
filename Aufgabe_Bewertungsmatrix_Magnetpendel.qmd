@@ -13,8 +13,8 @@ title Gantt-Diagramm der Aufgabe Bewertungsmatrix Magnetpendel
     dateFormat HH:mm
     axisFormat %H:%M    
 
-    section Auswahl Verfahren zur Erfassung von Lage und Bahn des Pendels
-    Erarbeitung der Bewertungskriterien : a1, 00:00, 30m
+    Erarbeitung der Bewertungskriterien : a0, 00:00, 60m
+    Erarbeitung der Bewertungskriterien : a1, after a0, 30m
     Bewertung der Verfahren : a2, after a1, 8m
     Reflektion der Gruppenarbeit : a3, after a2, 2m
 ```
@@ -59,7 +59,7 @@ Vorgaben:
 :::
 
  
-**b)** Bewerten Sie die drei Verfahren zur Erfassung der Lage und Bahn des Magnetpendels gemäß der von Ihnen erarbeiteten Bewertungskriterien. Gehen Sie dafür Zeile für Zeile vor und treffen Sie eine Bewertung für jedes der drei Verfahren. Ermitteln Sie zum Schluss das Ergebnis Ihrer Bewertung durch Aufsummieren der Einzelbewertungen für jedes der drei bewerteten Verfahren.
+**b)** Bewerten Sie die drei Verfahren zur Erfassung der Lage und Bahn des Magnetpendels gemäß der von Ihnen erarbeiteten Bewertungskriterien. Gehen Sie dafür Zeile für Zeile vor und treffen Sie eine Bewertung für jedes der drei Verfahren. Ermitteln Sie zum Schluss das Ergebnis Ihrer Bewertung durch Aufsummieren der Einzelbewertungen für jedes der drei bewerteten Verfahren. Schauen Sie sich dazu auch die gelieferten Daten `Magnetpendel_Daten_Joystick.xlsx` (Potentionmeter siehe Datenblatt Joystick Bricklet 2.0) an
 
 Vorgaben:
 

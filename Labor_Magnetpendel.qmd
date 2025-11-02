@@ -24,11 +24,14 @@
 
                         Ablauf des Labors
 
-                        1. Erläuterung Magnetpendelversuch mithilfe von Video
+                        1. Erläuterung Magnetpendelversuch mithilfe von Video bzw. Live
                         2. Live Demo mit Sensor Tinkerforge
-                        2. Vorhersage Raum durch [Link](https://beltoforion.de/de/magnetisches_pendel/index.php#idStart) erklären
-                        3. Mathematik dahinter zeigen
-                        4. Aufgabe erläutern
+                        3. Vorhersage Raum durch [Link](https://beltoforion.de/de/magnetisches_pendel/index.php#idStart) erklären
+                        4. Mathematik dahinter zeigen
+                        5. Euler Verfahren Worksheet
+                        6. Aufgabe erläutern
+                        7. Logistische Gleichung hochladen + Video dazu schauen
+
 
 -------------------------------------------------------------------------- -->
 
@@ -39,6 +42,7 @@
                        Aufgaben: Bewertungsmatrix Position Pendel 
 
 -------------------------------------------------------------------------- -->
-## Übung: Bewertungsmatrix zur Auswahl des Verfahrens zur Lage- und Bahnerfassung des Magnetpendels
+## Übung 1: Bewertungsmatrix zur Auswahl des Verfahrens zur Lage- und Bahnerfassung des Magnetpendels
 
 {{< include Aufgabe_Bewertungsmatrix_Magnetpendel.qmd >}}
+
