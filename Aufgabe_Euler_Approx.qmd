@@ -15,7 +15,7 @@ $$
 x = 2{,}0 \quad \text{und} \quad x = 4{,}0
 $$  
 
-ab. Vergleichen Sie diese Werte jeweils mit der exakten Sinusspalte $$\sin(x)$$ und berechnen Sie den absoluten Fehler (Spalte F nutzen)
+ab. Vergleichen Sie diese Werte jeweils mit der exakten Sinusspalte $$\sin(x)$$ und berechnen Sie den absoluten Fehler (**Spalte F nutzen**)
 
 $$
 \text{Fehler} = \bigl|\,y_h(x) - \sin(x)\,\bigr|.
