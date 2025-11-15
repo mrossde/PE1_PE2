@@ -59,7 +59,7 @@ bibliography: Literatur.bib
 
                        Vorgehen Labor "Earthlander" (Rückmeldung CA 2025-11-06)
 
-                       1. Gruppen haben eine gewisse Challenge
+                       1. Gruppen haben eine gewisse Challenge (Gruppengröße 4-6)
                        2. Der der den höchsten Einsatz setzt (schmeisst als letzter)
                        3. Wer die höchste Reihe erreicht, gewinnt
                        4. Am ersten Termin - 10er Pack Hart gekocht (jede Gruppe 3 Eier)
@@ -74,7 +74,9 @@ bibliography: Literatur.bib
                         1. Landeeinheit (Stoßdämpfer / Kapsel etc.)
                         2. Flugeinheit (Fallschirmentwicklung?)
                         
-
+offene Themen: 
+Freigabe Projektplan
+Unterlagen letztes Jahr - siehe Email bzw. Ordner
 
 -------------------------------------------------------------------------- -->
 
