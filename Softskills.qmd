@@ -44,11 +44,7 @@ link-external-newwindow: true
 
 -------------------------------------------------------------------------- -->
 
-::: {.content-visible unless-meta="headlines.off"}
-# Softskills
-:::
-
-## Softskills {#sec-introsoftskills}
+## # Was sind Softskills? {#sec-introsoftskills}
 
 ::: {.callout-tip}
 ## Definition: *"Softskills"*

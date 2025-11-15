@@ -3,6 +3,8 @@
 
 quarto render Labor_Flyer.qmd --to html --profile release-profile -o DEB-PE1-Labor01-Flyer.html
 
+quarto render Bewertungsmatrix.qmd --to html --profile release-profile -o DEB-PE1-BMatrix-einzeln.html
+
 quarto render Labor_Flyer.qmd --to html --profile release-profile,wip-profile -o DEB-PE1-Labor01-Flyer_m_Loesung.html
 
 quarto render Labor_Earthlander.qmd --to html --profile release-profile,wip-profile -o DEB-PE1-Labor03-Earthlander.html

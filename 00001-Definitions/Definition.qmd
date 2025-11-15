@@ -1,0 +1,18 @@
+::: {.callout-tip}
+### Definition
+Eine Definition ist ein 
+
+1.  grammatikalisch vollständiger
+1.  konkreter
+1.  widerspruchsfreier
+1.  klarer
+1.  positiv formulierter (keine Verneinungen)
+1.  eindeutiger
+
+Satz. Durch die gram. Vollständigkeit (**Subjekt-Prädikat-Objekt**) ist schnell erkennbar 
+
+-  wer handelt (Subjekt = wer/was etwas tut oder wovon etwas ausgesagt wird.)
+-  was getan wird (Verb = Prädikat)
+-  und was betroffen ist. (Objekt = wen/was betrifft die Handlung/des Prädikats.)
+
+:::

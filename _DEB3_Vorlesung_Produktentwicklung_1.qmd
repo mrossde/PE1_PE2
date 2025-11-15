@@ -176,9 +176,7 @@ ggf. woanders hinverschieben? logisch nicht korrekte Reihenfolge
                        Kapitel 6: Softskills
 
 -------------------------------------------------------------------------- -->
-# Softskills {#sec-softskills}
-
-## Zusammenarbeit und Selbstorganisation
+# Softskills - Zusammenarbeit und Selbstorganisation {#sec-softskills}
 
 {{< include Softskills.qmd >}}
 {{< include Team.qmd >}}
@@ -188,7 +186,7 @@ ggf. woanders hinverschieben? logisch nicht korrekte Reihenfolge
 {{< include Johari-Fenster.qmd >}}
 {{< include LoveChangeLeave.qmd >}}
 
-## Arbeitsmethoden
+# Softskills - Arbeitsmethoden {#sec-softskills2}
 
 {{< include Eisenhower-Prinzip.qmd >}}
 {{< include 6W-Methode.qmd >}}
