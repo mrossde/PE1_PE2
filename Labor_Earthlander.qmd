@@ -57,7 +57,24 @@ bibliography: Literatur.bib
 
 <!-- -------------------------------------------------------------------------
 
-                       Labor "Earthlander"
+                       Vorgehen Labor "Earthlander" (Rückmeldung CA 2025-11-06)
+
+                       1. Gruppen haben eine gewisse Challenge
+                       2. Der der den höchsten Einsatz setzt (schmeisst als letzter)
+                       3. Wer die höchste Reihe erreicht, gewinnt
+                       4. Am ersten Termin - 10er Pack Hart gekocht (jede Gruppe 3 Eier)
+                       5. Am zweiten Termin - Jede Gruppe hat 10 Eier, wieviel gekocht/wieviel roh?
+                       6. Ergebnis - MTB3 Alle Eier sind ganz geblieben
+                       DEB3 - musste dann Landepunkt treffen
+                       Selbstverständlich: Ei muss ganz bleiben
+                       Landepunkt wurde mit Projektsprechern festgelegt (1 Landepunkt)
+                       Projektplan freigeben - Aufteilung Entwicklungszeit und Testing
+                       gibt es Komponententests oder gleich integrationstests?
+                       2 Funktionen: 
+                        1. Landeeinheit (Stoßdämpfer / Kapsel etc.)
+                        2. Flugeinheit (Fallschirmentwicklung?)
+                        
+
 
 -------------------------------------------------------------------------- -->
 
