@@ -41,8 +41,9 @@ mit *Reproduktionsrate* $r$ [0;4] und der *Population* zum Start $X_0$ [0;1].
 
 ![Ausschnitt des Feigenbaum-Diagramms der logistischen Gleichung aus dem Bereich der Bifurkationen am Übergang von Ordnung (links) zum Chaos (rechts)](images/LogisticMap_BifurcationDiagram.png){width=80% #fig-bifurcation}
 
-<!--
+
 ![Ausschnitt des Feigenbaum-Diagramms um r =3.57](images/LogisticMap_BifurcationDiagram_Detail.jpg){width=80% #fig-bifurcation}
--->
+
+
 :::
 :::

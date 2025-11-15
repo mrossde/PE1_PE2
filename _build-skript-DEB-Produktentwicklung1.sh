@@ -13,6 +13,10 @@ quarto render Labor_Magnetpendel.qmd --to html --profile release-profile,wip-pro
 
 quarto render Links.qmd --to html --profile release-profile,wip-profile -o DEB-PE1-Labor02-Links.html
 
+quarto render Aufgabe_Bewertungsmatrix_Dateiformat.qmd --to html --profile release-profile -o DEB-PE1-Aufg-VLBewertungsmatrix.html
+
+
+
 quarto render Lösung_Bewertungsmatrix_Magnetpendel.qmd --to html --profile release-profile,wip-profile -o DEB-PE1-Labor02-Magnetpendel-loesung.html
 
 
