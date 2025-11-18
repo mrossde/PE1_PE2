@@ -1,0 +1,76 @@
+---
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Mario Rossdeutscher"
+    degrees: 
+    roles: "Dozent"
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+---
+
+### Lösung Starship d) - Flight Test Auswertung 2-11 ( Stand 17.11.2025)
+
+| Flug | Testziel | Quantifizierbare Maßzahl | Einheit | Kurzbeschreibung Erfolg/Misserfolg |
+|------|----------|--------------------------|---------|-----------------------------------|
+| 2 | Hot-Staging demonstrieren | Missiondauer bis Stufentrennung | ([8 min 5 s](https://en.wikipedia.org/wiki/Starship_flight_test_2)) | ✅ Hot-Staging gelungen |
+| 2 | Stufentrennung validieren | Zeit bis Separation | ([8 min 5 s](https://en.wikipedia.org/wiki/Starship_flight_test_2)) | ✅ saubere Trennung |
+| 2 | Nahezu-orbitale Trajektorie erreichen | Apogäum | ([149 km](https://en.wikipedia.org/wiki/Starship_flight_test_2)) | ⚠️ Bahn grob erreicht, ❌ kein kontrollierter Reentry |
+| 2 | Booster-Boostback testen | Erfolgreiche Landungen | ([0](https://en.wikipedia.org/wiki/List_of_Starship_launches)) | ❌ Booster RUD bei Boostback (Filterblockade) |
+| 2 | Ship-Daten bis Reentry sammeln | Missionsdauer bis FTS | ([8 min 5 s](https://en.wikipedia.org/wiki/Starship_flight_test_2)) | ⚠️ Teil-Daten, ❌ Ship FTS durch Feuer/Leck |
+| 3 | Vollständigen 2nd-Stage-Burn durchführen | Dauer bis Ship-Zerstörung | ([49 min 41 s](https://en.wikipedia.org/wiki/Starship_flight_test_3)) | ✅ vollständiger Burn |
+| 3 | Orbitalgeschwindigkeit validieren | Geschwindigkeit | ([orbital erreicht](https://en.wikipedia.org/wiki/Starship_flight_test_3)) | ✅ erster Erreichung |
+| 3 | Propellant-Transfer-Demo (Header → Main Tank) | Menge transferierter LOX | ([LOX-Transfer bestätigt](https://en.wikipedia.org/wiki/List_of_Starship_launches)) | ⚠️ nur teilweise durchgeführt |
+| 3 | Starlink-Dispenser-Tür testen | Öffnungsstatus | ([offen/zu](https://en.wikipedia.org/wiki/Starship_flight_test_3)) | ✅ Tür erfolgreich geöffnet & geschlossen |
+| 3 | Raptor-Relight in Orbit | Zündversuch | ([fehlgeschlagen](https://en.wikipedia.org/wiki/List_of_Starship_launches)) | ❌ Roll-Instabilität |
+| 3 | Booster-Rückkehr testen | Höhe bei RUD | ([462 m](https://en.wikipedia.org/wiki/List_of_Starship_launches)) | ❌ Landeburn bricht ab |
+| 3 | Ship-Reentry-Daten sammeln | Missionsdauer bis Auseinanderbruch | ([49 min 41 s](https://en.wikipedia.org/wiki/Starship_flight_test_3)) | ❌ Ship bricht beim Reentry |
+| 4 | Booster „Virtual Tower Landing“ | Apogäum | ([213 km](https://en.wikipedia.org/wiki/Starship_flight_test_4)) | ✅ erfolgreiche Simulation |
+| 4 | Ship-Reentry bis Peak Heating überstehen | Missionsdauer | ([1 h 6 min 10 s](https://en.wikipedia.org/wiki/Starship_flight_test_4)) | ✅ Peak Heating überlebt |
+| 4 | Zielgenauer Ship-Splashdown | Abweichung | ([~6 km](https://en.wikipedia.org/wiki/Starship_flight_test_4)) | ⚠️ leicht Off-Target, aber kontrolliert |
+| 4 | TPS-Experimente (Tile-Entfernung) | modifizierte Stellen | ([3](https://en.wikipedia.org/wiki/Starship_flight_test_4)) | ✅ vollständige Datenerhebung |
+| 5 | Erster echter Booster Tower-Catch | Missionsdauer Booster | ([6 min 54 s](https://en.wikipedia.org/wiki/Starship_flight_test_5)) | ✅ perfekter Catch |
+| 5 | Präziser Ship-Splashdown | Abweichung | ([wenige Meter](https://en.wikipedia.org/wiki/Starship_flight_test_5)) | ✅ punktgenau |
+| 5 | Verstärktes Hitzeschild validieren | Missionsdauer bis Splashdown | ([1 h 5 min 40 s](https://en.wikipedia.org/wiki/Starship_flight_test_5)) | ✅ neues TPS erfolgreich |
+| 5 | Suborbital-Trajektorie testen | Apogäum | ([213 km](https://en.wikipedia.org/wiki/Starship_flight_test_5)) | ✅ stabile Bahn trotz Flap-Schäden |
+| 6 | Zweiter Catch-Versuch | Missionsdauer | ([1 h 5 min 24 s](https://en.wikipedia.org/wiki/Starship_flight_test_6)) | ❌ Catch übersprungen (Tower defekt) |
+| 6 | In-Space-Relight | Apogäum nach Relight | ([228 km](https://en.wikipedia.org/wiki/Starship_flight_test_6)) | ✅ Relight erfolgreich |
+| 6 | Reentry mit reduziertem TPS | Perigee (steiler Reentry) | ([50 km](https://en.wikipedia.org/wiki/Starship_flight_test_6)) | ✅ stabiler Reentry, minimale Schäden |
+| 7 | Erstflug Block-2 Stack | Startmasse | ([5.5 Mio. kg](https://en.wikipedia.org/wiki/Starship_flight_test_7)) | ✅ schwerstes Objekt erfolgreich gestartet |
+| 7 | Neue Starlink-Deploy-Mechanik testen | Anzahl Dummysats | ([10](https://en.wikipedia.org/wiki/Starship_flight_test_7)) | ❌ Deployment nicht erreicht |
+| 7 | Booster-Catch Block-2 | Missionsdauer Booster | ([5 min 55 s](https://en.wikipedia.org/wiki/List_of_Starship_launches)) | ✅ sauberer Catch |
+| 8 | Satelliten-Deploy wiederholen | Anzahl Dummysats | ([4](https://en.wikipedia.org/wiki/Starship_flight_test_8)) | ❌ kein Deploy |
+| 8 | Block-2-Schwingungsdaten sammeln | Apogäum | ([146 km](https://en.wikipedia.org/wiki/Starship_flight_test_8)) | ⚠️ viele Daten vor RUD |
+| 8 | Booster-Catch Booster 15 | Ergebnis | ([1 Catch](https://en.wikipedia.org/wiki/Starship_flight_test_8)) | ✅ sicherer Catch |
+| 9 | Wiederverwendeten Booster fliegen | Flüge des Boosters | ([2](https://en.wikipedia.org/wiki/List_of_Starship_launches)) | ⚠️ guter Flug, ❌ RUD beim Landing |
+| 9 | Zielgeschwindigkeit Ship | Masse Dummysats | ([16 t](https://en.wikipedia.org/wiki/List_of_Starship_launches)) | ⚠️ Geschwindigkeit erreicht, ❌ Kontrolle verloren |
+| 9 | Booster-Aerodynamik bei hohem AoA | Reichweite | ([Golf-Zone](https://en.wikipedia.org/wiki/List_of_Starship_launches)) | ⚠️ Daten gesammelt, ❌ nicht geborgen |
+| 10 | Satelliten-Deployment komplett | Anzahl Dummysats | ([8](https://en.wikipedia.org/wiki/List_of_Starship_launches)) | ✅ alle 8 deployed |
+| 10 | In-Space-Relight Ship | Apogäum nach Relight | ([220 km](https://en.wikipedia.org/wiki/Starship_flight_test_10)) | ✅ Relight erfolgreich |
+| 10 | Präziser Ship-Splashdown | Abweichung | ([wenige Meter](https://en.wikipedia.org/wiki/Starship_flight_test_10)) | ⚠️ Hitzeschäden, aber perfekt |
+| 10 | Booster Engine-Out Robustheit | ausgefallene Triebwerke | ([1](https://en.wikipedia.org/wiki/List_of_Starship_launches)) | ⚠️ trotzdem erfolgreich |
+| 11 | Flight-10-Profil reproduzieren | Anzahl Dummysats | ([8](https://en.wikipedia.org/wiki/List_of_Starship_launches)) | ✅ vollständig gelungen |
+| 11 | Raptor-Konfiguration Block-3 testen | wiederverwendete Triebwerke | ([24](https://en.wikipedia.org/wiki/Starship_flight_test_11)) | ✅ erfolgreich |
+| 11 | Tile-Experimente (ohne Backup Layer) | Anzahl Bereiche | ([>1](https://en.wikipedia.org/wiki/Starship_flight_test_11)) | ⚠️ Schäden, aber Splashdown erfolgreich |
+
+: **Testziele und -maßzahlen Starship Testflüge** {#tbl-sarship-test .striped .hover .bordered tbl-colwidths="[2,7,7,5,79]"}
