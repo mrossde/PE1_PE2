@@ -1,0 +1,16 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+
+
+## Situatives Führen (n. Blanchard)
+
+
+![situatives Führen n. Blanchard (Quelle: [mensch-und-kommunikation.de](https://www.mensch-und-kommunikation.de/2025/01/07/situatives-fuehren-hintergrund))](images/sit_fuehren-blanchard.png){width=80% #fig-sitfuehren}
+
+---
