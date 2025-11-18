@@ -1,13 +1,8 @@
 ---
-title: "MTB3 Entwicklung mechatronischer Systeme 1"
+title: "DEB Produktentwicklung 1"
 format:
   html:
     embed-resources: true
-
-author:
-  - name: "Christian Anders"
-    email: christian.anders@hs-esslingen.de
-    affiliations: Hochschule Esslingen
 date: last-modified
 toc: false
 number-sections: false
@@ -21,7 +16,7 @@ scrollable: true
 -------------------------------------------------------------------------- -->
 
 ::: {.callout-tip}
-## Definition: *"Aufstellungsarbeit"*
+## *"Aufstellungsarbeit"*
 Aufstellungsarbeit ist eine Methode, die häufig in der Organisationsentwicklung und im Coaching eingesetzt wird. Bei einer Aufstellungsarbeit werden Personen im Hinblick auf bestimmte Aspekte einer Organisation positioniert oder aufgestellt, um die zwischenmenschlichen Beziehungen, Kommunikationsmuster und Dynamiken innerhalb des Teams sichtbar zu machen.
 :::
 

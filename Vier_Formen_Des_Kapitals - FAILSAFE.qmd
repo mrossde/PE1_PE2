@@ -107,7 +107,7 @@ Erfolgreiches Networking ist ein wesentlicher Erfolgsfaktor für den eigenen Erf
 
 
 
-::: {.callout-note collapse=true}
+::: {.callout-note}
 ## Ökonomisches Kapital
 Das von Pierre Bourdieu eingeführte Konzept des "Ökonomischen Kapitals" bezieht sich auf finanzielle Ressourcen, die eine Person oder eine Gruppe besitzt. Bourdieu verwendet diesen Begriff, um die Rolle von Wirtschaft und Geld in der sozialen Struktur zu verstehen. Ökonimisches Kapital umfasst:
 
@@ -124,7 +124,7 @@ Das von Pierre Bourdieu eingeführte Konzept des "Ökonomischen Kapitals" bezieh
 
 
 
-::: {.callout-note collapse=true}
+::: {.callout-note}
 ## Soziales Kapital
 Das von Pierre Bourdieu eingeführte Konzept des "Sozialen Kapitals" ist ein zentraler Bestandteil seiner Theorie zur Analyse sozialer Strukturen und sozialer Dynamiken. Bourdieu definiert Soziales Kapital als die Ressourcen, die in sozialen Netzwerken und sozialen Beziehungen eingebettet sind. Im Wesentlichen bezieht sich Soziales Kapital auf die Vorteile, die eine Person durch die Teilnahme an sozialen Gruppen, Netzwerken und Beziehungen erhält:
 
@@ -141,7 +141,7 @@ Das von Pierre Bourdieu eingeführte Konzept des "Sozialen Kapitals" ist ein zen
 
 
 
-::: {.callout-note collapse=true}
+::: {.callout-note}
 ## Kulturelles Kapital
 Kulturelles Kapital bezieht sich auf die kulturellen Ressourcen, die eine Person besitzt, und wie diese Ressourcen ihre Position in der Gesellschaft beeinflussen. Bourdieu unterteilt kulturelles Kapital in drei Hauptformen: inkorporiertes, objektiviertes und institutionalisiertes kulturelles Kapital.
 
@@ -161,7 +161,7 @@ Wichtige Aspekte des kulturellen Kapitals:
 :::
 
 
-::: {.callout-note collapse=true}
+::: {.callout-note}
 ## Symbolisches Kapital
 Das von Pierre Bourdieu eingeführte Konzept des "Symbolischen Kapitals" ist eine wichtige Ergänzung zu seinen Überlegungen zu sozialer Struktur und Machtverhältnissen. Symbolisches Kapital bezieht sich auf den symbolischen Wert oder die Anerkennung, die eine Person oder eine Institution in einer Gesellschaft genießt. Anders als ökonomisches Kapital, das auf materiellen Ressourcen basiert, oder soziales Kapital, das auf sozialen Beziehungen und Netzwerken beruht, ist symbolisches Kapital immaterieller Natur:
 

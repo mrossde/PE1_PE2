@@ -6,6 +6,8 @@ quarto render Aufgabe_Starship-Loesung.qmd --to html --profile release-profile -
 
 quarto render Aufgabe_Starship.qmd --to html --profile release-profile -o Aufgabe_Starship.html
 
+quarto render Aufgabe_Teamaufstellung.qmd --to html --profile release-profile -o Aufgabe_Teamaufstellung.html
+
 quarto render Labor_Flyer.qmd --to html --profile release-profile -o DEB-PE1-Labor01-Flyer.html
 
 quarto render Bewertungsmatrix.qmd --to html --profile release-profile -o DEB-PE1-BMatrix-einzeln.html
