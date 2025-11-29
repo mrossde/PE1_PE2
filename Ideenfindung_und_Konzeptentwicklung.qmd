@@ -86,6 +86,19 @@ Instrumente („Mit welchen Werkzeugen können wir es erreichen?“)
 
 ---
 
+
+<!--  {{< include Digital_Innovation_Playbook.qmd >}} -->
+
+::: {.content-visible unless-meta="kommentare.off"}
+
+:::: {style="background-color: #9affa4"}
+\@mrossde hier Erkenntnisse vom Digital Innovation Playbook einbauen
+
+::::
+:::
+
+
+
 #### Exkurs: Szenario-Technik
 
 Die Szenario-Technik, auch als Szenarioanalyse oder Szenario-Planung bezeichnet, ist eine Methode der strategischen Planung und Entscheidungsfindung, die in verschiedenen Bereichen, darunter Wirtschaft, Unternehmen, Politik und Technologie, eingesetzt wird. Sie zielt darauf ab, Unsicherheiten und mögliche Zukunftsentwicklungen zu berücksichtigen, um bessere Entscheidungen zu treffen und auf verschiedene Zukunftsszenarien vorbereitet zu sein. Die Szenario-Technik umfasst im Allgemeinen folgende Schritte:
