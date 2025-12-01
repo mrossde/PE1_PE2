@@ -1,9 +1,3 @@
----
-
-bibliography: Literatur.bib
-
----
-
 <!--
 format:
   html:

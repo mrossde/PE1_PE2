@@ -1,45 +1,3 @@
-<!--
-title: "DEB3 Produktentwicklung 1"
-format:
-  html:
-    embed-resources: true
-
-author:
-  - name: "Christian Anders"
-    degrees: 
-    roles: "Dozent"
-    email: christian.anders@hs-esslingen.de
-    affiliation: 
-      - name: "Hochschule Esslingen"
-        department: "Wirtschaft & Technik"
-        group: "Digital Engineering (DEB)"
-        city: "Esslingen am Neckar"
-        postal-code: 73728
-        country: "Deutschland"
-        url: https://www.hs-esslingen.de/
-abstract: > 
-  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
-keywords:
-  - Produktentstehungsprozess
-  - Entwicklungsmethodik
-  - Prototyping und Test
-  - Zielsetzung
-copyright: 
-  holder: Christian Anders
-  year: 2024
-lang: de
-bibliography: Literatur.bib
-date: last-modified
-toc: false
-number-sections: true
-scrollable: true
-toc-location: right-body
-cap-location: bottom
-number-offset: 3
-link-external-icon: true
-link-external-newwindow: true
--->
-
 <!-- -------------------------------------------------------------------------
 
                        Ziele Prototyping und Test
@@ -85,6 +43,13 @@ Ein [Test](https://de.wikipedia.org/wiki/Test) ist ein **methodischer Versuch**,
 
 Der Test unterscheidet sich vom Experiment dadurch, dass es beim Test eine Erwartung gibt, die belegt oder widerlegt werden soll, während das Ergebnis beim Experiment offen ist oder nur vermutet werden kann.
 
+::: {.content-visible unless-meta="kommentare.off"}
+
+:::: {style="background-color: #9affa4"}
+\@mrossde Definition Experiment einfügen
+
+::::
+:::
 
 ```{mermaid}
 %%| label: fig-label-mmzieleprototypingundtest
@@ -101,6 +66,20 @@ mindmap
       (Herstell- und Life-Cycle-Kosten)
 ```
 
+::: {.content-visible unless-meta="kommentare.off"}
+
+:::: {style="background-color: #9affa4"}
+\@mrossde 
+
+alles nur 1x Erwähnen
+Begriffe sind alle richtig und relevant, werden aber 3x wiederholt
+entweder Unterkapitel machen 
+saubere Definitionen einführen und jeweils beispiele
+und dann zusammenfügen
+
+::::
+:::
+
 
 Ziel der Phase Prototyping und Test ist es sicherzustellen, dass das Produkt den im Lastenheft spezifizierten Anforderungen genügt und auf den Markt gebracht bzw. dem Kunden übergeben werden kann:
 
@@ -110,7 +89,7 @@ Ziel der Phase Prototyping und Test ist es sicherzustellen, dass das Produkt den
 
 + **Sicherheit**: Testen der Produktsicherheit, um mögliche Risiken oder Gefahren für die Benutzer zu erkennen und zu minimieren.
 
-+ **Usability**: Überprüfung der Benutzerfreundlichkeit und -zufriedenheit (siehe → Vorlesung DEB5 Nutzerverhalten).
++ **Usability**: Überprüfung der Benutzerfreundlichkeit und -zufriedenheit (siehe → Vorlesung NutzerInnenverhalten).
 
 + **Zuverlässigkeit und Stabilität**: Bewertung der Zuverlässigkeit und Stabilität des Produkts unter verschiedenen Bedingungen und über längere Zeiträume.
 
@@ -130,6 +109,14 @@ Ziel der Phase Prototyping und Test ist es sicherzustellen, dass das Produkt den
 
 -------------------------------------------------------------------------- -->
 ### Grundlegende Begriffe
+
+::: {.content-visible unless-meta="kommentare.off"}
+
+:::: {style="background-color: #9affa4"}
+\@mrossde diese Def. oben einbauen, sodass die Aufzählung hier integriert wird.
+
+::::
+:::
 
 ::: {.callout-tip}
 ## Definition: *"Funktionalität"*
@@ -185,11 +172,20 @@ Zuverlässigkeit bezieht sich auf die fehlerfreie und konstante Funktion über Z
 Regelkonformität bezeichnet die Einhaltung von Regeln in Form von Recht und Gesetz; Regelkonformität wird häufig auch als [Compliance](https://de.wikipedia.org/wiki/Compliance_(Recht)) bezeichnet.
 :::
 
-<!-- -------------------------------------------------------------------------
+::: {.content-visible unless-meta="kommentare.off"}
 
-                       Funktionalität des Produkts
+:::: {style="background-color: #9affa4"}
+\@mrossde Funktionalität / Stabilität nochmal neu durchdenken,
+ob die strukturierung so sinn macht, auch hier doppelungen
 
--------------------------------------------------------------------------- -->
+Spätestens bei der Mindmap zur Funktionalität stehen verschiedene arten von Tests
+das ist inkonsistent.
+Auch die Unterscheidung der Testarten in Funktioalität / Stabilität überlappt sich
+Hintergrund?
+
+::::
+:::
+
 ### Funktionalität des Produkts
 
 Um die Funktionalität eines Produkts sicherzustellen, sind Tests erforderlich, die wichtige Kriterien der Leistung und Zuverlässigkeit des Produkts prüfen. 

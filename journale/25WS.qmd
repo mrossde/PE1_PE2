@@ -1,0 +1,91 @@
+
+# Journal 25ws
+
+## 25 WS - Produktentwicklung 1 mit 8x DEB3 Leuten
+
+::: {.callout-tip}
+## Journal
+Dieses Journal enthält Zeitaufzeichnen, was in welcher Vorlesung wie lange gedauert hat
+und welche Übungen / Themen in welcher Reihenfolge besprochen wurden.
+
+:::
+
+3.11 -> bis 3.3 reverse Engineering
+10.11 – Kap 3 durchgemacht, extrem viel / kann man nicht in 2 doppelblöcken machen oder mehr übungen dazwischen
+Am ende noch log. Gleichung in block 3 30min gemacht
+
+3.11.1.3 – Paretoprinzip aus TDE umziehen und bearbeiten
+
+
+3.11:
+Soft skills: 
+5.4 Pierre Bourdieu: “Die vier Formen des Kapitals”
+
+
+17.11:
+
+1.	Softskills kap. fertig gemacht (5.2.10 – 5.2.11 in 90min)
+2.	Aufstellungsübung als refresher um 14uhr gemacht (30min)
+3.	Übung mit Starship zum Thema Entwicklungsprozess (1h) 
+4.	Schluss um 15:20Uhr
+
+
+##### Hinweise für Studenten #####
+
+
+2025-11-15- Überarbeitung Kapitel „Bewertungsmatrix“ – prüfungsrelevant
+
+######
+
+2025-12-01- 
+1,5h
+Entwicklung des Beispiels Powerbank
+Siehe Tafel Fotos + Gedanken zur sauberen Produktentwicklungssystematik
+
+Exkurs Bedürfnisse
+Beispiel Purelei Adventskalender + BURNHARD 
+Emotionale Rückmeldung Produkte
+
+Kapital 4 – Start bis 4.2.2  - ca. 1,5h std mit Verweisen auf 
+Nächstes ist 4.3
+
+#######
+
+Anforderungsnummern / Testfallnummern / 
+
+
+Missionsziele der Testflights
+
+Nächstes Mal: 
+-	Jede Person muss sich einen Testflight genauer anschauen und die Ziele Recherchieren (Neuster Flight rückwärtsgezählt) 
+Der Älteste Testflight wird zuerst vorgestellt. 
+Jeder macht 1 Folie PPT und sendet sie mir zu / dann 5min Kurzvortrag über jedes Testziel
+
+Für 15.12 weil nächste Woche Labor ist:
+Liebe Studierende, 
+da mangels Teilnahme und Ausführung der Aufgabe d) heute dies nicht besprochen wird, ändere Ich auf Aufgabenstellung. 
+Jeder Teilnehmer kriegt 1 Testflug zugeordnet und hält einen 5 Minütigen Kurzvortrag mit 3 Powerpoint Folien (gerechnet ohne Titelfolie) - Leitfragen zu beantworten:
+Was waren die Testziele der Starship Flight Ihrer Nummer?
+Testziel genau definieren (analog Testfall Übung heute)
+Was war quantifizierbares Ergebnis? (Hintergrund Einheit / Testszenario/-sequenz erklären)
+was war der Schrittweise Testablauf / Sequenz.
+
+
+Fr. Santhalingnam : 4
+Hr. Heintz: 10a
+Hr. Oezdemir: 8
+Hr. Akar : 11
+Hr. Krnjic: 6
+
+Hr. Gerasia: 9
+Hr. Atalan: 7
+Hr. Götze: 5
+
+Datum Präsentation: 15.12 - Block wie gewohnt.
+viele Gruesse, Mario Rossdeutscher
+
+##########
+
+
+
+

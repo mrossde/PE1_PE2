@@ -93,7 +93,7 @@ Insgesamt benötige Edison 1014 Versuch um die richtige Kombination aus Werkstof
 
 - **Vorteile**: Durch den Einsatz von DoE können Ressourcen effizienter genutzt werden, da weniger Experimente benötigt werden, um wichtige Informationen zu gewinnen. Außerdem ermöglicht es DoE, das Verständnis für komplexe Systeme zu verbessern, die Robustheit von Prozessen zu erhöhen und die Zeit bis zur Markteinführung zu verkürzen.
 
-- **Methoden**: Es gibt verschiedene Designs und Methoden innerhalb von DoE, darunter vollständige faktorielle Versuchspläne (siehe → Kombinatorische Explosion), [Taguchi-Methode](https://de.wikipedia.org/wiki/Taguchi-Methode), [Response Surface Methodology](https://en.wikipedia.org/wiki/Response_surface_methodology) (RSM), und vieles mehr. Jede Methode hat ihre eigenen Anwendungsgebiete und Vor- und Nachteile.
+- **Methoden**: Es gibt verschiedene Designs und Methoden innerhalb von DoE, darunter vollständige [faktorielle Versuchspläne](https://de.wikipedia.org/wiki/Statistische_Versuchsplanung#Versuchspl%C3%A4ne) (siehe → Kombinatorische Explosion), [Taguchi-Methode](https://de.wikipedia.org/wiki/Taguchi-Methode), [Response Surface Methodology](https://en.wikipedia.org/wiki/Response_surface_methodology) (RSM), und vieles mehr. Jede Methode hat ihre eigenen Anwendungsgebiete und Vor- und Nachteile.
 
 - **Anwendungen**: DoE wird in einer Vielzahl von Branchen und Bereichen eingesetzt, einschließlich Fertigung, Ingenieurwesen, Pharmazie, Chemie, Lebensmitteltechnologie, Qualitätssicherung und mehr.
 
