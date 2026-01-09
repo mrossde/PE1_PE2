@@ -1,10 +1,3 @@
----
-format:
-  html:
-    embed-resources: true
-lang: de
----
-
 <!-- -------------------------------------------------------------------------
 
                        Prüfung MTB3 Entwicklungsmethodik 1 SS24
@@ -33,9 +26,11 @@ Eine durch ein Zitat von Peter F. Drucker bekannten Grundregeln bei der Produkte
 
 *"If you can't measure it, you can't _____________________________________ it!"*
 
-::: {.callout-tip collapse="true"} 
+::: {.content-visible unless-meta="kommentare.off"}
+::: {.callout-tip collapse="true"}  
 ## Lösung
 *"optimize"* oder, ebenfalls richtig *"manage"*
+:::
 :::
 
 <!--
@@ -45,7 +40,8 @@ Welche zwei Faktoren bestimmen maßgeblich die Eigenschaften von physischen Prod
 1. *_____________________________________*
 2. *_____________________________________*
 
-::: {.callout-tip collapse="true"} 
+::: {.content-visible unless-meta="kommentare.off"}
+::: {.callout-tip collapse="true"}  
 ## Lösung
 1.) Die verwendeten **Werkstoffe** 2.) Die bei der Produktion verwendeten **Produktionsprozesse**
 :::
@@ -57,9 +53,11 @@ Wirklich neuartige Produkte oder Produkte mit neuartigen Eigenschaften basieren 
 1. *_____________________________________*
 2. *_____________________________________*
 
-::: {.callout-tip collapse="true"} 
+::: {.content-visible unless-meta="kommentare.off"}
+::: {.callout-tip collapse="true"}  
 ## Lösung
 1.) Produktionstechnik 2.) Werkstofftechnik
+:::
 :::
 
 ## Aufgabe "3D-Scanner"
@@ -70,9 +68,11 @@ Was unterscheidet Lasertriangulation von Streifenlichtprojektion? (1 Antwort ist
 - [ ] Bei der Lasertriangulation werden Muster aus Laserstrahlen auf die Oberfläche projiziert, während bei der Streifenlichtprojektion ein einzelner Laserstrahl verwendet wird.
 - [ ] Bei der Lasertriangulation wird die Zeit gemessen wird, die das Licht benötigt, um vom Objekt zurückzuprallen.
 
-::: {.callout-tip collapse="true"} 
+::: {.content-visible unless-meta="kommentare.off"}
+::: {.callout-tip collapse="true"}  
 ## Lösung
 - [x] Bei der Lasertriangulation wird ein Laserstrahl auf die Oberfläche eines Objekts gerichtet und die Position des reflektierten Strahls gemessen.
+:::
 :::
 <!--
 
@@ -88,9 +88,11 @@ Welche Aussage beschreibt am besten die Genauigkeit der verschiedenen Verfahren 
 - [ ] Die Genauigkeit ist ausschließlich von der Größe des gescannten Objekts abhängig.
 - [ ] Die Genauigkeit variiert je nach dem verwendeten Verfahren. 
 
-::: {.callout-tip collapse="true"} 
+::: {.content-visible unless-meta="kommentare.off"}
+::: {.callout-tip collapse="true"}  
 ## Lösung
 - [x] Die Genauigkeit von 3D-Scannern variiert je nach dem verwendeten Verfahren. 
+:::
 :::
 
 <!--
@@ -132,11 +134,13 @@ Ein von einem ToF-Scanner zu scannendes Objekt sei maximal 1 Meter von dem Scann
 - [ ] ~1 Million Datenpunkte/Sekunde
 - [ ] <100 Tausend Datenpunkte/Sekunde
 
-::: {.callout-tip collapse="true"} 
+::: {.content-visible unless-meta="kommentare.off"}
+::: {.callout-tip collapse="true"}  
 ## Lösung
 - [x] >100 Millionen Datenpunkte/Sekunde
 
 Zur Abschätzung: Lichtgeschwindigkeit ~299.000.000 Meter/Sekunde → Wegstrecke ToF 2 x 1 Meter (Hin- und Rückweg) → Laufzeit $6.69 \cdot 10^{-9}$ Sekunden → ~150 Millionen Datenpunkte/Sekunde!
+:::
 :::
 
 
@@ -160,9 +164,11 @@ Antwort (1 Antwort ist richtig):
 - [ ] Nur 4, 5 und 6 sind richtig.
 - [ ] Alle sind richtig.
 
-::: {.callout-tip collapse="true"} 
+::: {.content-visible unless-meta="kommentare.off"}
+::: {.callout-tip collapse="true"}  
 ## Lösung
 - [x] Nur 3 und 4 sind richtig.
+:::
 :::
 
 
@@ -174,11 +180,13 @@ Welche vier Arbeitsschritte sind vom Menschen bei einer Finite-Elemente-Simulati
 3. *_____________________________________*
 4. *_____________________________________*
 
-::: {.callout-tip collapse="true"} 
+::: {.content-visible unless-meta="kommentare.off"}
+::: {.callout-tip collapse="true"}  
 ## Lösung
 1.) Modellierung → 2.) Festlegen der Materialeigenschaften → 3.) Festlegen der Randbedingungen → 4.) Analyse der Ergebnisse (siehe → Skript zur Vorlesung Abbildung 70 "Vorgehen bei der Finite-Elemente-Simulation").
 
 Anm.: Die Arbeitsschritte 2 und 3 können in der Reihenfolge auch vertauscht sein und zählen dann auch als richtig!
+:::
 :::
 
 
@@ -188,9 +196,11 @@ Was beschreibt der Begriff Betriebsfestigkeit?  (1 Antwort ist richtig)
 - [ ] Die Fähigkeit eines Bauteils, den bei bestimmungsgemäßem Gebrauch im Betrieb auftretenden wiederholten Belastungen für eine zuvor festgelegte Zeit standzuhalten, ohne ein Ermüdungsversagen zu erleiden.
 - [ ] Die Fähigkeit eines Bauteils, den bei bestimmungsgemäßem Gebrauch im Betrieb auftretenden wiederholten Belastungen beliebig lange standzuhalten, ohne ein Ermüdungsversagen zu erleiden.
 
-::: {.callout-tip collapse="true"} 
+::: {.content-visible unless-meta="kommentare.off"}
+::: {.callout-tip collapse="true"}  
 ## Lösung
 - [ ] Die Fähigkeit eines Bauteils, den bei bestimmungsgemäßem Gebrauch im Betrieb auftretenden wiederholten Belastungen für eine zuvor festgelegte Zeit standzuhalten, ohne ein Ermüdungsversagen zu erleiden.
+:::
 :::
 
 
@@ -201,13 +211,15 @@ Wöhler-Kurven werden in drei Bereiche aufgeteilt. Wie werden die drei Bereiche 
 2. *_____________________________________*
 3. *_____________________________________*
 
-::: {.callout-tip collapse="true"} 
+::: {.content-visible unless-meta="kommentare.off"}
+::: {.callout-tip collapse="true"}  
 ## Lösung
 1.) Kurzzeitfestigkeit 2.) Zeit- oder Betriebsfestigkeit 3.) Dauer- oder Endfestigkeit (siehe @fig-woehlerlinie):
 
 ![Wöhler-Kurve](images/Woehlerdiagramm.jpg){width=80% #fig-woehlerlinie}
 
 **Tipp:** Ab $10^6$ Lastwechseln gilt ein Werkstoff für die aus der Wöhler-Kurve ablesbare Spannungsamplitude als Dauer-/Endfest.
+:::
 :::
 
 
@@ -219,9 +231,11 @@ Ab wie vielen Lastwechseln ohne Ermüdungsversagen gilt ein Werkstoff für die a
 - [ ] $10^6$ Lastwechsel
 - [ ] $10^7$ Lastwechsel
 
-::: {.callout-tip collapse="true"} 
+::: {.content-visible unless-meta="kommentare.off"}
+::: {.callout-tip collapse="true"}  
 ## Lösung
 - [x] $10^6$ Lastwechsel
+:::
 :::
 
 ## Aufgabe "Lastkollektiv"
@@ -231,9 +245,11 @@ Was beschreibt der Lastkollektiv?  (1 Antwort ist richtig)
 - [ ] Die minimale, mittlere und maximale Last, der ein Bauteil während seines Betriebs ausgesetzt ist.
 - [ ] Die charakteristischen Belastungen, denen ein Bauteil während seines Betriebs ausgesetzt ist.
 
-::: {.callout-tip collapse="true"} 
+::: {.content-visible unless-meta="kommentare.off"}
+::: {.callout-tip collapse="true"}  
 ## Lösung
 - [x] Die charakteristischen Belastungen, denen ein Bauteil während seines Betriebs ausgesetzt ist.
+:::
 :::
 
 ## Aufgabe "Ermittlung Lastkollektiv"
@@ -250,9 +266,11 @@ Antwort (1 Antwort ist richtig):
 - [ ] Nur 2 und 3 sind richtig.
 - [ ] Alle sind richtig.
 
-::: {.callout-tip collapse="true"} 
+::: {.content-visible unless-meta="kommentare.off"}
+::: {.callout-tip collapse="true"}  
 ## Lösung
 - [X] Alle sind richtig.
+:::
 :::
 
 
@@ -262,9 +280,11 @@ Welche der folgenden Aussagen ist richtig? (1 Antwort ist richtig)
 - [ ] *"Die Miner-Regel ermöglicht eine genaue Vorhersage der Betriebsfestigkeit von Bauteilen."*
 - [ ] *"Die Miner-Regel gibt nur eine vereinfachte Näherung zur Abschätzung der Betriebsfestigkeit."*
 
-::: {.callout-tip collapse="true"} 
+::: {.content-visible unless-meta="kommentare.off"}
+::: {.callout-tip collapse="true"}  
 ## Lösung
 - [x] *"Die Miner-Regel gibt nur eine vereinfachte Näherung zur Abschätzung der Betriebsfestigkeit."*
+:::
 :::
 
 
@@ -276,9 +296,11 @@ Die Auslegung eines Bauteils auf eine definierte Lebensdauer erfolgt in vier Sch
 3. *_____________________________________*
 4. *_____________________________________*
 
-::: {.callout-tip collapse="true"} 
+::: {.content-visible unless-meta="kommentare.off"}
+::: {.callout-tip collapse="true"}  
 ## Lösung
 1.) Feslegung der vorgesehenen Betriebsdauer → 2.) Definition oder Ermittlung der Lasten (→ Lastkollektiv) → 3.) Abschätzung der Belastbarkeit des Bauteils (Bauteil-Wöhlerlinie) → 4.) Berechnung der Lebensdauer des Bauteils (z.B. mittels Miner-Regel).
+:::
 :::
 
 ## Aufgabe "Berechnung Gesamtschädigung"
@@ -302,7 +324,8 @@ Die Auslegung eines Bauteils auf eine definierte Lebensdauer erfolgt in vier Sch
 
 **Lösung**: $D=$ *_________________*
 
-::: {.callout-tip collapse="true"} 
+::: {.content-visible unless-meta="kommentare.off"}
+::: {.callout-tip collapse="true"}  
 ## Lösung
 Miner-Regel (lineare Schadensakkumulation): 
 $$
@@ -313,6 +336,8 @@ Berechnung der Gesamtschädigung nach der Miner-Regel für das Bauteil:
 $$
 D={\frac {0,5 \cdot 10^2}{10^2}} + {\frac {0,4 \cdot 10^4}{10^4}} + {\frac {0,05 \cdot 10^5}{10^5}} + {\frac {5 \cdot 10^6}{\infty}} = 0,95
 $$
+
+:::
 :::
 
 ## Aufgabe "Bruchtheorie"
@@ -323,9 +348,11 @@ Welche der folgenden Aussagen ist richtig?  (1 Antwort ist richtig)
 - [ ] *"Risse sind ein Hinweis auf ein bevorstehendes Versagen von Bauteilen."*
 - [ ] *"Ohne das Vorhandensein von Kerben erleiden Bauteile keine Ermüdung."*
 
-::: {.callout-tip collapse="true"} 
+::: {.content-visible unless-meta="kommentare.off"}
+::: {.callout-tip collapse="true"}  
 ## Lösung
 - [x] *"Risse sind ein Hinweis auf ein bevorstehendes Versagen von Bauteilen."*
+:::
 :::
 
 
@@ -334,9 +361,11 @@ Was bedeutet die in der Produktentwicklung verwendete Abkürzung "PPG"?
 
 Antwort: *_______________________________________________________________________*
 
-::: {.callout-tip collapse="true"} 
+::: {.content-visible unless-meta="kommentare.off"}
+::: {.callout-tip collapse="true"}  
 ## Lösung
 *"Produktionsgerechte Produktgestaltung"* oder, ebenso richtig *"Design for Manufacturing"*
+:::
 :::
 
 ## Aufgabe "Rule of 10"
@@ -347,11 +376,13 @@ Welche der folgenden Aussagen ist richtig?  (1 Antwort ist richtig)
 - [ ] Die Kosten für jeden unentdeckten Fehler steigen je Phase des PEP um den Faktor 10.
 
 
-::: {.callout-tip collapse="true"} 
+::: {.content-visible unless-meta="kommentare.off"}
+::: {.callout-tip collapse="true"}  
 ## Lösung
 - [x] Die Kosten für jeden unentdeckten Fehler steigen je Phase des PEP um den Faktor 10.
 
 ![Rule of 10 ("Zehnerregel")](images/Zehnerregel.drawio.svg){width=76% #fig-zehnerregelpruefung}
+:::
 :::
 
 
@@ -362,7 +393,9 @@ Welche Phase der Produktentstehung und Produktion verursacht bei in Großserie p
 - [ ] Fertigung
 - [ ] Montage
 
-::: {.callout-tip collapse="true"} 
+::: {.content-visible unless-meta="kommentare.off"}
+::: {.callout-tip collapse="true"}  
 ## Lösung
 - [x] Montage (siehe Skript zur Vorlesung → Abbildung 90)
+:::
 :::
