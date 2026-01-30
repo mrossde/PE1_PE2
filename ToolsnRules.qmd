@@ -271,7 +271,7 @@ Ihr Dozent ist gerne für Sie erreichbar! Bitte kommen Sie zum Zweck einer Termi
 + Abschluss durch schriftliche Klausur (Dauer der Klausur lt. SPO: 90 Minuten).
 + Labore = 2 ECTS (Benotung gemäß Prüfungsordnung: Bestanden/Nicht bestanden)
 + Erforderlich für das Bestehen der Labore ist die aktive Teilnahme an den zwei Laboreinheiten zum Projekt "Earthlander". Für die Teilnahme an den Laboren ist ggf. vorab das Bestehen eines Moodle-Tests erforderlich. 
-+ Klausur in Form eines Single-Choice-Tests, zusätzlich Fragen die textuell oder durch das Anfertigen von Diagrammen zu beantworten sind. Ziel ist es, maximale Objektivität und Unabhängigkeit von der zu prüfenden Person bei der Klausur zu erreichen. Als Hilfsmittel zur Klausur sind handschriftliche Notizen im Umfang von 4 Seiten DIN A4 zugelassen.
++ Klausur : siehe [Prüfungsvorbereitung](https://moodle.hs-esslingen.de/moodle/course/view.php?id=32955#)
 
 Ein Leistungspunkt (ECTS) entspricht einem Workload von 30 Zeitstunden (siehe → Modulhandbuch). 
 

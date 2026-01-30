@@ -336,6 +336,14 @@ $$
 
 In die Betrachtung der Betriebsfestigkeit fließen in der Praxis noch eine Vielzahl weiterer Faktoren mit ein (siehe → Materialermüdung @sec-materialermuedung).
 
+::: {.content-visible unless-meta="kommentare.off"}
+
+:::: {style="background-color: #9affa4"}
+\@mrossde Aufgabe Berechnung der Miner Regel reinnehmen / durchführen (siehe Prüfung Entwurf_Entwicklung.qmd)
+
+::::
+:::
+
 ::: {.callout-important}
 ## Versagen eines Produkts nach Erreichen des Lastkollektivs ist zulässig!
 Ein betriebsfest ausgelegtes Produkt ist immer nur auf ein zuvor definiertes Lastkollektiv ausgelegt und **darf nach dem Überschreiten der im Lastkollektiv beschriebenen Belastung versagen**. Das Versagen des Produkts nach dem Erreichen des Lastkollektivs ist eine mit der Definition des Lastkollektivs im Lastenheft festgelegte Produkteingenschaft.

@@ -210,6 +210,17 @@ Ziel der Umweltqualifizierung ist es, in möglichst kurzer Zeit belastbare Infor
 :::
 
 #### Arrhenius-Gleichung
+
+::: {.content-visible unless-meta="kommentare.off"}
+
+:::: {style="background-color: #9affa4"}
+\@mrossde Beispielaufgabe einbauen und durchrechnen
+Prüfungsaufgabe siehe Prototyping_Test.qmd
+
+::::
+:::
+
+
 Die Arrhenius-Gleichung, benannt nach [Svante Arrhenius](https://de.wikipedia.org/wiki/Svante_Arrhenius), beschreibt näherungsweise eine quantitative Temperaturabhängigkeit bei physikalischen und vor allem chemischen Prozessen, bei denen auf molekularer Ebene eine Aktivierungsenergie überwunden werden muss. 
 
 Sie beschreibt eine phänomenologische Beziehung und gilt für sehr viele chemische Reaktionen. Eine Temperaturerhöhung, gleichbedeutend mit auf molekularer Ebene mehr verfügbarer Energie, führt demnach stets zu einer Zunahme der Reaktionsgeschwindigkeit. Eine gute Näherung, die sogenannte Reaktionsgeschwindigkeit-Temperaturregel (RGT-Regel), sagt bei einer Temperaturerhöhung von 

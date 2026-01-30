@@ -2,6 +2,10 @@
 #quarto render 00010-Projektmanagement.qmd --to html --profile release-profile, cpp-profile -o MTB-Informationstechnik-00010-Projektmanagement.html
 
 
+quarto render _DEB3_Prüfung_Produktentwicklung_1_WS2425.qmd --to html --profile release-profile -o _DEB3_Prüfung_Produktentwicklung_1_WS2425.html
+
+
+
 quarto render Aufgabe_Starship-Loesung.qmd --to html --profile release-profile -o Aufgabe_Starship-lsg.html
 
 quarto render Aufgabe_Starship.qmd --to html --profile release-profile -o Aufgabe_Starship.html
@@ -48,7 +52,3 @@ quarto render _DEB3_Vorlesung_Produktentwicklung_1.qmd --to html --profile relea
 # 2025-09-30- geht nur wenn man im Dokument nochmal kommentare off true setzt , das sollte aber eigentlich das release profile machen
 
 quarto render _DEB3_Vorlesung_Produktentwicklung_1.qmd --to html --profile release-profile,wip-profile -o DEB-PE1-Skript.html
-
-
-quarto render _DEB3_Vorlesung_Produktentwicklung_1_1_Grundlagen.qmd --to html --profile release-profile -o DEB-PE1-Grundlagen-Skript.html
-
