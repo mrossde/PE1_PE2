@@ -1,0 +1,93 @@
+# Übergabe von Christian Anders an Mario
+
+## Infos
+
+1. WorkinProgress Ordner Stück für Stück rüberkopieren in dieses PE1_PE2 Repo und Diff machen
+
+**CA Ziel:**
+
+2. Er wollte sehen, ob 8 Leute in 10 Wochen ein Umweltmonitoringsystem entwickeln können. 
+
+"PE2 ist der Besenwagen, der hinter der PE1 hinterher fährt"
+
+
+## Termine
+
+2. Termine.qmd ist IST-Stand in Gantt Chart
+
+<mark>Hier ggf. Tabelle draus machen, weil Anpassungsaufwand groß ist </mark>
+
+3. Vorlesungen idR 2 Blöcke / Labore auf 3 Blöcke = 5SWS Mittelwert eingehalten
+
+## Exkursionen in PE1
+
+### Klimaschrank
+
+Temperaturkurve von -40 .. 80 Grad durchfahren
+
+### 3D Scanner 
+
+### EMV Kammer
+
+[ ] - rausfinden was 
+
+### 3D Druck
+
+### Shaker - Schütteltest
+
+
+## Praktikums-Wahl (Produkt)
+
+- Umweltmonitoring System
+- Radio
+- intelligentes Planzenbewässerungssystem
+
+
+### Umweltmonitoring System
+
+In den 4 Abgaben gibt es auch eine Doku. 
+
+Studenten haben ein GIT Repo, <mark>nochmal nachfragen und ggf. zeigen lassen </mark>
+
+Labor 3 hat die meisten Unterlagen
+
+### Inbetriebnahme
+
+
+
+### Test von Sensoren
+
+Lichtsensor hat sich so wie er verbaut war als nicht testbar rausgestellt.
+
+Umweltqualifizierung Spec von Sensoren - Ist der Sensor qualifiziert für die Umgebung?
+
+# TODOS
+
+[ ] - Umweltmonitoring die Abgaben Dateien alle anschauen
+[ ] - Umweltmonitoring HW von CA entgegenzunehmen
+[ ] - 01_Budget_Bauteile_PE2.xlsx
+[ ] - Gerät teste, mit USB Spannungsversorgung / müsste sich mit WLAN verbinden und Uhrzeit 
+[ ] - Versuche in Labor 4 durchlesen und überlegen, wie das qualifiziert beim nächsten Mal getestet werden kann.
+[ ] - Klimaschrank - Testreihe Temperatur / Feuchtigkeit / CO2 / Timen und mit Stadtmitte klären, dass man dort 1 Nachmittag 1 Test machen kann
+[ ] - Powerbank -> Noch bestellen 
+[ ] - Markus Schlipf + Johannes Vorlesungen für Anforderungen nutzen
+[ ] - Wettbewerbsanalyse + Patentrecherche diskutieren und überlegen wie es in dem DEB Curriculum rein soll (mehr/weniger)
+[ ] - Exkurs Patent + Gebrauchsmuster -> um 2 Spalten um Design und Geschmacksmuster erweitern
+
+2,8" wurde verbaut, und hat Farbe aber kein Touch 
+2,1" wurde nicht verbaut
+
+## Varianten
+
+a) Vorlesung weiterentwickeln und auf der Höhe der Zeit halten
+b) Prototyp Umweltmonitoringsystem immer weiter verbessern
+c) Prototyp - Umweltmonitoringsystem jedes Mal neu bauen
+
+d) Anknüpfungspunkte zu Daniel / Johannes? 
+e) 
+
+## weitere Funktionen
+
+1. WLAN Konfiguration über QR Code ggf. um das Gerät dynamisch mit WLAN zu verbinden
+2. 
+3. 
