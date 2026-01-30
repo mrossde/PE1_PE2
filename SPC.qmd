@@ -34,7 +34,7 @@ Zufällige Einflüsse lassen sich hierbei durch ein Normalverteilungsmodell besc
 + vorhersagbar
 + konstante Summe vieler Einzeleinflüsse
 
-Systemtische Einflüsse destabilisieren oder verschieben einen Prozess. Solche systematische Einflüsse werden im Rahmen der Prozessplanung im Vorfeld analysiert und eliminiert, sodass in laufender Serie störungsfrei produziert werden kann. Tritt jedoch während der laufenden Serie ein systematischer Einfluss auf, so lassen sich die Auswirkungen wie folgt charakterisieren:
+Systematische Einflüsse destabilisieren oder verschieben einen Prozess. Solche systematische Einflüsse werden im Rahmen der Prozessplanung im Vorfeld analysiert und eliminiert, sodass in laufender Serie störungsfrei produziert werden kann. Tritt jedoch während der laufenden Serie ein systematischer Einfluss auf, so lassen sich die Auswirkungen wie folgt charakterisieren:
 
 + Auftreten folgt keiner Regel
 + Destabilisierung des Prozesses
