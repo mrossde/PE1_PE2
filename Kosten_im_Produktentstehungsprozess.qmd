@@ -7,7 +7,18 @@ bibliography: Literatur.bib
 ---
 
 <!--
-title: "DEB3 Produktentwicklung 1"
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
+
+<!--
+title: "DEB Produktentwicklung"
 format:
   html:
     embed-resources: true
@@ -26,25 +37,52 @@ author:
         country: "Deutschland"
         url: https://www.hs-esslingen.de/
 abstract: > 
-  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
 keywords:
   - Produktentstehungsprozess
-  - Entwicklungsmethodik
-  - Produktions- und Werkstofftechnik
+  - Wirtschaftlichkeit
+  - Lebenszykluskosten
+
+
 copyright: 
   holder: Christian Anders
-  year: 2024
+  year: 2025
 lang: de
 bibliography: Literatur.bib
 date: last-modified
-toc: false
-number-sections: false
+toc: true
+number-sections: true
 scrollable: true
-toc-location: right-body
+toc-location: right
 cap-location: bottom
 number-offset: 0
 link-external-icon: true
 link-external-newwindow: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+<!--
+::: {.callout-warning}
+## WARNING!
+**THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
+:::
 -->
 
 <!-- -------------------------------------------------------------------------
@@ -56,21 +94,85 @@ link-external-newwindow: true
 
 ### Kosten im Produktentstehungsprozess  {#sec-kosten_im_pep}
 
+<!-- -------------------------------------------------------------------------
+
+                       Lebenszykluskosten
+
+-------------------------------------------------------------------------- -->
+#### Begriffe zu Kosten im PEP {#sec-lebenszykluskosten}
+
+
+:::{.callout-tip}
+## Definition *"Cashflow"*
+[Cash flow](https://en.wikipedia.org/wiki/Cash_flow), in general, refers to payments made into or out of a business, project, or financial product.
+:::
+
+
+::: {.callout-tip}
+## Definition *"Return on Investment (RoI)"*
+[Return on investment](https://en.wikipedia.org/wiki/Return_on_investment) (ROI) or return on costs (ROC) is the ratio between net income (over a period) and investment (costs resulting from an investment of some resources at a point in time). 
+:::
+
+
+::: {.callout-tip}
+## Definition *"Break Even"*
+[Break-even](https://en.wikipedia.org/wiki/Break-even), often abbreviated as B/E in finance (sometimes called point of equilibrium), is the point of balance making neither a profit nor a loss.
+:::
+
+
+:::{.callout-tip}
+## Definition *"Lebenszykluskosten"*
+Lebenszykluskosten (engl. [Life Cycle Costs](https://en.wikipedia.org/wiki/Life-cycle_cost_analysis), LCC) sind die Summe aller Kosten, die ein Produkt von der Idee bis zur endgültigen Außerbetriebnahme verursacht – einschließlich der indirekten und Folgekosten, die im Betrieb und nach der Nutzung entstehen.
+:::
+
+:::{.callout-tip}
+## Definition *"Total Cost of Ownership (TCO) (engl.)"*
+[Total Cost of Ownership](https://en.wikipedia.org/wiki/Total_cost_of_ownership) (TCO) is a financial estimate intended to help buyers and owners determine the direct and indirect costs of a product or service. TCO recognises that ownership costs are significantly greater than the cost of purchasing or acquiring a product.
+:::
+
+Das [Konzept des Total Cost of Ownership](https://de.wikipedia.org/wiki/Total_Cost_of_Ownership) wurde 1987 von der Unternehmensberatung [Gartner Inc.](https://www.gartner.de/de) (siehe → Technology-Hype-Cycle @sec-techhypecycle), im Auftrag von [Microsoft](https://www.microsoft.com/de-de/) entwickelt.
+
+---
+
+>
+*"The term Life-cycle cost analysis (LCCA) differs slightly from Total cost of ownership analysis (TCOA). LCCA determines the most cost-effective option to purchase, run, sustain or dispose of an object or process, and TCOA is used by managers or buyers to analyze and determine the direct and indirect cost of an item."* (Quelle: [Wikipedia](https://en.wikipedia.org/wiki/Life-cycle_cost_analysis))
+
+---
+
+:::{.callout-tip}
+## Definition *"Cashflow (engl.)"*
+[Cash flow](https://en.wikipedia.org/wiki/Cash_flow#Business'_financials) is a critical indicator of a company's financial health, representing the net amount of cash and cash equivalents moving into and out of a business. The total net cash flow over a period (typically a quarter, half-year, or full year) equals the change in the cash balance during that period: positive if the cash balance increases, negative if it decreases. Net cash flow is calculated by subtracting total cash outflows from total cash inflows.
+:::
+
+![Cashflow im Produktlebenszyklus](images/Lebenszyklus.drawio.png){width=84% #fig-lebenszykluskosten}
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Herstellkosten
+
+-------------------------------------------------------------------------- -->
+
 #### Herstellkosten eines Produkts
+
+::: {.callout-tip}
+## Definition *"Herstellkosten"*
+Herstellkosten sind die Summe aller Kosten für Material, Fertigung und produktionsbezogene Gemeinkosten, die bei der Herstellung eines Produkts anfallen.
+:::
 
 ![Kostenbeeinflussung und -entstehung im Produktentstehungsprozess (Quelle: Lehrstuhl und Institut für Allgemeine Konstruktionstechnik des Maschinenbaus (ikt) RWTH Aachen, Prof. [Jörg Feldhusen](https://de.wikipedia.org/wiki/J%C3%B6rg_Feldhusen), Stand: 2014)](images/Kostenbeeinflussung.drawio.svg){width=64% #fig-kostenimpep}
 
 Als in der Fachliteratur häufig genannte Abschätzung gilt, dass ca. 70% der Herstellkosten eines Produkts (siehe → @fig-label-kostenstruktur) durch die Entwicklungsphase festgelegt werden. Die Entwicklungsphase selbst verursacht dabei nur (2 ... 10)% der Herstellkosten des Produkts. In der Entwicklungsphase selbst entfallen bis zu zwei Drittel der Kosten auf Personalkosten → i.d.R Verwaltungsgemeinkosten (Quelle: Prof. Ehrlenspiel^[Ehrlenspiel, K.; Kiewert, A.; Lindemann, U.: Kostengünstig Entwickeln und Konstruieren. 6., überarb. u. korr. Aufl., Berlin]).
 
 ::: {.callout-caution}
-## Herstellkosten eines Produkts sind in der Praxis nur in geringem Maße tatsächlich beeinflussbar!
+## Pro-Tipp! Herstellkosten eines Produkts sind in der Praxis nur in geringem Maße tatsächlich beeinflussbar!
 Auch wenn die Herstellkosten im Wesentlichen tatsächlich in der Entwicklungsphase festgelegt werden heisst das in der Praxis **NICHT**, dass die Herstellkosten in erheblichem Masse in der Entwicklungsphase auch beeinflusst werden können, **OHNE** zugleich auch die Eigenschaften des Produkts zu verändern. 
 :::
 
 In der Praxis lassen sich die Herstellkosten eines Produkts in der Entwicklungsphase zumeist tatsächlich nur um maximal wenige Prozent reduzieren (bei gleichbleibend guten Eigenschaften des Produkts).
 
 ::: {.callout-important}
-## Realistische Ziele bei der Produktentwicklung hinsichtlich Produktkosten setzen!
+## Pro-Tipp! Realistische Ziele bei der Produktentwicklung hinsichtlich Produktkosten setzen!
 Eine Produktentwicklung ist in der Regel bereits überaus erfolgreich wenn es gelingt, die Eigenschaften des Produkts bei gleichen Herstellkosten des Produkts zu verbessern, oder aber die Herstellkosten des Produkts bei gleichen Eigenschaften des Produkts um einige Prozent zu senken.
 :::
 
@@ -140,20 +242,113 @@ flowchart LR
  style I fill:#ff7e00,stroke:#000,color:#fff
  ```
 
+Neben dieser Aufschlüsslung existieren in der Literatur eine Vielzahl ähnlicher Darstellungen, bei denen teilweise eine geringfügig andere Aufschlüsslung einzelner Kostenbausteine Verwendung findet. In der Grundaussage besteht jedoch heute Übereinstimmung. @fig-label-kostenstruktur sei daher dem geneigten Leser als guter erster Anhaltspunkt für die Aufschlüsselung der verschiedenen Kosten empfohlen.
+
+::: {.callout-note}
+## Beispiel: Alternative Darstellung der Herstellkosten gemäß der klassischen industriellen Kostenrechnung
+
+<!--
+$$
+\text{Herstellkosten} = \text{Materialeinzelkosten} + \text{Materialgemeinkosten} + \text{Fertigungseinzelkosten} + \text{Fertigungsgemeinkosten} + \text{Sondereinzelkosten der Fertigung}
+$$
+-->
+In der Literatur ist oftmals eine kompakte Formel der Herstellkosten zu finden, bei der Abkürzungen verwendet werden:
+
+$$
+HK = MEK + MGK + FEK + FGK + SEKF
+$$
+
+**Erläuterung der Formelbestandteile**:
+
+|  Symbol  | Begriff                          | Beschreibung                                                                                   |
+| :------: | :------------------------------- | :--------------------------------------------------------------------------------------------- |
+|  $MEK$   | Materialeinzelkosten             | Kosten der direkt im Produkt enthaltenen Materialien (z. B. Rohstoffe, Bauteile)               |
+|  $MGK$   | Materialgemeinkosten             | Gemeinkosten für Materialverwaltung, -lagerung, -beschaffung usw.                              |
+|  $FEK$   | Fertigungseinzelkosten           | Löhne der direkt an der Herstellung beteiligten Arbeitskräfte                                  |
+|  $FGK$   | Fertigungsgemeinkosten           | Gemeinkosten der Produktion (z. B. Maschinenabschreibungen, Energie, Instandhaltung)           |
+|  $SEKF$  | Sondereinzelkosten der Fertigung | Direkt zurechenbare Fertigungskosten, z. B. spezielle Werkzeuge, Prüfmittel oder Vorrichtungen |
+
+
+Die Herstellkosten sind auch hier Teil der Selbstkosten eines Produkts:
+
+$$
+SK = HK + VwK + VkK + SEKV
+$$
+
+**Erläuterung der Formelbestandteile**:
+
+|  Symbol  | Begriff                          | Beschreibung                                                                                     |
+| :------: | :------------------------------- | :----------------------------------------------------------------------------------------------- |
+|  $SK$    | Selbstkosten                     | Gesamte Kosten eines Produkts (Summe aller Kostenarten)                                          |
+|  $HK$    | Herstellkosten                   | Material- und Fertigungskosten (siehe vorherige Formel)                                          |
+|  $VwK$   | Verwaltungskosten                | Kosten für Planung, Organisation, Buchhaltung, IT usw.                                           |
+|  $VkK$   | Vertriebskosten                  | Kosten für Marketing, Verkauf, Versand, Kundenservice usw.                                       |
+| $SEKV$   | Sondereinzelkosten des Vertriebs | Direkt zurechenbare Vertriebskosten (z. B. spezielle Verpackung, Provisionen, Kundenanpassungen) |
+
+
+```{mermaid}
+%%| fig-width: 6.4
+%%| label: fig-label-kostenstrukturalternativ
+%%| fig-cap: "Alternative vereinfachte Darstellung der Zusammensetzung der Selbstkosten eines Produkts"
+graph LR
+    SK["Selbstkosten (SK)"]
+    HK["Herstellkosten (HK)"]
+    VwK["Verwaltungskosten (VwK)"]
+    VkK["Vertriebskosten (VkK)"]
+    SEKV["Sondereinzelkosten des Vertriebs (SEKV)"]
+
+    SK --> HK
+    SK --> VwK
+    SK --> VkK
+    SK --> SEKV
+
+    HK --> MK["Materialkosten"]
+    HK --> FK["Fertigungskosten"]
+    HK --> SEKF["Sondereinzelkosten der Fertigung (SEKF)"]
+
+    MK --> MEK["Materialeinzelkosten (MEK)"]
+    MK --> MGK["Materialgemeinkosten (MGK)"]
+
+    FK --> FEK["Fertigungseinzelkosten (FEK)"]
+    FK --> FGK["Fertigungsgemeinkosten (FGK)"]
+
+  style HK fill:#a00,stroke:#000,color:#fff
+  style FGK fill:#ff7e00,stroke:#000,color:#fff
+```
+:::
+
 
 ::: {.callout-caution}
-## Einfluss der Produktionsgemeinkosten auf die Herstellkosten eines Produkts
+## Pro-Tipp! Einfluss der Produktionsgemeinkosten auf die Herstellkosten eines Produkts beachten!
 In der industriellen Großserienfertigung bestimmen die Produktionsgemeinkosten oftmals zu erheblichem Anteil die Herstellkosten eines Produkts. 
 :::
 
 Die der Kostenrechnung zugrunde liegenden Prämissen (z.B. die zu erwartende Lebensdauer einer sehr teuren, aber überaus langlebigen Produktionsanlage) entscheiden dann möglicherweise mehr über die (rechnerischen) Änderungen bei den Herstellkosten des Produkts als alle Maßnahmen zur Kostenreduktion, die durch das Entwicklungsteam im Produktentstehungsprozess erreicht werden können.
 
-Ebenso bietet aber auch die Wiederverwendung von Produktionsanlagen (→ *"Reuse"*) über mehrere Produktgenerationen hinweg eine Chance, die (rechnerischen) Herstellkosten eines Produkts erheblich zu senken.  
+Ebenso bietet aber auch die **Wiederverwendung von Produktionsanlagen** (siehe → *"Re-Use"*) über mehrere Produktgenerationen hinweg eine Chance, die (rechnerischen) Herstellkosten eines Produkts erheblich zu senken.
 
 ::: {.callout-caution}
-## Prämissen der Kostenrechnung transparent machen und dokumentieren!
-Die vom Controlling berechneten und für das Management damit oftmals maßgeblichen (rechnerischen) Herstellkosten eines Produkt sind in der Praxis nur zum Teil eineindeutig durch reale Kosten (z.B. Materialkosten) festgelegt. Die (rechnerischen) Herstellkosten eines Produkts hängen ebenso und oftmals entscheidend von den der Kostenrechnung zugrundeliegenden Prämissen ab. Bei der Berechnung der Herstellkosten eines Produkts sind daher die zugrundeliegenden Prämissen stets transparent darzustellen und mit zu dokumentieren!
+## Pro-Tipp! Prämissen der Kostenrechnung transparent machen und dokumentieren!
+Die vom Controlling berechneten und für das Management damit oftmals maßgeblichen (rechnerischen) Herstellkosten eines Produkt sind in der Praxis nur zum Teil eineindeutig durch reale Kosten (z.B. Materialkosten) festgelegt. Die (rechnerischen) Herstellkosten eines Produkts hängen ebenso und oftmals entscheidend **von den bei der Kostenrechnung zugrundeliegenden Prämissen ab**. 
+
+**Bei der Berechnung der Herstellkosten eines Produkts sind daher die zugrundeliegenden Prämissen stets transparent darzustellen und mit zu dokumentieren!**
 :::
+
+<!-- -------------------------------------------------------------------------
+
+                       Reuse
+
+-------------------------------------------------------------------------- -->
+#### Re-Use {#sec-reuse}
+
+::: {.callout-tip}
+## Definition *"Re-Use"*
+Re-Use bezeichnet die gezielte Wiederverwendung von vorhandener Produktionshard- und Software (Maschinen, Werkzeuge, Steuerungen, Programme,…) in nachfolgenden Produktprogrammen oder Produktgenerationen.
+:::
+
+Ziele des Re-Use sind u.a. Investitionskosten und Lebenszykluskosten zu senken, schneller Produktionsanläufe zu ermöglichen und die Nachhaltigkeit der Produktion zu erhöhen.
+
+
 
 <!-- -------------------------------------------------------------------------
 

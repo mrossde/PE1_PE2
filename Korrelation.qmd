@@ -6,6 +6,7 @@ lang: de
 bibliography: Literatur.bib
 ---
 
+
 <!--
 headlines:
   off: true
@@ -86,17 +87,18 @@ number-offset:
                        Callout !!! WARNING !!!
 
 -------------------------------------------------------------------------- -->
-
+<!--
 ::: {.callout-warning}
 ## WARNING!
 **THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
 :::
+-->
 
 ### Korrelation {#sec-korrelation}
 
 ::: {.callout-tip}
 ## Begriffsklärung *"Korrelation"*
-Eine Korrelation beschreibt eine Beziehung zwischen zwei oder mehreren Merkmalen, Zuständen oder Funktionen. Die Beziehung muss **keine** kausale Beziehung sein: Manche Elemente eines Systems beeinflussen sich gegenseitig nicht, oder es besteht eine stochastische, also vom Zufall beeinflusste Beziehung zwischen ihnen.
+Eine [Korrelation](https://de.wikipedia.org/wiki/Korrelation) beschreibt eine Beziehung zwischen zwei oder mehreren Merkmalen, Zuständen oder Funktionen. Die Beziehung muss **keine** kausale Beziehung sein: Manche Elemente eines Systems beeinflussen sich gegenseitig nicht, oder es besteht eine stochastische, also vom Zufall beeinflusste Beziehung zwischen ihnen.
 :::
 
 
@@ -111,11 +113,27 @@ Eine Korrelation als Maß des Zusammenhangs soll zwei Fragen klären:
 
 **1.** Wie stark ist der Zusammenhang?
 
-<!--
-Die Maßzahlen der Korrelation liegen betragsmäßig meist in einem Bereich von Null (=kein Zusammenhang) bis Eins (=starker Zusammenhang). Betrachtet man die Haar- und Augenfarbe von Studenten, so ergibt sich ein korrigierter Kontingenzkoeffizient von 0,55. Da dieser im mittleren Bereich zwischen Null und Eins liegt, haben wir einen mittelstarken Zusammenhang vorliegen.
--->
-
 **2.** Falls möglich, welche Richtung hat der Zusammenhang?
+
+Die in der Praxis häufig genutzten Maßzahlen der Korrelation liegen betragsmäßig meist in einem Bereich von Null (→ kein Zusammenhang) bis Eins (→ starker Zusammenhang). 
+
+::: {.callout-important}
+## Pro-Tipp!
+Ein mehrfach beobachtetes Zusammentreffen zweier Ereignisse bietet grundsätzlich Anlass für die Vermutung, dass zwischen diesen Ereignissen ein Zusammenhang bestehen könnte. Das zeitliche und räumliche Zusammentreffen zweier Ereignisse begründet jedoch noch keinen kausalen Zusammenhang. Ob ein solcher Zusammenhang besteht, und wenn ja, welches der beiden Ereignisse die Ursache und welches Wirkung ist, oder ob beide Ereignisse gemeinsam Folge eines dritten Ereignisses sind, lässt sich daraus nicht ableiten. In der Statistik spricht man statt von Ursache und Wirkung von **Abhängigkeit** bzw. im Falle von Zufallsvariablen von Korrelation. **Selbst bei einer deutlichen [Kovarianz](https://de.wikipedia.org/wiki/Kovarianz_(Stochastik)) im Werteverlauf der Variablen ist nicht auszuschließen, dass es einen dritten gemeinsamen Faktor gibt oder dass die Wirkrichtung zwischen den erhobenen Werten anders verläuft als vermutet.**
+:::
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Kovarianz
+
+-------------------------------------------------------------------------- -->
+### Kovarianz
+
+::: {.callout-tip}
+## Begriffsklärung *"Kovarianz"*
+Die Kovarianz ist in der Stochastik ein nichtstandardisiertes Zusammenhangsmaß für einen monotonen Zusammenhang zweier Zufallsvariablen mit gemeinsamer Wahrscheinlichkeitsverteilung. Der Wert der Kovarianz gibt Auskunft darüber, ob hohe Werte der einen Zufallsvariablen eher mit hohen oder eher mit niedrigen Werten der anderen Zufallsvariablen einhergehen.  **Die Kovarianz ist ein Maß für die Assoziation, lässt jedoch keine Aussage über einen etwaigen kausalen Zusammenhang zu.**
+:::
 
 <!--
 Ein Beispiel für eine positive Korrelation (wenn mehr, dann mehr) ist: „Mehr Futter, dickere Kühe.“ Ein Beispiel für eine negative oder Antikorrelation (wenn mehr, dann weniger) ist: „Mehr zurückgelegte Strecke mit dem Auto, weniger Treibstoff im Tank.“
@@ -127,10 +145,6 @@ Oft gibt es Sättigungsgrenzen. Beispiel: Wenn ich mehr Gas gebe, fährt mein Au
 <!--
 Beispiele:
 
-Aus der Tatsache, dass in Sommern mit hohem Speiseeisumsatz viele Sonnenbrände auftreten, kann man nicht schlussfolgern, dass Eisessen Sonnenbrand erzeugt.
-
-Zwischen dem Rückgang der Störche im Burgenland und einem Rückgang der Anzahl Neugeborener könnte es durchaus eine Korrelation geben. Diese Korrelation hätte ihre Ursache aber weder darin, dass Störche Kinder bringen, noch darin, dass Störche sich zu Kindern hingezogen fühlen. Der Zusammenhang wäre sehr viel indirekterer Natur.
-
 Menschen, die viel lachen, geben in Meinungsumfragen regelmäßig an, glücklicher zu sein als andere. Da diese beiden Phänomene stets zusammen auftreten, ist denkbar,
 
 - dass glückliche Menschen mehr lachen,
@@ -139,15 +153,10 @@ Menschen, die viel lachen, geben in Meinungsumfragen regelmäßig an, glücklich
 
 In den ersten beiden Beispielen hängen die jeweiligen Messgrößen über eine dritte Größe ursächlich zusammen. Im ersten Fall ist es die Sonneneinstrahlung, die sowohl Eisverkauf als auch Sonnenbrand bewirkt, im zweiten Fall die Verstädterung, die sowohl Nistplätze vernichtet als auch dazu führt, dass Menschen weniger Kinder bekommen (siehe Vereinbarkeit von Familie und Beruf). Korrelationen dieser Art werden etwas missverständlich Scheinkorrelationen genannt (eigentlich handelt es sich um Schein-Kausalitäten).[1]
 
-In der Presse werden Korrelationen oft in einer Weise berichtet, die eine direkte Kausalität suggeriert, obwohl eine Gemengelage direkter und indirekter Zusammenhänge besteht.
-
-Kausalitäsrichtung
-
-Cum hoc ergo propter hoc (lateinisch für ‚mit diesem, folglich deswegen‘) bezeichnet den Fehlschluss der Scheinkausalität, bei dem das gemeinsame Auftreten von Ereignissen (Koinzidenz) oder die Korrelation zwischen Merkmalen ohne genauere Prüfung als Kausalzusammenhang aufgefasst wird. Doch impliziert eine Korrelation noch nicht Kausalität (englisch Correlation does not imply causation), auch wenn der Zusammenhang kausal scheinen mag (Scheinkorrelation). Ohne kausalen Zusammen¬hang aber erfolgt eine Zuordnung von Ursache und Wirkung willkürlich ohne fundierte Begründung. Will man ausdrücken, dass ein Fehlschluss nach dem Muster cum hoc ergo propter hoc vorliegt, so sagt man cum hoc non est propter hoc (lateinisch *"Mit diesem ist nicht deswegen."*).
 
 Scheinkorrelation kann beispielsweise zufällig oder aufgrund von unbeobachteten, erklärenden Variablen auftreten.
 
-Ein mehrfach beobachtetes Zusammentreffen zweier Ereignisse bietet grundsätzlich Anlass für die Vermutung, dass zwischen diesen Ereignissen ein Zusammenhang bestehen könnte. Das zeitliche und räumliche Zusammentreffen zweier Ereignisse begründet jedoch noch keinen kausalen Zusammenhang. Ob ein solcher Zusammenhang besteht, und wenn ja, welches der beiden Ereignisse die Ursache und welches Wirkung ist, oder ob beide Ereignisse gemeinsam Folge eines dritten Ereignisses sind, lässt sich daraus nicht ableiten. In der Statistik spricht man statt von Ursache und Wirkung von Abhängigkeit bzw. im Falle von Zufallsvariablen von Korrelation – selbst bei einer deutlichen Kovarianz im Werteverlauf der Variablen ist nicht auszuschließen, dass es einen dritten gemeinsamen Faktor gibt oder dass die Wirkrichtung zwischen den erhobenen Werten anders verläuft als vermutet.
+
 
 Scheinkorrelation (englisch spurious relationship oder spurious correlation bezeichnet eine Korrelation zwischen zwei Größen, der kein Kausalzusammenhang, sondern nur eine zufällige oder indirekte Beziehung zugrunde liegt (englisch: correlation, not causation). Die Scheinkorrelation ist die statistische Entsprechung des in der Philosophie betrachteten Fehlschlusses Cum hoc ergo propter hoc.
 

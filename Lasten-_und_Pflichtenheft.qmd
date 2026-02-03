@@ -15,11 +15,23 @@ bibliography: Literatur.bib
 
 ### Lasten- und Pflichtenheft {#sec-lastenheft}
 
-Im Produktentstehungsprozess spielen das Lastenheft und das Pflichtenheft eine entscheidende Rolle. Diese Dokumente dienen als Eckpfeiler für die erfolgreiche Umsetzung der Produktentwicklung und stellen sicher, dass die Anforderungen klar definiert sind und erfüllt werden können. 
+Im Produktentstehungsprozess spielen das [Lastenheft](https://de.wikipedia.org/wiki/Lastenheft) und das [Pflichtenheft](https://de.wikipedia.org/wiki/Pflichtenheft) eine entscheidende Rolle. Diese Dokumente dienen als Eckpfeiler für die erfolgreiche Umsetzung der Produktentwicklung und stellen sicher, dass die Anforderungen klar definiert sind und erfüllt werden können. 
 
-Das **Lastenheft** (auch Anforderungsdokument genannt) ist das Dokument, das die Anforderungen, Wünsche und Erwartungen des Auftraggebers oder Kunden an ein Produkt festhält. Es beschreibt, was das zu entwickelnde Produkt leisten soll, ohne detaillierte technische Spezifikationen zu enthalten. Das Lastenheft legt somit den Grundstein für das gesamte Projekt und bildet die Basis für das Pflichtenheft.
+::: {.callout-tip}
+## Definition *"Lastenheft"*
+Gemäß [DIN 69901-5](https://de.wikipedia.org/wiki/DIN_69901) (Begriffe der Projektabwicklung) beschreibt das [Lastenheft](https://de.wikipedia.org/wiki/Lastenheft) die *"vom Auftraggeber festgelegte Gesamtheit der Forderungen an die Lieferungen und Leistungen eines Auftragnehmers innerhalb eines Auftrages"*.
+:::
 
-Das **Pflichtenheft** hingegen geht einen Schritt weiter und konkretisiert die im Lastenheft festgehaltenen Anforderungen. Es enthält klare und detaillierte technische Spezifikationen, Anforderungen und Funktionen, die das Projekt erfüllen muss, um den Anforderungen des Auftraggebers gerecht zu werden. Das Pflichtenheft dient als Leitfaden für das gesamte Entwicklungsteam um das Projekt zielgerichtet umzusetzen. Die Erstellung von Lasten- und Pflichtenheft sollte in enger Zusammenarbeit zwischen Auftraggeber und Entwicklungsteam erfolgen, um sicherzustellen, dass alle Parteien ein gemeinsames Verständnis haben.
+Das **Lastenheft** (auch Anforderungsdokument, Anforderungsspezifikation, Anforderungskatalog, Produktskizze, Kundenspezifikation oder Anwenderspezifikation genannt) ist das Dokument, das die Anforderungen, Wünsche und Erwartungen des Auftraggebers oder Kunden an ein Produkt festhält. Es beschreibt, was das zu entwickelnde Produkt leisten soll, **ohne detaillierte technische Spezifikationen zu enthalten**. Das Lastenheft legt somit den Grundstein für das gesamte Projekt und bildet die Basis für das Pflichtenheft.
+
+Das **Pflichtenheft** hingegen geht einen Schritt weiter und konkretisiert die im Lastenheft festgehaltenen Anforderungen. Es enthält klare und detaillierte technische Spezifikationen, Anforderungen und Funktionen, die das Projekt erfüllen muss, um den Anforderungen des Auftraggebers gerecht zu werden. 
+
+::: {.callout-tip}
+## Definition *"Pflichtenheft"*
+Laut [DIN 69901-5](https://de.wikipedia.org/wiki/DIN_69901) umfasst das [Pflichtenheft](https://de.wikipedia.org/wiki/Pflichtenheft) die *„vom Auftragnehmer erarbeiteten Realisierungsvorgaben aufgrund der Umsetzung des vom Auftraggeber vorgegebenen [Lastenhefts](https://de.wikipedia.org/wiki/Lastenheft)“*.
+:::
+
+Das Pflichtenheft dient als Leitfaden für das gesamte Entwicklungsteam um das Projekt zielgerichtet umzusetzen. Die Erstellung von Lasten- und Pflichtenheft sollte in enger Zusammenarbeit zwischen Auftraggeber und Entwicklungsteam erfolgen, um sicherzustellen, dass alle Parteien ein gemeinsames Verständnis haben.
 
 Merkmale eines guten Lasten- und Pflichtenhefts:
 

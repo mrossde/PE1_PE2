@@ -1,0 +1,121 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!--
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
+
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+    - Abbildung
+    - Claude Shannon
+
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Bild Piere Simon Laplace
+
+-------------------------------------------------------------------------- -->
+
+
+![[Claude Shannon](https://de.wikipedia.org/wiki/Claude_Shannon) (* 30. April 1916; † 24. Februar 2001)](images/ClaudeShannon.jpg){width=30% #fig-claudeshannon}
+
+---
+
+> 
+*"We know the past but cannot control it. We control the future but cannot know it."* (Claude Shannon)
+
+---
+
+
+::: {.callout-note}
+## Exkurs: Claude Shannons Arbeiten
+Claude Shannon (* 30. April 1916; † 24. Februar 2001) gilt als der Begründer der modernen Informationstheorie und einer der einflussreichsten Wissenschaftler des 20. Jahrhunderts. 
+
+Shannon legte die theoretischen Grundlagen der digitalen Kommunikation und Datenverarbeitung. Er führte den Begriff der Information als messbare Größe ein und definierte sie in Form des sogenannten [Bit](https://de.wikipedia.org/wiki/Bit)s (binary digit) als kleinstes Maß für Informationsgehalt. 
+
+Shannon übertrug den Begriff der [Entropie](https://de.wikipedia.org/wiki/Entropie) $S$ aus der [Thermodynamik](https://de.wikipedia.org/wiki/Thermodynamik) in die Informationstheorie und definierte sie als **Maß für die Unbestimmtheit oder den Informationsgehalt** einer Quelle. Diese [Shannon-Entropie](https://de.wikipedia.org/wiki/Entropie_(Informationstheorie)) quantifiziert, wie viel Information im Durchschnitt in einer Nachricht enthalten ist  und wie stark die Ergebnisse einer Quelle variieren. Mathematisch wird sie in der Form  
+
+$$
+H = -\sum p(x) \cdot \log_2 p(x)
+$$ {#eq-shannon_entropie}
+
+beschrieben. Einfach ausgedrückt: Je gleichmäßiger die Wahrscheinlichkeiten der Symbole, desto höher die Entropie und damit der Informationsgehalt je Symbol. Noch einfacher formuliert ist die Entropie die durchschnittliche Anzahl von Entscheidungen (Bits), die benötigt werden um ein Zeichen aus einer Zeichenmenge zu identifizieren. **Mit zunehmender Wahrscheinlichkeit oder Ordnung nimmt der Informationsgehalt ab; mit zunehmender Unvorhersehbarkeit oder Zufälligkeit steigt er an.**
+
+---
+
+>
+*"Use "entropy" and you can never lose a debate, [von Neumann](https://de.wikipedia.org/wiki/John_von_Neumann) told Shannon - because no one really knows what "entropy" is.*" (William Poundstone) 
+
+---
+
+Shannons Entropiebegriff bildet heute die Grundlage für Verfahren zur Fehlerkorrektur, Datenkompression, der effizienten Kodierung und dem Verständnis der theoretischen Grenzen verlustfreier Informationsübertragung.
+
+---
+
+>
+*"Wie die thermodynamische Entropie $S$ den Übergang eines physikalischen Systems zu größerer Unordnung beschreibt, misst die informationstheoretische Entropie $H$ den Grad der Unbestimmtheit einer Nachricht — **beide streben in abgeschlossenen Systemen einem Maximum an Unordnung oder Zufälligkeit zu^[*"Die Entropie ist die Herrscherin des Universums und die Energie ist ihre kleine Schwester."* (Quelle: Max Wagner (1931–2017), deutscher Physiker, Professor für Theoretische Physik, Universität Stuttgart)]** (siehe → [2. Hauptsatz der Thermodynamik](https://de.wikipedia.org/wiki/Zweiter_Hauptsatz_der_Thermodynamik): $\Delta S \geq 0$). **Eine einmal verlorene Information kann nicht zurückgewonnen werden.**"*
+
+---
+
+:::

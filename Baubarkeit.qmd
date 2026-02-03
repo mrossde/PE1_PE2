@@ -1,0 +1,135 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+headlines:
+  off: true
+extended-content:
+  off: true
+fileformat-svg:
+  off: true
+---
+
+<!--
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
+
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - Produktentstehungsprozess
+  - Baubarkeit
+
+copyright: 
+  holder: Christian Anders
+  year: 2026
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 2
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+<!--
+::: {.callout-warning}
+## WARNING!
+**THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Baubarkeit
+
+-------------------------------------------------------------------------- -->
+
+### Baubarkeit {#sec-baubarkeit}
+
+::: {.callout-tip}
+## Begriffsklärung: *"Baubarkeit"*
+Baubarkeit (engl. *"Manufacturability"* oder *"Buildability"*) ist eine Eigenschaft eines Produktentwurfs. Baubarkeit bezeichnet den Grad, in dem ein Produktentwurf technisch, wirtschaftlich und organisatorisch effizient hergestellt und montiert werden kann (siehe → Produktionsgerechte Produktgestaltung (PPG) @sec-ppg).
+:::
+
+**Auswahl wichtiger Kriterien der Baubarkeit:** 
+
++ **Fertigungsgerechtes Design** (engl. [Design for Manufacturing](https://en.wikipedia.org/wiki/Design_for_manufacturability), DFM): Minimierung von Komplexität, Toleranzen, Spezialwerkzeugen oder unnötigen Bearbeitungsschritten.
++ **Montagegerechtes Design** (engl. [Design for Assembly](https://en.wikipedia.org/wiki/Design_for_assembly), DFA): Optimierung von Fügefolgen, Zugänglichkeit, Handhabung und Teileorientierung (siehe z.B. → Poka Yoke @sec-poka-yoke)
++ **Toleranzmanagement und Maßkonzept**: Bauteile müssen auch bei Toleranzabweichungen montierbar bleiben.
++ **Produktionstechnik- und Werkstoffe**: Verwendung geeigneter Werkstoffe und serientauglicher Produktionstechnik (siehe → Prinzip-, Konzept- und Serientauglichkeit @sec-tauglichkeit, siehe → Produktions- und Werkstofftechnik (PWT) @sec-pwt).
+
++ **Kosten- und Zeit**: Vermeiden unnötig teurer oder zeitintensiver Produktionsschritte (z.B. siehe → KPIs @sec-kpi z.B. *"Hours per Unit"* (HPU)^[Hours per Unit (HPU) gibt an, wie viele Arbeitsstunden (direkt oder indirekt) zur Herstellung einer einzelnen Produkteinheit erforderlich sind. Der HPU-Wert ist ein zentraler Effizienzindikator in der Produktion, insbesondere in der Automobil-, Luftfahrt- und Serienproduktion. Er dient u.a. zur Messung der Produktivität einer Fertigungslinie oder eines Montagebereichs, der Vergleichbarkeit von Werken oder Produktionslinien, der Kapazitäts- und Personalplanung, der Kostenabschätzung und zur Identifikation von Verbesserungspotenzialen im Produktionsprozess.])
+
+::: {.callout-important}
+## Pro-Tipp!
+Die Überprüfung der Baubarkeit erfolgt in der Regel begleitend zur Entwurfs- und Entwicklungsphase mittels [Digital Mock-Up](https://de.wikipedia.org/wiki/Digital_Mock-Up) (DMU) (siehe → DMU @sec-dmu) sowie durch Simulation und Analyse der Fertigungs- und Montageprozesse (u.a. [CNC](https://en.wikipedia.org/wiki/NCSIMUL)- und [Robotersimulation](https://en.wikipedia.org/wiki/Robotics_simulator)), lange bevor erste physische Prototypen entstehen. Die Optimierung der Baubarkeit zielt darauf ab, Produktionskosten und -zeiten zu reduzieren, Fehlerquellen in der Produktion zu vermeiden und somit eine stabile, reproduzierbare Serienproduktion sicherzustellen und die Notwendigkeiten von Nacharbeiten zu vermeiden.
+:::
+
+::: {.callout-important}
+## Pro-Tipp!
+**Das Entwicklungsteam ist dafür verantwortlich sicherzustellen, dass das zu entwickelnde Produkt auf mindestens eine Weise hergestellt werden kann!**
+:::
+
+::: {.callout-warning}
+## Pro-Tipp!
+**Nur weil ein Produkt im Digital Mock-Up kollisionsfrei ist bedeutet das nicht, dass das Produkt auch baubar ist!**
+:::
+
+---
+
+>
+*"Kollisionsfreiheit aller Komponenten eines Produkts im Digital Mock-Up ist eine notwendige, aber keine hinreichende Bedingung für die Baubarkeit des Produkts!"*
+
+---

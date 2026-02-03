@@ -24,7 +24,7 @@ Die Idee der Ursachenanalyse besteht darin, die Grundursache eines Problems zu i
 #### Root-Cause
 ::: {.callout-tip}
 ## Definition: *"Root-Cause"*
-Ein Root-Cause („Grundursache“) ist die früheste, grundlegendste oder „tiefste“ Ursache eines Problems, die die gesamte Ursache-Wirkungs-Reaktion in Gang setzt, die zum letztlich beobachteten Ergebnis oder Effekt führt. 
+Ein Root-Cause („Grundursache“) ist die früheste, grundlegendste oder „tiefste“ Ursache eines Problems, die die gesamte Ursache-Wirkungs-Kette in Gang setzt, die zum letztlich beobachteten Ergebnis oder Effekt führt. 
 :::
 
 Die [Fehler-Ursache-Analyse](https://de.wikipedia.org/wiki/Fehler-Ursachen-Analyse) (engl. Root cause analysis, RCA) gehört zu den wesentlichen Instrumenten der Produktentwicklung. Sie beinhaltet die Erfassung von Fehlern, ihrer Ursachen und die statistische Auswertung dieser Daten, an die sich eine Bewertung und abgeleitete Maßnahmen zur Fehlerreduzierung (und Fehlerkostenreduzierung) anschließen.

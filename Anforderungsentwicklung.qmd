@@ -1,5 +1,26 @@
 ---
-title: "DEB5 Produktentwicklung 2"
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+headlines:
+  off: true
+---
+
+<!--
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
+
+<!--
+title: "DEB Produktentwicklung"
 format:
   html:
     embed-resources: true
@@ -18,14 +39,15 @@ author:
         country: "Deutschland"
         url: https://www.hs-esslingen.de/
 abstract: > 
-  Skript zur Vorlesung und Labor *"Produktentwicklung 2"* für den Studiengang Digital Engineering DEB5
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
 keywords:
   - Produktentstehungsprozess
   - Entwicklungsmethodik
   - Anforderungsentwicklung
+
 copyright: 
   holder: Christian Anders
-  year: 2025
+  year: 2026
 lang: de
 bibliography: Literatur.bib
 date: last-modified
@@ -34,15 +56,28 @@ number-sections: true
 scrollable: true
 toc-location: right
 cap-location: bottom
-number-offset: 1
+number-offset: 0
 link-external-icon: true
 link-external-newwindow: true
----
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
 
 
 <!-- -------------------------------------------------------------------------
 
-                       AIDA-Modell
+                       Anforderungsentwicklung
 
 -------------------------------------------------------------------------- -->
 
@@ -50,75 +85,91 @@ link-external-newwindow: true
 # Ideenfindung und Konzeptentwicklung
 :::
 
-## Anforderungsentwicklung {#sec-anforderungsentwicklung}
+### Anforderungsentwicklung (Requirements Engineering) {#sec-anforderungsentwicklung}
+
+---
+
+>
+*"Das Ding muss halt in den Bauraum passen und funktionieren!"* (Quelle: Unbekannt)
+
+---
+
+::: {.callout-tip}
+## Definition(en): *"Anforderung"*
+Eine Anforderung ist:
+
+1. eine Bedingung oder Fähigkeit, die von einem Benutzer (Person oder System) zur Lösung eines Problems oder Erreichung eines Ziels benötigt wird.
+
+2. eine Bedingung oder Fähigkeit, die ein System oder Teilsystem erfüllen oder besitzen muss, um einen Vertrag, eine Norm, eine Spezifikation oder andere formell vorgegebene Dokumente zu erfüllen.
+
+3. eine dokumentierte Repräsentation einer Bedingung oder Eigenschaft gemäß o.g. Punkten.
+:::
+
+
+::: {.callout-important}
+## Anforderungen vs. Ziele
+Anforderungen und Ziele sind nur schwer zu trennen. Ziele definieren einen zu erreichenden Zustand, **Anforderungen definieren eine zu erreichende Eigenschaft** und sind in diesem Sinne konkreter als Ziele.
+Zielen (siehe → SMARTe Ziele @sec-smart) liegen meist Anforderungen auf höherer Ebene (siehe → Vision - Strategie - Ziele @sec-vision) zugrunde.
+:::
 
 <!--
 ::: {.callout-tip}
-## Definition: *"AIDA-Modell"*
-[AIDA](https://de.wikipedia.org/wiki/AIDA-Modell) ist ein [Akronym](https://de.wikipedia.org/wiki/Akronym) für ein aufeinander aufbauendes Stufenmodell zur Werbewirksamkeit. Die Anfangsbuchstaben stehen für die englischen Begriffe **Attention**, **Interest**, **Desire** und **Action**.
-:::
-
-1. **Attention**: Die Aufmerksamkeit des Empfängers wird geweckt, etwa durch Plakate mit *"Eye Catchern"* oder personalisierter Ansprache.
-
-2. **Interest**: Beim Empfänger der Werbung wird Interesse für eine Idee/das beworbene Produkt/die beworbene Dienstleistung geweckt. 
-
-3. **Desire**: Beim Empfänger wird der Wunsch nach der Idee/dem Produkt/der Dienstleistung geweckt. Potentielle Einwände werden abgebaut und der Mehrwert der Idee/des Produkts/der Dienstleistung wird hervorgehoben.
-
-4. **Action**: Der Empfänger wird zum weiteren Kennenlernen der Idee/dem Kauf des Produkts/dem Kauf der Dienstleistung bewogen (*"Call-to-Action"*). *"Call-to-Action"* kann auch die Bitte zur Fortsetzung des Gesprächs sein, z.B. im Rahmen einer weiteren, längeren Besprechung, ggf. auch in einem größeren Personenkreis.
-
-::: {.callout-caution}
-## Pro-Tipp!
-Das AIDA-Modell ist hervorragend geeignet, um eine [Elevator Speech](https://de.wikipedia.org/wiki/Elevator_Pitch) im Rahmen der Phase Ideenfindung und Konzeptentwicklung des Produktentstehungsprozesses effektiv zu gestalten.
-:::
-
-::: {.callout-tip}
-## Definition: *"Elevator-Speech/Elevator Pitch"*
-[Elevator Speech](https://de.wikipedia.org/wiki/Elevator_Pitch) (auch "Elevator Pitch" genannt) ist eine kurze, überzeugende erste Präsentation einer Idee, eines Produkts oder einer Dienstleistung (*"Eine Idee pitchen."*).
-:::
-
-Der Kerngedanke einer [Elevator Speech](https://de.wikipedia.org/wiki/Elevator_Pitch) basiert auf dem Szenario, eine wichtige Person oder eine wichtige Funktion (z.B. den Projektleitenden) in einem Aufzug (oder der Warteschlange in der Kantine) "zufällig" zu treffen und diese dann während der Dauer einer Aufzugsfahrt (rund 90 Sekunden) für eine Idee/ein Produkt/eine Dienstleistung zu begeistern. 
-
-::: {.callout-tip}
-## Ziel der Elevator-Speech
-Ziel der Elevator Speech ist es, die vorgestellte Idee/das vorgestellte Produkt/die vorgestellte Dienstleistung positiv besetzt im Gedächtnis der adressierten Person zu verankern.
-:::
-
-Ist die Idee/das Produkt/die Dienstleistung überzeugend genug vorgestellt worden, wird das Gespräch dann entweder direkt weitergeführt oder man verabredet sich zu einer weiterführenden Präsentation und Diskussion der vorgestellten Idee/des vorgestellten Produkts/der vorgestellten Dienstleistung. 
-
-::: {.callout-caution}
-## Pro-Tipp!
-Das AIDA-Modell eignet sich auch hervorragend als Leitfaden zur Gestaltung von Postern für Messen oder Informationsveranstaltung, z.B. bei der Präsentation der Ergebnisse eigener Praktika, mechatronischer Prospekte oder der eigenen Bachelorarbeit. **Lange Textbausteine auf Postern dienen keinem der vier Stufen des AIDA-Modells und sind zu vermeiden.**
-
-Wichtig ist **1.)** ein Bild (*"Eye Catcher"*), das die Aufmerksamkeit des Betrachters weckt, **2.)** eine kurze Beschreibung des Produkts/der Dienstleistung und **3.)** dessen/deren einzigartigen Vorteilen für den Adressaten^[Leitgedanke: *"Der Wurm muss dem Fisch schmecken, nicht dem Angler"* (Quelle: Unbekannt)] mittels weniger Schlagworte und optional zusätzlich einigen Grafiken oder Bildern sowie **4.)** die eigenen Kontaktdaten, z.B. in Form eines Data-Matrix-Codes mit Link auf eine Webseite oder eines einfach abzufotografierenden Datensatzes aus Ansprechpartner, E-Mail, Webadresse und ggf. Telefonnummer. 
+## Definition: *"Anforderungsentwicklung"*
+[Anforderungsentwicklung](https://en.wikipedia.org/wiki/Requirements_engineering)
 :::
 -->
 
+---
+
+>
+*"The activities involved in requirements engineering vary widely, depending on the type of system being developed and the organization's specific practice(s) involved."* (Quelle: [Wikipedia](https://en.wikipedia.org/wiki/Requirements_engineering#Activities))
+
+---
+
+Laut [IEEE](https://de.wikipedia.org/wiki/Institute_of_Electrical_and_Electronics_Engineers) kann die Anforderungsentwicklung (engl. Requirements Engineering) in vier Tätigkeiten unterteilt werden. Als fünfte Tätigkeit der Anforderungsentwicklung wird oftmals zusätzlich das Anforderungsmanagement (requirements management) genannt. Zusätzlich zu diesen Tätigkeiten kann der Systementwurf (engl. [System Modeling](https://en.wikipedia.org/wiki/Systems_modeling)) als weiterer Bestandteil der Anforderungsentwicklung betrachtet werden.
+
+1. Anforderungs**erhebung** (requirements elicitation)
+2. Anforderungs**analyse** (requirements analysis)
+3. Anforderungs**spezifikation** (requirements specification)
+4. Anforderungs**bewertung** (requirements validation)
+5. Anforderungs**management** (requirements management)
+6. Systementwurf (system modeling)
+
+Diese Tätigkeiten überlappen einander und werden oft auch mehrfach – iterativ – und zeitlich parallel durchgeführt.
 
 
-+ Anforderungsentwicklung (Requirements Engineering) gliedert sich in verschieden Unterdisziplinen
+```{mermaid}
+%%| label: fig-label-mmrequirementengineering
+%%| fig-cap: "Mindmap Requirement Engineering"
+%%{init: {'theme': 'forest'}}%%
+mindmap
+   root(Requirements Engineerings)
+      (Anforderungserhebung)
+      (Anforderungsanalyse)
+      (Anforderungsspezifikation)
+      (Anforderungsbewertung)
+      (Anforderungsmanagement)
+      (Systementwurf)
+```
+
+<!--
++ Anforderungsentwicklung (Requirements Engineering) gliedert sich in die Unterdisziplinen
   - Anforderungs**erhebung** (engl.: Requirements elicitation) erfolgt als einer der ersten Schritte im Entwicklungsprozess
-  - Anforderungs**dokumentation** beschreibt die Dokumentation der erhobenen Anforderungen nach definierten Regeln
-+ Die Anforderungs**verwaltung (-management)** beschreibt Aktivitäten, die den Entwicklungsprozess begleiten und sich z.B. mit Review-Tätigkeiten (prüfen & abstimmen) und Änderungen beschäftigt.
-+ Präzisierung der Problem- und Aufgabenstellung am Beginn der Entwicklung
+  - Anforderungs**dokumentation** beschreibt die Dokumentation der erhobenen Anforderungen, zumeist nach definierten Regeln
++ Die Anforderungs**verwaltung (-management)** beschreibt Aktivitäten, die den Produktentstehungsprozess begleiten und sich z.B. mit Review-Tätigkeiten (prüfen & abstimmen) und Änderungen beschäftigt.
++ Präzisierung der Problem- und Aufgabenstellung am Beginn des Produktentstehungsprozesses
+-->
 
+<!--
+### Anforderungsmanagement (Requirements Management)
 
-::: {.callout-tip}
-## Definition: *"Anforderung"*
-Eine Anforderung ist:
-1. eine Bedingung oder Fähigkeit, die von einem Benutzer (Person oder System) zur Lösung eines Problems oder Erreichung eines Ziels benötigt wird.
-2. eine Bedingung oder Fähigkeit, die ein System oder Teilsystem erfüllen oder besitzen muss, um einen Vertrag, eine Norm, eine Spezifikation oder andere formell vorgegebene Dokumente zu erfüllen.
-3. eine dokumentierte Repräsentation einer Bedingung oder Eigenschaft gemäß o.g. Punkten
+Das [Anforderungsmanagement](https://de.wikipedia.org/wiki/Anforderungsmanagement) (AM) (engl. Requirements Management) umfasst Maßnahmen zur Steuerung, Kontrolle und Verwaltung von Anforderungen: Risikomanagement, Änderungsmanagement und Umsetzungsmanagement. Das Anforderungsmanagement dient der effizienten und fehlerarmen Entwicklung komplizierter Systeme, an denen arbeitsteilig gearbeitet wird. Das Ziel des Anforderungsmanagements ist es, ein gemeinsames Verständnis über ein zu entwickelndes System zwischen Auftragnehmer und Auftraggeber zu erreichen.
+-->
+
+::: {.callout-important}
+## Spezifikation von Software
+Für die Spezifikation von Software bestehen weitere Vorgaben, Standards und Normen, z.B. die [Software Requirements Specification](https://de.wikipedia.org/wiki/Software_Requirements_Specification) (SRS), ein erstmals 1984 vom IEEE veröffentlichter Standard.
 :::
-(Quelle: Pohl; Rupp: B*asiswissen requirements engineering*, 4.Auflage, Heidelberg, Dpunkt.verlag, 2015)
-
-Ziel ist die Verbesserung von
-- Qualität
-- Nachvollziehbarkeit
-- Verwaltung
-- Zusammenarbeit
-
-Anforderungen und Ziele sind nur schwer zu trennen. Ziele definieren einen zu erreichenden Zustand, Anforderungen definieren eine zu erreichende Eigenschaft und sind in diesem Sinne konkreter als Ziele.
-Zielen liegen meist Anforderungen auf höherer Ebene (Vision, Strategie) zugrunde.
 
 <!--
 

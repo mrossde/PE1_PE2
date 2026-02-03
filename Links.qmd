@@ -137,7 +137,55 @@ Benannt ist die Fourier-Reihe nach dem französischen Mathematiker [Jean-Baptist
 + [Diskrete Fourier-Transformation (DFT)](https://de.wikipedia.org/wiki/Diskrete_Fourier-Transformation)
 + [Frequenzspektrum](https://de.wikipedia.org/wiki/Frequenzspektrum)
 
+### Logistische Gleichung
 
+Die [Logistische Gleichung](https://de.wikipedia.org/wiki/Logistische_Gleichung) ist ein heute weithin bekanntes und extrem einfaches Beispiel dafür, wie komplexes, chaotisches Verhalten bereits aus sehr einfachen nichtlinearen Gleichungen entstehen kann. 
+
+Die logistische Gleichung wurde bereits 1837 von [Pierre François Verhulst](https://de.wikipedia.org/wiki/Pierre-Fran%C3%A7ois_Verhulst) als demographisches mathematisches Modell eingeführt, jedoch fand sie erst in der Folge einer richtungsweisenden Arbeit des theoretischen Biologen [Robert May](https://de.wikipedia.org/wiki/Robert_May) aus dem Jahr 1976 weite Verbreitung und Aufmerksamkeit.
+
+Logistische Gleichung:
+
+$$
+X_{n+1}=r⋅X_n ​⋅ (1-X_n)
+$$
+
+mit *Reproduktionsrate* $r$ [0;4] und der *Population* zum Start $X_0$ [0;1].
+
+
+::: {.callout-note}
+## Logistische Gleichung (Dauer 10 min)
+**Aufgabe:**
+
+**a)** Bitte berechnen Sie näherungsweise den Wert für $X_{\infty}$ für $r = 2.0$ und $X_0 = 0.1$.
+
+**b)** Bitte berechnen Sie näherungsweise den Wert für $X_{\infty}$ für $r = 3.2$ und $X_0 = 0.1$.
+
+**c)** Bitte berechnen Sie näherungsweise den Wert für $X_{\infty}$ für $r = 3.8$ und $X_0 = 0.1$.
+:::
+
+<p style="text-align: center;"> ![](images/Microsoft_Office_Excel-Logo.png){width=16%} → Excel-Worksheet *"Logistische Gleichung"*</p>
+
++ [Logistische Gleichung](https://de.wikipedia.org/wiki/Logistische_Gleichung)
+
+<!--
+::: {.callout-tip collapse="true"}
+-->
+::: {.callout-tip}
+## Feigenbaum-Diagramm
+**Lösung:**
+
+**a)** $X_{\infty}$ für $r = 2.0$ und $X_0 = 0.1$ → Stabile Population: $0.5$.
+
+**b)** $X_{\infty}$ für $r = 3.2$ und $X_0 = 0.1$ → Oszillierende Population: $0.513$ und $0.799$.
+
+**c)** $X_{\infty}$ für $r = 3.8$ und $X_0 = 0.1$ → Stark und ohne erkennbares Muster fluktuierende Population (siehe → @fig-bifurcation "Feigenbaum-Diagramm").
+
+![Ausschnitt des Feigenbaum-Diagramms der logistischen Gleichung aus dem Bereich der Bifurkationen am Übergang von Ordnung (links) zum Chaos (rechts)](images/LogisticMap_BifurcationDiagram.png){width=80% #fig-bifurcation}
+
+<!--
+![Ausschnitt des Feigenbaum-Diagramms um r =3.57](images/LogisticMap_BifurcationDiagram_Detail.jpg){width=80% #fig-bifurcation}
+-->
+:::
 
 <!--
 .

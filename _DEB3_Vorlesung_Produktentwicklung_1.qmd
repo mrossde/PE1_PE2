@@ -179,6 +179,20 @@ ggf. woanders hinverschieben? logisch nicht korrekte Reihenfolge
   {{< include Rissprüfung.qmd >}}
   {{< include Qualitaet.qmd >}}
 
+<mark>Änderung für nächstes Sem! Hier nochmal Produktionskapitel anschauen </mark>
+
+# Produktionsplanung und Produktion {#sec-produktionsplanungundproduktion}
+
+  {{< include Ziele_Produktionsplanung_und_Produktion.qmd >}}
+
+## Lean Production
+
+  {{< include Toyota_Produktionssystem.qmd >}}
+  {{< include TQM.qmd >}}
+  {{< include Kaizen.qmd >}}
+  {{< include JIT-JIS.qmd >}}
+  {{< include Kanban.qmd >}}
+
 <!-- -------------------------------------------------------------------------
 
                        Kapitel 6: Softskills

@@ -1,0 +1,310 @@
+---
+title: "DEB5 Produktentwicklung 2"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Ergänzungsskript zur Vorlesung und zum Labor *"Produktentwicklung 2"* für den Studiengang Digital Engineering DEB5 im Wintersemester 2025/2026
+keywords:
+  - Produktentwicklung
+  - Produktentstehungsprozess  
+
+copyright: 
+  holder: Christian Anders
+  year: 2026
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+
+headlines:
+  off: true
+extended-content:
+  off: true
+included-content:
+  off: false
+worksheets:
+  off: false
+exercises:
+  solutions:
+    on: false 
+fileformat-svg:
+  off: true
+---
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Skriptum zur Vorlesung WS2025/2026
+
+-------------------------------------------------------------------------- -->
+<!--
+::: {.callout-important}
+## Pro-Tipp!
+
+:::
+-->
+
+![](images/blank.png){width=8%}
+<!-- include Abbildung_Flammarion1888.qmd -->
+![](images/blank.png){width=8%}
+
+![](images/blank.png){width=8%}
+{{< include Abbildung_Feynman.qmd >}}
+![](images/blank.png){width=8%}
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Kapitel 1: Grundlagen
+
+-------------------------------------------------------------------------- -->
+# Grundlagen {#sec-grundlagen}
+
+<!-- include Grundlagen_Produktentwicklung.qmd -->
+
+  {{< include Abkürzungen.qmd >}}
+  {{< include Begriffe.qmd >}}
+
+    {{< include Messung.qmd >}}
+    {{< include Wirtschaftlichkeit.qmd >}} 
+
+
+
+## Methodische Grundlagen
+  <!-- include Vision-Strategie-Ziele.qmd -->
+  <!-- include SMART.qmd -->
+    {{< include Golden_Circle.qmd >}}
+    {{< include Kano-Modell.qmd >}}
+    {{< include SWOT_SWOA.qmd >}}
+    {{< include Multi-Moment-Aufnahme.qmd >}}
+    {{< include Risikomatrix.qmd >}}
+    {{< include Single_Source_of_Truth_SSoT.qmd >}}
+    {{< include System_of_Interest_SoI.qmd >}}
+ 
+
+
+## Projektmanagement
+  <!-- include Projekt.qmd -->
+    {{< include Burn_Down_Chart.qmd >}}
+  <!-- include Projektmanagement_Magisches_Dreieck.qmd -->
+  <!-- include Zielhierarchie.qmd -->
+
+
+## Statistik und Stochastik
+    {{< include Abbildung_Laplace.qmd >}}
+
+    {{< include Zufall.qmd >}}
+
+    {{< include Erwartungswert.qmd >}}
+  <!-- incl. Wahrscheinlichkeit.qmd -->
+    {{< include Median.qmd >}}
+    
+
+    {{< include Runs-Test.qmd >}}
+    {{< include Chi-Quadrat-Test.qmd >}}
+
+    {{< include Zufallszahlengeneratoren.qmd >}}
+    {{< include Monte-Carlo-Simulation.qmd >}}
+
+## Komplexe Systeme
+
+    {{< include Determinismus.qmd >}} 
+  <!-- incl. Laplacescher_Daemon.qmd -->
+
+    {{< include Kausalitaet.qmd >}}
+    {{< include Korrelation.qmd >}}
+    {{< include Scheinkorrelation.qmd >}}
+    {{< include Koinzidenz.qmd >}}
+
+    {{< include Takens_Theorem.qmd >}}
+
+    {{< include Butterfly-Effect.qmd >}}
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Kapitel 2: Ideenfindung und Konzeptentwicklung
+
+-------------------------------------------------------------------------- -->
+# Ideenfindung und Konzeptentwicklung {#sec-ideenfindungundkonzept}
+
+## Methodische Grundlagen
+
+   <!-- include Modelle_zum_Produktentstehungsprozess.qmd -->
+
+    {{< include Produktdokumentation.qmd >}}
+    {{< include Stueckliste.qmd >}}
+    {{< include 3DMaster.qmd >}}
+
+## Anforderungsentwicklung
+    {{< include Anforderungsentwicklung.qmd >}}
+    {{< include Operating_Envelope.qmd >}}
+
+
+## Konzeptentwicklung und Entscheidungsfindung
+    {{< include Radardiagramm.qmd >}}
+    {{< include Bewertungsmatrix.qmd >}}
+    {{< include Morphologischer_Kasten.qmd >}}
+    {{< include Prinzip-_Konzept_und_Serientauglichkeit.qmd >}}
+ 
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Kapitel 3: Entwurfs- und Entwicklungsphase
+
+-------------------------------------------------------------------------- -->
+# Entwurfs- und Entwicklungsphase {#sec-entwurfundentwicklung}
+
+## Kostenbeeinflussung im Produktentstehungsprozess
+    {{< include Kosten_im_Produktentstehungsprozess.qmd >}}
+    {{< include Rule-of-10.qmd >}}
+  <!-- include PPG.qmd -->
+    {{< include Poka_Yoke.qmd >}}
+
+## Produktrealisierungsabsicherung
+    {{< include Baubarkeit.qmd >}}
+    {{< include DMU.qmd >}}
+    {{< include Toleranzmanagement.qmd >}}
+    {{< include Variantenkonstruktion_Coderegel.qmd >}}
+    {{< include Patent.qmd >}}
+
+## Softwarewerkzeuge
+    {{< include CAD.qmd >}}
+    {{< include PLM.qmd >}}
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Kapitel 4: Prototyping und Test
+
+-------------------------------------------------------------------------- -->
+# Prototyping und Test {#sec-prototypingundtest}
+
+  {{< include Ziele_Prototyping_und_Test.qmd >}}
+
+<!--
+## Methoden
+-->
+
+<!--
+## Testing
+-->
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Kapitel 5: Produktionsplanung und Produktion
+
+-------------------------------------------------------------------------- -->
+
+# Produktionsplanung und Produktion {#sec-produktionsplanungundproduktion}
+
+  {{< include Ziele_Produktionsplanung_und_Produktion.qmd >}}
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Kapitel 6: Softskills
+
+-------------------------------------------------------------------------- -->
+# Softskills {#sec-softskills}
+
+## Arbeitsmethoden
+  <!-- include Eisenhower-Prinzip.qmd -->
+  <!-- include 6W-Methode.qmd -->
+    {{< include AIDA-Modell.qmd >}}
+    {{< include Bildzeitung-Test.qmd >}}
+    {{< include Pitch.qmd >}}
+
+
+## Kooperation und Kollaboration
+    {{< include Linienorganisation_vs_Matrixorganisation.qmd >}}
+    {{< include ChangeManagement_Akzeptanzmatrix.qmd >}}
+    {{< include U-Theorie_Scharmer.qmd >}}
+
+    {{< include Spieltheorie.qmd >}}
+    {{< include Verhandlungsstrategie.qmd >}}
+    {{< include Harvard-Verhandlungsstrategie.qmd >}}
+
+  <!-- include Organisationsaufstellung.qmd -->
+
+    {{< include Wassertraegermethode.qmd >}}
+
+
+## Kreativitätstechniken {#sec-kreativitaetstechniken}
+    {{< include Methode635_Rohrbach.qmd >}}
+    {{< include Six-Thinking-Hats.qmd >}}
+
+
+## Persönliche Kompetenzen und interpersonelle Fähigkeiten
+
+  <!-- include Johari-Fenster.qmd -->
+    {{< include Vier-Seiten-Modell.qmd >}}
+    {{< include Feedback.qmd >}}
+    {{< include Rich_Dad_Poor_Dad_Kiyosaki.qmd >}} 
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Kapitel 7: Literatur
+
+-------------------------------------------------------------------------- -->
+<!--
+# Literatur {#sec-literatur}
+-->
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Kapitel 8: Anhang
+
+-------------------------------------------------------------------------- -->
+
+# Anhang {#sec-anhang}
+  {{< include Famous_Laws.qmd >}}
+
+<!--
+## Rezepte
+-->

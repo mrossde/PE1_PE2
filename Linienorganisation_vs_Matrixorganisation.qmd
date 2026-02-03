@@ -1,0 +1,403 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+---
+
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - Stochastik
+
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Linienorganisation vs. Matrixorganisation
+
+-------------------------------------------------------------------------- -->
+<!--
+::: {.content-visible unless-meta="headlines.off"}
+# Grundlagen
+## Begriffe
+:::
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+<!--
+::: {.callout-warning}
+## WARNING!
+**THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+### Linienorganisation vs. Matrixorganisation {#sec-linievsmatrix}
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Linienorganisation
+
+-------------------------------------------------------------------------- -->
+#### Linienorganisation
+
+::: {.callout-tip}
+## Begriffsklärung *"Linienorganisation"*
+Die [Linienorganisation](https://de.wikipedia.org/wiki/Linienorganisation) ist eine Organisationsform, bei der jede Stelle im Unternehmen genau einer übergeordneten Instanz unterstellt ist und ausschließlich von dieser Weisungen erhält. Die Linienorganisation folgt dem sogenannten *Einlinienprinzip* und zeichnet sich durch klare hierarchische Strukturen, eindeutige Kommunikationswege und eindeutig abgegrenzte Verantwortungsbereiche aus. Entscheidungen und Anordnungen verlaufen dabei vertikal entlang der Hierarchiekette, wodurch Zuständigkeiten transparent, jedoch Entscheidungsprozesse oft weniger flexibel sind.
+:::
+
+
+```{mermaid}
+%%| label: fig-label-mmlinienorganisation
+%%| fig-cap: "Linienorganisation"
+graph LR
+    %% Oberste Ebene
+    CEO[Geschäftsführung / Bereichsleitung]
+
+    %% Solid-line Beziehungen zur übergeordneten Leitung
+    CEO --> A
+
+    subgraph ABT [Abteilungsebene]
+        direction TB
+        A[Abteilungsleiter/in]
+        B[Teamleitung A]
+        C[Teamleitung B]
+        D[Teamleitung C]
+
+        A --> B
+        A --> C
+        A --> D
+
+        B --> B1[Mitarbeiter/in A1]
+        B --> B2[Mitarbeiter/in A2]
+        B --> B3[Mitarbeiter/in A3]
+
+        C --> C1[Mitarbeiter/in B1]
+        C --> C2[Mitarbeiter/in B2]
+        C --> C3[Mitarbeiter/in B3]
+        C --> C4[Mitarbeiter/in B4]
+
+        D --> D1[Mitarbeiter/in C1]
+        D --> D2[Mitarbeiter/in C2]
+    end
+
+    %% Stil (Farben)
+    style CEO fill:#324B64,stroke:#203040,stroke-width:2px,color:#ffffff;
+
+    style ABT fill:#ffffff,stroke:#404040,color:#000000;
+
+    style A fill:#507078,stroke:#304850,stroke-width:2px,color:#ffffff;
+    style B fill:#606060,stroke:#404040,color:#ffffff;
+    style C fill:#606060,stroke:#404040,color:#ffffff;
+    style D fill:#606060,stroke:#404040,color:#ffffff;
+
+    style B1 fill:#c0c0c0,stroke:#808080;
+    style B2 fill:#c0c0c0,stroke:#808080;
+    style B3 fill:#c0c0c0,stroke:#808080;
+    style C1 fill:#c0c0c0,stroke:#808080;
+    style C2 fill:#c0c0c0,stroke:#808080;
+    style C3 fill:#c0c0c0,stroke:#808080;
+    style C4 fill:#c0c0c0,stroke:#808080;
+    style D1 fill:#c0c0c0,stroke:#808080;
+    style D2 fill:#c0c0c0,stroke:#808080;
+```
+
+
+
+| Kategorie | Details |
+|-----------|---------|
+| **Grundprinzip der Linienorganisation** | - Jeder Mitarbeitende hat genau **einen Vorgesetzten** (**Einlinienprinzip**).<br>- Die Weisungsbefugnis verläuft *"Top-Down"* ^[**2M-Methode**: *"Machen, Maul halten!"* (Quelle: Rainer Class)] (entsprechend die Berichtslinie *"Bottom-Up"*) in klaren Hierarchiestufen. |
+| **Merkmale der Linienorganisation** | - **Eindeutige Zuständigkeiten und klare Kommunikationswege**.<br>- Geringe Konfliktgefahr bei Entscheidungen.<br>- Begrenzte Flexibilität bei Entscheidungen über hierarchisch Grenzen hinweg.<br>- Aufgaben und Verantwortlichkeiten sind klar abgegrenzt.<br>- Karriere erfolgt meist innerhalb der eigenen Linie. |
+| **Vorteile für Mitarbeitende** | - **Klare Verantwortlichkeiten und Arbeitsanweisungen**.<br>- Übersichtliche Strukturen und stabile Abläufe.<br>- Weniger Konflikte bei der Aufgabenverteilung. |
+| **Nachteile für Mitarbeitende** | - Geringe Mitgestaltungsmöglichkeiten.<br>- Informationsfluss kann langsam und bürokratisch sein.<br>- Eingeschränkte bereichsübergreifende Zusammenarbeit.<br>- Starke **Abhängigkeit von der direkten Führungskraft**. |
+
+: Grundprinzip und Eigenschaften der Linienorganisation aus Sicht des/der Mitarbeitenden  {#tbl-prinziplinie .striped .hover .bordered tbl-colwidths="[25,75]"}
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Matrixorganisation
+
+-------------------------------------------------------------------------- -->
+#### Matrixorganisation
+
+::: {.callout-tip}
+## Begriffsklärung *"Matrixorganisation"*
+Die [Matrixorganisation](https://de.wikipedia.org/wiki/Matrixorganisation) ist eine mehrdimensionale Organisationsform, bei der Mitarbeiter*innen gleichzeitig zwei Instanzen unterstellt sind – typischerweise einer funktionalen (Linien-) und einer projekt-, produkt- oder bereichsbezogenen Leitung. Die Matrixorganisation kombiniert die Vorteile der funktionalen Spezialisierung mit der Flexibilität projektorientierter Strukturen und zielt darauf ab, Ressourcen effizient zu nutzen sowie bereichsübergregende Zusammenarbeit zu fördern. Das daraus resultierende Mehrlinienprinzip erfordert jedoch intensive Koordination und birgt ein erhöhtes Konfliktpotenzial aufgrund möglicher Überschneidungen von Weisungsbefugnissen.
+:::
+
+
+```{mermaid}
+%%| label: fig-label-mmmatrixorganisation
+%%| fig-cap: "Matrixorganisation"
+flowchart LR
+    %% Oberste Ebene
+    CEO[Geschäftsführung / Bereichsleitung]
+
+    %% Abteilungsebene
+    subgraph ABT [Abteilungsebene]
+        direction TB
+        A[Abteilungsleiter/in]
+        B[Teamleitung A]
+        C[Teamleitung B]
+        D[Teamleitung C]
+
+        A --> B
+        A --> C
+        A --> D
+
+        B --> B1[Mitarbeiter/in A1]
+        B --> B2[Mitarbeiter/in A2]
+        B --> B3[Mitarbeiter/in A3]
+
+        C --> C1[Mitarbeiter/in B1]
+        C --> C2[Mitarbeiter/in B2]
+        C --> C3[Mitarbeiter/in B3]
+        C --> C4[Mitarbeiter/in B4]
+
+        D --> D1[Mitarbeiter/in C1]
+        D --> D2[Mitarbeiter/in C2]
+    end
+
+    %% Projektebene
+    subgraph PROJEKTE [Projektebene]
+        direction TB
+        PX[Projektleitung X]
+        PY[Projektleitung Y]
+        PZ[Projektleitung Z]
+    end
+
+    %% Matrixverbindungen (gestrichelt)
+    PX -.-> B1 & C1 & D1
+    PY -.-> B2 & C2 & D2
+    PZ -.-> B3 & C3 & C4
+
+    %% Solid-line Beziehungen zur übergeordneten Leitung
+    CEO --> A
+    CEO --> PX
+    CEO --> PY
+    CEO --> PZ
+
+    %% Stildefinitionen
+    style CEO fill:#324B64,stroke:#203040,stroke-width:2px,color:#ffffff;
+
+    style ABT fill:#ffffff,stroke:#404040,color:#000000;
+    style PROJEKTE fill:#ffffff,stroke:#404040,color:#000000;
+
+    style A fill:#507078,stroke:#304850,stroke-width:2px,color:#ffffff;
+    style B fill:#606060,stroke:#404040,color:#ffffff;
+    style C fill:#606060,stroke:#404040,color:#ffffff;
+    style D fill:#606060,stroke:#404040,color:#ffffff;
+
+    style PX fill:#506e78,stroke:#305060,stroke-width:2px,color:#ffffff;
+    style PY fill:#6e785a,stroke:#505840,stroke-width:2px,color:#ffffff;
+    style PZ fill:#887868,stroke:#605040,stroke-width:2px,color:#ffffff;
+
+    style B1 fill:#c0c0c0,stroke:#808080;
+    style B2 fill:#c0c0c0,stroke:#808080;
+    style B3 fill:#c0c0c0,stroke:#808080;
+    style C1 fill:#c0c0c0,stroke:#808080;
+    style C2 fill:#c0c0c0,stroke:#808080;
+    style C3 fill:#c0c0c0,stroke:#808080;
+    style C4 fill:#c0c0c0,stroke:#808080;
+    style D1 fill:#c0c0c0,stroke:#808080;
+    style D2 fill:#c0c0c0,stroke:#808080;
+```
+
+
+::: {.callout-note}
+## Exkurs *"Dotted-Line-Prinzip"*
+Das [Dotted-Line-Prinzip]((https://de.wikipedia.org/wiki/Dotted-Line-Prinzip)) bezeichnet in der betriebswirtschaftlichen Organisationslehre die Trennung von fachlicher und disziplinarischer Unterordnung. In Organigrammen wird die **fachliche Weisungsbeziehung** durch eine **gestrichelte Linie** (dotted line) dargestellt, während die **disziplinarische Unterordnung** durch eine **durchgezogene Linie** (solid line) gekennzeichnet wird. 
+:::
+
+
+
+| Kategorie | Details |
+|-----------|---------|
+| **Grundprinzip der Matrixorganisation** | - Mitarbeitemde sind **zwei Vorgesetzten** unterstellt:<br>1. Einer **Linieninstanz** (*"Solid Line"*) (z.B. Team-/Abteilungsleitendem, funktionale Verantwortung).<br>2. Einer **Projekt- oder Produktleitung** (*"[Dotted Line](https://de.wikipedia.org/wiki/Dotted-Line-Prinzip)"*) (z.B. Verantwortung für ein Projekt, Produkt oder Kunden). |
+| **Merkmale der Matrixnorganisation** | - **Duale Berichtslinie:** Mitarbeitende erhalten Anweisungen aus zwei Richtungen.<br> - **Mehrdimensionale Kommunikation:** Austausch findet über Abteilungs- **UND** Projektgrenzen hinweg statt.<br> - **Hohe Anforderung an Koordination und Selbstorganisation.**<br>- **Mehr Eigenverantwortung und Mitgestaltungsmöglichkeiten.**<br>- Konfliktpotenzial durch widersprüchliche Vorgaben (***„Zwei-Chefs-Problem“***).<br>-Rollen und Prioritäten müssen **aktiv abgestimmt** werden. |
+| **Vorteile für Mitarbeitende** | - **Größerer Handlungsspielraum und Verantwortung**.<br>- Vielfältige **Lern- und Entwicklungsmöglichkeiten** durch interdisziplinäre Zusammenarbeit.<br>- Direkter Einblick in verschiedene Unternehmensbereiche.<br>- Flexiblere Einsatzmöglichkeiten und oft spannendere Projekte. |
+| **Nachteile für Mitarbeitende** | - **Höhere Arbeitsbelastung durch Abstimmungsprozesse**.<br>- Potenziell widersprüchliche Anweisungen von zwei Vorgesetzten.<br>- Erhöhter Kommunikationsaufwand und Konfliktmanagement nötig.<br>- Erfordert gute Selbstorganisation, soziale Kompetenz und **Resilienz**. |
+
+: Grundprinzip und Eigenschaften der Matrixorganisation aus Sicht des/der Mitarbeitenden  {#tbl-prinzipmatrix .striped .hover .bordered tbl-colwidths="[25,75]"}
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Vergleich Linienorganisation vs. Matrixorganisation
+
+-------------------------------------------------------------------------- -->
+#### Vergleich Linien- vs. Matrixorganisation aus Sicht des/der Mitarbeitenden
+
+| Kriterium                             | Linienorganisation     | Matrixorganisation                    |
+| ------------------------------------- | ---------------------- | ------------------------------------- |
+| **Vorgesetztenverhältnis**            | Eine Führungskraft     | Zwei Führungskräfte (Linie & Projekt) |
+| **Kommunikation**                     | Vertikal (top-down)    | Horizontal und vertikal               |
+| **Flexibilität**                      | Gering                 | Hoch                                  |
+| **Eigenverantwortung**                | Niedrig                | Hoch                                  |
+| **Konfliktpotenzial**                 | Gering                 | Hoch (Zielkonflikte wahrscheinlich)   |
+| **Entwicklungsmöglichkeiten**         | Begrenzt auf Fachlinie | Breiter durch Projektarbeit           |
+| **Transparenz der Zuständigkeiten**   | Hoch                   | Teilweise unklar                      |
+| **Teamarbeit**                        | Innerhalb der Linie    | Interdisziplinär über Bereiche hinweg |
+
+: Vergleich Linien- vs. Matrixorganisation aus Sicht des/der Mitarbeitenden  {#tbl-linievsmatrixsichtma .striped .hover .bordered}
+
+
+
+::: {.callout-tip}
+## Pro-Tipp!
+In der betrieblichen Praxis größerer Unternehmen wird der latente Konflikt zwischen Abteilungs- und Projektleitenden oftmals dadurch zu lösen versucht dass jede Person in Leitungsfunktion sowohl für eine Abteilung als auch für ein Projekt verantwortlich ist. Die daraus resultierenden wechselseitige Abhängigkeit fördert die konstruktive Zusammenarbeit zwischen Abteilungs- und Projektleitenden.
+:::
+
+
+
+<!--
+## 1. **Stablinienorganisation**
+
+* Erweiterung der Linienorganisation.
+* **Merkmal:** Zusätzlich zu den Linieninstanzen gibt es **Stäbe** (Berater/Expert*innen), die die Linienführung unterstützen, aber **keine Weisungsbefugnis** haben.
+* **Vorteil:** Entlastung der Führungskräfte durch fachliche Beratung.
+* **Nachteil:** Kann zu Konflikten führen, wenn Linien- und Stabsentscheidungen unklar sind.
+
+
+
+## 2. **Funktionale Organisation**
+
+* Gliederung nach **Funktionen oder Aufgaben** (z. B. Einkauf, Produktion, Marketing).
+* **Vorteil:** Spezialisierung, klare Verantwortungsbereiche.
+* **Nachteil:** Geringe bereichsübergreifende Koordination, Gefahr von „Silos“.
+
+
+## 3. **Divisionale / Spartenorganisation**
+
+* Gliederung nach **Produkten, Märkten oder Kundengruppen** (z. B. Automotive-Sparte, Konsumgüter-Sparte).
+* Jede Division hat **eigene Funktionen** (Marketing, Vertrieb, Produktion) und ist **weitgehend selbstständig**.
+* **Vorteil:** Kundennähe, schnelle Entscheidungen.
+* **Nachteil:** Doppelung von Funktionen, höhere Kosten.
+
+
+
+## 4. **Projektorganisation / Projektorientierte Organisation**
+
+* Temporäre **Zuweisung von Mitarbeitern zu Projekten**.
+* Häufig ergänzt durch Matrixstruktur (doppelte Berichtslinie: Linie + Projektleitung).
+* **Vorteil:** Flexibel, aufgabenorientiert, fördert bereichsübergreifende Zusammenarbeit.
+* **Nachteil:** Konflikte durch Doppelunterstellung möglich, hoher Koordinationsaufwand.
+
+
+
+## 5. **Team- oder Netzwerkorganisation**
+
+* Flache Hierarchien, dezentrale Entscheidungen.
+* Fokus auf **interdisziplinäre Teams** und **kooperative Zusammenarbeit**.
+* **Vorteil:** Hohe Flexibilität, schnelle Kommunikation, Innovationsförderung.
+* **Nachteil:** Verantwortlichkeiten oft weniger klar, schwierige Führung.
+
+
+
+## 6. **Prozess- bzw. Prozessorientierte Organisation**
+
+* Orientierung an **Geschäftsprozessen** statt an Funktionen oder Hierarchien.
+* Ziel: Effizienzsteigerung und Optimierung der Wertschöpfungskette.
+* **Vorteil:** Bessere Prozessintegration, klare Abläufe.
+* **Nachteil:** Rollen und Verantwortlichkeiten können unklar werden.
+-->
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Abgeleitete Organisationsformen
+
+-------------------------------------------------------------------------- -->
+#### Abgeleitete Organisationsformen
+
+Neben der klassischen Linien- und Matrixorganisation existieren noch weitere Organisationsformen, die in ihrem Grundprinzip jedoch **immer eine spezielle Ausprägung aus Linien- und Matrixorganisation** darstellen. 
+
+@tbl-abgeleiteteorganisationsformen zeigt - ergänzend zu Linien- und Matrixorganisation - weitere abgeleitete Organisationsformen gemeinsam mit deren Hauptmerkmal und deren jeweiligen wichtigsten Vor- und Nachteilen:
+
+| Organisationsform                   | Hauptmerkmal                        | Vorteil                        | Nachteil                                    |
+| ----------------------------------- | ----------------------------------- | ------------------------------ | ------------------------------------------- |
+| **Linienorganisation**              | Einlinienprinzip                    | klare Zuständigkeiten          | wenig flexibel                              |
+| **Matrixorganisation**              | Mehrlinienprinzip (Linie + Projekt) | flexibel, bereichsübergreifend | Konfliktpotenzial, hoher Abstimmungsaufwand |
+| **Stablinienorganisation**          | Linie plus beratende Stäbe/Gremien  | entlastet Führung              | Konfliktpotenzial zwischen Stäben, zusätzlicher Personalbedarf |
+| **Funktionale Organisation**        | nach Aufgaben/Funktionen            | Spezialisierung                | *"Silodenken"*                              |
+| **Divisionale Organisation**        | nach Produkten/Märkten              | Kundennähe                     | Doppelung von Funktionen                    |
+| **[Projektorganisation](https://de.wikipedia.org/wiki/Projektorganisation)**             | temporäre Projektzuweisung          | flexibel, bereichsübergreifend | Hoher Koordinationsaufwand                  |
+| **Team-/Netzwerkorganisation**      | flache Hierarchie, Teams            | Innovationsfördernd            | Aufgaben, Kompetenzen, Verantwortung oft unklar |
+| **Prozessorientierte Organisation** | nach Prozessen                      | Effizienz, Prozessintegration  | Rollen weniger klar                         |
+
+: Aus Linien- und Matrixorganisationen abgeleitete weitere Organisationsformen {#tbl-abgeleiteteorganisationsformen .striped .hover .bordered}
+
+
+::: {.callout-note}
+## Exkurs: *"Projektorganisation"*
+Eine [Projektorganisation](https://de.wikipedia.org/wiki/Projektorganisation) entspricht ihrem Wesen nach einer Linienorganisation. Im Gegensatz zu einer Linienorganisation gilt eine Projektorganisation jedoch immer **nur für die Dauer des jeweiligen Projekts**. Die Projektmitarbeitenden verbleiben für organisatorisch in der Regel in ihrer jeweiligen Linienorganisation (Team/Abteilung).
+:::
+
+::: {.callout-note}
+## Exkurs: *"Task-Force"*
+Eine [Task-Force](https://de.wikipedia.org/wiki/Projektorganisation#Reine_Projektorganisation_bzw._Autonome_Projektorganisation_(Task-Force)) ist eine autonome, für die Dauer des Projekts zeitlich befristete, autonome (Linien-)Organisation. Eine Task-Force eignet sich vor allem für **umfangreiche Projekte mit hoher strategischer Bedeutung** für das Unternehmen. Sie wird auch autonome Projektorganisation genannt, da sie sich durch ein hohes Maß an Autonomie von der Primärorganisation auszeichnet. Von einer Projektgesellschaft unterscheidet sie sich nur noch dadurch, dass sie rechtlich nicht selbständig organisiert ist. Alle Projektbeteiligten werden aus den verschiedensten Unternehmensbereichen ausgegliedert und einem eigenen Projektbereich für die Dauer des Projekts zugeordnet. Der Projektleitende hat bei dieser Projektorganisationsform die **alleinige Verantwortung und die gesamte Weisungs- und Entscheidungsbefugnis**.
+:::

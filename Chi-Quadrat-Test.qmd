@@ -155,6 +155,12 @@ Für weitere Informationen zur Berechnung der Wahrscheinlichkeit $p$ sei der gen
 Der [Chi-Quadrat-Test](https://de.wikipedia.org/wiki/Chi-Quadrat-Test) kann mit einem [Runs-Test](https://de.wikipedia.org/wiki/Run-Test) kombiniert werden, da beide Prüfgrößen asymptotisch unabhängig voneinander sind.
 :::
 
+<!-- -------------------------------------------------------------------------
+
+                       Chi-Quadrat-Test (χ²-Test) Faire Münze - 100 Würfe
+
+-------------------------------------------------------------------------- -->
+<!--
 #### Beispiel: Werfen einer Münze (100 Würfe)
 
 **Aufgabe**: Es soll geklärt werden ob es einen statistisch signifikanten Hinweis darauf gibt dass es sich bei einer Münze um eine unfaire Münze handelt?
@@ -200,3 +206,232 @@ Sinkt der $p$-Wert unter ein geeignetes Signifikanzniveau (z.B. 0,05) wird die N
 Die untersuchte Sequenz gibt keinen statistisch signifikanten Hinweis darauf, dass die Münze unfair ist.
 
 Damit der Chi-Quadrat-Test bei 100 Würfen signifikant wird ($p$ < 0,05), müsste die Münze mindestens so stark abweichen wie ≤ 36 Kopf oder ≥ 64 Kopf. Bei 36 Kopf oder 64 Zahl oder umgekehrt ist der $p$-Wert gerade noch über 0,05. Erst ab 35/65 sinkt der $p$-Wert deutlich darunter.
+-->
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Chi-Quadrat-Test (χ²-Test) Fairer Würfel - 100 Würfe
+
+-------------------------------------------------------------------------- -->
+<!--
+#### Beispiel: Werfen eines fairen Würfels (100 Würfe)
+
+**Hypothesen**
+
+* $H_0$: Der Würfel ist fair → jede Seite $i$ hat Wahrscheinlichkeit $p_i = 1/6$.
+* $H_1$: Mindestens eine Seite weicht von der Wahrscheinlichkeit $p_i = 1/6$ ab.
+
+**Erwartete Häufigkeiten**
+
+Für $n=100$ ist die erwartete Häufigkeit jeder Seite
+
+$$
+E_i = n \cdot p_i = 100 \cdot \frac{1}{6} \approx 16{,}6667.
+$$
+
+Die Voraussetzung (*"Gesetz der großen Zahlen"*) *"erwartete Häufigkeiten ≥ 5*" ist damit erfüllt.
+
+**Teststatistik**
+
+Die $\chi^2$-Statistik ist
+
+$$
+\chi^2 = \sum_{i=1}^{6} \frac{(O_i - E_i)^2}{E_i},
+$$
+
+wobei $O_i$ die beobachteten Häufigkeiten sind. Unter $H_0$ folgt $\chi^2$ (asymptotisch) einer Chi-Quadratverteilung mit
+
+$$
+\text{df} = k-1 = 6-1 = 5.
+$$
+
+Wichtige Eigenschaften dieser Verteilung:
+
++ Erwartungswert: $\mathbb{E}[\chi^2] = \text{df} = 5$.
++ Varianz: $\mathrm{Var}(\chi^2) = 2\cdot\text{df} = 10$.
+
+Das heißt: **unter Zufälligkeit** erwarten wir typischerweise einen $\chi^2$-Wert in der Größenordnung von etwa 5, mit merklicher Streuung (Quadratwurzel der Varianz ≈ $\sqrt{10}\approx 3{,}16)$.
+
+
+**Entscheidungsgrenzen (typische α-Niveaus)**
+
+Für df = 5 liegen die kritischen Werte (ungefähr):
+
+* $\alpha = 0.05$ : $\chi^2_{0.95,5} \approx 11{,}07$ → größer → ablehnen bei 5%-Niveau.
+* $\alpha = 0.01$ : $\chi^2_{0.99,5} \approx 15{,}09$.
+
+Wenn also dein berechneter $\chi^2$-Wert > 11.07, wäre das Hinweis darauf, dass die beobachteten Häufigkeiten unwahrscheinlich unter einem fairen Würfel sind $p < 0.05$.
+
+**Was man praktisch an Zähl-Schwankungen erwartet**
+
+Für eine einzelne Seiten-Zählung gilt (multinomial):
+
+$$
+\operatorname{Var}(O_i) = n p_i (1-p_i) = 100\cdot\frac{1}{6}\cdot\frac{5}{6} = \frac{500}{36} \approx 13{,}8889,
+$$
+
+also Standardabweichung $\sigma_{O_i}\approx 3{,}73$. Typische Werte für eine Seitenhäufigkeit liegen also grob in
+
+$$
+16{,}67 \pm 2\cdot 3{,}73 \approx [9{,}2,;24{,}1].
+$$
+
+Solche Schwankungen führen zu Beiträgen $(O_i-E_i)^2/E_i$ in der $\chi^2$-Summe; im Mittel addieren sich diese Beiträge zu etwa 5 (das ist $\mathbb{E}[\chi^2]$).
+
+**6. Kurzes Beispiel (anschaulich)**
+
+Angenommen, du beobachtest die Häufigkeiten
+$[18,16,20,14,17,15]$. Dann ist
+
+$$
+\chi^2 = \sum \frac{(O_i-E_i)^2}{E_i} \approx 1{,}40.
+$$
+
+Das ist deutlich kleiner als 11,07 → kein Hinweis gegen Fairness (p-Wert nahe 0,9).
+
+**Fazit — was du erwarten kannst**
+
+* **Erwarteter $\chi^2$** unter $H_0$: ≈ **5** (df = 5).
+* **Typische Streuung** der $\chi^2$-Statistik: Std ≈ 3.16.
+* **Kritischer Wert $α=0.05$**: ≈ **11.07**. Werte deutlich über 11 deuten auf Abweichung von Fairness hin.
+* **Erwartete Zählwerte pro Seite**: ≈ **16.67** ± etwa 3.7 (eine Standardabweichung).
+-->
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Fehlkontextualisierte Statistik
+
+-------------------------------------------------------------------------- -->
+<!--
+### Fehlkontextualisierte Statistik
+-->
+
+<!--
+### Fehlkontextualisierte Statistik - Beispiel W:O:A
+
+Jährlich sterben beim Wacken Open Air **keine Menschen** – zumindest nicht während des Festivals direkt. Seit Beginn des Events wurden insgesamt **vier Todesfälle** dokumentiert, verteilt auf mehrere Jahre – also weit weniger als ein Todesfall pro Jahr.
+
+Hier die bekannten Fälle (Stand bis 2025):
+
+* **2005**: Ein stark betrunkener Besucher stieß gegen einen langsam fahrenden Rettungswagen, erlag später im Krankenhaus seinen Kopfverletzungen ([en.wikipedia.org][1], [de.wikipedia.org][2]).
+* **2011**: Ein randalierender Festivalgast erlitt einen Herz-Kreislauf-Stillstand und verstarb ([de.wikipedia.org][2]).
+* **2012**: Ein 22‑Jähriger legte sich in der Nähe eines laufenden Generators schlafen und starb durch Kohlenmonoxid-Vergiftung ([de.wikipedia.org][2]).
+* **2013**: Ein 52‑jähriger Besucher starb in seinem Zelt an natürlichen Ursachen ([en.wikipedia.org][1]).
+
+Es gab zudem einzelne schwere Verletzungen (z. B. durch unsachgemäße Nutzung von Campingkochern oder Böllern in den Folgejahren 2016 und 2017) ([en.wikipedia.org][1], [de.wikipedia.org][2]).
+
+Das heißt: **Durchschnittlich weniger als ein Todesfall alle 5–6 Jahre**, was bei über 85 000 Besucher:innen pro Festival eine sehr niedrige Sterberate darstellt.
+
+Zusätzliche Beiträge von Besuchern in Foren und Reddit bestätigen diese Einschätzung:
+
+> „The only other one I know of was in 2005… In 2013 a 50 year old died of natural causes… Bottom line, it's a very safe festival.“ ([reddit.com][3])
+
+Wenn du nach Unfällen auf dem Weg dorthin oder zurück suchst, dann gab es vereinzelt Verkehrsunfälle von Besuchern außerhalb des Festivalgeländes, insgesamt aber keine statistisch regelmäßigen Toten im Zusammenhang mit dem Festival selbst ([wacken.com][4], [wacken.com][5]).
+
+**Fazit:** Pro Festivaljahr ist mit **keinem Todesfall zu rechnen** – die registrierten Todesfälle sind über lange Zeit verteilt, insgesamt vier dokumentierte insgesamt etwa über 2005 bis 2013. 
+
+
+Um die durchschnittliche tägliche Sterberate in einer Bevölkerung von **85.000 Menschen** zu berechnen, verwenden wir die allgemeine Sterberate in Deutschland als Grundlage.
+
+---
+
+**Sterberate in Deutschland (aktuell, Stand 2024)**
+
+* Etwa **12 Todesfälle pro 1.000 Personen pro Jahr**
+  *(Sterberate ≈ 12 ‰ / Jahr)*
+
+---
+
+**Berechnung für 85.000 Menschen**
+
+1. **Jährliche Todesfälle:**
+
+$$
+\frac{12}{1000} \times 85.000 = 1.020 \text{ Todesfälle pro Jahr}
+$$
+
+**Tägliche Todesfälle:**
+
+$$
+\frac{1.020}{365} \approx 2,8 \text{ Todesfälle pro Tag}
+$$
+
+
+In einer fiktiven Stadt oder Festivalbevölkerung von **85.000 Menschen** sterben statistisch gesehen etwa **2 bis 3 Personen pro Tag**, wenn man von durchschnittlichen Bedingungen wie in Deutschland ausgeht.
+
+Beim **Wacken Open Air**, das einige Tage dauert, **sterben real jedoch kaum Menschen** – also viel **weniger als statistisch zu erwarten wäre**.
+
+Wie kann das sein?
+
+Ja, **auf den ersten Blick wirkt das tatsächlich widersprüchlich** – aber der Unterschied lässt sich gut erklären, wenn man genau hinschaut, **was „statistisch“ bedeutet** und **wie unterschiedlich die realen Bedingungen auf einem Festival sind** im Vergleich zur Gesamtbevölkerung.
+
+---
+
+### 📌 **Warum dieser Widerspruch nur scheinbar besteht:**
+
+#### 1. **Die „statistische Sterberate“ bezieht sich auf die Gesamtbevölkerung**
+
+Die allgemeine Sterberate (etwa **12 pro 1000 pro Jahr**) basiert auf **allen Altersgruppen**, also auch:
+
+* Hochbetagte Menschen (80+),
+* Menschen mit schweren chronischen Erkrankungen,
+* Pflegebedürftige,
+* usw.
+
+Diese Bevölkerungsgruppen haben ein **deutlich höheres Risiko zu sterben** – und **die sind beim Wacken Open Air so gut wie gar nicht vertreten**.
+
+---
+
+#### 2. **Festivalbesucher sind viel jünger und gesünder**
+
+Die Mehrheit der Wacken-Besucher ist:
+
+* zwischen etwa **20 und 55 Jahre alt**,
+* körperlich mobil und belastbar,
+* in der Regel **nicht schwer krank**.
+
+→ Diese Altersgruppe hat eine **sehr niedrige Sterberate**, z. B. für 20–40-Jährige oft nur **1–2 pro 10.000 pro Jahr**, oder weniger.
+
+Wenn man die tatsächliche **alterskorrigierte Sterberate** auf die Wacken-Demografie anwendet, ist man bei **vielleicht 5–10 erwartbaren Todesfällen pro Jahr – auf ganzjährig 85.000 Leute gerechnet**.
+
+Aber:
+
+* Wacken dauert nur **4 Tage**,
+* Die 85.000 sind **nicht ein Jahr lang da**, sondern nur **temporär anwesend**.
+
+→ Rechnet man das um, reduziert sich die Wahrscheinlichkeit eines Todesfalls auf **nahezu Null**.
+
+---
+
+#### 3. **Rechnung für ein 4-Tage-Festival mit junger Zielgruppe**
+
+Nehmen wir z. B. eine realistische Sterberate von **1 pro 10.000 pro Jahr** für gesunde Festivalbesucher:
+
+$$
+\frac{1}{10.000} \times 85.000 = 8,5 \text{ Tote pro Jahr}
+$$
+
+→ Pro Tag:
+
+$$
+\frac{8,5}{365} \approx 0,023 \text{ Tote pro Tag}
+$$
+
+→ Für 4 Tage:
+
+$$
+0,023 \times 4 \approx 0,092 \text{ erwartbare Todesfälle}
+$$
+
+Also: **Rein rechnerisch stirbt bei Wacken statistisch gesehen nur alle \~11 Festivals eine Person** – was in etwa zu den **bisher 4 dokumentierten Todesfällen in 30+ Jahren** passt.
+
+---
+
+### ✅ **Fazit:**
+
+Nein, es ist nicht merkwürdig – **es ist ein klassisches Beispiel für fehlkontextualisierte Statistik**.
+Wenn man die Sterberate der Gesamtbevölkerung pauschal auf eine ganz andere, gesündere, temporäre Menschenmenge überträgt, entstehen solche scheinbaren Widersprüche. Berücksichtigt man Alter, Gesundheitszustand und Festivaldauer, ergibt sich ein realistisches und konsistentes Bild.
+-->

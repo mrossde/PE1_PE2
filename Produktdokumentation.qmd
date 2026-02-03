@@ -73,6 +73,279 @@ Haftungsausschluss und Einschränkungen, Normen und Zertifizierungen sind zur re
 
 In der in @tbl-produktdokumentation gegebenen Reihenfolge bilden die fünf Inhalte (plus Haftungsausschluss und Einschränkungen, Normen und Zertifizierungen!) eine Bedienungsanleitung zu einem einfachen Gerät. Meistens genügen schon die ersten drei Inhalte, weil die Beschreibung der Funktionsweise und die Bereitstellung von technischen Unterlagen für die Benutzung des Geräts nicht nötig sind. 
 
+
+
+
+
+<!--
+::: {.callout-tip}
+## Weiterführende Links
+
+:::
+-->
+
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
+
++ @juhl_technische_2015: [Technische Dokumentation](https://rdcu.be/dKtdV)
+
+:::
+
+
+<!--
+#### Literaturempfehlung
+
+![@juhl_technische_2015: [Technische Dokumentation](https://link.springer.com/book/10.1007/978-3-662-46865-4)](images/Juhl_Technische_Dokumentation_978-3-662-46865-4.webp){width=40%}
+
+-->
+
+<!--
+
+Die **Produktdokumentation** eines technischen Produkts umfasst alle Unterlagen, die den **Lebenszyklus des Produkts** (von Entwicklung über Herstellung bis Nutzung und Entsorgung) nachvollziehbar machen. Welche Dokumente **zwingend erforderlich** sind, hängt von der Branche, dem Produkttyp und den rechtlichen Anforderungen (z. B. CE-Kennzeichnung, Maschinenrichtlinie, Medizinprodukteverordnung usw.) ab.
+
+Im Allgemeinen gliedert sich die Produktdokumentation in **interne technische Dokumentation** und **externe Nutzerdokumentation**.
+Hier sind die **zwingend erforderlichen Dokumente**, die in der Regel zu jeder vollständigen Produktdokumentation gehören:
+
+---
+
+### 🧩 **1. Technische (interne) Dokumentation**
+
+Diese Unterlagen dienen dem Nachweis der Konformität und zur internen Nachvollziehbarkeit.
+
+#### a) Produktbeschreibung
+
+* Zweck, Funktionsweise, Einsatzbereich
+* Varianten, Typen, technische Daten
+
+#### b) Konstruktions- und Entwicklungsunterlagen
+
+* Entwürfe, technische Zeichnungen, Stücklisten
+* Schaltpläne, 3D-Modelle, Layouts (bei Elektronik)
+* Berechnungen, Simulationen, Toleranzanalysen
+
+#### c) Risikoanalyse / Risikobeurteilung
+
+* Identifikation von Gefährdungen
+* Bewertung und Maßnahmen zur Risikominderung
+  ➡️ *Zwingend nach ISO 12100 (Maschinen) und ISO 14971 (Medizinprodukte)*
+
+#### d) Prüf- und Testnachweise
+
+* Verifizierungs- und Validierungsprotokolle
+* Funktionsprüfungen, Belastungstests, EMV-Tests, Sicherheitstests
+* Messprotokolle, Kalibrierzertifikate
+
+#### e) Fertigungs- und Qualitätsunterlagen
+
+* Fertigungsanweisungen, Montagepläne
+* Prüfpläne, Qualitätssicherungsunterlagen (z. B. FMEA, SPC)
+
+#### f) Konformitätserklärung und Normenverzeichnis
+
+* EU-Konformitätserklärung / Herstellererklärung
+* Übersicht angewandter Normen, Richtlinien, Standards
+
+#### g) Änderungen und Versionshistorie
+
+* Änderungsdienst, Engineering Change Orders (ECO)
+* Historie der Revisionen und Serienänderungen
+
+---
+
+### 📘 **2. Nutzerdokumentation (externe Dokumente)**
+
+Diese Unterlagen sind für den Betreiber, Kunden oder Endanwender bestimmt.
+
+#### a) Bedienungsanleitung / Gebrauchsanweisung
+
+* Zweckbestimmung, Sicherheitshinweise
+* Installation, Inbetriebnahme, Betrieb, Wartung, Entsorgung
+  ➡️ *Pflicht nach Maschinenrichtlinie 2006/42/EG und Produktsicherheitsgesetz (ProdSG)*
+
+#### b) Montage- und Installationsanleitung
+
+* Speziell für Integratoren oder Monteure
+* Hinweise zu Aufstellung, Anschluss, Justierung
+
+#### c) Wartungs- und Serviceanleitung
+
+* Inspektionsintervalle, Austausch- und Ersatzteillisten
+* Reparaturanleitungen, Kalibrieranweisungen
+
+#### d) Technische Datenblätter
+
+* Leistungsdaten, Grenzwerte, elektrische und mechanische Kenndaten
+
+#### e) Sicherheitsinformationen
+
+* Warnhinweise, Schutzmaßnahmen, Notfallverhalten
+* ggf. Sicherheitsdatenblätter (bei chemischen Produkten)
+
+---
+
+### 🗂️ **3. Optional (je nach Branche, aber häufig erforderlich)**
+
+* Software-Dokumentation (Architektur, Schnittstellen, Quellcode-Kommentare)
+* Validierungsberichte (z. B. nach GAMP5, bei Software oder Medizinprodukten)
+* Schulungsunterlagen
+* Zertifikate (z. B. TÜV, UL, CE)
+* Verpackungs- und Etikettierungsvorschriften
+* Entsorgungs- und Recyclinganweisungen
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Template: Produktdokumentation
+
+-------------------------------------------------------------------------- -->
+### Template: Produktdokumentation
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Übersicht: Bausteine der Produktdokumentation
+
+-------------------------------------------------------------------------- -->
+
+
+```{mermaid}
+%%| label: fig-label-mmproduktdokumentation
+%%| fig-cap: "Mindmap wichtiger Bausteine zur Produktdokumentation"
+%%{init: {'theme': 'forest'}}%%
+mindmap
+   root((Produktdokumentation))
+      (Sachnummern)
+      (Coderegeln)
+      (CAD-Daten)
+        (3D-Master)
+        (Bauteilmappen)
+          (Verfahrensanweisungen)
+          (Prüfanweisungen)
+          (Grenzmuster)
+        (Zeichnungen)
+          (Werkstoffe)
+          (Maße)
+          (Toleranzen)
+      (Stücklisten)
+        (MBOM)
+        (SBOM)
+      (PDM/PLM)
+```
+
+
+
+**Empfehlung zur Struktur und Inhalte eines Produktdokumentation**
+
+
+Legende: Empfohlene Inhalte (🟢) Optionale Inhalte (🔵).
+
+```
+Produktdokumentation/
+│
+├── 🟢 01_Allgemein/
+├── 🟢 02_Konstruktion/
+├── 🟢 03_Risikobeurteilung/
+├── 🟢 04_Tests_und_Prüfungen/
+├── 🟢 05_Fertigung_und_Qualität/
+├── 🟢 06_Konformität/
+├── 🟢 07_Bedienung_und_Service/
+├── 🟢 08_Änderungsmanagement/
+├── 🟢 09_Umwelt_und_Entsorgung/
+└── 🔵 10_Anhang/
+```
+
+
+**1. Allgemein** (Allgemeine Informationen zum Produkt)
+
++ 🟢 **Titelblatt** – Produktname, Version, Hersteller, Datum, verantwortliche Personen
++ 🟢 **Änderungs- und Revisionsverlauf** – Dokumenthistorie mit Datum, Version, Verantwortlichem
++ 🟢 **Inhaltsverzeichnis** – Übersicht aller Dokumententeile
++ 🟢 **Produktbeschreibung** – Zweck, Funktionsprinzip, Einsatzbereich, Varianten, Schnittstellen
++ 🔵 **Marktanalyse / Zielgruppenbeschreibung** – Hintergrund und Kontext des Produkts
+
+
+**2. Konstruktion** (Konstruktions- und Entwicklungsunterlagen)
+
++ 🟢 **CAD-Modelle / Konstruktionszeichnungen** – mechanische und elektrische Pläne
++ 🟢 **Bauteilmappen** – Verfahrens- und Prüfanweisungen, Grenzmuster
++ 🟢 **Stücklisten (BOMs)** – vollständige Komponentenlisten mit Material, Lieferant, Version
++ 🟢 **Schalt- und Verdrahtungspläne** – elektrische, pneumatische, hydraulische Systeme
++ 🔵 **Designrationale / Konstruktionsentscheidungen** – Begründung wesentlicher Designschritte
++ 🔵 **Prototypenberichte / Design Reviews** – Erkenntnisse aus Entwicklungsschleifen
+
+
+**3. Risikobeurteilung** (Risikoanalyse und Sicherheit)
+
++ 🟢 **Risikobeurteilung (nach ISO 12100)** – Gefährdungen, Bewertung, Maßnahmen
++ 🟢 **Sicherheitskonzept** – Beschreibung aller Schutzmaßnahmen, Schutzeinrichtungen, Not-Aus
++ 🟢 **Nachweise der Restgefährdungen** – Darstellung verbleibender Risiken
++ 🔵 **Sicherheitsvalidierung** – Verifizierung der Sicherheitsfunktionen
+
+
+**4. Tests_und_Prüfungen** (Prüf- und Nachweisdokumente)
+
++ 🟢 **Prüfplanung** – Prüfziele, Prüfkriterien, Prüfmethoden
++ 🟢 **Test- und Validierungsprotokolle** – Funktions-, Belastungs-, Sicherheits-, EMV-, Klimatests
++ 🟢 **Messprotokolle / Kalibrierzertifikate** – Nachweis der Messmittelüberwachung
++ 🔵 **Software-Validierungsberichte** – falls relevant
+
+
+**5. Fertigung_und_Qualität** (Fertigungs- und Qualitätsunterlagen)
+
++ 🟢 **Fertigungs- und Montageanweisungen** – Schritt-für-Schritt-Vorgaben
++ 🟢 **Qualitätssicherungspläne / Prüfpläne** – Inprozess- und Endprüfungen
++ 🟢 **Material- und Komponentenfreigaben** – Nachweis geprüfter Zulieferteile
++ 🔵 **FMEA / SPC-Dokumentation** – falls in der Entwicklung oder Produktion gefordert
+
+
+**6. Konformität** (EU-Konformitäterklärung und rechtliche Dokumente)
+
++ 🟢 **Liste angewandter Normen und Richtlinien** – inkl. Versionsstände
++ 🟢 **EU-Konformitätserklärung** – oder Herstellererklärung nach relevanter Richtlinie
++ 🟢 **Kennzeichnungsnachweise (z. B. CE, UL, GS)** – Etiketten, Prüfzeichen
++ 🔵 **Zertifikate externer Prüfstellen** – TÜV, DEKRA, ...
+
+
+**7. Bedienung_und_Service** (Bedienungsanleitungen und Dokumentation für den Anwender)
+
++ 🟢 **Bedienungsanleitung / Gebrauchsanweisung** – für Endnutzer (Installation, Betrieb, Wartung, Entsorgung)
++ 🟢 **Montage- und Installationsanleitung** – für Fachpersonal
++ 🟢 **Wartungs- und Serviceanleitung** – mit Ersatzteilliste, Wartungs- und Prüfintervalle
++ 🟢 **Sicherheits- und Warnhinweise** – standardkonform, symbolisch und textlich
++ 🔵 **Schulungsunterlagen / Schnellstartanleitung** – vereinfachte Einführung für Anwender
++ 🔵 **Technische Datenblätter** – kompakte Übersicht der Spezifikationen
+
+
+**8. Änderungsmanagement**
+
++ 🟢 **Änderungsmanagement** – Änderungsanträge, Freigaben, Rückverfolgbarkeit
++ 🟢 **Versionshistorie** – Entwicklung der Produktgenerationen
++ 🔵 **Obsoleszenzmanagement** – Strategie für Ersatzteile und Nachfolgeprodukte
+
+
+**9. Umwelt_und_Entsorgung**
+
++ 🟢 **Entsorgungs- und Recyclinganweisungen** – umweltgerechte Demontage, Stoffkreislauf
++ 🔵 **Umweltbewertung / Ökobilanz** – wenn Umweltmanagementsystem vorhanden
+
+
+**10. Anhang** (Anhang und Referenzen)
+
++ 🔵 **Glossar und Begriffserklärungen** 
++ 🔵 **Normen- und Abkürzungsverzeichnis**
++ 🔵 **Referenzdokumente** – Normen, Lieferantenspezifikationen, ...
+
+
+::: {.callout-tip}
+## Rechtliche Grundlagen
++ **Maschinenrichtlinie 2006/42/EG** → Technische Dokumentation, Betriebsanleitung
++ **Niederspannungsrichtlinie 2014/35/EU** → Technische Unterlagen, Sicherheit
++ **EMV-Richtlinie 2014/30/EU** → Prüfberichte, EMV-Nachweise
++ **Produktsicherheitsgesetz (ProdSG)** → sichere Bereitstellung auf dem Markt
++ **ISO 9001 / ISO 13485 / ISO 12100** → Qualitäts- und Risikomanagement
+:::
+
 <!--
 ::: {.callout-tip}
 ## Weiterführende Links
@@ -97,4 +370,170 @@ In der in @tbl-produktdokumentation gegebenen Reihenfolge bilden die fünf Inhal
 -->
 
 
+<!-- -------------------------------------------------------------------------
 
+                       Template: Lastenheft
+
+-------------------------------------------------------------------------- -->
+### Template: Lastenheft
+
+::: {.callout-tip}
+## Abgrenzung Lastenheft und Pflichtenheft
+Das Lastenheft beschreibt **was** ein Produkt leisten soll (Anforderungen aus Sicht der Stakeholder), während das Pflichtenheft festlegt, **wie** die Anforderungen erfüllt werden (aus Sicht der Produktentwicklung).
+:::
+
+**Empfehlung zur Struktur und Inhalte eines Lastenhefts** (orientiert am V-Modell, DIN 69905, ISO/IEC/IEEE 29148 und VDI 2519/2221) (Stand 2025):
+
+Legende: Empfohlene Inhalte (🟢) Optionale Inhalte (🔵).
+
+
+```
+Lastenheft/
+│
+├── 01_Allgemeines/
+├── 02_Ausgangssituation_und_Ziele/
+├── 03_Produktuebersicht/
+├── 04_Anforderungen/
+│   ├── 4_1_Funktionale/
+│   ├── 4_2_Nichtfunktionale/
+│   ├── 4_3_Schnittstellen/
+│   └── 4_4_Betrieb_und_Lebenszyklus/
+├── 05_Qualitaet_und_Nachweise/
+├── 06_Liefer_und_Projektanforderungen/
+├── 07_Randbedingungen/
+└── 08_Anhang/
+```
+
+
+**1. Allgemeine Informationen**
+
++ 🟢 **Titelblatt** – Projekttitel, Produktname, Version, Datum, Verantwortliche, Freigaben
++ 🟢 **Inhaltsverzeichnis** – vollständige Struktur
++ 🟢 **Dokumentenstatus** – "Entwurf", "Review", "Freigegeben"
+
+
+**2. Ausgangssituation und Ziele**
+
++ 🟢 **Ausgangssituation / Motivation** – Problemstellung, Anlass, aktuelle Defizite
++ 🟢 **Projektziele / Produktziele** – SMARTe Ziele des Produkts
++ 🟢 **Abgrenzung des Projekts** – was explizit *nicht* Teil des Projekts ist (siehe → System of Interest)
++ 🔵 **Wirtschaftliche Randbedingungen** – erwarteter Nutzen, ROI, Zielmärkte
+
+**3. Produktübersicht**
+
+
++ 🟢 **Produktbeschreibung (Überblick)** – kurze funktionale Beschreibung
++ 🟢 **Zielgruppen / Anwender** – Benutzerprofile, Rollen, Erfahrungsniveau 
++ 🟢 **Einsatzumgebung** – physikalisch (z. B. Temperatur, Vibration, Feuchte) und organisatorisch (z. B. Produktionslinie, Labor)
++ 🔵 **Systemkontext / Umfeld** – Diagramm oder Beschreibung der Systemgrenzen, Schnittstellen zu Nachbarsystemen
++ 🔵 **Lebenszyklusbetrachtung** – Nutzung, Wartung, Entsorgung
+
+
+
+**4. Anforderungen**
+
+::: {.callout-tip}
+## Pro-Tipp!
+Der Abschnitt **Anforderungen** ist der wichtigste und zentrale Teil jeden Lastenhefts. In diesem Abschnitt ist vollständig zu dokumentieren, was das Produkt können, leisten und erfüllen muss. Vorgaben zur konkreten technischen Umsetzung der Anforderungen im späteren Produkt sind dabei zu vermeiden (→ Pflichtenheft).
+:::
+
+
+**4.1 Funktionale Anforderungen**
+
++ 🟢 **Hauptfunktionen** – Kernaufgaben und Betriebszustände
++ 🟢 **Teilfunktionen / Funktionsgruppen** – strukturierte Aufgliederung (z. B. Steuerung, Antrieb, Sensorik, Kommunikation)
++ 🟢 **Bedienfunktionen** – Eingaben, Anzeigen, Steuerungen
++ 🔵 **Funktionsabhängigkeiten / Prioritäten** – Muss-, Soll-, Kann-Anforderungen
+
+
+**4.2 Nicht-funktionale Anforderungen**
+
++ 🟢 **Leistungsanforderungen** – Geschwindigkeit, Genauigkeit, Energieverbrauch, Wirkungsgrad,…
++ 🟢 **Sicherheitsanforderungen** – funktionale Sicherheit, Not-Aus, Fehlersicherheit,…
++ 🟢 **Zuverlässigkeit / Verfügbarkeit** – MTBF, MTTR, Fehlertoleranz, …
++ 🟢 **Ergonomie / Bedienbarkeit** – Benutzerführung, Sichtbarkeit, Haptik,…
++ 🟢 **Umweltanforderungen** – u.a. Temperatur, Feuchte, EMV,…
++ 🟢 **Normen / Richtlinien** – CE, ISO, EN-Normen
++ 🔵 **Homologation / Zulassung / gesetzliche Vorschriften** - gesetzliche Zulassung, Typgenehmigung oder Zertifizierung – falls erforderlich
++ 🔵 **Geräusch-/Vibrationsgrenzwerte** – falls relevant 
++ 🔵 **Softwarequalität** – falls relevant 
+
+
+**4.3 Schnittstellenanforderungen**
+
++ 🟢 **Mechanische Schnittstellen** – Abmessungen, Befestigungspunkte, Toleranzen
++ 🟢 **Elektrische Schnittstellen** – Spannungen, Signale, Stecker, EMV
++ 🟢 **Daten- und Kommunikationsschnittstellen** – Protokolle, Formate, Latenzen
++ 🔵 **Benutzerschnittstellen** – Anzeigen, Displays, Bedienelemente
+
+
+**4.4 Betriebs- und Lebenszyklusanforderungen**
+
++ 🟢 **Betriebsarten** – Normalbetrieb, Inbetriebnahme, Wartung, Notbetrieb
++ 🟢 **Wartbarkeit / Instandhaltung** – Austauschintervalle, Zugänglichkeit, Diagnosefunktionen
++ 🟢 **Transport, Lagerung, Entsorgung** – Anforderungen an Handhabung und Umwelt
++ 🔵 **Energieversorgung / Medienanschlüsse** – elektrische, pneumatische, hydraulische Versorgung
+
+
+**5. Qualitäts- und Nachweisanforderungen**
+
++ 🟢 **Qualitätsanforderungen** – z. B. Toleranzen, Prozessfähigkeit, Maßhaltigkeit
++ 🟢 **Prüf- und Abnahmebedingungen** – wie wird Nachweis geführt, dass Anforderung erfüllt ist
++ 🟢 **Abnahmekriterien** – messbar und eindeutig (siehe → SMARTe Ziele)
++ 🔵 **Validierungsanforderungen** – z. B. Prototypentests, Kundentests
+
+
+**6. Liefer- und Projektanforderungen**
+
+
++ 🟢 **Lieferumfang** – welche Teilsysteme, Dokumente, Zubehörteile gehören zum Produkt
++ 🟢 **Zeitplan / Meilensteine** – geplante Entwicklungsphasen, Reviews, Abnahme
++ 🟢 **Rollen und Verantwortlichkeiten** – wer liefert welche Leistungen
++ 🔵 **Projektkommunikation / Reporting** – Statusberichte, Freigabeprozesse 
++ 🔵 **Abnahmemodalitäten / Vertragsbedingungen** – wenn das Lastenheft Vertragsgrundlage ist
+
+
+**7. Randbedingungen und Einschränkungen**
+
++ 🟢 **Technische Randbedingungen** – Plattform, Werkstoffe, Standards, Schnittstellenkompatibilität
++ 🟢 **Rechtliche und normative Rahmenbedingungen** – Richtlinien, Gesetze, Zulassungen
++ 🔵 **Kostenrahmen / Budgetgrenzen** – wenn freigegeben
++ 🔵 **Zulieferteile oder Wiederverwendung bestehender Komponenten** 
+
+
+**8. Anhang**
+
++ 🔵 **Glossar und Begriffserklärungen** 
++ 🔵 **Abkürzungsverzeichnis**
++ 🔵 **Referenzdokumente** – Normen, Pflichtenheft, Entwicklungsrichtlinien
++ 🔵 **Systemdiagramme und Skizzen** – konzeptionelle Darstellungen des Produkts
+
+
+::: {.callout-tip}
+## Pro-Tipps!
++ Anforderungen sollten **eindeutig, prüfbar und messbar** formuliert sein (siehe → Anforderungsentwicklung, siehe → SMARTe Ziele).
++ Eindeutige Kennnummern (z. B. A-101, A-102) helfen, dass jede Anforderung später (z.B. im → Pflichtenheft) rückverfolgt werden kann.
+:::
+
+<!--
+::: {.callout-tip}
+## Weiterführende Links
+
+:::
+-->
+
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
+
++ @juhl_technische_2015: [Technische Dokumentation](https://rdcu.be/dKtdV)
+
+:::
+
+
+<!--
+#### Literaturempfehlung
+
+![@juhl_technische_2015: [Technische Dokumentation](https://link.springer.com/book/10.1007/978-3-662-46865-4)](images/Juhl_Technische_Dokumentation_978-3-662-46865-4.webp){width=40%}
+
+-->

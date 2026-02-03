@@ -7,7 +7,7 @@ bibliography: Literatur.bib
 -->
 
 <!--
-title: "DEB3 Produktentwicklung 1"
+title: "DEB Produktentwicklung"
 format:
   html:
     embed-resources: true
@@ -26,29 +26,51 @@ author:
         country: "Deutschland"
         url: https://www.hs-esslingen.de/
 abstract: > 
-  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
 keywords:
   - Produktentstehungsprozess
-  - Entwicklungsmethodik
-  - Toyota-Produktionssystem
-  - Poka Yoke
+  - Poka-Yoke
 
 copyright: 
   holder: Christian Anders
-  year: 2025
+  year: 2026
 lang: de
 bibliography: Literatur.bib
 date: last-modified
-toc: false
+toc: true
 number-sections: true
 scrollable: true
-toc-location: right-body
+toc-location: right
 cap-location: bottom
-number-offset: 0
+number-offset: 2
 link-external-icon: true
 link-external-newwindow: true
 -->
 
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+<!--
+::: {.callout-warning}
+## WARNING!
+**THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
+:::
+-->
 
 
 <!-- -------------------------------------------------------------------------
@@ -61,17 +83,11 @@ link-external-newwindow: true
 
 ::: {.callout-tip}
 ## Definition: *"Poka Yoke"*
-Der japanische Ausdruck [Poka Yoke](https://de.wikipedia.org/wiki/Poka_Yoke) (dt. „unglückliche Fehler vermeiden“) bezeichnet ein aus mehreren Elementen bestehendes Prinzip, welches technische Vorkehrungen bzw. Einrichtungen zur präventive Fehlerverhinderung und zur sofortigen Fehleraufdeckung umfasst. 
+Der japanische Ausdruck [Poka Yoke](https://de.wikipedia.org/wiki/Poka_Yoke) (dt. *"unglückliche Fehler vermeiden"*) bezeichnet ein aus mehreren Elementen bestehendes Prinzip, welches technische Vorkehrungen bzw. Einrichtungen zur präventive Fehlerverhinderung und zur sofortigen Fehleraufdeckung umfasst. 
 :::
 
-"Poka" bezeichnet einen falschen Zug im japanischen Brettspiel [Go](https://de.wikipedia.org/wiki/Go_(Spiel)) und im weiteren Sinne „dumme Fehler, Schnitzer“ allgemein. "Yoke" bedeutet „vermeiden“.
+*"Poka"* bezeichnet einen falschen Zug im japanischen Brettspiel [Go](https://de.wikipedia.org/wiki/Go_(Spiel)) und im weiteren Sinne *"dumme Fehler, Schnitzer"* allgemein. *"Yoke"* bedeutet *"vermeiden"*.
 
-Zwei alltägliche Beispiele für das Poka-Yoke-Prinzip: Bankautomaten geben in Deutschland das Geld erst heraus, wenn die Karte entnommen wurde. Dadurch wird verhindert, dass die Karte vergessen wird. Beim Tanken passt die Zapfpistole für Diesel nicht in den Tankstutzen für Benzin. Dadurch wird verhindert, dass bei Benzinfahrzeugen der falsche Treibstoff getankt wird.
-
-::: {.callout-important}
-## Poka-Yoke im Produktentstehungsprozess
-Das Poka-Yoke-Prinzip ist ein in der Entwurfs- und Entwicklungsphase des Produktentstehungsprozesses zumeist sehr einfach im Produkt zu verwirklichender, aber wesentlicher Bestandteil und wichtiger Erfolgsfaktor des [Toyota-Produktionssystem (TPS)](https://de.wikipedia.org/wiki/Toyota-Produktionssystem). In diesem Sinne ist Poka Yoke nicht nur ein Baustein des Qualitätsmanagements in der (Serien-)Produktion, sondern auch ein wichtiger Baustein der → Produktionsgerechten Produktgestaltung (PPG). <!-- @sec-ppg -->
-:::
 
 Als Erfinder des Poka-Yoke-Prinzips gilt der Ingenieur [Shigeo Shingō](https://de.wikipedia.org/wiki/Shigeo_Shing%C5%8D). Der Ausgangspunkt für die Entwicklung des Poka-Yoke-Prinzips mit Fehlerquellen-Inspektion lag für Shingō bei der [statistischen Qualitätskontrolle (SQC)](https://de.wikipedia.org/wiki/Qualit%C3%A4tspr%C3%BCfung). Shingō stellte fest: 
 
@@ -82,24 +98,14 @@ Als Erfinder des Poka-Yoke-Prinzips gilt der Ingenieur [Shigeo Shingō](https://
 
 ---
 
-<!--
 ::: {.callout-tip}
-## Weiterführende Links
-
+## Pro-Tipp!
+**Mit Poka Yoke wird durch meist einfache, aber wirkungsvolle technische Systeme dafür gesorgt, dass Fehlhandlungen im Produktionsprozess nicht zu Fehlern am Endprodukt führen.**
 :::
--->
 
-<!--
-::: {.callout-tip}
-## Weiterführende Sharable-Links (Springer-Verlag)
+Beispiele für das Poka-Yoke-Prinzip finden sich überall im Alltag: Bankautomaten in Deutschland geben das Geld oder den gedruckten Kontoauszug erst heraus, wenn die Karte aus dem Automaten entnommen wurde. Dadurch wird verhindert, dass die Karte vergessen wird. Beim Tanken passt die Zapfpistole für Diesel nicht in den Tankstutzen für Benzin. Dadurch wird verhindert, dass bei Benzinfahrzeugen der falsche Treibstoff getankt wird (***"Schlüssel-Schloss-Prinzip"***).
 
-+ @dickmann_schlanker_2015: [Elemente moderner, schlanker Produktionssysteme](https://rdcu.be/dI72u)
-
+::: {.callout-important}
+## Poka-Yoke im Produktentstehungsprozess
+Das Poka-Yoke-Prinzip ist ein in der Entwurfs- und Entwicklungsphase des Produktentstehungsprozesses zumeist sehr einfach im Produkt zu verwirklichender, aber wesentlicher Bestandteil und wichtiger Erfolgsfaktor des [Toyota-Produktionssystem (TPS)](https://de.wikipedia.org/wiki/Toyota-Produktionssystem). In diesem Sinne ist Poka Yoke nicht nur ein Baustein des Qualitätsmanagements in der (Serien-)Produktion, sondern auch ein wichtiger Baustein der → **Produktionsgerechten Produktgestaltung** (PPG) @sec-ppg.
 :::
--->
-
-<!--
-#### Literaturempfehlung
-
-![@dickmann_schlanker_2015: [Schlanker Materialfluss](https://link.springer.com/book/10.1007/978-3-662-44869-4)](images/Dickmann_Schlanker_Materialfluss_978-3-662-44869-4.webp){width=40%}
--->

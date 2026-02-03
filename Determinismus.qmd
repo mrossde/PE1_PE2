@@ -1,0 +1,161 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+
+
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: false
+exercises:
+  solutions:
+    on: true 
+fileformat-svg:
+  off: true
+---
+
+<!--
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
+
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - Komplexe Systeme
+  - Determinismus
+  - Laplace'scher Dämon
+  
+copyright: 
+  holder: Christian Anders
+  year: 2026
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+------------------------------------------------------------------------------ 
+
+::: {.callout-warning}
+## WARNING!
+**THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
+:::
+
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Grundlagen
+## Komplexe Systeme
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Determinismus
+
+-------------------------------------------------------------------------- -->
+
+
+
+### Determinismus {#sec-determinismus}
+
+::: {.callout-tip}
+## Definition: *"Determinismus"*
+Der [Determinismus](https://de.wikipedia.org/wiki/Determinismus) ist die Auffassung, dass alle – insbesondere auch zukünftige – Ereignisse durch Vorbedingungen eindeutig festgelegt sind.
+:::
+
+Die Gegenthese ([Indeterminismus](https://de.wikipedia.org/wiki/Indeterminismus)) vertritt, dass es Ereignisse gibt, die nicht eindeutig durch Vorbedingungen determiniert, sondern indeterminiert *"unbestimmt"* sind. Grundlage des Indeterminismus bildet die Existenz des *"[objektiven Zufall](https://de.wikipedia.org/wiki/Indeterminismus#Objektiver_Zufall)"* .
+
+<!--
+::: {.callout-tip}
+## Definition *"Determinismus"*
+Der [Determinismus](https://de.wikipedia.org/wiki/Determinismus) (von lateinisch determinare ‚festlegen‘, ‚Grenzen setzen‘, ‚begrenzen‘) ist die Auffassung, dass alle – insbesondere auch zukünftige – Ereignisse durch Vorbedingungen eindeutig festgelegt sind. Die Gegenthese (Indeterminismus) vertritt, dass es Ereignisse gibt, die nicht eindeutig durch Vorbedingungen determiniert, sondern indeterminiert ‚unbestimmt‘ sind.
+:::
+-->
+
+<!--
+In der Naturphilosophie wird ein allgemeiner Determinismus zumeist durch zwei Annahmen gestützt: erstens, dass sämtliche natürlichen Prozesse durch Naturgesetze bestimmt sind und dass zweitens die Bewegungsgleichungen dazu beim Einsetzen von exakten Werten eine eindeutige Lösung liefern und damit die Ergebnisse festlegen. 
+
+Ob diese beiden Annahmen durchgängig zutreffen, ist umstritten. Wenn das Weltgeschehen jedenfalls festgelegt ist, scheint dies einen Widerspruch für die Existenz eines freien Willens zu erzeugen. Ob dieser Widerspruch besteht, ist ebenso umstritten wie die jeweiligen Konsequenzen.
+
+Es gibt keinen einheitlichen Begriff des Determinismus, vielmehr gibt es verschiedene Varianten. 
+-->
+
+Mit der Etablierung der klassischen Mechanik und des mechanistischen Weltbildes wurde von Vertretern des mechanistischen Determinismus, insbesondere von [Pierre-Simon Laplace](https://de.wikipedia.org/wiki/Pierre-Simon_Laplace) gefolgert, dass, wenn die Welt festgelegten physikalischen Gesetzen unterworfen ist und an keiner Stelle Ereignisse ohne Ursache (z. B. durch übernatürliche Phänomene oder durch objektiven Zufall) auftreten, dann zukünftige Ereignisse unausweichlich determiniert sein müssen. Ferner wurde – zugespitzt im [Laplace'schen Dämon](https://de.wikipedia.org/wiki/Laplacescher_D%C3%A4mon) – postuliert, dass ein *"Weltgeist"*, der die Gegenwart mit allen Details kenne, die Vergangenheit und Zukunft des Weltgeschehens in allen Einzelheiten vorhersagen könne.
+
+<!-- -------------------------------------------------------------------------
+
+                       INCLUDE Laplace'scher Dämon
+
+-------------------------------------------------------------------------- -->
+
+{{< include Laplacescher_Daemon.qmd >}}
+
+
+<!-- -------------------------------------------------------------------------
+
+                       INCLUDE Laplace'scher Dämon
+
+-------------------------------------------------------------------------- -->
+
+<p style="text-align: center;">![](images/AdobeStock_589506892.png){width=20%}</p>
+
+::: {.callout-important}
+## Pro-Tipp!
+**Alle Produktentwicklungen erfolgen auf der Grundlage der angenommenen Gültigkeit eines allgemeinen Determinismus.**
+::: 

@@ -1,0 +1,31 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Steckbrief Dozent Christian Anders
+
+-------------------------------------------------------------------------- -->
+
+### Ihr Dozent
+Kurzvorstellung Christian Anders
+
+![Christian Anders an der Hochschule Esslingen, 2024](images/Christian_Anders.jpg){width=34% #fig-christian_anders}
+
++ *1966
++ 1986 Abitur
++ 1987 - 1993 Studium der Physik ([Uni Stuttgart](https://www.uni-stuttgart.de/)) (Dipl.-Phys.)
++ 1987 - 1992 Werkstudent [ANT Nachrichtentechnik](https://www.tesat.de/), (Satellitentechnik, Abt. *"Physikalische Untersuchungen und Test"*)
++ 1993 - 1995 Promotion (Dr.-Ing.) ([Uni Stuttgart](https://www.uni-stuttgart.de/), [ISW](https://www.isw.uni-stuttgart.de/)) (*"Lernfähiges Diagnosesystem bei Transferstraßen"*)
++ 1995 - 2021 [Mercedes-Benz AG](https://www.mercedes-benz.de/) (Fertigungsverfahrensingenieur, Fachreferent *"Agentengesteuertes Materialflusssystem*", Teilprojektleiter *"Digitale Fabrik"*, Teamleiter *"E-Motoren und Digitale Technologieentwicklung"*, Teamleiter *"Labor Umformtechnik"*)
++ seit 2023 Wissenschaftlicher Angestellter und Dozent [HS Esslingen](https://www.hs-esslingen.de/) (Vertragslaufzeit 3 Jahre)
+
+
+::: {.callout-warning}
+Ein Wort zur Warnung: Ihr Dozent hat die unschöne Eigenschaft, sich gerne langatmig zu verplaudern. Sollte das passieren, ergreifen Sie die Initiative und geben Sie bitte erkennbar Feedback (z.B. durch den Ausruf: *"Anders! Kurzfassung!"*)
+:::

@@ -4,6 +4,11 @@ format:
     embed-resources: true
 lang: de
 bibliography: Literatur.bib
+headlines:
+  off: true
+
+extended-content:
+  off: false
 ---
 
 <!--
@@ -75,10 +80,10 @@ link-external-newwindow: true
 
 ::: {.callout-tip}
 ## Definition *"Multi-Moment-Aufnahme"*
-Die Multi-Moment-Aufnahme, auch [Multimomenthäufigkeits-Studie](https://de.wikipedia.org/wiki/Multimoment-Studie), ist ein Verfahren zur direkten Informationsbeschaffung durch Beobachtungen in (variierenden) Zeitabständen. 
+Die Multi-Moment-Aufnahme, auch [Multimomenthäufigkeits-Studie](https://de.wikipedia.org/wiki/Multimoment-Studie), ist ein Verfahren zur direkten Informationsbeschaffung durch Beobachtungen in variierenden Zeitabständen. 
 :::
 
-Die Beurteilung der Signifikanz der erzielten Ergebnisse erfolgt mithilfe der Statistik. Die Beurteilung der Wahrscheinlichkeiten erfolgt mithilfe der Stochastik (Wahrscheinlichkeitsrechnung).
+Die Beurteilung der [Signifikanz](https://de.wikipedia.org/wiki/Statistische_Signifikanz) der erzielten Ergebnisse erfolgt mithilfe der [Statistik](https://de.wikipedia.org/wiki/Statistik). Die Beurteilung der Wahrscheinlichkeiten erfolgt mithilfe der [Stochastik](https://de.wikipedia.org/wiki/Stochastik) (Wahrscheinlichkeitsrechnung).
 
 ```{mermaid}
 %%| label: fig-label-mmzielemultimomentaufnahme
@@ -124,18 +129,44 @@ Die Ausgestaltung einer Multi-Moment-Aufnahme setzt daher stets Vorwissen oder z
 
 <!-- --------------------------------------------------------------------------
 EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT
-S T A R T -->
+S T A R T ---
 ::: {.content-visible unless-meta="extended-content.off"}
 <!-- ---------------------------------------------------------------------- -->
 
 ::: {.callout-note}
 ## Exkurs: Nyquist-Shannon-Abtasttheorem
-Das [Nyquist-Shannon-Abtasttheorem](https://de.wikipedia.org/wiki/Nyquist-Shannon-Abtasttheorem) besagt dass ein kontinuierliches Signal mit einer maximalen Frequenz $f_{max}$ vollständig und fehlerfrei rekonstruiert werden kann, wenn es mit einer Abtastfrequenz $f_s$ von mindestens dem Doppelten dieser maximalen Frequenz, also $f_s ≥ 2 \cdot f_{max}$, abgetastet wird. Die zentrale Aussage des Nyquist-Shannon-Abtasttheorems ist, dass bei einer hinreichenden Abtastrate die gesamte Information des ursprünglichen Signals bei dessen Digitalisierung erhalten bleibt. Das Nyquist-Shannon-Abtasttheorem ist eine der wichtigsten Grundlagen der Signalverarbeitung und Informationstheorie.
+
+{{< include Abbildung_Shannon.qmd >}}
+
+Das [Nyquist-Shannon-Abtasttheorem](https://de.wikipedia.org/wiki/Nyquist-Shannon-Abtasttheorem), formuliert von [Claude Shannon](https://de.wikipedia.org/wiki/Claude_Shannon) basierend auf Arbeiten von [Harry Nyquist](https://de.wikipedia.org/wiki/Harry_Nyquistim) im Jahr 1948^[[Wladimir Kotelnikow](https://de.wikipedia.org/wiki/Wladimir_Alexandrowitsch_Kotelnikow) (* 6. September 1908; † 11. Februar 2005) formulierte das Abtasttheorem bereits 1933. Die Veröffentlichung in einem sowjetischen Konferenzbericht wurde im Osten seit den 1950er Jahren referenziert, blieb aber allgemein im Westen bis in die 1980er weitgehend unbekannt.], besagt, dass ein kontinuierliches Signal mit einer maximalen Frequenz $f_{max}$ vollständig und fehlerfrei rekonstruiert werden kann, wenn es mit einer Abtastfrequenz $f_{sample}$ von mindestens dem Doppelten dieser maximalen Frequenz, also 
+
+$$
+f_{sample} ≥ 2 \cdot f_{max}
+$$ {#eq-nyquist_shannon}
+
+abgetastet wird. 
+
+**Die zentrale Aussage des Nyquist-Shannon-Abtasttheorems ist, dass bei einer hinreichenden Abtastrate und hinreichend langer Abtastung die gesamte Information des ursprünglichen Signals bei dessen Digitalisierung erhalten bleibt.** 
+
+Das Nyquist-Shannon-Abtasttheorem ist eine der wichtigsten Grundlagen der [Signalverarbeitung](https://de.wikipedia.org/wiki/Signalverarbeitung) und [Informationstheorie](https://de.wikipedia.org/wiki/Informationstheorie).
 :::
 
 
-<!-- ---------------------------------------------------------------------- -->
+<!-- ---------------------------------------------------------------------- ---
 :::
 <!-- S T O P
 EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT
 --------------------------------------------------------------------------- -->
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Weiterführende Links (Internet)
+
+-------------------------------------------------------------------------- -->
+
+::: {.callout-tip}
+## Weiterführende Links (Internet)
++ [Multi-Moment-Aufnahme im Organisationsmanagement](https://www.orghandbuch.de/Webs/OHB/DE/OrganisationshandbuchNEU/2_Organisationsmanagement/2_4_Ressourcen/2_4_3_Leitfaden/2_4_3_11_Methoden%20der%20PBE/2_4_3_11_5_Multimomentaufnahme/Multimomentaufnahme-node.html) (Quelle: [Bundesministerium des Innern | Bundesverwaltungsamt](https://www.orghandbuch.de/Webs/OHB/DE/startseite/startseite-node.html))
+:::

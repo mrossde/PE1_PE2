@@ -40,7 +40,7 @@ abstract: >
   Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
 keywords:
     - Abbildung
-    - Pierre-Simon Laplace
+    - Prof. Richard Feynman
 
 copyright: 
   holder: Christian Anders
@@ -73,17 +73,22 @@ number-offset:
 
 <!-- -------------------------------------------------------------------------
 
-                       Bild Piere Simon Laplace
+                       Bild Prof. Richard Feynman
 
 -------------------------------------------------------------------------- -->
 
+---
 
-![[Pierre-Simon Laplace](https://de.wikipedia.org/wiki/Pierre-Simon_Laplace) (* 23. März 1749; † 5. März 1827)](images/Pierre-Simon_Laplace.jpg){width=40% #fig-pslaplace}
+>
+*"Simplicity isn't the lack of complexity; it's the clarity of understanding."* (Prof. Richard Feynman)
 
 ---
 
+![[Prof. Richard Feynman](https://en.wikipedia.org/wiki/Richard_Feynman) (* 11. Mai 1918; † 15. Februar 1988)](images/Richard_Feynman.jpg){width=30% #fig-richardfeynman}
+
+---
 
 > 
-*"The most important questions of life... are indeed for the most part only problems of probability."* (Pierre-Simon Laplace)
+*Absorb the meaning, not just the words. Chase understanding, not just facts. Embrace concepts, not just procedures. Cultivate insight, not just information. Pursue clarity, not just answers. Value reason, not just rules. Explore ideas, not just methods. Nurture curiosity, not just skills. Seek wisdom, not just knowledge. Foster creativity, not just techniques.* (Prof. Richard Feynman)
 
 ---

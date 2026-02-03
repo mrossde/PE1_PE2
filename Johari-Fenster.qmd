@@ -81,9 +81,10 @@ number-offset:
 
 ::: {.content-visible unless-meta="headlines.off"}
 # Softskills
+## Persönliche Kompetenzen und interpersonelle Fähigkeiten
 :::
 
-## Johari-Fenster {#sec-johari}
+### Johari-Fenster {#sec-johari}
 
 Das [Johari-Fenster](https://de.wikipedia.org/wiki/Johari-Fenster) ist ein Konzept aus der Psychologie und Kommunikation, das dazu dient, die Interaktion und das Verhalten zwischen Menschen zu analysieren und zu verbessern. Es wurde von den Psychologen Joseph Luft und Harry Ingham 1955 entwickelt und ist nach einer Kombination ihrer Vornamen benannt.
 
@@ -119,7 +120,7 @@ So können Lösungen auf Herausforderungen existieren, die aktuell noch vollstä
 
 -------------------------------------------------------------------------- -->
 
-## Black Swan {#sec-blackswan}
+### Black Swan {#sec-blackswan}
 
 ::: {.callout-tip}
 ## Definition: *"Black Swan"*

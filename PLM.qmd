@@ -89,10 +89,12 @@ number-offset:
                        Callout !!! WARNING !!!
 
 -------------------------------------------------------------------------- -->
+<!--
 ::: {.callout-warning}
 ## WARNING!
 **THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
 :::
+-->
 
 ::: {.callout-tip}
 ## Definition: *"PLM"*
@@ -105,4 +107,108 @@ Unternehmen erhoffen sich vom PLM eine verbesserte Kontrolle über die diversen 
 
 <!--
 ![Übersicht PLM (Quelle: [Wikipedia](https://de.wikipedia.org/wiki/Product-Lifecycle-Management))](/images/PLM.png){width=60% #fig-uebersichtplm}
+-->
+
+<!--
+
+Ja — **PPR** ist ein zentraler Begriff in der **Produktionsplanung und -steuerung (PPS)** sowie in der **digitalen Fabrikplanung**.
+
+Je nach Kontext kann PPR leicht unterschiedliche Bedeutungen haben, aber im industriellen Umfeld steht **PPR** meist für:
+
+> **Product – Process – Resource**
+> (Deutsch: **Produkt – Prozess – Ressource**)
+
+### Bedeutung der drei Elemente:
+
+| Element                  | Beschreibung                                                                                                                      |
+| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |
+| **Product (Produkt)**    | Beschreibt, **was** hergestellt wird — also das Produktmodell mit seinen Stücklisten, Geometrien, Varianten, Spezifikationen usw. |
+| **Process (Prozess)**    | Beschreibt, **wie** das Produkt hergestellt wird — also Arbeitsfolgen, Prozessschritte, Abläufe, Reihenfolgen, Parameter usw.     |
+| **Resource (Ressource)** | Beschreibt, **womit** der Prozess ausgeführt wird — also Maschinen, Werkzeuge, Vorrichtungen, Mitarbeiter, Materialien usw.       |
+
+### Verwendung
+
+Das PPR-Konzept ist insbesondere in **digitalen Fabriksystemen** und **PLM-Systemen (Product Lifecycle Management)** verbreitet, z. B. bei **Siemens Tecnomatix**, **Dassault DELMIA**, **PTC Windchill**, **SAP PP/DS**, usw.
+Dort dient das PPR-Modell als **integrierte Datenstruktur**, um die Beziehungen zwischen Produkt, Prozess und Ressource abzubilden.
+
+Beispielhafte Anwendungsfälle:
+
+* Planung und Simulation von Fertigungsprozessen
+* Zuordnung von Maschinen zu Prozessschritten
+* Änderungsmanagement (Impact-Analyse bei Produktänderungen)
+* Rückverfolgbarkeit (Traceability) über den gesamten Produktlebenszyklus
+
+
+Perfekt 👍 — hier ist ein **konkretes Beispiel** für eine einfache **PPR-Datenstruktur** (Product–Process–Resource), wie sie in der Produktionsplanung modelliert werden kann.
+
+---
+
+## 🧩 Beispiel: PPR-Modell für die Fertigung eines Aluminiumgehäuses
+
+Wir betrachten die Herstellung eines **Aluminiumgehäuses** für ein elektronisches Gerät.
+Die Datenstruktur zeigt, **welche Produkte** durch **welche Prozesse** mithilfe **welcher Ressourcen** hergestellt werden.
+
+---
+
+### **1. Produktstruktur (Product)**
+
+```text
+Produkt: Aluminiumgehäuse (P-1000)
+└── Unterbaugruppe: Gehäuseunterteil (P-1100)
+│   ├── Teil: Alu-Rohling (P-1110)
+│   └── Teil: Befestigungsbolzen (P-1120)
+└── Unterbaugruppe: Gehäusedeckel (P-1200)
+    ├── Teil: Alu-Blech (P-1210)
+    └── Teil: Dichtung (P-1220)
+```
+
+---
+
+### **2. Prozessstruktur (Process)**
+
+```text
+Prozesskette: Fertigung Gehäuseunterteil (PR-2000)
+└── Prozessschritt 1: Fräsen Rohling (PR-2100)
+│   └── Input: Alu-Rohling (P-1110)
+│   └── Output: Gefrästes Gehäuseunterteil (P-1100)
+└── Prozessschritt 2: Bohren Befestigungslöcher (PR-2200)
+│   └── Input: Gefrästes Gehäuseunterteil (P-1100)
+│   └── Output: Endbearbeitetes Gehäuseunterteil (P-1100-F)
+
+Prozesskette: Fertigung Gehäusedeckel (PR-2300)
+└── Prozessschritt 1: Stanzen (PR-2310)
+└── Prozessschritt 2: Dichtung aufbringen (PR-2320)
+```
+
+---
+
+### **3. Ressourcenstruktur (Resource)**
+
+```text
+Ressourcenpool: CNC-Bearbeitung (R-3000)
+└── Maschine: CNC-Fräse DMG Mori DMU 50 (R-3100)
+└── Werkzeug: Fräser Ø10 mm (R-3110)
+└── Bediener: MA_001 Müller, T. (R-3120)
+
+Ressourcenpool: Montage (R-3200)
+└── Arbeitsplatz: Montageplatz 2 (R-3210)
+└── Werkzeug: Drehmomentschlüssel (R-3220)
+```
+
+
+
+### **4. PPR-Verknüpfung (Relations)**
+
+| Prozess                           | Ressource                 |
+| --------------------------------- | ------------------------- |
+| **Fräsen (PR-2100)**              | CNC-Fräse DMG Mori DMU 50 |
+| **Bohren (PR-2200)**              | CNC-Fräse DMG Mori DMU 50 |
+| **Stanzen (PR-2310)**             | Montageplatz 2            |
+| **Dichtung aufbringen (PR-2320)** | Drehmomentschlüssel       |
+
+
+### **5. Visualisierung als Diagramm (Mermaid)**
+
+![Alt text](images/Aluminiumgeh%C3%A4use%20Produktionsprozess%20%C3%9Cbersicht.png)
+
 -->
