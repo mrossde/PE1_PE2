@@ -1,11 +1,24 @@
 ---
-title: "DEB3 Komplexe Systeme und Statistik"
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+headlines:
+  off: true
+extended-content:
+  off: true
+---
+
+<!--
+title: "DEB Produktentwicklung"
 format:
   html:
     embed-resources: true
 
 author:
   - name: "Christian Anders"
+    degrees: 
     roles: "Dozent"
     email: christian.anders@hs-esslingen.de
     affiliation: 
@@ -17,25 +30,33 @@ author:
         country: "Deutschland"
         url: https://www.hs-esslingen.de/
 abstract: > 
-  Skript zur Vorlesung und Labor *"Komplexe Systeme und Statistik"* für den Studiengang Digital Engineering DEB3
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
 keywords:
-  - Komplexe Systeme
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
   - System
+
 copyright: 
   holder: Christian Anders
   year: 2025
 lang: de
 bibliography: Literatur.bib
 date: last-modified
-toc: false
+toc: true
 number-sections: true
 scrollable: true
 toc-location: right
 cap-location: bottom
-number-offset: 0
+number-offset: 6
 link-external-icon: true
 link-external-newwindow: true
----
+
+headlines:
+  off: false
+extended-content:
+  off: false
+-->
+
 
 <!--
 format:
@@ -47,28 +68,42 @@ bibliography: Literatur.bib
 
 <!-- -------------------------------------------------------------------------
 
-                       Butterfly-Effect
+                       System
 
 -------------------------------------------------------------------------- -->
 
-<!--
-::: {.callout-tip collapse="true"}
--->
-# Komplexe Systeme
-
-## Grundlagen
+::: {.content-visible unless-meta="headlines.off"}
+# Grundlagen
+## Begriffe
+:::
 
 ### System {#sec-system}
-
-
-<p style="color: rgb(143, 11, 148);">→ Teile der Vorlesung "Entwicklung mechatronischer Systeme" von Prof. Schlipf übernehmen!</p>
-
-
 
 ::: {.callout-tip}
 ## Definition *"System"*
 Ein System ist eine geordnete Menge von miteinander in Wechselwirkung stehenden Elementen, die gemeinsam eine bestimmte Funktion oder ein Ziel erfüllen und durch eine definierte Systemgrenze von ihrer Umgebung abgegrenzt sind.
 :::
+
+
+Definition des System of Interest (SoI)
++ Systemgrenzen → Inhalt = SoI
++ Einordnung SoI in SoS: welche Nachbarsysteme sind zu beachten?
++ Abgrenzung des Projektes
+
+
+
+![System of Interest](images/system.drawio.svg){width=64% #fig-system}
+
++ Systemgrenze  → Definiert, welche Aspekte durch das geplante System abgedeckt werden sollen und welche Aspekte nur Teil der Umgebung dieses Systems sind
++ Systemkontext  →  Liegt zwischen Systemgrenze und Kontextgrenze, ist relevant für das Verständnis und die Definition der Anforderungen an das System und kann im Rahmen der Entwicklung des Systems nicht bzw. kaum mitgestaltet werden; beeinflusst geplantes System
++ Kontextgrenze  → Grenze des Kontexts zur irrelevanten Umgebung hin (Kontextabgrenzung); schließt alles aus, was keine relevante Beziehung zu dem System hat
++ Irrelevante Umgebung  →  Aspekte, die keine relevante Beziehung zum geplanten System haben, hat keinen Einfluss auf Entwicklung des geplanten Systems.
+
+::: {.callout-important}
+## Pro-Tipp
+Grenzen sind nicht immer eindeutig bestimmbar und werden im Verlauf der Systementwicklung präzisiert und werden an den Erkenntnisfortschritt angepasst.
+:::
+
 
 #### Systemanalyse
 
@@ -76,6 +111,13 @@ Ein System ist eine geordnete Menge von miteinander in Wechselwirkung stehenden 
 ## Definition *"Systemanalyse"*
 Die [Systemanalyse](https://de.wikipedia.org/wiki/Systemanalyse) ist der strukturierte Prozess der Untersuchung und Modellierung eines Systems, um dessen Struktur, Funktionen, Abläufe und Wechselwirkungen zu verstehen, Schwachstellen zu identifizieren und Anforderungen für eine Optimierung oder Neuentwicklung abzuleiten.
 :::
+
+<!--
+
+
+<p style="color: rgb(143, 11, 148);">→ Teile der Vorlesung "Entwicklung mechatronischer Systeme" von Prof. Schlipf übernehmen!</p>
+
+
 
 
 
@@ -125,25 +167,6 @@ Thermodynamik: (A. Frohn, Einführung in die technische Thermodynamik)
 Der Bereich außerhalb des Systems wird Umgebung genannt. Die Grenzen des Systems können als gedachte Grenzen eingeführt werden, sie können aber auch mir realen Begrenzungsflächen zusammenfallen […]
 
 Man kann zwar die Systemgrenzen frei bestimmen, durch eine geeignete Wahl der Systemgrenzen wird aber häufig die Beantwortung einer bestimmten Fragestellung entscheidend vereinfacht.“
-
-Definition des System of Interest (SoI)
-+ Systemgrenzen → Inhalt = SoI
-+ Einordnung SoI in SoS: welche Nachbarsysteme sind zu beachten?
-+ Abgrenzung des Projektes
-
-
-
-![System of Interest](images/system.drawio.svg){width=64% #fig-system}
-
-+ Systemgrenze  → Definiert, welche Aspekte durch das geplante System abgedeckt werden sollen und welche Aspekte nur Teil der Umgebung dieses Systems sind
-+ Systemkontext  →  Liegt zwischen Systemgrenze und Kontextgrenze, ist relevant für das Verständnis und die Definition der Anforderungen an das System und kann im Rahmen der Entwicklung des Systems nicht bzw. kaum mitgestaltet werden; beeinflusst geplantes System
-+ Kontextgrenze  → Grenze des Kontexts zur irrelevanten Umgebung hin (Kontextabgrenzung); schließt alles aus, was keine relevante Beziehung zu dem System hat
-+ Irrelevante Umgebung  →  Aspekte, die keine relevante Beziehung zum geplanten System haben, hat keinen Einfluss auf Entwicklung des geplanten Systems.
-
-::: {.callout-important}
-## Pro-Tipp
-Grenzen sind nicht immer eindeutig bestimmbar und werden im Verlauf der Systementwicklung präzisiert und werden an den Erkenntnisfortschritt angepasst.
-:::
 
 <!-- ChatGPT4.0
 Ja, im Zusammenhang mit Systemen steht die Abkürzung **SoI** für **"System of Interest"**.  
@@ -270,7 +293,7 @@ Für erfolgreiche und zielgerichtete Anforderungsermittlung, sollte man sich vor
 
 Wichtig: Begriff „System“ erfordert für jeden Bereich eine eigene Definition, weil der Betrachtungsgegenstand unterschiedlich ist.
 
-
+<!--
 
 
 ## Motivation
@@ -285,7 +308,7 @@ title Erfolg/Misserfolg von IT-Projekten
     "zu spät/über Budget" : 52
     "abgebrochen" : 19
 ```
--->
+
 
 ![Erfolg/Misserfolg von IT-Projekten (Quelle: [The Standish Group](https://standishgroup.myshopify.com/), [Chaos Report](https://de.wikipedia.org/wiki/Chaos-Studie), Stand: [2015](https://www.standishgroup.com/sample_research_files/CHAOSReport2015-Final.pdf))](images/mermaid_itprojekte.svg){width=54% #fig-quoteitprojekte}
 
@@ -421,26 +444,6 @@ Anstatt Projekte zu schaffen, sollten wir uns auf kontinuierliche und kleine Sch
 Wir sollten uns auf die Verbesserung von Faktoren wie eine gute Arbeitsumgebung, ein gutes Team und einen guten Sponsor konzentrieren.
 Wir sollten die Zuweisung von Managern zu Projekten vermeiden und den Einsatz von Projektmanagement-Tools reduzieren.
 -->
-
-
-<!-- -------------------------------------------------------------------------
-
-                       Definition Stakeholder
-
--------------------------------------------------------------------------- -->
-
-::: {.callout-tip}
-## Definition *"Stakeholder"*
-Als [Stakeholder](https://de.wikipedia.org/wiki/Stakeholder) (deutsch Teilhaber, Interessensgruppe, Interessensvertreter oder Anspruchsberechtigter) wird eine Person oder Gruppe bezeichnet, die ein berechtigtes Interesse am Verlauf oder Ergebnis eines Prozesses oder Projekts hat.
-:::
-
-Stakeholder sind alle Personen(-kreise), die ein Interesse am Produkt oder Projekt haben (Kunde/Auftraggeber, Entwicklungsteam, Management, Betriebsrat, …). 
-
-Stakeholder sind wichtige Quelle bei der Ermittlung von Anforderungen
-+ Oft viel Wissen vorhanden
-+ Herausforderung: alle Bedürfnisse und Wünsche zusammentragen, dokumentieren, mit unterschiedlichen Stakeholdern abstimmen
-+ Welches Wissen liegt bei welchem Stakeholder? Risiko: „Wünsch Dir was“
-+ Teils konkrete Lösungsvorstellung/Lösungswünsche vorhanden → Gefahr der Einschränkung des Lösungsraums für das Entwicklungsteam
 
 
 

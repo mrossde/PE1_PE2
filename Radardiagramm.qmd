@@ -1,0 +1,181 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+---
+
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - Stochastik
+
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Radardiagramm (aka Netzdiagramm)
+
+-------------------------------------------------------------------------- -->
+<!--
+::: {.content-visible unless-meta="headlines.off"}
+# Grundlagen
+## Begriffe
+:::
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+<!--
+::: {.callout-warning}
+## WARNING!
+**THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+### Radardiagramm (aka Netzdiagramm) {#sec-radardiagramm}
+
+::: {.callout-tip}
+## Begriffsklärung *"Radar chart" (deutsch: "Radardiagramm")*
+A [radar chart]() (deutsch: *"Radardiagramm"*) is a graphical method of displaying multivariate data in the form of a two-dimensional chart of three or more quantitative variables represented on axes starting from the same point.
+:::
+
+Radardiagramme werden auch als [Netzdiagramme](https://de.wikipedia.org/wiki/Netzdiagramm) oder (umgangssprachlich) *"Spinnendiagramme"* bezeichnet. Radardiagramme eignen sich besonders, um quantitative Ausprägungen mehrdimensionaler Daten (z.B. verschiedene Kriterien oder Kategorien) visuell zu vergleichen. Das Radardiagramm wurde erstmals im Jahr 1877 vom Mathematiker [Georg von Mayr](https://de.wikipedia.org/wiki/Georg_von_Mayr) vorgestellt.
+
+Häufige Verwendung finden Radardiagramme insbesondere zum Soll-/Ist-Vergleich ausgewählter Eigenschaften von Produkten oder Systemen. Radardiagramme sind darüber hinaus ein häufig von Personalbereichen genutztes Werkzeug zur Visualisierung von Kompetenzprofilen von Mitarbeiten.
+
+
+:::{#fig-radarchart}
+<canvas id="radarChart" width="600px" height="300px" style="display: block; margin: auto;"></canvas>
+Einfaches Radardiagramm ausgewählter persönlicher Kompetenzen eines Bewerbenden aus Sicht eines Recruiting-Teams für die Besetzung einer Stelle in einem Produktentwicklungsteam (fiktives Beispiel).
+:::
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var ctx = document.getElementById("radarChart").getContext("2d");
+    var radarChart = new Chart(ctx, {
+      type: "radar",
+      data: {
+        labels: ["Problemlösungskompetenz", "Lernbereitschaft", "Kommunikationsfähigkeit", "Teamfähigkeit", "Zuverlässigkeit", "Kreativität"],
+        datasets: [
+          {
+          label: "Kompetenzen Ist", 
+          data: [95, 50, 30, 30, 90, 30],
+          backgroundColor: "rgba(80, 110, 120, 0.2)",
+          borderColor: "rgba(80, 110, 120, 0.8)",
+          borderWidth: 2
+          },
+          {
+          label: "Kompetenzen Soll", 
+          data: [70, 70, 90, 60, 85, 45],
+          backgroundColor: "rgba(189, 252, 201, 0.7)",
+          borderColor: "rgba(117, 187, 130, 0.8)",
+          borderWidth: 2
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          r: {
+            suggestedMin: 20,
+            suggestedMax: 100
+          }
+        }
+      }
+    });
+  });
+</script>
+
+
+::: {.callout-tip}
+## Pro-Tipp!
+Radardiagramme eigenen sich hervorragend zur Visualisierung des eigenen Kompetenzprofils, der Ableitung eigener persönlicher Entwicklungsziele und aufbauend der Visualisierung der bereits auf dem persönlichen Entwicklungspfad erreichten Fortschritte!
+:::
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Eigenbild vs. Fremdbild
+
+-------------------------------------------------------------------------- -->
+#### Exkurs: Eigenbild vs. Fremdbild
+
+::: {.callout-tip}
+## Begriffsklärung *"Eigenbild"*
+Das Eigenbild ist die **subjektive Selbstwahrnehmung einer Person**. Das Eigenbild beschreibt, wie jemand sich selbst sieht, inklusive der eigenen Eigenschaften, Fähigkeiten, Verhaltensweisen, Motive und Wirkung auf andere.
+:::
+
+::: {.callout-tip}
+## Begriffsklärung *"Fremdbild"*
+Das Fremdbild ist die **subjektive Wahrnehmung anderer Personen über eine bestimmte Person**. Das Fremdbild beschreibt, wie andere Personen eine bestimmte Person (in bestimmten Situationen) wahrnehmen, interpretieren und bewerten — bezogen auf Verhalten, Wirkung, Kompetenzen oder Charaktereigenschaften.
+:::
+
+::: {.callout-important}
+## Pro-Tipp!
+Ein für die Zusammenarbeit kritisches Spannungsfeld mit einer Person in einem Team entsteht in aller Regel immer dann, wenn Eigen- und Fremdbild einer Person stark voneinander abweichen. Der Grad der Abweichung zwischen Eigen- und Fremdbild ist der betreffenden Person dabei oftmals nicht bewusst (siehe → *"Blinde Flecken"* → Johari-Fenster @sec-johari).
+:::
+
+::: {.callout-important}
+## Pro-Tipp!
+Das Fremdbild kann nicht durch eigene Überlegungen, **sondern nur auf der Grundlage ehrlicher Rückmeldungen anderer Personen** gewonnen werden (siehe → Feedback).
+:::

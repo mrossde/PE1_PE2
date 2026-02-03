@@ -4,9 +4,7 @@ format:
     embed-resources: true
 lang: de
 bibliography: Literatur.bib
----
 
-<!--
 headlines:
   off: true
 extended-content:
@@ -15,7 +13,7 @@ included-content:
   off: false
 worksheets:
   off: true
--->
+---
 
 <!--
 title: "DEB Produktentwicklung"
@@ -39,7 +37,7 @@ author:
 abstract: > 
   Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
 keywords:
-  - Statistik
+  - Zitate
 
 copyright: 
   holder: Christian Anders
@@ -71,30 +69,49 @@ number-offset:
 
 <!-- -------------------------------------------------------------------------
 
-                       Statistik
+                       Zitate
 
 -------------------------------------------------------------------------- -->
-
+<!--
 ::: {.content-visible unless-meta="headlines.off"}
 # Grundlagen
 ## Begriffe
 :::
+-->
 
 <!-- -------------------------------------------------------------------------
 
                        Callout !!! WARNING !!!
 
 -------------------------------------------------------------------------- -->
-<!--
+
 ::: {.callout-warning}
 ## WARNING!
 **THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
 :::
--->
 
-### Statistik {#sec-statistik}
 
-::: {.callout-tip}
-## Begriffsklärung *"Statistik"*
-Die [Statistik](https://de.wikipedia.org/wiki/Statistik) *„ist die Lehre von Methoden zum Umgang mit quantitativen Informationen“* (→ [Daten](https://de.wikipedia.org/wiki/Daten)^[Daten bezeichnet als Plural von Datum Fakten, Zeitpunkte oder kalendarische Zeitangaben. Als Pluralwort steht es für durch Beobachtungen, Messungen u. a. gewonnene [Zahlen]werte sowie darauf beruhende Angaben oder formulierbare Befunde.]). Die Statistik ist eine Möglichkeit, *„eine systematische Verbindung zwischen Erfahrung (Empirie) und Theorie herzustellen“*. Unter Statistik versteht man die Zusammenfassung bestimmter Methoden zur Analyse empirischer Daten. Wenn moderne Technologien und Methoden (z. B. Maschinelles Lernen) zum Einsatz kommen, wird Statistik heute auch als Teilgebiet der *"Data Science"* bezeichnet.
-:::
+### Zitate {#sec-zitate}
+
+---
+
+>
+*"People rarely succeed unless they have fun in what they are doing."* ([Dale Carnegie](https://en.wikipedia.org/wiki/Dale_Carnegie))
+
+---
+
+---
+
+>
+*"If you’re not having fun, you’re not learning."* ([Richard Feynman](https://en.wikipedia.org/wiki/Richard_Feynman))
+
+---
+
+
+
+---
+
+>
+*"If you can’t explain something simply, you don’t understand it."* ([Richard Feynman](https://en.wikipedia.org/wiki/Richard_Feynman))
+
+---

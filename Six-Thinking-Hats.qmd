@@ -4,6 +4,8 @@ format:
     embed-resources: true
 lang: de
 bibliography: Literatur.bib
+headlines:
+  off: true
 ---
 
 <!--
@@ -32,11 +34,12 @@ keywords:
   - Entwicklungsmethodik
   - Softskills
   - Kreativitätstechniken
+  - Edward de Bono
   - Six Thinking Hats
 
 copyright: 
   holder: Christian Anders
-  year: 2025
+  year: 2026
 lang: de
 bibliography: Literatur.bib
 date: last-modified
@@ -67,7 +70,7 @@ extended-content:
 :::
 
 
-### Six Thinking Hats (*"Denkhüte"*) {#sec-sixthinkinghats}
+### Six Thinking Hats (*"Denkhüte"*) (Edward de Bono) {#sec-sixthinkinghats}
 
 ::: {.callout-tip}
 ## Definition: *"Six Thinking Hats"*
@@ -89,11 +92,14 @@ Der Methode der Denkhüte liegt das von de Bono entwickelte Konzept des *"parall
 
 : Six Thinking Hats nach Edward de Bono {#tbl-sixthinkinghats .bordered tbl-colwidths="[20,80]"}
 
-Die Idee hinter dem *"parallelen Denken"* ist, dass bei der Bearbeitung einer Aufgabe alle Beteiligten zu jedem Zeitpunkt der Diskussion die gleiche Sichtweise (*"Hutfarbe"*) aufhaben und gemeinsam, gleichzeitig die Hüte wechseln und auf diese Weise zeitlich synchronisiert, und Hinsichtlich der Sichtweise parallel, jedoch stets die eigenen Gedanken denken und in den Diskussionsprozess einbringen. So sollen nach de Bono Konflikte vermieden und dennoch alle sechs verschiedenen Sichtweisen und die hierzu jeweils individuellen Gedanken aller Beteiligten berücksichtigt werden.
+::: {.callout-tip}
+## Vorgehensweise: *"Six Thinking Hats"*
+Die Idee hinter dem *"parallelen Denken"* ist, dass bei der Bearbeitung einer Aufgabe **alle Beteiligten zu jedem Zeitpunkt der Diskussion die gleiche Sichtweise (*"Hutfarbe"*) aufhaben und gemeinsam, gleichzeitig die Hüte wechseln** und auf diese Weise zeitlich synchronisiert, und Hinsichtlich der Sichtweise parallel, jedoch stets die eigenen Gedanken denken und in den Diskussionsprozess einbringen. So sollen nach de Bono Konflikte vermieden und dennoch alle sechs verschiedenen Sichtweisen und die hierzu jeweils individuellen Gedanken aller Beteiligten berücksichtigt werden.
+:::
 
 Das Bild der Denkhüte wird heute für weitere Techniken verwendet und teilweise auch in anderem Kontext. So steht die Frage *"Wer hat gerade für die Aufgabe "xyz" den Hut auf?"* z.B. für die Frage *"Wer trägt gerade die Verantwortung für die Aufgabe und hat die damit verbundene Entscheidungskompetenz?"* (siehe → AKV @sec-akv) 
 
-::: {.callout-important}
+::: {.callout-tip}
 ## Pro-Tipp: Den gerade aufgesetzten Hut proaktiv kommunizieren!
 In vielen, insbesondere angespannten, kontrovers und emotional diskutierten Situationen ist es oftmals sehr hilfreich proaktiv zu Kommunizieren, welchen *"Hut"* man aus der eigenen Wahrnehmung heraus gerade auf hat. Das macht es den beteiligten Personen einfacher, die jeweils vertretene Position besser einzuordnen und Konflikte weniger "persönlich" zu nehmen. Wichtige Voraussetzung hierfür ist, dass allen Beteiligten das hier vorgestellte Konzept der verschiedenen *"Denkhüte"*, die jede Person aufsetzen und auch immer wieder wechseln kann, bekannt ist.
 ::: 

@@ -1,0 +1,255 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+headlines:
+  off: true
+extended-content:
+  off: true
+---
+
+<!--
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
+
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Produktdokumentation
+  - Lastenheft
+
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 1
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+
+::: {.content-visible unless-meta="headlines.off"}
+# Ideenfindung und Konzeptentwicklung
+## Konzeptentwicklung und Entscheidungsfindung
+:::
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Template: Lastenheft
+
+-------------------------------------------------------------------------- -->
+### Template: Lastenheft  {#sec-templatelastenheft}
+
+::: {.callout-tip}
+## Abgrenzung Lastenheft und Pflichtenheft
+Das [Lastenheft](https://de.wikipedia.org/wiki/Lastenheft) beschreibt **was** ein Produkt leisten soll (Anforderungen aus Sicht der Stakeholder), während das [Pflichtenheft](https://de.wikipedia.org/wiki/Pflichtenheft) festlegt, **wie** die Anforderungen erfüllt werden (aus Sicht der Produktentwicklung).
+:::
+
+**Empfehlung zur Struktur und Inhalte eines Lastenhefts** (orientiert am [V-Modell](https://de.wikipedia.org/wiki/V-Modell), [DIN 69905](https://de.wikipedia.org/wiki/DIN_69901), [ISO/IEC/IEEE 29148](https://de.wikipedia.org/wiki/Software_Requirements_Specification) (Software Requirements Specification) und [VDI](https://de.wikipedia.org/wiki/Verein_Deutscher_Ingenieure) 2519/[2221](https://de.wikipedia.org/wiki/Produktentstehungsprozess#VDI_2221_%E2%80%93_Entwicklung_technischer_Produkte_und_Systeme) *"Vorgehensweise bei der Erstellung von Lasten-/Pflichtenheft"*/*"Entwicklung technischer Produkte und Systeme"*):
+
+Legende: Empfohlene Inhalte (🟢) Optionale Inhalte (🔵).
+
+
+```
+Lastenheft/
+│
+├── 01_Allgemeines/
+├── 02_Ausgangssituation_und_Ziele/
+├── 03_Produktuebersicht/
+├── 04_Anforderungen/
+│   ├── 4_1_Funktionale/
+│   ├── 4_2_Nichtfunktionale/
+│   ├── 4_3_Schnittstellen/
+│   └── 4_4_Betrieb_und_Lebenszyklus/
+├── 05_Qualitaet_und_Nachweise/
+├── 06_Liefer_und_Projektanforderungen/
+├── 07_Randbedingungen/
+└── 08_Anhang/
+```
+
+
+**1. Allgemeine Informationen**
+
++ 🟢 **Titelblatt** – Projekttitel, Produktname, Version, Datum, Verantwortliche, Freigaben
++ 🟢 **Inhaltsverzeichnis** – vollständige Struktur des Lastenhefts
++ 🟢 **Dokumentenstatus** – "Entwurf", "Review", "Freigegeben"
+
+
+**2. Ausgangssituation und Ziele**
+
++ 🟢 **Ausgangssituation / Motivation** – Problemstellung, Anlass, aktuelle Defizite (siehe z.B. → SWOT-Analyse @sec-swot)
++ 🟢 **Projektziele / Produktziele** – [SMART](https://de.wikipedia.org/wiki/SMART_(Projektmanagement))e Ziele des Produkts
++ 🟢 **Abgrenzung des Projekts** – was explizit *nicht* Teil des Projekts ist (siehe → System of Interest SoI)
++ 🔵 **Wirtschaftliche Randbedingungen** – erwarteter Nutzen, [ROI](https://de.wikipedia.org/wiki/Kapitalrendite), Zielmärkte
+
+**3. Produktübersicht**
+
+
++ 🟢 **Produktbeschreibung (Überblick)** – kurze funktionale Beschreibung
++ 🟢 **Zielgruppen / Anwender** – Benutzerprofile, Rollen, Erfahrungsniveau 
++ 🟢 **Einsatzumgebung** – physikalisch (z. B. Temperatur, Vibration, Feuchte) und organisatorisch (z. B. Produktionslinie, Labor)
++ 🔵 **Systemkontext / Umfeld** – Diagramm oder Beschreibung der Systemgrenzen, Schnittstellen zu Nachbarsystemen
++ 🔵 **Lebenszyklusbetrachtung** – Nutzung, Wartung, Entsorgung
+
+
+**4. Anforderungen**
+
+::: {.callout-tip}
+## Pro-Tipp!
+Der Abschnitt **Anforderungen** ist der wichtigste und zentrale Teil jeden Lastenhefts. In diesem Abschnitt ist vollständig zu dokumentieren, was das Produkt können, leisten und erfüllen muss (siehe → Anforderungsentwicklung @sec-anforderungsentwicklung). Vorgaben zur konkreten technischen Umsetzung der Anforderungen im späteren Produkt sind dabei zu vermeiden (→ Pflichtenheft).
+:::
+
+
+**4.1 Funktionale Anforderungen**
+
++ 🟢 **Hauptfunktionen** – Kernaufgaben des Produkts
++ 🟢 **Teilfunktionen / Funktionsgruppen** – strukturierte Aufgliederung (z. B. Steuerung, Antrieb, Sensorik, Kommunikation)
++ 🟢 **Bedienfunktionen** – Eingaben, Anzeigen, Steuerungen
++ 🔵 **Funktionsabhängigkeiten / Prioritäten** – Muss-, Soll-, Kann-Anforderungen
+
+
+**4.2 Nicht-funktionale Anforderungen**
+
++ 🟢 **Leistungsanforderungen** – Geschwindigkeit, Genauigkeit, Energieverbrauch, Wirkungsgrad,…
++ 🟢 **Sicherheitsanforderungen** – funktionale Sicherheit, Not-Aus, Fehlersicherheit,…
++ 🟢 **Zuverlässigkeit / Verfügbarkeit** – [MTBF](https://de.wikipedia.org/wiki/Mean_Time_Between_Failures), [MTTR](https://de.wikipedia.org/wiki/Mean_Time_To_Recover), Fehlertoleranz, …
++ 🟢 **Ergonomie / Bedienbarkeit** – Benutzerführung, Sichtbarkeit, Haptik,…
++ 🟢 **Umweltanforderungen** – u.a. Temperatur, Feuchte, EMV,…
++ 🟢 **Normen / Richtlinien** – CE, ISO, EN-Normen
++ 🔵 **Homologation / Zulassung / gesetzliche Vorschriften** - gesetzliche Zulassung, Typgenehmigung oder Zertifizierung – falls erforderlich
++ 🔵 **Geräusch-/Vibrationsgrenzwerte** – falls relevant 
++ 🔵 **Softwarequalität** – falls relevant 
+
+::: {.callout-tip}
+## Definition *"Homologation"*
+Homologation ist der formale, behördlich überwachte Prozess zur Prüfung und Bestätigung, dass ein Produkt alle gesetzlich vorgeschriebenen technischen, sicherheitsrelevanten und umweltbezogenen Anforderungen erfüllt und damit für den vorgesehenen Markt zugelassen werden darf.
+:::
+
+
+**4.3 Schnittstellenanforderungen**
+
++ 🟢 **Mechanische Schnittstellen** – Abmessungen, Befestigungspunkte, Toleranzen
++ 🟢 **Elektrische Schnittstellen** – Spannungen, Signale, Stecker, [EMV](https://de.wikipedia.org/wiki/Elektromagnetische_Vertr%C3%A4glichkeit)
++ 🟢 **Daten- und Kommunikationsschnittstellen** – Protokolle, Formate, Latenzen
++ 🔵 **Benutzerschnittstellen** – Anzeigen, Displays, Bedienelemente
+
+
+**4.4 Betriebs- und Lebenszyklusanforderungen**
+
++ 🟢 **Betriebsarten** – Normalbetrieb, Inbetriebnahme, Wartung, Notbetrieb
++ 🟢 **Wartbarkeit / Instandhaltung** – Austauschintervalle, Zugänglichkeit, Diagnosefunktionen
++ 🟢 **Transport, Lagerung, Entsorgung** – Anforderungen an Handhabung und Umwelt
++ 🔵 **Energieversorgung / Medienanschlüsse** – elektrische, pneumatische, hydraulische Versorgung
+
+
+**5. Qualitäts- und Nachweisanforderungen**
+
++ 🟢 **Qualitätsanforderungen** – z. B. Toleranzen, Prozessfähigkeit, Maßhaltigkeit
++ 🟢 **Prüf- und Abnahmebedingungen** – wie wird Nachweis geführt, dass Anforderung erfüllt ist
++ 🟢 **Abnahmekriterien** – messbar und eindeutig (siehe → SMARTe Ziele)
++ 🔵 **Validierungsanforderungen** – z. B. Prototypentests, Kundentests
+
+
+**6. Liefer- und Projektanforderungen**
+
++ 🟢 **Lieferumfang** – welche Teilsysteme, Dokumente, Zubehörteile gehören zum Produkt
++ 🟢 **Zeitplan / Meilensteine** – geplante Entwicklungsphasen, Reviews, Abnahme (siehe → Gantt-Diagramme @sec-gantt)
++ 🟢 **Rollen und Verantwortlichkeiten** – wer liefert welche Leistungen
++ 🔵 **Projektkommunikation / Reporting** – Statusberichte, Freigabeprozesse 
++ 🔵 **Abnahmemodalitäten / Vertragsbedingungen** – wenn das Lastenheft Vertragsgrundlage ist
+
+
+**7. Randbedingungen und Einschränkungen**
+
++ 🟢 **Technische Randbedingungen** – Plattform, Werkstoffe, Standards, Schnittstellenkompatibilität
++ 🟢 **Rechtliche und normative Rahmenbedingungen** – Richtlinien, Gesetze, Zulassungen
++ 🔵 **Kostenrahmen / Budgetgrenzen** – wenn freigegeben
++ 🔵 **Zulieferteile oder Wiederverwendung bestehender Komponenten** 
+
+
+**8. Anhang**
+
++ 🔵 **Glossar und Begriffserklärungen** 
++ 🔵 **Abkürzungsverzeichnis**
++ 🔵 **Referenzdokumente** – Normen, Pflichtenheft, Entwicklungsrichtlinien
++ 🔵 **Systemdiagramme und Skizzen** – konzeptionelle Darstellungen des Produkts
+
+
+::: {.callout-tip}
+## Pro-Tipps!
++ Anforderungen sollten **eindeutig, prüfbar und messbar** formuliert sein (siehe → Anforderungsentwicklung @sec-anforderungsentwicklung, siehe → SMARTe Ziele @sec-smart).
++ Eindeutige Kennnummern (z. B. A-101, A-102) helfen, dass jede Anforderung später (z.B. im → Pflichtenheft) rückverfolgt werden kann.
+:::
+
+<!--
+::: {.callout-tip}
+## Weiterführende Links
+
+:::
+-->
+
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
+
++ @juhl_technische_2015: [Technische Dokumentation](https://rdcu.be/dKtdV)
+
+:::
+
+
+<!--
+#### Literaturempfehlung
+
+![@juhl_technische_2015: [Technische Dokumentation](https://link.springer.com/book/10.1007/978-3-662-46865-4)](images/Juhl_Technische_Dokumentation_978-3-662-46865-4.webp){width=40%}
+
+-->

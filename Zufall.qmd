@@ -1,12 +1,10 @@
----
+<!--
 format:
   html:
     embed-resources: true
 lang: de
 bibliography: Literatur.bib
----
 
-<!--
 headlines:
   off: true
 extended-content:
@@ -43,7 +41,7 @@ keywords:
 
 copyright: 
   holder: Christian Anders
-  year: 2025
+  year: 2026
 lang: de
 bibliography: Literatur.bib
 date: last-modified
@@ -94,20 +92,20 @@ number-offset:
 
 ### Zufall {#sec-zufall}
 
-Obwohl der Begriff *„Zufall“* weit verbreitet ist, gibt es keine allgemeingültige Definition des Zufalls.
+Obwohl der Begriff *"Zufall“* weit verbreitet ist, gibt es keine allgemeingültige Definition des Zufalls.
 
 ::: {.callout-tip}
 ## Begriffsklärung *"Zufall"*
-Der Begriff *"Zufall"* bezieht sich auf ein Ereignis oder eine Situation, die ohne erkennbare Ursache oder vorhersehbaren Zweck auftritt. Es handelt sich um ein Phänomen, bei dem das Eintreten oder der Ausgang eines Ereignisses nicht durch bekannte oder kontrollierbare Faktoren beeinflusst wird. 
+Der Begriff *"[Zufall](https://de.wikipedia.org/wiki/Zufall)"* bezieht sich auf ein Ereignis oder eine Situation, die ohne erkennbare Ursache oder vorhersehbaren Zweck auftritt. Es handelt sich um ein Phänomen, bei dem das Eintreten oder der Ausgang eines Ereignisses nicht durch bekannte oder kontrollierbare Faktoren beeinflusst wird. 
 :::
 
-In verschiedenen Kontexten kann der Begriff *"Zufall"* unterschiedliche Bedeutungen haben. In der Wahrscheinlichkeitstheorie und Statistik bezieht sich der Zufall auf das Auftreten eines Ereignisses, das nicht vorhersagbar ist, aber durch Wahrscheinlichkeiten beschrieben werden kann. In der Philosophie und Metaphysik gibt es verschiedene Debatten über den wahren Charakter des Zufalls, einschließlich Fragen über Determinismus, Kausalität und die Existenz von reinen Zufallsereignissen.
+In verschiedenen Kontexten kann der Begriff *"Zufall"* unterschiedliche Bedeutungen haben. In der Wahrscheinlichkeitstheorie und Statistik bezieht sich der Zufall auf das Auftreten eines Ereignisses, das nicht vorhersagbar ist, aber durch Wahrscheinlichkeiten beschrieben werden kann. In der Philosophie und Metaphysik gibt es verschiedene Debatten über den wahren Charakter des Zufalls, einschließlich Fragen über [Determinismus](https://de.wikipedia.org/wiki/Determinismus), [Kausalität](https://de.wikipedia.org/wiki/Kausalit%C3%A4t) und die Existenz von reinen Zufallsereignissen (*"[objektiver Zufall](https://de.wikipedia.org/wiki/Indeterminismus#Objektiver_Zufall)"*).
 
-Der Begriff "Zufall" wird oft im Alltag verwendet wird, um eine Situation zu beschreiben, die als unerwartet oder überraschend wahrgenommen wird. In vielen Fällen kann der vermeintliche Zufall jedoch auf komplexen Ursachen beruhen, die möglicherweise nicht sofort offensichtlich sind.
+Der Begriff *"Zufall"* wird oft im Alltag verwendet wird, um eine Situation zu beschreiben, die als unerwartet oder überraschend wahrgenommen wird. In vielen Fällen kann der vermeintliche Zufall jedoch auf komplexen Ursachen beruhen, die möglicherweise nicht sofort offensichtlich sind.
 
 Wenn von **Zufall** gesprochen wird, kann gemeint sein:
 
-**1.** Ein Ereignis geschieht objektiv ohne Ursache (*"objektiver Zufall"*).
+**1.** Ein Ereignis geschieht objektiv ohne Ursache (***"objektiver Zufall"***).
 
 **2.** **Ein Ereignis geschieht, ohne dass eine Ursache erkennbar ist.**
 
@@ -119,24 +117,31 @@ Wenn von **Zufall** gesprochen wird, kann gemeint sein:
 
 ::: {.callout-important}
 ## *"Zufall"* in diesem Skript und der zugehörigen Vorlesung
-In diesem Skript und der zugehörigen Vorlesung wird - sofern nicht anders angegeben - von Zufall gesprochen, wenn gemeint ist oder davon ausgegangen wird, dass **ein Ereignis geschieht, ohne dass eine Ursache erkennbar ist**. Zusätzlich wird in diesem Skript und der zugehörigen Vorlesung jedoch davon ausgegangen, dass es immer eine [Kausaliät](https://de.wikipedia.org/wiki/Kausalit%C3%A4t) zwischen Ursachen und Wirkungen gibt, also für die in Skipt und Vorlesungen behandelten Inhalte **KEIN** *"objektiver Zufall*" wirksam ist.
+In diesem Skript und der zugehörigen Vorlesung wird - sofern nicht anders angegeben - von Zufall gesprochen, wenn gemeint ist oder davon ausgegangen wird, dass **ein Ereignis geschieht, ohne dass eine Ursache erkennbar ist**. Zusätzlich wird in diesem Skript und der zugehörigen Vorlesung jedoch davon ausgegangen, dass es immer eine [Kausaliät](https://de.wikipedia.org/wiki/Kausalit%C3%A4t) zwischen Ursachen und Wirkungen gibt, also für die in Skript und Vorlesungen behandelten Inhalte **KEIN** *"objektiver Zufall*" wirksam ist.
 :::
 
 
 <!-- --------------------------------------------------------------------------
 EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT
-S T A R T -->
+S T A R T 
 ::: {.content-visible unless-meta="extended-content.off"}
 <!-- ---------------------------------------------------------------------- -->
 
 ::: {.callout-note}
 ## Exkurs: *"Objektiver Zufall"*
-Der Begriff [Objektiver Zufall](https://de.wikipedia.org/wiki/Indeterminismus#Objektiver_Zufall) bezeichnet Zufallsereignisse, die nicht reduzierbar sind, also nicht von (verborgenen) Ursachen abhängen, sondern fundamental unbestimmt und rational nicht erklärbar sind.
+Der Begriff [*"Objektiver Zufall"*](https://de.wikipedia.org/wiki/Indeterminismus#Objektiver_Zufall)  bezeichnet Zufallsereignisse, die nicht reduzierbar sind, also nicht von (verborgenen) Ursachen abhängen, sondern fundamental unbestimmt und rational nicht erklärbar sind.
+
+---
+
+>
+*"Ein Zufall schlechthin, also gewissermaßen ein absoluter Zufall wäre dann ein Ereignis, das in bezug auf alle Kausalgesetze ein Zufall ist, das also nirgends als Glied einer Kette auftritt."* ([Philipp Frank](https://de.wikipedia.org/wiki/Philipp_Frank_(Philosoph)), 1932)
+
+---
 
 Ob es *"objektiven Zufall"* überhaupt gibt ist bis heute nicht geklärt (siehe z.B. Albert Einsteins berühmtes Zitat *"Der Alte würfelt nicht."*)^[Das Zitat *"Der Alte würfelt nicht."* stammt aus einem Brief, den Albert Einstein am 4. Dezember 1926 an Max Born schrieb. In diesem Brief äußert Albert Einstein seine Bedenken gegenüber der probabilistischen Natur der Quantenmechanik.]. Anders als Einstein sahen und sehen eine Vielzahl von Physikern (u.a. Niels Bohr, siehe →  [Bohr-Einstein-Debatte](https://de.wikipedia.org/wiki/Bohr-Einstein-Debatte)) in einer Reihe quantenmechanische Phänomene (z.B. dem radioaktien Zerfall von Atomen) nach der [Kopenhagener Deutung](https://de.wikipedia.org/wiki/Kopenhagener_Deutung_der_Quantenmechanik) starke Indizien für die Existenz *"objektiven Zufalls"*. Auch wenn nach aktuellem Kenntnisstand vieles für die Existenz des *"objektiven Zufalls"* auf quantenmechanischer Ebene spricht steht ein wissenschaftlicher Beweis bis heute aus.
 :::   
 
-<!-- ---------------------------------------------------------------------- -->
+<!-- ---------------------------------------------------------------------- ---
 :::
 <!-- S T O P
 EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT

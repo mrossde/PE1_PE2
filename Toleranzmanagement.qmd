@@ -1,0 +1,303 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+headlines:
+  off: true
+extended-content:
+  off: true
+fileformat-svg:
+  off: true
+---
+
+<!--
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
+
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - Produktentstehungsprozess
+  - Entwurfs- und Entwicklungsphase
+  - Toleranzmanagement
+
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 2
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+<!--
+::: {.callout-warning}
+## WARNING!
+**THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Toleranzmanagement
+
+-------------------------------------------------------------------------- -->
+
+### Toleranzmanagement {#sec-toleranzmanagement}
+
+::: {.callout-tip}
+## Definition: *"Toleranzmanagement"*
+[Toleranzmanagement](https://de.wikipedia.org/wiki/Toleranzmanagement) ist die systematische und interdisziplinäre Planung, Analyse und Absicherung von Fertigungs- und Montagestreuungen über den gesamten Produktentstehungsprozess, um die Einhaltung funktionaler Anforderungen bei optimalen Kosten sicherzustellen (vgl. u.a. VDI 2230, VDI 2244)
+:::
+
+Ziel des [Toleranzmanagements](https://de.wikipedia.org/wiki/Toleranzmanagement) ist es, sicherzustellen, dass die funktionalen Anforderungen, aber auch die Montierbarkeit, die Qualität und die Wirtschaftlichkeit des Produkts auch unter Berücksichtigung realer Fertigungs- und Messabweichungen eingehalten werden. 
+
+Das Grundprinzip des Toleranzmanagements ist die *„Fehlervermeidung statt Fehlerbehebung“*. Das [Toleranzmanagement](https://de.wikipedia.org/wiki/Toleranzmanagement) umfasst hierzu die systematische Planung, Festlegung, Analyse und Absicherung geometrischer und funktionaler Toleranzen eines Produkts über alle Phasen des Produktentstehungsprozesses hinweg.
+
+Als wichtigstes Werkzeug des Toleranzmanagements dient die Durchführung einer arithmetischen und statistischen [Toleranzanalyse](https://de.wikipedia.org/wiki/Toleranzanalyse) entlang des Produktentstehungsprozesses.
+
+::: {.callout-important}
+## Pro-Tipp! 
+**Sinnvoll gewählte Toleranzen sind eine notwendige Vorbedingung jeder wirtschaftlichen Produzierbarkeit des späteren Produkts!** Der Produktentwicklung kommt hierbei die besondere Verantwortung zu Toleranzen einerseits so eng wie notwendig zu definieren um die funktionalen Anforderungen des Produkts sicherstellen zu können, aber andererseits die Toleranzen so weit wie möglich zu definieren um die Wirtschaftlichkeit des Produkts unter den späteren realen Produktionsbedingungen zu ermöglichen.
+:::
+
+---
+
+>
+*"Production at scale is 100X harder than making a prototype."* (Elon Musk)
+
+---
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Inhalte und Aufgaben des Toleranzmanagements
+
+-------------------------------------------------------------------------- -->
+
+#### Inhalte und Aufgaben des Toleranzmanagements
+
+| **Phase im PEP** | **Hauptaktivitäten des Toleranzmanagements** | **Ergebnisse / Artefakte** |
+| ---------------- | -------------------------------------------- | -------------------------- |
+| **1. Ideenfindung & Konzeptphase** | - Analyse der **Funktionsanforderungen**<br>- Definition funktionaler Maße und kritischer Schnittstellen<br>- Erstellung erster Funktionsmodelle | - Funktions- und Schnittstellenbeschreibung<br>- Identifikation funktionskritischer Maße |
+| **2. Entwurfs- & Entwicklungsphase** | - Festlegung von **Bezugsstrukturen** und **Toleranzarten** (Form, Lage, Maß)<br>- Aufbau von **Toleranzketten**<br>- Durchführung erster **Toleranzanalysen** (Worst-Case, statistisch)<br>- Iteration mit Produktions- und Messtechnik | - Zeichnungen/CAD-Daten mit Toleranzangaben<br>- **Toleranzkettenmodelle**<br>- Risikoanalyse |
+| **3. Prototyping & Testing** | - Validierung der Toleranzketten mittels Simulation oder Prototypen<br>- Abgleich zwischen **Soll- und Ist-Toleranzen**<br>- Definition von **Prüfmerkmalen** | - Messergebnisse<br>- Validierte Toleranzmodelle<br>- Prüfpläne |
+| **4. Produktionsplanung & Produktionsvorbereitung** | - Rückkopplung realer Produktionsdaten in die Toleranzmodelle<br>- Überwachung der Prozessstreuungen<br>- Anpassung von Prozess- oder Zeichnungstoleranzen | - Prozessfähigkeitsnachweise ($C_{pk}$, $P_{pk}$)<br>- Lessons Learned |
+| **5. Serienproduktion** | - Kontinuierliches Toleranzmonitoring<br>- Analyse von Qualitätsabweichungen<br>- Änderungsmanagement bei Toleranzproblemen | - Statistische Prozesskontrolle (SPC)<br>- Änderungsdokumentation |
+
+: Inhalte und Aufgaben des Toleranzmanagements {#tbl-inhaltetoleranzmanagement .hover .striped .bordered}
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Flussdiagramm zum Toleranzmanagement
+
+-------------------------------------------------------------------------- -->
+```{mermaid}
+%%| label: fig-label-mmtoleranzmanagement
+%%| fig-cap: "Flussdiagramm zum Toleranzmanagement im Produktentstehungsprozess"
+%%{init: {'theme': 'neutral'}}%%
+flowchart TD
+    A0([Start des Produktentstehungsprozesses])
+
+    A1([1. Ideenfindung & Konzeptphase])
+    A1a["Analyse der Funktionsanforderungen"]
+    A1b["Definition funktionskritischer Maße & Schnittstellen"]
+    A1c["Erstellung erster Funktionsmodelle"]
+    A1r["Ergebnis: Funktionsbeschreibung & kritische Maße"]
+
+    A2([2. Entwurfs- & Entwicklungsphase])
+    A2a["Festlegung von Bezugsstrukturen & Toleranzarten"]
+    A2b["Aufbau von Toleranzketten"]
+    A2c["Toleranzanalyse (Worst-Case, statistisch)"]
+    A2r["Ergebnis: Zeichnungen & Toleranzkettenmodelle"]
+
+    A3([3. Prototyping & Testing])
+    A3a["Validierung der Toleranzen (Simulation, Prototyp)"]
+    A3b["Vergleich Soll-/Ist-Toleranzen"]
+    A3c["Definition von Prüfmerkmalen"]
+    A3r["Ergebnis: Validierte Toleranzmodelle & Prüfpläne"]
+
+    A4([4. Produktionsplanung & Produktionsvorbereitung])
+    A4a["Rückkopplung realer Fertigungsdaten"]
+    A4b["Überwachung von Prozessstreuungen"]
+    A4c["Anpassung von Prozess- oder Zeichnungstoleranzen"]
+    A4r["Ergebnis: Prozessfähigkeitsnachweise (Cpk, Ppk)"]
+
+    A5([5. Serienproduktion])
+    A5a["Kontinuierliches Toleranzmonitoring"]
+    A5b["Analyse von Qualitätsabweichungen"]
+    A5c["Änderungsmanagement bei Toleranzproblemen"]
+    A5r["Ergebnis: SPC-Berichte & Änderungsdokumentation"]
+
+    A6([Ende des Toleranzmanagement-Prozesses])
+
+    A0 --> A1
+    A1 --> A2
+    A2 --> A3
+    A3 --> A4
+    A4 --> A5
+    A5 --> A6
+
+    A1 --> A1a --> A1b --> A1c --> A1r
+    A2 --> A2a --> A2b --> A2c --> A2r
+    A3 --> A3a --> A3b --> A3c --> A3r
+    A4 --> A4a --> A4b --> A4c --> A4r
+    A5 --> A5a --> A5b --> A5c --> A5r
+```
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Methoden und Werkzeuge des Toleranzmanagements
+
+-------------------------------------------------------------------------- -->
+#### Methoden und Werkzeuge des Toleranzmanagements
+
+| **Bereich** | **Methoden und Werkzeuge** |
+| ----------- | -------------------------- |
+| **Toleranzanalyse** | - Toleranzkettenanalyse (additiv, statistisch)<br>- Monte-Carlo-Simulationen<br>- CAD-integrierte Werkzeuge |
+| **Toleranzbewertung** | - Prozessfähigkeitsanalyse ($C_p$, $C_{pk}$)<br>- Sensitivitätsanalysen |
+| **Toleranzdokumentation** | - Zeichnungen nach ISO-GPS (Geometrical Product Specification)<br>- 3D-Annotation (PMI, GD&T) |
+| **Kommunikation & Organisation** | - Toleranzmanagementrichtlinien<br>- Toleranzverantwortliche (*"Toleranzmanager"*) im PEP                                 
+
+: Methoden und Werkzeuge des Toleranzmanagements {#tbl-methodentoleranzmanagement .hover .striped .bordered}
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Grundprinzipien des Toleranzmanagements
+
+-------------------------------------------------------------------------- -->
+#### Grundprinzipien des Toleranzmanagements
+
+::: {.callout-important}
+## Pro-Tipp! Grundprinzipien des Toleranzmanagements 
+1. **Funktion vor Maß**: Toleranzen leiten sich immer aus der angestrebten Funktion des jeweiligen individuellen Produkts ab, nicht aus formalen Normwerten! Keine *"Angsttoleranzen"*, kein "*... das haben wir aber immer schon so gemacht!"*
+2. **Frühzeitige Integration**: Toleranzmanagement ist kein nachträglicher Prüfschritt in späten Phasen des Produktentwicklungsprozesses, sondern ein wichtiger, integraler Bestandteil!
+3. **Interdisziplinarität**: Entwicklung, Produktionsplanung, Qualitätssicherung und Produktion arbeiten gemeinsam an Toleranzdefinition und -absicherung des zukünftigen Produkts!
+:::
+
+
+#### Exkurs: ISO-GPS-System
+
+::: {.callout-tip}
+## Begriffsklärung: *"ISO-GPS-System"*
+Das [ISO-GPS-System](https://de.wikipedia.org/wiki/GPS-Matrix) (Geometrical Product Specifications and Verification; deutsch: [Geometrische Produktspezifikation](https://de.wikipedia.org/wiki/Geometrische_Produktspezifikation) und -prüfung) ist ein international normiertes Rahmenwerk zur eindeutigen, vollständigen und funktionsorientierten Beschreibung geometrischer Eigenschaften technischer Produkte – einschließlich Maßen, Form, Lage, Oberflächen und deren Toleranzen – auf Zeichnungen und in CAD-Modellen. Es dient der Sicherstellung einer durchgängigen Kommunikation zwischen Entwicklung, Produktionsplanung, Qualitätssicherung und Produktion (nach ISO 8015, ISO 1101 ff., ISO 14405 ff.).
+:::
+
+<!--
+::: {.callout-tip}
+## Begriffsklärung: *"ISO-GPS"*
+[ISO-GPS](https://de.wikipedia.org/wiki/GPS-Matrix) steht für Geometrical Product Specifications and Verification (deutsch: [Geometrische Produktspezifikation](https://de.wikipedia.org/wiki/Geometrische_Produktspezifikation) und -prüfung). ISO-GPS ist ein international genormtes System zur vollständigen und eindeutigen Beschreibung der Geometrie eines Produkts – einschließlich Maßen, Form, Lage, Oberflächen und deren Toleranzen – auf technischen Zeichnungen oder in 3D-Modellen.
+:::
+-->
+
+| **Normenbereich** | **Inhalt / Beispielnormen** | **Beispielhafte Themen** |
+| ----------------- | --------------------------- | ------------------------ |
+| **Allgemeine Prinzipien** | ISO 8015 | Grundregeln der GPS-Spezifikation (z. B. Unabhängigkeitsprinzip) |
+| **Maß- und Toleranzangaben** | ISO 14405-1/2/3 | Maße, Maßtoleranzen, Längenmaße (z. B. „±0,1 mm“) |
+| **Form- und Lagetoleranzen (GD&T)** | ISO 1101 | Symbole, Regeln und Referenzsysteme für Form-, Richtungs-, Lage- und Lauftoleranzen |
+| **Bezugssysteme & Bezugselemente** | ISO 5459 | Definition von Bezügen für die geometrische Bestimmung |
+| **Oberflächenbeschaffenheit** | ISO 1302, ISO 25178 | Symbole und Kennwerte für Rauheit, Welligkeit, Topografie |
+| **Mess- und Prüfverfahren** | ISO 14253-1/2 | Regeln für die Prüfung der Konformität mit GPS-Angaben |
+| **Modellbasierte Definition (MBD)** | ISO 16792 | Darstellung geometrischer Spezifikationen direkt im 3D-CAD-Modell (siehe → 3D-Master) |
+
+: Normenbereiche des ISO-GPS-Systems {#tbl-normenisogps .hover .striped .bordered}
+
+```{mermaid}
+%%| label: fig-label-isogps
+%%| fig-cap: "Aufbau der Normenstruktur des ISO-GPS-Systems"
+%%{init: {'theme': 'neutral'}}%%
+flowchart LR
+    A0(["ISO-GPS-System<br>(Geometrical Product Specifications and Verification)"])
+
+    A1["Allgemeine Prinzipien<br>(Grundlagen)"]
+    A2["Maße & Maßtoleranzen"]
+    A3["Form- & Lagetoleranzen<br>(GD&T)"]
+    A4["Bezüge & Bezugssysteme"]
+    A5["Oberflächenbeschaffenheit"]
+    A6["Mess- & Prüfregeln"]
+    A7["Modellbasierte Definition (MBD)"]
+
+    A1a["ISO 8015 – Grundregeln der GPS-Spezifikation<br>(Unabhängigkeitsprinzip)"]
+    A2a["ISO 14405-1/2/3 – Maßtoleranzen für Längenmaße"]
+    A3a["ISO 1101 – Form-, Richtungs-, Lage- & Lauftoleranzen"]
+    A4a["ISO 5459 – Bezugssysteme & Bezugselemente"]
+    A5a["ISO 1302 – Oberflächenangaben (2D-Rauheit)"]
+    A5b["ISO 25178 – Oberflächentopografie (3D)"]
+    A6a["ISO 14253-1/2 – Prüfung & Konformitätsbewertung"]
+    A7a["ISO 16792 – Produktdefinition direkt im 3D-CAD-Modell"]
+
+    A0 --> A1 --> A1a
+    A0 --> A2 --> A2a
+    A0 --> A3 --> A3a
+    A0 --> A4 --> A4a
+    A0 --> A5 --> A5a & A5b
+    A0 --> A6 --> A6a
+    A0 --> A7 --> A7a
+
+    A3 --> A4
+    A2 --> A3
+    A1 --> A2
+    A5 --> A6
+    A7 --> A2
+    A7 --> A3
+```

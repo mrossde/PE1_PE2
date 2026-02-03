@@ -7,17 +7,6 @@ bibliography: Literatur.bib
 ---
 
 <!--
-headlines:
-  off: true
-extended-content:
-  off: false
-included-content:
-  off: false
-worksheets:
-  off: true
--->
-
-<!--
 title: "DEB Produktentwicklung"
 format:
   html:
@@ -39,8 +28,7 @@ author:
 abstract: > 
   Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
 keywords:
-  - Statistik
-
+  - Anders' Themenspeicher
 copyright: 
   holder: Christian Anders
   year: 2025
@@ -57,27 +45,17 @@ link-external-icon: true
 link-external-newwindow: true
 -->
 
-<!--
-number-offset: 
-0 Grundlagen
-1 Ideenfindung und Konzeptentwicklung
-2 Entwurfs- und Entwicklungsphase
-3 Prototyping und Test
-4 Produktionsplanung und Produktion
-5 Softskills
-6 Literatur 
-7 Anhang
--->
+
 
 <!-- -------------------------------------------------------------------------
 
-                       Statistik
+                       Anders' Themenmspeicher
 
 -------------------------------------------------------------------------- -->
 
 ::: {.content-visible unless-meta="headlines.off"}
 # Grundlagen
-## Begriffe
+## Themenspeicher
 :::
 
 <!-- -------------------------------------------------------------------------
@@ -85,16 +63,34 @@ number-offset:
                        Callout !!! WARNING !!!
 
 -------------------------------------------------------------------------- -->
-<!--
 ::: {.callout-warning}
 ## WARNING!
-**THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+
+
+---
+
+> "Production at scale is 100x harder than making a prototype." ([Elon Musk](https://de.wikipedia.org/wiki/Elon_Musk)) 
+
+> "Best part is no part." ([Elon Musk](https://de.wikipedia.org/wiki/Elon_Musk)) 
+
+> "Simplicity isn't the lack of complexity; it's the clarity of understanding." ([Richard Feynman](https://de.wikipedia.org/wiki/Richard_Feynman))
+
+---
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Anders' Themenspeicher -- BEREITS ABGEARBEITET!!!
+
+-------------------------------------------------------------------------- -->
+<!--
+### Operating Envelope {#sec-operating_envelope}
+
+::: {.callout-tip}
+## Definition: *"Operating Envelope"*
+The operating envelope (deutsch: Arbeitsbereich) refers to the set of operational parameters within which a system operates safely and effectively. It defines the limits of performance, safety, and efficiency, ensuring that operations remain within a range that optimizes key performance indicators (KPIs) such as product quality, operational safety, and equipment efficiency.
 :::
 -->
 
-### Statistik {#sec-statistik}
-
-::: {.callout-tip}
-## Begriffsklärung *"Statistik"*
-Die [Statistik](https://de.wikipedia.org/wiki/Statistik) *„ist die Lehre von Methoden zum Umgang mit quantitativen Informationen“* (→ [Daten](https://de.wikipedia.org/wiki/Daten)^[Daten bezeichnet als Plural von Datum Fakten, Zeitpunkte oder kalendarische Zeitangaben. Als Pluralwort steht es für durch Beobachtungen, Messungen u. a. gewonnene [Zahlen]werte sowie darauf beruhende Angaben oder formulierbare Befunde.]). Die Statistik ist eine Möglichkeit, *„eine systematische Verbindung zwischen Erfahrung (Empirie) und Theorie herzustellen“*. Unter Statistik versteht man die Zusammenfassung bestimmter Methoden zur Analyse empirischer Daten. Wenn moderne Technologien und Methoden (z. B. Maschinelles Lernen) zum Einsatz kommen, wird Statistik heute auch als Teilgebiet der *"Data Science"* bezeichnet.
-:::

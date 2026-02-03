@@ -71,7 +71,7 @@ number-offset:
 
 <!-- -------------------------------------------------------------------------
 
-                       Zufall
+                       Begriffe
 
 -------------------------------------------------------------------------- -->
 
@@ -96,20 +96,35 @@ number-offset:
 
 ::: {.callout-tip}
 ## Begriffsklärung *"Stochastik"*
+Die [Stochastik](https://de.wikipedia.org/wiki/Stochastik) (*"Kunst des Vermutens"*) ist die Mathematik des Zufalls oder die Mathematik der Daten und des Zufalls und fasst als Oberbegriff die Gebiete [Wahrscheinlichkeitstheorie](https://de.wikipedia.org/wiki/Wahrscheinlichkeitstheorie) und [mathematische Statistik](https://de.wikipedia.org/wiki/Mathematische_Statistik) zusammen.
 
-Die [Stochastik](https://de.wikipedia.org/wiki/Stochastik) (*"Kunst des Vermutens"*) ist die Mathematik des Zufalls oder die Mathematik der Daten und des Zufalls und fasst als Oberbegriff die Gebiete Wahrscheinlichkeitstheorie und mathematische Statistik zusammen.
-
-Die Wahrscheinlichkeitstheorie stellt die Begriffe zur mathematischen Modellierung von Vorgängen bereit, in denen zufällige Ereignisse auftreten. Auf dieser Grundlage liefert die Mathematische Statistik Verfahren, um aus Beobachtungsdaten Modellparameter zu bestimmen und Aussagen über die Angemessenheit der Modellierung machen zu können.
+Die Wahrscheinlichkeitstheorie stellt die Begriffe zur mathematischen Modellierung von Vorgängen bereit, in denen zufällige Ereignisse auftreten. Auf dieser Grundlage liefert die mathematische Statistik Verfahren, um aus Beobachtungsdaten Modellparameter zu bestimmen und Aussagen über die Angemessenheit der Modellierung machen zu können.
 :::
 
 
 
-### Wahrscheinlichkeit 
+### Wahrscheinlichkeitstheorie
 
 ::: {.callout-tip}
-## Begriffsklärung *"Wahrscheinlichkeit"*
-Lore ipsum...
+## Begriffsklärung *"Wahrscheinlichkeitstheorie"*
+Die [Wahrscheinlichkeitstheorie](https://de.wikipedia.org/wiki/Wahrscheinlichkeitstheorie), auch Wahrscheinlichkeitsrechnung oder Probabilistik, ist ein Teilgebiet der Mathematik, das aus der Formalisierung, der Modellierung und der Untersuchung von Zufallsgeschehen hervorgegangen ist. Gemeinsam mit der mathematischen Statistik, die anhand von Beobachtungen zufälliger Vorgänge Aussagen über das zugrunde liegende Modell trifft, bildet sie das mathematische Teilgebiet der Stochastik. Die zentralen Objekte der Wahrscheinlichkeitstheorie sind zufällige Ereignisse, Zufallsvariablen und stochastische Prozesse.
 :::
 
-Wahrscheinlichkeiten werden mit dem Buchstaben $P$ dargestellt (*"probability*"). Eingeführt wurde diese Schreibweise von [Pierre-Simon Laplace](https://de.wikipedia.org/wiki/Pierre-Simon_Laplace) im Jahr 1812.
 
+```{mermaid}
+%%| fig-width: 6.4
+%%| label: fig-label-stochastik
+%%| fig-cap: "Begriffe zur Stochastik"
+graph TD
+    SK["Stochastik"]
+    MS["Mathematische Statistik"]
+    WT["Wahrscheinlichkeitstheorie"]
+   
+    SK --> MS
+    SK --> WT
+```
+
+<!--
+  style x fill:#a00,stroke:#000,color:#fff
+  style y fill:#ff7e00,stroke:#000,color:#fff
+-->

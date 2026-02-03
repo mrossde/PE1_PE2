@@ -1,0 +1,169 @@
+<!--
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+headlines:
+  off: true
+-->
+
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - Otto Scharmer
+  - U-Theorie
+
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 5
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       U-Theorie (Otto Scharmer)
+
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Softskills
+:::
+
+### U-Theorie (Otto Scharmer){#sec-utheorie}
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+<!--
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+::: {.callout-tip}
+## Definition: *"U-Theorie"*
+Die [U-Theorie](https://de.wikipedia.org/wiki/Otto_Scharmer#Theorie_U) von [Otto Scharmer](https://de.wikipedia.org/wiki/Otto_Scharmer) ist ein Prozessmodell für tiefgreifende Transformation von Organisationen und Individuen, das beschreibt wie Veränderungen angestoßen werden können, die nicht bloße Anpassungen an die Vergangenheit sind (*"„downloading“, push-Prinzip"*), sondern aus einer attraktiven, möglichen Zukunft (*"pull-Prinzip"*) heraus gestaltet werden können.
+:::
+
+::: {.callout-important}
+## Kerngedanke der *"U-Theorie"*
+*"Zukunft entsteht nicht automatisch und determiniert aus der Vergangenheit, sondern durch unsere Fähigkeit, uns schon heute mit den **Chancen und Möglichkeiten einer Zukunft zu verbinden die entstehen will.**"*"
+:::
+
+Die von Otto Scharmer entwickelte U-Theorie zielt primär auf die Transformation von Organisationen, ist aber auch auf die Produktentwicklung übertragbar und kann insbesondere in der Phase der Ideenfindung und Konzeptentwicklung hilfreich eingesetzt werden um Denkblockaden zu überwinden.
+
+
+
+#### Ablauf der U-Theorie
+
+Der Name „U-Theorie“ leitet sich von einer Form der Darstellung des Ablaufs der fünf Prozessschritte der U-Theorie ab, die oftmals wie der Buchstabe „U“ dargestellt wird: Ausgehend von Ausgangspunkt (*"Hören & Wahrnehmen"*) eine steile Abwärtsbewegung bis zum unteren Umkehrpunkt (*"Loslassen & Kommenlassen"*) und nachfolgend eine steile Aufwärtsbewegung bis zum Zielpunkt (*"Neuschöpfung & Umsetzen"* und diese *"Verankern & Skalieren"*).
+
+
+```{mermaid}
+%%| label: fig-label-utheorie
+%%| fig-cap: "Vereinfacht (horizontal flach) dargestellter Ablauf der fünf Prozessschritte der U-Theorie nach Otto Scharmer"
+flowchart LR
+    A["1. Co-Initiating<br><small>(Hören & Wahrnehmen)</small>"] --> B["2. Co-Sensing<br><small>(Beobachten, Spüren)</small>"]
+    B --> C["3. Presencing<br><small>(Loslassen & Kommenlassen)</small>"]
+    C --> D["4. Co-Creating<br><small>(Neuschöpfung & Umsetzen)</small>"]
+    D --> E["5. Co-Evolving<br><small>(Verankern & Skalieren)</small>"]
+
+    style A fill:#d0e1f9,stroke:#333,stroke-width:1px,color:#000000
+    style B fill:#b3cde0,stroke:#333,stroke-width:1px,color:#000000
+    style C fill:#fefecd,stroke:#333,stroke-width:1px,color:#000000
+    style D fill:#ccebc5,stroke:#333,stroke-width:1px,color:#000000
+    style E fill:#a1d99b,stroke:#333,stroke-width:1px,color:#000000
+```
+
+<!--
+#### Prozessschritte der U-Theorie
+
+1. **Co-Initiating (Hören & Wahrnehmen)**
+
++ Ausgangspunkt ist ein echtes Innehalten und ein Offenheit für das, was sich zeigt.
++ Ziel: Eine gemeinsame Intention entwickeln, **ohne sofort vorschnell Lösungen aus der Vergangenheit zu übernehmen**.
+
+2. **Co-Sensing (Beobachten & Spüren)**
+
++ Gemeinsam das System erkunden und beobachten – mit **offenem Geist**.
++ Statt sofort zu bewerten, geht es darum, die Realität aus vielen Perspektiven wahrzunehmen (*„die Welt mit den Augen der anderen sehen“*).
+
+3. **"Presencing" (Loslassen & Kommenlassen)**
+
++ Der Tiefpunkt im U: Hier wird Altes losgelassen und Raum für Neues geschaffen.
++ Verbindung von **Präsenz** und **Sensing** → ***„Presencing“***.
++ Innere Haltung: **offenes Herz** (Empathie) und **offener Wille** (Bereitschaft, sich auf das einzulassen, was entstehen möchte).
+
+4. **Co-Creating (Neuschöpfung & Umsetzen)**
+
++ Erste Schritte des Handelns – aber noch nicht in fertigen Lösungen!
++ Statt lang zu planen: **Prototypen** bauen, ausprobieren, Feedback aufnehmen.
++ Lernen im Tun (*"Versuch macht klug!"*).
+
+5. **Co-Evolving (Verankern & Skalieren)**
+
++ Erfolgreiche Prototypen werden weiterentwickelt und in größere Systeme integriert.
++ Ziel ist das Schaffen nachhaltiger Veränderung, die über das einzelne Individuum oder das Team/die Organisation hinaus wirkt.
+-->
+
+
+#### Schlüsselprinzipien der U-Theorie
+
+1. **Drei Öffnungen**:
+
+  + Offener Geist (Neues sehen)
+  + Offenes Herz (Empathie zulassen)
+  + Offener Wille (Altes loslassen, Neues entstehen lassen)
+
+2. **Drei Blockaden**:
+
+  + Zynismus (verschließt den Geist)
+  + Angst (verschließt das Herz)
+  + Festhalten (verschließt den Willen)

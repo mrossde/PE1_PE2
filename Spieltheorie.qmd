@@ -80,11 +80,12 @@ number-offset:
                        Callout !!! WARNING !!!
 
 -------------------------------------------------------------------------- -->
+<!--
 ::: {.callout-warning}
 ## WARNING!
 **THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
 :::
-
+-->
 
 ::: {.callout-tip}
 ## Definition: *"Spieltheorie"*
@@ -112,7 +113,7 @@ Langfristig für die Beteiligten als erfolgreich wahrgenommene Zusammenarbeit se
 
 ::: {.callout-caution}
 ## Pro-Tipp!
-Das wechselseitige Kennen des individuellen Wertesystems der Beteiligten biete eine wichtige Grundlage um die individuellen Bewertungsmaßstäbe der in der Zusammenarbeit gehandelten "Waren" bei der Zusammenarbeit gezielt berücksichtigen zu können.
+Das wechselseitige Kennen des individuellen Wertesystems der Beteiligten biete eine wichtige Grundlage um die individuellen Bewertungsmaßstäbe der in der Zusammenarbeit gehandelten *"Waren"* bei der Zusammenarbeit gezielt berücksichtigen zu können.
 :::
 
 ### Positivsummenspiel (Win-Win-Strategie)

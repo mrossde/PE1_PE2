@@ -1,0 +1,130 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+headlines:
+  off: true
+extended-content:
+  off: true
+fileformat-svg:
+  off: true
+---
+
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+- Produktentstehungsprozess
+- Entwicklungsmethodik
+- Single Source of Truth (SSoT)
+- Single Point of Truth (SPoT)
+
+
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 6
+link-external-icon: true
+link-external-newwindow: true
+
+headlines:
+  off: false
+extended-content:
+  off: false
+-->
+
+<!--
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: false
+exercises:
+  solutions:
+    on: true 
+fileformat-svg:
+  off: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+<!--
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS WORK IN PROGRESS!!!**
+:::
+-->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Grundlagen
+## Begriffe
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       System
+
+-------------------------------------------------------------------------- -->
+
+### Single Source of Truth (SSoT) {#sec-ssot}
+
+---
+
+>
+*"In information science and information technology, single source of truth (SSoT) architecture, or single point of truth (SPoT) architecture, for information systems is the practice of structuring information models and associated data schemas such that every data element is mastered (or edited) in only one place, providing data normalization to a canonical form. Ideally, SSoT systems provide data that are authentic (and authenticatable), relevant, and referable."* (Source: [Wikipedia](https://en.wikipedia.org/wiki/Single_source_of_truth))
+
+---
+
+::: {.callout-tip}
+## Definition *"Single Source of Truth (SSoT)"*
+[Single Source of Truth](https://en.wikipedia.org/wiki/Single_source_of_truth) (SSoT) (auch: Single Point of Truth (SPoT)) bezeichnet ein zentrales, eindeutig definiertes und verlässliches Daten- oder Informationssystem, das als maßgebliche Quelle für alle relevanten Informationen innerhalb einer Organisation dient, um Inkonsistenzen, redundante Datenbestände und widersprüchliche Entscheidungen zu vermeiden; es stellt sicher, dass alle Beteiligten – unabhängig von ihrer Abteilung oder Funktion – auf dieselben, stets aktuellen und validierten Daten zugreifen, wodurch Transparenz, Effizienz und Qualität in Prozessen und Entscheidungsfindung nachhaltig verbessert werden.
+:::
+
