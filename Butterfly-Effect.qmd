@@ -64,6 +64,6 @@ bibliography: Literatur.bib
 
 ::: {.callout-tip}
 ## Definition *"Butterfly-Effect"*
-Der [Butterfly-Effect](https://de.wikipedia.org/wiki/Schmetterlingseffekt) ist ein Phänomen der Nichtlinearen Dynamik. Er tritt in nichtlinearen dynamischen, deterministischen Systemen auf und äußert sich dadurch, dass nicht vorhersehbar ist, wie sich beliebig kleine Änderungen der Anfangsbedingungen des Systems langfristig auf die Entwicklung des Systems auswirken.
+Der [Butterfly-Effect](https://de.wikipedia.org/wiki/Schmetterlingseffekt) ist ein Phänomen der [nichtlinearen Dynamik](https://de.wikipedia.org/wiki/Nichtlineare_Dynamik). Er tritt in nichtlinearen dynamischen, deterministischen Systemen auf und äußert sich dadurch, dass nicht vorhersehbar ist, wie sich beliebig kleine Änderungen der Anfangsbedingungen des Systems langfristig auf die Entwicklung des Systems auswirken.
 :::
 
