@@ -57,7 +57,26 @@ bibliography: Literatur.bib
 
 <!-- -------------------------------------------------------------------------
 
-                       Labor "Earthlander"
+                       Vorgehen Labor "Earthlander" (Rückmeldung CA 2025-11-06)
+
+                       1. Gruppen haben eine gewisse Challenge (Gruppengröße 4-6)
+                       2. Der der den höchsten Einsatz setzt (schmeisst als letzter)
+                       3. Wer die höchste Reihe erreicht, gewinnt
+                       4. Am ersten Termin - 10er Pack Hart gekocht (jede Gruppe 3 Eier)
+                       5. Am zweiten Termin - Jede Gruppe hat 10 Eier, wieviel gekocht/wieviel roh?
+                       6. Ergebnis - MTB3 Alle Eier sind ganz geblieben
+                       DEB3 - musste dann Landepunkt treffen
+                       Selbstverständlich: Ei muss ganz bleiben
+                       Landepunkt wurde mit Projektsprechern festgelegt (1 Landepunkt)
+                       Projektplan freigeben - Aufteilung Entwicklungszeit und Testing
+                       gibt es Komponententests oder gleich integrationstests?
+                       2 Funktionen: 
+                        1. Landeeinheit (Stoßdämpfer / Kapsel etc.)
+                        2. Flugeinheit (Fallschirmentwicklung?)
+                        
+offene Themen: 
+Freigabe Projektplan
+Unterlagen letztes Jahr - siehe Email bzw. Ordner
 
 -------------------------------------------------------------------------- -->
 
@@ -265,7 +284,7 @@ title Gantt-Diagramm zum Labor Earthlander (2x6x45 Minuten)
 - Bitte verzichten Sie darauf, zwischen den Labortagen externe Beratungs- und Unterstützungsleistung durch Familie, Freunde, Bekannte für das Projekt "Earthlander" zu akquirieren.
 :::
 
-Das Labor lebt (wie auch alle realen Produktentstehungsprozesse) davon, dass Zeit und Ressourcen endlich und das verfügbare Wissen begrenzt ist. Es steht Ihnen jedoch mit den zwei Labortagen und dem an der Hochschule vorhandenen Material hinreichend Zeit und Ressourcen zur Verfügung um eine erfolgreich Landung tatsächlich zu schaffen - gute Arbeit von Ihrer Seite aus vorausgesetzt!
+Das Labor lebt (wie auch alle realen Produktentstehungsprozesse) davon, dass **Zeit und Ressourcen endlich** und das verfügbare Wissen begrenzt ist. Es steht Ihnen jedoch mit den zwei Labortagen und dem an der Hochschule vorhandenen Material hinreichend Zeit und Ressourcen zur Verfügung um eine erfolgreich Landung tatsächlich zu schaffen - gute Arbeit von Ihrer Seite aus vorausgesetzt!
 
 ::: { .callout-important}
 ## Wichtig! Gilt an beiden Labortragen (und eigentlich immer): Bei Fragen bitte immer fragen!
@@ -287,13 +306,13 @@ Das Labor lebt (wie auch alle realen Produktentstehungsprozesse) davon, dass Zei
 
 **a)** Erarbeiten Sie eine Projektorganisation. Bestimmen Sie die Projektleitung (aka Ansprechpartner*in Ihrer Projektgruppe) gegenüber dem Auftraggeber des Projekts (aka Laborleitung).
 
-**b)** Erstellen Sie einen Projektplan (inkl. Zeit- und Ressourcenplanung) in Form eines Gantt-Diagramms (z.B. in Mermaid, Powerpoint, Excel). Legen Sie Ihre AKV (*"Wer macht was?*") anhand der von Ihnen gewählten Projektorganisation und des von Ihnen erarbeiteten Projektplans fest. Stellen Sie den Projektplan und die von Ihnen gewählte Projektorganisation dem Auftraggeber des Projekts vor. Archivieren Sie Projektplan, Projektorganisation und AKV. Nach Freigabe des Projektplans erhält die Projektleitung die Freigabe des Projektbudgets.
+**b)** Erstellen Sie einen Projektplan (inkl. Zeit- und Ressourcenplanung) in Form eines Gantt-Diagramms (z.B. in Mermaid, Powerpoint, Excel). Legen Sie Ihre AKV (*"Wer macht was?*" - Nutzen Sie die **Vorlage "AKV-Tabelle-Vorlage"**) anhand der von Ihnen gewählten Projektorganisation und des von Ihnen erarbeiteten Projektplans fest. Stellen Sie den Projektplan und die von Ihnen gewählte Projektorganisation dem Auftraggeber des Projekts vor. Archivieren Sie Projektplan, Projektorganisation und AKV. Nach Freigabe des Projektplans erhält die Projektleitung die Freigabe des Projektbudgets.
 
-**c)** Erarbeiten Sie ein Lastenheft für den Earthlander und halten Sie die aus Ihrer Sicht wichtigsten Punkte schriftlich fest. Archivieren Sie das Lastenheft.
+**c)** Erarbeiten Sie ein Lastenheft (Nutzen Sie die **Vorlage**) für den Earthlander und halten Sie die aus Ihrer Sicht wichtigsten Punkte schriftlich fest. Archivieren Sie das Lastenheft.
 
 **d)** Entscheiden Sie sich für die Vorgehensweise zum Produktentstehungsprozess (Wasserfallmodell oder V-Modell). Erarbeiten Sie ein erstes technisches Konzept des Earthlanders und legen Sie die konkreten durchzuführenden Entwicklungs- und Produktionsschritte sowie die für Komponenten- und Produkttests vorgesehenen Aktivitäten fest. Falls möglich erarbeiten Sie verschiedenen Lösungsoptionen für jede der verschiedenen einzelnen Herausforderung. Führen Sie erste Entwicklungsarbeiten zum Nachweis der Prinziptauglichkeit durch und dokumentieren Sie die durchgeführten Aktivitäten und die erzielten Ergebnisse. Aktualisieren Sie den Projektplan falls erforderlich oder für die Arbeit in der Projektgruppe hilfreich. Denken Sie daran den ggf. geänderten Projektplan ebenfalls zu archivieren!
 
-**e)** Bewerten Sie die erarbeiteten Lösungsoptionen mit Bewertungsmatrizen und treffen Sie eine Auswahl. Mit diesem Schritt legen Sie das finale technische Konzept Ihres Earthlanders fest. Stellen Sie das von Ihnen ausgewählte Konzept dem Projektauftraggeber vor und Dokumentieren Sie das Konzept in Form einer kurzen Produktdokumentation. Archivieren Sie Produktdokumentation und die Bewertungsmatrizen um Ihre Entscheidungen später bewerten zu können. 
+**e)** Bewerten Sie die erarbeiteten Lösungsoptionen mit **Bewertungsmatrizen** und treffen Sie eine Auswahl. Mit diesem Schritt legen Sie das finale technische Konzept Ihres Earthlanders fest. Stellen Sie das von Ihnen ausgewählte Konzept dem Projektauftraggeber vor und Dokumentieren Sie das Konzept in Form einer kurzen Produktdokumentation. Archivieren Sie Produktdokumentation und die Bewertungsmatrizen um Ihre Entscheidungen später bewerten zu können. 
 
 **f)** Definieren Sie, welche Maßnahmen zur Sicherstellung der Konzepttauglichkeit der ausgewählten Lösungsansätze Sie ergreifen wollen und welche Entwicklungsarbeiten und Ressourcen Sie für das Testing aufwenden wollen. Halten Sie dies schriftlich fest und archivieren Sie diese Unterlagen.
 
@@ -331,9 +350,9 @@ Anders‘ Vorschlag für einen Baustein oder ein Thema für ein Labor: Morpholog
 
 **j)** Führen Sie die Landung durch und dokumentieren Sie diese! ***Viel Erfolg!!!***
 
-**k)** Räumen Sie auf und sein Sie rechtzeitig zur Feedbackrunde bei T = +08h30min in Raum G1.004 zurück!
+**k)** Räumen Sie auf und sein Sie rechtzeitig zur Feedbackrunde bei T = +08h30min im Vorlesungsraum zurück!
 
-**l)** Stellen Sie die im Laufe des Labors von Ihnen erarbeiteten Dokumente zum Projektmanagement, Ideenfindung und Konzeptentwicklung, Entwurf- und Entwicklung, Prototyping und Test sowie der Landung zu einer Projektdokumentation zusammen. Bitte senden Sie diese Projektdokumentation an Ihren Dozenten. 
+**l)** Stellen Sie die im Laufe des Labors von Ihnen erarbeiteten Dokumente zum Projektmanagement, Ideenfindung und Konzeptentwicklung, Entwurf- und Entwicklung, Prototyping und Test sowie der Landung zu einer Projektdokumentation zusammen. Bitte senden Sie diese Projektdokumentation an Ihren Dozenten (**Moodle Abgabe**). 
 :::
 
 ## Bewertung Labor "Earthlander"
@@ -343,7 +362,9 @@ Anders‘ Vorschlag für einen Baustein oder ein Thema für ein Labor: Morpholog
 
 ::: { .callout-important}
 ## ACHTUNG!!! DEADLINE!!! Wann gilt das Labor als bestanden?
-Das Labor gilt als bestanden wenn die **Projektdokumentation** bis zum (**ACHTUNG!!! DEADLINE!!!**) **ENDE Projektphase (T = +08h30min)** bei Ihrem Dozenten ([christian.anders@hs-esslingen.de](mailto:christian.anders@hs-esslingen.de)) eingegangen ist und die in der Aufgabenstellung aufgeführten Dokumente in angemessener fachlicher Tiefe und angemessenem Umfang enthält. Hinsichtlich angemessener fachlicher Tiefe und angemessenem Umfang gilt die Einschätzung Ihres Dozenten als maßgeblich. Sollte Ihre Projektdokumention eine Größe von >10 MB aufweisen nutzen Sie bitte ein geeignetes Transfertool, z.B. [wetransfer](https://wetransfer.com/). Vielen Dank!
+Das Labor gilt als bestanden wenn 
+1.  die **Projektdokumentation** bis zum (**ACHTUNG!!! DEADLINE!!!**) **ENDE Projektphase (T = +08h30min)** bei Ihrem Dozenten per Moodleabgabe (**Jedes Team = 1 Abgabe**) eingegangen ist 
+2.  & die in der Aufgabenstellung aufgeführten Dokumente in angemessener fachlicher Tiefe und angemessenem Umfang enthält. Hinsichtlich angemessener fachlicher Tiefe und angemessenem Umfang gilt die Einschätzung Ihres Dozenten als maßgeblich. Sollte Ihre Projektdokumention eine Größe von >250 MB pro einzelne Datei aufweisen nutzen Sie bitte ein geeignetes Transfertool, z.B. [wetransfer](https://wetransfer.com/). Vielen Dank!
 :::
 
 <p style="text-align: center;">![](images/AdobeStock_589506892.png){width=24%}</p>

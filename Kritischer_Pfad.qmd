@@ -23,6 +23,11 @@ Der "kritische Pfad" bezeichnet die kürzestmögliche Abfolge von miteinander ve
 
 Der kritische Pfad identifiziert diejenigen Aufgaben, deren Verzögerung den Gesamtzeitplan des Projekts verzögern würde. Jede Aktivität auf dem kritischen Pfad hat eine Nullpufferzeit, was bedeutet, dass Verzögerungen in diesen Aktivitäten zwangsläufig zu Verzögerungen des gesamten Projekts führen würden. Das Management des kritischen Pfads ist von entscheidender Bedeutung, um sicherzustellen, dass das Projekt gemäß Zeitplan und Budget abgeschlossen wird.
 
+::: {.callout-caution}
+## kritischen Pfad managen!
+Das Management des kritischen Pfads ist von entscheidender Bedeutung, um sicherzustellen, dass das Projekt gemäß Zeitplan und Budget abgeschlossen wird.
+:::
+
 Ein Beispiel für die Darstellung des kritischen Pfads in einem Gantt-Diagramm zeigt @fig-label-gntmermaid. Der kritische Pfad ist in dem Gantt-Diagramm rot gekennzeichnet dargestellt.
 
 Die Identifizierung des kritischen Pfads ist entscheidend für das Projektmanagement, da er Aufgabenpriorisierung, Ressourcenallokation und Zeitplanung beeinflusst. Durch die Fokussierung auf den kritischen Pfad können Projektmanager*innen potenzielle Engpässe und Risiken identifizieren und Maßnahmen ergreifen, um sicherzustellen, dass das Projekt rechtzeitig und innerhalb des Budgets abgeschlossen wird.
@@ -53,3 +58,11 @@ Oftmals können Aktivitäten beschleunigt oder parallel abgearbeitet werden wenn
 5. **Berechnung der Pufferzeiten**: Berechnen Sie die Pufferzeiten für jede Aktivität, um festzustellen, welche Aktivitäten Spielraum für Verzögerungen haben, ohne den Gesamtzeitplan zu gefährden.
 
 6. **Identifizierung des kritischen Pfads**: Der kritische Pfad besteht aus derjenigen Abfolge von Aktivitäten, die keine Pufferzeit haben und daher den Gesamtzeitplan des Projekts bestimmen. Identifizieren Sie diejenigen Aktivitäten, die auf dem kritischen Pfad liegen, um zu bestimmen, welche Aufgaben entscheidend für den Abschluss des Projekts innerhalb des Zeitrahmens sind und im Zentrum der Aufmerksamkeit des Projektmanagements stehen müssen um Verzögerungen zu vermeiden.
+
+::: {.content-visible unless-meta="kommentare.off"}
+
+:::: {style="background-color: #9affa4"}
+\@mrossde Übung zum krit. Pfad mit Ganttproject vorbereiten?
+
+::::
+:::
