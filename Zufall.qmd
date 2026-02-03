@@ -94,10 +94,7 @@ number-offset:
 
 Obwohl der Begriff *"Zufall“* weit verbreitet ist, gibt es keine allgemeingültige Definition des Zufalls.
 
-::: {.callout-tip}
-## Begriffsklärung *"Zufall"*
-Der Begriff *"[Zufall](https://de.wikipedia.org/wiki/Zufall)"* bezieht sich auf ein Ereignis oder eine Situation, die ohne erkennbare Ursache oder vorhersehbaren Zweck auftritt. Es handelt sich um ein Phänomen, bei dem das Eintreten oder der Ausgang eines Ereignisses nicht durch bekannte oder kontrollierbare Faktoren beeinflusst wird. 
-:::
+{{< include /00001-Definitions/Zufall.qmd >}}
 
 In verschiedenen Kontexten kann der Begriff *"Zufall"* unterschiedliche Bedeutungen haben. In der Wahrscheinlichkeitstheorie und Statistik bezieht sich der Zufall auf das Auftreten eines Ereignisses, das nicht vorhersagbar ist, aber durch Wahrscheinlichkeiten beschrieben werden kann. In der Philosophie und Metaphysik gibt es verschiedene Debatten über den wahren Charakter des Zufalls, einschließlich Fragen über [Determinismus](https://de.wikipedia.org/wiki/Determinismus), [Kausalität](https://de.wikipedia.org/wiki/Kausalit%C3%A4t) und die Existenz von reinen Zufallsereignissen (*"[objektiver Zufall](https://de.wikipedia.org/wiki/Indeterminismus#Objektiver_Zufall)"*).
 
@@ -152,5 +149,5 @@ EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT
 
 ::: {.callout-important}
 ## Pro-Tipp
-Bei der Produktentwicklung wird dem geneigten Leser dringendst empfohlen dem diesem Skript und dieser Vorlesung zugrunde liegenden Vorgehen zu folgen und **stets von gegebener [Kausaliät](https://de.wikipedia.org/wiki/Kausalit%C3%A4t) zwischen Ursache und Wirkung und den Abfolgen von Ereignissen und Zuständen auszugehen**, auch dann, wenn dem geneigten Leser (und ebenso dem Dozenten) die Zusammenhänge zwischen Ursache und Wirkung und der Abfolge von [Ereignissen](https://de.wikipedia.org/wiki/Ereignis) und [Zuständen](https://de.wikipedia.org/wiki/Zustand_(Physik)) vollkommen unbekannt sind und möglicherweise trotz aller Bemühungen auch unbekannt und damit häufig auch unbeeinflussbar bleiben.
+Bei der Produktentwicklung wird dem geneigten Leser dringendst empfohlen dem dieser Vorlesung zugrunde liegenden Vorgehen zu folgen und **stets von gegebener [Kausaliät](https://de.wikipedia.org/wiki/Kausalit%C3%A4t) zwischen Ursache und Wirkung und den Abfolgen von Ereignissen und Zuständen auszugehen**, auch dann, wenn die Zusammenhänge zwischen Ursache und Wirkung und der Abfolge von [Ereignissen](https://de.wikipedia.org/wiki/Ereignis) und [Zuständen](https://de.wikipedia.org/wiki/Zustand_(Physik)) vollkommen unbekannt sind und möglicherweise trotz aller Bemühungen auch unbekannt und damit häufig auch unbeeinflussbar bleiben.
 :::

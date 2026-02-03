@@ -1,5 +1,12 @@
 # Übergabe von Christian Anders an Mario
 
+## Fragen an CA (Stand 2026-02-03)
+
+1. wurden zu dem komplx. Systeme (statistik teile ) Teil Excel Blätter oder Übungen durchgeführt? Kenntlich machen wo im Skript
+2. 
+
+<mark>weiterlesen bei Pseudozufallszahlengeneratoren  </mark>
+
 ## Infos
 
 1. WorkinProgress Ordner Stück für Stück rüberkopieren in dieses PE1_PE2 Repo und Diff machen

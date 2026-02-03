@@ -288,6 +288,8 @@ Wettbewerb bezeichnet die Gesamtheit der externen Marktakteure und deren Produkt
 Glück haben im Zufalls-Sinn bedeutet, entweder schicksalhaft oder durch ein unvorhersehbares Ereignis begünstigt zu sein. Zu Zufallsglück gehört auch durch Zufall einen Nachteil zu vermeiden. 
 :::
 
+{{< include /00001-Definitions/Zufall.qmd >}}
+
 ::: {.callout-warning}
 ## Warnung: Auf (Zufalls-)Glück ist (leider) kein Verlass!
 Der Erfolgsfaktor (Zufalls-)Glück taucht in der akademischen Lehre zum Produktentstehungsprozess nicht auf, spielt in der Praxis aber eine (oftmals versteckte, und erst in der Rückschau zu erkennende, teilweise aber sogar große) Rolle! Auch wenn das Glück manchmal seine helfende Hand im Spiel hat sei der geneigte Leser an dieser Stelle dringendst aufgefordert durch bestmögliches eigenes Zutun auf Glück beim Produktentstehungsprozess nicht angewiesen zu sein! Diese Vorlesung soll hierzu einen Beitrag leisten.
