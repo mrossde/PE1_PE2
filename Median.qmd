@@ -1,14 +1,4 @@
----
-format:
-  html:
-    embed-resources: true
-lang: de
-bibliography: Literatur.bib
 
-exercises:
-  solutions:
-    on: true 
----
 
 <!--
 headlines:
@@ -100,5 +90,9 @@ number-offset:
 
 ::: {.callout-tip}
 ## Definition *"Median $\tilde{x}$"*
-Lore ipsum  
+In der Statistik ist der [Median](https://de.wikipedia.org/wiki/Median) (Plural Mediane) ein Mittelwert und Lageparameter. Der Median der Messwerte einer Urliste ist derjenige Messwert, der genau *„in der Mitte“* steht, wenn man die Messwerte der Größe nach sortiert. 
 :::
+
+Im Allgemeinen teilt ein Median einen Datensatz, eine Stichprobe oder eine Verteilung so in zwei gleich große Teile, dass die Werte in der einen Hälfte nicht größer als der Median sind und in der anderen Hälfte nicht kleiner. 
+
+Beispielsweise ist für die ungeordnete Urliste 4, 1, 37, 2, 1 der Messwert 2 der Median.

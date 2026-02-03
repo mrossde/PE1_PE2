@@ -1,10 +1,4 @@
----
-format:
-  html:
-    embed-resources: true
-lang: de
-bibliography: Literatur.bib
----
+
 
 <!--
 headlines:
@@ -71,7 +65,7 @@ number-offset:
 
 <!-- -------------------------------------------------------------------------
 
-                       Zufall
+                       Taken's Theorem
 
 -------------------------------------------------------------------------- -->
 
@@ -97,15 +91,29 @@ number-offset:
 
 ::: {.callout-tip}
 ## Begriffsklärung *"Takens' Theorem"*
-Takens' Theorem ist ein zentrales Resultat in der nichtlinearen Dynamik und Zeitreihenanalyse, insbesondere im Bereich der rekonstruierten Phasenräume. Es wurde 1981 vom niederländischen Mathematiker [Floris Takens](https://de.wikipedia.org/wiki/Floris_Takens) veröffentlicht und bildet die theoretische Grundlage dafür, wie man aus eindimensionalen Zeitreihen auf das zugrunde liegende dynamische System schließen kann.
+[Takens' Theorem](https://en.wikipedia.org/wiki/Takens%27s_theorem) ist ein zentrales Resultat in der nichtlinearen Dynamik und **[Zeitreihenanalyse](https://de.wikipedia.org/wiki/Zeitreihenanalyse)**, insbesondere im Bereich der rekonstruierten Phasenräume. Es wurde 1981 vom niederländischen Mathematiker [Floris Takens](https://de.wikipedia.org/wiki/Floris_Takens) (* 12. November 1940; † 20. Juni 2010) veröffentlicht und bildet die theoretische Grundlage dafür, wie man **aus eindimensionalen Zeitreihen auf das zugrunde liegende dynamische System schließen** kann.
 :::
 
-Takens führte den Begriff des [Seltsamen Attraktors](https://de.wikipedia.org/wiki/Seltsamer_Attraktor) ein. Takens gab auch Bedingungen an, unter denen ein Seltsamer Attraktor aus Zeitreihen von Observablen rekonstruiert werden kann. Diese wurden als Takens-Theorem bekannt.
+::: {.callout-tip}
+## Begriffsklärung *"Theorem"*
+Ein [Theorem](https://de.wikipedia.org/wiki/Theorem#Mathematik) ist eine mathematische Aussage, deren Wahrheit durch einen formalen Beweis ausgehend von anerkannten Axiomen und Regeln der Logik gezeigt worden ist. Ein Theorem ist daher nicht bloß eine Vermutung (Hypothese oder Konjektur), sondern notwendig wahr ist, solange die zugrunde liegenden Axiome gelten. In der Mathematik spricht man statt von einem Theorem oft auch einfach vom [Satz](https://de.wikipedia.org/wiki/Satz_(Mathematik)y).
+:::
+
+::: {.callout-tip}
+## Begriffsklärung *"Zeitreihenanalyse"*
+Die [Zeitreihenanalyse](https://de.wikipedia.org/wiki/Zeitreihenanalyse) befasst sich in der Statistik mit der Analyse von Zeitreihen und der Vorhersage von Trends (Trendextrapolation) zu ihrer künftigen Entwicklung.
+:::
+
+
+Floris Takens führte nebem dem nach ihm benannten Theorem den Begriff des [*"Seltsamen Attraktors"*](https://de.wikipedia.org/wiki/Seltsamer_Attraktor) ein. Takens gab auch Bedingungen an, unter denen ein *"Seltsamer Attraktor"* aus Zeitreihen von Observablen rekonstruiert werden kann. Diese ist heute als Takens-Theorem bekannt.
 
 ::: {.callout-important}
 ## Takens' Theorem in einfachen Worten
 Takens’ Theorem besagt, dass man unter bestimmten Bedingungen die Dynamik eines unbekannten, aber deterministischen Systems allein anhand von Zeitreihenmessungen einer einzelnen beobachtbaren Größe - also einer skalaren Zeitreihe - vollständig rekonstruieren kann.
+
+Dieser *"rekonstruierte Attraktor"* ist dabei nicht nur ähnlich, sondern sogar topologisch äquivalent (*"diffeomorph"*) zum *"echten"* Attraktor, auch wenn der *"rekonstruierte Attraktor"* gegenüber dem *"echten"* Attraktor möglicherweise verzerrt sein kann.
 :::
+
 
 
 <!-- --------------------------------------------------------------------------
@@ -113,6 +121,9 @@ EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT
 S T A R T -->
 ::: {.content-visible unless-meta="extended-content.off"}
 <!-- ---------------------------------------------------------------------- -->
+
+::: {.callout-note}
+## Beispiel: Rekonstruktion des Attraktors eines Lorenz-System mittels Takens' Theorem
 
 Im Mittelpunkt von Takens Theorem steht die sogenannte *"Einbettung"*:
 
@@ -131,9 +142,6 @@ Takens zeigte, dass für eine große Klasse von Systemen eine solche Rekonstrukt
 Voraussetzungen hierfür sind, dass das zugrunde liegende System ein deterministisches, glattes dynamisches System ist, die beobachtete Zeitreihe eine glatte Funktion ist und die Einbettungsdimension $m$ mindestens $2d + 1$ beträgt, wobei $d$ die Dimension der zugrunde liegenden Mannigfaltigkeit ist.
 
 Anwendungsbereiche von Takens Theorem sind die **nichtlineare Zeitreihenanalyse**, das Rekonstruieren von Attraktoren sowie die Vorhersage des Verhaltens chaotischer Systeme.
-
-::: {.callout-note}
-## Beispiel: Rekonstruktion des Attraktors eines Lorenz-System mittels Takens' Theorem
 
 Das [Lorenz-System](https://de.wikipedia.org/wiki/Lorenz-Attraktor), erstmals formuliert von dem Meteorologen [Edward N. Lorenz](https://de.wikipedia.org/wiki/Edward_N._Lorenz) im Jahr 1963, ist heute eines der bekanntesten chaotischen System mit drei Zustandsvariablen: $x(t), y(t), z(t)$. 
 
@@ -172,8 +180,6 @@ Wählt der geneigte Leser die Verzögerung $\tau = 10$ Zeitschritte ergibt sich 
 ![Aus der eindimensionalen Zeitreihe $\mathbf{x}(t)$ des Lorenz-Systems rekonstruierter Phasenraum $\mathbf{x}(t)$. Jeder Punkt im dreidimensionalen Phasenraum ist ein Vektor $( x(t),\ x(t+\tau),\ x(t+2\tau))$.](images/Lorenz-System_Takens_Rekonstruktion.png){width=68% #fig-rekonstruierterattraktor}
 
 Trotz der Tatsache, dass dem geneigten Leser nur $x(t)$ zur Verfügung steht, wäre es dem geneigten Leser also möglich einen Attraktor zu rekonstruieren der der Originaltrajektorie des Lorenz-Systems qualitativ ähnelt. Dieser Attraktor wird nach Takens auch als *"rekonstruierter Attraktor"* bezeichnet.
-
-Takens Theorem besagt, dass der *"rekonstruierte Attraktor"* nicht nur ähnlich, sondern sogar topologisch äquivalent (*"diffeomorph"*) zum *"echten"* Attraktor ist, auch wenn der *"rekonstruierte Attraktor"* gegenüber dem *"echten"* Attraktor möglicherweise verzerrt sein kann.
 :::
 
 <!-- ---------------------------------------------------------------------- -->

@@ -1,10 +1,4 @@
----
-format:
-  html:
-    embed-resources: true
-lang: de
-bibliography: Literatur.bib
----
+
 
 <!--
 headlines:
@@ -71,7 +65,7 @@ number-offset:
 
 <!-- -------------------------------------------------------------------------
 
-                       Zufall
+                       Statistik
 
 -------------------------------------------------------------------------- -->
 

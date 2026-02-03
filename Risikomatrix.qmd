@@ -4,6 +4,8 @@ format:
     embed-resources: true
 lang: de
 bibliography: Literatur.bib
+headlines:
+  off: true
 ---
 
 <!--
@@ -39,7 +41,7 @@ author:
 abstract: > 
   Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
 keywords:
-  - Risikomanagment
+  - Risikomanagement
   - Risikomatrix
 
 copyright: 
@@ -72,7 +74,7 @@ number-offset:
 
 <!-- -------------------------------------------------------------------------
 
-                       Attraktor
+                       Risikomanagement | Risikomatrix
 
 -------------------------------------------------------------------------- -->
 
@@ -93,6 +95,29 @@ number-offset:
 :::
 -->
 
+### Risikomanagement {#sec-risikomanagement}
+
+
+::: {.callout-tip}
+## Definition: *"Risikomanagement"*
+[Risikomanagement](https://de.wikipedia.org/wiki/Risikomanagement) bezeichnet den Prozess der systematischen Identifizierung, Analyse, Bewertung, Behandlung und Überwachung von Risiken im Rahmen eines bestimmten Projekts, Produkts oder Systems. Risikomanagement zielt darauf ab, potenzielle negative Auswirkungen von Risiken zu minimieren oder zu kontrollieren und gleichzeitig Chancen zur Verbesserung zu identifizieren und zu nutzen.
+:::
+
+```{mermaid}
+%%| label: fig-label-mmrisikomanagment
+%%| fig-cap: "Unvollständige Mindmap der Aufgaben des Risikomanagements"
+%%{init: {'theme': 'forest'}}%%
+mindmap
+   root(Risikomanagement)
+      (Risikoidentifikation)
+      (Risikoanalyse)
+      (Risikobewertung)
+      (Risikokommunikation)
+      (Risikobewältigung)
+```
+
+
+
 ### Risikomatrix {#sec-risikomatrix}
 
 ::: {.callout-tip}
@@ -109,7 +134,7 @@ Eine [Risikomatrix](https://de.wikipedia.org/wiki/Risikomatrix) ist eine Methode
 
 ::: {.callout-warning}
 ## ACHTUNG! Vorsicht bei Ereignissen mit extremer ($\infty$) Schadenshöhe!
-Bei Ereignissen, denen eine extreme Schadenshöhe zugeschrieben wird kann die Risikomatrix nicht mehr sinnvoll angewendet werden! Bekannte Beispiele finden sich in der Atomtechnik (z.B. Unfälle von [Tschernobyl](Nuklearkatastrophe_von_Tschernobyl) (1986) und [Fukushima](https://de.wikipedia.org/wiki/Nuklearkatastrophe_von_Fukushima) (2011). 
+Bei Ereignissen, denen eine extreme Schadenshöhe zugeschrieben wird kann die Risikomatrix nicht mehr sinnvoll angewendet werden! Bekannte Beispiele finden sich in der Atomtechnik (z.B. Unfälle von [Tschernobyl](Nuklearkatastrophe_von_Tschernobyl) (1986) und [Fukushima](https://de.wikipedia.org/wiki/Nuklearkatastrophe_von_Fukushima) (2011)). 
 
 Eine Ursache hierfür ist, dass aufgrund der stets ungenauen Kenntnis der Eintrittswahrscheinlichkeit extremst seltener Ereignisse (die jedoch stets als größer Null angenommen werden muss da in der Realität kein System existiert das nicht versagen kann) die Multiplikation mit der als quasi $\infty$ angenommenen Schadenshöhe keine sinnvolle Bewertung und Klassifizierung des angenommenen Ereignisses mehr möglich ist.
 :::
@@ -119,6 +144,32 @@ Eine Ursache hierfür ist, dass aufgrund der stets ungenauen Kenntnis der Eintri
 Ein in diesen Fällen zumeist praktiziertes Vorgehen ist, den [Erwartungswert](https://de.wikipedia.org/wiki/Erwartungswert) des postulierten Ereignisses nach bestem Stand der Erkenntnis abzuschätzen und mit einem bekannten und breit akzeptierten Erwartungswerts zu vergleichen. Beispielsweise gelten fahrerlose Assistenzsysteme als akzeptabel, wenn es gelingt die Systeme so zu ertüchtigen, dass von Assistenzsystemen gesteuerten Fahrzeuge im Mittel weniger Schaden verursachen als Fahrzeuge, die von Personen gesteuert werden.
 :::
 
-<!--
+
 Anwendung findet die Risikomatrix auch bei der Gefährdungsbeurteilung für die Ausstattung, die in Entwicklungsbereichen und Werkstätten zur Produktentwicklung, ebenso für die Gefährdungsbeurteilung der Werkzeuge, Maschinen und Anlagen in Produktions- und Instandhaltungsbereichen. Der geneigte Leser wird der Risikomatrix mit hoher Wahrscheinlichkeit früher oder später in seinem Berufsleben auf die eine oder andere Art begegnen.
--->
+
+
+### Risikoprioritätszahl (RPZ) {#sec-rpz}
+
+::: {.callout-tip}
+## Definition *"Risikoprioritätszahl (RPZ)"*
+Die Risikoprioritätszahl (RPZ) (engl. Risk Priority Number ([RPN](https://en.wikipedia.org/wiki/Failure_mode_and_effects_analysis#Basic_terms))) ist ein quantitativer, dimensionsloser Kennwert, mit dem das Risiko eines potenziellen Risikos oder Fehlers bewertet und priorisiert werden kann.
+:::
+
+Die Risikoprioritätszahl (RPZ) findet unter anderem als zentrales Konzept bei der [Fehler-Möglichkeits- und Einfluss-Analyse](https://de.wikipedia.org/wiki/FMEA) (FMEA) (engl. Failure Mode and Effects Analysis) (siehe → FMEA @sec-fmea) Verwendung.
+
+Die RPZ ergibt sich aus den drei Faktoren Bedeutung B (Severity), Auftretenswahrscheinlichkeit A (Occurrence) und (optional, je nach Anwendungsfall) Entdeckungswahrscheinlichkeit E (Detection):
+
+$$RPZ = B × A × E$$
+
+| Kürzel | Bedeutung                                     | Beschreibung                                             | Skala (typisch 1–10)                                |
+| :----- | :-------------------------------------------- | :------------------------------------------------------- | :-------------------------------------------------- |
+| B      | Bedeutung (Severity)                          | Wie schwerwiegend sind die Auswirkungen des Fehlers?     | 1 = unbedeutend, 10 = katastrophal                  |
+| A      | Auftretenswahrscheinlichkeit (Occurrence)     | Wie wahrscheinlich ist das Auftreten des Fehlers?        | 1 = sehr unwahrscheinlich, 10 = sehr wahrscheinlich |
+| E      | Entdeckungswahrscheinlichkeit (Detection)     | Wie gut kann der Fehler entdeckt werden, bevor er wirkt? | 1 = sehr gut erkennbar, 10 = sehr schwer erkennbar  |
+
+: Faktoren zur Berechnung der Risikoprioritätszahl RPZ im Rahmen einer [FMEA](https://de.wikipedia.org/wiki/FMEA)  {#tbl-faktorenrpz .striped .hover .bordered}
+
+::: {.callout-tip}
+## Pro-Tipp!
+Bei der Verwendung der Risikoprioritätszahl im Rahmen einer Risikomatrix bei der Produktentwicklung oder einer Gefährdungsbeurteilung wird der Faktor Entdeckungswahrscheinlichkeit E stets als 1 gesetzt, gleichbedeutend mit der Annahme dass jedes Risiko, das eintreten kann, früher oder später auch eintreten wird (siehe → [Murphy's Gesetz](https://de.wikipedia.org/wiki/Murphys_Gesetz) @sec-murphyslaw)
+:::

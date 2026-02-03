@@ -1,10 +1,4 @@
----
-format:
-  html:
-    embed-resources: true
-lang: de
-bibliography: Literatur.bib
----
+
 
 <!--
 title: "DEB3 Produktentwicklung 1"
@@ -176,25 +170,29 @@ Die Definition der Zielerreichung kann von Ziel zu Ziel unterschiedlich sein kan
 %%| label: fig-label-pep0
 %%| fig-cap: "Phasen von Projekten"
 flowchart TD
-
-  A[a- Projektinitiierung]
-    A --> B[b- Projektplanung]
-    B --> C[c- Projektdurchführung]    
-    C --> D[d- Projektabschluss]
-  B -->E[e- Projektcontrolling]
+  A[1. Projektinitiierung]
+    A --> B[2. Projektplanung]
+    B --> C[3. Projektdurchführung]    
+    C --> D[4. Projektabschluss]
+  B -->E[5. Projektcontrolling]
   E -->D
 
+  style A fill:#f0f0f0,stroke:#000000,color:#000000
+  style B fill:#f0f0f0,stroke:#000000,color:#000000
+  style C fill:#D5E8D4,stroke:#82B366,color:#000000
+  style D fill:#f0f0f0,stroke:#000000,color:#000000
+  style E fill:#f0f0f0,stroke:#000000,color:#000000
 ```
 
-a) **Initiierung**: In dieser Phase wird das Projekt identifiziert, die Ziele werden definiert, der Umfang wird abgesteckt und die Ressourcen werden zugewiesen. Ein Projektauftrag oder eine Projektskizze wird erstellt, um die Grundlage für das weitere Vorgehen zu legen.
+1. **Initiierung**: In dieser Phase wird das Projekt identifiziert, die Ziele werden definiert, der Umfang wird abgesteckt und die Ressourcen werden zugewiesen. Ein Projektauftrag oder eine Projektskizze wird erstellt, um die Grundlage für das weitere Vorgehen zu legen.
 
-a) **Planung**: Während dieser Phase werden detaillierte Pläne erstellt, um die Ziele des Projekts zu erreichen. Dies beinhaltet die Definition von Meilensteinen, die Festlegung von Aufgaben und Verantwortlichkeiten, die Ressourcenplanung, die Zeitplanung, das Risikomanagement und die Budgetierung.
+2. **Planung**: Während dieser Phase werden detaillierte Pläne erstellt, um die Ziele des Projekts zu erreichen. Dies beinhaltet die Definition von Meilensteinen, die Festlegung von Aufgaben und Verantwortlichkeiten, die Ressourcenplanung, die Zeitplanung, das Risikomanagement und die Budgetierung.
 
-a) **Durchführung**: In dieser Phase werden die im Plan festgelegten Aufgaben durchgeführt. Bei Produktentstehungsprojekten wird diese Phase oftmals als das eigentliche Projekt betrachtet, weil hier das spätere Produkt erarbeitet wird. Das inhaltlich arbeitende Team trifft sich in der Regel erst zum Start dieser zum ersten Mal, meist im Rahmen eines Kick-Off-Events. Mit dem Kick-off-Event startet auch der Teamentwicklungsprozess, ohne dass dies immer als eigene Aufgabe thematisiert wird. Während der Phase der Durchführung arbeiten die Teammitglieder an ihren zugewiesenen Aufgaben, Ressourcen werden eingesetzt, und der Fortschritt wird durch die Projektleitung, unterstützt vom Controlling, regelmäßig überwacht und der Projektverlauf dokumentiert. 
+3. **Durchführung**: In dieser Phase werden die im Plan festgelegten Aufgaben durchgeführt. Bei Produktentstehungsprojekten wird diese Phase oftmals als das eigentliche Projekt betrachtet, weil hier das spätere Produkt erarbeitet wird. Das inhaltlich arbeitende Team trifft sich in der Regel erst zum Start dieser zum ersten Mal, meist im Rahmen eines Kick-Off-Events. Mit dem Kick-off-Event startet auch der Teamentwicklungsprozess, ohne dass dies immer als eigene Aufgabe thematisiert wird. Während der Phase der Durchführung arbeiten die Teammitglieder an ihren zugewiesenen Aufgaben, Ressourcen werden eingesetzt, und der Fortschritt wird durch die Projektleitung, unterstützt vom Controlling, regelmäßig überwacht und der Projektverlauf dokumentiert. 
 
-a) **Abschluss**: Sobald alle Ziele erreicht sind und das Projekt erfolgreich abgeschlossen ist, oder aber von Seiten des Managements der Abbruch des Projekts beschlossen wird, wird es offiziell beendet. Der Projektabschluss beinhaltet die Übergabe von Ergebnissen an den Auftraggeber, das Erstellen eines Projektberichts, das Dokumentieren von Lernpunkten und - bei erfolgreichem Projektabschluss und meist im Rahmen eines feierlichen Abschlussevents - das Feiern von Erfolgen. Auch die abschließende Bewertung des Projekts hinsichtlich seiner Effektivität und Effizienz gehört zu dieser Phase.
+4. **Abschluss**: Sobald alle Ziele erreicht sind und das Projekt erfolgreich abgeschlossen ist, oder aber von Seiten des Managements der Abbruch des Projekts beschlossen wird, wird es offiziell beendet. Der Projektabschluss beinhaltet die Übergabe von Ergebnissen an den Auftraggeber, das Erstellen eines Projektberichts, das Dokumentieren von Lernpunkten und - bei erfolgreichem Projektabschluss und meist im Rahmen eines feierlichen Abschlussevents - das Feiern von Erfolgen. Auch die abschließende Bewertung des Projekts hinsichtlich seiner Effektivität und Effizienz gehört zu dieser Phase.
 
-a) **Projektcontrolling**: Während des gesamten Projekts wird in einem nebenläufigen Prozess der Fortschritt überwacht, um sicherzustellen, dass er den geplanten Zielen und Zeitplänen entspricht. Änderungen im Projektumfang, Risiken oder Ressourcen werden identifiziert und bewertet. Anpassungen werden vorgenommen, um bestmöglich sicherzustellen, dass das Projekt erfolgreich abgeschlossen werden kann. Bei massiven Abweichungen zwischen Projektplanung und tatsächlicher Entwicklung des Projekts können Projekte auch jederzeit abgebrochen werden.
+5. **Projektcontrolling**: Während des gesamten Projekts wird in einem nebenläufigen Prozess der Fortschritt überwacht, um sicherzustellen, dass er den geplanten Zielen und Zeitplänen entspricht. Änderungen im Projektumfang, Risiken oder Ressourcen werden identifiziert und bewertet. Anpassungen werden vorgenommen, um bestmöglich sicherzustellen, dass das Projekt erfolgreich abgeschlossen werden kann. Bei massiven Abweichungen zwischen Projektplanung und tatsächlicher Entwicklung des Projekts können Projekte auch jederzeit abgebrochen werden.
 
 ![Klare Rolleneinhaltung bei Projektinitiierung / Projektdurchführung zw. Projektleiter und Projektauftraggeber](images/Projektmanagement_Boot.png){width=100% #fig-boot}
 
@@ -217,6 +215,12 @@ flowchart TD
     C2 --> C3[3.3 Prototyping und Test]
     C3 --> C4[3.4 Fertigungs- und Produktionsvorbereitung]
     C4 --> C5[3.5 Markteinführung und Vermarktung]
+    
+  style C1 fill:#f0f0f0,stroke:#000000,color:#000000
+  style C2 fill:#f0f0f0,stroke:#000000,color:#000000
+  style C3 fill:#f0f0f0,stroke:#000000,color:#000000
+  style C4 fill:#f0f0f0,stroke:#000000,color:#000000
+  style C5 fill:#f0f0f0,stroke:#000000,color:#000000
 ```
 
 ::: {.content-visible unless-meta="kommentare.off"}

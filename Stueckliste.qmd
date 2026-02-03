@@ -1,0 +1,418 @@
+<!--
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+headlines:
+  off: true
+extended-content:
+  off: true
+
+
+
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Produktdokumentation
+  - Stückliste
+
+copyright: 
+  holder: Christian Anders
+  year: 2026
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 2
+link-external-icon: true
+link-external-newwindow: true
+
+headlines:
+  off: false
+extended-content:
+  off: false
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+<!--
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS WORK IN PROGRESS!!!**
+:::
+-->
+
+
+::: {.content-visible unless-meta="headlines.off"}
+# Entwurf und Entwicklung
+## Produktdokumentation
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Stückliste
+
+-------------------------------------------------------------------------- -->
+### Stückliste {#sec-stückliste}
+
+::: {.callout-tip}
+## Definition: *"Stückliste"*
+Eine [Stückliste](https://de.wikipedia.org/wiki/St%C3%BCckliste) (engl.: *"Bill Of Materials"* ([BOM](https://en.wikipedia.org/wiki/Bill_of_materials))) ist eine strukturierte Anordnung von Objekten (z. B. von Bauteilen) eines umfassenderen Objektes, insbesondere von Erzeugnissen (Produkten) oder Baugruppen bzw. eines Zusammenbaus. 
+:::
+
+::: {.callout-important}
+## Pro-Tipp!
+Stücklisten gehören zu den wichtigsten Datenstrukturen der Produktdokumentation überhaupt. Sie sind das zentrale Bindeglied zwischen Konstruktion, Einkauf, Produktion und Service und umfassen alle Komponenten, die zum Aufbau eines Produkts notwendig sind in strukturierter, eindeutiger und versionierter Form. Stücklisten enthalten keine Informationen über zum Aufbau des Produkt erforderliche Prozesse oder Ressourcen.
+:::
+
+**Arten von Stücklisten** (unvollständige Auswahl):
+
+| Typ                                      | Beschreibung                                                                       | Verwendungszweck                                           |
+| ---------------------------------------- | ---------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| **Gesamtstückliste**                     | Vollständige Übersicht über alle Baugruppen, Einzelteile, Kaufteile und Normteile. | Referenz für Konstruktion, Einkauf und Dokumentation.      |
+| **Strukturstückliste**                   | Hierarchische Gliederung nach Baugruppen und Unterbaugruppen.                      | Darstellung des Produktaufbaus.                            |
+| **Produktionsstückliste**                | Enthält alle für die Montage erforderlichen Teile in Produktionsreihenfolge.       | Unterstützung der Produktion.                              |
+| **Konstruktionsstückliste**              | Aus CAD-System generiert; technische Struktur ohne Produktionsaspekte.             | Grundlage für Freigaben und technische Dokumentation       |
+| **Service-/Ersatzteilstückliste**        | Reduzierte Stückliste mit Austauschkomponenten.                                    | Wartung und Ersatzteilmanagement.                          |
+| **Software-/Firmware-Stückliste (SBOM)** | Liste aller Softwarekomponenten, Versionen, Lizenzen.                              | Cybersecurity, Compliance (z. B. EU Cyber Resilience Act). |
+
+: Arten von Stücklisten (unvollständige Auswahl) {#tbl-stuecklisten .hover .striped .bordered}
+
+Die in @tbl-stuecklisten aufgeführten Stücklisten werden heute in der Regel aus einer *"Master-BOM (MBOM)"* abgeleitet.
+
+
+
+::: {.callout-important}
+## Pro-Tipp: Struktur jeder hierarchischen Stückliste auf maximal drei Ebenen begrenzen!
+```
+0001  PRODUKT
+├── 1000  HAUPTMODUL
+│   ├── 1100  MODUL
+│   │   ├── 1101  SUBMODUL
+```
+:::
+
+<!--
+::: {.callout-note collapse=true}
+-->
+::: {.callout-note}
+## Beispiel einer mehrstufigen hierarchischen Produktstruktur eines mechatronischen Produkts
+```
+0001  Mechatronisches Produkt
+│
+├── 1000  Mechanische Baugruppe
+│   ├── 1100  Gehäuse
+│   │   ├── 1101  Frontplatte
+│   │   ├── 1102  Deckel
+│   │   └── 1103  Schrauben M4x10
+│   └── 1200  Antriebseinheit
+│       ├── 1201  Motor
+│       ├── 1202  Welle
+│       └── 1203  Lager
+│
+├── 2000  Elektrische Baugruppe
+│   ├── 2100  Netzteil
+│   ├── 2200  Steuerplatine
+│   └── 2300  Sensoren
+│
+└── 3000  Software & Konfiguration
+    ├── 3100  Firmware Motorsteuerung
+    └── 3200  HMI-Software
+```
+:::
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       MBOM
+
+-------------------------------------------------------------------------- -->
+#### MBOM
+
+::: {.callout-tip}
+## Definition: *"MBOM"*
+MBOM (Master Bill Of Materials) bezeichnet eine zentrale, konsolidierte Stückliste, die alle für die Fertigung, Montage und den Service eines Produkts relevanten Hardwarekomponenten und Materialien enthält und dabei Informationen aus Entwicklung- und Konstruktion (EBOM) und Produktion (PBOM) integriert (Stückliste der Softwarekomponenten siehe → [SBOM](https://en.wikipedia.org/wiki/Software_supply_chain)).
+:::
+
+Die MBOM dient als verbindliche Referenz zwischen Produktentwicklung, Produktion, Einkauf und Logistik, um sicherzustellen, dass alle Abteilungen mit denselben, konsistenten Produktdaten arbeiten. Die MBOM bildet somit den ***„Single Point of Truth (SPoT)“*** (siehe → Single Source of Truth (SSoT) @sec-ssot) für alle materialbezogenen Informationen über den gesamten Produktlebenszyklus hinweg.
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       SBOM
+
+-------------------------------------------------------------------------- -->
+#### SBOM
+
+::: {.callout-tip}
+## Definition: *"SBOM"*
+[SBOM](https://en.wikipedia.org/wiki/Software_supply_chain) (Software Bill of Materials) bezeichnet eine strukturierte, zentrale Auflistung aller in einer Software enthaltenen Komponenten, Bibliotheken und Abhängigkeiten, einschließlich ihrer Versionen, Herkunft und Lizenzinformationen.
+:::
+
+Die SBOM dient als verbindliche Referenz für Entwicklung, IT-Sicherheit, Compliance und Betrieb, um Transparenz über die eingesetzten Softwarebestandteile zu schaffen, Risiken durch Sicherheitslücken oder Lizenzverstöße zu minimieren und eine nachvollziehbare, konsistente Dokumentation der Softwarezusammensetzung herzustellen.
+
+Die SBOM ist in der Regel kein direkter Bestandteil der MBOM, sondern methodisch eigenständig. Die MBOM kann in einem erweiterten Produktkontext jedoch Verweise auf die SBOM enthalten, z.B. um zu dokumentieren, welche Softwarekomponenten in welchen Hardwarekomponenten verwendet werden.
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       EBOM
+
+-------------------------------------------------------------------------- -->
+<!--
+#### EBOM
+::: {.callout-tip}
+## Definition: *"EBOM"*
+tbd.
+:::
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       150%-BOM
+
+-------------------------------------------------------------------------- -->
+#### 150%-BOM
+
+::: {.callout-tip}
+## Definition: *"150%-BOM"*
+Eine *"150%-BOM"* (engl.: bill of materials ([BOM](https://en.wikipedia.org/wiki/Bill_of_materials))) ist eine erweiterte Stückliste, die alle möglichen Komponenten, Baugruppen und Varianten eines Produkts in einer gemeinsamen, übergeordneten Struktur enthält und dabei über Gültigkeitsregeln oder Merkmalsbedingungen steuert, welche Komponenten in einer konkreten Produktvariante tatsächlich verwendet werden (siehe Variantenkonstruktion → @sec-variantenkonstruktion).
+:::
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Fertigungsabschnittszeichnung
+
+-------------------------------------------------------------------------- -->
+
+### Fertigungsabschnittszeichnung {#sec-fertigungsabschnittszeichnung}
+
+::: {.callout-tip}
+## Definition: *"Fertigungsabschnittszeichnung"*
+Eine Fertigungsabschnittszeichnung ist eine technische Zeichnung oder ein Dokument, das in der Fertigung eines Produkts verwendet wird. Sie dient dazu, spezifische Informationen über einen bestimmten Abschnitt oder Prozess innerhalb der Fertigung eines Produkts darzustellen.
+:::
+
+Typischerweise enthält eine Fertigungsabschnittszeichnung Details wie Abmessungen, Toleranzen, Materialangaben und andere spezifische Anweisungen, die erforderlich sind, um **einen bestimmten Fertigungsschritt** durchzuführen. 
+
+Fertigungsabschnittszeichnungen können Teil eines größeren Fertigungszeichnungssatzes sein, der alle erforderlichen Informationen für die Produktion eines Produkts enthält.
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Weiterführende Links + Literaturempfehlung
+
+-------------------------------------------------------------------------- -->
+<!--
+::: {.callout-tip}
+## Weiterführende Links
+
+:::
+-->
+
+
+::: {.callout-tip}
+## Weiterführende Sharable-Links (Springer-Verlag)
+
++ @juhl_technische_2015: [Technische Dokumentation](https://rdcu.be/dKtdV)
+
+:::
+
+
+<!--
+#### Literaturempfehlung
+
+![@juhl_technische_2015: [Technische Dokumentation](https://link.springer.com/book/10.1007/978-3-662-46865-4)](images/Juhl_Technische_Dokumentation_978-3-662-46865-4.webp){width=40%}
+
+-->
+
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Zusätzliche Informationen
+
+-------------------------------------------------------------------------- -->
+
+<!--
+
+hier ist eine **strukturierte und praxisnahe Vorlage**, wie eine **Stückliste (Bill of Materials, BOM)** für ein **mechatronisches Produkt** aufgebaut sein sollte, inklusive **Beschreibung der Inhalte, Pflichtkennzeichnungen und Organisationsempfehlungen**.
+
+Die Struktur berücksichtigt die Besonderheiten **mechatronischer Systeme** (Mechanik, Elektronik, Software) und orientiert sich an **DIN EN ISO 9001**, **VDI 2221**, **VDI 2219**, **EIA-649** und bewährten Industriepraktiken (z. B. in Maschinenbau, Anlagenbau, Geräteentwicklung).
+
+---
+
+---
+
+## ⚙️ **1. Arten von Stücklisten (Überblick)**
+
+| Typ                                      | Beschreibung                                                                       | Verwendungszweck                                           |
+| ---------------------------------------- | ---------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| **Gesamtstückliste**                     | Vollständige Übersicht über alle Baugruppen, Einzelteile, Kaufteile und Normteile. | Referenz für Konstruktion, Einkauf und Dokumentation.      |
+| **Strukturstückliste**                   | Hierarchische Gliederung nach Baugruppen und Unterbaugruppen.                      | Darstellung des Produktaufbaus.                            |
+| **Fertigungsstückliste**                 | Enthält alle für die Montage erforderlichen Teile in Fertigungsreihenfolge.        | Unterstützung der Produktion.                              |
+| **Konstruktionsstückliste**              | Aus CAD-System generiert; technische Struktur ohne Fertigungsaspekte.              | Grundlage für Freigaben und technische Doku.               |
+| **Service-/Ersatzteilstückliste**        | Reduzierte Stückliste mit Austauschkomponenten.                                    | Wartung und Ersatzteilmanagement.                          |
+| **Software-/Firmware-Stückliste (SBOM)** | Liste aller Softwarekomponenten, Versionen, Lizenzen.                              | Cybersecurity, Compliance (z. B. EU Cyber Resilience Act). |
+
+In modernen Systemen werden diese Varianten häufig **aus einer Master-BOM (MBOM)** abgeleitet.
+
+---
+
+
+## 📋 **3. Inhalt und Pflichtfelder jeder Stücklistenposition**
+
+| Pflicht? | Feldname                            | Beschreibung                                          | Beispiel                         |
+| -------- | ----------------------------------- | ----------------------------------------------------- | -------------------------------- |
+| ✅        | **Positionsnummer**                 | Laufende Nummer innerhalb der Struktur                | 1202                             |
+| ✅        | **Benennung / Bezeichnung**         | Eindeutige technische Bezeichnung                     | „Welle, Edelstahl 12 mm x 80 mm“ |
+| ✅        | **Sachnummer / Artikelnummer**      | Eindeutige Identifikationsnummer (aus ERP oder PDM)   | 4711-00023                       |
+| ✅        | **Menge**                           | Anzahl, wie oft das Teil in dieser Baugruppe vorkommt | 2                                |
+| ✅        | **Mengeneinheit**                   | Einheit der Menge (Stück, m, kg, l, Satz etc.)        | Stk                              |
+| ✅        | **Baugruppen-/Ebene**               | Zugehörige Baugruppe oder Hierarchieebene             | 1200 „Antriebseinheit“           |
+| ✅        | **Status / Freigabe**               | Entwicklungsstatus (Entwurf, geprüft, freigegeben)    | freigegeben                      |
+| ⚙️       | **Zeichnungsnummer / CAD-Referenz** | Verweis auf technische Zeichnung oder 3D-Modell       | 1202-A-01                        |
+| ⚙️       | **Material / Werkstoff**            | Werkstoffbezeichnung oder Norm                        | 1.4301 (Edelstahl)               |
+| ⚙️       | **Lieferant / Hersteller**          | Optional, falls Kaufteil                              | SKF                              |
+| ⚙️       | **Bestellnummer / Hersteller-P/N**  | Zur eindeutigen Beschaffung                           | 6001-2RS                         |
+| ⚙️       | **Gewicht / Masse**                 | Gewicht je Einheit                                    | 0,35 kg                          |
+| ⚙️       | **Änderungsstand / Revision**       | Versionsnummer des Teils                              | Rev. B                           |
+| ⚙️       | **Hinweise / Kommentare**           | Besondere Einbauhinweise oder Verwendungszweck        | „Vor Montage fetten“             |
+
+---
+
+## 🔩 **4. Erweiterte Felder für mechatronische Systeme**
+
+| Bereich                    | Zusätzliche Felder                                        | Beispiel                      |
+| -------------------------- | --------------------------------------------------------- | ----------------------------- |
+| **Elektronik**             | Schaltplanreferenz, Leiterplatten-ID, Bestückungsvariante | „PCB-CTRL-01, Variante A“     |
+| **Software**               | Software-Version, Build-Nummer, Lizenztyp                 | „v2.3.5 (MIT License)“        |
+| **Fertigung**              | Arbeitsplanreferenz, Fertigungsverfahren, Prüfvorgaben    | „Montageplan MP-12, 3D-Druck“ |
+| **Sicherheit / Zulassung** | Zertifikat-ID, CE-Nachweis, Prüfnorm                      | „EN 60204-1, TÜV 12345“       |
+
+---
+
+## 🧰 **5. Organisations- und Formatempfehlung**
+
+### a) **Tabellenstruktur (z. B. Excel, CSV oder ERP-Export)**
+
+| Pos  | Baugruppe  | Artikelnummer | Benennung           | Menge | Einheit | Material | Lieferant | Status      | Zeichnungsnr. | Gewicht (kg) | Revision |
+| ---- | ---------- | ------------- | ------------------- | ----- | ------- | -------- | --------- | ----------- | ------------- | ------------ | -------- |
+| 1000 | Mechanik   | 4711-00010    | Gehäuse             | 1     | Stk     | AlMg3    | –         | freigegeben | 1000-A-01     | 2.3          | A        |
+| 1201 | Mechanik   | 4711-00025    | Motor 24 V DC       | 1     | Stk     | –        | Maxon     | freigegeben | 1201-A-02     | 1.1          | B        |
+| 2100 | Elektronik | 4711-00040    | Netzteil 24 V / 5 A | 1     | Stk     | –        | MeanWell  | freigegeben | 2100-B-01     | 0.6          | A        |
+
+### b) **Kennzeichnungssysteme**
+
+* **Hierarchische Positionsnummern:** z. B. 1.2.3 oder 1203 → eindeutige Zuordnung zur Baugruppe.
+* **Eindeutige Artikelnummern:** fortlaufend oder nach Systematik (Bereichscode + laufende Nummer).
+* **Revisions- und Änderungsdienst:** jede Änderung wird dokumentiert (Datum, Verantwortlicher, Grund).
+
+### c) **Formatempfehlungen**
+
+* Format: `.xlsx`, `.csv` oder direkt aus **PDM/ERP** (z. B. SAP, Teamcenter, Windchill).
+* Einheitliches Nummern- und Benennungssystem über alle Disziplinen.
+* Integration mit CAD-System für automatische Aktualisierung.
+
+---
+
+## 🔍 **6. Stücklistenpflege und Änderungsmanagement**
+
+| Aktivität                     | Beschreibung                                                          |
+| ----------------------------- | --------------------------------------------------------------------- |
+| **Erstellung**                | Automatisch aus CAD oder manuell gepflegt in ERP/PDM.                 |
+| **Freigabeprozess**           | Jede Stückliste durchläuft technische Prüfung und formale Freigabe.   |
+| **Änderungsdienst (ECO/ECN)** | Jede Änderung erfordert dokumentierte Änderungsnummer mit Begründung. |
+| **Versionierung**             | Stücklistenstände eindeutig kennzeichnen (z. B. Revision A, B, C).    |
+| **Rückverfolgbarkeit**        | Jede Produktversion ist eindeutig mit Stücklistenstand verknüpft.     |
+
+---
+
+## 🧾 **7. Ergänzende Dokumente**
+
+Eine vollständige Stücklistenverwaltung sollte zusätzlich enthalten:
+
+* Verweis auf **Zeichnungen, CAD-Modelle, Spezifikationen**
+* **Materialzertifikate** (bei sicherheitskritischen Bauteilen)
+* **Lieferantendatenblätter / Prüfzeugnisse**
+* **Ersatzteillisten** für Service und Wartung
+* **Software-Bill-of-Materials (SBOM)** für integrierte Softwarekomponenten
+
+---
+
+## 📁 **8. Empfohlene Ordnerstruktur im DMS**
+
+```
+Stueckliste_Produkt_XY/
+│
+├── 01_Gesamtstueckliste.xlsx
+├── 02_Baugruppen/
+│   ├── Mechanik/
+│   ├── Elektronik/
+│   └── Software/
+├── 03_Zeichnungen/
+├── 04_Aenderungsmanagement/
+├── 05_Service_und_Ersatzteile/
+└── 06_Zertifikate_und_Nachweise/
+```
+
+---
+
+## 📘 **Zusammenfassung**
+
+Eine gute Stückliste ist:
+
+* **vollständig** (enthält *alle* Komponenten und Materialien)
+* **eindeutig** (Nummern, Benennungen, Versionen)
+* **hierarchisch strukturiert** (nach Baugruppen)
+* **versioniert und rückverfolgbar**
+* **integriert** in CAD/PDM/ERP-Systeme
+* und **verständlich** für alle Beteiligten (Konstruktion, Einkauf, Montage, Service)
+
+-->

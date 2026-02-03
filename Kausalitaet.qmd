@@ -1,10 +1,4 @@
----
-format:
-  html:
-    embed-resources: true
-lang: de
-bibliography: Literatur.bib
----
+
 
 <!--
 headlines:
@@ -45,7 +39,7 @@ keywords:
 
 copyright: 
   holder: Christian Anders
-  year: 2025
+  year: 2026
 lang: de
 bibliography: Literatur.bib
 date: last-modified
@@ -73,7 +67,7 @@ number-offset:
 
 <!-- -------------------------------------------------------------------------
 
-                       Korrelation
+                       Kausalität
 
 -------------------------------------------------------------------------- -->
 
@@ -87,47 +81,73 @@ number-offset:
                        Callout !!! WARNING !!!
 
 -------------------------------------------------------------------------- -->
-
+<!--
 ::: {.callout-warning}
 ## WARNING!
 **THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
 :::
+-->
 
 ### Kausalität {#sec-kausalitaet}
 
 ::: callout-tip
 ## Definition *"Kausalität"*
-Unter dem Begriff der Kausalität verstehen wir die Vorstellung oder die Idee, dass ein bestimmter Zustand A (die sogenannte Ursache) unter gewissen Bedingungen einen bestimmten Zustand B (die sogenannte Wirkung) hervorbringt. Dabei geht die Ursache A der Wirkung B zeitlich voraus.
+Unter dem Begriff der [Kausalität](https://de.wikipedia.org/wiki/Kausalit%C3%A4t) verstehen wir die Vorstellung, dass ein bestimmter Zustand $A$ (die sogenannte Ursache) unter gewissen Bedingungen einen bestimmten Zustand $B$ (die sogenannte Wirkung) hervorbringt. Dabei geht die Ursache $A$ der Wirkung $B$ zeitlich voraus.
 :::
 
-### Schwache und starke Kausalität
+```{mermaid}
+%%| label: fig-label-ursachewirkung
+%%| fig-cap: "Kausalität: Eine Ursache bringt eine Wirkung hervor. Die Ursache geht der Wirkung zeitlich voraus."
+flowchart LR
+  A[Ursache] --> B[Wirkung]
+
+  style A fill:#f0f0f0,stroke:#000000,color:#000000
+  style B fill:#f0f0f0,stroke:#000000,color:#000000
+```
+
+#### Kausalitätsrichtung
+
+*"Cum hoc ergo propter hoc"* (lateinisch für *"Mit diesem, folglich deswegen"*) bezeichnet den Fehlschluss der Scheinkausalität, bei dem das gemeinsame Auftreten von Ereignissen (Koinzidenz) oder die Korrelation zwischen Merkmalen ohne genauere Prüfung als Kausalzusammenhang aufgefasst wird. Doch impliziert eine Korrelation noch nicht Kausalität (englisch *"Correlation does not imply causation"*), auch wenn der Zusammenhang kausal scheinen mag (Scheinkorrelation). Zwei Beispiele hierfür: 
+
++ Aus der Tatsache, dass in Sommern mit hohem Speiseeisumsatz viele Sonnenbrände auftreten, kann man nicht schlussfolgern, dass Eisessen Sonnenbrand erzeugt.
+
++ Menschen, die viel lachen, geben in Meinungsumfragen regelmäßig an, glücklicher zu sein als andere. Da diese beiden Phänomene stets zusammen auftreten, ist denkbar,
+  + dass glückliche Menschen mehr lachen,
+  + dass Menschen, die viel zu lachen haben, dadurch glücklicher werden,
+  + dass es gar keinen direkten Zusammenhang gibt, sondern dass sowohl das Lachen wie auch das Glück davon abhingen, wie das Wetter an dem Tag war, an dem die Beobachtungen gemacht wurden.
+
+Ohne kausalen Zusammenhang erfolgt eine Zuordnung von Ursache und Wirkung willkürlich ohne fundierte Begründung. Will man ausdrücken, dass ein Fehlschluss nach dem Muster *"cum hoc ergo propter hoc"* vorliegt, so sagt man *"cum hoc non est propter hoc."*" (lateinisch *"Mit diesem ist nicht deswegen."*).
+
+::: {.callout-important}
+## Pro-Tipp!
+Der Nachweis, dass zwischen zwei Beobachtungen tatsächlich ein kausaler Zusammenhang besteht (***"Ursache-Wirkungs-Kette"***) ist in der Praxis oftmals nicht vollständig, oder nur mir hohem Aufwand möglich. So wird in der Phase des Testing von Korrelationen oft in einer Weise berichtet, die eine direkte Kausalität suggeriert, obwohl eine Gemengelage direkter und indirekter Zusammenhänge besteht, oftmals mit der Folge, dass die tatsächliche Ursache für Fehler (***"Root-Cause"***) gar nicht gefunden werden sondern lediglich die leichter beobachtbaren Symptome bei Fehlerabstellprozessen adressiert werden. Methoden wie z.B. die systematische Ursachenanalyse sollen helfen, die tatsächliche Ursache-Wirkungs-Kette zu erkennen (siehe → Ursachenanalyse | Ishikawa-Diagramm @sec-ishikawa).
+:::
+
+
+
+#### Schwache und starke Kausalität
 
 ::: callout-tip
 ## Definition *"Schwache Kausalität"*
 Schwache Kausalität liegt vor, wenn exakt gleiche Ursachen die stets exakt gleiche Wirkung zur Folge haben. Bereits kleinste Änderungen im Ausgangszustand führen bei schwacher Kausalität zu erheblichen Änderungen im Ergebnis.
 :::
 
-<!--
-Schießt man z.B. ein Geschoss immer unter dem genau gleichen Winkel mit der genau reproduzierbaren Anfangsgeschwindigkeit bei stets gleichen Bedingungen in der Atmosphäre ab, so wird das Geschoss stets im selben Punkt unter dem selben Winkel landen.
--->
-
 ::: callout-tip
 ## Definition *"Starke Kausalität"*
 Starke Kausalität liegt vor, wenn ähnliche Ursachen eine ähnliche Wirkung zur Folge haben. Kleine Änderungen im Ausgangszustand führen bei starker Kausalität nur zu kleinen Änderungen im Ergebnis.
 :::
 
-<!--
-Viele Systeme in der Natur sind labile Gleichgewichtszustände. Hier liegt keine starke Kausalität vor.
--->
 
-<!--
-Man erkennt sofort, dass die oben geforderten stets exakt gleichen Anfangsbedingungen und die stets exakt gleichen Verhältnisse zwischen Start- und Zielort ideale Forderungen sind, von denen nur Theoretiker ausgehen. Bei der Anwendung der newtonschen Mechanik gingen wir wie selbstverständlich von der Gültigkeit der schwachen Kausalität aus.
+<p style="text-align: center;">![](images/AdobeStock_589506892.png){width=20%}</p>
 
-Diese Forderung verlangt eigentlich mehr als die schwache Kausalität: Völlig identische Ausgangsbedingungen für einen Versuch lassen sich in der Praxis bei Wiederholung nicht herstellen, trotzdem erhalten wir bei Wiederholungen des Versuchs eine gute Reproduzierbarkeit im Ergebnis.
+::: {.callout-important}
+## Pro-Tipp!
+**Nahezu alle Produktentwicklungen erfolgen auf der Grundlage der angenommenen Gültigkeit der starken Kausalität.**
+::: 
 
-Schießen wir ein Geschoss mit fast der gleichen Geschwindigkeit und fast dem gleichen Winkel wie bei einem vorangegangen Versuch ab, so werden der Auftreffpunkt und der Auftreffwinkel nur unwesentlich von vorangegangenem Auftreffpunkt und Auftreffwinkel abweichen. Kleine Veränderungen im Anfangszustand des Systems haben auch nur kleine Änderungen im Endzustand zur Folge.
 
-ABBILDUNG
+::: {.callout-important}
+## Pro-Tipp!
+Viele Systeme in der Natur können labile Gleichgewichtszustände beinhalten. Hier liegt keine starke Kausalität vor. **Bei der Produktentwicklung ist die (auch bereits teilweise) Abwesenheit starker Kausalität mit höchster Aufmerksamkeit zu beachten und entlang des gesamten Produktentstehungsprozesses zu berücksichtigen.**
+:::
 
-Abb.: Starke und schwache Kausalität
--->

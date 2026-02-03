@@ -1,0 +1,158 @@
+
+<!--
+
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+headlines:
+  off: true
+extended-content:
+  off: true
+fileformat-svg:
+  off: true
+
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+- Produktentstehungsprozess
+- Entwicklungsmethodik
+- Projektmanagement
+- Burn-Down-Chart
+
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 6
+link-external-icon: true
+link-external-newwindow: true
+
+headlines:
+  off: false
+extended-content:
+  off: false
+-->
+
+<!--
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: false
+exercises:
+  solutions:
+    on: true 
+fileformat-svg:
+  off: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+<!--
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS WORK IN PROGRESS!!!**
+:::
+-->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Grundlagen
+## Projektmanagement
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Burn-Down-Chart
+
+-------------------------------------------------------------------------- -->
+
+### Burn-Down-Chart {#sec-burndownchart}
+
+::: {.callout-tip}
+## Definition *"Burn-Down-Chart"*
+Ein [Burn-Down-Chart](https://en.wikipedia.org/wiki/Burndown_chart) ist ein visuelles Instrument im Projektmanagement, das verwendet wird, um den Fortschritt bei der Umsetzung von Aufgaben oder *"[User Stories](https://en.wikipedia.org/wiki/User_story)*" über einen bestimmten Zeitraum zu verfolgen. Es dient dazu, den verbleibenden Aufwand oder die noch zu erledigende Arbeit entlang des Projektfortschritts zu visualisieren und das Projektteam und die Stakeholder über den Projektfortschritt zu informieren.
+:::
+
+
+::: {.content-visible unless-meta="kommentare.off"}
+
+:::: {style="background-color: #9affa4"}
+\@mrossde UserStory Definition ersetzen mit Journey ! Alles abgleichen
+
+::::
+:::
+
+::: {.callout-tip}
+## Definition *"User-Story" (engl.)*
+In [software development](https://en.wikipedia.org/wiki/Software_development) and [product management](https://en.wikipedia.org/wiki/Product_management), a [user story](https://en.wikipedia.org/wiki/User_story) is an informal, natural language description of features of a software system. They are written from the perspective of an [end user](https://en.wikipedia.org/wiki/User_(computing)#End_user) or [user](https://en.wikipedia.org/wiki/User_(computing)) of a system.
+:::
+
+
+Burn-Down-Charts bestehen aus zwei Hauptkomponenten:
+
+1. **Y-Achse**: Die vertikale Achse zeigt den Umfang der noch zu leistenden Arbeit oder die geschätzten noch zu leistenden Aufwände an (*"Backlog"*). Typischerweise wird der Arbeitsumfang in Story Points, Stunden oder anderen relevanten Einheiten dargestellt.
+2. **X-Achse**: Die horizontale Achse repräsentiert den Zeitverlauf. Sie kann in Tagen, Iterationen oder anderen Zeiteinheiten dargestellt werden, abhängig von der Projektstruktur.
+
+Das Burn-Down-Chart startet mit dem gesamten Umfang der Arbeit oder den geplanten Aufwänden am Anfang des Projekts. Im Laufe der Zeit wird der tatsächlich erledigte Umfang oder die abgeschlossenen Aufgaben von Tag zu Tag oder Iteration zu Iteration von oben nach unten abgetragen (daher *"Burn-Down"*). 
+
+Die ideale Burn-Down-Linie im Diagramm zeigt den erwarteten Fortschritt gemäß dem vorgesehenen (gemittelten, linearisierten) Projektfortschritt an und hilft dabei, Abweichungen zwischen Soll- und Ist-Zustand zu erkennen.
+
+
+![Zeitbasiertes Burn-Down-Chart (Quelle: [Wikipedia](https://en.wikipedia.org/wiki/Burndown_chart))](images/Burn-Down-Chart.png){width=94% fig-align="right" #fig-burndownchart}
+
+Es gibt zwei Hauptvarianten von Burn-Down-Charts:
+
++ **Aufgaben-basiertes Burn-Down-Chart**: Beim aufgabenbasierten Burn-Down-Chart werden einzelne Aufgaben oder *"User Stories"* aufgeführt, und das Projektteam markiert sie, sobald sie erledigt sind. Der Chart zeigt den Fortschritt dieser spezifischen Aufgaben über die Zeit.
++ **Zeit-basiertes Burn-Down-Chart**: Zeitbasierte Burn-Down-Charts berücksichtigen die insgesamt verbleibende Arbeit über den Verlauf der Zeit, ohne auf einzelne Aufgaben einzugehen. Dieser Ansatz zeigt den Trend, wie viel Arbeit noch übrig ist und ob das Projektteam im Zeitplan liegt.
+
+::: {.callout-tip}
+## Pro-Tipp!
+Burn-Down-Charts können im Projektmanagement eine sinnvolle Ergänzung zu klassischen [Gantt-Diagrammen](https://de.wikipedia.org/wiki/Gantt-Diagramm) sein um den bereits geleisteten Projektfortschritt in direkter Gegenüberstellung zum geplanten und/oder noch zu leistenden Arbeits- und/oder Zeitaufwand (*"Backlog"*) zu visualisieren. Burn-Down-Charts bauen dabei auf dem jeweiligen Gantt-Diagramm auf, sind jedoch kein Ersatz für das Gantt-Diagramm!
+::: 

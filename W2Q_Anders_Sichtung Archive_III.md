@@ -512,27 +512,6 @@ Das Softwaresystem SPICE (Simulation Program with Integrated Circuit Emphasis) i
 
 
 
-## BURN-DOWN-CHART
-Ein Burn-Down-Chart (auch als Burn-Down-Diagramm bezeichnet) ist ein visuelles Instrument im Projektmanagement, das hauptsächlich in agilen Methoden wie Scrum verwendet wird, um den Fortschritt bei der Umsetzung von Aufgaben oder User Stories über einen bestimmten Zeitraum zu verfolgen. Es dient dazu, den verbleibenden Aufwand oder die noch zu erledigende Arbeit im Laufe der Zeit zu visualisieren und somit das Team und die Stakeholder über den Projektfortschritt zu informieren.
-
-Das Burn-Down-Chart besteht aus zwei Hauptkomponenten:
-
-1\. \*\*Die Y-Achse (Vertikale Achse):\*\* Diese Achse zeigt den Umfang der Arbeit oder die geschätzten Aufwände an. Typischerweise wird der Arbeitsumfang in Story Points, Stunden oder anderen relevanten Einheiten dargestellt.
-
-2\. \*\*Die X-Achse (Horizontale Achse):\*\* Diese Achse repräsentiert den Zeitverlauf. Sie kann in Tagen, Iterationen oder anderen Zeiteinheiten dargestellt werden, abhängig von der Projektstruktur.
-
-Das Burn-Down-Chart startet mit dem gesamten Umfang der Arbeit oder den geplanten Aufwänden am Anfang des Projekts. Im Laufe der Zeit wird der tatsächlich erledigte Umfang oder die abgeschlossenen Aufgaben von Tag zu Tag oder Iteration zu Iteration von oben nach unten abgetragen (daher "Burn-Down"). Die ideale Linie im Diagramm zeigt den erwarteten Fortschritt gemäß dem geplanten Tempo und hilft dabei, Abweichungen zu erkennen.
-
-![](Aspose.Words.e14cf7f3-6a3e-4150-b56e-2ba738c551dd.002.png)
-
-Es gibt zwei Hauptvarianten von Burn-Down-Charts:
-
-\- \*\*Aufgaben-basiertes Burn-Down-Chart:\*\* Hier werden einzelne Aufgaben oder User Stories aufgeführt, und das Team markiert sie, sobald sie erledigt sind. Der Chart zeigt den Fortschritt dieser spezifischen Aufgaben über die Zeit.
-
-\- \*\*Zeit-basiertes Burn-Down-Chart:\*\* Dieser Ansatz berücksichtigt die insgesamt verbleibende Arbeit über den Verlauf der Zeit, ohne auf einzelne Aufgaben einzugehen. Es zeigt den Trend, wie viel Arbeit noch übrig ist und ob das Team im Plan liegt.
-
-Burn-Down-Charts sind äußerst nützlich, um den Projektfortschritt auf einen Blick zu erfassen, Engpässe oder Verzögerungen zu erkennen und rechtzeitig Anpassungen vorzunehmen, um sicherzustellen, dass das Projektziel erreicht wird. Sie unterstützen die Kommunikation im Team und mit Stakeholdern und fördern eine transparente und agile Projektumsetzung.
-
 # SOFTWAREENTWICKLUNG
 ## BROWNFIELD
 In der Softwareentwicklung bezieht sich der Begriff "Brownfield" auf ein Projekt oder eine Softwareanwendung, die bereits existiert und aktiv genutzt wird, im Gegensatz zu einem "Greenfield"-Projekt, bei dem von Grund auf neu begonnen wird. Brownfield-Projekte beziehen sich auf die Weiterentwicklung, Erweiterung oder Wartung bestehender Software oder Systeme.

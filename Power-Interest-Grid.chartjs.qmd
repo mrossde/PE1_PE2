@@ -1,0 +1,125 @@
+---
+title: "Vorlesungen und Skripte"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Chart.js 
+keywords:
+  - Chart.js
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: true
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Einbindung von Chart.js
+
+-------------------------------------------------------------------------- -->
+
+# Chart.js
+
+## Power-Interest-Grid
+
+:::{#fig-powerinterestgrid}
+  <canvas id="powerInterestGrid" width="540px" height="540px" style="display: block; margin: auto;"></canvas>
+Power-Interest-Grid <!-- Bildunterschrift -->
+:::
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+        const ctx = document.getElementById('powerInterestGrid').getContext('2d');
+        new Chart(ctx, {
+            type: 'scatter',
+            data: {
+                datasets: [
+                    { label: 'Stakeholder 1', data: [{x: 90, y: 90}], backgroundColor: 'red', pointRadius: 10 },
+                    { label: 'Stakeholder 2', data: [{x: 70, y: 85}], backgroundColor: 'blue', pointRadius: 10 },
+                    { label: 'Stakeholder 3', data: [{x: 80, y: 40}], backgroundColor: 'green', pointRadius: 10 },
+                    { label: 'Stakeholder 4', data: [{x: 60, y: 20}], backgroundColor: 'purple', pointRadius: 10 },
+                    { label: 'Stakeholder 5', data: [{x: 50, y: 50}], backgroundColor: 'orange', pointRadius: 10 },
+                    { label: 'Stakeholder 6', data: [{x: 30, y: 80}], backgroundColor: 'cyan', pointRadius: 10 },
+                    { label: 'Stakeholder 7', data: [{x: 20, y: 20}], backgroundColor: 'magenta', pointRadius: 10 },
+                    { label: 'Stakeholder 8', data: [{x: 10, y: 90}], backgroundColor: 'yellow', pointRadius: 10 },
+                    { label: 'Stakeholder 9', data: [{x: 40, y: 60}], backgroundColor: 'brown', pointRadius: 10 },
+                    { label: 'Stakeholder 10', data: [{x: 75, y: 10}], backgroundColor: 'pink', pointRadius: 10 }
+                ]
+            },
+            options: {
+                scales: {
+                    x: {
+                        title: { display: true, text: 'Macht (Power)' },
+                        min: 0, max: 100
+                    },
+                    y: {
+                        title: { display: true, text: 'Interesse (Interest)' },
+                        min: 0, max: 100
+                    }
+                },
+                plugins: {
+                    legend: {
+                      display: false
+                    }
+                }
+            }
+        });
+    </script>
+
+@fig-powerinterestgrid zeigt ein einfaches Power-Interest-Grid.
+
+
+<!--
+            data: {
+                datasets: [
+                    {
+                        label: 'Eng einbinden',
+                        data: [{x: 80, y: 80}],
+                        backgroundColor: "rgb(215,15,60)",
+                        pointRadius: 40
+                    },
+                    {
+                        label: 'Zufriedenstellen',
+                        data: [{x: 80, y: 20}],
+                        backgroundColor: "rgb(0,45,88)",
+                        pointRadius: 40
+                    },
+                    {
+                        label: 'Informieren',
+                        data: [{x: 20, y: 80}],
+                        backgroundColor: "rgb(0,170,220)",
+                        pointRadius: 40
+                    },
+                    {
+                        label: 'Beobachten → Minimaler Aufwand',
+                        data: [{x: 20, y: 20}],
+                        backgroundColor: "rgb(212,212,212)",
+                        pointRadius: 40
+                    }
+                ]
+            },
+-->

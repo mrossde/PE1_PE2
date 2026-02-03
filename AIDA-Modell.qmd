@@ -1,10 +1,4 @@
----
-format:
-  html:
-    embed-resources: true
-lang: de
-bibliography: Literatur.bib
----
+
 
 <!--
 title: "DEB Produktentwicklung"
@@ -57,9 +51,10 @@ link-external-newwindow: true
 
 ::: {.content-visible unless-meta="headlines.off"}
 # Softskills
+## Arbeitsmethoden
 :::
 
-## AIDA-Modell {#sec-aida}
+### AIDA-Modell {#sec-aida}
 
 ::: {.callout-tip}
 ## Definition: *"AIDA-Modell"*

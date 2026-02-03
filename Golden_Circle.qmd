@@ -1,10 +1,3 @@
----
-format:
-  html:
-    embed-resources: true
-lang: de
-bibliography: Literatur.bib
----
 
 <!--
 headlines:
@@ -93,11 +86,11 @@ number-offset:
 
 ::: {.callout-tip}
 ## Definition: *"Golden Circle"*
-Der Golden Circle ist ein strategisches Modell für die Produktentwicklung. Im Mittelpunkt des Modells steht, zunächst das **"Warum"** (den Zweck und die Vision des Produkts) zu definieren, dann das **"Wie"** (die einzigartigen Werte und Methoden der Umsetzung) zu bestimmen und erst zuletzt das **"Was"** (die konkreten Funktionen und Eigenschaften des Produkts) zu entwickeln.
+Der Golden Circle nach [Simon Sinek](https://en.wikipedia.org/wiki/Simon_Sinek) ist ein grundlegendes strategisches Modell für die Entwicklung von Organisationen, das auf die Produktentwicklung übertragen werden kann. Im Mittelpunkt des Modells steht, zunächst das **"Warum"** (den Zweck und die Vision des Produkts) zu definieren, dann das **"Wie"** (die einzigartigen Werte und Methoden der Umsetzung) zu bestimmen und erst zuletzt das **"Was"** (die konkreten Funktionen und Eigenschaften des Produkts) zu entwickeln.
 :::
 
 
-![The Golden Circle ([Simon Sinek](https://en.wikipedia.org/wiki/Simon_Sinek) [*"Start with Why"*](https://en.wikipedia.org/wiki/Start_with_Why))](images/Golden_Circle.drawio.svg){width=80% #fig-goldencircle}
+![The Golden Circle ([Simon Sinek](https://en.wikipedia.org/wiki/Simon_Sinek) [*"Start with Why"*](https://en.wikipedia.org/wiki/Start_with_Why))](images/Golden_Circle.drawio.png){width=56% #fig-goldencircle}
 
 ::: {.callout-important}
 ## Golden Circle (Why → How → What)
@@ -112,3 +105,10 @@ Der Golden Circle ist ein strategisches Modell für die Produktentwicklung. Im M
 > *"Great salespeople always start with Who. Then they move to Why, How, and What. And then eventually to When, and How Much. [...] Now once you get to the right Who, [Simon Sinek](https://en.wikipedia.org/wiki/Simon_Sinek) is spot-on about beginning the conversation with Why. Why is a game-changer in selling modern technology."* (Ken Krogue)
 
 ---
+
+
+### Exkurs: Golden Circle der Produktionssystementwicklung {#sec-goldencircleproduktionssystem}
+
+Das Prinzip des Golden Circle kann auch für die Entwicklung von Produktionssystemen verwendet werden. Im Mittelpunkt des Modells steht zunächst das **"Warum"** (den Zweck des Produktionssystems, das zu produzierende Produkt) zu definieren, dann das **"Wie"** (die für die Produktion des Produkts erforderlichen Verfahren) zu bestimmen und erst zuletzt das **"Was"** (die konkreten Produktionsanlagen) zu entwickeln.
+
+![Golden Circle der Produktionssystementwicklung (Quelle: Wilfried Polley)](images/Golden_Circle_PPR.drawio.png){width=56% #fig-goldencircleppr}

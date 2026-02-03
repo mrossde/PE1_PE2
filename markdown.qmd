@@ -285,7 +285,7 @@ Mit $T_i$ = 48 Tropfen und $T_a$ = 14 Tropfen ergibt sich nach @eq-pi $\pi$ = 3.
 
 #### Bilder
 
-![Ein einfaches Testbild](images/ChatGPT_Logo_640x640.png){width=40% #fig-testbild}
+![Ein einfaches, rechtsbündig ausgerichtetes Testbild](images/ChatGPT_Logo_640x640.png){width=40% fig-align="right" #fig-testbild}
 
 Hier ein Beispiel für eine Crossreference: Bild @fig-testbild zeigt ein eingebundenes Testbild im Format JPG, @fig-label-pie01 hingegen eine im Quellcode des Dokuments geschriebene Mermaid-Grafik.
 
@@ -573,6 +573,8 @@ Spalte Rechts 60 Prozent breit
 | 🟠 Orange | `🟠`   |
 | 🟣 Lila   | `🟣`   |
 | 🟤 Braun  | `🟤`   |
+
+🟩🟨🟥
 
 
 #### Shareable Link und Literaturverweis

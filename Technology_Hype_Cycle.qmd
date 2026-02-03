@@ -1,10 +1,4 @@
----
-format:
-  html:
-    embed-resources: true
-lang: de
-bibliography: Literatur.bib
----
+
 
 <!-- -------------------------------------------------------------------------
 
@@ -26,7 +20,8 @@ Der [Technologie-Hype-Zyklus](https://de.wikipedia.org/wiki/Hype-Zyklus), oft au
 
 Ein Verständnis des Technologie-Hype-Zyklus ist hilft, den richtigen Zeitpunkt für Investitionen und die Entwicklung von Technologien zu erkennen und sicherzustellen, dass sie effektiv zur Lösung realer Probleme eingesetzt werden können. Entscheidend hierfür ist es, den Hype von der tatsächlichen Leistungsfähigkeit und den potenziellen Anwendungen einer Technologie zu unterscheiden, um realistische Erwartungen zu setzen und Ressourcen effizient zu nutzen.
 
-Der Begriff des Hype-Zyklus wurde von der "Gartner Inc."-Beraterin Jackie Fenn geprägt und dient heute Technologieberatern und Entscheidungsträgern zur Einschätzung des Reifegrads neuer Technologien ^[vgl. @linden2003understanding].
+Der Begriff des Hype-Zyklus wurde von der "Gartner Inc."-Beraterin Jackie Fenn geprägt und dient heute Technologieberatern und Entscheidungsträgern zur Einschätzung des Reifegrads neuer Technologien
+→ Literatur: [Linden, Alexander; Fenn, Jackie (2003-05-30). "Understanding Gartner's Hype Cycles"](http://ask-force.org/web/Discourse/Linden-HypeCycle-2003.pdf).
 
 Der Hype-Zyklus gliedert sich typischerweise in fünf Phasen: 1. Technologie-Auslöser (Technology Trigger), 2. steiler Anstieg der Erwartungen (Peak of Inflated Expectations), 3. Tiefpunkt des Desillusionierens (Trough of Disillusionment), 4. Pfad zur Erleuchtung (Slope of Enlightenment) und 5. Plateau der Produktivität (Plateau der Produktivität).
 

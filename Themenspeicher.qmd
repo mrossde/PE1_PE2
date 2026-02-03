@@ -1,0 +1,90 @@
+
+
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - Anders' Themenspeicher
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Anders' Themenmspeicher
+
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Grundlagen
+## Themenspeicher
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+
+
+---
+
+> "Production at scale is 100x harder than making a prototype." ([Elon Musk](https://de.wikipedia.org/wiki/Elon_Musk)) 
+
+> "Best part is no part." ([Elon Musk](https://de.wikipedia.org/wiki/Elon_Musk)) 
+
+> "Simplicity isn't the lack of complexity; it's the clarity of understanding." ([Richard Feynman](https://de.wikipedia.org/wiki/Richard_Feynman))
+
+---
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Anders' Themenspeicher -- BEREITS ABGEARBEITET!!!
+
+-------------------------------------------------------------------------- -->
+<!--
+### Operating Envelope {#sec-operating_envelope}
+
+::: {.callout-tip}
+## Definition: *"Operating Envelope"*
+The operating envelope (deutsch: Arbeitsbereich) refers to the set of operational parameters within which a system operates safely and effectively. It defines the limits of performance, safety, and efficiency, ensuring that operations remain within a range that optimizes key performance indicators (KPIs) such as product quality, operational safety, and equipment efficiency.
+:::
+-->
+

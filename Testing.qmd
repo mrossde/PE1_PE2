@@ -1,7 +1,43 @@
 ---
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
 
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Prototyping und Test
+  - Anforderungen
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
 bibliography: Literatur.bib
-
+date: last-modified
+toc: false
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 3
+link-external-icon: true
+link-external-newwindow: true
 ---
 
 <!-- -------------------------------------------------------------------------
@@ -18,22 +54,30 @@ bibliography: Literatur.bib
 
 <!-- -------------------------------------------------------------------------
 
-                       Grundlegende Begriffe
+                       Ziele von Tests
 
 -------------------------------------------------------------------------- -->
-### Grundlegende Begriffe zum Projektmanagement (to be relocated)
-
-::: {.callout-tip}
-## Definition: *"Termin"*
-Ein [Termin](https://de.wikipedia.org/wiki/Termin) ist ein festgelegter **Zeitpunkt** in einem Zeitablauf und wird durch ein Kalenderdatum und häufig auch eine Uhrzeit festgelegt. Ein Termin hat **keine Dauer**.
-:::
-
-::: {.callout-tip}
-## Definition: *"Deadline"*
-Im Projektmanagement bezeichnet Deadline einen **verbindlicher Zeitpunkt**, bis zu dem eine Aktivität abgeschlossen sein **muss**. Deadlines dienen der **Zeitsteuerung** und stellen sicher, dass alle Aktivitäten des Projektes innerhalb eines festgelegten Zeitrahmens erfolgreich abgeschlossen werden.
-:::
 
 
+```{mermaid}
+%%| label: fig-label-mmzieletesting
+%%| fig-cap: "Mindmap wichtiger Ziele beim Testing"
+%%{init: {'theme': 'forest'}}%%
+mindmap
+  root(Ziele Testing)
+    Ziel1(Fehleridentifikation)
+      Beschreibung(Probleme und Bugs im Produkt erkennen)
+    Ziel2(Validierung)
+      Beschreibung(Sicherstellen, dass das Produkt den Anforderungen entspricht)
+    Ziel3(Verifizierung)
+      Beschreibung(Überprüfung der technischen Spezifikationen)
+    Ziel4(Leistungsbewertung)
+      Beschreibung(Leistung des Produkts unter verschiedenen Bedingungen testen)
+    Ziel5(Benutzerakzeptanz)
+      Beschreibung(Feedback von Endbenutzern einholen)
+    Ziel6(Sicherheit)
+      Beschreibung(Sicherheitslücken und Schwachstellen identifizieren)
+```
 
 <!-- -------------------------------------------------------------------------
 
@@ -63,6 +107,7 @@ Die folgende Mindmap fasst die **grundsätzlichen Anforderungen an Tests** in de
 ```{mermaid}
 %%| label: fig-label-mmanforderungentests
 %%| fig-cap: "Mindmap wichtiger Anforderungen an Test in der Phase Prototyping und Test"
+%%{init: {'theme': 'forest'}}%%
 mindmap
   root(Anforderungen an Test)
     (Automatisierbarkeit)
@@ -78,6 +123,31 @@ mindmap
 ```
 
 
+
+
+
+Um die Qualität und Effizienz des Testprozesses zu verbessern wird das Automatisieren von Tests angestrebt. 
+Folgende Ziele werden mit der Automatisierung von Tests verfolgt:
+
+```{mermaid}
+%%| label: fig-label-mmzieleautomatisiertetests
+%%| fig-cap: "Mindmap wichtiger Ziele beim Automatisieren von Tests"
+%%{init: {'theme': 'forest'}}%%
+mindmap
+  root(Ziele der Automatisierung von Tests)
+    Ziel1(Effizienzsteigerung)
+      Beschreibung(Reduzierung der Testdurchführungszeit)
+    Ziel2(Kostensenkung)
+      Beschreibung(Langfristige Verringerung der Testkosten)
+    Ziel3(Fehlerreduktion)
+      Beschreibung(Minimierung menschlicher Fehler)
+    Ziel4(Kontinuität)
+      Beschreibung(Ermöglichung kontinuierlicher Tests)
+    Ziel5(Skalierbarkeit)
+      Beschreibung(Möglichkeit, Tests schnell zu erweitern)
+    Ziel6(Wiederholbarkeit)
+      Beschreibung(Konsistente und reproduzierbare Testergebnisse)
+```
 
 
 

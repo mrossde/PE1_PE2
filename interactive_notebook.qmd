@@ -3,6 +3,8 @@ title: "Zufallszahlen Beispiel"
 format: 
   html:
     code-fold: true
+execute: 
+  echo: true
 ---
 
 # Zufallszahlen

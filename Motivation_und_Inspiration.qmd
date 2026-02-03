@@ -1,12 +1,37 @@
 ---
-title: "DEB3 Produktentwicklung 1"
-resource-path: ["../images"]
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+headlines:
+  off: true
+extended-content:
+  off: true
+fileformat-svg:
+  off: true
+---
+
+<!--
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
+
+<!--
+title: "DEB Produktentwicklung"
 format:
   html:
     embed-resources: true
 
 author:
   - name: "Christian Anders"
+    degrees: 
     roles: "Dozent"
     email: christian.anders@hs-esslingen.de
     affiliation: 
@@ -18,26 +43,40 @@ author:
         country: "Deutschland"
         url: https://www.hs-esslingen.de/
 abstract: > 
-  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
 keywords:
-  - Motivation 
-  - Inspiration
-  - Ideen
+  - Produktentstehungsprozess
+  - Wirtschaftlichkeit
+  - Lebenszykluskosten
+
+
 copyright: 
   holder: Christian Anders
-  year: 2024
+  year: 2025
 lang: de
 bibliography: Literatur.bib
 date: last-modified
-toc: false
-number-sections: false
+toc: true
+number-sections: true
 scrollable: true
-toc-location: right-body
+toc-location: right
 cap-location: bottom
 number-offset: 0
 link-external-icon: true
 link-external-newwindow: true
----
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
 
 
 <!-- -------------------------------------------------------------------------
@@ -45,23 +84,33 @@ link-external-newwindow: true
                        Callout !!! WARNING !!!
 
 -------------------------------------------------------------------------- -->
+<!--
 ::: {.callout-warning}
 ## WARNING!
-**THIS DOCUMENT IS WORK IN PROGRESS!!!**
+**THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
 :::
+-->
+
 
 <!-- -------------------------------------------------------------------------
 
-                       Anregung und Inspiration
+                       Motivation und Inspiration
 
 -------------------------------------------------------------------------- -->
+### Motivation und Inspiration
+
+---
+
+>*"You never fail until you stop trying."*
+
+---
 
 ::: {.callout-important}
 ## Wichtiger Hinweis!
 Die im Folgenden aufgeführten/verlinkten Beiträge geben persönliche Meinung und Sichtweisen wieder, die Auswahl der Beiträge basiert ausschließlich auf subjektiven Kriterien Ihres Dozenten. Die Beiträge sollen  lediglich Denkanstösse anbieten. Der geneigte Leser ist dringendst aufgefordert die aufgeführten Beiträge kritisch zu hinterfragen und eigene Perspektiven zu entwickeln!
 :::
 
-### Motivation und Inspiration
+
 
 #### TED-Talks (via YouTube)
 
@@ -102,23 +151,13 @@ Die im Folgenden aufgeführten/verlinkten Beiträge geben persönliche Meinung u
 
 + [Hamdi Ulukaya: *"The anti-CEO playbook"*](https://www.youtube.com/watch?v=SGTMSV8QUrs)
 
-
+<!--
 ### Miscellaneous
 
 <p style="text-align: center;">![](images/YouTube-Logo-2017.png){width=20%}</p>
 
-#### Cashflow Quadrant
 
-::: {.callout-important}
-## Wichtiger Hinweis!
-Der folgende Link zum Cashflow-Quadranten verweist auf das von weiteren Autoren teils heftig kritisierte, aber gleichwohl millionenfach verkaufte Buch [*"Rich Dad Poor Dad"*](https://en.wikipedia.org/wiki/Rich_Dad_Poor_Dad) des Autors [Robert Kiyosaki](https://de.wikipedia.org/wiki/Robert_Kiyosaki). Der geneigte Leser möge sich den von Robert Kiyosaki in seinem Bestseller vertretenen Thesen zum Cashflow-Quadranten mit Aufgeschlossenheit, aber auch mit besonderer Vorsicht nähern.
-:::
-
-+ [Robert Kiyosaki: *"Rich Dad's cashflow quadrant"*](https://youtu.be/HJ-Ubr5fFxs)
-
-<!--
 + [Simon Sinek](https://youtu.be/4oN5JShOs2I)
 + [Simon Sinek](https://www.youtube.com/watch?v=NcaQUH2K-wo)
 + [Simon Sinek](https://www.youtube.com/watch?v=xNgQOHwsIbg)
 -->
-

@@ -1,0 +1,150 @@
+
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - SWOT
+  - SWOA
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       SWOT/SWOA-Analyse
+
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Grundlagen
+## Methodische Grundlagen
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+<!--
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+### SWOT-Analyse {#sec-swot}
+
+::: {.callout-tip}
+## Definition: *"SWOT-Analyse"*
+Die [SWOT-Analyse](https://de.wikipedia.org/wiki/SWOT-Analyse) (engl. [Akronym](https://de.wikipedia.org/wiki/Akronym) für Strengths (Stärken), Weaknesses (Schwächen), Opportunities (Chancen) und Threats (Risiken) ist ein Instrument der strategischen Planung.
+:::
+
+<!--
+```{mermaid}
+%%| label: fig-label-mmswot
+%%| fig-cap: "Kriterien bei der SWOA-Analyse"
+%%{init: {'theme': 'forest'}}%%
+mindmap
+  root((SWOT-Analyse))
+    (Stärken)
+    (Schwächen)
+    (Chancen)
+    (Risiken)
+```
+-->
+
+![SWOT-Analyse (Quelle: [Wikipedia](https://en.wikipedia.org/wiki/SWOT_analysis))](images/SWOT_en.png){width=60% #fig-swot_en}
+
+1. **Strengths (Stärken)**: Interne Faktoren, die bereits erfolgreich vorhanden sind und Wettbewerbsvorteile darstellen.
+
+2. **Weaknesses (Schwächen)**: Interne Faktoren, die hinderlich oder verbesserungsbedürftig sind.
+
+3. **Opportunities (Chancen)**: Externe Entwicklungen, Trends oder Möglichkeiten, die genutzt werden können.
+
+4. **Threats (Risiken)**: I.d.R. externe (ebenso möglich, häufig in Teams/Organisationen/Unternehmen übersehen, auch interne) Entwicklungen, die mittel- und langfristig eine Gefahr für die eigene Wettbewerbsfähigkeit darstellen (siehe z.B. die Geschichte der Unternehmen → [Kodak](https://de.wikipedia.org/wiki/Kodak) und → [Nokia](https://de.wikipedia.org/wiki/Nokia)).
+
+Sobald die Risiken (z.B. attraktive Angebote von Wettbewerbern oder sich abzeichnende technologische und wirtschaftspolitische Veränderungen) zu groß werden sind geeignete Maßnahmen einzuleiten. Die Auswahl der Aktionen richtet sich dabei häufig nach der Einschätzung der eigenen Stärken und Schwächen im Vergleich zum Wettbewerb.
+
+
+
+### SWOA-Analyse {#sec-swoa}
+
+::: {.callout-tip}
+## Definition: *"SWOA-Analyse"*
+Die **SWOA-Analyse** ist eine methodische Weiterentwicklung der [SWOT-Analyse](https://de.wikipedia.org/wiki/SWOT-Analyse). Das engl. [Akronym](https://de.wikipedia.org/wiki/Akronym) **SWOA** steht dabei für für Strengths (Stärken), Weaknesses (Schwächen), Opportunities (Chancen) und **Aspirations (Bestrebungen/Ziele)**.  Die **SWOA-Analyse** ist wie die SWOT-Analyse ein Instrument der strategischen Planung.
+:::
+
+Die SWOA-Analyse verbindet die klassische SWOT-Analyse interner und externer Faktoren mit einem zukunftsgerichteten Fokus auf die **Aspirations**, also auf das, was ein Team/eine Organisation/ein Unternehmen **erreichen und/oder gestalten möchte**. 
+
+Im Mittelpunkt der SWOA-Analyse steht daher nicht die Bestandsaufnahme (Stärken/Schwächen), sondern der Gestaltungswillen und die **Zukunftsorientierung** (Chancen/Bestrebungen). Im Vergleich zur SWOT-Analyse ist die SWOA-Analyse stärker auf **Strategieentwicklung** und **Vision** ausgerichtet. 
+
+Anwendungsfelder der SWOA-Analyse sind Organisationsentwicklung und Strategieprozesse in Teams/Organisationen/Unternehmen. Die Methodik der SWOA-Analyse kann aber auch für die individuelle Entwicklungsplanung einer einzelnen Personen verwendet werden.
+
+<!--
+```{mermaid}
+%%| label: fig-label-mmswoa
+%%| fig-cap: "Kriterien bei der SWOA-Analyse"
+%%{init: {'theme': 'forest'}}%%
+mindmap
+  root((SWOA-Analyse))
+    (Stärken)
+    (Schwächen)
+    (Chancen)
+    (Ziele)
+```
+-->
+
+1. **Strengths (Stärken)**: Interne Faktoren, die bereits erfolgreich vorhanden sind und Wettbewerbsvorteile darstellen.
+
+2. **Weaknesses (Schwächen)**: Interne Faktoren, die hinderlich oder verbesserungsbedürftig sind.
+
+3. **Opportunities (Chancen)**: Externe Entwicklungen, Trends oder Möglichkeiten, die genutzt werden können.
+
+4. **Aspirations (Bestrebungen/Ziele)**: Gewünschte zukünftige Position oder Entwicklung, die das Team/die Organisation//das Unternehmen erreichen will.
+
+
+::: {.callout-tip}
+## Pro-Tipp!
+Sowohl die SWOT- als auch die SWOA-Analyse kann als leistungsfähiges Werkzeug sowohl für die strategische Weiterentwicklung von Individuen, Teams, Organisationen und Unternehmen, aber auch für die **(Weiter-)Entwicklung von Produkten und Produktportfolios** genutzt werden.
+:::
+
+
+<!--
+::: {.callout-tip}
+## Tipp!
+Sowohl SWOT- als auch SWOA-Analysen sind bei Wirtschaftswissenschaftlern beliebte Methoden. 
+Auch dem geneigten technisch interessierten Leser wird empfohlen sich mit der Vorgehensweise bei SWOT- und SWOA-Analysen vertraut zu machen, mindestens mit dem Ziel, einen möglichen Vorsprung bei Methodenkompetenz der Wirtschaftswissenschaftler in der Projektarbeit frühzeitig ausgleichen zu können.
+:::
+-->

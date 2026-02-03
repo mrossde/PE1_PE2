@@ -1,0 +1,124 @@
+
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - Produktentwicklung
+  - Entwicklungsmethodik
+  - Begriffe
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+<!--
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS WORK IN PROGRESS!!!**
+:::
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Begriffe
+
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Grundlagen
+:::
+
+## Begriffe {#sec-begriffe}
+
+
+::: {.callout-tip}
+## Definition: *"Informationstheorie"*
+Die [Informationstheorie](https://de.wikipedia.org/wiki/Informationstheorie) ist eine mathematische Theorie aus dem Bereich der Wahrscheinlichkeitstheorie und Statistik, die auf den US-amerikanischen Mathematiker [Claude Shannon](https://de.wikipedia.org/wiki/Claude_Shannon) zurückgeht. Sie beschäftigt sich mit Begriffen wie Information und Entropie, der Informationsübertragung, Datenkompression und Kodierung.
+:::
+
+
+::: {.callout-tip}
+## Definition: *"In·ge·ni·eurs·kunst | Substantiv, feminin [die] "*
+Ingenieurskunst ist die kreative und präzise Anwendung von Wissenschaft, Technik und Erfahrung bei der Entwicklung und Konstruktion technischer Erzeugnissen. Ingenieurskunst bezeichnet darüber hinaus besonderes Geschick bei der Entwicklung und Konstruktion der technischen Erzeugnisse. Ziel der Ingenieurskunst ist es, innovative, funktionale und nachhaltige Lösungen für komplexe praktische Herausforderungen zu entwickeln. Ingenieurskunst beschäftigt sich dabei mit zeitgemäßer und noch nicht erdachter Technik, welche nach dem aktuellen Stand des Wissens gangbar ist. 
+:::
+
+
+
+### Termin, Deadline
+
+::: {.callout-tip}
+## Definition: *"Termin"*
+Ein [Termin](https://de.wikipedia.org/wiki/Termin) ist ein festgelegter **Zeitpunkt** in einem Zeitablauf und wird durch ein Kalenderdatum und häufig auch eine Uhrzeit festgelegt. Ein Termin hat **keine Dauer**.
+:::
+
+::: {.callout-tip}
+## Definition: *"Deadline"*
+Im Projektmanagement bezeichnet [Deadline](https://en.wikipedia.org/wiki/Time_limit) einen **verbindlicher Zeitpunkt**, bis zu dem eine Aktivität abgeschlossen sein **muss**. Deadlines dienen der **Zeitsteuerung** und stellen sicher, dass alle Aktivitäten des Projektes innerhalb eines festgelegten Zeitrahmens erfolgreich abgeschlossen werden.
+:::
+
+
+
+### MTBF, MTTF, MTTR
+
+::: {.callout-tip}
+## Definition: *"MTBF"*
+[Mean Time Between Failures](https://de.wikipedia.org/wiki/Mean_Time_Between_Failures) (MTBF) ist nach IEC 60050 (191) *"Der Erwartungswert der Betriebsdauer zwischen zwei aufeinanderfolgenden Ausfällen."* Umgangssprachlich bezeichnet MTBF die mittlere Betriebsdauer zwischen Ausfällen für reparierbare Einheiten. Unter „Betriebsdauer“ wird hierbei die Betriebszeit zwischen zwei aufeinanderfolgenden Ausfällen einer solchen Einheit verstanden.
+:::
+
+
+::: {.callout-tip}
+## Definition: *"MTTF"*
+Für Einheiten, die nicht instand gesetzt werden (können), ist der Erwartungswert (Mittelwert) der Verteilung von Lebensdauern die mittlere Lebensdauer [Mean Time To Failure](https://de.wikipedia.org/wiki/Mittlere_Betriebsdauer_bis_zum_Ausfall) (MTTF). Umgangssprachlich werden die Begriffe MTBF und MTTF oft synonym verwendet.
+:::
+
+
+::: {.callout-tip}
+## Definition: *"MTTR"*
+[Mean Time To Recover](https://de.wikipedia.org/wiki/Mean_Time_To_Recover) bzw. auch [Mean_Time_To_Repair](https://de.wikipedia.org/wiki/Mean_Time_To_Recover) (MTTR) wird als die mittlere Reparaturzeit nach einem Ausfall eines Systems definiert. Die MTTR gibt an, wie lange die Wiederherstellung des Systems im Mittel dauert. Die MTTR ist ein wichtiger Parameter für die Systemverfügbarkeit.
+:::

@@ -1,10 +1,4 @@
----
-format:
-  html:
-    embed-resources: true
-lang: de
-bibliography: Literatur.bib
----
+
 
 <!--
 headlines:
@@ -84,7 +78,7 @@ number-offset:
 
 ::: {.content-visible unless-meta="headlines.off"}
 # Softskills
-## Verhandlungsstrategie
+## Kooperation und Kollaboration
 :::
 
 <!-- -------------------------------------------------------------------------
@@ -92,12 +86,18 @@ number-offset:
                        Callout !!! WARNING !!!
 
 -------------------------------------------------------------------------- -->
-
+<!--
 ::: {.callout-warning}
 ## WARNING!
 **THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
 :::
+-->
 
+<!-- -------------------------------------------------------------------------
+
+                       Harvard-Verhandlungsstrategie
+
+-------------------------------------------------------------------------- -->
 ### Harvard-Verhandlungsstrategie {#sec-harvard}
 
 ::: {.callout-tip}
@@ -105,9 +105,7 @@ number-offset:
 Die [Harvard-Verhandlungsstrategie](https://de.wikipedia.org/wiki/Harvard-Konzept) ist ein sachbezogenes Verhandlungsmodell, das von Roger Fisher und William Ury an der Harvard-Universität entwickelt wurde. Das Ziel der Harvard-Verhandlungsstrategie ist eine konstruktive, kooperative Verhandlungsführung, die zu nachhaltigen und für beide Seiten vorteilhaften Win-Win-Lösungen führt.
 :::
 
-Die Harvard-Verhandlungsstrategie geht über klassische Kompromisse hinaus. Im Vordergrund steht der größtmögliche beiderseitige Nutzen.
-
-
+Die Harvard-Verhandlungsstrategie geht über klassische Kompromisse hinaus. **Im Vordergrund steht der größtmögliche beiderseitige Nutzen.**
 
 
 ```{mermaid}
@@ -166,6 +164,7 @@ Die **wichtigsten Ziele der Harvard-Verhandlungsstrategie** sind:
 #### Nullsummenspiel
 -->
 
+<!--
 ::: {.callout-tip}
 ## Definition *"Nullsummenspiel"*
 [Nullsummenspiele](https://de.wikipedia.org/wiki/Nullsummenspiel) beschreiben in der Spieltheorie Situationen, also Spiele im verallgemeinerten Sinne, bei denen die Summe der Gewinne und Verluste aller Spieler gleich null ist.
@@ -188,39 +187,16 @@ Positivsummenspiele haben das Ziel, dass alle Beteiligten und Betroffenen einen 
 :::
 
 Die den Positivsummenspielen zugrunde liegende [Win-Win-Strategie]((https://de.wikipedia.org/wiki/Win-win)) ist auf langfristigen nachhaltigen Erfolg und auf langfristige Zusammenarbeit ausgerichtet und zielt weniger auf kurzfristigen Gewinn.
+-->
+
 
 <!-- Es soll gemeinsam eine dauerhafte Lösung gefunden werden, die von allen Beteiligten getragen und akzeptiert wird. Dazu ist gegenseitige Achtung erforderlich und ein ernsthaftes Interesse an den Bedürfnissen, Ängsten und Beweggründen des jeweils Anderen. -->
 
 
-<!--
-### Theory of Mind (ToM)
--->
-
-::: {.callout-tip}
-## Definition *"Theory of Mind" (ToM)"*
-Die "Theory of Mind" (ToM) ist ein Begriff aus der kognitiven Psychologie und bezieht sich auf die Fähigkeit, sich in die mentalen Zustände anderer Personen hineinzuversetzen, wie zum Beispiel Gedanken, Absichten, Überzeugungen oder Emotionen. Diese Fähigkeit ermöglicht es, das Verhalten anderer zu verstehen, ihre Handlungen vorherzusagen und soziale Interaktionen angemessen zu interpretieren und zu steuern. 
-:::
-
-<!--
-In der wissenschaftlichen Forschung wird die Theory of Mind häufig anhand von Experimenten untersucht, die darauf abzielen, das Verständnis und die Entwicklung dieser Fähigkeit bei Kindern, Erwachsenen und auch bei einigen Tierarten zu untersuchen. Beispielsweise wird angenommen, dass Kinder im Alter von etwa vier Jahren beginnen, eine rudimentäre Theory of Mind zu entwickeln, indem sie erkennen, dass andere Menschen unterschiedliche Gedanken und Perspektiven haben können als sie selbst.
-
-Die Fähigkeit zur Theory of Mind ist von grundlegender Bedeutung für die soziale Kognition und das soziale Verhalten, da sie es ermöglicht, sich in sozialen Situationen angemessen zu verhalten, soziale Normen zu verstehen und Empathie für andere zu empfinden. Defizite in der Theory of Mind können zu Schwierigkeiten bei der sozialen Interaktion, bei der Kommunikation und im Verständnis von zwischenmenschlichen Beziehungen führen und sind oft ein Merkmal von Störungen des autistischen Spektrums und anderen neurokognitiven Störungen. Das Verständnis der Theory of Mind ist daher von wesentlicher Bedeutung für das Verständnis menschlicher Interaktionen, sozialer Dynamiken und für die Entwicklung von Interventionen zur Förderung sozialer Fähigkeiten und zur Verbesserung der sozialen Integration.
-
-- Bezüge zum eigenen Handeln à 
-- Bezüge zur KI
-
-EXKURS ToM
-
-Das Zitat "Ein Mensch kann nicht zweimal in denselben Fluss steigen" stammt von dem griechischen Philosophen Heraklit (ca. 535-475 v. Chr.). Diese Aussage ist Teil seines Konzepts des Wandels und der Bewegung, das er als zentrales Prinzip seiner Philosophie entwickelte. Heraklit betonte die Idee, dass alles in einem ständigen Zustand des Flusses und des Wandels begriffen ist. Der Fluss steht hier als Symbol für die ständige Veränderung und den unaufhörlichen Wandel in der Welt.
-
-Das Zitat von Heraklit kann als Aufforderung verstanden werden, die Natur der Realität als dynamisch und in einem fortwährenden Prozess der Veränderung zu erkennen. Es betont die Unbeständigkeit und Unvorhersehbarkeit des Lebens und verweist auf die Unmöglichkeit, etwas genau so zu erleben, wie es zuvor erlebt wurde, da sich alles im ständigen Wandel befindet.
-
-In der modernen Philosophie und Literatur wird dieses Zitat oft zitiert, um die Idee zu veranschaulichen, dass nichts statisch oder unveränderlich ist und dass jede Erfahrung, selbst wenn sie oberflächlich ähnlich erscheint, in Wirklichkeit immer einzigartig ist und sich von vorherigen Erfahrungen unterscheidet.
--->
 
 ::: {.callout-important}
 ## Pro-Tipp: *"Keine Türen schließen!"*
-Wenn auch nach intensiven Bemühungen keine Einigung erzielt werden kann, empfiehlt die Harvard-Verhandlungsstrategie, in einer respektvollen und sachlichen Weise zu handeln, indem man die Verhandlung konstruktiv abschließt und auf diese Weise gleichzeitig **die Möglichkeit für eine zukünftige Kooperation offen hält.**
+Wenn auch nach intensiven Bemühungen keine Einigung erzielt werden kann, empfiehlt die Harvard-Verhandlungsstrategie, in einer **respektvollen und sachlichen Weise** zu handeln, indem man die **Verhandlung konstruktiv abschließt** und auf diese Weise gleichzeitig **die Möglichkeit für eine zukünftige Kooperation offen hält.**
 :::
 
 <!--
@@ -264,4 +240,154 @@ Es gibt mehrere Schritte, die in einer solchen Situation hilfreich sind:
 ---
 
 Der Schlüssel liegt darin, eine sachliche und respektvolle Haltung zu bewahren und keine Türen zu schließen, die eine zukünftige Zusammenarbeit ermöglichen könnten. Auch wenn keine Einigung erzielt wird, ist es wichtig, dass beide Seiten die Verhandlungen als professionell und fair wahrnehmen.
+-->
+
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Theory of Mind (ToM)
+                       
+-------------------------------------------------------------------------- -->
+### Exkurs: *"Theory of Mind (ToM)"*
+
+::: {.callout-tip}
+## Definition *"Theory of Mind" (ToM)"*
+Die [Theory of Mind](https://de.wikipedia.org/wiki/Theory_of_Mind) (ToM) ist ein Begriff aus der kognitiven Psychologie und bezieht sich auf die Fähigkeit, sich in die mentalen Zustände anderer Personen hineinzuversetzen, wie zum Beispiel Gedanken, Absichten, Überzeugungen oder Emotionen. Diese Fähigkeit ermöglicht es, das Verhalten anderer zu verstehen, ihre Handlungen vorherzusagen und soziale Interaktionen angemessen zu interpretieren und zu steuern. 
+:::
+
+
+
+
+<!--
+In der wissenschaftlichen Forschung wird die Theory of Mind häufig anhand von Experimenten untersucht, die darauf abzielen, das Verständnis und die Entwicklung dieser Fähigkeit bei Kindern, Erwachsenen und auch bei einigen Tierarten zu untersuchen. Beispielsweise wird angenommen, dass Kinder im Alter von etwa vier Jahren beginnen, eine rudimentäre Theory of Mind zu entwickeln, indem sie erkennen, dass andere Menschen unterschiedliche Gedanken und Perspektiven haben können als sie selbst.
+
+Die Fähigkeit zur Theory of Mind ist von grundlegender Bedeutung für die soziale Kognition und das soziale Verhalten, da sie es ermöglicht, sich in sozialen Situationen angemessen zu verhalten, soziale Normen zu verstehen und Empathie für andere zu empfinden. Defizite in der Theory of Mind können zu Schwierigkeiten bei der sozialen Interaktion, bei der Kommunikation und im Verständnis von zwischenmenschlichen Beziehungen führen und sind oft ein Merkmal von Störungen des autistischen Spektrums und anderen neurokognitiven Störungen. Das Verständnis der Theory of Mind ist daher von wesentlicher Bedeutung für das Verständnis menschlicher Interaktionen, sozialer Dynamiken und für die Entwicklung von Interventionen zur Förderung sozialer Fähigkeiten und zur Verbesserung der sozialen Integration.
+
+- Bezüge zum eigenen Handeln à 
+- Bezüge zur KI
+
+EXKURS ToM
+
+Das Zitat "Ein Mensch kann nicht zweimal in denselben Fluss steigen" stammt von dem griechischen Philosophen Heraklit (ca. 535-475 v. Chr.). Diese Aussage ist Teil seines Konzepts des Wandels und der Bewegung, das er als zentrales Prinzip seiner Philosophie entwickelte. Heraklit betonte die Idee, dass alles in einem ständigen Zustand des Flusses und des Wandels begriffen ist. Der Fluss steht hier als Symbol für die ständige Veränderung und den unaufhörlichen Wandel in der Welt.
+
+Das Zitat von Heraklit kann als Aufforderung verstanden werden, die Natur der Realität als dynamisch und in einem fortwährenden Prozess der Veränderung zu erkennen. Es betont die Unbeständigkeit und Unvorhersehbarkeit des Lebens und verweist auf die Unmöglichkeit, etwas genau so zu erleben, wie es zuvor erlebt wurde, da sich alles im ständigen Wandel befindet.
+
+In der modernen Philosophie und Literatur wird dieses Zitat oft zitiert, um die Idee zu veranschaulichen, dass nichts statisch oder unveränderlich ist und dass jede Erfahrung, selbst wenn sie oberflächlich ähnlich erscheint, in Wirklichkeit immer einzigartig ist und sich von vorherigen Erfahrungen unterscheidet.
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Emotionale Intelligenz (EI)
+                       
+-------------------------------------------------------------------------- -->
+### Exkurs: *"Emotionale Intelligenz (EI)"*
+
+
+::: {.callout-tip}
+## Definition *"Emotionale Intelligenz"*
+[Emotionale Intelligenz](https://de.wikipedia.org/wiki/Emotionale_Intelligenz) ist die Fähigkeit eines Menschen, eigene und fremde Emotionen präzise wahrzunehmen, zu verstehen und zu bewerten sowie diese Informationen zur Steuerung des eigenen Denkens und Handelns und zur konstruktiven Gestaltung sozialer Interaktionen zu nutzen. Emotionale Intelligenz ist teils angeboren, aber in hohem Maße lern- und trainierbar.
+:::
+
+Der Begriff wurde in den 1990er-Jahren vor durch die Arbeiten von [Peter Salovey](https://de.wikipedia.org/wiki/Peter_Salovey), [John D. Mayer](https://de.wikipedia.org/wiki/John_D._Mayer) und [Daniel Goleman](https://de.wikipedia.org/wiki/Daniel_Goleman) geprägt.
+
+
+```{mermaid}
+%%| label: fig-label-mmemotionaleintelligenz
+%%| fig-cap: "Mindmap der wichtigsten Kernbestandteile emotionaler Intelligenz"
+%%{init: {'theme': 'forest'}}%%
+mindmap
+  root(Emotionale Intelligenz)
+    (Selbstwahrnehmung)
+    (Selbstregulation)
+    (Selbstmotivation)
+    (Empathie)
+    (Soziale Kompetenz)
+```
+
+<!--
+::: {.callout-tip}
+## Definition *"Empathie"*
+[Empathie](https://de.wikipedia.org/wiki/Empathie) bezeichnet die Fähigkeit und Bereitschaft, die Empfindungen, Emotionen, Gedanken, Motive und Persönlichkeitsmerkmale eines anderen Lebewesens zu erkennen, zu verstehen und nachzuempfinden.
+:::
+-->
+
+<!--
+Emotionale Intelligenz gilt heute als entscheidende Kompetenz in modernen Arbeitsumgebungen, insbesondere dort, wo Teamarbeit und Veränderungsprozesse eine große Rolle spielen, z.B. in der Produktentwicklung in Unternehmen.
+-->
+
+<!--
+## **Kernbestandteile emotionaler Intelligenz**
+
+### **1. Selbstwahrnehmung**
+
+Die Fähigkeit, die eigenen Gefühle bewusst wahrzunehmen, ihre Ursachen zu verstehen und ihre Wirkung auf das eigene Verhalten einschätzen zu können.
+
+### **2. Selbstregulation**
+
+Der konstruktive Umgang mit Emotionen: Impulse kontrollieren, Stress managen, innere Ruhe bewahren, flexibel bleiben und sich selbst motivieren können.
+
+### **3. Selbstmotivation**
+
+Emotionen nutzen, um Ziele zu verfolgen: Ausdauer, Optimismus, intrinsische Motivation und zielorientiertes Verhalten.
+
+### **4. Empathie**
+
+Emotionen anderer Menschen erkennen, verstehen und berücksichtigen – sowohl verbale als auch nonverbale Signale.
+
+### **5. Soziale Kompetenz**
+
+Emotionen in sozialen Interaktionen gezielt und verantwortungsvoll einsetzen: Beziehungen gestalten, Konflikte lösen, Vertrauen aufbauen, Teamdynamik positiv beeinflussen.
+-->
+
+
+
+<!--
+
+## **Detaillierte wissenschaftliche Einordnung**
+
+### **1. Genetische und frühkindliche Einflüsse (Grunddisposition)**
+
+* Studien zeigen, dass **Temperament**, Stressregulation und bestimmte sozial-emotionale Fähigkeiten **teilweise genetisch** und durch **frühe Bindungserfahrungen** geprägt werden.
+* Diese Faktoren beeinflussen die **Ausgangslage**, z. B. wie impulsiv, stressanfällig oder empathisch ein Mensch zu Beginn ist.
+
+**Aber:** Genetik erklärt nur einen Teil der Varianz – vergleichbar mit kognitiver Intelligenz.
+
+
+
+### **2. Hohe Plastizität: Emotionale Intelligenz ist erlernbar**
+
+Aktuelle psychologische und neurowissenschaftliche Forschung zeigt eindeutig:
+
+* Emotionale Intelligenz besitzt eine **hohe neuronale Plastizität**.
+* Fähigkeiten wie **Empathie**, **Selbstreflexion**, **Emotionserkennung**, **Emotionsregulation** und **soziale Kompetenz** können **gezielt verbessert** werden.
+* Trainingsprogramme (z. B. Mindfulness-Based Emotional Intelligence Training, empathiebasiertes Kommunikationstraining, Leadership-Programme) zeigen **nachhaltige Verbesserungen**.
+
+Menschen können z. B. lernen:
+
+* Emotionen differenzierter wahrzunehmen
+* Stress besser zu regulieren
+* Konflikte konstruktiver zu lösen
+* sozial angemessener auf emotionale Signale zu reagieren
+
+
+
+### **3. Lebenslaufperspektive**
+
+Emotionale Intelligenz entwickelt sich über das ganze Leben – typischerweise:
+
+* **Steigt** im Erwachsenenalter
+* Stabilisert sich im mittleren Lebensalter
+* Bleibt im hohen Alter relativ konstant, sinkt aber weniger stark als andere kognitive Fähigkeiten
+
+Diese Entwicklung unterstützt die Annahme, dass **soziale Erfahrung und Lernprozesse eine zentrale Rolle spielen**.
+
+
+
+## **Fazit**
+
+**Emotionale Intelligenz ist weder rein genetisch noch vollständig durch Erziehung festgelegt.**
+Sie beruht auf einer genetischen und entwicklungsbedingten Basis, ist jedoch **umfangreich trainierbar** – insbesondere in Bezug auf Wahrnehmung, Regulation und soziale Interaktion.
+
 -->

@@ -1,0 +1,195 @@
+---
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+headlines:
+  off: true
+extended-content:
+  off: true
+fileformat-svg:
+  off: true
+---
+
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+- Produktentstehungsprozess
+- Entwicklungsmethodik
+- Projektmanagement
+- Organisationsentwicklung
+- Systemische Aufstellung
+- Aufstellungsarbeit
+- In-Szeno-Technik
+
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 5
+link-external-icon: true
+link-external-newwindow: true
+
+headlines:
+  off: false
+extended-content:
+  off: false
+-->
+
+<!--
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: false
+exercises:
+  solutions:
+    on: true 
+fileformat-svg:
+  off: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+<!--
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS WORK IN PROGRESS!!!**
+:::
+-->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Softskills
+## Kooperation und Kollaboration
+:::
+<!-- -------------------------------------------------------------------------
+
+            Organisationsaufstellung
+
+-------------------------------------------------------------------------- -->
+### Organisationsaufstellung {#sec-organisationsaufstellung}
+
+::: {.callout-tip}
+## Definition: *"Organisationsaufstellung"*
+[Organisationsaufstellung](https://de.wikipedia.org/wiki/Organisationsaufstellung) ist eine Anwendungsform der [systemischen Aufstellung](https://de.wikipedia.org/wiki/Systemaufstellung). Diese nutzt die räumliche Veranschaulichung von (inneren) Beziehungsbildern personaler System-Einheiten. Fokussiert werden dabei bedeutsame Konstellationen (von Organisationseinheiten untereinander, von Mitarbeitenden zueinander, von Mitarbeitenden zur jeweiligen Leitung wie auch von Mitarbeitenden zu Externen – "*Customer-Relations"*) sowie die Funktionalität, bzw. Dysfunktionalität jeweiliger Bezüge.
+:::
+
+<!--
+::: {.callout-tip}
+## Definition: *"Aufstellungsarbeit"*
+Aufstellungsarbeit ist eine Methode, die häufig in der Organisationsentwicklung und im Coaching eingesetzt wird. Bei einer Aufstellungsarbeit werden Personen im Hinblick auf bestimmte Aspekte einer Organisation positioniert oder aufgestellt, um die zwischenmenschlichen Beziehungen, Kommunikationsmuster und Dynamiken innerhalb des Teams sichtbar zu machen.
+:::
+-->
+
+Typischerweise werden bei der Organisationsaufstellung etwaige Konflikte, Rollenverteilungen oder unbewusste Muster innerhalb des Teams dargestellt. Durch die physische Anordnung können Teilnehmer und Coaches die Interaktionen zwischen den einzelnen *"Aufstellungen"* beobachten und analysieren. Dies kann dazu beitragen, Verständnis und Einsicht zu fördern, potenzielle Probleme aufzudecken und Lösungsansätze für eine verbesserte Zusammenarbeit zu entwickeln.
+
+Aufstellungsarbeit kann aber auch dazu genutzt werden, bei Projektstart oder beim Hinzukommen neuer Personen zu einem Projektteam *"das Eis zu brechen"* und das gegenseitige Kennenlernen zu fördern.
+
+Aufstellungsarbeit kann in verschiedenen Formen durchgeführt werden, je nach dem spezifischen Kontext und den Zielen der Teamentwicklung.
+
+<!--
+::: {.callout-note collapse=true}
+-->
+
+::: {.callout-note}
+## Aufstellungsarbeit (Dauer (5...10) min)
+
+*... zum Warmwerden mit der Methode der Aufstellungsarbeit und zum besseren gegenseitigen Kennenlernen:*
+
+**a)** Stellen Sie sich bitte entlang einer Linie in alphabetischer Reihenfolge (A - Z) Ihrer Nachnamen auf!
+
+**b)** Stellen Sie sich bitte entlang einer Linie in alphabetischer Reihenfolge (Z - A) Ihrer Vornamen auf!
+
+**c)** Stellen Sie sich bitte entlang einer Linie geordnet nach Ihrer üblicherweise zurückgelegten Entfernung zwischen Wohnort und Hochschule Esslingen Campus Göppingen auf!
+
+
+*... jetzt wird's etwas schwieriger:*
+
+**d)** Gruppieren Sie sich bitte nach dem Fortbewegungsmittel, das Sie für den Weg zwischen Wohnort und Hochschule Esslingen Campus Göppingen üblicherweise benutzen (z.B. zu Fuß, mit dem Fahrrad, mit der Bahn, mit dem Motorrad, mit dem eigenen Auto, mit dem Taxi)!
+
+
+*... wenn Sie noch Lust haben, hier eine "echte" Aufstellungsarbeit, wie sie in einer Teamentwicklung in einer Organisation tatsächlich häufig vorkommt* (Teilnahme ist gerne freiwillig):
+ 
+**e)** Stellen Sie sich bitte so auf, dass die Entfernung zwischen Ihnen das Maß der regelmäßigen Zusammenarbeit (z.B. in Lerngruppen, in Vorlesungen, bei Übungen, bei Projekten) widerspiegelt!
+
+
+**f)** Bitte Reflektieren Sie zum Abschluss noch kurz gemeinsam in der Gruppe: 
+
++ Wie haben Sie sich bei den Aufstellungen gefühlt? 
++ Haben Sie für sich persönlich neue Informationen zu den Personen und zur Interaktion der Personen im Team bekommen?
+:::
+
+
+<!-- -------------------------------------------------------------------------
+
+                       In-Szeno-Technik
+
+-------------------------------------------------------------------------- -->
+### In-Szeno-Technik (Matthias Varga von Kibéd) {#sec-inszenotechnik}
+
+::: {.callout-tip}
+## Definition: *"In-Szeno-Technik"*
+Die In-Szeno-Technik (aka *"Systemische Aufstellung mit Figuren"*) ist eine Variante der [systemischen Aufstellung](https://de.wikipedia.org/wiki/Systemaufstellung), bei der statt realer Personen Figuren oder Symbole die relevanten Systemelemente repräsentieren, sodass das System – in klar sichtbarer Form – von außen betrachtet, analysiert und verändert werden kann.
+:::
+
+Die In-Szeno-Technik wurde in den späten 1990er Jahren von [Matthias Varga von Kibéd](https://de.wikipedia.org/wiki/Matthias_Varga_von_Kib%C3%A9d) und [Insa Sparrer](https://de.wikipedia.org/wiki/Insa_Sparrer) entwickelt.
+
+**Kennzeichen der In-Szeno-Technik**:
+
++ Verwendung von Spielfiguren, Symbolkarten oder anderen Gegenständen zur Repräsentation der Systemelemente (Personen, Rollen, Prozesse, …)
++ Aufstellung auf Tischfläche (*"Miniaturaufstellung"*)
++ Fokus auf Perspektiven-Wechsel: Der Mitarbeitende nimmt selbst eine Figur oder Position ein, geht aus sich/seiner Rolle/Position *"heraus"* und betrachtet das System von außen, reflektiert Blickrichtungen, Abstände, Beziehungen.
+
+Die In-Szeno-Technik ermöglicht auf diese Weise Distanz zum Thema, die Sichtbarmachung von Dynamiken, Veränderung durch Umstellung der Figuren, Reflexion. 
+
+Die In-Szeno-Technik eignet sich insbesondere dort, wo real-personen-Basierte Aufstellungsarbeit schwierig/unmöglich ist, oder eine symbolische Aufstellungsarbeit gewünscht wird.
+
+
+![In-Szeno-Technik^[Die In-Szeno-Technik ist eine spezifische Methode innerhalb der [systemischen Aufstellungsarbeit](https://de.wikipedia.org/wiki/Organisationsaufstellung), die darauf abzielt, dynamische Prozesse in Organisationen sichtbar zu machen und Lösungen für komplexe Probleme zu finden. Im Wesentlichen werden bei der In-Szeno-Technik die relevanten Elemente einer Organisation (wie z.B. Mitarbeitende, Abteilungen, Projekte) von den Teilnehmenden räumlich mithilfe von Spielfiguren angeordnet, um die aktuelle Situation oder Problemstellung zu repräsentieren. Durch die räumliche Positionierung und Interaktion dieser Elemente können verborgene Dynamiken und Zusammenhänge ans Licht kommen, die sonst möglicherweise nicht offensichtlich wären. Die Teilnehmenden können dann beobachten, wie sich Veränderungen in der Anordnung der Elemente auf das System auswirken und welche neuen Erkenntnisse dadurch gewonnen werden. Auf dieser Grundlage können dann konkrete Maßnahmen entwickelt werden, um positive Veränderungen in der realen Organisationsstruktur herbeizuführen. Die In-Szeno-Technik basiert auf systemischen Ansätzen und Prinzipien und wird oft in Coaching, Beratung und Organisationsentwicklung eingesetzt, um komplexe Probleme zu analysieren und Lösungswege aufzuzeigen. Die In-Szeno-Technik wurde in den späten 1990er Jahren von [Matthias Varga von Kibéd](https://de.wikipedia.org/wiki/Matthias_Varga_von_Kib%C3%A9d) und [Insa Sparrer](https://de.wikipedia.org/wiki/Insa_Sparrer) entwickelt. Heute nimmt die In-Szeno-Technik einen festen Platz im Bereich der [Organisationsentwicklung](https://de.wikipedia.org/wiki/Organisationsentwicklung) ein.] zur Visualisierung möglicher Rollen als in einem Projekt mitarbeitender Person. Ein und dieselbe Person nimmt in einem Projektteam meist mehrere Rollen ein. Dies geschieht nicht immer bewusst. In einem Team/einem Projekt mitarbeitende Personen nehmen zumeist als aktiv Beteiligte automatisch eine Rolle im Team/Projekt und eine Rolle gegenüber der Team-/Projektleitung ein. In einigen Fällen kommt im Laufe des Projekts die (ggf. befristete) Leitung z.B. einer Arbeitsgruppe oder einer Task-Force dazu. Aus den wechselnden und teils gegenläufigen Anforderungen und Erwartungen, die mit den Rollen verbunden sind, können Konflikte entstehen. Ein Ansatz, sich der eigenen Rollen und Sichten bewusst zu werden ist es, **gedanklich die Arbeitsebene zu verlassen und die Rolle des unbeteiligten Studierenden einzunehmen**. Hierbei kann ein Moderator oder Coach hilfreich sein. Aus dieser Sicht des unbeteiligten Studierenden heraus kann oftmals mehr Klarheit der eigene Rollen im Team/Projekt und der aktuellen Situation erreicht werden. Auf dieser Grundlage können dann Lösungsansätze für das eigene weitere Vorgehen gefunden werden.](images/InSzenoTechnik-RollenundSichten.jpg){width=60% #fig-inszeno-rollenundsichten
+}
+

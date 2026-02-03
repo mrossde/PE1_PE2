@@ -116,7 +116,7 @@ number-offset:
 
 ::: {.callout-tip}
 ## Definition *"White Noise"*
-In der Stochastik bezeichnet [weißes Rauschen](https://de.wikipedia.org/wiki/Wei%C3%9Fes_Rauschen) in diskreter Zeit einen diskreten stochastischen Prozess von unkorrelierten Zufallsvariablen mit Erwartungswert 0 und konstanter Varianz. Weißes Rauschen ist eine stochastische Distribution. Es ist schwach stationär und hat eine konstante Spektraldichte. Die Autokorrelationsfunktion von weißem Rauschen ist ein [Dirac-Impuls](https://de.wikipedia.org/wiki/Delta-Distribution).
+In der Stochastik bezeichnet [weißes Rauschen](https://de.wikipedia.org/wiki/Wei%C3%9Fes_Rauschen) in diskreter Zeit einen diskreten stochastischen Prozess von **unkorrelierten Zufallsvariablen mit Erwartungswert 0 und konstanter Varianz**. Weißes Rauschen ist eine stochastische Distribution. Es ist schwach stationär und hat eine konstante Spektraldichte. Die Autokorrelationsfunktion von weißem Rauschen ist ein [Dirac-Impuls](https://de.wikipedia.org/wiki/Delta-Distribution).
 :::
 
 Das weiße Rauschen stellt den einfachsten stochastischen Prozess dar, jedoch werden viele komplexere Prozesse und Zeitreihen aus solchen konstruiert, etwa der [Random Walk](https://de.wikipedia.org/wiki/Irrfahrt_(Stochastik)).

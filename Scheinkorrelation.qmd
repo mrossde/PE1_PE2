@@ -1,10 +1,25 @@
----
+<!--
 format:
   html:
     embed-resources: true
 lang: de
 bibliography: Literatur.bib
----
+
+
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: false
+exercises:
+  solutions:
+    on: true 
+fileformat-svg:
+  off: true
+-->
 
 <!--
 headlines:
@@ -40,6 +55,7 @@ abstract: >
   Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
 keywords:
   - Korrelation
+  - Scheinkorrelation
 
 copyright: 
   holder: Christian Anders
@@ -85,40 +101,54 @@ number-offset:
                        Callout !!! WARNING !!!
 
 -------------------------------------------------------------------------- -->
-
+<!--
 ::: {.callout-warning}
 ## WARNING!
 **THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
 :::
 
+-->
+
 ### Scheinkorrelation {#sec-scheinkorrelation}
 
 ::: {.callout-tip}
 ## Definition *"Scheinkorrelation"*
-Scheinkorrelation (englisch spurious relationship oder spurious correlation) bezeichnet eine Korrelation zwischen zwei Größen, der kein Kausalzusammenhang, sondern nur eine zufällige oder indirekte Beziehung zugrunde liegt (englisch: correlation, not causation). Die Scheinkorrelation ist die statistische Entsprechung des in der Philosophie betrachteten Fehlschlusses *"Cum hoc ergo propter hoc"* (*"Mit diesem, also wegen diesem"* oder sinngemäß: *"Gleichzeitigkeit bedeutet Verursachung"*.).
+[Scheinkorrelation](https://de.wikipedia.org/wiki/Scheinkorrelation) (engl. *"spurious relationship"* oder *"spurious correlation"*) bezeichnet eine Korrelation zwischen zwei Größen, der kein Kausalzusammenhang, sondern nur eine zufällige oder indirekte Beziehung zugrunde liegt (engl.: *"correlation, not causation"*). Die Scheinkorrelation ist die statistische Entsprechung des in der Philosophie betrachteten Fehlschlusses *"Cum hoc ergo propter hoc"* (*"Mit diesem, also wegen diesem"* oder sinngemäß: *"Gleichzeitigkeit bedeutet Verursachung"*.).
 :::
 
-Der Ausdruck ist Scheinkorrelation ist missverständlich, da eigentlich Scheinkausalität gemeint ist. Denn es liegt nicht nur scheinbar, sondern tatsächlich eine Korrelation vor, aber eben keine Kausalität. 
+Der Ausdruck ist Scheinkorrelation ist missverständlich, da eigentlich **Scheinkausalität** gemeint ist. Denn es liegt nicht nur scheinbar, sondern tatsächlich eine Korrelation vor, aber eben **KEINE** Kausalität. 
 
-Eine Scheinkorrelation besteht z. B., wenn konfundierende Variablen (Störvariablen, Störfaktoren) oder intervenierende Variablen einen Einfluss auf die untersuchten Größen haben. Das Phänomen ist seit den Anfängen der Statistik bekannt; der entsprechende englische Begriff *"spurious correlation"* wurde jedoch erst 1954 von Herbert A. Simon geprägt.
+Eine Scheinkorrelation besteht z. B., wenn konfundierende Variablen (Störvariablen, Störfaktoren) oder intervenierende Variablen einen Einfluss auf die untersuchten Größen haben. Das Phänomen ist seit den Anfängen der Statistik bekannt; der entsprechende englische Begriff *"spurious correlation"* wurde jedoch erst 1954 von dem Sozialwissenschaftler [Herbert A. Simon](https://de.wikipedia.org/wiki/Herbert_A._Simon) geprägt.
 
 
 Scheinkorrelation kann beispielsweise zufällig oder aufgrund von unbeobachteten, erklärenden Variablen auftreten.
 
-Ein mehrfach beobachtetes Zusammentreffen zweier Ereignisse bietet grundsätzlich Anlass für die Vermutung, dass zwischen diesen Ereignissen ein Zusammenhang bestehen könnte. Das zeitliche und räumliche Zusammentreffen zweier Ereignisse begründet jedoch noch keinen kausalen Zusammenhang. Ob ein solcher Zusammenhang besteht, und wenn ja, welches der beiden Ereignisse die Ursache und welches Wirkung ist, oder ob beide Ereignisse gemeinsam Folge eines dritten Ereignisses sind, lässt sich daraus nicht ableiten. In der Statistik spricht man statt von Ursache und Wirkung von Abhängigkeit bzw. im Falle von Zufallsvariablen von Korrelation – selbst bei einer deutlichen Kovarianz im Werteverlauf der Variablen ist nicht auszuschließen, dass es einen dritten gemeinsamen Faktor gibt oder dass die Wirkrichtung zwischen den erhobenen Werten anders verläuft als vermutet.
+Ein mehrfach beobachtetes Zusammentreffen zweier Ereignisse bietet grundsätzlich Anlass für die Vermutung, dass zwischen diesen Ereignissen ein Zusammenhang bestehen könnte. 
 
 
+<p style="text-align: center;">![](images/AdobeStock_589506892.png){width=20%}</p>
 
+::: {.callout-important}
+## Pro-Tipp!
+**Das zeitliche und räumliche Zusammentreffen zweier Ereignisse begründet jedoch noch keinen kausalen Zusammenhang!**
+:::
+
+Ob ein solcher Zusammenhang besteht, und wenn ja, welches der beiden Ereignisse die Ursache und welches Wirkung ist, oder ob beide Ereignisse gemeinsam Folge eines dritten Ereignisses sind, lässt sich daraus nicht ableiten. In der Statistik spricht man statt von Ursache und Wirkung von Abhängigkeit bzw. im Falle von Zufallsvariablen von Korrelation – selbst bei einer deutlichen Kovarianz im Werteverlauf der Variablen ist nicht auszuschließen, dass es einen dritten gemeinsamen Faktor gibt oder dass die Wirkrichtung zwischen den erhobenen Werten anders verläuft als vermutet.
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Beispiel Geburten und Storchenpaare
+
+-------------------------------------------------------------------------- ---
+::: {.callout-note}
+## Beispiel: Scheinkorrelation zwischen Geburtenrate und Zahl der Storchenpaare
 Ein bekanntes Beispiel ist die Korrelation zwischen der menschlichen Geburtenrate und der Zahl der Storchenpaare in verschiedenen europäischen Regionen. 
 
 Obwohl es eine Korrelation zwischen der Zahl der Geburten und der Zahl der Storchenpaare gibt (d. h. mehr Geburten und gleichzeitig mehr Storchenpaare), gibt es keinen kausalen Zusammenhang (die falsche Schlussfolgerung, dass die Kinder vom Storch gebracht werden). 
 
-Die Korrelation zwischen Geburten und Storchpaaren ergibt sich daraus, dass in ländlichen Regionen mehr Störche nisten und tendenziell auch mehr Kinder pro Paar geboren werden.
+Die Korrelation zwischen Geburten und Storchpaaren ergibt sich daraus, dass in ländlichen Regionen sowohl mehr Störche nisten als auch tendenziell mehr Kinder pro Einwohner geboren werden.
 
-::: callout-tip
-## Definition *"Scheinkorrelation"*
-[Scheinkorrelation](https://de.wikipedia.org/wiki/Scheinkorrelation) bezeichnet eine Korrelation zwischen zwei Größen, der kein Kausalzusammenhang, sondern nur eine zufällige oder indirekte Beziehung zugrunde liegt.
+![Korrelation zwischen dem Rückgang der Storchenpopulation und der Abnahme der Geburtenzahl in Baden-Württemberg im Zeitraum 1966 - 1975 (Quelle: [Wikipedia](https://de.wikipedia.org/wiki/Scheinkorrelation#/media/Datei:Scheinkorrelation_Storchenpopulation_Geburtenzahl.jpg))](images/Scheinkorrelation_Storchenpopulation_Geburtenzahl.jpg){width=80% #fig-scheinkorrelation}
 :::
-
-![Korrelation zwischen dem Rückgang der Storchenpopulation und der Abnahme der Geburtenzahl in Baden-Württemberg im Zeitraum 1966 - 1975 (Quelle: Wikipedia)](images/Scheinkorrelation_Storchenpopulation_Geburtenzahl.jpg){width=80% #fig-scheinkorrelation}
-
+-->

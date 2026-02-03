@@ -1,10 +1,4 @@
----
-format:
-  html:
-    embed-resources: true
-lang: de
-bibliography: Literatur.bib
----
+
 
 <!--
 headlines:
@@ -45,7 +39,7 @@ keywords:
 
 copyright: 
   holder: Christian Anders
-  year: 2025
+  year: 2026
 lang: de
 bibliography: Literatur.bib
 date: last-modified
@@ -80,30 +74,38 @@ number-offset:
 
 ::: {.content-visible unless-meta="headlines.off"}
 # Softskills
+## Kooperation und Kollaboration
 :::
 
 
-## Verhandlungsstrategie {#sec-verhandlungsstrategie}
+### Verhandlungsstrategie {#sec-verhandlungsstrategie}
 <!-- -------------------------------------------------------------------------
 
                        Callout !!! WARNING !!!
 
 -------------------------------------------------------------------------- -->
-
+<!--
 ::: {.callout-warning}
 ## WARNING!
 **THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
 :::
+-->
 
+::: {.callout-tip}
+## Definition: *"Verhandlungsstrategie"*
+Verhandlungsstrategie bezeichnet den systematischen, zielgerichteten und kontextsensitiven Plan zur Gestaltung und Durchführung von Verhandlungen. 
+:::
+
+Eine Verhandlungsstrategie umfasst die bewusste Auswahl und Kombination von Zielen, Handlungsoptionen, Kommunikationsmustern und Entscheidungsregeln, mit denen eine Verhandlungspartei ihre Interessen unter Berücksichtigung der Interessen, Machtressourcen und erwartbaren Verhaltensweisen der anderen Parteien verfolgt. Eine Verhandlungsstrategie ist dabei auf den gesamten Verhandlungsprozess ausgerichtet – von der Vorbereitung über die Interaktion bis zur Abschlussphase – und dient der strukturierten Steuerung von Entscheidungen unter Unsicherheit und wechselseitiger Abhängigkeit.
 
 ::: {.callout-tip}
 ## Pro-Tipp
-Anzustreben ist stets das Erzielen von Einigungen, nicht nur das Durchführen und Abschließen von Verhandlungen!
+Anzustreben ist stets das **Erzielen von Einigungen**, nicht nur das Durchführen und Abschließen von Verhandlungen!
 :::
 
 
 ::: {.callout-tip}
-## Drei hilfreiche Fragen zum Erzielen von Einigungen
+## Pro-Tipp! Drei hilfreiche Fragen zum Erzielen von Einigungen
 
 **1.** *"What would you suggest?"*
 

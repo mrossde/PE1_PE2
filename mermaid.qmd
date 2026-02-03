@@ -1,0 +1,350 @@
+---
+title: "Vorlesungen und Skripte"
+format:
+  html:
+    embed-resources: true
+
+    mermaid:
+      theme: default
+
+author:
+  - name: "Christian Anders"
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Mermaid
+keywords:
+  - Mermaid
+copyright: 
+  holder: Christian Anders
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: true
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+
+
+
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Einbindung von Mermaid
+
+-------------------------------------------------------------------------- -->
+
+# Mermaid
+
+## Flussdiagramm
+
+```{mermaid}
+graph TD
+    A["Dunkelgrau 10%"] -->| | B["Mittelgrau 20%"]
+    B -->| | C["Hellgrau 30%"]
+    C -->| | D["Blaugrau 15%"]
+    D -->| | E["Braungrau 25%"]
+
+    style A fill:#404040,stroke:#ffffff
+    style B fill:#808080,stroke:#ffffff
+    style C fill:#c0c0c0,stroke:#000000
+    style D fill:#606c7c,stroke:#ffffff
+    style E fill:#887868,stroke:#ffffff
+```
+
+
+```{mermaid}
+%%| label: fig-label-pep0c1
+%%| fig-cap: "Beispiel für ein farbiges Flussdiagramm aus dem Skript zur Vorlesung"
+flowchart TD
+  A[1. Projektinitiierung]
+    A --> B[2. Projektplanung]
+    B --> C[3. Projektdurchführung]    
+    C --> D[4. Projektabschluss]
+  B -->E[5. Projektcontrolling]
+  E -->D
+
+  style A fill:#f0f0f0,stroke:#000000,color:#000000
+  style B fill:#f0f0f0,stroke:#000000,color:#000000
+  style C fill:#f0f0f0,stroke:#000000,color:#000000
+  style D fill:#f0f0f0,stroke:#000000,color:#000000
+  style E fill:#f0f0f0,stroke:#000000,color:#000000
+```
+
+<!-- ACHTUNG! Nur das Farbschema 'base' kann überschrieben werden! (siehe Mermaid-Online-Dokumentation) -->
+
+```{mermaid}
+%%{
+  init: {
+    'theme': 'base', 
+    'themeVariables': {
+      'primaryColor': 'rgb(64, 64, 64)',
+      'secondaryColor': 'rgb(128, 128, 128)',
+      'pie3': 'rgb(96, 108, 124)',
+      'pie4': 'rgb(136, 120, 104)',
+      'pie5': 'rgb(110, 120, 90)'
+    }
+  }
+}%%
+  pie
+    title Farbverteilung
+    "Dunkelgrau" : 10
+    "Mittelgrau" : 20
+    "Hellgrau" : 30
+    "Blaugrau" : 15
+    "Braungrau" : 25
+```
+
+```{mermaid}
+%%{
+  init: {
+    'theme': 'base',
+    'themeVariables': {
+      'primaryColor': 'rgb(96, 108, 124)',
+      'secondaryColor': 'rgb(110, 120, 90)',
+      'primaryTextColor': '#fff',
+      'primaryBorderColor': '#BB2528',
+      'lineColor': '#887868',
+      'secondaryColor': 'rgb(221, 160, 221)',
+      'tertiaryColor': '#fff'
+    }
+  }
+}%%
+        graph TD
+          A[Christmas] -->|Get money| B(Go shopping)
+          B --> C{Let me think}
+          B --> G[/Another/]
+          C ==>|One| D[Laptop]
+          C -->|Two| E[iPhone]
+          C -->|Three| F[fa:fa-car Car]
+          subgraph section
+            C
+            D
+            E
+            F
+            G
+          end
+```
+
+```{mermaid}
+%%| fig-width: 6.4
+%%| label: fig-label-gntbeispielfarben
+%%| fig-cap: "Gantt-Diagramm mit Farbschema"
+%%{init: {'theme': 'neutral'}}%%
+  gantt
+    title Gantt-Diagramm mit Farbschema
+    Start     :done, milestone, m1, 2024-03-30, 0d
+    Aufgabe 1 :done, a1, after m1, 3d
+    Aufgabe 2 :active, a2, after a1, 4d
+    Aufgabe 3 :active, a3, after a2, 1d
+    Ende      :active, milestone, m2, after a3, 0d
+```
+
+%%{init: {'theme': 'forest'}}%%
+%%{init: {'theme': 'neutral'}}%%
+%%{init: {'theme': 'dark'}}%%
+%%{init: {'theme': 'base'}}%%
+
+"base" is the only theme that can be modified. Use this theme as the base for customizations.
+
+# RGB-Codes
+
+## Pastellfarben
+
++ Pastellblau rgb(173, 216, 230)
++ Pastellgrün rgb(152, 251, 152)
++ Pastellrosa rgb(255, 182, 193)
++ Pastellgelb rgb(250, 250, 210)
++ Pastelllila rgb(216, 191, 216)
++ Pastellorange rgb(255, 218, 185)
++ Pastellmint rgb(189, 252, 201)
++ Pastellrot rgb(255, 160, 122)
++ Pastelltürkis rgb(175, 238, 238)
++ Pastellflieder rgb(221, 160, 221)
+
+## Technik
+
+Neonblau rgb(0, 183, 255)
+Cybergrün rgb(57, 255, 20)
+Technisches Grau rgb(110, 110, 110)
+Stahlblau rgb(70, 130, 180)
+Dunkles Graphit rgb(45, 45, 45)
+Laserrot rgb(255, 0, 0)
+Neongelb rgb(255, 255, 102)
+Dunkelgrün rgb(0, 100, 0)
+Industrielila rgb(138, 43, 226)
+Blaugrau rgb(119, 136, 153)
+
+## Neutral
+
++ Dunkelgrau rgb(64, 64, 64)
++ Mittelgrau rgb(128, 128, 128)
++ Hellgrau rgb(192, 192, 192)
++ Blaugrau rgb(96, 108, 124)
++ Braungrau rgb(136, 120, 104)
++ Olivgrau rgb(110, 120, 90)
++ Petrolgrau rgb(80, 110, 120)
++ Dunkelblau rgb(50, 75, 100)
++ Schiefergrau rgb(90, 100, 110)
++ Aschgrau rgb(150, 140, 130)
+
+## Misc
+
++ rgb(25, 99, 132)
++ rgb(75, 192, 192)
++ rgb(255, 205, 86)
+
+## HS Esslingen
+
++ HE-Dunkelblau rgb(0,45,88)
++ HE-Rot-Neu rgb(215,15,60)
++ HE-Hellblau rgb(0,170,220)
++ HE-Hintergrundgrau rgb(240,240,240)
+
+## DRAW.IO
+
+Grün      #d5e8d4, #82B366
+Orange1   #ffe6cc, #D79B00
+Gelb      #fff2cc, #D6B656
+Rot1      #f8cecc, #B85450
+Violett1  #E1D5E7, #9673A6
+
+Hellgrau  #f5f5f5, #666666
+
+Orange2   #FAD7AC, #B46504
+Rot2      #FAD9D5, #AE4132
+Türkies   #B0E3E6, #0E8088
+Petrol    #B1DDF0, #10739E
+Violett2  #D0CEE2, #56517E
+Violett3  #BAC8D3, #23445D
+
+Beispiel:
+style C fill:#B0E3E6,stroke:#0E8088,color:#000000
+style C fill:#D5E8D4,stroke:#82B366,color:#000000
+
+
+# Mermaid-Farbschema
+
+mermaid:
+  themeVariables:
+    # Allgemeine Farben
+    primaryColor: "#ff6600"     # Hauptfarbe für Knoten
+    secondaryColor: "#0066ff"   # Zweitfarbe für spezielle Knoten
+    tertiaryColor: "#00cc66"    # Drittfarbe für weitere Unterscheidungen
+    background: "#222222"       # Hintergrundfarbe des Diagramms
+    edgeLabelBackground: "#ffffff"  # Hintergrundfarbe der Pfeilbeschriftungen
+
+    # Knoten (Nodes)
+    nodeBorder: "#ffffff"       # Farbe der Umrandung von Knoten
+    clusterBkg: "#444444"       # Hintergrundfarbe von Clustern
+    clusterBorder: "#888888"    # Rahmenfarbe von Clustern
+
+    # Pfeile (Edges)
+    lineColor: "#ffffff"        # Standardfarbe für Kanten
+    arrowheadColor: "#ffffff"   # Farbe der Pfeilspitzen
+
+    # Textfarben
+    textColor: "#ffffff"        # Standardfarbe für Texte
+    nodeTextColor: "#ffffff"    # Farbe für Text innerhalb von Knoten
+    clusterTextColor: "#eeeeee" # Farbe für Cluster-Überschriften
+    titleColor: "#ffcc00"       # Farbe für Diagramm-Titel
+
+    # Sequenzdiagramme
+    actorBorder: "#ffffff"      # Farbe der Umrandung von Akteuren
+    actorBkg: "#333333"         # Hintergrundfarbe von Akteuren
+    signalColor: "#ffcc00"      # Farbe der Signale in Sequenzdiagrammen
+
+    # Gantt-Diagramme
+    ganttHeaderBackground: "#444444" # Hintergrund des Gantt-Headings
+    ganttHeaderTextColor: "#ffffff"  # Farbe der Überschrift
+    ganttSectionBkgColor: "#555555"  # Hintergrund für Gantt-Sektionen
+    ganttTaskBkgColor: "#ff6600"     # Farbe der Gantt-Aufgaben
+
+    # Pie- und Donut-Diagramme
+    pie1: "#ff6600"   # Farbe für den ersten Abschnitt
+    pie2: "#00cc66"   # Farbe für den zweiten Abschnitt
+    pie3: "#0066ff"   # Farbe für den dritten Abschnitt
+    pie4: "#ffcc00"   # Farbe für den vierten Abschnitt
+
+    # Klassendiagramme
+    classBkg: "#333333"    # Hintergrund von Klassen
+    classText: "#ffffff"   # Textfarbe in Klassen
+    classBorder: "#ffffff" # Randfarbe von Klassen
+
+
+# Mermaid-Diagramme
+
+```{mermaid}
+%%| label: fig-label-mmzieletesting
+%%| fig-cap: "Mindmap wichtiger Ziele beim Testing"
+%%{init: {'theme': 'forest'}}%%
+mindmap
+  root(Ziele Testing)
+    Ziel1(Fehleridentifikation)
+      Beschreibung(Probleme und Bugs im Produkt erkennen)
+    Ziel2(Validierung)
+      Beschreibung(Sicherstellen, dass das Produkt den Anforderungen entspricht)
+    Ziel3(Verifizierung)
+      Beschreibung(Überprüfung der technischen Spezifikationen)
+    Ziel4(Leistungsbewertung)
+      Beschreibung(Leistung des Produkts unter verschiedenen Bedingungen testen)
+    Ziel5(Benutzerakzeptanz)
+      Beschreibung(Feedback von Endbenutzern einholen)
+    Ziel6(Sicherheit)
+      Beschreibung(Sicherheitslücken und Schwachstellen identifizieren)
+```
+
+
+Um die Qualität und Effizienz des Testprozesses zu verbessern wird das Automatisieren von Tests angestrebt. 
+Folgende Ziele werden mit der Automatisierung von Tests verfolgt:
+
+```{mermaid}
+%%| label: fig-label-mmzieleautomatisiertetests
+%%| fig-cap: "Mindmap wichtiger Ziele beim Automatisieren von Tests"
+%%{init: {'theme': 'forest'}}%%
+mindmap
+  root(Ziele der Automatisierung von Tests)
+    Ziel1(Effizienzsteigerung)
+      Beschreibung(Reduzierung der Testdurchführungszeit)
+    Ziel2(Kostensenkung)
+      Beschreibung(Langfristige Verringerung der Testkosten)
+    Ziel3(Fehlerreduktion)
+      Beschreibung(Minimierung menschlicher Fehler)
+    Ziel4(Kontinuität)
+      Beschreibung(Ermöglichung kontinuierlicher Tests)
+    Ziel5(Skalierbarkeit)
+      Beschreibung(Möglichkeit, Tests schnell zu erweitern)
+    Ziel6(Wiederholbarkeit)
+      Beschreibung(Konsistente und reproduzierbare Testergebnisse)
+```
+
+<p style="color: rgb(0, 128, 0);">→ Insbesondere auf die extrem hohe Bedeutung der Möglichkeit von automatisierten Tests im Bereich der Softwareentwicklung hinweisen, insbesondere bei Softwareentwicklung mit häufigen Änderungen (z.B. Apps).</p>
+
+<p style="color: rgb(0, 128, 0);">→ Teilziel Wiederholbarkeit: → Anwendungsfall u.a. Stabilität von Simulationen, z.B. Wettervorhersage, Strömungssimulation (FEM) oder Materialflusssimulation (Monte-Carlo-Methode) → Starke/Schwache Kausalität</p>
+
+# Templates
+## Mindmap
+```{mermaid}
+%%{init: {'theme': 'forest'}}%%
+mindmap
+  root(Projektplanung)
+    Knoten1(Zielsetzung)
+    Knoten2(Ressourcen)
+    Knoten3(Zeitplan)
+    Knoten4(Risikoanalyse)
+    Knoten5(Kommunikation)
+```

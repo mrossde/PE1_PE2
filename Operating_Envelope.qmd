@@ -1,0 +1,173 @@
+<!--
+title: "DEB Produktentwicklung"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
+keywords:
+  - Produktentwicklung
+  - Entwicklungsmethodik
+  - Operating Envelope
+  - Betriebszustand
+  - Betriebsstrategie
+copyright: 
+  holder: Christian Anders
+  year: 2026
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: true
+number-sections: true
+scrollable: true
+toc-location: right
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+-->
+
+<!--
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       ÜBERSCHRIFTEN | KAPITEL
+
+-------------------------------------------------------------------------- -->
+
+::: {.content-visible unless-meta="headlines.off"}
+# Grundlagen
+## Begriffe
+:::
+
+<!-- -------------------------------------------------------------------------
+
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+<!--
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+<!-- -------------------------------------------------------------------------
+
+                       Operating Envelope
+
+-------------------------------------------------------------------------- -->
+
+### Operating Envelope {#sec-operating_envelope}
+
+---
+
+>
+*"The operating envelope refers to the set of operational parameters within which a system operates safely and effectively. It defines the limits of performance, safety, and efficiency, ensuring that operations remain within a range that optimizes key performance indicators (KPIs) such as product quality, operational safety, and equipment efficiency."*
+
+---
+
+::: {.callout-tip}
+## Definition: *"Operating Envelope"*
+Der Operating Envelope beschreibt den zulässigen Raum aller möglichen Betriebszustände, innerhalb dessen ein technisches System sicher, zuverlässig und leistungsfähig betrieben werden kann. Jeder Punkt innerhalb dieses Raumes repräsentiert einen gültigen Betriebszustand. Zustände außerhalb des Operating Envelopes führen möglicherweise zu Ausfall, beschleunigtem Verschleiß oder Leistungseinbußen. 
+:::
+
+Der Operating Envelope legt die zulässigen Grenzen der Systems in Bezug auf Systemparameter, Betriebszustände und Umgebungsbedingungen fest. 
+
+
+```{mermaid}
+%%| label: fig-label-operatingenvelope
+%%| fig-cap: "Mindmap zum Operating Envelope"
+%%{init: {'theme': 'forest'}}%%
+mindmap
+   root(Operating Envelope)
+      (Systemparameter)
+      (Betriebszustände)
+      (Umgebungsbedingungen)
+```
+
+::: {.callout-warning}
+## Die Funktion eines Systems ist nur innerhalb des Operating Envelope garantiert!
+Der Operating Envelope definiert die Grenzen des sicheren Betriebs des Systems. Außerhalb des Operating Envelopes ist das Verhalten des Systems nicht mehr garantiert, es kann zu Leistungsabfall, Fehlfunktionen oder strukturellen Schäden kommen.
+:::
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Betriebszustand
+
+-------------------------------------------------------------------------- -->
+
+### Betriebszustand {#sec-betriebszustand}
+
+::: {.callout-tip}
+## Definition: *"Betriebszustand"*
+Der Betriebszustand beschreibt den aktuellen oder geplanten Zustand, in dem sich ein System während seines Einsatzes befindet.
+:::
+
+Der Betriebszustand eines Systems wird durch innere Zustände (siehe → Systemparameter) charakterisiert (z.B. Temperatur, Wärmefluss, Kühlleistung, Spannung, Strom, Leistungsaufnahme, Drehzahl, Drehmoment) und durch äußere Einflussgrößen (siehe → Umgebungsbedingungen, siehe → **Umweltqualifizierung** @sec-umwelt) beeinflusst (z. B. Temperatur, Feuchtigkeit, Druck, Last). 
+
+Ein System kann in verschiedenen Betriebszuständen betrieben werden (siehe → Betriebsstrategie) (z.B. Aus, Anfahren, Normalbetrieb, Teillast, Volllast, Stillstand, Notbetrieb).
+
+Häufig werden Betriebszuständen im alltäglichen Sprachgebrauch mit Farben assoziiert: 🟩 Grün: Nominaler Betriebsbereich — sicher und effizient | 🟨 Gelb: Erweiterter Bereich — kurzfristig zulässig, aber erhöhter Verschleiß oder verminderte Sicherheit | 🟥 Rot: Überlastbereich — Betrieb außerhalb der Spezifikation, spontaner Ausfall oder vollständige Zerstörung des System möglich, hohes Sicherheitsrisiko.
+
+![Anzeige des Betriebszustand einer Maschine mittels Ampel 🟩🟨🟥 (Quelle: Adobe Stock)](images/AdobeStock_1562972146.jpeg){width=26% #fig-betriebszustand}
+
+
+
+<!-- -------------------------------------------------------------------------
+
+                       Betriebsstrategie
+
+-------------------------------------------------------------------------- -->
+
+### Betriebsstrategie  {#sec-betriebsstrategie}
+
+::: {.callout-tip}
+## Definition: *"Betriebsstrategie"*
+Eine Betriebsstrategie definiert die geplante Vorgehensweise zur Nutzung, Steuerung und Regelung eines Systems, um dessen Funktion, Effizienz, Zuverlässigkeit, Lebensdauer und sicheren Betrieb innerhalb der durch den Operating Envelope vorgesehenen Grenzen zu optimieren.
+:::
+
+Die Betriebsstrategie legt fest, wie ein System unter verschiedenen äußeren und inneren Bedingungen betrieben wird, um ein gewünschtes Ziel (z.B. Leistung, Effizienz, Sicherheit) zu erreichen.
+
+Die Betriebsstrategie umfasst hierzu die Auswahl und Anpassung von Betriebsparametern (z.B. Spannung, Strom, Drehzahl, Drehmoment, Temperatur, Kühlleistung), abhängig vom Betriebszustand, den Umgebungsbedingungen und Systemzuständen^[Beispiel Betriebsstrategie für einen Akkumulator: Eine Strategie im Batteriemanagementsystem eines Akkus legt Lade-/Entladeraten und Temperaturmanagement fest, um sowohl ein schnelles Laden/Entladen des Akkus sicherzustellen und gleichzeitig die Alterung des Akkus zu minimieren.].
+
+Betriebsstrategien balancieren meist konkurrierende Ziele wie Leistung, Effizienz, Sicherheit, Lebensdauer und Komfort (siehe z.B. [Derating](https://en.wikipedia.org/wiki/Derating)^[Das bei der Produktentwicklung gewählte Derating hängt zumeist stark von der Anwendungsdomäne (z.B. Luftfahrt, Automotive, Industrie, Consumer) ab. In sicherheitskritischen Bereichen gibt es standardisierte Derating-Richtlinien, z.B. von NASA, ESA oder IEC.]). Hierzu finden häufig adaptive oder modellbasierte Strategien Verwendung. Im erweiterten Sinn gehört auch das [Preconditioning](https://en.wiktionary.org/wiki/preconditioning) zu den Betriebsstrategien.
+
+::: {.callout-warning}
+## Pro-Tipp!
+Das Testen von Betriebsstrategien im Rahmen der Phase Prototyping und Test (siehe → @sec-ziele_prototyping_und_test) erfordert in der Regel eigens auf das System und die Betriebsstrategie zugeschnittene zu entwickelnde Test und ist oftmals mit sehr hohem zeitlichen und materiellen Aufwand verbunden.
+:::
+
+::: {.callout-important}
+## Pro-Tipp!
+Insbesondere bei mechatronischen Systemen ist die Entwicklung der Betriebsstrategie eine der wichtigsten und häufig noch immer unterschätzten Herausforderungen bei der Produktentwicklung. De facto ist die Entwicklung und der Betrieb nahezu aller moderner Produkte ohne die die Produktentwicklung begleitende Entwicklung einer geeigneten Betriebsstrategie nicht mehr möglich. In vielen Fällen bestimmt die gewählte Betriebsstrategie maßgeblich die Anforderungen an die zu entwickelnde Hardware und entscheidet damit mit über die realisierbaren Eigenschaften und die zu erwartende Kosten des Produkts.
+:::
+
+

@@ -1,10 +1,19 @@
----
+<!--
 format:
   html:
     embed-resources: true
 lang: de
 bibliography: Literatur.bib
----
+
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
 
 <!--
 headlines:
@@ -72,6 +81,7 @@ number-offset:
 <!-- -------------------------------------------------------------------------
 
                        Koinzidenz
+
 -------------------------------------------------------------------------- -->
 
 ::: {.content-visible unless-meta="headlines.off"}
@@ -84,12 +94,12 @@ number-offset:
                        Callout !!! WARNING !!!
 
 -------------------------------------------------------------------------- -->
-
+<!--
 ::: {.callout-warning}
 ## WARNING!
 **THIS CHAPTER IS STILL WORK IN PROGRESS!!!**
 :::
-
+-->
 
 ### Koinzidenz {#sec-koinzidenz}
 
@@ -98,15 +108,18 @@ number-offset:
 [Koinzidenz](https://de.wikipedia.org/wiki/Koinzidenz) ist ein zeitliches oder räumliches Zusammenfallen von Ereignissen oder Zusammentreffen von Objekten.
 :::
 
+
+<p style="text-align: center;">![](images/AdobeStock_589506892.png){width=20%}</p>
+
 ::: {.callout-important}
-## Koinzidenz ist kein Beweis für Kausalität, schließt aber Kausalität auch nicht aus!
+## Pro-Tipp! Koinzidenz ist kein Beweis für Kausalität, schließt aber Kausalität auch nicht aus!
 Aus dem Auftreten von Koinzidenz alleine darf nicht auf einen kausalen Zusammenhang geschlossen werden, auch wenn ein kausaler Zusammenhang tatsächlich vorhanden sein kann.
 :::
 
 
 <!-- --------------------------------------------------------------------------
 EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT
-S T A R T -->
+S T A R T 
 ::: {.content-visible unless-meta="extended-content.off"}
 <!-- ---------------------------------------------------------------------- -->
 
@@ -115,15 +128,89 @@ S T A R T -->
 ::: {.callout-tip}
 ## Definition *"Notwendige und hinreichende Bedingung"*
 [Notwendige Bedingung](https://de.wikipedia.org/wiki/Notwendige_und_hinreichende_Bedingung) und [hinreichende Bedingung](https://de.wikipedia.org/wiki/Notwendige_und_hinreichende_Bedingung) sind Begriffe aus der Theorie wissenschaftlicher Erklärungen, die Bedingungen in zwei verschiedene Typen unterteilen. Die unterschiedlichen Beziehungen zwischen **Bedingendem** und **Bedingtem** werden auch in der Aussagenlogik behandelt.
+
+Aussagenlogisch betrachtet ist eine notwendige Bedingung $B_n$ für eine Aussage $A$ eine Aussage, die zwingend wahr (erfüllt) sein muss, wenn $A$ wahr ist. Es kommt also nicht vor, dass $A$ erfüllt ist, ohne dass $B_n$ erfüllt ist. Eine hinreichende Bedingung $B_h$ sorgt hingegen zwangsläufig (oder zumindest unter sonst gleichen Bedingungen (*"[ceteris paribus](https://de.wikipedia.org/wiki/Ceteris_paribus)"*) für das Eintreten des bedingten Ereignisses.
 :::
 
 ::: {.callout-note}
 ## Beispiel *"Notwendige und hinreichende Bedingung"*
-*"Gemahlene Bohnen sind eine notwendige Bedingung, um Kaffee zu kochen – ohne sie geht es nicht. Aber sie sind nicht hinreichend, da man zum Kochen auch Wasser benötigt."*
+*"Das Vorhandensein gemahlener Bohnen ist eine notwendige Bedingung, um Kaffee zu kochen. Vorhanden gemahlene Bohnen sind jedoch nicht hinreichend, um Kaffee zu kochen, da man zum Kochen auch (heißes) Wasser benötigt."*
 :::
 
-<!-- ---------------------------------------------------------------------- -->
+<!-- ---------------------------------------------------------------------- ---
 :::
 <!-- S T O P
 EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT
 --------------------------------------------------------------------------- -->
+
+<!-- --------------------------------------------------------------------------
+EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT
+S T A R T ---
+::: {.content-visible unless-meta="extended-content.off"}
+<!-- ---------------------------------------------------------------------- -->
+
+### Unsicheres Wissen
+
+::: {.callout-tip}
+## Definition *"Unsicheres Wissen"*
+Als [unsicheres Wissen](https://de.wikipedia.org/wiki/Unsicheres_Wissen) werden Informationen bezeichnet, die aufgrund mangelnder Genauigkeit oder Verlässlichkeit ungewiss sind.
+:::
+
+In der Entscheidungstheorie bedient man sich zur Behandlung derartiger Informationen u.a. Werkzeugen der Wahrscheinlichkeitslogik (probabilistisches Schließen), wobei z.B. ein Erwartungswert für die Geltung einer Aussage beziffert wird. Ebenso bedient man sich der [Fuzzy-Logik](https://de.wikipedia.org/wiki/Fuzzylogik), wobei z.B. *„unscharfe“* Prädikate berücksichtigbar sind, und Techniken des *"nichtmonotonen Schließens"*.
+
+
+### Nichtmonotones Schließen
+
+::: {.callout-tip}
+## Definition *"Nichtmonotones Schließen"*
+Nichtmonotones Schließen (engl. *"non-monotonic reasoning"*) bezeichnet eine Schlussfolgerungsbeziehung, bei der neue Informationen bereits gezogene Schlussfolgerungen ungültig machen können. 
+:::
+
+Im Gegensatz zum monotonen Schließen (wie in der klassischen Logik), wo zusätzliche Informationen den Bestand an Schlussfolgerungen nur erweitern können, gilt beim nichtmonotonen Schließen, dass **neue Evidenz zu einer Revision oder einem Widerruf früherer Entscheidungen oder Annahmen führen kann**.
+
+<!--
+::: {.callout-tip}
+## Definition *"Nichtmonotones Schließen"*
+Nichtmonotones Schließen (engl. *"non-monotonic reasoning"*) bezeichnet eine Schlussfolgerungsbeziehung $\vdash^*$ über eine Wissensbasis $K$, bei der gilt:
+
+$$
+K \vdash^* \varphi \ \text{ aber } \ K \cup \Delta \not \vdash^* \varphi
+$$ {#eq-nichtmonotonesschliessen}
+
+für geeignete Erweiterungen $\Delta$ von $K$. Mit anderen Worten: Fügt man der Wissensbasis $K$ neue Information $\Delta$ hinzu, kann damit eine zuvor gezogene Schlussfolgerung $\varphi$ **nicht mehr** gültig sein.
+:::
+-->
+
+Diese Form des Schließens erlaubt eine Revision oder Widerruf früherer Schlüsse im Licht zusätzlicher Information und eignet sich damit zur Modellierung von entscheidungs-, erkenntnis- und wissensbasierten Prozessen unter Unsicherheit oder Unvollständigkeit.
+
+---
+
+> *„Reasoners draw conclusions defeasibly when they reserve the right to retract them in the light of further information.“* <!-- ([Stanford-Enzyklopädie der Philosophie][1]) -->
+
+---
+
+<!--
+> Damit unterscheidet sich nichtmonotones Schließen grundlegend vom klassischen monotonen Schließen, bei dem das Hinzufügen von Prämissen niemals den Bestand bereits gültiger Schlussfolgerungen reduziert. ([Stanford University][2])
+>
+> In der Entscheidungstheorie lässt sich nichtmonotones Schließen verwenden, um etwa Entscheidungen als **vorläufige Hypothesen bzw. Wetten** zu interpretieren, die mit dem Eintreffen neuer Informationen revidiert oder zurückgenommen werden können. ([arXiv][3])
+
+### Literaturnachweise
+
+* Stanford Encyclopedia of Philosophy. *Non-monotonic Logic.* (2024) ([Stanford-Enzyklopädie der Philosophie][1])
+* International Center for Computational Logic, TU Dresden. *Non-Monotonic Reasoning.* ([iccl.inf.tu-dresden.de][4])
+* Kadie, Carl. *Rational Nonmonotonic Reasoning.* (2013) ([arXiv][3])
+
+
+[1]: https://plato.stanford.edu/entries/logic-nonmonotonic/?utm_source=chatgpt.com "Non-monotonic Logic (Stanford Encyclopedia of Philosophy)"
+[2]: https://web.stanford.edu/group/cslipublications/cslipublications/site/1881526836.shtml?utm_source=chatgpt.com "Nonmonotonic Reasoning: An Overview"
+[3]: https://arxiv.org/abs/1304.2361?utm_source=chatgpt.com "Rational Nonmonotonic Reasoning"
+[4]: https://iccl.inf.tu-dresden.de/web/Nichtmonotones_Schlie%C3%9Fen/en?utm_source=chatgpt.com "Non-Monotonic Reasoning - International Center for Computational Logic"
+
+-->
+
+<!-- ---------------------------------------------------------------------- ---
+:::
+<!-- S T O P
+EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT  -  EXTENDED CONTENT
+--------------------------------------------------------------------------- -->
+

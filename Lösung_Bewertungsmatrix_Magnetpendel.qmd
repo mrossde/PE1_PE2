@@ -1,0 +1,120 @@
+---
+title: "DEB3 Produktentwicklung 1"
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Christian Anders"
+    degrees: 
+    roles: "Dozent"
+    email: christian.anders@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+keywords:
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
+  - Labor 
+  - Magnetpendel
+  - Bewertungsmatrix
+copyright: 
+  holder: Christian Anders
+  year: 2024
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+---
+
+<!--
+format:
+  html:
+    embed-resources: true
+lang: de
+bibliography: Literatur.bib
+-->
+<!-- 
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
+:::
+-->
+
+ <!-- -------------------------------------------------------------------------
+
+                       Lösung Bewertungsmatrix Magnetpendel
+
+-------------------------------------------------------------------------- -->
+
+::: {.callout-tip}
+## Bewertungsmatrix Magnetpendel
+
+**a)** **Bewertungskriterien**
+
+Zu klären: Was heißt *"Erfassung der Lage und Bahn"*?
+
+Hierzu finden sich in der Aufgabenstellung keine näheren Informationen! Die Beschreibung der Anforderungen ist unklar!
+
+---
+
+Sollte Ihnen zu irgend einem Zeitpunkt bei der Bearbeitung einer Aufgabe etwas unklar sein oder sollten Ihnen wichtige Informationen fehlen und diese nicht beschafft werden können: Bitte weisen Sie Ihren Auftraggeber auf das Fehler wichtiger Informationen hin! **Ziel muss es immer sein, vor Beginn der Arbeiten Kenntnis über alle zur Bearbeitung der Aufgabe notwendigen Informationen zu erlangen!** 
+
+Zumeist ist das Beschaffen dieser Informationen bereits ein wichtiger Bestandteil der jeweiligen Aufgabe!
+
+Sollten Ihnen trotz aller Mühen, die wichtigen Informationen zu erhalten, Sie sich diese nicht erarbeiten können und Ihnen diese auch nicht zur Verfügung gestellt werden können (egal ob hierfür technische oder organisatorische Gründe ursächlich sind), Sie die Aufgabe aber dennoch durchführen müssen, dokumentieren Sie das Fehlen der Informationen und weisen Sie bei der Dokumentation oder Präsentation Ihrer Ergebnisse auf das Fehlen der Informationen hin!
+
+---
+
+Die Lage und Bahn des Pendels wird beschrieben durch *"hinreichend genaue"* Erfassung der Position des Pendelkopfes in *"hinreichend kurzen"* zeitlichen Abständen. 
+
+Wir wollen im Folgenden davon ausgehen dass die Anforderung für die Erfassung der Position als *"hinreichend genau"* ab einer Erfassung der Position des Pendelkopfes in einem Bereich von 1mm x 1mm oder genauer und die zeitliche Anforderung bei 30 oder mehr gemessenen Positionen pro Sekunde als erfüllt gilt.
+
+Hieraus folgen als Bewertungskriterien:
+
+1. **Räumliche Genauigkeit**: ± 0,5 mm in X- und Y-Richtung
+2. **Zeitliche Genauigkeit**: ≥ 30 FPS 
+
+Als mögliche technische Verfahren wurden im Vorfeld 1). Kamera, 2). Potentiometer und 3). Beschleunigungsaufnehmer (IMU) ausgewählt. Zum Potentiometer und Beschleunigungsaufnehmer steht eine technische Spezifikation zur Verfügung. Eine Kamera wurde noch nicht ausgewählt, daher steht zur Kamera keine technische Spezifikation zur Verfügung.
+
+1. **Kamera**: Direkte Messung der Position des Pendelkopfes. Fehler addieren sich NICHT auf. Lage des Pendels muss aus dem Bild zurückgerechnet werden (Herausforderungen: 1). Erkennung des Pendelkopfes → ggf. Marker notwendig, 2). Rückrechnung des aufgenommenen Bilds auf die 2D-Ebene des Pendels. Bei Inbetriebnahme ist eine einmalige Kalibrierung erforderlich; eine geeignete Vorrichtung steht zur Verfügung. Anforderung: Auszuwählende Kamera muss 640x640 Pixel Auflösung bei 30 Bildern pro Sekunde (oder besser) aufweisen.
+
+2. **Potentiometer**: Direkte Messung der Position des Pendelkopfes. Fehler addieren sich NICHT auf. Lage des Pendels muss aus den zwei Winkeln und der Länge des Pendels berechnet werden. Bei Inbetriebnahme ist eine einmalige Kalibrierung erforderlich; eine geeignete Vorrichtung steht zur Verfügung. Laut der beigefügten technischen Spezifikation hat das Potenziometer eine Auflösung von +-100 Digits bei Vollausschlag (ca. 25 Grad). Das Pendel weist nur Ausschläge +-5 Grad auf (entspricht ca. +-20 Digits) → Räumliche Auflösung zur Erfassung der Lage des Pendelkopfes daher nur im Bereich von einigen (vielen!) Millimetern zu erwarten → Anforderung nach räumlicher Genauigkeit kann NICHT erfüllt werden. Abtastrate des Potentiometers ist unbekannt, 30 Hz scheinen zwar realistisch, müssten aber bei einer Entscheidung zugunsten des Potentiometers unbedingt verifiziert werden!
+
+3. **Beschleunigungsaufnehmer**: Indirekte Messung der Position des Pendelkopfes. Die Erfassung der Lage und Bahn über die drei Beschleunigungsaufnehmer der IMU setzen 1.) Kenntnis des Startpunkts voraus 2.) Ist nur durch aufeinander aufbauende Abfolge von einer großen Zahl von Berechnungen möglich, u.a. Integration aus Beschleunigung auf Geschwindigkeit UND schrittweises Zusammensetzen der Bahn durch Integration von Geschwindigkeit auf zurückgelegten Weg → Fehler bei Kenntnis des Startpunkts aber insbesondere selbst kleinste Fehler bei der Erfassung der Beschleunigung addieren sich über die Bahn auf ohne Möglichkeit einer Fehlerkorrektur. Eine geeignete Startvorrichtung ist aktuell nicht verfügbar und müsste bei einer Entscheidung zugunsten des Beschleunigungsaufnehmer zunächst noch entwickelt werden!
+
+Als ergänzendes Bewertungskriterium ist schließlich noch relevant in welchem Umfang das verwendete Verfahren die Bahn des Pendels beeinflusst. Auch dieses Kriterium ist in die Bewertungsmatrix mit aufzunehmen und bei der Bewertung der drei Verfahren mit zu berücksichtigen. 
+
+Die Kosten für das jeweilige Verfahren wurden in der Aufgabenstellung als Bewertungskriterium im Vorfeld explizit ausgenommen und sind daher in der Bewertungsmatrix nicht aufzunehmen.
+
+
+**b)** **Bewertungsmatrix und Bewertung**
+
+|                       | Kamera           | Potentiometer    | Beschleunigungsaufnehmer     |
+|-----------------------|------------------|------------------|------------------------------|
+| Räumliche Genauigkeit | 5                | 2                | 4 → 1 (stark veränderlich)   | 
+| Zeitliche Genauigkeit | n.n. (≥ 30 FPS)  | n.n. (≥ 30 Hz)   | 100 Hz                       | 
+| Vorbedingungen        | 1 x Kalibrierung | 1 x Kalibrierung | Startpunkt muss bekannt sein | 
+| Einfluss auf Pendel   | 5 (keine)        | 3 (Reibung)      | 3 (Masse IMU und Kabel)      | 
+| **Bewertung**:        | **gut**          | **mangelhaft**   | **ungenügend**               | 
+
++ Die Bewertungen reichen von 1 bis 5 Punkte, wobei 1 Punkt die schlechteste Bewertung und 5 Punkte die beste Bewertung ist.
+
+
+**FAZIT**: Nach den vorliegenden Informationen hat nur die Kamera das Potential, die Lage und Bahn des Pendels entsprechend der vorliegenden Anforderungen (räumliche Genauigkeit ± 0,5 mm in X- und Y-Richtung bei einer zeitlichen Auflösung von ≥ 30 FPS) zu erfassen. Die Kamera bietet zudem als einziges der drei Verfahren die Möglichkeit, die Bahn des Pendels zu erfassen ohne dabei die Bahn zu beeinflussen.
+:::
+  

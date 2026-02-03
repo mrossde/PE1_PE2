@@ -1,5 +1,16 @@
----
-title: "DEB3 Produktentwicklung 1"
+<!--
+headlines:
+  off: true
+extended-content:
+  off: false
+included-content:
+  off: false
+worksheets:
+  off: true
+-->
+
+<!--
+title: "DEB Produktentwicklung"
 format:
   html:
     embed-resources: true
@@ -18,39 +29,45 @@ author:
         country: "Deutschland"
         url: https://www.hs-esslingen.de/
 abstract: > 
-  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
+  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
 keywords:
-  - Produktentstehungsprozess
+ - Produktentstehungsprozess
   - Entwicklungsmethodik
   - Murphy's law
   - Kidlin's law
   - Gilbert's law
   - Falkland's law
   - Parkinson's law
+
 copyright: 
   holder: Christian Anders
-  year: 2024
+  year: 2025
 lang: de
 bibliography: Literatur.bib
 date: last-modified
-toc: false
-number-sections: false
+toc: true
+number-sections: true
 scrollable: true
-toc-location: right-body
+toc-location: right
 cap-location: bottom
 number-offset: 0
 link-external-icon: true
 link-external-newwindow: true
----
-
+-->
 
 <!--
-format:
-  html:
-    embed-resources: true
-lang: de
-bibliography: Literatur.bib
---->
+number-offset: 
+0 Grundlagen
+1 Ideenfindung und Konzeptentwicklung
+2 Entwurfs- und Entwicklungsphase
+3 Prototyping und Test
+4 Produktionsplanung und Produktion
+5 Softskills
+6 Literatur 
+7 Anhang
+-->
+
+
 
 <!-- -------------------------------------------------------------------------
 
@@ -58,9 +75,9 @@ bibliography: Literatur.bib
 
 -------------------------------------------------------------------------- -->
 
-### Famous Laws: Murphy, Kidlin, Gilbert, Falkland {#sec-famouslaws}
+## Famous Laws {#sec-famouslaws}
 
-#### Murphy's law 
+### Murphy's law {#sec-murphyslaw}
 
 ---
 
@@ -72,9 +89,13 @@ bibliography: Literatur.bib
 
 Murphy's law hat aufgrund seines unmittelbaren Bezugs zu unseren Arbeiten im Alltag auch außerhalb der Produktentwicklung weite Verbreitung gefunden und ist heute nicht nur ein fester Bestandteil der populären Wissenschaften sondern auch der Popkultur. Entsprechend gibt es eine Vielzahl von Variationen von Murphy's law, wie beispielsweise:
 
+---
+
 >*"The more you fear something happening, the more likely it is to occur."*
 
 >*"No matter what you do, you will invariably make the incorrect choice at some point.*"
+
+---
 
 ![[Edward Aloysius Murphy Jr.](https://de.wikipedia.org/wiki/Edward_A._Murphy) (* 11. Januar 1918 in der Panamakanalzone; † 17. Juli 1990 in Los Angeles)](images/EdwardAloysiusMurphyJr.jpg){width=25% #fig-edwardmurphy}
 
@@ -126,11 +147,11 @@ So frustrierend es sein kann, wenn immer wieder etwas schief geht und Tests sche
 
 ---
 
->*"Probleme sind Schätze!" (Toyota-Produktions-System)*
+>*"Probleme sind Schätze!" ([Toyota-Produktions-System](https://de.wikipedia.org/wiki/Toyota-Produktionssystem))*
 
 ---
 
-#### Kidlin's law
+### Kidlin's law
 
 ---
 
@@ -146,6 +167,12 @@ Der wichtige Punkt in Kidlin's law ist das Wort *“clearly”*. Wenn ein Proble
 
 1. **Beschreiben des Problems:** 
 Der erste und zumeist schon wichtigste Schritt besteht darin, das Problem klar und prägnant aufzuschreiben. Vermeiden Sie dabei vage oder allgemeine Aussagen wie "Ich bin unglücklich" oder "Ich brauche mehr Geld". Seien Sie stattdessen spezifisch und so konkret wie möglich, zum Beispiel: "Ich bin unglücklich mit meinem aktuellen Job, weil er nicht meinen Fähigkeiten und Interessen entspricht" oder "Ich brauche mehr Geld, um meine Schulden abzuzahlen und für den Ruhestand zu sparen." Das Aufschreiben des Problems bietet eine Hilfestellung, das Denken zu klären, die Aufmerksamkeit zu fokussieren, die Informationen zu organisieren und die Gedanken ggf. an bei der Lösungsfindung und deren Umsetzung Mitwirkende zu kommunizieren."
+
+---
+
+>*"If you can't reproduce it, you can't fix it."* (Christian Anders)
+
+---
 
 2. **Analyse und Zerlegen des Problems:** 
 Als nächstes gilt es, das Problem in kleinere und einfachere Teile zu zerlegen. Stellen Sie sich selbst Fragen wie: "Was sind die Ursachen des Problems? Welche Auswirkungen hat es? Welche Beschränkungen oder Grenzen gibt es? Welche Annahmen oder Überzeugungen stehen hinter dem Problem? Und welche Ziele oder gewünschten Ergebnisse sollen durch die Lösung des Problems erreicht werden?". **Tipp**: In diesem zweiten Schritt können Sie auch auf Methoden des Qualitätsmanagements zurückgreifen, wie z.B. der [5-Why-Methode](https://de.wikipedia.org/wiki/5-Why-Methode) oder dem Ishikawa-Diagramm, vorausgesetzt, Ihnen sind diese Methoden gut bekannt und deren Anwendung ist Ihnen bereits vertraut. 
@@ -165,11 +192,11 @@ Wichtig ist ein **systematisches Vorgehen bei der Fehlersuche!** Bei der Fehlers
 
 
 
-#### Gilbert's law of work specialization
+### Gilbert's law of work specialization
 
 ---
 
->"The biggest problem at work is that no one tells you what to do."
+>*"The biggest problem at work is that no one tells you what to do."*
 
 --- 
 
@@ -179,11 +206,11 @@ Wichtig ist ein **systematisches Vorgehen bei der Fehlersuche!** Bei der Fehlers
 Ihr Dozent möchte Ihnen hiermit eine alternative Formulierung als Empfehlung für Ihr späteres Handeln im Berufsleben anbieten:
 
 ::: {.callout-caution}
-## Tipp: 
+## Pro-Tipp: 
 *"When you’re hired to do a job it’s your responsibility to find the best ways to provide the desired results."*
 :::
 
-#### Falkland's law
+### Falkland's law
 
 ---
 
@@ -193,20 +220,36 @@ Ihr Dozent möchte Ihnen hiermit eine alternative Formulierung als Empfehlung f�
 
 Auch bekannt als 
 
+---
+
 >*"Let's cross the bridge when we come to it."*
 
+---
+
+<!--
 Dieses Sprichwort drückt eine Einstellung aus, bei der man sich nicht vorzeitig über zukünftige Probleme oder Herausforderungen Sorgen macht. Stattdessen betont es die Idee, sich auf die gegenwärtigen Aufgaben und Probleme zu konzentrieren und erst dann über die Bewältigung von zukünftigen Schwierigkeiten nachzudenken, wenn sie tatsächlich auftreten.
 
 Die Botschaft hinter diesem Sprichwort ist oft die Betonung von Pragmatismus und Flexibilität. Es ermutigt dazu, nicht zu viel Energie in die Vorwegnahme von möglichen Problemen oder Hindernissen zu investieren, die möglicherweise nie eintreten werden. Stattdessen sollten Sie sich auf die aktuelle Aufgabe oder Situation konzentrieren und sich darauf vorbereiten, mit Herausforderungen umzugehen, wenn sie tatsächlich auftreten.
 
->*"Sorgen machen ist wie schaukeln. Man ist beschäftigt, kommt aber nicht voran." (Quelle: Unbekannt)*
-
 Falkland's law kann in bestimmten Situationen angemessen sein kann, während in anderen Fällen eine gewisse Voraussicht und Planung unbedingt erforderlich ist. Falklands' law darf daher nicht als Aufforderung zur Vernachlässigung von Problemen oder zur Vermeidung von langfristiger Planung missverstanden werden, sondern eher als freundliche Erinnerung, dass es Zeiten gibt, in denen es am besten sein kann, die Dinge unaufgeregt auf eine praktische und schrittweise Weise anzugehen.
 
 Die Unterscheidung zwischen Problemen, die in der Zukunft schwerwiegender werden könnten und solchen, die möglicherweise gar nicht auftreten werden, erfordert immer eine sorgfältige Analyse und Beurteilung sowie viel Erfahrung^[Erfahrene Führungspersönlichkeiten haben nach der Beobachtung Ihres Dozenten oftmals ein hohes Geschick darin, früh und sehr sicher abschätzen zu können, welche Probleme sofortige Maßnahmen erfordern um nicht in der Zukunft in Katastrophen zu enden. Für alle anderen hat sich - z.B. im Hochschulbetrieb - schon oft der *"Deadline-Mode"* als letzter Ausweg bewährt (z.B. kurz vor Prüfungen und Klausuren, wenn das gewünschte Wissen doch nicht auf die erhoffte wundersame Weise über Nacht im Schlaf gelernt werden konnte, und das trotz sorgfältigem Deponieren des Skripts unterm Kopfkissen). Der *Deadline-Mode* ist jedoch oftmals unzuverlässig und darüber hinaus meist kein erfreulicher, tendenziell ungesunder Zustand und sollte daher nicht zur regelmäßigen JiT-Fertigstellung von Aufgaben oder zur Vorbereitung bei Prüfungen angestrebt werden.].
+-->
 
+<!--
 
-#### Bonus: Parkinsons Gesetz
+>*"Sorgen machen ist wie schaukeln. Man ist beschäftigt, kommt aber nicht voran." (Quelle: Unbekannt)*
+
+-->
+
+<!--
+::: {.callout-caution}
+## Pro-Tipp!
+Machen Sie sich Sorgen um Probleme, die Sie beeinflussen können, dann werden Sie 1.) entweder aktiv und tun etwas, um die Probleme zu lösen, oder 2.) hören Sie auf, Zeit und Energie in das Sich-Sorgen um die Probleme zu investieren und wenden Sie Ihre Zeit und Energie stattdessen den Dingen zu, die Ihnen wichtiger erscheinen und von Ihnen tatsächlich auch beeinflusst werden können.
+:::
+-->
+
+### Parkinsons Gesetz
 
 ---
 

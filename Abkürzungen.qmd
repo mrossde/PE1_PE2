@@ -1,10 +1,3 @@
----
-format:
-  html:
-    embed-resources: true
-lang: de
-bibliography: Literatur.bib
----
 
 <!--
 title: "DEB Produktentwicklung"
@@ -29,6 +22,7 @@ abstract: >
   Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
 keywords:
   - Produktentwicklung
+  - Entwicklungsmethodik
   - Abkürzungen
 copyright: 
   holder: Christian Anders
@@ -60,6 +54,18 @@ number-offset:
 
 <!-- -------------------------------------------------------------------------
 
+                       Callout !!! WARNING !!!
+
+-------------------------------------------------------------------------- -->
+<!--
+::: {.callout-warning}
+## WARNING!
+**THIS DOCUMENT IS WORK IN PROGRESS!!!**
+:::
+-->
+
+<!-- -------------------------------------------------------------------------
+
                        Abkürzungen
 
 -------------------------------------------------------------------------- -->
@@ -79,20 +85,36 @@ number-offset:
 | DMU | [Digital Mock-Up](https://de.wikipedia.org/wiki/Digital_Mock-Up) |
 | DoD | [Definition of Done](https://de.wikipedia.org/wiki/Scrum#Definition_of_Done) |
 | EDM | [Engineering-Data-Management](https://de.wikipedia.org/wiki/Engineering-Data-Management) |
-| EMV | [Elektromagnetische Verträglichkeit](https://de.wikipedia.org/wiki/Elektromagnetische_Vertr%C3%A4glichkeit)
+| EMV | [Elektromagnetische Verträglichkeit](https://de.wikipedia.org/wiki/Elektromagnetische_Vertr%C3%A4glichkeit) |
 | FEM | [Finite-Elemente-Methode](https://de.wikipedia.org/wiki/Finite-Elemente-Methode) |
-| KPI | [Key Performance Indicator](https://de.wikipedia.org/wiki/Key-Performance-Indicator)
+| IEEE | [Institute of Electrical and Electronics Engineers](https://de.wikipedia.org/wiki/Institute_of_Electrical_and_Electronics_Engineers) |
+| HPU | Hours per Unit |
+| KPI | [Key Performance Indicator](https://de.wikipedia.org/wiki/Key-Performance-Indicator) |
 | KVP | [Kontinuierlicher Verbesserungsprozess](https://de.wikipedia.org/wiki/Kontinuierlicher_Verbesserungsprozess) |
+| LCC | [Life-Cycle-Costs](https://en.wikipedia.org/wiki/Whole-life_cost) |
+| MTBF | [Mean Time Between Failures](https://de.wikipedia.org/wiki/Mean_Time_Between_Failures) |
+| MTTF | [Mean Time To Failure](https://de.wikipedia.org/wiki/Mittlere_Betriebsdauer_bis_zum_Ausfall) |
+| MTTR | [Mean_Time_To_Repair](https://de.wikipedia.org/wiki/Mean_Time_To_Recover) |
 | NVH | Noise - Vibration - Harshness |
 | PDM | [Produktdatenmanagement](https://de.wikipedia.org/wiki/Produktdatenmanagement) |
 | PEP | Produktentstehungsprozess |
 | PLM | [Product Lifecycle Management](https://de.wikipedia.org/wiki/Product-Lifecycle-Management) |
+| PMU | [Physical Mock-Up](https://de.wikipedia.org/wiki/Physical_Mock-Up)
 | PPG | Produktionsgerechte Produktgestaltung | 
 | PWT | Produktions- und Werkstofftechnik |
-| [SMART](https://de.wikipedia.org/wiki/SMART_(Projektmanagement)) | Specific - Measurable - Achievable - Relevant - Time-bound |
-| RNG | [Random Number Generator](https://de.wikipedia.org/wiki/Zufallszahlengenerator)
+| [SMART](https://de.wikipedia.org/wiki/SMART_(Projektmanagement)) | Specific - Measurable - Achievable - Realistic - Time-bound |
+| RE | [Requirement Engineering](https://en.wikipedia.org/wiki/Requirements_engineering) |
+| RNG | [Random Number Generator](https://de.wikipedia.org/wiki/Zufallszahlengenerator) |
+| ROI | [Return on Investment](https://de.wikipedia.org/wiki/Kapitalrendite) |
+| SoI | System of Interest |
 | SoP | [Start of Production](https://de.wikipedia.org/wiki/Start_of_Production) → *"Job #1"* |
-| SPC | [Statistical Process Control](https://de.wikipedia.org/wiki/Statistische_Prozesslenkung)
-| TPS | [Toyota-Produktions-System](https://de.wikipedia.org/wiki/Toyota-Produktionssystem)
+| SPC | [Statistical Process Control](https://de.wikipedia.org/wiki/Statistische_Prozesslenkung) |
+| SRS | [Software Requirements Specification](https://de.wikipedia.org/wiki/Software_Requirements_Specification) |
+| SSoT | [Single Source of Truth](https://en.wikipedia.org/wiki/Single_source_of_truth) |
+| TCO | [Total Cost of Ownership](https://en.wikipedia.org/wiki/Total_cost_of_ownership) |
+| TPS | [Toyota-Produktions-System](https://de.wikipedia.org/wiki/Toyota-Produktionssystem) |
+| VDI | [Verein Deutscher Ingenieure](https://de.wikipedia.org/wiki/Verein_Deutscher_Ingenieure) |
 
 : Abkürzungen {#tbl-abkuerzungen .hover .striped .bordered tbl-colwidths="[20,80]"}
+
+
