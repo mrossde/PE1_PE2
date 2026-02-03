@@ -39,13 +39,7 @@ link-external-newwindow: true
 ---
 
 <!--
----
-format:
-  html:
-    embed-resources: true
-lang: de
-bibliography: Literatur.bib
----
+
 -->
 
 <!--

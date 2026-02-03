@@ -1,4 +1,4 @@
----
+<!--
 format:
   html:
     embed-resources: true
@@ -6,9 +6,8 @@ lang: de
 bibliography: Literatur.bib
 headlines:
   off: true
----
 
-<!--
+
 headlines:
   off: true
 extended-content:

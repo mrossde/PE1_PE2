@@ -1,14 +1,4 @@
----
-format:
-  html:
-    embed-resources: true
-lang: de
-bibliography: Literatur.bib
 
-exercises:
-  solutions:
-    on: true 
----
 
 <!--
 headlines:

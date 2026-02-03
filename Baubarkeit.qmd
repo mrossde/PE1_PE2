@@ -1,4 +1,4 @@
----
+<!--
 format:
   html:
     embed-resources: true
@@ -10,9 +10,9 @@ extended-content:
   off: true
 fileformat-svg:
   off: true
----
 
-<!--
+
+
 headlines:
   off: true
 extended-content:

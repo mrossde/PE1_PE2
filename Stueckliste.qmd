@@ -1,4 +1,4 @@
----
+<!--
 format:
   html:
     embed-resources: true
@@ -8,9 +8,9 @@ headlines:
   off: true
 extended-content:
   off: true
----
 
-<!--
+
+
 title: "DEB Produktentwicklung"
 format:
   html:

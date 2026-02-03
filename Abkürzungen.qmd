@@ -1,12 +1,3 @@
----
-format:
-  html:
-    embed-resources: true
-lang: de
-bibliography: Literatur.bib
-headlines:
-  off: true
----
 
 <!--
 title: "DEB Produktentwicklung"
@@ -111,7 +102,7 @@ number-offset:
 | PMU | [Physical Mock-Up](https://de.wikipedia.org/wiki/Physical_Mock-Up)
 | PPG | Produktionsgerechte Produktgestaltung | 
 | PWT | Produktions- und Werkstofftechnik |
-| [SMART](https://de.wikipedia.org/wiki/SMART_(Projektmanagement)) | Specific - Measurable - Achievable - Relevant - Time-bound |
+| [SMART](https://de.wikipedia.org/wiki/SMART_(Projektmanagement)) | Specific - Measurable - Achievable - Realistic - Time-bound |
 | RE | [Requirement Engineering](https://en.wikipedia.org/wiki/Requirements_engineering) |
 | RNG | [Random Number Generator](https://de.wikipedia.org/wiki/Zufallszahlengenerator) |
 | ROI | [Return on Investment](https://de.wikipedia.org/wiki/Kapitalrendite) |

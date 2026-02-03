@@ -1,4 +1,6 @@
----
+
+<!--
+
 format:
   html:
     embed-resources: true
@@ -10,9 +12,7 @@ extended-content:
   off: true
 fileformat-svg:
   off: true
----
 
-<!--
 title: "DEB Produktentwicklung"
 format:
   html:
@@ -120,6 +120,14 @@ number-offset:
 Ein [Burn-Down-Chart](https://en.wikipedia.org/wiki/Burndown_chart) ist ein visuelles Instrument im Projektmanagement, das verwendet wird, um den Fortschritt bei der Umsetzung von Aufgaben oder *"[User Stories](https://en.wikipedia.org/wiki/User_story)*" über einen bestimmten Zeitraum zu verfolgen. Es dient dazu, den verbleibenden Aufwand oder die noch zu erledigende Arbeit entlang des Projektfortschritts zu visualisieren und das Projektteam und die Stakeholder über den Projektfortschritt zu informieren.
 :::
 
+
+::: {.content-visible unless-meta="kommentare.off"}
+
+:::: {style="background-color: #9affa4"}
+\@mrossde UserStory Definition ersetzen mit Journey ! Alles abgleichen
+
+::::
+:::
 
 ::: {.callout-tip}
 ## Definition *"User-Story" (engl.)*

@@ -1,14 +1,16 @@
 ---
-title: "DEB5 Produktentwicklung 2"
+title: "DEB3 Produktentwicklung 1"
 format:
   html:
+    theme: cosmo
+    mermaid:
+      theme: default
     embed-resources: true
 
 author:
-  - name: "Christian Anders"
-    degrees: 
+  - name: "Mario Rossdeutscher"
     roles: "Dozent"
-    email: christian.anders@hs-esslingen.de
+    email: mario.rossdeutscher@hs-esslingen.de
     affiliation: 
       - name: "Hochschule Esslingen"
         department: "Wirtschaft & Technik"
@@ -18,14 +20,13 @@ author:
         country: "Deutschland"
         url: https://www.hs-esslingen.de/
 abstract: > 
-  Ergänzungsskript zur Vorlesung und zum Labor *"Produktentwicklung 2"* für den Studiengang Digital Engineering DEB5 im Wintersemester 2025/2026
+  Skript zur Vorlesung *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3
 keywords:
-  - Produktentwicklung
-  - Produktentstehungsprozess  
-
+  - Produktentstehungsprozess
+  - Entwicklungsmethodik
 copyright: 
   holder: Christian Anders
-  year: 2026
+  year: 2025
 lang: de
 bibliography: Literatur.bib
 date: last-modified
@@ -34,9 +35,9 @@ number-sections: true
 scrollable: true
 toc-location: right
 cap-location: bottom
-number-offset: 0
 link-external-icon: true
 link-external-newwindow: true
+
 
 headlines:
   off: true
@@ -100,60 +101,60 @@ number-offset:
   {{< include Abkürzungen.qmd >}}
   {{< include Begriffe.qmd >}}
 
-    {{< include Messung.qmd >}}
-    {{< include Wirtschaftlichkeit.qmd >}} 
+  {{< include Messung.qmd >}}
+  {{< include Wirtschaftlichkeit.qmd >}} 
 
 
 
 ## Methodische Grundlagen
   <!-- include Vision-Strategie-Ziele.qmd -->
   <!-- include SMART.qmd -->
-    {{< include Golden_Circle.qmd >}}
-    {{< include Kano-Modell.qmd >}}
-    {{< include SWOT_SWOA.qmd >}}
-    {{< include Multi-Moment-Aufnahme.qmd >}}
-    {{< include Risikomatrix.qmd >}}
-    {{< include Single_Source_of_Truth_SSoT.qmd >}}
-    {{< include System_of_Interest_SoI.qmd >}}
+  {{< include Golden_Circle.qmd >}}
+  {{< include Kano-Modell.qmd >}}
+  {{< include SWOT_SWOA.qmd >}}
+  {{< include Multi-Moment-Aufnahme.qmd >}}
+  {{< include Risikomatrix.qmd >}}
+  {{< include Single_Source_of_Truth_SSoT.qmd >}}
+  {{< include System_of_Interest_SoI.qmd >}}
  
 
 
 ## Projektmanagement
   <!-- include Projekt.qmd -->
-    {{< include Burn_Down_Chart.qmd >}}
+  {{< include Burn_Down_Chart.qmd >}}
   <!-- include Projektmanagement_Magisches_Dreieck.qmd -->
   <!-- include Zielhierarchie.qmd -->
 
 
 ## Statistik und Stochastik
-    {{< include Abbildung_Laplace.qmd >}}
+  {{< include Abbildung_Laplace.qmd >}}
 
-    {{< include Zufall.qmd >}}
+  {{< include Zufall.qmd >}}
 
-    {{< include Erwartungswert.qmd >}}
-  <!-- incl. Wahrscheinlichkeit.qmd -->
-    {{< include Median.qmd >}}
-    
+  {{< include Erwartungswert.qmd >}}
+<!-- incl. Wahrscheinlichkeit.qmd -->
+  {{< include Median.qmd >}}
+  
 
-    {{< include Runs-Test.qmd >}}
-    {{< include Chi-Quadrat-Test.qmd >}}
+  {{< include Runs-Test.qmd >}}
+  {{< include Chi-Quadrat-Test.qmd >}}
 
-    {{< include Zufallszahlengeneratoren.qmd >}}
-    {{< include Monte-Carlo-Simulation.qmd >}}
+  {{< include Zufallszahlengeneratoren.qmd >}}
+  {{< include Monte-Carlo-Simulation.qmd >}}
 
 ## Komplexe Systeme
 
-    {{< include Determinismus.qmd >}} 
-  <!-- incl. Laplacescher_Daemon.qmd -->
+  {{< include Determinismus.qmd >}} 
+<!-- incl. Laplacescher_Daemon.qmd -->
 
-    {{< include Kausalitaet.qmd >}}
-    {{< include Korrelation.qmd >}}
-    {{< include Scheinkorrelation.qmd >}}
-    {{< include Koinzidenz.qmd >}}
+  {{< include Kausalitaet.qmd >}}
+  {{< include Korrelation.qmd >}}
+  {{< include Scheinkorrelation.qmd >}}
+  {{< include Koinzidenz.qmd >}}
 
-    {{< include Takens_Theorem.qmd >}}
+  {{< include Takens_Theorem.qmd >}}
 
-    {{< include Butterfly-Effect.qmd >}}
+  {{< include Butterfly-Effect.qmd >}}
 
 
 
@@ -168,20 +169,20 @@ number-offset:
 
    <!-- include Modelle_zum_Produktentstehungsprozess.qmd -->
 
-    {{< include Produktdokumentation.qmd >}}
-    {{< include Stueckliste.qmd >}}
-    {{< include 3DMaster.qmd >}}
+  {{< include Produktdokumentation.qmd >}}
+  {{< include Stueckliste.qmd >}}
+  {{< include 3DMaster.qmd >}}
 
 ## Anforderungsentwicklung
-    {{< include Anforderungsentwicklung.qmd >}}
-    {{< include Operating_Envelope.qmd >}}
+  {{< include Anforderungsentwicklung.qmd >}}
+  {{< include Operating_Envelope.qmd >}}
 
 
 ## Konzeptentwicklung und Entscheidungsfindung
-    {{< include Radardiagramm.qmd >}}
-    {{< include Bewertungsmatrix.qmd >}}
-    {{< include Morphologischer_Kasten.qmd >}}
-    {{< include Prinzip-_Konzept_und_Serientauglichkeit.qmd >}}
+  {{< include Radardiagramm.qmd >}}
+  {{< include Bewertungsmatrix.qmd >}}
+  {{< include Morphologischer_Kasten.qmd >}}
+  {{< include Prinzip-_Konzept_und_Serientauglichkeit.qmd >}}
  
 
 
@@ -193,21 +194,21 @@ number-offset:
 # Entwurfs- und Entwicklungsphase {#sec-entwurfundentwicklung}
 
 ## Kostenbeeinflussung im Produktentstehungsprozess
-    {{< include Kosten_im_Produktentstehungsprozess.qmd >}}
-    {{< include Rule-of-10.qmd >}}
-  <!-- include PPG.qmd -->
-    {{< include Poka_Yoke.qmd >}}
+  {{< include Kosten_im_Produktentstehungsprozess.qmd >}}
+  {{< include Rule-of-10.qmd >}}
+<!-- include PPG.qmd -->
+  {{< include Poka_Yoke.qmd >}}
 
 ## Produktrealisierungsabsicherung
-    {{< include Baubarkeit.qmd >}}
-    {{< include DMU.qmd >}}
-    {{< include Toleranzmanagement.qmd >}}
-    {{< include Variantenkonstruktion_Coderegel.qmd >}}
-    {{< include Patent.qmd >}}
+  {{< include Baubarkeit.qmd >}}
+  {{< include DMU.qmd >}}
+  {{< include Toleranzmanagement.qmd >}}
+  {{< include Variantenkonstruktion_Coderegel.qmd >}}
+  {{< include Patent.qmd >}}
 
 ## Softwarewerkzeuge
-    {{< include CAD.qmd >}}
-    {{< include PLM.qmd >}}
+  {{< include CAD.qmd >}}
+  {{< include PLM.qmd >}}
 
 
 
@@ -252,36 +253,36 @@ number-offset:
 ## Arbeitsmethoden
   <!-- include Eisenhower-Prinzip.qmd -->
   <!-- include 6W-Methode.qmd -->
-    {{< include AIDA-Modell.qmd >}}
-    {{< include Bildzeitung-Test.qmd >}}
-    {{< include Pitch.qmd >}}
+  {{< include AIDA-Modell.qmd >}}
+  {{< include Bildzeitung-Test.qmd >}}
+  {{< include Pitch.qmd >}}
 
 
 ## Kooperation und Kollaboration
-    {{< include Linienorganisation_vs_Matrixorganisation.qmd >}}
-    {{< include ChangeManagement_Akzeptanzmatrix.qmd >}}
-    {{< include U-Theorie_Scharmer.qmd >}}
+  {{< include Linienorganisation_vs_Matrixorganisation.qmd >}}
+  {{< include ChangeManagement_Akzeptanzmatrix.qmd >}}
+  {{< include U-Theorie_Scharmer.qmd >}}
 
-    {{< include Spieltheorie.qmd >}}
-    {{< include Verhandlungsstrategie.qmd >}}
-    {{< include Harvard-Verhandlungsstrategie.qmd >}}
+  {{< include Spieltheorie.qmd >}}
+  {{< include Verhandlungsstrategie.qmd >}}
+  {{< include Harvard-Verhandlungsstrategie.qmd >}}
 
-  <!-- include Organisationsaufstellung.qmd -->
+<!-- include Organisationsaufstellung.qmd -->
 
-    {{< include Wassertraegermethode.qmd >}}
+  {{< include Wassertraegermethode.qmd >}}
 
 
 ## Kreativitätstechniken {#sec-kreativitaetstechniken}
-    {{< include Methode635_Rohrbach.qmd >}}
-    {{< include Six-Thinking-Hats.qmd >}}
+  {{< include Methode635_Rohrbach.qmd >}}
+  {{< include Six-Thinking-Hats.qmd >}}
 
 
 ## Persönliche Kompetenzen und interpersonelle Fähigkeiten
 
   <!-- include Johari-Fenster.qmd -->
-    {{< include Vier-Seiten-Modell.qmd >}}
-    {{< include Feedback.qmd >}}
-    {{< include Rich_Dad_Poor_Dad_Kiyosaki.qmd >}} 
+  {{< include Vier-Seiten-Modell.qmd >}}
+  {{< include Feedback.qmd >}}
+  {{< include Rich_Dad_Poor_Dad_Kiyosaki.qmd >}} 
 
 
 
