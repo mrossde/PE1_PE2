@@ -139,6 +139,7 @@ number-offset:
   {{< include Runs-Test.qmd >}}
   {{< include Chi-Quadrat-Test.qmd >}}
 
+
   {{< include Zufallszahlengeneratoren.qmd >}}
   {{< include Monte-Carlo-Simulation.qmd >}}
 
@@ -170,6 +171,7 @@ number-offset:
    <!-- include Modelle_zum_Produktentstehungsprozess.qmd -->
 
   {{< include Produktdokumentation.qmd >}}
+  {{< include Template_Lastenheft.qmd >}}
   {{< include Stueckliste.qmd >}}
   {{< include 3DMaster.qmd >}}
 

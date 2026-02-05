@@ -1,93 +1,14 @@
-<!--
-format:
-  html:
-    embed-resources: true
-lang: de
-bibliography: Literatur.bib
-headlines:
-  off: true
-extended-content:
-  off: true
 
 
+::: {.content-visible unless-meta="kommentare.off"}
 
-title: "DEB Produktentwicklung"
-format:
-  html:
-    embed-resources: true
+:::: {style="background-color: #9affa4"}
+\@mrossde 
 
-author:
-  - name: "Christian Anders"
-    degrees: 
-    roles: "Dozent"
-    email: christian.anders@hs-esslingen.de
-    affiliation: 
-      - name: "Hochschule Esslingen"
-        department: "Wirtschaft & Technik"
-        group: "Digital Engineering (DEB)"
-        city: "Esslingen am Neckar"
-        postal-code: 73728
-        country: "Deutschland"
-        url: https://www.hs-esslingen.de/
-abstract: > 
-  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
-keywords:
-  - Produktentstehungsprozess
-  - Entwicklungsmethodik
-  - Produktdokumentation
-  - Stückliste
+ggf. in PE1 schieben.
 
-copyright: 
-  holder: Christian Anders
-  year: 2026
-lang: de
-bibliography: Literatur.bib
-date: last-modified
-toc: true
-number-sections: true
-scrollable: true
-toc-location: right
-cap-location: bottom
-number-offset: 2
-link-external-icon: true
-link-external-newwindow: true
-
-headlines:
-  off: false
-extended-content:
-  off: false
--->
-
-<!--
-number-offset: 
-0 Grundlagen
-1 Ideenfindung und Konzeptentwicklung
-2 Entwurfs- und Entwicklungsphase
-3 Prototyping und Test
-4 Produktionsplanung und Produktion
-5 Softskills
-6 Literatur 
-7 Anhang
--->
-
-<!-- -------------------------------------------------------------------------
-
-                       Callout !!! WARNING !!!
-
--------------------------------------------------------------------------- -->
-<!--
-::: {.callout-warning}
-## WARNING!
-**THIS DOCUMENT IS WORK IN PROGRESS!!!**
+::::
 :::
--->
-
-
-::: {.content-visible unless-meta="headlines.off"}
-# Entwurf und Entwicklung
-## Produktdokumentation
-:::
-
 <!-- -------------------------------------------------------------------------
 
                        Stückliste

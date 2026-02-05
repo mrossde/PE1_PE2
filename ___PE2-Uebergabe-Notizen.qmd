@@ -3,9 +3,16 @@
 ## Fragen an CA (Stand 2026-02-03)
 
 1. wurden zu dem komplx. Systeme (statistik teile ) Teil Excel Blätter oder Übungen durchgeführt? Kenntlich machen wo im Skript
-2. 
+    a)  Pi_Worksheet
+    b)  Galtonbrett_Worksheet
+2. Pi Wassertropfenübung als schriftliche Aufgabenstellung vorhanden?
+3. Komplexe System Ebene 1 oder Ebene 2 ? 1. determ bis 12. butterfly 12 Ebene 3?
 
-<mark>weiterlesen bei Pseudozufallszahlengeneratoren  </mark>
+
+<mark>Bei 3.1.5 weiterlesen </mark>
+
+
+
 
 ## Infos
 
