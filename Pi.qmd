@@ -77,6 +77,20 @@ number-offset:
 
 -------------------------------------------------------------------------- -->
 
+::: {.content-visible unless-meta="kommentare.off"}
+
+:::: {style="background-color: #9affa4"}
+\@mrossde Aufgabenstellung formulieren und einbauen
+
+Flipchart blatt geben
+moderaten Regen - ~1min sonst wirds zu nass und man kann nicht zählen
+dann markierungen
+dann Quadrat was die Tropfen einschließt
+Kreis machen (wie auf [Kreiszahlbild](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/01_Pi-Definition_mittels_Fl%C3%A4cheninhalt.svg/500px-01_Pi-Definition_mittels_Fl%C3%A4cheninhalt.svg.png) )
+
+::::
+:::
+
 
 <!-- -------------------------------------------------------------------------
 

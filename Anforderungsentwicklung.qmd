@@ -76,6 +76,15 @@ number-offset:
 # Ideenfindung und Konzeptentwicklung
 :::
 
+::: {.content-visible unless-meta="kommentare.off"}
+
+:::: {style="background-color: #9affa4"}
+\@mrossde Abgleich mit lecture-all 
+1 Thema daraus machen und es dann hier rein oder rausnehmen / modifizieren
+
+::::
+:::
+
 ### Anforderungsentwicklung (Requirements Engineering) {#sec-anforderungsentwicklung}
 
 ---

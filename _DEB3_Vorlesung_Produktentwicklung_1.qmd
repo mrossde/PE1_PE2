@@ -109,9 +109,9 @@ worksheets:
 
 ## Methodische Grundlagen
 
-    {{< include Produkt.qmd >}}
-    {{< include Modelle_zum_Produktentstehungsprozess.qmd >}}
-    {{< include Technology_Hype_Cycle.qmd >}}
+  {{< include Produkt.qmd >}}
+  {{< include Modelle_zum_Produktentstehungsprozess.qmd >}}
+  {{< include Technology_Hype_Cycle.qmd >}}
 
 ## Konzeptentwicklung und Entscheidungsfindung
 

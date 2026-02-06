@@ -2,27 +2,33 @@
 
 ## Fragen an CA (Stand 2026-02-03)
 
-1. wurden zu dem komplx. Systeme (statistik teile ) Teil Excel Blätter oder Übungen durchgeführt? Kenntlich machen wo im Skript
+[x] - wurden zu dem komplx. Systeme (statistik teile ) Teil Excel Blätter oder Übungen durchgeführt? Kenntlich machen wo im Skript
     a)  Pi_Worksheet
     b)  Galtonbrett_Worksheet
-2. Pi Wassertropfenübung als schriftliche Aufgabenstellung vorhanden?
-3. Komplexe System Ebene 1 oder Ebene 2 ? 1. determ bis 12. butterfly 12 Ebene 3?
+[x] - Pi Wassertropfenübung als schriftliche Aufgabenstellung vorhanden?
+
+[x] - Komplexe System Ebene 1 oder Ebene 2 ? 1. determ bis 12. butterfly 12 Ebene 3?
+Soll Ebene 1 sein
+4. Gab es übungen zur Coderegel?
 
 
-<mark>Bei 3.1.5 weiterlesen </mark>
 
 
 
 
 ## Infos
 
-1. WorkinProgress Ordner Stück für Stück rüberkopieren in dieses PE1_PE2 Repo und Diff machen
-
 **CA Ziel:**
 
 2. Er wollte sehen, ob 8 Leute in 10 Wochen ein Umweltmonitoringsystem entwickeln können. 
 
 "PE2 ist der Besenwagen, der hinter der PE1 hinterher fährt"
+
+## PDF erzeugen
+
+1.  HTML rendern
+2.  über Chrome drucken und **Adobe PDF** drucken
+3.  über Adobe PDF das PDF verkleinern
 
 
 ## Termine
@@ -32,6 +38,13 @@
 <mark>Hier ggf. Tabelle draus machen, weil Anpassungsaufwand groß ist </mark>
 
 3. Vorlesungen idR 2 Blöcke / Labore auf 3 Blöcke = 5SWS Mittelwert eingehalten
+
+letzte Vorlesung vor Weihnachten: 
+
+1.  2P Klausur Bonus, Pitch 2min
+2.  weiteren Industriedesigner Lehrbeauftragten dazu holen,um ggf. dieses Projekt gestalterisch zu betreuuen.
+
+
 
 ## Exkursionen in PE1
 
@@ -78,15 +91,36 @@ Umweltqualifizierung Spec von Sensoren - Ist der Sensor qualifiziert für die Um
 # TODOS
 
 [ ] - Umweltmonitoring die Abgaben Dateien alle anschauen
-[ ] - Umweltmonitoring HW von CA entgegenzunehmen
-[ ] - 01_Budget_Bauteile_PE2.xlsx
-[ ] - Gerät teste, mit USB Spannungsversorgung / müsste sich mit WLAN verbinden und Uhrzeit 
+[x] - Umweltmonitoring HW von CA entgegenzunehmen
+[ ] - Umweltmonitoring Aufgabenstellung (Basis V-Modell) erarbeiten und aufschreiben
+    Sensoren und Bestellliste (Maße) - Daraus CAD Modell bzw. Raumvorstellung
+    PMU (Basis Carmens Vorlesung) / DMU -> Explosionszeichnung + Pitchen des Entwurfs (AIDA Konformer Kurzvortrag 120sec jeder 1x machen) + attraktives A0 Poster (Carmen: Farben / Schriftarten etc.) innerhalb dieser 120sec (Szenario ihr pitcht auf Abend der Technik/ oder Bonding Messe - Ziel ist es, einen Investor zu kriegen)
+    -> Stückliste + Kostenkalkulation
+Ziel ist das V-Modell umzusetzen (und ggf. mehrfach zu durchlaufen):
+1. Ideenfindung
+2. Entwurf
+3. Prototyp
+4. Testing
+
+die 3 Wochen Sensorbestellzeit die gespart wird neuer Schwerpunkt wählen.
+
+[ ] - Ein Set aus Sensoren bestellen, sodass das Monitoringsystem keinen Zeitverlust durch Wartezeiten (Fredi bestellen lassen) - nochmal mit Daniel diskutieren, welche Sensoren es sein können
+[x] - 01_Budget_Bauteile_PE2.xlsx
+[x] - Gerät teste, mit USB Spannungsversorgung / müsste sich mit WLAN verbinden und Uhrzeit 
+[ ] - Carmen fragen, wenn NutzerInnenverhalten losgelöst ist, ob das geht
 [ ] - Versuche in Labor 4 durchlesen und überlegen, wie das qualifiziert beim nächsten Mal getestet werden kann.
 [ ] - Klimaschrank - Testreihe Temperatur / Feuchtigkeit / CO2 / Timen und mit Stadtmitte klären, dass man dort 1 Nachmittag 1 Test machen kann
 [ ] - Powerbank -> Noch bestellen 
 [ ] - Markus Schlipf + Johannes Vorlesungen für Anforderungen nutzen
 [ ] - Wettbewerbsanalyse + Patentrecherche diskutieren und überlegen wie es in dem DEB Curriculum rein soll (mehr/weniger)
 [ ] - Exkurs Patent + Gebrauchsmuster -> um 2 Spalten um Design und Geschmacksmuster erweitern
+[ ] - Schalter von CA analysieren und prüfen, unsichtbar ist bei normalem **quarto render**
+[ ] - Marco -> PDF erzeugen mit Inhaltsverzeichnis
+[ ] - Chi Quadrat Test Würfeln Aufgabenstellung
+[ ] - Pi Regentropfen Aufgabenstellung
+[ ] - Kano Modell / Bewertungsmatrix / Anforderungen / Morph Kasten in PE1 schieben
+[ ] - Umweltqualifizierung komplett in PE2 verschieben
+[ ] - in PE1 Testing anteasern aber nur Grundlagen in Kurz
 
 2,8" wurde verbaut, und hat Farbe aber kein Touch 
 2,1" wurde nicht verbaut
@@ -94,14 +128,13 @@ Umweltqualifizierung Spec von Sensoren - Ist der Sensor qualifiziert für die Um
 ## Varianten
 
 a) Vorlesung weiterentwickeln und auf der Höhe der Zeit halten
-b) Prototyp Umweltmonitoringsystem immer weiter verbessern
-c) Prototyp - Umweltmonitoringsystem jedes Mal neu bauen
-
+b) Prototyp Umweltmonitoringsystem **immer weiter verbessern**
+c) Prototyp - Umweltmonitoringsystem **jedes Mal neu bauen**
 d) Anknüpfungspunkte zu Daniel / Johannes? 
 e) 
 
 ## weitere Funktionen
 
 1. WLAN Konfiguration über QR Code ggf. um das Gerät dynamisch mit WLAN zu verbinden
-2. 
+2. Helligkeitssensor
 3. 

@@ -149,6 +149,24 @@ Für weitere Informationen zur Berechnung der Wahrscheinlichkeit $p$ sei der gen
 Der [Chi-Quadrat-Test](https://de.wikipedia.org/wiki/Chi-Quadrat-Test) kann mit einem [Runs-Test](https://de.wikipedia.org/wiki/Run-Test) kombiniert werden, da beide Prüfgrößen asymptotisch unabhängig voneinander sind.
 :::
 
+<p style="text-align: center;">![](images/Microsoft_Office_Excel-Logo.png){width=16%} → Excel-Worksheet *"Pi_Worksheet.xlsx"*</p>
+
+::: {.content-visible unless-meta="kommentare.off"}
+
+:::: {style="background-color: #9affa4"}
+\@mrossde 
+
+Aufgabenstellung noch machen:
+
+1. 100 Würfel werfen, Häufigkeiten zählen, $\chi^2$-Test durchführen, p-Wert berechnen, interpretieren
+2. 2 Gruppen: die Hälfte cheatet und denkt sich die Zahlen aus.,
+3. beim Würfeln 2 Gruppierungen -> 1 Gruppe erzeugt das über python Script (faire Würfel), die andere Gruppe würfelt
+
+
+
+::::
+:::
+
 <!-- -------------------------------------------------------------------------
 
                        Chi-Quadrat-Test (χ²-Test) Faire Münze - 100 Würfe
