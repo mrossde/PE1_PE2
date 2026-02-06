@@ -85,7 +85,7 @@ Das Zitat "Jammern lockt keine Kunden!" ist kein bekanntes Zitat mit einer spezi
 
 -------------------------------------------------------------------------- -->
 
-# Produktentstehungsprozess (PEP)
+# Produktentstehungsprozess (PEP) {#sec-pep}
 
 ::: {.callout-tip}
 ## Definition: *"Produktentstehungsprozess"*
@@ -173,19 +173,7 @@ Diese Phasen verlaufen in der Praxis in der Regel nicht sequenziell. Oft gibt es
 
 ### Reifegrad
 
-::: {.callout-tip}
-## Definition: *"Reifegrad"*
-Im Kontext eines Produktentwicklungsprozesses bezieht sich der Reifegrad eines Produkts auf den Grad, in dem das Produkt oder System seine Entwicklungsziele erreicht hat und bereit ist, in die Produktion oder auf den Markt zu gehen. Der Reifegrad wird oft anhand verschiedener Kriterien bewertet, darunter die Funktionalität, Zuverlässigkeit, Qualität, Herstellbarkeit und Wirtschaftlichkeit des Produkts. Ein höherer Reifegrad deutet darauf hin, dass das Produkt besser entwickelt, getestet und vorbereitet ist, um erfolgreich hergestellt, vertrieben und genutzt zu werden. 
-:::
-
-Die in @fig-label-pep01 dargestellten Phasen dienen dazu, den Reifegrad eines Produkts schrittweise zu erhöhen bis das Produkt schließlich als reif genug betrachtet wird, um in Serienproduktion zu gehen.
-
-::: {.callout-important}
-## ACHTUNG! WICHTIG!
-*“If you can't measure it, you can't manage it.”* [Peter F. Drucker]
-:::
-
-
+{{< include /00001-Definitions/Reifegrad.qmd >}}
 
 
 ### Prinzip-, Konzept- und Serientauglichkeit

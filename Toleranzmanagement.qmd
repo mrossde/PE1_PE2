@@ -254,15 +254,15 @@ Das [ISO-GPS-System](https://de.wikipedia.org/wiki/GPS-Matrix) (Geometrical Prod
 %%| fig-cap: "Aufbau der Normenstruktur des ISO-GPS-Systems"
 %%{init: {'theme': 'neutral'}}%%
 flowchart LR
-    A0(["ISO-GPS-System<br>(Geometrical Product Specifications and Verification)"])
+    A0(["ISO-GPS"])
 
-    A1["Allgemeine Prinzipien<br>(Grundlagen)"]
+    A1["Allgemeine<br> Prinzipien<br>(Grundlagen)"]
     A2["Maße & Maßtoleranzen"]
     A3["Form- & Lagetoleranzen<br>(GD&T)"]
     A4["Bezüge & Bezugssysteme"]
-    A5["Oberflächenbeschaffenheit"]
+    A5["Oberflächen-<br>beschaffenheit"]
     A6["Mess- & Prüfregeln"]
-    A7["Modellbasierte Definition (MBD)"]
+    A7["Modellbasierte<br> Definition<br> (MBD)"]
 
     A1a["ISO 8015 – Grundregeln der GPS-Spezifikation<br>(Unabhängigkeitsprinzip)"]
     A2a["ISO 14405-1/2/3 – Maßtoleranzen für Längenmaße"]

@@ -15,10 +15,11 @@ bibliography: Literatur.bib
 
 <!--
 ::: {.callout-tip collapse="true"}
--->
 # Komplexe Systeme
 
 ## Chaostheorie
+-->
+
 
 ### Butterfly-Effect {#sec-butterflyeffect}
 
