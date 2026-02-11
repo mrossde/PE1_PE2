@@ -67,10 +67,7 @@ link-external-newwindow: true
 
 Auch wenn ständig und nahezu überall von Projekten gesprochen wird, ist der Begriff *"Projekt"* nicht ganz einfach zu fassen:
 
-::: {.callout-tip}
-## Versuch einer Definition: *"Projekt"*
-Ein Projekt ist eine zeitlich begrenzte und organisierte Anstrengung, die darauf abzielt, ein bestimmtes Ziel zu erreichen. Es handelt sich um eine eindeutig definierte Aufgabe oder eine Reihe von Aufgaben, die einen spezifischen Anfangs- und Endpunkt haben. Projekte werden in der Regel durchgeführt, um einzigartige Produkte, Dienstleistungen oder Ergebnisse zu schaffen und beinhalten eine Reihe von geplanten Aktivitäten, Ressourcen und Einschränkungen. Projekte zeichnen sich durch ihre Einmaligkeit, Komplexität und Zielorientierung aus. Projekte erfordern in der Regel eine Projektorganisation, eine klare Definition von Aufgaben und Verantwortlichkeiten, sowie ein effektives [Projektmanagement](https://de.wikipedia.org/wiki/Projektmanagement), um das gewünschte Ergebnis innerhalb der vorgegebenen Zeit, Kosten und Qualität zu erreichen.
-:::
+{{< include /00001-Definitions/Projekt.qmd >}}
 
 Der Begriff des Projekts ist darüber hinaus in der Literatur auf vielfältige Weise teilweise mit anderen Schwerpunkten definiert:
 

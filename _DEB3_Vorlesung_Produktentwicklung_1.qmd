@@ -85,6 +85,9 @@ worksheets:
   {{< include SMART.qmd >}}
   {{< include gap_gain-konzept.qmd >}}
 
+
+<!-- 00010-Projektmanagement-->
+
 ## Projektmanagement
 
   {{< include Projekt.qmd >}}
@@ -104,6 +107,9 @@ worksheets:
                        Kapitel 2: Ideenfindung und Konzeptentwicklung
 
 -------------------------------------------------------------------------- -->
+
+<!-- 00051-Projektmanagement-->
+
 # Ideenfindung und Konzeptentwicklung {#sec-ideenfindungundkonzept}
   {{< include Ziele_Ideenfindung_und_Konzeptentwicklung.qmd >}}
 
@@ -138,6 +144,10 @@ ggf. woanders hinverschieben? logisch nicht korrekte Reihenfolge
                        Kapitel 3: Entwurfs- und Entwicklungsphase
 
 -------------------------------------------------------------------------- -->
+
+
+<!-- 00052-EntwurfundEntwicklung-->
+
 # Entwurfs- und Entwicklungsphase {#sec-entwurfundentwicklung}
 
   {{< include Ziele_Entwurfs-_und_Entwicklungsphase.qmd >}}
@@ -167,6 +177,9 @@ ggf. woanders hinverschieben? logisch nicht korrekte Reihenfolge
                        Kapitel 4: Prototyping und Test
 
 -------------------------------------------------------------------------- -->
+
+<!-- 00053-PrototypingundTest-->
+
 # Prototyping und Test {#sec-prototypingundtest}
 
   {{< include Ziele_Prototyping_und_Test.qmd >}}
@@ -180,6 +193,8 @@ ggf. woanders hinverschieben? logisch nicht korrekte Reihenfolge
   {{< include Qualitaet.qmd >}}
 
 <mark>Änderung für nächstes Sem! Hier nochmal Produktionskapitel anschauen </mark>
+
+<!-- 00053-ProduktionsplanungundProduktion-->
 
 # Produktionsplanung und Produktion {#sec-produktionsplanungundproduktion}
 
@@ -198,6 +213,9 @@ ggf. woanders hinverschieben? logisch nicht korrekte Reihenfolge
                        Kapitel 6: Softskills
 
 -------------------------------------------------------------------------- -->
+
+<!-- 00054-Softskills alles in einen Ordner!-->
+
 # Softskills - Zusammenarbeit und Selbstorganisation {#sec-softskills}
 
 {{< include Softskills.qmd >}}
