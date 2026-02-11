@@ -60,13 +60,9 @@ number-offset:
 
 -------------------------------------------------------------------------- -->
 
-
 ### Reifegrad {#sec-reifegrad}
 
-::: {.callout-tip}
-## Definition: *"Reifegrad"*
-Reifegrad ist ein Maß für den Grad der Entwicklung, Zuverlässigkeit und Einsatzbereitschaft eines Produkts oder einer Technologie. Der Reifegrad wird anhand einer Reihe von Faktoren bewertet, darunter die Fähigkeit, den beabsichtigten Zweck zu erfüllen,Funktionalität, Stabilität, Fehleranfälligkeit, Benutzerfreundlichkeit, Verfügbarkeit, Skalierbarkeit und Sicherheit.
-:::
+{{< include /00001-Definitions/Reifegrad.qmd >}}
 
 ### Erprobungswürdigkeit {#sec-erprobungswuerdigkeit}
 

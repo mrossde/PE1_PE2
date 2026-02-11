@@ -1,67 +1,8 @@
-
-
-<!--
-title: "DEB Produktentwicklung"
-format:
-  html:
-    embed-resources: true
-
-author:
-  - name: "Christian Anders"
-    degrees: 
-    roles: "Dozent"
-    email: christian.anders@hs-esslingen.de
-    affiliation: 
-      - name: "Hochschule Esslingen"
-        department: "Wirtschaft & Technik"
-        group: "Digital Engineering (DEB)"
-        city: "Esslingen am Neckar"
-        postal-code: 73728
-        country: "Deutschland"
-        url: https://www.hs-esslingen.de/
-abstract: > 
-  Skript zur Vorlesung und Labor *"Produktentwicklung"* für den Studiengang Digital Engineering DEB
-keywords:
-  - Produktentstehungsprozess
-  - Entwicklungsmethodik
-  - Softskills
-  - Feedback
-  - 10 Regeln für konstruktives Feedback
-  - “WWW-Regel”
-  - Umgang mit negativem Feedback
-
-copyright: 
-  holder: Christian Anders
-  year: 2025
-lang: de
-bibliography: Literatur.bib
-date: last-modified
-toc: true
-number-sections: true
-scrollable: true
-toc-location: right
-cap-location: bottom
-number-offset: 6
-link-external-icon: true
-link-external-newwindow: true
-
-headlines:
-  off: false
-extended-content:
-  off: false
--->
-
-<!-- -------------------------------------------------------------------------
-
-                       Feedback
-
--------------------------------------------------------------------------- -->
-
 ::: {.content-visible unless-meta="headlines.off"}
 # Softskills
 :::
 
-## Feedback {#sec-feedback}
+### Feedback {#sec-feedback}
 
 ---
 
@@ -76,7 +17,7 @@ extended-content:
 :::
 
 
-### 10 Regeln für konstruktives Feedback
+#### 10 Regeln für konstruktives Feedback
 
 Die folgenden zehn Regeln helfen dabei, eine angenehme und konstruktive Feedbackkultur zu etablieren und die Kommunikation zu verbessern.
 
@@ -112,7 +53,7 @@ S T A R T -->
 ::: {.content-visible unless-meta="extended-content.off"}
 <!-- ---------------------------------------------------------------------- -->
 
-### “WWW-Regel”
+#### “WWW-Regel”
 
 Idee der WWW-Regel (**Wahrnehmung schildern → Wirkung erläutern → Wunsch formulieren**): 
 
@@ -128,7 +69,7 @@ Umsetzung der WWW-Regel:
 
 
 
-### Feedback empfangen
+#### Feedback empfangen
 
 + **Zuhören und Aufnehmen**. Akzeptieren Sie die Beobachtungen des Anderen.
 
@@ -148,7 +89,7 @@ Ein *"Dankeschön"* für ein erhaltenes, vom Feedbackgeber gut gemeintes Feedbac
 
 
 
-### Tipps zum Umgang mit negativem Feedback
+#### Tipps zum Umgang mit negativem Feedback
 
 + **Abstand gewinnen**: Nehmen Sie sich Zeit, um das Feedback zu verarbeiten und zu analysieren. Warum hat der Kritiker so reagiert? Berücksichtigen Sie mögliche Faktoren wie den Zeitpunkt der Rückmeldung oder die aktuelle Lebenssituation des Kritikers.
 
@@ -167,7 +108,7 @@ Ein *"Dankeschön"* für ein erhaltenes, vom Feedbackgeber gut gemeintes Feedbac
 ---
 
 
-### Dont's! 
+#### Dont's! 
 
 + **Kritik niemals personalisieren!** Sagen Sie nicht *"Sie sind…"* sondern beziehen Sie Sich auf konkrete Beobachtungen und beschreiben Sie, wie Sie diese wahrgenommen und wie diese auf Sie gewirkt haben.
 
@@ -177,7 +118,7 @@ Ein *"Dankeschön"* für ein erhaltenes, vom Feedbackgeber gut gemeintes Feedbac
 
 
 
-### Situationen, in denen es besser ist, kein Feedback zu geben
+#### Situationen, in denen es besser ist, kein Feedback zu geben
 
 ::: {.callout-important}
 ## Situationen, in denen es besser ist, kein Feedback zu geben

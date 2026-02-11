@@ -86,6 +86,15 @@ number-offset:
 
 ### Operating Envelope {#sec-operating_envelope}
 
+::: {.content-visible unless-meta="kommentare.off"}
+
+:::: {style="background-color: #9affa4"}
+\@mrossde aka Arbeitsraum / Arbeitspunkt?
+abgleich, ob man dasin PE1 kurz erwähnt...
+
+::::
+:::
+
 ---
 
 >
@@ -134,6 +143,15 @@ Der Betriebszustand beschreibt den aktuellen oder geplanten Zustand, in dem sich
 Der Betriebszustand eines Systems wird durch innere Zustände (siehe → Systemparameter) charakterisiert (z.B. Temperatur, Wärmefluss, Kühlleistung, Spannung, Strom, Leistungsaufnahme, Drehzahl, Drehmoment) und durch äußere Einflussgrößen (siehe → Umgebungsbedingungen, siehe → **Umweltqualifizierung** @sec-umwelt) beeinflusst (z. B. Temperatur, Feuchtigkeit, Druck, Last). 
 
 Ein System kann in verschiedenen Betriebszuständen betrieben werden (siehe → Betriebsstrategie) (z.B. Aus, Anfahren, Normalbetrieb, Teillast, Volllast, Stillstand, Notbetrieb).
+
+::: {.content-visible unless-meta="kommentare.off"}
+
+:::: {style="background-color: #9affa4"}
+\@mrossde Bild aus TDE mit Messbereich sensor hier rein
+Arbeits / Überlast / etc. bereiche
+
+::::
+:::
 
 Häufig werden Betriebszuständen im alltäglichen Sprachgebrauch mit Farben assoziiert: 🟩 Grün: Nominaler Betriebsbereich — sicher und effizient | 🟨 Gelb: Erweiterter Bereich — kurzfristig zulässig, aber erhöhter Verschleiß oder verminderte Sicherheit | 🟥 Rot: Überlastbereich — Betrieb außerhalb der Spezifikation, spontaner Ausfall oder vollständige Zerstörung des System möglich, hohes Sicherheitsrisiko.
 

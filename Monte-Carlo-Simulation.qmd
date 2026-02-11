@@ -81,8 +81,17 @@ Ziel von Monte-Carlo-Simulationen ist es, analytisch nicht oder nur aufwendig l�
 -------------------------------------------------------------------------- -->
 <p style="text-align: center;">![](images/Microsoft_Office_Excel-Logo.png){width=16%} → Excel-Worksheet *"Pi_Worksheet.xlsx"*</p>
 
-
 Grundlage für Monte-Carlo-Simulationen ist das [Gesetz der großen Zahlen](https://de.wikipedia.org/wiki/Gesetz_der_gro%C3%9Fen_Zahlen).
+
+[siehe Einschub zu Pi](Pi.html)
+
+::: {.content-visible unless-meta="kommentare.off"}
+
+:::: {style="background-color: #9affa4"}
+\@mrossde hier noch überlegen ob dieser mit Pi XLS zusammen rausgegeben oder nach der Übung (nachdem Wassertropfen auf Blatt sind und Pi berechnet wurde) rausgegeben wird.
+
+::::
+:::
 
 ::: {.callout-tip}
 ## Definition: *"Gesetz der großen Zahlen"*

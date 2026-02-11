@@ -1,0 +1,4 @@
+::: {.callout-tip}
+## *"Zufall"*
+Der Begriff *"[Zufall](https://de.wikipedia.org/wiki/Zufall)"* bezieht sich auf ein Ereignis oder eine Situation, die ohne erkennbare Ursache oder vorhersehbaren Zweck auftritt. Es handelt sich um ein Phänomen, bei dem das Eintreten oder der Ausgang eines Ereignisses nicht durch bekannte oder kontrollierbare Faktoren beeinflusst wird. 
+:::

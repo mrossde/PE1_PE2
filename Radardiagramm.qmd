@@ -107,6 +107,14 @@ Häufige Verwendung finden Radardiagramme insbesondere zum Soll-/Ist-Vergleich a
 Einfaches Radardiagramm ausgewählter persönlicher Kompetenzen eines Bewerbenden aus Sicht eines Recruiting-Teams für die Besetzung einer Stelle in einem Produktentwicklungsteam (fiktives Beispiel).
 :::
 
+::: {.content-visible unless-meta="kommentare.off"}
+
+:::: {style="background-color: #9affa4"}
+\@mrossde ChartJS -> Kann Tortendiagramme / Balkendiagramme etc. [https://www.chartjs.org/](https://www.chartjs.org/) 
+
+::::
+:::
+
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
   document.addEventListener("DOMContentLoaded", function() {

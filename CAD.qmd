@@ -82,15 +82,6 @@ number-offset:
 [CAD](https://de.wikipedia.org/wiki/CAD) (englisch Computer-Aided Design) bezeichnet die Unterstützung von konstruktiven Aufgaben mittels [EDV](https://de.wikipedia.org/wiki/Elektronische_Datenverarbeitung) zur Herstellung eines Produkts.
 :::
 
-<!-- -------------------------------------------------------------------------
-
-                       Callout !!! WARNING !!!
-
--------------------------------------------------------------------------- -->
-::: {.callout-warning}
-## WARNING!
-**THIS DOCUMENT IS STILL WORK IN PROGRESS!!!**
-:::
 <!--
 #### Zweck & Nutzen von CAD-Systemen
 - CAD wird zur digitalen Konstruktion von Produkten eingesetzt.

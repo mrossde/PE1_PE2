@@ -1,0 +1,12 @@
+::: {.callout-tip}
+## Definition: *"Reifegrad"*
+Reifegrad ist ein Maß für den Grad, in dem das Produkt oder System seine Entwicklungsziele(Funktionalität, Zuverlässigkeit, Qualität, Herstellbarkeit und Wirtschaftlichkeit) erreicht hat und bereit ist, in die Produktion oder auf den Markt zu gehen. Der Nachweis erfolgt durch Testergebnisse für die Fähigkeiten den beabsichtigten Zweck zu erfüllen (z.B. Funktionalität, Stabilität, Fehleranfälligkeit, Benutzerfreundlichkeit, Verfügbarkeit, Skalierbarkeit und Sicherheit) - siehe auch @sec-umwelt.
+
+:::
+
+Die in @sec-pep dargestellten Phasen dienen dazu, den Reifegrad eines Produkts schrittweise zu erhöhen bis das Produkt schließlich als reif genug betrachtet wird, um in Serienproduktion zu gehen.
+
+::: {.callout-important}
+## ACHTUNG! WICHTIG!
+*“If you can't measure it, you can't manage it.”* [Peter F. Drucker]
+:::
