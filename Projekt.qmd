@@ -1,55 +1,5 @@
 
 
-<!--
-title: "DEB3 Produktentwicklung 1"
-format:
-  html:
-    embed-resources: true
-
-author:
-  - name: "Christian Anders"
-    degrees: 
-    roles: "Dozent"
-    email: christian.anders@hs-esslingen.de
-    affiliation: 
-      - name: "Hochschule Esslingen"
-        department: "Wirtschaft & Technik"
-        group: "Digital Engineering (DEB)"
-        city: "Esslingen am Neckar"
-        postal-code: 73728
-        country: "Deutschland"
-        url: https://www.hs-esslingen.de/
-abstract: > 
-  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2024/2025
-keywords:
-  - Produktentstehungsprozess
-  - Entwicklungsmethodik
-  - Projekt
-  - Projektziel
-  - DoD
-  - Projektphasen
-  - Moving Targets
-  - AKV
-  - Weisungs- und Entscheidungsbefugnis
-  - Integrity
-  - Compliance
-  - Geist des Vertrags
-copyright: 
-  holder: Christian Anders
-  year: 2024
-lang: de
-bibliography: Literatur.bib
-date: last-modified
-toc: false
-number-sections: false
-scrollable: true
-toc-location: right-body
-cap-location: bottom
-number-offset: 0
-link-external-icon: true
-link-external-newwindow: true
--->
-
 
 <!-- -------------------------------------------------------------------------
 
@@ -63,22 +13,24 @@ link-external-newwindow: true
 *"The first step of any project is to grossly underestimate its complexity and difficulty." ([Nicoll Hunt](https://x.com/nicollhunt))*
 :::
 
-#### Eigenschaften eines Projekts
-
-Auch wenn ständig und nahezu überall von Projekten gesprochen wird, ist der Begriff *"Projekt"* nicht ganz einfach zu fassen:
-
 {{< include /00001-Definitions/Projekt.qmd >}}
 
-Der Begriff des Projekts ist darüber hinaus in der Literatur auf vielfältige Weise teilweise mit anderen Schwerpunkten definiert:
+Projekte werden in der Regel durchgeführt, um einzigartige Produkte, Dienstleistungen oder Ergebnisse zu schaffen und beinhalten eine Reihe von geplanten Aktivitäten, Ressourcen und Einschränkungen. Projekte erfordern in der Regel ein effektives [Projektmanagement](https://de.wikipedia.org/wiki/Projektmanagement), um das gewünschte Ergebnis innerhalb der vorgegebenen Zeit, Kosten und Qualität zu erreichen.
 
-- „Eine sachlich und zeitlich begrenzte Aufgabe, die interdisziplinär angegangen wird.“
-- „Ein zeitlich definiertes und begrenztes Vorhaben mit dem Ziel, ein einmaliges Produkt, eine Dienstleistung oder ein Ergebnis zu schaffen.“ (Quelle: PMBOK Guide des amerikanischen Project Management Institute)
-- „Vorhaben, das im Wesentlichen durch die Einmaligkeit aber auch Konstante der Bedingungen in ihrer Gesamtheit gekennzeichnet ist, wie z.B. Zielvorgabe, zeitliche, finanzielle, personelle und andere Begrenzungen; Abgrenzung gegenüber anderen Vorhaben; projektspezifische Organisation.“ [Quelle: DIN 69901 des Deutschen Instituts für Normung e.V.]
-- Eine für einen befristeten Zeitraum geschaffene Organisation, die den Auftrag hat, mindestens ein Produkt entsprechend einem vereinbarten Business Case zu liefern.“
-- „Ein Projekt ist ein einmaliges, zeitlich befristetes, interdisziplinäres, organisiertes Vorhaben, um festgelegte Arbeitsergebnisse im Rahmen vorab definierter Anforderungen und Rahmenbedingungen zu erzielen.“ (Quelle: IPMA ICB 4.0 der International Project Management Association)
+#### Eigenschaften eines Projekts
+
+Zusammengefasst haben Projekte folgende Eigenschaften:
+
+- zeitliche Begrenzung
+- personelle & finanzielle Begrenzung
+- Einmaligkeit der Aufgabe
+- Komplexität der Aufgabe
+- interdisziplinäre & projektspezifische Organisation
+- Zielorientierung
+
 
 ::: {.callout-tip}
-Eine Aufgabenstellung kann und sollte in der Regel als Projekt betrachtet werden, sofern das zu lösende Problem relativ komplex erscheint, der Lösungsweg zunächst unbekannt ist, eine Zielrichtung und ein Zeitrahmen vorliegen und/oder bereichs-/fachübergreifende Zusammenarbeit erforderlich ist.
+Eine Aufgabenstellung kann und sollte als Projekt betrachtet werden, sofern das zu lösende Problem relativ komplex erscheint, der Lösungsweg zunächst unbekannt ist, eine Zielrichtung und ein Zeitrahmen vorliegen und/oder bereichs-/fachübergreifende Zusammenarbeit erforderlich ist.
 :::
 
 Die Komplexität der Aufgabenstellung liegt beispielsweise darin, dass:
@@ -88,7 +40,7 @@ Die Komplexität der Aufgabenstellung liegt beispielsweise darin, dass:
 - die involvierten bzw. zusammenarbeitenden Organisationen oder Instanzen unterschiedlichen Sachlogiken gehorchen,
 - zwischen den einzelnen Maßnahmen zur Zielerreichung vielfältige Wechselwirkungen bestehen.
 
-In der Regel birgt ein Projekt – im Gegensatz zu regelmäßigen, stets ähnlich durchgeführten, weitgehend identischen Vorhaben – meist ein **höheres Risiko des Scheiterns** und wird in einer speziellen und befristeten Organisationsform, der so genannten Projektorganisation, abgewickelt, innerhalb derer auf das Ziel hingearbeitet wird.
+In der Regel birgt ein Projekt – im Gegensatz zu regelmäßigen, stets ähnlich durchgeführten, weitgehend identischen Vorhaben – meist ein **höheres Risiko des Scheiterns** und wird in einer speziellen und befristeten Organisationsform, der so genannten **Projektorganisation**, abgewickelt, innerhalb derer auf das Ziel hingearbeitet wird.
 
 #### Definition Projektziel
 <!-- appearance="simple" -->
