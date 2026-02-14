@@ -138,3 +138,25 @@ e)
 1. WLAN Konfiguration über QR Code ggf. um das Gerät dynamisch mit WLAN zu verbinden
 2. Helligkeitssensor
 3. 
+
+
+## Mario  IoT <-> PR2
+
+ - Mario fokussiert dann die Spezifikation und den Test des Produktes, welches Sensoren + Selbstlernkurs
+
+## Daniel IoT <-> PR2
+
+- Daniel hat C-Programmierung eingeführt um auf Sensordaten zuzugreifen.
+- Displayansteuerung mit LVGL
+- Basis mit ESP32, weil Basis IoT Vorlesun
+
+
+### Sicherstellung Studierbarkeit
+
+Wenn man die umgekehrte Reihenfolge (erst PE2 und dann IoT hören will), dann
+
+1. in IoT Selbstlernkurs (Videokurs + Grundlagenwissen) + Anrechnung Labore zur ESP32 C Programmierung (Sensor auslesen per I²C, Display ansteuern über LVGL, WLAN Konfiguration
+2. Student muss Testat machen, Quellcode und ESP32 Demonstration wird von Daniel abgenommen
+3. wenn Erfolgreich -> Anrechnung des ersten Testats (die ersten 2-3 Labortermine) für IoT
+
+### Sensoren -> Input Daniel

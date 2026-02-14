@@ -1,6 +1,11 @@
 
-#quarto render 00010-Projektmanagement.qmd --to html --profile release-profile, cpp-profile -o MTB-Informationstechnik-00010-Projektmanagement.html
+# 26SS
 
+quarto render _DEB3_Vorlesung_Produktentwicklung_1-26SS.qmd --to html --profile wip-profile -o DEB-PE1-26SS-Skript.html
+
+
+
+# 25WS
 
 quarto render _DEB3_Prüfung_Produktentwicklung_1_WS2425.qmd --to html --profile release-profile -o _DEB3_Prüfung_Produktentwicklung_1_WS2425.html
 
