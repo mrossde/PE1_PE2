@@ -61,4 +61,6 @@ quarto render logistische_gleichung.qmd --to html --profile release-profile -o D
 
 quarto render Einleitung_zur_Vorlesung.qmd --to html --profile release-profile -o Einleitung_zur_Vorlesung.html
 
-quarto render Termine.qmd --to html --profile release-profile -o Termine.html
+
+quarto render Termine25WS.qmd --to html --profile release-profile -o Termine25WS.html
+quarto render Termine26SS.qmd --to html --profile release-profile -o Termine26SS.html

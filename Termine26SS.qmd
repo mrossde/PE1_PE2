@@ -1,0 +1,125 @@
+---
+title: "DEB3 Produktentwicklung 1"
+resource-path: ["../images"]
+format:
+  html:
+    embed-resources: true
+
+author:
+  - name: "Mario Roßdeutscher"
+    roles: "Dozent"
+    email: mario.rossdeutscher@hs-esslingen.de
+    affiliation: 
+      - name: "Hochschule Esslingen"
+        department: "Wirtschaft & Technik"
+        group: "Digital Engineering (DEB)"
+        city: "Esslingen am Neckar"
+        postal-code: 73728
+        country: "Deutschland"
+        url: https://www.hs-esslingen.de/
+abstract: > 
+  Skript zur Vorlesung und Labor *"Produktentwicklung 1"* für den Studiengang Digital Engineering DEB3 im Wintersemester 2025/2026
+keywords:
+  - Terminplanung
+  - Zeitplanung
+copyright: 
+  holder: Mario Roßdeutscher
+  year: 2025
+lang: de
+bibliography: Literatur.bib
+date: last-modified
+toc: false
+number-sections: false
+scrollable: true
+toc-location: right-body
+cap-location: bottom
+number-offset: 0
+link-external-icon: true
+link-external-newwindow: true
+---
+
+<!-- -------------------------------------------------------------------------
+
+                       Termine Wintersemester 2024/2025 DEB3
+
+-------------------------------------------------------------------------- -->
+
+### Aktuelle Informationen
+
+
+### Termine zur [Vorlesung](https://moodle.hs-esslingen.de/moodle/course/view.php?id=32955) 26SS
+
+| Vorlesung             | Labor                  | Inhalt                                                              |
+|:----------------------|:-----------------------|:--------------------------------------------------------------------|
+| 16.03.2026<br>(SW 1)  |                        | Warm Welcome, Grundlagen                                            |
+| 23.03.2026<br>(SW 2)  |                        | Grundlagen                                                          |
+| 30.03.2026<br>(SW 3)  |                        | Grundlagen +                                                        |
+|                        | 13.04.2026<br>(SW 5)  | **Labor** "Flyer", Lasten- und Pflichtenheft, Mindmap, Reifegrade   |
+| 20.04.2026<br>(SW 6)  |                        | Softskills, PWT, Moore's Law, Beispiel Apple A17 Pro, Famous Laws   |
+|                        | 27.04.2026<br>(SW 7)  | **Labor** "Magnetpendel", Euler-Verfahren, FE-Sim., Log. Gleichung  |
+| 04.05.2026<br>(SW 8)  |                        | Reverse Engineering, 3D-Master, Betriebsfestigkeit, Bruchtheorie    |
+| 11.05.2026<br>(SW 9)  |                        | NVH, PPG, Rule-of-10, Vorgehen zur Umweltqualifizierung, EMV        |
+|                        | 18.05.2026<br>(SW 10) | **Labor** "Earthlander Teil 1"                                      |
+| 01.06.2026<br>(SW 11) |                        | Qualität, KVP, SPC, PDCA, 8D-Methode, Ishikawa-Diagramm, 5-Why      |
+|                        | 08.06.2026<br>(SW 12) | **Labor** "Earthlander Teil 2"                                      |
+| 15.06.2026<br>(SW 13) |                        | Logistik, Produktionsplanung, TPS, Kaizen, JIT-JIS, Kanban          |
+| 22.06.2026<br>(SW 14) |                        | Prüfungsvorbereitung (in Präsenz, TN empfohlen)                     |
+| 29.06.2026<br>(SW 15) |                        | **Reserve**                                                         |
+| tbd       <br>        |                        | **Prüfung** (tbd, 14.00 - 15.30 h, Raum G02.110)                    |
+: Termine der Vorlesungen und Labore im SS26 {#tbl-terminess26 .striped .hover .bordered tbl-colwidths="[15,15,70]"}
+
+
+
+### Gantt-Diagramm zur Vorlesung (26SS)
+
+```{mermaid}
+%%| label: fig-gnt-vorl-units
+%%| fig-cap: "Gantt-Diagramm zur Vorlesung PE1 (1 Zeiteinheit = 4×45 min ≙ 1 Doppelblock)"
+gantt
+title Gantt-Diagramm zur Vorlesung "Produktentwicklung 1"
+    dateFormat HH:mm
+    axisFormat %H
+    todayMarker off
+
+    section Semesterbeginn
+    START des Semesters                          : done, milestone, m1, 00:00, 0m
+    Vorlesung 1 (16.03.)                         : done, v1,  after m1, 1h
+
+    section Grundlagen
+    Vorlesung 2 (23.03.)                         : done, v2,  after v1, 1h
+    Vorlesung 3 (30.03.)                         : done, v3,  after v2, 1h
+
+    section Ideenfindung und Konzept
+    Labor 1 "Flyer" (13.04., SW5)                : done, l1,  after v3, 90m
+    Vorlesung 4 (20.04., SW6)                    : done, v4,  after l1, 1h
+
+    section Entwurf und Entwicklung
+    Labor 2 "Magnetpendel" (27.04., SW7)         : done, l2,  after v4, 90m
+    Vorlesung 5 (04.05., SW8)                    : done, v5,  after l2, 1h
+    Vorlesung 6 (11.05., SW9)                    : done, v6,  after v5, 1h
+
+    section Prototyping und Test
+    Labor 3 "Earthlander Teil 1" (18.05., SW10) : done, l3,  after v6, 90m
+    Vorlesung 7 (01.06., SW11)                   : done, v7,  after l3, 1h
+    Labor 4 "Earthlander Teil 2" (08.06., SW12) : done, l4,  after v7, 90m
+
+    section Produktionsplanung und Produktion
+    Vorlesung 8 (15.06., SW13)                   : done, l5,  after l4, 90m
+
+    section Prüfungsvorbereitung
+    Prüfungsvorbereitung (22.06., SW14)          : done, pv2, after l5, 1h
+
+    section Reserve & Prüfung
+    Reserve (29.06., SW15)                       : done, rs,  after pv2, 1h
+    Prüfung (tbd, 14.00–15.30, G02.110)          : done, p1,  after rs, 30m
+    Korrektur (Noten-Veröffentlichung)           : done, kor, after p1, 2h
+    ENDE des Semesters                           : done, milestone, m3, after kor, 0m
+```
+
+
+<!--
+::: {.callout-important}
+## Fragen zur Prüfungsvorbereitung?
+Bei Fragen zur Prüfungsvorbereitung melden Sie sich bitte gerne jederzeit mit Ihrer Frage oder zur Vereinbarung eines individuellen [Webex-Meetings](https://hs-esslingen.webex.com/meet/christian.anders) per Mail ([christian.anders@hs-esslingen.de](mailto:christian.anders@hs-esslingen.de)).
+:::
+-->
