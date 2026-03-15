@@ -96,6 +96,9 @@ Umweltqualifizierung Spec von Sensoren - Ist der Sensor qualifiziert für die Um
     Sensoren und Bestellliste (Maße) - Daraus CAD Modell bzw. Raumvorstellung
     PMU (Basis Carmens Vorlesung) / DMU -> Explosionszeichnung + Pitchen des Entwurfs (AIDA Konformer Kurzvortrag 120sec jeder 1x machen) + attraktives A0 Poster (Carmen: Farben / Schriftarten etc.) innerhalb dieser 120sec (Szenario ihr pitcht auf Abend der Technik/ oder Bonding Messe - Ziel ist es, einen Investor zu kriegen)
     -> Stückliste + Kostenkalkulation
+
+    Frage: Der letzte Punkt pitch vor Investoren -> ist dieser wirklich Teil des Setups?
+
 Ziel ist das V-Modell umzusetzen (und ggf. mehrfach zu durchlaufen):
 1. Ideenfindung
 2. Entwurf
@@ -111,7 +114,7 @@ die 3 Wochen Sensorbestellzeit die gespart wird neuer Schwerpunkt wählen.
 [ ] - Versuche in Labor 4 durchlesen und überlegen, wie das qualifiziert beim nächsten Mal getestet werden kann.
 [ ] - Klimaschrank - Testreihe Temperatur / Feuchtigkeit / CO2 / Timen und mit Stadtmitte klären, dass man dort 1 Nachmittag 1 Test machen kann
 [ ] - Powerbank -> Noch bestellen 
-[ ] - Markus Schlipf + Johannes Vorlesungen für Anforderungen nutzen
+[X] - Markus Schlipf + Johannes Vorlesungen für Anforderungen nutzen
 [ ] - Wettbewerbsanalyse + Patentrecherche diskutieren und überlegen wie es in dem DEB Curriculum rein soll (mehr/weniger)
 [ ] - Exkurs Patent + Gebrauchsmuster -> um 2 Spalten um Design und Geschmacksmuster erweitern
 [ ] - Schalter von CA analysieren und prüfen, unsichtbar ist bei normalem **quarto render**
@@ -130,7 +133,7 @@ die 3 Wochen Sensorbestellzeit die gespart wird neuer Schwerpunkt wählen.
 a) Vorlesung weiterentwickeln und auf der Höhe der Zeit halten
 b) Prototyp Umweltmonitoringsystem **immer weiter verbessern**
 c) Prototyp - Umweltmonitoringsystem **jedes Mal neu bauen**
-d) Anknüpfungspunkte zu Daniel / Johannes? 
+d) Sensorenpaket zur Verfügung stellen - möglichst freie Aufgabenstellung 
 e) 
 
 ## weitere Funktionen
@@ -148,15 +151,15 @@ e)
 
 - Daniel hat C-Programmierung eingeführt um auf Sensordaten zuzugreifen.
 - Displayansteuerung mit LVGL
-- Basis mit ESP32, weil Basis IoT Vorlesun
+- Basis mit ESP32, weil Basis IoT Vorlesung
 
 
 ### Sicherstellung Studierbarkeit
 
 Wenn man die umgekehrte Reihenfolge (erst PE2 und dann IoT hören will), dann
 
-1. in IoT Selbstlernkurs (Videokurs + Grundlagenwissen) + Anrechnung Labore zur ESP32 C Programmierung (Sensor auslesen per I²C, Display ansteuern über LVGL, WLAN Konfiguration
+1. in IoT Selbstlernkurs (Videokurs + Grundlagenwissen) + Anrechnung Labore 1+2 von 7(Stand 12.03.2026) zur ESP32 C Programmierung vorziehen (kann man dann jedes Semester durchführen) (Sensor auslesen per I²C, Display ansteuern über LVGL, WLAN Konfiguration
 2. Student muss Testat machen, Quellcode und ESP32 Demonstration wird von Daniel abgenommen
-3. wenn Erfolgreich -> Anrechnung des ersten Testats (die ersten 2-3 Labortermine) für IoT
+3. wenn Erfolgreich -> Anerkennung des Leistung Labor für IoT
 
 ### Sensoren -> Input Daniel
