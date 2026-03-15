@@ -7,10 +7,29 @@ quarto render _DEB3_Vorlesung_Produktentwicklung_1-26SS.qmd --to html --profile 
 
 # 25WS
 
+# Prüfung zieht in sep. Repo um
+
 quarto render _DEB3_Prüfung_Produktentwicklung_1_WS2425.qmd --to html --profile release-profile -o _DEB3_Prüfung_Produktentwicklung_1_WS2425.html
 
 
+# 00011-Grundlagen_PE1 umbenennen zu 00011-PE-Grundlagen
+# 00013-Konzeptfindung umbennenen zu 00013-PE-Konzeptfindung
+# 00014-EntwurfUndEntwicklung umbennenen zu 00014-PE-EntwurfUndEntwicklung
+# 00015-PrototypingUndTesting umbennenen zu 00015-PE-PrototypingUndTesting
+# 00016-ProduktionsplanungUndProduktion umbennenen zu 00016-PE-ProduktionsplanungUndProduktion
 
+
+
+# ab hier alles umziehen
+
+
+# Wir brauchen im Wurzelverzeichnis immer die kompilierbare Datei mit header, 
+# Name z.B. skript-DEB3-PE1-Aufg_Starship.qmd
+# skript-DEB3-PE1-Aufg_Starship_Lsg.qmd
+
+
+
+# 00018-PE-Aufgaben_Labore
 quarto render Aufgabe_Starship-Loesung.qmd --to html --profile release-profile -o Aufgabe_Starship-lsg.html
 
 quarto render Aufgabe_Starship.qmd --to html --profile release-profile -o Aufgabe_Starship.html
@@ -33,8 +52,6 @@ quarto render Links.qmd --to html --profile release-profile,wip-profile -o DEB-P
 
 quarto render Aufgabe_Bewertungsmatrix_Dateiformat.qmd --to html --profile release-profile -o DEB-PE1-Aufg-VLBewertungsmatrix.html
 
-
-
 quarto render Lösung_Bewertungsmatrix_Magnetpendel.qmd --to html --profile release-profile,wip-profile -o DEB-PE1-Labor02-Magnetpendel-loesung.html
 
 
@@ -42,18 +59,6 @@ quarto render logistische_gleichung.qmd --to html --profile release-profile,wip-
 
 quarto render logistische_gleichung.qmd --to html --profile release-profile -o DEB-PE1-Labor02-logistische_gleichung.html
 
-
-quarto render _DEB3_Vorlesung_Produktentwicklung_1.qmd --to html --profile release-profile,wip-profile -o DEB-PE1-Skript.html
-
-quarto render _DEB3_Vorlesung_Produktentwicklung_1.qmd --to html --profile release-profile -o DEB-PE1-Skript.html
-
 quarto render Einleitung_zur_Vorlesung.qmd --to html --profile release-profile -o Einleitung_zur_Vorlesung.html
 
 quarto render Termine.qmd --to html --profile release-profile -o Termine.html
-
-# 2025-09-30-  - probleme mit gap gain - diese 2 funktionieren: 
-
-quarto render _DEB3_Vorlesung_Produktentwicklung_1.qmd --to html --profile release-profile -o DEB-PE1-Skript_p.html
-# 2025-09-30- geht nur wenn man im Dokument nochmal kommentare off true setzt , das sollte aber eigentlich das release profile machen
-
-quarto render _DEB3_Vorlesung_Produktentwicklung_1.qmd --to html --profile release-profile,wip-profile -o DEB-PE1-Skript.html
