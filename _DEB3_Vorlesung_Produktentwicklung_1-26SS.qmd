@@ -38,7 +38,6 @@ cap-location: bottom
 link-external-icon: true
 link-external-newwindow: true
 
-
 headlines:
   off: true
 exercises:
@@ -77,6 +76,8 @@ worksheets:
   {{< include Werkstofftechnik.qmd >}}
   {{< include DIN8580.qmd >}}
 
+
+
 ## Methodische Grundlagen
 
   {{< include Vision-Strategie-Ziele.qmd >}}
@@ -106,7 +107,7 @@ worksheets:
 
 -------------------------------------------------------------------------- -->
 
-<!-- 00051-Projektmanagement-->
+<!-- 00051-Ideenfindung-und-Konzeptentwicklung -->  
 
 # Ideenfindung und Konzeptentwicklung {#sec-ideenfindungundkonzept}
   {{< include Ziele_Ideenfindung_und_Konzeptentwicklung.qmd >}}
@@ -119,7 +120,7 @@ worksheets:
 
 ## Konzeptentwicklung und Entscheidungsfindung
 
-    {{< include Lasten-_und_Pflichtenheft.qmd >}}
+  {{< include Lasten-_und_Pflichtenheft.qmd >}}
 
 ::: {.content-visible unless-meta="kommentare.off"}
 
@@ -144,7 +145,7 @@ ggf. woanders hinverschieben? logisch nicht korrekte Reihenfolge
 -------------------------------------------------------------------------- -->
 
 
-<!-- 00052-EntwurfundEntwicklung-->
+<!-- 00014-EntwurfundEntwicklung-->
 
 # Entwurfs- und Entwicklungsphase {#sec-entwurfundentwicklung}
 
@@ -176,7 +177,7 @@ ggf. woanders hinverschieben? logisch nicht korrekte Reihenfolge
 
 -------------------------------------------------------------------------- -->
 
-<!-- 00053-PrototypingundTest-->
+<!-- 00015-PrototypingundTest-->
 
 # Prototyping und Test {#sec-prototypingundtest}
 
@@ -192,7 +193,7 @@ ggf. woanders hinverschieben? logisch nicht korrekte Reihenfolge
 
 <mark>Änderung für nächstes Sem! Hier nochmal Produktionskapitel anschauen </mark>
 
-<!-- 00053-ProduktionsplanungundProduktion-->
+<!-- 00016-ProduktionsplanungUndProduktion-->
 
 # Produktionsplanung und Produktion {#sec-produktionsplanungundproduktion}
 
@@ -212,7 +213,7 @@ ggf. woanders hinverschieben? logisch nicht korrekte Reihenfolge
 
 -------------------------------------------------------------------------- -->
 
-<!-- 00054-Softskills alles in einen Ordner!-->
+<!-- 00017-Softskills alles in einen Ordner!-->
 
 # Softskills - Zusammenarbeit und Selbstorganisation {#sec-softskills}
 
