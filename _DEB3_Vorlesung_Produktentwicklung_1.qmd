@@ -65,41 +65,17 @@ worksheets:
 
 
 
-![](images/blank.png){width=8%}
-{{< include Abbildung_Flammarion1888.qmd >}}
-![](images/blank.png){width=8%}
-
-
 # Grundlagen {#sec-grundlagen}
-  {{< include Grundlagen_Produktentwicklung.qmd >}}
 
 ## Technische Grundlagen
 
-  {{< include SI-Einheiten.qmd >}}
-  {{< include Werkstofftechnik.qmd >}}
-  {{< include DIN8580.qmd >}}
 
 ## Methodische Grundlagen
-
-  {{< include Vision-Strategie-Ziele.qmd >}}
-  {{< include SMART.qmd >}}
-  {{< include gap_gain-konzept.qmd >}}
 
 
 <!-- 00010-Projektmanagement-->
 
 ## Projektmanagement
-
-  {{< include Projekt.qmd >}}
-  {{< include Projekt-Arbeit.qmd >}}
-  {{< include Gantt.qmd >}}
-  {{< include Kritischer_Pfad.qmd >}}
-  {{< include Meilenstein.qmd >}}
-  {{< include Projektmanagement_Magisches_Dreieck.qmd >}}
-  {{< include Projektmanagement_Reporting.qmd >}}
-  {{< include Controlling.qmd >}}
-  {{< include Zielhierarchie.qmd >}}
-  {{< include Projektmanagement_Haertegradlogik.qmd >}}
 
 
 <!-- -------------------------------------------------------------------------
@@ -111,13 +87,8 @@ worksheets:
 <!-- 00051-Projektmanagement-->
 
 # Ideenfindung und Konzeptentwicklung {#sec-ideenfindungundkonzept}
-  {{< include Ziele_Ideenfindung_und_Konzeptentwicklung.qmd >}}
 
 ## Methodische Grundlagen
-
-  {{< include Produkt.qmd >}}
-  {{< include Modelle_zum_Produktentstehungsprozess.qmd >}}
-  {{< include Technology_Hype_Cycle.qmd >}}
 
 ## Konzeptentwicklung und Entscheidungsfindung
 
@@ -131,14 +102,6 @@ ggf. woanders hinverschieben? logisch nicht korrekte Reihenfolge
 ::::
 :::
 
-  {{< include Produktdokumentation.qmd >}}
-  {{< include Mindmap.qmd >}}
-  {{< include Bewertungsmatrix.qmd >}}
-  {{< include Prinzip-_Konzept_und_Serientauglichkeit.qmd >}}
-  {{< include Modularisierung.qmd >}}
-  {{< include Simultaneous_Engineering.qmd >}}
-
-
 <!-- -------------------------------------------------------------------------
 
                        Kapitel 3: Entwurfs- und Entwicklungsphase
@@ -150,27 +113,10 @@ ggf. woanders hinverschieben? logisch nicht korrekte Reihenfolge
 
 # Entwurfs- und Entwicklungsphase {#sec-entwurfundentwicklung}
 
-  {{< include Ziele_Entwurfs-_und_Entwicklungsphase.qmd >}}
-  {{< include PWT.qmd >}}
-  {{< include Apple_A17_Pro_SoC.qmd >}}
-  {{< include Reverse_Engineering.qmd >}}
-  {{< include Simulation.qmd >}}
-  {{< include Monte-Carlo-Simulation.qmd >}}
-  {{< include FEM.qmd >}} 
-  {{< include 3DMaster.qmd >}}
-  {{< include Materialermuedung.qmd >}}
-  {{< include Betriebsfestigkeit.qmd >}}
 
 ## NVH
 
-  {{< include NVH.qmd >}}
-
 ## Kostenbeeinflussung im Produktentstehungsprozess
-
-  {{< include Kosten_im_Produktentstehungsprozess.qmd >}}
-  {{< include Rule-of-10.qmd >}}
-  {{< include PPG.qmd >}}
-
 
 <!-- -------------------------------------------------------------------------
 
@@ -182,15 +128,9 @@ ggf. woanders hinverschieben? logisch nicht korrekte Reihenfolge
 
 # Prototyping und Test {#sec-prototypingundtest}
 
-  {{< include Ziele_Prototyping_und_Test.qmd >}}
 
 ## Testing
 
-  {{< include Fermi-Problem.qmd >}}
-  {{< include Statistische_Versuchsplanung_DoE.qmd >}}
-  {{< include Umweltqualifizierung.qmd >}}
-  {{< include Rissprüfung.qmd >}}
-  {{< include Qualitaet.qmd >}}
 
 <mark>Änderung für nächstes Sem! Hier nochmal Produktionskapitel anschauen </mark>
 
@@ -198,15 +138,9 @@ ggf. woanders hinverschieben? logisch nicht korrekte Reihenfolge
 
 # Produktionsplanung und Produktion {#sec-produktionsplanungundproduktion}
 
-  {{< include Ziele_Produktionsplanung_und_Produktion.qmd >}}
 
 ## Lean Production
 
-  {{< include Toyota_Produktionssystem.qmd >}}
-  {{< include TQM.qmd >}}
-  {{< include Kaizen.qmd >}}
-  {{< include JIT-JIS.qmd >}}
-  {{< include Kanban.qmd >}}
 
 <!-- -------------------------------------------------------------------------
 
@@ -218,22 +152,7 @@ ggf. woanders hinverschieben? logisch nicht korrekte Reihenfolge
 
 # Softskills - Zusammenarbeit und Selbstorganisation {#sec-softskills}
 
-{{< include Softskills.qmd >}}
-{{< include Team.qmd >}}
-{{< include Die_fünf_Hüte_einer_Führungskraft.qmd >}}
-{{< include situatives_F-blanchard.qmd >}}
-{{< include Vier_Formen_Des_Kapitals.qmd >}}
-{{< include Verhalten_als_Ware.qmd >}}
-{{< include Johari-Fenster.qmd >}}
-{{< include LoveChangeLeave.qmd >}}
-
 # Softskills - Arbeitsmethoden {#sec-softskills2}
-
-{{< include Eisenhower-Prinzip.qmd >}}
-{{< include 6W-Methode.qmd >}}
-{{< include AIDA-Modell.qmd >}}
-{{< include Bildzeitung-Test.qmd >}}
-
 
 <!-- -------------------------------------------------------------------------
 
@@ -241,5 +160,3 @@ ggf. woanders hinverschieben? logisch nicht korrekte Reihenfolge
 
 -------------------------------------------------------------------------- -->
 # Literatur {#sec-literatur}
-
-  {{< include Literatur.qmd >}}
